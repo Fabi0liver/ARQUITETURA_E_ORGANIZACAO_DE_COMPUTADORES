@@ -1,0 +1,103 @@
+* Computador Digital
+
+  - O que é um computador (máquina de processar informações)
+
+  - Contexto histórico e Gerações dos computadores
+
+  - Entrada, processamento, saída e armazenamento (modelo IPO)
+
+  - Diferença entre hardware e software
+
+  - Tipos de computadores (desktop, servidor, embarcado, etc.)
+
+  - Componentes Físicos (Hardware):
+      
+      CPU (Unidade Central de Processamento)
+
+      Memória RAM
+
+      Dispositivos de Entrada/Saída (teclado, mouse, monitor, impressora)
+
+      Armazenamento (HD, SSD, pen drives)
+
+      Placa-mãe e barramentos
+
+  - Representação da Informação:
+
+      Sistema binário (0s e 1s)
+
+      Bits e bytes
+
+      Codificação de texto (ASCII, Unicode)
+
+      Representação de números e imagens
+
+  - Lógica e Eletrônica Digital:
+
+      Álgebra Booleana
+
+      Portas lógicas (AND, OR, NOT…)
+
+      Circuitos combinacionais e sequenciais
+
+      Flip-flops e registradores
+
+  - Arquitetura de Computadores:
+
+      Estrutura de uma CPU (ULA, registradores, controle)
+
+      Memória cache e hierarquia de memória
+
+      Pipeline, clock e ciclos de instrução
+
+      Arquiteturas CISC vs RISC
+
+  - Organização de Computadores:
+
+      Barramentos (de dados, endereço, controle)
+
+      Modo de execução de instruções
+
+      Módulos de entrada e saída (I/O)
+
+      DMA (acesso direto à memória)
+
+  - Software e Sistema Operacional:
+
+      O que é um sistema operacional
+
+      Gerenciamento de processos e memória
+
+      Drivers e interface com o hardware
+
+      Kernel, sistema de arquivos
+
+  - Linguagens de Programação e Compilação
+
+      Linguagem de máquina vs Assembly
+
+      Linguagens de alto nível (Python, C, Java)
+
+      Compiladores e interpretadores
+
+      Lógica de programação
+
+  - Pensamento Computacional
+
+      Algoritmos
+
+      Estruturas de dados básicas
+
+      Resolução de problemas de forma lógica
+
+  - Computadores no Mundo Real
+
+      Aplicações em sistemas embarcados, celulares, servidores
+
+      Internet e redes de computadores
+
+      Computação em nuvem
+
+      Cibersegurança básica
+
+  
