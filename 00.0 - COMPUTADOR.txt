@@ -81,7 +81,6 @@ E o mais incrível é que, como estudante de Ciência da Computação, você est
 
                                   "Diferença entre Hardware e Software"
 
-
  Agora que você já está navegando com tranquilidade pelos fundamentos da computação, chegou a hora de abordar uma das distinções mais clássicas e essenciais desse universo: a diferença entre hardware e software. Esses dois termos aparecem o tempo todo, em quase qualquer conversa sobre tecnologia, mas muita gente ainda se confunde na prática. A boa notícia é que essa diferença é simples de entender  e com a ajuda de algumas analogias, fica ainda mais fácil!
 
 Pensa no computador como se fosse uma orquestra. O hardware são os instrumentos físicos (violinos, tambores, flautas) tudo o que você pode tocar e ver. Já o software é a partitura e o maestro, que dizem o que cada instrumento deve fazer, em que momento e com qual intensidade. Um não vive sem o outro: sem a partitura, os músicos não sabem o que tocar; sem os instrumentos, não há como produzir som. É essa relação simbiótica que torna possível toda a "música" que um computador executa.
