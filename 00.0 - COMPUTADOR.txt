@@ -63,7 +63,7 @@ E o mais incrível é que, como estudante de Ciência da Computação, você est
 
 
 
-                     "Modelo IPO — Entrada, Processamento, Saída e Armazenamento"
+                      "Modelo IPO — Entrada, Processamento, Saída e Armazenamento"
 
  Agora que você já tem uma boa noção do que é um computador e de como ele evoluiu ao longo das gerações, vamos entender o coração do seu funcionamento: o famoso modelo IPO: Entrada, Processamento e Saída, com o Armazenamento como coadjuvante essencial. E fique tranquilo, vamos nessa como se fosse um bate-papo tranquilo de sala de aula 
 
@@ -85,6 +85,8 @@ E o mais incrível é que, como estudante de Ciência da Computação, você est
 
 Pensa no computador como se fosse uma orquestra. O hardware são os instrumentos físicos (violinos, tambores, flautas) tudo o que você pode tocar e ver. Já o software é a partitura e o maestro, que dizem o que cada instrumento deve fazer, em que momento e com qual intensidade. Um não vive sem o outro: sem a partitura, os músicos não sabem o que tocar; sem os instrumentos, não há como produzir som. É essa relação simbiótica que torna possível toda a "música" que um computador executa.
 
+ Para saber mais sobre o papel de cada um deles e como eles se conectam no funcionamento do computador? Vamos mergulhar numa explicação mais completa de cada um deles separadamente?
+
 
  * Hardware: a parte física da computação:
 
@@ -104,6 +106,8 @@ Pensa no computador como se fosse uma orquestra. O hardware são os instrumentos
    Existem diferentes tipos de software: os de sistema (como o Windows, Linux, macOS), que gerenciam os recursos do computador; os aplicativos (como Word, Photoshop ou seu navegador), que executam tarefas específicas; e até os utilitários, que fazem “manutenções internas”, como limpeza de arquivos ou verificação de vírus. E todos eles dependem de um hardware funcionando por trás.
 
 
- No fim das contas, hardware e software são como corpo e mente, ferramenta e instrução, palco e espetáculo. Um depende do outro para que a computação aconteça. E quanto mais você estuda essa relação, mais percebe que o segredo de todo sistema funcional está no equilíbrio e na harmonia entre os dois.
+ No fim das contas, hardware e software são como corpo e mente, ferramenta e instrução, palco e espetáculo. Um depende do outro para que a computação aconteça. E quanto mais você estuda essa relação, mais percebe que o segredo de todo sistema funcional está no equilíbrio e na harmonia entre os dois. Entender essa diferença é fundamental para quem está se aprofundando em Ciência da Computação, porque ela serve de base para tópicos muito mais complexos: desde arquitetura de sistemas até desenvolvimento de software
 
- Entender essa diferença é fundamental para quem está se aprofundando em Ciência da Computação, porque ela serve de base para tópicos muito mais complexos: desde arquitetura de sistemas até desenvolvimento de software
+
+
+                                          "Tipos de Computadores"
