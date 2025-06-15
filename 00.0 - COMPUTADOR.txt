@@ -110,4 +110,67 @@ Pensa no computador como se fosse uma orquestra. O hardware são os instrumentos
 
 
 
-                                          "Tipos de Computadores"
+                                        "Tipos de Computadores"
+
+ Agora que você já entende o que é um computador, como ele funciona, e a diferença entre hardware e software, é hora de conhecer os tipos de computadores que existem por aí. E sim, eles são muitos! Desde o seu notebook de estudos até máquinas poderosíssimas que simulam o clima do planeta, cada tipo foi criado para atender necessidades diferentes, com capacidades, tamanhos e propósitos bem variados.
+
+Pensa nos computadores como veículos. Tem desde a bicicleta (pequena, pessoal, portátil) até o caminhão gigante de mineração (enorme, específico, robusto). Cada um tem um papel, um uso ideal e um conjunto de características que o torna único. Vamos passear por esses "modelos de computador" e entender para que servem, como funcionam e onde costumam aparecer no nosso dia a dia (ou em cenários bem mais extremos).
+
+
+ * Computadores Pessoais (PCs): 
+
+Os computadores pessoais são os que provavelmente mais convivem com a gente. Seja um notebook, um desktop tradicional ou até aqueles PCs gamer com luzinhas RGB, eles são feitos para uso individual. São versáteis: servem para estudar, trabalhar, jogar, navegar na internet, editar vídeos, enfim... São o canivete suíço da computação do dia a dia.
+
+É como se fosse o carro de passeio da tecnologia: prático, com bom desempenho e útil para uma variedade de tarefas. E o mais interessante é que, embora sejam "pessoais", esses computadores têm evoluído tanto que conseguem fazer tarefas que antes só computadores mais robustos faziam... claro, dentro de seus limites.
+
+
+ * Dispositivos Móveis:
+
+Aqui entram os smartphones, tablets e até smartwatches. Eles são computadores em miniatura, projetados para caber no bolso... literalmente. São otimizados para portabilidade e autonomia, com processadores mais eficientes e sistemas adaptados ao toque, bateria e conexão constante à internet.
+
+Pensa neles como aquelas scooters elétricas: não são tão poderosas quanto um carro, mas te levam longe com leveza, praticidade e agilidade. Além disso, esses dispositivos móveis têm ganhado funções cada vez mais poderosas, ao ponto de muitos usarem o celular como computador principal para tarefas comuns do dia a dia.
+
+
+ * Computadores Embarcados:
+
+Computadores embarcados são pequenos sistemas computacionais que vivem dentro de outros dispositivos. Eles não parecem computadores, mas estão lá... discretos e essenciais. Estão no painel do carro, no micro-ondas, na máquina de lavar, no controle remoto, no roteador Wi-Fi. Eles fazem uma função específica, com alto grau de confiabilidade.
+
+Se os PCs são carros e os celulares são scooters, os computadores embarcados são como os motores escondidos dentro de uma esteira ou elevador: invisíveis, mas absolutamente fundamentais para o funcionamento da coisa toda. Eles geralmente rodam sistemas operacionais enxutos ou até programações diretas, sem interface para o usuário.
+
+
+ * Estações de Trabalho (Workstations):
+
+As workstations são computadores pessoais turbinados, voltados para tarefas que exigem muita potência: edição profissional de vídeo, modelagem 3D, simulações científicas, design de jogos, CAD, engenharia e análise de dados pesados. Costumam ter processadores mais robustos, mais memória RAM, GPUs potentes e maior capacidade de armazenamento.
+
+Imagina uma van personalizada para um ofício específico, tipo uma van de estúdio de gravação ou de laboratório móvel. É maior, mais cara e feita para um tipo de trabalho exigente. Essas máquinas são muito usadas em ambientes profissionais onde desempenho e precisão são cruciais.
+
+
+ * Servidores:
+
+Servidores são computadores criados para fornecer serviços a outros dispositivos (os clientes). Eles armazenam sites, gerenciam bancos de dados, controlam redes, hospedam jogos online, e por aí vai. Eles não são feitos para um único usuário, mas para vários ao mesmo tempo. E por isso, são projetados para funcionar 24h por dia, com alta confiabilidade.
+
+Pense neles como um restaurante: ele não é para o cozinheiro comer, mas para alimentar muitos clientes. Quanto mais movimentado o restaurante, mais robusto tem que ser o sistema de preparo e entrega. Os servidores são o coração de toda infraestrutura digital moderna, desde sites simples até plataformas como Google, Netflix e redes sociais.
+
+
+ * Mainframes:
+
+Mainframes são computadores gigantescos e muito confiáveis, usados principalmente por grandes empresas, bancos, governos e instituições que precisam lidar com milhões de transações simultâneas. Eles são famosos por sua resiliência: dificilmente falham, e quando falham, o estrago é grande.
+
+Podemos pensar nos mainframes como trens de carga: não são velozes como carros esportivos, mas carregam toneladas com estabilidade e segurança. Muitos sistemas bancários que você usa sem pensar estão sendo processados por mainframes em algum lugar, mantendo seu saldo bancário seguro mesmo quando você dorme.
+
+
+ * Supercomputadores:
+
+Os supercomputadores são os atletas olímpicos da computação. Desenvolvidos para realizar cálculos absurdamente complexos e volumosos em velocidades impressionantes. Usados em pesquisas científicas, simulações climáticas, modelagem nuclear, engenharia aeroespacial, e recentemente, para treinar modelos de inteligência artificial.
+
+Eles são como foguetes: gigantes, poderosos, caríssimos e feitos para missões específicas. Cada supercomputador pode ter milhares de processadores trabalhando em paralelo, e costumam ocupar salas inteiras com sistemas de resfriamento e manutenção dedicados.
+
+
+ * Computadores Quânticos:
+
+Por fim, temos os computadores quânticos, que ainda estão em fase de pesquisa e desenvolvimento, mas prometem revolucionar a forma como lidamos com certos problemas computacionais. Em vez de trabalhar com bits (0 ou 1), eles usam qubits, que podem representar 0 e 1 ao mesmo tempo, um conceito vindo da mecânica quântica.
+
+Eles são como aqueles instrumentos experimentais em laboratórios avançados: ainda não estão prontos para o dia a dia, mas os cientistas estão animadíssimos com o potencial deles. Se tudo der certo, tarefas que levariam anos em um supercomputador tradicional poderiam ser resolvidas em segundos por um quântico.
+
+
+Em suma, conhecer os diferentes tipos de computadores nos ajuda a entender como a tecnologia está em tudo: desde o celular no nosso bolso até gigantes que simulam o clima do planeta. Cada tipo foi criado com um propósito específico, e juntos, formam uma enorme engrenagem que move o mundo digital  e o físico também. Entender essa diversidade é essencial para quem está trilhando o caminho da Ciência da Computação. Afinal, em algum momento, você vai interagir com muitos desses tipos: direta ou indiretamente.
