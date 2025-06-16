@@ -173,3 +173,22 @@ Pensa nos computadores como veículos. Tem desde a bicicleta (pequena, pessoal, 
    Eles são como aqueles instrumentos experimentais em laboratórios avançados: ainda não estão prontos para o dia a dia, mas os cientistas estão animadíssimos com o potencial deles. Se tudo der certo, tarefas que levariam anos em um supercomputador tradicional poderiam ser resolvidas em segundos por um quântico.
 
  Em suma, conhecer os diferentes tipos de computadores nos ajuda a entender como a tecnologia está em tudo: desde o celular no nosso bolso até gigantes que simulam o clima do planeta. Cada tipo foi criado com um propósito específico, e juntos, formam uma enorme engrenagem que move o mundo digital  e o físico também. Entender essa diversidade é essencial para quem está trilhando o caminho da Ciência da Computação. Afinal, em algum momento, você vai interagir com muitos desses tipos: direta ou indiretamente.
+
+
+
+                                       "Componentes do Computador"
+
+ Se antes a gente falou sobre os tipos de computadores, agora é hora de abrir o "capô da máquina" e entender como ela funciona por dentro. E, olha, um computador é como um time de futebol: cada jogador tem uma função específica, mas todos precisam trabalhar juntos para que o jogo aconteça. Aqui, o “jogo” é o funcionamento do sistema, e os “jogadores” são os componentes que garantem que tudo ocorra de forma fluida, rápida e confiável.
+
+ Esses componentes variam em tamanho, importância e função, mas todos são indispensáveis em um sistema bem equilibrado. Alguns são visíveis e fáceis de identificar (como teclado, monitor e mouse). Outros ficam escondidos na carcaça, mas são os verdadeiros responsáveis pela “mágica” acontecer. 
+
+ Vamos conhecer cada um deles com calma, fazendo uma analogia aqui e ali pra tornar tudo mais leve e fácil de entender.
+
+
+ * CPU (Unidade Central de Processamento):
+
+A CPU é o “cérebro” do computador. É ela quem executa as instruções, realiza cálculos e toma decisões lógicas com base nos comandos que os programas enviam. Se o computador fosse uma fábrica, a CPU seria o gerente de produção, que lê o plano de trabalho (os programas), organiza os processos e dá ordens para que tudo seja feito corretamente.
+
+Dentro da CPU, temos ainda unidades específicas como a ULA (Unidade Lógica e Aritmética) e a UC (Unidade de Controle), que se dividem entre resolver cálculos e coordenar tudo o que está acontecendo. Sem ela, o computador é só um monte de peças esperando ordens.
+
+
