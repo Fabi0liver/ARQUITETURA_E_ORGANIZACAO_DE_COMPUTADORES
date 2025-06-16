@@ -1,4 +1,4 @@
-* Computador Digital
+* Computador
 
   - O que é um computador (máquina de processar informações)
 
@@ -10,17 +10,43 @@
 
   - Tipos de computadores (desktop, servidor, embarcado, etc.)
 
-  - Componentes Físicos (Hardware):
+  - Componentes Do Computador (Hardware):
       
       CPU (Unidade Central de Processamento)
 
       Memória RAM
 
-      Dispositivos de Entrada/Saída (teclado, mouse, monitor, impressora)
+      Dispositivos de Entrada/Saída 
+
+      Barramentos
 
       Armazenamento (HD, SSD, pen drives)
 
-      Placa-mãe e barramentos
+      Placa-mãe 
+
+      Fonte de Alimentação
+
+      Placa de Vídeo
+
+      
+  -  Softwares do Computador:
+
+      Software de Sistema
+
+      Software de Programação
+
+      Software de Aplicação
+
+      Middleware
+
+      Software Embarcado
+
+      Software como Serviço (SaaS)
+
+      Software de Segurança
+
+      Software Utilitário
+
 
   - Representação da Informação:
 
@@ -32,6 +58,7 @@
 
       Representação de números e imagens
 
+
   - Lógica e Eletrônica Digital:
 
       Álgebra Booleana
@@ -41,6 +68,7 @@
       Circuitos combinacionais e sequenciais
 
       Flip-flops e registradores
+
 
   - Arquitetura de Computadores:
 
@@ -52,6 +80,7 @@
 
       Arquiteturas CISC vs RISC
 
+
   - Organização de Computadores:
 
       Barramentos (de dados, endereço, controle)
@@ -62,15 +91,15 @@
 
       DMA (acesso direto à memória)
 
-  - Software e Sistema Operacional:
 
-      O que é um sistema operacional
+  - Pensamento Computacional
 
-      Gerenciamento de processos e memória
+      Algoritmos
 
-      Drivers e interface com o hardware
+      Estruturas de dados básicas
 
-      Kernel, sistema de arquivos
+      Resolução de problemas de forma lógica
+
 
   - Linguagens de Programação e Compilação
 
@@ -82,13 +111,6 @@
 
       Lógica de programação
 
-  - Pensamento Computacional
-
-      Algoritmos
-
-      Estruturas de dados básicas
-
-      Resolução de problemas de forma lógica
 
   - Computadores no Mundo Real
 
