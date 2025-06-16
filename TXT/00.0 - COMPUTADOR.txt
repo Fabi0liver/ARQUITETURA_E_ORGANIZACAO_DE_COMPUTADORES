@@ -187,63 +187,63 @@ Pensa nos computadores como veículos. Tem desde a bicicleta (pequena, pessoal, 
 
  * CPU (Unidade Central de Processamento):
 
-A CPU é o “cérebro” do computador. É ela quem executa as instruções, realiza cálculos e toma decisões lógicas com base nos comandos que os programas enviam. Se o computador fosse uma fábrica, a CPU seria o gerente de produção, que lê o plano de trabalho (os programas), organiza os processos e dá ordens para que tudo seja feito corretamente.
+   A CPU é o “cérebro” do computador. É ela quem executa as instruções, realiza cálculos e toma decisões lógicas com base nos comandos que os programas enviam. Se o computador fosse uma fábrica, a CPU seria o gerente de produção, que lê o plano de trabalho (os programas), organiza os processos e dá ordens para que tudo seja feito corretamente.
 
-Dentro da CPU, temos ainda unidades específicas como a ULA (Unidade Lógica e Aritmética) e a UC (Unidade de Controle), que se dividem entre resolver cálculos e coordenar tudo o que está acontecendo. Sem ela, o computador é só um monte de peças esperando ordens.
+   Dentro da CPU, temos ainda unidades específicas como a ULA (Unidade Lógica e Aritmética) e a UC (Unidade de Controle), que se dividem entre resolver cálculos e coordenar tudo o que está acontecendo. Sem ela, o computador é só um monte de peças esperando ordens.
 
 
  * Memória RAM:
 
-A memória RAM é como a bancada de trabalho da CPU. Ela armazena temporariamente os dados e programas que estão sendo usados no momento. Quanto maior for essa bancada, mais tarefas podem ser feitas ao mesmo tempo sem travamentos ou lentidão.
+   A memória RAM é como a bancada de trabalho da CPU. Ela armazena temporariamente os dados e programas que estão sendo usados no momento. Quanto maior for essa bancada, mais tarefas podem ser feitas ao mesmo tempo sem travamentos ou lentidão.
 
-Diferente de um HD, os dados na RAM desaparecem quando o computador é desligado. É como um quadro branco: enquanto está ligado, você rabisca, apaga, escreve de novo. Mas ao desligar, tudo se apaga. Por isso, ela é chamada de memória volátil.
+   Diferente de um HD, os dados na RAM desaparecem quando o computador é desligado. É como um quadro branco: enquanto está ligado, você rabisca, apaga, escreve de novo. Mas ao desligar, tudo se apaga. Por isso, ela é chamada de memória volátil.
 
 
  * Dispositivos de Entrada/Saída:
 
-Esses dispositivos são as janelas de comunicação entre o computador e o usuário. Teclado e mouse são exemplos de entrada: a forma como você envia informações para o sistema. Já o monitor e a impressora são saídas: formas pelas quais o sistema devolve a informação processada para você.
+   Esses dispositivos são as janelas de comunicação entre o computador e o usuário. Teclado e mouse são exemplos de entrada: a forma como você envia informações para o sistema. Já o monitor e a impressora são saídas: formas pelas quais o sistema devolve a informação processada para você.
 
-Podemos pensar neles como os “sentidos” do computador: entrada é como ouvir e sentir; saída é como falar e mostrar. Sem essas interfaces, seria como conversar com alguém que não pode nem te ouvir, nem te responder.
+   Podemos pensar neles como os “sentidos” do computador: entrada é como ouvir e sentir; saída é como falar e mostrar. Sem essas interfaces, seria como conversar com alguém que não pode nem te ouvir, nem te responder.
 
 
  * Barramentos:
 
-Os barramentos são as “estradas” internas do computador. São conjuntos de fios e circuitos que transportam dados, endereços e sinais de controle entre os diversos componentes. Imagine que eles são como avenidas de uma cidade: ligam o centro (a CPU) aos bairros (memória, dispositivos, etc).
+   Os barramentos são as “estradas” internas do computador. São conjuntos de fios e circuitos que transportam dados, endereços e sinais de controle entre os diversos componentes. Imagine que eles são como avenidas de uma cidade: ligam o centro (a CPU) aos bairros (memória, dispositivos, etc).
 
-Existem barramentos específicos para diferentes tarefas: o barramento de dados leva as informações; o de endereço indica onde buscar ou armazenar algo; e o de controle organiza o trânsito, garantindo que tudo flua sem colisões.
+   Existem barramentos específicos para diferentes tarefas: o barramento de dados leva as informações; o de endereço indica onde buscar ou armazenar algo; e o de controle organiza o trânsito, garantindo que tudo flua sem colisões.
 
 
  * Armazenamento:
 
-O armazenamento é onde os dados ficam guardados a longo prazo. É como o “arquivo morto” de um escritório: você não está usando aqueles papéis agora, mas precisa que eles estejam bem organizados e disponíveis quando necessário.
+   O armazenamento é onde os dados ficam guardados a longo prazo. É como o “arquivo morto” de um escritório: você não está usando aqueles papéis agora, mas precisa que eles estejam bem organizados e disponíveis quando necessário.
 
-HDs (discos rígidos) são como gavetas grandes e um pouco mais lentas. SSDs, por outro lado, são como gavetas com trilhos de rolamento (mais rápidas e silenciosas). Já pen drives são como pastas portáteis que você pode levar no bolso. Todos eles têm o mesmo objetivo: guardar seus arquivos, programas e o próprio sistema operacional.
+   HDs (discos rígidos) são como gavetas grandes e um pouco mais lentas. SSDs, por outro lado, são como gavetas com trilhos de rolamento (mais rápidas e silenciosas). Já pen drives são como pastas portáteis que você pode levar no bolso. Todos eles têm o mesmo objetivo: guardar seus arquivos, programas e o próprio sistema operacional.
 
 
  * Placa-mãe:
 
-A placa-mãe é a grande “base de operações” do computador. Todos os componentes se conectam a ela, como se fosse uma central de ligações. Ela permite que CPU, memória, armazenamento, barramentos e dispositivos troquem informações de forma coordenada.
+   A placa-mãe é a grande “base de operações” do computador. Todos os componentes se conectam a ela, como se fosse uma central de ligações. Ela permite que CPU, memória, armazenamento, barramentos e dispositivos troquem informações de forma coordenada.
 
-Podemos compará-la ao sistema circulatório do corpo humano: ela leva e traz informações por todo o sistema, conectando tudo. Sem ela, os componentes até existiriam, mas não conseguiriam “conversar” entre si.
+   Podemos compará-la ao sistema circulatório do corpo humano: ela leva e traz informações por todo o sistema, conectando tudo. Sem ela, os componentes até existiriam, mas não conseguiriam “conversar” entre si.
 
 
  * Fonte de Alimentação:
 
-A fonte de alimentação é o coração energético do computador. Ela converte a energia da tomada para os níveis adequados que cada peça do sistema precisa para funcionar. Além disso, ela distribui essa energia de forma controlada e segura.
+   A fonte de alimentação é o coração energético do computador. Ela converte a energia da tomada para os níveis adequados que cada peça do sistema precisa para funcionar. Além disso, ela distribui essa energia de forma controlada e segura.
 
-Se o computador fosse uma cidade, a fonte seria a usina elétrica. Sem ela, não há luz, não há movimento, não há vida digital. É uma das peças mais importantes e, às vezes, uma das mais subestimadas.
+   Se o computador fosse uma cidade, a fonte seria a usina elétrica. Sem ela, não há luz, não há movimento, não há vida digital. É uma das peças mais importantes e, às vezes, uma das mais subestimadas.
 
 
  * Placa de Vídeo (GPU):
 
-A GPU é especializada em processar gráficos, imagens e vídeos. Ela alivia a CPU de tarefas visuais intensas, como jogos, edição de vídeo, modelagem 3D ou até treinamentos de inteligência artificial. Algumas GPUs são integradas à placa-mãe ou ao processador; outras são dedicadas e muito mais poderosas.
+   A GPU é especializada em processar gráficos, imagens e vídeos. Ela alivia a CPU de tarefas visuais intensas, como jogos, edição de vídeo, modelagem 3D ou até treinamentos de inteligência artificial. Algumas GPUs são integradas à placa-mãe ou ao processador; outras são dedicadas e muito mais poderosas.
 
-Pensa nela como um projetor de cinema: quanto melhor ele for, mais nítido e fluido será o filme na tela. E hoje em dia, com interfaces gráficas avançadas e jogos realistas, a GPU virou uma das estrelas do show em muitos computadores.
+   Pensa nela como um projetor de cinema: quanto melhor ele for, mais nítido e fluido será o filme na tela. E hoje em dia, com interfaces gráficas avançadas e jogos realistas, a GPU virou uma das estrelas do show em muitos computadores.
 
 
  Em resumo, os componentes do computador formam um ecossistema interno bem organizado, onde cada parte tem seu papel e precisa se comunicar com eficiência. A CPU processa, a RAM agiliza, o armazenamento guarda, a placa-mãe conecta, e todos os outros elementos garantem que a experiência seja fluida, funcional e, muitas vezes, surpreendente.
 
-Entender essas peças nos ajuda a enxergar o computador não como uma “caixa mágica”, mas como uma orquestra bem afinada. E, como todo bom maestro (ou cientista da computação em formação), saber como cada instrumento funciona é essencial para tirar a melhor música da tecnologia.
+ Entender essas peças nos ajuda a enxergar o computador não como uma “caixa mágica”, mas como uma orquestra bem afinada. E, como todo bom maestro (ou cientista da computação em formação), saber como cada instrumento funciona é essencial para tirar a melhor música da tecnologia.
 
 
 
