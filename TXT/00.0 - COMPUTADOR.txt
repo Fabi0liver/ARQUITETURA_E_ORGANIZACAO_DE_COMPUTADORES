@@ -247,6 +247,30 @@ Pensa nos computadores como veículos. Tem desde a bicicleta (pequena, pessoal, 
 
 
 
+                                          "Tipos de Softwares"
+
+ Vamos continuar nossa jornada com algo que dá “vida” ao hardware: o software. Se o hardware é o corpo do computador, o software é como a mente: ele diz o que deve ser feito, quando e como. É por meio dos softwares que interagimos com a máquina, seja para escrever um texto, navegar na internet ou compilar um código. Mas o mais interessante é que existem vários tipos de software, cada um com uma função bem específica, como profissionais com diferentes especialidades dentro de uma mesma empresa.
+
+ Enquanto alguns softwares estão mais próximos do “chão de fábrica”, lidando diretamente com o funcionamento do sistema, outros são mais voltados para o usuário, como os programas que usamos no dia a dia. Essa diversidade é o que permite ao computador ser uma ferramenta tão versátil e poderosa. 
+
+ Vamos conhecer cada tipo com calma, como se estivéssemos explorando os diferentes setores de uma grande organização digital.
+
+ * Software de Sistema:
+
+   O software de sistema é o “orquestrador” que faz tudo funcionar nos bastidores. O exemplo mais clássico é o sistema operacional (como Windows, Linux ou macOS), que atua como intermediário entre o usuário e o hardware. Ele gerencia recursos, organiza tarefas, controla dispositivos e garante que tudo funcione em harmonia.
+
+   Imagine que o computador é um teatro: o software de sistema é o diretor de palco, que organiza os atores, cuida da iluminação, distribui os papéis e garante que a peça aconteça sem contratempos — mesmo que o público (você) nem perceba seu trabalho.
+
+
+ * Software de Programação:
+
+Este é o conjunto de ferramentas que os desenvolvedores usam para criar outros softwares. Inclui linguagens de programação (como Python, Java, C++), compiladores, editores de código, IDEs (ambientes de desenvolvimento integrados), e depuradores.
+
+Pense no software de programação como um kit de ferramentas de um artesão digital. Ele não é o produto final, mas sim o que permite construir programas incríveis. Sem ele, não existiriam os aplicativos, os jogos, os sistemas… nem mesmo o próprio sistema operacional!
+
+
+
+
 
 
 
