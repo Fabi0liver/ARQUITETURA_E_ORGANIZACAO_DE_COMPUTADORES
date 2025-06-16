@@ -333,30 +333,30 @@ Pensa nos computadores como veículos. Tem desde a bicicleta (pequena, pessoal, 
 
  * Bits, Bytes e Unidades de Medida:
 
-Se o 0 e o 1 são as “letras” do idioma do computador, os bits são essas letras individuais. Um bit é a menor unidade de informação que existe. Quando agrupamos 8 bits, formamos um byte, que é a quantidade mínima de dados com que os computadores normalmente trabalham.
+   Se o 0 e o 1 são as “letras” do idioma do computador, os bits são essas letras individuais. Um bit é a menor unidade de informação que existe. Quando agrupamos 8 bits, formamos um byte, que é a quantidade mínima de dados com que os computadores normalmente trabalham.
 
-A partir daí, usamos medidas maiores como kilobyte (KB), megabyte (MB), gigabyte (GB), e assim por diante, cada uma multiplicando a anterior por 1.024. É como uma régua digital: com ela, podemos medir desde uma mensagem simples de texto até um vídeo em altíssima resolução.
+   A partir daí, usamos medidas maiores como kilobyte (KB), megabyte (MB), gigabyte (GB), e assim por diante, cada uma multiplicando a anterior por 1.024. É como uma régua digital: com ela, podemos medir desde uma mensagem simples de texto até um vídeo em altíssima resolução.
 
 
  * Representação de Tipos de Dados:
 
-Nem tudo no computador é número, mas tudo precisa virar número para ser entendido por ele. Por isso, diferentes tipos de dados são representados de formas diferentes: números inteiros usam uma codificação própria, números com casas decimais (reais) também, e textos geralmente são convertidos em códigos (como o ASCII ou o Unicode).
+   Nem tudo no computador é número, mas tudo precisa virar número para ser entendido por ele. Por isso, diferentes tipos de dados são representados de formas diferentes: números inteiros usam uma codificação própria, números com casas decimais (reais) também, e textos geralmente são convertidos em códigos (como o ASCII ou o Unicode).
 
-Imagens, áudios e vídeos são ainda mais interessantes: uma imagem, por exemplo, pode ser vista como uma grande tabela de números que representam a cor de cada pixel. Já o áudio é uma sequência de valores que representam variações no som ao longo do tempo. Cada tipo de dado tem sua própria “roupa digital”, mas todos usam os mesmos princípios numéricos por trás.
+   Imagens, áudios e vídeos são ainda mais interessantes: uma imagem, por exemplo, pode ser vista como uma grande tabela de números que representam a cor de cada pixel. Já o áudio é uma sequência de valores que representam variações no som ao longo do tempo. Cada tipo de dado tem sua própria “roupa digital”, mas todos usam os mesmos princípios numéricos por trás.
 
 
  * Codificação e Padrões:
 
-Para garantir que todos os computadores falem a mesma “língua”, usamos padrões de codificação. Por exemplo, o texto “Olá!” pode ser convertido em números usando o padrão ASCII ou Unicode, permitindo que qualquer máquina (em qualquer lugar do mundo) consiga entender e exibir a mensagem corretamente.
+   Para garantir que todos os computadores falem a mesma “língua”, usamos padrões de codificação. Por exemplo, o texto “Olá!” pode ser convertido em números usando o padrão ASCII ou Unicode, permitindo que qualquer máquina (em qualquer lugar do mundo) consiga entender e exibir a mensagem corretamente.
 
-Esses padrões funcionam como acordos internacionais: não importa se o computador está no Japão ou no Brasil, ele saberá que o número 65 representa a letra "A" no ASCII. Isso garante a compatibilidade e a interoperabilidade entre sistemas, algo essencial no mundo hiperconectado de hoje.
+   Esses padrões funcionam como acordos internacionais: não importa se o computador está no Japão ou no Brasil, ele saberá que o número 65 representa a letra "A" no ASCII. Isso garante a compatibilidade e a interoperabilidade entre sistemas, algo essencial no mundo hiperconectado de hoje.
 
 
  * Detecção e Correção de Erros:
 
-Como qualquer sistema, a transmissão de dados pode sofrer interferências. Por isso, existem técnicas para detectar e corrigir erros. Um dos métodos mais simples é o bit de paridade, que adiciona um bit extra para verificar se os dados foram alterados no caminho.
+   Como qualquer sistema, a transmissão de dados pode sofrer interferências. Por isso, existem técnicas para detectar e corrigir erros. Um dos métodos mais simples é o bit de paridade, que adiciona um bit extra para verificar se os dados foram alterados no caminho.
 
-Mais avançado ainda são os códigos de detecção e correção, como o CRC (Cyclic Redundancy Check) ou os códigos de Hamming. Eles são como revisores de texto digitais, verificando se a informação chegou corretamente e, se possível, corrigindo eventuais falhas: tudo isso automaticamente, sem que o usuário perceba.
+   Mais avançado ainda são os códigos de detecção e correção, como o CRC (Cyclic Redundancy Check) ou os códigos de Hamming. Eles são como revisores de texto digitais, verificando se a informação chegou corretamente e, se possível, corrigindo eventuais falhas: tudo isso automaticamente, sem que o usuário perceba.
 
 
  Em suma, entender como a informação é representada dentro do computador é como descobrir os bastidores de uma peça de teatro: aquilo que parecia mágica começa a fazer sentido. Tudo o que vemos na tela, ouvimos nos alto-falantes ou enviamos pela internet passa, em algum momento, por um processo de codificação, transformação e transporte em forma de números.
