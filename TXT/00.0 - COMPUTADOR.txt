@@ -316,6 +316,29 @@ Pensa nos computadores como veículos. Tem desde a bicicleta (pequena, pessoal, 
 
 
 
+                                 "Representação de Informações"
+
+ Vamos embarcar agora em uma parte fundamental da base da computação: a representação da informação. Em termos simples, trata-se de como o computador “entende” o mundo ao seu redor — números, letras, imagens, sons... tudo isso precisa ser traduzido para uma linguagem que ele consiga interpretar. E essa linguagem, como veremos, é bem diferente da que usamos no nosso dia a dia.
+
+ Imagine que o computador é um turista em um país estrangeiro, onde tudo é estranho e codificado de uma forma própria. Para se comunicar, ele precisa de um dicionário digital, cheio de regras bem definidas. Esse conjunto de regras é o que permite a transformação de algo abstrato (como a letra “A” ou o som de uma risada) em algo que a máquina consegue processar. 
+
+ Vamos explorar agora os principais blocos dessa linguagem.
+
+ * Sistema binário (0s e 1s):
+
+   O sistema binário é o alfabeto nativo do computador. Em vez de usar os 10 dígitos do sistema decimal (de 0 a 9), os computadores usam apenas dois símbolos: 0 e 1. Esses dois valores representam estados elétricos simples (ligado ou desligado) e são a base de todo processamento digital.
+
+   Pense no binário como um interruptor de luz: ou está aceso (1) ou apagado (0). Agora imagine uma sala com milhares desses interruptores ligados e desligados em diferentes combinações: é assim que o computador representa números, textos, imagens e qualquer outro dado. É simples, mas incrivelmente poderoso.
+
+
+ * Bits, Bytes e Unidades de Medida:
+
+Se o 0 e o 1 são as “letras” do idioma do computador, os bits são essas letras individuais. Um bit é a menor unidade de informação que existe. Quando agrupamos 8 bits, formamos um byte, que é a quantidade mínima de dados com que os computadores normalmente trabalham.
+
+A partir daí, usamos medidas maiores como kilobyte (KB), megabyte (MB), gigabyte (GB), e assim por diante, cada uma multiplicando a anterior por 1.024. É como uma régua digital: com ela, podemos medir desde uma mensagem simples de texto até um vídeo em altíssima resolução.
+
+
+
 
 
 
