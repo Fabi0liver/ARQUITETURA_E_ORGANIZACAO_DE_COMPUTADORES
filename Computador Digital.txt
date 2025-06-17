@@ -2,13 +2,24 @@
 
   - O que é um computador (máquina de processar informações)
 
+
   - Contexto histórico e Gerações dos computadores
+
 
   - Entrada, processamento, saída e armazenamento (modelo IPO)
 
+
+  - Função e Estrutura de Computadores
+
+
+  - Arquitetura e Organização de Computadores
+
+
   - Diferença entre hardware e software
 
+
   - Tipos de computadores (desktop, servidor, embarcado, etc.)
+
 
   - Componentes Do Computador (Hardware):
       
@@ -52,11 +63,13 @@
 
       Sistema binário (0s e 1s)
 
-      Bits e bytes
+      Bits, Bytes e Unidades de Medida
 
-      Codificação de texto (ASCII, Unicode)
+      Representação de Tipos de Dados (Números inteiros, Números reais, Texto, Imagens, Áudio e Vídeo)
 
-      Representação de números e imagens
+      Codificação e Padrões
+
+      Erros e detecção/correção de erros
 
 
   - Lógica e Eletrônica Digital:
@@ -70,37 +83,9 @@
       Flip-flops e registradores
 
 
-  - Arquitetura de Computadores:
-
-      Estrutura de uma CPU (ULA, registradores, controle)
-
-      Memória cache e hierarquia de memória
-
-      Pipeline, clock e ciclos de instrução
-
-      Arquiteturas CISC vs RISC
-
-
-  - Organização de Computadores:
-
-      Barramentos (de dados, endereço, controle)
-
-      Modo de execução de instruções
-
-      Módulos de entrada e saída (I/O)
-
-      DMA (acesso direto à memória)
-
-
   - Pensamento Computacional
 
-      Algoritmos
-
-      Estruturas de dados básicas
-
-      Resolução de problemas de forma lógica
-
-
+      
   - Linguagens de Programação e Compilação
 
       Linguagem de máquina vs Assembly
@@ -112,14 +97,37 @@
       Lógica de programação
 
 
+  - Sistemas Operacionais
+
+
+  - Conectividade e Redes
+
+
   - Computadores no Mundo Real
 
       Aplicações em sistemas embarcados, celulares, servidores
 
-      Internet e redes de computadores
-
       Computação em nuvem
 
       Cibersegurança básica
+
+      Impactos da tecnologia na sociedade
+
+      Inclusão digital
+
+
+  - Tópicos Emergentes
+
+      Internet das Coisas (IoT)
+
+      Inteligência Artificial no Cotidiano
+
+      Computação Quântica
+
+      Computação Neuromórfica
+
+      Sistemas reconfiguráveis (FPGA)
+
+
 
   
