@@ -96,7 +96,7 @@
       Flip-flops e registradores
 
 
- 
+  - Sistemas Operacionais
 
       
   - Linguagens de Programação e Compilação
@@ -108,9 +108,6 @@
       Compiladores e interpretadores
 
       Lógica de programação
-
-
-  - Sistemas Operacionais
 
 
   - Conectividade e Redes
