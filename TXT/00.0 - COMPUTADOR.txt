@@ -486,7 +486,7 @@ Pensa no computador como se fosse uma orquestra. O hardware são os instrumentos
 
 
 
-                                       " Sistemas Operacionais"
+                                       "Sistemas Operacionais"
 
 Imagina por um instante que o seu computador é como uma grande empresa. Nessa empresa, há várias pessoas trabalhando (os programas), tem gente chegando e saindo (os usuários), tem materiais chegando (os dados), máquinas operando (os componentes físicos), e até departamentos diferentes (como a memória, o processador, os dispositivos de entrada/saída). Agora pensa: se não tiver alguém coordenando tudo isso, vira uma bagunça, né? Pois bem — quem faz esse papel de coordenador é o Sistema Operacional (SO). Ele é como o gerente geral da empresa que garante que tudo funcione de forma organizada, segura e eficiente.
 
