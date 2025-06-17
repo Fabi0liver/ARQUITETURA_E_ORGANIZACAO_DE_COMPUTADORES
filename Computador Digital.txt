@@ -6,6 +6,22 @@
   - Contexto histórico e Gerações dos computadores
 
 
+  - Tipos de computadores (desktop, servidor, embarcado, etc.)
+
+
+   - Pensamento Computacional
+
+      Coleta de dados
+  
+      Analise de dados
+  
+      Representação de dados
+  
+      Decompor Problemas
+  
+      Abstração
+
+
   - Entrada, processamento, saída e armazenamento (modelo IPO)
 
 
@@ -16,9 +32,6 @@
 
 
   - Diferença entre hardware e software
-
-
-  - Tipos de computadores (desktop, servidor, embarcado, etc.)
 
 
   - Componentes Do Computador (Hardware):
@@ -83,7 +96,7 @@
       Flip-flops e registradores
 
 
-  - Pensamento Computacional
+ 
 
       
   - Linguagens de Programação e Compilação
