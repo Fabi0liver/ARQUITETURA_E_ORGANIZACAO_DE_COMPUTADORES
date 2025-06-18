@@ -233,58 +233,101 @@ costumam aparecer no nosso dia a dia (ou em cenários bem mais extremos).
  Em suma, conhecer os diferentes tipos de computadores nos ajuda a entender como a tecnologia está em tudo: desde o 
 celular no nosso bolso até gigantes que simulam o clima do planeta. Cada tipo foi criado com um propósito 
 específico, e juntos, formam uma enorme engrenagem que move o mundo digital  e o físico também. Entender essa 
-diversidade é essencial para quem está trilhando o caminho da Ciência da Computação. Afinal, em algum momento, você 
-vai interagir com muitos desses tipos: direta ou indiretamente. 
+diversidade é essencial para quem está trilhando o caminho da Ciência da Computação. Afinal, em algum momento, você vai interagir com muitos desses tipos: direta ou indiretamente. 
 
 
 
                                       "Pensamento Computacional" 
 
- Esse conceito é como uma lente especial que usamos para entender, organizar e resolver problemas de maneira lógica, eficiente e criativa: algo essencial não só para programar computadores, mas também para lidar com os desafios da vida moderna. Pensamento Computacional é a arte de pensar como um computador… mas com o toque humano da criatividade.
+ Esse conceito é como uma lente especial que usamos para entender, organizar e resolver problemas de maneira 
+lógica, eficiente e criativa: algo essencial não só para programar computadores, mas também para lidar com os 
+desafios da vida moderna. Pensamento Computacional é a arte de pensar como um computador… mas com o toque humano da 
+criatividade.
 
- Muita gente associa o Pensamento Computacional apenas à programação, mas ele vai muito além. Ele envolve raciocínio lógico, análise crítica, capacidade de organizar informações e dividir grandes problemas em pedaços menores: tudo isso é útil tanto no mundo digital quanto no mundo físico. Por isso, essa habilidade está presente tanto nos códigos e algoritmos que controlam os sistemas, quanto nas estruturas físicas do computador que executam essas ideias, como circuitos, sensores e dispositivos de entrada. 
+ Muita gente associa o Pensamento Computacional apenas à programação, mas ele vai muito além. Ele envolve 
+raciocínio lógico, análise crítica, capacidade de organizar informações e dividir grandes problemas em pedaços 
+menores: tudo isso é útil tanto no mundo digital quanto no mundo físico. Por isso, essa habilidade está presente 
+tanto nos códigos e algoritmos que controlam os sistemas, quanto nas estruturas físicas do computador que executam 
+essas ideias, como circuitos, sensores e dispositivos de entrada. 
 
- Agora que temos essa visão geral, bora entender melhor as habilidades principais do pensamento computacional? Vamos por partes:
+ Agora que temos essa visão geral, bora entender melhor as habilidades principais do pensamento computacional? 
+Vamos por partes:
 
 
  * Coleta de dados:
 
-   A coleta de dados é o primeiro passo: antes de resolver qualquer problema, precisamos entender o que está acontecendo. É como um detetive juntando pistas: você observa, escuta, mede, entrevista, pesquisa. Em computação, isso pode significar ler sensores, receber cliques de um usuário, ou processar formulários. No nosso dia a dia, é quando paramos para observar padrões ou reunir informações antes de tomar uma decisão. Afinal, não dá pra resolver um problema sem saber do que ele se trata, certo?
+   A coleta de dados é o primeiro passo: antes de resolver qualquer problema, precisamos entender o que está 
+  acontecendo. É como um detetive juntando pistas: você observa, escuta, mede, entrevista, pesquisa. Em computação, 
+  isso pode significar ler sensores, receber cliques de um usuário, ou processar formulários. No nosso dia a dia, é 
+  quando paramos para observar padrões ou reunir informações antes de tomar uma decisão. Afinal, não dá pra 
+  resolver um problema sem saber do que ele se trata, certo?
 
-   Fisicamente, os computadores também fazem essa coleta por meio de dispositivos de entrada, como teclados, microfones, câmeras ou sensores. Esses equipamentos capturam dados do mundo real (sons, imagens, toques) e transformam tudo isso em sinais digitais que o sistema pode entender. Ou seja, o pensamento computacional começa bem antes do código: ele começa no momento em que o computador "escuta" o mundo ao seu redor.
+   Fisicamente, os computadores também fazem essa coleta por meio de dispositivos de entrada, como teclados, 
+  microfones, câmeras ou sensores. Esses equipamentos capturam dados do mundo real (sons, imagens, toques) e 
+  transformam tudo isso em sinais digitais que o sistema pode entender. Ou seja, o pensamento computacional começa 
+  bem antes do código: ele começa no momento em que o computador "escuta" o mundo ao seu redor.
 
 
  * Análise de dados:
 
-   Depois de coletar os dados, vem a análise: aqui buscamos entender o que os dados nos dizem. É como montar um quebra-cabeça, procurando padrões, outliers, comportamentos e tendências. Em programação, isso pode ser feito com estatísticas, gráficos ou algoritmos que extraem conhecimento. É como quando um médico avalia exames ou quando você compara preços antes de comprar algo online.
+   Depois de coletar os dados, vem a análise: aqui buscamos entender o que os dados nos dizem. É como montar um  
+  quebra-cabeça, procurando padrões, outliers, comportamentos e tendências. Em programação, isso pode ser feito com 
+  estatísticas, gráficos ou algoritmos que extraem conhecimento. É como quando um médico avalia exames ou quando 
+  você compara preços antes de comprar algo online.
 
-   Na parte física do computador, essa análise é feita com apoio da CPU (o cérebro da máquina) que executa cálculos, filtros e ordenações com uma rapidez impressionante. Mas veja: quem decide o que analisar e como analisar é o humano por trás da lógica. O pensamento computacional é justamente essa ponte entre nossa intenção e a capacidade da máquina de executar tarefas complexas de análise.
+   Na parte física do computador, essa análise é feita com apoio da CPU (o cérebro da máquina) que executa 
+  cálculos, filtros e ordenações com uma rapidez impressionante. Mas veja: quem decide o que analisar e como 
+  analisar é o humano por trás da lógica. O pensamento computacional é justamente essa ponte entre nossa intenção e  
+  a capacidade da máquina de executar tarefas complexas de análise.
 
 
  * Representação de dados:
 
-   Depois de entender os dados, precisamos representá-los de forma clara... afinal, informação só é útil se a gente consegue interpretar. A representação pode ser um gráfico, uma tabela, um mapa ou até uma animação. Isso ajuda tanto os humanos quanto os sistemas a visualizarem o que está acontecendo. Representar bem é comunicar bem.
+   Depois de entender os dados, precisamos representá-los de forma clara... afinal, informação só é útil se a gente 
+  consegue interpretar. A representação pode ser um gráfico, uma tabela, um mapa ou até uma animação. Isso ajuda 
+  tanto os humanos quanto os sistemas a visualizarem o que está acontecendo. Representar bem é comunicar bem.
 
-   Fisicamente, essa representação se manifesta nos dispositivos de saída, como monitores, impressoras ou LEDs. Quando o computador exibe um gráfico na tela ou envia um relatório para ser impresso, ele está convertendo informação digital em forma visual ou palpável. O pensamento computacional exige essa visão dupla: entender o conteúdo e escolher a melhor maneira de mostrá-lo, tanto para humanos quanto para máquinas.
+   Fisicamente, essa representação se manifesta nos dispositivos de saída, como monitores, impressoras ou LEDs. 
+  Quando o computador exibe um gráfico na tela ou envia um relatório para ser impresso, ele está convertendo 
+  informação digital em forma visual ou palpável. O pensamento computacional exige essa visão dupla: entender o 
+  conteúdo e escolher a melhor maneira de mostrá-lo, tanto para humanos quanto para máquinas.
 
 
  * Decompor Problemas:
 
-   Agora entramos numa das habilidades mais poderosas: a decomposição. Isso significa quebrar um problema grande em pedaços menores e mais fáceis de resolver. É como dividir um projeto de faculdade em tarefas menores, ou resolver uma equação resolvendo antes as operações internas. Em programação, isso vira funções, módulos e blocos lógicos. Tudo começa ficando mais simples.
+   Agora entramos numa das habilidades mais poderosas: a decomposição. Isso significa quebrar um problema grande em 
+  pedaços menores e mais fáceis de resolver. É como dividir um projeto de faculdade em tarefas menores, ou resolver 
+  uma equação resolvendo antes as operações internas. Em programação, isso vira funções, módulos e blocos lógicos. 
+  Tudo começa ficando mais simples.
 
-   Esse raciocínio tem reflexos diretos no projeto físico dos computadores. Se você olhar para um sistema como a placa-mãe, verá que ela é composta por partes menores: processador, slots de memória, conectores... Cada um tem sua função. Assim como nós, os computadores também se organizam por partes que colaboram entre si, e isso é a essência da decomposição: criar ordem dentro da complexidade.
+   Esse raciocínio tem reflexos diretos no projeto físico dos computadores. Se você olhar para um sistema como a 
+  placa-mãe, verá que ela é composta por partes menores: processador, slots de memória, conectores... Cada um tem 
+  sua função. Assim como nós, os computadores também se organizam por partes que colaboram entre si, e isso é a 
+  essência da decomposição: criar ordem dentro da complexidade.
 
 
  * Abstração:
 
-   Por fim, temos a abstração, que é como criar uma visão simplificada de algo complexo, mantendo apenas o que é essencial. Por exemplo: quando usamos um app de música, não precisamos entender o código por trás dele. Ou quando desenhamos um mapa de metrô, omitimos ruas e prédios... só importa o caminho. Abstrair é escolher o que mostrar e o que esconder.
+   Por fim, temos a abstração, que é como criar uma visão simplificada de algo complexo, mantendo apenas o que é 
+  essencial. Por exemplo: quando usamos um app de música, não precisamos entender o código por trás dele. Ou quando 
+  desenhamos um mapa de metrô, omitimos ruas e prédios... só importa o caminho. Abstrair é escolher o que mostrar e 
+  o que esconder.
 
-   Fisicamente, os computadores também lidam com abstrações o tempo todo. A própria linguagem de programação é uma camada de abstração sobre a eletrônica que realmente executa os comandos. A gente escreve "print('Olá')" e o computador converte isso em milhares de instruções elétricas invisíveis. O pensamento computacional nos ajuda a navegar entre essas camadas... da ideia até os circuitos.
+   Fisicamente, os computadores também lidam com abstrações o tempo todo. A própria linguagem de programação é uma 
+  camada de abstração sobre a eletrônica que realmente executa os comandos. A gente escreve "print('Olá')" e o 
+  computador converte isso em milhares de instruções elétricas invisíveis. O pensamento computacional nos ajuda a 
+  navegar entre essas camadas... da ideia até os circuitos.
 
 
- Em suma, o pensamento computacional é muito mais do que uma técnica: é uma forma de ver o mundo com olhos estruturados, curiosos e criativos. Ele nos treina para observar melhor, simplificar o que parece complicado, resolver problemas de forma lógica e trabalhar com a tecnologia de maneira inteligente e eficiente. É uma habilidade para a vida toda... tanto na programação quanto na tomada de decisões do dia a dia.
+ Em suma, o pensamento computacional é muito mais do que uma técnica: é uma forma de ver o mundo com olhos 
+estruturados, curiosos e criativos. Ele nos treina para observar melhor, simplificar o que parece complicado, 
+resolver problemas de forma lógica e trabalhar com a tecnologia de maneira inteligente e eficiente. É uma 
+habilidade para a vida toda... tanto na programação quanto na tomada de decisões do dia a dia.
 
- E o mais bonito disso tudo é perceber que o pensamento computacional não está apenas no código ou na tela, mas também na física do computador, no funcionamento dos seus componentes e na maneira como organizamos as informações para que tudo funcione em harmonia. Aprender a pensar como um computador, sem deixar de ser humano, é o segredo para dominar esse universo fascinante.
+ E o mais bonito disso tudo é perceber que o pensamento computacional não está apenas no código ou na tela, mas 
+também na física do computador, no funcionamento dos seus componentes e na maneira como organizamos as informações 
+para que tudo funcione em harmonia. Aprender a pensar como um computador, sem deixar de ser humano, é o segredo 
+para dominar esse universo fascinante.
 
 
 
