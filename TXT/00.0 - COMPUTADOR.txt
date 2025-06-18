@@ -1,4 +1,4 @@
-                                             COMPUTADOR
+                                              COMPUTADOR
 
 
  Imagine o computador como um grande cozinheiro universal das informações. Ele não inventa receitas sozinho (isso é 
@@ -31,20 +31,37 @@ lógica, eletrônica e criatividade. É esse universo que começamos a explorar 
 
 
 
-                            "Contexto histórico e Gerações dos computadores"
+                             "Contexto histórico e Gerações dos computadores"
 
- A ideia de "computar" já é bem antiga, estamos falando de milhares de anos atrás! Civilizações como a babilônica e a egípcia já inventavam ferramentas para contar e calcular, como o famoso ábaco. Mas os computadores eletrônicos, do jeitinho que conhecemos hoje, só começaram a aparecer mesmo no século XX. E o que motivou essa criação? Principalmente a necessidade de resolver cálculos complexos de forma mais rápida e precisa, algo que ficou especialmente urgente em períodos históricos turbulentos, como a Segunda Guerra Mundial.
+ A ideia de "computar" já é bem antiga, estamos falando de milhares de anos atrás! Civilizações como a babilônica e 
+a egípcia já inventavam ferramentas para contar e calcular, como o famoso ábaco. Mas os computadores eletrônicos, 
+do jeitinho que conhecemos hoje, só começaram a aparecer mesmo no século XX. E o que motivou essa criação? 
+Principalmente a necessidade de resolver cálculos complexos de forma mais rápida e precisa, algo que ficou 
+especialmente urgente em períodos históricos turbulentos, como a Segunda Guerra Mundial.
 
- Durante a guerra, por exemplo, cientistas construíram máquinas enormes para decifrar códigos secretos, calcular trajetórias de projéteis e tratar dados estratégicos. Um dos nomes mais marcantes dessa época foi o Colossus, usado para decifrar mensagens da máquina Enigma, dos nazistas. A partir dessas experiências, nasceu a computação moderna. Desde então, a história dos computadores tem sido contada em “gerações”, como se fossem capítulos de um livro, onde cada um marca uma mudança significativa na tecnologia, no tamanho, na velocidade e na utilidade desses dispositivos.
+ Durante a guerra, por exemplo, cientistas construíram máquinas enormes para decifrar códigos secretos, calcular 
+trajetórias de projéteis e tratar dados estratégicos. Um dos nomes mais marcantes dessa época foi o Colossus, usado 
+para decifrar mensagens da máquina Enigma, dos nazistas. A partir dessas experiências, nasceu a computação moderna. 
+Desde então, a história dos computadores tem sido contada em “gerações”, como se fossem capítulos de um livro, onde 
+cada um marca uma mudança significativa na tecnologia, no tamanho, na velocidade e na utilidade desses 
+dispositivos.
 
- Agora que já temos o contexto histórico, que tal dar uma olhada nas cinco gerações de computadores? Cada uma é como uma fase de evolução de um super-herói: começa desajeitado, vai se aprimorando, ganha novos “poderes”... e hoje tá praticamente criando sua própria consciência! 
+ Agora que já temos o contexto histórico, que tal dar uma olhada nas cinco gerações de computadores? Cada uma é 
+como uma fase de evolução de um super-herói: começa desajeitado, vai se aprimorando, ganha novos “poderes”... e 
+hoje tá praticamente criando sua própria consciência! 
 
 
  * Primeira Geração (década de 1940 a 1950): "Os monstros a válvula"
 
-   A primeira geração de computadores foi marcada por máquinas gigantescas que funcionavam com válvulas eletrônicas (pensa nelas como lâmpadas que controlavam o fluxo de eletricidade). Essas válvulas eram sensíveis, esquentavam muito, quebravam com frequência e consumiam uma energia absurda. O ENIAC, por exemplo, era um verdadeiro dinossauro eletrônico: ocupava uma sala inteira, tinha mais de 18 mil válvulas e pesava dezenas de toneladas.
+   A primeira geração de computadores foi marcada por máquinas gigantescas que funcionavam com válvulas eletrônicas 
+  (pensa nelas como lâmpadas que controlavam o fluxo de eletricidade). Essas válvulas eram sensíveis, esquentavam 
+  muito, quebravam com frequência e consumiam uma energia absurda. O ENIAC, por exemplo, era um verdadeiro 
+  dinossauro eletrônico: ocupava uma sala inteira, tinha mais de 18 mil válvulas e pesava dezenas de toneladas.
 
-   Esses computadores eram lentos se comparados aos padrões atuais, e programá-los era um verdadeiro desafio: tudo precisava ser feito por meio de painéis com cabos e interruptores. Mesmo assim, eles representaram uma revolução. Foi a primeira vez que máquinas eletrônicas passaram a resolver problemas matemáticos que antes exigiam dias (ou semanas) de cálculos humanos.
+   Esses computadores eram lentos se comparados aos padrões atuais, e programá-los era um verdadeiro desafio: tudo 
+  precisava ser feito por meio de painéis com cabos e interruptores. Mesmo assim, eles representaram uma revolução. 
+  Foi a primeira vez que máquinas eletrônicas passaram a resolver problemas matemáticos que antes exigiam dias (ou 
+  semanas) de cálculos humanos.
 
 
  * Segunda Geração (década de 1950 a 1960): "O surgimento dos transistores"
