@@ -230,6 +230,7 @@ costumam aparecer no nosso dia a dia (ou em cenários bem mais extremos).
   dia, mas os cientistas estão animadíssimos com o potencial deles. Se tudo der certo, tarefas que levariam anos em 
   um supercomputador tradicional poderiam ser resolvidas em segundos por um quântico.
 
+
  Em suma, conhecer os diferentes tipos de computadores nos ajuda a entender como a tecnologia está em tudo: desde o 
 celular no nosso bolso até gigantes que simulam o clima do planeta. Cada tipo foi criado com um propósito 
 específico, e juntos, formam uma enorme engrenagem que move o mundo digital  e o físico também. Entender essa 
