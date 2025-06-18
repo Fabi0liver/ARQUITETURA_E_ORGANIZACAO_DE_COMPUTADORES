@@ -101,16 +101,18 @@
       
   - Linguagens de Programação e Compilação
 
-      Linguagem de máquina vs Assembly
+      Lógica de programação
+
+      Linguagem de máquina 
+
+      Assembly e Assembler
 
       Linguagens de alto nível (Python, C, Java)
 
       Compiladores e interpretadores
 
-      Lógica de programação
 
-
-  - Conectividade e Redes
+  - Conectividade entre computadores e Redes
 
 
   - Computadores no Mundo Real
