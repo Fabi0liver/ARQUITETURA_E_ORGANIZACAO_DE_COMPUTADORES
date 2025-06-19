@@ -858,18 +858,17 @@ mundo em 0s e 1s e ainda assim fazê-lo parecer tão humano é, sem dúvida, uma
 
                                  "Memória e Hierarquia de Memórias"
 
- Você já parou pra pensar em como um computador consegue lembrar de tudo o que faz? Desde abrir um programa até 
-salvar um arquivo, tudo envolve um processo cuidadoso de guardar e recuperar informações. Essa capacidade de 
-“lembrar” é o que chamamos de memória... mas aqui, diferente da memória humana, ela é feita de circuitos, 
-velocidades e hierarquias muito bem definidas. E sim, há toda uma organização para decidir o que fica mais perto da 
-CPU, o que fica guardado por mais tempo e o que pode ser descartado com facilidade.
+ Depois de entender como as informações são representadas dentro do computador, como números, textos, imagens ou 
+sons, é natural a gente se perguntar: onde e como essas informações são guardadas enquanto o computador trabalha? E 
+mais: como o sistema decide o que guardar primeiro, o que manter por perto, o que pode ficar “na gaveta” e o que 
+vai direto para o “arquivo morto”? É aí que entra o fascinante universo da memória e da hierarquia de memórias.
 
- Entender essa hierarquia de memórias é como olhar para uma estante de ferramentas: algumas ficam bem à mão porque 
-você usa o tempo todo, outras estão numa gaveta mais distante, e algumas estão lá no fundo do armário, porque você 
-só usa de vez em quando. O computador faz algo parecido para equilibrar velocidade, custo e capacidade de 
-armazenamento. 
+ A memória, para o computador, funciona quase como nosso próprio cérebro: há lembranças que acessamos rápido (como 
+o nome de um amigo próximo), outras que estão mais “distantes” (como uma fórmula que aprendemos no ensino médio), e 
+outras que precisamos procurar num caderno antigo ou na internet. O computador faz algo parecido, e para isso 
+organiza suas memórias em níveis, priorizando velocidade e proximidade. 
 
- Vamos conhecer os principais tipos de memória e como eles se organizam nessa hierarquia?
+ Vamos entender como essa hierarquia funciona, de cima para baixo?
 
  * Registradores:
 
