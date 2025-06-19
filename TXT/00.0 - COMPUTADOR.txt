@@ -776,7 +776,7 @@ digital é uma ponte entre o mundo da matemática pura e a tecnologia concreta q
 
 
 
-                                  "Representação de Informações"
+                                     "Representação de Informações"
 
  Vamos embarcar agora em uma parte fundamental da base da computação: a representação da informação. Em termos 
 simples, trata-se de como o computador “entende” o mundo ao seu redor: números, letras, imagens, sons... tudo isso 
@@ -853,6 +853,54 @@ de números.
  Essa base conceitual é o alicerce sobre o qual todo o universo digital é construído. E por mais técnico que pareça 
 no começo, ela revela uma beleza matemática e lógica que é tanto precisa quanto elegante. Afinal, transformar o 
 mundo em 0s e 1s e ainda assim fazê-lo parecer tão humano é, sem dúvida, uma das grandes façanhas da computação.
+
+
+
+                                 "Memória e Hierarquia de Memórias"
+
+ Você já parou pra pensar em como um computador consegue lembrar de tudo o que faz? Desde abrir um programa até salvar um arquivo, tudo envolve um processo cuidadoso de guardar e recuperar informações. Essa capacidade de “lembrar” é o que chamamos de memória... mas aqui, diferente da memória humana, ela é feita de circuitos, velocidades e hierarquias muito bem definidas. E sim, há toda uma organização para decidir o que fica mais perto da CPU, o que fica guardado por mais tempo e o que pode ser descartado com facilidade.
+
+ Entender essa hierarquia de memórias é como olhar para uma estante de ferramentas: algumas ficam bem à mão porque você usa o tempo todo, outras estão numa gaveta mais distante, e algumas estão lá no fundo do armário, porque você só usa de vez em quando. O computador faz algo parecido para equilibrar velocidade, custo e capacidade de armazenamento. 
+
+ Vamos conhecer os principais tipos de memória e como eles se organizam nessa hierarquia?
+
+ * Registradores:
+
+   No topo da hierarquia, bem ao lado do processador, estão os registradores. São os mais rápidos e também os mais pequenos em capacidade. Eles funcionam como um bloquinho de notas que o processador usa para guardar dados temporários enquanto faz cálculos. Imagine um chef de cozinha que, durante o preparo de uma receita, mantém à vista um post-it com as próximas etapas: é rápido, direto, e fica ali só enquanto ele precisa.
+
+   Por serem extremamente velozes, os registradores são caríssimos de produzir, e por isso sua quantidade é bem limitada. Ainda assim, sem eles, o processador teria que ir buscar dados em lugares mais lentos, o que faria o sistema perder desempenho. Então, mesmo sendo pequenos, eles são essenciais para que o processador trabalhe com agilidade.
+
+
+ * Memória Cache:
+
+   Descendo um degrau, encontramos a memória cache: aquela ajudante eficiente que antecipa o que o processador vai precisar e já deixa à mão. Ela age como um assistente pessoal que conhece os hábitos do chefe e já separa os ingredientes antes mesmo do pedido. A cache armazena dados e instruções que foram acessados recentemente ou que são frequentemente usados, reduzindo o tempo que a CPU levaria para buscar essas informações na RAM.
+
+   A cache é dividida em níveis: L1 (mais rápida e menor), L2 e L3 (um pouco mais lentas, porém maiores). Tudo isso para manter o equilíbrio entre velocidade e volume. Sem ela, a CPU passaria muito tempo "andando pela casa" procurando coisas em vez de executar tarefas. Com ela, a performance sobe consideravelmente.
+
+
+ * Memória Principal (RAM):
+
+   A RAM, ou memória principal, é como uma grande bancada de trabalho. Ela armazena os dados e programas em uso enquanto o computador está ligado. Tudo que você abre (navegador, editor de texto, música) está sendo mantido temporariamente na RAM. Quando você desliga o computador, ela "esquece" tudo, pois é uma memória volátil.
+
+   A RAM é mais lenta que a cache, mas tem uma capacidade muito maior. Pense numa cozinha onde a bancada é ampla o bastante pra fazer várias receitas ao mesmo tempo, mas ainda depende de ingredientes que vieram do armário (cache) ou da dispensa (memória secundária). Quanto mais RAM você tiver, mais coisas pode fazer simultaneamente, sem travar.
+
+
+ * Memórias Secundárias:
+
+   As memórias secundárias são os nossos conhecidos HDs e SSDs ou seja, o “guarda-roupa” do computador, onde você realmente guarda seus arquivos de forma permanente. Aqui ficam seus documentos, músicas, vídeos e até o sistema operacional. São bem maiores em capacidade, mas também bem mais lentos que a RAM.
+
+   A diferença entre HD (mecânico) e SSD (eletrônico) é parecida com a diferença entre um toca-fitas e um pen drive. O SSD é muito mais rápido, silencioso e confiável. Ainda assim, ambos têm a função de serem o local onde as informações permanecem guardadas mesmo depois de desligar o computador.
+
+
+ * Memórias Terciárias e Off-line:
+
+   No final da hierarquia, temos as memórias terciárias e off-line, como DVDs, fitas magnéticas, pen drives ou até armazenamento em nuvem. Essas memórias são usadas para backup, transporte ou arquivamento de dados que não precisam estar sempre disponíveis. É como ter um baú no sótão: você guarda coisas importantes, mas que só acessa de vez em quando.
+
+   Embora não estejam sempre conectadas ao sistema, elas cumprem um papel crucial em termos de segurança e longevidade dos dados. Afinal, nem tudo precisa estar ao alcance imediato. Algumas coisas podem (e devem) estar guardadas com cuidado, prontas para serem recuperadas quando necessário.
+
+ No geral, a hierarquia de memórias é uma solução engenhosa para equilibrar velocidade, custo e capacidade dentro do computador. Cada tipo de memória tem sua função, desde os dados usados em tempo real até o arquivo antigo arquivado por segurança. O sistema funciona de forma escalonada, como uma escada, onde o que é mais usado está no topo (rápido e acessível) e o que é menos usado está mais abaixo, guardado com eficiência.
+
+ Conhecer essa hierarquia ajuda a entender como o computador toma decisões sobre onde buscar e armazenar dados, otimizando desempenho e garantindo funcionalidade. Essa lógica de priorização também reflete o pensamento computacional: organizar, hierarquizar, antecipar e otimizar. Afinal, por trás de toda ação digital, há uma estrutura inteligente e invisível trabalhando em perfeita sincronia.
 
 
 
