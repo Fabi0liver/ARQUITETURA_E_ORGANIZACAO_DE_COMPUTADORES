@@ -368,15 +368,37 @@ simples que sistemas gigantes operam, desde um caixa eletrônico até uma nave e
 
                                   "Função e Estrutura de Computadores"
 
- Vamos dar mais um passo nessa jornada pela base dos computadores: agora olhando para sua função e estrutura, ou seja, o que eles fazem e como são organizados internamente. Imagine que estamos abrindo o capô de uma máquina poderosa, não só para ver as peças, mas para entender como elas trabalham juntas pra realizar tudo que pedimos com um clique. 
+ Vamos dar mais um passo nessa jornada pela base dos computadores: agora olhando para sua função e estrutura, ou 
+seja, o que eles fazem e como são organizados internamente. Imagine que estamos abrindo o capô de uma máquina 
+poderosa, não só para ver as peças, mas para entender como elas trabalham juntas pra realizar tudo que pedimos com 
+um clique. 
 
- Todo computador tem uma função principal: processar informações. Seja um jogo, uma planilha ou uma música, tudo envolve receber dados, transformá-los de alguma forma e entregar um resultado. Isso segue o clássico modelo que a gente já viu antes: entrada, processamento, saída, armazenamento. A mágica acontece quando essas etapas trabalham de forma coordenada. Dá pra pensar num restaurante: a entrada é o pedido do cliente, o processamento é a cozinha preparando a refeição, a saída é o prato servido na mesa, e o armazenamento é a despensa onde os ingredientes ficam guardados.
+ Todo computador tem uma função principal: processar informações. Seja um jogo, uma planilha ou uma música, tudo 
+envolve receber dados, transformá-los de alguma forma e entregar um resultado. Isso segue o clássico modelo que a 
+gente já viu antes: entrada, processamento, saída, armazenamento. A mágica acontece quando essas etapas trabalham 
+de forma coordenada. Dá pra pensar num restaurante: a entrada é o pedido do cliente, o processamento é a cozinha 
+preparando a refeição, a saída é o prato servido na mesa, e o armazenamento é a despensa onde os ingredientes ficam 
+guardados.
 
- Agora, pra que isso funcione, existe uma estrutura organizacional básica que é quase como um organograma do computador. Os componentes se dividem em quatro grandes funções: unidade de processamento, unidade de controle, unidade de memória e unidades de entrada e saída. A unidade de processamento (geralmente a CPU) é o "chefe da operação", fazendo os cálculos e tomando decisões rápidas. A unidade de controle coordena tudo como um maestro, dizendo quem faz o quê e quando. A memória mantém os dados disponíveis para acesso rápido, como uma bancada de trabalho cheia de ferramentas à mão. Já as entradas e saídas são nossos olhos, ouvidos e mãos na interação com o computador.
+ Agora, pra que isso funcione, existe uma estrutura organizacional básica que é quase como um organograma do 
+computador. Os componentes se dividem em quatro grandes funções: unidade de processamento, unidade de controle, 
+unidade de memória e unidades de entrada e saída. A unidade de processamento (geralmente a CPU) é o "chefe da 
+operação", fazendo os cálculos e tomando decisões rápidas. A unidade de controle coordena tudo como um maestro, 
+dizendo quem faz o quê e quando. A memória mantém os dados disponíveis para acesso rápido, como uma bancada de 
+trabalho cheia de ferramentas à mão. Já as entradas e saídas são nossos olhos, ouvidos e mãos na interação com o 
+computador.
 
- Juntas, essas partes formam o que chamamos de estrutura funcional do computador, e o mais interessante é como tudo é feito de forma lógica, previsível e eficiente. Cada parte sabe seu papel, se comunica por meio de barramentos (que funcionam como ruas por onde os dados circulam), e tudo acontece em sincronia graças a um relógio interno (o clock) que marca o ritmo. Pensar no computador como uma orquestra, ou uma fábrica automatizada, ajuda bastante a entender a precisão e a cooperação envolvida entre os seus módulos internos.
+ Juntas, essas partes formam o que chamamos de estrutura funcional do computador, e o mais interessante é como tudo 
+é feito de forma lógica, previsível e eficiente. Cada parte sabe seu papel, se comunica por meio de barramentos 
+(que funcionam como ruas por onde os dados circulam), e tudo acontece em sincronia graças a um relógio interno (o 
+clock) que marca o ritmo. Pensar no computador como uma orquestra, ou uma fábrica automatizada, ajuda bastante a 
+entender a precisão e a cooperação envolvida entre os seus módulos internos.
 
- Em resumo, a função e a estrutura de um computador caminham lado a lado: uma diz o que o sistema deve fazer, e a outra garante como isso será feito, conectando os elementos essenciais como cérebro, memória, sentidos e músculos de uma máquina digital. Quando entendemos essa lógica, passamos a enxergar os computadores com outros olhos: como sistemas vivos, cheios de propósito e organização, prontos pra transformar dados brutos em resultados incríveis com apenas alguns cliques.
+ Em resumo, a função e a estrutura de um computador caminham lado a lado: uma diz o que o sistema deve fazer, e a 
+outra garante como isso será feito, conectando os elementos essenciais como cérebro, memória, sentidos e músculos 
+de uma máquina digital. Quando entendemos essa lógica, passamos a enxergar os computadores com outros olhos: como 
+sistemas vivos, cheios de propósito e organização, prontos pra transformar dados brutos em resultados incríveis com 
+apenas alguns cliques.
 
 
 
