@@ -438,32 +438,59 @@ máquina incrivelmente bem planejada, onde cada detalhe faz diferença no que ve
 
                                   "Diferença entre Hardware e Software"
 
- Depois de navegar com tranquilidade pelos fundamentos da computação, chegou a hora de abordar uma das distinções mais clássicas e essenciais desse universo: a diferença entre hardware e software. Esses dois termos aparecem o tempo todo, em quase qualquer conversa sobre tecnologia, mas muita gente ainda se confunde na prática. A boa notícia é que essa diferença é simples de entender  e com a ajuda de algumas analogias, fica ainda mais fácil!
+ Depois de navegar com tranquilidade pelos fundamentos da computação, chegou a hora de abordar uma das distinções 
+mais clássicas e essenciais desse universo: a diferença entre hardware e software. Esses dois termos aparecem o 
+tempo todo, em quase qualquer conversa sobre tecnologia, mas muita gente ainda se confunde na prática. A boa 
+notícia é que essa diferença é simples de entender  e com a ajuda de algumas analogias, fica ainda mais fácil!
 
-Pensa no computador como se fosse uma orquestra. O hardware são os instrumentos físicos (violinos, tambores, flautas) tudo o que você pode tocar e ver. Já o software é a partitura e o maestro, que dizem o que cada instrumento deve fazer, em que momento e com qual intensidade. Um não vive sem o outro: sem a partitura, os músicos não sabem o que tocar; sem os instrumentos, não há como produzir som. É essa relação simbiótica que torna possível toda a "música" que um computador executa.
+ Pensa no computador como se fosse uma orquestra. O hardware são os instrumentos físicos (violinos, tambores, 
+flautas) tudo o que você pode tocar e ver. Já o software é a partitura e o maestro, que dizem o que cada 
+instrumento deve fazer, em que momento e com qual intensidade. Um não vive sem o outro: sem a partitura, os músicos 
+não sabem o que tocar; sem os instrumentos, não há como produzir som. É essa relação simbiótica que torna possível 
+toda a "música" que um computador executa.
 
- Para saber mais sobre o papel de cada um deles e como eles se conectam no funcionamento do computador? Vamos mergulhar numa explicação mais completa de cada um deles separadamente?
+ Para saber mais sobre o papel de cada um deles e como eles se conectam no funcionamento do computador? Vamos  mergulhar numa explicação mais completa de cada um deles separadamente?
 
 
  * Hardware: a parte física da computação:
 
-   O hardware é tudo aquilo que você pode pegar, ver, chutar (mas não recomendo fazer isso). Estamos falando de componentes como o teclado, o monitor, o mouse, o processador, os cabos, a placa-mãe, a memória RAM, entre outros. Se você abrir um computador ou olhar ao redor dele, tudo que tem presença física faz parte do hardware. Ele é como o corpo do sistema.
+   O hardware é tudo aquilo que você pode pegar, ver, chutar (mas não recomendo fazer isso). Estamos falando de 
+  componentes como o teclado, o monitor, o mouse, o processador, os cabos, a placa-mãe, a memória RAM, entre 
+  outros. Se você abrir um computador ou olhar ao redor dele, tudo que tem presença física faz parte do hardware. 
+  Ele é como o corpo do sistema.
 
-   Mas não pense que o hardware está limitado ao que usamos em computadores de mesa ou notebooks. Ele também está presente em celulares, caixas eletrônicos, smart TVs, carros modernos, e até em geladeiras inteligentes. Ou seja, é o suporte físico que torna a computação possível, seja para rodar um joguinho leve ou controlar uma fábrica inteira.
+   Mas não pense que o hardware está limitado ao que usamos em computadores de mesa ou notebooks. Ele também está 
+  presente em celulares, caixas eletrônicos, smart TVs, carros modernos, e até em geladeiras inteligentes. Ou seja, 
+  é o suporte físico que torna a computação possível, seja para rodar um joguinho leve ou controlar uma fábrica 
+  inteira.
 
-   É importante lembrar que o hardware sozinho não faz nada. Um teclado sem instruções sobre o que fazer com as teclas pressionadas é só um pedaço de plástico com botões. E aí é que entra o seu par perfeito: o software.
+   É importante lembrar que o hardware sozinho não faz nada. Um teclado sem instruções sobre o que fazer com as 
+  teclas pressionadas é só um pedaço de plástico com botões. E aí é que entra o seu par perfeito: o software.
 
 
  * Software: a mente por trás da máquina:
 
-   O software é o conjunto de instruções, programas e dados que dizem ao hardware o que fazer e como fazer. Ele é intangível, você não consegue tocar um software, apenas interagir com ele. É como a inteligência ou o cérebro que comanda o corpo. E ele pode vir em várias formas: sistemas operacionais, aplicativos, jogos, navegadores de internet, editores de texto, entre muitos outros.
+   O software é o conjunto de instruções, programas e dados que dizem ao hardware o que fazer e como fazer. Ele é 
+  intangível, você não consegue tocar um software, apenas interagir com ele. É como a inteligência ou o cérebro que 
+  comanda o corpo. E ele pode vir em várias formas: sistemas operacionais, aplicativos, jogos, navegadores de 
+  internet, editores de texto, entre muitos outros.
 
-   Pensa que o software é como uma receita de bolo. O hardware são os utensílios e ingredientes (a assadeira, o forno, os ovos, a farinha). Mas sem uma receita dizendo como misturar, em que ordem e por quanto tempo assar, você não teria um bolo, apenas um monte de itens soltos. O software dá vida e propósito ao hardware, guiando cada passo do que ele deve executar.
+   Pensa que o software é como uma receita de bolo. O hardware são os utensílios e ingredientes (a assadeira, o 
+  forno, os ovos, a farinha). Mas sem uma receita dizendo como misturar, em que ordem e por quanto tempo assar, 
+  você não teria um bolo, apenas um monte de itens soltos. O software dá vida e propósito ao hardware, guiando cada 
+  passo do que ele deve executar.
 
-   Existem diferentes tipos de software: os de sistema (como o Windows, Linux, macOS), que gerenciam os recursos do computador; os aplicativos (como Word, Photoshop ou seu navegador), que executam tarefas específicas; e até os utilitários, que fazem “manutenções internas”, como limpeza de arquivos ou verificação de vírus. E todos eles dependem de um hardware funcionando por trás.
+   Existem diferentes tipos de software: os de sistema (como o Windows, Linux, macOS), que gerenciam os recursos do 
+  computador; os aplicativos (como Word, Photoshop ou seu navegador), que executam tarefas específicas; e até os 
+  utilitários, que fazem “manutenções internas”, como limpeza de arquivos ou verificação de vírus. E todos eles 
+  dependem de um hardware funcionando por trás.
 
 
- No fim das contas, hardware e software são como corpo e mente, ferramenta e instrução, palco e espetáculo. Um depende do outro para que a computação aconteça. E quanto mais você estuda essa relação, mais percebe que o segredo de todo sistema funcional está no equilíbrio e na harmonia entre os dois. Entender essa diferença é fundamental para quem está se aprofundando em Ciência da Computação, porque ela serve de base para tópicos muito mais complexos: desde arquitetura de sistemas até desenvolvimento de software
+ No fim das contas, hardware e software são como corpo e mente, ferramenta e instrução, palco e espetáculo. Um 
+depende do outro para que a computação aconteça. E quanto mais você estuda essa relação, mais percebe que o segredo 
+de todo sistema funcional está no equilíbrio e na harmonia entre os dois. Entender essa diferença é fundamental 
+para quem está se aprofundando em Ciência da Computação, porque ela serve de base para tópicos muito mais 
+complexos: desde arquitetura de sistemas até desenvolvimento de software
 
 
 
