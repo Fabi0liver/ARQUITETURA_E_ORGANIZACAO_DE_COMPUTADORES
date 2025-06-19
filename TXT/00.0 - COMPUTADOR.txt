@@ -50,7 +50,6 @@ dispositivos.
 como uma fase de evolução de um super-herói: começa desajeitado, vai se aprimorando, ganha novos “poderes”... e 
 hoje tá praticamente criando sua própria consciência! 
 
-
  * Primeira Geração (década de 1940 a 1950): "Os monstros a válvula"
 
    A primeira geração de computadores foi marcada por máquinas gigantescas que funcionavam com válvulas eletrônicas 
@@ -115,7 +114,6 @@ hoje tá praticamente criando sua própria consciência!
   neurociência, robótica e até filosofia, levantando perguntas sobre o papel das máquinas no nosso futuro. Um mundo 
   que antes era só ficção científica, agora está cada vez mais ao nosso alcance.
 
-
  Em suma, quando a gente olha para esse panorama geral, dá até um friozinho na barriga pensar o quanto a computação 
 já evoluiu, e o quanto ainda tem pra crescer! Cada geração trouxe avanços que mudaram completamente o modo como 
 vivemos, nos comunicamos e até como pensamos o mundo ao nosso redor.
@@ -134,9 +132,10 @@ cada tipo foi criado para atender necessidades diferentes, com capacidades, tama
 
  Pensa nos computadores como veículos. Tem desde a bicicleta (pequena, pessoal, portátil) até o caminhão gigante de 
 mineração (enorme, específico, robusto). Cada um tem um papel, um uso ideal e um conjunto de características que o 
-torna único. Vamos passear por esses "modelos de computadores" e entender para que servem, como funcionam e onde 
-costumam aparecer no nosso dia a dia (ou em cenários bem mais extremos).
+torna único. 
 
+ Vamos passear por esses "modelos de computadores" e entender para que servem, como funcionam e onde 
+costumam aparecer no nosso dia a dia (ou em cenários bem mais extremos).
 
  * Computadores Pessoais (PCs): 
 
@@ -230,7 +229,6 @@ costumam aparecer no nosso dia a dia (ou em cenários bem mais extremos).
   dia, mas os cientistas estão animadíssimos com o potencial deles. Se tudo der certo, tarefas que levariam anos em 
   um supercomputador tradicional poderiam ser resolvidas em segundos por um quântico.
 
-
  Em suma, conhecer os diferentes tipos de computadores nos ajuda a entender como a tecnologia está em tudo: desde o 
 celular no nosso bolso até gigantes que simulam o clima do planeta. Cada tipo foi criado com um propósito 
 específico, e juntos, formam uma enorme engrenagem que move o mundo digital  e o físico também. Entender essa 
@@ -253,7 +251,6 @@ essas ideias, como circuitos, sensores e dispositivos de entrada.
 
  Agora que temos essa visão geral, bora entender melhor as habilidades principais do pensamento computacional? 
 Vamos por partes:
-
 
  * Coleta de dados:
 
@@ -318,7 +315,6 @@ Vamos por partes:
   camada de abstração sobre a eletrônica que realmente executa os comandos. A gente escreve "print('Olá')" e o 
   computador converte isso em milhares de instruções elétricas invisíveis. O pensamento computacional nos ajuda a 
   navegar entre essas camadas... da ideia até os circuitos.
-
 
  Em suma, o pensamento computacional é muito mais do que uma técnica: é uma forma de ver o mundo com olhos 
 estruturados, curiosos e criativos. Ele nos treina para observar melhor, simplificar o que parece complicado, 
@@ -451,7 +447,6 @@ toda a "música" que um computador executa.
 
  Para saber mais sobre o papel de cada um deles e como eles se conectam no funcionamento do computador? Vamos  mergulhar numa explicação mais completa de cada um deles separadamente?
 
-
  * Hardware: a parte física da computação:
 
    O hardware é tudo aquilo que você pode pegar, ver, chutar (mas não recomendo fazer isso). Estamos falando de 
@@ -484,7 +479,6 @@ toda a "música" que um computador executa.
   computador; os aplicativos (como Word, Photoshop ou seu navegador), que executam tarefas específicas; e até os 
   utilitários, que fazem “manutenções internas”, como limpeza de arquivos ou verificação de vírus. E todos eles 
   dependem de um hardware funcionando por trás.
-
 
  No fim das contas, hardware e software são como corpo e mente, ferramenta e instrução, palco e espetáculo. Um 
 depende do outro para que a computação aconteça. E quanto mais você estuda essa relação, mais percebe que o segredo 
