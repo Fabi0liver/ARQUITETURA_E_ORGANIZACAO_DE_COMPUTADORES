@@ -1035,18 +1035,38 @@ fazer, enquanto ele se ocupa de orquestrar tudo por trás dos bastidores.
 
                                 "Linguagens de Programação e Compilação"
 
- Agora que você já entendeu o papel essencial dos Sistemas Operacionais (esses verdadeiros maestros que coordenam todos os recursos do computador) chegou a hora de olhar com mais carinho para quem cria as instruções que o computador vai seguir: os programadores. Se o SO organiza o funcionamento interno da máquina, é a programação que define o que a máquina deve fazer. E para isso, usamos um conjunto muito especial de ferramentas: as linguagens de programação. Elas são como os idiomas que usamos para nos comunicar com o computador, só que com regras bem mais rígidas e objetivas. Afinal, diferentemente de um humano, um computador não adivinha, não interpreta com empatia — ele só faz exatamente o que mandamos… do jeito que mandamos.
+ Agora que você já entendeu o papel essencial dos Sistemas Operacionais (esses verdadeiros maestros que coordenam 
+todos os recursos do computador) chegou a hora de olhar com mais carinho para quem cria as instruções que o 
+computador vai seguir: os programadores. Se o SO organiza o funcionamento interno da máquina, é a programação que 
+define o que a máquina deve fazer. E para isso, usamos um conjunto muito especial de ferramentas: as linguagens de 
+programação. Elas são como os idiomas que usamos para nos comunicar com o computador, só que com regras bem mais 
+rígidas e objetivas. Afinal, diferentemente de um humano, um computador não adivinha, não interpreta com empatia 
+ele só faz exatamente o que mandamos… do jeito que mandamos.
 
- Imagine, por exemplo, que você quer ensinar um robô a fazer café. Se você disser apenas "faz um café aí", ele vai ficar parado, confuso porque precisa de instruções detalhadas: ligar a cafeteira, medir a água, adicionar o pó, esperar o tempo certo. Programar é exatamente isso: dar comandos claros, passo a passo, para que a máquina execute algo com precisão. E como o computador só entende 0s e 1s, precisamos de uma ponte que transforme nossas ideias em linguagem binária. Essa ponte envolve lógica, estruturas, linguagens específicas e, claro, ferramentas que traduzem esse "meio do caminho": como os compiladores e interpretadores.
+ Imagine, por exemplo, que você quer ensinar um robô a fazer café. Se você disser apenas "faz um café aí", ele vai 
+ficar parado, confuso porque precisa de instruções detalhadas: ligar a cafeteira, medir a água, adicionar o pó, 
+esperar o tempo certo. Programar é exatamente isso: dar comandos claros, passo a passo, para que a máquina execute 
+algo com precisão. E como o computador só entende 0s e 1s, precisamos de uma ponte que transforme nossas ideias em 
+linguagem binária. Essa ponte envolve lógica, estruturas, linguagens específicas e, claro, ferramentas que traduzem 
+esse "meio do caminho": como os compiladores e interpretadores.
 
- Então, para compreender como a programação conversa com o computador, vamos explorar alguns tópicos essenciais: desde a lógica de programação até as linguagens e ferramentas que fazem essa tradução acontecer na prática. Preparado para mergulhar nesse universo?
+ Então, para compreender como a programação conversa com o computador, vamos explorar alguns tópicos essenciais: 
+desde a lógica de programação até as linguagens e ferramentas que fazem essa tradução acontecer na prática. 
+Preparado para mergulhar nesse universo?
 
 
  * Lógica de Programação:
 
-   Antes de escrever qualquer código, a gente precisa saber pensar como um programador. Isso significa ser capaz de entender o problema, traçar os passos para resolvê-lo e transformar esses passos em instruções bem organizadas. Essa habilidade se chama lógica de programação, e é como montar um plano para construir algo: tipo uma receita de bolo. A diferença é que, no lugar de ingredientes e forno, usamos comandos, variáveis, estruturas de repetição e decisões.
+   Antes de escrever qualquer código, a gente precisa saber pensar como um programador. Isso significa ser capaz de 
+  entender o problema, traçar os passos para resolvê-lo e transformar esses passos em instruções bem organizadas. 
+  Essa habilidade se chama lógica de programação, e é como montar um plano para construir algo: tipo uma receita de 
+  bolo. A diferença é que, no lugar de ingredientes e forno, usamos comandos, variáveis, estruturas de repetição e 
+  decisões.
 
-   Por exemplo, se quisermos fazer um programa que diga se uma pessoa pode dirigir, podemos pensar: “Se a idade for maior ou igual a 18, então pode dirigir. Senão, não pode.” Essa estrutura de decisão é uma base da lógica de programação, e está presente em praticamente todas as linguagens. Aprender lógica é como aprender a organizar o pensamento de forma estruturada, e isso é útil não só na programação, mas na vida como um todo!
+   Por exemplo, se quisermos fazer um programa que diga se uma pessoa pode dirigir, podemos pensar: “Se a idade for 
+  maior ou igual a 18, então pode dirigir. Senão, não pode.” Essa estrutura de decisão é uma base da lógica de 
+  programação, e está presente em praticamente todas as linguagens. Aprender lógica é como aprender a organizar o 
+  pensamento de forma estruturada, e isso é útil não só na programação, mas na vida como um todo!
 
 
  * Linguagem de Máquina:
