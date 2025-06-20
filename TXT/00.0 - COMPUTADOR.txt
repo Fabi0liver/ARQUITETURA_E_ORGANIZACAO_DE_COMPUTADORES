@@ -1093,7 +1093,7 @@ Preparado para mergulhar nesse universo?
   tradutor direto que pega uma instrução de “baixo nível” e converte em bits. Ainda que seja trabalhoso programar 
   em Assembly, em algumas situações (como sistemas embarcados, controladores de hardware ou otimizações críticas) 
   ele continua sendo usado pela sua precisão e velocidade. É o tipo de linguagem que nos deixa bem próximos do 
-  "metal".
+  "hardware".
 
 
  * Linguagens de Alto Nível:
