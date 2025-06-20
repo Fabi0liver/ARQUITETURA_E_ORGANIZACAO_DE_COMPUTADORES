@@ -1359,14 +1359,33 @@ responsabilidade.
 
 
 
-                                     "Conclusão Sobre Computadores"
+                                    "Conclusão Sobre Computadores"
 
- Ao longo desse estudo sobre computadores, a gente caminhou por um universo vasto e fascinante. Desde o entendimento básico sobre o que é um computador até as possibilidades futuras, como computação quântica e inteligência artificial, foi possível perceber que o computador vai muito além de uma máquina de plástico ou metal com tela e teclado. Ele é, na verdade, o coração de boa parte do nosso mundo moderno: presente em tudo, mesmo onde não parece. Navegamos por sua arquitetura, organização, linguagens, redes, aplicações no mundo real e os horizontes que ainda estão por vir.
+ Ao longo desse estudo sobre computadores, a gente caminhou por um universo vasto e fascinante. Desde o 
+entendimento básico sobre o que é um computador até as possibilidades futuras, como computação quântica e 
+inteligência artificial, foi possível perceber que o computador vai muito além de uma máquina de plástico ou metal 
+com tela e teclado. Ele é, na verdade, o coração de boa parte do nosso mundo moderno: presente em tudo, mesmo onde 
+não parece. Navegamos por sua arquitetura, organização, linguagens, redes, aplicações no mundo real e os horizontes 
+que ainda estão por vir.
 
- Durante esse percurso, ficou claro que compreender computadores não é apenas entender como ligar uma máquina ou escrever código. É mergulhar em um ecossistema onde lógica, eletrônica, matemática e criatividade convivem. É como aprender a ler os bastidores de uma peça de teatro complexa, onde tudo precisa acontecer com precisão para que o espetáculo diante do público (ou seja, o funcionamento aparente das tecnologias) se desenrole sem erros.
+ Durante esse percurso, ficou claro que compreender computadores não é apenas entender como ligar uma máquina ou 
+escrever código. É mergulhar em um ecossistema onde lógica, eletrônica, matemática e criatividade convivem. É como 
+aprender a ler os bastidores de uma peça de teatro complexa, onde tudo precisa acontecer com precisão para que o 
+espetáculo diante do público (ou seja, o funcionamento aparente das tecnologias) se desenrole sem erros.
 
- E é curioso pensar como tudo isso se conecta com a vida cotidiana. Desde um microcontrolador escondido numa torradeira até servidores de datacenters que mantêm nossas redes sociais funcionando, os computadores estão por toda parte. Eles não são apenas "máquinas": são ferramentas que estendem as capacidades humanas, seja para resolver problemas, criar soluções ou transformar a sociedade em escala global. Cada componente, cada linguagem, cada estrutura arquitetônica, faz parte de uma grande engrenagem que, funcionando em harmonia, dá vida ao nosso mundo digital.
+ E é curioso pensar como tudo isso se conecta com a vida cotidiana. Desde um microcontrolador escondido numa 
+torradeira até servidores de datacenters que mantêm nossas redes sociais funcionando, os computadores estão por 
+toda parte. Eles não são apenas "máquinas": são ferramentas que estendem as capacidades humanas, seja para resolver 
+problemas, criar soluções ou transformar a sociedade em escala global. Cada componente, cada linguagem, cada 
+estrutura arquitetônica, faz parte de uma grande engrenagem que, funcionando em harmonia, dá vida ao nosso mundo 
+digital.
 
- Mais do que dominar ferramentas ou conceitos técnicos, entender computadores é um convite à criação. Ao compreender como funcionam essas máquinas e o que está por trás delas, abrimos espaço para imaginar, projetar e construir novas possibilidades. A Ciência da Computação nos dá as chaves para explorar esse mundo e, mais ainda, para moldá-lo.
+ Mais do que dominar ferramentas ou conceitos técnicos, entender computadores é um convite à criação. Ao 
+compreender como funcionam essas máquinas e o que está por trás delas, abrimos espaço para imaginar, projetar e 
+construir novas possibilidades. A Ciência da Computação nos dá as chaves para explorar esse mundo e, mais ainda, 
+para moldá-lo.
 
- Assim, concluímos que estudar computadores é como aprender a decifrar o próprio alfabeto do século XXI. É ganhar fluência em um idioma que o mundo fala cada vez mais, e se preparar para dialogar com ele de forma ativa, crítica e criativa. E mesmo sendo um caminho técnico, ele é, acima de tudo, humano: feito por pessoas, para pessoas, em constante evolução.
+ Assim, concluímos que estudar computadores é como aprender a decifrar o próprio alfabeto do século XXI. É ganhar 
+fluência em um idioma que o mundo fala cada vez mais, e se preparar para dialogar com ele de forma ativa, crítica e 
+criativa. E mesmo sendo um caminho técnico, ele é, acima de tudo, humano: feito por pessoas, para pessoas, em 
+constante evolução.
