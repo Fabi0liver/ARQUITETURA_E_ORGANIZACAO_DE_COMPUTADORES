@@ -1359,7 +1359,7 @@ responsabilidade.
 
 
 
-                                   "Conclusão Sobre Computadores"
+                                     "Conclusão Sobre Computadores"
 
  Ao longo desse estudo sobre computadores, a gente caminhou por um universo vasto e fascinante. Desde o entendimento básico sobre o que é um computador até as possibilidades futuras, como computação quântica e inteligência artificial, foi possível perceber que o computador vai muito além de uma máquina de plástico ou metal com tela e teclado. Ele é, na verdade, o coração de boa parte do nosso mundo moderno: presente em tudo, mesmo onde não parece. Navegamos por sua arquitetura, organização, linguagens, redes, aplicações no mundo real e os horizontes que ainda estão por vir.
 
