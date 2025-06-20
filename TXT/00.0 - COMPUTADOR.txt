@@ -1171,9 +1171,11 @@ movimento: uma teia invisível, mas essencial, feita de tecnologia, protocolos e
 
                                       "Computadores no Mundo Real"
 
- Imagina só: se antes os computadores eram vistos como máquinas enormes em salas trancadas, hoje eles estão em todo lugar (às vezes até onde a gente menos espera). Desde o celular no seu bolso até o semáforo inteligente da cidade, passando por caixas eletrônicos, geladeiras conectadas e até o controle remoto da sua TV. Quando falamos sobre computadores no mundo real, estamos falando dessa presença silenciosa, mas essencial, da computação no cotidiano. Eles não estão mais isolados em mesas de escritório: estão embarcados em tudo que precisa "pensar" ou "responder" de alguma forma.
+ Agora que já entendemos como os computadores funcionam por dentro (suas estruturas, memórias, sistemas operacionais e como se conectam em rede) é hora de olhar para onde tudo isso aparece de verdade: no nosso dia a dia. Afinal, estudar computadores não é só entender teoria ou circuitos. É também perceber como toda essa tecnologia se materializa no mundo real, às vezes de forma tão natural que a gente nem percebe que ela está ali.
 
-Esses sistemas são o coração de muitos dos dispositivos e serviços que usamos. Eles coletam dados, tomam decisões em tempo real e ajudam a tornar a vida mais prática, eficiente e conectada. Mas para entender melhor como essa presença se manifesta, vamos explorar alguns tópicos importantes: desde as aplicações físicas dos computadores até os efeitos sociais e a necessidade de acesso digital. 
+ Pensa comigo: se antes os computadores eram vistos como máquinas enormes em salas trancadas, hoje eles estão em todo lugar (às vezes até onde a gente menos espera). Desde o celular no seu bolso até o semáforo inteligente da cidade, passando por caixas eletrônicos, geladeiras conectadas e até o controle remoto da sua TV. Quando falamos sobre computadores no mundo real, estamos falando dessa presença silenciosa, mas essencial, da computação no cotidiano. Eles não estão mais isolados em mesas de escritório: estão embarcados em tudo que precisa "pensar" ou "responder" de alguma forma.
+
+ Esses sistemas são o coração de muitos dos dispositivos e serviços que usamos. Eles coletam dados, tomam decisões em tempo real e ajudam a tornar a vida mais prática, eficiente e conectada. Mas para entender melhor como essa presença se manifesta, vamos explorar alguns tópicos importantes: desde as aplicações físicas dos computadores até os efeitos sociais e a necessidade de acesso digital. 
 
 Bora lá?
 
