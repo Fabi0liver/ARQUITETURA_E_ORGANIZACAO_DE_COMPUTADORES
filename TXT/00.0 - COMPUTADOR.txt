@@ -1133,7 +1133,7 @@ percebe que a máquina não é tão distante assim, basta aprender a conversar c
 
 
 
-                              "Conectividade e Redes entre computadores"
+                                 "Conectividade e Redes entre computadores"
 
  Se no nosso último papo entendemos como os computadores funcionam por dentro... agora é hora de olhar para fora, 
 para como essas máquinas se conectam entre si: Imagine um mundo onde cada computador é como uma ilha solitária. 
