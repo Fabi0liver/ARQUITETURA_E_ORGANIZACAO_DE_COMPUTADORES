@@ -941,7 +941,7 @@ estrutura inteligente e invisível trabalhando em perfeita sincronia.
 
 
 
-                                   "Processamento e Instruções"
+                                       "Processamento e Instruções"
 
  Agora que você já entende como a memória funciona (desde os registradores rápidos até os discos mais lentos chegou 
 a hora de explorar o coração do computador: o processamento. É nesse momento que os dados guardados na memória se 
@@ -998,7 +998,7 @@ dentro, fica mais fácil perceber a elegância da engenharia que transforma elet
 
 
 
-                                       "Sistemas Operacionais"
+                                        "Sistemas Operacionais"
 
  Como vimos anteriormente, o processamento e as instruções são o motor por trás de tudo que o computador executa, 
 elas formam a base sobre a qual qualquer tarefa acontece. Mas aí vem a pergunta: quem organiza tudo isso? Quem 
