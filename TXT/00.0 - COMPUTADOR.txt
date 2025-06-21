@@ -328,7 +328,7 @@ para dominar esse universo fascinante.
 
 
 
-                       "Modelo IPO — Entrada, Processamento, Saída e Armazenamento"
+                        "Modelo IPO — Entrada, Processamento, Saída e Armazenamento"
 
  Agora que você já tem uma noção básica do que é um computador, vamos entender o coração do seu funcionamento: o 
 famoso modelo IPO: Entrada, Processamento e Saída, com o Armazenamento como coadjuvante essencial. E fique 
