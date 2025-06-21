@@ -776,7 +776,7 @@ digital é uma ponte entre o mundo da matemática pura e a tecnologia concreta q
 
 
 
-                                     "Representação de Informações"
+                                      "Representação de Informações"
 
  Vamos embarcar agora em uma parte fundamental da base da computação: a representação da informação. Em termos 
 simples, trata-se de como o computador “entende” o mundo ao seu redor: números, letras, imagens, sons... tudo isso 
