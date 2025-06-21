@@ -488,7 +488,7 @@ complexos: desde arquitetura de sistemas até desenvolvimento de software
 
 
 
-                                      "Componentes do Computador"
+                                       "Componentes do Computador"
 
  Se antes a gente falou sobre o Hardware em geral, agora é hora de abrir o "capô da máquina" e entender como esses 
 componentes funciona por dentro. E, olha, um computador é como um time de futebol: cada jogador tem uma função 
