@@ -705,7 +705,7 @@ domínio terá sobre o mundo digital que está aprendendo a construir.
 
 
 
-                                    "Lógica e Eletrônica Digital"
+                                       "Lógica e Eletrônica Digital"
 
  Vamos mergulhar agora em um dos fundamentos mais empolgantes da ciência da computação: a Lógica e Eletrônica 
 Digital. Mesmo que o nome soe um pouco técnico à primeira vista, acredite estamos falando da essência de como os 
