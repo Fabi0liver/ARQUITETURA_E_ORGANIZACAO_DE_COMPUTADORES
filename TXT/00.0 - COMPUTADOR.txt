@@ -856,7 +856,7 @@ mundo em 0s e 1s e ainda assim fazê-lo parecer tão humano é, sem dúvida, uma
 
 
 
-                                 "Memória e Hierarquia de Memórias"
+                                     "Memória e Hierarquia de Memórias"
 
  Depois de entender como as informações são representadas dentro do computador, como números, textos, imagens ou 
 sons, é natural a gente se perguntar: onde e como essas informações são guardadas enquanto o computador trabalha? E 
