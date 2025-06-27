@@ -13,6 +13,9 @@ Introdução a história da computação
 
 As Origens: Antes dos Computadores Eletrônicos
 
+ Conceito: Ferramentas mecânicas e ideias teóricas que pavimentaram o caminho para a computação moderna.
+
+
   ~2400 a.C. – Ábaco
 
               Criado na Mesopotâmia, foi o primeiro dispositivo de cálculo, usado para realizar operações               
@@ -62,6 +65,7 @@ As Origens: Antes dos Computadores Eletrônicos
 
 Primeira Geração (1940-1956) – Computadores a Válvulas
 
+ Conceito: Computadores eletrônicos baseados em válvulas termiônicas e linguagem de máquina.
 
   1936 – Máquina de Turing
 
@@ -99,6 +103,7 @@ Primeira Geração (1940-1956) – Computadores a Válvulas
 
 Segunda Geração (1956-1964) – Computadores a Transistores
 
+ Conceito: Substituição das válvulas por transistores, com mais eficiência e linguagens de alto nível.
 
   1956 – Introdução dos Transistores
 
@@ -118,8 +123,9 @@ Segunda Geração (1956-1964) – Computadores a Transistores
 
 
 
- Terceira Geração (1964-1971) – Circuitos Integrados
+Terceira Geração (1964-1971) – Circuitos Integrados
 
+ Conceito: Miniaturização com chips e primeiros sistemas operacionais multiprogramáveis.
 
   1964 – Circuitos Integrados
 
@@ -145,6 +151,8 @@ Segunda Geração (1956-1964) – Computadores a Transistores
 
 
 Quarta Geração (1971-Presente) – Microprocessadores e Computadores Pessoais
+
+ Conceito: Início da era dos computadores pessoais e da internet com os microprocessadores.
 
   1971 – Intel 4004
 
@@ -210,6 +218,8 @@ Quarta Geração (1971-Presente) – Microprocessadores e Computadores Pessoais
 
 Futuro e Quinta Geração – Inteligência Artificial e Computação Quântica
 
+ Conceito: Computadores que pensam, aprendem e operam em novas dimensões de informação.
+
   2011 – IBM Watson
 
          Inteligência artificial da IBM vence humanos em um jogo de perguntas e respostas, demonstrando o avanço da 
@@ -230,8 +240,8 @@ Futuro e Quinta Geração – Inteligência Artificial e Computação Quântica
                       transformando a sociedade.
 
 
-Contexto Histórico e Social:
 
+Contexto Histórico e Social:
 
   Estudar os eventos históricos paralelos ajuda a entender por que certos avanços aconteceram:
 
@@ -346,14 +356,4 @@ Movimentos Culturais e Ética na Computação:
 
 
 Conclusão: O que você aprende com essa jornada
-
-
-
-
-
-
-
-
-
-
 
