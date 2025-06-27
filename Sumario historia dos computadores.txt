@@ -1,4 +1,4 @@
-Sumario historia dos computadores
+  Historia dos computadores
 
 
 Introdução a história da computação
@@ -141,6 +141,219 @@ Segunda Geração (1956-1964) – Computadores a Transistores
   1970 – Memória DRAM
 
          Inventada por Robert Dennard, melhorou a capacidade e velocidade da memória dos computadores.
+
+
+
+Quarta Geração (1971-Presente) – Microprocessadores e Computadores Pessoais
+
+  1971 – Intel 4004
+
+         Primeiro microprocessador do mundo, permitindo a criação dos primeiros computadores pessoais.
+
+  1972 – Linguagem C
+
+         Criada para desenvolver sistemas operacionais e aplicativos, sendo amplamente usada até hoje.
+
+  1973 – Ethernet
+
+         Tecnologia que possibilitou a criação de redes locais (LAN), essencial para a internet moderna.
+
+  1975 – Altair 8800
+
+         Primeiro computador pessoal, vendia-se como um kit para entusiastas da computação.
+
+  1976 – Fundação da Apple e Apple I
+
+         Steve Jobs e Steve Wozniak criaram a Apple e lançaram o Apple I, um dos primeiros PCs comerciais.
+
+  1981 – IBM PC
+
+         O computador pessoal da IBM popularizou os PCs no ambiente doméstico e empresarial.
+
+  1983 – TCP/IP e Internet
+
+         O protocolo TCP/IP se tornou o padrão da internet, permitindo a comunicação entre computadores em rede.
+
+  1984 – Macintosh
+
+         Primeiro computador com interface gráfica amigável e mouse, tornando o uso mais acessível.
+
+  1985 – Windows 1.0
+
+         Microsoft lança o Windows, trazendo uma interface gráfica para PCs baseados em MS-DOS.
+
+  1991 – Criação do Linux
+
+         Linus Torvalds desenvolve o Linux, um sistema operacional de código aberto amplamente usado.
+
+  1993 – Primeiros Navegadores Web
+
+         Surgem os primeiros navegadores como Mosaic, que facilitaram o acesso à web.
+
+  1995 – Windows 95
+
+         Revolucionou os sistemas operacionais com interface gráfica melhorada e suporte à internet.
+
+  1998 – Fundação do Google
+
+         Transformou a busca na internet com seu algoritmo eficiente de indexação de páginas.
+
+  2004 – Criação do Facebook
+
+         Popularizou as redes sociais e mudou a forma como as pessoas se conectam online.
+
+  2007 – Lançamento do iPhone
+
+         Revolucionou o mercado de celulares ao introduzir o conceito de smartphones modernos.
+
+
+
+Futuro e Quinta Geração – Inteligência Artificial e Computação Quântica
+
+  2011 – IBM Watson
+
+         Inteligência artificial da IBM vence humanos em um jogo de perguntas e respostas, demonstrando o avanço da 
+        IA.
+
+  2017 – Google TPU
+
+         Criado para acelerar redes neurais e processamento de inteligência artificial.
+
+  2019 – Supremacia Quântica do Google
+
+         O processador Sycamore da Google realiza cálculos que levariam milhares de anos em um computador   
+        convencional.
+
+  Presente e Futuro – IA, Computação Quântica e Nuvem
+
+                      Inteligência artificial, aprendizado de máquina e computação quântica continuam evoluindo e 
+                      transformando a sociedade.
+
+
+Contexto Histórico e Social:
+
+
+  Estudar os eventos históricos paralelos ajuda a entender por que certos avanços aconteceram:
+
+    A Segunda Guerra Mundial como catalisador (criptografia, radar, ENIAC)
+
+    A Guerra Fria e a corrida tecnológica (projetos militares e espaciais)
+
+    Revolução Industrial e seus efeitos na automação
+
+    Economia pós-guerra e a demanda por automação de negócios
+
+
+
+Evolução das Linguagens de Programação:
+
+  As linguagens moldam a forma como pensamos e usamos os computadores:
+
+    Linha do tempo das linguagens (Assembly → FORTRAN → C → Java → Python)
+
+    Diferença entre linguagens de baixo e alto nível
+
+    Paradigmas de programação: imperativo, funcional, orientado a objetos
+
+    Papel da linguagem C na portabilidade e nos sistemas operacionais
+
+
+
+Teoria da Computação e Fundamentos Matemáticos:
+
+  Importante para entender os limites e as possibilidades da computação:
+
+    Máquina de Turing (fundamento do que é “computável”)
+
+    Problemas decidíveis e indecidíveis
+
+    Complexidade algorítmica (P, NP, NP-completo)
+
+    Lógica Booleana e Álgebra de Comutação (base da eletrônica digital)
+
+
+Pioneiros da Computação:
+
+  Além dos mais famosos, há muitos nomes que contribuíram fortemente:
+
+    Grace Hopper e o compilador
+
+    John von Neumann e a arquitetura moderna
+
+    John Backus e o FORTRAN
+
+    Dennis Ritchie e a linguagem C
+
+    Tim Berners-Lee e a criação da Web
+
+
+Evolução do Armazenamento e Mídias:
+
+  Os computadores não seriam úteis sem formas de guardar e acessar dados:
+
+    Cartões perfurados
+
+    Fitas magnéticas
+
+    Discos rígidos e disquetes
+
+    SSDs e armazenamento em nuvem
+
+
+
+Interface Homem-Máquina (IHM):
+
+  Como as pessoas passaram a interagir com os computadores:
+
+    Terminais de texto e linha de comando
+
+    Interfaces gráficas (GUI) e o mouse
+
+    Interfaces por toque e comandos de voz
+
+    Realidade aumentada e interfaces neurais
+
+
+
+História da Internet e das Redes:
+
+  Muito além dos computadores individuais:
+
+    ARPANET e os primeiros experimentos em rede
+
+    TCP/IP e o protocolo da internet
+
+    Criação do WWW por Tim Berners-Lee
+
+    Redes sociais e a Web 2.0
+
+
+
+Movimentos Culturais e Ética na Computação:
+
+  A computação também é um fenômeno social:
+
+    Cultura hacker e software livre
+
+    Surgimento da indústria do software
+
+    Ética, privacidade e uso responsável da tecnologia
+
+    Representatividade de gênero e diversidade no campo da computação
+
+    A ascensão da conectividade móvel
+
+
+
+Conclusão: O que você aprende com essa jornada
+
+
+
+
+
+
+
+
 
 
 
