@@ -1,0 +1,146 @@
+Sumario historia dos computadores
+
+
+Introdução a história da computação
+
+  - O que é computação
+
+  - Diferença entre cálculo e computação
+
+  - Origem do termo "computador"
+
+
+
+As Origens: Antes dos Computadores Eletrônicos
+
+  ~2400 a.C. – Ábaco
+
+              Criado na Mesopotâmia, foi o primeiro dispositivo de cálculo, usado para realizar operações               
+             matemáticas simples.
+
+  1617 – Ossos de Napier
+
+         Criado por John Napier, ajudava em multiplicações e divisões utilizando hastes numeradas.
+
+  1623 – Calculadora de Schickard
+
+         Primeira calculadora mecânica capaz de somar, subtrair, multiplicar e dividir automaticamente.
+
+  1642 – Pascalina
+
+         Inventada por Blaise Pascal, foi a primeira calculadora mecânica funcional, usada para operações básicas.
+
+  1673 – Calculadora de Leibniz
+
+         Desenvolvida por Leibniz, era capaz de multiplicar e dividir, sendo um avanço em relação à Pascalina.
+
+  1801 – Tear de Jacquard
+
+         Criado por Joseph-Marie Jacquard, utilizava cartões perfurados para automatizar padrões em tecidos, um       
+        conceito usado depois em computadores.
+
+  1837 – Máquina Analítica
+
+         Projetada por Charles Babbage, foi a primeira ideia de um computador programável, mas nunca foi 
+        finalizada.
+
+  1843 – Ada Lovelace e o Primeiro Algoritmo
+
+         Ada Lovelace escreveu o primeiro algoritmo para a Máquina Analítica, sendo considerada a primeira 
+        programadora da história.
+
+  1890 – Máquina de Tabulação de Hollerith
+
+         Criada por Herman Hollerith, processava dados do censo dos EUA usando cartões perfurados, acelerando os 
+        cálculos estatísticos.
+
+  1911 – Fundação da IBM
+
+         A empresa de Hollerith se tornou a IBM, que futuramente dominaria o mercado de computadores comerciais.
+
+
+
+Primeira Geração (1940-1956) – Computadores a Válvulas
+
+
+  1936 – Máquina de Turing
+
+         Alan Turing desenvolveu um modelo teórico de computação que fundamentou o conceito de computadores 
+        modernos.
+
+  1938 – Z3
+
+         Criado por Konrad Zuse, foi o primeiro computador programável eletromecânico, usado na Alemanha durante a 
+        Segunda Guerra Mundial.
+
+  1942-1945 – Plankalkül
+
+              Konrad Zuse desenvolve a Plankalkül, a primeira linguagem de programação de alto nível, embora não 
+             tenha sido amplamente utilizada na época.
+
+  1941 – Colossus
+
+          Primeiro computador eletrônico, usado pelos britânicos para decifrar códigos nazistas na Segunda Guerra.
+
+  1946 – ENIAC
+
+
+         Primeiro computador eletrônico de uso geral, utilizado pelo exército dos EUA para cálculos complexos.
+
+  1951 – UNIVAC I
+
+         Primeiro computador comercial, usado pelo governo e empresas para processamento de dados.
+
+  1953 – IBM 701
+
+         Primeiro computador comercial da IBM, voltado para empresas e centros de pesquisa.
+
+
+
+Segunda Geração (1956-1964) – Computadores a Transistores
+
+
+  1956 – Introdução dos Transistores
+
+         Substituíram as válvulas eletrônicas, tornando os computadores menores, mais rápidos e eficientes.
+
+  1957 – Criação da Linguagem Fortran
+
+         Primeira linguagem de programação de alto nível, usada principalmente para cálculos científicos.
+
+  1959 – COBOL
+
+         Linguagem criada para aplicações comerciais, usada até hoje em bancos e sistemas financeiros.
+
+  1959 – IBM 1401
+
+         Um dos primeiros computadores comerciais amplamente adotados, facilitando a digitalização das empresas.
+
+
+
+ Terceira Geração (1964-1971) – Circuitos Integrados
+
+
+  1964 – Circuitos Integrados
+
+         A invenção dos chips reduziu o tamanho e custo dos computadores, tornando-os acessíveis para empresas.
+
+  1964 – IBM System/360
+
+         Primeira linha de computadores compatíveis entre si, permitindo atualizações sem necessidade de trocar     
+        todo o hardware.
+
+  1965 – Tempo Compartilhado
+
+         Permitiu que vários usuários usassem um único computador simultaneamente, melhorando a eficiência.
+
+  1969 – Criação do UNIX
+
+         Sistema operacional poderoso e flexível, base para muitos sistemas modernos, incluindo o Linux e macOS.
+
+  1970 – Memória DRAM
+
+         Inventada por Robert Dennard, melhorou a capacidade e velocidade da memória dos computadores.
+
+
+
