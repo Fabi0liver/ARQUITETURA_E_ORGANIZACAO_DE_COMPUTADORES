@@ -3,11 +3,62 @@
 
 Introdução a história da computação
 
-  - O que é computação
 
-  - Diferença entre cálculo e computação
 
-  - Origem do termo "computador"
+O que é computação?
+
+
+
+Diferença entre cálculo e computação
+
+
+
+Pioneiros da Computação: Mentes que Moldaram o Mundo Digital
+
+
+ - Blaise Pascal: Pioneiro das calculadoras mecânicas
+
+ - Gottfried Wilhelm Leibniz: Pai da notação binária e do cálculo lógico
+
+ - Joseph-Marie Jacquard: Automação com cartões perfurados
+
+ - Charles Babbage: Pai da computação mecânica
+
+ - Ada Lovelace: A primeira programadora da história
+
+ - Alan Turing: Pai da computação teórica
+
+ - Claude Shannon: Pai da teoria da informação
+
+ - John von Neumann: Arquiteto do modelo de computador atual
+
+ - Grace Hopper: Mãe do compilador
+
+ - John Backus: Criador do FORTRAN (a primeira linguagem de programação de alto nível amplamente usada)
+
+ - Dennis Ritchie: Criador da linguagem C ( linguagem pilares da programação moderna)
+
+ - Donald Knuth: Cientista da programação de algoritmos
+
+ - Margaret Hamilton: Engenharia de software moderna
+
+ - Vint Cerf & Bob Kahn: Pais da Internet
+
+ - Tim Berners-Lee: Inventor da Web
+
+
+
+Contexto Histórico e Social:
+
+  Estudar os eventos históricos paralelos ajuda a entender por que certos avanços aconteceram:
+
+    A Segunda Guerra Mundial como catalisador (criptografia, radar, ENIAC)
+
+    A Guerra Fria e a corrida tecnológica (projetos militares e espaciais)
+
+    Revolução Industrial e seus efeitos na automação
+
+    Economia pós-guerra e a demanda por automação de negócios
 
 
 
@@ -241,17 +292,31 @@ Futuro e Quinta Geração – Inteligência Artificial e Computação Quântica
 
 
 
-Contexto Histórico e Social:
+Teoria da Computação e Fundamentos Matemáticos:
 
-  Estudar os eventos históricos paralelos ajuda a entender por que certos avanços aconteceram:
+  Importante para entender os limites e as possibilidades da computação:
 
-    A Segunda Guerra Mundial como catalisador (criptografia, radar, ENIAC)
+    Máquina de Turing (fundamento do que é “computável”)
 
-    A Guerra Fria e a corrida tecnológica (projetos militares e espaciais)
+    Problemas decidíveis e indecidíveis
 
-    Revolução Industrial e seus efeitos na automação
+    Complexidade algorítmica (P, NP, NP-completo)
 
-    Economia pós-guerra e a demanda por automação de negócios
+    Lógica Booleana e Álgebra de Comutação (base da eletrônica digital)
+
+
+
+Evolução do Armazenamento e Mídias:
+
+  Os computadores não seriam úteis sem formas de guardar e acessar dados:
+
+    Cartões perfurados
+
+    Fitas magnéticas
+
+    Discos rígidos e disquetes
+
+    SSDs e armazenamento em nuvem
 
 
 
@@ -266,48 +331,6 @@ Evolução das Linguagens de Programação:
     Paradigmas de programação: imperativo, funcional, orientado a objetos
 
     Papel da linguagem C na portabilidade e nos sistemas operacionais
-
-
-
-Teoria da Computação e Fundamentos Matemáticos:
-
-  Importante para entender os limites e as possibilidades da computação:
-
-    Máquina de Turing (fundamento do que é “computável”)
-
-    Problemas decidíveis e indecidíveis
-
-    Complexidade algorítmica (P, NP, NP-completo)
-
-    Lógica Booleana e Álgebra de Comutação (base da eletrônica digital)
-
-
-Pioneiros da Computação:
-
-  Além dos mais famosos, há muitos nomes que contribuíram fortemente:
-
-    Grace Hopper e o compilador
-
-    John von Neumann e a arquitetura moderna
-
-    John Backus e o FORTRAN
-
-    Dennis Ritchie e a linguagem C
-
-    Tim Berners-Lee e a criação da Web
-
-
-Evolução do Armazenamento e Mídias:
-
-  Os computadores não seriam úteis sem formas de guardar e acessar dados:
-
-    Cartões perfurados
-
-    Fitas magnéticas
-
-    Discos rígidos e disquetes
-
-    SSDs e armazenamento em nuvem
 
 
 
