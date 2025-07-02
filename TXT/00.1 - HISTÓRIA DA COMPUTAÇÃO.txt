@@ -129,17 +129,19 @@
 
                             "Contexto Social e Evolução da Computação"
 
- Antes mesmo de olharmos para as máquinas e chips, é essencial entender o contexto social que impulsionou toda essa revolução tecnológica. A Segunda Guerra Mundial, por exemplo, foi um verdadeiro catalisador para o desenvolvimento da computação. Com a necessidade urgente de decifrar códigos secretos, aprimorar sistemas de radar e realizar cálculos complexos para a artilharia, surgiram máquinas como o ENIAC — o primeiro computador eletrônico de uso geral. Essas demandas militares aceleraram o avanço da tecnologia, mostrando que máquinas podiam ir muito além do que se imaginava até então.
+ A computação não surgiu do nada, ela é o resultado de séculos de descobertas, necessidades humanas e transformações culturais. Muito antes da invenção do computador eletrônico, a humanidade já sentia a necessidade de automatizar tarefas repetitivas. Na Revolução Industrial (séculos XVIII e XIX), máquinas começaram a substituir o trabalho manual em fábricas, e a ideia de controle mecânico tomou forma. O tear de Jacquard, de 1801, usava cartões perfurados para "programar" padrões nos tecidos — uma solução tão engenhosa que seus princípios seriam reutilizados mais tarde em máquinas de calcular e até nos primeiros computadores. Assim, nascia o conceito de entrada automatizada de dados, ainda que de forma rudimentar.
 
- Logo após, a chamada Guerra Fria deu início a uma corrida tecnológica sem precedentes. Estados Unidos e União Soviética investiram pesadamente em projetos militares e espaciais, criando uma competição que impulsionou a criação de computadores cada vez mais poderosos e sofisticados. Essa disputa não era apenas sobre armas, mas também sobre informação, velocidade e capacidade de processamento, o que acabou influenciando diretamente o desenvolvimento da computação para uso civil e comercial.
+ No século XX, enquanto a indústria se desenvolvia, a ciência também dava passos gigantescos. Matemáticos e lógicos como Kurt Gödel, Alonzo Church e Alan Turing investigavam os limites do pensamento lógico e do que seria possível automatizar. Suas ideias eram abstratas, mas fundamentais: o lambda cálculo, os teoremas da incompletude e a máquina de Turing ajudaram a definir, com precisão matemática, o que significa "computar". Era como se estivéssemos criando a linguagem invisível que permitiria às máquinas raciocinar — mesmo que os computadores ainda não existissem de fato.
 
- Paralelamente a esses eventos, a Revolução Industrial, que já vinha transformando a manufatura e a produção desde o século XVIII, começou a se entrelaçar com a automação. Máquinas que antes dependiam exclusivamente de força humana ou animal passaram a ganhar componentes mecânicos e eletrônicos capazes de executar tarefas automaticamente. Isso abriu caminho para o uso da computação em processos industriais, aumentando a eficiência e mudando o perfil do trabalho.
+ A Segunda Guerra Mundial trouxe urgência e recursos para acelerar o desenvolvimento tecnológico. A guerra exigia decisões rápidas baseadas em cálculos complexos, além de soluções para comunicações criptografadas e radares. Foi nesse contexto que surgiram os primeiros computadores eletrônicos, como o Colossus, usado para quebrar códigos, e o ENIAC, capaz de realizar milhares de operações por segundo. A computação deixou de ser apenas uma ideia teórica e passou a ser ferramenta estratégica com aplicações reais.
 
- Por fim, a economia global pós-guerra, especialmente nas décadas de 1950 e 1960, criou uma demanda crescente por automação nos negócios. Escritórios, bancos e grandes empresas precisavam de sistemas para gerenciar dados, contas e operações financeiras de forma rápida e confiável. Tudo isso ajudou a moldar a trajetória da computação, que, para facilitar nosso entendimento, pode ser dividida em gerações — cada uma com suas inovações, desafios e impactos. Nas próximas partes, vamos explorar essas gerações detalhadamente, para entender como chegamos aos computadores que conhecemos hoje.
+ Com o fim da guerra, o mundo mergulhou em avanços técnicos sem precedentes. O transistor, inventado em 1947, e os circuitos integrados nas décadas seguintes permitiram que os computadores se tornassem menores, mais baratos e muito mais poderosos. Ao mesmo tempo, a corrida espacial e a Guerra Fria incentivaram o investimento pesado em tecnologia de ponta, enquanto as empresas buscavam agilidade e automação nos negócios. Universidades como o MIT e Stanford se tornaram polos de inovação, dando origem a linguagens de programação, sistemas operacionais e até ao conceito de software livre. A cultura hacker emergia como uma nova forma de criatividade digital, e, nos anos 70 e 80, empresas como Apple, Microsoft e IBM começaram a levar tudo isso para dentro das casas e escritórios.
+
+ Todo esse cenário de transformações (industriais, científicas, políticas e sociais) pavimentou o caminho para o nascimento e a evolução dos computadores como conhecemos hoje. Para entender melhor como essa jornada se desenvolveu, os especialistas costumam dividir a história da computação em gerações, cada uma marcada por tecnologias, características e impactos bem específicos
 
 
 
-                         "As Origens: Antes dos Computadores Eletrônicos"
+                           "As Origens: Antes dos Computadores Eletrônicos"
 
  Antes de termos a potência dos computadores eletrônicos, muito do que hoje parece óbvio começou com ferramentas mecânicas e ideias visionárias que pavimentaram o caminho para a revolução digital. Essas invenções, mesmo simples, representaram passos gigantescos na forma como a humanidade lidava com informações e cálculos. Elas não só ajudaram a automatizar operações repetitivas, como também abriram espaço para pensar máquinas capazes de “seguir instruções” — o princípio fundamental da computação.
 
@@ -254,7 +256,7 @@
 
 
 
-                   "Segunda Geração (1956–1964) – Computadores a Transistores"
+                     "Segunda Geração (1956–1964) – Computadores a Transistores"
 
  Depois do esforço hercúleo da Primeira Geração, com suas válvulas grandes, quentes e frágeis, a computação deu outro salto gigantesco: a invenção do transistor. Pequeno, confiável e muito mais eficiente que a válvula, o transistor mudou tudo. Os computadores ficaram menores, mais rápidos, menos suscetíveis a falhas e com menor consumo de energia. Foi como trocar uma lamparina por um LED — uma mudança simples na aparência, mas profunda no impacto.
 
@@ -288,7 +290,7 @@
 
 
 
-                       "Terceira Geração (1964–1971) – Circuitos Integrados"
+                         "Terceira Geração (1964–1971) – Circuitos Integrados"
 
  Agora chegamos à Terceira Geração dos Computadores, um momento marcante em que a tecnologia realmente começa a parecer com aquilo que conhecemos hoje (mais rápida, mais compacta e mais próxima do cotidiano). Isso aconteceu na década de 1960, quando a computação passou por uma transformação silenciosa, mas profunda: a miniaturização dos componentes. Com o surgimento dos circuitos integrados, também conhecidos como "chips", tornou-se possível colocar diversos transistores em um único pedaço de silício. Isso reduziu drasticamente o tamanho dos computadores, cortou custos e aumentou a confiabilidade. Era o começo de uma nova era — mais portátil, mais acessível e mais inteligente.
 
@@ -420,7 +422,7 @@
 
 
 
-          "Futuro e Quinta Geração – Inteligência Artificial e Computação Quântica"
+              "Futuro e Quinta Geração – Inteligência Artificial e Computação Quântica"
 
  Chegamos agora à parte mais fascinante dessa jornada: o Futuro da Computação, que também é chamado por muitos de Quinta Geração. Neste momento, não estamos apenas falando de máquinas rápidas e conectadas — estamos falando de computadores que pensam, aprendem e tomam decisões. A inteligência artificial, os algoritmos de aprendizado de máquina e a computação quântica estão abrindo portas para um mundo que até pouco tempo atrás parecia ficção científica. É como se estivéssemos ensinando as máquinas a raciocinar e, em paralelo, inventando um novo jeito de processar o próprio tempo e a informação.
 
