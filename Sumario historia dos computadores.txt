@@ -591,7 +591,68 @@ História da Internet e das Redes:
 
  Conceito: A Internet é resultado de décadas de evolução das redes de computadores. Sua história é cheia de 
           inovações que mudaram a forma como o mundo se comunica, compartilha e vive.
+
+
+  - Primeiras ideias de redes de computadores (anos 1950–60):
+
+     Durante a Guerra Fria, pesquisadores começaram a imaginar sistemas que interligassem computadores à 
+    distância. Conceito de "comutação por pacotes" surge com Paul Baran e Donald Davies.
+
+
+  - ARPANET – A origem da Internet (1969):
+
+     Criada pelo Departamento de Defesa dos EUA (via ARPA), a ARPANET conectava 4 universidades americanas. Foi a 
+    primeira rede de computadores comutada por pacotes.
+
+
+  - TCP/IP – A linguagem da Internet (1983):
+
+     Surge o protocolo TCP/IP, que unificou e padronizou a comunicação entre redes diferentes. A data de adoção 
+    oficial do TCP/IP (1º de janeiro de 1983) é considerada o "nascimento técnico da Internet".
+
+
+  - DNS e endereços legíveis (1984):
+
+     Criação do Sistema de Nomes de Domínio (DNS), que traduz endereços IP em nomes fáceis como www.exemplo.com.
+
+
+  - WWW – A Web é inventada (1991):
+
+     Tim Berners-Lee cria a World Wide Web (WWW), junto com o primeiro navegador e o protocolo HTTP. Agora, 
+    qualquer um podia navegar entre páginas hiperlinkadas.
+
+
+  - A Internet se populariza (anos 1990):
+
+     Provedores de acesso surgem (como AOL, UOL, Terra). Navegadores gráficos como Mosaic e Netscape tornam a 
+    navegação amigável. Começam os e-mails, fóruns, chats e os primeiros sites pessoais.
+
+
+  - Explosão dos serviços online (anos 2000):
+
+     Surgem Google, YouTube, Wikipedia, redes sociais (Orkut, Facebook). Banda larga substitui a internet discada. 
+    Aparece o conceito de Web 2.0: o usuário agora cria conteúdo.
+
+
+  - Internet móvel e redes sem fio (anos 2010):
+
+     Com o 3G, 4G e Wi-Fi, a internet vai para o bolso. Smartphones com navegadores e apps conectados se tornam 
+    padrão. Redes sociais e streaming dominam o tráfego.
+
+
+  - Nuvem, IoT e hiperconectividade:
+
+     Tudo se conecta: celulares, TVs, geladeiras, sensores, carros. A computação em nuvem permite acesso a dados e 
+    serviços de qualquer lugar. Dispositivos inteligentes formam a Internet das Coisas (IoT).
+
+
+  - Internet global via satélite e 5G (presente e futuro):
+
+     Iniciativas como Starlink levam internet a áreas remotas com satélites de baixa órbita. O 5G promete alta 
+    velocidade, baixa latência e suporte a bilhões de dispositivos conectados. Caminhamos para a Web 3.0, 
+    descentralizada e com mais inteligência artificial.
     
+
 
 
 Movimentos Culturais e Ética na Computação:
