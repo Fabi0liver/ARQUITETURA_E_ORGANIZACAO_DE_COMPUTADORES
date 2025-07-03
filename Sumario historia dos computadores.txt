@@ -491,31 +491,12 @@ Evolução das Linguagens de Programação:
 
 
 
-Teoria da Computação e Fundamentos Matemáticos:
+ Evolução dos Sistemas Operacionais:
 
-  Importante para entender os limites e as possibilidades da computação ajudam a formar um panorama mais completo e histórico:
+ Conceito: O sistema operacional é o intermediário entre o hardware e os usuários/programas. Com o tempo, eles se 
+          tornaram mais poderosos, amigáveis e adaptáveis às necessidades de cada era.
 
-    Máquina de Turing (o que é computável)
 
-    Cálculo Lambda (modelo equivalente à Máquina de Turing)
-
-    Problemas decidíveis e indecidíveis
-
-    Autômatos Finitos e Linguagens Formais
-
-    Hierarquia de Chomsky
-
-    Teorema da Incompletude de Gödel
-
-    Funções recursivas e computabilidade
-
-    Complexidade algorítmica (P, NP, NP-completo)
-
-    Reduções e Teoria da NP-completude
-
-    Lógica Booleana e Álgebra de Comutação
-
-    Modelos alternativos de computação (ex: quântica)
 
 
 
@@ -719,6 +700,35 @@ Movimentos Culturais e Ética na Computação:
 
 
 
-
 Conclusão: O que você aprende com essa jornada
+
+
+
+Teoria da Computação e Fundamentos Matemáticos:
+
+  Importante para entender os limites e as possibilidades da computação ajudam a formar um panorama mais completo e histórico:
+
+    Máquina de Turing (o que é computável)
+
+    Cálculo Lambda (modelo equivalente à Máquina de Turing)
+
+    Problemas decidíveis e indecidíveis
+
+    Autômatos Finitos e Linguagens Formais
+
+    Hierarquia de Chomsky
+
+    Teorema da Incompletude de Gödel
+
+    Funções recursivas e computabilidade
+
+    Complexidade algorítmica (P, NP, NP-completo)
+
+    Reduções e Teoria da NP-completude
+
+    Lógica Booleana e Álgebra de Comutação
+
+    Modelos alternativos de computação (ex: quântica)
+
+
 
