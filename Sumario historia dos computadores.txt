@@ -347,7 +347,9 @@ Evolução dos Processadores e do Processamento:
 
 Evolução do Armazenamento e Mídias:
 
- 
+ Conceito: Os computadores não seriam úteis sem formas de guardar e acessar dados. A evolução das mídias de 
+          armazenamento acompanha o avanço da tecnologia.
+
   - Fichas e cilindros perfurados (Armazenamento pré-eletrônico):
 
      Usados em teares e máquinas mecânicas — exemplo: tear de Jacquard e máquinas de Babbage.
@@ -374,7 +376,7 @@ Evolução do Armazenamento e Mídias:
      Usada como RAM, mas também armazenava dados quando desligado (non-volatile). Substituída pela RAM moderna.
 
 
-  - Memória de semicondutores (SRAM, DRAM e DDR):
+  - Memória de semicondutores (SRAM, DRAM, DDR):
 
      Substituíram os núcleos magnéticos.
 
@@ -431,15 +433,61 @@ Evolução do Armazenamento e Mídias:
 
 Evolução das Linguagens de Programação:
 
-  As linguagens moldam a forma como pensamos e usamos os computadores:
+ Conceito: As linguagens de programação são como os idiomas que usamos para dar instruções aos computadores. Ao  
+          longo do tempo, elas evoluíram para se tornarem mais acessíveis, poderosas e próximas do pensamento 
+          humano.nguagem C na portabilidade e nos sistemas operacionais
 
-    Linha do tempo das linguagens (Assembly → FORTRAN → C → Java → Python)
 
-    Diferença entre linguagens de baixo e alto nível
+  - Linguagens de máquina:
+   
+     Instruções escritas diretamente em código binário (0s e 1s). Extremamente difíceis de ler e escrever. Exemplo: 
+    linguagem usada no ENIAC.
 
-    Paradigmas de programação: imperativo, funcional, orientado a objetos
 
-    Papel da linguagem C na portabilidade e nos sistemas operacionais
+  - Linguagens de baixo nível (Assembly):
+
+     Representam instruções da máquina com códigos mnemônicos (como MOV, ADD, JMP). Cada processador tinha seu 
+    próprio conjunto de instruções (ISA – Instruction Set Architecture).
+
+
+  - Primeiras linguagens de alto nível (Fortran, LISP, COBOL)
+
+     Criadas para facilitar a escrita de programas mais complexos.
+
+
+  - Estruturadas e imperativas (ALGOL, Pascal, C ):
+
+     Introduziram estruturas de controle (if, while, for), modularização e legibilidade.
+
+
+  - Programação orientada a objetos (Smalltalk, C++, Java )
+
+     Linguagens que organizam o código em "objetos" com dados e comportamentos.
+
+
+  - Linguagens para a Web (JavaScript, PHP, HTML/CSS)
+
+     Com a internet, surgiram linguagens para criação de sites, servidores e navegadores:
+
+
+  - Linguagens modernas, limpas e seguras (Python, Ruby, Go, Rust, Kotlin):
+
+     Foco em legibilidade, produtividade, paralelismo e segurança de memória.
+
+
+  - Linguagens para IA, ciência de dados e domínios específicos (R, MATLAB, Julia, SQL) :
+
+
+  - Tendências futuras:
+
+     Linguagens visuais (como Scratch) para ensino infantil.
+
+     Linguagens declarativas para descrever o que fazer, não como fazer.
+
+     Programação com IA (assistida por modelos como o ChatGPT ou Copilot).
+
+     No-code e low-code – onde quase não se escreve código manualmente.
+
 
 
 
@@ -472,32 +520,78 @@ Teoria da Computação e Fundamentos Matemáticos:
 
 
 
-Interface Homem-Máquina (IHM):
+Evolução da Interface Homem-Máquina (IHM):
 
-  Como as pessoas passaram a interagir com os computadores:
+ Conceito: A IHM é a “ponte” entre o ser humano e o computador. Ela determina como damos comandos e como o 
+          computador nos responde. Com o tempo, passamos de comandos complexos e inacessíveis a interfaces visuais 
+          e naturais.
 
-    Terminais de texto e linha de comando
+  - Entrada por cartões perfurados:
 
-    Interfaces gráficas (GUI) e o mouse
+     Os primeiros computadores eram operados com cartões perfurados. Cada cartão representava dados ou instruções. 
+    Era necessário preparar os cartões com antecedência e aguardar a resposta impressa.
 
-    Interfaces por toque e comandos de voz
 
-    Realidade aumentada e interfaces neurais
+  - Terminais de linha de comando (UNIX, MS-DOS):
+
+     Surgem os terminais com teclado e tela de texto, usando comandos digitados (interface de linha de comando, 
+   CLI).
+
+
+  - Interfaces gráficas – GUI:
+
+    Com a evolução do hardware e o uso de monitores, surgem as interfaces visuais, com janelas, ícones, menus e 
+   mouse. Popularizadas com o Macintosh (1984) e o Windows (1990). Tornaram os computadores acessíveis para o 
+   público geral.
+
+
+  - Dispositivos apontadores e periféricos (Mouse e depois trackpads, canetas, joysticks, touchpads)
+
+     Facilitam a interação intuitiva com elementos gráficos.
+
+
+  - Telas sensíveis ao toque – Touchscreens:
+
+     Popularizadas com os smartphones e tablets, permitem interação direta com os dedos. Eliminam o mouse e o    
+    teclado em muitos contextos. 
+
+
+  - Comandos de voz e assistentes virtuais (anos 2010–presente)
+
+     A IHM evolui para o reconhecimento de fala, com assistentes como Siri, Alexa, Google Assistant. Fala natural 
+    como forma de controle e consulta.
+
+
+   - IHM com visão computacional e gestos:
+
+      Sistemas que interpretam movimentos corporais e expressões faciais.
+
+
+   - Interfaces cérebro-computador (BCI – Brain-Computer Interface):
+
+      Em pesquisa, essas interfaces captam sinais elétricos do cérebro para controlar máquinas. Potenciais 
+     aplicações em acessibilidade, medicina e até controle de próteses com o pensamento.
+
+
+  - Realidade Virtual (VR) e Realidade Aumentada (AR):
+
+      Interfaces imersivas que envolvem completamente o usuário no ambiente digital (VR) ou complementam o mundo 
+     real com elementos digitais (AR). Usadas em simulações, jogos, treinamentos e design.
+
+
+  - Interfaces naturais e invisíveis (futuro próximo):
+
+      Computadores se integram ao ambiente (IoT), respondem automaticamente a contexto, localização e 
+     comportamento. Interação quase transparente, como em casas inteligentes, óculos com IA e ambientes sensíveis à 
+     presença.
 
 
 
 História da Internet e das Redes:
 
-  Muito além dos computadores individuais:
-
-    ARPANET e os primeiros experimentos em rede
-
-    TCP/IP e o protocolo da internet
-
-    Criação do WWW por Tim Berners-Lee
-
-    Redes sociais e a Web 2.0
-
+ Conceito: A Internet é resultado de décadas de evolução das redes de computadores. Sua história é cheia de 
+          inovações que mudaram a forma como o mundo se comunica, compartilha e vive.
+    
 
 
 Movimentos Culturais e Ética na Computação:
