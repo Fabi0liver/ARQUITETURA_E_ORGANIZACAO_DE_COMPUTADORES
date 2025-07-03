@@ -657,17 +657,66 @@ História da Internet e das Redes:
 
 Movimentos Culturais e Ética na Computação:
 
-  A computação também é um fenômeno social:
+ Conceito: A história da computação não é feita apenas de máquinas e códigos, mas de pessoas, ideias e valores que 
+          moldam como a tecnologia é criada, usada e compartilhada.
 
-    Cultura hacker e software livre
+   
 
-    Surgimento da indústria do software
+  - Programadores pioneiros e colaboração:
 
-    Ética, privacidade e uso responsável da tecnologia
+     Os primeiros programadores (muitas vezes mulheres invisibilizadas, como as do ENIAC) desenvolveram soluções em 
+    conjunto. A computação surge com uma cultura fortemente colaborativa, principalmente em universidades e centros   
+    de pesquisa. A ideia de "compartilhar conhecimento para resolver problemas" já nasce com a área.
 
-    Representatividade de gênero e diversidade no campo da computação
 
-    A ascensão da conectividade móvel
+  - Cultura hacker e liberdade do conhecimento:
+ 
+     No MIT e em outros centros de pesquisa, hackers exploravam sistemas por curiosidade e criatividade. Surgem os 
+    princípios da ética hacker (Acesso livre ao conhecimento, Valorização da habilidade técnica, Desconfiança de 
+    hierarquias fechadas). Essa cultura influenciou o desenvolvimento inicial da internet e do software.
+
+
+  - Movimento do Software Livre:
+
+     Richard Stallman lança o projeto GNU e a Free Software Foundation. Defende que o software deve garantir 
+    quatro liberdades (usar, estudar, modificar e compartilhar). Introduz o conceito de copyleft, contra o modelo 
+    fechado de copyright. Início da visão do código como bem comum.
+
+
+  - Cultura open source e colaboração global:
+
+     O movimento Open Source nasce com foco mais pragmático e empresarial. Projetos como Linux, Apache, Mozilla, 
+    Wikipedia mostram a força da colaboração descentralizada e voluntária. A internet possibilita comunidades 
+    globais construindo software juntas, sem fronteiras.
+
+
+  - Debates sobre privacidade e vigilância:
+
+     Com o crescimento das redes e do armazenamento de dados, surgem alertas sobre espionagem digital e controle 
+    invisível. O caso Edward Snowden (2013) revela programas massivos de vigilância. A discussão se amplia: como 
+    garantir privacidade, criptografia e autonomia digital?
+
+
+  - Inclusão, diversidade e justiça algorítmica:
+
+     Questiona-se quem está desenvolvendo a tecnologia e para quem. Estudos mostram que algoritmos podem reproduzir 
+    e amplificar preconceitos sociais. Movimentos por mais diversidade nas equipes e por tecnologias inclusivas e 
+    justas ganham força.
+
+
+  - Computação Sustentável e Ética Ambiental:
+
+     Cresce a preocupação com o impacto ambiental da tecnologia (Consumo de energia por data centers, Produção de 
+    lixo eletrônico, Exploração de recursos naturais para fabricar dispositivos).  Movimentos por designs verdes,  
+    reciclagem responsável e consumo consciente.
+
+ 
+  - Ética da inteligência artificial e governança digital:
+
+     Com a popularização da IA, surgem debates sobre: Responsabilidade por decisões automatizadas, Explicabilidade 
+    dos algoritmos, Regulação da IA generativa. Organizações e governos discutem leis, princípios éticos e 
+    governança tecnológica para evitar abusos e proteger direitos.
+
 
 
 
