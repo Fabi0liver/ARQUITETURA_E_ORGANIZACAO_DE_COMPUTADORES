@@ -491,13 +491,83 @@ Evolução das Linguagens de Programação:
 
 
 
- Evolução dos Sistemas Operacionais:
+Evolução dos Sistemas Operacionais:
 
  Conceito: O sistema operacional é o intermediário entre o hardware e os usuários/programas. Com o tempo, eles se 
           tornaram mais poderosos, amigáveis e adaptáveis às necessidades de cada era.
 
 
+  - Programação direta e controle manual:
 
+     Nos primeiros computadores (como o ENIAC), não havia sistema operacional. Programadores inseriam instruções 
+    manualmente via painéis, interruptores ou cartões perfurados.
+
+
+  - Sistemas em lote (Batch Systems):
+
+     Vários programas eram empilhados e executados em sequência automática, sem interação com o usuário. Usavam 
+    fitas ou cartões perfurados. Exemplo: IBM 7094 com o sistema IBSYS.
+
+ 
+  - Sistemas de tempo compartilhado (Time-Sharing):
+
+     Vários usuários podiam usar o mesmo computador, cada um com um terminal. Surgem sistemas como MULTICS 
+    (precursor do UNIX). Introdução ao conceito de multitarefa e usuários simultâneos.
+
+
+  - UNIX e portabilidade:
+
+     Desenvolvido nos laboratórios da AT&T Bell Labs, o UNIX foi um marco por ser portável, modular e multitarefa. 
+    Influenciou diretamente o Linux, BSD, Solaris e até o macOS moderno. Estilo de design: “faça uma coisa bem”.
+
+
+  - Computadores pessoais e MS-DOS:
+
+     A chegada dos PCs (IBM PC) popularizou o MS-DOS, um sistema de linha de comando simples, usado amplamente na 
+    época. Pouca interface gráfica, mas funcional para aplicativos de escritório.
+
+
+  - Interfaces gráficas e sistemas amigáveis:
+
+     A Apple lança o Mac OS (1984) com interface gráfica e mouse. A Microsoft lança o Windows (1985), evoluindo de 
+    uma interface sobre o MS-DOS para um sistema completo. As GUIs tornam os computadores acessíveis ao público 
+    geral.
+
+
+  - Linux e o movimento open source:
+
+     Linus Torvalds cria o núcleo do Linux em 1991, inspirado no UNIX. Roda em servidores, desktops, celulares, 
+    supercomputadores e sistemas embarcados.
+
+
+  - SOs para internet e servidores:
+
+     Sistemas robustos para servidores ganham espaço (Windows Server, UNIX, BSD, Linux). Internet exige sistemas 
+    confiáveis, multitarefa, com segurança e escalabilidade.
+
+
+  - SOs móveis:
+
+     Com a era dos smartphones, surgem sistemas como: Symbian (Nokia), BlackBerry OS, Android (baseado em Linux),   
+    iOS (baseado em UNIX e derivado do macOS).
+
+
+  - Sistemas embarcados e em tempo real:
+
+     SOs específicos para controle de máquinas, veículos, equipamentos médicos (Exemplos: FreeRTOS, VxWorks, 
+    QNX). Precisam ser rápidos, leves e altamente confiáveis.
+
+
+  - Sistemas operacionais na nuvem e virtualização:
+
+     Computação em nuvem e contêineres (como Docker, Kubernetes) exigem novas formas de gerenciar recursos. Surgem 
+    sistemas “sem sistema”: apenas camadas de execução, com infraestrutura gerenciada remotamente.
+
+
+  - SOs adaptativos e especializados (Futuro):
+
+     Sistemas baseados em IA, com decisões autônomas. Sistemas contextuais, responsivos e energicamente eficientes 
+    para wearables, IoT e robótica. Novos conceitos como microkernels, sistemas distribuídos e SOs neuromórficos.
 
 
 
