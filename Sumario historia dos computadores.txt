@@ -292,31 +292,140 @@ Futuro e Quinta Geração – Inteligência Artificial e Computação Quântica
 
 
 
-Teoria da Computação e Fundamentos Matemáticos:
+Evolução dos Processadores e do Processamento:
 
-  Importante para entender os limites e as possibilidades da computação:
+ Conceito: A capacidade de processar informações com velocidade e eficiência define o coração de um computador: o   
+          processador. Sua evolução moldou toda a história da computação:
 
-    Máquina de Turing (fundamento do que é “computável”)
 
-    Problemas decidíveis e indecidíveis
+  - Processamento manual e mecânico: 
 
-    Complexidade algorítmica (P, NP, NP-completo)
+     Antes dos chips, cálculos eram feitos com réguas de cálculo, ábacos e máquinas como a de Pascal ou a de 
+    Babbage.
 
-    Lógica Booleana e Álgebra de Comutação (base da eletrônica digital)
+
+  -  Válvulas termiônicas: 
+  
+      Enormes e lentas, as válvulas permitiram os primeiros computadores eletrônicos, como o ENIAC.
+
+
+  - Transistores:
+
+      Menores, mais confiáveis e rápidos que as válvulas, marcaram o início da miniaturização e da Segunda Geração 
+     de computadores.
+
+
+  - Circuitos integrados:
+
+      Vários transistores num único chip, aumentando exponencialmente o poder de processamento com redução de 
+     tamanho.
+
+
+  - Microprocessadores:
+
+     O processador inteiro em um único chip — como o Intel 4004 — abriu caminho para os computadores pessoais.
+
+
+  - Processadores de múltiplos núcleos:
+
+     Vários núcleos no mesmo chip para realizar múltiplas tarefas ao mesmo tempo com maior eficiência.
+
+
+  - Arquiteturas paralelas e GPUs:
+
+     Unidades de processamento gráfico passaram a ser usadas também para tarefas científicas e inteligência 
+    artificial.
+
+
+  - Processadores neuromórficos e quânticos (em desenvolvimento):
+
+     Inspirados no cérebro humano ou na mecânica quântica, representam o futuro do processamento além do modelo 
+    tradicional.
+
 
 
 
 Evolução do Armazenamento e Mídias:
 
-  Os computadores não seriam úteis sem formas de guardar e acessar dados:
+ 
+  - Fichas e cilindros perfurados (Armazenamento pré-eletrônico):
 
-    Cartões perfurados
+     Usados em teares e máquinas mecânicas — exemplo: tear de Jacquard e máquinas de Babbage.
 
-    Fitas magnéticas
 
-    Discos rígidos e disquetes
+  - Cartões perfurados:
 
-    SSDs e armazenamento em nuvem
+     Usados até os anos 1970, permitiam armazenar dados e instruções codificados em furos.
+
+
+  - Fitas magnéticas:
+
+     Armazenamento sequencial usado em mainframes e backups. Ainda é usado em data centers por custo-benefício.
+
+
+  - Tambores magnéticos:
+
+     Antecessores dos HDs, com acesso mais rápido que fitas, mas com baixa capacidade.
+
+
+
+  - Memória de núcleo magnético:
+
+     Usada como RAM, mas também armazenava dados quando desligado (non-volatile). Substituída pela RAM moderna.
+
+
+  - Memória de semicondutores (SRAM, DRAM e DDR):
+
+     Substituíram os núcleos magnéticos.
+
+
+  - Discos rígidos:
+
+     Primeiro foi o IBM 305 RAMAC. São magnéticos, com cabeça de leitura e discos giratórios. Tornaram-se padrão 
+    por décadas.
+
+
+  - Disquetes:
+
+     Portáteis e baratos. Inicialmente de 8", depois 5¼", depois os famosos de 3½". Limitados em capacidade (1.44 
+    MB no final).
+
+
+  - ZIP drives e Jaz drives:
+
+     Mídias removíveis com mais capacidade que disquetes. Foram populares por um curto período.
+
+
+  - Mídias ópticas (CDs, DVDs, Blu-ray):
+
+     Usadas para áudio, vídeo, programas e backups. 
+
+
+  - Cartões de memória (SD, microSD, CF):
+
+      Usados em câmeras, celulares, tablets. Portáteis, rápidos e com capacidades de até 1 TB.
+
+
+  - Pendrives (USB Flash Drives):
+
+     Portáteis, práticos e com capacidade crescente. Facilitam o transporte rápido de arquivos.
+
+
+  - SSDs (Unidades de Estado Sólido): 
+
+     Sem partes móveis, com velocidades muito superiores aos HDs. Usam memória flash, como os pendrives.
+
+
+  - Armazenamento em Nuvem:
+
+     Armazenamento remoto acessado pela internet. Google Drive, Dropbox, OneDrive, iCloud etc.
+
+
+  - Armazenamento holográfico e óptico 5D (em desenvolvimento):
+
+     Usa lasers para gravar dados em 3D (com profundidade e camadas múltiplas). Promete durabilidade extrema 
+    (milhares de anos) e alta capacidade.
+
 
 
 
@@ -331,6 +440,35 @@ Evolução das Linguagens de Programação:
     Paradigmas de programação: imperativo, funcional, orientado a objetos
 
     Papel da linguagem C na portabilidade e nos sistemas operacionais
+
+
+
+Teoria da Computação e Fundamentos Matemáticos:
+
+  Importante para entender os limites e as possibilidades da computação ajudam a formar um panorama mais completo e histórico:
+
+    Máquina de Turing (o que é computável)
+
+    Cálculo Lambda (modelo equivalente à Máquina de Turing)
+
+    Problemas decidíveis e indecidíveis
+
+    Autômatos Finitos e Linguagens Formais
+
+    Hierarquia de Chomsky
+
+    Teorema da Incompletude de Gödel
+
+    Funções recursivas e computabilidade
+
+    Complexidade algorítmica (P, NP, NP-completo)
+
+    Reduções e Teoria da NP-completude
+
+    Lógica Booleana e Álgebra de Comutação
+
+    Modelos alternativos de computação (ex: quântica)
+
 
 
 
