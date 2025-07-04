@@ -795,7 +795,7 @@ Foram os antecessores dos discos rígidos. Usavam cilindros giratórios com cabe
 
  Em suma... Os sistemas operacionais, embora silenciosos, são os verdadeiros maestros da orquestra digital. Eles organizam tudo o que acontece no computador, do mais simples clique até os cálculos mais complexos em supercomputadores.
 
- Entender sua evolução é como compreender a espinha dorsal da história da computação moderna. Cada passo dado — dos cartões perfurados aos sistemas inteligentes — ampliou o alcance da tecnologia, tornando-a mais próxima, poderosa e essencial no nosso dia a dia.               
+ Entender sua evolução é como compreender a espinha dorsal da história da computação moderna. Cada passo dado (dos cartões perfurados aos sistemas inteligentes) ampliou o alcance da tecnologia, tornando-a mais próxima, poderosa e essencial no nosso dia a dia.               
 
 
 
