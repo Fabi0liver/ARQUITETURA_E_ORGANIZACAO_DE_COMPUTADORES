@@ -431,6 +431,62 @@ Evolução do Armazenamento e Mídias:
 
 
 
+
+Evolução dos Barramentos:
+
+ Conceito: O barramento é como o “sistema circulatório” do computador — ele conecta os componentes e permite a  
+          troca de informações entre processador, memória e periféricos. Ao longo do tempo, os barramentos 
+          evoluíram para permitir maior velocidade, paralelismo e especialização na comunicação.
+
+
+  - Barramentos dedicados e proprietários:
+
+     Nos primeiros computadores, os barramentos eram simples conjuntos de fios criados especificamente para cada máquina. Eram sistemas proprietários, sem padrão universal, e interligavam processador, memória e dispositivos de forma rígida e pouco expansível.
+
+
+  - Barramento S-100:
+
+     Um dos primeiros barramentos de expansão padronizados, usado no microcomputador Altair 8800. Permitiu que desenvolvedores adicionassem placas e dispositivos de forma modular, iniciando a ideia de computadores abertos à expansão.
+
+
+  - Barramento ISA (Industry Standard Architecture):
+
+     Introduzido pela IBM, o ISA de 8 e depois 16 bits foi o primeiro barramento amplamente usado em computadores pessoais. Facilitava a conexão de placas de vídeo, som, modems etc., e definiu um padrão para a indústria.
+
+
+  - Barramentos VLB e EISA:
+
+     O VESA Local Bus (VLB) foi uma solução temporária para placas de vídeo de alto desempenho. Já o EISA surgiu como uma extensão do ISA com suporte a 32 bits e multitarefa, mas teve uso mais restrito.
+
+
+  - Barramento PCI (Peripheral Component Interconnect):
+
+     Revolucionou os barramentos internos com maior largura de banda, comunicação paralela eficiente e detecção automática (Plug and Play). Tornou-se o novo padrão para placas-mãe de desktops e servidores.
+
+
+  - AGP (Accelerated Graphics Port):
+
+     Desenvolvido especificamente para placas de vídeo, o AGP tinha canal dedicado e mais rápido para transferência de gráficos 3D, comum em jogos e aplicativos gráficos pesados.
+
+
+  - PCI Express (PCIe):
+
+     Substituiu todos os barramentos anteriores com uma arquitetura serial de alta velocidade, escalável em faixas (x1, x4, x8, x16). É o principal barramento de comunicação em desktops e servidores modernos, usado para GPUs, SSDs NVMe e placas de rede.
+
+
+  - Barramentos especializados e externos (USB, SATA, NVMe, Thunderbolt):
+
+
+  - Integração em SoCs e comunicação interna ultrarrápida (atualidade):
+
+     Com os System-on-Chip, muitos barramentos tradicionais desapareceram fisicamente. CPU, GPU, memória e 
+periféricos se comunicam por barramentos internos dedicados com baixa latência e altíssima largura de banda — como o Infinity Fabric da AMD ou o Apple Silicon Unified Architecture.
+
+
+
+
+
+
 Evolução das Linguagens de Programação:
 
  Conceito: As linguagens de programação são como os idiomas que usamos para dar instruções aos computadores. Ao  
