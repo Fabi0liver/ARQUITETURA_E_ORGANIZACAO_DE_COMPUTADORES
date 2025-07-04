@@ -514,7 +514,7 @@
 
 
 
-                               "Evolução do Armazenamento e Mídias"
+                                "Evolução do Armazenamento e Mídias"
 
  Agora que já exploramos o cérebro dos computadores (os processadores) é hora de falar sobre a memória: onde os dados vivem, descansam e esperam para serem usados. Afinal, de que adiantaria um computador super-rápido se ele esquecesse tudo assim que fosse desligado? É o armazenamento que garante que documentos, fotos, programas e sistemas inteiros estejam sempre lá, prontos para serem acessados quando quisermos.
 
@@ -600,6 +600,67 @@ Foram os antecessores dos discos rígidos. Usavam cilindros giratórios com cabe
  Em suma... do papel ao laser, dos disquetes aos servidores globais, a história do armazenamento é a história de como lembramos, preservamos e acessamos nosso conhecimento digital. E ela continua a se transformar com novas possibilidades que nos levam além dos limites físicos.
 
  Entender essa trajetória nos mostra que cada avanço em armazenamento liberou novas formas de pensar, criar e conectar. E agora que vimos onde e como os dados vivem, podemos partir para outros elementos que tornam essa máquina digital ainda mais fascinante.
+
+
+
+                                      "Evolução dos Barramentos"
+
+
+  Já que exploramos processadores e armazenamento, vamos dar atenção a um componente muitas vezes esquecido, mas absolutamente essencial para o funcionamento do computador: os barramentos. Se comparássemos um computador a uma cidade, os barramentos seriam suas ruas e avenidas — por onde circulam informações entre bairros como o processador, a memória e os dispositivos externos. Sem esses caminhos, nenhum dado chegaria ao seu destino.
+
+ À medida que os computadores ficaram mais rápidos e complexos, os barramentos também precisaram evoluir, permitindo a transmissão de informações em velocidades cada vez maiores, com maior confiabilidade e especialização. Alguns barramentos foram projetados para tarefas específicas, como gráficos ou armazenamento, enquanto outros buscaram unificar a comunicação em uma única via poderosa. 
+
+ Vamos agora conhecer os principais marcos dessa evolução, entendendo como essa “infraestrutura digital” cresceu junto com o restante da tecnologia.
+
+
+ * Barramentos dedicados e proprietários:
+
+   Nos primórdios da computação, cada computador tinha seu próprio conjunto de fios e conexões, criados sob medida. Não havia padrão: os barramentos eram soluções únicas, o que tornava a manutenção e a expansão um desafio. Essa abordagem limitava a reutilização de componentes e dificultava o avanço da indústria.
+
+
+ * Barramento S-100:
+
+   Popularizado pelo Altair 8800 em 1975, foi um dos primeiros barramentos padronizados. Permitia que entusiastas e empresas adicionassem placas e funcionalidades de forma modular. Essa ideia de expansibilidade foi um marco na transformação dos computadores em plataformas abertas e personalizáveis.
+
+
+ * Barramento ISA (Industry Standard Architecture):
+
+   Criado pela IBM, o ISA se tornou o padrão dos PCs por muitos anos. Com versões de 8 e 16 bits, era usado para conectar placas de som, modems, controladoras de disco e muito mais. Foi um divisor de águas por estabelecer um padrão acessível e amplamente adotado.
+
+
+ * Barramentos VLB e EISA:
+
+   O VESA Local Bus (VLB) surgiu para acompanhar as exigências das placas de vídeo no início dos anos 1990. Já o EISA (Extended ISA) oferecia suporte a 32 bits e multitarefa, mas foi mais comum em computadores corporativos, devido ao seu custo e complexidade.
+
+
+ * Barramento PCI (Peripheral Component Interconnect):
+
+   Introduzido nos anos 90, o PCI foi um salto técnico e prático. Com mais velocidade, comunicação paralela eficiente e suporte a Plug and Play, virou o novo padrão dos desktops e servidores. Facilitava a vida de usuários e técnicos na hora de instalar novos componentes.
+
+
+ * AGP (Accelerated Graphics Port):
+
+   Pensado exclusivamente para placas de vídeo, o AGP oferecia um canal dedicado para gráficos, essencial para jogos e softwares gráficos da época. Foi um avanço importante antes da popularização dos barramentos de alta velocidade universais.
+
+
+ * PCI Express (PCIe):
+
+   Chegou para substituir todos os anteriores. O PCIe usa comunicação serial e escalável, com diferentes faixas de largura (x1, x4, x8, x16). Hoje, é o barramento dominante em desktops e servidores, conectando desde placas de vídeo até SSDs ultra-rápidos.
+
+
+ * Barramentos especializados e externos (USB, SATA, NVMe, Thunderbolt):
+
+   Enquanto o PCIe domina internamente, barramentos externos também evoluíram. O USB se tornou padrão universal para periféricos. O SATA serviu discos rígidos e SSDs por anos. O NVMe revolucionou o armazenamento com altíssima velocidade. Já o Thunderbolt unificou velocidade, energia e vídeo em um só cabo.
+
+ 
+ * Integração em SoCs e comunicação interna ultrarrápida (atualidade):
+
+    Com os System-on-Chip (SoC), como os chips da Apple ou da AMD, muitos barramentos tradicionais deixam de existir fisicamente. CPU, GPU, memória e outros módulos se comunicam em alta velocidade internamente, por meio de barramentos dedicados, como o Infinity Fabric ou a arquitetura unificada da Apple — diminuindo latência e aumentando a eficiência.
+
+
+ Em suma... Os barramentos evoluíram silenciosamente, mas sempre em sincronia com os grandes avanços da computação. Eles são a base invisível que sustenta a troca de informações, garantindo que tudo funcione de forma harmônica e eficiente. Do fio artesanal ao canal serial ultrarrápido, cada nova geração de barramentos trouxe ganhos reais de desempenho e novas possibilidades.
+
+ Entender essa parte da arquitetura do computador é essencial para enxergar o todo. Afinal, de nada adianta ter processadores e memórias poderosos se os dados não podem circular bem entre eles. E agora que mapeamos essas “estradas digitais”, podemos seguir em frente explorando outras engrenagens que fazem o computador funcionar como um todo.
 
 
 
