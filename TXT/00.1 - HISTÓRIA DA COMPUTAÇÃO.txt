@@ -978,6 +978,11 @@ Foram os antecessores dos discos rígidos. Usavam cilindros giratórios com cabe
    A chegada da IA generativa e dos algoritmos autônomos trouxe novas questões éticas: quem é responsável por decisões tomadas por uma IA? Como garantir que algoritmos sejam transparentes e justos? Organizações internacionais e governos estão criando leis, princípios e marcos regulatórios para garantir que a inteligência artificial respeite direitos e valores humanos.
 
 
+ Em suma... A história da computação é também uma história de escolhas éticas e sociais. É a história de pessoas que lutaram para que o conhecimento fosse livre, para que a tecnologia fosse justa e para que as máquinas respeitassem os direitos humanos. Em tempos de IA avançada e redes globais, esses debates se tornam ainda mais urgentes.
+
+ E é com essa consciência (de que tecnologia é feita por pessoas, para pessoas) que encerramos esta etapa do nosso estudo. A jornada pela história da computação não é apenas sobre máquinas, mas sobre como decidimos usá-las, compartilhá-las e responsabilizá-las. Se quiser, podemos seguir agora para um encerramento geral ou criar um panorama final com os aprendizados mais importantes dessa viagem histórica.
+
+
 
 
 
