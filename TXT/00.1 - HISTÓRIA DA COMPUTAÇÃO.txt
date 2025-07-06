@@ -799,7 +799,7 @@ Foram os antecessores dos discos rígidos. Usavam cilindros giratórios com cabe
 
 
 
-                         "Evolução da Interface Homem-Máquina (IHM)"
+                             "Evolução da Interface Homem-Máquina (IHM)"
 
  Vamos conversar sobre um dos aspectos mais humanos da história da computação: a forma como nos comunicamos com as máquinas. Desde os primeiros dias dos computadores, ficou claro que seria necessário criar pontes entre a lógica fria das máquinas e a linguagem calorosa dos seres humanos. Essa ponte é chamada de Interface Homem-Máquina, ou IHM. Ela define como você dá comandos, como a máquina responde e, no fundo, como você se relaciona com a tecnologia.
 
@@ -861,6 +861,10 @@ Kinect, câmeras 3D e sensores começaram a interpretar movimentos corporais e g
  Em suma... A evolução das interfaces é, em essência, a história de como os computadores aprenderam a nos entender (e nós a entendê-los). Cada nova forma de interação nos aproximou um pouco mais do mundo digital, tornando-o mais humano, mais empático, mais acessível.
 
  E se hoje a computação parece natural e integrada ao nosso dia a dia, é porque as IHMs tornaram isso possível. A tendência é que, no futuro, essa conexão seja tão fluida que nem pareça mais uma "interface" — apenas uma extensão do nosso pensamento e vontade.
+
+
+
+                                    "História da Internet e das Redes"
                
 
 
