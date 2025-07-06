@@ -923,6 +923,11 @@ Foram os antecessores dos discos rígidos. Usavam cilindros giratórios com cabe
    Com projetos como o Starlink, a Internet chega até áreas remotas por meio de satélites de baixa órbita. E o 5G, com sua altíssima velocidade e baixíssima latência, promete conectar bilhões de dispositivos simultaneamente, preparando o terreno para uma nova era: a Web 3.0, com mais descentralização, inteligência artificial e integração com o mundo físico.
 
 
+ Em suma... A história da Internet é, no fundo, a história de como nos tornamos uma sociedade conectada. Ela evoluiu do papel de ferramenta militar para se tornar uma plataforma essencial da vida moderna, afetando educação, saúde, trabalho, relacionamentos e até democracia.
+
+ E à medida que ela continua a evoluir (com a nuvem, o 5G, a inteligência artificial e a computação quântica), a Internet se transforma na infraestrutura invisível que sustenta o mundo. Um mundo onde tudo e todos estão, de algum modo, interligados. Se quiser, podemos continuar agora com a Evolução dos Ambientes de Desenvolvimento e Ferramentas.
+
+
 
 
 
