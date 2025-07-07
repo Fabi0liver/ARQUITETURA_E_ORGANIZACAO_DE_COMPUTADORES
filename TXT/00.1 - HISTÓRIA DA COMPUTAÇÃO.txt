@@ -345,51 +345,78 @@ percebemos que toda grande revolução começa com ideias simples que se transfo
 
                         "Primeira Geração (1940–1956) – Computadores a Válvulas"
 
- Com a chegada das válvulas eletrônicas, a computação deu um salto histórico: saímos do mundo mecânico e entramos na era dos computadores eletrônicos. Essas válvulas, parecidas com pequenas lâmpadas, permitiam que sinais elétricos fossem amplificados e controlados com mais velocidade do que qualquer engrenagem já tinha conseguido. É aqui que a computação começa a ganhar a forma que conhecemos hoje — com grandes gabinetes, fios, painéis, e o mais importante: lógica digital.
+ Com a chegada das válvulas eletrônicas, a computação deu um salto histórico: saímos do mundo mecânico e entramos 
+na era dos computadores eletrônicos. Essas válvulas, parecidas com pequenas lâmpadas, permitiam que sinais 
+elétricos fossem amplificados e controlados com mais velocidade do que qualquer engrenagem já tinha conseguido. É 
+aqui que a computação começa a ganhar a forma que conhecemos hoje com grandes gabinetes, fios, painéis, e o mais 
+importante: lógica digital.
 
- Embora essas primeiras máquinas fossem enormes, quentes, barulhentas e bem limitadas se comparadas aos computadores atuais, elas foram revolucionárias. Eram capazes de realizar cálculos complexos em segundos — algo que antes levava dias. E mais: esse foi o momento em que se começou a pensar em linguagem de máquina, instruções lidas diretamente pelo computador.
+ Embora essas primeiras máquinas fossem enormes, quentes, barulhentas e bem limitadas se comparadas aos 
+computadores atuais, elas foram revolucionárias. Eram capazes de realizar cálculos complexos em segundos (algo que 
+antes levava dias). E mais: esse foi o momento em que se começou a pensar em linguagem de máquina, instruções lidas 
+diretamente pelo computador.
 
  Agora, vamos olhar de perto os marcos históricos que definiram essa primeira geração:
 
-
  * Máquina de Turing(1936):
 
-   Antes mesmo dos computadores eletrônicos existirem, Alan Turing propôs um modelo teórico que ajudaria a entender o que uma máquina poderia ou não fazer com base em instruções. A chamada “Máquina de Turing” não era física, mas sim um conceito matemático que hoje é considerado a base da computação moderna. Ela nos deu a estrutura lógica para pensar como algoritmos podem ser processados.
+    Antes mesmo dos computadores eletrônicos existirem, Alan Turing propôs um modelo teórico que ajudaria a 
+   entender o que uma máquina poderia ou não fazer com base em instruções. A chamada “Máquina de Turing” não era 
+   física, mas sim um conceito matemático que hoje é considerado a base da computação moderna. Ela nos deu a 
+   estrutura lógica para pensar como algoritmos podem ser processados.
 
 
  * Z3(1938):
 
-   Criado por Konrad Zuse na Alemanha, o Z3 foi o primeiro computador programável eletromecânico do mundo. Embora ainda usasse relés e não válvulas eletrônicas, ele já mostrava um sistema lógico automatizado, controlado por fita perfurada. Seu desenvolvimento foi um grande marco rumo à automação de processos computacionais.
+    Criado por Konrad Zuse na Alemanha, o Z3 foi o primeiro computador programável eletromecânico do mundo. Embora 
+   ainda usasse relés e não válvulas eletrônicas, ele já mostrava um sistema lógico automatizado, controlado por 
+  fita perfurada. Seu desenvolvimento foi um grande marco rumo à automação de processos computacionais.
 
 
  * Plankalkül(1942–1945):
 
-   Durante a Segunda Guerra, Zuse também desenvolveu a Plankalkül, considerada a primeira linguagem de programação de alto nível da história. Mesmo sem ser implementada na época, ela já propunha variáveis, estruturas de controle e expressões matemáticas — ideias que só se tornariam populares décadas depois.
+    Durante a Segunda Guerra, Zuse também desenvolveu a Plankalkül, considerada a primeira linguagem de programação 
+   de alto nível da história. Mesmo sem ser implementada na época, ela já propunha variáveis, estruturas de 
+   controle e expressões matemáticas, ideias que só se tornariam populares décadas depois.
 
 
  * Colossus(1941):
 
-   O Colossus, desenvolvido pelos britânicos, foi o primeiro computador eletrônico programável da história. Seu papel principal era quebrar códigos alemães durante a Segunda Guerra, acelerando a leitura de mensagens criptografadas. Sua existência ficou em segredo por anos, mas sua importância foi monumental para a evolução da computação eletrônica.
+    O Colossus, desenvolvido pelos britânicos, foi o primeiro computador eletrônico programável da história. Seu 
+   papel principal era quebrar códigos alemães durante a Segunda Guerra, acelerando a leitura de mensagens 
+   criptografadas. Sua existência ficou em segredo por anos, mas sua importância foi monumental para a evolução da 
+   computação eletrônica.
 
 
  * ENIAC(1946):
 
-   Com o fim da guerra, os EUA lançaram o ENIAC, considerado o primeiro computador eletrônico de uso geral. Ele usava cerca de 18 mil válvulas e ocupava uma sala inteira. Seu desempenho, no entanto, era impressionante para a época, realizando cálculos balísticos e científicos de forma inédita.
+    Com o fim da guerra, os EUA lançaram o ENIAC, considerado o primeiro computador eletrônico de uso geral. Ele 
+   usava cerca de 18 mil válvulas e ocupava uma sala inteira. Seu desempenho, no entanto, era impressionante para a 
+   época, realizando cálculos balísticos e científicos de forma inédita.
 
 
  * UNIVAC I(1951):
 
-   O UNIVAC I foi o primeiro computador comercial de verdade, usado por empresas e pelo governo para processamento de dados. Ele marcou a entrada definitiva dos computadores no mundo dos negócios e ficou famoso por prever corretamente o resultado das eleições presidenciais nos EUA, em 1952.
+    O UNIVAC I foi o primeiro computador comercial de verdade, usado por empresas e pelo governo para processamento 
+   de dados. Ele marcou a entrada definitiva dos computadores no mundo dos negócios e ficou famoso por prever 
+   corretamente o resultado das eleições presidenciais nos EUA, em 1952.
 
 
  * IBM 701(1953):
 
-   A IBM lançou seu primeiro computador científico, o IBM 701, com foco em centros de pesquisa e aplicações comerciais. Esse lançamento consolidou a IBM como uma força dominante no mercado de computadores e abriu caminho para o uso corporativo em larga escala.
+    A IBM lançou seu primeiro computador científico, o IBM 701, com foco em centros de pesquisa e aplicações 
+   comerciais. Esse lançamento consolidou a IBM como uma força dominante no mercado de computadores e abriu caminho 
+   para o uso corporativo em larga escala.
 
+ Em suma, a Primeira Geração foi como o nascimento do computador moderno, ainda em suas formas mais rudimentares, 
+mas já mostrando um enorme potencial. Foi uma era de descobertas, onde a teoria começou a encontrar formas físicas, 
+e as máquinas deixaram os papéis e projetos para se tornarem realidade eletrônica. As válvulas abriram caminho para 
+que instruções pudessem ser processadas a velocidades antes inimagináveis.
 
- Em suma, a Primeira Geração foi como o nascimento do computador moderno — ainda em suas formas mais rudimentares, mas já mostrando um enorme potencial. Foi uma era de descobertas, onde a teoria começou a encontrar formas físicas, e as máquinas deixaram os papéis e projetos para se tornarem realidade eletrônica. As válvulas abriram caminho para que instruções pudessem ser processadas a velocidades antes inimagináveis.
-
- Essa fase pode parecer distante, com seus cabos, ruídos e máquinas do tamanho de uma sala, mas ela representa um divisor de águas na história da tecnologia. Aqui começou a transformação do computador de uma ideia abstrata para uma ferramenta concreta. E agora que vimos essa primeira etapa, estamos prontos para avançar para a próxima geração — mais rápida, menor e muito mais promissora.
+ Essa fase pode parecer distante, com seus cabos, ruídos e máquinas do tamanho de uma sala, mas ela representa um 
+divisor de águas na história da tecnologia. Aqui começou a transformação do computador de uma ideia abstrata para 
+uma ferramenta concreta. E agora que vimos essa primeira etapa, estamos prontos para avançar para a próxima 
+geração: mais rápida, menor e muito mais promissora.
 
 
 
