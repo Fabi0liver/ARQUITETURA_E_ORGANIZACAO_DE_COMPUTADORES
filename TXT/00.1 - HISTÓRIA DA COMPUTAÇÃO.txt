@@ -32,13 +32,26 @@ só que totalmente real.
 
                                           "O que é computação?"
 
- Afinal, o que exatamente é computação? A palavra pode parecer técnica ou até intimidadora à primeira vista, mas no fundo ela trata de algo bem natural: a arte de lidar com informações. Computar, no sentido mais básico, é processar dados — transformar entradas em saídas, problemas em soluções, perguntas em respostas. A computação é o campo do conhecimento que estuda como isso pode ser feito com lógica, clareza e, sobretudo, com eficiência.
+ Afinal, o que exatamente é computação? A palavra pode parecer técnica ou até intimidadora à primeira vista, mas no 
+fundo ela trata de algo bem natural: a arte de lidar com informações. Computar, no sentido mais básico, é processar 
+dados, transformar entradas em saídas, problemas em soluções, perguntas em respostas. A computação é o campo do 
+conhecimento que estuda como isso pode ser feito com lógica, clareza e, sobretudo, com eficiência.
 
- Pode parecer simples, mas por trás de tarefas rotineiras como calcular um troco, buscar uma imagem na galeria ou prever o tempo de amanhã, há processos computacionais acontecendo. Eles seguem passos bem definidos, como uma receita de bolo. Cada instrução executada, cada escolha tomada, cada informação manipulada, faz parte de uma cadeia de ações que chamamos de algoritmo. A computação estuda como construir essas receitas — desde as mais simples até as mais complexas — e como executá-las usando máquinas.
+ Pode parecer simples, mas por trás de tarefas rotineiras como calcular um troco, buscar uma imagem na galeria ou 
+prever o tempo de amanhã, há processos computacionais acontecendo. Eles seguem passos bem definidos, como uma 
+receita de bolo. Cada instrução executada, cada escolha tomada, cada informação manipulada, faz parte de uma cadeia 
+de ações que chamamos de algoritmo. A computação estuda como construir essas receitas (desde as mais simples até as 
+mais complexas) e como executá-las usando máquinas.
 
- Mas não se trata apenas de programação ou de máquinas modernas. Computação também envolve pensar logicamente, decompor problemas, identificar padrões e encontrar soluções elegantes. Ela está presente tanto em engenharias quanto na medicina, na arte e na astronomia. É uma ponte entre a teoria e a prática, entre o pensamento humano e a automação, entre a ideia e a realização.
+ Mas não se trata apenas de programação ou de máquinas modernas. Computação também envolve pensar logicamente, 
+decompor problemas, identificar padrões e encontrar soluções elegantes. Ela está presente tanto em engenharias 
+quanto na medicina, na arte e na astronomia. É uma ponte entre a teoria e a prática, entre o pensamento humano e a 
+automação, entre a ideia e a realização.
 
- Em essência, a computação é uma maneira de organizar o raciocínio para que possamos resolver problemas de forma sistemática. E quando unimos esse raciocínio com a capacidade das máquinas de executar milhões de instruções por segundo, temos uma revolução em mãos. A computação não é só o que usamos — é também uma nova forma de pensar o mundo.
+ Em essência, a computação é uma maneira de organizar o raciocínio para que possamos resolver problemas de forma 
+sistemática. E quando unimos esse raciocínio com a capacidade das máquinas de executar milhões de instruções por 
+segundo, temos uma revolução em mãos. A computação não é só o que usamos, é também uma nova forma de pensar o 
+mundo.
 
 
 
