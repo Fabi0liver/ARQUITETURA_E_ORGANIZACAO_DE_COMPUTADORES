@@ -1,15 +1,31 @@
                                      HISTÓRIA DA COMPUTAÇÃO
 
 
- Quando você liga seu computador, desliza o dedo na tela do celular ou pede para uma assistente virtual tocar sua música favorita, está interagindo com um dos maiores feitos da humanidade: a Computação. Mas essa história não começou com chips, telas ou internet — ela tem raízes profundas que atravessam séculos, misturando matemática, engenhosidade humana e uma pitada de visão futurista. Entender a trajetória da computação é como olhar para o mapa de uma grande aventura — cheia de personagens brilhantes, momentos decisivos e descobertas transformadoras.
+ Quando você liga seu computador, desliza o dedo na tela do celular ou pede para uma assistente virtual tocar sua 
+música favorita, está interagindo com um dos maiores feitos da humanidade: a Computação. Mas essa história não 
+começou com chips, telas ou internet: ela tem raízes profundas que atravessam séculos, misturando matemática, 
+engenhosidade humana e uma pitada de visão futurista. Entender a trajetória da computação é como olhar para o mapa 
+de uma grande aventura: cheia de personagens brilhantes, momentos decisivos e descobertas transformadoras.
 
- Antes de existirem máquinas, já existia a necessidade humana de contar, registrar, calcular e resolver problemas. A história da computação começa justamente com essa necessidade básica de lidar com informações e torná-las mais acessíveis, confiáveis e rápidas. Ao longo do tempo, essa necessidade foi tomando forma em ideias, ferramentas, dispositivos e, mais tarde, sistemas que hoje parecem mágicos, mas que são fruto de um longo processo evolutivo.
+ Antes de existirem máquinas, já existia a necessidade humana de contar, registrar, calcular e resolver problemas. 
+A história da computação começa justamente com essa necessidade básica de lidar com informações e torná-las mais 
+acessíveis, confiáveis e rápidas. Ao longo do tempo, essa necessidade foi tomando forma em ideias, ferramentas, 
+dispositivos e, mais tarde, sistemas que hoje parecem mágicos, mas que são fruto de um longo processo evolutivo.
 
- O que torna essa jornada tão fascinante é perceber como cada etapa da história da computação está profundamente ligada aos desafios de sua época. Em momentos de guerra, acelerou-se a criação de máquinas mais poderosas. Em tempos de paz, surgiram inovações voltadas para a educação, a ciência e o cotidiano das pessoas. Assim, a computação foi se moldando aos desejos e às dores da sociedade, crescendo junto com ela.
+ O que torna essa jornada tão fascinante é perceber como cada etapa da história da computação está profundamente 
+ligada aos desafios de sua época. Em momentos de guerra, acelerou-se a criação de máquinas mais poderosas. Em 
+tempos de paz, surgiram inovações voltadas para a educação, a ciência e o cotidiano das pessoas. Assim, a 
+computação foi se moldando aos desejos e às dores da sociedade, crescendo junto com ela.
 
- Mais do que uma linha do tempo cheia de datas e invenções, a história da computação é, na verdade, uma narrativa sobre criatividade, persistência e visão. É a história de mentes inquietas que ousaram imaginar um futuro diferente — e, aos poucos, o construíram. De engenheiros a matemáticos, de cientistas a programadoras pioneiras, foram muitas as mãos que ajudaram a escrever esse enredo que hoje nos conecta a quase tudo.
+ Mais do que uma linha do tempo cheia de datas e invenções, a história da computação é, na verdade, uma narrativa 
+sobre criatividade, persistência e visão. É a história de mentes inquietas que ousaram imaginar um futuro 
+diferente e, aos poucos, o construíram. De engenheiros a matemáticos, de cientistas a programadoras pioneiras, 
+foram muitas as mãos que ajudaram a escrever esse enredo que hoje nos conecta a quase tudo.
 
- Nos próximos passos, vamos explorar essa jornada de forma clara, envolvente e acessível. Vamos olhar para os primeiros passos da computação, entender como ideias se transformaram em máquinas e como essas máquinas mudaram o mundo. Mas por enquanto, respira fundo e se prepara: o que vem a seguir é uma viagem digna de ficção científica — só que totalmente real.
+ Nos próximos passos, vamos explorar essa jornada de forma clara, envolvente e acessível. Vamos olhar para os 
+primeiros passos da computação, entender como ideias se transformaram em máquinas e como essas máquinas mudaram o 
+mundo. Mas por enquanto, respira fundo e se prepara: o que vem a seguir é uma viagem digna de ficção científica — 
+só que totalmente real.
 
 
 
