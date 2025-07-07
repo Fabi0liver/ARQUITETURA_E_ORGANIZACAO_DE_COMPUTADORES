@@ -80,6 +80,44 @@ computação do simples ato de calcular: é a capacidade de pensar com lógica e
 
 
 
+                              "Contexto Social e Evolução da Computação"
+
+ A computação não surgiu do nada, ela é o resultado de séculos de descobertas, necessidades humanas e 
+transformações culturais. Muito antes da invenção do computador eletrônico, a humanidade já sentia a necessidade de 
+automatizar tarefas repetitivas. Na Revolução Industrial (séculos XVIII e XIX), máquinas começaram a substituir o 
+trabalho manual em fábricas, e a ideia de controle mecânico tomou forma. O tear de Jacquard, de 1801, usava cartões 
+perfurados para "programar" padrões nos tecidos, uma solução tão engenhosa que seus princípios seriam reutilizados 
+mais tarde em máquinas de calcular e até nos primeiros computadores. Assim, nascia o conceito de entrada 
+automatizada de dados, ainda que de forma rudimentar.
+
+ No século XX, enquanto a indústria se desenvolvia, a ciência também dava passos gigantescos. Matemáticos e lógicos 
+como Kurt Gödel, Alonzo Church e Alan Turing investigavam os limites do pensamento lógico e do que seria possível 
+automatizar. Suas ideias eram abstratas, mas fundamentais: o lambda cálculo, os teoremas da incompletude e a 
+máquina de Turing ajudaram a definir, com precisão matemática, o que significa "computar". Era como se estivéssemos 
+criando a linguagem invisível que permitiria às máquinas raciocinar, mesmo que os computadores ainda não 
+existissem de fato.
+
+ A Segunda Guerra Mundial trouxe urgência e recursos para acelerar o desenvolvimento tecnológico. A guerra exigia 
+decisões rápidas baseadas em cálculos complexos, além de soluções para comunicações criptografadas e radares. Foi 
+nesse contexto que surgiram os primeiros computadores eletrônicos, como o Colossus, usado para quebrar códigos, e o 
+ENIAC, capaz de realizar milhares de operações por segundo. A computação deixou de ser apenas uma ideia teórica e 
+passou a ser ferramenta estratégica com aplicações reais.
+
+ Com o fim da guerra, o mundo mergulhou em avanços técnicos sem precedentes. O transistor, inventado em 1947, e os 
+circuitos integrados nas décadas seguintes permitiram que os computadores se tornassem menores, mais baratos e 
+muito mais poderosos. Ao mesmo tempo, a corrida espacial e a Guerra Fria incentivaram o investimento pesado em 
+tecnologia de ponta, enquanto as empresas buscavam agilidade e automação nos negócios. Universidades como o MIT e 
+Stanford se tornaram polos de inovação, dando origem a linguagens de programação, sistemas operacionais e até ao 
+conceito de software livre. A cultura hacker emergia como uma nova forma de criatividade digital, e, nos anos 70 e 
+80, empresas como Apple, Microsoft e IBM começaram a levar tudo isso para dentro das casas e escritórios.
+
+ Todo esse cenário de transformações (industriais, científicas, políticas e sociais) pavimentou o caminho para o 
+nascimento e a evolução dos computadores como conhecemos hoje. Para entender melhor como essa jornada se 
+desenvolveu, os especialistas costumam dividir a história da computação em gerações, cada uma marcada por 
+tecnologias, características e impactos bem específicos
+
+
+
                       "Pioneiros da Computação: Mentes que Moldaram o Mundo Digital"
 
  Antes de existir qualquer computador como conhecemos hoje (com tela, teclado e mouse) já havia pessoas imaginando, 
@@ -210,42 +248,6 @@ nós.
 mundo diferente antes que ele existisse. E ao entender quem foram esses pioneiros, abrimos uma porta de inspiração 
 para o que ainda podemos criar. Afinal, o próximo capítulo dessa história pode ser escrito por qualquer pessoa 
 curiosa o suficiente para imaginar o futuro, até por você.
-
-
-
-                               "Contexto Social e Evolução da Computação"
-
- A computação não surgiu do nada, ela é o resultado de séculos de descobertas, necessidades humanas e 
-transformações culturais. Muito antes da invenção do computador eletrônico, a humanidade já sentia a necessidade de automatizar tarefas repetitivas. Na Revolução Industrial (séculos XVIII e XIX), máquinas começaram a substituir o trabalho manual em fábricas, e a ideia de controle mecânico tomou forma. O tear de Jacquard, de 1801, usava cartões 
-perfurados para "programar" padrões nos tecidos, uma solução tão engenhosa que seus princípios seriam reutilizados 
-mais tarde em máquinas de calcular e até nos primeiros computadores. Assim, nascia o conceito de entrada 
-automatizada de dados, ainda que de forma rudimentar.
-
- No século XX, enquanto a indústria se desenvolvia, a ciência também dava passos gigantescos. Matemáticos e lógicos 
-como Kurt Gödel, Alonzo Church e Alan Turing investigavam os limites do pensamento lógico e do que seria possível 
-automatizar. Suas ideias eram abstratas, mas fundamentais: o lambda cálculo, os teoremas da incompletude e a 
-máquina de Turing ajudaram a definir, com precisão matemática, o que significa "computar". Era como se estivéssemos 
-criando a linguagem invisível que permitiria às máquinas raciocinar, mesmo que os computadores ainda não 
-existissem de fato.
-
- A Segunda Guerra Mundial trouxe urgência e recursos para acelerar o desenvolvimento tecnológico. A guerra exigia 
-decisões rápidas baseadas em cálculos complexos, além de soluções para comunicações criptografadas e radares. Foi 
-nesse contexto que surgiram os primeiros computadores eletrônicos, como o Colossus, usado para quebrar códigos, e o 
-ENIAC, capaz de realizar milhares de operações por segundo. A computação deixou de ser apenas uma ideia teórica e 
-passou a ser ferramenta estratégica com aplicações reais.
-
- Com o fim da guerra, o mundo mergulhou em avanços técnicos sem precedentes. O transistor, inventado em 1947, e os 
-circuitos integrados nas décadas seguintes permitiram que os computadores se tornassem menores, mais baratos e 
-muito mais poderosos. Ao mesmo tempo, a corrida espacial e a Guerra Fria incentivaram o investimento pesado em 
-tecnologia de ponta, enquanto as empresas buscavam agilidade e automação nos negócios. Universidades como o MIT e 
-Stanford se tornaram polos de inovação, dando origem a linguagens de programação, sistemas operacionais e até ao 
-conceito de software livre. A cultura hacker emergia como uma nova forma de criatividade digital, e, nos anos 70 e 
-80, empresas como Apple, Microsoft e IBM começaram a levar tudo isso para dentro das casas e escritórios.
-
- Todo esse cenário de transformações (industriais, científicas, políticas e sociais) pavimentou o caminho para o 
-nascimento e a evolução dos computadores como conhecemos hoje. Para entender melhor como essa jornada se 
-desenvolveu, os especialistas costumam dividir a história da computação em gerações, cada uma marcada por 
-tecnologias, características e impactos bem específicos
 
 
 
