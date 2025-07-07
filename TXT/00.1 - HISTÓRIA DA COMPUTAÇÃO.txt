@@ -238,7 +238,6 @@ dessa longa caminhada.
    World Wide Web. Foi ele quem criou o primeiro navegador, o primeiro servidor e até a linguagem HTML. Ele 
    transformou a internet em algo navegável e acessível para todos.
 
-
  Em suma, é emocionante pensar que a tecnologia que usamos todos os dias carrega as ideias, os experimentos e até 
 os sonhos dessas pessoas. Seus nomes muitas vezes não aparecem nas telas que tocamos, mas suas contribuições estão 
 por trás de cada botão que clicamos, cada site que acessamos, cada cálculo invisível que um sistema realiza por 
@@ -251,68 +250,96 @@ curiosa o suficiente para imaginar o futuro, até por você.
 
 
 
-                           "As Origens: Antes dos Computadores Eletrônicos"
+                            "As Origens: Antes dos Computadores Eletrônicos"
 
- Antes de termos a potência dos computadores eletrônicos, muito do que hoje parece óbvio começou com ferramentas mecânicas e ideias visionárias que pavimentaram o caminho para a revolução digital. Essas invenções, mesmo simples, representaram passos gigantescos na forma como a humanidade lidava com informações e cálculos. Elas não só ajudaram a automatizar operações repetitivas, como também abriram espaço para pensar máquinas capazes de “seguir instruções” — o princípio fundamental da computação.
+ Antes de termos a potência dos computadores eletrônicos, muito do que hoje parece óbvio começou com ferramentas 
+mecânicas e ideias visionárias que pavimentaram o caminho para a revolução digital. Essas invenções, mesmo simples, 
+representaram passos gigantescos na forma como a humanidade lidava com informações e cálculos. Elas não só ajudaram 
+a automatizar operações repetitivas, como também abriram espaço para máquinas capazes de “seguir instruções”: o princípio fundamental da computação.
 
- Essas origens mostram que a história da computação é também uma história de engenhosidade humana, onde a criatividade em transformar problemas em soluções práticas foi o motor das inovações. Entender esses primeiros dispositivos e conceitos ajuda a valorizar a complexidade e a genialidade dos computadores que usamos hoje.
+ Essas origens mostram que a história da computação é também uma história de engenhosidade humana, onde a 
+criatividade em transformar problemas em soluções práticas foi o motor das inovações. Entender esses primeiros 
+dispositivos e conceitos ajuda a valorizar a complexidade e a genialidade dos computadores que usamos hoje.
 
- Agora, vamos caminhar por essa linha do tempo e conhecer alguns desses fatos históricos que marcaram essa trajetória:
-
+ Agora, vamos caminhar por essa linha do tempo e conhecer alguns desses fatos históricos que marcaram essa 
+trajetória:
 
  * Ábaco (2400 a.C.):
 
-   O ábaco, criado na antiga Mesopotâmia, é considerado o primeiro dispositivo de cálculo da humanidade. Simples e eficiente, ele facilitava a realização de operações matemáticas básicas como soma e subtração, funcionando como uma espécie de calculadora manual com contas deslizantes. Esse instrumento foi amplamente usado por milênios e é até hoje um símbolo do desejo humano de automatizar a matemática.
+    O ábaco, criado na antiga Mesopotâmia, é considerado o primeiro dispositivo de cálculo da humanidade. Simples e 
+   eficiente, ele facilitava a realização de operações matemáticas básicas como soma e subtração, funcionando como 
+   uma espécie de calculadora manual com contas deslizantes. Esse instrumento foi amplamente usado por milênios e é 
+   até hoje um símbolo do desejo humano de automatizar a matemática.
 
 
  * Ossos de Napier (1617):
 
-   John Napier inventou os “ossos de Napier”, hastes numeradas que simplificavam multiplicações e divisões. Essa ferramenta era uma espécie de tabela móvel, que tornava operações complexas mais acessíveis e rápidas, representando um avanço significativo no auxílio ao cálculo manual.
+    John Napier inventou os “ossos de Napier”, hastes numeradas que simplificavam multiplicações e divisões. Essa 
+   ferramenta era uma espécie de tabela móvel, que tornava operações complexas mais acessíveis e rápidas, 
+   representando um avanço significativo no auxílio ao cálculo manual.
 
 
  * Calculadora de Schickard (1623):
 
-   A calculadora de Wilhelm Schickard foi a primeira máquina mecânica capaz de executar automaticamente as quatro operações básicas: soma, subtração, multiplicação e divisão. Embora tenha sido pouco conhecida na época, sua invenção marcou um passo decisivo na automação de cálculos.
+    A calculadora de Wilhelm Schickard foi a primeira máquina mecânica capaz de executar automaticamente as quatro 
+   operações básicas: soma, subtração, multiplicação e divisão. Embora tenha sido pouco conhecida na época, sua 
+   invenção marcou um passo decisivo na automação de cálculos.
 
 
  * Pascalina (1642):
 
-   Blaise Pascal desenvolveu a Pascalina, a primeira calculadora mecânica funcional amplamente reconhecida. Essa máquina usava engrenagens para realizar somas e subtrações, auxiliando principalmente no trabalho administrativo e fiscal, mostrando o potencial das máquinas para substituir o esforço humano repetitivo.
+    Blaise Pascal desenvolveu a Pascalina, a primeira calculadora mecânica funcional amplamente reconhecida. Essa 
+   máquina usava engrenagens para realizar somas e subtrações, auxiliando principalmente no trabalho administrativo 
+   e fiscal, mostrando o potencial das máquinas para substituir o esforço humano repetitivo.
 
 
 * Calculadora de Leibniz (1673):
 
-  Leibniz aprimorou a ideia da Pascalina criando uma calculadora capaz também de multiplicar e dividir automaticamente. Essa inovação expandiu as possibilidades de cálculo mecânico, aproximando as máquinas do conceito de um dispositivo universal de processamento.
+   Leibniz aprimorou a ideia da Pascalina criando uma calculadora capaz também de multiplicar e dividir 
+  automaticamente. Essa inovação expandiu as possibilidades de cálculo mecânico, aproximando as máquinas do 
+  conceito de um dispositivo universal de processamento.
 
 
  * Tear de Jacquard (1801):
 
-   O tear de Jacquard revolucionou a indústria têxtil ao usar cartões perfurados para controlar padrões de tecido automaticamente. Esse conceito de “programação” por meio de cartões perfurados inspiraria as primeiras tentativas de programar máquinas de calcular e computadores, um elo crucial entre a automação mecânica e a computação.
+    O tear de Jacquard revolucionou a indústria têxtil ao usar cartões perfurados para controlar padrões de tecido 
+   automaticamente. Esse conceito de “programação” por meio de cartões perfurados inspiraria as primeiras 
+   tentativas de programar máquinas de calcular e computadores, um elo crucial entre a automação mecânica e a 
+   computação.
 
 
  * Máquina Analítica (1837):
 
-   Charles Babbage projetou a Máquina Analítica, que seria o primeiro computador programável mecânico, com conceitos como memória e unidade de controle. Embora nunca tenha sido concluída, sua arquitetura definiu princípios que só seriam plenamente implementados mais de um século depois.
+    Charles Babbage projetou a Máquina Analítica, que seria o primeiro computador programável mecânico, com 
+   conceitos como memória e unidade de controle. Embora nunca tenha sido concluída, sua arquitetura definiu 
+   princípios que só seriam plenamente implementados mais de um século depois.
 
 
  * Ada Lovelace e o Primeiro Algoritmo (1843):
 
-   Ada Lovelace escreveu o primeiro algoritmo destinado à Máquina Analítica, imaginando que máquinas poderiam ir além dos números, manipulando símbolos e ideias. Por isso, é reconhecida como a primeira programadora da história, vislumbrando o potencial da computação para transformar o conhecimento.
+    Ada Lovelace escreveu o primeiro algoritmo destinado à Máquina Analítica, imaginando que máquinas poderiam ir 
+   além dos números, manipulando símbolos e ideias. Por isso, é reconhecida como a primeira programadora da 
+   história, vislumbrando o potencial da computação para transformar o conhecimento.
 
 
  * Máquina de Tabulação de Hollerith (1890):
 
-   Herman Hollerith desenvolveu uma máquina que usava cartões perfurados para processar os dados do censo americano, automatizando e acelerando cálculos estatísticos que antes eram feitos manualmente. Essa invenção foi fundamental para o uso prático de máquinas na análise de grandes volumes de dados.
+    Herman Hollerith desenvolveu uma máquina que usava cartões perfurados para processar os dados do censo a
+   mericano, automatizando e acelerando cálculos estatísticos que antes eram feitos manualmente. Essa invenção foi 
+   fundamental para o uso prático de máquinas na análise de grandes volumes de dados.
 
 
  * Fundação da IBM (1911):
 
-   A empresa fundada a partir da invenção de Hollerith se transformou na IBM, que se tornaria um gigante da computação comercial, impulsionando o desenvolvimento e a popularização dos computadores nas décadas seguintes.
+   A empresa fundada a partir da invenção de Hollerith se transformou na IBM, que se tornaria um gigante da 
+  computação comercial, impulsionando o desenvolvimento e a popularização dos computadores nas décadas seguintes.
 
+ Em suma, essa era das origens nos mostra que a computação não surgiu do nada, mas sim como uma construção gradual 
+e cuidadosa, onde cada ferramenta, ideia ou máquina foi um tijolinho fundamental para o que viria depois. Essas 
+invenções criaram a base para que, no século XX, os computadores eletrônicos pudessem finalmente ganhar vida.
 
- Em suma, essa era das origens nos mostra que a computação não surgiu do nada, mas sim como uma construção gradual e cuidadosa, onde cada ferramenta, ideia ou máquina foi um tijolinho fundamental para o que viria depois. Essas invenções criaram a base para que, no século XX, os computadores eletrônicos pudessem finalmente ganhar vida.
-
- Ao entender esses passos iniciais, valorizamos o esforço humano e a engenhosidade que nos trouxeram até aqui — e percebemos que toda grande revolução começa com ideias simples que se transformam em sonhos e depois em realidade.
+ Ao entender esses passos iniciais, valorizamos o esforço humano e a engenhosidade que nos trouxeram até aqui — e 
+percebemos que toda grande revolução começa com ideias simples que se transformam em sonhos e depois em realidade.
 
 
 
