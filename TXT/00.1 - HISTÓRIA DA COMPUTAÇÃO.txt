@@ -55,15 +55,28 @@ mundo.
 
 
 
-                             "A diferença entre cálculo e computação."
+                                "A diferença entre cálculo e computação"
 
- À primeira vista, cálculo e computação parecem sinônimos — afinal, ambos lidam com números, operações e resultados. Mas há uma diferença fundamental entre os dois. O cálculo é uma atividade bem mais antiga e focada: trata-se do ato de realizar operações matemáticas, como somar, subtrair, multiplicar e dividir. É o que fazemos quando resolvemos uma conta de cabeça, usamos uma calculadora ou conferimos o troco no mercado. O foco está na execução de operações específicas com números.
+ À primeira vista, cálculo e computação parecem sinônimos afinal, ambos lidam com números, operações e resultados. 
+Mas há uma diferença fundamental entre os dois. O cálculo é uma atividade bem mais antiga e focada: trata-se do ato 
+de realizar operações matemáticas, como somar, subtrair, multiplicar e dividir. É o que fazemos quando resolvemos 
+uma conta de cabeça, usamos uma calculadora ou conferimos o troco no mercado. O foco está na execução de operações 
+específicas com números.
 
- Já a computação vai muito além disso. Ela não se limita a realizar cálculos — ela organiza o raciocínio por trás dos cálculos, cria regras, decide caminhos, resolve problemas inteiros. Computação envolve lógica, estruturação, tomada de decisões e, principalmente, automação. É como se o cálculo fosse uma peça do quebra-cabeça, e a computação fosse o projeto de como montar todo o quebra-cabeça para resolver algo mais amplo.
+ Já a computação vai muito além disso. Ela não se limita a realizar cálculos: ela organiza o raciocínio por trás 
+dos cálculos, cria regras, decide caminhos, resolve problemas inteiros. Computação envolve lógica, estruturação, 
+tomada de decisões e, principalmente, automação. É como se o cálculo fosse uma peça do quebra-cabeça, e a 
+computação fosse o projeto de como montar todo o quebra-cabeça para resolver algo mais amplo.
 
- Para facilitar, pense em uma analogia com cozinhar: cálculo é como cortar ingredientes, uma ação específica. Já computação é como planejar toda a receita, organizar os passos, decidir quando fazer o quê, e garantir que o prato final fique saboroso. Em outras palavras, o cálculo é uma ferramenta dentro da computação — importante, sim, mas não suficiente por si só para resolver problemas complexos.
+ Para facilitar, pense em uma analogia com cozinhar: cálculo é como cortar ingredientes, uma ação específica. Já 
+computação é como planejar toda a receita, organizar os passos, decidir quando fazer o quê, e garantir que o prato 
+final fique saboroso. Em outras palavras, o cálculo é uma ferramenta dentro da computação. Importante, sim, mas 
+não suficiente por si só para resolver problemas complexos.
 
- Por isso, quando usamos um computador para resolver um desafio, como organizar rotas de entrega, simular o clima ou identificar rostos em fotos, ele não está apenas “fazendo contas”. Ele está seguindo algoritmos, tomando decisões com base em dados, processando informações de forma lógica e estruturada. É isso que diferencia a computação do simples ato de calcular: sua capacidade de pensar com lógica e automatizar soluções completas.
+ Por isso, quando usamos um computador para resolver um desafio, como organizar rotas de entrega, simular o clima 
+ou identificar rostos em fotos, ele não está apenas “fazendo contas”. Ele está seguindo algoritmos, tomando 
+decisões com base em dados, processando informações de forma lógica e estruturada. É isso que diferencia a 
+computação do simples ato de calcular: é a capacidade de pensar com lógica e automatizar soluções completas.
 
 
 
