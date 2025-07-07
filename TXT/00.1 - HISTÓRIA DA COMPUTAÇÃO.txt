@@ -55,7 +55,7 @@ mundo.
 
 
 
-                                "A diferença entre cálculo e computação"
+                                  "A diferença entre cálculo e computação"
 
  À primeira vista, cálculo e computação parecem sinônimos afinal, ambos lidam com números, operações e resultados. 
 Mas há uma diferença fundamental entre os dois. O cálculo é uma atividade bem mais antiga e focada: trata-se do ato 
@@ -80,92 +80,136 @@ computação do simples ato de calcular: é a capacidade de pensar com lógica e
 
 
 
-                    "Pioneiros da Computação: Mentes que Moldaram o Mundo Digital"
+                      "Pioneiros da Computação: Mentes que Moldaram o Mundo Digital"
 
- Antes de existir qualquer computador como conhecemos hoje — com tela, teclado e mouse — já havia pessoas imaginando, desenhando e até construindo as bases do que se tornaria a computação moderna. Esses pioneiros nem sempre tinham ferramentas avançadas, mas tinham algo essencial: uma mente inquieta e criativa o suficiente para ver o invisível e construir o impossível. Eles trabalharam em épocas muito diferentes, com objetivos variados, mas todos compartilharam o mesmo espírito inovador.
+ Antes de existir qualquer computador como conhecemos hoje (com tela, teclado e mouse) já havia pessoas imaginando, 
+desenhando e até construindo as bases do que se tornaria a computação moderna. Esses pioneiros nem sempre tinham 
+ferramentas avançadas, mas tinham algo essencial: uma mente inquieta e criativa o suficiente para ver o invisível e 
+construir o impossível. Eles trabalharam em épocas muito diferentes, com objetivos variados, mas todos 
+compartilharam o mesmo espírito inovador.
 
- Alguns vieram da matemática, outros da engenharia, alguns da lógica, da eletrônica ou mesmo da filosofia. O que eles criaram — de engrenagens a linguagens de programação, de modelos teóricos a arquiteturas de máquinas — nos trouxe até aqui. E para entender melhor a jornada da computação, vale a pena conhecer quem deu os primeiros passos dessa longa caminhada.
+ Alguns vieram da matemática, outros da engenharia, alguns da lógica, da eletrônica ou mesmo da filosofia. O que 
+eles criaram (de engrenagens a linguagens de programação, de modelos teóricos a arquiteturas de máquinas) nos 
+trouxe até aqui. E para entender melhor a jornada da computação, vale a pena conhecer quem deu os primeiros passos 
+dessa longa caminhada.
 
  A seguir, vamos conhecer alguns dos nomes mais marcantes dessa trajetória inspiradora:
 
  * Blaise Pascal: Pioneiro das calculadoras mecânicas:
 
-   No século XVII, Pascal criou a Pascalina, uma das primeiras máquinas de somar do mundo. Embora simples, ela era revolucionária: funcionava com engrenagens e alavancas, automatizando cálculos básicos e aliviando o trabalho dos cobradores de impostos — inclusive do próprio pai de Pascal. Ele plantou a semente da ideia de que máquinas poderiam pensar, ou pelo menos, calcular por nós.
+    No século XVII, Pascal criou a Pascalina, uma das primeiras máquinas de somar do mundo. Embora simples, ela era 
+   revolucionária: funcionava com engrenagens e alavancas, automatizando cálculos básicos e aliviando o trabalho 
+   dos cobradores de impostos, inclusive do próprio pai de Pascal. Ele plantou a semente da ideia de que máquinas 
+   poderiam pensar, ou pelo menos, calcular por nós.
 
 
  * Gottfried Wilhelm Leibniz: Pai da notação binária e do cálculo lógico:
 
-   Leibniz sonhava com uma linguagem universal que unisse lógica e matemática. Ele criou a notação binária, o famoso 0 e 1, que hoje é a base de todos os sistemas digitais. Sua visão de um “álgebra do pensamento” antecipou conceitos de lógica computacional que só seriam plenamente compreendidos séculos depois.
+    Leibniz sonhava com uma linguagem universal que unisse lógica e matemática. Ele criou a notação binária, o 
+   famoso 0 e 1, que hoje é a base de todos os sistemas digitais. Sua visão de um “álgebra do pensamento” antecipou 
+   conceitos de lógica computacional que só seriam plenamente compreendidos séculos depois.
 
 
- * Joseph-Marie Jacquard: Automação com cartões perfurados:
+ * Joseph Marie Jacquard: Automação com cartões perfurados:
 
-   Inventor do tear de Jacquard, esse francês usou cartões perfurados para automatizar padrões em tecidos. Essa ideia de “programar” uma máquina com cartões seria reutilizada futuramente em máquinas de calcular e nos primeiros computadores — um salto rumo à automação de instruções.
+    Inventor do tear de Jacquard, esse francês usou cartões perfurados para automatizar padrões em tecidos. Essa 
+   ideia de “programar” uma máquina com cartões seria reutilizada futuramente em máquinas de calcular e nos 
+   primeiros computadores: um salto rumo à automação de instruções.
 
 
  * Charles Babbage: Pai da computação mecânica:
 
-   Babbage idealizou e projetou a Máquina Analítica, um equipamento com memória, unidade de controle e operações automáticas. Embora nunca tenha sido finalizada em sua época, o projeto foi incrivelmente próximo de um computador moderno, e por isso, ele é considerado o pai da computação mecânica.
+    Babbage idealizou e projetou a Máquina Analítica, um equipamento com memória, unidade de controle e operações 
+   automáticas. Embora nunca tenha sido finalizada em sua época, o projeto foi incrivelmente próximo de um 
+   computador moderno, e por isso, ele é considerado o pai da computação mecânica.
 
 
  * Ada Lovelace: A primeira programadora da história:
 
-   Filha do poeta Lord Byron, Ada escreveu o primeiro algoritmo destinado a ser processado por uma máquina: a Máquina Analítica de Babbage. Ela enxergou que a computação ia muito além da matemática, podendo manipular símbolos, sons, imagens — uma visão verdadeiramente moderna para o século XIX.
+    Filha do poeta Lord Byron, Ada escreveu o primeiro algoritmo destinado a ser processado por uma máquina: a 
+   Máquina Analítica de Babbage. Ela enxergou que a computação ia muito além da matemática, podendo manipular 
+   símbolos, sons, imagens: uma visão verdadeiramente moderna para o século XIX.
 
 
  * Alan Turing: Pai da computação teórica:
 
-   Turing criou o conceito da máquina universal, ou “máquina de Turing”, uma estrutura teórica que descreve como qualquer problema computável pode ser resolvido. Ele também foi peça-chave na quebra de códigos na Segunda Guerra Mundial. Seu legado criou a base lógica da ciência da computação.
+    Turing criou o conceito da máquina universal, ou “máquina de Turing”, uma estrutura teórica que descreve como 
+   qualquer problema computável pode ser resolvido. Ele também foi peça-chave na quebra de códigos na Segunda 
+   Guerra Mundial. Seu legado criou a base lógica da ciência da computação.
 
 
  * Claude Shannon: Pai da teoria da informação:
 
-   Com sua obra “A Mathematical Theory of Communication”, Shannon transformou a forma como entendemos dados, ruído, sinais e compressão. Ele mostrou como toda informação pode ser codificada em bits — e essa ideia moldou o nascimento da era digital.
+    Com sua obra “A Mathematical Theory of Communication”, Shannon transformou a forma como entendemos dados, 
+   ruído, sinais e compressão. Ele mostrou como toda informação pode ser codificada em bits: e essa ideia moldou o 
+   nascimento da era digital.
 
 
  * John von Neumann: Arquiteto do modelo de computador atual:
 
-   Von Neumann criou a arquitetura básica dos computadores modernos, onde dados e instruções são armazenados na mesma memória. Seu modelo ainda é usado em praticamente todos os computadores de hoje, do seu notebook ao celular.
+    Von Neumann criou a arquitetura básica dos computadores modernos, onde dados e instruções são armazenados na 
+   mesma memória. Seu modelo ainda é usado em praticamente todos os computadores de hoje, do seu notebook ao 
+   celular.
 
 
  * Grace Hopper: Mãe do compilador:
 
-   Com espírito prático e olhar para o futuro, Grace Hopper criou o primeiro compilador, uma ferramenta que traduz linguagens humanas para linguagens de máquina. Ela também participou do desenvolvimento do COBOL, facilitando o acesso à programação para pessoas de fora da matemática pura.
+    Com espírito prático e olhar para o futuro, Grace Hopper criou o primeiro compilador, uma ferramenta que traduz 
+   linguagens humanas para linguagens de máquina. Ela também participou do desenvolvimento do COBOL, facilitando o 
+   acesso à programação para pessoas de fora da matemática pura.
 
 
  * John Backus: Criador do FORTRAN:
 
-   Backus liderou o time que criou o FORTRAN, a primeira linguagem de programação de alto nível amplamente adotada. Ela abriu caminho para que programadores pudessem focar mais em lógica e menos em comandos de máquina. Foi o início da programação moderna como conhecemos.
+    Backus liderou o time que criou o FORTRAN, a primeira linguagem de programação de alto nível amplamente 
+   adotada. Ela abriu caminho para que programadores pudessem focar mais em lógica e menos em comandos de máquina. 
+   Foi o início da programação moderna como conhecemos.
 
 
  * Dennis Ritchie: Criador da linguagem C:
 
-   Nos anos 70, Dennis Ritchie desenvolveu a linguagem C, base para a construção de sistemas operacionais (como o Unix) e inspiração direta de linguagens como C++, Java e Python. C é até hoje um alicerce da computação — está por trás de sistemas, jogos, drivers e muito mais.
+    Nos anos 70, Dennis Ritchie desenvolveu a linguagem C, base para a construção de sistemas operacionais (como o 
+   Unix) e inspiração direta de linguagens como C++, Java e Python. C é até hoje um alicerce da computação: está 
+   por trás de sistemas, jogos, drivers e muito mais.
 
 
  * Donald Knuth: Cientista da programação de algoritmos:
 
-   Knuth dedicou sua vida a entender e sistematizar algoritmos. Com sua obra monumental The Art of Computer Programming, ele trouxe rigor científico à programação, tornando-a uma disciplina matemática e elegante. É um dos maiores estudiosos da lógica por trás dos programas.
+    Knuth dedicou sua vida a entender e sistematizar algoritmos. Com sua obra monumental The Art of Computer 
+   Programming, ele trouxe rigor científico à programação, tornando-a uma disciplina matemática e elegante. É um 
+   dos maiores estudiosos da lógica por trás dos programas.
 
 
  * Margaret Hamilton: Engenharia de software moderna:
 
-   Responsável pelo sistema de bordo do projeto Apollo, Hamilton cunhou o termo "engenharia de software". Ela liderou uma equipe que desenvolveu código robusto o suficiente para pousar humanos na Lua. Sua precisão salvou missões e mostrou que software é tão vital quanto o hardware.
+    Responsável pelo sistema de bordo do projeto Apollo, Hamilton cunhou o termo "engenharia de software". Ela 
+   liderou uma equipe que desenvolveu código robusto o suficiente para pousar humanos na Lua. Sua precisão salvou 
+   missões e mostrou que software é tão vital quanto o hardware.
 
 
  * Vint Cerf & Bob Kahn: Pais da Internet:
 
-   Esses dois engenheiros criaram o protocolo TCP/IP, que permite a comunicação entre redes diferentes — ou seja, tornaram a Internet possível. Eles não apenas conectaram computadores, mas também abriram as portas para a maior rede de comunicação já criada pela humanidade.
+    Esses dois engenheiros criaram o protocolo TCP/IP, que permite a comunicação entre redes diferentes  ou seja, 
+   tornaram a Internet possível. Eles não apenas conectaram computadores, mas também abriram as portas para a maior 
+   rede de comunicação já criada pela humanidade.
 
 
  * Tim Berners-Lee: Inventor da Web:
 
-   Em 1989, Berners-Lee imaginou um sistema onde documentos pudessem ser acessados por links — e assim criou a World Wide Web. Foi ele quem criou o primeiro navegador, o primeiro servidor e até a linguagem HTML. Ele transformou a internet em algo navegável e acessível para todos.
+    Em 1989, Berners-Lee imaginou um sistema onde documentos pudessem ser acessados por links, e assim criou a 
+   World Wide Web. Foi ele quem criou o primeiro navegador, o primeiro servidor e até a linguagem HTML. Ele 
+   transformou a internet em algo navegável e acessível para todos.
 
 
- Em suma, é emocionante pensar que a tecnologia que usamos todos os dias carrega as ideias, os experimentos e até os sonhos dessas pessoas. Seus nomes muitas vezes não aparecem nas telas que tocamos, mas suas contribuições estão por trás de cada botão que clicamos, cada site que acessamos, cada cálculo invisível que um sistema realiza por nós.
+ Em suma, é emocionante pensar que a tecnologia que usamos todos os dias carrega as ideias, os experimentos e até 
+os sonhos dessas pessoas. Seus nomes muitas vezes não aparecem nas telas que tocamos, mas suas contribuições estão 
+por trás de cada botão que clicamos, cada site que acessamos, cada cálculo invisível que um sistema realiza por 
+nós.
 
- A história da computação não é feita só de máquinas e códigos — ela é feita de gente. De vozes que enxergaram um mundo diferente antes que ele existisse. E ao entender quem foram esses pioneiros, abrimos uma porta de inspiração para o que ainda podemos criar. Afinal, o próximo capítulo dessa história pode ser escrito por qualquer pessoa curiosa o suficiente para imaginar o futuro — até por você.
+ A história da computação não é feita só de máquinas e códigos, ela é feita de gente. De vozes que enxergaram um 
+mundo diferente antes que ele existisse. E ao entender quem foram esses pioneiros, abrimos uma porta de inspiração 
+para o que ainda podemos criar. Afinal, o próximo capítulo dessa história pode ser escrito por qualquer pessoa 
+curiosa o suficiente para imaginar o futuro, até por você.
 
 
 
