@@ -1104,76 +1104,110 @@ programação é também aprender sobre a evolução do pensamento computacional
 
                                 "Evolução dos Sistemas Operacionais"
 
- Quando falamos em sistema operacional, estamos falando da alma silenciosa que dá vida a um computador. Ele é o intermediário invisível entre você e o hardware, aquele que traduz o que você deseja fazer (abrir um programa, salvar um arquivo, navegar na internet) em comandos que o processador, a memória e os dispositivos conseguem entender. Desde os primórdios da computação, os sistemas operacionais foram evoluindo junto com a tecnologia e com as necessidades das pessoas.
+ Quando falamos em sistema operacional, estamos falando da alma silenciosa que dá vida a um computador. Ele é o 
+intermediário invisível entre você e o hardware, aquele que traduz o que você deseja fazer (abrir um programa, 
+salvar um arquivo, navegar na internet) em comandos que o processador, a memória e os dispositivos conseguem 
+entender. Desde os primórdios da computação, os sistemas operacionais foram evoluindo junto com a tecnologia e com 
+as necessidades das pessoas.
 
- Com o tempo, eles deixaram de ser ferramentas rudes e técnicas usadas por especialistas para se tornarem interfaces amigáveis, intuitivas e adaptáveis. Hoje, muitas vezes nem percebemos que estamos interagindo com um sistema operacional — eles estão por trás dos celulares, carros, eletrodomésticos, servidores e até da nuvem onde guardamos nossos arquivos. 
+ Com o tempo, eles deixaram de ser ferramentas rudes e técnicas usadas por especialistas para se tornarem 
+interfaces amigáveis, intuitivas e adaptáveis. Hoje, muitas vezes nem percebemos que estamos interagindo com um 
+sistema operacional: eles estão por trás dos celulares, carros, eletrodomésticos, servidores e até da nuvem onde 
+guardamos nossos arquivos. 
 
- Vamos agora seguir juntos pelas etapas mais marcantes dessa evolução e entender como cada uma moldou a maneira como usamos e entendemos os computadores. 
-
+ Vamos agora seguir juntos pelas etapas mais marcantes dessa evolução e entender como cada uma moldou a maneira 
+como usamos e entendemos os computadores. 
 
  * Programação direta e controle manual:
 
-   Nos primórdios, não havia sistema operacional como conhecemos hoje. Os computadores como o ENIAC eram programados diretamente com cabos, interruptores e painéis físicos, e mais tarde com cartões perfurados. Cada programa era carregado e executado de forma manual, exigindo conhecimento técnico intenso.
+    Nos primórdios, não havia sistema operacional como conhecemos hoje. Os computadores como o ENIAC eram 
+   programados diretamente com cabos, interruptores e painéis físicos, e mais tarde com cartões perfurados. Cada 
+   programa era carregado e executado de forma manual, exigindo conhecimento técnico intenso.
 
 
  * Sistemas em lote (Batch Systems):
 
-   Para otimizar o tempo das máquinas, surgiram os sistemas em lote: diversos programas eram reunidos em sequência automática, armazenados em fitas ou cartões. O computador processava um a um, sem interação com o usuário. Era eficiente para tarefas repetitivas, mas ainda distante da ideia de uso pessoal.
+    Para otimizar o tempo das máquinas, surgiram os sistemas em lote: diversos programas eram reunidos em sequência 
+   automática, armazenados em fitas ou cartões. O computador processava um a um, sem interação com o usuário. Era 
+   eficiente para tarefas repetitivas, mas ainda distante da ideia de uso pessoal.
 
 
  * Sistemas de tempo compartilhado (Time-Sharing):
 
-   Com os mainframes mais potentes, nasceu a ideia de vários usuários usarem o mesmo computador ao mesmo tempo, cada um com seu terminal. Isso introduziu multitarefa e o conceito de múltiplos usuários. Um dos pioneiros foi o sistema MULTICS, que serviu de base para o UNIX.
+    Com os mainframes mais potentes, nasceu a ideia de vários usuários usarem o mesmo computador ao mesmo tempo, 
+   cada um com seu terminal. Isso introduziu multitarefa e o conceito de múltiplos usuários. Um dos pioneiros foi o 
+   sistema MULTICS, que serviu de base para o UNIX.
 
 
  * UNIX e Portabilidade:
 
-   Criado nos Bell Labs, o UNIX marcou um divisor de águas. Era modular, multitarefa e portátil, ou seja, podia rodar em diferentes máquinas. Influenciou diretamente o Linux, o BSD, o Solaris e até o macOS. Seu lema era simples: "faça uma coisa bem". Tornou-se base para muitos sistemas modernos.
+    Criado nos Bell Labs, o UNIX marcou um divisor de águas. Era modular, multitarefa e portátil, ou seja, podia 
+   rodar em diferentes máquinas. Influenciou diretamente o Linux, o BSD, o Solaris e até o macOS. Seu lema era 
+   simples: "faça uma coisa bem". Tornou-se base para muitos sistemas modernos.
 
 
  * Computadores pessoais e MS-DOS:
 
-   Nos anos 80, com o surgimento dos PCs, a Microsoft criou o MS-DOS, um sistema de linha de comando simples, porém funcional. Era a ponte entre o usuário e os primeiros aplicativos, como editores de texto e planilhas, embora exigisse comandos técnicos para operar.
+    Nos anos 80, com o surgimento dos PCs, a Microsoft criou o MS-DOS, um sistema de linha de comando simples, 
+   porém funcional. Era a ponte entre o usuário e os primeiros aplicativos, como editores de texto e planilhas, 
+   embora exigisse comandos técnicos para operar.
 
 
  * Interfaces gráficas e sistemas amigáveis:
 
-   Em 1984, a Apple lançou o Mac OS, o primeiro sistema com interface gráfica acessível e mouse. A Microsoft seguiu com o Windows em 1985, que evoluiu de uma camada sobre o MS-DOS para um sistema gráfico completo. Isso democratizou o uso do computador, aproximando-o do público leigo.
+    Em 1984, a Apple lançou o Mac OS, o primeiro sistema com interface gráfica acessível e mouse. A Microsoft 
+   seguiu com o Windows em 1985, que evoluiu de uma camada sobre o MS-DOS para um sistema gráfico completo. Isso 
+   democratizou o uso do computador, aproximando-o do público leigo.
 
 
  * Linux e o movimento open source:
 
-   Em 1991, Linus Torvalds lançou o núcleo do Linux, inspirado no UNIX. Sua filosofia de código aberto atraiu desenvolvedores do mundo todo. Hoje, o Linux está em servidores, supercomputadores, celulares (Android) e inúmeros dispositivos.
+    Em 1991, Linus Torvalds lançou o núcleo do Linux, inspirado no UNIX. Sua filosofia de código aberto atraiu 
+   desenvolvedores do mundo todo. Hoje, o Linux está em servidores, supercomputadores, celulares (Android) e 
+   inúmeros dispositivos.
 
 
  * SOs para internet e servidores:
 
-   Com a popularização da internet, surgiu a demanda por sistemas robustos, multitarefa e seguros para servidores. Windows Server, Linux e BSD se destacaram como bases para os serviços web e infraestruturas digitais em todo o planeta.
+    Com a popularização da internet, surgiu a demanda por sistemas robustos, multitarefa e seguros para servidores. 
+   Windows Server, Linux e BSD se destacaram como bases para os serviços web e infraestruturas digitais em todo o 
+   planeta.
 
 
  * SOs móveis:
 
-   Com os smartphones, surgiram sistemas operacionais específicos para dispositivos móveis, como Symbian, BlackBerry OS, Android (baseado em Linux) e iOS (baseado no UNIX/macOS). Eles foram projetados para ser leves, responsivos e amigáveis ao toque.
+    Com os smartphones, surgiram sistemas operacionais específicos para dispositivos móveis, como Symbian, 
+   BlackBerry OS, Android (baseado em Linux) e iOS (baseado no UNIX/macOS). Eles foram projetados para ser leves, 
+   responsivos e amigáveis ao toque.
 
 
  * Sistemas embarcados e em tempo real:
 
-   Além de celulares, diversos dispositivos eletrônicos contam com sistemas operacionais embarcados — leves, rápidos e altamente confiáveis — como o FreeRTOS, QNX e VxWorks. São usados em carros, aviões, equipamentos médicos e industriais.
+    Além de celulares, diversos dispositivos eletrônicos contam com sistemas operacionais embarcados (leves, 
+   rápidos e altamente confiáveis) como o FreeRTOS, QNX e VxWorks. São usados em carros, aviões, equipamentos 
+   médicos e industriais.
 
 
  * Sistemas operacionais na nuvem e virtualização:
 
-   Com o avanço da computação em nuvem, surgem formas de executar aplicações sem um sistema operacional tradicional. Contêineres como Docker e plataformas como Kubernetes gerenciam recursos de forma dinâmica e remota, sem interface direta com o usuário.
+    Com o avanço da computação em nuvem, surgem formas de executar aplicações sem um sistema operacional 
+   tradicional. Contêineres como Docker e plataformas como Kubernetes gerenciam recursos de forma dinâmica e 
+   remota, sem interface direta com o usuário.
 
 
  * SOs adaptativos e especializados (Futuro):
 
-   O futuro aponta para sistemas operacionais inteligentes, contextuais e autônomos, adaptando-se ao ambiente, ao uso e ao hardware. Exemplos incluem sistemas em wearables, carros autônomos, robótica e até mesmo SOs neuromórficos, inspirados no cérebro humano.        
+    O futuro aponta para sistemas operacionais inteligentes, contextuais e autônomos, adaptando-se ao ambiente, ao 
+   uso e ao hardware. Exemplos incluem sistemas em wearables, carros autônomos, robótica e até mesmo SOs 
+   neuromórficos, inspirados no cérebro humano.        
 
+ Em suma... Os sistemas operacionais, embora silenciosos, são os verdadeiros maestros da orquestra digital. Eles 
+organizam tudo o que acontece no computador, do mais simples clique até os cálculos mais complexos em 
+supercomputadores.
 
- Em suma... Os sistemas operacionais, embora silenciosos, são os verdadeiros maestros da orquestra digital. Eles organizam tudo o que acontece no computador, do mais simples clique até os cálculos mais complexos em supercomputadores.
-
- Entender sua evolução é como compreender a espinha dorsal da história da computação moderna. Cada passo dado (dos cartões perfurados aos sistemas inteligentes) ampliou o alcance da tecnologia, tornando-a mais próxima, poderosa e essencial no nosso dia a dia.
+ Entender sua evolução é como compreender a espinha dorsal da história da computação moderna. Cada passo dado (dos 
+cartões perfurados aos sistemas inteligentes) ampliou o alcance da tecnologia, tornando-a mais próxima, poderosa e 
+essencial no nosso dia a dia.
 
 
 
