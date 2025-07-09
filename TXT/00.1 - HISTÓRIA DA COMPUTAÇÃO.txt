@@ -704,11 +704,11 @@ pensar o próprio conceito de computação.
 
  * IA, Computação Quântica e Nuvem (Presente e Futuro):
 
-    Hoje, vivemos a convergência de inteligência artificial, computação em nuvem e quântica, transformando tudo — 
+    Hoje, vivemos a convergência de inteligência artificial, computação em nuvem e quântica, transformando tudo: 
    da medicina à arte, da logística à educação. Estamos construindo sistemas capazes de aprender com dados, simular 
    moléculas, prever doenças e muito mais. O futuro está em desenvolvimento, e estamos todos participando dele.
 
- Em suma, a quinta geração não é apenas sobre máquinas mais potentes — ela é sobre máquinas mais inteligentes e 
+ Em suma, a quinta geração não é apenas sobre máquinas mais potentes, ela é sobre máquinas mais inteligentes e 
 novas formas de pensar informação. Estamos abrindo caminho para uma era onde os computadores vão além do cálculo: 
 eles colaboram, aprendem e se adaptam ao nosso mundo. Isso exige novas linguagens, novas arquiteturas e até novas 
 maneiras de compreender o que é conhecimento.
