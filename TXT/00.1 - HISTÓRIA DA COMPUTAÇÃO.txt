@@ -516,7 +516,7 @@ mesmo computador. A computação começava a se democratizar, tanto nas empresas
 
     Desenvolvido nos laboratórios da Bell, o UNIX foi um sistema operacional simples, mas incrivelmente poderoso e 
    flexível. Sua estrutura modular, linguagem de comandos e portabilidade o tornaram a base para muitos sistemas 
-   operacionais modernos, como o Linux, o mac OS e até partes do Android.
+   operacionais modernos, como o Linux, o macOS e até partes do Android.
 
 
  * Memória DRAM (1970):
@@ -525,7 +525,7 @@ mesmo computador. A computação começava a se democratizar, tanto nas empresas
    Ela permitiu armazenar mais dados com menos componentes, o que aumentou significativamente o desempenho dos 
    computadores e pavimentou o caminho para os avanços da próxima geração.
 
- Em suma, a terceira geração mostrou que os computadores podiam ser menores, mais rápidos e mais versáteis — e, o 
+ Em suma, a terceira geração mostrou que os computadores podiam ser menores, mais rápidos e mais versáteis  e, o 
 mais importante, acessíveis para um número maior de pessoas e organizações. Os chips e o tempo compartilhado 
 abriram espaço para novos usos, enquanto o UNIX e a DRAM trouxeram a base para o software e a memória dos 
 computadores modernos.
