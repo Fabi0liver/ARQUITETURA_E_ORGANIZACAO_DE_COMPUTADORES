@@ -431,7 +431,6 @@ Evolução do Armazenamento e Mídias:
 
 
 
-
 Evolução dos Barramentos:
 
  Conceito: O barramento é como o “sistema circulatório” do computador — ele conecta os componentes e permite a  
@@ -485,13 +484,11 @@ periféricos se comunicam por barramentos internos dedicados com baixa latência
 
 
 
-
-
 Evolução das Linguagens de Programação:
 
  Conceito: As linguagens de programação são como os idiomas que usamos para dar instruções aos computadores. Ao  
           longo do tempo, elas evoluíram para se tornarem mais acessíveis, poderosas e próximas do pensamento 
-          humano.nguagem C na portabilidade e nos sistemas operacionais
+          humano. Linguagem C na portabilidade e nos sistemas operacionais
 
 
   - Linguagens de máquina:
