@@ -420,37 +420,58 @@ geração: mais rápida, menor e muito mais promissora.
 
 
 
-                     "Segunda Geração (1956–1964) – Computadores a Transistores"
+                      "Segunda Geração (1956–1964) – Computadores a Transistores"
 
- Depois do esforço hercúleo da Primeira Geração, com suas válvulas grandes, quentes e frágeis, a computação deu outro salto gigantesco: a invenção do transistor. Pequeno, confiável e muito mais eficiente que a válvula, o transistor mudou tudo. Os computadores ficaram menores, mais rápidos, menos suscetíveis a falhas e com menor consumo de energia. Foi como trocar uma lamparina por um LED — uma mudança simples na aparência, mas profunda no impacto.
+ Depois do esforço hercúleo da Primeira Geração, com suas válvulas grandes, quentes e frágeis, a computação deu 
+outro salto gigantesco: a invenção do transistor. Pequeno, confiável e muito mais eficiente que a válvula, o 
+transistor mudou tudo. Os computadores ficaram menores, mais rápidos, menos suscetíveis a falhas e com menor 
+consumo de energia. Foi como trocar uma lamparina por um LED — uma mudança simples na aparência, mas profunda no 
+impacto.
 
- Com essa nova tecnologia vieram outras inovações importantes, como as linguagens de programação de alto nível. Pela primeira vez, os programadores podiam escrever instruções com palavras mais próximas da linguagem humana, em vez de lidar apenas com números binários. Isso abriu as portas para que mais pessoas pudessem programar e para que as máquinas fossem aplicadas a problemas cada vez mais diversos. 
+ Com essa nova tecnologia vieram outras inovações importantes, como as linguagens de programação de alto nível. 
+Pela primeira vez, os programadores podiam escrever instruções com palavras mais próximas da linguagem humana, em 
+vez de lidar apenas com números binários. Isso abriu as portas para que mais pessoas pudessem programar e para que 
+as máquinas fossem aplicadas a problemas cada vez mais diversos. 
 
  Agora, vamos ver os principais marcos históricos dessa fase transformadora:
 
-
  * Introdução dos Transistores (1956):
 
-   O uso de transistores no lugar das válvulas marcou o início oficial da Segunda Geração. Eles permitiram a criação de computadores menores, mais rápidos, mais frios e mais confiáveis, além de baratearem os custos de produção. Essa inovação, vinda da física do estado sólido, revolucionou não apenas a computação, mas toda a indústria eletrônica.
+    O uso de transistores no lugar das válvulas marcou o início oficial da Segunda Geração. Eles permitiram a 
+   criação de computadores menores, mais rápidos, mais frios e mais confiáveis, além de baratearem os custos de 
+   produção. Essa inovação, vinda da física do estado sólido, revolucionou não apenas a computação, mas toda a 
+   indústria eletrônica.
 
 
  * Criação da Linguagem Fortran (1957):
 
-   Com o surgimento do Fortran (Formula Translation), nasceu a primeira linguagem de programação de alto nível amplamente usada. Criada para facilitar cálculos científicos e engenharias, ela permitia que os programadores descrevessem equações matemáticas de forma mais direta, acelerando o desenvolvimento de software técnico.
+    Com o surgimento do Fortran (Formula Translation), nasceu a primeira linguagem de programação de alto nível 
+   amplamente usada. Criada para facilitar cálculos científicos e engenharias, ela permitia que os programadores 
+   descrevessem equações matemáticas de forma mais direta, acelerando o desenvolvimento de software técnico.
 
 
  * COBOL (1959):
 
-   Enquanto o Fortran reinava nos laboratórios, o COBOL (Common Business Oriented Language) foi criado para atender o mundo dos negócios. Ele se destacava por ser mais próximo da linguagem natural, focado em relatórios, registros e sistemas administrativos, e até hoje é usado em sistemas bancários e governamentais que precisam de alta confiabilidade.
+    Enquanto o Fortran reinava nos laboratórios, o COBOL (Common Business Oriented Language) foi criado para 
+   atender o mundo dos negócios. Ele se destacava por ser mais próximo da linguagem natural, focado em relatórios, 
+   registros e sistemas administrativos, e até hoje é usado em sistemas bancários e governamentais que precisam de 
+   alta confiabilidade.
+
 
  * IBM 1401 (1959):
 
-   O IBM 1401 foi um dos primeiros computadores comerciais de grande sucesso, especialmente entre empresas. Ele se popularizou rapidamente por sua versatilidade, custo acessível e capacidade de automatizar tarefas como contabilidade, folha de pagamento e emissão de faturas. Representou a verdadeira entrada da computação no mundo corporativo.
+    O IBM 1401 foi um dos primeiros computadores comerciais de grande sucesso, especialmente entre empresas. Ele se 
+   popularizou rapidamente por sua versatilidade, custo acessível e capacidade de automatizar tarefas como 
+   contabilidade, folha de pagamento e emissão de faturas. Representou a verdadeira entrada da computação no mundo 
+   corporativo.
 
+ Em suma, a Segunda Geração foi como tirar o computador do laboratório e colocá-lo no mundo real. Com transistores 
+e linguagens mais acessíveis, os computadores se tornaram ferramentas práticas para resolver problemas do dia a 
+dia, tanto em áreas científicas quanto comerciais. Essa transição trouxe eficiência e abriu caminho para a criação 
+de software mais complexo e útil.
 
- Em suma, a Segunda Geração foi como tirar o computador do laboratório e colocá-lo no mundo real. Com transistores e linguagens mais acessíveis, os computadores se tornaram ferramentas práticas para resolver problemas do dia a dia, tanto em áreas científicas quanto comerciais. Essa transição trouxe eficiência e abriu caminho para a criação de software mais complexo e útil.
-
- Foi nesse período que a computação deixou de ser apenas uma curiosidade de cientistas para se tornar uma solução concreta para empresas, governos e engenheiros. 
+ Foi nesse período que a computação deixou de ser apenas uma curiosidade de cientistas para se tornar uma solução 
+concreta para empresas, governos e engenheiros. 
 
 
 
