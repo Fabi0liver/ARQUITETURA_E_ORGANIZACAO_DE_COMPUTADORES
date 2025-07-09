@@ -538,93 +538,129 @@ um mundo onde a computação estaria cada vez mais presente no cotidiano.
 
              "Quarta Geração (1971 – Presente) – Microprocessadores e Computadores Pessoais" 
 
- Chegamos à Quarta Geração dos Computadores, onde tudo começa a se parecer muito com o nosso mundo atual — inclusive com o dispositivo que você está usando agora para ler este texto. Essa fase não foi apenas uma mudança tecnológica: ela marcou o nascimento da computação pessoal, da conectividade global e da era digital.
+ Chegamos à Quarta Geração dos Computadores, onde tudo começa a se parecer muito com o nosso mundo atual (inclusive 
+com o dispositivo que você está usando agora para ler este texto). Essa fase não foi apenas uma mudança 
+tecnológica: ela marcou o nascimento da computação pessoal, da conectividade global e da era digital.
 
- E essa virada aconteceu entre os anos 1970 e os anos 1980 onde trouxe consigo um ingrediente mágico que mudaria para sempre a computação: o microprocessador. Esse pequeno chip concentrava a “inteligência” de um computador inteiro em um único componente. Foi como colocar um cérebro eletrônico do tamanho de uma unha em uma máquina — e, com isso, surgiram os computadores pessoais, ou simplesmente PCs. Pela primeira vez, pessoas comuns podiam ter um computador em casa ou no escritório.
+ E essa virada aconteceu entre os anos 1970 e os anos 1980 onde trouxe consigo um ingrediente mágico que mudaria 
+para sempre a computação: o microprocessador. Esse pequeno chip concentrava a “inteligência” de um computador 
+inteiro em um único componente. Foi como colocar um cérebro eletrônico do tamanho de uma unha em uma máquina — e, 
+com isso, surgiram os computadores pessoais, ou simplesmente PCs. Pela primeira vez, pessoas comuns podiam ter um 
+computador em casa ou no escritório.
 
- Mas a revolução não parou aí. Com os avanços em redes, linguagens de programação, sistemas operacionais e interfaces gráficas, os computadores deixaram de ser ferramentas para poucos e se tornaram portas de entrada para o mundo digital. A internet, os navegadores, os smartphones e as redes sociais nasceram dentro dessa mesma geração — e até hoje, ela continua evoluindo. 
+ Mas a revolução não parou aí. Com os avanços em redes, linguagens de programação, sistemas operacionais e 
+interfaces gráficas, os computadores deixaram de ser ferramentas para poucos e se tornaram portas de entrada para o 
+mundo digital. A internet, os navegadores, os smartphones e as redes sociais nasceram dentro dessa mesma geração — 
+e até hoje, ela continua evoluindo. 
 
  Agora vamos passear por alguns marcos históricos dessa fase transformadora:
 
-
  * Intel 4004 (1971):
 
-   Foi o primeiro microprocessador do mundo, criado pela Intel. Esse chip minúsculo podia executar todas as funções centrais de um computador e abriu as portas para a criação de máquinas muito menores, mais baratas e mais acessíveis, iniciando a era da computação pessoal.
+    Foi o primeiro microprocessador do mundo, criado pela Intel. Esse chip minúsculo podia executar todas as 
+   funções centrais de um computador e abriu as portas para a criação de máquinas muito menores, mais baratas e 
+   mais acessíveis, iniciando a era da computação pessoal.
 
 
  * Linguagem C (1972):
 
-   Desenvolvida por Dennis Ritchie, a linguagem C foi criada inicialmente para escrever sistemas operacionais, como o UNIX. Até hoje é considerada uma das linguagens de programação mais influentes da história, sendo base para várias outras, como C++, Java e até Python.
+    Desenvolvida por Dennis Ritchie, a linguagem C foi criada inicialmente para escrever sistemas operacionais, 
+   como o UNIX. Até hoje é considerada uma das linguagens de programação mais influentes da história, sendo base 
+   para várias outras, como C++, Java e até Python.
 
 
  * Ethernet (1973):
 
-   Robert Metcalfe criou a Ethernet, uma tecnologia que possibilitou a comunicação entre computadores em redes locais (LANs). Ela se tornou a espinha dorsal das conexões em escritórios, universidades e, mais tarde, da própria internet moderna.
+    Robert Metcalfe criou a Ethernet, uma tecnologia que possibilitou a comunicação entre computadores em redes 
+   locais (LANs). Ela se tornou a espinha dorsal das conexões em escritórios, universidades e, mais tarde, da 
+   própria internet moderna.
 
 
  * Altair 8800 (1975):
 
-   Lançado como um kit para entusiastas, o Altair 8800 é reconhecido como o primeiro computador pessoal. Apesar de rudimentar, ele inspirou a criação de empresas e produtos que definiriam o futuro da computação doméstica.
+    Lançado como um kit para entusiastas, o Altair 8800 é reconhecido como o primeiro computador pessoal. Apesar de 
+   rudimentar, ele inspirou a criação de empresas e produtos que definiriam o futuro da computação doméstica.
 
 
  * Fundação da Apple e Apple I (1976):
 
-   Steve Jobs e Steve Wozniak fundaram a Apple e lançaram o Apple I, um dos primeiros computadores comerciais para uso pessoal. Era compacto, relativamente acessível e despertou o interesse de um público novo: o consumidor comum.
+    Steve Jobs e Steve Wozniak fundaram a Apple e lançaram o Apple I, um dos primeiros computadores comerciais para 
+   uso pessoal. Era compacto, relativamente acessível e despertou o interesse de um público novo: o consumidor 
+   comum.
 
 
  * IBM PC (1981)
 
-   A IBM entrou no mercado com seu computador pessoal, o IBM PC. Por ser confiável, expansível e com arquitetura aberta, ele popularizou os PCs em empresas, escolas e lares, criando um padrão que influenciaria toda a indústria.
+    A IBM entrou no mercado com seu computador pessoal, o IBM PC. Por ser confiável, expansível e com arquitetura 
+   aberta, ele popularizou os PCs em empresas, escolas e lares, criando um padrão que influenciaria toda a 
+   indústria.
 
 
  * TCP/IP e Internet (1983)
 
-   O conjunto de protocolos TCP/IP tornou-se o padrão da internet, permitindo a comunicação eficiente entre redes de computadores. Esse foi o nascimento oficial da internet moderna, capaz de conectar o mundo de forma global.
+    O conjunto de protocolos TCP/IP tornou-se o padrão da internet, permitindo a comunicação eficiente entre redes 
+   de computadores. Esse foi o nascimento oficial da internet moderna, capaz de conectar o mundo de forma global.
 
 
  * Macintosh (1984):
 
-   O Macintosh da Apple trouxe ao público a interface gráfica com janelas, ícones e mouse, tornando o uso do computador muito mais intuitivo. Foi um marco na experiência do usuário, inspirando sistemas operacionais que usamos até hoje.
+    O Macintosh da Apple trouxe ao público a interface gráfica com janelas, ícones e mouse, tornando o uso do  
+   computador muito mais intuitivo. Foi um marco na experiência do usuário, inspirando sistemas operacionais que 
+   usamos até hoje.
 
 
  * Windows 1.0 (1985):
 
-   A Microsoft lançou o Windows 1.0, uma camada gráfica sobre o MS-DOS. Embora básico, foi o início da dominância da Microsoft no mercado de sistemas operacionais com interface amigável para PCs.
+    A Microsoft lançou o Windows 1.0, uma camada gráfica sobre o MS-DOS. Embora básico, foi o início da dominância 
+   da Microsoft no mercado de sistemas operacionais com interface amigável para PCs.
 
 
  * Criação do Linux (1991):
 
-   Linus Torvalds desenvolveu o Linux, um sistema operacional de código aberto e gratuito. Sua flexibilidade e liberdade de modificação o tornaram amplamente usado em servidores, dispositivos embarcados e até em smartphones (como o Android).
+    Linus Torvalds desenvolveu o Linux, um sistema operacional de código aberto e gratuito. Sua flexibilidade e 
+   liberdade de modificação o tornaram amplamente usado em servidores, dispositivos embarcados e até em smartphones 
+   (como o Android).
 
 
  * Primeiros Navegadores Web (1993):
 
-   O surgimento de navegadores como o Mosaic permitiu que o público geral acessasse e navegasse pela World Wide Web com facilidade. Isso tornou a internet visual, interativa e acessível — e mudou tudo.
+    O surgimento de navegadores como o Mosaic permitiu que o público geral acessasse e navegasse pela World Wide 
+   Web com facilidade. Isso tornou a internet visual, interativa e acessível — e mudou tudo.
 
 
  * Windows 95 (1995):
 
-   O Windows 95 revolucionou a experiência de uso com seu menu iniciar, multitarefa e suporte à internet. Foi um fenômeno de vendas e solidificou o computador pessoal como um item essencial na casa de milhões de pessoas.
+    O Windows 95 revolucionou a experiência de uso com seu menu iniciar, multitarefa e suporte à internet. Foi um 
+   fenômeno de vendas e solidificou o computador pessoal como um item essencial na casa de milhões de pessoas.
 
 
  * Fundação do Google (1998):
 
-   Larry Page e Sergey Brin criaram o Google, uma nova forma de buscar informações na internet, com resultados mais relevantes. Isso redefiniu o acesso ao conhecimento online e influenciou profundamente a forma como usamos a web.
+    Larry Page e Sergey Brin criaram o Google, uma nova forma de buscar informações na internet, com resultados 
+   mais relevantes. Isso redefiniu o acesso ao conhecimento online e influenciou profundamente a forma como usamos 
+   a web.
 
 
  * Criação do Facebook (2004):
 
-   O Facebook trouxe a era das redes sociais, onde as pessoas passaram a se conectar, compartilhar e interagir online de maneira constante e global. Ele marcou uma nova etapa no uso social e cultural da tecnologia.
+    O Facebook trouxe a era das redes sociais, onde as pessoas passaram a se conectar, compartilhar e interagir 
+   online de maneira constante e global. Ele marcou uma nova etapa no uso social e cultural da tecnologia.
 
 
  * Lançamento do iPhone (2007):
 
-   Com o lançamento do iPhone, a Apple reinventou o conceito de celular, transformando-o em um smartphone com tela sensível ao toque, internet móvel e aplicativos. Esse momento redefiniu não só a computação pessoal, mas toda a vida digital moderna.
+    Com o lançamento do iPhone, a Apple reinventou o conceito de celular, transformando-o em um smartphone com tela 
+   sensível ao toque, internet móvel e aplicativos. Esse momento redefiniu não só a computação pessoal, mas toda a 
+   vida digital moderna.
 
+ Em suma, a quarta geração não apenas transformou os computadores, ela transformou a própria sociedade. Com os 
+microprocessadores, os computadores se tornaram pessoais, portáteis, conectados e essenciais. A internet uniu o 
+planeta em rede, as linguagens evoluíram, e a tecnologia passou a moldar a forma como vivemos, trabalhamos, 
+aprendemos e nos relacionamos.
 
- Em suma, a quarta geração não apenas transformou os computadores — ela transformou a própria sociedade. Com os microprocessadores, os computadores se tornaram pessoais, portáteis, conectados e essenciais. A internet uniu o planeta em rede, as linguagens evoluíram, e a tecnologia passou a moldar a forma como vivemos, trabalhamos, aprendemos e nos relacionamos.
-
- O mais impressionante é que essa geração ainda está em andamento. A cada ano, novas inovações surgem sobre esse alicerce: inteligência artificial, computação em nuvem, realidade aumentada, e por aí vai. E tudo começou com aquele pequeno chip, lá em 1971.
+ O mais impressionante é que essa geração ainda está em andamento. A cada ano, novas inovações surgem sobre esse 
+alicerce: inteligência artificial, computação em nuvem, realidade aumentada, e por aí vai. E tudo começou com 
+aquele pequeno chip, lá em 1971.
 
 
 
