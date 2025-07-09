@@ -425,7 +425,7 @@ geração: mais rápida, menor e muito mais promissora.
  Depois do esforço hercúleo da Primeira Geração, com suas válvulas grandes, quentes e frágeis, a computação deu 
 outro salto gigantesco: a invenção do transistor. Pequeno, confiável e muito mais eficiente que a válvula, o 
 transistor mudou tudo. Os computadores ficaram menores, mais rápidos, menos suscetíveis a falhas e com menor 
-consumo de energia. Foi como trocar uma lamparina por um LED — uma mudança simples na aparência, mas profunda no 
+consumo de energia. Foi como trocar uma lamparina por um LED, uma mudança simples na aparência, mas profunda no 
 impacto.
 
  Com essa nova tecnologia vieram outras inovações importantes, como as linguagens de programação de alto nível. 
@@ -477,41 +477,62 @@ concreta para empresas, governos e engenheiros.
 
                          "Terceira Geração (1964–1971) – Circuitos Integrados"
 
- Agora chegamos à Terceira Geração dos Computadores, um momento marcante em que a tecnologia realmente começa a parecer com aquilo que conhecemos hoje (mais rápida, mais compacta e mais próxima do cotidiano). Isso aconteceu na década de 1960, quando a computação passou por uma transformação silenciosa, mas profunda: a miniaturização dos componentes. Com o surgimento dos circuitos integrados, também conhecidos como "chips", tornou-se possível colocar diversos transistores em um único pedaço de silício. Isso reduziu drasticamente o tamanho dos computadores, cortou custos e aumentou a confiabilidade. Era o começo de uma nova era — mais portátil, mais acessível e mais inteligente.
+ Agora chegamos à Terceira Geração dos Computadores, um momento marcante em que a tecnologia realmente começa a 
+parecer com aquilo que conhecemos hoje (mais rápida, mais compacta e mais próxima do cotidiano). Isso aconteceu na 
+década de 1960, quando a computação passou por uma transformação silenciosa, mas profunda: a miniaturização dos 
+componentes. Com o surgimento dos circuitos integrados, também conhecidos como "chips", tornou-se possível colocar 
+diversos transistores em um único pedaço de silício. Isso reduziu drasticamente o tamanho dos computadores, cortou 
+custos e aumentou a confiabilidade. Era o começo de uma nova era: mais portátil, mais acessível e mais inteligente.
 
- E não parou por aí. Foi nesse período que os sistemas operacionais começaram a se tornar mais robustos, possibilitando que várias tarefas fossem gerenciadas ao mesmo tempo e que diferentes usuários compartilhassem o mesmo computador. A computação começava a se democratizar, tanto nas empresas quanto nas universidades. 
+ E não parou por aí. Foi nesse período que os sistemas operacionais começaram a se tornar mais robustos, 
+possibilitando que várias tarefas fossem gerenciadas ao mesmo tempo e que diferentes usuários compartilhassem o 
+mesmo computador. A computação começava a se democratizar, tanto nas empresas quanto nas universidades. 
 
  Agora, vamos conhecer os eventos e invenções que deram forma a essa nova geração:
 
-
  * Circuitos Integrados (1964):
 
-   A introdução dos circuitos integrados, pequenos chips que continham diversos transistores, revolucionou o hardware. Eles reduziram o tamanho, o custo e o consumo de energia dos computadores, ao mesmo tempo em que aumentaram sua velocidade e confiabilidade. Essa inovação foi essencial para levar a computação a um novo patamar de eficiência e acessibilidade.
+    A introdução dos circuitos integrados, pequenos chips que continham diversos transistores, revolucionou o 
+   hardware. Eles reduziram o tamanho, o custo e o consumo de energia dos computadores, ao mesmo tempo em que 
+   aumentaram sua velocidade e confiabilidade. Essa inovação foi essencial para levar a computação a um novo 
+   patamar de eficiência e acessibilidade.
 
 
  * IBM System/360 (1964):
 
-   A IBM lançou a série System/360, uma família de computadores com arquitetura compatível entre modelos. Pela primeira vez, as empresas podiam atualizar seus sistemas sem ter que descartar todos os programas e periféricos antigos. Esse conceito de compatibilidade e escalabilidade foi um divisor de águas no mercado corporativo.
+    A IBM lançou a série System/360, uma família de computadores com arquitetura compatível entre modelos. Pela 
+   primeira vez, as empresas podiam atualizar seus sistemas sem ter que descartar todos os programas e periféricos 
+   antigos. Esse conceito de compatibilidade e escalabilidade foi um divisor de águas no mercado corporativo.
 
 
  * Tempo Compartilhado (1965):
 
-   O conceito de tempo compartilhado permitiu que vários usuários acessassem o mesmo computador simultaneamente, cada um em seu terminal. Isso aumentou a produtividade, reduziu custos e foi um passo importante rumo aos sistemas interativos que conhecemos hoje, como os servidores e ambientes em nuvem.
+    O conceito de tempo compartilhado permitiu que vários usuários acessassem o mesmo computador simultaneamente, 
+   cada um em seu terminal. Isso aumentou a produtividade, reduziu custos e foi um passo importante rumo aos 
+   sistemas interativos que conhecemos hoje, como os servidores e ambientes em nuvem.
 
 
  * Criação do UNIX (1969):
 
-   Desenvolvido nos laboratórios da Bell, o UNIX foi um sistema operacional simples, mas incrivelmente poderoso e flexível. Sua estrutura modular, linguagem de comandos e portabilidade o tornaram a base para muitos sistemas operacionais modernos, como o Linux, o macOS e até partes do Android.
+    Desenvolvido nos laboratórios da Bell, o UNIX foi um sistema operacional simples, mas incrivelmente poderoso e 
+   flexível. Sua estrutura modular, linguagem de comandos e portabilidade o tornaram a base para muitos sistemas 
+   operacionais modernos, como o Linux, o mac OS e até partes do Android.
 
 
  * Memória DRAM (1970):
 
-   Robert Dennard criou a memória DRAM (Dynamic Random Access Memory), um tipo de memória mais rápida e eficiente. Ela permitiu armazenar mais dados com menos componentes, o que aumentou significativamente o desempenho dos computadores e pavimentou o caminho para os avanços da próxima geração.
+    Robert Dennard criou a memória DRAM (Dynamic Random Access Memory), um tipo de memória mais rápida e eficiente. 
+   Ela permitiu armazenar mais dados com menos componentes, o que aumentou significativamente o desempenho dos 
+   computadores e pavimentou o caminho para os avanços da próxima geração.
 
+ Em suma, a terceira geração mostrou que os computadores podiam ser menores, mais rápidos e mais versáteis — e, o 
+mais importante, acessíveis para um número maior de pessoas e organizações. Os chips e o tempo compartilhado 
+abriram espaço para novos usos, enquanto o UNIX e a DRAM trouxeram a base para o software e a memória dos 
+computadores modernos.
 
- Em suma, a terceira geração mostrou que os computadores podiam ser menores, mais rápidos e mais versáteis — e, o mais importante, acessíveis para um número maior de pessoas e organizações. Os chips e o tempo compartilhado abriram espaço para novos usos, enquanto o UNIX e a DRAM trouxeram a base para o software e a memória dos computadores modernos.
-
- Mais do que uma mudança técnica, essa geração representou um salto cultural: os computadores começaram a sair do isolamento técnico e a se aproximar das pessoas comuns, das empresas menores, das universidades. Era o prenúncio de um mundo onde a computação estaria cada vez mais presente no cotidiano.
+ Mais do que uma mudança técnica, essa geração representou um salto cultural: os computadores começaram a sair do 
+isolamento técnico e a se aproximar das pessoas comuns, das empresas menores, das universidades. Era o prenúncio de 
+um mundo onde a computação estaria cada vez mais presente no cotidiano.
 
 
 
