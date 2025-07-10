@@ -1397,8 +1397,7 @@ saúde, trabalho, relacionamentos e até democracia.
 
  E à medida que ela continua a evoluir (com a nuvem, o 5G, a inteligência artificial e a computação quântica), a 
 Internet se transforma na infraestrutura invisível que sustenta o mundo. Um mundo onde tudo e todos estão, de algum 
-modo, interligados. Se quiser, podemos continuar agora com a Evolução dos Ambientes de Desenvolvimento e 
-Ferramentas.
+modo, interligados. 
 
 
 
