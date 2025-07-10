@@ -1486,7 +1486,7 @@ poder de criar?
  À medida que a tecnologia se torna cada vez mais presente em nossas vidas (desde algoritmos que influenciam 
 decisões até sistemas que aprendem sozinhos), a conversa sobre ética, diversidade, sustentabilidade e direitos 
 digitais se torna essencial. Afinal, mais do que apenas construir máquinas eficientes, o grande desafio da 
-computação é garantir que ela esteja a serviço do bem comum — e de todas as pessoas.
+computação é garantir que ela esteja a serviço do bem comum  e de todas as pessoas.
 
 
 
