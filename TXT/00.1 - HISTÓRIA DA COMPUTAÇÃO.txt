@@ -1307,66 +1307,98 @@ do nosso pensamento e vontade.
 
                                     "História da Internet e das Redes"
 
- Imagine um mundo onde cada pessoa, empresa e dispositivo pode se comunicar em tempo real, de qualquer lugar do planeta. Esse mundo existe — e se chama Internet. Mas ela não surgiu de um dia para o outro. Na verdade, a Internet é fruto de uma evolução contínua, nascida em contextos militares e acadêmicos, e transformada ao longo das décadas até se tornar essa rede global que conecta bilhões de pessoas e máquinas.
+ Imagine um mundo onde cada pessoa, empresa e dispositivo pode se comunicar em tempo real, de qualquer lugar do 
+planeta. Esse mundo existe e se chama Internet. Mas ela não surgiu de um dia para o outro. Na verdade, a Internet 
+é fruto de uma evolução contínua, nascida em contextos militares e acadêmicos, e transformada ao longo das décadas 
+até se tornar essa rede global que conecta bilhões de pessoas e máquinas.
 
- A história das redes de computadores é também a história da nossa forma de viver e interagir. O que começou como um experimento de comunicação remota entre universidades virou um ambiente digital onde estudamos, trabalhamos, socializamos, compramos, criamos e até construímos novas realidades. 
+ A história das redes de computadores é também a história da nossa forma de viver e interagir. O que começou como 
+um experimento de comunicação remota entre universidades virou um ambiente digital onde estudamos, trabalhamos, 
+socializamos, compramos, criamos e até construímos novas realidades. 
  
- Vamos agora acompanhar os principais marcos históricos dessa jornada fascinante que moldou a era da informação como conhecemos hoje.
+ Vamos agora acompanhar os principais marcos históricos dessa jornada fascinante que moldou a era da informação 
+como conhecemos hoje.
                
-
  * Primeiras ideias de redes de computadores (anos 1950–60):
 
-   Durante a Guerra Fria, surgiram os primeiros estudos sobre como conectar computadores à distância. Paul Baran e Donald Davies propuseram a comutação por pacotes, um sistema em que os dados são divididos em pequenos pedaços enviados por caminhos independentes, tornando as redes mais eficientes e resistentes a falhas — algo essencial em tempos de conflito.
+    Durante a Guerra Fria, surgiram os primeiros estudos sobre como conectar computadores à distância. Paul Baran e 
+   Donald Davies propuseram a comutação por pacotes, um sistema em que os dados são divididos em pequenos pedaços 
+   enviados por caminhos independentes, tornando as redes mais eficientes e resistentes a falhas, algo essencial 
+   em tempos de conflito.
 
 
  * ARPANET – A origem da Internet (1969):
 
-   A ARPANET foi criada nos Estados Unidos pelo Departamento de Defesa. Conectando inicialmente quatro universidades, ela foi a primeira rede operacional a usar comutação por pacotes. Considerada a “avó da internet”, a ARPANET demonstrou que era possível compartilhar recursos computacionais à distância — e inspirou todas as redes que viriam depois.
+    A ARPANET foi criada nos Estados Unidos pelo Departamento de Defesa. Conectando inicialmente quatro 
+   universidades, ela foi a primeira rede operacional a usar comutação por pacotes. Considerada a “avó da 
+   internet”, a ARPANET demonstrou que era possível compartilhar recursos computacionais à distância e inspirou 
+   todas as redes que viriam depois.
 
 
  * TCP/IP – A linguagem da Internet (1983):
 
-   O grande salto veio com o protocolo TCP/IP, que padronizou a forma como os dados são transmitidos entre diferentes tipos de redes. Com ele, a Internet pôde crescer de forma interoperável. O dia 1º de janeiro de 1983, quando a ARPANET adotou o TCP/IP oficialmente, é considerado o "nascimento técnico da Internet".
+    O grande salto veio com o protocolo TCP/IP, que padronizou a forma como os dados são transmitidos entre 
+   diferentes tipos de redes. Com ele, a Internet pôde crescer de forma interoperável. O dia 1º de janeiro de 1983, 
+   quando a ARPANET adotou o TCP/IP oficialmente, é considerado o "nascimento técnico da Internet".
 
 
  * DNS e endereços legíveis (1984):
 
-   Imagine se você tivesse que lembrar o número IP de cada site que quisesse acessar. Foi para resolver isso que surgiu o DNS (Domain Name System), um sistema que transforma endereços como 142.250.190.78 em nomes como www.google.com. Isso facilitou enormemente o acesso à web.
+   Imagine se você tivesse que lembrar o número IP de cada site que quisesse acessar. Foi para resolver isso que 
+   surgiu o DNS (Domain Name System), um sistema que transforma endereços como 142.250.190.78 em nomes como 
+   www.google.com. Isso facilitou enormemente o acesso à web.
 
 
  * WWW – A Web é inventada (1991):
 
-   Tim Berners-Lee criou a World Wide Web (WWW), permitindo a navegação entre páginas ligadas por hiperlinks. Ao lado do protocolo HTTP e dos primeiros navegadores, a Web transformou a Internet em um ambiente acessível ao público geral, onde qualquer pessoa podia publicar e consumir informação.
+    Tim Berners-Lee criou a World Wide Web (WWW), permitindo a navegação entre páginas ligadas por hiperlinks. Ao 
+   lado do protocolo HTTP e dos primeiros navegadores, a Web transformou a Internet em um ambiente acessível ao  
+   público geral, onde qualquer pessoa podia publicar e consumir informação.
 
 
  * A Internet se populariza (anos 1990):
 
-   Com o surgimento dos provedores de acesso e navegadores gráficos como Mosaic e Netscape, a Internet chegou às casas. Foram os tempos dos e-mails, chats, fóruns e sites pessoais, que transformaram o computador em uma janela para o mundo.
+    Com o surgimento dos provedores de acesso e navegadores gráficos como Mosaic e Netscape, a Internet chegou às 
+   casas. Foram os tempos dos e-mails, chats, fóruns e sites pessoais, que transformaram o computador em uma janela 
+   para o mundo.
 
 
  * Explosão dos serviços online (anos 2000):
 
-   Entramos na era do conteúdo interativo com a chamada Web 2.0. Plataformas como YouTube, Google, Orkut e Wikipedia mudaram o jogo: agora os usuários criavam conteúdo, não só consumiam. A banda larga substituiu a internet discada e abriu caminho para o streaming e redes sociais.
+    Entramos na era do conteúdo interativo com a chamada Web 2.0. Plataformas como YouTube, Google, Orkut e 
+   Wikipedia mudaram o jogo: agora os usuários criavam conteúdo, não só consumiam. A banda larga substituiu a 
+   internet discada e abriu caminho para o streaming e redes sociais.
 
 
  * Internet móvel e redes sem fio (anos 2010):
 
-   Com o avanço do 3G, 4G e Wi-Fi, a internet saiu dos desktops e foi parar nos nossos bolsos. Os smartphones passaram a ser o principal meio de acesso à Internet. Aplicativos, redes sociais e plataformas de vídeo passaram a dominar nosso tempo online.
+    Com o avanço do 3G, 4G e Wi-Fi, a internet saiu dos desktops e foi parar nos nossos bolsos. Os smartphones 
+   passaram a ser o principal meio de acesso à Internet. Aplicativos, redes sociais e plataformas de vídeo passaram 
+   a dominar nosso tempo online.
 
 
  * Nuvem, IoT e hiperconectividade:
 
-   A computação em nuvem transformou a forma como usamos dados e programas: tudo pode estar disponível em qualquer dispositivo, em qualquer lugar. A Internet das Coisas (IoT) ligou eletrodomésticos, sensores, carros e câmeras a essa rede, tornando o mundo físico cada vez mais digital.
+    A computação em nuvem transformou a forma como usamos dados e programas: tudo pode estar disponível em qualquer 
+   dispositivo, em qualquer lugar. A Internet das Coisas (IoT) ligou eletrodomésticos, sensores, carros e câmeras a 
+   essa rede, tornando o mundo físico cada vez mais digital.
 
 
  * Internet global via satélite e 5G (presente e futuro):
 
-   Com projetos como o Starlink, a Internet chega até áreas remotas por meio de satélites de baixa órbita. E o 5G, com sua altíssima velocidade e baixíssima latência, promete conectar bilhões de dispositivos simultaneamente, preparando o terreno para uma nova era: a Web 3.0, com mais descentralização, inteligência artificial e integração com o mundo físico.
+    Com projetos como o Starlink, a Internet chega até áreas remotas por meio de satélites de baixa órbita. E o 5G, 
+   com sua altíssima velocidade e baixíssima latência, promete conectar bilhões de dispositivos simultaneamente, 
+   preparando o terreno para uma nova era: a Web 3.0, com mais descentralização, inteligência artificial e 
+   integração com o mundo físico.
 
+ Em suma... A história da Internet é, no fundo, a história de como nos tornamos uma sociedade conectada. Ela 
+evoluiu do papel de ferramenta militar para se tornar uma plataforma essencial da vida moderna, afetando educação, 
+saúde, trabalho, relacionamentos e até democracia.
 
- Em suma... A história da Internet é, no fundo, a história de como nos tornamos uma sociedade conectada. Ela evoluiu do papel de ferramenta militar para se tornar uma plataforma essencial da vida moderna, afetando educação, saúde, trabalho, relacionamentos e até democracia.
-
- E à medida que ela continua a evoluir (com a nuvem, o 5G, a inteligência artificial e a computação quântica), a Internet se transforma na infraestrutura invisível que sustenta o mundo. Um mundo onde tudo e todos estão, de algum modo, interligados. Se quiser, podemos continuar agora com a Evolução dos Ambientes de Desenvolvimento e Ferramentas.
+ E à medida que ela continua a evoluir (com a nuvem, o 5G, a inteligência artificial e a computação quântica), a 
+Internet se transforma na infraestrutura invisível que sustenta o mundo. Um mundo onde tudo e todos estão, de algum 
+modo, interligados. Se quiser, podemos continuar agora com a Evolução dos Ambientes de Desenvolvimento e 
+Ferramentas.
 
 
 
