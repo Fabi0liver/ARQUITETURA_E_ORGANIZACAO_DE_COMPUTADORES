@@ -79,7 +79,7 @@ computação do simples ato de calcular: é a capacidade de pensar com lógica e
 
 
 
-                              "Contexto Social e Evolução da Computação"
+                               "Contexto Social e Evolução da Computação"
 
  A computação não surgiu do nada, ela é o resultado de séculos de descobertas, necessidades humanas e 
 transformações culturais. Muito antes da invenção do computador eletrônico, a humanidade já sentia a necessidade de 
@@ -419,7 +419,7 @@ geração: mais rápida, menor e muito mais promissora.
 
 
 
-                      "Segunda Geração (1956–1964) – Computadores a Transistores"
+                       "Segunda Geração (1956–1964) – Computadores a Transistores"
 
  Depois do esforço hercúleo da Primeira Geração, com suas válvulas grandes, quentes e frágeis, a computação deu 
 outro salto gigantesco: a invenção do transistor. Pequeno, confiável e muito mais eficiente que a válvula, o 
@@ -663,7 +663,7 @@ aquele pequeno chip, lá em 1971.
 
 
 
-              "Futuro e Quinta Geração – Inteligência Artificial e Computação Quântica"
+                 "Futuro e Quinta Geração – Inteligência Artificial e Computação Quântica"
 
  Chegamos agora à parte mais fascinante dessa jornada: o Futuro da Computação, que também é chamado por muitos de 
 Quinta Geração. Neste momento, não estamos apenas falando de máquinas rápidas e conectadas, estamos falando de 
@@ -718,7 +718,7 @@ e você, que está aprendendo sobre sua história, já está fazendo parte dele.
 
 
 
-                            "Evolução dos Processadores e do Processamento"
+                             "Evolução dos Processadores e do Processamento"
 
  Agora que já exploramos as gerações dos computadores e os fundamentos teóricos por trás da computação, é hora de 
 focar no verdadeiro “coração” de toda essa história: o processador. É ele que dá vida às ideias, que executa os 
@@ -1009,7 +1009,6 @@ um todo.
 
 
                              "Evolução das Linguagens de Programação"
-
 
   Agora que já exploramos o que acontece “por dentro” do computador (processadores, armazenamento e barramentos) 
 chegou a hora de olhar para a forma como nós, seres humanos, conseguimos nos comunicar com essas máquinas. E é aí 
