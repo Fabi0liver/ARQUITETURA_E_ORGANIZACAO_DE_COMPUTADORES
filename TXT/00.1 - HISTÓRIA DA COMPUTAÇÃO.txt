@@ -29,7 +29,6 @@ só que totalmente real.
 
 
 
-
                                           "O que é computação?"
 
  Afinal, o que exatamente é computação? A palavra pode parecer técnica ou até intimidadora à primeira vista, mas no 
@@ -55,7 +54,7 @@ mundo.
 
 
 
-                                  "A diferença entre cálculo e computação"
+                                 "A diferença entre cálculo e computação"
 
  À primeira vista, cálculo e computação parecem sinônimos afinal, ambos lidam com números, operações e resultados. 
 Mas há uma diferença fundamental entre os dois. O cálculo é uma atividade bem mais antiga e focada: trata-se do ato 
