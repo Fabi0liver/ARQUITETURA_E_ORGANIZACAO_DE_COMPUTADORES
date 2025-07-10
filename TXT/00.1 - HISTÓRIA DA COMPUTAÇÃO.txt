@@ -1492,12 +1492,27 @@ computação é garantir que ela esteja a serviço do bem comum  e de todas as p
 
                                 "Conclusão Sobre a História da Computação"
 
- Ao olhar para a história da computação, percebemos que ela é muito mais do que uma sequência de invenções tecnológicas — é uma narrativa viva sobre como a humanidade aprendeu a pensar de forma lógica, a resolver problemas complexos e a criar ferramentas para ampliar suas capacidades. Cada passo, cada descoberta, cada avanço, reflete um momento em que o ser humano buscou entender melhor o mundo e criar algo que fosse além de sua própria limitação.
+ Ao olhar para a história da computação, percebemos que ela é muito mais do que uma sequência de invenções 
+tecnológicas, é uma narrativa viva sobre como a humanidade aprendeu a pensar de forma lógica, a resolver problemas 
+complexos e a criar ferramentas para ampliar suas capacidades. Cada passo, cada descoberta, cada avanço, reflete um 
+momento em que o ser humano buscou entender melhor o mundo e criar algo que fosse além de sua própria limitação.
 
- O mais fascinante é notar como essa trajetória não foi linear. Foram caminhos cheios de experimentação, erros, reinvenções e até mesmo revoluções silenciosas, onde uma ideia nascida em um laboratório ou universidade acabou transformando profundamente a forma como vivemos, trabalhamos, nos comunicamos e aprendemos. A história da computação é, acima de tudo, uma história de criatividade aplicada ao pensamento.
+ O mais fascinante é notar como essa trajetória não foi linear. Foram caminhos cheios de experimentação, erros, 
+reinvenções e até mesmo revoluções silenciosas, onde uma ideia nascida em um laboratório ou universidade acabou 
+transformando profundamente a forma como vivemos, trabalhamos, nos comunicamos e aprendemos. A história da 
+computação é, acima de tudo, uma história de criatividade aplicada ao pensamento.
 
- E se o passado nos mostra como chegamos até aqui, ele também nos ensina a olhar para o futuro com mais consciência. Entender o contexto histórico da computação nos permite perceber que a tecnologia não é neutra: ela carrega as intenções, as visões de mundo e as decisões das pessoas que a criam. Por isso, refletir sobre como ela evoluiu é também um convite para pensar em como queremos que ela continue evoluindo.
+ E se o passado nos mostra como chegamos até aqui, ele também nos ensina a olhar para o futuro com mais 
+consciência. Entender o contexto histórico da computação nos permite perceber que a tecnologia não é neutra: ela 
+carrega as intenções, as visões de mundo e as decisões das pessoas que a criam. Por isso, refletir sobre como ela 
+evoluiu é também um convite para pensar em como queremos que ela continue evoluindo.
 
- Hoje, mais do que nunca, somos chamados a participar ativamente desse processo. Não apenas como usuários, mas como cidadãos digitais (críticos, informados e engajados) que compreendem de onde viemos e que querem fazer parte da construção dos próximos capítulos. Afinal, a história da computação ainda está sendo escrita, todos os dias, em cada linha de código, em cada ideia compartilhada e em cada escolha tecnológica que fazemos.
+ Hoje, mais do que nunca, somos chamados a participar ativamente desse processo. Não apenas como usuários, mas como 
+cidadãos digitais (críticos, informados e engajados) que compreendem de onde viemos e que querem fazer parte da 
+construção dos próximos capítulos. Afinal, a história da computação ainda está sendo escrita, todos os dias, em 
+cada linha de código, em cada ideia compartilhada e em cada escolha tecnológica que fazemos.
 
- Então, ao final desse nosso percurso, fica o convite: que possamos levar adiante esse olhar histórico, curioso e consciente sobre a computação. Que cada descoberta futura venha acompanhada não apenas de inovação técnica, mas também de responsabilidade humana. Porque no fim das contas, a verdadeira força da computação está menos nas máquinas — e muito mais nas pessoas que sonham, constroem e transformam com elas.
+ Então, ao final desse nosso percurso, fica o convite: que possamos levar adiante esse olhar histórico, curioso e 
+consciente sobre a computação. Que cada descoberta futura venha acompanhada não apenas de inovação técnica, mas 
+também de responsabilidade humana. Porque no fim das contas, a verdadeira força da computação está menos nas 
+máquinas: e muito mais nas pessoas que sonham, constroem e transformam com elas.
