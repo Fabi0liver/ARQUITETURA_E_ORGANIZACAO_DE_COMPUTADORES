@@ -1100,7 +1100,7 @@ programação é também aprender sobre a evolução do pensamento computacional
 
 
 
-                                "Evolução dos Sistemas Operacionais"
+                                 "Evolução dos Sistemas Operacionais"
 
  Quando falamos em sistema operacional, estamos falando da alma silenciosa que dá vida a um computador. Ele é o 
 intermediário invisível entre você e o hardware, aquele que traduz o que você deseja fazer (abrir um programa, 
@@ -1209,7 +1209,7 @@ essencial no nosso dia a dia.
 
 
 
-                             "Evolução da Interface Homem-Máquina (IHM)"
+                              "Evolução da Interface Homem-Máquina (IHM)"
 
  Vamos conversar sobre um dos aspectos mais humanos da história da computação: a forma como nos comunicamos com as 
 máquinas. Desde os primeiros dias dos computadores, ficou claro que seria necessário criar pontes entre a lógica 
@@ -1399,7 +1399,7 @@ modo, interligados.
 
 
 
-                              "Movimentos Culturais e Ética na Computação"
+                               "Movimentos Culturais e Ética na Computação"
 
  Se pensarmos bem, a história da computação não é apenas uma linha do tempo feita de máquinas incríveis, linguagens 
 de programação e redes globais. Por trás de cada inovação tecnológica, existem pessoas, valores, decisões e 
