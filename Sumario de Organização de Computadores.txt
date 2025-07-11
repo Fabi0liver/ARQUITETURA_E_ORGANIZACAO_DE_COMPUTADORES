@@ -1,0 +1,53 @@
+                               Organização de Computadores
+
+
+Fundamentos Iniciais:
+
+ Objetivo: Entender o papel da organização no contexto dos sistemas computacionais.
+
+ - O que é Organização de Computadores (Analogia: planta baixa (arquitetura) vs. obra construída (organização))
+
+ - Diferença entre Arquitetura e Organização
+
+ - Papel da organização no desempenho físico dos sistemas
+
+ - Modelo de Von Neumann (estrutura e implicações práticas)
+
+ - Abstração e Níveis de Organização
+
+ - Evolução histórica e outros modelos (Harvard, Harvard modificado)
+
+
+
+Componentes Fundamentais do Computador:
+
+ Objetivo: Conhecer os blocos físicos e funcionais da máquina.
+
+ - Unidade de controle (UC)
+
+ - Unidade lógica e aritmética (ULA/ALU)
+
+ - Registradores internos
+
+ - Memória principal (RAM/ROM)
+
+ - Dispositivos de Entrada/Saída
+
+ - Barramentos (dados, endereços e controle)
+
+ - Clock
+
+
+
+Unidade de Controle:
+
+ Objetivo: Entender como as instruções são controladas fisicamente.
+
+ - Controle cabeado (hardwired control)
+
+ - Controle microprogramado (microprogramming)
+
+ - Banco de microinstruções e decodificação
+
+ - Comparação entre desempenho e flexibilidade
+
