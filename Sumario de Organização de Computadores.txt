@@ -17,6 +17,8 @@ Fundamentos Iniciais:
 
  - Evolução histórica e outros modelos (Harvard, Harvard modificado)
 
+ - ISA (Interface entre hardware e software)
+
 
 
 Componentes Fundamentais do Computador:
@@ -31,11 +33,17 @@ Componentes Fundamentais do Computador:
 
  - Memória principal (RAM/ROM)
 
- - Dispositivos de Entrada/Saída
+ - Memória Secundária (ou de Massa)
+
+ - Dispositivos de Entrada/Saída (E/S ou I/O)
 
  - Barramentos (dados, endereços e controle)
 
+ - Unidade de Gerenciamento de Memória (MMU)
+
  - Clock
+
+ - Sistema de Alimentação e Refrigeração
 
 
 
@@ -43,11 +51,15 @@ Unidade de Controle:
 
  Objetivo: Entender como as instruções são controladas fisicamente.
 
+ - Papel da unidade de controle na CPU
+
+ - Relação com a ULA, registradores e memória
+
+ - Componentes Internos
+
  - Controle cabeado (hardwired control)
 
  - Controle microprogramado (microprogramming)
-
- - Componentes Internos
 
  - Banco de microinstruções e decodificação
 
@@ -148,6 +160,8 @@ Hierarquia de Memória
 Entrada e Saída:
 
  Objetivo: Compreender os mecanismos de comunicação com o exterior.
+
+ - Entrada/Saída (visão inicial)
 
  - E/S programada
 
