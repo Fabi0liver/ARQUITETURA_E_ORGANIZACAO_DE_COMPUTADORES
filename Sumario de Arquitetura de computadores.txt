@@ -1,5 +1,4 @@
-                                  
-Arquitetura de Computadores
+                               Arquitetura de Computadores
 
  - O que é a Arquitetura de Computadores
 
