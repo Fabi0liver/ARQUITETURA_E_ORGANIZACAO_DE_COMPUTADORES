@@ -111,18 +111,26 @@ Ciclo de Instrução:
 
 
 
-
 Registradores:
 
- Objetivo: Conhecer o papel e a organização física dos registradores.
+ Objetivo: Entender o papel, tipos, funcionamento e organização física dos registradores no nível da organização 
+          interna da CPU.
 
- - Registradores visíveis ao programador e invisíveis
+ - Classificação dos Registradores (Registradores visíveis ao programador e invisíveis)
 
  - Registradores de propósito geral e específico
 
- - PC (Program Counter), IR (Instruction Register), MAR, MDR, ACC
+ - Principais Registradores Funcionais: PC, IR, MAR, MDR, ACC, SP, FLAGS / PSW
 
  - Banco de registradores: estrutura e acesso simultâneo
+
+ - Função dos Registradores no Ciclo de Instrução
+
+ - Organização Física Interna
+
+ - Registradores em Arquiteturas Específicas
+
+ - Considerações de Desempenho
 
 
 
@@ -130,13 +138,21 @@ Codificação de Instruções e Modos de Endereçamento:
 
  Objetivo: Estudar a forma física e binária das instruções.
 
+ - Representação física e binária das instruções
+
  - Formatos de instrução (R, I, J – Ex: MIPS)
 
- - Codificação de opcode, operandos
+ - Codificação de Operações: de opcode,  de registradores,  de operandos/imediatos
 
- - Modos de endereçamento: imediato, direto, indireto, indexado
+ - Modos de endereçamento: imediato, direto, indireto, Registrador, indexado, deslocamento relativo, Pilha
 
  - Eficiência de codificação vs. decodificação
+
+ - Compatibilidade com o Caminho de Dados
+
+ - Exemplos em ISAs reais
+
+ - Considerações de Projeto Organizacional
 
 
 
