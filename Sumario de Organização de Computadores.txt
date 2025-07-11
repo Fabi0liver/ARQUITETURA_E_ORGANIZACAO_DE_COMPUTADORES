@@ -160,13 +160,20 @@ Organização da Memória:
 
  Objetivo: Entender como os dados são fisicamente organizados e acessados.
 
- - RAM, ROM, DRAM, SRAM
+ - Tipos físicos de memória: RAM, ROM, DRAM, SRAM, Memória cache, Memória virtual
 
- - Acesso sequencial, direto, aleatório
+ - Métodos de acesso à memória: Acesso sequencial, direto, aleatório
 
- - Multiplexação e banco de memória
+ - Organização interna da memória: Multiplexação, banco de memória , Hierarquia de memória
 
- - Endereçamento físico
+ - Endereçamento: Endereçamento físico, Linhas e colunas, Decodificação de endereço, Organização de memória 
+  intercalada
+
+ - Controle e temporização
+
+ - Barramentos de memória
+
+ - Considerações sobre performance
 
 
 
@@ -174,35 +181,52 @@ Hierarquia de Memória
 
  Objetivo: Otimizar o desempenho do sistema via hierarquia eficiente.
 
- - Cache L1, L2, L3
+ - Níveis da Hierarquia de Memória
+
+ - Características de Cada Nível: Tempo de acesso, Capacidade, Custo por bit, Velocidade de transferência
+
+ - Caches (L1, L2, L3)
 
  - Estrutura física: mapeamento direto, associativo, conjunto-associativo
 
  - Políticas de substituição: FIFO, LRU, Random
 
- - Write-through vs. Write-back
+ - Políticas de escrita: Write-through vs. Write-back
 
- - Coerência de cache: write buffers e snooping
+ - Coerência de cache: Protocolos de coerência, Write buffers
+
+ - Barramentos e Interfaces de Memória
+
+ - Técnicas e Otimizações
 
 
 
-Entrada e Saída:
+Entrada e Saída (E/S ou I/O):
 
  Objetivo: Compreender os mecanismos de comunicação com o exterior.
 
- - Entrada/Saída (visão inicial)
+ - Conceito Geral de Entrada e Saída
 
- - E/S programada
+ - Classificação de dispositivos: entrada, saída, E/S, blocos, caracteres
 
- - E/S com interrupções
+ - Mecanismos de Transferência de Dados: E/S programada, E/S controlada por interrupções, E/S com DMA
+
+ - Componentes da Estrutura de E/S: Buffers de dados, registradores de E/S, Interfaces de E/S (controladores e 
+   adaptadores)
+
+ - Endereçamento e Mapeamento de E/S: Mapeamento isolado e mapeado na memória
+
+ - Temporização e sincronização de dispositivos
+
+ - Uso de barramentos para E/S
+
+ - Controle e Gerenciamento de Interrupções
 
  - DMA (Acesso Direto à Memória)
 
- - Buffers e registradores de E/S
+ - Dispositivos de E/S Específicos (visão organizacional)
 
- - Mapeamento isolado vs. mapeado na memória
-
- - Temporização e sincronização de dispositivos
+ - Desempenho de Sistemas de E/S
 
 
 
