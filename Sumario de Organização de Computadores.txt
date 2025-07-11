@@ -195,13 +195,135 @@ Organização Interna do Processador:
 
 
 
+Pipeline (Organização Física):
+
+ Objetivo: Aumentar o desempenho com execução em estágios paralelos.
+
+ - Estágios: IF, ID, EX, MEM, WB
+
+ - Forwarding e detecção de hazards
+
+ - Previsão de desvios (branch prediction)
+
+ - Unidade de detecção de dependências
+
+ - Pipeline stall e flushing
 
 
 
+Paralelismo Físico:
+
+ Objetivo: Expandir o desempenho via múltiplas execuções simultâneas.
+
+ - Multiciclo vs. Pipeline
+
+ - SMT (Simultaneous Multithreading)
+
+ - Execução fora de ordem (out-of-order)
+
+ - Paralelismo de instruções vs. de dados
 
 
 
+Multiprocessadores e Interconexões:
 
+ Objetivo: Estudar sistemas com múltiplas CPUs físicas.
+
+ - SMP (multiprocessadores simétricos)
+
+ - MPP (memória distribuída)
+
+ - Interconexões físicas: barramento, torus, malha, crossbar
+
+ - Coerência e consistência em memória compartilhada
+
+
+
+Memória Virtual e Organização Física
+
+ Objetivo: Compreender como endereços lógicos são convertidos fisicamente.
+
+ - Paginação e segmentação
+
+ - Tabelas de páginas e TLB
+
+ - MMU (Unidade de Gerenciamento de Memória)
+
+ - Cache virtual vs. física
+
+
+
+Circuitos Digitais Aplicados à Organização:
+
+ Objetivo: Relacionar teoria digital com implementação real.
+
+ - Portas lógicas, flip-flops e contadores
+
+ - Multiplexadores e decodificadores
+
+ - ULA construída em lógica combinacional
+
+ - Máquinas de estados (FSMs) aplicadas à UC
+
+
+
+Temporização, Clock e Sincronismo:
+
+ Objetivo: Garantir sincronismo entre os componentes físicos.
+
+ - Gerador de clock
+
+ - Latch vs. Flip-flop
+
+ - Setup time, hold time
+
+ - Sincronismo entre módulos
+
+
+
+Avaliação de Desempenho Organizacional:
+
+ Objetivo: Medir e otimizar a eficiência física do sistema.
+
+ - Tempo de ciclo de clock
+
+ - CPI (Ciclos por instrução)
+
+ - Latência de instrução
+
+ - Gargalos e microbenchmarks
+
+
+
+Dissipação Térmica e Consumo Energético:
+
+ Objetivo: Entender limites físicos e térmicos da organização.
+
+ - Clock gating, power gating
+
+ - Domínios de tensão múltiplos
+
+ - Dissipadores, sensores e materiais térmicos
+
+ - Técnicas de economia de energia em circuitos
+
+
+
+Tendências Avançadas e Tecnologias Emergentes:
+
+ - Objetivo: Antecipar o futuro da organização física.
+
+ - SoC (System on Chip)
+
+ - Stacking 3D e interconexões ópticas
+
+ - FPGA e reconfiguração dinâmica
+
+ - TPUs e unidades otimizadas para IA
+
+ - Computação neuromórfica
+
+ - Memórias persistentes (NVRAM, ReRAM, MRAM)
 
 
 
