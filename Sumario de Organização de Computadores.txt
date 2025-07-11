@@ -69,11 +69,12 @@ Unidade de Controle:
 
 
 
-ALU – Unidade Aritmética e Lógica:
+ALU ou ULA – Unidade Aritmética e Lógica:
 
- Objetivo: Compreender como operações matemáticas e lógicas são realizadas.
+ Objetivo: Objetivo: Compreender a estrutura, funcionamento e importância da ALU no processamento de instruções            
+          aritméticas, lógicas e de controle de fluxo.
 
- - Estrutura da ULA
+ - Estrutura e Funcionamento Geral da ULA
 
  - Operações aritméticas: soma, subtração, multiplicação, divisão
 
@@ -81,21 +82,33 @@ ALU – Unidade Aritmética e Lógica:
 
  - Operações de shift e rotação
 
- - Flags de status: zero, carry, overflow, sinal
+ - Flags e Sinais de Status (indicadores): zero, carry, overflow, sinal
+
+ - Considerações sobre Projeto e Implementação
 
 
 
 Ciclo de Instrução:
 
- Objetivo: Visualizar o funcionamento básico de execução de instruções.
+ Objetivo: Entender como uma instrução é buscada, decodificada, executada e seus resultados armazenados, 
+          considerando o funcionamento interno do processador.
 
- - Ciclo Fetch-Decode-Execute-Writeback
+ - Conceito e importância
 
- - Máquina de Estados Finita (FSM) da execução
+ - Etapas do Ciclo de Instrução (Ciclo Básico):  Fetch-Decode-Execute-Writeback
 
- - Fluxo de dados e controle
+ - Máquina de Estados Finita (FSM) do Processador
+
+ - Caminho de Dados (Datapath)
+
+ - Sinais e Fluxo de Controle
 
  - Estados do processador durante a execução
+
+ - Tipos de Instruções e Seus Ciclos
+
+ - Tempo de Ciclo e Clock
+
 
 
 
