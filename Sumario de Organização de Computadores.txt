@@ -47,7 +47,161 @@ Unidade de Controle:
 
  - Controle microprogramado (microprogramming)
 
+ - Componentes Internos
+
  - Banco de microinstruções e decodificação
 
+ - Ciclo de Controle
+
  - Comparação entre desempenho e flexibilidade
+
+
+
+ALU – Unidade Aritmética e Lógica:
+
+ Objetivo: Compreender como operações matemáticas e lógicas são realizadas.
+
+ - Estrutura da ULA
+
+ - Operações aritméticas: soma, subtração, multiplicação, divisão
+
+ - Operações lógicas: AND, OR, NOT, XOR
+
+ - Operações de shift e rotação
+
+ - Flags de status: zero, carry, overflow, sinal
+
+
+
+Ciclo de Instrução:
+
+ Objetivo: Visualizar o funcionamento básico de execução de instruções.
+
+ - Ciclo Fetch-Decode-Execute-Writeback
+
+ - Máquina de Estados Finita (FSM) da execução
+
+ - Fluxo de dados e controle
+
+ - Estados do processador durante a execução
+
+
+
+Registradores:
+
+ Objetivo: Conhecer o papel e a organização física dos registradores.
+
+ - Registradores visíveis ao programador e invisíveis
+
+ - Registradores de propósito geral e específico
+
+ - PC (Program Counter), IR (Instruction Register), MAR, MDR, ACC
+
+ - Banco de registradores: estrutura e acesso simultâneo
+
+
+
+Codificação de Instruções e Modos de Endereçamento:
+
+ Objetivo: Estudar a forma física e binária das instruções.
+
+ - Formatos de instrução (R, I, J – Ex: MIPS)
+
+ - Codificação de opcode, operandos
+
+ - Modos de endereçamento: imediato, direto, indireto, indexado
+
+ - Eficiência de codificação vs. decodificação
+
+
+
+Organização da Memória:
+
+ Objetivo: Entender como os dados são fisicamente organizados e acessados.
+
+ - RAM, ROM, DRAM, SRAM
+
+ - Acesso sequencial, direto, aleatório
+
+ - Multiplexação e banco de memória
+
+ - Endereçamento físico
+
+
+
+Hierarquia de Memória
+
+ Objetivo: Otimizar o desempenho do sistema via hierarquia eficiente.
+
+ - Cache L1, L2, L3
+
+ - Estrutura física: mapeamento direto, associativo, conjunto-associativo
+
+ - Políticas de substituição: FIFO, LRU, Random
+
+ - Write-through vs. Write-back
+
+ - Coerência de cache: write buffers e snooping
+
+
+
+Entrada e Saída:
+
+ Objetivo: Compreender os mecanismos de comunicação com o exterior.
+
+ - E/S programada
+
+ - E/S com interrupções
+
+ - DMA (Acesso Direto à Memória)
+
+ - Buffers e registradores de E/S
+
+ - Mapeamento isolado vs. mapeado na memória
+
+ - Temporização e sincronização de dispositivos
+
+
+
+Barramentos e Interconexões:
+
+ Objetivo: Entender como os dados trafegam fisicamente entre os componentes.
+
+ - Barramentos de dados, endereços e controle
+
+ - Protocolo de comunicação (clocked/unclocked)
+
+ - Multiplexação de barramentos
+
+ - Barramento local vs. sistema
+
+ - Latência e throughput
+
+
+
+Organização Interna do Processador:
+
+ Objetivo: Estudar o caminho físico dos dados e sinais de controle.
+
+ - Caminho de dados (datapath)
+
+ - Caminho de controle (control path)
+
+ - Organização interna de uma CPU simples
+
+ - Ciclo de clock e sincronismo
+
+ - FSMs como base de controle
+
+
+
+
+
+
+
+
+
+
+
+
 
