@@ -359,15 +359,35 @@ Paralelismo Físico:
 
 Multiprocessadores e Interconexões:
 
- Objetivo: Estudar sistemas com múltiplas CPUs físicas.
+ Objetivo: Estudar a organização e estrutura de sistemas com múltiplas CPUs físicas.
 
- - SMP (multiprocessadores simétricos)
+ - Classificações e Tipos de Multiprocessadores: SMP, NUMA, MPP, Clusters vs Multicomputadores, Sistemas Híbridos 
 
- - MPP (memória distribuída)
+ -  Modelos de Memória: Memória Compartilhada (com ou sem cache), Memória Distribuída, Acesso Uniforme vs
+   Não-Uniforme, Modelo COMA (Cache-Only Memory Architecture)
 
- - Interconexões físicas: barramento, torus, malha, crossbar
+ - Interconexões de Processadores
+
+ - Redes e Topologias de interconexão: Barramento (Bus), Anel (Ring), Malha (Mesh), Torus (2D ou 3D), Crossbar, 
+  Árvore (Tree / Fat Tree), Hypercube, Interligação Multistage (MIN - Multistage Interconnection Networks)
+
+ - Mecanismos de Comunicação: Comunicação por memória compartilhada, Comunicação por passagem de mensagens (Message 
+  Passing), Acesso direto à memória remota (RDMA), Acesso simultâneo à memória (Snooping vs Directory)
+
+ - Comutação e Transporte: Comutação de Pacotes (com ou sem buffer), Comutação de Circuitos, Comutação de Mensagens
+  Latência vs Largura de Banda
+
+ - Acesso e Comunicação entre Processadores
 
  - Coerência e consistência em memória compartilhada
+
+ - Organização de Cache em Multiprocessadores
+
+ - Desempenho e Escalabilidade
+
+ - Rede de Interconexão vs Módulo de Interconexão
+
+ - Questões de Projeto na Organização de Multiprocessadores
 
 
 
