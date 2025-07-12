@@ -296,19 +296,39 @@ Organização Interna do Processador:
 
 Pipeline (Organização Física):
 
- Objetivo: Aumentar o desempenho com execução em estágios paralelos.
+ Objetivo: Aumentar o desempenho com execução paralela de instruções, dividindo-as em múltiplos estágios.
 
- - Estágios: IF, ID, EX, MEM, WB
+ - Estrutura e Estágios Clássicos do Pipeline: IF, ID, EX, MEM, WB
 
- - Forwarding e detecção de hazards
+ - Componentes e Mecanismos Internos
 
- - Previsão de desvios (branch prediction)
+ - Dependências e Hazards: RAW, WAR, WAW, Hazards de controle, Hazards estruturais 
 
- - Unidade de detecção de dependências
+ - Unidade de detecção de dependências, Forwarding e detecção de hazards
+
+ - Técnicas de Mitigação de Hazards: Forwarding, Stalling, Unidade de detecção de hazards (hazard detection unit),    
+  Pipeline flushing 
+
+ - Previsão de Desvios (Branch Prediction): Branch static prediction, Branch dynamic prediction, Branch Target 
+  Buffer (BTB), Unidade de resolução de desvios (branch resolution unit)
+
+ - Pipeline bubble
 
  - Pipeline stall e flushing
 
+ - Pipeline superescalar ( múltiplas instruções por ciclo)
 
+ - Latência x Throughput no pipeline
+
+ - Pipeline flush penalty (custo de esvaziamento)
+
+ - Impacto do pipeline no CPI (ciclos por instrução)
+
+ - Número de estágios e impacto no desempenho
+
+ - Interlocks automáticos (lógica para inserção automática de stalls)
+
+ 
 
 Paralelismo Físico:
 
