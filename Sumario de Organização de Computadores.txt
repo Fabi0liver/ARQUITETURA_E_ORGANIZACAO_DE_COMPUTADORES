@@ -393,15 +393,37 @@ Multiprocessadores e Interconexões:
 
 Memória Virtual e Organização Física
 
- Objetivo: Compreender como endereços lógicos são convertidos fisicamente.
+ Objetivo: Entender como a memória virtual é implementada fisicamente e como o sistema converte endereços lógicos 
+          em endereços físicos.
 
- - Paginação e segmentação
+ - Conceitos Fundamentais
 
- - Tabelas de páginas e TLB
+ - Diferença entre endereço lógico e endereço físico
 
- - MMU (Unidade de Gerenciamento de Memória)
+ - Espaço de endereçamento: lógico, físico e virtual
 
- - Cache virtual vs. física
+ - Papel da memória virtual na organização do sistema
+
+ - Mecanismos de Tradução de Endereços: Unidade de Gerenciamento de Memória (MMU - Memory Management Unit), 
+  Registro de base e limite (modelos mais simples), Modos de acesso e proteção de memória
+
+ - Relacionamento entre MMU, CPU e barramento de memória
+
+ - Técnicas de Gerenciamento de Memória Virtual: Paginação (Paging), Segmentação (Segmentation), Combinações
+
+ - Tabelas de Tradução: Page Table Entries (PTEs) e Translation Lookaside Buffer (TLB)
+
+ - Ciclo de tradução (como um endereço virtual vira físico)
+
+ - Cache virtual vs. física: Virtually Indexed - Virtually Tagged (VIVT), Virtually Indexed -  Physically Tagged 
+  (VIPT), Physically Indexed -  Physically Tagged (PIPT)
+
+ - Problemas de coerência com cache virtual
+
+ - Exceções e Proteção: Page fault, Segment fault, Acesso inválido ou fora de segmento, Mecanismos de proteção por 
+  hardware
+
+ - Desempenho e Otimizações
 
 
 
