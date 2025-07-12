@@ -272,15 +272,25 @@ Organização Interna do Processador:
 
  Objetivo: Estudar o caminho físico dos dados e sinais de controle.
 
+ - Visão Geral e Organização interna de uma CPU
+
+ - Componentes internos básicos: registradores, ALU, unidade de controle, barramentos internos
+
  - Caminho de dados (datapath)
 
  - Caminho de controle (control path)
 
- - Organização interna de uma CPU simples
+ - Ciclo de Instrução, Ciclo de Clock e sincronismo
 
- - Ciclo de clock e sincronismo
+ - FSMs e Controle Sequencial
 
- - FSMs como base de controle
+ - Barramentos Internos
+
+ - Organização Microprogramada
+
+ - Unidade de Controle vs Unidade de Execução
+
+ - Desempenho da Organização Interna do Processador
 
 
 
