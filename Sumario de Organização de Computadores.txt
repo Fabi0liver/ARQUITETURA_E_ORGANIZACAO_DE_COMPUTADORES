@@ -332,15 +332,28 @@ Pipeline (Organização Física):
 
 Paralelismo Físico:
 
- Objetivo: Expandir o desempenho via múltiplas execuções simultâneas.
+ Objetivo: Aumentar o desempenho por meio de execução simultânea de instruções, threads ou dados no nível de 
+          hardware.
+
+ - Conceitos Fundamentais de Paralelismo
+
+ - Paralelismo Explícito vs. Implícito
 
  - Multiciclo vs. Pipeline
 
- - SMT (Simultaneous Multithreading)
+ - Paralelismo de Instruções (ILP – Instruction-Level Parallelism)
+
+ - Paralelismo de Threads (TLP – Thread-Level Parallelism)
+
+ - Paralelismo de Dados (DLP – Data-Level Parallelism)
+
+ - Multiprocessamento e Arquiteturas Paralelas
 
  - Execução fora de ordem (out-of-order)
 
  - Paralelismo de instruções vs. de dados
+
+ - Desempenho do Paralelismo Físico
 
 
 
