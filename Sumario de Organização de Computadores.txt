@@ -21,6 +21,39 @@ Fundamentos Iniciais:
 
 
 
+Lógica Digital Aplicados à Organização:
+
+ Objetivo: Relacionar teoria digital com implementação real.
+
+ - Fundamentos da Lógica Digital
+
+ - Sistemas de numeração e conversões: binário, decimal, hexadecimal, octal
+
+ - Representações de dados: sinal-magnitude, complemento de dois, ponto fixo
+
+ - Níveis de abstração em circuitos: lógico, de registro, de transferência, estrutural
+
+ - Álgebra Booleana e Representações Canônicas
+
+ - Portas lógicas: AND, OR, NOT, NAND, NOR, XOR, XNOR
+
+ - Circuitos Combinacionais Fundamentais: Codificadores e Decodificadores, Multiplexadores (MUX) e 
+  Demultiplexadores (DEMUX), Comparadores, Somadores e Subtratores (Half Adder, Full Adder)
+
+ - Circuitos Sequenciais e Elementos de Memória: Latches e Flip-Flops (SR, D, JK, T), Registradores (com e sem 
+  carga), Contadores (binário, com carga, com enable, com reset), Banco de registradores, Memórias básicas (ROM, 
+  RAM estática – SRAM simples)
+
+ - Máquinas de Estados Finitos (FSMs)
+
+ - Circuitos Aritméticos Avançados: Circuitos para subtração, incremento e decremento; Circuito multiplicador (com 
+  deslocamento e soma); Circuito divisor básico (por subtração repetida ou método binário), Multiplicadores  
+  paralelos (Booth, Wallace Tree )
+
+ - Unidade Lógica e Aritmética (ULA)
+
+
+
 Componentes Fundamentais do Computador:
 
  Objetivo: Conhecer os blocos físicos e funcionais da máquina.
@@ -425,40 +458,6 @@ Memória Virtual e Organização Física
 
  - Desempenho e Otimizações
 
-
-
-Lógica Digital Aplicados à Organização:
-
- Objetivo: Relacionar teoria digital com implementação real.
-
- - Fundamentos da Lógica Digital
-
- - Sistemas de numeração e conversões: binário, decimal, hexadecimal, octal
-
- - Representações de dados: sinal-magnitude, complemento de dois, ponto fixo
-
- - Níveis de abstração em circuitos: lógico, de registro, de transferência, estrutural
-
- - Álgebra Booleana e Representações Canônicas
-
- - Portas lógicas: AND, OR, NOT, NAND, NOR, XOR, XNOR
-
- - Circuitos Combinacionais Fundamentais: Codificadores e Decodificadores, Multiplexadores (MUX) e 
-  Demultiplexadores (DEMUX), Comparadores, Somadores e Subtratores (Half Adder, Full Adder)
-
- - Circuitos Sequenciais e Elementos de Memória: Latches e Flip-Flops (SR, D, JK, T), Registradores (com e sem 
-  carga), Contadores (binário, com carga, com enable, com reset), Banco de registradores, Memórias básicas (ROM, 
-  RAM estática – SRAM simples)
-
- - Máquinas de Estados Finitos (FSMs)
-
- - Circuitos Aritméticos Avançados: Circuitos para subtração, incremento e decremento; Circuito multiplicador (com 
-  deslocamento e soma); Circuito divisor básico (por subtração repetida ou método binário), Multiplicadores  
-  paralelos (Booth, Wallace Tree )
-
- - Unidade Lógica e Aritmética (ULA)
-
- - Unidade de Controle
 
 
 Temporização, Clock e Sincronismo:
