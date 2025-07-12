@@ -234,15 +234,37 @@ Barramentos e Interconexões:
 
  Objetivo: Entender como os dados trafegam fisicamente entre os componentes.
 
- - Barramentos de dados, endereços e controle
+ - Função e estrutura dos barramentos
 
- - Protocolo de comunicação (clocked/unclocked)
+ - Tipos de barramento: Barramentos de dados, endereços, controle
+
+ - Classificação funcional: CPU, memória, I/O
+
+ - Componentes do barramento
+ 
+ - Hierarquia de barramentos
 
  - Multiplexação de barramentos
+
+ - Sinais de controle e temporização
+
+ - Tipos de Transferência: síncrona e assíncrona
+
+ - Protocolo de comunicação: clocked e unclocked
+
+ - Arbitragem de barramento: fixa, rotativa, demanda
+
+ - Interrupções e barramento
+
+ - Padrões de barramento (ISA, PCI, etc. — no contexto da organização)
 
  - Barramento local vs. sistema
 
  - Latência e throughput
+
+ - Largura de barramento e impacto no desempenho
+
+ - Conflito de barramento (bus contention)
 
 
 
