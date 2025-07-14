@@ -524,15 +524,37 @@ Avaliação de Desempenho Organizacional:
 
 Dissipação Térmica e Consumo Energético:
 
- Objetivo: Entender limites físicos e térmicos da organização.
+ Objetivo: Compreender os limites físicos, térmicos e as técnicas de controle energético no nível organizacional de 
+          um computador.
 
- - Clock gating, power gating
+ - Fundamentos Físicos e Térmicos
 
- - Domínios de tensão múltiplos
+ - Medidas de eficiência energética: MIPS/Watt, FLOPS/Watt
 
- - Dissipadores, sensores e materiais térmicos
+ - Dissipação de potência: estática (leakage power), dinâmica (switching power)
 
- - Técnicas de economia de energia em circuitos
+ - Limites térmicos de operação de chips (TJMax, TDP, etc.)
+
+ - Relação entre frequência do clock, tensão e calor gerado
+
+ - Noções de hotspot e distribuição térmica em chips
+
+ - Técnicas de Redução de Consumo de Energia: Clock gating (desligamento seletivo de partes do clock), Power gating 
+  (desligamento de blocos funcionais inteiros), Multi-VDD (múltiplos domínios de tensão), Dynamic Voltage and 
+  Frequency Scaling (DVFS), Dynamic Power Management (DPM), Escalonamento de instruções e unidades funcionais para 
+  eficiência energética, Técnicas de design de pipeline com economia de energia
+
+ - Gerenciamento Térmico: Dissipadores de calor (heatsinks) e ventoinhas, Materiais térmicos (pasta térmica, heat 
+  spreaders, vapor chambers), Sensores térmicos on-die,Técnicas de monitoramento e controle térmico automático 
+  (thermal throttling, thermal management units - TMU), Balanceamento térmico (thermal-aware scheduling)
+
+ - Projeto e Organização Termicamente Conscientes
+
+ - Simuladores térmicos e ferramentas de modelagem energética (HotSpot, Wattch, McPAT)
+
+ - Modelos de consumo baseados em ciclos de clock e unidades ativas
+
+ - Co-design térmico/energético (hardware + software)
 
 
 
