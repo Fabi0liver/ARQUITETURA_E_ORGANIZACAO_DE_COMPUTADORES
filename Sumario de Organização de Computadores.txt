@@ -503,7 +503,22 @@ Avaliação de Desempenho Organizacional:
 
  - Latência de instrução
 
- - Gargalos e microbenchmarks
+ - Throughput (Vazão)
+
+ - IPC (Instruções por ciclo)
+
+ - MIPS (Milhões de instruções por segundo)
+
+ - MFLOPS / GFLOPS (Operações de ponto flutuante por segundo)
+
+ - Fatores Arquiteturais que Afetam o Desempenho: Taxa de acerto de cache (Hit rate), Penalidade de cache miss 
+  (Miss penalty), Tamanho e níveis de cache (L1, L2, L3), Tamanho do pipeline e número de estágios, Branch 
+  prediction accuracy (Precisão da previsão de desvio)
+
+ - Gargalos identificados (resource bottlenecks)
+
+ - Ferramentas e Técnicas de Avaliação: Benchmarks padronizados (SPEC, Dhrystone, etc.), Microbenchmarks, Perfis de 
+  instrução (instruction mix), Simuladores de arquitetura e contadores de eventos
 
 
 
