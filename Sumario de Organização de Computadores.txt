@@ -462,15 +462,34 @@ Memória Virtual e Organização Física
 
 Temporização, Clock e Sincronismo:
 
- Objetivo: Garantir sincronismo entre os componentes físicos.
+ Objetivo: Garantir a comunicação correta, estável e sincronizada entre componentes digitais (como registradores, 
+          barramentos, ALU, memória, etc.).
 
- - Gerador de clock
+ - Definição e diferenças funcionais
 
- - Latch vs. Flip-flop
+ - Gerador de clock: Cristal oscilador / circuito oscilador
 
- - Setup time, hold time
+ - Frequência do clock (Hz)
+
+ - Ciclo de clock (período)
+
+ - Nível sensível vs. borda sensível
+
+ - Parâmetros de Temporização: Setup Time (tempo de preparação), Hold Time (tempo de retenção), Tempo de propagação 
+  (propagation delay), Tempo de clock mínimo, Margem de segurança temporal (timing margin)
 
  - Sincronismo entre módulos
+
+ - Modelos de Temporização: Temporização síncrona (clock único), Temporização assíncrona (sem clock comum), 
+  Sistemas multi-clock (domínios de clock múltiplos), Handshaking em sistemas assíncronos
+
+ - Ciclos de Máquina e Estados: Divisão do ciclo de instrução (fetch, decode, execute...), Estados de controle 
+  associados ao clock, Temporização no ciclo de leitura/escrita na memória
+
+ - Temporização em Barramentos
+
+ - Problemas e Soluções Relacionadas ao Clock: Clock Skew, Jitter, Glitches, Estratégias de mitigação (buffers de 
+  clock, redes de distribuição de clock, PLLs)
 
 
 
