@@ -560,7 +560,8 @@ Dissipação Térmica e Consumo Energético:
 
 Tendências Avançadas e Tecnologias Emergentes:
 
- - Objetivo: Antecipar o futuro da organização física.
+ Objetivo: Objetivo: Antecipar o futuro da organização física dos computadores — como os componentes são  
+          estruturados, conectados e otimizados.
 
  - SoC (System on Chip)
 
@@ -568,11 +569,22 @@ Tendências Avançadas e Tecnologias Emergentes:
 
  - FPGA e reconfiguração dinâmica
 
- - TPUs e unidades otimizadas para IA
+ - Unidades Especializadas para IA: TPUs (Tensor Processing Units), VPUs (Vision Processing Units), NPUs (Neural 
+  Processing Units) e Estruturas otimizadas para redes neurais e operações matriciais.
 
  - Computação neuromórfica
 
- - Memórias persistentes (NVRAM, ReRAM, MRAM)
+ - Memórias persistentes (NVRAM, ReRAM, MRAM, PCM)
+
+ - Memória unificada (Heterogeneous Memory Systems)
+
+ - Chiplets e Interconexões Avançadas (ex: UCIe)
+
+ - Processamento In-Memory (PIM)
+
+ - Arquiteturas Sem Barramento (NoC - Network-on-Chip)
+
+ - Computação Quântica (interface com organização clássica)
 
 
 
