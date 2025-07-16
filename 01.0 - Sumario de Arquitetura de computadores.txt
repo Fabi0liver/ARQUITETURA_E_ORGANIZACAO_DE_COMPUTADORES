@@ -37,15 +37,22 @@ Contexto Histórico da Arquitetura de Computadores
 
 Tipos de Arquitetura de Computadores
 
-    Arquiteturas superescalares
+ Objetivo: Explorar e compreender os diferentes tipos de arquiteturas de computadores, suas características, 
+          estruturas internas e aplicações reais, com ênfase em desempenho, paralelismo e especialização.
 
-    Arquiteturas vetoriais (ex: Cray)
+ - Arquiteturas Escalares e Superescalares
 
-    Arquiteturas pipeline
+ - Arquiteturas Vetoriais e Matriciais
 
-    Arquiteturas paralelas (visão conceitual e exemplos)
+ - Arquiteturas Pipeline
 
-    Estudos de caso reais: ARM, x86, MIPS, RISC-V, GPUs
+ - Arquiteturas Paralelas 
+
+ - Arquiteturas Multinúcleo (Multicore)
+
+ - Arquiteturas Especializadas: GPUs, FPGAs, DSPs
+
+ - Estudos de caso reais: ARM, x86/x86-64, MIPS, RISC-V, GPUs, Apple M1/M2
 
 
 
