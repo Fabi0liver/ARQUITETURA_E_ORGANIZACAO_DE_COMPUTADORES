@@ -199,23 +199,31 @@ Modos de Execução e Otimizações Arquiteturais:
 
 
 
-Tipos de Arquitetura de Processadores
+Tipos de Arquitetura de Processadores:
 
-    Arquiteturas RISC (Reduced Instruction Set Computer)
+ Objetivo: Compreender os diferentes estilos arquiteturais adotados em processadores, suas características, 
+          vantagens, desvantagens e aplicações típicas.
 
-    Arquiteturas CISC (Complex Instruction Set Computer)
+ - Arquiteturas RISC (Reduced Instruction Set Computer)
 
-    VLIW (Very Long Instruction Word)
+ - Arquiteturas CISC (Complex Instruction Set Computer)
 
-    EPIC (Explicitly Parallel Instruction Computing)
+ - VLIW (Very Long Instruction Word)
 
-    Estudo comparativo: ARM (RISC) vs. Intel x86 (CISC)
+ - EPIC (Explicitly Parallel Instruction Computing)
 
-    Aplicações típicas (ex: DSPs com VLIW, servidores com EPIC)
+ - Arquiteturas Heterogêneas (CPU + GPU + Aceleradores)
+
+ - Estudo comparativo: ARM (RISC) vs. Intel x86 (CISC)
+
+ - Considerações sobre Microarquitetura vs. Arquitetura (ISA)
+
+ - Aplicações típicas das arquiteturas: VLIW em DSPs e codecs de mídia, EPIC em servidores especializados, RISC 
+  (ARM) em dispositivos embarcados e mobile, CISC (x86): em desktops, notebooks e servidores tradicionais
 
 
 
- - Memória na Perspectiva Arquitetural
+ Memória na Perspectiva Arquitetural
 
     Conceito de Memória na Perspectiva Arquitetural
 
