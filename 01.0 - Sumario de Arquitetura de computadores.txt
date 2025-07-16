@@ -206,6 +206,18 @@
     Fatores que afetam o desempenho: latência, throughput, gargalos
 
 
+ - Virtualização e Arquitetura de Nuvem
+
+    Conceito de virtualização
+
+    Hypervisores (tipo 1 e tipo 2)
+
+    Suporte à virtualização no hardware (Intel VT-x, AMD-V)
+
+    Impacto na arquitetura moderna
+
+    Contêineres e abstração de hardware
+
 
  - Tendências em Arquitetura de Computadores
 
