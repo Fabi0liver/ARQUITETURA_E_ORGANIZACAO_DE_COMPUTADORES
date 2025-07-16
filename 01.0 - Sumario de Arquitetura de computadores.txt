@@ -74,9 +74,9 @@
 
     Tipos de instruções: dados, controle, entrada/saída
 
-    Modos de endereçamento (imediato, direto, indireto, baseado em registrador, etc.)
+    Modos de endereçamento: imediato, direto, indireto, baseado em registrador, etc.
 
-    Formatos de instrução (RISC x CISC)
+    Formatos de instrução: RISC e  CISC
 
     Registradores visíveis ao programador
 
