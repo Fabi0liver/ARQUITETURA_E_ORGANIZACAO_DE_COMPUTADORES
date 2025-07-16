@@ -78,22 +78,31 @@ Níveis de abstração da Arquitetura de computadores:
 
 
 
-Modelo Modelos Computacionais
+Modelo Modelos Computacionais:
 
-    Modelo de Von Neumann
+ Objetivo: Compreender os principais modelos de arquitetura computacional, suas estruturas, aplicações e 
+          implicações no projeto de sistemas modernos.
 
-    Modelo Harvard
+ - O que são modelos computacionais
 
-    Estrutura dos modelos
+ - Estrutura de Funcionamento: Unidade de Controle, Unidade Lógica e Aritmética, Memória e E/S
 
-    Vantagens e desvantagens
+ - Modelo de Von Neumann
 
-    Aplicações típicas de cada modelo
+ - Modelo Harvard
 
-    Comparação com exemplos práticos (ex: Harvard em microcontroladores)
+ - Modelo Harvard Modificado
+
+ - Comparação entre os modelos: Aplicações típicas de cada modelo, Fluxo de dados em cada modelo (com paralelismos 
+  e gargalos), Impactos no desempenho e segurança de cada modelo, Vantagens e desvantagens de cada modelo
+
+ - Diferenças fundamentais: barramento único x barramentos separados
+
+ - Exemplos práticos de uso em arquiteturas reais (ex: arquitetura AVR, ARM Cortex-M, x86))
 
 
- - Conjunto de Instruções (ISA - Instruction Set Architecture)
+
+ Conjunto de Instruções (ISA - Instruction Set Architecture)
 
     Conceito de ISA
 
