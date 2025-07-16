@@ -1,12 +1,18 @@
                                Arquitetura de Computadores
 
- - O que é a Arquitetura de Computadores
+Fundamento iniciais:
 
-    Definição conceitual
+ Objetivo: Compreender o que é Arquitetura de Computadores, sua função estratégica no projeto de sistemas 
+          computacionais e sua relação com desempenho, software e hardware.
 
-    Importância na área da computação
+ - Definição conceitual de Arquitetura de Computadores
 
-    Aplicações práticas e impacto no desempenho de sistemas
+ - Diferença entre Arquitetura e Organização
+
+ - Importância na área da computação
+
+ - Aplicações práticas e impacto no desempenho de sistemas
+
 
 
  - Contexto Histórico da Arquitetura de Computadores
@@ -30,14 +36,6 @@
 
     Estudos de caso reais: ARM, x86, MIPS, RISC-V, GPUs
 
-
- - Diferença entre Arquitetura e Organização de Computadores
-
-    Conceito de abstração em cada nível
-
-    Arquitetura como o "o que" e Organização como o "como"
-
-    Exemplo comparativo com construção civil (projeto x obra)
 
 
  - Níveis de abstração da Arquitetura de computadores 
