@@ -223,25 +223,39 @@ Tipos de Arquitetura de Processadores:
 
 
 
- Memória na Perspectiva Arquitetural
+Memória na Perspectiva Arquitetural:
 
-    Conceito de Memória na Perspectiva Arquitetural
+ Objetivo: Compreender como a memória é organizada e acessada em diferentes níveis arquiteturais, e como seu 
+          funcionamento impacta diretamente o desempenho do sistema.
 
-    Hierarquia de memória: registradores, cache (L1, L2, L3), memória principal
+ - Conceito de Memória na Perspectiva Arquitetural
 
-    Memória compartilhada (SMP) e distribuída (MPP, clusters)
+ - Hierarquia de memória: registradores, cache (L1, L2, L3), memória principal, memória secundária
 
-    Mapeamento de cache: direto, associativo, conjunto associativo
+ - Princípios da localidade (temporal e espacial)
 
-    Políticas de Escrita: Write-through vs. Write-back
+ - Mapeamento de cache: direto, associativo, conjunto associativo
 
-    Política de substituição: LRU, FIFO, etc.
+ - Políticas de Escrita: Write-through vs. Write-back
 
-    Coerência e consistência de memória (conceitualmente)
+ - Política de substituição: LRU, FIFO, etc.
+
+ - Memória virtual: Endereçamento lógico vs. físico, Paginação e segmentação
+
+ - Arquiteturas de memória em sistemas paralelos: Memória compartilhada (SMP), Memória distribuída (MPP, clusters), 
+   Arquiteturas híbridas (DSM – Distributed Shared Memory)
+
+ - Acesso não-uniforme à memória (NUMA)
+
+ - Interleaving de memória (acesso paralelo a bancos de memória)
+
+ - Coerência de cache e consistência de memória (conceitualmente): Problemas em multiprocessadores (ex: cache 
+  compartilhado), Protocolos de coerência (visão geral), Consistência de memória: definição e tipos (forte, fraca, 
+  eventual)
 
 
 
- - Arquitetura de Entrada/Saída (E/S)
+Arquitetura de Entrada/Saída (E/S)
 
     Conceitos arquiteturais de dispositivos de E/S
 
