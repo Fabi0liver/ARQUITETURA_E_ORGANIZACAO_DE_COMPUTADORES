@@ -15,16 +15,27 @@ Fundamento iniciais:
 
 
 
- - Contexto Histórico da Arquitetura de Computadores
+Contexto Histórico da Arquitetura de Computadores
 
-    Evolução dos primeiros computadores até os modelos atuais
+ Objetivo: Compreender como a arquitetura de computadores evoluiu ao longo do tempo, reconhecendo marcos 
+          históricos, contribuições de cientistas e mudanças nos paradigmas arquiteturais.
 
-    A contribuição de Von Neumann, Turing e outros
+ - Panorama da evolução: os primeiros autômatos aos computadores modernos
 
-    Principais marcos: mainframes, microprocessadores, RISC, multicore, GPUs
+ - Contribuições fundamentais: Alan Turing e o conceito de máquina universal, John von Neumann e a arquitetura 
+  armazenada, Outros pioneiros relevantes (Charles Babbage, Ada Lovelace, Howard Aiken)
+
+ - Primeiras arquiteturas computacionais: ENIAC, EDVAC, UNIVAC
+
+ - Modelos arquiteturais históricos: Arquitetura de Von Neumann, Arquitetura Harvard e Harvard Modificada
+
+ - Principais marcos: Mainframes e supercomputadores, Minicomputadores, Microprocessadores e a revolução dos anos 
+  70, Arquiteturas CISC vs RISC, Arquiteturas superscalares, Processadores multicore e paralelismo em chip, 
+  Arquiteturas de GPUs e computação paralela massiva, Arquiteturas emergentes (neuromórficas, quanticas, fotônicas)
 
 
- - Tipos de Arquitetura de Computadores
+
+Tipos de Arquitetura de Computadores
 
     Arquiteturas superescalares
 
