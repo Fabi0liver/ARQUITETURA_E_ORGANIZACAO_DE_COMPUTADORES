@@ -126,19 +126,17 @@
 
     Conceito de Memória na Perspectiva Arquitetural
 
+    Hierarquia de memória: registradores, cache (L1, L2, L3), memória principal
+
     Memória compartilhada (SMP) e distribuída (MPP, clusters)
 
-    Hierarquia de memória: registradores, cache, memória principal
-
-    Tipos de cache: L1, L2, L3
-
-    Mapeamento de cache (direto, associativo, conjunto associativo)
+    Mapeamento de cache: direto, associativo, conjunto associativo
 
     Políticas de Escrita: Write-through vs. Write-back
 
-    Política de substituição de blocos
+    Política de substituição: LRU, FIFO, etc.
 
-    Coerência de cache e consistência de memória (conceitualmente)
+    Coerência e consistência de memória (conceitualmente)
 
 
  - Arquitetura de Entrada/Saída (E/S)
