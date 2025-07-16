@@ -255,21 +255,33 @@ Memória na Perspectiva Arquitetural:
 
 
 
-Arquitetura de Entrada/Saída (E/S)
+Arquitetura de Entrada/Saída (E/S):
 
-    Conceitos arquiteturais de dispositivos de E/S
+ Objetivo: Compreender como os dispositivos periféricos se integram ao sistema computacional sob o ponto de vista 
+          da arquitetura, explorando os métodos de comunicação, controle e endereçamento entre a CPU e os 
+          dispositivos externos.
 
-    Técnicas de E/S: Programada, Acesso direto à memória (DMA), Interrupções
+ - Conceitos arquiteturais de dispositivos de E/S
 
-    Barramentos e Comunicação (visão arquitetural)
+ - Tipos de dispositivos: periféricos de entrada, saída e mistos (visão funcional)
 
-    Controladores de E/S e sua interação com a CPU (visão arquitetural)
+ - Técnicas de E/S: E/S Programada (Polling), E/S com Interrupções, E/S com Acesso Direto à Memória (DMA)
 
-    Mapeamento de E/S: isolado vs. mapeado na memória
+ - Arquitetura de Barramentos e Comunicação: Barramentos dedicados, multiplexados e hierárquicos (visão geral
+
+ - Controladores de E/S e sua interação com a CPU (visão arquitetural)
+
+ - Mapeamento de E/S: Mapeamento de E/S isolado (port-mapped I/O), Mapeamento de E/S mapeado na memória (memory-
+  mapped I/O)
+
+ - Ciclo de E/S no ponto de vista arquitetural (sem detalhamento de hardware)
+
+ - Abstrações arquiteturais para dispositivos de E/S: Bufferização e sincronização, Primitivas de E/S no nível da  
+  arquitetura
 
 
 
- - Paralelismo em Arquitetura
+Paralelismo em Arquitetura
 
     Paralelismo em Nível de Instrução (ILP)
 
