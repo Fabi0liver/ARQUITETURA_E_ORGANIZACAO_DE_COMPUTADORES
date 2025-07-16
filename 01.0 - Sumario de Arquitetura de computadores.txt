@@ -107,6 +107,7 @@
     Paralelismo em nível de instrução (ILP)
 
 
+
  - Tipos de Arquitetura de Processadores
 
     Arquiteturas RISC (Reduced Instruction Set Computer)
@@ -120,6 +121,7 @@
     Estudo comparativo: ARM (RISC) vs. Intel x86 (CISC)
 
     Aplicações típicas (ex: DSPs com VLIW, servidores com EPIC)
+
 
 
  - Memória na Perspectiva Arquitetural
@@ -139,6 +141,7 @@
     Coerência e consistência de memória (conceitualmente)
 
 
+
  - Arquitetura de Entrada/Saída (E/S)
 
     Conceitos arquiteturais de dispositivos de E/S
@@ -152,18 +155,24 @@
     Mapeamento de E/S: isolado vs. mapeado na memória
 
 
+
  - Paralelismo em Arquitetura
 
     Paralelismo em Nível de Instrução (ILP)
 
+    Paralelismo em Threads (TLP )
+
     Paralelismo em nível de processador (do ponto de vista arquitetural)
 
-    Flynn’s Taxonomy (SISD, SIMD, MISD, MIMD)
+    Arquitetura multicore (visão arquitetural)
+
+    SMT (Simultaneous Multithreading)
    
-    Arquitetura multicore e Processamento Paralelo (visão arquitetural, não de sistema)
+    Flynn’s Taxonomy (SISD, SIMD, MISD, MIMD)
 
-    Multithreading e SMT (Simultaneous Multithreading)
-
+    Topologias de interconexão entre núcleos: Barramento, anel, árvore, malha, NoC
+   
+    
 
  - Pipeline 
 
