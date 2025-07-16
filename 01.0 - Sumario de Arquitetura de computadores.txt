@@ -185,6 +185,7 @@
     Técnicas para mitigar problemas: forwarding, branch prediction, etc.
 
 
+
  - Controle na Arquitetura
 
     Unidade de controle: hardwired vs. microprogramada (visão arquitetural)
@@ -196,13 +197,14 @@
 
  - Desempenho e Avaliação
 
-    Medidas de desempenho (MIPS, FLOPS, CPI, clock)
+    Medidas de desempenho: MIPS, FLOPS, CPI, clock
 
     Lei de Amdahl (explicação e implicações práticas)
 
-    Benchmarks (SPEC, Geekbench, etc.)
+    Benchmarks: SPEC, Geekbench, etc.
 
     Fatores que afetam o desempenho: latência, throughput, gargalos
+
 
 
  - Tendências em Arquitetura de Computadores
