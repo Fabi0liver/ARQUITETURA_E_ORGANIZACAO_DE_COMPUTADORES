@@ -85,6 +85,19 @@
     Estudo de caso: ISA do MIPS ou RISC-V com exemplos
 
 
+
+ - Estrutura Interna do Processador:
+
+    ALU (Unidade Lógica e Aritmética)
+
+    FPU (Unidade de Ponto Flutuante)
+
+    Unidade de controle (hardwired vs. microprogramada)
+
+    Ciclo de instrução e flags de status (zero, overflow, carry)
+
+
+
  - Modos de Execução de Instruções
 
     Execução sequencial
