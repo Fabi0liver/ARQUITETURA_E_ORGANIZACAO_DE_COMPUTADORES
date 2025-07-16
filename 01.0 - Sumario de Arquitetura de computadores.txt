@@ -176,17 +176,30 @@ Estrutura Interna do Processador:
 
  
 
-Modos de Execução de Instruções
+Modos de Execução e Otimizações Arquiteturais:
 
-    Execução sequencial
+ Objetivo: Compreender os diferentes modos de execução de instruções em arquiteturas modernas e as técnicas de 
+          otimização utilizadas para melhorar o desempenho na execução de programas.
 
-    Execução pipeline (do ponto de vista conceitual da arquitetura)
+ - Execução Sequencial de instruções (modelo básico e limitações)
 
-    Paralelismo em nível de instrução (ILP)
+ - Execução Pipeline (do ponto de vista conceitual da arquitetura)
+
+ - Paralelismo em nível de instrução (ILP)
+
+ - Multiplicidade de pipelines (pipelines paralelos em arquiteturas superscalares)
+
+ - VLIW (Very Long Instruction Word) e seu impacto arquitetural
+
+ - Processadores com execução especulativa (Speculative Execution)
+
+ - Reordenação de instruções e buffers de reordenação (Reorder Buffers)
+
+ - Impacto arquitetural da microarquitetura no desempenho da execução
 
 
 
- - Tipos de Arquitetura de Processadores
+Tipos de Arquitetura de Processadores
 
     Arquiteturas RISC (Reduced Instruction Set Computer)
 
