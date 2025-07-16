@@ -102,25 +102,49 @@ Modelo Modelos Computacionais:
 
 
 
- Conjunto de Instruções (ISA - Instruction Set Architecture)
+Conjunto de Instruções (ISA - Instruction Set Architecture)
 
-    Conceito de ISA
+ Objetivo: Compreender como o processador se comunica com o software através de um conjunto bem definido de 
+          instruções, seus formatos, modos de acesso à memória e os elementos visíveis ao programado
 
-    Tipos de instruções: dados, controle, entrada/saída
+ - Conceito de ISA (como contrato entre hardware e software)
 
-    Modos de endereçamento: imediato, direto, indireto, baseado em registrador, etc.
+ - Funções de uma ISA: comunicação, abstração, portabilidade e otimização
 
-    Formatos de instrução: RISC e  CISC
+ - Tipos de instruções: Instruções de transferência/manipulação de dados, Instruções aritméticas e lógicas, 
+  Instruções de controle de fluxo (saltos, chamadas, desvios condicionais), Instruções de Entrada/Saída (I/O), 
+  Instruções especiais (ex: sistema, interrupções)
 
-    Registradores visíveis ao programador
+ - Modos de endereçamento: Imediato, Direto (absoluto), Indireto, Baseado em registrador, Indexado, Pilha (stack-
+  based)
 
-    Pipeline do ponto de vista do ISA (sem entrar em implementação)
+ - Formatos de instrução: RISC e  CISC
 
-    Estudo de caso: ISA do MIPS ou RISC-V com exemplos
+ - Registradores visíveis ao programador: Registradores de propósito geral (GPRs), Registradores especiais (PC, SP, 
+  SR, etc.), Convenções de uso (ex: temporários, argumentos, retorno)
+
+ - Conjunto de Dados e Tipos Suportados: Tipos primitivos (inteiros, ponto flutuante, caracteres), Suporte a tipos 
+  vetoriais ou SIMD (em arquiteturas modernas)
+
+ - Tamanho da palavra e alinhamento
+
+ - Acesso à memória do ponto de vista da ISA: Leitura/escrita, Acesso alinhado vs desalinhado, Operações de 
+  load/store
+
+ - Visão de Pipeline do ponto de vista da ISA
+
+ - Compatibilidade entre versões de ISA (backward compatibility)
+
+ - Estudo de caso: ISA do MIPS ou RISC-V com exemplos
+
+ - Importância da ISA para compiladores e SOs
+
+ - Tendências modernas: Extensões de ISA (ex: RISC-V com FPU, vetor, criptografia), Softwares que traduzem entre 
+  ISAs (ex: emuladores, binários universais)
 
 
 
- - Estrutura Interna do Processador:
+Estrutura Interna do Processador:
 
     ALU (Unidade Lógica e Aritmética)
 
