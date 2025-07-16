@@ -195,6 +195,7 @@
     Estado do processador e flags de status (zero, overflow, carry, etc.)
 
 
+
  - Desempenho e Avaliação
 
     Medidas de desempenho: MIPS, FLOPS, CPI, clock
@@ -204,6 +205,7 @@
     Benchmarks: SPEC, Geekbench, etc.
 
     Fatores que afetam o desempenho: latência, throughput, gargalos
+
 
 
  - Virtualização e Arquitetura de Nuvem
@@ -219,6 +221,17 @@
     Contêineres e abstração de hardware
 
 
+
+ - Arquitetura Reconfigurável
+
+    Conceito de FPGAs (Field Programmable Gate Arrays)
+
+    Comparação com arquiteturas fixas
+
+    Aplicações típicas: processamento de sinais, redes, IA embarcada
+
+
+
  - Tendências em Arquitetura de Computadores
 
     Processadores heterogêneos (CPU + GPU + TPU)
@@ -227,6 +240,6 @@
 
     Computação de alto desempenho (HPC)
 
-    Arquiteturas energicamente eficientes (ex: ARM, big.LITTLE)
+    Arquiteturas energicamente eficientes: ARM, big.LITTLE
 
-    Computação quântica (introdução conceitual)
+    Computação quântica 
