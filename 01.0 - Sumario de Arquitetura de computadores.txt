@@ -146,17 +146,37 @@ Conjunto de Instruções (ISA - Instruction Set Architecture)
 
 Estrutura Interna do Processador:
 
-    ALU (Unidade Lógica e Aritmética)
+ Objetivo: Compreender os blocos funcionais internos do processador e como eles se relacionam na execução de 
+          instruções em nível de arquitetura.
 
-    FPU (Unidade de Ponto Flutuante)
+ - ALU (Unidade Lógica e Aritmética): operações inteiras e lógicas básicas
 
-    Unidade de controle (hardwired vs. microprogramada)
+ - FPU (Unidade de Ponto Flutuante): suporte a operações com números reais
 
-    Ciclo de instrução e flags de status (zero, overflow, carry)
+ - Unidade de Controle: Controle cabeado (hardwired), Controle microprogramado
 
+ - Decodificador de Instruções: identificação e ativação dos sinais de controle
 
+ - Banco de Registradores: registradores de uso geral e especializados
 
- - Modos de Execução de Instruções
+ - Registradores internos e de estado: Registrador de Instrução (IR), Contador de Programa (PC), Registradores de 
+  status
+
+ - Ciclo de Instrução: busca, decodificação, execução, acesso à memória, escrita
+
+ - flags de status: Zero, Carry, Overflow, Sinal
+
+ - Pipeline de instruções (execução sobreposta, estágios)
+
+ - Unidade de Busca de Instrução (IFU - Instruction Fetch Unit)
+
+ - Barramentos internos (de dados, endereços, controle)
+
+ - Suporte a paralelismo: SIMD (Single Instruction, Multiple Data), Vetorial (Unidades vetoriais)
+
+ 
+
+Modos de Execução de Instruções
 
     Execução sequencial
 
