@@ -35,7 +35,7 @@ Contexto Histórico da Arquitetura de Computadores
 
 
 
-Tipos de Arquitetura de Computadores
+Tipos de Arquitetura de Computadores:
 
  Objetivo: Explorar e compreender os diferentes tipos de arquiteturas de computadores, suas características, 
           estruturas internas e aplicações reais, com ênfase em desempenho, paralelismo e especialização.
@@ -56,20 +56,29 @@ Tipos de Arquitetura de Computadores
 
 
 
- - Níveis de abstração da Arquitetura de computadores 
+Níveis de abstração da Arquitetura de computadores:
 
-    Nível digital/lógico
+ Objetivo: Compreender as diferentes camadas de abstração que compõem a arquitetura de computadores, desde os 
+          circuitos lógicos até os programas de aplicação, identificando o papel e as responsabilidades de cada 
+          nível.
 
-    Nível da microarquitetura
+ - Nível Eletrônico (nível físico)
 
-    Nível ISA (Instruction Set Architecture)
+ - Nível Digital / Lógico
 
-    Nível do sistema operacional
+ - Nível da Microarquitetura
 
-    Nível do programa de aplicação
+ - Nível ISA (Instruction Set Architecture)
+
+ - Nível do Compilador (intermediário entre ISA e aplicação)
+
+ - Nível do Sistema Operacional
+
+ - Nível do Programa de Aplicação
 
 
- - Modelo Modelos Computacionais
+
+Modelo Modelos Computacionais
 
     Modelo de Von Neumann
 
