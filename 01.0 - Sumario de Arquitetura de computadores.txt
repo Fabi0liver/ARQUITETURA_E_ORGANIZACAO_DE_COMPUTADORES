@@ -455,14 +455,32 @@ Arquitetura Reconfigurável:
 
 
 
-Tendências em Arquitetura de Computadores
+Tendências em Arquitetura de Computadores:
 
-    Processadores heterogêneos (CPU + GPU + TPU)
+ Objetivo: Conhecer as principais direções tecnológicas e inovações na área de arquitetura, que moldam os 
+          processadores e sistemas modernos em termos de desempenho, eficiência, especialização e adaptabilidade.
 
-    Arquiteturas para IA e aprendizado de máquina
+ - Processadores Heterogêneos (CPU + GPU + TPU + NPU)
 
-    Computação de alto desempenho (HPC)
+ - Arquiteturas para IA e Aprendizado de Máquina: TPUs (Tensor Processing Units), NPUs (Neural Processing Units), 
+  FPGAs otimizados para inferência, Multiprocessamento massivo paralelo
 
-    Arquiteturas energicamente eficientes: ARM, big.LITTLE
+ - Arquiteturas Neuromórficas
 
-    Computação quântica 
+ - Computação de Alto Desempenho (HPC)
+
+ - Arquiteturas energicamente eficientes: ARM, big.LITTLE
+
+ - Arquiteturas RISC-V
+
+ - Chiplets e Empacotamento 3D
+
+ - Computação Quântica
+
+ - Edge Computing & Arquiteturas Descentralizadas
+
+ - Arquiteturas Voltadas para Segurança
+
+ - Arquiteturas para Virtualização e Contêineres
+
+ - Arquiteturas para Tolerância a Falhas
