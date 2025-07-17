@@ -419,17 +419,43 @@ Virtualização e Arquitetura de Nuvem:
 
 
 
-Arquitetura Reconfigurável
+Arquitetura Reconfigurável:
 
-    Conceito de FPGAs (Field Programmable Gate Arrays)
+ Objetivo: Compreender o conceito, funcionamento e implicações arquiteturais dos dispositivos reconfiguráveis, com 
+          foco em FPGAs, sua comparação com arquiteturas fixas e suas aplicações práticas no contexto da 
+          arquitetura de computadores.
 
-    Comparação com arquiteturas fixas
+ - Conceito de Arquitetura Reconfigurável
 
-    Aplicações típicas: processamento de sinais, redes, IA embarcada
+ - O que são FPGAs (Field Programmable Gate Arrays)
+
+ - Tipos de FPGAs: SRAM-based, Flash-based, antifuse...
+
+ - Comparação com arquiteturas fixas (CISC/RISC, ASICs, DSPs)
+
+ - Vantagens e desvantagens arquiteturais
+
+ - Aplicações típicas: Processamento de sinais digitais (DSP), Aceleração de algoritmos de IA embarcada (como CNNs 
+  em edge computing), Processamento de pacotes em redes e switches programáveis
+
+ - Comparação entre FPGAs e ASICs (tempo de desenvolvimento, custo, flexibilidade, desempenho)
+
+ - Papel dos FPGAs no contexto da arquitetura moderna (coprocessadores, aceleração dedicada, integração com 
+  CPU/SoC)
+
+ - Arquitetura interna de um FPGA (matriz lógica, LUTs, flip-flops, blocos de memória, I/O, interconexão)
+
+ - Linguagens e ferramentas de descrição (HDLs: VHDL/Verilog)
+
+ - Ferramentas de síntese e implementação (Vivado, Quartus, etc.)
+
+ - Desafios arquiteturais: latência de reconfiguração, clocking, consumo energético
+
+ - Exemplos modernos de uso em arquiteturas heterogêneas (SoCs com FPGA embarcado)
 
 
 
- - Tendências em Arquitetura de Computadores
+Tendências em Arquitetura de Computadores
 
     Processadores heterogêneos (CPU + GPU + TPU)
 
