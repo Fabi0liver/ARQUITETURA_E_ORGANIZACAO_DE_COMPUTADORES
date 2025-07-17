@@ -337,17 +337,34 @@ Pipeline de Instruções:
 
 
 
-Controle na Arquitetura
+Controle na Arquitetura:
 
-    Unidade de controle: hardwired vs. microprogramada (visão arquitetural)
+ Objetivo: Compreender como o controle das operações do processador é concebido no nível arquitetural, incluindo os 
+          mecanismos que determinam a execução das instruções, controle de fluxo e monitoramento do estado interno 
+          do processador.
 
-    Ciclo de instrução e controle de fluxo
+ - Unidade de Controle: hardwired vs. microprogramada (visão arquitetural — não implementação)
 
-    Estado do processador e flags de status (zero, overflow, carry, etc.)
+ - Representação arquitetural da Unidade de Controle
+
+ - Microinstruções e microprogramas: conceito e implicações arquiteturais
+
+ - Ciclo de Instrução: busca, decodificação, execução, acesso à memória, escrita de resultado
+
+ - Controle de fluxo: desvios condicionais e incondicionais, jumps, branches, chamadas e retornos
+
+ - Flags de status e registro de status (PSR – Program Status Register): Zero, Overflow, Carry, Negative, Sign, 
+  etc.
+
+ - Papel do controle no suporte à execução de instruções da ISA
+
+ - Arquiteturas com pipeline: implicações arquiteturais no controle 
+
+ - Considerações de controle em arquiteturas RISC vs CISC (no nível arquitetural)
 
 
 
- - Desempenho e Avaliação
+Desempenho e Avaliação
 
     Medidas de desempenho: MIPS, FLOPS, CPI, clock
 
