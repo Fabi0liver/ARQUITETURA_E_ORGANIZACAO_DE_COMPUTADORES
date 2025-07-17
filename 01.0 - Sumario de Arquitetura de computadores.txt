@@ -281,25 +281,34 @@ Arquitetura de Entrada/Saída (E/S):
 
 
 
-Paralelismo em Arquitetura
+Paralelismo em Arquitetura de Computadores:
 
-    Paralelismo em Nível de Instrução (ILP)
+ Objetivo: Compreender como o paralelismo é explorado em nível arquitetural para aumentar o desempenho 
+          computacional, por meio de instruções, threads, núcleos e topologias de interconexão.
 
-    Paralelismo em Threads (TLP )
+  - Paralelismo em Nível de Instrução (ILP - Instruction Level Parallelism)
 
-    Paralelismo em nível de processador (do ponto de vista arquitetural)
+  - Paralelismo em Nível de Thread (TLP - Thread Level Parallelism)
 
-    Arquitetura multicore (visão arquitetural)
+  - Paralelismo em nível de processador (do ponto de vista arquitetural)
 
-    SMT (Simultaneous Multithreading)
+  - Arquitetura Multicore (visão arquitetural)
+
+  - Topologias de Interconexão entre Núcleos (visão arquitetural)
+
+  - Simultaneous Multithreading (SMT)
    
-    Flynn’s Taxonomy (SISD, SIMD, MISD, MIMD)
+  - Taxonomia de Flynn (modelo arquitetural de classificação de paralelismo): SISD (Single Instruction, Single 
+   Data), SIMD (Single Instruction, Multiple Data), MISD (Multiple Instruction, Single Data), MIMD (Multiple 
+   Instruction, Multiple Data)
 
-    Topologias de interconexão entre núcleos: Barramento, anel, árvore, malha, NoC
-   
+  - Topologias de interconexão entre núcleos: Barramento, anel, árvore, malha, NoC
+
+  - ISA e suporte ao paralelismo    
     
 
- - Pipeline 
+
+Pipeline 
 
     Conceito de pipeline (em nível arquitetural)
 
