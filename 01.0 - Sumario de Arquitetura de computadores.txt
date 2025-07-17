@@ -308,19 +308,36 @@ Paralelismo em Arquitetura de Computadores:
     
 
 
-Pipeline 
+Pipeline de Instruções:
 
-    Conceito de pipeline (em nível arquitetural)
+ Objetivo: Compreender como o paralelismo interno ao processador melhora o desempenho através da sobreposição dos 
+          estágios de execução de instruções.
 
-    Estágios de pipeline (fetch, decode, execute, etc.)
+ - Conceito de pipeline (nível arquitetural: paralelismo temporal)
 
-    Problemas no pipeline: dependências, stalls, hazards (RAW, WAR, WAW)
+ - Benefícios do pipeline para o throughput da CPU
 
-    Técnicas para mitigar problemas: forwarding, branch prediction, etc.
+ - Estágios clássicos do pipeline: Fetch (busca da instrução), Decode (decodificação), Execute (execução), Memory 
+  access (acesso à memória), Write-back (escrita de resultado)
+
+ - Problemas no pipeline: Hazards ou Perigos (RAW (Read After Write), WAR (Write After Read), WAW (Write After 
+  Write)), Data hazards (dependências de dados entre instruções), Control hazards (desvios e saltos condicionais), 
+  Structural hazards (concorrência por recursos), Stalls (bolhas no pipeline)
+
+ - Técnicas para mitigar problemas: Forwarding (bypassing), Scoreboarding e Tomasulo (resolução dinâmica de 
+  dependências), Branch prediction (predição de desvios), Speculative execution (execução especulativa), Pipeline 
+  interlock 
+
+ - Tipos de pipelines: Pipeline estático vs. dinâmico, Pipeline superescalar
+
+ - Medidas de desempenho do pipeline: CPI (Cycles Per Instruction), Throughput e Latência, Pipeline depth 
+  (profundidade do pipeline)
+
+ - Exemplos em arquiteturas reais (MIPS, ARM, Intel)
 
 
 
- - Controle na Arquitetura
+Controle na Arquitetura
 
     Unidade de controle: hardwired vs. microprogramada (visão arquitetural)
 
