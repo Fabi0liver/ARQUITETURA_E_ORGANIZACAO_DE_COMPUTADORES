@@ -364,15 +364,31 @@ Controle na Arquitetura:
 
 
 
-Desempenho e Avaliação
+Desempenho e Avaliação:
 
-    Medidas de desempenho: MIPS, FLOPS, CPI, clock
+ Objetivo: Compreender como medir, analisar e comparar o desempenho de arquiteturas de computadores, utilizando 
+          métricas e ferramentas adequadas, além de entender os fatores que impactam diretamente o desempenho.
 
-    Lei de Amdahl (explicação e implicações práticas)
+ - Medidas de desempenho: MIPS (Milhões de Instruções por Segundo), FLOPS (Operações de Ponto Flutuante por 
+  Segundo), CPI (Ciclos por Instrução), Frequência de Clock, IPC (Instruções por Ciclo)
 
-    Benchmarks: SPEC, Geekbench, etc.
+ - Lei de Amdahl (explicação e implicações práticas)
 
-    Fatores que afetam o desempenho: latência, throughput, gargalos
+ - Speedup e Eficiência: Speedup ideal vs. real, Eficiência de paralelismo
+
+ - Tipos de benchmarks: sintéticos vs. aplicacionais
+
+ - Benchmarks: SPEC, Geekbench, Cinebench, PassMark
+
+ - Interpretação dos resultados
+
+ - Fatores que afetam o desempenho: Latência vs. Throughput, Gargalos (ex: memória, I/O, barramentos), Hierarquia 
+  de memória (cache misses, TLB misses), Arquiteturas com múltiplos núcleos (multicore)
+
+ - Avaliação energética: Performance por watt, Eficiência energética em arquiteturas modernas
+
+ - Escalabilidade: Conceito e análise de desempenho em diferentes tamanhos de carga, Limitações de escalabilidade 
+  (lei de Gustafson como contraponto à de Amdah
 
 
 
