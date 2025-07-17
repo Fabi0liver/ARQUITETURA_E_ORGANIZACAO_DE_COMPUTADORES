@@ -392,21 +392,34 @@ Desempenho e Avaliação:
 
 
 
- - Virtualização e Arquitetura de Nuvem
+Virtualização e Arquitetura de Nuvem:
 
-    Conceito de virtualização
+ Objetivo: Compreender como a virtualização transforma a arquitetura de computadores, influenciando o design do 
+          hardware e possibilitando a computação em nuvem, com isolamento, escalabilidade e abstração eficiente dos 
+          recursos físicos.
+    
+ - Conceito de Virtualização
 
-    Hypervisores (tipo 1 e tipo 2)
+ - Hypervisores (Tipo 1 – bare-metal e Tipo 2 – hosted)
 
-    Suporte à virtualização no hardware (Intel VT-x, AMD-V)
+ - Modos de operação do processador (Ring 0 a Ring 3)
 
-    Impacto na arquitetura moderna
+ - Suporte à virtualização no hardware: Intel VT-x, AMD-V, SLAT (Second Level Address Translation), EPT (Extended 
+  Page Tables), NPT (Nested Page Tables)
 
-    Contêineres e abstração de hardware
+ - Virtualização completa vs. Paravirtualização
+
+ - Contêineres vs. Máquinas Virtuais (abstração a nível de SO vs. abstração a nível de hardware)
+
+ - Impactos arquiteturais: Gerência de caches e TLBs, Performance de E/S virtualizada, Segurança e isolamento de 
+  contexto  
+
+ - Arquiteturas voltadas à Nuvem: Suporte a escalabilidade, elasticidade e multitenancy, Processadores otimizados 
+   para cargas virtuais (ex: AWS Graviton, Intel Xeon escalável)
 
 
 
- - Arquitetura Reconfigurável
+Arquitetura Reconfigurável
 
     Conceito de FPGAs (Field Programmable Gate Arrays)
 
