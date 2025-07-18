@@ -1,0 +1,48 @@
+                         Arquitetura e Organização de Computadores
+
+
+Computador: Fundamentos e Introdução
+
+História da computação e evolução dos computadores
+
+Modelo de Von Neumann, Modelo Harvard e variantes híbridas
+
+Componentes de um sistema computacional
+
+Representação de dados e sistemas de numeração
+
+Álgebra Booleana e Circuitos Lógicos
+
+Hardware e Software 
+
+Função e Estrutura
+
+Hierarquia e Abstração em computadores
+
+Organização de computadores
+
+Arquitetura de computadores
+
+Microarquitetura
+
+Assembly e Assembler
+
+Pipeline e Superescalaridade
+
+Paralelismo e Multicore 
+
+Arquiteturas Distribuídas 
+
+Sistemas Reconfiguráveis e FPGAs 
+
+Virtualização
+
+Segurança e Execução Segura
+
+Arquiteturas não convencionais 
+
+Sistemas Operacionais
+
+Aplicativos
+
+Medição e Análise de Desempenho
