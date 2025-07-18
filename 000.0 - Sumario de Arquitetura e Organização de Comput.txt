@@ -7,9 +7,6 @@ Computador: Fundamentos e Introdução
 História da computação e evolução dos computadores
 
 
-Conceito de Arquitetura x Organização
-
-
 Modelos de Computação: Von Neumann, Harvard, Harvard Modificado, híbridos
 
 
