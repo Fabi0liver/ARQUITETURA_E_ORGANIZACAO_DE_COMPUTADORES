@@ -18,16 +18,16 @@ Ciclo de Busca e Execução de Instruções (na perspectiva dos modelos de compu
 Tipos de Instruções (na perspectiva dos modelos de computação): Instruções de dados, Instruções aritméticas e lógicas, Instruções de controle, Instruções de E/S
 
 
-Modelo de Von Neumann: Memória única para dados e instruções, Barramento compartilhado, Problema do gargalo de Von Neumann
+Modelo de Von Neumann: Conceito basico, Contexto histórico (Origem e História), Características do Modelo, Componentes Principais (Unidade de Memória, Unidade de Controle, Unidade Lógica e Aritmética (ULA), Registradores, Barramentos), Vantagens e Limitações, Comparação com Outros Modelos, Exemplos e Aplicações, Impacto na Arquitetura Moderna
 
 
-Modelo Harvard: Memória separada para dados e instruções, Acesso simultâneo possível, Usado em microcontroladores e DSPs
+Modelo Harvard: Conceito basico, Contexto histórico (Origem e História), Características do Modelo, Componentes Principais (Memória de instruções, Memória de dados, Unidade de controle, ULA (Unidade Lógica e Aritmética), Registradores e barramentos separados para dados e instruções), Vantagens e Limitações, Comparação com Outros Modelos,  Exemplos e Aplicações, Impacto na Arquitetura Moderna
 
 
-Modelo Harvard Modificado: Mistura elementos dos dois modelos, Cache separado para instruções e dados
+Modelo Harvard Modificado: Conceito Básico, Motivação, Características do modelo, Funcionamento, Vantagens e Limitações, Comparação com Outros Modelos,  Exemplos e Aplicações, Impacto na Arquitetura Moderna
 
 
-Modelos Híbridos: Multicore, SoC, GPUs (misturam arquitetura Von Neumann com Harvard)
+Modelos Híbridos: Conceito Básico, Motivação, Características do Modelo, Tipos de Modelos Híbridos (Arquiteturas Multi-core com Memórias Mistas, Sistemas com Memória Compartilhada + Memória Local, Sistemas com Acesso por Barramentos Inteligentes, Arquiteturas com Unidades Dedicadas), Vantagens e Limitações, Comparação entre os Modelos, Exemplos e Aplicações, Conceitos Avançados Relacionados, Impacto na Arquitetura Moderna
 
 
 Modelos Teóricos de Computação (foco em como a computação é definida logicamente):Máquina de Turing, Máquina de Registro (RAM, RASP), Máquina Lambda (λ-cálculo), Autômatos Finitos (AFD, AFN), Máquina de Pilha, Máquina de Post, Máquina de Circuitos (modelo lógico baseado em circuitos booleanos)
