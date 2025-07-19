@@ -1,21 +1,36 @@
                                       Modelos de Computação
 
-Conceito de modelo de computação
+O que é um modelo de computação
 
-Principais componentes e suas funções dos Modelos de Computação
 
-Ciclo de busca e execução de instruções
+Para que serve (abstração para estudar, projetar e implementar sistemas computacionais)
 
-Tipos de instruções
 
-Modelo de Von Neumann
+Diferença entre modelo lógico/teórico e modelo arquitetural/físico
 
-Modelo Harvard
 
-Modelo Harvard Modificado
+Principais Componentes e Suas Funções(na perspectiva dos modelos de computação): Unidade de Controle, Unidade Lógica e Aritmética (ULA), Memória (RAM, cache, registradores), Barramentos (dados, endereços, controle, Dispositivos de Entrada e Saída
 
-Modelos Híbridos
+
+Ciclo de Busca e Execução de Instruções (na perspectiva dos modelos de computação): Fetch, Decode, Execute, Write-back
+
+
+Tipos de Instruções (na perspectiva dos modelos de computação): Instruções de dados, Instruções aritméticas e lógicas, Instruções de controle, Instruções de E/S
+
+
+Modelo de Von Neumann: Memória única para dados e instruções, Barramento compartilhado, Problema do gargalo de Von Neumann
+
+
+Modelo Harvard: Memória separada para dados e instruções, Acesso simultâneo possível, Usado em microcontroladores e DSPs
+
+
+Modelo Harvard Modificado: Mistura elementos dos dois modelos, Cache separado para instruções e dados
+
+
+Modelos Híbridos: Multicore, SoC, GPUs (misturam arquitetura Von Neumann com Harvard)
+
 
 Modelos Teóricos de Computação (foco em como a computação é definida logicamente):Máquina de Turing, Máquina de Registro (RAM, RASP), Máquina Lambda (λ-cálculo), Autômatos Finitos (AFD, AFN), Máquina de Pilha, Máquina de Post, Máquina de Circuitos (modelo lógico baseado em circuitos booleanos)
+
 
 Modelos Alternativos e Não Convencionais (pesquisa ou aplicações específicas):Computação Quântica (Modelo de Circuitos Quânticos), Computação Neuromórfica, Computação Reversível, Computação Óptica, Computação DNA / Biológica, Computação baseada em autômatos celulares (ex: Jogo da Vida de Conway), Computação Analógica
