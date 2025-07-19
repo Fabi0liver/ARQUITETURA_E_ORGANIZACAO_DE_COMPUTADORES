@@ -34,3 +34,12 @@ Modelos Teóricos de Computação (foco em como a computação é definida logic
 
 
 Modelos Alternativos e Não Convencionais (pesquisa ou aplicações específicas):Computação Quântica (Modelo de Circuitos Quânticos), Computação Neuromórfica, Computação Reversível, Computação Óptica, Computação DNA / Biológica, Computação baseada em autômatos celulares (ex: Jogo da Vida de Conway), Computação Analógica
+
+
+Importância dos Modelos de Computação: o Ensino, naPesquisa, na Indústria
+
+
+Limites Fundamentais e Computabilidade
+
+
+Tendências Futuras e Relevância Estratégica: Avanço para além de Von Neumann, Computação Cognitiva, Computação Reconfigurável e Adaptativa, Sustentabilidade e Ética
