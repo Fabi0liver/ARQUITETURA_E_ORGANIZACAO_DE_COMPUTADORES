@@ -1,0 +1,12 @@
+                                      MODELOS DE COMPUTAÇÃO
+
+
+Você já parou pra pensar em como a gente consegue ensinar um computador a fazer alguma coisa? Pode ser algo simples, como somar dois números, ou mais elaborado, como reconhecer uma voz ou jogar xadrez. Por trás dessas tarefas, existe um tipo de “mapa mental” que define como o computador deve agir. Esse mapa é o que a gente chama de modelo de computação. Ele é como uma bússola que guia a forma como pensamos, projetamos e analisamos o que uma máquina é capaz de fazer.
+
+Mas calma, a ideia de modelo aqui não tem nada a ver com moda ou passarela. Em Ciência da Computação, modelo é como uma maquete ou uma simulação mental. Imagine que você quer construir uma casa: antes de levantar tijolo por tijolo, é comum fazer um desenho ou maquete da estrutura. Os modelos de computação funcionam do mesmo jeito: são representações que ajudam a entender como uma máquina executa instruções e resolve problemas. Eles não são o computador em si, mas um jeito de pensar sobre como ele funciona por dentro.
+
+Esses modelos são super importantes porque ajudam cientistas e engenheiros a responder perguntas como: “Será que essa tarefa pode ser feita por um computador?” ou “Qual é a maneira mais eficiente de resolver esse problema?”. Sem um modelo bem definido, seria como tentar cozinhar sem receita ou jogar um jogo sem saber as regras. E o mais legal é que, ao entender esses modelos, você começa a enxergar o computador não só como uma caixa preta mágica, mas como uma máquina lógica, feita de ideias e processos bem organizados.
+
+Ao longo da história da computação, vários modelos foram criados para representar diferentes formas de pensar o que é “computar” (alguns bem simples, outros super abstratos). Cada um com seu jeitinho, como peças diferentes de um mesmo quebra-cabeça. Eles nos ajudam a construir linguagens de programação, projetar processadores, e até entender os limites do que é ou não possível resolver com um algoritmo.
+
+Então se você está começando agora, saiba que estudar modelos de computação é como visitar os bastidores da mente do computador. Não precisa entender tudo de cara é um mundo novo, e você está dando o primeiro passo com o pé direito. Aos poucos, vamos abrindo essas portas juntos, com calma e muita curiosidade. Pronto pra essa jornada? 
