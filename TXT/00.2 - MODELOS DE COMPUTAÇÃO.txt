@@ -1,4 +1,4 @@
-                                      MODELOS DE COMPUTAÇÃO
+                                       MODELOS DE COMPUTAÇÃO
 
 
 Você já parou pra pensar em como a gente consegue ensinar um computador a fazer alguma coisa? Pode ser algo simples, como somar dois números, ou mais elaborado, como reconhecer uma voz ou jogar xadrez. Por trás dessas tarefas, existe um tipo de “mapa mental” que define como o computador deve agir. Esse mapa é o que a gente chama de modelo de computação. Ele é como uma bússola que guia a forma como pensamos, projetamos e analisamos o que uma máquina é capaz de fazer.
@@ -10,3 +10,15 @@ Esses modelos são super importantes porque ajudam cientistas e engenheiros a re
 Ao longo da história da computação, vários modelos foram criados para representar diferentes formas de pensar o que é “computar” (alguns bem simples, outros super abstratos). Cada um com seu jeitinho, como peças diferentes de um mesmo quebra-cabeça. Eles nos ajudam a construir linguagens de programação, projetar processadores, e até entender os limites do que é ou não possível resolver com um algoritmo.
 
 Então se você está começando agora, saiba que estudar modelos de computação é como visitar os bastidores da mente do computador. Não precisa entender tudo de cara é um mundo novo, e você está dando o primeiro passo com o pé direito. Aos poucos, vamos abrindo essas portas juntos, com calma e muita curiosidade. Pronto pra essa jornada? 
+
+
+
+                              "Para que Serve os Modelos da Computação?"
+
+ Sabe quando a gente tenta entender como algo funciona por dentro (tipo como um carro anda, ou como uma receita de bolo dá certo) e criamos uma versão simplificada disso na nossa cabeça pra facilitar? Os modelos de computação fazem algo parecido. Eles servem como uma forma de abstração, ou seja, uma maneira de focar só no que é essencial pra resolver um problema ou entender um funcionamento, sem se preocupar com todos os detalhes físicos e técnicos do computador real. É como se fosse uma versão “em pensamento” do que acontece de verdade, feita pra facilitar o estudo e o raciocínio.
+
+ Esses modelos são fundamentais pra gente poder estudar e refletir sobre o que os computadores conseguem ou não conseguem fazer. Antes de sair programando ou construindo algo, é preciso ter clareza sobre como aquela tarefa pode ser pensada, quais etapas ela exige e se ela é até mesmo possível de ser executada. Com os modelos, conseguimos representar esses processos de forma lógica e organizada, como se estivéssemos desenhando mentalmente um plano de ação. É como quando você planeja um trajeto antes de viajar: o mapa ajuda a tomar decisões melhores.
+
+ Além disso, os modelos de computação são ferramentas essenciais pra quem vai projetar e construir sistemas reais (como programas, linguagens de programação, circuitos, ou até mesmo novos computadores). Eles funcionam como o esboço do arquiteto antes da construção. Se você entende bem o modelo, consegue prever o que vai funcionar, o que pode dar problema e onde é possível otimizar. Ou seja, estudar esses modelos é como aprender a pensar como um engenheiro da lógica das máquinas.
+
+E por fim, os modelos também ajudam a criar um linguajar comum entre as pessoas que trabalham com tecnologia. Quando todo mundo entende e usa o mesmo modelo como base, fica muito mais fácil comunicar ideias, comparar soluções e desenvolver inovações em conjunto. Mesmo sem perceber, boa parte da tecnologia que usamos hoje só é possível porque lá no início alguém parou, pensou e criou um modelo que orientou tudo o que veio depois. 
