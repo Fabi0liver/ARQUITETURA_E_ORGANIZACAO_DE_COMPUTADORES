@@ -37,3 +37,46 @@ E por fim, os modelos também ajudam a criar um linguajar comum entre as pessoas
 
  Então, quando a gente estuda modelos de computação, vale sempre ter em mente essa dupla abordagem: a mente e o corpo da máquina. Um ajuda a pensar, o outro a construir. E o mais bonito é ver como esses dois mundos se conectam:  afinal, toda arquitetura real nasce de uma ideia lógica bem pensada, e toda ideia precisa, em algum momento, ganhar forma pra virar algo útil de verdade. 
 
+
+
+                "Principais Componentes dos Modelos de Computação e Suas Funções"
+
+
+Agora que a gente já entendeu o que são os modelos de computação, pra que eles servem e os diferentes tipos que existem, chegou a hora de olhar com mais carinho pra como esses modelos são formados por partes diferentes que trabalham juntas. Dá pra imaginar um modelo como uma pequena equipe dentro de uma máquina, onde cada membro tem uma função bem específica: tipo num restaurante, com cozinheiros, atendentes, gerente e entregador, cada um cuidando de uma etapa do processo.
+
+Dentro dos modelos de computação, a gente também tem esse “time interno”, com componentes que colaboram pra fazer o sistema funcionar direitinho. Cada um tem uma função essencial pra que a máquina consiga receber, interpretar, processar e responder aos dados e comandos. Não estamos falando ainda das peças físicas, como chips e placas, mas sim da ideia por trás de como essas funções são divididas e organizadas. É como desenhar o organograma da equipe antes de montar a estrutura real.
+
+ Agora, vamos conhecer os principais componentes desses modelos e entender qual é o papel de cada um nessa equipe imaginária. Bora lá!
+
+
+ * Unidade de Controle: 
+
+   A Unidade de Controle é como o “diretor” do modelo de computação. Ela é responsável por coordenar tudo o que acontece ali dentro. Imagina alguém dizendo quem faz o quê, em que momento e como — é isso que ela faz. Ela envia sinais de controle para os outros componentes, garantindo que cada um execute sua tarefa na hora certa. Ela não resolve contas nem armazena dados, mas garante que todos os passos aconteçam na ordem correta.
+
+
+ * Unidade Lógica e Aritmética (ALU ou ULA):
+
+   A ULA é o “matemático” da história. Ela cuida dos cálculos e comparações. Quando o computador precisa somar dois números, comparar valores ou fazer alguma operação lógica (como decidir entre verdadeiro ou falso), é a ULA que entra em ação. No modelo, ela representa a parte que realmente processa as informações, ou seja, executa o que foi pedido.
+
+
+ * Memória (RAM, Cache, Registradores):
+
+   A memória é o “cérebro auxiliar” do modelo, onde os dados e instruções ficam guardados temporariamente pra serem usados durante o processamento. A RAM é como um grande bloco de notas que guarda tudo o que está em uso no momento. Os registradores são mini-blocos de notas super rápidos e próximos da ULA, usados para armazenar dados imediatos. Já a cache é como uma área VIP da memória, onde ficam os dados mais usados com frequência, pra que o acesso seja mais rápido.
+
+
+ * Barramentos (Dados, Endereços, Controle):
+
+   Os barramentos são as “estradas internas” do modelo, por onde passam informações. Eles ligam todos os componentes e permitem que dados, endereços de memória e sinais de controle circulem pelo sistema. Pense neles como trilhos de trem: há trilhos para os dados (o conteúdo que está sendo manipulado), trilhos para os endereços (onde estão esses dados) e trilhos para os sinais de controle (ordens enviadas pela Unidade de Controle).
+
+
+ * Dispositivos de Entrada e Saída:
+
+   Esses dispositivos são os “portões” de entrada e saída do modelo. Entrada é tudo aquilo que o computador recebe do mundo externo: como teclado, mouse, sensores, etc. Saída é o que ele devolve: como imagens na tela, som nos alto-falantes ou dados enviados a outro sistema. No modelo de computação, eles representam a comunicação com o exterior, permitindo que o sistema interaja com o usuário ou com outros sistemas.
+
+
+ Em suma... Mesmo nos modelos mais abstratos de computação, a ideia de dividir as funções em componentes é essencial pra que a gente consiga entender, projetar e simular o comportamento de uma máquina. Esses blocos funcionais aparecem repetidamente em quase todos os tipos de modelo, mesmo com variações.
+
+ Quando você olha pra esses componentes como peças de um quebra-cabeça lógico, tudo começa a fazer mais sentido. É como montar mentalmente o funcionamento interno de um computador sem precisar abrir ele fisicamente. Agora que você conhece esse “esqueleto funcional”, fica muito mais fácil explorar os diferentes modelos e arquiteturas mais adiante. Bora seguir nessa jornada, no seu ritmo e com muita curiosidade! 
+
+
+
