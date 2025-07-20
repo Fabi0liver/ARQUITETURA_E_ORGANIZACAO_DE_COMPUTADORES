@@ -12,10 +12,10 @@ Diferença entre modelo lógico/teórico e modelo arquitetural/físico
 Principais Componentes e Suas Funções(na perspectiva dos modelos de computação): Unidade de Controle, Unidade Lógica e Aritmética (ULA), Memória (RAM, cache, registradores), Barramentos (dados, endereços, controle, Dispositivos de Entrada e Saída
 
 
-Ciclo de Busca e Execução de Instruções (na perspectiva dos modelos de computação): Fetch, Decode, Execute, Write-back
+Ciclo de Busca e Execução de Instruções (na perspectiva dos modelos de computação)
 
 
-Tipos de Instruções (na perspectiva dos modelos de computação): Instruções de dados, Instruções aritméticas e lógicas, Instruções de controle, Instruções de E/S
+Tipos de Instruções (na perspectiva dos modelos de computação)
 
 
 Modelo de Von Neumann: Conceito basico, Contexto histórico (Origem e História), Características do Modelo, Componentes Principais (Unidade de Memória, Unidade de Controle, Unidade Lógica e Aritmética (ULA), Registradores, Barramentos), Vantagens e Limitações, Comparação com Outros Modelos, Exemplos e Aplicações, Impacto na Arquitetura Moderna
