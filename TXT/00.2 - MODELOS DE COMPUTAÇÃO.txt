@@ -80,7 +80,7 @@ Dentro dos modelos de computação, a gente também tem esse “time interno”,
 
 
 
-                               "Ciclo de Busca e Execução de Instruções"
+                                "Ciclo de Busca e Execução de Instruções"
 
  Agora que você já conhece os principais componentes dos modelos de computação (como a Unidade de Controle, a ULA, a Memória e os Barramentos) chegou a hora de ver como tudo isso trabalha em conjunto pra que o computador execute tarefas. E é aqui que entra um conceito super importante e presente em praticamente todos os modelos computacionais: o Ciclo de Busca e Execução de Instruções. Não se assuste com o nome! A gente vai explicar isso de forma bem tranquila, como sempre.
 
@@ -89,6 +89,20 @@ Dentro dos modelos de computação, a gente também tem esse “time interno”,
  Tudo começa com a busca da próxima instrução. A Unidade de Controle vai até a memória e pega a instrução que está no “endereço atual”. Essa instrução, que pode ser algo como “somar dois números” ou “mostrar algo na tela”, é trazida para ser decodificada, ou seja, entendida pela máquina. Nessa etapa, o computador ainda não executa nada: ele só está tentando entender qual é o próximo passo a seguir.
 
  Depois de entender o que a instrução pede, o modelo entra na fase de execução. Agora sim, os componentes certos entram em ação: se for uma operação matemática, a ULA é acionada; se for acessar dados, a memória participa; se for exibir algo, os dispositivos de saída são chamados. Uma vez que a instrução é executada, o ciclo recomeça com a próxima da fila (como se a máquina estivesse sempre lendo um novo passo da receita). Esse ciclo, por mais simples que pareça, é a base do funcionamento de praticamente tudo que um computador faz, e nos modelos de computação, ele é essencial pra compreender como as instruções fluem dentro do sistema.
+
+
+
+                                           "Tipos de Instruções"
+
+ Agora que você já entendeu o que é o ciclo de busca e execução, ou seja, como o computador pega uma instrução, entende o que precisa fazer e executa, chegou a hora de dar uma olhada nas instruções em si. Afinal, o que exatamente o computador está lendo e executando durante esse ciclo? Vamos falar agora sobre os tipos de instruções que existem dentro dos modelos de computação. 
+
+ No contexto dos modelos de computação, as instruções são como comandos muito específicos que dizem à máquina o que ela deve fazer. E, mesmo que a gente possa escrever programas super complexos hoje em dia, no fundo, tudo isso é quebrado em um conjunto pequeno e essencial de tipos de instrução. É como numa cozinha: você pode fazer pratos elaboradíssimos, mas no fundo, tudo se baseia em ações simples como cortar, ferver, misturar. Nos modelos de computação, é a mesma lógica: as instruções básicas são simples, mas combinadas entre si, constroem coisas muito mais sofisticadas.
+
+ As instruções geralmente são classificadas em alguns tipos principais. Um deles é o tipo aritmético/lógico, que diz respeito a fazer cálculos e comparações. Outro tipo comum é o das instruções de movimentação, que servem pra transferir dados de um lugar pro outro (como pegar um número da memória e colocar num registrador). Também existem as instruções de controle de fluxo, que permitem mudar a ordem de execução das instruções (como repetir algo várias vezes ou desviar para outra parte do programa). E, claro, há também as instruções de entrada e saída, que lidam com a comunicação com o mundo externo (como ler algo do teclado ou mostrar um texto na tela).
+
+ Do ponto de vista dos modelos de computação, o legal é perceber que essas instruções formam um conjunto mínimo e suficiente pra permitir que qualquer algoritmo (ou seja, qualquer conjunto de passos lógicos) possa ser executado. Esse conjunto é cuidadosamente pensado no modelo, como se fosse o “vocabulário básico” que a máquina precisa conhecer pra funcionar. Mesmo modelos super teóricos, como a Máquina de Turing, seguem essa ideia: definir um conjunto pequeno de instruções, mas que permita fazer qualquer coisa computável.
+
+ Essas instruções, mesmo que pareçam simples, são os tijolinhos fundamentais da computação. Entender os tipos que existem e como eles se encaixam no modelo ajuda muito a enxergar como um computador realmente funciona “por dentro”, não no sentido das peças físicas, mas na lógica que organiza as ações da máquina. Aos poucos, você vai ver que programar ou pensar em algoritmos é, no fundo, brincar com esses bloquinhos de instrução pra montar algo maior. 
 
 
 
