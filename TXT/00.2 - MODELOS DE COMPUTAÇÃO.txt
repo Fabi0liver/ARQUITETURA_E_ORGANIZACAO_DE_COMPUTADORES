@@ -76,7 +76,7 @@ Dentro dos modelos de computação, a gente também tem esse “time interno”,
 
  Em suma... Mesmo nos modelos mais abstratos de computação, a ideia de dividir as funções em componentes é essencial pra que a gente consiga entender, projetar e simular o comportamento de uma máquina. Esses blocos funcionais aparecem repetidamente em quase todos os tipos de modelo, mesmo com variações.
 
- Quando você olha pra esses componentes como peças de um quebra-cabeça lógico, tudo começa a fazer mais sentido. É como montar mentalmente o funcionamento interno de um computador sem precisar abrir ele fisicamente. Agora que você conhece esse “esqueleto funcional”, fica muito mais fácil explorar os diferentes modelos e arquiteturas mais adiante. Bora seguir nessa jornada, no seu ritmo e com muita curiosidade! 
+ Quando você olha pra esses componentes como peças de um quebra-cabeça lógico, tudo começa a fazer mais sentido. É como montar mentalmente o funcionamento interno de um computador sem precisar abrir ele fisicamente. Agora que você conhece esse “esqueleto funcional”, fica muito mais fácil explorar os diferentes modelos e arquiteturas mais adiante. 
 
 
 
