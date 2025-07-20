@@ -80,3 +80,15 @@ Dentro dos modelos de computação, a gente também tem esse “time interno”,
 
 
 
+                               "Ciclo de Busca e Execução de Instruções"
+
+ Agora que você já conhece os principais componentes dos modelos de computação (como a Unidade de Controle, a ULA, a Memória e os Barramentos) chegou a hora de ver como tudo isso trabalha em conjunto pra que o computador execute tarefas. E é aqui que entra um conceito super importante e presente em praticamente todos os modelos computacionais: o Ciclo de Busca e Execução de Instruções. Não se assuste com o nome! A gente vai explicar isso de forma bem tranquila, como sempre.
+
+ Pense no computador como um funcionário que recebe uma lista de instruções (tipo uma receita de bolo ou uma sequência de passos pra montar um móvel). Ele não inventa nada, ele só faz exatamente o que está escrito, passo a passo. O ciclo de busca e execução é justamente esse processo contínuo de pegar uma instrução na memória (buscar), entender o que ela pede e realizar a ação (executar). Esse ciclo é repetido sem parar enquanto o computador estiver ligado, como um motor que nunca dorme.
+
+ Tudo começa com a busca da próxima instrução. A Unidade de Controle vai até a memória e pega a instrução que está no “endereço atual”. Essa instrução, que pode ser algo como “somar dois números” ou “mostrar algo na tela”, é trazida para ser decodificada, ou seja, entendida pela máquina. Nessa etapa, o computador ainda não executa nada: ele só está tentando entender qual é o próximo passo a seguir.
+
+ Depois de entender o que a instrução pede, o modelo entra na fase de execução. Agora sim, os componentes certos entram em ação: se for uma operação matemática, a ULA é acionada; se for acessar dados, a memória participa; se for exibir algo, os dispositivos de saída são chamados. Uma vez que a instrução é executada, o ciclo recomeça com a próxima da fila (como se a máquina estivesse sempre lendo um novo passo da receita). Esse ciclo, por mais simples que pareça, é a base do funcionamento de praticamente tudo que um computador faz, e nos modelos de computação, ele é essencial pra compreender como as instruções fluem dentro do sistema.
+
+
+
