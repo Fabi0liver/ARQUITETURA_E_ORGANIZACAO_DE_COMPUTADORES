@@ -144,7 +144,9 @@ Dentro dos modelos de computação, a gente também tem esse “time interno”,
 
  * Componentes Principais e Suas Funções:
 
-   No Modelo de Von Neumann, o computador é dividido em blocos funcionais que trabalham em perfeita sintonia, como uma equipe bem entrosada na cozinha de um restaurante: cada um com uma função clara, mas todos colaborando para o prato final sair no ponto certo:
+   No Modelo de Von Neumann, o computador é dividido em blocos funcionais que trabalham em perfeita sintonia, como uma equipe bem entrosada na cozinha de um restaurante: cada um com uma função clara, mas todos colaborando para o prato final sair no ponto certo.
+
+   Vamos conhecer esses blocos e como eles funciona:
 
    - Unidade de Memória: Pense na memória como uma grande estante de cozinha onde ficam armazenadas tanto as receitas (instruções) quanto os ingredientes (dados). Nesse modelo, não há separação entre o espaço para guardar comandos e o espaço para guardar dados, tudo fica junto nessa estante organizada. Isso facilita o acesso, mas também traz um desafio: o sistema precisa saber exatamente o que está pegando, se é uma instrução ou um dado.
 
@@ -235,7 +237,11 @@ Estudar esse modelo é como visitar o esqueleto básico de uma máquina pensante
    Além disso, o modelo Harvard é mais seguro contra certos tipos de erro. Por exemplo, ele evita que um programa corrompa acidentalmente seu próprio código, algo possível no modelo Von Neumann, onde código e dados dividem o mesmo espaço de memória. Por isso, ele é amplamente usado em sistemas críticos, que exigem alta confiabilidade.
 
 
- * Componentes Principais (e suas funções):
+ * Componentes Principais e suas funções:
+
+   No Modelo Harvard, os componentes do computador também funcionam como uma equipe bem coordenada , mas desta vez, com uma diferença marcante: a cozinha foi dividida em duas áreas separadas, uma só para preparar os ingredientes (dados) e outra só para seguir as receitas (instruções). Isso traz mais agilidade no processo e evita que os cozinheiros esbarrem uns nos outros enquanto trabalham. 
+
+   Vamos conhecer esses profissionais e ferramentas em ação:
 
    - Unidade de Memória: No modelo Harvard, existem duas unidades de memória distintas: uma para armazenar instruções e outra para dados. Cada uma dessas memórias tem seus próprios barramentos e podem operar de forma independente, o que facilita o acesso simultâneo. Essa separação é o coração do modelo e contribui para sua performance elevada em tarefas previsíveis.
 
@@ -246,6 +252,8 @@ Estudar esse modelo é como visitar o esqueleto básico de uma máquina pensante
   - Registradores: Os registradores são pequenas áreas de armazenamento dentro da CPU que armazenam dados temporários e informações de controle. Eles ajudam a acelerar o processamento, funcionando como "atalhos" para os dados e instruções mais usados. No modelo Harvard, os registradores ajudam a intermediar a comunicação eficiente entre os dois espaços de memória distintos.
 
   - Barramentos: Os barramentos no modelo Harvard são duplicados: há um conjunto de barramentos para a memória de instruções e outro para a de dados. Isso é fundamental para permitir que os dois tipos de memória sejam acessados ao mesmo tempo. Cada barramento carrega sinais de controle, endereços ou dados, e essa duplicidade é uma das razões da maior eficiência do modelo.
+
+  Esses componentes trabalham juntos para formar um sistema mais organizado e ágil, onde as instruções e os dados não se confundem nem competem pelo mesmo espaço. Essa estrutura faz do Modelo Harvard uma escolha poderosa em sistemas embarcados e aplicações em que a previsibilidade e a velocidade são cruciais: tudo graças a essa separação inteligente que otimiza o desempenho desde a base.
 
 
  * Vantagens e Limitações:
