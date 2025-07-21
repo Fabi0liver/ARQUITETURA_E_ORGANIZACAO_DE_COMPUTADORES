@@ -431,27 +431,27 @@ Esses modelos não seguem uma fórmula única. Pelo contrário, eles são projet
 
  * Tipos de Modelos Teóricos:
 
-   Antes de conhecermos cada modelo, é importante saber que eles foram criados para lidar com diferentes aspectos da computação: alguns focam na execução de algoritmos, outros na análise de linguagens formais, e outros ainda na simulação de circuitos digitais. 
+   Antes de entrarmos em detalhes sobre cada tipo específico de modelo teórico, vale destacar que esses modelos surgiram como diferentes maneiras de pensar a computação de forma abstrata. Eles variam na forma e na ênfase que dão às operações e estruturas subjacentes, mas todos têm o objetivo comum de definir e explorar os limites do que é computacionalmente possível.
  
    Vamos ver alguns dos mais importantes abaixo.
 
-   - Modelo Harvard Modificado: É uma variação do modelo Harvard clássico, ajustado para fins teóricos. Nele, instruções e dados continuam separados, mas pode haver algum compartilhamento parcial ou adaptação da arquitetura para explorar conceitos mais abstratos de fluxo de dados e instruções paralelas.
+   - Modelo Harvard Modificado: É uma variação do modelo Harvard clássico, enquanto o modelo original divide a memória de dados e de instruções, o modificado adapta isso para lidar com memórias cache, proporcionando maior desempenho. Esse modelo se baseia na ideia de segregação da memória, mas de uma maneira que otimiza o acesso tanto aos dados quanto às instruções. Ele permite um acesso mais rápido às informações e é utilizado em sistemas mais avançados e em dispositivos com alta performance.
 
-   - Máquina de Turing: Talvez o modelo mais famoso, criado por Alan Turing. Usa uma fita infinita e um cabeçote de leitura/escrita para processar símbolos de acordo com uma tabela de regras. É simples, mas poderoso: qualquer coisa que possa ser computada pode ser representada por uma Máquina de Turing.
+   - Máquina de Turing: Talvez o modelo mais famoso e um dos modelos mais fundamentais na teoria da computação, ela foi proposta por Alan Turing em 1936 para entender os limites do que pode ser computado. A máquina consiste em uma fita infinita, uma cabeça de leitura e uma tabela de instruções que diz o que fazer com os símbolos na fita. A Máquina de Turing é extremamente importante porque nos ajuda a definir a noção de computabilidade: ou seja, ela descreve o que é possível resolver com um computador.
 
-  - Máquina de Registro (RAM, RASP): Simula um computador com registradores e memória aleatória (RAM), permitindo representar instruções de forma semelhante a um computador real. É muito usada na análise de complexidade de algoritmos.
+  - Máquina de Registro: É um modelo que busca descrever sistemas de computação baseados em registradores. A ideia básica é ter um conjunto de registradores (memórias pequenas de acesso rápido) que armazenam dados, e um conjunto de operações (como somar, multiplicar) que podem ser realizadas sobre esses dados. Esse modelo é útil para entender como algoritmos computacionais funcionam em máquinas reais, e é a base para o que chamamos de arquitetura de processadores modernos.
 
-  - Máquina Lambda: Criado por Alonzo Church, o λ-cálculo é um sistema formal baseado em funções. Em vez de instruções sequenciais, ele trabalha com aplicação de funções e substituição de variáveis. É a base da programação funcional moderna.
+  - Máquina Lambda (λ-cálculo): É um modelo de computação baseado em funções matemáticas. Foi introduzido por Alonzo Church e é importante porque fornece uma forma de expressar e manipular funções de maneira formal. O λ-cálculo é a base da programação funcional e é usado para estudar tipos de funções computacionais e como elas podem ser combinadas e aplicadas a dados de maneiras elegantes e expressivas.
 
-  - Autômatos Finitos (AFD, AFN): Modelos simples, que representam máquinas com um número finito de estados. Muito usados para representar e analisar linguagens regulares, como expressões regulares em editores de texto.
+  - Autômatos Finitos: Os Autômatos Finitos Determinísticos (AFD) e Autômatos Finitos Não Determinísticos (AFN) são modelos de computação usados para estudar linguagens formais. Eles são máquinas abstratas com um número finito de estados e podem ser usados para reconhecer padrões e regular expressões. Os AFDs e AFNs são extremamente úteis em compiladores e linguagens de programação, porque ajudam a identificar a estrutura de strings e a validar se elas pertencem a uma linguagem específica.
 
-  - Máquina de Pilha: Uma evolução dos autômatos finitos, com acesso a uma pilha auxiliar. Isso permite representar linguagens mais complexas, como as linguagens livres de contexto (ex: estruturas com parênteses balanceados).
+  - Máquina de Pilha: Uma evolução dos autômatos finitos, com acesso a uma pilha auxiliar. É um modelo de computação que utiliza uma pilha para armazenar informações temporárias durante o processamento. A pilha pode ser empilhada (adicione um item no topo) ou desempilhada (remova o item do topo). Esse modelo é utilizado em analisadores sintáticos e compiladores, ajudando a resolver problemas que exigem memória temporária de maneira eficiente.
 
-  - Máquina de Post: Semelhante à Máquina de Turing, mas com regras um pouco diferentes. Foi usada para investigar problemas fundamentais de decidibilidade e computabilidade.
+  - Máquina de Post: Semelhante à Máquina de Turing, mas em vez de uma fita infinita, ela usa uma lista de símbolos e um conjunto de regras. Ela foi projetada para ser simples e estudar a computabilidade de maneira mais acessível. Esse modelo é importante por demonstrar como sistemas computacionais podem operar de forma equivalente à Máquina de Turing, mas com uma estrutura diferente.
 
-  - Máquina de Circuitos: Representa computação como um conjunto de portas lógicas organizadas em circuitos. É útil para estudar a computação paralela, otimização de circuitos digitais e lógica booleana.
+  - Máquina de Circuitos (Modelo Lógico Baseado em Circuitos Booleanos): O modelo de Máquina de Circuitos usa circuitos lógicos, compostos por portas lógicas (como AND, OR, NOT), para realizar operações. Este modelo é essencial para entender como os computadores físicos funcionam. Ele forma a base para a construção de circuitos digitais e é essencial para o design de hardware e sistemas de processamento paralelo.
 
- Cada modelo tem sua própria forma de representar problemas e algoritmos, e todos são úteis em contextos diferentes. Juntos, eles nos ajudam a construir um mapa mais completo da computação teórica.
+  Cada modelo teóricos oferecem uma variedade de abordagens para entender a essência da computação, cada um enfatizando aspectos diferentes: seja a manipulação simbólica, a estrutura de memória, a lógica ou a análise de estados. Essa diversidade enriquece nosso entendimento e nos permite escolher a ferramenta teórica mais apropriada para cada problema.
 
 
  * Vantagens e Limitações:
