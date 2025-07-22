@@ -573,15 +573,6 @@ Ao explorar esses modelos, desde a Máquina de Turing até os autômatos e o λ-
   A adoção desses modelos exige repensar o software, o hardware e a lógica de programação. Portanto, apesar de promissores, ainda estamos dando os primeiros passos rumo a um uso mais amplo e cotidiano dessas abordagens.
 
 
- * Comparação entre os Modelos:
-
-   Em comparação com os modelos tradicionais, os alternativos são mais especializados. Eles não tentam fazer tudo, mas sim fazer algumas coisas muito melhor. Enquanto Von Neumann e Harvard se baseiam em instruções sequenciais e estruturas fixas, os modelos alternativos muitas vezes lidam com processos paralelos, aprendizado autônomo ou dinâmicas físicas naturais.
-
-   Muitos modelos teóricos podem ser simulados digitalmente, mas só os modelos alternativos propõem novas formas físicas de implementar a computação. Isso os torna diferentes também dos modelos híbridos, que ainda operam dentro da lógica binária tradicional.
-
-   Cada modelo tem seu lugar — o segredo está em usar a abordagem certa para o problema certo.
-
-
  * Exemplos e Aplicações:
 
    A computação quântica está sendo explorada por empresas como IBM, Google e startups para otimizar rotas, quebrar criptografia e simular moléculas. A computação neuromórfica aparece em chips como o Loihi da Intel, que tenta imitar o cérebro para melhorar IA. A computação DNA já foi usada para resolver problemas matemáticos e armazenar dados em escala massiva.
@@ -589,6 +580,15 @@ Ao explorar esses modelos, desde a Máquina de Turing até os autômatos e o λ-
    Outros modelos, como a computação óptica, estão ganhando espaço em sistemas de comunicação ultrarrápidos. Já autômatos celulares são usados para estudar epidemias, urbanismo e dinâmica de tráfego. Todos esses modelos mostram como pensar diferente pode trazer soluções para o mundo real.
 
    Essas aplicações ainda estão em evolução, mas indicam que o futuro da computação será plural e diverso.
+
+
+ * Comparação entre os Modelos:
+
+   Em comparação com os modelos tradicionais, os alternativos são mais especializados. Eles não tentam fazer tudo, mas sim fazer algumas coisas muito melhor. Enquanto Von Neumann e Harvard se baseiam em instruções sequenciais e estruturas fixas, os modelos alternativos muitas vezes lidam com processos paralelos, aprendizado autônomo ou dinâmicas físicas naturais.
+
+   Muitos modelos teóricos podem ser simulados digitalmente, mas só os modelos alternativos propõem novas formas físicas de implementar a computação. Isso os torna diferentes também dos modelos híbridos, que ainda operam dentro da lógica binária tradicional.
+
+   Cada modelo tem seu lugar: o segredo está em usar a abordagem certa para o problema certo.
 
 
  * Conceitos Avançados Relacionados:
