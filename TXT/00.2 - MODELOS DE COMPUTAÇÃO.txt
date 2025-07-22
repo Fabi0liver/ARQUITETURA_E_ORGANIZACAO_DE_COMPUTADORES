@@ -604,7 +604,7 @@ Ao explorar esses modelos, desde a Máquina de Turing até os autômatos e o λ-
 
    Apesar de ainda estarem em estágio inicial, os modelos alternativos já estão influenciando o design de novas arquiteturas. Chips neuromórficos, placas especializadas para IA e estruturas baseadas em paralelismo massivo são exemplos concretos. Eles mostram que estamos começando a absorver essas ideias nos sistemas reais.
 
-   À medida que a tecnologia evolui, veremos mais integração entre diferentes modelos — criando arquiteturas híbridas, adaptativas e inteligentes. Isso muda não só a forma como construímos computadores, mas também como pensamos os próprios limites do que é computável.
+   À medida que a tecnologia evolui, veremos mais integração entre diferentes modelos: criando arquiteturas híbridas, adaptativas e inteligentes. Isso muda não só a forma como construímos computadores, mas também como pensamos os próprios limites do que é computável.
 
 
  Em suma...Explorar os modelos alternativos e não convencionais é como olhar para o futuro da computação com outros olhos. Eles nos mostram que não existe apenas um caminho possível, mas muitos: cada um com suas regras, forças e fraquezas. Ao entender essas abordagens, ampliamos nossa visão do que a computação pode ser, e do que podemos construir com ela.
