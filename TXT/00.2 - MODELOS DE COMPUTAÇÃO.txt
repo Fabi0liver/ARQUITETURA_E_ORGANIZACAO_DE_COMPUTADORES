@@ -58,17 +58,36 @@ porque lá no início alguém parou, pensou e criou um modelo que orientou tudo 
 
 
 
-             "Diferença entre os modelos Lógicos/Teóricos e Arquiteturais/Físicos"
+               "Diferença entre os modelos Lógicos/Teóricos e Arquiteturais/Físicos"
 
- Agora que você já sabe o que é um modelo de computação e pra que ele serve, vamos dar mais um passo tranquilo e super importante: entender que existem diferentes tipos de modelos, com focos diferentes. E um jeito bem útil de começar a distinguir isso é pensar na diferença entre os modelos lógicos/teóricos e os modelos arquiteturais/ físicos. 
+ Agora que você já sabe o que é um modelo de computação e pra que ele serve, vamos dar mais um passo tranquilo e 
+super importante: entender que existem diferentes tipos de modelos, com focos diferentes. E um jeito bem útil de 
+começar a distinguir isso é pensar na diferença entre os modelos lógicos/teóricos e os modelos arquiteturais/ 
+físicos. 
 
- Pense assim: os modelos lógicos/teóricos são como os planos abstratos de como uma máquina deveria funcionar em termos de raciocínio lógico e resolução de problemas. Eles se preocupam com perguntas como: “Qual é o passo a passo mínimo para resolver esse problema?”, ou “Existe um limite para o que um computador consegue resolver, mesmo que ele fosse infinitamente rápido?”. Esses modelos não estão nem aí pra fios, voltagens ou circuitos (eles vivem no mundo das ideias). São como regras de um jogo de tabuleiro: você quer saber o que pode ou não pode ser feito dentro do sistema, sem se preocupar ainda com o tipo de tabuleiro ou as peças reais.
+ Pense assim: os modelos lógicos/teóricos são como os planos abstratos de como uma máquina deveria funcionar em 
+termos de raciocínio lógico e resolução de problemas. Eles se preocupam com perguntas como: “Qual é o passo a passo 
+mínimo para resolver esse problema?”, ou “Existe um limite para o que um computador consegue resolver, mesmo que 
+ele fosse infinitamente rápido?”. Esses modelos não estão nem aí pra fios, voltagens ou circuitos (eles vivem no 
+mundo das ideias). São como regras de um jogo de tabuleiro: você quer saber o que pode ou não pode ser feito dentro 
+do sistema, sem se preocupar ainda com o tipo de tabuleiro ou as peças reais.
 
- Já os modelos arquiteturais/físicos descem das nuvens da teoria e colocam os pés no chão da realidade. Eles dizem: “Tá, legal saber como deveria funcionar. Mas como é que a gente constrói uma máquina de verdade pra fazer isso acontecer?”. Aqui entra a parte mais prática: circuitos, memórias, processadores, barramentos... tudo aquilo que existe fisicamente no computador. Esses modelos ajudam a entender e projetar o funcionamento real das máquinas: como os dados circulam, como as instruções são executadas, e como os componentes interagem pra realizar as tarefas.
+ Já os modelos arquiteturais/físicos descem das nuvens da teoria e colocam os pés no chão da realidade. Eles dizem: 
+“Tá, legal saber como deveria funcionar. Mas como é que a gente constrói uma máquina de verdade pra fazer isso 
+acontecer?”. Aqui entra a parte mais prática: circuitos, memórias, processadores, barramentos... tudo aquilo que 
+existe fisicamente no computador. Esses modelos ajudam a entender e projetar o funcionamento real das máquinas: 
+como os dados circulam, como as instruções são executadas, e como os componentes interagem pra realizar as tarefas.
 
- A diferença entre esses dois tipos de modelo é como a diferença entre uma receita ideal de bolo e a cozinha real onde você vai preparar o bolo. O modelo teórico diz: “Para fazer esse bolo, você precisa misturar os ingredientes nessa ordem, assar por tanto tempo, etc.”. Já o modelo arquitetural diz: “Beleza, agora onde está o forno? Qual é a potência? Que tipo de forma vamos usar?”. Ambos são essenciais, mas cada um cumpre um papel diferente: um foca no raciocínio por trás da tarefa, e o outro no que é preciso pra colocar esse raciocínio em prática.
+ A diferença entre esses dois tipos de modelo é como a diferença entre uma receita ideal de bolo e a cozinha real 
+onde você vai preparar o bolo. O modelo teórico diz: “Para fazer esse bolo, você precisa misturar os ingredientes 
+nessa ordem, assar por tanto tempo, etc.”. Já o modelo arquitetural diz: “Beleza, agora onde está o forno? Qual é a 
+potência? Que tipo de forma vamos usar?”. Ambos são essenciais, mas cada um cumpre um papel diferente: um foca no 
+raciocínio por trás da tarefa, e o outro no que é preciso pra colocar esse raciocínio em prática.
 
- Então, quando a gente estuda modelos de computação, vale sempre ter em mente essa dupla abordagem: a mente e o corpo da máquina. Um ajuda a pensar, o outro a construir. E o mais bonito é ver como esses dois mundos se conectam:  afinal, toda arquitetura real nasce de uma ideia lógica bem pensada, e toda ideia precisa, em algum momento, ganhar forma pra virar algo útil de verdade. 
+ Então, quando a gente estuda modelos de computação, vale sempre ter em mente essa dupla abordagem: a mente e o 
+corpo da máquina. Um ajuda a pensar, o outro a construir. E o mais bonito é ver como esses dois mundos se conectam:  
+afinal, toda arquitetura real nasce de uma ideia lógica bem pensada, e toda ideia precisa, em algum momento, ganhar 
+forma pra virar algo útil de verdade. 
 
 
 
