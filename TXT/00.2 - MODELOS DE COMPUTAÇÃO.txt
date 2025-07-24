@@ -420,59 +420,118 @@ quase tudo. Compreender isso é um passo enorme pra dominar os caminhos da compu
 
 
 
-                                           "Modelo Harvard"
+                                          "Modelo Harvard"
 
- Vamos continuar essa jornada explorando os modelos clássicos de computação! Agora chegou a vez de conhecer o Modelo Harvard, uma alternativa importante ao modelo de Von Neumann que já estudamos. De maneira geral, o Modelo Harvard segue a mesma ideia de estruturar o funcionamento lógico de um sistema computacional, mas com uma abordagem diferente sobre como organizar a memória. Ele traz uma visão que resolve algumas limitações do modelo anterior e abre espaço para arquiteturas mais especializadas e eficientes.
+ Vamos continuar essa jornada explorando os modelos clássicos de computação! Agora chegou a vez de conhecer o 
+Modelo Harvard, uma alternativa importante ao modelo de Von Neumann que já estudamos. De maneira geral, o Modelo 
+Harvard segue a mesma ideia de estruturar o funcionamento lógico de um sistema computacional, mas com uma abordagem 
+diferente sobre como organizar a memória. Ele traz uma visão que resolve algumas limitações do modelo anterior e 
+abre espaço para arquiteturas mais especializadas e eficientes.
 
- Esse modelo se tornou bastante influente, especialmente em sistemas embarcados e microcontroladores, onde a performance e a organização da memória fazem uma grande diferença. Mesmo que ele não seja tão citado em conversas do dia a dia, sua presença está em muitos dispositivos que usamos sem perceber (como controles remotos, fornos micro-ondas e até em automóveis). 
+ Esse modelo se tornou bastante influente, especialmente em sistemas embarcados e microcontroladores, onde a 
+performance e a organização da memória fazem uma grande diferença. Mesmo que ele não seja tão citado em conversas 
+do dia a dia, sua presença está em muitos dispositivos que usamos sem perceber (como controles remotos, fornos 
+micro-ondas e até em automóveis). 
 
- Para entendê-lo bem, vale conhecer os componentes principais e como cada um deles atua nesse modelo, e é isso que vamos explorar agora!
-
+ Para entendê-lo bem, vale conhecer os componentes principais e como cada um deles atua nesse modelo, e é isso que 
+vamos explorar agora!
 
  * Conceito básico:
 
-   O Modelo Harvard é um modelo de computação que propõe uma separação clara entre dois tipos de memória: uma para as instruções do programa e outra para os dados. Isso significa que o computador pode acessar instruções e dados ao mesmo tempo, sem que um interfira no outro. Essa estrutura é especialmente útil em sistemas onde a velocidade e a previsibilidade são essenciais, como nos sistemas embarcados que controlam dispositivos físicos em tempo real.
+    O Modelo Harvard é um modelo de computação que propõe uma separação clara entre dois tipos de memória: uma para 
+   as instruções do programa e outra para os dados. Isso significa que o computador pode acessar instruções e dados 
+   ao mesmo tempo, sem que um interfira no outro. Essa estrutura é especialmente útil em sistemas onde a velocidade 
+   e a previsibilidade são essenciais, como nos sistemas embarcados que controlam dispositivos físicos em tempo 
+   real.
 
-   A ideia por trás desse modelo é que, ao manter instruções e dados em locais separados, é possível evitar o gargalo que acontece quando se tenta acessar ambos ao mesmo tempo em uma única memória, como ocorre no modelo de Von Neumann. Isso torna o processamento mais rápido e eficiente, especialmente em tarefas repetitivas e bem definidas. É como ter uma estrada dupla: uma só para caminhões com carga (dados) e outra só para carros de passeio (instruções).
+    A ideia por trás desse modelo é que, ao manter instruções e dados em locais separados, é possível evitar o 
+   gargalo que acontece quando se tenta acessar ambos ao mesmo tempo em uma única memória, como ocorre no modelo de 
+   Von Neumann. Isso torna o processamento mais rápido e eficiente, especialmente em tarefas repetitivas e bem 
+   definidas. É como ter uma estrada dupla: uma só para caminhões com carga (dados) e outra só para carros de 
+   passeio (instruções).
 
-   No contexto dos modelos de computação, isso representa uma abordagem alternativa de organização lógica, que prioriza o desempenho e a eficiência em determinadas situações. Essa separação traz novas possibilidades para projetar e implementar sistemas computacionais, além de ajudar no entendimento dos limites e comportamentos da máquina em diferentes contextos.
+    No contexto dos modelos de computação, isso representa uma abordagem alternativa de organização lógica, que 
+   prioriza o desempenho e a eficiência em determinadas situações. Essa separação traz novas possibilidades para 
+   projetar e implementar sistemas computacionais, além de ajudar no entendimento dos limites e comportamentos da 
+   máquina em diferentes contextos.
 
 
  * Contexto histórico (Origem e História):
 
-   O nome "Harvard" vem do Mark I, um computador eletromecânico desenvolvido na Universidade de Harvard durante a década de 1940, por Howard Aiken. Esse computador utilizava uma arquitetura onde as instruções e os dados eram armazenados separadamente, e essa ideia foi, mais tarde, formalizada como o "Modelo Harvard". Embora o Mark I fosse um sistema bem diferente dos computadores eletrônicos modernos, ele estabeleceu as bases para essa arquitetura separada.
+    O nome "Harvard" vem do Mark I, um computador eletromecânico desenvolvido na Universidade de Harvard durante a 
+   década de 1940, por Howard Aiken. Esse computador utilizava uma arquitetura onde as instruções e os dados eram 
+   armazenados separadamente, e essa ideia foi, mais tarde, formalizada como o "Modelo Harvard". Embora o Mark I 
+   fosse um sistema bem diferente dos computadores eletrônicos modernos, ele estabeleceu as bases para essa 
+   arquitetura separada.
 
-   Naquela época, os recursos tecnológicos eram limitados, e a separação entre instruções e dados não era apenas uma escolha de design, mas uma necessidade prática. Os programas eram armazenados em dispositivos físicos diferentes dos dados (como cartões perfurados ou fitas magnéticas). Com o passar do tempo, mesmo com o avanço da tecnologia, essa organização continuou sendo útil, principalmente em sistemas onde previsibilidade e controle rígido do fluxo de dados eram fundamentais.
+    Naquela época, os recursos tecnológicos eram limitados, e a separação entre instruções e dados não era apenas 
+   uma escolha de design, mas uma necessidade prática. Os programas eram armazenados em dispositivos físicos 
+   diferentes dos dados (como cartões perfurados ou fitas magnéticas). Com o passar do tempo, mesmo com o avanço da 
+   tecnologia, essa organização continuou sendo útil, principalmente em sistemas onde previsibilidade e controle 
+   rígido do fluxo de dados eram fundamentais.
 
-   Hoje, o modelo Harvard aparece principalmente em sistemas embarcados e microcontroladores, sendo muito comum em controladores industriais, sensores inteligentes, chips de áudio, e até em eletrodomésticos. Ou seja, mesmo sendo um modelo "clássico", ele continua muito vivo na prática, apenas em áreas diferentes das que dominam os computadores pessoais.
+    Hoje, o modelo Harvard aparece principalmente em sistemas embarcados e microcontroladores, sendo muito comum em 
+   controladores industriais, sensores inteligentes, chips de áudio, e até em eletrodomésticos. Ou seja, mesmo 
+   sendo um modelo "clássico", ele continua muito vivo na prática, apenas em áreas diferentes das que dominam os 
+   computadores pessoais.
 
 
  * Características do Modelo:
 
-   A característica mais marcante do Modelo Harvard é a separação física entre a memória de instruções e a memória de dados. Isso significa que cada uma pode ser acessada simultaneamente, usando barramentos distintos, o que traz uma vantagem direta de desempenho. Diferente do modelo Von Neumann, em que existe um único caminho para buscar e escrever na memória, aqui o sistema pode “ler uma instrução e um dado ao mesmo tempo”, sem esperar.
+    A característica mais marcante do Modelo Harvard é a separação física entre a memória de instruções e a memória 
+   de dados. Isso significa que cada uma pode ser acessada simultaneamente, usando barramentos distintos, o que 
+   traz uma vantagem direta de desempenho. Diferente do modelo Von Neumann, em que existe um único caminho para 
+   buscar e escrever na memória, aqui o sistema pode “ler uma instrução e um dado ao mesmo tempo”, sem esperar.
 
-   Outra característica importante é que, como as memórias são separadas, elas também podem ter tamanhos e tipos diferentes. Por exemplo, a memória que guarda as instruções pode ser uma memória apenas de leitura (ROM), enquanto a de dados pode ser volátil (RAM). Isso torna o sistema mais flexível e adaptável ao tipo de aplicação que está sendo desenvolvida.
+    Outra característica importante é que, como as memórias são separadas, elas também podem ter tamanhos e tipos 
+   diferentes. Por exemplo, a memória que guarda as instruções pode ser uma memória apenas de leitura (ROM), 
+   enquanto a de dados pode ser volátil (RAM). Isso torna o sistema mais flexível e adaptável ao tipo de aplicação 
+   que está sendo desenvolvida.
 
-   Além disso, o modelo Harvard é mais seguro contra certos tipos de erro. Por exemplo, ele evita que um programa corrompa acidentalmente seu próprio código, algo possível no modelo Von Neumann, onde código e dados dividem o mesmo espaço de memória. Por isso, ele é amplamente usado em sistemas críticos, que exigem alta confiabilidade.
+    Além disso, o modelo Harvard é mais seguro contra certos tipos de erro. Por exemplo, ele evita que um programa 
+   corrompa acidentalmente seu próprio código, algo possível no modelo Von Neumann, onde código e dados dividem o 
+   mesmo espaço de memória. Por isso, ele é amplamente usado em sistemas críticos, que exigem alta confiabilidade.
 
 
  * Componentes Principais e suas funções:
 
-   No Modelo Harvard, os componentes do computador também funcionam como uma equipe bem coordenada , mas desta vez, com uma diferença marcante: a cozinha foi dividida em duas áreas separadas, uma só para preparar os ingredientes (dados) e outra só para seguir as receitas (instruções). Isso traz mais agilidade no processo e evita que os cozinheiros esbarrem uns nos outros enquanto trabalham. 
+    No Modelo Harvard, os componentes do computador também funcionam como uma equipe bem coordenada , mas desta 
+   vez, com uma diferença marcante: a cozinha foi dividida em duas áreas separadas, uma só para preparar os 
+   ingredientes (dados) e outra só para seguir as receitas (instruções). Isso traz mais agilidade no processo e 
+   evita que os cozinheiros esbarrem uns nos outros enquanto trabalham. 
 
-   Vamos conhecer esses profissionais e ferramentas em ação:
+    Vamos conhecer esses profissionais e ferramentas em ação:
 
-   - Unidade de Memória: No modelo Harvard, existem duas unidades de memória distintas: uma para armazenar instruções e outra para dados. Cada uma dessas memórias tem seus próprios barramentos e podem operar de forma independente, o que facilita o acesso simultâneo. Essa separação é o coração do modelo e contribui para sua performance elevada em tarefas previsíveis.
+    - Unidade de Memória: No modelo Harvard, existem duas unidades de memória distintas: uma para armazenar 
+                         instruções e outra para dados. Cada uma dessas memórias tem seus próprios barramentos e 
+                         podem operar de forma independente, o que facilita o acesso simultâneo. Essa separação é o 
+                         coração do modelo e contribui para sua performance elevada em tarefas previsíveis.
 
-   - Unidade de Controle: A unidade de controle continua com a mesma função essencial: interpretar as instruções armazenadas na memória de programas e coordenar as ações de todos os outros componentes. A diferença no modelo Harvard é que ela pode buscar instruções de forma mais eficiente, já que não precisa "disputar espaço" com os dados da aplicação.
+    - Unidade de Controle: A unidade de controle continua com a mesma função essencial: interpretar as instruções 
+                          armazenadas na memória de programas e coordenar as ações de todos os outros componentes. 
+                          A diferença no modelo Harvard é que ela pode buscar instruções de forma mais eficiente, 
+                          já que não precisa "disputar espaço" com os dados da aplicação.
 
-  - Unidade Lógica e Aritmética (ULA): A ULA é responsável por fazer as operações matemáticas e lógicas que o programa exige. No modelo Harvard, ela continua recebendo os dados diretamente da memória de dados e operando com base nas instruções vindas da memória de programas. A separação das memórias ajuda a evitar atrasos no envio dessas instruções e dados.
+    - Unidade Lógica e Aritmética (ULA): A ULA é responsável por fazer as operações matemáticas e lógicas que o 
+                                        programa exige. No modelo Harvard, ela continua recebendo os dados 
+                                        diretamente da memória de dados e operando com base nas instruções vindas 
+                                        da memória de programas. A separação das memórias ajuda a evitar atrasos no 
+                                        envio dessas instruções e dados.
 
-  - Registradores: Os registradores são pequenas áreas de armazenamento dentro da CPU que armazenam dados temporários e informações de controle. Eles ajudam a acelerar o processamento, funcionando como "atalhos" para os dados e instruções mais usados. No modelo Harvard, os registradores ajudam a intermediar a comunicação eficiente entre os dois espaços de memória distintos.
+    - Registradores: Os registradores são pequenas áreas de armazenamento dentro da CPU que armazenam dados 
+                    temporários e informações de controle. Eles ajudam a acelerar o processamento, funcionando como 
+                    "atalhos" para os dados e instruções mais usados. No modelo Harvard, os registradores ajudam a 
+                    intermediar a comunicação eficiente entre os dois espaços de memória distintos.
 
-  - Barramentos: Os barramentos no modelo Harvard são duplicados: há um conjunto de barramentos para a memória de instruções e outro para a de dados. Isso é fundamental para permitir que os dois tipos de memória sejam acessados ao mesmo tempo. Cada barramento carrega sinais de controle, endereços ou dados, e essa duplicidade é uma das razões da maior eficiência do modelo.
+    - Barramentos: Os barramentos no modelo Harvard são duplicados: há um conjunto de barramentos para a memória de 
+                  instruções e outro para a de dados. Isso é fundamental para permitir que os dois tipos de memória 
+                  sejam acessados ao mesmo tempo. Cada barramento carrega sinais de controle, endereços ou dados, e 
+                  essa duplicidade é uma das razões da maior eficiência do modelo.
 
-  Esses componentes trabalham juntos para formar um sistema mais organizado e ágil, onde as instruções e os dados não se confundem nem competem pelo mesmo espaço. Essa estrutura faz do Modelo Harvard uma escolha poderosa em sistemas embarcados e aplicações em que a previsibilidade e a velocidade são cruciais: tudo graças a essa separação inteligente que otimiza o desempenho desde a base.
+    Esses componentes trabalham juntos para formar um sistema mais organizado e ágil, onde as instruções e os dados 
+   não se confundem nem competem pelo mesmo espaço. Essa estrutura faz do Modelo Harvard uma escolha poderosa em 
+   sistemas embarcados e aplicações em que a previsibilidade e a velocidade são cruciais: tudo graças a essa 
+   separação inteligente que otimiza o desempenho desde a base.
 
 
  * Vantagens e Limitações:
