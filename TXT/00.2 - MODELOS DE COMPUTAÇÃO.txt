@@ -223,29 +223,62 @@ que programar ou pensar em algoritmos é, no fundo, brincar com esses bloquinhos
 
                                         "Modelo de Von Neumann"
 
- Agora que você já construiu uma base sólida sobre o que são os modelos de computação, pra que servem e como funcionam por dentro, chegou a hora de conhecer um dos modelos mais importantes e também um dos mais influentes da história da computação: o Modelo de Von Neumann. Esse modelo é tão importante que, mesmo décadas depois de ter sido proposto, ele ainda serve como base pra grande parte dos computadores que usamos hoje. Quando você pega um notebook, um celular ou até um videogame moderno, por trás de toda a tecnologia, tem muita coisa que segue a lógica pensada nesse modelo.
+ Agora que você já construiu uma base sólida sobre o que são os modelos de computação, pra que servem e como 
+funcionam por dentro, chegou a hora de conhecer um dos modelos mais importantes e também um dos mais influentes da 
+história da computação: o Modelo de Von Neumann. Esse modelo é tão importante que, mesmo décadas depois de ter sido 
+proposto, ele ainda serve como base pra grande parte dos computadores que usamos hoje. Quando você pega um 
+notebook, um celular ou até um videogame moderno, por trás de toda a tecnologia, tem muita coisa que segue a lógica 
+pensada nesse modelo.
 
- O que vamos ver agora é como esse modelo organiza o funcionamento de um computador de forma simples e inteligente: usando uma única memória para armazenar dados e instruções, seguindo um ciclo de execução passo a passo, e dividindo o sistema em partes bem definidas. É como montar um quebra-cabeça funcional, onde cada peça tem seu papel e contribui pra que o todo funcione bem. Tudo isso nasceu de uma ideia brilhante que transformou a forma como pensamos máquinas.
+ O que vamos ver agora é como esse modelo organiza o funcionamento de um computador de forma simples e inteligente: 
+usando uma única memória para armazenar dados e instruções, seguindo um ciclo de execução passo a passo, e 
+dividindo o sistema em partes bem definidas. É como montar um quebra-cabeça funcional, onde cada peça tem seu papel 
+e contribui pra que o todo funcione bem. Tudo isso nasceu de uma ideia brilhante que transformou a forma como 
+pensamos máquinas.
 
- Vamos começar explorando os principais conceitos do Modelo de Von Neumann, um por um, e entender o papel de cada componente nesse sistema tão marcante. Bora nessa!
-
+ Vamos começar explorando os principais conceitos do Modelo de Von Neumann, um por um, e entender o papel de cada 
+componente nesse sistema tão marcante. Bora nessa!
 
  * Conceito Básico:
 
-   O Modelo de Von Neumann é, basicamente, uma forma de organizar o funcionamento interno de um computador digital. Ele propõe uma estrutura lógica onde dados e instruções são armazenados na mesma memória e tratados da mesma forma... como informações binárias. Isso significa que a máquina não distingue, em nível físico, se um valor na memória representa um número ou um comando. Essa ideia pode parecer simples hoje, mas foi uma revolução na época.
+    O Modelo de Von Neumann é, basicamente, uma forma de organizar o funcionamento interno de um computador 
+   digital. Ele propõe uma estrutura lógica onde dados e instruções são armazenados na mesma memória e tratados da 
+   mesma forma... como informações binárias. Isso significa que a máquina não distingue, em nível físico, se um 
+   valor na memória representa um número ou um comando. Essa ideia pode parecer simples hoje, mas foi uma revolução 
+   na época.
 
-   O modelo trabalha com a ideia de que o computador segue uma sequência de passos bem definidos: buscar uma instrução da memória, interpretar o que ela manda fazer e executar a ação. Depois, repete esse processo com a próxima instrução. Essa lógica de “buscar → decodificar → executar” é o que forma o chamado ciclo de instrução, que já vimos anteriormente, e que é central nesse modelo. Ele garante que tudo aconteça de forma ordenada e controlada, mesmo quando lidamos com tarefas complexas.
+    O modelo trabalha com a ideia de que o computador segue uma sequência de passos bem definidos: buscar uma 
+   instrução da memória, interpretar o que ela manda fazer e executar a ação. Depois, repete esse processo com a 
+   próxima instrução. Essa lógica de “buscar → decodificar → executar” é o que forma o chamado ciclo de instrução, 
+   que já vimos anteriormente, e que é central nesse modelo. Ele garante que tudo aconteça de forma ordenada e 
+   controlada, mesmo quando lidamos com tarefas complexas.
 
-   A grande sacada do modelo de Von Neumann foi simplificar a arquitetura das máquinas, permitindo que programas fossem armazenados e modificados como qualquer outro dado. Isso abriu as portas para a criação de programas armazenados na memória, em vez de sistemas baseados apenas em fios ou cartões perfurados, como era antes. Com isso, os computadores se tornaram muito mais versáteis e poderosos, ainda que a ideia por trás fosse super elegante e direta.
+    A grande sacada do modelo de Von Neumann foi simplificar a arquitetura das máquinas, permitindo que programas 
+   fossem armazenados e modificados como qualquer outro dado. Isso abriu as portas para a criação de programas 
+   armazenados na memória, em vez de sistemas baseados apenas em fios ou cartões perfurados, como era antes. Com 
+   isso, os computadores se tornaram muito mais versáteis e poderosos, ainda que a ideia por trás fosse super 
+   elegante e direta.
 
 
  * Contexto Histórico:
 
-   O Modelo de Von Neumann surgiu no fim da década de 1940, num período em que a computação ainda estava engatinhando. Na época, existiam máquinas chamadas de “computadores” que resolviam cálculos, mas elas eram super limitadas: programadas manualmente com fios, switches e cartões. Cada nova tarefa exigia reconfigurar fisicamente a máquina, como se você tivesse que abrir e refazer a fiação toda vez que quisesse trocar o aplicativo do celular.
+    O Modelo de Von Neumann surgiu no fim da década de 1940, num período em que a computação ainda estava    
+   engatinhando. Na época, existiam máquinas chamadas de “computadores” que resolviam cálculos, mas elas eram super 
+   limitadas: programadas manualmente com fios, switches e cartões. Cada nova tarefa exigia reconfigurar 
+   fisicamente a máquina, como se você tivesse que abrir e refazer a fiação toda vez que quisesse trocar o 
+   aplicativo do celular.
 
-   Foi aí que entrou em cena o matemático e físico John von Neumann, um verdadeiro gênio que ajudou a dar forma à ideia de um sistema mais inteligente. Em colaboração com outros cientistas da época, ele publicou um documento chamado “First Draft of a Report on the EDVAC”, onde descrevia esse novo modelo de computador: uma máquina que pudesse armazenar instruções e dados juntos, seguindo um fluxo automático de execução. Esse relatório, mesmo sem ser um projeto definitivo, se tornou a base para a arquitetura de quase todos os computadores modernos.
+    Foi aí que entrou em cena o matemático e físico John von Neumann, um verdadeiro gênio que ajudou a dar forma à 
+   ideia de um sistema mais inteligente. Em colaboração com outros cientistas da época, ele publicou um documento 
+   chamado “First Draft of a Report on the EDVAC”, onde descrevia esse novo modelo de computador: uma máquina que 
+   pudesse armazenar instruções e dados juntos, seguindo um fluxo automático de execução. Esse relatório, mesmo sem 
+   ser um projeto definitivo, se tornou a base para a arquitetura de quase todos os computadores modernos.
 
-  Esse modelo foi tão marcante que passou a influenciar diretamente os primeiros computadores eletrônicos de propósito geral, como o EDVAC, o ENIAC (após modificações), e muitos outros que vieram depois. Ele trouxe um novo jeito de pensar máquinas: menos como calculadoras gigantes e mais como sistemas lógicos, capazes de executar programas complexos armazenados internamente. Nascia ali a base da computação moderna que a gente conhece hoje.
+    Esse modelo foi tão marcante que passou a influenciar diretamente os primeiros computadores eletrônicos de 
+   propósito geral, como o EDVAC, o ENIAC (após modificações), e muitos outros que vieram depois. Ele trouxe um 
+   novo jeito de pensar máquinas: menos como calculadoras gigantes e mais como sistemas lógicos, capazes de 
+   executar programas complexos armazenados internamente. Nascia ali a base da computação moderna que a gente 
+   conhece hoje.
 
 
  * Características do Modelo:
