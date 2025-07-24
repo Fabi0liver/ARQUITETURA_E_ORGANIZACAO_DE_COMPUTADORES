@@ -787,38 +787,78 @@ base sólida para compreender o que há de mais moderno em tecnologia.
 
                                          "Modelos Teóricos"
 
- Agora que exploramos os modelos clássicos e híbridos de computação, vamos embarcar na etapa dos Modelos Teóricos de Computação, um universo fascinante onde as ideias abstratas sobre o que é computar ganham forma e fundamentam toda a ciência da computação. Quando falamos de modelos teóricos de computação, estamos entrando em uma área mais abstrata, mais voltada para a essência do pensamento computacional do que para as máquinas físicas em si. Esses modelos não foram criados para virar produtos ou equipamentos, mas sim para responder perguntas profundas do tipo: o que é possível resolver com um computador? ou quais os limites da computação?. São modelos que existem principalmente como construções matemáticas e lógicas, como se fossem "universos de teste" onde estudamos a computação de forma pura.
+ Agora que exploramos os modelos clássicos e híbridos de computação, vamos embarcar na etapa dos Modelos Teóricos 
+de Computação, um universo fascinante onde as ideias abstratas sobre o que é computar ganham forma e fundamentam 
+toda a ciência da computação. Quando falamos de modelos teóricos de computação, estamos entrando em uma área mais 
+abstrata, mais voltada para a essência do pensamento computacional do que para as máquinas físicas em si. Esses 
+modelos não foram criados para virar produtos ou equipamentos, mas sim para responder perguntas profundas do tipo: 
+o que é possível resolver com um computador? ou quais os limites da computação?. São modelos que existem 
+principalmente como construções matemáticas e lógicas, como se fossem "universos de teste" onde estudamos a 
+computação de forma pura.
 
- Mesmo não sendo "computadores de verdade", esses modelos influenciaram e continuam influenciando profundamente o desenvolvimento das linguagens de programação, algoritmos, linguagens formais, inteligência artificial e até áreas como criptografia. Eles são as fundações do que conhecemos como ciência da computação teórica. 
+ Mesmo não sendo "computadores de verdade", esses modelos influenciaram e continuam influenciando profundamente o 
+desenvolvimento das linguagens de programação, algoritmos, linguagens formais, inteligência artificial e até áreas 
+como criptografia. Eles são as fundações do que conhecemos como ciência da computação teórica. 
 
- E agora, vamos conhecer com mais calma alguns desses modelos, entender o que motivou sua criação, suas características e como eles impactam tudo que usamos hoje.
-
+ E agora, vamos conhecer com mais calma alguns desses modelos, entender o que motivou sua criação, suas 
+características e como eles impactam tudo que usamos hoje.
 
  * Conceito Básico:
 
-   O conceito básico dos modelos teóricos de computação é desenvolver uma representação abstrata de como uma máquina processa informações. Nessa visão, o foco está em definir, por meio de linguagens matemáticas e lógicas, o que significa computar, quais operações são possíveis e quais são os limites intrínsecos dos algoritmos. Essa abordagem abstrata fornece uma fundação sólida para compreender, sem amarras, o que é computacionalmente viável.
+    O conceito básico dos modelos teóricos de computação é desenvolver uma representação abstrata de como uma 
+   máquina processa informações. Nessa visão, o foco está em definir, por meio de linguagens matemáticas e lógicas, 
+   o que significa computar, quais operações são possíveis e quais são os limites intrínsecos dos algoritmos. Essa 
+   abordagem abstrata fornece uma fundação sólida para compreender, sem amarras, o que é computacionalmente viável.
 
-   A ideia é criar uma espécie de "laboratório mental", onde se pode testar teorias e hipóteses sem se preocupar com problemas práticos de hardware ou eficiência energética. Esses modelos formam a base para a definição de classes de complexidade, decidibilidade e outras propriedades fundamentais, permitindo a construção de teorias que permeiam praticamente todas as áreas da computação. É como se estivéssemos desenhando mapas conceituais do universo computacional.
+    A ideia é criar uma espécie de "laboratório mental", onde se pode testar teorias e hipóteses sem se preocupar 
+   com problemas práticos de hardware ou eficiência energética. Esses modelos formam a base para a definição de 
+   classes de complexidade, decidibilidade e outras propriedades fundamentais, permitindo a construção de teorias 
+   que permeiam praticamente todas as áreas da computação. É como se estivéssemos desenhando mapas conceituais do 
+   universo computacional.
 
-   Por meio desse conceito, pesquisadores puderam estabelecer definições precisas para ideias aparentemente intangíveis, como “algoritmo”, “computabilidade” e “complexidade”. Essas definições, apesar de parecerem distantes da prática cotidiana, são o alicerce das linguagens de programação, dos compiladores e dos sistemas operacionais que usamos todos os dias, pois ajudam a entender o que realmente é possível alcançar com uma máquina.
+    Por meio desse conceito, pesquisadores puderam estabelecer definições precisas para ideias aparentemente 
+   intangíveis, como “algoritmo”, “computabilidade” e “complexidade”. Essas definições, apesar de parecerem 
+   distantes da prática cotidiana, são o alicerce das linguagens de programação, dos compiladores e dos sistemas 
+   operacionais que usamos todos os dias, pois ajudam a entender o que realmente é possível alcançar com uma 
+   máquina.
 
 
  * Motivação:
 
-   A motivação para o desenvolvimento dos modelos teóricos de computação surgiu da necessidade de compreender os limites do que pode ser calculado por uma máquina. No início, os pioneiros queriam saber se era possível estabelecer regras gerais que determinassem quais problemas poderiam ser resolvidos, de forma sistemática e com métodos mecânicos. Essa busca levou à criação de modelos como a Máquina de Turing, que formalizou o conceito de algoritmo e computabilidade.
+    A motivação para o desenvolvimento dos modelos teóricos de computação surgiu da necessidade de compreender os 
+   limites do que pode ser calculado por uma máquina. No início, os pioneiros queriam saber se era possível 
+   estabelecer regras gerais que determinassem quais problemas poderiam ser resolvidos, de forma sistemática e com 
+   métodos mecânicos. Essa busca levou à criação de modelos como a Máquina de Turing, que formalizou o conceito de 
+   algoritmo e computabilidade.
 
-   Outra motivação importante foi a necessidade de criar uma base comum que pudesse comparar diferentes abordagens e implementações. Ao ter um modelo teórico robusto, os pesquisadores podiam discutir e provar teoremas sobre eficiência e complexidade sem ficar presos a detalhes de hardware ou linguagem. Isso ajudou a impulsionar áreas como a teoria da computabilidade e a teoria da complexidade, que hoje são pilares da ciência da computação.
+    Outra motivação importante foi a necessidade de criar uma base comum que pudesse comparar diferentes abordagens 
+   e implementações. Ao ter um modelo teórico robusto, os pesquisadores podiam discutir e provar teoremas sobre 
+   eficiência e complexidade sem ficar presos a detalhes de hardware ou linguagem. Isso ajudou a impulsionar áreas 
+   como a teoria da computabilidade e a teoria da complexidade, que hoje são pilares da ciência da computação.
 
-   Além disso, esses modelos teóricos servem como um campo de testes para novas ideias e paradigmas. Eles permitem que se explore a viabilidade e as limitações de métodos de processamento de informações de maneira puramente lógica, antes mesmo de serem implementados em hardware. Essa motivação de “experimentar no papel” fez com que conceitos avançados, como a computação quântica e os autômatos, surgissem a partir de fundações teóricas sólidas e bem definidas.
+    Além disso, esses modelos teóricos servem como um campo de testes para novas ideias e paradigmas. Eles permitem 
+   que se explore a viabilidade e as limitações de métodos de processamento de informações de maneira puramente 
+   lógica, antes mesmo de serem implementados em hardware. Essa motivação de “experimentar no papel” fez com que 
+   conceitos avançados, como a computação quântica e os autômatos, surgissem a partir de fundações teóricas sólidas 
+   e bem definidas.
 
 
  * Características desses Modelos:
 
-   As características dos modelos teóricos de computação incluem a formalização e a abstração máxima dos processos de computação. Em geral, eles se baseiam em estruturas matemáticas, como conjuntos, funções e relações, para definir operações básicas que podem ser realizadas por uma "máquina" teórica. Essa formalização permite que se prove, de maneira rigorosa, o que pode ou não ser computado.
+    As características dos modelos teóricos de computação incluem a formalização e a abstração máxima dos processos  
+   de computação. Em geral, eles se baseiam em estruturas matemáticas, como conjuntos, funções e relações, para 
+   definir operações básicas que podem ser realizadas por uma "máquina" teórica. Essa formalização permite que se 
+   prove, de maneira rigorosa, o que pode ou não ser computado.
 
-   Outra característica marcante é a ênfase na limitação e no poder computacional. Esses modelos investigam não só quais problemas podem ser resolvidos, mas também a complexidade associada a essa resolução – ou seja, quanto tempo ou espaço é necessário para que um algoritmo atinja uma solução. Essa análise contribui para uma compreensão profunda dos recursos necessários na computação.
+    Outra característica marcante é a ênfase na limitação e no poder computacional. Esses modelos investigam não só 
+   quais problemas podem ser resolvidos, mas também a complexidade associada a essa resolução – ou seja, quanto 
+   tempo ou espaço é necessário para que um algoritmo atinja uma solução. Essa análise contribui para uma 
+   compreensão profunda dos recursos necessários na computação.
 
-   Por fim, esses modelos se destacam pela sua universalidade e generalidade. Eles foram formulados de maneira a serem aplicáveis independentemente dos detalhes de implementação ou tecnologia, o que significa que teorias construídas sobre eles permanecem válidas mesmo com a evolução do hardware. Essa característica universal faz com que sejam uma ferramenta atemporal e poderosa para o estudo da computação.
+    Por fim, esses modelos se destacam pela sua universalidade e generalidade. Eles foram formulados de maneira a 
+   serem aplicáveis independentemente dos detalhes de implementação ou tecnologia, o que significa que teorias 
+   construídas sobre eles permanecem válidas mesmo com a evolução do hardware. Essa característica universal faz 
+   com que sejam uma ferramenta atemporal e poderosa para o estudo da computação.
 
 
  * Tipos de Modelos Teóricos:
