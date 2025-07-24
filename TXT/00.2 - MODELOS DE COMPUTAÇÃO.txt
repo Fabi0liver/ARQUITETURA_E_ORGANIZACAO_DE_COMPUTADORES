@@ -363,32 +363,60 @@ componente nesse sistema tão marcante. Bora nessa!
 
  * Comparação com Outros Modelos:
 
-   Quando comparamos o Modelo de Von Neumann com outros modelos, como o Modelo de Harvard, por exemplo, a principal diferença está na forma como a memória é tratada. O modelo de Harvard separa a memória de dados da memória de instruções, o que ajuda a reduzir o gargalo e permite maior velocidade em certas aplicações. Isso mostra que, mesmo partindo de ideias parecidas, diferentes modelos surgiram pra resolver limitações específicas.
+    Quando comparamos o Modelo de Von Neumann com outros modelos, como o Modelo de Harvard, por exemplo, a 
+   principal diferença está na forma como a memória é tratada. O modelo de Harvard separa a memória de dados da 
+   memória de instruções, o que ajuda a reduzir o gargalo e permite maior velocidade em certas aplicações. Isso 
+   mostra que, mesmo partindo de ideias parecidas, diferentes modelos surgiram pra resolver limitações específicas.
 
-   Outro tipo de modelo, como a Máquina de Turing, foca mais em uma representação teórica e abstrata do que é computar, ideal para entender os limites do que pode ou não ser resolvido por uma máquina. Já o Modelo de Von Neumann é mais prático, voltado pra estruturação real de computadores físicos. Por isso, os dois se complementam: um ajuda a entender a lógica fundamental, o outro a construir sistemas concretos.
+    Outro tipo de modelo, como a Máquina de Turing, foca mais em uma representação teórica e abstrata do que é 
+   computar, ideal para entender os limites do que pode ou não ser resolvido por uma máquina. Já o Modelo de Von 
+   Neumann é mais prático, voltado pra estruturação real de computadores físicos. Por isso, os dois se 
+   complementam: um ajuda a entender a lógica fundamental, o outro a construir sistemas concretos.
 
-   Há também arquiteturas modernas que tentam ultrapassar as limitações de Von Neumann, como sistemas baseados em computação paralela, processamento em fluxo, ou modelos neuromórficos, que se inspiram no funcionamento do cérebro humano. Ainda assim, muitos desses novos modelos mantêm conceitos herdados do modelo clássico, adaptando-os às novas necessidades tecnológicas.
+    Há também arquiteturas modernas que tentam ultrapassar as limitações de Von Neumann, como sistemas baseados em 
+   computação paralela, processamento em fluxo, ou modelos neuromórficos, que se inspiram no funcionamento do 
+   cérebro humano. Ainda assim, muitos desses novos modelos mantêm conceitos herdados do modelo clássico, 
+   adaptando-os às novas necessidades tecnológicas.
 
 
  * Exemplos e Aplicações:
 
-   A maioria dos computadores pessoais, notebooks, servidores e até muitos dispositivos embarcados (como controles remotos, impressoras e caixas eletrônicos) seguem o modelo de Von Neumann ou alguma variação dele. Isso porque a lógica do modelo se encaixa muito bem com sistemas onde se executa uma sequência de tarefas programadas, com leitura e escrita em memória e controle sequencial de execução.
+    A maioria dos computadores pessoais, notebooks, servidores e até muitos dispositivos embarcados (como controles 
+   remotos, impressoras e caixas eletrônicos) seguem o modelo de Von Neumann ou alguma variação dele. Isso porque a 
+   lógica do modelo se encaixa muito bem com sistemas onde se executa uma sequência de tarefas programadas, com 
+   leitura e escrita em memória e controle sequencial de execução.
 
-   Linguagens de programação como C, Python ou Java, mesmo que funcionem em níveis mais altos de abstração, ainda são interpretadas ou compiladas para instruções que seguem a lógica von Neumann, ou seja, o programa é carregado na memória, a CPU lê uma instrução, executa, e passa pra próxima. Isso mostra o quanto o modelo está presente mesmo quando não o vemos diretamente.
+    Linguagens de programação como C, Python ou Java, mesmo que funcionem em níveis mais altos de abstração, ainda 
+   são interpretadas ou compiladas para instruções que seguem a lógica von Neumann, ou seja, o programa é carregado 
+   na memória, a CPU lê uma instrução, executa, e passa pra próxima. Isso mostra o quanto o modelo está presente 
+   mesmo quando não o vemos diretamente.
 
-   Em sistemas embarcados simples, como o de um microcontrolador usado em uma cafeteira digital ou em um termostato, o modelo von Neumann é usado de forma enxuta, porém eficiente. Esses dispositivos precisam apenas de uma estrutura simples, com um programa fixo, dados básicos e uma sequência clara de instruções, tudo isso encaixa perfeitamente com o que o modelo propõe.
+    Em sistemas embarcados simples, como o de um microcontrolador usado em uma cafeteira digital ou em um 
+   termostato, o modelo von Neumann é usado de forma enxuta, porém eficiente. Esses dispositivos precisam apenas de 
+   uma estrutura simples, com um programa fixo, dados básicos e uma sequência clara de instruções, tudo isso 
+   encaixa perfeitamente com o que o modelo propõe.
 
 
  * Impacto na Arquitetura Moderna:
 
-   Mesmo com tantas evoluções e tecnologias novas, o modelo de Von Neumann ainda é a base conceitual da maioria das arquiteturas modernas. Os processadores atuais podem ser muito mais rápidos e complexos, mas muitos ainda seguem a estrutura básica: instruções e dados compartilhando a memória, execução sequencial, controle centralizado... tudo isso herdado diretamente desse modelo.
+    Mesmo com tantas evoluções e tecnologias novas, o modelo de Von Neumann ainda é a base conceitual da maioria 
+   das arquiteturas modernas. Os processadores atuais podem ser muito mais rápidos e complexos, mas muitos ainda 
+   seguem a estrutura básica: instruções e dados compartilhando a memória, execução sequencial, controle 
+   centralizado... tudo isso herdado diretamente desse modelo.
 
-   Além disso, o modelo influenciou profundamente o ensino da computação. Ele se tornou uma referência didática, ajudando estudantes do mundo todo a entender como funciona um computador por dentro. Mesmo que o futuro traga novos paradigmas (como a computação quântica ou neuromórfica), entender o modelo de Von Neumann é como aprender o alfabeto antes de escrever poesia. Ele é o alicerce de tudo.
+    Além disso, o modelo influenciou profundamente o ensino da computação. Ele se tornou uma referência didática, 
+   ajudando estudantes do mundo todo a entender como funciona um computador por dentro. Mesmo que o futuro traga 
+   novos paradigmas (como a computação quântica ou neuromórfica), entender o modelo de Von Neumann é como aprender 
+   o alfabeto antes de escrever poesia. Ele é o alicerce de tudo.
 
+ Em suma...O Modelo de Von Neumann é muito mais do que um pedaço da história da computação — ele é uma estrutura 
+mental poderosa que ainda nos ajuda a entender como os computadores funcionam. Ao organizar o sistema em blocos bem 
+definidos e permitir o armazenamento de programas na memória, ele tornou possível o surgimento da era digital como 
+conhecemos hoje.
 
- Em suma...O Modelo de Von Neumann é muito mais do que um pedaço da história da computação — ele é uma estrutura mental poderosa que ainda nos ajuda a entender como os computadores funcionam. Ao organizar o sistema em blocos bem definidos e permitir o armazenamento de programas na memória, ele tornou possível o surgimento da era digital como conhecemos hoje.
-
-Estudar esse modelo é como visitar o esqueleto básico de uma máquina pensante. Mesmo que o mundo moderno traga cada vez mais tecnologias complexas e sistemas paralelos, a essência que Von Neumann propôs ainda pulsa por trás de quase tudo. Compreender isso é um passo enorme pra dominar os caminhos da computação.
+ Estudar esse modelo é como visitar o esqueleto básico de uma máquina pensante. Mesmo que o mundo moderno traga 
+cada vez mais tecnologias complexas e sistemas paralelos, a essência que Von Neumann propôs ainda pulsa por trás de 
+quase tudo. Compreender isso é um passo enorme pra dominar os caminhos da computação.
 
 
 
