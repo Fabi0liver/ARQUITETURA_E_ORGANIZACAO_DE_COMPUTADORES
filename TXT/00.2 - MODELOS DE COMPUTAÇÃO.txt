@@ -718,41 +718,70 @@ e funções.
 
  * Comparação entre os Modelos:
 
-   Quando comparamos os modelos híbridos com os clássicos, a principal diferença está na flexibilidade e especialização. Enquanto Von Neumann e Harvard seguem uma estrutura única e fixa, os híbridos permitem adaptar e mesclar diferentes partes, criando sistemas mais variados.
+    Quando comparamos os modelos híbridos com os clássicos, a principal diferença está na flexibilidade e 
+   especialização. Enquanto Von Neumann e Harvard seguem uma estrutura única e fixa, os híbridos permitem adaptar e 
+   mesclar diferentes partes, criando sistemas mais variados.
 
-   Modelos clássicos são ótimos para entender o básico e aplicar em tarefas gerais, mas os híbridos brilham em contextos mais exigentes, onde se precisa de otimização por tarefa, desempenho paralelo ou divisão de trabalho entre componentes. Essa diferença é crucial para entender por que a indústria de tecnologia se afastou dos modelos puros em muitos casos.
+    Modelos clássicos são ótimos para entender o básico e aplicar em tarefas gerais, mas os híbridos brilham em  
+   contextos mais exigentes, onde se precisa de otimização por tarefa, desempenho paralelo ou divisão de trabalho 
+   entre componentes. Essa diferença é crucial para entender por que a indústria de tecnologia se afastou dos 
+   modelos puros em muitos casos.
 
-   No entanto, os modelos híbridos não descartam os clássicos, pelo contrário, eles são construídos sobre eles. Muitas vezes, as unidades dentro de um sistema híbrido ainda seguem princípios de Von Neumann ou Harvard. A diferença está em como esses princípios são combinados no todo.
+    No entanto, os modelos híbridos não descartam os clássicos, pelo contrário, eles são construídos sobre eles. 
+   Muitas vezes, as unidades dentro de um sistema híbrido ainda seguem princípios de Von Neumann ou Harvard. A 
+   diferença está em como esses princípios são combinados no todo.
 
 
  * Exemplos e Aplicações:
 
-   Os modelos híbridos estão presentes em muitos dos dispositivos que usamos todos os dias. Smartphones modernos, por exemplo, usam processadores com múltiplos núcleos, unidades gráficas e unidades de IA, cada uma com sua própria lógica de memória e controle.
+    Os modelos híbridos estão presentes em muitos dos dispositivos que usamos todos os dias. Smartphones modernos, 
+   por exemplo, usam processadores com múltiplos núcleos, unidades gráficas e unidades de IA, cada uma com sua 
+   própria lógica de memória e controle.
 
-   Em supercomputadores e servidores, modelos híbridos são usados para distribuir tarefas em milhares de processadores diferentes, garantindo que simulações científicas e bancos de dados massivos rodem com velocidade e precisão. Já em consoles de videogame, a divisão de tarefas entre unidades de vídeo, som e lógica principal é fundamental para a experiência de jogo.
+    Em supercomputadores e servidores, modelos híbridos são usados para distribuir tarefas em milhares de 
+   processadores diferentes, garantindo que simulações científicas e bancos de dados massivos rodem com velocidade 
+   e precisão. Já em consoles de videogame, a divisão de tarefas entre unidades de vídeo, som e lógica principal é 
+   fundamental para a experiência de jogo.
 
-   Até mesmo em eletrodomésticos, carros modernos e dispositivos embarcados, encontramos modelos híbridos otimizados para consumir pouca energia e responder rapidamente a estímulos. Essa presença mostra como os híbridos se tornaram essenciais no nosso dia a dia.
+    Até mesmo em eletrodomésticos, carros modernos e dispositivos embarcados, encontramos modelos híbridos 
+   otimizados para consumir pouca energia e responder rapidamente a estímulos. Essa presença mostra como os 
+  híbridos se tornaram essenciais no nosso dia a dia.
 
 
  * Conceitos Avançados Relacionados:
 
-   Os modelos híbridos abrem espaço para explorar conceitos mais avançados, como processamento paralelo, pipelines, escalabilidade e balanceamento de carga. Todos esses termos estão ligados à ideia de aproveitar melhor os recursos de hardware combinando modelos clássicos e modernos.
+    Os modelos híbridos abrem espaço para explorar conceitos mais avançados, como processamento paralelo, 
+   pipelines, escalabilidade e balanceamento de carga. Todos esses termos estão ligados à ideia de aproveitar 
+   melhor os recursos de hardware combinando modelos clássicos e modernos.
 
-   Além disso, há uma conexão direta com áreas como computação distribuída, computação em nuvem e inteligência artificial. Esses campos muitas vezes se apoiam em modelos híbridos para garantir que os sistemas sejam rápidos, seguros e confiáveis mesmo sob alta demanda.
+    Além disso, há uma conexão direta com áreas como computação distribuída, computação em nuvem e inteligência 
+   artificial. Esses campos muitas vezes se apoiam em modelos híbridos para garantir que os sistemas sejam rápidos, 
+   seguros e confiáveis mesmo sob alta demanda.
 
-   Embora esses conceitos sejam mais complexos, eles mostram como os modelos híbridos funcionam como ponte entre o presente e o futuro da computação, sendo base para muitas inovações tecnológicas.
+    Embora esses conceitos sejam mais complexos, eles mostram como os modelos híbridos funcionam como ponte entre o 
+   presente e o futuro da computação, sendo base para muitas inovações tecnológicas.
 
 
  * Impacto na Arquitetura Moderna:
 
-   Hoje em dia, é raro encontrar sistemas modernos que usem um modelo único e puro. Praticamente todos os dispositivos avançados (de celulares a centros de dados) utilizam algum tipo de modelo híbrido. Eles se tornaram parte essencial da arquitetura moderna, justamente por atenderem às exigências crescentes de desempenho, escalabilidade e eficiência energética.
+    Hoje em dia, é raro encontrar sistemas modernos que usem um modelo único e puro. Praticamente todos os 
+   dispositivos avançados (de celulares a centros de dados) utilizam algum tipo de modelo híbrido. Eles se tornaram 
+   parte essencial da arquitetura moderna, justamente por atenderem às exigências crescentes de desempenho, 
+   escalabilidade e eficiência energética.
 
-   Esse impacto também aparece nas linguagens de programação, nos sistemas operacionais e nas ferramentas de desenvolvimento, que precisam se adaptar para lidar com múltiplas formas de execução e estruturas de hardware distintas. Ou seja, os modelos híbridos moldaram não só o hardware, mas também todo o ecossistema de software que gira em torno dele.
+    Esse impacto também aparece nas linguagens de programação, nos sistemas operacionais e nas ferramentas de 
+   desenvolvimento, que precisam se adaptar para lidar com múltiplas formas de execução e estruturas de hardware 
+   distintas. Ou seja, os modelos híbridos moldaram não só o hardware, mas também todo o ecossistema de software 
+   que gira em torno dele.
 
+ Em suma...Os modelos híbridos representam um avanço importante na história da computação, pois nos mostram que a 
+evolução não depende de seguir um único caminho, mas sim de combinar ideias diferentes de forma inteligente. Ao 
+integrar os pontos fortes de diversos modelos, eles abrem espaço para inovações e soluções mais eficientes, 
+adaptadas aos desafios do presente e do futuro.
 
- Em suma...Os modelos híbridos representam um avanço importante na história da computação, pois nos mostram que a evolução não depende de seguir um único caminho, mas sim de combinar ideias diferentes de forma inteligente. Ao integrar os pontos fortes de diversos modelos, eles abrem espaço para inovações e soluções mais eficientes, adaptadas aos desafios do presente e do futuro.
-
- Estudar esses modelos é como observar a evolução natural da computação: um processo contínuo de aprendizado, adaptação e melhoria. E entender como eles funcionam (mesmo em seus aspectos mais básicos) ajuda a construir uma base sólida para compreender o que há de mais moderno em tecnologia.
+ Estudar esses modelos é como observar a evolução natural da computação: um processo contínuo de aprendizado, 
+adaptação e melhoria. E entender como eles funcionam (mesmo em seus aspectos mais básicos) ajuda a construir uma 
+base sólida para compreender o que há de mais moderno em tecnologia.
 
 
 
