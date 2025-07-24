@@ -1137,50 +1137,79 @@ eles funcionam.
 
  * Vantagens e Limitações:
 
-   Os modelos alternativos oferecem vantagens impressionantes: paralelismo extremo, eficiência energética, velocidade e adaptabilidade. Eles podem processar grandes volumes de dados rapidamente ou realizar tarefas que seriam inviáveis em um modelo tradicional. Também são mais adequados para problemas inspirados em biologia, física ou redes complexas.
+    Os modelos alternativos oferecem vantagens impressionantes: paralelismo extremo, eficiência energética, 
+   velocidade e adaptabilidade. Eles podem processar grandes volumes de dados rapidamente ou realizar tarefas que 
+   seriam inviáveis em um modelo tradicional. Também são mais adequados para problemas inspirados em biologia, 
+   física ou redes complexas.
 
-   Por outro lado, também enfrentam desafios importantes. Muitos dependem de tecnologias caras e ainda experimentais, ou exigem ambientes altamente controlados (como no caso dos computadores quânticos). Além disso, não são bons para todos os tipos de tarefa: muitos ainda não substituem, mas complementam os modelos convencionais.
+    Por outro lado, também enfrentam desafios importantes. Muitos dependem de tecnologias caras e ainda 
+   experimentais, ou exigem ambientes altamente controlados (como no caso dos computadores quânticos). Além disso, 
+   não são bons para todos os tipos de tarefa: muitos ainda não substituem, mas complementam os modelos 
+   convencionais.
 
-  A adoção desses modelos exige repensar o software, o hardware e a lógica de programação. Portanto, apesar de promissores, ainda estamos dando os primeiros passos rumo a um uso mais amplo e cotidiano dessas abordagens.
+    A adoção desses modelos exige repensar o software, o hardware e a lógica de programação. Portanto, apesar de 
+   promissores, ainda estamos dando os primeiros passos rumo a um uso mais amplo e cotidiano dessas abordagens.
 
 
  * Exemplos e Aplicações:
 
-   A computação quântica está sendo explorada por empresas como IBM, Google e startups para otimizar rotas, quebrar criptografia e simular moléculas. A computação neuromórfica aparece em chips como o Loihi da Intel, que tenta imitar o cérebro para melhorar IA. A computação DNA já foi usada para resolver problemas matemáticos e armazenar dados em escala massiva.
+    A computação quântica está sendo explorada por empresas como IBM, Google e startups para otimizar rotas, 
+   quebrar criptografia e simular moléculas. A computação neuromórfica aparece em chips como o Loihi da Intel, que 
+   tenta imitar o cérebro para melhorar IA. A computação DNA já foi usada para resolver problemas matemáticos e 
+   armazenar dados em escala massiva.
 
-   Outros modelos, como a computação óptica, estão ganhando espaço em sistemas de comunicação ultrarrápidos. Já autômatos celulares são usados para estudar epidemias, urbanismo e dinâmica de tráfego. Todos esses modelos mostram como pensar diferente pode trazer soluções para o mundo real.
+    Outros modelos, como a computação óptica, estão ganhando espaço em sistemas de comunicação ultrarrápidos. Já 
+   autômatos celulares são usados para estudar epidemias, urbanismo e dinâmica de tráfego. Todos esses modelos 
+   mostram como pensar diferente pode trazer soluções para o mundo real.
 
-   Essas aplicações ainda estão em evolução, mas indicam que o futuro da computação será plural e diverso.
+    Essas aplicações ainda estão em evolução, mas indicam que o futuro da computação será plural e diverso.
 
 
  * Comparação entre os Modelos:
 
-   Em comparação com os modelos tradicionais, os alternativos são mais especializados. Eles não tentam fazer tudo, mas sim fazer algumas coisas muito melhor. Enquanto Von Neumann e Harvard se baseiam em instruções sequenciais e estruturas fixas, os modelos alternativos muitas vezes lidam com processos paralelos, aprendizado autônomo ou dinâmicas físicas naturais.
+    Em comparação com os modelos tradicionais, os alternativos são mais especializados. Eles não tentam fazer tudo, 
+   mas sim fazer algumas coisas muito melhor. Enquanto Von Neumann e Harvard se baseiam em instruções sequenciais e 
+   estruturas fixas, os modelos alternativos muitas vezes lidam com processos paralelos, aprendizado autônomo ou 
+   dinâmicas físicas naturais.
 
-   Muitos modelos teóricos podem ser simulados digitalmente, mas só os modelos alternativos propõem novas formas físicas de implementar a computação. Isso os torna diferentes também dos modelos híbridos, que ainda operam dentro da lógica binária tradicional.
+    Muitos modelos teóricos podem ser simulados digitalmente, mas só os modelos alternativos propõem novas formas 
+   físicas de implementar a computação. Isso os torna diferentes também dos modelos híbridos, que ainda operam 
+   dentro da lógica binária tradicional.
 
-   Cada modelo tem seu lugar: o segredo está em usar a abordagem certa para o problema certo.
+    Cada modelo tem seu lugar: o segredo está em usar a abordagem certa para o problema certo.
 
 
  * Conceitos Avançados Relacionados:
 
-   Ao mergulhar nesses modelos, encontramos ideias como computabilidade alternativa, algoritmos quânticos, redes auto-organizadas, lógica reversível e sistemas adaptativos. Esses conceitos vão além da programação tradicional, e ajudam a entender melhor como o mundo computacional pode se expandir.
+    Ao mergulhar nesses modelos, encontramos ideias como computabilidade alternativa, algoritmos quânticos, redes 
+   auto-organizadas, lógica reversível e sistemas adaptativos. Esses conceitos vão além da programação tradicional, 
+   e ajudam a entender melhor como o mundo computacional pode se expandir.
 
-   Estudar esses temas ajuda a cruzar as fronteiras entre disciplinas: ciência da computação, física, biologia e matemática se encontram nesses modelos. Isso abre portas para novas formas de colaboração e inovação.
+    Estudar esses temas ajuda a cruzar as fronteiras entre disciplinas: ciência da computação, física, biologia e 
+   matemática se encontram nesses modelos. Isso abre portas para novas formas de colaboração e inovação.
 
-   São áreas que exigem estudo mais aprofundado, mas mesmo quem está começando pode entender as ideias básicas e acompanhar as tendências.
+    São áreas que exigem estudo mais aprofundado, mas mesmo quem está começando pode entender as ideias básicas e 
+   acompanhar as tendências.
 
 
  * Impacto na Arquitetura Moderna:
 
-   Apesar de ainda estarem em estágio inicial, os modelos alternativos já estão influenciando o design de novas arquiteturas. Chips neuromórficos, placas especializadas para IA e estruturas baseadas em paralelismo massivo são exemplos concretos. Eles mostram que estamos começando a absorver essas ideias nos sistemas reais.
+    Apesar de ainda estarem em estágio inicial, os modelos alternativos já estão influenciando o design de novas 
+   arquiteturas. Chips neuromórficos, placas especializadas para IA e estruturas baseadas em paralelismo massivo 
+   são exemplos concretos. Eles mostram que estamos começando a absorver essas ideias nos sistemas reais.
 
-   À medida que a tecnologia evolui, veremos mais integração entre diferentes modelos: criando arquiteturas híbridas, adaptativas e inteligentes. Isso muda não só a forma como construímos computadores, mas também como pensamos os próprios limites do que é computável.
+    À medida que a tecnologia evolui, veremos mais integração entre diferentes modelos: criando arquiteturas 
+   híbridas, adaptativas e inteligentes. Isso muda não só a forma como construímos computadores, mas também como 
+   pensamos os próprios limites do que é computável.
 
+ Em suma... Explorar os modelos alternativos e não convencionais é como olhar para o futuro da computação com 
+outros olhos. Eles nos mostram que não existe apenas um caminho possível, mas muitos: cada um com suas regras, 
+forças e fraquezas. Ao entender essas abordagens, ampliamos nossa visão do que a computação pode ser, e do que 
+podemos construir com ela.
 
- Em suma...Explorar os modelos alternativos e não convencionais é como olhar para o futuro da computação com outros olhos. Eles nos mostram que não existe apenas um caminho possível, mas muitos: cada um com suas regras, forças e fraquezas. Ao entender essas abordagens, ampliamos nossa visão do que a computação pode ser, e do que podemos construir com ela.
-
- Mesmo que alguns desses modelos ainda pareçam distantes, eles representam sementes plantadas hoje que podem se tornar árvores robustas no futuro. Entender suas ideias básicas é um passo importante para qualquer pessoa que esteja começando na computação e queira participar dessa grande aventura de imaginar o amanhã.
+ Mesmo que alguns desses modelos ainda pareçam distantes, eles representam sementes plantadas hoje que podem se 
+tornar árvores robustas no futuro. Entender suas ideias básicas é um passo importante para qualquer pessoa que 
+esteja começando na computação e queira participar dessa grande aventura de imaginar o amanhã.
 
 
 
