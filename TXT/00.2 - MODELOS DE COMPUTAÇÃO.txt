@@ -1247,15 +1247,32 @@ nos estudos de computação.
 
                                "Limites Fundamentais e Computabilidade"
 
- Agora que você já entendeu a importância dos modelos de computação, chegou a hora de explorar um ponto muito curioso e essencial: os limites do que os modelos computacionais conseguem fazer. Isso nos leva a um tema chamado "Limites Fundamentais e Computabilidade", apesar do nome parecer complicado à primeira vista, o conceito é bem acessível.
+ Agora que você já entendeu a importância dos modelos de computação, chegou a hora de explorar um ponto muito 
+curioso e essencial: os limites do que os modelos computacionais conseguem fazer. Isso nos leva a um tema chamado 
+"Limites Fundamentais e Computabilidade", apesar do nome parecer complicado à primeira vista, o conceito é bem 
+acessível.
 
- Todo modelo de computação tem uma fronteira entre o que ele pode e o que ele não pode resolver. Isso significa que nem toda tarefa ou problema pode ser resolvido por um computador, mesmo com tempo infinito ou recursos ilimitados. Esses limites não são causados por falhas do computador ou da tecnologia, mas fazem parte da própria natureza da lógica e da matemática envolvidas na computação. É como se existissem enigmas que, por mais que tentemos, simplesmente não têm uma solução que possa ser descrita por regras computacionais.
+ Todo modelo de computação tem uma fronteira entre o que ele pode e o que ele não pode resolver. Isso significa que 
+nem toda tarefa ou problema pode ser resolvido por um computador, mesmo com tempo infinito ou recursos ilimitados. 
+Esses limites não são causados por falhas do computador ou da tecnologia, mas fazem parte da própria natureza da 
+lógica e da matemática envolvidas na computação. É como se existissem enigmas que, por mais que tentemos, 
+simplesmente não têm uma solução que possa ser descrita por regras computacionais.
 
- Esse campo que estuda o que pode ou não ser resolvido por um computador é chamado de computabilidade. Ele nos ajuda a classificar os problemas: alguns são solucionáveis, outros não. E, dentro dos solucionáveis, existem aqueles que são "resolvíveis em tempo útil" e outros que, apesar de terem solução, levariam tanto tempo para serem resolvidos que, na prática, também se tornam impossíveis. Essa ideia é essencial para quem projeta algoritmos e sistemas, pois nos evita perder tempo tentando resolver problemas que são, por definição, insolúveis.
+ Esse campo que estuda o que pode ou não ser resolvido por um computador é chamado de computabilidade. Ele nos 
+ajuda a classificar os problemas: alguns são solucionáveis, outros não. E, dentro dos solucionáveis, existem 
+aqueles que são "resolvíveis em tempo útil" e outros que, apesar de terem solução, levariam tanto tempo para serem 
+resolvidos que, na prática, também se tornam impossíveis. Essa ideia é essencial para quem projeta algoritmos e 
+sistemas, pois nos evita perder tempo tentando resolver problemas que são, por definição, insolúveis.
 
- Entender esses limites também tem um papel ético e prático. Imagine um sistema de justiça ou saúde totalmente automatizado. Saber que certos problemas são irresolúveis ajuda a definir até onde podemos confiar em uma máquina para tomar decisões sérias. Da mesma forma, conhecer os limites da computação nos ajuda a traçar estratégias melhores, buscar soluções alternativas ou até simplificar o problema para torná-lo possível de resolver.
+ Entender esses limites também tem um papel ético e prático. Imagine um sistema de justiça ou saúde totalmente 
+automatizado. Saber que certos problemas são irresolúveis ajuda a definir até onde podemos confiar em uma máquina 
+para tomar decisões sérias. Da mesma forma, conhecer os limites da computação nos ajuda a traçar estratégias 
+melhores, buscar soluções alternativas ou até simplificar o problema para torná-lo possível de resolver.
 
- Por fim, falar sobre os limites fundamentais e a computabilidade é como lembrar que, apesar de toda a potência da tecnologia, a computação tem suas regras naturais. E é justamente respeitando e entendendo essas regras que conseguimos criar soluções mais criativas, eficientes e seguras. Ao reconhecer o que é impossível, damos mais valor ao que é possível, e abrimos caminho para inovar dentro dessas fronteiras.
+ Por fim, falar sobre os limites fundamentais e a computabilidade é como lembrar que, apesar de toda a potência da 
+tecnologia, a computação tem suas regras naturais. E é justamente respeitando e entendendo essas regras que 
+conseguimos criar soluções mais criativas, eficientes e seguras. Ao reconhecer o que é impossível, damos mais valor 
+ao que é possível, e abrimos caminho para inovar dentro dessas fronteiras.
 
 
 
