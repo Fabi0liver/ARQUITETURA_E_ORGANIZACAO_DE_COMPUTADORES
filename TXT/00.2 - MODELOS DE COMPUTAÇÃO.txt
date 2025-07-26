@@ -1,4 +1,4 @@
-                                       MODELOS DE COMPUTAÇÃO
+                                        MODELOS DE COMPUTAÇÃO
 
 
  Você já parou pra pensar em como a gente consegue ensinar um computador a fazer alguma coisa? Pode ser algo 
@@ -30,7 +30,7 @@ direito. Aos poucos, vamos abrindo essas portas juntos, com calma e muita curios
 
 
 
-                              "Para que Serve os Modelos de Computação?"
+                                "Para que Serve os Modelos de Computação?"
 
  Sabe quando a gente tenta entender como algo funciona por dentro (tipo como um carro anda, ou como uma receita de 
 bolo dá certo) e criamos uma versão simplificada disso na nossa cabeça pra facilitar? Os modelos de computação 
