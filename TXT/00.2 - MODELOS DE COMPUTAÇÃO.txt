@@ -1213,7 +1213,7 @@ esteja começando na computação e queira participar dessa grande aventura de i
 
 
 
-                              "Importância dos Modelos de Computação"
+                                 "Importância dos Modelos de Computação"
 
  Agora que você já conheceu vários tipos de modelos de computação (dos clássicos aos alternativos) chegou a hora de 
 dar um passo atrás e olhar para o "todo". Vamos conversar um pouco sobre por que os modelos de computação são 
@@ -1245,7 +1245,7 @@ nos estudos de computação.
 
 
 
-                               "Limites Fundamentais e Computabilidade"
+                                 "Limites Fundamentais e Computabilidade"
 
  Agora que você já entendeu a importância dos modelos de computação, chegou a hora de explorar um ponto muito 
 curioso e essencial: os limites do que os modelos computacionais conseguem fazer. Isso nos leva a um tema chamado 
@@ -1276,7 +1276,7 @@ ao que é possível, e abrimos caminho para inovar dentro dessas fronteiras.
 
 
 
-                        "Tendências e Direções Futuras dos Modelos de Computação"
+                         "Tendências e Direções Futuras dos Modelos de Computação"
 
  Nos últimos anos, a computação tem evoluído em um ritmo impressionante, e com ela surgem novas ideias sobre como 
 modelar e entender o funcionamento das máquinas. Os modelos tradicionais (como Von Neumann ou Harvard) continuam 
