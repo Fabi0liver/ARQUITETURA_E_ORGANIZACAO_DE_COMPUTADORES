@@ -58,7 +58,7 @@ porque lá no início alguém parou, pensou e criou um modelo que orientou tudo 
 
 
 
-               "Diferença entre os modelos Lógicos/Teóricos e Arquiteturais/Físicos"
+                "Diferença entre os modelos Lógicos/Teóricos e Arquiteturais/Físicos"
 
  Agora que você já sabe o que é um modelo de computação e pra que ele serve, vamos dar mais um passo tranquilo e 
 super importante: entender que existem diferentes tipos de modelos, com focos diferentes. E um jeito bem útil de 
@@ -91,7 +91,7 @@ forma pra virar algo útil de verdade.
 
 
 
-                   "Principais Componentes dos Modelos de Computação e Suas Funções"
+                     "Principais Componentes dos Modelos de Computação e Suas Funções"
 
  Agora que a gente já entendeu o que são os modelos de computação, pra que eles servem e os diferentes tipos que 
 existem, chegou a hora de olhar com mais carinho pra como esses modelos são formados por partes diferentes que 
@@ -187,7 +187,7 @@ que pareça, é a base do funcionamento de praticamente tudo que um computador f
 
 
 
-                                         "Tipos de Instruções"
+                                          "Tipos de Instruções"
 
  Agora que você já entendeu o que é o ciclo de busca e execução, ou seja, como o computador pega uma instrução, 
 entende o que precisa fazer e executa, chegou a hora de dar uma olhada nas instruções em si. Afinal, o que 
