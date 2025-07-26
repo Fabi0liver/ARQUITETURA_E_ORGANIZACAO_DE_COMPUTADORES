@@ -221,7 +221,7 @@ que programar ou pensar em algoritmos é, no fundo, brincar com esses bloquinhos
 
 
 
-                                        "Modelo de Von Neumann"
+                                      "Modelo de Von Neumann"
 
  Agora que você já construiu uma base sólida sobre o que são os modelos de computação, pra que servem e como 
 funcionam por dentro, chegou a hora de conhecer um dos modelos mais importantes e também um dos mais influentes da 
@@ -611,7 +611,7 @@ inspirando) engenheiros, programadores e entusiastas da computação por muito t
 
 
 
-                                         "Modelos Híbridos"
+                                            "Modelos Híbridos"
 
   Vamos continuar nossa jornada pelos modelos clássicos de computação com mais uma peça importante desse quebra-
 cabeça: os Modelos Híbridos. Esse tipo de modelo surge como uma resposta às limitações percebidas em modelos mais 
@@ -785,7 +785,7 @@ base sólida para compreender o que há de mais moderno em tecnologia.
 
 
 
-                                         "Modelos Teóricos"
+                                          "Modelos Teóricos"
 
  Agora que exploramos os modelos clássicos e híbridos de computação, vamos embarcar na etapa dos Modelos Teóricos 
 de Computação, um universo fascinante onde as ideias abstratas sobre o que é computar ganham forma e fundamentam 
@@ -1021,7 +1021,7 @@ enfrentar os desafios tecnológicos do futuro.
 
 
 
-                               "Modelos Alternativos e Não Convencionais"
+                                 "Modelos Alternativos e Não Convencionais"
 
  Os modelos alternativos e não convencionais de computação surgem quando os modelos clássicos, teóricos e híbridos 
 já não dão conta sozinhos dos desafios modernos. Esses modelos exploram outras formas de representar e processar 
