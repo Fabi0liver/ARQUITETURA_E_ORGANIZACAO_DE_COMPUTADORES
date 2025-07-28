@@ -47,7 +47,7 @@ Nível Lógico (Micronível / Lógica Digital Arquitetural)
 
 Nível de Microprogramação (Micronível / Controle Microprogramado)
 
- Objetivo: Tradução de instruções para microinstruções que controlam os sinais elétricos internos.
+ Tradução de instruções para microinstruções que controlam os sinais elétricos internos.
 
  - Conceito de microinstruções e microprogramas
 
@@ -58,3 +58,25 @@ Nível de Microprogramação (Micronível / Controle Microprogramado)
  - Ciclo de execução microprogramado
 
  - Exemplos de microprogramação em arquitetura real
+
+
+
+Nível da Arquitetura da Máquina (ISA - Instruction Set Architecture)
+
+ Objetivo: A interface entre hardware e software — o que um programador de baixo nível vê.
+
+ - Modelo de Von Neumann
+
+ - Conjunto de instruções (RISC x CISC)
+
+ - Modos de endereçamento
+
+ - Tipos de instruções (aritméticas, lógicas, controle, memória)
+
+ - Formatos de instrução
+
+ - Pilha, registradores e memória
+
+ - Montadores e linguagem de montagem (Assembly)
+
+ - Chamadas de sistema (syscalls)
