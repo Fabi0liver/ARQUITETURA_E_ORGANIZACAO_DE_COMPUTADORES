@@ -120,3 +120,20 @@ Nível da Linguagem de Programação:
  - Alocação de memória em tempo de execução
 
  - Stack vs Heap
+
+
+
+Nível do Usuário / Aplicação:
+
+ Objetivo:Onde o software de aplicação e os usuários interagem com o sistema.
+
+ - Aplicações de usuário (navegadores, editores de texto, jogos, etc.)
+
+ - Interfaces gráficas e interfaces de linha de comando
+
+ - Bibliotecas e APIs
+
+ - Drivers de dispositivos
+
+ - Comunicação com o sistema operacional
+
