@@ -1,0 +1,26 @@
+                                Níveis de abstração
+
+
+Nível Físico (Físico-eletrônico / Circuitos Digitais):
+
+ Objetivo: Descreve o funcionamento físico real do computador.
+
+ - Eletrônica Digital básica (tensão, corrente, sinais)
+
+ - Portas lógicas (AND, OR, NOT, XOR, etc.)
+
+ - Álgebra Booleana
+
+ - Circuitos combinacionais e sequenciais
+
+ - Flip-Flops e registradores
+
+ - Temporização, clock e sincronização
+
+ - Construção de somadores, multiplexadores e comparadores
+
+ - Contadores e decodificadores
+
+ - Lógica de controle (FSM - máquinas de estados finitos)
+
+
