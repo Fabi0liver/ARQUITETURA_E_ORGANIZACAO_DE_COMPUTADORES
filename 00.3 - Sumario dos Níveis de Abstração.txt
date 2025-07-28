@@ -42,3 +42,19 @@ Nível Lógico (Micronível / Lógica Digital Arquitetural)
  - Ciclo de busca-decodificação-execução
 
  - Ciclo de máquina e sinais de controle
+
+
+
+Nível de Microprogramação (Micronível / Controle Microprogramado)
+
+ Objetivo: Tradução de instruções para microinstruções que controlam os sinais elétricos internos.
+
+ - Conceito de microinstruções e microprogramas
+
+ - Implementação de instruções em microcódigo
+
+ - Unidade de Controle por Microprogramação x Cabeada
+
+ - Ciclo de execução microprogramado
+
+ - Exemplos de microprogramação em arquitetura real
