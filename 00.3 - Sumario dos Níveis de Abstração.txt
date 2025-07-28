@@ -80,3 +80,23 @@ Nível da Arquitetura da Máquina (ISA - Instruction Set Architecture)
  - Montadores e linguagem de montagem (Assembly)
 
  - Chamadas de sistema (syscalls)
+
+
+
+Nível do Sistema Operacional
+
+ Objetivo: Camada que gerencia os recursos físicos para programas de mais alto nível.
+
+ - Abstração de hardware (memória, CPU, dispositivos de E/S)
+
+ - Gerenciamento de processos e threads
+
+ - Gerenciamento de memória (virtual, real, paginada, segmentada)
+
+ - Gerenciamento de arquivos e sistemas de arquivos
+
+ - Interface de chamadas de sistema
+
+ - Multitarefa e escalonamento
+
+ - Virtualização e proteção de recursos
