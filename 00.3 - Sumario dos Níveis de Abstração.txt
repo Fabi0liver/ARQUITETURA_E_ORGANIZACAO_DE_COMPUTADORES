@@ -24,3 +24,21 @@ Nível Físico (Físico-eletrônico / Circuitos Digitais):
  - Lógica de controle (FSM - máquinas de estados finitos)
 
 
+
+Nível Lógico (Micronível / Lógica Digital Arquitetural)
+
+ Objetivo: Representa como os circuitos físicos implementam funções computacionais.
+
+ - Unidade Lógica e Aritmética (ULA/ALU)
+
+ - Unidade de Controle: sequenciamento de instruções
+
+ - Caminho de dados (Data Path)
+
+ - Arquitetura de registradores
+
+ - Barramentos internos
+
+ - Ciclo de busca-decodificação-execução
+
+ - Ciclo de máquina e sinais de controle
