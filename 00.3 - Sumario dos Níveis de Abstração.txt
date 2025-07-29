@@ -166,5 +166,20 @@ Nível do Usuário / Aplicação:
  - Comunicação com o sistema operacional
 
 
+
 Relação entre os Níveis 
+
+
+
+Tendências Futuras nos Níveis de Abstração
+
+ - Abstrações dinâmicas: uso de JITs, máquinas virtuais portáveis.
+
+ - Arquiteturas especializadas: TPUs, neuromórficas, quantum.
+
+ - Camadas automáticas de otimização via IA.
+
+ - Fusão de níveis: como ocorre em linguagens de baixo nível com runtime incorporado.
+
+ - Computação segura por design: abstrações com segurança embutida (ex: enclave).
 
