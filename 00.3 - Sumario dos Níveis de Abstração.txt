@@ -183,3 +183,7 @@ Tendências Futuras nos Níveis de Abstração
 
  - Computação segura por design: abstrações com segurança embutida (ex: enclave).
 
+
+
+Conclusão sobre os Níveis de Abstração
+
