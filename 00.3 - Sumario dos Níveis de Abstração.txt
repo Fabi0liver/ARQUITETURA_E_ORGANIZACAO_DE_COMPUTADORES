@@ -1,7 +1,8 @@
                                 Níveis de abstração
 
 
-Introdução ao Níveis de Abstração
+Introdução ao Níveis de Abstração: O que é a abstração e a apresentação/ introdução sobre os níveis de abstração
+
 
 
 Objetivo dos Níveis de Abstração:
@@ -21,7 +22,6 @@ Objetivo dos Níveis de Abstração:
 
 
 Importância dos níveis de Abstração na  Computação:
-
 
 
 
