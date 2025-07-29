@@ -5,6 +5,10 @@ Introdução ao Níveis de Abstração: O que é a abstração e a apresentaçã
 
 
 
+Contexto historico
+
+
+
 Objetivo dos Níveis de Abstração:
 
  Objetivo: Reduzir a complexidade e permitir que engenheiros, cientistas, programadores e usuários possam
