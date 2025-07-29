@@ -1,7 +1,7 @@
                                 Níveis de abstração
 
 
-Introdução ao assunto
+Introdução ao Níveis de Abstração
 
 
 Objetivo dos Níveis de Abstração:
@@ -17,6 +17,10 @@ Objetivo dos Níveis de Abstração:
  - Criar linguagens, sistemas operacionais, compiladores e dispositivos com base sólida.
 
  - Ensinar ciência da computação de forma didática e progressiva.
+
+
+
+Importância dos níveis de Abstração na  Computação:
 
 
 
