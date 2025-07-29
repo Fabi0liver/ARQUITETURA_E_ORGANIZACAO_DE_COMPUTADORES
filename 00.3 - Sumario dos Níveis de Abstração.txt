@@ -167,7 +167,17 @@ Nível do Usuário / Aplicação:
 
 
 
-Relação entre os Níveis 
+Relação entre os Níveis:
+
+ - Acoplamento vertical: como os níveis se apoiam nos anteriores
+
+ - Isolamento e encapsulamento: cada nível oculta complexidade do inferior
+
+ - Tradução de conceitos: como comandos de uma linguagem viram sinais físicos
+
+ - Abstração reversa (debugging e engenharia reversa): descida da aplicação até o nível lógico
+
+ - Interface clara entre níveis: importância das interfaces formais (ex: APIs, ISAs)
 
 
 
@@ -189,7 +199,6 @@ NÍVEIS TRANSVERSAIS E TÓPICOS EMERGENTES:
  - Sistemas ciberfísicos e IoT
 
  - Runtimes inteligentes com IA e autotuning
-
 
 
 
