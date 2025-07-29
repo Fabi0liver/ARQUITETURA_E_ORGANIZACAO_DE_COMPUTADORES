@@ -171,6 +171,28 @@ Relação entre os Níveis
 
 
 
+NÍVEIS TRANSVERSAIS E TÓPICOS EMERGENTES:
+
+ Objetivos: Transversais ou emergentes que cruzam múltiplos níveis, Essas áreas refletem a evolução das abstrações  
+ na computação moderna.
+
+ - Segurança de Computação: isolamento de processos, enclaves, sandboxing
+
+ - Nível de Paralelismo e Concorrência: SIMD, MIMD, multithreading, GPGPU
+
+ - Arquiteturas Alternativas: Quantum, Neuromórfica, Óptica
+
+ - FPGAs e Reconfiguração Dinâmica
+
+ - Sistemas embarcados e tempo real
+
+ - Sistemas ciberfísicos e IoT
+
+ - Runtimes inteligentes com IA e autotuning
+
+
+
+
 Tendências Futuras nos Níveis de Abstração
 
  - Abstrações dinâmicas: uso de JITs, máquinas virtuais portáveis.
