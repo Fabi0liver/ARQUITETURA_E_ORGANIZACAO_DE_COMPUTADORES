@@ -1,6 +1,26 @@
                                 Níveis de abstração
 
 
+Introdução ao assunto
+
+
+Objetivo dos Níveis de Abstração:
+
+ Objetivo: Reduzir a complexidade e permitir que engenheiros, cientistas, programadores e usuários possam
+
+ - Construir sistemas complexos sobre componentes simples.
+
+ - Entender e diagnosticar falhas ou gargalos de desempenho.
+
+ - Otimizar software e hardware em diferentes camadas.
+
+ - Criar linguagens, sistemas operacionais, compiladores e dispositivos com base sólida.
+
+ - Ensinar ciência da computação de forma didática e progressiva.
+
+
+
+
 Nível Físico (Físico-eletrônico / Circuitos Digitais):
 
  Objetivo: Descreve o funcionamento físico real do computador.
