@@ -1,11 +1,11 @@
                                   Abstração nos Computadores
 
 
-Introdução ao Níveis de Abstração: O que é a abstração e a apresentação/ introdução sobre os níveis de abstração
+Introdução sobre Abstração: O que é a abstração e a apresentação/ introdução sobre os níveis de abstração
 
 
 
-Contexto historico
+Contexto histórico
 
 
 
