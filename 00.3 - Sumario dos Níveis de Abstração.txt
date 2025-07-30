@@ -27,6 +27,12 @@ Objetivo dos Níveis de Abstração:
 
 Importância dos níveis de Abstração na  Computação:
 
+ - Permite que especialistas de diferentes áreas colaborem sem conhecer todos os detalhes técnicos.
+
+ - Favorece a interoperabilidade e a portabilidade entre sistemas.
+
+ - Viabiliza a escalabilidade, modularidade e manutenção de sistemas.
+
 
 
 Nível Físico (Físico-eletrônico / Circuitos Digitais):
