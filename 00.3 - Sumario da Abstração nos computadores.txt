@@ -79,7 +79,9 @@ Nível Lógico (Micronível / Lógica Digital Arquitetural):
 
 Nível de Microprogramação (Micronível / Controle Microprogramado):
 
- Tradução de instruções para microinstruções que controlam os sinais elétricos internos.
+ Objetivo: Traduzir instruções da CPU em sinais de controle internos precisos, que coordenam o funcionamento de 
+          registradores, barramentos e a ULA. Aqui, damos um zoom no que a Unidade de Controle realmente faz passo 
+          a passo, usando microinstruções.
 
  - Conceito de microinstruções e microprogramas
 
