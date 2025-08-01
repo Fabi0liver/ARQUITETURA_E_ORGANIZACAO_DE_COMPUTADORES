@@ -1,0 +1,12 @@
+                                    ABSTRAÇÃO NOS COMPUTADORES
+
+
+ Quando olhamos para um computador funcionando, tudo parece mágico: você clica num botão, algo acontece; digita uma palavra, ela aparece; assiste a um vídeo, ouve uma música. Mas por trás de cada gesto simples existe um emaranhado de camadas, estruturas e processos que cooperam silenciosamente para que tudo funcione com fluidez. Como conseguimos entender essa complexidade? A resposta está em uma ferramenta poderosa e elegante chamada abstração.
+
+ A abstração, nesse contexto, é como um par de óculos especiais: ela nos permite enxergar apenas o que precisamos em determinado momento, escondendo o que é muito complicado ou que ainda não precisamos saber. Graças a isso, programadores, engenheiros e até usuários conseguem trabalhar, criar ou interagir com sistemas computacionais sem ter que lidar com todos os detalhes técnicos ao mesmo tempo. É como usar um carro: você dirige sem precisar saber exatamente como o motor funciona por dentro, e mesmo assim chega ao seu destino.
+
+ Essa ideia de esconder os detalhes mais profundos para focar no essencial é o que torna possível o desenvolvimento de computadores modernos, sistemas operacionais, linguagens de programação, aplicativos e até jogos. Cada camada do computador conversa com a outra por meio de níveis de abstração (cada uma com sua linguagem, sua função e seu papel na construção do todo). É como montar um quebra-cabeça, mas em que cada peça entende seu lugar sem que você precise explicar tudo de novo.
+
+ Aprender sobre abstração é como descobrir a planta da construção de uma cidade invisível: ela revela os caminhos que ligam o hardware ao software, do código à execução, do pensamento humano à lógica da máquina. É um passo essencial para quem quer compreender de verdade como os computadores funcionam, além da superfície das telas e interfaces que usamos todos os dias.
+
+ Nos próximos passos, vamos abrir essa caixa de ferramentas e explorar o que é a abstração nos computadores de forma clara, acessível e apaixonante. Prepare-se para ver o mundo da computação com novos olhos: mais atentos, mais curiosos e mais conscientes das engrenagens invisíveis que movem a era digital. 
