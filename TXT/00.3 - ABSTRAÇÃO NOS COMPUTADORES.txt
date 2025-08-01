@@ -91,3 +91,16 @@
    O papel do nível físico é crucial porque é ele que define a velocidade, a eficiência e a confiabilidade do computador. É também nesse nível que se enfrentam desafios como consumo de energia, dissipação de calor e interferências elétricas. Por isso, engenheiros eletrônicos trabalham incessantemente para criar circuitos cada vez menores, mais rápidos e mais eficientes, permitindo o avanço da tecnologia que usamos diariamente.
 
    Em resumo, o nível físico é a base material da computação. Embora invisível e muitas vezes abstrato para quem só usa o computador, ele é a fundação indispensável onde todas as demais camadas de abstração se apoiam. Sem um nível físico bem projetado e funcionando, nenhuma aplicação, sistema operacional ou programa poderia existir. É a magia silenciosa que faz tudo acontecer, milésimos de segundo após milésimos de segundo.
+
+
+ * Nível Lógico (Micronível / Lógica Digital Arquitetural):
+
+   No nível lógico, os sinais binários que vimos no nível físico passam a ser organizados para executar funções computacionais reais. Ou seja, ao invés de simplesmente ter eletricidade fluindo ou não, temos portas lógicas combinadas que realizam tarefas específicas: somar números, decidir o que fazer em determinada situação, mover dados de um lugar para outro, entre outras. Imagine que no nível físico temos apenas tijolos e cimento e aqui, começamos a ver as paredes se formando, os cômodos ganhando formato e a casa ganhando função.
+
+   Esse nível é composto por blocos funcionais criados a partir de circuitos lógicos: temos somadores, multiplexadores, contadores, decodificadores, registradores e outras estruturas fundamentais. Um exemplo importante é a ULA (Unidade Lógica e Aritmética), que é responsável por realizar operações matemáticas e lógicas. Esses blocos trabalham juntos para seguir instruções, controlar etapas de execução e processar dados de forma sequencial. É como se estivéssemos montando uma pequena fábrica automatizada, onde cada estação tem uma tarefa clara e todas seguem um ritmo bem coordenado.
+
+   O que dá vida a esse nível são os sinais de controle. Eles são como semáforos internos dizendo o que cada parte da máquina deve fazer em determinado momento. Por exemplo, um registrador pode estar pronto para guardar um valor, mas só o faz quando o sinal certo é enviado. Esses sinais são definidos por circuitos de controle que determinam a ordem das operações, como se fossem maestros de uma orquestra digital. Tudo isso acontece em um ritmo marcado pelo clock, uma espécie de metrônomo que sincroniza todos os batimentos da máquina.
+
+   O nível lógico é fundamental porque ele traduz a eletrônica bruta em comportamento útil. É nele que um computador começa a deixar de ser um conjunto de fios e chips e passa a agir como uma máquina de propósito geral, capaz de obedecer a comandos, fazer decisões e resolver problemas. Sem essa organização da lógica digital, os níveis superiores (como o sistema operacional ou os programas que usamos) simplesmente não teriam onde se apoiar.
+
+   Então, podemos dizer que o nível lógico é o coração funcional da máquina: ele ainda está muito perto do chão físico, mas já pulsa com inteligência e organização. É como se os bits passassem a conversar entre si, obedecendo regras e formando blocos de ação.
