@@ -57,7 +57,9 @@ Nível Físico (Físico-eletrônico / Circuitos Digitais):
 
 Nível Lógico (Micronível / Lógica Digital Arquitetural):
 
- Objetivo: Representa como os circuitos físicos implementam funções computacionais.
+ Objetivo: Representar como os circuitos físicos implementam funções computacionais, como cálculos, controle de   
+          instruções e movimentação de dados.Aqui, os sinais elétricos começam a “fazer sentido” e organizar as 
+          operações que tornam um computador funcional.
 
  - Unidade Lógica e Aritmética (ULA/ALU)
 
