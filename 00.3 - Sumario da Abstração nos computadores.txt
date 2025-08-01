@@ -9,10 +9,23 @@ Contexto histórico
 
 
 
+Princípios por trás da Abstração nos Computadores:
+
+ Objetivo: Nos dar uma visão ampla das bases conceituais que fazem a abstração funcionar tão bem, como se  
+          estivéssemos montando os alicerces de um prédio que nos permite subir cada vez mais alto sem perder o 
+          equilíbrio
+
+ - Separação de Responsabilidades
+
+ - Ocultação da Complexidade
+
+ - Reutilização
+
+ - Hierarquia de Camadas
 
 
 
-Importância dos níveis de Abstração na  Computação:
+Importância dos níveis de Abstração na Computação:
 
  - Permite que especialistas de diferentes áreas colaborem sem conhecer todos os detalhes técnicos.
 
