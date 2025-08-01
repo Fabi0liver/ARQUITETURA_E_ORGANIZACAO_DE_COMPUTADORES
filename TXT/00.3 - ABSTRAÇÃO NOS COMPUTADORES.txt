@@ -78,3 +78,16 @@
  Os níveis de abstração são, portanto, a espinha dorsal da computação moderna. Eles estão presentes tanto na forma como os computadores são construídos fisicamente quanto na maneira como softwares são projetados. E mesmo que muitas vezes passem despercebidos, é por causa deles que conseguimos programar, interagir com interfaces amigáveis, ou até mesmo criar sistemas complexos com relativa simplicidade. Eles são os andares invisíveis de um edifício que funciona em perfeita harmonia.
 
  Agora que já abrimos a porta desse prédio fantástico, que tal subir comigo, andar por andar? Vamos explorar cada um dos níveis de abstração nos computadores, entendendo como funcionam, para que servem e como se conectam entre si. Preparado para o próximo passo?
+
+
+ * Nível de Microprogramação (Micronível / Controle Microprogramado):
+
+   No nível físico, estamos falando do que há de mais básico em um computador: os componentes eletrônicos que formam os circuitos digitais. Aqui, a informação é representada em sinais elétricos, que podem estar ligados ou desligados, correspondendo aos famosos “1” e “0” do sistema binário. É um mundo invisível a olho nu, mas que funciona em altíssima velocidade, processando bilhões de operações a cada segundo. Pense nisso como a fundação sólida e as vigas estruturais de uma casa (sem essa base, tudo desmorona).
+
+   Para entender esse nível, é importante conhecer alguns elementos fundamentais, como os transistores, que funcionam como pequenos interruptores eletrônicos. Eles controlam o fluxo de corrente elétrica, permitindo ligar ou desligar sinais. Milhões e até bilhões desses transistores formam circuitos integrados, que executam operações lógicas e aritméticas essenciais para o funcionamento do computador. Tudo isso acontece em chipsets minúsculos, que juntas formam o cérebro eletrônico da máquina.
+
+   Além dos transistores, temos portas lógicas, que combinam esses sinais elétricos para realizar operações como AND, OR, NOT, e outras mais complexas. Essas portas são os blocos de construção dos circuitos digitais, funcionando como pequenos agentes que decidem o que deve acontecer com cada sinal. A organização dessas portas em circuitos maiores dá origem a componentes como registradores, contadores e unidades aritméticas, que realizam cálculos e armazenam dados temporariamente.
+
+   O papel do nível físico é crucial porque é ele que define a velocidade, a eficiência e a confiabilidade do computador. É também nesse nível que se enfrentam desafios como consumo de energia, dissipação de calor e interferências elétricas. Por isso, engenheiros eletrônicos trabalham incessantemente para criar circuitos cada vez menores, mais rápidos e mais eficientes, permitindo o avanço da tecnologia que usamos diariamente.
+
+   Em resumo, o nível físico é a base material da computação. Embora invisível e muitas vezes abstrato para quem só usa o computador, ele é a fundação indispensável onde todas as demais camadas de abstração se apoiam. Sem um nível físico bem projetado e funcionando, nenhuma aplicação, sistema operacional ou programa poderia existir. É a magia silenciosa que faz tudo acontecer, milésimos de segundo após milésimos de segundo.
