@@ -31,7 +31,9 @@ Princípios por trás da Abstração nos Computadores:
 
 Nível Físico (Físico-eletrônico / Circuitos Digitais):
 
- Objetivo: Descreve o funcionamento físico real do computador.
+ Objetivo: O nível físico descreve o que acontece nas entranhas de um computador, lá onde elétrons se movem, sinais 
+          são interpretados como “1” e “0”, e tudo acontece em uma fração de segundo. É como entender a fundação de 
+          uma casa: sem ela, nada funciona.
 
  - Eletrônica Digital básica (tensão, corrente, sinais)
 
