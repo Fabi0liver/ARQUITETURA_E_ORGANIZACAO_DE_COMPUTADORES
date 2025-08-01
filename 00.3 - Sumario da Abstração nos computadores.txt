@@ -23,15 +23,9 @@ Princípios por trás da Abstração nos Computadores:
 
  - Hierarquia de Camadas
 
+ - Modularidade
 
-
-Importância dos níveis de Abstração na Computação:
-
- - Permite que especialistas de diferentes áreas colaborem sem conhecer todos os detalhes técnicos.
-
- - Favorece a interoperabilidade e a portabilidade entre sistemas.
-
- - Viabiliza a escalabilidade, modularidade e manutenção de sistemas.
+ - Encapsulamento
 
 
 
@@ -235,6 +229,16 @@ Tendências Futuras nos Níveis de Abstração
  - Fusão de níveis: como ocorre em linguagens de baixo nível com runtime incorporado.
 
  - Computação segura por design: abstrações com segurança embutida (ex: enclave).
+
+
+
+Importância dos níveis de Abstração na Computação:
+
+ - Permite que especialistas de diferentes áreas colaborem sem conhecer todos os detalhes técnicos.
+
+ - Favorece a interoperabilidade e a portabilidade entre sistemas.
+
+ - Viabiliza a escalabilidade, modularidade e manutenção de sistemas.
 
 
 
