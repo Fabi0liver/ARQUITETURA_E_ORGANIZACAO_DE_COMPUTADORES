@@ -122,7 +122,9 @@ Nível da Arquitetura da Máquina (ISA - Instruction Set Architecture):
 
 Nível do Sistema Operacional:
 
- Objetivo: Camada que gerencia os recursos físicos para programas de mais alto nível.
+ Objetivo: Gerenciar os recursos físicos e virtuais do sistema, criando uma abstração funcional do hardware para  
+          que os programas de mais alto nível (apps, navegadores, editores) possam operar sem se preocupar com os 
+          detalhes físicos.
 
  - Abstração de hardware (memória, CPU, dispositivos de E/S)
 
