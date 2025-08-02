@@ -144,7 +144,9 @@ Nível do Sistema Operacional:
 
 Nível da Linguagem de Programação:
 
- Objetivo: Onde o programador trabalha diretamente.
+ Objetivo: O nível da linguagem de programação é onde os desenvolvedores realmente “colocam a mão na massa”. É o 
+          ponto em que a lógica e as ideias ganham forma por meio de código escrito em linguagens como Python, C, 
+          Java ou outras.
 
  - Linguagens de alto nível (C, Java, Python etc.)
 
