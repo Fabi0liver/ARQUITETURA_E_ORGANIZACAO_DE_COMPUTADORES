@@ -184,15 +184,30 @@ Nível do Usuário / Aplicação:
 
 Relação entre os Níveis:
 
+ Objetivo: Entender a relação entre os níveis de abstração dos computadores é essencial para compreender como 
+          sistemas computacionais funcionam como um todo, desde o software até os circuitos físicos. Essa relação 
+          mostra como cada camada se conecta, traduz e depende da anterior, garantindo modularidade, funcionalidade 
+          e eficiência no funcionamento do computador.
+
  - Acoplamento vertical: como os níveis se apoiam nos anteriores
 
- - Isolamento e encapsulamento: cada nível oculta complexidade do inferior
+ - Isolamento e encapsulamento: cada nível oculta a complexidade do inferior
 
  - Tradução de conceitos: como comandos de uma linguagem viram sinais físicos
 
  - Abstração reversa (debugging e engenharia reversa): descida da aplicação até o nível lógico
 
  - Interface clara entre níveis: importância das interfaces formais (ex: APIs, ISAs)
+
+ - Independência relativa entre níveis: evolução modular com manutenção de interfaces
+
+ - Hierarquia de controle e fluxo de informação: comandos sobem e descem entre níveis
+
+ - Diferença de granularidade entre níveis: bits, instruções, estruturas de dados
+
+ - Abstração como ferramenta de modelagem: simplificação para uso e desenvolvimento
+
+ - Impacto na performance e otimização: relação entre abstração e eficiência final
 
 
 
