@@ -97,7 +97,10 @@ Nível de Microprogramação (Micronível / Controle Microprogramado):
 
 Nível da Arquitetura da Máquina (ISA - Instruction Set Architecture):
 
- Objetivo: A interface entre hardware e software — o que um programador de baixo nível vê.
+ Objetivo: Este nível define o que o processador pode fazer — é a ponte entre o hardware físico e os programas que 
+          rodam sobre ele. É o manual de instruções da CPU, mostrando ao programador o conjunto de comandos que ela 
+          entende diretamente. Aqui, estamos no ponto onde a máquina começa a se tornar compreensível para humanos 
+          que falam a linguagem da lógica binária.
 
  - Modelo de Von Neumann
 
