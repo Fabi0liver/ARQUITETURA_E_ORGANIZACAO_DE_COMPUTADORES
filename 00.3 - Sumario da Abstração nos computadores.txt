@@ -227,40 +227,36 @@ Objetivo dos Níveis de Abstração:
 
 
 
-NÍVEIS TRANSVERSAIS E TÓPICOS EMERGENTES:
+Tendências Futuras nos Níveis de Abstração:
 
- Objetivos: Transversais ou emergentes que cruzam múltiplos níveis, Essas áreas refletem a evolução das abstrações  
- na computação moderna.
+ Objetivos: Antecipar como os níveis de abstração nos sistemas computacionais evoluirão para lidar com a crescente 
+           complexidade, diversidade de hardware, demandas de segurança, inteligência artificial e novos paradigmas 
+           computacionais: promovendo eficiência, adaptabilidade e segurança, sem sacrificar a acessibilidade para 
+           desenvolvedores e usuários.
 
- - Segurança de Computação: isolamento de processos, enclaves, sandboxing
+ - Abstrações dinâmicas, Distribuída e Multinuvem
 
- - Nível de Paralelismo e Concorrência: SIMD, MIMD, multithreading, GPGPU
+ - Abstrações para Computação Quântica e Pós-Clássica
 
- - Arquiteturas Alternativas: Quantum, Neuromórfica, Óptica
+ - Níveis de Abstração Adaptativos (Autoajustáveis)
 
- - FPGAs e Reconfiguração Dinâmica
+ - Desacoplamento entre Software e Hardware por Meio de IRs
 
- - Sistemas embarcados e tempo real
+ - Computação Heterogênea Transparente
 
- - Sistemas ciberfísicos e IoT
-
- - Runtimes inteligentes com IA e autotuning
-
-
-
-Tendências Futuras nos Níveis de Abstração
-
- - Abstrações dinâmicas: uso de JITs, máquinas virtuais portáveis.
-
- - Arquiteturas especializadas: TPUs, neuromórficas, quantum.
+ - Neuroabstrações: modelos inspirados no cérebro como suporte direto ao nível computacional
 
  - Camadas automáticas de otimização via IA.
 
  - Fusão de níveis: como ocorre em linguagens de baixo nível com runtime incorporado.
 
- - Computação segura por design: abstrações com segurança embutida (ex: enclave).
+ - Segurança de Computação: isolamento de processos, enclaves, sandboxing
 
+ - Computação Segura e Privada por Design (privacidade embutida nas abstrações)
 
+ - Programação Orientada à Intenção e Abstrações Declarativas com IA
+
+ 
 
 Importância dos níveis de Abstração na Computação:
 
