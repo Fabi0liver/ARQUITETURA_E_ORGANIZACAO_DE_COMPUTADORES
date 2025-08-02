@@ -166,7 +166,9 @@ Nível da Linguagem de Programação:
 
 Nível do Usuário / Aplicação:
 
- Objetivo:Onde o software de aplicação e os usuários interagem com o sistema.
+ Objetivo: É a ponte final entre o ser humano e toda a complexidade do sistema computacional, a camada onde ideias 
+          viram ações e interações. Tudo o que você vê e interage (janelas, botões, menus, jogos, editores, 
+          navegadores) está nesse último nível da pirâmide de abstração.
 
  - Aplicações de usuário (navegadores, editores de texto, jogos, etc.)
 
