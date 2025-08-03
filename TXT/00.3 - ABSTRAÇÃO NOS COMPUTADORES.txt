@@ -1,15 +1,31 @@
                                      ABSTRAÇÃO NOS COMPUTADORES
 
 
- Você já parou para pensar como conseguimos conversar com máquinas tão complexas sem nem perceber tudo o que acontece por trás? Quando você clica em um botão, escreve uma mensagem ou assiste a um vídeo, uma verdadeira orquestra tecnológica entra em ação. Só que, curiosamente, a maior parte disso você nunca vê (e nem precisa ver). É aí que entra um dos conceitos mais elegantes e fundamentais da computação: a abstração.
+ Você já parou para pensar como conseguimos conversar com máquinas tão complexas sem nem perceber tudo o que 
+acontece por trás? Quando você clica em um botão, escreve uma mensagem ou assiste a um vídeo, uma verdadeira 
+orquestra tecnológica entra em ação. Só que, curiosamente, a maior parte disso você nunca vê (e nem precisa ver). É 
+aí que entra um dos conceitos mais elegantes e fundamentais da computação: a abstração.
 
- A abstração, no mundo dos computadores, é como uma ponte entre o que conseguimos entender facilmente e o que está por trás das cortinas, operando em silêncio. Ela é uma ferramenta invisível, mas poderosa, que nos permite interagir com sistemas extremamente complexos sem ter que lidar com cada minúcia técnica. É graças a ela que conseguimos criar, programar, resolver problemas e até usar um smartphone sem ser um especialista em eletrônica ou linguagem binária.
+ A abstração, no mundo dos computadores, é como uma ponte entre o que conseguimos entender facilmente e o que está 
+por trás das cortinas, operando em silêncio. Ela é uma ferramenta invisível, mas poderosa, que nos permite 
+interagir com sistemas extremamente complexos sem ter que lidar com cada minúcia técnica. É graças a ela que 
+conseguimos criar, programar, resolver problemas e até usar um smartphone sem ser um especialista em eletrônica ou 
+linguagem binária.
 
- Pensar em abstração é como pensar em dirigir um carro: você gira o volante e o carro vira, mas não precisa entender cada mecanismo dentro do motor. Com os computadores é parecido: usamos comandos, criamos códigos ou simplesmente clicamos em ícones, e por trás disso há camadas e mais camadas de funcionamento sendo cuidadosamente escondidas para tornar nossa vida mais fácil. Isso tudo é possível porque alguém, em algum ponto da história, escolheu simplificar o complexo.
+ Pensar em abstração é como pensar em dirigir um carro: você gira o volante e o carro vira, mas não precisa 
+entender cada mecanismo dentro do motor. Com os computadores é parecido: usamos comandos, criamos códigos ou 
+simplesmente clicamos em ícones, e por trás disso há camadas e mais camadas de funcionamento sendo cuidadosamente 
+escondidas para tornar nossa vida mais fácil. Isso tudo é possível porque alguém, em algum ponto da história, 
+escolheu simplificar o complexo.
 
- Essa simplificação não acontece por acaso. Ela é cuidadosamente planejada, construída em níveis e utilizada em praticamente tudo que envolve computação: desde a construção de processadores até o design de aplicativos. A abstração é o que permite que diferentes áreas conversem entre si, que programadores não precisem reinventar a roda toda vez que criam algo novo e que sistemas evoluam de maneira organizada e inteligente.
+ Essa simplificação não acontece por acaso. Ela é cuidadosamente planejada, construída em níveis e utilizada em 
+praticamente tudo que envolve computação: desde a construção de processadores até o design de aplicativos. A 
+abstração é o que permite que diferentes áreas conversem entre si, que programadores não precisem reinventar a roda 
+toda vez que criam algo novo e que sistemas evoluam de maneira organizada e inteligente.
 
- Neste estudo, vamos explorar como essa mágica acontece, por que ela é tão essencial no funcionamento dos computadores e como ela molda tudo o que usamos na tecnologia moderna. Mas por enquanto, respira fundo: este é apenas o começo de uma jornada fascinante por dentro das camadas invisíveis que tornam o impossível... utilizável.
+ Neste estudo, vamos explorar como essa mágica acontece, por que ela é tão essencial no funcionamento dos 
+computadores e como ela molda tudo o que usamos na tecnologia moderna. Mas por enquanto, respira fundo: este é 
+apenas o começo de uma jornada fascinante por dentro das camadas invisíveis que tornam o impossível... utilizável.
 
 
 
@@ -25,7 +41,7 @@
 
 
 
-                      "Princípios Por Trás da Abstração nos Computadores"
+                       "Princípios Por Trás da Abstração nos Computadores"
 
  Agora que já entendemos o que é a abstração e exploramos como ela surgiu e evoluiu na história da computação, é hora de dar um passo essencial: entender os princípios que sustentam essa ideia brilhante. Imagine que estamos prestes a montar os alicerces de um grande edifício: cada um desses princípios é como uma coluna estrutural que nos permite construir camadas cada vez mais complexas e poderosas, sem que tudo desabe por excesso de caos ou dificuldade.
 
