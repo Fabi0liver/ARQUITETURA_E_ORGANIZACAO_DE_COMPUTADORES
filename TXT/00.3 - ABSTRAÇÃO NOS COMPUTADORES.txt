@@ -230,15 +230,34 @@ si. Preparado para o próximo passo?
 
  * Nível de Microprogramação (Micronível / Controle Microprogramado):
 
-   O nível de microprogramação é como um zoom super detalhado dentro da Unidade de Controle da CPU, onde as ordens que chegam do programa são traduzidas em sinais muito precisos para orquestrar o funcionamento interno do processador. Se o nível físico é a fundação e a eletricidade em movimento, a microprogramação é o maestro que, com uma batuta minúscula, indica exatamente quando cada instrumento (registradores, barramentos e a Unidade Lógica e Aritmética (ULA)) deve tocar sua nota para que a sinfonia funcione perfeitamente.
+   O nível de microprogramação é como um zoom super detalhado dentro da Unidade de Controle da CPU, onde as ordens 
+  que chegam do programa são traduzidas em sinais muito precisos para orquestrar o funcionamento interno do 
+  processador. Se o nível físico é a fundação e a eletricidade em movimento, a microprogramação é o maestro que, 
+  com uma batuta minúscula, indica exatamente quando cada instrumento (registradores, barramentos e a Unidade  
+  Lógica e Aritmética (ULA)) deve tocar sua nota para que a sinfonia funcione perfeitamente.
 
-   Para entender como esse nível funciona, imagine que cada instrução da CPU (que pode ser algo como "somar dois números" ou "mover um dado") é dividida em várias etapas menores chamadas microinstruções. Essas microinstruções são sequências muito específicas que ativam sinais internos em uma ordem precisa, controlando movimentos minuciosos dentro do processador. É como desmontar uma tarefa complexa em pequenos passos fáceis de executar, para garantir que nada seja esquecido e tudo seja sincronizado.
+   Para entender como esse nível funciona, imagine que cada instrução da CPU (que pode ser algo como "somar dois 
+  números" ou "mover um dado") é dividida em várias etapas menores chamadas microinstruções. Essas microinstruções 
+  são sequências muito específicas que ativam sinais internos em uma ordem precisa, controlando movimentos 
+  minuciosos dentro do processador. É como desmontar uma tarefa complexa em pequenos passos fáceis de executar, 
+  para garantir que nada seja esquecido e tudo seja sincronizado.
 
-   Entre os principais assuntos desse nível, encontramos o controle microprogramado, que pode ser implementado em uma memória especial chamada memória de controle. Essa memória armazena o conjunto de microinstruções para todas as instruções da CPU. Também temos os registradores de controle, que ajudam a gerenciar essas microinstruções e a sequência delas. Outro ponto importante é o uso de barramentos internos (como estradas por onde os dados e comandos circulam) e a coordenação da ULA, responsável pelas operações matemáticas e lógicas.
+   Entre os principais assuntos desse nível, encontramos o controle microprogramado, que pode ser implementado em 
+  uma memória especial chamada memória de controle. Essa memória armazena o conjunto de microinstruções para todas 
+  as instruções da CPU. Também temos os registradores de controle, que ajudam a gerenciar essas microinstruções e a 
+  sequência delas. Outro ponto importante é o uso de barramentos internos (como estradas por onde os dados e 
+  comandos circulam) e a coordenação da ULA, responsável pelas operações matemáticas e lógicas.
 
-   A função essencial do nível de microprogramação é garantir que, por trás das instruções que o programador escreve ou que o sistema operacional envia, a máquina saiba exatamente quais sinais elétricos ativar, em que ordem e em que tempo, para que o processador realize a tarefa corretamente. Sem essa coordenação minuciosa, o processador seria um conjunto de peças sem um “cérebro” capaz de coordenar suas ações. Por isso, esse nível é fundamental para a eficiência, precisão e confiabilidade da CPU.
+   A função essencial do nível de microprogramação é garantir que, por trás das instruções que o programador 
+  escreve ou que o sistema operacional envia, a máquina saiba exatamente quais sinais elétricos ativar, em que 
+  ordem e em que tempo, para que o processador realize a tarefa corretamente. Sem essa coordenação minuciosa, o 
+  processador seria um conjunto de peças sem um “cérebro” capaz de coordenar suas ações. Por isso, esse nível é 
+  fundamental para a eficiência, precisão e confiabilidade da CPU.
 
-   Concluindo, o nível de microprogramação nos mostra como a complexidade das instruções do computador é gerenciada com um controle muito fino e detalhado, transformando comandos abstratos em ações concretas e sincronizadas dentro do processador. Entender esse nível é perceber a incrível engenharia por trás do funcionamento interno da CPU: uma verdadeira coreografia invisível que mantém tudo funcionando perfeitamente.
+   Concluindo, o nível de microprogramação nos mostra como a complexidade das instruções do computador é gerenciada 
+  com um controle muito fino e detalhado, transformando comandos abstratos em ações concretas e sincronizadas 
+  dentro do processador. Entender esse nível é perceber a incrível engenharia por trás do funcionamento interno da 
+  CPU: uma verdadeira coreografia invisível que mantém tudo funcionando perfeitamente.
 
 
  * Nível da Arquitetura da Máquina (ISA - Instruction Set Architecture):
