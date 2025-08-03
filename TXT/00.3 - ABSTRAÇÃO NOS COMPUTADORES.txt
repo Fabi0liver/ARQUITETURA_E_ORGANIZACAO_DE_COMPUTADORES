@@ -31,13 +31,33 @@ apenas o começo de uma jornada fascinante por dentro das camadas invisíveis qu
 
                           "Contexto Histórico da Abstração nos Computadores"
 
- Lá no comecinho da computação, por volta do século XIX e início do XX, os conceitos de abstração ainda não estavam formalizados como hoje, mas já estavam presentes de forma intuitiva. Um bom exemplo é Charles Babbage, com sua máquina analítica, e Ada Lovelace, que escreveu o primeiro algoritmo pensado para ser processado por uma máquina. Mesmo sem um computador funcional como conhecemos hoje, eles já imaginavam que seria possível programar uma máquina de forma independente do funcionamento físico dela, ou seja, separar o como ela faz do o que ela faz. Essa foi uma das primeiras sementes da abstração.
+ Lá no comecinho da computação, por volta do século XIX e início do XX, os conceitos de abstração ainda não estavam 
+formalizados como hoje, mas já estavam presentes de forma intuitiva. Um bom exemplo é Charles Babbage, com sua 
+máquina analítica, e Ada Lovelace, que escreveu o primeiro algoritmo pensado para ser processado por uma máquina. 
+Mesmo sem um computador funcional como conhecemos hoje, eles já imaginavam que seria possível programar uma máquina 
+de forma independente do funcionamento físico dela, ou seja, separar o como ela faz do o que ela faz. Essa foi uma 
+das primeiras sementes da abstração.
 
- Mais adiante, com o surgimento dos primeiros computadores eletrônicos durante e após a Segunda Guerra Mundial, como o ENIAC e o Colossus, ficou evidente que programar diretamente nas linguagens de máquina (compostas apenas de números e sinais elétricos) era extremamente difícil e limitante. Foi nesse cenário que a abstração começou a se tornar uma necessidade urgente. Programadores começaram a criar linguagens de montagem (como Assembly), e logo depois linguagens de alto nível (como FORTRAN), que escondiam as operações binárias por trás de instruções mais compreensíveis. Esse foi um passo revolucionário: agora, os humanos podiam se concentrar na lógica do problema em vez de nos detalhes elétricos da máquina.
+ Mais adiante, com o surgimento dos primeiros computadores eletrônicos durante e após a Segunda Guerra Mundial, 
+como o ENIAC e o Colossus, ficou evidente que programar diretamente nas linguagens de máquina (compostas apenas de 
+números e sinais elétricos) era extremamente difícil e limitante. Foi nesse cenário que a abstração começou a se 
+tornar uma necessidade urgente. Programadores começaram a criar linguagens de montagem (como Assembly), e logo 
+depois linguagens de alto nível (como FORTRAN), que escondiam as operações binárias por trás de instruções mais 
+compreensíveis. Esse foi um passo revolucionário: agora, os humanos podiam se concentrar na lógica do problema em 
+vez de nos detalhes elétricos da máquina.
 
- Com o tempo, as camadas de abstração foram se multiplicando. Vieram os sistemas operacionais, que criaram uma camada entre o usuário e o hardware. Depois surgiram os compiladores, bibliotecas, linguagens orientadas a objetos e, mais recentemente, ambientes gráficos, plataformas de desenvolvimento e até inteligência artificial (tudo isso baseado na ideia de esconder a complexidade para facilitar o uso e a construção de novas soluções). O interessante é que, quanto mais a computação evolui, mais camadas de abstração são criadas, e cada uma delas torna possível atingir um novo nível de sofisticação e acessibilidade.
+ Com o tempo, as camadas de abstração foram se multiplicando. Vieram os sistemas operacionais, que criaram uma 
+camada entre o usuário e o hardware. Depois surgiram os compiladores, bibliotecas, linguagens orientadas a objetos 
+e, mais recentemente, ambientes gráficos, plataformas de desenvolvimento e até inteligência artificial (tudo isso 
+baseado na ideia de esconder a complexidade para facilitar o uso e a construção de novas soluções). O interessante 
+é que, quanto mais a computação evolui, mais camadas de abstração são criadas, e cada uma delas torna possível 
+atingir um novo nível de sofisticação e acessibilidade.
 
- Hoje, usamos dispositivos que carregam dezenas de níveis de abstração empilhados, dos circuitos aos aplicativos. Mas essa história toda só foi possível porque, desde cedo, a computação foi se moldando como uma ciência que reconhece seus próprios limites, e que, ao invés de enfrentar a complexidade de frente o tempo todo, aprendeu a escondê-la de forma inteligente. Entender essa trajetória nos ajuda a valorizar a elegância da computação moderna, onde cada clique carrega uma herança histórica de simplificação e engenhosidade.
+ Hoje, usamos dispositivos que carregam dezenas de níveis de abstração empilhados, dos circuitos aos aplicativos. 
+Mas essa história toda só foi possível porque, desde cedo, a computação foi se moldando como uma ciência que 
+reconhece seus próprios limites, e que, ao invés de enfrentar a complexidade de frente o tempo todo, aprendeu a 
+escondê-la de forma inteligente. Entender essa trajetória nos ajuda a valorizar a elegância da computação moderna, 
+onde cada clique carrega uma herança histórica de simplificação e engenhosidade.
 
 
 
