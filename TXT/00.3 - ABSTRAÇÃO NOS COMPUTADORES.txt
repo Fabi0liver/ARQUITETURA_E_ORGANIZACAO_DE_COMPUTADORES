@@ -138,13 +138,28 @@ firme, estamos prontos para subir mais um degrau nessa jornada de descobertas.
 
                                "Os Níveis de Abstração nos Computadores"
 
- Perfeito! Agora que já conhecemos os princípios que sustentam a abstração nos computadores, chegou a hora de olhar para uma das aplicações mais fascinantes dessa ideia: os níveis de abstração. Eles funcionam como uma escada bem planejada, onde cada degrau representa uma camada diferente de entendimento e funcionamento de um computador. Essa estrutura em níveis é o que torna possível interagir com a tecnologia de forma tão fluida, mesmo quando o que está acontecendo por trás é absurdamente complexo.
+ Agora que já conhecemos os princípios que sustentam a abstração nos computadores, chegou a hora de olhar para uma 
+das aplicações mais fascinantes dessa ideia: os níveis de abstração. Eles funcionam como uma escada bem planejada, 
+onde cada degrau representa uma camada diferente de entendimento e funcionamento de um computador. Essa estrutura 
+em níveis é o que torna possível interagir com a tecnologia de forma tão fluida, mesmo quando o que está 
+acontecendo por trás é absurdamente complexo.
 
- A mágica dos níveis de abstração é que eles organizam o caos. Cada nível esconde os detalhes do nível inferior e oferece uma visão mais simples e direta para quem está “acima”. Isso permite que diferentes profissionais (como engenheiros de hardware, programadores e usuários finais) trabalhem em camadas diferentes do mesmo sistema sem se perderem ou se atrapalharem. É como se estivéssemos lidando com um prédio inteligente: você pode estar no térreo apertando um botão, enquanto no subsolo máquinas estão em pleno funcionamento, mas tudo está conectado com harmonia.
+ A mágica dos níveis de abstração é que eles organizam o caos. Cada nível esconde os detalhes do nível inferior e 
+oferece uma visão mais simples e direta para quem está “acima”. Isso permite que diferentes profissionais (como 
+engenheiros de hardware, programadores e usuários finais) trabalhem em camadas diferentes do mesmo sistema sem se 
+perderem ou se atrapalharem. É como se estivéssemos lidando com um prédio inteligente: você pode estar no térreo 
+apertando um botão, enquanto no subsolo máquinas estão em pleno funcionamento, mas tudo está conectado com 
+harmonia.
 
- Os níveis de abstração são, portanto, a espinha dorsal da computação moderna. Eles estão presentes tanto na forma como os computadores são construídos fisicamente quanto na maneira como softwares são projetados. E mesmo que muitas vezes passem despercebidos, é por causa deles que conseguimos programar, interagir com interfaces amigáveis, ou até mesmo criar sistemas complexos com relativa simplicidade. Eles são os andares invisíveis de um edifício que funciona em perfeita harmonia.
+ Os níveis de abstração são, portanto, a espinha dorsal da computação moderna. Eles estão presentes tanto na forma 
+como os computadores são construídos fisicamente quanto na maneira como softwares são projetados. E mesmo que 
+muitas vezes passem despercebidos, é por causa deles que conseguimos programar, interagir com interfaces amigáveis, 
+ou até mesmo criar sistemas complexos com relativa simplicidade. Eles são os andares invisíveis de um edifício que 
+funciona em perfeita harmonia.
 
- Agora que já abrimos a porta desse prédio fantástico, que tal subir comigo, andar por andar? Vamos explorar cada um dos níveis de abstração nos computadores, entendendo como funcionam, para que servem e como se conectam entre si. Preparado para o próximo passo?
+ Agora que já abrimos a porta desse prédio fantástico, que tal subir comigo, andar por andar? Vamos explorar cada 
+um dos níveis de abstração nos computadores, entendendo como funcionam, para que servem e como se conectam entre 
+si. Preparado para o próximo passo?
 
 
  * Nível de Microprogramação (Micronível / Controle Microprogramado):
