@@ -46,3 +46,38 @@ Representação de Números Inteiros
  - Intervalo de valores possíveis por número de bits (ex: 8 bits, 16 bits)
 
 
+Representação de Números Reais (Ponto Flutuante):
+
+ - Ponto fixo vs ponto flutuante
+
+ - IEEE 754 (padrão de ponto flutuante): Formato de 32 bits (float), Formato de 64 bits (double)
+
+ - Precisão e arredondamentos
+
+ - Erros de representação (ex: 0.1 em binário)
+
+
+Representação de Caracteres e Textos
+
+ - Tabelas de codificação: ASCII, ISO-8859, Unicode (UTF-8, UTF-16, UTF-32)
+
+ - Caracteres de controle
+
+ - Relação entre representação binária e textual
+
+
+Compactação e Codificação de Dados:
+
+ - Diferença entre codificação e compressão
+
+Tipos de compressão:
+
+Lossless (sem perda): ZIP, PNG
+
+Lossy (com perda): MP3, JPEG
+
+Conceito de entropia e eficiência de codificação (base para teoria da informação)
+
+
+
+
