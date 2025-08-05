@@ -70,13 +70,22 @@ Compactação e Codificação de Dados:
 
  - Diferença entre codificação e compressão
 
-Tipos de compressão:
+ - Tipos de compressão: Lossless (sem perda): ZIP, PNG ; Lossy (com perda): MP3, JPEG
 
-Lossless (sem perda): ZIP, PNG
+ - Conceito de entropia e eficiência de codificação (base para teoria da informação)
 
-Lossy (com perda): MP3, JPEG
 
-Conceito de entropia e eficiência de codificação (base para teoria da informação)
+Aplicações Práticas e Avançadas
+
+ - Leitura e escrita em memória
+
+ - Representação de dados em linguagens de programação
+
+ - Alinhamento de dados e estruturas (estrutura de memória)
+
+ - Big Endian vs Little Endian
+
+ - Representações em arquiteturas diferentes (ex: ARM vs x86)
 
 
 
