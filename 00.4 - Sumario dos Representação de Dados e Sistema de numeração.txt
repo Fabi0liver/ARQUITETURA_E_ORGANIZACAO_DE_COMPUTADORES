@@ -1,0 +1,37 @@
+                       REPRESENTAÇÃO DE DADOS E SISTEMAS DE NUMERAÇÃO 
+
+
+Introdução ao Sistema de Numeração de dados
+
+
+O que são dados (definição geral)
+
+ - Diferença entre dado e informação
+
+ - Como os dados são representados em computadores
+
+
+Unidades de medida: bit, byte, kilobyte, megabyte, gigabyte, etc.
+
+
+Codificação e abstração no sistema de numeração e representação de dados
+
+
+Sistemas de Numeração:
+
+ - Conceito de sistema de numeração
+
+ - Diferença entre sistemas posicionais e não posicionais
+
+
+Principais sistemas:
+
+ - Decimal (base 10) – o sistema humano
+
+ - Binário (base 2) – o sistema do computador
+
+ - Octal (base 8) – usado historicamente
+
+ - Hexadecimal (base 16) – comum em programação e depuração
+
+
