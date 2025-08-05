@@ -81,6 +81,19 @@ Representação de Caracteres e Textos
  - Relação entre representação binária e textual
 
 
+Representação e Manipulação de Dados em Linguagens de Programação:
+
+ - Tipos primitivos em linguagens como C, Python e Java
+
+ - Casting (conversão de tipo) e truncamento
+
+ - Alinhamento e padding de dados em memória
+
+ - Serialização e desserialização de dados
+
+ - Representação em arquivos binários vs texto
+
+
 Compactação e Codificação de Dados:
 
  - Diferença entre codificação e compressão
@@ -88,6 +101,17 @@ Compactação e Codificação de Dados:
  - Tipos de compressão: Lossless (sem perda): ZIP, PNG ; Lossy (com perda): MP3, JPEG
 
  - Conceito de entropia e eficiência de codificação (base para teoria da informação)
+
+
+Codificações Específicas em Aplicações:
+
+ - Codificação BCD (Binary Coded Decimal)
+
+ - Gray Code (Código de Gray) – usado em sensores
+
+ - IEEE 754 NaN, infinito, subnormais (casos especiais)
+
+ - Codificação de caracteres em sistemas legados
 
 
 Aplicações Práticas e Avançadas
@@ -101,6 +125,9 @@ Aplicações Práticas e Avançadas
  - Big Endian vs Little Endian
 
  - Representações em arquiteturas diferentes (ex: ARM vs x86)
+
+
+
 
 
 
