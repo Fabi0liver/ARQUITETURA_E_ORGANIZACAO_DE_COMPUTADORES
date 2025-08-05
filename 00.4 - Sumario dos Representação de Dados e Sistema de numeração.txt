@@ -35,3 +35,14 @@ Principais sistemas:
  - Hexadecimal (base 16) – comum em programação e depuração
 
 
+Representação de Números Inteiros
+
+ - Inteiros sem sinal (unsigned)
+
+ - Inteiros com sinal (signed): Sinal e magnitude, Complemento de 1, Complemento de 2 (mais comum)
+
+ - Overflow e underflow
+
+ - Intervalo de valores possíveis por número de bits (ex: 8 bits, 16 bits)
+
+
