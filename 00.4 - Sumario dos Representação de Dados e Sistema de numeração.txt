@@ -35,6 +35,21 @@ Principais sistemas:
  - Hexadecimal (base 16) – comum em programação e depuração
 
 
+Representação de Dados em Hardware:
+
+ - Codificação em circuitos digitais
+
+ - Portas lógicas
+
+ - Flip-flops e registradores
+
+ - Barramentos de dados (data bus)
+
+ - Codificadores e decodificadores binários
+
+ - Multiplexadores (MUX) e demultiplexadores (DEMUX)
+
+
 Representação de Números Inteiros
 
  - Inteiros sem sinal (unsigned)
