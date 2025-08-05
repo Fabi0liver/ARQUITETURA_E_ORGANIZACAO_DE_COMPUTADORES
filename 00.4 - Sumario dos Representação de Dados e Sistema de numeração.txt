@@ -127,6 +127,19 @@ Aplicações Práticas e Avançadas
  - Representações em arquiteturas diferentes (ex: ARM vs x86)
 
 
+Representação de Dados em Redes e Comunicação:
+
+ - Codificação para transmissão de dados (ex: Manchester, NRZ)
+
+ - Protocolos e camadas de codificação (ex: Base64, JSON, Protobuf)
+
+ - Compactação para transmissão
+
+ - Serialização para rede: JSON, XML, BSON, MessagePack
+
+
+
+
 
 
 
