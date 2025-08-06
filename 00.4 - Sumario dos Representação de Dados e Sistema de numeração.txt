@@ -34,20 +34,7 @@ Principais sistemas:
 
  - Hexadecimal (base 16) – comum em programação e depuração
 
-
-Representação de Dados em Hardware:
-
- - Codificação em circuitos digitais
-
- - Portas lógicas
-
- - Flip-flops e registradores
-
- - Barramentos de dados (data bus)
-
- - Codificadores e decodificadores binários
-
- - Multiplexadores (MUX) e demultiplexadores (DEMUX)
+ - Conversões entre bases
 
 
 Representação de Números Inteiros
@@ -81,6 +68,21 @@ Representação de Caracteres e Textos
  - Relação entre representação binária e textual
 
 
+Representação de Dados em Hardware:
+
+ - Codificação em circuitos digitais
+
+ - Portas lógicas
+
+ - Flip-flops e registradores
+
+ - Barramentos de dados (data bus)
+
+ - Codificadores e decodificadores binários
+
+ - Multiplexadores (MUX) e demultiplexadores (DEMUX)
+
+
 Representação e Manipulação de Dados em Linguagens de Programação:
 
  - Tipos primitivos em linguagens como C, Python e Java
@@ -101,6 +103,7 @@ Compactação e Codificação de Dados:
  - Tipos de compressão: Lossless (sem perda): ZIP, PNG ; Lossy (com perda): MP3, JPEG
 
  - Conceito de entropia e eficiência de codificação (base para teoria da informação)
+
 
 
 Codificações Específicas em Aplicações:
