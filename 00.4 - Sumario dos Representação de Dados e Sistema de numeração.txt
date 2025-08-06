@@ -104,6 +104,7 @@ Compactação e Codificação de Dados:
 
  - Conceito de entropia e eficiência de codificação (base para teoria da informação)
 
+ - Teoria da informação de Shannon
 
 
 Codificações Específicas em Aplicações:
@@ -115,6 +116,17 @@ Codificações Específicas em Aplicações:
  - IEEE 754 NaN, infinito, subnormais (casos especiais)
 
  - Codificação de caracteres em sistemas legados
+
+
+Representação de Dados em Redes e Comunicação:
+
+ - Codificação para transmissão de dados (ex: Manchester, NRZ)
+
+ - Protocolos e camadas de codificação (ex: Base64, JSON, Protobuf)
+
+ - Compactação para transmissão
+
+ - Serialização para rede: JSON, XML, BSON, MessagePack
 
 
 Aplicações Práticas e Avançadas
@@ -130,12 +142,3 @@ Aplicações Práticas e Avançadas
  - Representações em arquiteturas diferentes (ex: ARM vs x86)
 
 
-Representação de Dados em Redes e Comunicação:
-
- - Codificação para transmissão de dados (ex: Manchester, NRZ)
-
- - Protocolos e camadas de codificação (ex: Base64, JSON, Protobuf)
-
- - Compactação para transmissão
-
- - Serialização para rede: JSON, XML, BSON, MessagePack
