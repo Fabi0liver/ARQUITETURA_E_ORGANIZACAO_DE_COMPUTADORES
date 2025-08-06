@@ -136,12 +136,3 @@ Representação de Dados em Redes e Comunicação:
  - Compactação para transmissão
 
  - Serialização para rede: JSON, XML, BSON, MessagePack
-
-
-
-
-
-
-
-
-
