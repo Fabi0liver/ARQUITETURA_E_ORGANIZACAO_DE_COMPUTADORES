@@ -70,11 +70,10 @@ Representação de Caracteres e Textos:
 
 Representação de Dados Multimídia:
 
- - Imagens: Pixels, profundidade de cor, modelos de cor (RGB, CMYK, HSV), Imagem raster vs vetorial, Formatos e ]
-  compressões (BMP, PNG, JPEG, SVG)
+ - Imagens: Pixels e resolução, profundidade de cor, modelos de cor (RGB, CMYK, HSV / HSL), Tipos de imagem (Raster (bitmap) e Vetorial), Formatos e compressões (BMP, PNG, JPEG, SVG)
 
- - Áudio: Amostragem e quantização, Sample rate e bit depth, PCM, MIDI, Formatos e compressões (WAV, MP3, FLAC, 
-  OGG)
+ - Áudio: Amostragem, Quantização, Taxa de amostragem (Sample rate), Profundidade de bits (bit depth), Modos de 
+  codificação (PCM, MIDI), Formatos e compressões (WAV, MP3, FLAC, OGG)
 
  - Vídeo: Frames, frame rate, codecs, Compressão temporal e espacial, Formatos (MP4, MKV, AVI)
 
