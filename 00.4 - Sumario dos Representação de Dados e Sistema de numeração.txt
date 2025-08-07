@@ -23,16 +23,15 @@ Sistemas de Numeração:
 
  - Diferença entre sistemas posicionais e não posicionais
 
+ - Principais sistemas:
 
-Principais sistemas:
+    Decimal (base 10) – o sistema humano
 
- - Decimal (base 10) – o sistema humano
+    Binário (base 2) – o sistema do computador
 
- - Binário (base 2) – o sistema do computador
+    Octal (base 8) – usado historicamente
 
- - Octal (base 8) – usado historicamente
-
- - Hexadecimal (base 16) – comum em programação e depuração
+    Hexadecimal (base 16) – comum em programação e depuração
 
  - Conversões entre bases
 
@@ -157,8 +156,6 @@ Aplicações Práticas e Avançadas
  - Representações em IA (quantização, encoding)
 
  - Representações em banco de dados (Avro, Parquet)
-
- - Códigos de correção de erro: Hamming, CRC, ECC
 
  - Códigos de correção de erro: Hamming, CRC, ECC
 
