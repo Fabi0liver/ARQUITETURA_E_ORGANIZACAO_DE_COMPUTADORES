@@ -79,7 +79,8 @@ Representação de Dados Multimídia:
  - Vídeo: Frames (quadros), Frame rate, Codecs de vídeo, Compressão (temporal e espacial), Formatos (MP4, MKV, AVI, 
   MOV)
 
- - Interseções: Codificação multimodal, Contêineres multimídia, Esteganografia, Dados sensoriais (LiDAR: mapeamento 3D com luz, Imagens térmicas:infravermelho, Câmeras RAW: captura de dados sem compressão)
+ - Interseções: Codificação multimodal, Contêineres multimídia, Esteganografia, Dados sensoriais (LiDAR: mapeamento 
+  3D com luz, Imagens térmicas:infravermelho, Câmeras RAW: captura de dados sem compressão)
 
 
 Representação de Dados em Hardware:
@@ -160,3 +161,6 @@ Aplicações Práticas e Avançadas
  - Códigos de correção de erro: Hamming, CRC, ECC
 
  - Códigos de correção de erro: Hamming, CRC, ECC
+
+
+Conclusão Geral Sobre o Assunto
