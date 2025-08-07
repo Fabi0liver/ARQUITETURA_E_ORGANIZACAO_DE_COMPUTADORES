@@ -59,13 +59,26 @@ Representação de Números Reais (Ponto Flutuante):
  - Erros de representação (ex: 0.1 em binário)
 
 
-Representação de Caracteres e Textos
+Representação de Caracteres e Textos:
 
  - Tabelas de codificação: ASCII, ISO-8859, Unicode (UTF-8, UTF-16, UTF-32)
 
  - Caracteres de controle
 
  - Relação entre representação binária e textual
+
+
+Representação de Dados Multimídia:
+
+ - Imagens: Pixels, profundidade de cor, modelos de cor (RGB, CMYK, HSV), Imagem raster vs vetorial, Formatos e ]
+  compressões (BMP, PNG, JPEG, SVG)
+
+ - Áudio: Amostragem e quantização, Sample rate e bit depth, PCM, MIDI, Formatos e compressões (WAV, MP3, FLAC, 
+  OGG)
+
+ - Vídeo: Frames, frame rate, codecs, Compressão temporal e espacial, Formatos (MP4, MKV, AVI)
+
+ - Interseções: Codificação multimodal, Contêineres, Esteganografia, Dados sensoriais (LiDAR, térmico)
 
 
 Representação de Dados em Hardware:
