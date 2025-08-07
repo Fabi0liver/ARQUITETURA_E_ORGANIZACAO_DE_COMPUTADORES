@@ -133,12 +133,16 @@ Aplicações Práticas e Avançadas
 
  - Leitura e escrita em memória
 
- - Representação de dados em linguagens de programação
-
  - Alinhamento de dados e estruturas (estrutura de memória)
 
  - Big Endian vs Little Endian
 
  - Representações em arquiteturas diferentes (ex: ARM vs x86)
 
+ - Representações em IA (quantização, encoding)
 
+ - Representações em banco de dados (Avro, Parquet)
+
+ - Códigos de correção de erro: Hamming, CRC, ECC
+
+ - Códigos de correção de erro: Hamming, CRC, ECC
