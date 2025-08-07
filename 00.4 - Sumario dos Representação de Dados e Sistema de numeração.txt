@@ -76,9 +76,10 @@ Representação de Dados Multimídia:
  - Áudio: Amostragem (sampling), Quantização, Taxa de amostragem (Sample rate), Profundidade de bits (bit depth), 
   Modos de codificação (PCM, MIDI), Formatos e compressões (WAV, MP3, FLAC, OGG)
 
- - Vídeo: Frames, frame rate, codecs, Compressão temporal e espacial, Formatos (MP4, MKV, AVI)
+ - Vídeo: Frames (quadros), Frame rate, Codecs de vídeo, Compressão (temporal e espacial), Formatos (MP4, MKV, AVI, 
+  MOV)
 
- - Interseções: Codificação multimodal, Contêineres, Esteganografia, Dados sensoriais (LiDAR, térmico)
+ - Interseções: Codificação multimodal, Contêineres multimídia, Esteganografia, Dados sensoriais (LiDAR: mapeamento 3D com luz, Imagens térmicas:infravermelho, Câmeras RAW: captura de dados sem compressão)
 
 
 Representação de Dados em Hardware:
