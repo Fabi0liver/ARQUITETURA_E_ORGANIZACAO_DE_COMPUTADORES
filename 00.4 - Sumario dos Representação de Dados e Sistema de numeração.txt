@@ -1,8 +1,7 @@
                        REPRESENTAÇÃO DE DADOS E SISTEMAS DE NUMERAÇÃO 
 
 
-Introdução ao Sistema de Numeração de dados
-
+Introdução a Representação de dados e o Sistema de Numeração na computação
 
 O que são dados (definição geral)
 
