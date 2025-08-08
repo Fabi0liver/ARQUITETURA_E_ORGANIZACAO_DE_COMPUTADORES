@@ -34,3 +34,16 @@
  Dá pra pensar também no dado como uma peça de quebra-cabeça e a informação como a imagem completa. Uma peça sozinha não diz muito (pode ser só um pedacinho azul). Mas ao juntar com outras e ver que forma o céu de uma paisagem, aí sim você compreende o todo. Essa diferença é o que permite que sistemas de informação, bancos de dados e algoritmos façam sentido: eles transformam dados em informação quando ajudam a resolver um problema ou responder uma pergunta.
 
  Por isso, entender a diferença entre dado e informação não é só uma questão teórica, é fundamental para qualquer pessoa que deseje trabalhar com tecnologia, ciência, negócios ou até educação. Saber como coletar bons dados é um começo, mas saber como transformá-los em informações relevantes é o que realmente faz a diferença no mundo digital e no nosso dia a dia. E esse caminho começa com a pergunta certa: "O que esse dado realmente quer me dizer?"
+
+
+
+                            "Como os Dados São Representados em Computadores"
+
+
+ Todo computador, no fundo, é uma máquina elétrica feita de milhões (ou bilhões) de pequenos interruptores chamados transistores, que podem estar em dois estados: ligado (1) ou desligado (0). Esses dois estados formam a base do sistema binário, a linguagem nativa dos computadores. Então, quando dizemos que os dados são representados no computador, estamos dizendo que tudo — absolutamente tudo — é traduzido para longas sequências de zeros e uns. Uma imagem, um som, um número ou uma letra... tudo é convertido para essa forma básica para que o computador consiga armazenar, processar e entender.
+
+Pensa num cofre que só aceita combinações feitas com dois botões: um branco (0) e um preto (1). Se você quiser guardar uma mensagem lá dentro, precisa convertê-la em uma sequência de botões apertados: branco, preto, preto, branco… e por aí vai. Isso é o que o computador faz: ele não armazena "amor", "banana" ou "42" diretamente — ele guarda os padrões binários que representam essas coisas. Por exemplo, a letra A pode ser “01000001” em código binário segundo a tabela ASCII, que é um dos padrões de codificação de texto mais usados.
+
+Mas não é só texto que vira código. Sons são transformados em ondas digitais, imagens são convertidas em matrizes de pixels, vídeos são formados por sequências de quadros e até mesmo movimentos do mouse são registrados como valores numéricos em tempo real. Tudo isso precisa passar por regras de representação, como formatos de arquivo, codificações e padrões. É como se existissem várias “línguas binárias” dentro da grande linguagem binária — cada tipo de dado segue um jeito específico de ser representado, mas sempre termina em 0s e 1s no final da cadeia.
+
+Portanto, podemos dizer que a representação de dados em computadores é uma tradução contínua do mundo real para uma lógica elétrica binária. Isso permite que a máquina, que não tem olhos, ouvidos ou emoções, possa “perceber” informações e agir sobre elas. Esse processo é invisível para o usuário final, mas é a base de tudo o que vemos funcionando.
