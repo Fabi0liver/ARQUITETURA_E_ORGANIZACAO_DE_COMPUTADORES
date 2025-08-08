@@ -13,8 +13,7 @@
 
 
 
-                                      "O que são Dados Digitais?"
-
+                                        "O que são Dados Digitais?"
 
  Quando ouvimos a palavra “dados”, é fácil pensar em números, tabelas ou estatísticas. E sim, isso também é dado. Mas na computação, o conceito vai muito além: dados são qualquer tipo de informação que pode ser registrada, transmitida e processada por um computador. Pode ser o nome de uma pessoa, a cor de um pixel, uma música, um sensor de temperatura ou até o movimento de um personagem em um jogo. Tudo isso (por mais diferente que pareça) vira dados digitais quando entra no universo computacional.
 
@@ -23,3 +22,15 @@
  É importante notar que dados, sozinhos, não significam muito. Por exemplo, um número “42” solto não diz muita coisa, certo? Ele pode ser a idade de alguém, uma medida de temperatura ou o resultado de uma conta. Por isso, os dados precisam de contexto para se tornarem úteis é o que chamamos de informação. E aqui está a mágica: o computador é uma máquina incrível para lidar com dados, mas quem dá sentido a eles somos nós. Ele armazena, manipula, organiza… mas interpretar e transformar isso em conhecimento é tarefa humana.
 
  Entender o que são dados é como descobrir os ingredientes de uma receita antes de começar a cozinhar. Antes de programar, criar gráficos ou desenvolver sistemas, a gente precisa saber quais dados temos em mãos, o que eles representam e como queremos usá-los. É a partir dessa base que tudo acontece no mundo da computação. 
+
+
+
+                                 "Diferença entre Dado e Informação"
+
+Imagine que você está andando por uma trilha e encontra várias pedras no caminho. Cada pedra isolada, com seu formato, peso e cor, pode ser comparada a um dado: algo que existe, que foi coletado, mas que ainda não está organizado nem faz muito sentido por si só. Agora, se você pega essas pedras, monta um círculo no chão e percebe que elas indicam uma direção ou formam um desenho, isso já é informação. Ou seja, dado é o conteúdo bruto; informação é o dado interpretado, com significado dentro de um contexto.
+
+No universo da computação, esse raciocínio é essencial. Por exemplo: um arquivo de texto pode conter vários dados como nomes, números e datas. Mas só quando você lê esse texto e entende que é uma lista de presença, com quem faltou e quem compareceu, é que esses dados se tornam informação útil. O computador pode manipular dados com facilidade, mas ele não entende o significado — quem interpreta é você. Ele organiza, processa e exibe, mas o sentido nasce da interação entre o dado e o nosso olhar humano.
+
+Dá pra pensar também no dado como uma peça de quebra-cabeça e a informação como a imagem completa. Uma peça sozinha não diz muito — pode ser só um pedacinho azul. Mas ao juntar com outras e ver que forma o céu de uma paisagem, aí sim você compreende o todo. Essa diferença é o que permite que sistemas de informação, bancos de dados e algoritmos façam sentido: eles transformam dados em informação quando ajudam a resolver um problema ou responder uma pergunta.
+
+Por isso, entender a diferença entre dado e informação não é só uma questão teórica — é fundamental para qualquer pessoa que deseje trabalhar com tecnologia, ciência, negócios ou até educação. Saber como coletar bons dados é um começo, mas saber como transformá-los em informações relevantes é o que realmente faz a diferença no mundo digital e no nosso dia a dia. E esse caminho começa com a pergunta certa: "O que esse dado realmente quer me dizer?"
