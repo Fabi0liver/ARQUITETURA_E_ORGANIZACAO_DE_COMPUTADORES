@@ -164,7 +164,7 @@ Historicamente, o octal foi bastante usado porque facilita a conversão de núme
 
                          "Conversões Entre os Sistemas de Numeração"
 
- Em nosso dia a dia, estamos acostumados a pensar e fazer contas usando números no sistema decimal. No entanto, dentro de um computador, os números são armazenados e processados de forma diferente — normalmente em binário. Quando precisamos que informações fluam de um contexto para outro, como de uma linguagem humana para a “linguagem das máquinas” e vice-versa, é necessário fazer uma tradução numérica. É aí que entra a conversão entre sistemas de numeração.
+ Em nosso dia a dia, estamos acostumados a pensar e fazer contas usando números no sistema decimal. No entanto, dentro de um computador, os números são armazenados e processados de forma diferente (normalmente em binário). Quando precisamos que informações fluam de um contexto para outro, como de uma linguagem humana para a “linguagem das máquinas” e vice-versa, é necessário fazer uma tradução numérica. É aí que entra a conversão entre sistemas de numeração.
 
  Pense nesses sistemas como diferentes idiomas: o decimal é como o português, o binário é o inglês, o octal é o francês e o hexadecimal é o japonês. Todos expressam ideias semelhantes, mas cada um com sua gramática e vocabulário próprios. A conversão é como ter um intérprete que consegue transformar a frase (ou número) de um idioma para outro sem perder o sentido original.
 
