@@ -113,3 +113,15 @@ Se quisermos fazer uma analogia final, o yottabyte seria um planeta inteiro feit
 
 
 
+                              "Conceito de Sistema de Numeração"
+
+Quando falamos em sistema de numeração, estamos nos referindo a um conjunto de regras e símbolos usados para representar números. É como uma linguagem matemática: cada sistema tem seu próprio “alfabeto” (os dígitos), suas próprias regras de construção e sua própria lógica de contagem. O sistema decimal, que usamos no dia a dia, é um exemplo: ele tem dez dígitos (0 a 9) e, a partir deles, conseguimos escrever qualquer número. Mas ele não é o único — existem vários sistemas, e cada um é útil em contextos diferentes.
+
+Para entender melhor, imagine que números são como receitas culinárias. O prato final (o valor numérico) pode ser o mesmo, mas os ingredientes (os dígitos) e o modo de preparo (as regras do sistema) mudam de acordo com o “país” ou contexto onde você está. No sistema decimal, contamos de 0 a 9 e, quando chegamos ao 10, “voltamos” ao zero e aumentamos a casa seguinte. Já em um sistema como o binário, usado pelos computadores, só existem dois dígitos — 0 e 1 — e a contagem segue outro ritmo.
+
+O mais interessante é que, independentemente do sistema escolhido, a essência é a mesma: todos servem para representar quantidades de forma organizada e compreensível para quem está usando. No caso dos computadores, o sistema de numeração não é apenas uma questão de escolha cultural, como no nosso decimal — ele é uma necessidade física, pois a máquina trabalha com dois estados elétricos, que se traduzem naturalmente para o sistema binário. E é essa ligação entre matemática e eletrônica que vamos explorar a seguir.
+
+Então, entender o conceito de sistema de numeração é como receber um “passaporte” para visitar diferentes mundos matemáticos. Cada sistema é um país com seu próprio idioma e regras, e, ao dominá-los, você ganha a habilidade de traduzir números de um para o outro. Isso será fundamental para o próximo passo da nossa jornada: conhecer de perto os principais sistemas de numeração usados na computação, como o decimal, binário, octal e hexadecimal.
+
+
+
