@@ -141,9 +141,9 @@ Se quisermos fazer uma analogia final, o yottabyte seria um planeta inteiro feit
 Acredita-se que o sistema decimal tenha se popularizado devido ao fato de termos dez dedos nas mãos, o que tornou natural agrupar e contar nessa base. É o sistema dominante em quase todas as áreas da vida humana, desde transações financeiras até medições de distância, mas no mundo da computação ele é apenas um dos muitos “dialetos” numéricos possíveis.
 
 
- * Sistema Binário (Base 2): É o idioma nativo dos computadores. Ele utiliza apenas dois símbolos: 0 e 1. Cada posição de um número binário corresponde a uma potência de 2, assim como no sistema decimal usamos potências de 10. Por exemplo, o número binário 1011 equivale a (1 × 2³) + (0 × 2²) + (1 × 2¹) + (1 × 2⁰), ou seja, 11 no decimal.
+ * Sistema Binário (Base 2): É o idioma nativo dos computadores. Ele utiliza apenas dois símbolos (0 e 1). Cada posição de um número binário corresponde a uma potência de 2, assim como no sistema decimal usamos potências de 10. Por exemplo, o número binário 1011 equivale a (1 × 2³) + (0 × 2²) + (1 × 2¹) + (1 × 2⁰), ou seja, 11 no decimal.
 
-A razão para os computadores adotarem o sistema binário é simples: a eletrônica digital trabalha com dois estados básicos — ligado e desligado, verdadeiro e falso, alto e baixo — que podem ser representados de forma perfeita pelos dígitos 0 e 1. Esse sistema é a base de toda a lógica computacional e da arquitetura de processadores.
+A razão para os computadores adotarem o sistema binário é simples: a eletrônica digital trabalha com dois estados básicos (ligado e desligado, verdadeiro e falso, alto e baixo) que podem ser representados de forma perfeita pelos dígitos 0 e 1. Esse sistema é a base de toda a lógica computacional e da arquitetura de processadores.
 
 
  * Sistema Octal (Base 8): O sistema octal utiliza oito símbolos, de 0 a 7. Ele é menos usado no cotidiano, mas já foi muito importante na programação e eletrônica. Assim como o decimal e o binário, é um sistema posicional, mas cada posição representa uma potência de 8. Por exemplo, o número octal 157 equivale a (1 × 8²) + (5 × 8¹) + (7 × 8⁰), ou seja, 111 no decimal.
@@ -153,13 +153,12 @@ Historicamente, o octal foi bastante usado porque facilita a conversão de núme
 
  * Sistema Hexadecimal (Base 16): Esse sistema de numeração utiliza dezesseis símbolos: os dígitos de 0 a 9 e as letras de A a F (que representam os valores de 10 a 15 no decimal). Ele também é posicional, mas cada posição representa uma potência de 16. Por exemplo, o número hexadecimal 3F equivale a (3 × 16¹) + (15 × 16⁰), ou seja, 63 no decimal.
 
-
  O hexadecimal é extremamente popular em computação porque é muito compacto e traduz-se facilmente para o binário: cada dígito hexadecimal corresponde exatamente a quatro bits. Isso o torna ideal para representar endereços de memória, valores de cores em programação gráfica e instruções em linguagens de baixo nível.
 
 
-Os sistemas de numeração são, em essência, formas diferentes de contar e representar valores, cada uma adequada a um contexto específico. Alguns são mais práticos para uso humano, enquanto outros são perfeitos para a lógica interna das máquinas. Entender esses sistemas nos permite transitar entre o mundo humano e o mundo da computação com mais facilidade, traduzindo ideias de um “idioma” numérico para outro sem perder o sentido.
+ Os sistemas de numeração são, em essência, formas diferentes de contar e representar valores, cada uma adequada a um contexto específico. Alguns são mais práticos para uso humano, enquanto outros são perfeitos para a lógica interna das máquinas. Entender esses sistemas nos permite transitar entre o mundo humano e o mundo da computação com mais facilidade, traduzindo ideias de um “idioma” numérico para outro sem perder o sentido.
 
-Assim, conhecer bem os sistemas de numeração é como ter um passaporte para várias culturas matemáticas. No dia a dia, usamos o decimal, mas quando conversamos com computadores, trabalhamos com o binário, e muitas vezes com octal e hexadecimal como “atalhos” para simplificar a comunicação. É esse domínio que abre as portas para compreender profundamente como a informação é processada no mundo digital.
+ Assim, conhecer bem os sistemas de numeração é como ter um passaporte para várias culturas matemáticas. No dia a dia, usamos o decimal, mas quando conversamos com computadores, trabalhamos com o binário, e muitas vezes com octal e hexadecimal como “atalhos” para simplificar a comunicação. É esse domínio que abre as portas para compreender profundamente como a informação é processada no mundo digital.
 
 
 
