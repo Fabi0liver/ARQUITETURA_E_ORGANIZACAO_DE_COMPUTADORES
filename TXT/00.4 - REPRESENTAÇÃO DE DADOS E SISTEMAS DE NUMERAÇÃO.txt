@@ -311,6 +311,33 @@ A beleza e também o desafio está no fato de que essa tradução não é única
    Esse padrão detalha como dividir os bits entre sinal, expoente e mantissa, garantindo que a representação seja eficiente e que os cálculos sejam consistentes entre diferentes máquinas.
 
 
+ * Componentes do formato IEEE 754:
+
+   No formato IEEE 754, um número em ponto flutuante é dividido em três partes principais: o bit de sinal, o expoente e a mantissa (ou fração). O bit de sinal indica se o número é positivo ou negativo. O expoente, que utiliza um esquema chamado bias para poder representar valores negativos e positivos, indica a posição da vírgula dentro do número, definindo sua escala. Já a mantissa guarda os dígitos significativos do número, a parte que realmente carrega a “informação detalhada” da magnitude.
+
+   Essa combinação permite representar números de maneira compacta e flexível, aproximando o valor real da forma mais precisa possível dentro do limite de bits disponíveis.
+
+   A lógica por trás do bias é transformar o expoente, que pode ser negativo ou positivo, em um valor armazenado que é sempre positivo, facilitando a comparação e operações internas do hardware. A mantissa é normalizada para manter a máxima precisão possível, com o bit mais significativo sempre implícito.
+
+
+ * Precisão e arredondamentos:
+
+   Como a quantidade de bits é finita, muitos números reais não podem ser representados exatamente. Por exemplo, o número decimal 0,1 não tem uma representação binária exata, o que gera pequenos erros de arredondamento. Esses erros podem se acumular em cálculos complexos, levando a resultados inesperados.
+
+   Para minimizar esses problemas, o padrão IEEE define diferentes modos de arredondamento: arredondar para zero, para infinito, para o número par mais próximo, entre outros. Cada modo tem suas aplicações específicas e efeitos diferentes sobre a precisão dos cálculos.
+
+   Compreender esses arredondamentos é importante para quem trabalha com algoritmos que exigem alta precisão, como simulações financeiras ou científicas, onde até um pequeno erro pode gerar impactos significativos.
+
+
+ * Erros de representação:
+
+   Além dos erros de arredondamento, os números em ponto flutuante sofrem de erros chamados de truncamento (quando parte do número é descartada) e cancelamento numérico (quando subtraímos dois números muito próximos, perdendo precisão).
+
+   Esses problemas são consequência direta do limite de bits e da forma como o número é representado. Por isso, alguns cálculos que parecem simples na matemática real podem se tornar difíceis no mundo do ponto flutuante.
+
+   Saber identificar esses erros é crucial para evitar bugs difíceis de detectar e garantir que os resultados numéricos sejam confiáveis dentro dos limites do sistema computacional.
+
+
 
  
 
