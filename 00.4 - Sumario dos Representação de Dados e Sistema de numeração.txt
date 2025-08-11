@@ -13,9 +13,6 @@ O que são dados (definição geral)
 Unidades de medida: bit, byte, kilobyte, megabyte, gigabyte, etc.
 
 
-Codificação e abstração no sistema de numeração e representação de dados
-
-
 Sistemas de Numeração:
 
  - Conceito de sistema de numeração
@@ -27,11 +24,16 @@ Sistemas de Numeração:
  - Conversões entre bases
 
 
+
 Representação de Números Inteiros
+
+ - A interpretação dos bits (como o computador entende aquele padrão binário)
+
+ - O intervalo de valores possíveis (mínimo e máximo que podem ser representados)
 
  - Inteiros sem sinal (unsigned)
 
- - Inteiros com sinal (signed): Sinal e magnitude, Complemento de 1, Complemento de 2 (mais comum)
+ - Inteiros com sinal (signed)
 
  - Overflow e underflow
 
