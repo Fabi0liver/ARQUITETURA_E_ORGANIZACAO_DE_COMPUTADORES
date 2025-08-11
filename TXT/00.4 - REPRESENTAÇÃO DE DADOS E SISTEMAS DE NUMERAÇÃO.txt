@@ -284,6 +284,13 @@ A beleza e também o desafio está no fato de que essa tradução não é única
 
 
 
+                         "Representação de Números Reais (Ponto Flutuante)"
+
+ No nosso dia a dia, usamos muitos números que não são inteiros: preços com centavos, medidas com frações, resultados de cálculos científicos, entre outros. Representar esses números no computador não é tão simples quanto guardar inteiros, porque eles podem ter casas decimais e uma escala muito maior ou menor. Por isso, surgem métodos especiais para armazenar esses valores, permitindo que a máquina lide com números reais de forma aproximada, porém eficiente.
+
+ Esse método principal é chamado representação em ponto flutuante. Imagine um número como um valor multiplicado por uma potência de 10 ( por exemplo, 3,14 x 10^2 para representar 314). No mundo dos computadores, usamos o mesmo conceito, mas com base 2, e o número é dividido em partes que descrevem o valor e a escala ao mesmo tempo. Essa técnica é poderosa, mas vem com seus desafios e limitações, que vamos explorar juntos.
+
+
 
  
 
