@@ -286,9 +286,29 @@ A beleza e também o desafio está no fato de que essa tradução não é única
 
                          "Representação de Números Reais (Ponto Flutuante)"
 
- No nosso dia a dia, usamos muitos números que não são inteiros: preços com centavos, medidas com frações, resultados de cálculos científicos, entre outros. Representar esses números no computador não é tão simples quanto guardar inteiros, porque eles podem ter casas decimais e uma escala muito maior ou menor. Por isso, surgem métodos especiais para armazenar esses valores, permitindo que a máquina lide com números reais de forma aproximada, porém eficiente.
+ Enquanto os números inteiros são aqueles que contamos com facilidade no dia a dia (1, 2, 3, e assim por diante) os números reais envolvem uma gama muito maior, incluindo os decimais e frações, como 3,14, -0,001 ou 2,71828. Na computação, representar esses números com precisão é um desafio diferente e muito interessante, pois o computador precisa lidar com uma quantidade infinita de valores possíveis, mas tem espaço limitado para armazená-los.
 
- Esse método principal é chamado representação em ponto flutuante. Imagine um número como um valor multiplicado por uma potência de 10 ( por exemplo, 3,14 x 10^2 para representar 314). No mundo dos computadores, usamos o mesmo conceito, mas com base 2, e o número é dividido em partes que descrevem o valor e a escala ao mesmo tempo. Essa técnica é poderosa, mas vem com seus desafios e limitações, que vamos explorar juntos.
+ Para resolver isso, usamos uma técnica chamada representação em ponto flutuante, que consegue equilibrar alcance e precisão, permitindo que os computadores trabalhem com valores muito grandes ou muito pequenos, além dos decimais, com eficiência.
+
+ Mas como essa mágica acontece? Como o computador traduz um número como 0,000123 ou 1234567,89 para aquele mundo binário de zeros e uns? É isso que vamos explorar a seguir, começando por entender as diferenças entre representações mais simples, passando pelo padrão que domina o mercado e seus detalhes internos.
+
+
+ * Ponto fixo vs ponto flutuante:
+
+   A representação em ponto fixo é a mais simples: nela, o computador reserva um número fixo de bits para a parte  inteira e um número fixo para a parte decimal, como se tivesse uma vírgula fixa dentro do número. Essa abordagem é eficiente para aplicações onde a faixa de valores é limitada e conhecida, como em sistemas embarcados que controlam sensores ou em áudio digital.
+
+   No entanto, ponto fixo não é flexível para valores muito grandes ou muito pequenos, porque o local da “vírgula” é fixo: o que pode gerar perda de precisão ou incapacidade de representar certos números.
+
+   Já o ponto flutuante é uma forma mais sofisticada que permite que a “vírgula” se mova, ou “flutue”, dentro do número. Isso é possível porque a representação inclui um expoente que indica onde a vírgula está, permitindo alcançar uma enorme faixa de valores com precisão variável. Essa flexibilidade torna o ponto flutuante essencial em cálculos científicos, gráficos 3D, simulações financeiras e qualquer área que exija uma representação ampla e precisa dos números reais.
+
+
+ * IEEE 754 (Padrão de ponto flutuante):
+
+   Para que todos os computadores “falem a mesma língua” na hora de representar números reais, foi criado o padrão IEEE 754. Ele define formatos para armazenar números em ponto flutuante de forma padronizada. Os dois formatos mais usados são o de 32 bits (chamado float) e o de 64 bits (double). O formato float é mais compacto e rápido, ideal para aplicações que não exigem alta precisão, enquanto o double oferece maior precisão e é padrão em cálculos científicos.
+
+   Além desses, existem formatos menos comuns, como o half-precision (16 bits), usado em gráficos e machine learning para economizar memória, e formatos estendidos que alguns processadores suportam para aumentar ainda mais a precisão e o alcance dos números.
+
+   Esse padrão detalha como dividir os bits entre sinal, expoente e mantissa, garantindo que a representação seja eficiente e que os cálculos sejam consistentes entre diferentes máquinas.
 
 
 
