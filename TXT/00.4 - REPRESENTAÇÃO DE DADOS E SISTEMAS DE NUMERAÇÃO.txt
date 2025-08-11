@@ -262,7 +262,7 @@ A beleza e também o desafio está no fato de que essa tradução não é única
 
  * Intervalo de valores possíveis por número de bits:
 
-   O intervalo de números que podemos representar depende diretamente do número de bits e se estamos usando sinal ou não. Com N bits sem sinal, o intervalo vai de 0 a 2^N − 1 Com sinal (em complemento de dois), vai de  −2^(N−1)  a  2^(N−1) − 1.
+   O intervalo de números que podemos representar depende diretamente do número de bits e se estamos usando sinal ou não. Com N bits sem sinal, o intervalo vai de 0 a 2ⁿ − 1 Com sinal (em complemento de dois), vai de  −2ⁿ⁻¹  a  2ⁿ⁻¹ − 1.
 
    Por exemplo, 8 bits sem sinal representam 0 a 255, enquanto 8 bits com sinal representam −128 a 127. Essa diferença é fundamental ao escolher o tipo de dado correto em uma linguagem de programação.
 
