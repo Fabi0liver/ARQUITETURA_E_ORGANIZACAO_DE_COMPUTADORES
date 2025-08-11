@@ -27,17 +27,23 @@ Sistemas de Numeração:
 
 Representação de Números Inteiros
 
- - A interpretação dos bits (como o computador entende aquele padrão binário)
+ - Representação binária e interpretação de padrões de bits. (como o computador entende aquele padrão binário)
 
- - O intervalo de valores possíveis (mínimo e máximo que podem ser representados)
+ - Importância do número de bits disponíveis.
+
+ - Diferença entre valor lógico e valor interpretado (como o hardware "entende" os bits).
 
  - Inteiros sem sinal (unsigned)
 
  - Inteiros com sinal (signed)
 
- - Overflow e underflow
+ - Questões Aritméticas e Lógicas: Overflow e underflow, Carry e Borrow, Sign Extension, Truncamento e perda de 
+  dados ao reduzir bits
 
  - Intervalo de valores possíveis por número de bits (ex: 8 bits, 16 bits)
+
+ - Representação Interna e Hardware: Endianess (little-endian x big-endian), Interpretação pela ULA e 
+  registradores.
 
 
 Representação de Números Reais (Ponto Flutuante):
