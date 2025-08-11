@@ -262,7 +262,7 @@ A beleza e também o desafio está no fato de que essa tradução não é única
 
  * Intervalo de valores possíveis por número de bits:
 
-   O intervalo de números que podemos representar depende diretamente do número de bits e se estamos usando sinal ou não. Com N bits sem sinal, o intervalo vai de 0 a  2^N − 1 Com sinal (em complemento de dois), vai de  −2^(N−1)  a  2^(N−1) − 1.
+   O intervalo de números que podemos representar depende diretamente do número de bits e se estamos usando sinal ou não. Com N bits sem sinal, o intervalo vai de 0 a 2^N − 1 Com sinal (em complemento de dois), vai de  −2^(N−1)  a  2^(N−1) − 1.
 
    Por exemplo, 8 bits sem sinal representam 0 a 255, enquanto 8 bits com sinal representam −128 a 127. Essa diferença é fundamental ao escolher o tipo de dado correto em uma linguagem de programação.
 
@@ -278,7 +278,7 @@ A beleza e também o desafio está no fato de que essa tradução não é única
    O conhecimento sobre endianess é especialmente importante em comunicação entre sistemas diferentes, onde a ordem de leitura dos bytes pode causar erros de interpretação se não for acordada previamente.
 
 
- A representação de números inteiros é um pilar fundamental da computação, pois todo processamento numérico começa nesse nível básico. Entender como os bits se organizam e são interpretados é o primeiro passo para compreender operações mais complexas e o próprio funcionamento do hardware. O que para nós é um número simples, para o computador é um conjunto de sinais que precisa ser interpretado de acordo com convenções rígidas.
+ Em suma, a representação de números inteiros é um pilar fundamental da computação, pois todo processamento numérico começa nesse nível básico. Entender como os bits se organizam e são interpretados é o primeiro passo para compreender operações mais complexas e o próprio funcionamento do hardware. O que para nós é um número simples, para o computador é um conjunto de sinais que precisa ser interpretado de acordo com convenções rígidas.
 
  Ao dominar esses conceitos, ganhamos uma visão mais clara sobre como a informação realmente “vive” dentro das máquinas. Essa compreensão nos prepara para lidar com questões práticas, desde otimização de memória até depuração de erros complexos, e abre caminho para estudar representações ainda mais sofisticadas, como números de ponto flutuante.
 
