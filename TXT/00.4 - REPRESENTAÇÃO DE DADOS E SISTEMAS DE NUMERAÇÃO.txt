@@ -199,21 +199,20 @@ Mais do que decorar métodos, o importante é compreender a lógica por trás de
 
                          "Representação de Números Inteiros"
 
-Quando falamos de números inteiros no mundo da computação, estamos nos referindo à forma como o computador armazena e processa aqueles valores que conhecemos bem: −3, 0, 42, 1024... Mas, diferente do nosso cérebro, que pensa nesses números de forma natural e direta, o computador precisa “traduzir” tudo para uma sequência de bits — zeros e uns — que, por si só, não têm significado até que alguém (ou algo, no caso, o próprio hardware) interprete esse padrão.
-É como se o computador tivesse uma linguagem secreta formada apenas por duas letras e, para falar de qualquer número, precisasse soletrá-lo usando apenas essas letras.
+ Quando falamos de números inteiros no mundo da computação, estamos nos referindo à forma como o computador armazena e processa aqueles valores que conhecemos bem: −3, 0, 42, 1024... Mas, diferente do nosso cérebro, que pensa nesses números de forma natural e direta, o computador precisa “traduzir” tudo para uma sequência de bits (zeros e uns) que, por si só, não têm significado até que alguém (ou algo, no caso, o próprio hardware) interprete esse padrão. É como se o computador tivesse uma linguagem secreta formada apenas por duas letras e, para falar de qualquer número, precisasse soletrá-lo usando apenas essas letras.
 
-A beleza — e também o desafio — está no fato de que essa tradução não é única. Dependendo de como esses bits são organizados, do espaço que temos para armazená-los e das regras que seguimos, o mesmo padrão de bits pode significar coisas completamente diferentes. Ao longo desta conversa, vamos desvendar como essa “escrita” funciona, quais as armadilhas que ela pode esconder e como o hardware se organiza para lidar com ela.
+A beleza e também o desafio está no fato de que essa tradução não é única. Dependendo de como esses bits são organizados, do espaço que temos para armazená-los e das regras que seguimos, o mesmo padrão de bits pode significar coisas completamente diferentes. Ao longo desta conversa, vamos desvendar como essa “escrita” funciona, quais as armadilhas que ela pode esconder e como o hardware se organiza para lidar com ela.
 
  Para entender bem a representação de números inteiros no computador, vamos passar por alguns temas fundamentais:
 
 
  * Representação binária e interpretação de padrões de bits:
 
-   No coração da representação de números inteiros está o sistema binário. Cada bit pode assumir apenas dois valores: 0 ou 1. Quando juntamos vários bits, formamos padrões binários que podem ser interpretados como números. Por exemplo, o padrão 00001010 pode ser visto como o número 10 (em decimal) quando interpretado como um inteiro sem sinal. O ponto-chave é: o padrão em si não carrega significado fixo — ele só se torna “10” porque estamos escolhendo interpretá-lo dessa forma.
+   No coração da representação de números inteiros está o sistema binário. Cada bit pode assumir apenas dois valores: 0 ou 1. Quando juntamos vários bits, formamos padrões binários que podem ser interpretados como números. Por exemplo, o padrão 00001010 pode ser visto como o número 10 (em decimal) quando interpretado como um inteiro sem sinal. O ponto-chave é: o padrão em si não carrega significado fixo, ele só se torna “10” porque estamos escolhendo interpretá-lo dessa forma.
 
    Essa ideia de interpretação é central na computação. Um mesmo conjunto de bits pode representar um número, uma letra, uma cor ou até mesmo parte de uma música, dependendo das regras que decidimos seguir.
 
-   O computador não “vê” o número da forma que nós vemos. Ele processa sinais elétricos correspondentes a cada bit, e o significado emerge apenas quando aplicamos uma convenção de leitura. Assim, a representação binária é mais como um alfabeto de dois símbolos do que uma lista de números prontos: cabe a nós — ou ao hardware — definir o que cada sequência quer dizer.
+   O computador não “vê” o número da forma que nós vemos. Ele processa sinais elétricos correspondentes a cada bit, e o significado emerge apenas quando aplicamos uma convenção de leitura. Assim, a representação binária é mais como um alfabeto de dois símbolos do que uma lista de números prontos: cabe a nós (ou ao hardware) definir o que cada sequência quer dizer.
 
 
  * Importância do número de bits disponíveis:
@@ -241,6 +240,48 @@ A beleza — e também o desafio — está no fato de que essa tradução não �
    Por exemplo, com 8 bits sem sinal, podemos representar valores de 0 até 255. Isso é útil para contadores, índices de arrays, tamanhos de arquivos e qualquer situação em que o número nunca será negativo.
 
    O benefício dessa abordagem é a simplicidade: a interpretação é direta e a operação aritmética tende a ser mais rápida. No entanto, a ausência de negativos significa que, se houver um erro de overflow, o resultado pode “voltar” para 0 sem aviso, o que exige atenção no desenvolvimento de software.
+
+
+ * Inteiros com sinal (signed):
+
+   Para representar números negativos, precisamos de uma forma diferente. Uma das mais comuns é o complemento de dois, que reserva o bit mais à esquerda (bit mais significativo) para indicar o sinal: 0 para positivo, 1 para negativo. No complemento de dois, a faixa de valores representáveis é assimétrica: com 8 bits, podemos ir de −128 a +127.
+
+   O funcionamento é engenhoso: para obter o valor negativo correspondente a um positivo, invertem-se todos os bits e soma-se 1 ao resultado. Isso permite que operações aritméticas normais funcionem para positivos e negativos sem exigir circuitos extras no processador.
+
+   Essa abordagem é praticamente um padrão universal nos processadores modernos. Ela equilibra eficiência de hardware e facilidade de operação, mas também traz seus próprios desafios, como o fato de que o menor número negativo não tem equivalente positivo representável no mesmo número de bits.
+
+
+ * Questões aritméticas e lógicas: 
+
+   Ao trabalhar com números binários, precisamos lidar com fenômenos inevitáveis. O overflow ocorre quando um cálculo excede o valor máximo representável; o underflow, quando cai abaixo do valor mínimo. Em operações sem sinal, surgem conceitos como carry (vai-um) e borrow (empréstimo) para indicar transbordos nas somas ou subtrações.
+
+   O sign extension é usado quando aumentamos o tamanho de um número com sinal: estendemos o bit de sinal para os novos bits mais à esquerda, garantindo que o valor continue o mesmo. Já o truncamento ocorre ao reduzir o número de bits, o que pode causar perda de dados e mudança drástica no valor interpretado.
+
+   Essas questões são cruciais no design de sistemas, pois um simples erro de overflow pode comprometer a lógica de um programa inteiro. Por isso, arquiteturas modernas incluem bandeiras e registradores para sinalizar essas condições à CPU.
+
+
+ * Intervalo de valores possíveis por número de bits:
+
+   O intervalo de números que podemos representar depende diretamente do número de bits e se estamos usando sinal ou não. Com N bits sem sinal, o intervalo vai de 0 a  2^N − 1 Com sinal (em complemento de dois), vai de  −2^(N−1)  a  2^(N−1) − 1.
+
+   Por exemplo, 8 bits sem sinal representam 0 a 255, enquanto 8 bits com sinal representam −128 a 127. Essa diferença é fundamental ao escolher o tipo de dado correto em uma linguagem de programação.
+
+   Saber calcular e prever esses limites evita erros comuns como transbordamentos silenciosos. Em sistemas embarcados ou programação de baixo nível, essa noção é praticamente uma ferramenta de sobrevivência.
+
+
+
+ * Representação Interna e Hardware:
+
+   Dentro do computador, o modo como os bytes de um número são organizados na memória também importa. O little-endian armazena o byte menos significativo primeiro, enquanto o big-endian coloca o mais significativo primeiro. Isso não muda o valor do número, mas afeta como ele é lido e escrito por diferentes arquiteturas.
+
+   A ULA (Unidade Lógica e Aritmética) interpreta esses padrões de bits para realizar cálculos, enquanto os registradores internos armazenam temporariamente os números durante as operações. Esses componentes trabalham juntos para transformar sinais elétricos em resultados que podemos entender.
+
+   O conhecimento sobre endianess é especialmente importante em comunicação entre sistemas diferentes, onde a ordem de leitura dos bytes pode causar erros de interpretação se não for acordada previamente.
+
+
+ A representação de números inteiros é um pilar fundamental da computação, pois todo processamento numérico começa nesse nível básico. Entender como os bits se organizam e são interpretados é o primeiro passo para compreender operações mais complexas e o próprio funcionamento do hardware. O que para nós é um número simples, para o computador é um conjunto de sinais que precisa ser interpretado de acordo com convenções rígidas.
+
+ Ao dominar esses conceitos, ganhamos uma visão mais clara sobre como a informação realmente “vive” dentro das máquinas. Essa compreensão nos prepara para lidar com questões práticas, desde otimização de memória até depuração de erros complexos, e abre caminho para estudar representações ainda mais sofisticadas, como números de ponto flutuante.
 
 
 
