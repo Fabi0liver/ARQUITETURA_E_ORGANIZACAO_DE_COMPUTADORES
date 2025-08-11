@@ -46,15 +46,29 @@ Representação de Números Inteiros
   registradores.
 
 
+
 Representação de Números Reais (Ponto Flutuante):
 
- - Ponto fixo vs ponto flutuante
+ - Ponto fixo vs ponto flutuante (diferenças fundamentais e aplicações típicas de cada abordagem)
 
- - IEEE 754 (padrão de ponto flutuante): Formato de 32 bits (float), Formato de 64 bits (double)
+ - IEEE 754 (padrão de ponto flutuante): Formato de 32 bits (float), Formato de 64 bits (double), Outros formatos 
+  (ex: half-precision, quad-precision, formatos estendidos em alguns processadores)
 
- - Precisão e arredondamentos
+ - Componentes do formato IEEE 754: bit de sinal, expoente com bias, mantissa/fração
 
- - Erros de representação (ex: 0.1 em binário)
+ - Precisão e arredondamentos: para zero, para infinito, para o mais próximo par, etc.
+
+ - Erros de representação:  0.1 não exato em binário, erros de truncamento e cancelamento numérico)
+
+ - Números especiais em IEEE 754: NaN — Not a Number, ±∞, zero positivo e negativo
+
+ - Intervalo e alcance dos números Reais representáveis
+
+ - Operações aritméticas e suas limitações: propagação de erro, associatividade e distributividade quebradas em 
+  ponto flutuante
+
+ - Alternativas e variações (representações de números reais em outras arquiteturas ou padrões não IEEE)
+
 
 
 Representação de Caracteres e Textos:
@@ -64,6 +78,7 @@ Representação de Caracteres e Textos:
  - Caracteres de controle
 
  - Relação entre representação binária e textual
+
 
 
 Representação de Dados Multimídia:
