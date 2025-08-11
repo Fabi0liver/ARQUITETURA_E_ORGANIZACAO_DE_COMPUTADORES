@@ -219,7 +219,7 @@ A beleza e também o desafio está no fato de que essa tradução não é única
 
    O número de bits é como o tamanho da gaveta em que vamos guardar nossos números. Quanto maior for essa gaveta, mais combinações diferentes cabem nela. Por exemplo, com 8 bits, podemos formar 256 padrões diferentes; com 16 bits, já são 65.536 combinações. Esse limite influencia diretamente o intervalo de números que conseguimos representar.
 
-   Mas aumentar o número de bits não é apenas uma questão de “ter mais espaço”: isso também afeta desempenho, consumo de energia e uso de memória. É por isso que, na computação, escolhemos tamanhos de palavra (word size) com cuidado — por exemplo, processadores de 32 ou 64 bits não surgiram por acaso, mas como resposta a necessidades de representação e velocidade.
+   Mas aumentar o número de bits não é apenas uma questão de “ter mais espaço”: isso também afeta desempenho, consumo de energia e uso de memória. É por isso que, na computação, escolhemos tamanhos de palavra (word size) com cuidado, por exemplo: processadores de 32 ou 64 bits não surgiram por acaso, mas como resposta a necessidades de representação e velocidade.
 
    Além disso, há um efeito prático: se tentarmos colocar um número maior do que a gaveta suporta, ele “transborda” e o resultado não é o que esperamos. Esse fenômeno, que veremos melhor ao falar de overflow, é uma das principais armadilhas de se lidar com bits limitados.
 
