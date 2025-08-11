@@ -269,7 +269,6 @@ A beleza e também o desafio está no fato de que essa tradução não é única
    Saber calcular e prever esses limites evita erros comuns como transbordamentos silenciosos. Em sistemas embarcados ou programação de baixo nível, essa noção é praticamente uma ferramenta de sobrevivência.
 
 
-
  * Representação Interna e Hardware:
 
    Dentro do computador, o modo como os bytes de um número são organizados na memória também importa. O little-endian armazena o byte menos significativo primeiro, enquanto o big-endian coloca o mais significativo primeiro. Isso não muda o valor do número, mas afeta como ele é lido e escrito por diferentes arquiteturas.
