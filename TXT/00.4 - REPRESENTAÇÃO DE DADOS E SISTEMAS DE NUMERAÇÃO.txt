@@ -360,18 +360,18 @@ A beleza e também o desafio está no fato de que essa tradução não é única
   Mas transformar um símbolo em número e, depois, em bits, não é tão trivial quanto parece. O mundo usa centenas de alfabetos, acentos, emojis e sinais especiais, e os primeiros sistemas de codificação, como o ASCII, foram criados em uma época em que se pensava que 128 símbolos seriam suficientes. Hoje, precisamos de padrões mais abrangentes, como o Unicode, que funcionam como “dicionários universais” capazes de mapear praticamente qualquer caractere usado no planeta. Assim, a representação de caracteres é essa ponte invisível e essencial entre o que entendemos visualmente e a realidade binária que o computador compreende, um acordo silencioso que garante que, quando você digita “Olá”, todos vejam exatamente “Olá”, e não um amontoado indecifrável de códigos.
 
 
+* Contexto Histórico:
+
+   No começo da computação, cada sistema criava sua própria tabela para representar caracteres, o que levava a sérios problemas de compatibilidade. Imagine tentar enviar uma carta para alguém usando um alfabeto inventado só por você, o destinatário não teria como entender. As primeiras padronizações, como o ASCII, resolveram parte do problema, mas foram criadas com foco no inglês, ignorando acentos e caracteres de outros idiomas.
+
+   Com o crescimento da internet e da globalização, ficou claro que precisávamos de um sistema universal, capaz de representar todos os caracteres usados pela humanidade. Foi assim que surgiu o Unicode, um padrão ambicioso que define códigos para mais de 140 mil caracteres, cobrindo praticamente todos os alfabetos, além de símbolos técnicos, artísticos e emojis. Ele trouxe a promessa de que qualquer texto poderia ser lido e exibido em qualquer lugar do mundo.
+
+
  * Diferença entre caractere, ponto de código e glifo:
    
    Quando falamos de caractere, ponto de código e glifo, estamos lidando com três peças diferentes do quebra-cabeça que forma qualquer texto que vemos ou digitamos. O caractere é a ideia abstrata, o conceito de um símbolo textual, como a letra “A” ou o ponto de interrogação “?”. Ele não é ligado a uma forma específica nem a uma cor; é apenas a noção de “existe um A” ou “existe um ?”. O ponto de código é a forma como essa ideia é registrada dentro de um sistema de codificação, como o Unicode, que atribui um número único a cada caractere. Por exemplo, o “A” maiúsculo tem o ponto de código U+0041. É como se o ponto de código fosse o “RG” do caractere, um número oficial que o identifica, independentemente de como ele aparece visualmente.
 
    Já o glifo é a concretização visual desse caractere: a forma como ele é desenhado na tela ou no papel. Essa forma pode mudar dependendo da fonte, do tamanho, do estilo (negrito, itálico) ou até mesmo do idioma. Podemos imaginar assim: o caractere é a ideia de “casa”, o ponto de código é o endereço oficial dessa casa num cadastro, e o glifo é a arquitetura real dela, que pode ser moderna, clássica, rústica ou minimalista, mas ainda representa a mesma moradia. Essa distinção é essencial para que computadores consigam separar o que um símbolo é (caractere), como ele é identificado internamente (ponto de código) e como ele aparece para nós (glifo). É graças a essa separação que conseguimos trocar fontes, aplicar estilos e exibir textos em qualquer língua sem “quebrar” o significado original.
-
-
- * Contexto Histórico:
-
-   No começo da computação, cada sistema criava sua própria tabela para representar caracteres, o que levava a sérios problemas de compatibilidade. Imagine tentar enviar uma carta para alguém usando um alfabeto inventado só por você, o destinatário não teria como entender. As primeiras padronizações, como o ASCII, resolveram parte do problema, mas foram criadas com foco no inglês, ignorando acentos e caracteres de outros idiomas.
-
-   Com o crescimento da internet e da globalização, ficou claro que precisávamos de um sistema universal, capaz de representar todos os caracteres usados pela humanidade. Foi assim que surgiu o Unicode, um padrão ambicioso que define códigos para mais de 140 mil caracteres, cobrindo praticamente todos os alfabetos, além de símbolos técnicos, artísticos e emojis. Ele trouxe a promessa de que qualquer texto poderia ser lido e exibido em qualquer lugar do mundo.
 
 
  * Tabelas de codificação: 
