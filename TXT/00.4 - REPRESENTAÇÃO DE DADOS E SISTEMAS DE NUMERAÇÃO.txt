@@ -348,9 +348,18 @@ A beleza e também o desafio está no fato de que essa tradução não é única
 
  Quando falamos de “representação de caracteres e textos” no computador, estamos entrando no universo que dá forma às palavras que lemos na tela. Afinal, letras, números, símbolos e até emojis são, no fundo, apenas padrões de bits viajando pela memória e pelo processador. É como se o computador tivesse seu próprio “alfabeto secreto”, no qual cada símbolo que usamos no dia a dia (do “A” maiúsculo até o sinal de exclamação) tivesse um código que o identifica. Sem essa tradução, a tela não mostraria frases, mas apenas sequências indecifráveis de 0s e 1s.
 
- Essa área é fundamental porque conecta o mundo humano ao mundo digital. Enquanto nós pensamos em palavras, acentos e pontuação, o computador só entende números binários. A representação de caracteres e textos é o “tradutor oficial” entre esses dois mundos. É o que garante que um e-mail enviado do Brasil possa ser lido no Japão com todos os acentos intactos, ou que um sistema de busca reconheça palavras com diferentes alfabetos. E para entender como essa mágica funciona, precisamos visitar alguns conceitos e padrões que sustentam essa comunicação.
+ Essa área é fundamental porque conecta o mundo humano ao mundo digital. Enquanto nós pensamos em palavras, acentos e pontuação, o computador só entende números binários. A representação de caracteres e textos é o “tradutor oficial” entre esses dois mundos. É o que garante que um e-mail enviado do Brasil possa ser lido no Japão com todos os acentos intactos, ou que um sistema de busca reconheça palavras com diferentes alfabetos. 
 
- Agora, vamos explorar alguns tópicos essenciais para compreender a fundo esse processo.
+ E para entender como essa mágica funciona, precisamos visitar alguns conceitos e padrões que sustentam essa comunicação.
+
+
+ * Conceitos Fundamentais:
+
+   A representação de caracteres é o processo de associar cada símbolo — como letras, números e sinais — a um valor numérico que o computador consegue armazenar e processar. Pense nisso como a forma que um dicionário funciona: você busca a palavra “gato” e encontra uma definição; no computador, busca-se um número e obtém-se um símbolo. Sem essa associação, o sistema não teria como diferenciar um “A” de um “5” ou de um “%”.
+
+   No fundo, essa é a ponte entre o significado visual e a realidade digital. Cada caractere é abstraído para um número, e esse número, por sua vez, é representado em binário. Esse processo pode parecer simples, mas carrega desafios importantes, como lidar com alfabetos diferentes, símbolos especiais e o fato de que, no mundo, usamos muito mais caracteres do que as primeiras codificações previam.
+
+ 
 
 
 
