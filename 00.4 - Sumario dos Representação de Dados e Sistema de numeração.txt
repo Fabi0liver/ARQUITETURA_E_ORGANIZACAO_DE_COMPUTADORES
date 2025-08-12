@@ -73,11 +73,20 @@ Representação de Números Reais (Ponto Flutuante):
 
 Representação de Caracteres e Textos:
 
+ - Histórico e Contexto: Evolução das codificações, Limitações de codificações antigas, Surgimento do Unicode e a 
+  necessidade de padronização global
+
  - Tabelas de codificação: ASCII, ISO-8859, Unicode (UTF-8, UTF-16, UTF-32)
+
+ - Caracteres Especiais
 
  - Caracteres de controle
 
  - Relação entre representação binária e textual
+
+ - Questões Práticas e Técnicas
+
+ - Aplicações e Contextos de Uso
 
 
 
