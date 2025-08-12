@@ -77,7 +77,7 @@ Representação de Caracteres e Textos:
 
  - Diferença entre caractere, ponto de código e glifo
 
- - Histórico e Contexto: Evolução das codificações, Limitações de codificações antigas, Surgimento do Unicode e a 
+ - Contexto  Histórico: Evolução das codificações, Limitações de codificações antigas, Surgimento do Unicode e a 
   necessidade de padronização global
 
  - Tabelas de codificação: ASCII, ISO-8859, Unicode (UTF-8, UTF-16, UTF-32)
@@ -96,6 +96,14 @@ Representação de Caracteres e Textos:
 
 Representação de Dados Multimídia:
 
+ - Conceitos Fundamentais 
+
+ -  Contexto Historico
+
+ -  Resolução vs. Qualidade
+
+ -  Bitrate (Taxa de Bits)
+
  - Imagens: Pixels e resolução, profundidade de cor, modelos de cor (RGB, CMYK, HSV / HSL), Tipos de imagem (Raster 
   (bitmap) e Vetorial), Formatos e compressões (BMP, PNG, JPEG/JPG , SVG)
 
@@ -105,8 +113,15 @@ Representação de Dados Multimídia:
  - Vídeo: Frames (quadros), Frame rate, Codecs de vídeo, Compressão (temporal e espacial), Formatos (MP4, MKV, AVI, 
   MOV)
 
+ - Multimídia Interativa:botões, links, animações (como em SVG animado, ou em formatos como Flash / HTML5).
+
  - Interseções: Codificação multimodal, Contêineres multimídia, Esteganografia, Dados sensoriais (LiDAR: mapeamento 
   3D com luz, Imagens térmicas:infravermelho, Câmeras RAW: captura de dados sem compressão)
+
+ - Compressão com e sem perda (Lossy vs Lossless)
+
+ -  Futuro e Evolução
+ 
 
 
 Representação de Dados em Hardware:
