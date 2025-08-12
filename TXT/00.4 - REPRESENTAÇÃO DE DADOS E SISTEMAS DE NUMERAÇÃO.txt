@@ -374,6 +374,13 @@ A beleza e também o desafio está no fato de que essa tradução não é única
    Já o glifo é a concretização visual desse caractere: a forma como ele é desenhado na tela ou no papel. Essa forma pode mudar dependendo da fonte, do tamanho, do estilo (negrito, itálico) ou até mesmo do idioma. Podemos imaginar assim: o caractere é a ideia de “casa”, o ponto de código é o endereço oficial dessa casa num cadastro, e o glifo é a arquitetura real dela, que pode ser moderna, clássica, rústica ou minimalista, mas ainda representa a mesma moradia. Essa distinção é essencial para que computadores consigam separar o que um símbolo é (caractere), como ele é identificado internamente (ponto de código) e como ele aparece para nós (glifo). É graças a essa separação que conseguimos trocar fontes, aplicar estilos e exibir textos em qualquer língua sem “quebrar” o significado original.
 
 
+* Relação entre representação binária e textual:
+
+   Quando falamos em texto dentro do computador, tudo se resume a números binários, aquela sequência de zeros e uns que, para muitos, parece um código secreto. Mas na verdade, cada caractere que você vê na tela, como a letra “A” maiúscula, é simplesmente um número codificado em binário. No padrão mais comum, chamado ASCII, o “A” vira 01000001. O que faz a “mágica” acontecer é uma tabela de códigos, que funciona como um tradutor oficial entre esses números binários e os símbolos que conhecemos. Assim, o computador sabe que aquele conjunto específico de bits representa a letra “A”, e não qualquer outra coisa.
+
+   Para entender melhor, pense no arquivo de música no seu celular. O arquivo em si não é a música que você escuta, mas sim uma série de números que, quando interpretados, geram os sons que reconhecemos. Do mesmo jeito, o texto dentro do computador é uma sequência de bits que, ao serem decodificados com base nessas tabelas, formam letras, números e símbolos. Ou seja, o computador só entende números, mas por meio dessas “receitas” de tradução, conseguimos ler e escrever palavras, frases e histórias inteiras. É como se o computador tivesse seu próprio dicionário secreto de números para letras, e a gente é quem dá o sentido para essas combinações.
+
+
  * Tabelas de codificação: 
 
    Para começar, imagine que cada caractere que você vê (seja uma letra, um número ou um símbolo) é como uma peça de um grande quebra-cabeça, e as tabelas de codificação são as legendas que nos dizem qual peça corresponde a qual símbolo. O ASCII foi o primeiro grande sucesso desse sistema, usando 7 bits para representar 128 caracteres básicos, como letras do alfabeto inglês, números e alguns símbolos de controle (como o “enter” ou “tab”). Pense no ASCII como um alfabeto básico, perfeito para o inglês, mas que fica meio limitado quando tentamos representar línguas com acentos, como o português, ou alfabetos diferentes, como o cirílico ou o chinês. Para lidar com isso, surgiram extensões, como o ISO-8859, que expandiram essa “legenda” para incluir letras acentuadas e outros símbolos usados em línguas europeias, ampliando o alcance sem reinventar a roda.
@@ -392,14 +399,7 @@ A beleza e também o desafio está no fato de que essa tradução não é única
 
    Os caracteres de controle são como pequenas instruções invisíveis que o computador usa para organizar e entender o texto além das letras e números que vemos. Eles não aparecem na tela, mas são fundamentais para que o computador saiba, por exemplo, onde começar uma nova linha, onde parar, ou como mover o cursor. Pense neles como sinais de trânsito para o fluxo de dados: sem eles, o texto seria apenas um emaranhado contínuo de símbolos, difícil de interpretar corretamente. No sistema ASCII original, por exemplo, temos códigos famosos como o CR (Carriage Return), que faz o cursor voltar ao começo da linha, e o LF (Line Feed), que pula para a linha de baixo. Juntos, eles garantem que a estrutura do texto fique organizada e legível.
 
-Para imaginar melhor, pense em um livro sem parágrafos, sem quebras de linha, sem pontos ou vírgulas: ele até poderia ser lido, mas seria muito difícil entender onde começa e termina uma ideia. Esses caracteres de controle fazem o mesmo papel no texto digital — eles dão ritmo e organização para o conteúdo, ajudando programas e sistemas a apresentarem o texto de forma clara e estruturada. Assim, mesmo que você não os veja, eles são essenciais para que a comunicação entre o computador e o usuário funcione de forma suave e compreensível.
-
-
- * Relação entre representação binária e textual:
-
-   Todo caractere, no fim das contas, é apenas um número binário para o computador. O “A” maiúsculo, por exemplo, vira 01000001 no ASCII. A mágica está nas tabelas de codificação, que dizem ao sistema que aquele padrão de bits representa um símbolo específico.
-
-   Esse processo é análogo à música digital: o arquivo de áudio não é a música em si, mas uma sequência de valores que, quando interpretados, produzem sons. No texto, a sequência de bits é interpretada para produzir letras e símbolos.
+   Para imaginar melhor, pense em um livro sem parágrafos, sem quebras de linha, sem pontos ou vírgulas: ele até poderia ser lido, mas seria muito difícil entender onde começa e termina uma ideia. Esses caracteres de controle fazem o mesmo papel no texto digital: eles dão ritmo e organização para o conteúdo, ajudando programas e sistemas a apresentarem o texto de forma clara e estruturada. Assim, mesmo que você não os veja, eles são essenciais para que a comunicação entre o computador e o usuário funcione de forma suave e compreensível.
 
 
  * Questões Práticas e Técnicas:
