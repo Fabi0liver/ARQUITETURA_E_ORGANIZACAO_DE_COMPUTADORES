@@ -355,30 +355,30 @@ A beleza e também o desafio está no fato de que essa tradução não é única
 
  * Conceitos Fundamentais:
 
-   A representação de caracteres é o processo de associar cada símbolo — como letras, números e sinais — a um valor numérico que o computador consegue armazenar e processar. Pense nisso como a forma que um dicionário funciona: você busca a palavra “gato” e encontra uma definição; no computador, busca-se um número e obtém-se um símbolo. Sem essa associação, o sistema não teria como diferenciar um “A” de um “5” ou de um “%”.
+   A representação de caracteres é o processo de associar cada símbolo (como letras, números e sinais) a um valor numérico que o computador consegue armazenar e processar. Pense nisso como a forma que um dicionário funciona: você busca a palavra “gato” e encontra uma definição; no computador, busca-se um número e obtém-se um símbolo. Sem essa associação, o sistema não teria como diferenciar um “A” de um “5” ou de um “%”.
 
    No fundo, essa é a ponte entre o significado visual e a realidade digital. Cada caractere é abstraído para um número, e esse número, por sua vez, é representado em binário. Esse processo pode parecer simples, mas carrega desafios importantes, como lidar com alfabetos diferentes, símbolos especiais e o fato de que, no mundo, usamos muito mais caracteres do que as primeiras codificações previam.
 
 
  * Diferença entre caractere, ponto de código e glifo:
    
-   Esses três termos são parentes próximos, mas não são a mesma coisa. O caractere é a unidade abstrata de informação textual — por exemplo, a letra “A” ou o símbolo “?”. O ponto de código é o número que representa esse caractere em uma tabela de codificação, como o Unicode, onde o “A” maiúsculo é o ponto de código U+0041. Já o glifo é a forma visual que o caractere assume quando aparece na tela ou no papel, que pode variar de acordo com a fonte ou o estilo.
+   Esses três termos são parentes próximos, mas não são a mesma coisa. O caractere é a unidade abstrata de informação textual, por exemplo, a letra “A” ou o símbolo “?”. O ponto de código é o número que representa esse caractere em uma tabela de codificação, como o Unicode, onde o “A” maiúsculo é o ponto de código U+0041. Já o glifo é a forma visual que o caractere assume quando aparece na tela ou no papel, que pode variar de acordo com a fonte ou o estilo.
 
-   Uma boa analogia é pensar no “caractere” como a ideia de uma casa, o “ponto de código” como o endereço dessa casa e o “glifo” como a arquitetura real dela — que pode mudar de estilo (moderno, clássico, minimalista), mas continua representando a mesma moradia. Essa distinção é crucial para que sistemas consigam separar a identidade de um símbolo da sua aparência.
+   Uma boa analogia é pensar no “caractere” como a ideia de uma casa, o “ponto de código” como o endereço dessa casa e o “glifo” como a arquitetura real dela, que pode mudar de estilo (moderno, clássico, minimalista), mas continua representando a mesma moradia. Essa distinção é crucial para que sistemas consigam separar a identidade de um símbolo da sua aparência.
 
 
  * Contexto Histórico:
 
-   No começo da computação, cada sistema criava sua própria tabela para representar caracteres, o que levava a sérios problemas de compatibilidade. Imagine tentar enviar uma carta para alguém usando um alfabeto inventado só por você — o destinatário não teria como entender. As primeiras padronizações, como o ASCII, resolveram parte do problema, mas foram criadas com foco no inglês, ignorando acentos e caracteres de outros idiomas.
+   No começo da computação, cada sistema criava sua própria tabela para representar caracteres, o que levava a sérios problemas de compatibilidade. Imagine tentar enviar uma carta para alguém usando um alfabeto inventado só por você, o destinatário não teria como entender. As primeiras padronizações, como o ASCII, resolveram parte do problema, mas foram criadas com foco no inglês, ignorando acentos e caracteres de outros idiomas.
 
    Com o crescimento da internet e da globalização, ficou claro que precisávamos de um sistema universal, capaz de representar todos os caracteres usados pela humanidade. Foi assim que surgiu o Unicode, um padrão ambicioso que define códigos para mais de 140 mil caracteres, cobrindo praticamente todos os alfabetos, além de símbolos técnicos, artísticos e emojis. Ele trouxe a promessa de que qualquer texto poderia ser lido e exibido em qualquer lugar do mundo.
 
 
  * Tabelas de codificação: 
 
-   O ASCII foi o primeiro grande sucesso, usando 7 bits para representar 128 caracteres básicos — letras, números, pontuação e alguns símbolos de controle. Mas ele não dava conta de línguas com acentos ou alfabetos diferentes. Para resolver isso, surgiram extensões como o ISO-8859, que adicionou suporte para línguas europeias.
+   O ASCII foi o primeiro grande sucesso, usando 7 bits para representar 128 caracteres básicos (letras, números, pontuação e alguns símbolos de controle). Mas ele não dava conta de línguas com acentos ou alfabetos diferentes. Para resolver isso, surgiram extensões como o ISO-8859, que adicionou suporte para línguas europeias.
 
-   Já o Unicode é como um atlas completo, e seus formatos de codificação — UTF-8, UTF-16 e UTF-32 — são diferentes maneiras de guardar esses pontos de código em bits. O UTF-8, por exemplo, é eficiente para textos em inglês, pois mantém compatibilidade com ASCII, mas também pode representar qualquer caractere global. UTF-16 e UTF-32 oferecem acesso mais direto aos caracteres, mas usam mais espaço. É como escolher entre malas de viagem: algumas são leves e flexíveis, outras são grandes e espaçosas.
+   Já o Unicode é como um atlas completo, e seus formatos de codificação (UTF-8, UTF-16 e UTF-32) são diferentes maneiras de guardar esses pontos de código em bits. O UTF-8, por exemplo, é eficiente para textos em inglês, pois mantém compatibilidade com ASCII, mas também pode representar qualquer caractere global. UTF-16 e UTF-32 oferecem acesso mais direto aos caracteres, mas usam mais espaço. É como escolher entre malas de viagem: algumas são leves e flexíveis, outras são grandes e espaçosas.
 
 
  * Caracteres Especiais:
