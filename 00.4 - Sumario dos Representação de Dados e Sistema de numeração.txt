@@ -73,6 +73,10 @@ Representação de Números Reais (Ponto Flutuante):
 
 Representação de Caracteres e Textos:
 
+ - Conceitos Fundamentais
+
+ - Diferença entre caractere, ponto de código e glifo
+
  - Histórico e Contexto: Evolução das codificações, Limitações de codificações antigas, Surgimento do Unicode e a 
   necessidade de padronização global
 
