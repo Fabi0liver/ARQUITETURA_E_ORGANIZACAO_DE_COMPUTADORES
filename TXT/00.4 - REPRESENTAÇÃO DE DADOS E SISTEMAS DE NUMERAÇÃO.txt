@@ -447,16 +447,16 @@ A beleza e também o desafio está no fato de que essa tradução não é única
 
  * Resolução vs. Qualidade:
 
-   Resolução é a quantidade de elementos (como pixels em uma imagem ou pontos em uma impressão) usados para representar algo. Quanto mais pixels, mais detalhes. Mas isso não significa que a qualidade será sempre melhor, pois outros fatores, como compressão e profundidade de cor, influenciam o resultado final.
+   Resolução é basicamente a medida de “quantos pedacinhos” usamos para formar uma imagem ou vídeo, esses pedacinhos podem ser pixels na tela ou pontos numa impressão. Quanto mais deles tivermos, mais detalhes conseguimos representar, como se estivéssemos aumentando o número de peças de um quebra-cabeça. Uma imagem com baixa resolução tem poucas peças grandes, que mostram a ideia geral, mas sem riqueza de detalhes. Já uma imagem com alta resolução tem muitas peças pequenas, permitindo capturar nuances e contornos mais precisos. É por isso que, ao aproximar uma foto de baixa resolução, ela “quebra” em blocos visíveis, enquanto uma de alta resolução mantém a nitidez por mais tempo.
 
-   Podemos pensar na resolução como o número de peças em um quebra-cabeça: mais peças significam mais detalhes, mas se as peças forem de má qualidade ou mal encaixadas, a imagem final ainda pode ficar ruim.
+   Mas aqui vem o detalhe importante: resolução sozinha não garante qualidade. É como montar um quebra-cabeça com muitas peças, mas de papel ruim ou com impressão borrada, o resultado final ainda não será bonito. Outros fatores entram em cena, como a profundidade de cor (quantos tons e variações cada pixel pode exibir) e a compressão (que pode remover detalhes para economizar espaço). Em outras palavras, a resolução é o “quanto” de informação temos, e a qualidade é o “quão boa” essa informação é. Uma boa representação multimídia precisa equilibrar esses dois lados para que os detalhes estejam não só presentes, mas também bem apresentados.
 
 
  * Bitrate (Taxa de Bits):
 
-   O bitrate indica quantos bits são usados por segundo para representar áudio ou vídeo. Bitrates maiores, em geral, significam mais qualidade, pois mais informação é armazenada. No entanto, isso também aumenta o tamanho dos arquivos e a largura de banda necessária para transmiti-los.
+   O bitrate (ou taxa de bits) é a quantidade de dados (medida em bits) processada a cada segundo para representar um áudio ou vídeo. Pense nele como a “quantidade de informação por segundo” que descreve aquele conteúdo. Quanto maior o bitrate, mais detalhes e nuances podem ser preservados, resultando em melhor qualidade de imagem ou som. Por exemplo, num vídeo, um bitrate mais alto pode manter texturas mais nítidas e cores mais fiéis; já num áudio, ajuda a preservar timbres e sutilezas. Porém, esse ganho de qualidade vem acompanhado de arquivos maiores e de uma maior demanda de largura de banda para transmissão.
 
-   É como a vazão de água em uma torneira: mais litros por minuto (maior bitrate) entregam mais água (dados), mas também exigem um cano (rede) mais largo para que o fluxo seja constante.
+   Uma boa forma de imaginar o bitrate é como a vazão de água em um cano. Se você abre pouco a torneira (baixo bitrate), a água sai devagar e pode não ser suficiente para encher um balde rápido (a informação pode perder detalhes). Se você abre bastante (alto bitrate), a água flui em abundância, preenchendo o balde mais rápido e com mais “fidelidade” ao que sai da fonte. Mas, para que isso funcione sem interrupções, o cano (a rede de internet ou o dispositivo de armazenamento) precisa ser largo o bastante para comportar esse fluxo. Ou seja, bitrate não é só sobre qualidade: é também sobre a capacidade de transmitir e armazenar tudo isso sem engasgos.
 
 
  * Imagens:
