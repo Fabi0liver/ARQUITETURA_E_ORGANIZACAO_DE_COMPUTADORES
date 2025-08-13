@@ -461,9 +461,9 @@ A beleza e também o desafio está no fato de que essa tradução não é única
 
  * Imagens:
 
-   As imagens digitais são formadas por pixels, pequenas unidades de cor que, juntas, formam o todo. A profundidade de cor define quantas cores diferentes cada pixel pode representar. Modelos de cor como RGB (usado em telas), CMYK (impressão) e HSV/HSL (edição gráfica) definem diferentes formas de representar cores.
+   As imagens digitais são como mosaicos modernos: cada peça desse mosaico é um pixel, uma minúscula “célula” de cor que, combinada com milhões de outras, forma o todo que enxergamos na tela. A quantidade de cores que cada pixel pode mostrar depende da profundidade de cor. Pense nisso como a “paleta de tintas” disponível para cada ponto. Para organizar essas cores, usamos modelos diferentes: o RGB, típico de telas, mistura luz vermelha, verde e azul; o CMYK, usado em impressoras, trabalha com pigmentos ciano, magenta, amarelo e preto; e o HSV/HSL, mais comum em edição gráfica, organiza a cor de forma mais intuitiva, falando de matiz, saturação e brilho.
 
-   Existem dois tipos principais: imagens raster (bitmap), compostas por uma grade fixa de pixels, e imagens vetoriais, que usam fórmulas matemáticas para representar formas, permitindo redimensionamento sem perda de qualidade. Os formatos variam entre sem compressão (BMP), compressão sem perda (PNG) e compressão com perda (JPEG).
+   Quando falamos de formatos, temos dois grandes estilos de “desenho digital”: as imagens raster (ou bitmap) e as vetoriais. As raster são como fotografias: uma grade fixa de pixels, ótima para detalhes, mas que perde qualidade se ampliada. Já as vetoriais funcionam como receitas matemáticas para desenhar formas, podendo ser redimensionadas sem qualquer perda de nitidez. E, claro, existem diferentes formatos para guardar essas imagens: sem compressão (como BMP, que preserva tudo), com compressão sem perda (como PNG, que reduz tamanho sem sacrificar qualidade) e com compressão com perda (como JPEG, que diminui muito o tamanho, mas descarta alguns detalhes para economizar espaço).
 
 
  * Áudio:
