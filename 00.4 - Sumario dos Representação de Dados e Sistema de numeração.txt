@@ -163,16 +163,6 @@ Compactação e Codificação de Dados:
  - Teoria da informação de Shannon
 
 
-Codificações Específicas em Aplicações:
-
- - Codificação BCD (Binary Coded Decimal)
-
- - Gray Code (Código de Gray) – usado em sensores
-
- - IEEE 754 NaN, infinito, subnormais (casos especiais)
-
- - Codificação de caracteres em sistemas legados
-
 
 Representação de Dados em Redes e Comunicação:
 
@@ -183,6 +173,19 @@ Representação de Dados em Redes e Comunicação:
  - Compactação para transmissão
 
  - Serialização para rede: JSON, XML, BSON, MessagePack
+
+
+
+Codificações Específicas em Aplicações:
+
+ - Codificação BCD (Binary Coded Decimal)
+
+ - Gray Code (Código de Gray) – usado em sensores
+
+ - IEEE 754 NaN, infinito, subnormais (casos especiais)
+
+ - Codificação de caracteres em sistemas legados
+
 
 
 Aplicações Práticas e Avançadas
