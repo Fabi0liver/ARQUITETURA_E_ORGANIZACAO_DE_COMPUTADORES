@@ -176,18 +176,6 @@ Representação de Dados em Redes e Comunicação:
 
 
 
-Codificações Específicas em Aplicações:
-
- - Codificação BCD (Binary Coded Decimal)
-
- - Gray Code (Código de Gray) – usado em sensores
-
- - IEEE 754 NaN, infinito, subnormais (casos especiais)
-
- - Codificação de caracteres em sistemas legados
-
-
-
 Aplicações Práticas e Avançadas
 
  - Leitura e escrita em memória
@@ -198,11 +186,21 @@ Aplicações Práticas e Avançadas
 
  - Representações em arquiteturas diferentes (ex: ARM vs x86)
 
- - Representações em IA (quantização, encoding)
+ - Representação para Processamento Vetorial e Paralelo
 
  - Representações em banco de dados (Avro, Parquet)
 
+ - Compactação Avançada e Otimizações de Armazenamento
+
  - Códigos de correção de erro: Hamming, CRC, ECC
+
+ - Codificação para Segurança e Privacidade
+
+ - Formatação e Padronização Internacional de Dados
+
+ - Representações em IA (quantização, encoding)
+
+ - Representações Específicas de Domínio
 
 
 Conclusão Geral Sobre o Assunto
