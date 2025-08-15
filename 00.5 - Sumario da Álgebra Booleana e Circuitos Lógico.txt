@@ -88,11 +88,13 @@ Circuitos Combinacionais:
  - Definição e características
 
  - Principais blocos: Codificadores e Decodificadores, Multiplexadores (MUX) e Demultiplexadores (DEMUX),
-  Comparadores de magnitude, Somadores (Half Adder e Full Adder), Subtratores
+  Comparadores de magnitude, Somadores (Half Adder e Full Adder), Subtratores, Multiplicadores binários
 
  - Projetos práticos
 
  - Minimização de circuitos combinacionais: Aplicando Karnaugh e NAND/NOR universais
+
+ - Memórias:  ROM, PROM, EPROM, EEPROM, Flash e aplicação como lógica combinacional programável.
 
 
 
@@ -104,11 +106,11 @@ Circuitos Sequenciais:
 
  - Elementos de memória: Latchs (SR,  D) Flip-flops  (SR, JK, D, T)
 
- - Temporização: Clock, borda de subida/descida, Setup time e hold time
+ - Temporização: Clock, borda de subida/descida, Setup time e hold time, Metastabilidade
 
  - Registradores
 
- - Contadores: Contadores síncronos e assíncronos, Contadores mod-N
+ - Contadores: Contadores síncronos e assíncronos, Contadores mod-N, Contadores com código Gray
 
 
 
