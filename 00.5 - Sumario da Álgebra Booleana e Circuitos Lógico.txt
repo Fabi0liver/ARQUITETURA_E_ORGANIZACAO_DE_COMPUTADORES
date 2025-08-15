@@ -116,13 +116,22 @@ Circuitos Sequenciais:
 
 Projeto de Sistemas Lógicos:
 
- - Projeto de FSMs (Máquinas de Estados Finitos): Diagrama de estados (Mealy e Moore), Tabelas de transição
+ - Máquinas de Estados Finitos (FSMs): Diagrama de estados (Mealy e Moore), Tabelas de transição, 
+  Codificação de estados (binária, one-hot, gray code)
 
  - Conversão de especificações em circuitos
 
- - Codificação de estados: Binária, one-hot, gray code
-
  - Análise de hazards e glitches: Tipos de hazards (estático, dinâmico), Técnicas de prevenção
+
+
+
+Integração com Outros Sistemas:
+
+ - Interface digital-analógica: Conversores ADC e DAC
+
+ - Comunicação digital básica: UART, SPI, I²C (visão lógica)
+
+ - Introdução à lógica assíncrona e comparação com lógica síncrona
 
 
 
