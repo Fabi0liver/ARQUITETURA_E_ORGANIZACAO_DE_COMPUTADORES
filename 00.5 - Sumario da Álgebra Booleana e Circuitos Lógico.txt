@@ -67,13 +67,18 @@ Representações e Ferramentas de Simplificação:
 
 Portas Lógicas e Implementação Física:
 
- - Portas Lógicas: Portas Basicas ( AND, OR, NOT), Portas  Derivadas (NAND, NOR, XOR, XNOR)
+ - Portas Lógicas Basicas: AND, OR, NOT
+
+ - Portas Lógicas Derivadas: NAND, NOR, XOR, XNOR
 
  - Símbolos e padrões: ANSI/IEC e IEEE
 
  - Níveis lógicos: Alto (1) e Baixo (0), Lógica positiva vs. lógica negativa
 
- - Implementação com tecnologia: Circuitos TTL (Transistor-Transistor Logic), Circuitos CMOS (Complementary Metal-
+ - Aspectos físicos e elétricos: Fan-in e fan-out, Atrasos de propagação, Consumo de potência e dissipação térmica, 
+  Interferência e ruído em circuitos digitais.
+
+ - Tecnologias de implementação: Circuitos TTL (Transistor-Transistor Logic), Circuitos CMOS (Complementary Metal-
   Oxide-Semiconductor), Comparação de consumo, velocidade e aplicação
 
 
