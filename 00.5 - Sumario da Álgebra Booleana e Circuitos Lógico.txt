@@ -85,5 +85,21 @@ Circuitos Combinacionais:
 
 
 
+Circuitos Sequenciais:
+
+ - Definição e características
+
+ - Diferença para combinacionais
+
+ - Elementos de memória: Latchs (SR,  D) Flip-flops  (SR, JK, D, T)
+
+ - Temporização: Clock, borda de subida/descida, Setup time e hold time
+
+ - Registradores
+
+ - Contadores: Contadores síncronos e assíncronos, Contadores mod-N
+
+
+
 
 
