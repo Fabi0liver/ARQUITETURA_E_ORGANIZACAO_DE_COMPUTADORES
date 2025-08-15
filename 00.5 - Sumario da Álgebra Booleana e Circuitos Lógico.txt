@@ -9,3 +9,33 @@ Origem e importância da Álgebra Booleana
 
 
 Sistema Binário
+
+
+Conceitos de Lógica
+
+
+Operações e Propriedades da Álgebra Booleana:
+
+ - Operadores básicos: AND (∧), OR (∨), NOT (¬), Representação simbólica, algébrica e em tabela-verdade
+
+ - Operadores derivados: NAND, NOR, XOR, XNOR, Propriedades e usos práticos
+
+ - Leis fundamentais: Identidade, Idempotência, Dominação, Comutativa, Associativa, Distributiva, Lei de De Morgan 
+  (e aplicação)
+
+ - Simplificação de expressões: Eliminação de redundâncias, Complementaridade e absorção
+
+
+
+Representações e Ferramentas de Simplificação:
+
+ - Mapas de Karnaugh (K-map): 2, 3, 4 e 5 variáveis, Agrupamento e minimização de termos
+
+ - Método Algébrico: Manipulação direta usando as leis booleanas
+
+ - Método de Quine-McCluskey: Minimização sistemática de funções lógicas, Comparação com Karnaugh
+
+ - Expressões Canônicas: Forma Normal Disjuntiva (Soma de Produtos – SOP), Forma Normal Conjuntiva (Produto de 
+  Somas – POS)
+
+
