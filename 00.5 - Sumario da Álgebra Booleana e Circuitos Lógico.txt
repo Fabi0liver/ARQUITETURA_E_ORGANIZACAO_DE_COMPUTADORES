@@ -5,13 +5,32 @@
 Introdução ao assunto
 
 
-Origem e importância da Álgebra Booleana
+Origem e importância da Álgebra Booleana:
+
+ - George Boole e o contexto histórico
+
+ - Uso na Computação e Eletrônica Digital
 
 
-Sistema Binário
+
+Sistema Binário:
+
+ - Dígitos binários (bits)
+
+ - Conversão entre binário, decimal, octal e hexadecimal
+
+ - Contagem e representação de números
 
 
-Conceitos de Lógica
+
+Conceitos de Lógica:
+
+ - Proposições e valores lógicos (Verdadeiro/Falso)
+
+ - Operadores lógicos básicos (E, OU, NÃO)
+
+ - Tabelas-verdade
+
 
 
 Operações e Propriedades da Álgebra Booleana:
@@ -37,5 +56,8 @@ Representações e Ferramentas de Simplificação:
 
  - Expressões Canônicas: Forma Normal Disjuntiva (Soma de Produtos – SOP), Forma Normal Conjuntiva (Produto de 
   Somas – POS)
+
+
+
 
 
