@@ -150,4 +150,14 @@ Avanços e Aplicações Modernas:
 
 
 
+Ferramentas e Prática:
+
+ - Simulação de circuitos lógicos: Logisim, Multisim, Quartus, Vivado
+
+ - Fluxo de projeto em FPGA (do diagrama lógico até a programação)
+
+ - Projetos práticos combinando teoria e hardware real
+
+
+
 Conclusão geral sobre o Assunto
