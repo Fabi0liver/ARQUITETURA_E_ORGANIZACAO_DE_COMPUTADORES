@@ -72,5 +72,18 @@ Portas Lógicas e Implementação Física:
 
 
 
+Circuitos Combinacionais:
+
+ - Definição e características
+
+ - Principais blocos: Codificadores e Decodificadores, Multiplexadores (MUX) e Demultiplexadores (DEMUX), 
+  Comparadores de magnitude, Somadores (Half Adder e Full Adder), Subtratores
+
+ - Projetos práticos
+
+ - Minimização de circuitos combinacionais: Aplicando Karnaugh e NAND/NOR universais
+
+
+
 
 
