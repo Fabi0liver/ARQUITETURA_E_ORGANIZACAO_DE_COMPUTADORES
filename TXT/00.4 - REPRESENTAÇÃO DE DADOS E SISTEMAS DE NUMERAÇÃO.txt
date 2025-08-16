@@ -193,9 +193,9 @@ para a maior. Vamos de forma clara, um passo de cada vez!
                  serviços em nuvem e organizações que lidam com quantidades gigantescas de informação (como o 
                  Google ou a NASA).
 
-                   Pensa num petabyte como um prédio inteiro cheio de bibliotecas. Um único petabyte pode armazenar 
-                  bilhões de páginas de texto ou milhares de horas de vídeos em alta definição. Estamos falando 
-                  aqui de escalas realmente colossais.
+                  Pense em um petabyte como um prédio inteiro cheio de bibliotecas. Um único petabyte pode 
+                 armazenar bilhões de páginas de texto ou milhares de horas de vídeos em alta definição. Estamos 
+                 falando aqui de escalas realmente colossais.
 
 
  * Exabyte (EB): Equivale a cerca de 1.000 petabytes. A essa altura, já estamos em dimensões de dados que só 
