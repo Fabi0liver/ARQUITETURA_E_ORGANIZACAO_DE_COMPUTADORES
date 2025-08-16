@@ -523,28 +523,67 @@ quais as armadilhas que ela pode esconder e como o hardware se organiza para lid
 
  * Questões aritméticas e lógicas: 
 
-   As questões aritméticas e lógicas na representação de números inteiros são como as “pegadinhas” que aparecem quando tentamos fazer contas no mundo digital. A princípio, parece simples: somar, subtrair, multiplicar… o computador faz tudo rapidinho. Mas, por trás da velocidade, existem limites bem definidos pelo tamanho dos bits disponíveis. Se o resultado de uma operação ultrapassa o valor máximo ou mínimo possível, acontece o overflow (transbordamento) ou underflow (quando “passa do lado negativo”), e o valor “dá a volta” como um velocímetro que, ao passar do máximo, retorna ao zero. Isso não gera erro automático, o computador apenas segue a matemática binária à risca, mesmo que o resultado não faça sentido para nós.
+   As questões aritméticas e lógicas na representação de números inteiros são como as “pegadinhas” que aparecem 
+  quando tentamos fazer contas no mundo digital. A princípio, parece simples: somar, subtrair, multiplicar… o 
+  computador faz tudo rapidinho. Mas, por trás da velocidade, existem limites bem definidos pelo tamanho dos bits 
+  disponíveis. Se o resultado de uma operação ultrapassa o valor máximo ou mínimo possível, acontece o overflow 
+  (transbordamento) ou underflow (quando “passa do lado negativo”), e o valor “dá a volta” como um velocímetro que, 
+  ao passar do máximo, retorna ao zero. Isso não gera erro automático, o computador apenas segue a matemática   
+  binária à risca, mesmo que o resultado não faça sentido para nós.
 
-   Nas operações lógicas, como AND, OR, XOR e NOT, a preocupação não é com o valor numérico, mas com o padrão de bits. É como manipular diretamente os interruptores ligados (1) e desligados (0) para criar, filtrar ou inverter informações. Aqui, a interpretação (com ou sem sinal) não importa, o que vale é o padrão puro, o valor lógico. O desafio surge quando misturamos o uso aritmético e lógico no mesmo dado sem entender o contexto: um mesmo padrão de bits pode ser perfeito para uma operação de máscara (lógica), mas gerar resultados inesperados se for tratado como número com sinal em uma conta matemática. Por isso, programadores e engenheiros precisam ter sempre em mente que o computador só entende 0 e 1, quem decide o que isso significa somos nós.
+   Nas operações lógicas, como AND, OR, XOR e NOT, a preocupação não é com o valor numérico, mas com o padrão de 
+  bits. É como manipular diretamente os interruptores ligados (1) e desligados (0) para criar, filtrar ou inverter   
+  informações. Aqui, a interpretação (com ou sem sinal) não importa, o que vale é o padrão puro, o valor lógico. O 
+  desafio surge quando misturamos o uso aritmético e lógico no mesmo dado sem entender o contexto: um mesmo padrão 
+  de bits pode ser perfeito para uma operação de máscara (lógica), mas gerar resultados inesperados se for tratado 
+  como número com sinal em uma conta matemática. Por isso, programadores e engenheiros precisam ter sempre em mente 
+  que o computador só entende 0 e 1, quem decide o que isso significa somos nós.
 
 
  * Intervalo de valores possíveis por número de bits:
 
-   O intervalo de valores possíveis em números inteiros depende diretamente da quantidade de bits usados para representá-los e do formato escolhido (com ou sem sinal). No caso dos inteiros sem sinal (unsigned), todos os bits servem para representar a magnitude, então o menor valor é sempre 0 e o maior é 2ⁿ − 1, onde n é o número de bits. Por exemplo, com 8 bits, temos de 0 a 255; com 16 bits, de 0 a 65.535. É como ter uma régua que começa no zero e vai até o seu limite máximo, sem espaço para valores negativos.
+   O intervalo de valores possíveis em números inteiros depende diretamente da quantidade de bits usados para 
+  representá-los e do formato escolhido (com ou sem sinal). No caso dos inteiros sem sinal (unsigned), todos os 
+  bits servem para representar a magnitude, então o menor valor é sempre 0 e o maior é 2ⁿ − 1, onde n é o número de 
+  bits. Por exemplo, com 8 bits, temos de 0 a 255; com 16 bits, de 0 a 65.535. É como ter uma régua que começa no 
+  zero e vai até o seu limite máximo, sem espaço para valores negativos.
 
-   Já nos inteiros com sinal usando complemento de dois, o intervalo é dividido igualmente entre valores negativos e positivos (com uma pequena diferença: o lado negativo tem um número a mais). Nesse caso, o menor valor é −2ⁿ⁻¹ e o maior é 2ⁿ⁻¹ − 1. Por exemplo, em 8 bits, temos de −128 a +127; em 16 bits, de −32.768 a +32.767. Essa “simetria quebrada” acontece porque o zero ocupa um lugar no lado positivo, e o bit mais significativo (bit de sinal) indica se o valor é positivo ou negativo. Saber calcular e entender esses intervalos é fundamental para evitar erros como overflow e para escolher o tipo de dado correto em um programa, garantindo que todos os valores necessários caibam dentro do “espaço” de bits disponível.
+   Já nos inteiros com sinal usando complemento de dois, o intervalo é dividido igualmente entre valores negativos 
+  e positivos (com uma pequena diferença: o lado negativo tem um número a mais). Nesse caso, o menor valor é −2ⁿ⁻¹ 
+  e o maior é 2ⁿ⁻¹ − 1. Por exemplo, em 8 bits, temos de −128 a +127; em 16 bits, de −32.768 a +32.767. Essa 
+  “simetria quebrada” acontece porque o zero ocupa um lugar no lado positivo, e o bit mais significativo (bit de 
+  sinal) indica se o valor é positivo ou negativo. Saber calcular e entender esses intervalos é fundamental para 
+  evitar erros como overflow e para escolher o tipo de dado correto em um programa, garantindo que todos os valores 
+  necessários caibam dentro do “espaço” de bits disponível.
 
 
  * Representação Interna e Hardware:
 
-   A representação interna dos números inteiros é como a “linguagem nativa” do computador, a forma como os bits realmente ficam armazenados na memória e como o processador os entende. No nível físico, cada bit é um pequeno estado elétrico (tensão alta para 1, baixa para 0) ou, em tecnologias mais modernas, uma carga armazenada, uma orientação magnética ou até um estado quântico, dependendo do tipo de memória. Esses bits ficam dispostos em agrupamentos (palavras) que o processador lê e manipula de acordo com o tamanho de sua arquitetura. Por exemplo, CPUs de 32 bits trabalham naturalmente com palavras de 32 bits, enquanto as de 64 bits trabalham com palavras de 64 bits.
+   A representação interna dos números inteiros é como a “linguagem nativa” do computador, a forma como os bits 
+  realmente ficam armazenados na memória e como o processador os entende. No nível físico, cada bit é um pequeno 
+  estado elétrico (tensão alta para 1, baixa para 0) ou, em tecnologias mais modernas, uma carga armazenada, uma 
+  orientação magnética ou até um estado quântico, dependendo do tipo de memória. Esses bits ficam dispostos em 
+  agrupamentos (palavras) que o processador lê e manipula de acordo com o tamanho de sua arquitetura. Por exemplo, 
+  CPUs de 32 bits trabalham naturalmente com palavras de 32 bits, enquanto as de 64 bits trabalham com palavras de 
+  64 bits.
 
-   No hardware, circuitos especializados chamados ULAs (Unidades Lógicas e Aritméticas) executam as operações matemáticas e lógicas sobre esses padrões de bits, seguindo as regras do formato (com sinal ou sem sinal). Registradores internos armazenam temporariamente os números durante os cálculos, enquanto barramentos transportam os dados entre memória, processador e outros componentes. Tudo isso acontece de forma extremamente rápida e precisa, mas sempre respeitando as limitações impostas pelo número de bits e pelo método de representação. Em resumo, o hardware é o “palco” onde a representação dos números deixa de ser apenas teoria e se torna ação, transformando 0s e 1s em operações que movem todo o sistema.
+   No hardware, circuitos especializados chamados ULAs (Unidades Lógicas e Aritméticas) executam as operações 
+  matemáticas e lógicas sobre esses padrões de bits, seguindo as regras do formato (com sinal ou sem sinal). 
+  Registradores internos armazenam temporariamente os números durante os cálculos, enquanto barramentos transportam 
+  os dados entre memória, processador e outros componentes. Tudo isso acontece de forma extremamente rápida e 
+  precisa, mas sempre respeitando as limitações impostas pelo número de bits e pelo método de representação. Em 
+  resumo, o hardware é o “palco” onde a representação dos números deixa de ser apenas teoria e se torna ação, 
+  transformando 0s e 1s em operações que movem todo o sistema.
 
+ Em suma, a representação de números inteiros é um pilar fundamental da computação, pois todo processamento 
+numérico começa nesse nível básico. Entender como os bits se organizam e são interpretados é o primeiro passo para 
+compreender operações mais complexas e o próprio funcionamento do hardware. O que para nós é um número simples, 
+para o computador é um conjunto de sinais que precisa ser interpretado de acordo com convenções rígidas.
 
- Em suma, a representação de números inteiros é um pilar fundamental da computação, pois todo processamento numérico começa nesse nível básico. Entender como os bits se organizam e são interpretados é o primeiro passo para compreender operações mais complexas e o próprio funcionamento do hardware. O que para nós é um número simples, para o computador é um conjunto de sinais que precisa ser interpretado de acordo com convenções rígidas.
-
- Ao dominar esses conceitos, ganhamos uma visão mais clara sobre como a informação realmente “vive” dentro das máquinas. Essa compreensão nos prepara para lidar com questões práticas, desde otimização de memória até depuração de erros complexos, e abre caminho para estudar representações ainda mais sofisticadas, como números de ponto flutuante.
+ Ao dominar esses conceitos, ganhamos uma visão mais clara sobre como a informação realmente “vive” dentro das 
+máquinas. Essa compreensão nos prepara para lidar com questões práticas, desde otimização de memória até depuração 
+de erros complexos, e abre caminho para estudar representações ainda mais sofisticadas, como números de ponto 
+flutuante.
 
 
 
