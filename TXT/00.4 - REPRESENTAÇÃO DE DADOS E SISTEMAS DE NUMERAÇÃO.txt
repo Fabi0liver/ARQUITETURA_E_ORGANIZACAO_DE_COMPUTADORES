@@ -601,7 +601,6 @@ com eficiência.
 binário de zeros e uns? É isso que vamos explorar a seguir, começando por entender as diferenças entre 
 representações mais simples, passando pelo padrão que domina o mercado e seus detalhes internos.
 
-
  * Ponto fixo vs ponto flutuante:
 
    Quando falamos em representar números no computador, uma das primeiras escolhas que precisamos entender é entre 
@@ -796,12 +795,19 @@ computação e além.
 
                                  "Representação de Caracteres e Textos"
 
- Quando falamos de “representação de caracteres e textos” no computador, estamos entrando no universo que dá forma às palavras que lemos na tela. Afinal, letras, números, símbolos e até emojis são, no fundo, apenas padrões de bits viajando pela memória e pelo processador. É como se o computador tivesse seu próprio “alfabeto secreto”, no qual cada símbolo que usamos no dia a dia (do “A” maiúsculo até o sinal de exclamação) tivesse um código que o identifica. Sem essa tradução, a tela não mostraria frases, mas apenas sequências indecifráveis de 0s e 1s.
+ Quando falamos de “representação de caracteres e textos” no computador, estamos entrando no universo que dá forma 
+às palavras que lemos na tela. Afinal, letras, números, símbolos e até emojis são, no fundo, apenas padrões de bits 
+viajando pela memória e pelo processador. É como se o computador tivesse seu próprio “alfabeto secreto”, no qual 
+cada símbolo que usamos no dia a dia (do “A” maiúsculo até o sinal de exclamação) tivesse um código que o 
+identifica. Sem essa tradução, a tela não mostraria frases, mas apenas sequências indecifráveis de 0s e 1s.
 
- Essa área é fundamental porque conecta o mundo humano ao mundo digital. Enquanto nós pensamos em palavras, acentos e pontuação, o computador só entende números binários. A representação de caracteres e textos é o “tradutor oficial” entre esses dois mundos. É o que garante que um e-mail enviado do Brasil possa ser lido no Japão com todos os acentos intactos, ou que um sistema de busca reconheça palavras com diferentes alfabetos. 
+ Essa área é fundamental porque conecta o mundo humano ao mundo digital. Enquanto nós pensamos em palavras, acentos 
+e pontuação, o computador só entende números binários. A representação de caracteres e textos é o “tradutor 
+oficial” entre esses dois mundos. É o que garante que um e-mail enviado do Brasil possa ser lido no Japão com todos 
+os acentos intactos, ou que um sistema de busca reconheça palavras com diferentes alfabetos. 
 
- E para entender como essa mágica funciona, precisamos visitar alguns conceitos e padrões que sustentam essa comunicação.
-
+ E para entender como essa mágica funciona, precisamos visitar alguns conceitos e padrões que sustentam essa 
+comunicação.
 
  * Conceitos Fundamentais:
 
