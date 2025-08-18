@@ -1262,7 +1262,7 @@ perfeita sincronia
 
 
 
-                  "Representação e Manipulação de Dados em Linguagens de Programação"
+                    "Representação e Manipulação de Dados em Linguagens de Programação"
 
  Quando subimos do mundo físico do hardware para o universo das linguagens de programação, é como trocar a oficina 
 cheia de fios e circuitos por uma sala de controle com botões e painéis coloridos. Aqui, o programador não precisa 
@@ -1300,7 +1300,7 @@ torneira, mas conhecer o caminho ajuda a resolver problemas e construir coisas m
 
 
 
-                                 "Compactação de Dados"
+                                        "Compactação de Dados"
 
  A compactação de dados é como guardar roupas em uma mala de viagem: se você simplesmente dobrar e colocar tudo lá dentro, vai ocupar muito espaço; mas, se enrolar as peças, usar sacos a vácuo e organizar bem, consegue levar muito mais coisas no mesmo volume. No mundo digital, a ideia é a mesma: reduzir o tamanho de arquivos e informações para economizar espaço de armazenamento e tempo de transmissão. Isso é fundamental, porque menos dados ocupam menos memória, viajam mais rápido pela internet e custam menos para armazenar.
 
@@ -1314,7 +1314,7 @@ torneira, mas conhecer o caminho ajuda a resolver problemas e construir coisas m
 
 
 
-                           "Representação de Dados em Redes e Comunicação"
+                            "Representação de Dados em Redes e Comunicação"
 
  Quando pensamos em representação de dados em redes e comunicação, podemos imaginar uma conversa entre duas pessoas que falam línguas diferentes. Para que elas se entendam, é preciso não só traduzir as palavras, mas também seguir regras de comunicação: como falar pausadamente, esperar a vez de responder e evitar ruídos. No mundo digital, é exatamente isso que acontece: computadores e dispositivos trocam informações usando “idiomas” específicos (protocolos) e formatos padronizados para que todos entendam a mensagem do mesmo jeito, mesmo estando a milhares de quilômetros de distância.
 
