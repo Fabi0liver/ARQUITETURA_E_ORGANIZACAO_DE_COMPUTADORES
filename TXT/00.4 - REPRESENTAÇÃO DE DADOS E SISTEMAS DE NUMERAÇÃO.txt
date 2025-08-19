@@ -307,7 +307,7 @@ no uso comum quanto na programação e arquitetura de computadores.
   decimal.
 
    A razão para os computadores adotarem o sistema binário é simples: a eletrônica digital trabalha com dois 
-  estados básicos (ligado e desligado, verdadeiro e falso, alto e baixo) que podem ser representados de forma 
+  estados básicos (ligado e desligado, verdadeiro e falso, alto ou baixo) que podem ser representados de forma 
   perfeita pelos dígitos 0 e 1. Esse sistema é a base de toda a lógica computacional e da arquitetura de 
   processadores.
 
