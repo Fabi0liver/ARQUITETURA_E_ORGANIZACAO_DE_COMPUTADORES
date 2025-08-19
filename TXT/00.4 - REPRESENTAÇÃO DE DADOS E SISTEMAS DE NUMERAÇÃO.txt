@@ -332,10 +332,10 @@ no uso comum quanto na programação e arquitetura de computadores.
   binário: cada dígito hexadecimal corresponde exatamente a quatro bits. Isso o torna ideal para representar 
   endereços de memória, valores de cores em programação gráfica e instruções em linguagens de baixo nível.
 
- Os sistemas de numeração são, em essência, formas diferentes de contar e representar valores, cada uma adequada a 
-um contexto específico. Alguns são mais práticos para uso humano, enquanto outros são perfeitos para a lógica 
-interna das máquinas. Entender esses sistemas nos permite transitar entre o mundo humano e o mundo da computação 
-com mais facilidade, traduzindo ideias de um “idioma” numérico para outro sem perder o sentido.
+ Em suma...Os sistemas de numeração são, em essência, formas diferentes de contar e representar valores, cada uma 
+adequada a um contexto específico. Alguns são mais práticos para uso humano, enquanto outros são perfeitos para a 
+lógica interna das máquinas. Entender esses sistemas nos permite transitar entre o mundo humano e o mundo da 
+computação com mais facilidade, traduzindo ideias de um “idioma” numérico para outro sem perder o sentido.
 
  Assim, conhecer bem os sistemas de numeração é como ter um passaporte para várias culturas matemáticas. No dia a 
 dia, usamos o decimal, mas quando conversamos com computadores, trabalhamos com o binário, e muitas vezes com octal 
