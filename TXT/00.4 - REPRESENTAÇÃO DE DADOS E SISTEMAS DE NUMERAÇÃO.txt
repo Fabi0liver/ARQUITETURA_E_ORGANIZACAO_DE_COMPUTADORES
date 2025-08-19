@@ -399,9 +399,9 @@ sistemas de numeração.
   ao octal, geralmente passamos pelo binário primeiro, agrupando depois em conjuntos de 3 bits. Essa estratégia 
   mantém a precisão e evita confusões, especialmente com números longos.
 
- A conversão entre sistemas de numeração é como navegar entre diferentes mapas de um mesmo território: cada mapa 
-tem sua escala e simbologia, mas todos representam o mesmo lugar. Entender como fazer essas conversões nos dá 
-flexibilidade para interpretar e trabalhar com dados em diferentes contextos computacionais.
+ Em suma...A conversão entre sistemas de numeração é como navegar entre diferentes mapas de um mesmo território: 
+cada mapa tem sua escala e simbologia, mas todos representam o mesmo lugar. Entender como fazer essas conversões 
+nos dá flexibilidade para interpretar e trabalhar com dados em diferentes contextos computacionais.
 
  Mais do que decorar métodos, o importante é compreender a lógica por trás de cada conversão. Com prática, esses 
 processos se tornam tão automáticos quanto converter mentalmente de reais para dólares ou de quilômetros para 
