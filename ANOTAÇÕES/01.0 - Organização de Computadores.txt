@@ -389,3 +389,64 @@ Memória Virtual:
   MMU
   TLB
   Page fault
+
+
+
+Entrada e Saída (I/O):
+
+ Organização de Entrada e Saída:
+  Dispositivos periféricos
+  Controladores
+
+ Métodos de Comunicação:
+  E/S programada
+  Interrupções
+  DMA
+
+ Interrupções:
+  Hardware
+  Software
+  Vetor de interrupção
+  Tratamento
+
+
+
+Barramentos e Interconexões:
+
+ Barramentos:
+  Barramento de dados
+  Barramento de endereço
+  Barramento de controle
+
+ Características:
+  Largura
+  Frequência
+  Banda
+  Latência
+
+ Comunicação:
+  Síncrona
+  Assíncrona
+
+ Arbitragem:
+  Controle de acesso
+  Prioridade
+
+
+
+Temporização e Clock:
+
+ Clock:
+  Frequência
+  Período
+  Ciclo
+
+ Temporização Digital:
+  Setup time
+  Hold time
+  Delay de propagação
+
+ Problemas:
+  Clock skew
+  Jitter
+  Sincronização
