@@ -205,3 +205,31 @@ Unidade Lógica e Aritmética (ULA):
   Sinal
   Paridade
 
+
+
+Registradores:
+
+ Conceito de Registradores:
+  Armazenamento temporário
+  Velocidade
+  Comunicação interna da CPU
+
+ Tipos de Registradores:
+  Propósito geral:
+   Registradores de dados
+   Registradores temporários
+  Específicos:
+   PC (Program Counter)
+   IR (Instruction Register)
+   MAR
+   MDR
+   ACC
+   SP
+   FLAGS / PSW
+
+ Banco de Registradores:
+  Organização
+  Portas de leitura
+  Porta de escrita
+  Acesso paralelo
+
