@@ -323,3 +323,18 @@ Organização da Memória:
   Linhas e colunas
   Decodificação de endereço
   Bancos de memória
+
+
+
+Hierarquia de Memória:
+
+ Conceito:
+  Velocidade
+  Capacidade
+  Custo
+
+ Níveis:
+  Registradores
+  Cache
+  RAM
+  Armazenamento secundário
