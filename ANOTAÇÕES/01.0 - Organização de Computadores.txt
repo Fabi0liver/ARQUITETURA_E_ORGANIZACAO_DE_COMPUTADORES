@@ -38,3 +38,28 @@ Introdução à Organização de Computadores:
    Memórias
    Barramentos
    Entrada e saída
+
+ Modelos Fundamentais de Computadores:
+  Modelo de Von Neumann:
+   Unidade de processamento
+   Memória única
+   Entrada e saída
+   Barramentos
+   Gargalo de Von Neumann
+  Modelo Harvard:
+   Memória de instruções
+   Memória de dados
+   Separação de barramentos
+  Harvard Modificado:
+   Memórias separadas com compartilhamento
+   Uso em processadores modernos
+
+ Níveis de Abstração do Computador:
+  Nível de aplicação
+  Linguagens de programação
+  Sistema operacional
+  Linguagem de máquina
+  ISA
+  Microarquitetura
+  Circuitos digitais
+  Transistores
