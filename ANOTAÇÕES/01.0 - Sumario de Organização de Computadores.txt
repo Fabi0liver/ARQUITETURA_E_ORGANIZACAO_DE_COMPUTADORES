@@ -588,3 +588,776 @@ Tendências Avançadas e Tecnologias Emergentes:
 
 
 
+
+# Lista Completa de Estudo — **Organização de Computadores**
+
+*(Ciência da Computação — do básico ao avançado)*
+
+Esta trilha é focada principalmente em **Organização de Computadores**: como os componentes internos do computador são construídos, conectados e trabalham para executar programas. Os assuntos de **Arquitetura** aparecem apenas como base necessária para entender a organização.
+
+---
+
+# 0. Visão Geral: O que é Organização de Computadores
+
+## 0.1 Introdução aos Computadores
+
+* Conceito de computador
+* Evolução dos computadores
+* Componentes básicos de um sistema computacional
+
+  * Processador (CPU)
+  * Memória
+  * Entrada e saída
+  * Armazenamento
+
+## 0.2 Objetivo da Organização de Computadores
+
+* Como os componentes internos funcionam
+* Como os dados são armazenados e movimentados
+* Como instruções são executadas fisicamente
+* Como melhorar desempenho e eficiência
+
+## 0.3 Níveis de Abstração do Computador
+
+* Nível de usuário
+* Nível de aplicação
+* Sistemas operacionais
+* Linguagem de máquina
+* Microarquitetura
+* Circuitos digitais
+* Componentes físicos
+
+---
+
+# 1. Fundamentos Necessários Antes de Organização
+
+## 1.1 Sistemas de Numeração
+
+* Sistema decimal
+* Sistema binário
+* Sistema hexadecimal
+* Conversão entre bases
+
+## 1.2 Representação de Dados
+
+### Números inteiros
+
+* Sem sinal
+* Com sinal
+* Complemento de 2
+* Overflow
+
+### Números reais
+
+* Ponto fixo
+* Ponto flutuante
+* Norma IEEE 754
+
+### Dados não numéricos
+
+* Caracteres
+* ASCII
+* Unicode
+
+---
+
+## 1.3 Lógica Digital Básica
+
+### Portas lógicas
+
+* AND
+* OR
+* NOT
+* XOR
+* NAND
+* NOR
+
+### Circuitos combinacionais
+
+* Somadores
+* Subtratores
+* Multiplexadores
+* Decodificadores
+* Codificadores
+
+### Circuitos sequenciais
+
+* Latches
+* Flip-flops
+* Registradores
+* Contadores
+
+*(Base necessária para entender o hardware interno)*
+
+---
+
+# 2. Arquitetura x Organização de Computadores
+
+## 2.1 Arquitetura de Computadores
+
+É **o que o computador faz**.
+
+Inclui:
+
+* Conjunto de instruções (ISA)
+* Tipos de dados
+* Modos de endereçamento
+* Registradores visíveis ao programador
+* Modelo de memória
+
+Exemplos:
+
+* x86
+* ARM
+* RISC-V
+
+---
+
+## 2.2 Organização de Computadores
+
+É **como o computador faz**.
+
+Inclui:
+
+* Implementação física
+* Unidade de controle
+* Caminho de dados
+* Memória cache
+* Barramentos
+* Pipeline
+* Controle interno
+
+---
+
+## 2.3 Relação entre Arquitetura e Organização
+
+Exemplo:
+
+Arquitetura:
+
+> "Existe uma instrução ADD"
+
+Organização:
+
+> "Como a CPU realiza essa soma internamente?"
+
+---
+
+# 3. Estrutura Básica de um Computador
+
+## 3.1 Modelo de Von Neumann
+
+* Unidade Central de Processamento
+* Memória
+* Entrada
+* Saída
+* Barramento
+
+---
+
+## 3.2 Modelo Harvard
+
+* Memória de dados separada
+* Memória de instruções separada
+
+---
+
+## 3.3 Componentes principais
+
+### CPU
+
+* Unidade de Controle
+* ULA
+* Registradores
+
+### Memória
+
+* Cache
+* RAM
+* Armazenamento
+
+### Entrada e saída
+
+* Controladores
+* Dispositivos periféricos
+
+---
+
+# 4. Unidade Central de Processamento (CPU)
+
+*(Um dos principais temas da Organização)*
+
+## 4.1 Estrutura interna da CPU
+
+* Unidade de Controle
+* Unidade Lógica e Aritmética (ULA)
+* Registradores
+* Barramentos internos
+* Caminho de dados
+
+---
+
+# 4.2 Registradores
+
+## Conceito
+
+* Pequenas memórias dentro da CPU
+
+## Tipos
+
+### Registradores de dados
+
+* Armazenamento temporário
+
+### Registradores de endereço
+
+* Guardam posições de memória
+
+### Registradores de controle
+
+Exemplos:
+
+* PC (Program Counter)
+* IR (Instruction Register)
+* MAR
+* MDR
+* ACC
+* Flags
+
+---
+
+# 4.3 Unidade Lógica e Aritmética (ULA)
+
+## Operações aritméticas
+
+* Soma
+* Subtração
+* Multiplicação
+* Divisão
+
+## Operações lógicas
+
+* AND
+* OR
+* NOT
+* XOR
+
+## Componentes internos
+
+* Somadores
+* Comparadores
+* Shifters
+* Seletores
+
+---
+
+# 5. Caminho de Dados (Datapath)
+
+## 5.1 Conceito
+
+Como os dados circulam dentro da CPU.
+
+---
+
+## 5.2 Componentes
+
+* Registradores
+* ULA
+* Multiplexadores
+* Barramentos internos
+
+---
+
+## 5.3 Fluxo de dados
+
+Exemplo:
+
+Memória → Registrador → ULA → Registrador
+
+---
+
+# 6. Ciclo de Instrução
+
+*(Como a CPU executa programas)*
+
+## 6.1 Busca (Fetch)
+
+* Buscar instrução na memória
+
+---
+
+## 6.2 Decodificação (Decode)
+
+* Interpretar instrução
+
+---
+
+## 6.3 Execução (Execute)
+
+* Realizar operação
+
+---
+
+## 6.4 Armazenamento (Write Back)
+
+* Salvar resultado
+
+---
+
+## 6.5 Ciclo completo
+
+* Fetch
+* Decode
+* Execute
+* Memory
+* Write Back
+
+---
+
+# 7. Unidade de Controle
+
+## 7.1 Função
+
+Coordenar todos os componentes.
+
+---
+
+## 7.2 Tipos
+
+### Controle cabeado
+
+* Circuitos fixos
+
+### Controle microprogramado
+
+* Usa microinstruções
+
+---
+
+## 7.3 Sinais de controle
+
+* Leitura
+* Escrita
+* Seleção da ULA
+* Movimentação de dados
+
+---
+
+# 8. Barramentos
+
+## 8.1 Conceito
+
+Canais de comunicação internos.
+
+---
+
+## 8.2 Tipos
+
+### Barramento de dados
+
+* Transporta informação
+
+### Barramento de endereço
+
+* Define localização
+
+### Barramento de controle
+
+* Controla operações
+
+---
+
+## 8.3 Características
+
+* Largura
+* Frequência
+* Velocidade
+
+---
+
+# 9. Memória do Computador
+
+*(Principal área da Organização)*
+
+## 9.1 Hierarquia de Memória
+
+Do mais rápido ao mais lento:
+
+* Registradores
+* Cache
+* RAM
+* SSD/HDD
+
+---
+
+# 9.2 Memória Principal
+
+## RAM
+
+* Volátil
+* Armazenamento temporário
+
+Tipos:
+
+* SRAM
+* DRAM
+
+---
+
+## ROM
+
+* Não volátil
+
+Tipos:
+
+* PROM
+* EPROM
+* EEPROM
+
+---
+
+# 10. Memória Cache
+
+## 10.1 Conceito
+
+Memória rápida entre CPU e RAM.
+
+---
+
+## 10.2 Objetivo
+
+Reduzir tempo de acesso.
+
+---
+
+## 10.3 Níveis
+
+* L1
+* L2
+* L3
+
+---
+
+## 10.4 Princípios
+
+### Localidade temporal
+
+Dados usados recentemente tendem a ser usados novamente.
+
+### Localidade espacial
+
+Dados próximos tendem a ser usados.
+
+---
+
+## 10.5 Mapeamento de Cache
+
+* Mapeamento direto
+* Associativo
+* Associativo por conjunto
+
+---
+
+## 10.6 Políticas
+
+* Substituição
+* Escrita
+* Acerto e falha (hit/miss)
+
+---
+
+# 11. Memória Virtual
+
+## 11.1 Conceito
+
+Usar armazenamento como extensão da RAM.
+
+---
+
+## 11.2 Paginação
+
+* Páginas
+* Quadros
+* Tabela de páginas
+
+---
+
+## 11.3 TLB
+
+Cache de endereços.
+
+---
+
+## 11.4 Falta de página
+
+* Page fault
+
+---
+
+# 12. Entrada e Saída (I/O)
+
+## 12.1 Conceito
+
+Comunicação com dispositivos externos.
+
+---
+
+## 12.2 Dispositivos
+
+* Teclado
+* Mouse
+* Disco
+* Rede
+
+---
+
+# 12.3 Métodos de Entrada/Saída
+
+## Programada
+
+CPU controla tudo.
+
+## Interrupção
+
+Dispositivo avisa CPU.
+
+## DMA
+
+Transferência direta memória-dispositivo.
+
+---
+
+# 13. Interrupções
+
+## 13.1 Conceito
+
+Eventos que alteram fluxo normal.
+
+---
+
+## 13.2 Tipos
+
+* Hardware
+* Software
+
+---
+
+## 13.3 Tratamento
+
+* Vetor de interrupção
+* Rotina de serviço
+
+---
+
+# 14. Armazenamento Secundário
+
+## 14.1 Discos
+
+### HDD
+
+* Magnético
+* Mecânico
+
+### SSD
+
+* Memória flash
+
+---
+
+## 14.2 Organização
+
+* Setores
+* Blocos
+* Trilhas
+
+---
+
+# 15. Pipeline de Processadores
+
+*(Tema avançado de organização)*
+
+## 15.1 Conceito
+
+Dividir execução em etapas.
+
+---
+
+## 15.2 Estágios
+
+* Busca
+* Decodificação
+* Execução
+* Memória
+* Escrita
+
+---
+
+## 15.3 Problemas
+
+### Hazards
+
+* Estruturais
+* Dados
+* Controle
+
+---
+
+## 15.4 Soluções
+
+* Stalling
+* Forwarding
+* Predição de salto
+
+---
+
+# 16. Paralelismo
+
+## 16.1 Conceito
+
+Executar várias operações simultaneamente.
+
+---
+
+## 16.2 Tipos
+
+### Paralelismo de instruções
+
+* Pipeline
+* Superescalar
+
+### Paralelismo de dados
+
+* SIMD
+
+### Paralelismo de tarefas
+
+* Multicore
+
+---
+
+# 17. Processadores Modernos
+
+## 17.1 Multiprocessadores
+
+* Múltiplos CPUs
+
+---
+
+## 17.2 Multicore
+
+* Vários núcleos
+
+---
+
+## 17.3 GPU
+
+* Processamento paralelo massivo
+
+---
+
+## 17.4 Aceleradores
+
+* IA
+* Criptografia
+
+---
+
+# 18. Desempenho de Computadores
+
+## 18.1 Medidas
+
+* Clock
+* CPI
+* Latência
+* Throughput
+
+---
+
+## 18.2 Lei de Amdahl
+
+* Limites do ganho de desempenho
+
+---
+
+## 18.3 Benchmark
+
+* Avaliação de desempenho
+
+---
+
+# 19. Organização Avançada
+
+## 19.1 RISC x CISC
+
+### RISC
+
+* Instruções simples
+
+### CISC
+
+* Instruções complexas
+
+---
+
+## 19.2 Microarquitetura
+
+* Implementação interna da CPU
+
+---
+
+## 19.3 Execução fora de ordem
+
+* Out-of-order execution
+
+---
+
+## 19.4 Execução especulativa
+
+* Predição e antecipação
+
+---
+
+# 20. Tendências Futuras
+
+* Computação heterogênea
+* Processadores neuromórficos
+* Computação quântica
+* Chips especializados
+* Arquiteturas abertas (RISC-V)
+
+---
+
+# Conclusão — O que você deve dominar em Organização de Computadores
+
+Ao terminar essa matéria, você deve entender:
+
+1. **Como um computador é construído internamente**
+2. **Como a CPU executa instruções**
+3. **Como dados se movimentam dentro do sistema**
+4. **Como memória funciona e é organizada**
+5. **Como dispositivos conversam com o processador**
+6. **Como aumentar desempenho**
+7. **Como hardware e software trabalham juntos**
+
+---
+
+# Resumo 80/20 — O núcleo mais importante
+
+Se tivesse que priorizar:
+
+1. CPU e ciclo de instrução
+2. ULA e Unidade de Controle
+3. Registradores
+4. Caminho de dados
+5. Memória e hierarquia
+6. Cache
+7. Barramentos
+8. Entrada/Saída e interrupções
+9. Pipeline
+10. Paralelismo e desempenho
+
+Esses são os pilares que formam a base de praticamente toda a Organização de Computadores.
+
+
+
+
