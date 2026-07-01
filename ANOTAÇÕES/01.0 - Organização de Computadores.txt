@@ -233,3 +233,25 @@ Registradores:
   Porta de escrita
   Acesso paralelo
 
+
+
+Ciclo de Instrução:
+
+ Funcionamento da Execução:
+  Busca da instrução
+  Decodificação
+  Execução
+  Acesso à memória
+  Escrita do resultado
+
+ Estados do Processador:
+  Estado Fetch
+  Estado Decode
+  Estado Execute
+  Estado Memory
+  Estado Write Back
+
+ Controle do Ciclo:
+  FSM do processador
+  Microoperações
+  Sinais de controle
