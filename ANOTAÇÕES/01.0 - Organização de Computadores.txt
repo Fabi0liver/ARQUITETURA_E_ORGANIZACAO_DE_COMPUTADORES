@@ -582,6 +582,29 @@ Aplicações da Organização de Computadores:
 
 
 
+Conclusão e Resumo:
 
+ Núcleo Principal da Organização:
+  Estrutura da CPU
+  Datapath e Control Path
+  Ciclo de instrução
+  ULA
+  Unidade de Controle
+  Registradores
+  Memória e hierarquia
+  Cache
+  Memória virtual
+  Barramentos
+  I/O e interrupções
+  Pipeline
+  Paralelismo
+  Desempenho
 
-
+ Ao concluir o estudo, você deve compreender:
+  Como um computador é construído internamente
+  Como a CPU executa instruções fisicamente
+  Como dados circulam entre componentes
+  Como memória é organizada e otimizada
+  Como dispositivos comunicam com o processador
+  Como desempenho é obtido por organização física
+  Como processadores modernos aumentam eficiência
