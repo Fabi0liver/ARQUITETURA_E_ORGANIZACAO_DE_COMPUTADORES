@@ -367,3 +367,25 @@ Memória Cache:
    LRU
    Write-through
    Write-back
+
+
+
+Memória Virtual:
+
+ Fundamentos:
+  Endereço virtual
+  Endereço físico
+
+ Paginação:
+  Página
+  Quadro
+  Tabela de páginas
+
+ Segmentação:
+  Segmentos
+  Proteção
+
+ Tradução de Endereços:
+  MMU
+  TLB
+  Page fault
