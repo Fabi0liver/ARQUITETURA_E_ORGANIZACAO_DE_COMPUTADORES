@@ -512,3 +512,76 @@ Multiprocessadores:
   Torus
   Crossbar
   NoC
+
+
+
+Avaliação de Desempenho:
+
+ Métricas:
+  Clock
+  CPI
+  IPC
+  Latência
+  Throughput
+
+ Fatores de Desempenho:
+  Cache miss
+  Pipeline
+  Branch prediction
+  Gargalos
+ 
+ Avaliação:
+  Benchmarks
+  Simulação
+  Profiling
+
+
+
+Consumo Energético e Organização Física:
+
+ Potência:
+  Potência dinâmica
+  Potência estática
+
+ Controle Energético:
+  Clock gating
+  Power gating
+  DVFS
+
+ Controle Térmico:
+  Dissipação
+  Temperatura
+  Thermal throttling
+
+
+
+Aplicações da Organização de Computadores:
+
+ Sistemas Embarcados:
+  Microcontroladores
+  Sistemas de tempo real
+
+ Computação de Alto Desempenho:
+  Supercomputadores
+  Clusters
+
+ Processadores Modernos:
+  SoC
+  GPUs
+  Aceleradores de IA
+
+ Tecnologias Emergentes:
+  Chiplets
+  Computação 3D
+  FPGA
+  NoC
+  PIM
+  Memórias avançadas
+  Computação neuromórfica
+  Computação quântica
+
+
+
+
+
+
