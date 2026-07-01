@@ -299,3 +299,27 @@ Instruções e Organização da CPU:
   Indexado
   Base + deslocamento
   Pilha
+
+
+
+Organização da Memória:
+
+ Conceitos de Memória:
+  Capacidade
+  Endereço
+  Palavra
+  Byte
+  Acesso
+
+ Tipos de Memória:
+  RAM
+  ROM
+  SRAM
+  DRAM
+  Flash
+
+ Organização Física:
+  Células de memória
+  Linhas e colunas
+  Decodificação de endereço
+  Bancos de memória
