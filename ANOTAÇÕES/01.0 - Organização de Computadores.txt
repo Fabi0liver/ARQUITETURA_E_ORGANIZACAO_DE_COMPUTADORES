@@ -338,3 +338,32 @@ Hierarquia de Memória:
   Cache
   RAM
   Armazenamento secundário
+
+
+
+Memória Cache:
+
+ Fundamentos:
+  Localidade temporal
+  Localidade espacial
+
+ Organização da Cache:
+  Linha de cache
+  Bloco
+  Tag
+  Índice
+  Offset
+
+ Mapeamento:
+  Mapeamento direto
+  Associativo
+  Conjunto associativo
+
+ Políticas de Cache:
+  Substituição
+  Escrita
+  Métodos:
+   FIFO
+   LRU
+   Write-through
+   Write-back
