@@ -479,3 +479,36 @@ Pipeline:
 
 
 
+Paralelismo de Processadores:
+
+ Conceitos:
+  Paralelismo de instruções
+  Paralelismo de dados
+  Paralelismo de tarefas
+
+ Técnicas:
+  Pipeline
+  Superescalar
+  Execução fora de ordem
+
+
+
+Multiprocessadores:
+
+ Arquiteturas:
+  Multicore
+  SMP
+  NUMA
+  Cluster
+
+ Comunicação:
+  Memória compartilhada
+  Mensagens
+
+ Interconexões:
+  Barramento
+  Anel
+  Malha
+  Torus
+  Crossbar
+  NoC
