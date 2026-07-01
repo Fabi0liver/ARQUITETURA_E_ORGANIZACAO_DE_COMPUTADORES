@@ -126,3 +126,21 @@ Fundamentos Necessários Antes da Organização:
     Contadores
     Máquinas de estados finitos (FSM)
 
+
+
+Estrutura Básica do Computador:
+
+ Componentes Principais:
+  Processador (CPU)
+  Memória principal
+  Armazenamento secundário
+  Entrada e saída
+  Barramentos
+
+ CPU — Unidade Central de Processamento:
+  Organização geral da CPU
+  Unidade de Controle
+  Unidade Lógica e Aritmética
+  Registradores
+  Barramentos internos
+
