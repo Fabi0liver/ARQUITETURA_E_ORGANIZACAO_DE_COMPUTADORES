@@ -450,3 +450,32 @@ Temporização e Clock:
   Clock skew
   Jitter
   Sincronização
+
+
+
+Pipeline:
+
+ Conceito:
+  Execução sobreposta
+  Estágios
+
+ Pipeline Clássico:
+  IF
+  ID
+  EX
+  MEM
+  WB
+
+ Problemas:
+  Hazard estrutural
+  Hazard de dados
+  Hazard de controle
+
+ Soluções:
+  Forwarding
+  Stall
+  Flush
+  Branch prediction
+
+
+
