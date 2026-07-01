@@ -255,3 +255,47 @@ Ciclo de Instrução:
   FSM do processador
   Microoperações
   Sinais de controle
+
+
+
+Unidade de Controle:
+
+ Função da Unidade de Controle:
+  Geração de sinais
+  Coordenação da CPU
+
+ Tipos de Controle:
+  Controle cabeado:
+   Circuitos lógicos fixos
+   Alta velocidade
+  Controle microprogramado:
+   Microinstruções
+   Memória de controle
+   Microcódigo
+
+
+
+Instruções e Organização da CPU:
+
+ ISA: Interface Hardware Software:
+  Conceito de ISA
+  Relação com organização
+
+ Formato das Instruções:
+  Opcode
+  Operandos
+  Campos de instrução
+
+ Tipos de Formatos:
+  R
+  I
+  J
+
+ Modos de Endereçamento:
+  Imediato
+  Direto
+  Indireto
+  Registrador
+  Indexado
+  Base + deslocamento
+  Pilha
