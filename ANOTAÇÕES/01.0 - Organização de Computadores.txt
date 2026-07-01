@@ -144,3 +144,28 @@ Estrutura Básica do Computador:
   Registradores
   Barramentos internos
 
+
+
+Caminho de Dados e Controle do Processador:
+
+ Datapath (Caminho de Dados):
+  Conceito de caminho de dados
+  Fluxo interno dos dados
+  Registradores internos
+  ULA
+  Multiplexadores
+  Barramentos internos
+
+ Caminho de Controle:
+  Sinais de controle
+  Unidade de controle
+  Coordenação dos componentes
+  Sincronização
+
+ Organização Interna da CPU:
+  Unidade de execução
+  Unidade de busca
+  Unidade de decodificação
+  Unidade de controle
+  Unidade de armazenamento interno
+
