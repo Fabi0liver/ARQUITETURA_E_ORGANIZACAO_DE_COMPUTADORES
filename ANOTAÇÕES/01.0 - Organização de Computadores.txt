@@ -3,8 +3,8 @@
 
 Foco principal: A Organização de Computadores estuda como um computador é construído e implementado fisicamente, 
                analisando seus componentes internos. Ela explica como processador, memória, dispositivos e 
-               barramentos funcionam e se comunicam. Seu foco é entender como essa estrutura influencia o desempenho   
-               e o funcionamento real do sistema computacional.
+               barramentos funcionam e se comunicam. Seu foco é entender como essa estrutura influencia o  
+               desempenho e o funcionamento real do sistema computacional.
 
 
 
@@ -63,3 +63,66 @@ Introdução à Organização de Computadores:
   Microarquitetura
   Circuitos digitais
   Transistores
+
+
+
+Fundamentos Necessários Antes da Organização:
+
+ Sistemas de Numeração:
+  Sistema decimal
+  Sistema binário
+  Sistema hexadecimal
+  Sistema octal
+  Conversão entre bases
+
+ Representação de Dados:
+  Dados inteiros
+  Representação sem sinal
+  Representação com sinal
+  Sinal-magnitude
+  Complemento de 1
+  Complemento de 2
+  Overflow
+
+ Dados reais:
+  Ponto fixo
+  Ponto flutuante
+  IEEE 754
+
+ Dados de texto:
+  ASCII
+  Unicode
+
+ Lógica Digital Aplicada:
+  Álgebra Booleana:
+   Operações booleanas
+   Leis booleanas
+   Simplificação lógica
+   Mapas de Karnaugh
+  Portas Lógicas:
+   AND
+   OR
+   NOT
+   NAND
+   NOR
+   XOR
+   XNOR
+  Circuitos Combinacionais:
+   Somadores
+   Meio somador (Half Adder)
+   Somador completo (Full Adder)
+   Subtratores
+   Comparadores
+   Multiplexadores
+   Demultiplexadores
+   Codificadores
+   Decodificadores
+  Circuitos Sequenciais:
+   Conceito de memória digital
+   Latches
+   Flip-flops
+   Elementos Sequenciais:
+    Registradores
+    Contadores
+    Máquinas de estados finitos (FSM)
+
