@@ -169,3 +169,39 @@ Caminho de Dados e Controle do Processador:
   Unidade de controle
   Unidade de armazenamento interno
 
+
+
+Unidade Lógica e Aritmética (ULA):
+
+ Estrutura da ULA:
+  Entradas da ULA
+  Saídas da ULA
+  Seleção de operação
+
+ Operações Aritméticas:
+  Soma
+  Subtração
+  Incremento
+  Decremento
+  Multiplicação
+  Divisão
+
+ Operações Lógicas:
+  AND
+  OR
+  NOT
+  XOR
+  Comparação
+
+ Operações de Deslocamento:
+  Shift lógico
+  Shift aritmético
+  Rotação
+
+ Flags e Sinais:
+  Zero
+  Carry
+  Overflow
+  Sinal
+  Paridade
+
