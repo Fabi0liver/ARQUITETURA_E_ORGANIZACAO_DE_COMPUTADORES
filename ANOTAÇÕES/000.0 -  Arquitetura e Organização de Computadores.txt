@@ -210,3 +210,53 @@ Organização de Computadores:
   Renomeação de registradores
   Buffer de reordenação
   Paralelismo em nível de instrução (ILP)
+
+
+
+Processamento Paralelo
+
+ Fundamentos:
+  Paralelismo
+  Concorrência
+  Taxonomia de Flynn
+  SISD
+  SIMD
+  MISD
+  MIMD
+
+ Arquiteturas Paralelas:
+  Multicore
+  Manycore
+  Multiprocessadores
+  NUMA
+  SMP
+
+ GPUs:
+  Arquitetura GPU
+  GPGPU
+  CUDA (introdução)
+  OpenCL (introdução)
+
+ VLIW
+  Conceitos
+  Organização
+  Execução
+
+ Sistemas Distribuídos:
+  Cluster
+  Grid
+  Computação em Nuvem
+  Computação de Alto Desempenho (HPC)
+
+ Interconexão:
+  Barramentos
+  Crossbar
+  Malhas (Mesh)
+  Torus
+  Árvores
+  Network-on-Chip (NoC)
+
+ Programação Paralela:
+  OpenMP
+  SIMD Intrinsics
+  Paralelismo básico
