@@ -406,3 +406,43 @@ Tendências Atuais:
 
 
 
+Conclusão e Revisão Geral:
+
+ Revisão dos Fundamentos:
+  Modelos de computação
+  Níveis de abstração
+  Representação da informação
+  Circuitos digitais
+
+ Revisão da Organização:
+  CPU
+  Memória
+  Barramentos
+  Entrada e Saída
+  Hierarquia de memória
+  
+ Revisão da Arquitetura:
+  ISA
+  Assembly
+  Microarquitetura
+  Pipeline
+  Superescalaridade
+
+ Revisão das Arquiteturas Modernas:
+  Paralelismo
+  GPUs
+  FPGA
+  Virtualização
+  Segurança
+  Computação heterogênea
+  Arquiteturas não convencionais
+
+ Integração dos Conceitos:
+  Relação entre hardware e software
+  Relação entre arquitetura e organização
+  Impacto das decisões arquiteturais no desempenho
+  Evolução das arquiteturas de computadores
+  Panorama geral da disciplina
+
+
+
