@@ -260,3 +260,40 @@ Processamento Paralelo
   OpenMP
   SIMD Intrinsics
   Paralelismo básico
+
+
+
+Sistemas Reconfiguráveis e Arquiteturas Modernas:
+
+ Lógica Reconfigurável:
+  FPGA
+  CPLD
+  SoC FPGA
+  Fluxo de configuração
+
+ Computação Heterogênea:
+  CPU + GPU
+  CPU + FPGA
+  Sistemas heterogêneos
+
+ Arquiteturas Orientadas a Dados:
+  Conceitos
+  Fluxo de dados
+
+ Computação Neuromórfica:
+  Conceitos
+  Processadores neuromórficos
+
+ Computação Quântica:
+  Conceitos básicos
+  Qubits
+  Portas quânticas
+  Arquitetura quântica (introdução)
+
+ Outras Arquiteturas Não Convencionais:
+  Computação Óptica
+  Computação Probabilística
+  Computação Aproximada
+  Computação Bioinspirada
+
+
