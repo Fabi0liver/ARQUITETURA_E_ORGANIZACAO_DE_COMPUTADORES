@@ -95,3 +95,78 @@ Fundamentos Necessários:
    Registradores
    Contadores
    Máquinas de Estados Finitos (FSM)
+
+
+
+Organização de Computadores:
+
+ Estrutura Básica do Computador:
+  Organização geral
+  Fluxo de dados
+  Ciclo de execução de instruções
+  Unidade Central de Processamento (CPU)
+
+ Processador:
+  Estrutura da CPU
+  Unidade de Controle
+  Unidade Lógica e Aritmética (ULA)
+  Registradores
+  Clock
+  Caminho de dados (Datapath)
+  Unidade de controle cabeada
+  Unidade de controle microprogramada
+
+ Memória:
+  Hierarquia de Memória:
+   Registradores
+   Cache
+   Memória Principal
+   Memória Secundária
+   Memória Terciária
+  Cache:
+   Funcionamento
+   Mapeamentos
+   Políticas de substituição
+   Políticas de escrita
+   Coerência de cache
+  Memória Principal:
+   RAM
+   ROM
+   DRAM
+   SRAM
+  Memória Virtual:
+   Paginação
+   Segmentação
+   TLB
+   Tradução de endereços
+
+ Barramentos:
+  Conceito
+  Barramento de dados
+  Barramento de endereços
+  Barramento de controle
+  Arbitragem
+  Largura do barramento
+  Barramentos internos
+  Barramentos externos
+
+ Entrada e Saída (E/S):
+  Conceitos
+  Controladores
+  Interfaces
+  Comunicação com periféricos
+  Interrupções
+  DMA
+  Portas de E/S
+  E/S mapeada em memória
+  E/S isolada
+
+ Armazenamento:
+  HDD
+  SSD
+  NVMe
+  Memória Flash
+  Sistemas de armazenamento
+
+
+
