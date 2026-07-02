@@ -323,4 +323,23 @@ Segurança em Arquitetura:
 
 
 
+Desempenho de Computadores:
+
+ Métricas:
+  Tempo de execução
+  Throughput
+  Latência
+  IPC
+  CPI
+  Clock
+
+ Avaliação:
+  Benchmarks
+  Gargalos
+  Lei de Amdahl
+  Lei de Gustafson
+  Balanceamento entre CPU, memória e E/S
+
+
+
 
