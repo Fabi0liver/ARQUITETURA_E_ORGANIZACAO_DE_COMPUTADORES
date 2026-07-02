@@ -26,3 +26,72 @@ Introdução
   Diferença entre Arquitetura e Organização
   Relação entre Hardware e Software
   Visão geral da disciplina
+
+
+
+Fundamentos Necessários:
+
+ Modelos de Computação:
+  Conceito de modelo computacional
+  Modelo de Von Neumann
+  Gargalo de Von Neumann
+  Arquitetura Harvard
+  Harvard Modificada
+  Arquiteturas Híbridas
+  Comparação entre modelos
+
+ Níveis de Abstração:
+  Conceito de abstração
+  Nível físico
+  Nível digital
+  Microarquitetura
+  Arquitetura do Conjunto de Instruções (ISA)
+  Sistema Operacional
+  Linguagens de Programação
+  Aplicações
+  Relação entre os níveis
+
+ Representação da Informação:
+  Sistemas de Numeração:
+   Decimal
+   Binário
+   Octal
+   Hexadecimal
+  Conversões:
+   Conversões entre bases
+   Aritmética binária
+  Representação de Dados:
+   Inteiros
+   Números com sinal
+   Complemento de dois
+   Ponto fixo
+   Ponto flutuante
+   Caracteres (ASCII e Unicode)
+   Representação de imagens
+   Representação de áudio
+   Representação de vídeo
+
+ Álgebra Booleana:
+  Operadores lógicos
+  Tabelas verdade
+  Leis da álgebra booleana
+  Simplificação lógica
+  Mapas de Karnaugh
+
+ Circuitos Digitais:
+  Circuitos Combinacionais:
+   Portas lógicas
+   Codificadores
+   Decodificadores
+   Multiplexadores
+   Demultiplexadores
+   Comparadores
+   Somadores
+   Subtratores
+   ULA básica
+  Circuitos Sequenciais:
+   Latches
+   Flip-Flops
+   Registradores
+   Contadores
+   Máquinas de Estados Finitos (FSM)
