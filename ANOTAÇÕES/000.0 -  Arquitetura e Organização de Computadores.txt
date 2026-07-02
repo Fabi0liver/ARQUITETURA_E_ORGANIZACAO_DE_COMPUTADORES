@@ -369,4 +369,40 @@ Softwares Relacionados:
 
 
 
+Aplicações da Arquitetura e Organização de Computadores:
+
+ Áreas de Aplicação:
+  Computadores pessoais
+  Servidores
+  Data Centers
+  Computação em Nuvem
+  Sistemas Embarcados
+  Internet das Coisas (IoT)
+  Smartphones
+  Consoles de jogos
+  Inteligência Artificial
+  Computação Científica
+  Robótica
+  Automação Industrial
+  Veículos Autônomos
+  Sistemas Críticos
+  Supercomputadores
+  Edge Computing
+
+ 
+
+Tendências Atuais:
+ 
+ Arquiteturas heterogêneas
+ Chips especializados para IA
+ Computação sustentável
+ Chiplets
+ Memórias de nova geração
+ RISC-V
+ Computação quântica
+ Computação neuromórfica
+ Segurança por hardware
+ Arquiteturas para IA
+
+
 
