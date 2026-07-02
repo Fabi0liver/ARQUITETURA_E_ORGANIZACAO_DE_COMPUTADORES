@@ -342,4 +342,31 @@ Desempenho de Computadores:
 
 
 
+Softwares Relacionados:
+
+ Sistema Operacional:
+  Gerenciamento de processos
+  Gerenciamento de memória
+  Sistema de arquivos
+  Escalonamento
+  Comunicação com hardware
+
+ Compiladores:
+  Processo de compilação
+  Otimizações
+  Geração de código
+  
+ Drivers:
+  Função dos drivers
+  Comunicação com dispositivos
+
+ Ferramentas:
+  Simuladores
+  Emuladores
+  Debuggers
+  Profilers
+  Ferramentas de análise de desempenho
+
+
+
 
