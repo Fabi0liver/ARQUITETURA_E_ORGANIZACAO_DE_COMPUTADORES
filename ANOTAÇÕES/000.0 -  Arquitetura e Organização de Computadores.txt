@@ -297,3 +297,30 @@ Sistemas Reconfiguráveis e Arquiteturas Modernas:
   Computação Bioinspirada
 
 
+
+Virtualização:
+ Conceitos
+ Hipervisores
+ Máquinas Virtuais
+ Virtualização de Hardware
+ Virtualização de Memória
+ Virtualização de E/S
+ Containers (visão geral)
+
+
+
+Segurança em Arquitetura:
+ Segurança de Hardware
+ Privilégios de execução
+ Modos usuário e kernel
+ MMU
+ NX Bit
+ Secure Boot
+ Trusted Execution
+ TPM
+ Criptografia por hardware
+ Side Channels (introdução)
+
+
+
+
