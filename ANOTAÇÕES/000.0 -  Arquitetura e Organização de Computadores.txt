@@ -1,64 +1,28 @@
                          Arquitetura e Organização de Computadores
 
 
-Computador: Fundamentos e Introdução
+Objetivo: Estudar Arquitetura e Organização de Computadores de forma progressiva, começando pelos fundamentos indispensáveis, passando pelos conceitos centrais da disciplina, chegando às arquiteturas modernas e finalizando com aplicações práticas, tendências e revisão geral.
 
 
-História da computação e evolução dos computadores
+Introdução
 
+ O Computador:
+  O que é um computador
+  Objetivos de um computador
+  Componentes básicos
+  Funcionamento geral
+  Classificação dos computadores
 
-Modelos de Computação: Von Neumann, Harvard, Harvard Modificado, híbridos
+ História da Computação:
+  Evolução dos computadores
+  Gerações dos computadores
+  Evolução dos processadores
+  Evolução das memórias
+  Evolução das arquiteturas
 
-
-Níveis de abstração: Físico, lógico, ISA, microarquitetura, sistema operacional, aplicação
-
-
-Representação de dados e sistemas de numeração
-
-
-Álgebra Booleana e Circuitos Lógicos
-
-
-Hardware e Software 
-
-
-Função e Estrutura
-
-
-Organização de computadores: Unidade Lógica e Aritmética, Memória, Entrada/Saída (E/S), Barramentos 
-
-
-Arquitetura de computadores
-
-
-Arquitetura do Conjunto de Instruções (ISA) 
-
-
-Assembly e Assembler
-
-
-Microarquitetura
-
-
-Pipeline e Superescalaridade
-
-
-Processamento Paralelo e Arquiteturas Avançadas: Processadores Multicore e Multiprocessadores, SIMD, MIMD, VLIW, GPU e GPGPU, Arquiteturas Distribuídas, Interconexão em sistemas paralelos (NoC, torus, malhas), Programação paralela básica (OpenMP, SIMD intrinsics)
-
-
-Sistemas Reconfiguráveis e Arquiteturas Não-Convencionais: FPGAs e CPLDs, Arquiteturas orientadas a dados, Computação Neuromórfica, Computação Quântica (introdução), Computação Heterogênea (CPU+GPU+FPGA)
-
-
-Virtualização
-
-
-Segurança e Execução Segura
-
-
-Arquiteturas não convencionais 
-
-
-Medição e Análise de Desempenho
-
-
-Softwares Relacionados: Sistemas Operacionais, Compiladores e otimizadores, Drivers de dispositivos, Aplicativos(programas), Simuladores e emuladores 
+ Fundamentos da Arquitetura e Organização:
+  O que é Arquitetura de Computadores
+  O que é Organização de Computadores
+  Diferença entre Arquitetura e Organização
+  Relação entre Hardware e Software
+  Visão geral da disciplina
