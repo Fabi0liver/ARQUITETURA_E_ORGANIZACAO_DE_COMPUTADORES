@@ -170,3 +170,43 @@ Organização de Computadores:
 
 
 
+ Arquitetura de Computadores:
+
+ Arquitetura do Conjunto de Instruções (ISA):
+  Conceitos
+  Tipos de instruções
+  Formatos
+  Modos de endereçamento
+  Tipos de operandos
+  Conjunto de registradores
+
+ Linguagem Assembly:
+  Conceitos
+  Assembler
+  Estrutura de programas
+  Instruções
+  Chamadas de procedimentos
+  Manipulação de memória
+
+ Microarquitetura:
+  Organização interna
+  Datapath
+  Unidade de Controle
+  Microinstruções
+  Execução de instruções
+  Decodificação
+
+ Pipeline:
+  Conceito
+  Estágios
+  Hazards
+  Técnicas de resolução
+  Predição de desvios
+  Execução especulativa
+
+ Arquiteturas Superescalares:
+  Conceitos
+  Execução fora de ordem
+  Renomeação de registradores
+  Buffer de reordenação
+  Paralelismo em nível de instrução (ILP)
