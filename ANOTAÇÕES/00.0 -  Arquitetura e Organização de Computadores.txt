@@ -1,0 +1,448 @@
+                         Arquitetura e Organização de Computadores
+
+
+Objetivo: Estudar Arquitetura e Organização de Computadores de forma progressiva, começando pelos fundamentos indispensáveis, passando pelos conceitos centrais da disciplina, chegando às arquiteturas modernas e finalizando com aplicações práticas, tendências e revisão geral.
+
+
+Introdução
+
+ O Computador:
+  O que é um computador
+  Objetivos de um computador
+  Componentes básicos
+  Funcionamento geral
+  Classificação dos computadores
+
+ História da Computação:
+  Evolução dos computadores
+  Gerações dos computadores
+  Evolução dos processadores
+  Evolução das memórias
+  Evolução das arquiteturas
+
+ Fundamentos da Arquitetura e Organização:
+  O que é Arquitetura de Computadores
+  O que é Organização de Computadores
+  Diferença entre Arquitetura e Organização
+  Relação entre Hardware e Software
+  Visão geral da disciplina
+
+
+
+Fundamentos Necessários:
+
+ Modelos de Computação:
+  Conceito de modelo computacional
+  Modelo de Von Neumann
+  Gargalo de Von Neumann
+  Arquitetura Harvard
+  Harvard Modificada
+  Arquiteturas Híbridas
+  Comparação entre modelos
+
+ Níveis de Abstração:
+  Conceito de abstração
+  Nível físico
+  Nível digital
+  Microarquitetura
+  Arquitetura do Conjunto de Instruções (ISA)
+  Sistema Operacional
+  Linguagens de Programação
+  Aplicações
+  Relação entre os níveis
+
+ Representação da Informação:
+  Sistemas de Numeração:
+   Decimal
+   Binário
+   Octal
+   Hexadecimal
+  Conversões:
+   Conversões entre bases
+   Aritmética binária
+  Representação de Dados:
+   Inteiros
+   Números com sinal
+   Complemento de dois
+   Ponto fixo
+   Ponto flutuante
+   Caracteres (ASCII e Unicode)
+   Representação de imagens
+   Representação de áudio
+   Representação de vídeo
+
+ Álgebra Booleana:
+  Operadores lógicos
+  Tabelas verdade
+  Leis da álgebra booleana
+  Simplificação lógica
+  Mapas de Karnaugh
+
+ Circuitos Digitais:
+  Circuitos Combinacionais:
+   Portas lógicas
+   Codificadores
+   Decodificadores
+   Multiplexadores
+   Demultiplexadores
+   Comparadores
+   Somadores
+   Subtratores
+   ULA básica
+  Circuitos Sequenciais:
+   Latches
+   Flip-Flops
+   Registradores
+   Contadores
+   Máquinas de Estados Finitos (FSM)
+
+
+
+Organização de Computadores:
+
+ Estrutura Básica do Computador:
+  Organização geral
+  Fluxo de dados
+  Ciclo de execução de instruções
+  Unidade Central de Processamento (CPU)
+
+ Processador:
+  Estrutura da CPU
+  Unidade de Controle
+  Unidade Lógica e Aritmética (ULA)
+  Registradores
+  Clock
+  Caminho de dados (Datapath)
+  Unidade de controle cabeada
+  Unidade de controle microprogramada
+
+ Memória:
+  Hierarquia de Memória:
+   Registradores
+   Cache
+   Memória Principal
+   Memória Secundária
+   Memória Terciária
+  Cache:
+   Funcionamento
+   Mapeamentos
+   Políticas de substituição
+   Políticas de escrita
+   Coerência de cache
+  Memória Principal:
+   RAM
+   ROM
+   DRAM
+   SRAM
+  Memória Virtual:
+   Paginação
+   Segmentação
+   TLB
+   Tradução de endereços
+
+ Barramentos:
+  Conceito
+  Barramento de dados
+  Barramento de endereços
+  Barramento de controle
+  Arbitragem
+  Largura do barramento
+  Barramentos internos
+  Barramentos externos
+
+ Entrada e Saída (E/S):
+  Conceitos
+  Controladores
+  Interfaces
+  Comunicação com periféricos
+  Interrupções
+  DMA
+  Portas de E/S
+  E/S mapeada em memória
+  E/S isolada
+
+ Armazenamento:
+  HDD
+  SSD
+  NVMe
+  Memória Flash
+  Sistemas de armazenamento
+
+
+
+ Arquitetura de Computadores:
+
+ Arquitetura do Conjunto de Instruções (ISA):
+  Conceitos
+  Tipos de instruções
+  Formatos
+  Modos de endereçamento
+  Tipos de operandos
+  Conjunto de registradores
+
+ Linguagem Assembly:
+  Conceitos
+  Assembler
+  Estrutura de programas
+  Instruções
+  Chamadas de procedimentos
+  Manipulação de memória
+
+ Microarquitetura:
+  Organização interna
+  Datapath
+  Unidade de Controle
+  Microinstruções
+  Execução de instruções
+  Decodificação
+
+ Pipeline:
+  Conceito
+  Estágios
+  Hazards
+  Técnicas de resolução
+  Predição de desvios
+  Execução especulativa
+
+ Arquiteturas Superescalares:
+  Conceitos
+  Execução fora de ordem
+  Renomeação de registradores
+  Buffer de reordenação
+  Paralelismo em nível de instrução (ILP)
+
+
+
+Processamento Paralelo
+
+ Fundamentos:
+  Paralelismo
+  Concorrência
+  Taxonomia de Flynn
+  SISD
+  SIMD
+  MISD
+  MIMD
+
+ Arquiteturas Paralelas:
+  Multicore
+  Manycore
+  Multiprocessadores
+  NUMA
+  SMP
+
+ GPUs:
+  Arquitetura GPU
+  GPGPU
+  CUDA (introdução)
+  OpenCL (introdução)
+
+ VLIW
+  Conceitos
+  Organização
+  Execução
+
+ Sistemas Distribuídos:
+  Cluster
+  Grid
+  Computação em Nuvem
+  Computação de Alto Desempenho (HPC)
+
+ Interconexão:
+  Barramentos
+  Crossbar
+  Malhas (Mesh)
+  Torus
+  Árvores
+  Network-on-Chip (NoC)
+
+ Programação Paralela:
+  OpenMP
+  SIMD Intrinsics
+  Paralelismo básico
+
+
+
+Sistemas Reconfiguráveis e Arquiteturas Modernas:
+
+ Lógica Reconfigurável:
+  FPGA
+  CPLD
+  SoC FPGA
+  Fluxo de configuração
+
+ Computação Heterogênea:
+  CPU + GPU
+  CPU + FPGA
+  Sistemas heterogêneos
+
+ Arquiteturas Orientadas a Dados:
+  Conceitos
+  Fluxo de dados
+
+ Computação Neuromórfica:
+  Conceitos
+  Processadores neuromórficos
+
+ Computação Quântica:
+  Conceitos básicos
+  Qubits
+  Portas quânticas
+  Arquitetura quântica (introdução)
+
+ Outras Arquiteturas Não Convencionais:
+  Computação Óptica
+  Computação Probabilística
+  Computação Aproximada
+  Computação Bioinspirada
+
+
+
+Virtualização:
+ Conceitos
+ Hipervisores
+ Máquinas Virtuais
+ Virtualização de Hardware
+ Virtualização de Memória
+ Virtualização de E/S
+ Containers (visão geral)
+
+
+
+Segurança em Arquitetura:
+ Segurança de Hardware
+ Privilégios de execução
+ Modos usuário e kernel
+ MMU
+ NX Bit
+ Secure Boot
+ Trusted Execution
+ TPM
+ Criptografia por hardware
+ Side Channels (introdução)
+
+
+
+Desempenho de Computadores:
+
+ Métricas:
+  Tempo de execução
+  Throughput
+  Latência
+  IPC
+  CPI
+  Clock
+
+ Avaliação:
+  Benchmarks
+  Gargalos
+  Lei de Amdahl
+  Lei de Gustafson
+  Balanceamento entre CPU, memória e E/S
+
+
+
+Softwares Relacionados:
+
+ Sistema Operacional:
+  Gerenciamento de processos
+  Gerenciamento de memória
+  Sistema de arquivos
+  Escalonamento
+  Comunicação com hardware
+
+ Compiladores:
+  Processo de compilação
+  Otimizações
+  Geração de código
+  
+ Drivers:
+  Função dos drivers
+  Comunicação com dispositivos
+
+ Ferramentas:
+  Simuladores
+  Emuladores
+  Debuggers
+  Profilers
+  Ferramentas de análise de desempenho
+
+
+
+Aplicações da Arquitetura e Organização de Computadores:
+
+ Áreas de Aplicação:
+  Computadores pessoais
+  Servidores
+  Data Centers
+  Computação em Nuvem
+  Sistemas Embarcados
+  Internet das Coisas (IoT)
+  Smartphones
+  Consoles de jogos
+  Inteligência Artificial
+  Computação Científica
+  Robótica
+  Automação Industrial
+  Veículos Autônomos
+  Sistemas Críticos
+  Supercomputadores
+  Edge Computing
+
+ 
+
+Tendências Atuais:
+ 
+ Arquiteturas heterogêneas
+ Chips especializados para IA
+ Computação sustentável
+ Chiplets
+ Memórias de nova geração
+ RISC-V
+ Computação quântica
+ Computação neuromórfica
+ Segurança por hardware
+ Arquiteturas para IA
+
+
+
+Conclusão e Revisão Geral:
+
+ Revisão dos Fundamentos:
+  Modelos de computação
+  Níveis de abstração
+  Representação da informação
+  Circuitos digitais
+
+ Revisão da Organização:
+  CPU
+  Memória
+  Barramentos
+  Entrada e Saída
+  Hierarquia de memória
+  
+ Revisão da Arquitetura:
+  ISA
+  Assembly
+  Microarquitetura
+  Pipeline
+  Superescalaridade
+
+ Revisão das Arquiteturas Modernas:
+  Paralelismo
+  GPUs
+  FPGA
+  Virtualização
+  Segurança
+  Computação heterogênea
+  Arquiteturas não convencionais
+
+ Integração dos Conceitos:
+  Relação entre hardware e software
+  Relação entre arquitetura e organização
+  Impacto das decisões arquiteturais no desempenho
+  Evolução das arquiteturas de computadores
+  Panorama geral da disciplina
+
+
+
