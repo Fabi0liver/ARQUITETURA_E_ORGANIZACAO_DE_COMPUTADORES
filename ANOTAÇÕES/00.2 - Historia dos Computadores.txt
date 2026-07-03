@@ -415,41 +415,38 @@ Evolução do Hardware:
   Barramentos especializados e externos (USB, SATA, NVMe, Thunderbolt)
   Integração em SoCs e comunicação interna ultrarrápida (atualidade)
 
-    
-
-Evolução das Linguagens de Programação:
-
- Linguagens de máquina
- Linguagens de baixo nível (Assembly)
- Primeiras linguagens de alto nível (Fortran, LISP, COBOL)
- Estruturadas e imperativas (ALGOL, Pascal, C )
- Programação orientada a objetos (Smalltalk, C++, Java )
- Linguagens para a Web (JavaScript, PHP, HTML/CSS)
- Linguagens modernas, limpas e seguras (Python, Ruby, Go, Rust, Kotlin)
- Linguagens para IA, ciência de dados e domínios específicos (R, MATLAB, Julia, SQL) :
-
- Tendências futuras:
-  Linguagens visuais (como Scratch) para ensino infantil.
-  Linguagens declarativas para descrever o que fazer, não como fazer.
-  Programação com IA (assistida por modelos como o ChatGPT ou Copilot).
-  No-code e low-code – onde quase não se escreve código manualmente.
 
 
+Evolução do Software:
 
-Evolução dos Sistemas Operacionais:
+ Evolução das Linguagens de Programação:
+  Linguagens de máquina
+  Linguagens de baixo nível (Assembly)
+  Primeiras linguagens de alto nível (Fortran, LISP, COBOL)
+  Estruturadas e imperativas (ALGOL, Pascal, C )
+  Programação orientada a objetos (Smalltalk, C++, Java )
+  Linguagens para a Web (JavaScript, PHP, HTML/CSS)
+  Linguagens modernas, limpas e seguras (Python, Ruby, Go, Rust, Kotlin)
+  Linguagens para IA, ciência de dados e domínios específicos (R, MATLAB, Julia, SQL) :
+  Tendências futuras:
+   Linguagens visuais (como Scratch) para ensino infantil.
+   Linguagens declarativas para descrever o que fazer, não como fazer.
+   Programação com IA (assistida por modelos como o ChatGPT ou Copilot).
+   No-code e low-code – onde quase não se escreve código manualmente.
 
- Programação direta e controle manual
- Sistemas em lote (Batch Systems)
- Sistemas de tempo compartilhado (Time-Sharing)
- UNIX e portabilidade
- Computadores pessoais e MS-DOS
- Interfaces gráficas e sistemas amigáveis
- Linux e o movimento open source
- SOs para internet e servidores
- SOs móveis
- Sistemas embarcados e em tempo real
- Sistemas operacionais na nuvem e virtualização
- SOs adaptativos e especializados (Futuro)
+ Evolução dos Sistemas Operacionais:
+  Programação direta e controle manual
+  Sistemas em lote (Batch Systems)
+  Sistemas de tempo compartilhado (Time-Sharing)
+  UNIX e portabilidade
+  Computadores pessoais e MS-DOS
+  Interfaces gráficas e sistemas amigáveis
+  Linux e o movimento open source
+  SOs para internet e servidores
+  SOs móveis
+  Sistemas embarcados e em tempo real
+  Sistemas operacionais na nuvem e virtualização
+  SOs adaptativos e especializados (Futuro)
 
 
 
