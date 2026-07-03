@@ -1,15 +1,42 @@
-  Historia dos computadores
+                             História dos computadores
 
 
-Introdução a história da computação
+Introdução a história da computação:
+
+ O que é História dos Computadores
+ O que é Computação
+ Diferença entre cálculo, computação e informática
+ Objetivos do estudo da História dos Computadores
+ Importância da História da Computação
+ Como a evolução tecnológica influencia a sociedade
+ Linha do tempo geral da computação
 
 
 
-O que é computação?
+Fundamentos Necessários:
+
+ Matemática e Lógica:
+  Conceito de algoritmo
+  Noções básicas de lógica
+  Sistema de numeração decimal e binário
+  Representação da informação
+  
+ Eletrônica Básica:
+  Conceito de eletricidade
+  Componentes eletrônicos básicos
+  Diferença entre sistemas mecânicos, eletromecânicos e eletrônicos
+
+ Conceitos Básicos de Computação:
+  Hardware
+  Software
+  Dados
+  Informação
+  Processamento
+  Armazenamento
+  Entrada e saída de dados
 
 
 
-Diferença entre cálculo e computação
 
 
 
