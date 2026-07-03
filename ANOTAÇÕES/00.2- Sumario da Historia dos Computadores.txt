@@ -57,6 +57,12 @@ Contexto Histórico da Computação:
   Revolução Digital
   Era da Informação
 
+ Estudar os eventos históricos paralelos ajuda a entender por que certos avanços aconteceram:
+  A Segunda Guerra Mundial como catalisador (criptografia, radar, ENIAC)
+  A Guerra Fria e a corrida tecnológica (projetos militares e espaciais)
+  Revolução Industrial e seus efeitos na automação
+  Economia pós-guerra e a demanda por automação de negócios
+
 
 
 Origens da Computação:
@@ -89,50 +95,55 @@ Computação Mecânica:
 
 Pioneiros da Computação: Mentes que Moldaram o Mundo Digital
 
+ Matemáticos e Inventores:
+  Blaise Pascal: Pioneiro das calculadoras mecânicas
+  Gottfried Wilhelm Leibniz: Pai da notação binária e do cálculo lógico
+  Joseph-Marie Jacquard: Automação com cartões perfurados
+  Charles Babbage: Pai da computação mecânica
+  Ada Lovelace: A primeira programadora da história
+  George Boole
+  Herman Hollerith
 
- - Blaise Pascal: Pioneiro das calculadoras mecânicas
-
- - Gottfried Wilhelm Leibniz: Pai da notação binária e do cálculo lógico
-
- - Joseph-Marie Jacquard: Automação com cartões perfurados
-
- - Charles Babbage: Pai da computação mecânica
-
- - Ada Lovelace: A primeira programadora da história
-
- - Alan Turing: Pai da computação teórica
-
- - Claude Shannon: Pai da teoria da informação
-
- - John von Neumann: Arquiteto do modelo de computador atual
-
- - Grace Hopper: Mãe do compilador
-
- - John Backus: Criador do FORTRAN (a primeira linguagem de programação de alto nível amplamente usada)
-
- - Dennis Ritchie: Criador da linguagem C ( linguagem pilares da programação moderna)
-
- - Donald Knuth: Cientista da programação de algoritmos
-
- - Margaret Hamilton: Engenharia de software moderna
-
- - Vint Cerf & Bob Kahn: Pais da Internet
-
- - Tim Berners-Lee: Inventor da Web
+ Pais da Computação Moderna:
+  Alan Turing: Pai da computação teórica
+  Claude Shannon: Pai da teoria da informação
+  Konrad Zuse
+  John von Neumann: Arquiteto do modelo de computador atual
+  Grace Hopper: Mãe do compilador
+  John Backus: Criador do FORTRAN (a primeira linguagem de programação de alto nível amplamente usada)
+  Dennis Ritchie: Criador da linguagem C ( linguagem pilares da programação moderna)
+  Donald Knuth: Cientista da programação de algoritmos
+  Margaret Hamilton: Engenharia de software moderna
+  Vint Cerf & Bob Kahn: Pais da Internet
+  Bob Kahn
+  Tim Berners-Lee: Inventor da Web
 
 
 
-Contexto Histórico e Social:
+A Computação Teórica:
 
-  Estudar os eventos históricos paralelos ajuda a entender por que certos avanços aconteceram:
+ Fundamentos:
+  Máquina de Turing
+  Computabilidade
+  Algoritmos
+  Teoria da Informação
+  Álgebra Booleana
 
-    A Segunda Guerra Mundial como catalisador (criptografia, radar, ENIAC)
+ 
 
-    A Guerra Fria e a corrida tecnológica (projetos militares e espaciais)
+Computadores Eletromecânicos:
 
-    Revolução Industrial e seus efeitos na automação
+ Primeiros Computadores:
+  Z1
+  Z2
+  Z3
+  Harvard Mark I
+  Colossus
 
-    Economia pós-guerra e a demanda por automação de negócios
+
+
+ 
+ 
 
 
 
