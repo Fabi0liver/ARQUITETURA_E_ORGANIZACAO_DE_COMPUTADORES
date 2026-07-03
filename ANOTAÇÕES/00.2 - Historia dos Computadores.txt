@@ -465,7 +465,6 @@ Evolução da Interface Homem-Máquina (IHM):
 
       
 
-
 História da Internet e das Redes:
 
  Primeiras ideias de redes de computadores (anos 1950–60)
@@ -478,7 +477,59 @@ História da Internet e das Redes:
  Internet móvel e redes sem fio (anos 2010)
  Nuvem, IoT e hiperconectividade
  Internet global via satélite e 5G (presente e futuro)
-   
+
+
+
+Evolução dos Tipos de Computadores:
+
+ Mainframes
+ Minicomputadores
+ Microcomputadores
+ Workstations
+ Servidores
+ Supercomputadores
+ Computadores Embarcados
+ Smartphones
+ Tablets
+ Wearables   
+
+
+
+Evolução da Indústria da Computação:
+
+ Empresas que marcaram a história:
+  IBM
+  Bell Labs
+  Intel
+  Microsoft
+  Apple
+  Xerox PARC
+  DEC
+  Google
+  NVIDIA
+  AMD
+  ARM
+  OpenAI
+
+ Padronização da Computação:
+  IEEE
+  ISO
+  ANSI
+  W3C
+  IETF
+
+
+
+Leis e Tendências Históricas:
+
+ Lei de Moore
+ Lei de Dennard
+ Lei de Kryder
+ Miniaturização
+ Computação Ubíqua
+ Computação Verde
+ Sustentabilidade
+
 
 
 Movimentos Culturais e Ética na Computação:
@@ -488,7 +539,9 @@ Movimentos Culturais e Ética na Computação:
  Movimento do Software Livre
  Cultura open source e colaboração global
  Debates sobre privacidade e vigilância
- Inclusão, diversidade e justiça algorítmica
+ Inclusão
+ Diversidade 
+ Justiça algorítmica
  Computação Sustentável e Ética Ambiental
  Ética da inteligência artificial e governança digital:
 
@@ -496,49 +549,37 @@ Movimentos Culturais e Ética na Computação:
 
 Teoria da Computação e Fundamentos Matemáticos:
 
-  Importante para entender os limites e as possibilidades da computação ajudam a formar um panorama mais completo e histórico:
-
-    Máquina de Turing (o que é computável)
-
-    Cálculo Lambda (modelo equivalente à Máquina de Turing)
-
-    Problemas decidíveis e indecidíveis
-
-    Autômatos Finitos e Linguagens Formais
-
-    Hierarquia de Chomsky
-
-    Teorema da Incompletude de Gödel
-
-    Funções recursivas e computabilidade
-
-    Complexidade algorítmica (P, NP, NP-completo)
-
-    Reduções e Teoria da NP-completude
-
-    Lógica Booleana e Álgebra de Comutação
-
-    Modelos alternativos de computação (ex: quântica)
+ Máquina de Turing (o que é computável)
+ Cálculo Lambda (modelo equivalente à Máquina de Turing)
+ Problemas decidíveis e indecidíveis
+ Autômatos Finitos e Linguagens Formais
+ Hierarquia de Chomsky
+ Teorema da Incompletude de Gödel
+ Funções recursivas e computabilidade
+ Complexidade algorítmica (P, NP, NP-completo)
+ Reduções e Teoria da NP-completude
+ Lógica Booleana e Álgebra de Comutação
+ Modelos alternativos de computação (ex: quântica)
 
 
 
 Aplicações da História dos Computadores:
 
- Onde esse conhecimento é utilizado:
-  Arquitetura de Computadores
-  Organização de Computadores
-  Engenharia da Computação
-  Ciência da Computação
-  Desenvolvimento de Software
-  Sistemas Operacionais
-  Redes de Computadores
-  Segurança da Informação
-  Inteligência Artificial
-  Computação em Nuvem
-  Computação Quântica
-  Pesquisa Científica
-  Educação
-  Preservação Histórica da Tecnologia
+ Arquitetura de Computadores
+ Organização de Computadores
+ Engenharia da Computação
+ Ciência da Computação
+ Desenvolvimento de Software
+ Sistemas Operacionais
+ Redes de Computadores
+ Segurança da Informação
+ Inteligência Artificial
+ Computação em Nuvem
+ Computação Quântica
+ Pesquisa Científica
+ Educação
+ Preservação Histórica da Tecnologia
+
 
 
 Conclusão e Resumo:
@@ -547,6 +588,10 @@ Conclusão e Resumo:
  Principais marcos tecnológicos
  Evolução do hardware
  Evolução do software
+ Evolução da Internet
+ Evolução das linguagens de programação
+ Evolução dos sistemas operacionais
+ Evolução dos tipos de computadores
  Impacto social da computação
  A importância dos pioneiros
  Como cada geração influenciou a seguinte
