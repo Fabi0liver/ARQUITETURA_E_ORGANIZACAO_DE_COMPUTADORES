@@ -142,10 +142,6 @@ Computadores Eletromecânicos:
 
 
 
- 
- 
-
-
 
 As Origens: Antes dos Computadores Eletrônicos
 
@@ -429,7 +425,6 @@ Evolução dos Processadores e do Processamento:
 
 
 
-
 Evolução do Armazenamento e Mídias:
 
  Conceito: Os computadores não seriam úteis sem formas de guardar e acessar dados. A evolução das mídias de 
@@ -515,7 +510,6 @@ Evolução do Armazenamento e Mídias:
 
 
 
-
 Evolução dos Barramentos:
 
  Conceito: O barramento é como o “sistema circulatório” do computador — ele conecta os componentes e permite a  
@@ -565,7 +559,6 @@ Evolução dos Barramentos:
 
      Com os System-on-Chip, muitos barramentos tradicionais desapareceram fisicamente. CPU, GPU, memória e 
 periféricos se comunicam por barramentos internos dedicados com baixa latência e altíssima largura de banda — como o Infinity Fabric da AMD ou o Apple Silicon Unified Architecture.
-
 
 
 
@@ -625,7 +618,6 @@ Evolução das Linguagens de Programação:
      Programação com IA (assistida por modelos como o ChatGPT ou Copilot).
 
      No-code e low-code – onde quase não se escreve código manualmente.
-
 
 
 
@@ -843,14 +835,12 @@ História da Internet e das Redes:
     
 
 
-
 Movimentos Culturais e Ética na Computação:
 
  Conceito: A história da computação não é feita apenas de máquinas e códigos, mas de pessoas, ideias e valores que 
           moldam como a tecnologia é criada, usada e compartilhada.
 
    
-
   - Programadores pioneiros e colaboração:
 
      Os primeiros programadores (muitas vezes mulheres invisibilizadas, como as do ENIAC) desenvolveram soluções em 
@@ -908,10 +898,6 @@ Movimentos Culturais e Ética na Computação:
 
 
 
-Conclusão: O que você aprende com essa jornada
-
-
-
 Teoria da Computação e Fundamentos Matemáticos:
 
   Importante para entender os limites e as possibilidades da computação ajudam a formar um panorama mais completo e histórico:
@@ -940,3 +926,33 @@ Teoria da Computação e Fundamentos Matemáticos:
 
 
 
+Aplicações da História dos Computadores:
+
+ Onde esse conhecimento é utilizado:
+  Arquitetura de Computadores
+  Organização de Computadores
+  Engenharia da Computação
+  Ciência da Computação
+  Desenvolvimento de Software
+  Sistemas Operacionais
+  Redes de Computadores
+  Segurança da Informação
+  Inteligência Artificial
+  Computação em Nuvem
+  Computação Quântica
+  Pesquisa Científica
+  Educação
+  Preservação Histórica da Tecnologia
+
+
+Conclusão e Resumo:
+
+ Evolução da computação ao longo da história
+ Principais marcos tecnológicos
+ Evolução do hardware
+ Evolução do software
+ Impacto social da computação
+ A importância dos pioneiros
+ Como cada geração influenciou a seguinte
+ O computador moderno como resultado de séculos de evolução
+ Perspectivas para o futuro da computação
