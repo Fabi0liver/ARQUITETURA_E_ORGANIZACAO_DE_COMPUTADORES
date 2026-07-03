@@ -37,6 +37,53 @@ Fundamentos Necessários:
 
 
 
+Contexto Histórico da Computação:
+
+ As Necessidades Humanas:
+  Contagem
+  Comércio
+  Navegação
+  Engenharia
+  Astronomia
+  Ciência
+  Administração
+
+ Grandes Eventos Históricos:
+  Revolução Científica
+  Revolução Industrial
+  Segunda Guerra Mundial
+  Guerra Fria
+  Corrida Espacial
+  Revolução Digital
+  Era da Informação
+
+
+
+Origens da Computação:
+
+ Primeiros Métodos de Cálculo:
+  Contagem com objetos
+  Pedras de cálculo
+  Tábuas de contagem
+  Ábaco
+
+ Instrumentos Matemáticos:
+  Ossos de Napier
+  Régua de cálculo
+  Pascalina
+  Calculadora de Leibniz
+
+
+
+Computação Mecânica:
+
+ Máquinas Mecânicas:
+  Tear de Jacquard
+  Cartões perfurados
+  Máquina Diferencial
+  Máquina Analítica
+  Máquina de Tabulação de Hollerith
+
 
 
 
