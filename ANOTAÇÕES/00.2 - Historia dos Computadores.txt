@@ -374,50 +374,46 @@ Futuro e Quinta Geração – Inteligência Artificial e Computação Quântica
 
 
 
-Evolução dos Processadores e do Processamento:
+Evolução do Hardware:
 
- Processamento manual e mecânico
- Válvulas termiônicas 
- Transistores
- Circuitos integrados
- Microprocessadores
- Processadores de múltiplos núcleos
- Arquiteturas paralelas e GPUs
- Processadores neuromórficos e quânticos (em desenvolvimento)
+ Evolução dos Processadores e do Processamento:
+  Processamento manual e mecânico
+  Válvulas termiônicas 
+  Transistores
+  Circuitos integrados
+  Microprocessadores
+  Processadores de múltiplos núcleos
+  Arquiteturas paralelas e GPUs
+  Processadores neuromórficos  
+  Processadores quânticos (em desenvolvimento)
+ 
+ Evolução do Armazenamento e Mídias:
+  Fichas e cilindros perfurados (Armazenamento pré-eletrônico)
+  Cartões perfurados
+  Fitas magnéticas
+  Tambores magnéticos
+  Memória de núcleo magnético
+  Memória de semicondutores (SRAM, DRAM, DDR)
+  Discos rígidos
+  Disquetes
+  ZIP drives e Jaz drives
+  Mídias ópticas (CDs, DVDs, Blu-ray)
+  Cartões de memória (SD, microSD, CF)
+  Pendrives (USB Flash Drives)
+  SSDs (Unidades de Estado Sólido): 
+  Armazenamento em Nuvem:
+  Armazenamento holográfico e óptico 5D (em desenvolvimento):
 
-
-
-Evolução do Armazenamento e Mídias:
-
- Fichas e cilindros perfurados (Armazenamento pré-eletrônico)
- Cartões perfurados
- Fitas magnéticas
- Tambores magnéticos
- Memória de núcleo magnético
- Memória de semicondutores (SRAM, DRAM, DDR)
- Discos rígidos
- Disquetes
- ZIP drives e Jaz drives
- Mídias ópticas (CDs, DVDs, Blu-ray)
- Cartões de memória (SD, microSD, CF)
- Pendrives (USB Flash Drives)
- SSDs (Unidades de Estado Sólido): 
- Armazenamento em Nuvem:
- Armazenamento holográfico e óptico 5D (em desenvolvimento):
-
-
-
-Evolução dos Barramentos:
-
- Barramentos dedicados e proprietários
- Barramento S-100
- Barramento ISA (Industry Standard Architecture)
- Barramentos VLB e EISA
- Barramento PCI (Peripheral Component Interconnect)
- AGP (Accelerated Graphics Port)
- PCI Express (PCIe)
- Barramentos especializados e externos (USB, SATA, NVMe, Thunderbolt)
- Integração em SoCs e comunicação interna ultrarrápida (atualidade)
+ Evolução dos Barramentos:
+  Barramentos dedicados e proprietários
+  Barramento S-100
+  Barramento ISA (Industry Standard Architecture)
+  Barramentos VLB e EISA
+  Barramento PCI (Peripheral Component Interconnect)
+  AGP (Accelerated Graphics Port)
+  PCI Express (PCIe)
+  Barramentos especializados e externos (USB, SATA, NVMe, Thunderbolt)
+  Integração em SoCs e comunicação interna ultrarrápida (atualidade)
 
     
 
@@ -459,195 +455,45 @@ Evolução dos Sistemas Operacionais:
 
 Evolução da Interface Homem-Máquina (IHM):
 
+ Entrada por cartões perfurados
+ Terminais de linha de comando (UNIX, MS-DOS)
+ Interfaces gráficas – GUI
+ Dispositivos apontadores e periféricos (Mouse e depois trackpads, canetas, joysticks, touchpads)
+ Telas sensíveis ao toque – Touchscreens
+ Comandos de voz e assistentes virtuais (anos 2010–presente)
+ IHM com visão computacional e gestos:
+ Interfaces cérebro-computador (BCI – Brain-Computer Interface)
+ Realidade Virtual (VR) e Realidade Aumentada (AR)
+ Interfaces naturais e invisíveis (futuro próximo):
 
-  - Entrada por cartões perfurados:
-
-     Os primeiros computadores eram operados com cartões perfurados. Cada cartão representava dados ou instruções. 
-    Era necessário preparar os cartões com antecedência e aguardar a resposta impressa.
-
-
-  - Terminais de linha de comando (UNIX, MS-DOS):
-
-     Surgem os terminais com teclado e tela de texto, usando comandos digitados (interface de linha de comando, 
-   CLI).
-
-
-  - Interfaces gráficas – GUI:
-
-    Com a evolução do hardware e o uso de monitores, surgem as interfaces visuais, com janelas, ícones, menus e 
-   mouse. Popularizadas com o Macintosh (1984) e o Windows (1990). Tornaram os computadores acessíveis para o 
-   público geral.
-
-
-  - Dispositivos apontadores e periféricos (Mouse e depois trackpads, canetas, joysticks, touchpads)
-
-     Facilitam a interação intuitiva com elementos gráficos.
-
-
-  - Telas sensíveis ao toque – Touchscreens:
-
-     Popularizadas com os smartphones e tablets, permitem interação direta com os dedos. Eliminam o mouse e o    
-    teclado em muitos contextos. 
-
-
-  - Comandos de voz e assistentes virtuais (anos 2010–presente)
-
-     A IHM evolui para o reconhecimento de fala, com assistentes como Siri, Alexa, Google Assistant. Fala natural 
-    como forma de controle e consulta.
-
-
-   - IHM com visão computacional e gestos:
-
-      Sistemas que interpretam movimentos corporais e expressões faciais.
-
-
-   - Interfaces cérebro-computador (BCI – Brain-Computer Interface):
-
-      Em pesquisa, essas interfaces captam sinais elétricos do cérebro para controlar máquinas. Potenciais 
-     aplicações em acessibilidade, medicina e até controle de próteses com o pensamento.
-
-
-  - Realidade Virtual (VR) e Realidade Aumentada (AR):
-
-      Interfaces imersivas que envolvem completamente o usuário no ambiente digital (VR) ou complementam o mundo 
-     real com elementos digitais (AR). Usadas em simulações, jogos, treinamentos e design.
-
-
-  - Interfaces naturais e invisíveis (futuro próximo):
-
-      Computadores se integram ao ambiente (IoT), respondem automaticamente a contexto, localização e 
-     comportamento. Interação quase transparente, como em casas inteligentes, óculos com IA e ambientes sensíveis à 
-     presença.
-
+      
 
 
 História da Internet e das Redes:
 
- Conceito: A Internet é resultado de décadas de evolução das redes de computadores. Sua história é cheia de 
-          inovações que mudaram a forma como o mundo se comunica, compartilha e vive.
-
-
-  - Primeiras ideias de redes de computadores (anos 1950–60):
-
-     Durante a Guerra Fria, pesquisadores começaram a imaginar sistemas que interligassem computadores à 
-    distância. Conceito de "comutação por pacotes" surge com Paul Baran e Donald Davies.
-
-
-  - ARPANET – A origem da Internet (1969):
-
-     Criada pelo Departamento de Defesa dos EUA (via ARPA), a ARPANET conectava 4 universidades americanas. Foi a 
-    primeira rede de computadores comutada por pacotes.
-
-
-  - TCP/IP – A linguagem da Internet (1983):
-
-     Surge o protocolo TCP/IP, que unificou e padronizou a comunicação entre redes diferentes. A data de adoção 
-    oficial do TCP/IP (1º de janeiro de 1983) é considerada o "nascimento técnico da Internet".
-
-
-  - DNS e endereços legíveis (1984):
-
-     Criação do Sistema de Nomes de Domínio (DNS), que traduz endereços IP em nomes fáceis como www.exemplo.com.
-
-
-  - WWW – A Web é inventada (1991):
-
-     Tim Berners-Lee cria a World Wide Web (WWW), junto com o primeiro navegador e o protocolo HTTP. Agora, 
-    qualquer um podia navegar entre páginas hiperlinkadas.
-
-
-  - A Internet se populariza (anos 1990):
-
-     Provedores de acesso surgem (como AOL, UOL, Terra). Navegadores gráficos como Mosaic e Netscape tornam a 
-    navegação amigável. Começam os e-mails, fóruns, chats e os primeiros sites pessoais.
-
-
-  - Explosão dos serviços online (anos 2000):
-
-     Surgem Google, YouTube, Wikipedia, redes sociais (Orkut, Facebook). Banda larga substitui a internet discada. 
-    Aparece o conceito de Web 2.0: o usuário agora cria conteúdo.
-
-
-  - Internet móvel e redes sem fio (anos 2010):
-
-     Com o 3G, 4G e Wi-Fi, a internet vai para o bolso. Smartphones com navegadores e apps conectados se tornam 
-    padrão. Redes sociais e streaming dominam o tráfego.
-
-
-  - Nuvem, IoT e hiperconectividade:
-
-     Tudo se conecta: celulares, TVs, geladeiras, sensores, carros. A computação em nuvem permite acesso a dados e 
-    serviços de qualquer lugar. Dispositivos inteligentes formam a Internet das Coisas (IoT).
-
-
-  - Internet global via satélite e 5G (presente e futuro):
-
-     Iniciativas como Starlink levam internet a áreas remotas com satélites de baixa órbita. O 5G promete alta 
-    velocidade, baixa latência e suporte a bilhões de dispositivos conectados. Caminhamos para a Web 3.0, 
-    descentralizada e com mais inteligência artificial.
-    
+ Primeiras ideias de redes de computadores (anos 1950–60)
+ ARPANET – A origem da Internet (1969)
+ TCP/IP – A linguagem da Internet (1983)
+ DNS e endereços legíveis (1984)
+ WWW – A Web é inventada (1991)
+ A Internet se populariza (anos 1990)
+ Explosão dos serviços online (anos 2000)
+ Internet móvel e redes sem fio (anos 2010)
+ Nuvem, IoT e hiperconectividade
+ Internet global via satélite e 5G (presente e futuro)
+   
 
 
 Movimentos Culturais e Ética na Computação:
 
- Conceito: A história da computação não é feita apenas de máquinas e códigos, mas de pessoas, ideias e valores que 
-          moldam como a tecnologia é criada, usada e compartilhada.
-
-   
-  - Programadores pioneiros e colaboração:
-
-     Os primeiros programadores (muitas vezes mulheres invisibilizadas, como as do ENIAC) desenvolveram soluções em 
-    conjunto. A computação surge com uma cultura fortemente colaborativa, principalmente em universidades e centros   
-    de pesquisa. A ideia de "compartilhar conhecimento para resolver problemas" já nasce com a área.
-
-
-  - Cultura hacker e liberdade do conhecimento:
- 
-     No MIT e em outros centros de pesquisa, hackers exploravam sistemas por curiosidade e criatividade. Surgem os 
-    princípios da ética hacker (Acesso livre ao conhecimento, Valorização da habilidade técnica, Desconfiança de 
-    hierarquias fechadas). Essa cultura influenciou o desenvolvimento inicial da internet e do software.
-
-
-  - Movimento do Software Livre:
-
-     Richard Stallman lança o projeto GNU e a Free Software Foundation. Defende que o software deve garantir 
-    quatro liberdades (usar, estudar, modificar e compartilhar). Introduz o conceito de copyleft, contra o modelo 
-    fechado de copyright. Início da visão do código como bem comum.
-
-
-  - Cultura open source e colaboração global:
-
-     O movimento Open Source nasce com foco mais pragmático e empresarial. Projetos como Linux, Apache, Mozilla, 
-    Wikipedia mostram a força da colaboração descentralizada e voluntária. A internet possibilita comunidades 
-    globais construindo software juntas, sem fronteiras.
-
-
-  - Debates sobre privacidade e vigilância:
-
-     Com o crescimento das redes e do armazenamento de dados, surgem alertas sobre espionagem digital e controle 
-    invisível. O caso Edward Snowden (2013) revela programas massivos de vigilância. A discussão se amplia: como 
-    garantir privacidade, criptografia e autonomia digital?
-
-
-  - Inclusão, diversidade e justiça algorítmica:
-
-     Questiona-se quem está desenvolvendo a tecnologia e para quem. Estudos mostram que algoritmos podem reproduzir 
-    e amplificar preconceitos sociais. Movimentos por mais diversidade nas equipes e por tecnologias inclusivas e 
-    justas ganham força.
-
-
-  - Computação Sustentável e Ética Ambiental:
-
-     Cresce a preocupação com o impacto ambiental da tecnologia (Consumo de energia por data centers, Produção de 
-    lixo eletrônico, Exploração de recursos naturais para fabricar dispositivos).  Movimentos por designs verdes,  
-    reciclagem responsável e consumo consciente.
-
- 
-  - Ética da inteligência artificial e governança digital:
-
-     Com a popularização da IA, surgem debates sobre: Responsabilidade por decisões automatizadas, Explicabilidade 
-    dos algoritmos, Regulação da IA generativa. Organizações e governos discutem leis, princípios éticos e 
-    governança tecnológica para evitar abusos e proteger direitos.
+ Programadores pioneiros e colaboração
+ Cultura hacker e liberdade do conhecimento
+ Movimento do Software Livre
+ Cultura open source e colaboração global
+ Debates sobre privacidade e vigilância
+ Inclusão, diversidade e justiça algorítmica
+ Computação Sustentável e Ética Ambiental
+ Ética da inteligência artificial e governança digital:
 
 
 
