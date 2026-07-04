@@ -223,3 +223,30 @@ Modelos Alternativos e Não Convencionais:
  Computação Inspirada em Memristores
 
 
+
+Computabilidade e Limites da Computação:
+
+ Computabilidade:
+  Problemas Computáveis
+  Problemas Não Computáveis
+  Algoritmos
+  Decidibilidade
+  Indecidibilidade
+
+ Complexidade Computacional:
+  Tempo
+  Espaço
+  Crescimento de algoritmos
+
+ Classes de Problemas:
+  P
+  NP
+  NP-Completo
+  NP-Difícil
+
+ Limites Fundamentais:
+  Problema da Parada
+  Tese de Church-Turing
+  Limites físicos da computação
+
+
