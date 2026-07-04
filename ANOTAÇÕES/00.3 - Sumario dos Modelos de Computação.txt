@@ -10,3 +10,61 @@ Introdução aos Modelos de Computação:
  Para que servem os modelos de computação
  Importância dos modelos de computação
  Áreas da computação que utilizam modelos computacionais
+
+
+
+Fundamentos Necessários:
+
+ Conceitos Fundamentais:
+  Abstração
+  Algoritmos
+  Representação da informação
+  Estados
+  Transições de estado
+  Instruções
+  Programa
+  Processo de execução
+  Entrada
+  Processamento
+  Saída
+
+ Tipos de Modelos:
+  Modelos Lógicos (Teóricos)
+  Modelos Arquiteturais (Físicos)
+  Diferenças entre ambos
+  Relação entre ambos
+
+ Componentes Funcionais dos Modelos Arquiteturais:
+  Unidade de Controle
+  Unidade Lógica e Aritmética (ULA)
+  Registradores
+  Memória Principal
+  Memória Cache
+  Barramentos:
+   Barramento de Dados
+   Barramento de Endereços
+   Barramento de Controle
+  Dispositivos de Entrada
+  Dispositivos de Saída
+
+ Funcionamento Geral:
+  Programa armazenado
+  Ciclo de Busca de Instruções (Fetch)
+  Decodificação
+  Execução
+  Atualização do contador de programa
+  Ciclo completo de instrução
+
+ Tipos de Instruções:
+  Transferência de dados
+  Operações aritméticas
+  Operações lógicas
+  Controle de fluxo
+  Entrada e saída
+  Controle do sistema
+
+
+
+
+
+
