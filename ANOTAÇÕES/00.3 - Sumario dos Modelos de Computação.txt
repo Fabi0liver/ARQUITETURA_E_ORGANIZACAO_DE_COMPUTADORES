@@ -292,3 +292,17 @@ Tendências Futuras:
  Novos paradigmas computacionais
 
 
+
+Conclusão e Resumo:
+
+ Resumo Geral:
+  Revisão dos conceitos fundamentais
+  Revisão dos principais Modelos Arquiteturais
+  Revisão dos principais Modelos Teóricos
+  Revisão dos Modelos Alternativos
+  Aplicações práticas dos Modelos de Computação
+  Visão geral dos limites e tendências da computação
+ Evolução dos Modelos de Computação
+ Relação entre os Modelos Arquiteturais e Teóricos
+ Importância dos Modelos para a Ciência da Computação
+ Papel dos Modelos no desenvolvimento das tecnologias atuais e futuras
