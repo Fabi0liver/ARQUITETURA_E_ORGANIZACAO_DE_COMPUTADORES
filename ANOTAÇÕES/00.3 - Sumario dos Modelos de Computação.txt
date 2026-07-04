@@ -65,6 +65,47 @@ Fundamentos Necessários:
 
 
 
+Modelos Arquiteturais Clássicos:
+
+ Modelo de Von Neumann:
+  Conceito
+  Origem e História
+  Programa armazenado
+  Características
+  Organização do modelo
+  Componentes
+  Funcionamento
+  Gargalo de Von Neumann
+  Vantagens
+  Limitações
+  Exemplos
+  Aplicações
+  Impacto na arquitetura moderna
+
+ Modelo Harvard:
+  Conceito
+  Origem e História
+  Separação entre dados e instruções
+  Características
+  Organização do modelo
+  Componentes
+  Funcionamento
+  Vantagens
+  Limitações
+  Exemplos
+  Aplicações
+  Impacto na arquitetura moderna
+
+ Modelo Harvard Modificado:
+  Conceito
+  Motivação
+  Organização
+  Diferenças para Harvard clássico
+  Diferenças para Von Neumann
+  Vantagens
+  Limitações
+  Exemplos
+  Aplicações
 
 
 
