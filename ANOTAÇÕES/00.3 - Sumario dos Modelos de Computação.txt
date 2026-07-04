@@ -198,3 +198,12 @@ Modelos Teóricos de Computação:
 
 
 
+Relação entre os Modelos Teóricos:
+
+ Equivalência Computacional
+ Poder Computacional
+ Simulação entre Modelos
+ Tese de Church-Turing
+ Universalidade
+
+
