@@ -207,3 +207,19 @@ Relação entre os Modelos Teóricos:
  Universalidade
 
 
+
+
+Modelos Alternativos e Não Convencionais:
+
+ Computação Quântica
+ Computação Neuromórfica
+ Computação Reversível
+ Computação Óptica
+ Computação Analógica
+ Computação Biológica
+ Computação por Autômatos Celulares
+ Computação Probabilística
+ Computação Molecular
+ Computação Inspirada em Memristores
+
+
