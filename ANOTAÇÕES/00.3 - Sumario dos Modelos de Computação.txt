@@ -262,3 +262,20 @@ Comparação Geral dos Modelos:
  Vantagens e limitações de cada abordagem
 
 
+
+Aplicações dos Modelos de Computação:
+
+ Arquitetura de Computadores
+ Sistemas Embarcados
+ Sistemas Operacionais
+ Compiladores
+ Linguagens de Programação
+ Inteligência Artificial
+ Computação Científica
+ Computação de Alto Desempenho
+ Computação em Nuvem
+ Segurança e Criptografia
+ Computação Quântica
+ Pesquisa Científica
+
+
