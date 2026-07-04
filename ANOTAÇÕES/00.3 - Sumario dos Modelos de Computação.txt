@@ -109,3 +109,38 @@ Modelos Arquiteturais Clássicos:
 
 
 
+Modelos Arquiteturais Modernos:
+
+ Modelos Híbridos:
+  Conceito
+  Motivação
+  Evolução dos modelos clássicos
+  Características
+
+ Principais Arquiteturas Híbridas:
+  Von Neumann + Harvard
+  Arquiteturas Multicore
+  Memória Compartilhada
+  Memória Distribuída
+  Sistemas NUMA
+  Sistemas UMA
+  Processadores Heterogêneos
+  CPU + GPU
+  CPU + NPU
+  Sistemas com DSP
+  Arquiteturas SoC (System-on-Chip)
+
+ Organização da Comunicação:
+  Barramentos Inteligentes
+  Interconexões
+  Redes em Chip (NoC)
+
+ Avaliação:
+  Vantagens
+  Limitações
+  Comparação com modelos clássicos
+  Aplicações
+  Impacto na arquitetura moderna
+
+
+
