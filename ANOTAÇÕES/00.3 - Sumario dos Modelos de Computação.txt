@@ -279,3 +279,16 @@ Aplicações dos Modelos de Computação:
  Pesquisa Científica
 
 
+
+Tendências Futuras:
+
+ Computação Heterogênea
+ Computação Exascale
+ Computação Quântica
+ Computação Neuromórfica
+ Computação Verde
+ Computação Distribuída
+ Inteligência Artificial aplicada ao hardware
+ Novos paradigmas computacionais
+
+
