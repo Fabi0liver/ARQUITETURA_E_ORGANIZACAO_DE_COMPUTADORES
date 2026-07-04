@@ -144,3 +144,57 @@ Modelos Arquiteturais Modernos:
 
 
 
+Modelos Teóricos de Computação:
+
+ Introdução:
+  O que são modelos teóricos
+  Objetivos
+  Importância
+  Abstração matemática
+  Computação como processo formal
+
+ Máquina de Turing:
+  Conceito
+  Componentes
+  Funcionamento
+  Máquina Universal
+  Aplicações
+
+ Máquina de Registro:
+  Modelo RAM
+  Modelo RASP
+  Funcionamento
+  Aplicações
+
+ λ-Cálculo (Lambda Cálculo):
+  Conceito
+  Funções
+  Aplicação
+  Relação com programação funcional
+
+ Autômatos Finitos:
+  Conceito
+  Estados
+  Transições
+  AFD
+  AFN
+  Aplicações
+
+ Máquina de Pilha:
+  Conceito
+  Funcionamento
+  Aplicações
+
+ Máquina de Post: 
+  Conceito
+  Funcionamento
+  Aplicações
+
+ Modelo de Circuitos Booleanos:
+  Circuitos Combinacionais
+  Circuitos Sequenciais
+  Modelo de Circuitos
+  Aplicações
+
+
+
