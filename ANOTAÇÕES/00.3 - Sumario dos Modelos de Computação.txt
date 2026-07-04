@@ -250,3 +250,15 @@ Computabilidade e Limites da Computação:
   Limites físicos da computação
 
 
+
+Comparação Geral dos Modelos:
+
+ Modelos Arquiteturais × Modelos Teóricos
+ Von Neumann × Harvard
+ Harvard × Harvard Modificado
+ Modelos Clássicos × Modelos Híbridos
+ Modelos Clássicos × Modelos Alternativos
+ Quando utilizar cada modelo
+ Vantagens e limitações de cada abordagem
+
+
