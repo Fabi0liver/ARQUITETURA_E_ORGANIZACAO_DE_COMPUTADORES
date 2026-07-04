@@ -1,1 +1,12 @@
                                       Modelos de Computação
+
+
+Introdução aos Modelos de Computação:
+
+ O que é um Modelo de Computação
+ O que significa "computar"
+ Evolução da ideia de computação
+ Objetivos dos modelos de computação
+ Para que servem os modelos de computação
+ Importância dos modelos de computação
+ Áreas da computação que utilizam modelos computacionais
