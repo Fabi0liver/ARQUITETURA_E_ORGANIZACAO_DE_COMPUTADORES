@@ -307,6 +307,34 @@ Linguagens de Programação:
 
 
 
+Redes de Computadores:
+
+ Conceitos básicos
+ Comunicação entre computadores
+ Internet
+ Intranet
+ LAN
+ WAN
+ WLAN
+ Ethernet
+ Wi-Fi
+ Bluetooth
+ Cliente e Servidor
+ Endereçamento IP
+
+
+
+Segurança da Informação:
+Cibersegurança
+Malware
+Antivírus
+Firewall
+Backup
+Autenticação
+Controle de acesso
+Criptografia (visão geral)
+
+
 
 
 
