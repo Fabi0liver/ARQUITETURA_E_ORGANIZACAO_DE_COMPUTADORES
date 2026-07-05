@@ -39,3 +39,22 @@ História da Computação:
   Quarta geração
   Quinta geração
  Evolução dos microprocessadores
+
+
+
+Tipos de Computadores:
+
+ Computadores pessoais (Desktop)
+ Notebooks
+ Workstations
+ Servidores
+ Mainframes
+ Supercomputadores
+ Computadores embarcados
+ Smartphones
+ Tablets
+ Wearables
+ Sistemas industriais
+ Computadores automotivos
+ Computadores de placa única (Single Board Computers)
+ Computadores quânticos
