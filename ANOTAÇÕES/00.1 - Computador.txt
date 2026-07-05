@@ -278,6 +278,35 @@ Lógica e Eletrônica Digital:
 
 
 
+Sistemas Operacionais:
+
+ Conceito
+ Funções
+ Kernel
+ Interface do usuário
+ Processos
+ Threads
+ Gerenciamento de memória
+ Sistema de arquivos
+ Gerenciamento de dispositivos
+ Inicialização (Boot)
+
+
+
+Linguagens de Programação:
+
+ Algoritmos
+ Lógica de programação
+ Linguagem de máquina
+ Assembly
+ Assembler
+ Linguagens de alto nível
+ Compiladores
+ Interpretadores
+ Máquina Virtual
+
+
+
 
 
 
