@@ -259,6 +259,25 @@ Representação da Informação:
 
 
 
+Lógica e Eletrônica Digital:
+
+ Conceitos de eletrônica digital
+ Sinais digitais
+ Álgebra Booleana
+ Portas Lógicas
+ Circuitos combinacionais
+ Circuitos sequenciais
+ Latches
+ Flip-Flops
+ Registradores
+ Contadores
+ Multiplexadores
+ Demultiplexadores
+ Codificadores
+ Decodificadores
+
+
+
 
 
 
