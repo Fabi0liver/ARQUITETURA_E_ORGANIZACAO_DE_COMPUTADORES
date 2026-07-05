@@ -73,3 +73,17 @@ Pensamento Computacional:
  Decomposição de problemas
  Abstração
  Algoritmos
+
+
+
+Funcionamento Geral do Computador:
+
+ Ciclo da informação
+ Modelo IPO:
+  Entrada
+  Processamento
+  Saída
+  Armazenamento
+ Fluxo de dados
+ Ciclo de execução de programas
+ Conceito de sistema computacional
