@@ -58,3 +58,18 @@ Tipos de Computadores:
  Computadores automotivos
  Computadores de placa única (Single Board Computers)
  Computadores quânticos
+
+
+
+Pensamento Computacional:
+
+ Conceito
+ Resolução de problemas
+ Coleta de dados
+ Organização de dados
+ Análise de dados
+ Representação de dados
+ Reconhecimento de padrões
+ Decomposição de problemas
+ Abstração
+ Algoritmos
