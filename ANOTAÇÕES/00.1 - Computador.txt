@@ -10,3 +10,15 @@ Introdução:
  Conceitos de dado, informação e conhecimento
  Sistemas computacionais
  Evolução da computação
+
+
+
+Fundamentos Necessários:
+
+ Matemática básica
+ Lógica básica
+ Pensamento lógico
+ Organização da informação
+ Noções de eletricidade
+ Sinais analógicos e digitais
+ Conceitos básicos de programação (visão geral)
