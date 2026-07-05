@@ -221,6 +221,44 @@ Softwares do Computador:
 
 
 
+Representação da Informação:
+
+ Sistemas de Numeração:
+  Decimal
+  Binário
+  Octal
+  Hexadecimal
+
+ Informação Digital:
+  Bit
+  Byte
+  Palavra (Word)
+  Unidades de medida
+
+ Representação de Dados:
+  Números inteiros
+  Números reais
+  Caracteres
+  Texto
+  Imagens
+  Áudio
+  Vídeo
+
+ Codificação:
+  ASCII
+  Unicode
+  UTF
+
+ Compressão de dados:
+  Compressão com perdas
+  Compressão sem perdas
+
+ Integridade dos Dados:
+  Detecção de erros
+  Correção de erros
+
+
+
 
 
 
