@@ -332,8 +332,40 @@ Firewall
 Backup
 Autenticação
 Controle de acesso
-Criptografia (visão geral)
+Criptografia 
 
+
+
+Computadores no Mundo Real:
+
+ Computadores pessoais
+ Servidores
+ Smartphones
+ Tablets
+ Sistemas embarcados
+ Automação residencial
+ Automação industrial
+ Robótica
+ Data Centers
+ Computação em Nuvem
+ Educação
+ Saúde
+ Engenharia
+ Jogos
+ Entretenimento
+
+
+
+Tecnologias Emergentes:
+
+ Internet das Coisas (IoT)
+ Inteligência Artificial
+ Edge Computing
+ Computação em Nuvem
+ Computação Quântica
+ Computação Neuromórfica
+ Sistemas Reconfiguráveis (FPGA)
+ Computação Verde (Green Computing)
 
 
 
