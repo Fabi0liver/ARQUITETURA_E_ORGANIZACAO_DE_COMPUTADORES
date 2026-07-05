@@ -126,6 +126,83 @@ Hardware e Software:
 
 
 
+Componentes do Computador:
+
+ Placa-mãe:
+  Chipset
+  Soquete
+  Slots
+  Conectores
+  Barramentos internos
+  BIOS
+  UEFI
+
+ Processador (CPU):
+  Conceito
+  Núcleos
+  Threads
+  Clock
+  Unidade de Controle
+  ULA
+  Registradores
+  Cache (visão geral)
+
+ Memória:
+  Registradores
+  Cache
+  RAM
+  ROM
+  Memória Virtual
+
+ Armazenamento:
+  HD
+  SSD SATA
+  SSD NVMe
+  Pen Drive
+  Cartão de memória
+  Unidade óptica
+  Armazenamento em nuvem
+
+ Barramentos:
+  Barramento de dados
+  Barramento de endereço
+  Barramento de controle
+
+ Dispositivos de Entrada:
+  Teclado
+  Mouse
+  Scanner
+  Webcam
+  Microfone
+  Leitor biométrico
+  Sensores
+
+ Dispositivos de Saída:
+  Monitor
+  Impressora
+  Alto-falantes
+  Projetor
+
+ Dispositivos de Entrada e Saída:
+  Tela sensível ao toque
+  Impressora multifuncional
+  Headset
+  Interfaces USB
+
+ GPU:
+  GPU integrada
+  GPU dedicada
+
+ Fonte de Alimentação:
+  Potência
+  Eficiência
+
+ Sistema de Refrigeração:
+  Dissipadores
+  Ventoinhas
+  Water Cooler
+
+ Gabinete
 
 
 
