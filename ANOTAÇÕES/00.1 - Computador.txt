@@ -112,6 +112,23 @@ Arquitetura e Organização de Computadores:
 
 
 
+Hardware e Software:
+
+ Hardware:
+  Conceito
+  Classificação
+  Componentes físicos
+
+ Software:
+  Conceito
+  Classificação
+  Relação entre hardware e software
+
+
+
+
+
+
 
 
 
