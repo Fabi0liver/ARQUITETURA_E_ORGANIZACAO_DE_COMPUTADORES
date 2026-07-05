@@ -369,6 +369,38 @@ Tecnologias Emergentes:
 
 
 
+Aplicações dos Computadores:
+
+ Computação pessoal
+ Educação
+ Empresas
+ Bancos
+ Hospitais
+ Indústria
+ Agricultura
+ Transporte
+ Telecomunicações
+ Pesquisa científica
+ Defesa
+ Inteligência Artificial
+ Robótica
+ Automação
+ Internet
+ Computação em Nuvem
+ Jogos
+ Desenvolvimento de Software
+ Multimídia
+ Internet das Coisas (IoT)
 
 
 
+Conclusão e Resumo:
+
+ Revisão dos conceitos fundamentais
+ Integração entre hardware e software
+ Visão geral do funcionamento do computador
+ Preparação para Arquitetura e Organização de Computadores
+ Preparação para Sistemas Operacionais
+ Preparação para Redes de Computadores
+ Preparação para Programação
+ Próximos estudos em Ciência da Computação
