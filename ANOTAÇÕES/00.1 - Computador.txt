@@ -87,3 +87,15 @@ Funcionamento Geral do Computador:
  Fluxo de dados
  Ciclo de execução de programas
  Conceito de sistema computacional
+
+
+
+Estrutura Geral do Computador:
+
+ Estrutura funcional
+ Unidade de entrada
+ Unidade de processamento
+ Unidade de memória
+ Unidade de saída
+ Comunicação entre componentes
+ Clock do sistema
