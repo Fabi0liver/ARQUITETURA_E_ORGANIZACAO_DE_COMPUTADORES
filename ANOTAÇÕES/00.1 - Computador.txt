@@ -22,3 +22,20 @@ Fundamentos Necessários:
  Noções de eletricidade
  Sinais analógicos e digitais
  Conceitos básicos de programação (visão geral)
+
+
+
+História da Computação:
+
+ Evolução do conceito de computação
+ Primeiros dispositivos de cálculo
+ Computadores mecânicos
+ Computadores eletromecânicos
+ Computadores eletrônicos
+ Gerações dos computadores:
+  Primeira geração
+  Segunda geração
+  Terceira geração
+  Quarta geração
+  Quinta geração
+ Evolução dos microprocessadores
