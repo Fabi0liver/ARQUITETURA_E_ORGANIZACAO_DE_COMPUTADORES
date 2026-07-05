@@ -99,3 +99,21 @@ Estrutura Geral do Computador:
  Unidade de saída
  Comunicação entre componentes
  Clock do sistema
+
+
+
+Arquitetura e Organização de Computadores:
+
+ Conceito de Arquitetura
+ Conceito de Organização
+ Diferenças entre Arquitetura e Organização
+ Relação entre Arquitetura e Organização
+ Visão geral da estrutura interna
+
+
+
+
+
+
+
+
