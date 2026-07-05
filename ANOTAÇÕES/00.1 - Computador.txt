@@ -206,6 +206,21 @@ Componentes do Computador:
 
 
 
+Softwares do Computador:
+
+ Software de Sistema
+ Sistema Operacional
+ Drivers
+ Firmware
+ Software Utilitário
+ Software de Aplicação
+ Software de Programação
+ Middleware
+ Software Embarcado
+ Software como Serviço (SaaS)
+
+
+
 
 
 
