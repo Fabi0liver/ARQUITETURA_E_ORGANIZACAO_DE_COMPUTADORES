@@ -85,6 +85,9 @@ Funcionamento Geral do Computador:
   Saída
   Armazenamento
  Fluxo de dados
+ Programa armazenado
+ Fluxo de instruções
+ Ciclo Busca-Decodificação-Execução (Fetch-Decode-Execute)
  Ciclo de execução de programas
  Conceito de sistema computacional
 
@@ -95,10 +98,27 @@ Estrutura Geral do Computador:
  Estrutura funcional
  Unidade de entrada
  Unidade de processamento
+ Unidade de Controle
+ Unidade Lógica e Aritmética (ULA)
+ Registradores (visão geral)
  Unidade de memória
+ Memória principal
  Unidade de saída
+ Dispositivos de Entrada e Saída
  Comunicação entre componentes
+ Interconexão entre componentes
  Clock do sistema
+
+
+
+Modelos de Computadores:
+
+ Conceito de modelo computacional
+ Modelo de Von Neumann
+ Modelo Harvard
+ Modelo Harvard Modificado
+ Comparação entre os modelos
+ Programa armazenado
 
 
 
@@ -129,6 +149,7 @@ Hardware e Software:
 Componentes do Computador:
 
  Placa-mãe:
+  Conceito
   Chipset
   Soquete
   Slots
@@ -143,11 +164,15 @@ Componentes do Computador:
   Threads
   Clock
   Unidade de Controle
-  ULA
+  Unidade Lógica e Aritmética (ULA)
   Registradores
-  Cache (visão geral)
+  Cache
+  ISA (visão geral)
+  Pipeline (visão geral)
+  Execução de instruções (visão geral)
 
  Memória:
+  Conceito
   Registradores
   Cache
   RAM
@@ -155,20 +180,26 @@ Componentes do Computador:
   Memória Virtual
 
  Armazenamento:
-  HD
+  HD (HDD)
   SSD SATA
   SSD NVMe
   Pen Drive
   Cartão de memória
   Unidade óptica
   Armazenamento em nuvem
+  HDD x SSD
+  Interfaces SATA
+  Interfaces NVMe
+  RAID (visão geral)
 
  Barramentos:
+  Conceito
   Barramento de dados
   Barramento de endereço
   Barramento de controle
 
  Dispositivos de Entrada:
+  Conceito
   Teclado
   Mouse
   Scanner
@@ -178,26 +209,31 @@ Componentes do Computador:
   Sensores
 
  Dispositivos de Saída:
+  Conceito
   Monitor
   Impressora
   Alto-falantes
   Projetor
 
  Dispositivos de Entrada e Saída:
+  Conceito
   Tela sensível ao toque
   Impressora multifuncional
   Headset
   Interfaces USB
 
  GPU:
+  Conceito
   GPU integrada
   GPU dedicada
 
  Fonte de Alimentação:
+  Conceito
   Potência
   Eficiência
 
  Sistema de Refrigeração:
+  Conceito
   Dissipadores
   Ventoinhas
   Water Cooler
