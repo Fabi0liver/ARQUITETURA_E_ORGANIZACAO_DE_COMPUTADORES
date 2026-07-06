@@ -85,3 +85,68 @@ Hardware:
    Coolers
    Water Cooler
    Fluxo de ar
+
+ Dispositivos de Entrada:
+  Teclado
+  Mouse
+  Scanner
+  Webcam
+  Microfone
+  Leitor biométrico
+  Tela sensível ao toque
+
+ Dispositivos de Saída:
+  Monitor
+  Impressora
+  Alto-falantes
+  Projetor
+
+ Dispositivos de Entrada e Saída:
+  Tela Touchscreen
+  Impressoras Multifuncionais
+  Headsets
+  Dispositivos USB
+
+ Comunicação:
+  Placa de Rede
+  Wi-Fi
+  Bluetooth
+  Modem
+
+ Portas e Interfaces:
+  USB
+  HDMI
+  DisplayPort
+  VGA
+  Ethernet
+  Áudio
+  Thunderbolt
+  SATA
+  PCI Express
+  M.2
+
+ Periféricos:
+  Conceito
+  Tipos de periféricos
+  Periféricos essenciais
+  Periféricos opcionais
+
+ Características do Hardware:
+  Desempenho
+  Frequência
+  Núcleos
+  Threads
+  Capacidade
+  Latência
+  Largura de banda
+  Compatibilidade
+  Escalabilidade
+  Confiabilidade
+  Durabilidade
+  Consumo de energia
+
+ Organização Física do Hardware:
+  Componentes internos
+  Componentes externos
+  Comunicação entre componentes
+  Fluxo de dados no Hardware
