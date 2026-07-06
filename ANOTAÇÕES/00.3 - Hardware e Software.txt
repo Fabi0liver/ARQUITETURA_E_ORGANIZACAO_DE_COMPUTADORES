@@ -8,3 +8,18 @@ Introdução:
  O papel do Hardware e do Software na computação
  Evolução do Hardware e do Software
  Visão geral da relação entre Hardware e Software
+
+
+
+Fundamentos Necessários:
+
+ Conceito de computador
+ Conceito de sistema computacional
+ Representação de dados (bits, bytes e informações)
+ Processamento de dados
+ Entrada, processamento, armazenamento e saída
+ Modelo básico de funcionamento do computador
+ Noção de arquitetura e organização de computadores
+ Conceito de programa
+ Conceito de instrução
+ Conceito de execução de programas
