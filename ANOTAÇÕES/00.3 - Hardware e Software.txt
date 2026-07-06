@@ -286,3 +286,24 @@ Relação entre Hardware e Software:
   Otimização pelo Software
   Gargalos
   Balanceamento entre Hardware e Software
+
+
+
+Aplicações de Hardware e Software:
+
+ Computadores pessoais
+ Servidores
+ Smartphones
+ Tablets
+ Consoles de videogame
+ Sistemas embarcados
+ Internet das Coisas (IoT)
+ Automação industrial
+ Robótica
+ Inteligência Artificial
+ Computação em nuvem
+ Veículos inteligentes
+ Equipamentos médicos
+ Educação
+ Entretenimento
+ Empresas e negócios
