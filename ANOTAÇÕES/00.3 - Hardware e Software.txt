@@ -150,3 +150,60 @@ Hardware:
   Componentes externos
   Comunicação entre componentes
   Fluxo de dados no Hardware
+
+
+
+Software:
+
+ Conceitos Fundamentais:
+  O que é Software
+  Características do Software
+  Funções do Software
+  Importância do Software
+  Evolução do Software
+
+ Estrutura do Software:
+  Programas
+  Instruções
+  Algoritmos
+  Código-fonte
+  Código executável
+  Bibliotecas
+  Arquivos de configuração
+
+ Classificação dos Softwares:
+  Software de Sistema:
+   Sistema Operacional
+   Kernel
+   Drivers
+   Firmware
+   Bootloader
+   Utilitários do sistema
+  Software Aplicativo:
+   Aplicativos de produtividade
+   Navegadores
+   Multimídia
+   Jogos
+   Aplicativos profissionais
+   Aplicativos móveis
+  Software Utilitário:
+   Antivírus
+   Backup
+   Compactadores
+   Limpeza do sistema
+   Gerenciamento de disco
+   Ferramentas de diagnóstico
+  Software de Desenvolvimento:
+   Linguagens de programação
+   Compiladores
+   Interpretadores
+   Assemblers
+   IDEs
+   Depuradores
+   Controle de versão
+  Firmware:
+   Conceito
+   BIOS
+   UEFI
+   Firmware embarcado
+   Atualização de Firmware
