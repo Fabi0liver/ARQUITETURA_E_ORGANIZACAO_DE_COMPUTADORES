@@ -207,3 +207,45 @@ Software:
    UEFI
    Firmware embarcado
    Atualização de Firmware
+
+ Funcionamento do Software:
+  Ciclo de execução de um programa
+  Carregamento na memória
+  Execução pelo processador
+  Gerenciamento de recursos
+  Comunicação com o Hardware
+
+ Sistemas Operacionais:
+  Conceito
+  Funções
+  Gerenciamento de processos
+  Gerenciamento de memória
+  Gerenciamento de arquivos
+  Gerenciamento de dispositivos
+  Interface do usuário
+
+ Arquiteturas de Software:
+  Software 32 bits
+  Software 64 bits
+  Compatibilidade
+  Desempenho
+
+ Licenciamento de Software
+  Software Proprietário
+  Software Livre
+  Código Aberto (Open Source)
+  Freeware
+  Shareware
+  Freemium
+  SaaS
+  Domínio Público
+
+ Qualidade de Software:
+  Desempenho
+  Confiabilidade
+  Segurança
+  Usabilidade
+  Portabilidade
+  Compatibilidade
+  Manutenibilidade
+  Escalabilidade
