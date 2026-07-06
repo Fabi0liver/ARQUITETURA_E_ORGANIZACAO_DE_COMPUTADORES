@@ -307,3 +307,23 @@ Aplicações de Hardware e Software:
  Educação
  Entretenimento
  Empresas e negócios
+
+
+
+Conclusão e Resumo:
+
+ Revisão Geral:
+  Conceitos fundamentais
+  Diferenças entre Hardware e Software
+  Principais componentes do Hardware
+  Principais tipos de Software
+  Relação entre Hardware e Software
+  Papel de cada um em um sistema computacional
+
+ Síntese Final:
+  Hardware como infraestrutura física da computação
+  Software como conjunto de instruções que controla o Hardware
+  Cooperação entre Hardware e Software
+  Importância para a Ciência da Computação
+  Preparação para estudos mais avançados (Arquitetura de Computadores, Organização de Computadores, Sistemas  
+ Operacionais, Redes de Computadores e Engenharia de Software)
