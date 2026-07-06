@@ -249,3 +249,40 @@ Software:
   Compatibilidade
   Manutenibilidade
   Escalabilidade
+
+
+
+Relação entre Hardware e Software:
+
+ Integração Hardware × Software:
+  Como Hardware e Software trabalham juntos
+  Comunicação entre Hardware e Software
+  Papel do Sistema Operacional
+  Papel dos Drivers
+  Papel do Firmware
+
+ Fluxo de Execução:
+  Entrada de dados
+  Processamento
+  Uso da memória
+  Armazenamento
+  Saída de informações
+
+ Dependência Mútua:
+  O Hardware sem Software
+  O Software sem Hardware
+  Interação entre ambos
+  Exemplos práticos
+
+ Compatibilidade:
+  Compatibilidade entre Hardware e Software
+  Requisitos mínimos
+  Requisitos recomendados
+  Atualizações de Hardware
+  Atualizações de Software
+
+ Otimização:
+  Aproveitamento do Hardware
+  Otimização pelo Software
+  Gargalos
+  Balanceamento entre Hardware e Software
