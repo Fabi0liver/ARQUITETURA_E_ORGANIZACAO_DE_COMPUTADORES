@@ -300,17 +300,24 @@ Lógica e Eletrônica Digital:
  Conceitos de eletrônica digital
  Sinais digitais
  Álgebra Booleana
+ Tabelas-Verdade
+ Simplificação de expressões booleanas
+ Mapas de Karnaugh (visão geral)
  Portas Lógicas
  Circuitos combinacionais
+ Somadores
+ Subtratores
+ Comparadores
+ Multiplexadores
+ Demultiplexadores
+ Codificadores
+ Decodificadores
+ Unidade Lógica e Aritmética (ULA) (visão geral)
  Circuitos sequenciais
  Latches
  Flip-Flops
  Registradores
  Contadores
- Multiplexadores
- Demultiplexadores
- Codificadores
- Decodificadores
 
 
 
@@ -322,9 +329,14 @@ Sistemas Operacionais:
  Interface do usuário
  Processos
  Threads
+ Chamadas de sistema
+ Escalonamento de processos (visão geral)
+ Sistema de interrupções (visão geral)
  Gerenciamento de memória
+ Memória virtual (visão geral)
  Sistema de arquivos
  Gerenciamento de dispositivos
+ Drivers de dispositivos
  Inicialização (Boot)
 
 
@@ -337,8 +349,13 @@ Linguagens de Programação:
  Assembly
  Assembler
  Linguagens de alto nível
+ Paradigmas de programação (visão geral)
+ Bibliotecas
+ APIs
  Compiladores
  Interpretadores
+ Processo de compilação
+ Processo de execução
  Máquina Virtual
 
 
@@ -355,20 +372,31 @@ Redes de Computadores:
  Ethernet
  Wi-Fi
  Bluetooth
- Cliente e Servidor
+ Modelo Cliente-Servidor
+ Modelo P2P
+ Protocolos TCP/IP
+ DNS
+ HTTP
+ HTTPS
  Endereçamento IP
 
 
 
 Segurança da Informação:
-Cibersegurança
-Malware
-Antivírus
-Firewall
-Backup
-Autenticação
-Controle de acesso
-Criptografia 
+
+ Cibersegurança
+ Confidencialidade
+ Integridade
+ Disponibilidade
+ Malware
+ Antivírus
+ Firewall
+ Backup
+ Autenticação
+ Controle de acesso
+ Criptografia
+ Engenharia social
+ Atualizações de segurança
 
 
 
@@ -384,11 +412,16 @@ Computadores no Mundo Real:
  Robótica
  Data Centers
  Computação em Nuvem
+ Computação científica
+ Big Data
+ Machine Learning
  Educação
  Saúde
  Engenharia
  Jogos
  Entretenimento
+ Realidade Virtual
+ Realidade Aumentada
 
 
 
@@ -396,8 +429,12 @@ Tecnologias Emergentes:
 
  Internet das Coisas (IoT)
  Inteligência Artificial
- Edge Computing
  Computação em Nuvem
+ Edge Computing
+ Computação Distribuída
+ Computação Paralela
+ Computação Heterogênea
+ Computação Ubíqua
  Computação Quântica
  Computação Neuromórfica
  Sistemas Reconfiguráveis (FPGA)
