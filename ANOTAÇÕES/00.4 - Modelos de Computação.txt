@@ -1,0 +1,308 @@
+                                      Modelos de Computação
+
+
+Introdução aos Modelos de Computação:
+
+ O que é um Modelo de Computação
+ O que significa "computar"
+ Evolução da ideia de computação
+ Objetivos dos modelos de computação
+ Para que servem os modelos de computação
+ Importância dos modelos de computação
+ Áreas da computação que utilizam modelos computacionais
+
+
+
+Fundamentos Necessários:
+
+ Conceitos Fundamentais:
+  Abstração
+  Algoritmos
+  Representação da informação
+  Estados
+  Transições de estado
+  Instruções
+  Programa
+  Processo de execução
+  Entrada
+  Processamento
+  Saída
+
+ Tipos de Modelos:
+  Modelos Lógicos (Teóricos)
+  Modelos Arquiteturais (Físicos)
+  Diferenças entre ambos
+  Relação entre ambos
+
+ Componentes Funcionais dos Modelos Arquiteturais:
+  Unidade de Controle
+  Unidade Lógica e Aritmética (ULA)
+  Registradores
+  Memória Principal
+  Memória Cache
+  Barramentos:
+   Barramento de Dados
+   Barramento de Endereços
+   Barramento de Controle
+  Dispositivos de Entrada
+  Dispositivos de Saída
+
+ Funcionamento Geral:
+  Programa armazenado
+  Ciclo de Busca de Instruções (Fetch)
+  Decodificação
+  Execução
+  Atualização do contador de programa
+  Ciclo completo de instrução
+
+ Tipos de Instruções:
+  Transferência de dados
+  Operações aritméticas
+  Operações lógicas
+  Controle de fluxo
+  Entrada e saída
+  Controle do sistema
+
+
+
+Modelos Arquiteturais Clássicos:
+
+ Modelo de Von Neumann:
+  Conceito
+  Origem e História
+  Programa armazenado
+  Características
+  Organização do modelo
+  Componentes
+  Funcionamento
+  Gargalo de Von Neumann
+  Vantagens
+  Limitações
+  Exemplos
+  Aplicações
+  Impacto na arquitetura moderna
+
+ Modelo Harvard:
+  Conceito
+  Origem e História
+  Separação entre dados e instruções
+  Características
+  Organização do modelo
+  Componentes
+  Funcionamento
+  Vantagens
+  Limitações
+  Exemplos
+  Aplicações
+  Impacto na arquitetura moderna
+
+ Modelo Harvard Modificado:
+  Conceito
+  Motivação
+  Organização
+  Diferenças para Harvard clássico
+  Diferenças para Von Neumann
+  Vantagens
+  Limitações
+  Exemplos
+  Aplicações
+
+
+
+Modelos Arquiteturais Modernos:
+
+ Modelos Híbridos:
+  Conceito
+  Motivação
+  Evolução dos modelos clássicos
+  Características
+
+ Principais Arquiteturas Híbridas:
+  Von Neumann + Harvard
+  Arquiteturas Multicore
+  Memória Compartilhada
+  Memória Distribuída
+  Sistemas NUMA
+  Sistemas UMA
+  Processadores Heterogêneos
+  CPU + GPU
+  CPU + NPU
+  Sistemas com DSP
+  Arquiteturas SoC (System-on-Chip)
+
+ Organização da Comunicação:
+  Barramentos Inteligentes
+  Interconexões
+  Redes em Chip (NoC)
+
+ Avaliação:
+  Vantagens
+  Limitações
+  Comparação com modelos clássicos
+  Aplicações
+  Impacto na arquitetura moderna
+
+
+
+Modelos Teóricos de Computação:
+
+ Introdução:
+  O que são modelos teóricos
+  Objetivos
+  Importância
+  Abstração matemática
+  Computação como processo formal
+
+ Máquina de Turing:
+  Conceito
+  Componentes
+  Funcionamento
+  Máquina Universal
+  Aplicações
+
+ Máquina de Registro:
+  Modelo RAM
+  Modelo RASP
+  Funcionamento
+  Aplicações
+
+ λ-Cálculo (Lambda Cálculo):
+  Conceito
+  Funções
+  Aplicação
+  Relação com programação funcional
+
+ Autômatos Finitos:
+  Conceito
+  Estados
+  Transições
+  AFD
+  AFN
+  Aplicações
+
+ Máquina de Pilha:
+  Conceito
+  Funcionamento
+  Aplicações
+
+ Máquina de Post: 
+  Conceito
+  Funcionamento
+  Aplicações
+
+ Modelo de Circuitos Booleanos:
+  Circuitos Combinacionais
+  Circuitos Sequenciais
+  Modelo de Circuitos
+  Aplicações
+
+
+
+Relação entre os Modelos Teóricos:
+
+ Equivalência Computacional
+ Poder Computacional
+ Simulação entre Modelos
+ Tese de Church-Turing
+ Universalidade
+
+
+
+
+Modelos Alternativos e Não Convencionais:
+
+ Computação Quântica
+ Computação Neuromórfica
+ Computação Reversível
+ Computação Óptica
+ Computação Analógica
+ Computação Biológica
+ Computação por Autômatos Celulares
+ Computação Probabilística
+ Computação Molecular
+ Computação Inspirada em Memristores
+
+
+
+Computabilidade e Limites da Computação:
+
+ Computabilidade:
+  Problemas Computáveis
+  Problemas Não Computáveis
+  Algoritmos
+  Decidibilidade
+  Indecidibilidade
+
+ Complexidade Computacional:
+  Tempo
+  Espaço
+  Crescimento de algoritmos
+
+ Classes de Problemas:
+  P
+  NP
+  NP-Completo
+  NP-Difícil
+
+ Limites Fundamentais:
+  Problema da Parada
+  Tese de Church-Turing
+  Limites físicos da computação
+
+
+
+Comparação Geral dos Modelos:
+
+ Modelos Arquiteturais × Modelos Teóricos
+ Von Neumann × Harvard
+ Harvard × Harvard Modificado
+ Modelos Clássicos × Modelos Híbridos
+ Modelos Clássicos × Modelos Alternativos
+ Quando utilizar cada modelo
+ Vantagens e limitações de cada abordagem
+
+
+
+Aplicações dos Modelos de Computação:
+
+ Arquitetura de Computadores
+ Sistemas Embarcados
+ Sistemas Operacionais
+ Compiladores
+ Linguagens de Programação
+ Inteligência Artificial
+ Computação Científica
+ Computação de Alto Desempenho
+ Computação em Nuvem
+ Segurança e Criptografia
+ Computação Quântica
+ Pesquisa Científica
+
+
+
+Tendências Futuras:
+
+ Computação Heterogênea
+ Computação Exascale
+ Computação Quântica
+ Computação Neuromórfica
+ Computação Verde
+ Computação Distribuída
+ Inteligência Artificial aplicada ao hardware
+ Novos paradigmas computacionais
+
+
+
+Conclusão e Resumo:
+
+ Resumo Geral:
+  Revisão dos conceitos fundamentais
+  Revisão dos principais Modelos Arquiteturais
+  Revisão dos principais Modelos Teóricos
+  Revisão dos Modelos Alternativos
+  Aplicações práticas dos Modelos de Computação
+  Visão geral dos limites e tendências da computação
+ Evolução dos Modelos de Computação
+ Relação entre os Modelos Arquiteturais e Teóricos
+ Importância dos Modelos para a Ciência da Computação
+ Papel dos Modelos no desenvolvimento das tecnologias atuais e futuras
