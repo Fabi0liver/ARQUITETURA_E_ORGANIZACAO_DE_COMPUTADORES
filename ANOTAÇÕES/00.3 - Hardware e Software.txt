@@ -23,3 +23,65 @@ Fundamentos Necessários:
  Conceito de programa
  Conceito de instrução
  Conceito de execução de programas
+
+
+
+Hardware:
+
+ Conceitos Fundamentais:
+  O que é Hardware
+  Características do Hardware
+  Funções do Hardware
+  Importância do Hardware
+  Evolução do Hardware
+  
+ Classificação do Hardware:
+  Hardware interno
+  Hardware externo
+  Hardware embarcado
+  Hardware dedicado
+  Hardware de propósito geral
+
+ Componentes Fundamentais:
+  Processamento:
+   Processador (CPU)
+   Unidade Lógica e Aritmética (ULA)
+   Unidade de Controle
+   Registradores
+   Cache
+   Coprocessadores
+   GPU
+  Memória:
+   Memória RAM
+   Memória ROM
+   Memória Cache
+   Memória Virtual
+   Hierarquia de Memória
+  Armazenamento:
+   HD
+   SSD SATA
+   SSD NVMe
+   Pen Drive
+   Cartão de Memória
+   Unidade Óptica
+   Armazenamento Externo
+  Placa-mãe:
+   Função da placa-mãe
+   Chipset
+   Soquete do processador
+   Slots de memória
+   Slots de expansão
+   Barramentos
+   BIOS
+   UEFI
+   CMOS
+  Fonte de Alimentação:
+   Fonte ATX
+   Conversão de energia
+   Eficiência energética
+   Potência
+  Sistema de Refrigeração:
+   Dissipadores
+   Coolers
+   Water Cooler
+   Fluxo de ar
