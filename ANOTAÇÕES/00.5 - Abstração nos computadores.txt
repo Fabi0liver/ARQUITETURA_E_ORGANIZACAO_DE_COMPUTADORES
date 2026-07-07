@@ -108,3 +108,23 @@ Nível Físico (Hardware Eletrônico):
   Decodificadores
   Contadores
   Máquinas de Estados Finitos (FSM)
+
+
+
+Nível Lógico (Organização do Processador):
+
+ Organização Interna:
+  Caminho de dados (Datapath)
+  Unidade Lógica e Aritmética (ULA)
+  Unidade de Controle
+  Arquitetura de registradores
+  Barramentos internos
+  Sinais de controle
+
+ Funcionamento:
+  Ciclo de instrução
+  Busca
+  Decodificação
+  Execução
+  Escrita de resultados
+  Ciclo de máquina
