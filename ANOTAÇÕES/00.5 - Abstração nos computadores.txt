@@ -330,3 +330,23 @@ Importância da Abstração na Computação:
  Segurança
  Colaboração entre equipes
  Inovação tecnológica
+
+
+
+Conclusão e Resumo
+
+ Resumo Geral:
+  Conceitos fundamentais
+  Princípios da abstração
+  Níveis de abstração
+  Relação entre os níveis
+  Aplicações
+  Tendências futuras
+  Importância da abstração
+
+ Conclusão:
+  Papel da abstração na Ciência da Computação
+  A abstração como base dos sistemas computacionais
+  Relação entre hardware e software
+  Integração dos níveis de abstração
+  Evolução contínua das abstrações computacionais
