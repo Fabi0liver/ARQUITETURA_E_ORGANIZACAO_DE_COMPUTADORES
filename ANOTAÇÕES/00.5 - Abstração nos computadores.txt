@@ -65,3 +65,46 @@ Princípios da Abstração nos Computadores:
  Escalabilidade
  Manutenibilidade
  Extensibilidade
+
+
+
+Organização dos Níveis de Abstração:
+
+ O que são níveis de abstração
+ Hierarquia das camadas
+ Comunicação entre níveis
+ Interfaces entre camadas
+ Fluxo de informação
+ Fluxo de controle
+ Tradução entre níveis
+
+
+
+Nível Físico (Hardware Eletrônico):
+
+ Fundamentos:
+  Eletrônica digital
+  Tensão elétrica
+  Corrente elétrica
+  Sinais digitais
+  Níveis lógicos
+  Clock
+  Temporização
+  Sincronização
+
+ Componentes Básicos:
+  Transistores
+  Portas lógicas
+  Álgebra Booleana
+  Circuitos combinacionais
+  Circuitos sequenciais
+  Flip-Flops
+  Registradores
+  Somadores
+  Comparadores
+  Multiplexadores
+  Demultiplexadores
+  Codificadores
+  Decodificadores
+  Contadores
+  Máquinas de Estados Finitos (FSM)
