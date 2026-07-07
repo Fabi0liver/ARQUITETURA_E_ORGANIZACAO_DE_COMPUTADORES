@@ -262,3 +262,36 @@ Relação Entre os Níveis de Abstração:
   Rastreamento de execução
   Observabilidade
   Instrumentação
+
+
+
+Aplicações da Abstração na Computação:
+
+ Desenvolvimento de Software:
+  Desenvolvimento de aplicações
+  Desenvolvimento de sistemas operacionais
+  Desenvolvimento de compiladores
+  Desenvolvimento de bancos de dados
+  Desenvolvimento Web
+  Desenvolvimento Mobile
+
+ Arquitetura de Computadores:
+  Projeto de processadores
+  Projeto de hardware
+  Sistemas embarcados
+  Computação paralela
+  Computação distribuída
+
+ Infraestrutura:
+  Virtualização
+  Containers
+  Computação em nuvem
+  Edge Computing
+  Sistemas distribuídos
+
+ Segurança:
+  Sandboxing
+  Isolamento de processos
+  Enclaves seguros
+  Proteção de memória
+  Controle de acesso
