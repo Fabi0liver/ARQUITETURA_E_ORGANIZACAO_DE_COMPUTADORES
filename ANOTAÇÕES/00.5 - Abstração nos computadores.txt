@@ -239,3 +239,26 @@ Nível da Aplicação:
   Comunicação com o sistema operacional
   Comunicação com hardware
   Comunicação em rede
+
+
+
+Relação Entre os Níveis de Abstração:
+
+ Organização Vertical:
+  Dependência entre níveis
+  Acoplamento vertical
+  Interfaces formais
+  Encapsulamento entre camadas
+  Tradução entre níveis
+  Fluxo descendente
+  Fluxo ascendente
+  Granularidade
+  Independência relativa
+  Modularidade entre níveis
+
+ Engenharia:
+  Depuração (Debugging)
+  Engenharia reversa
+  Rastreamento de execução
+  Observabilidade
+  Instrumentação
