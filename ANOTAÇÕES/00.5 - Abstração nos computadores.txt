@@ -1,3 +1,27 @@
                                   Abstração nos Computadores
 
 
+Introdução:
+
+ Conceitos Iniciais:
+  O que é abstração
+  O que significa abstrair
+  Complexidade nos sistemas computacionais
+  Simplificação como ferramenta de engenharia
+  Abstração como fundamento da Ciência da Computação
+
+ Objetivos da Abstração:
+  Redução da complexidade
+  Organização dos sistemas
+  Facilidade de desenvolvimento
+  Facilidade de manutenção
+  Independência entre componentes
+  Escalabilidade dos sistemas
+
+ Contexto Histórico:
+  Primeiras ideias de abstração
+  Evolução da abstração na computação
+  Surgimento das linguagens de programação
+  Evolução dos sistemas operacionais
+  Evolução das camadas computacionais
+  A abstração na computação moderna
