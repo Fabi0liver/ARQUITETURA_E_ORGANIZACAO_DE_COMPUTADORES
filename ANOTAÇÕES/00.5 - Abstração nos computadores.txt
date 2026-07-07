@@ -128,3 +128,40 @@ Nível Lógico (Organização do Processador):
   Execução
   Escrita de resultados
   Ciclo de máquina
+
+
+
+Nível de Microprogramação:
+
+ Controle Microprogramado:
+  Microinstruções
+  Microprogramas
+  Memória de controle
+  Controle microprogramado
+  Controle cabeado
+  Sequenciamento de microinstruções
+  Execução microprogramada
+
+
+
+Nível da Arquitetura da Máquina (ISA):
+
+ Modelo Computacional:
+  Modelo de Von Neumann
+  Modelo Harvard
+  Modelo Harvard Modificado
+
+ Instruction Set Architecture:
+  ISA
+  Conjunto de instruções
+  RISC
+  CISC
+  Formatos de instruções
+  Tipos de instruções
+  Modos de endereçamento
+  Registradores da ISA
+  Organização da memória
+  Pilha
+  Linguagem Assembly
+  Montadores
+  Chamadas de sistema (Syscalls)
