@@ -41,3 +41,27 @@ Fundamentos Necessários:
  Modelo computacional
  Camadas de software
  Camadas de hardware
+
+
+
+Princípios da Abstração nos Computadores:
+
+ Separação de responsabilidades
+ Ocultação da complexidade
+ Modularidade
+ Encapsulamento
+ Hierarquia de camadas
+ Reutilização
+ Interfaces bem definidas
+ Baixo acoplamento
+ Alta coesão
+ Composição
+ Generalização
+ Especialização
+ Independência entre camadas
+ Padronização
+ Interoperabilidade
+ Portabilidade
+ Escalabilidade
+ Manutenibilidade
+ Extensibilidade
