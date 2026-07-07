@@ -219,3 +219,23 @@ Nível das Linguagens de Programação:
   Gerenciamento de memória
   Stack
   Heap
+
+
+
+Nível da Aplicação:
+
+ Software:
+  Aplicações de usuário
+  Interfaces gráficas
+  Interface de linha de comando
+  Frameworks
+  Bibliotecas
+  APIs
+  Serviços
+  Middleware
+  Aplicações distribuídas
+
+ Interação:
+  Comunicação com o sistema operacional
+  Comunicação com hardware
+  Comunicação em rede
