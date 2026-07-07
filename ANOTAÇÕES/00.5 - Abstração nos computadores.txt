@@ -25,3 +25,19 @@ Introdução:
   Evolução dos sistemas operacionais
   Evolução das camadas computacionais
   A abstração na computação moderna
+
+
+
+Fundamentos Necessários:
+
+ Sistema computacional
+ Hardware
+ Software
+ Informação
+ Dados
+ Processamento
+ Representação binária
+ Interface
+ Modelo computacional
+ Camadas de software
+ Camadas de hardware
