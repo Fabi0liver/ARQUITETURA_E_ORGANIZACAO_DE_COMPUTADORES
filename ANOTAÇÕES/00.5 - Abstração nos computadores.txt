@@ -295,3 +295,38 @@ Aplicações da Abstração na Computação:
   Enclaves seguros
   Proteção de memória
   Controle de acesso
+
+
+
+Tendências Futuras:
+
+ Computação heterogênea
+ Abstrações adaptativas
+ Computação distribuída
+ Multinuvem
+ Intermediate Representations (IR)
+ Otimizações automáticas por IA
+ Computação quântica
+ Computação pós-clássica
+ Arquiteturas neuromórficas
+ Programação declarativa
+ Programação orientada à intenção
+ Segurança por design
+ Privacidade por design
+
+
+
+Importância da Abstração na Computação:
+
+ Redução da complexidade
+ Organização dos sistemas
+ Desenvolvimento em larga escala
+ Reutilização de componentes
+ Portabilidade
+ Manutenção
+ Escalabilidade
+ Evolução tecnológica
+ Produtividade
+ Segurança
+ Colaboração entre equipes
+ Inovação tecnológica
