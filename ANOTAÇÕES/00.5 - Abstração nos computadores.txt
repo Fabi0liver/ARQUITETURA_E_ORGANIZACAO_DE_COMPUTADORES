@@ -165,3 +165,28 @@ Nível da Arquitetura da Máquina (ISA):
   Linguagem Assembly
   Montadores
   Chamadas de sistema (Syscalls)
+
+
+
+Nível do Sistema Operacional:
+
+ Abstrações do Sistema:
+  Abstração da CPU
+  Abstração da memória
+  Abstração dos dispositivos
+  Abstração do armazenamento
+
+ Gerenciamento:
+  Processos
+  Threads
+  Escalonamento
+  Memória virtual
+  Paginação
+  Segmentação
+  Sistemas de arquivos
+  Entrada e saída
+  Drivers
+  Chamadas de sistema
+  Proteção
+  Virtualização
+  Gerenciamento de recursos
