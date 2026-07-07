@@ -190,3 +190,32 @@ Nível do Sistema Operacional:
   Proteção
   Virtualização
   Gerenciamento de recursos
+
+
+
+Nível das Linguagens de Programação:
+
+ Linguagens:
+  Linguagens de baixo nível
+  Linguagens de médio nível
+  Linguagens de alto nível
+
+ Tradução:
+  Compilação
+  Interpretação
+  JIT
+  Bytecode
+  Máquina virtual
+
+ Construções da Linguagem:
+  Tipos de dados
+  Variáveis
+  Estruturas de controle
+  Funções
+  Procedimentos
+  Passagem de parâmetros
+  Bibliotecas
+  APIs
+  Gerenciamento de memória
+  Stack
+  Heap
