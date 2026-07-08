@@ -362,3 +362,45 @@ Representação de Dados em Redes:
   Serialização para rede
   Compactação
   Representação independente de plataforma
+
+
+
+Aplicações Práticas e Avançadas:
+
+ Arquitetura e Hardware:
+  Leitura e escrita em memória
+  Big-endian e Little-endian
+  Alinhamento de memória
+  Representações em diferentes arquiteturas
+  Representação vetorial
+  Processamento paralelo
+
+ Armazenamento:
+  Formatos de banco de dados
+  Avro
+  Parquet
+  ORC
+  Compactação avançada
+
+ Integridade dos Dados:
+  Bit de paridade
+  Código de Hamming
+  CRC
+  ECC
+
+ Segurança:
+  Codificação para segurança
+  Hashes
+  Representação criptográfica
+
+ Inteligência Artificial:
+  Quantização
+  Encoding
+  Embeddings
+  Representação de tensores
+
+ Representações Específicas:
+  Dados científicos
+  Dados geográficos
+  Dados financeiros
+  Dados biomédicos
