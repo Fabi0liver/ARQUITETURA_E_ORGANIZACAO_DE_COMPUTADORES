@@ -1,1 +1,36 @@
-               
+                          Representação de Dados e Sistema de Numeração
+
+
+
+Introdução:
+
+ Introdução à Representação de Dados e Sistemas de Numeração
+ Importância da representação de dados na Computação
+ Relação entre representação de dados, hardware e software
+ Visão geral dos tipos de dados digitais
+
+
+
+Fundamentos Necessários:
+
+ Dados e Informação:
+  O que são dados
+  O que é informação
+  Diferença entre dado, informação e conhecimento
+  Como os computadores representam dados
+  Dados analógicos e dados digitais
+
+ Unidades de Informação:
+  Bit
+  Nibble
+  Byte
+  Palavra (Word)
+  Tamanho de palavra (Word Size)
+  Kilobyte (KB) e Kibibyte (KiB)
+  Megabyte (MB) e Mebibyte (MiB)
+  Gigabyte (GB) e Gibibyte (GiB)
+  Terabyte (TB)
+  Petabyte (PB)
+  Exabyte (EB)
+  Zettabyte (ZB)
+  Yottabyte (YB)
