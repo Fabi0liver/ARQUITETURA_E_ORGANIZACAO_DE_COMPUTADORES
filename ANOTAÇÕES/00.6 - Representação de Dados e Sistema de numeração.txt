@@ -287,3 +287,36 @@ Representação de Dados em Hardware:
   Decodificadores
   Multiplexadores
   Demultiplexadores
+
+
+
+Representação de Dados em Linguagens de Programação:
+
+ Tipos de Dados:
+  Booleanos
+  Inteiros
+  Reais
+  Caracteres
+  Strings
+
+ Conversões:
+  Casting
+  Conversão implícita
+  Conversão explícita
+  Promoção de tipos
+  Truncamento
+
+ Organização da Memória:
+  Alinhamento
+  Padding
+  Estruturas
+  Representação em memória
+
+ Persistência:
+  Arquivos texto
+  Arquivos binários
+  Serialização
+  Desserialização
+
+
+
