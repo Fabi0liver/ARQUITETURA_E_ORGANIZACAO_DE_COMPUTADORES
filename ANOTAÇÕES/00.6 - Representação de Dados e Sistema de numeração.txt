@@ -341,3 +341,24 @@ Compactação e Codificação de Dados:
   Entropia
   Teoria da Informação
   Shannon
+
+
+
+Representação de Dados em Redes:
+
+ Codificação:
+  NRZ
+  Manchester
+
+ Protocolos e Formatos:
+  Base64
+  JSON
+  XML
+  BSON
+  MessagePack
+  Protobuf
+
+ Transmissão:
+  Serialização para rede
+  Compactação
+  Representação independente de plataforma
