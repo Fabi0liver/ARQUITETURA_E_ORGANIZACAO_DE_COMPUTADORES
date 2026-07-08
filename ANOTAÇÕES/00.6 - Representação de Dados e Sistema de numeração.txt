@@ -110,3 +110,52 @@ Representação de Números Inteiros:
 
 
 
+Representação de Números Reais:
+
+ Conceitos Fundamentais:
+  Números de ponto fixo
+  Números de ponto flutuante
+  Comparação entre ponto fixo e ponto flutuante
+
+ IEEE 754
+ 
+ Formatos:
+  Half Precision (16 bits)
+  Float (32 bits)
+  Double (64 bits)
+  Extended Precision
+  Quad Precision
+
+ Estrutura:
+  Bit de sinal
+  Expoente
+  Bias
+  Mantissa (Fração)
+  Normalização
+  Números subnormais (Denormalizados)
+ 
+ Precisão:
+  Precisão
+  Arredondamentos
+  Erros de representação
+  Erros de truncamento
+  Cancelamento numérico
+
+ Valores Especiais:
+  Zero positivo
+  Zero negativo
+  Infinito positivo
+  Infinito negativo
+  NaN
+
+ Limitações:
+  Intervalo de representação
+  Propagação de erros
+  Associatividade
+  Distributividade
+  Precisão numérica
+
+ Alternativas:
+  Decimal Floating Point
+  Precisão arbitrária
+  Outras representações
