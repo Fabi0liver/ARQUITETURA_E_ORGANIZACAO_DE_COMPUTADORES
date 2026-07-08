@@ -34,3 +34,36 @@ Fundamentos Necessários:
   Exabyte (EB)
   Zettabyte (ZB)
   Yottabyte (YB)
+
+
+
+Sistemas de Numeração:
+
+ Conceitos Fundamentais:
+  O que é um sistema de numeração
+  Base ou radix
+  Dígitos de uma base
+  Valor posicional
+  Peso posicional
+  Sistemas posicionais
+  Sistemas não posicionais
+
+ Principais Sistemas de Numeração:
+  Sistema Decimal (Base 10)
+  Sistema Binário (Base 2)
+  Sistema Octal (Base 8)
+  Sistema Hexadecimal (Base 16)
+  
+ Operações nos Sistemas de Numeração:
+  Conversões entre bases:
+   Decimal ↔ Binário
+   Decimal ↔ Octal
+   Decimal ↔ Hexadecimal
+   Binário ↔ Octal
+   Binário ↔ Hexadecimal
+   Octal ↔ Hexadecimal
+  Operações aritméticas em binário:
+   Soma
+   Subtração
+   Multiplicação
+   Divisão
