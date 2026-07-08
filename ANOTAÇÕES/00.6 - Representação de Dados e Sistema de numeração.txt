@@ -159,3 +159,45 @@ Representação de Números Reais:
   Decimal Floating Point
   Precisão arbitrária
   Outras representações
+
+
+
+Representação de Caracteres e Textos:
+
+ Conceitos Fundamentais:
+  Caractere
+  Símbolo
+  Glifo
+  Ponto de código
+
+ Evolução Histórica:
+  Primeiras codificações
+  Limitações das codificações antigas
+  Surgimento do Unicode
+
+ Tabelas de Codificação:
+  ASCII
+  Extended ASCII
+  ISO-8859
+  Unicode
+
+ Formatos Unicode:
+  UTF-8
+  UTF-16
+  UTF-32
+  
+ Caracteres:
+  Letras
+  Dígitos
+  Símbolos
+  Emojis
+  Caracteres especiais
+  Caracteres de controle
+
+ Representação Textual:
+  Strings
+  Relação entre texto e binário
+  Codificação e decodificação
+
+
+
