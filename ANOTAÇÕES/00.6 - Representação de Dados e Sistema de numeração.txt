@@ -320,3 +320,24 @@ Representação de Dados em Linguagens de Programação:
 
 
 
+Compactação e Codificação de Dados:
+
+ Conceitos:
+  Codificação
+  Compressão
+  Eficiência de codificação
+
+ Compressão:
+  Sem perda:
+   ZIP
+   PNG
+   FLAC
+  Com perda:
+   JPEG
+   MP3
+   AAC
+
+ Fundamentos Teóricos:
+  Entropia
+  Teoria da Informação
+  Shannon
