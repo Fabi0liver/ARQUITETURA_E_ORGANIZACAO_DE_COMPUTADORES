@@ -67,3 +67,46 @@ Sistemas de Numeração:
    Subtração
    Multiplicação
    Divisão
+
+
+
+Representação de Números Inteiros:
+
+ Conceitos Fundamentais:
+  Representação binária de números
+  Interpretação de padrões de bits
+  Valor lógico e valor interpretado
+  Importância da quantidade de bits
+  Intervalo de valores representáveis
+
+ Representações de Inteiros:
+  Inteiros sem sinal (Unsigned)
+  Inteiros com sinal (Signed)
+
+ Métodos de Representação:
+  Magnitude e sinal
+  Complemento de 1
+  Complemento de 2
+
+ Operações e Limitações:
+  Overflow
+  Underflow
+  Carry
+  Borrow
+  Sign Extension
+  Zero Extension
+  Truncamento
+  Perda de dados
+  Saturação (Saturating Arithmetic)
+
+ Organização na Memória:
+  Endianness:
+   Little-endian
+   Big-endian
+  Alinhamento de palavras
+  Organização em memória
+  Representação em registradores
+  Interpretação pela ULA
+
+
+
