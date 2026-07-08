@@ -271,3 +271,19 @@ Representação de Dados Multimídia:
 
 
 
+Representação de Dados em Hardware:
+
+ Conceitos Fundamentais:
+  Representação elétrica dos bits
+  Estados lógicos
+  Níveis de tensão
+
+ Componentes:
+  Portas lógicas
+  Flip-Flops
+  Registradores
+  Barramentos
+  Codificadores
+  Decodificadores
+  Multiplexadores
+  Demultiplexadores
