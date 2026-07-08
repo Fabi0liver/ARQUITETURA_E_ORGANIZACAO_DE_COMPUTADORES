@@ -201,3 +201,73 @@ Representação de Caracteres e Textos:
 
 
 
+Representação de Dados Multimídia:
+
+ Conceitos Fundamentais:
+  Dados multimídia
+  Evolução histórica
+  Resolução
+  Qualidade
+  Bitrate
+
+ Imagens:
+  Pixel
+  Resolução
+  Profundidade de cor
+  Modelos de cor:
+   RGB
+   CMYK
+   HSV
+   HSL
+  Raster (Bitmap)
+  Vetorial
+  Formatos:
+   BMP
+   PNG
+   JPEG
+   SVG
+   WebP
+  
+ Áudio:
+  Amostragem
+  Quantização
+  Sample Rate
+  Bit Depth
+  PCM
+  MIDI
+  Formatos:
+   WAV
+   MP3
+   FLAC
+   OGG
+   AAC
+
+ Vídeo:
+  Frames
+  Frame Rate
+  Resolução
+  Codecs
+  Compressão espacial
+  Compressão temporal
+  Formatos:
+   MP4
+   MKV
+   AVI
+   MOV
+   WebM
+
+ Multimídia Interativa:
+  Animações
+  Botões
+  Links
+  Conteúdo interativo
+
+ Dados Multimodais:
+  Contêineres multimídia
+  Esteganografia
+  Imagens RAW
+  Dados LiDAR
+  Imagens térmicas
+
+
+
