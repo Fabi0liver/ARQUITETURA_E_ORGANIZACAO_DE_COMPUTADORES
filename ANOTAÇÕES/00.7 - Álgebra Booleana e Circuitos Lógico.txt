@@ -133,3 +133,46 @@ Fundamentos Necessários:
    Implicantes Primos
    Implicantes Essenciais
    Minimização Sistemática
+
+
+
+Portas Lógicas
+Conceitos Fundamentais
+O que são Portas Lógicas
+Implementação física da lógica
+Representação simbólica
+Símbolos ANSI
+Símbolos IEC
+Representação por tabela-verdade
+Representação por expressão booleana
+Portas Lógicas Básicas
+Porta AND
+Porta OR
+Porta NOT
+Portas Lógicas Derivadas
+Porta NAND
+Porta NOR
+Porta XOR
+Porta XNOR
+Implementação de Funções
+Implementação com portas básicas
+Implementação utilizando NAND
+Implementação utilizando NOR
+Conversão entre portas
+Aspectos Elétricos
+Níveis Lógicos
+Lógica Positiva
+Lógica Negativa
+Margem de Ruído
+Fan-in
+Fan-out
+Tempo de Propagação
+Tempo de Subida
+Tempo de Descida
+Atraso de Propagação
+Consumo de Potência
+Dissipação Térmica
+Famílias Lógicas
+TTL
+CMOS
+Comparação TTL × CMOS
