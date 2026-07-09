@@ -329,3 +329,42 @@ Integração com Outros Sistemas:
   Sistemas Síncronos
   Sistemas Assíncronos
   Comparação entre ambos
+
+
+
+Lógica Programável:
+
+ Dispositivos Programáveis:
+  PLA
+  PAL
+  GAL
+  CPLD
+  FPGA
+
+ Fluxo de Projeto:
+  Síntese Lógica
+  Simulação
+  Implementação
+  Programação do Dispositivo
+
+
+
+Ferramentas de Desenvolvimento:
+
+ Simuladores:
+  Logisim
+  Logisim Evolution
+  Multisim
+  Quartus Prime
+  Vivado
+
+ Linguagens de Descrição de Hardware:
+  Conceito de HDL
+  Verilog
+  VHDL
+
+ Projetos Práticos:
+  Simulação de Circuitos
+  Desenvolvimento em FPGA
+  Testes em Hardware
+  Depuração de Circuitos
