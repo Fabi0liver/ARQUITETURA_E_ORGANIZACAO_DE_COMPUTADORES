@@ -311,3 +311,21 @@ Projeto de Sistemas Lógicos:
   Hazards Dinâmicos
   Glitches
   Eliminação de Hazards
+
+
+
+Integração com Outros Sistemas:
+
+ Interface Analógico-Digital:
+  Conversores ADC
+  Conversores DAC
+
+ Comunicação Digital:
+  UART
+  SPI
+  I²C
+
+ Lógica Síncrona e Assíncrona:
+  Sistemas Síncronos
+  Sistemas Assíncronos
+  Comparação entre ambos
