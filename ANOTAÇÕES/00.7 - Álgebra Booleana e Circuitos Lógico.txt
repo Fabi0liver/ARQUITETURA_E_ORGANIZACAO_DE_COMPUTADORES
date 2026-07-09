@@ -53,3 +53,83 @@ Fundamentos Necessários:
   Precedência dos Operadores
   Avaliação de Expressões
   Tabelas-Verdade
+
+
+
+Álgebra Booleana:
+
+ Fundamentos:
+  Definição da Álgebra Booleana
+  Diferença entre Álgebra Convencional e Álgebra Booleana
+  Sistema Booleano
+  Domínio Booleano
+  Variáveis Booleanas
+  Constantes Booleanas
+  Operações Booleanas
+
+ Operadores Booleanos:
+  Operadores Fundamentais:
+   AND (E)
+   OR (OU)
+   NOT (NÃO)
+  Operadores Derivados:
+   NAND
+   NOR
+   XOR
+   XNOR
+  Operadores Universais:
+   NAND como porta universal
+   NOR como porta universal
+
+ Axiomas, Postulados e Teoremas:
+  Axiomas da Álgebra Booleana
+  Postulados de Huntington
+  Dualidade da Álgebra Booleana
+  Princípio da Dualidade
+  Teoremas Fundamentais
+
+ Leis e Propriedades:
+  Lei da Identidade
+  Lei da Dominação (Anulação)
+  Lei da Idempotência
+  Lei do Complemento
+  Lei da Involução (Dupla Negação)
+  Lei Comutativa
+  Lei Associativa
+  Lei Distributiva
+  Lei da Absorção
+  Lei do Consenso
+  Leis de De Morgan
+
+ Simplificação de Expressões Booleanas:
+  Simplificação Algébrica
+  Fatoração Booleana
+  Eliminação de Redundâncias
+  Uso das Leis Booleanas
+  Obtenção da expressão mínima
+
+ Formas Canônicas e Padrão:
+  Mintermos
+  Maxtermos
+  Soma de Produtos (SOP)
+  Produto de Somas (POS)
+  Forma Canônica
+  Forma Padrão
+  Conversão entre SOP e POS
+
+ Métodos de Minimização:
+  Método Algébrico:
+   Simplificação por propriedades
+  Mapas de Karnaugh:
+   Mapas de 2 variáveis
+   Mapas de 3 variáveis
+   Mapas de 4 variáveis
+   Mapas de 5 variáveis
+   Don't Care Conditions
+   Agrupamentos
+   Minimização
+  Método de Quine-McCluskey:
+   Implicantes
+   Implicantes Primos
+   Implicantes Essenciais
+   Minimização Sistemática
