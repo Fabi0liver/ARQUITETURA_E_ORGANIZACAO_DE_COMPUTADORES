@@ -391,3 +391,24 @@ Aplicações da Álgebra Booleana e dos Circuitos Lógicos:
  Aceleradores de IA
  Eletrônica de Consumo
  Sistemas Aeroespaciais
+
+
+
+Conclusão e Resumo:
+
+ Revisão dos Conceitos Fundamentais:
+  Fundamentos da lógica
+  Álgebra Booleana
+  Portas Lógicas
+  Simplificação de Expressões
+  Circuitos Combinacionais
+  Circuitos Sequenciais
+  Projeto Digital
+  Lógica Programável
+
+ Visão Geral da Área:
+  Relação entre lógica matemática e hardware digital
+  Base para Arquitetura e Organização de Computadores
+  Base para Microprocessadores e Sistemas Digitais
+  Continuidade dos estudos em Eletrônica Digital, Arquitetura de Computadores, Sistemas Embarcados e Projeto de 
+  Hardware.
