@@ -182,3 +182,54 @@ Portas Lógicas:
   TTL
   CMOS
   Comparação TTL × CMOS
+
+
+
+Circuitos Combinacionais:
+
+ Fundamentos:
+  Definição
+  Características
+  Projeto de Circuitos Combinacionais
+  Síntese de Circuitos
+  Análise de Circuitos
+
+ Blocos Combinacionais:
+  Conversão e Seleção:
+   Codificadores
+   Decodificadores
+   Prioritizadores
+   Multiplexadores (MUX)
+   Demultiplexadores (DEMUX)
+  Comparação:
+   Comparadores de Igualdade
+   Comparadores de Magnitude
+  Operações Aritméticas:
+   Half Adder
+   Full Adder
+   Somadores Paralelos
+   Ripple Carry Adder
+   Carry Lookahead Adder (Introdução)
+   Half Subtractor
+   Full Subtractor
+   Multiplicadores Binários
+   Divisores Binários (Introdução)
+  Conversores:
+   Conversores de Código
+   Conversores BCD
+   Conversores Gray
+
+ Memórias Combinacionais:
+  ROM
+  PROM
+  EPROM
+  EEPROM
+  Flash
+  Uso como lógica programável
+
+ Otimização:
+  Minimização com Karnaugh
+  Implementação com NAND
+  Implementação com NOR
+  Redução do número de portas
+  Redução de atraso
