@@ -233,3 +233,52 @@ Circuitos Combinacionais:
   Implementação com NOR
   Redução do número de portas
   Redução de atraso
+
+
+
+Circuitos Sequenciais:
+
+ Fundamentos:
+  Definição
+  Diferença entre Circuitos Combinacionais e Sequenciais
+  Estado
+  Memória
+  Realimentação (Feedback)
+
+ Temporização:
+  Clock
+  Clock Global
+  Clock Enable
+  Borda de Subida
+  Borda de Descida
+  Setup Time
+  Hold Time
+  Tempo de Propagação
+  Metastabilidade
+
+ Elementos de Memória:
+  Latches:
+   SR
+   D
+  Flip-Flops:
+   SR
+   JK
+   D
+   T
+  
+ Registradores:
+  Registrador Paralelo
+  Registrador de Deslocamento
+  Shift Register
+  Registradores Universais
+
+ Contadores:
+  Assíncronos
+  Síncronos
+  Crescentes
+  Decrescentes
+  Bidirecionais
+  Módulo-N
+  Código Gray
+  Johnson
+Ring Counter
