@@ -11,3 +11,45 @@ Introdução ao Assunto:
  George Boole e a criação da Álgebra Booleana
  Claude Shannon e a aplicação da Álgebra Booleana em circuitos elétricos
  Importância da Álgebra Booleana na Computação e Eletrônica Digital
+
+
+
+Fundamentos Necessários:
+
+ Sistemas de Numeração:
+  Sistema Decimal
+  Sistema Binário
+  Sistema Octal
+  Sistema Hexadecimal
+  Conversão entre bases numéricas
+  Representação de números binários
+  Números sem sinal (Unsigned)
+  Números com sinal (Signed)
+  Complemento de 1
+  Complemento de 2
+  Overflow e Underflow
+
+ Códigos Digitais:
+  Código BCD
+  Código Gray
+  Código Excess-3
+  Código ASCII
+  Unicode
+  EBCDIC
+
+ Detecção e Correção de Erros:
+  Bit de Paridade
+  Código de Hamming
+  CRC (Cyclic Redundancy Check)
+
+ Conceitos Fundamentais de Lógica:
+  Lógica Proposicional
+  Proposições
+  Valores Lógicos
+  Variáveis Booleanas
+  Constantes Booleanas
+  Expressões Lógicas
+  Operadores Lógicos
+  Precedência dos Operadores
+  Avaliação de Expressões
+  Tabelas-Verdade
