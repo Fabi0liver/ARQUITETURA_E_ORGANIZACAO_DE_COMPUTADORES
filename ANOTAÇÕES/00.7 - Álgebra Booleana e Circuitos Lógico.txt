@@ -368,3 +368,26 @@ Ferramentas de Desenvolvimento:
   Desenvolvimento em FPGA
   Testes em Hardware
   Depuração de Circuitos
+
+
+
+Aplicações da Álgebra Booleana e dos Circuitos Lógicos:
+
+ Processadores (CPU)
+ Unidades Lógicas e Aritméticas (ALU)
+ Memórias Digitais
+ Microcontroladores
+ Sistemas Embarcados
+ Computadores
+ Smartphones
+ Redes Digitais
+ Telecomunicações
+ Automação Industrial
+ Robótica
+ Sistemas Automotivos
+ Equipamentos Médicos
+ Internet das Coisas (IoT)
+ Inteligência Artificial (Hardware)
+ Aceleradores de IA
+ Eletrônica de Consumo
+ Sistemas Aeroespaciais
