@@ -281,4 +281,33 @@ Circuitos Sequenciais:
   Módulo-N
   Código Gray
   Johnson
-Ring Counter
+  Ring Counter
+
+
+
+Projeto de Sistemas Lógicos:
+
+ Projeto Digital:
+  Especificação
+  Modelagem
+  Tabela-Verdade
+  Equações Booleanas
+  Simplificação
+  Implementação
+  Validação
+
+ Máquinas de Estados Finitos (FSM):
+  Conceito de Estado
+  Máquina de Moore
+  Máquina de Mealy
+  Diagrama de Estados
+  Tabela de Estados
+  Codificação Binária
+  Codificação Gray
+  Codificação One-Hot
+
+ Confiabilidade:
+  Hazards Estáticos
+  Hazards Dinâmicos
+  Glitches
+  Eliminação de Hazards
