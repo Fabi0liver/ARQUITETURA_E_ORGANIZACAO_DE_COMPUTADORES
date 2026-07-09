@@ -2,3 +2,12 @@
 
  
 
+Introdução ao Assunto:
+
+ O que é Álgebra Booleana
+ O que são Circuitos Lógicos
+ Relação entre Álgebra Booleana e Circuitos Digitais
+ Evolução histórica da lógica matemática à eletrônica digital
+ George Boole e a criação da Álgebra Booleana
+ Claude Shannon e a aplicação da Álgebra Booleana em circuitos elétricos
+ Importância da Álgebra Booleana na Computação e Eletrônica Digital
