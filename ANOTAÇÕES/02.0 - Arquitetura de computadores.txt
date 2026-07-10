@@ -250,3 +250,21 @@ Paralelismo:
   SIMD
   MISD
   MIMD
+
+
+
+Desempenho:
+
+ Métricas:
+  Clock
+  CPI
+  IPC
+  MIPS
+  FLOPS
+
+ Avaliação:
+  Lei de Amdahl
+  Lei de Gustafson
+  Speedup
+  Benchmarks
+  Eficiência Energética
