@@ -6,3 +6,58 @@ Foco Principal: A Arquitetura de Computadores estuda como um computador é proje
                modelos arquiteturais, organização lógica do processador, memória, paralelismo e técnicas 
                arquiteturais que determinam o desempenho, a compatibilidade e a eficiência dos sistemas 
                computacionais.
+
+
+
+Introdução à Arquitetura de Computadores:
+
+ Visão Geral da Arquitetura:
+  Conceito de Arquitetura de Computadores
+  Objetivos da Arquitetura
+  Interface entre Hardware e Software
+  Papel da Arquitetura no Projeto de Computadores
+  Importância da Arquitetura
+  Evolução da Arquitetura de Computadores
+  
+ Arquitetura × Organização de Computadores:
+  Arquitetura de Computadores:
+   Interface Hardware-Software
+   ISA (Instruction Set Architecture)
+   Modelo de Programação
+   Tipos de Dados
+   Modos de Endereçamento
+   Conjunto de Instruções
+   Compatibilidade de Software
+  Organização de Computadores:
+   Implementação Física
+   Caminho de Dados
+   Unidade de Controle
+   Barramentos
+   Memórias
+   Pipeline
+   Entrada e Saída
+   
+ Modelos Fundamentais:
+  Modelo de Von Neumann:
+   Programa Armazenado
+   Memória Compartilhada
+   Barramento Único
+   Gargalo de Von Neumann
+  Modelo Harvard:
+   Memória de Dados
+   Memória de Instruções
+   Barramentos Independentes
+  Harvard Modificado:
+   Memórias Separadas
+   Compartilhamento Controlado
+
+ Níveis de Abstração:
+  Aplicações
+  Sistemas Operacionais
+  ISA
+  Microarquitetura
+  Organização
+  Circuitos Digitais
+  Tecnologia Física
+
+
