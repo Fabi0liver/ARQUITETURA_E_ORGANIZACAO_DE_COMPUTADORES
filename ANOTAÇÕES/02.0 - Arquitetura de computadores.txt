@@ -157,3 +157,26 @@ Arquiteturas de Processadores:
   Vetorial
   SIMD
   Heterogênea
+
+
+
+Pipeline:
+
+ Fundamentos:
+  Conceito
+  Estágios
+  Throughput
+  Latência
+
+ Hazards:
+  Estrutural
+  Dados
+  Controle
+
+ Técnicas:
+  Forwarding
+  Scoreboarding
+  Tomasulo
+  Predição de Desvios
+  Execução Especulativa
+  Execução Fora de Ordem
