@@ -1,2 +1,8 @@
                                Arquitetura de Computadores
 
+
+Foco Principal: A Arquitetura de Computadores estuda como um computador é projetado do ponto de vista funcional,  
+               definindo a interface entre hardware e software. Seu foco está no conjunto de instruções (ISA), 
+               modelos arquiteturais, organização lógica do processador, memória, paralelismo e técnicas 
+               arquiteturais que determinam o desempenho, a compatibilidade e a eficiência dos sistemas 
+               computacionais.
