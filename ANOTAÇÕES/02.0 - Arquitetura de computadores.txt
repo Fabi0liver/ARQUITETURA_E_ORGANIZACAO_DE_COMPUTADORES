@@ -180,3 +180,33 @@ Pipeline:
   Predição de Desvios
   Execução Especulativa
   Execução Fora de Ordem
+
+
+
+Arquitetura de Memória:
+
+ Hierarquia:
+  Registradores
+  Cache
+  RAM
+  Armazenamento
+
+ Cache:
+  Organização
+  Mapeamento
+  Políticas
+  Localidade
+
+ Memória Virtual:
+  Paginação
+  Segmentação
+  TLB
+
+ Arquiteturas de Memória:
+  SMP
+  NUMA
+  DSM
+
+ Coerência:
+  Coerência de Cache
+  Consistência de Memória
