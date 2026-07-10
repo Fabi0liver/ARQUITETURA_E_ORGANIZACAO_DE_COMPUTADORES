@@ -118,3 +118,25 @@ ISA (Instruction Set Architecture):
   ARM
   x86
   RISC-V
+
+
+
+Arquitetura do Processador:
+
+ Estrutura Arquitetural:
+  CPU
+  Unidade de Controle
+  ALU
+  FPU
+  Banco de Registradores
+
+ Ciclo de Instrução:
+  Fetch
+  Decode
+  Execute
+  Memory
+  Write Back
+
+ Controle Arquitetural:
+  Controle Cabeado
+  Controle Microprogramado
