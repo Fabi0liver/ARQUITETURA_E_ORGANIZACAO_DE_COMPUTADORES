@@ -61,3 +61,23 @@ Introdução à Arquitetura de Computadores:
   Tecnologia Física
 
 
+
+Fundamentos Necessários:
+
+ Matemática e Representação:
+  Sistemas de Numeração
+  Representação de Dados
+  Ponto Flutuante
+  IEEE 754
+
+ Lógica Digital:
+  Álgebra Booleana
+  Portas Lógicas
+  Circuitos Combinacionais
+  Circuitos Sequenciais
+
+ Fundamentos de Computação:
+  Organização de ComputadoresLinguagem de Máquina
+  Registradores
+  Memória
+  Ciclo de Instrução
