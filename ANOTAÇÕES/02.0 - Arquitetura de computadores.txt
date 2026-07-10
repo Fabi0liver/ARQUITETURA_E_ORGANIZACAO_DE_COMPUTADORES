@@ -268,3 +268,44 @@ Desempenho:
   Speedup
   Benchmarks
   Eficiência Energética
+
+
+
+Virtualização:
+
+ Hypervisores
+ Intel VT-x
+ AMD-V
+ Máquinas Virtuais
+ Containers
+
+
+
+Segurança Arquitetural:
+
+ Modos de Execução
+ Rings de Proteção
+ Secure Boot
+ NX Bit
+ Spectre
+ Meltdown
+
+
+
+Arquiteturas Modernas:
+
+ Processadores:
+  ARM
+  x86-64
+  RISC-V
+  Apple Silicon
+
+ Aceleradores:
+  GPU
+  TPU
+  NPU
+  FPGA
+  ASIC
+
+
+
