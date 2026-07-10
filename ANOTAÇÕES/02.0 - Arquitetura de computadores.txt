@@ -81,3 +81,40 @@ Fundamentos Necessários:
   Registradores
   Memória
   Ciclo de Instrução
+
+
+
+ISA (Instruction Set Architecture):
+
+ Fundamentos:
+  Conceito de ISA
+  Papel da ISA
+  Interface Hardware-Software
+
+ Instruções:
+  Tipos de Instruções
+  Formatos
+  Operandos
+  Opcode
+
+ Modos de Endereçamento:
+  Imediato
+  Direto
+  Indireto
+  Registrador
+  Indexado
+  Base + Deslocamento
+  Pilha
+
+ Registradores Arquiteturais:
+  Propósito Geral
+  PC
+  SP
+  Flags
+  Registradores Especiais
+
+ Estudos de ISA:
+  MIPS
+  ARM
+  x86
+  RISC-V
