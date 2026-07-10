@@ -140,3 +140,20 @@ Arquitetura do Processador:
  Controle Arquitetural:
   Controle Cabeado
   Controle Microprogramado
+
+
+
+Arquiteturas de Processadores:
+
+ Arquiteturas Clássicas:
+  CISC
+  RISC
+  VLIW
+  EPIC
+
+ Arquiteturas Modernas:
+  Escalar
+  Superescalar
+  Vetorial
+  SIMD
+  Heterogênea
