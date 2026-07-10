@@ -210,3 +210,21 @@ Arquitetura de Memória:
  Coerência:
   Coerência de Cache
   Consistência de Memória
+
+
+
+Entrada e Saída:
+
+ Arquitetura de I/O:
+  Dispositivos
+  Controladores
+  Barramentos
+
+ Técnicas:
+  Polling
+  Interrupções
+  DMA
+
+ Mapeamento:
+  Memory-Mapped I/O
+  Port-Mapped I/O
