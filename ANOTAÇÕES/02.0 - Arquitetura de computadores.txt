@@ -228,3 +228,25 @@ Entrada e Saída:
  Mapeamento:
   Memory-Mapped I/O
   Port-Mapped I/O
+
+
+
+Paralelismo:
+
+ Níveis:
+  ILP
+  DLP
+  TLP
+
+ Técnicas:
+  Pipeline
+  SIMD
+  SMT
+  Multicore
+  Manycore
+
+ Taxonomia de Flynn:
+  SISD
+  SIMD
+  MISD
+  MIMD
