@@ -347,3 +347,30 @@ Aplicações da Arquitetura de Computadores:
   Aprendizado de Máquina
   Computação Gráfica
   Jogos Digitais
+
+
+
+
+Conclusão e Resumo:
+
+ Núcleo Principal da Arquitetura:
+  ISA
+  Modelos Arquiteturais
+  Arquiteturas de Processadores
+  Pipeline
+  Paralelismo
+  Arquitetura de Memória
+  Entrada e Saída
+  Desempenho
+  Segurança
+  Arquiteturas Modernas
+  Tendências
+
+ Ao concluir o estudo, você deve compreender:
+  Como hardware e software se comunicam
+  Como uma ISA define o comportamento do processador
+  Como diferentes arquiteturas influenciam o desempenho
+  Como processadores modernos exploram paralelismo
+  Como a memória impacta a execução de programas
+  Como arquiteturas modernas são projetadas para eficiência, escalabilidade e segurança
+  Como as tendências atuais estão moldando o futuro da computação
