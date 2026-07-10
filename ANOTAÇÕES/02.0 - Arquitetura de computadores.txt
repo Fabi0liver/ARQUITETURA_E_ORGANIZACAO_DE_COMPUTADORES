@@ -309,3 +309,41 @@ Arquiteturas Modernas:
 
 
 
+Tendências:
+
+ Chiplets
+ Empacotamento 3D
+ CXL
+ Computação Neuromórfica
+ Computação Quântica
+ Computação Fotônica
+ Arquiteturas para IA
+ Edge Computing
+ Computação Verde
+
+
+
+Aplicações da Arquitetura de Computadores:
+
+ Computação Geral:
+  Computadores Pessoais
+  Servidores
+  Workstations
+
+ Computação de Alto Desempenho:
+  Supercomputadores
+  Clusters
+  HPC
+
+ Sistemas Especializados:
+  Sistemas Embarcados
+  IoT
+  Robótica
+  Automotivos
+
+ Computação Moderna:
+  Computação em Nuvem
+  Inteligência Artificial
+  Aprendizado de Máquina
+  Computação Gráfica
+  Jogos Digitais
