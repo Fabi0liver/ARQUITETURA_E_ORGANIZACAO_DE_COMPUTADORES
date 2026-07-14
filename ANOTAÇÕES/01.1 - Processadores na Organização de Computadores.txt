@@ -230,3 +230,43 @@ Caminho de Dados (Datapath):
   Sinais de controle
   Controle do Datapath
   Coordenação entre UC e Datapath
+
+
+
+Ciclo de Instrução:
+
+ Conceitos Gerais:
+  Ciclo de instrução
+  Estados do processador
+  Sequência de execução
+
+ Busca (Fetch):
+  Busca da instrução
+  Atualização do PC
+  Leitura da memória
+  Armazenamento no IR
+
+ Decodificação (Decode):
+  Decodificação da instrução
+  Identificação do opcode
+  Identificação dos operandos
+  Geração dos sinais de controle
+
+ Busca dos Operandos:
+  Registradores
+  Memória
+  Valores imediatos
+
+ Execução (Execute):
+  Operações da ULA
+  Operações de memória
+  Operações de desvio
+  Atualização das flags
+
+ Escrita do Resultado (Write Back):
+  Escrita em registradores
+  Escrita em memória
+  Atualização do estado da CPU
+
+
+
