@@ -318,3 +318,24 @@ Filosofias de Organização dos Processadores:
   Desempenho
   Flexibilidade
   Aplicações
+
+
+
+Desempenho do Processador:
+
+ Conceitos:
+  Clock
+  Ciclo de clock
+  Frequência
+  Tempo de execução
+  Latência
+  Throughput
+  CPI
+  IPC
+  Speedup
+
+ Limitações:
+  Delay de propagação
+  Consumo de energia
+  Dissipação térmica
+  Limites físicos do clock
