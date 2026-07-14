@@ -347,14 +347,31 @@ Pipeline:
  Fundamentos:
   Conceito
   Objetivos
+  Execução sobreposta
   Organização em estágios
 
- Estágios do Pipeline:
-  Fetch
-  Decode
-  Execute
-  Memory
-  Write Back
+ Pipeline Clássico:
+  IF (Instruction Fetch)
+  ID (Instruction Decode)
+  EX (Execute)
+  MEM (Memory Access)
+  WB (Write Back)
+
+ Buffer de Pré-busca (Prefetch Buffer):
+  Conceito
+  Organização
+  Funcionamento
+  Busca antecipada de instruções
+  Prefetch sequencial
+  Prefetch por hardware
+  Benefícios
+  Limitações
+
+ Tipos de Pipeline:
+  Pipeline escalar
+  Superpipeline
+  Pipeline superescalar
+  Comparação entre os modelos
 
  Hazards:
   Hazard estrutural
@@ -363,10 +380,21 @@ Pipeline:
 
  Técnicas de Minimização:
   Stall
+  Bubble
   Forwarding
   Pipeline Interlock
   Flush
-  Predição de desvios
+  Execução especulativa
+
+ Predição de Desvios:
+  Conceito
+  Objetivos
+  Predição estática
+  Predição dinâmica
+  Branch History Table (BHT)
+  Pattern History Table (PHT)
+  Branch Target Buffer (BTB)
+  Return Address Stack (RAS)
   Execução especulativa
 
  Avaliação:
