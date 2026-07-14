@@ -178,3 +178,35 @@ Unidade Lógica e Aritmética (ULA):
   Shift aritmético
   Rotações
   Extensão de sinal
+
+
+
+Unidade de Controle:
+
+ Fundamentos:
+  Objetivos
+  Organização
+  Coordenação da CPU
+  Sequenciamento das operações
+  Geração dos sinais de controle
+
+ Controle Cabeado (Hardwired Control):
+  Estrutura
+  Funcionamento
+  Vantagens
+  Limitações
+
+ Controle Microprogramado:
+  Conceito
+  Organização
+  Microprogramas
+  Microinstruções
+  Memória de controle
+  Sequenciador de microinstruções
+
+ Microoperações:
+  Transferência entre registradores
+  Operações da ULA
+  Microoperações lógicas
+  Microoperações de deslocamento
+  Microoperações de controle
