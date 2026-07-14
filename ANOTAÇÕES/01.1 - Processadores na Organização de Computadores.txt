@@ -106,3 +106,41 @@ Organização Interna da CPU:
   Sincronização dos componentes
   Domínios de clock
   Temporização
+
+
+
+Banco de Registradores:
+
+ Fundamentos:
+  Conceito
+  Organização
+  Estrutura
+  Portas de leitura
+  Porta de escrita
+  Escrita simultânea
+  Leitura simultânea
+
+ Registradores de Uso Geral:
+  Organização
+  Função
+  Utilização durante a execução
+
+ Registradores Especiais:
+  Program Counter (PC)
+  Instruction Register (IR)
+  Memory Address Register (MAR)
+  Memory Data Register (MDR / MBR)
+  Accumulator (ACC)
+  Stack Pointer (SP)
+  Base Pointer (BP)
+  Status Register (PSW)
+  Flags Register
+
+ Flags da CPU:
+  Zero Flag
+  Carry Flag
+  Overflow Flag
+  Negative Flag
+  Sign Flag
+  Parity Flag
+  Auxiliary Carry Flag
