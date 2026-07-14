@@ -417,25 +417,59 @@ Processadores Multinúcleo:
 
 Arquiteturas de Processamento Paralelo:
 
- SIMD:
+ Taxonomia de Flynn:
   Conceito
-  Organização
-  Aplicações
+  Critérios de classificação
+  Fluxo de instruções
+  Fluxo de dados
+  Aplicações da taxonomia
+  SISD (Single Instruction, Single Data):
+   Organização
+   Funcionamento
+   Características
+   Exemplos
+  SIMD (Single Instruction, Multiple Data):
+   Organização
+   Funcionamento
+   Registradores vetoriais
+   Processadores vetoriais
+   Extensões SIMD
+   GPUs
+   Aplicações
+  MISD (Multiple Instruction, Single Data):
+   Organização
+   Características
+   Aplicações específicas
+   Tolerância a falhas
+  MIMD (Multiple Instruction, Multiple Data):
+   Organização
+   Memória compartilhada
+   Memória distribuída
+   SMP
+   NUMA
+   Multicore
+   Multiprocessadores
+   Clusters
 
- Processadores Vetoriais:
+ Arquiteturas Vetoriais:
+  Conceito
   Registradores vetoriais
   Unidade vetorial
+  Operações vetoriais
 
  GPUs:
   Organização interna
-  Multiprocessadores
+  Streaming Multiprocessors (SM)
   Núcleos de execução
-  Hierarquia interna
+  Hierarquia de execução
+  Paralelismo massivo
 
  Multiprocessadores:
-  Memória compartilhada
-  Memória distribuída
+  SMP
+  NUMA
   Comunicação entre processadores
+  Interconexões
+  Coerência de cache
 
 
 
