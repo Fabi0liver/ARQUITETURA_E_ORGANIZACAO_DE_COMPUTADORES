@@ -471,7 +471,11 @@ Processadores Multinúcleo:
  Hierarquia de Cache:
   Cache privada
   Cache compartilhada
-  Coerência de cache
+
+ Protocolos de Coerência:
+  Conceito
+  MESI
+  MOESI
 
  Interconexões Internas:
   Barramento
@@ -551,11 +555,12 @@ Multithreading em Hardware:
   Coarse-Grained Multithreading
   Simultaneous Multithreading (SMT)
 
- SMT:
-  Organização
-  Compartilhamento das unidades funcionais
-  Compartilhamento dos registradores
+ Organização do SMT:
   Compartilhamento do pipeline
+  Compartilhamento das unidades funcionais
+  Compartilhamento do banco de registradores
+  Compartilhamento do frontend
+  Compartilhamento do backend
   Hyper-Threading
   Vantagens
   Limitações
@@ -575,27 +580,31 @@ Recursos Modernos dos Processadores:
   Thermal Throttling
   Controle de temperatura
 
+ Organização Física do Processador:
+  Floorplan
+  Distribuição de blocos
+  Clock Tree
+  Clock Distribution
+  Domínios de clock
+
  Arquiteturas Modernas:
   Chiplets
   Interposers
   Empilhamento 3D (3D Stacking)
   TSV (Through-Silicon Via)
   SoC
-  Heterogeneous Computing
+  Computação Heterogênea (Heterogeneous Computing)
 
  Aceleradores Especializadas:
   Extensões vetoriais (SIMD)
-  Criptografia
-  Inteligência Artificial
-  Aceleradores especializados:
-   NPU
-   TPU
-   DPU
-   IPU
-   Unidades criptográficas
-   Unidades SIMD
-   Tensor Cores
-   Matrix Engines
+  Extensões vetoriais
+  Tensor Cores
+  Matrix Engines
+  Unidades Criptográficas
+  NPU (Neural Processing Unit)
+  TPU (Tensor Processing Unit)
+  DPU (Data Processing Unit)
+  IPU (Intelligence Processing Unit)
 
 
 
