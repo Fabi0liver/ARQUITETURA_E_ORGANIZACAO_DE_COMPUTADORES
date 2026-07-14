@@ -405,26 +405,29 @@ Pipeline:
 
 
 
-Paralelismo em Processadores:
+Paralelismo em Nível de Instrução (ILP):
 
- Paralelismo em Nível de Instrução:
-  Prefetch
-  Superpipeline
-  Superescalar
+ Conceitos:
+  Paralelismo de instruções
+  Limitações
+  Ganhos de desempenho
+
+ Organização Superescalar:
+  Conceito
+  Organização interna
   Múltiplas unidades funcionais
+  Dispatch de múltiplas instruções
+  Emissão múltipla
+  Execução paralela
+  Escrita simultânea
+  Commit
 
- Execução Avançada:
+ Técnicas Avançadas:
   Execução fora de ordem
   Renomeação de registradores
-  Buffer de reordenação (ROB)
-  Commit
-  Janela de instruções
-
- Predição:
-  Predição de desvios
-  Branch Target Buffer (BTB)
-  Branch History Table (BHT)
-  Execução especulativa
+  Reservation Stations
+  Buffer de Reordenação (ROB)
+  Commit em ordem
 
 
 
@@ -435,11 +438,17 @@ Processadores Multinúcleo:
   Compartilhamento de recursos
   Comunicação entre núcleos
 
- Organização Interna:
+ Hierarquia de Cache:
   Cache privada
   Cache compartilhada
-  Interconexões internas
   Coerência de cache
+
+ Interconexões Internas:
+  Barramento
+  Anel (Ring)
+  Malha (Mesh)
+  Crossbar
+  Network-on-Chip (NoC)
 
 
 
