@@ -374,3 +374,26 @@ Pipeline:
   Throughput
   Speedup
   Eficiência
+
+
+
+Paralelismo em Processadores:
+
+ Paralelismo em Nível de Instrução:
+  Prefetch
+  Superpipeline
+  Superescalar
+  Múltiplas unidades funcionais
+
+ Execução Avançada:
+  Execução fora de ordem
+  Renomeação de registradores
+  Buffer de reordenação (ROB)
+  Commit
+  Janela de instruções
+
+ Predição:
+  Predição de desvios
+  Branch Target Buffer (BTB)
+  Branch History Table (BHT)
+  Execução especulativa
