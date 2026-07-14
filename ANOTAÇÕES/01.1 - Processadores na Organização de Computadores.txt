@@ -144,3 +144,37 @@ Banco de Registradores:
   Sign Flag
   Parity Flag
   Auxiliary Carry Flag
+
+
+
+Unidade Lógica e Aritmética (ULA):
+
+ Organização da ULA:
+  Estrutura interna
+  Entradas
+  Saídas
+  Unidade de deslocamento
+  Geração das flags
+
+ Operações Aritméticas:
+  Soma
+  Subtração
+  Incremento
+  Decremento
+  Multiplicação
+  Divisão
+
+ Operações Lógicas:
+  AND
+  OR
+  XOR
+  NOT
+  NAND
+  NOR
+  Comparação
+
+ Operações de Deslocamento:
+  Shift lógico
+  Shift aritmético
+  Rotações
+  Extensão de sinal
