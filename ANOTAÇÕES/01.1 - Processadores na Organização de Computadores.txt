@@ -1,0 +1,15 @@
+                               Processadores na Organização de Computadores
+
+
+
+Introdução:
+
+ Processadores e Organização de Computadores
+ Conceito de processador (CPU)
+ Função da CPU em um sistema computacional
+ Objetivos do estudo da organização de processadores
+ Importância da CPU para o desempenho do computador
+ Evolução dos processadores
+ Organização do processador versus Arquitetura do processador
+ Modelo geral de funcionamento da CPU
+ Visão geral da organização interna do processador
