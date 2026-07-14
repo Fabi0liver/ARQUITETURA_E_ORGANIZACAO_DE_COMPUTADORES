@@ -86,3 +86,23 @@ Organização Geral do Processador:
 
 
 
+Organização Interna da CPU:
+
+ Comunicação Interna:
+  Barramentos Internos:
+   Barramento de dados
+   Barramento de endereços
+   Barramento de controle
+  Interconexões:
+   Caminhos internos
+   Seletores
+   Multiplexadores internos
+   Buffers
+   Drivers
+
+ Sincronização:
+  Clock interno
+  Distribuição do clock
+  Sincronização dos componentes
+  Domínios de clock
+  Temporização
