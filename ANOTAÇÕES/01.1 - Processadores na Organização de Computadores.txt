@@ -510,12 +510,29 @@ Arquiteturas de Processamento Paralelo:
 
 
 
-Recursos Modernos dos Processadores:
+Multithreading em Hardware:
 
- Execução:
-  Hyper-Threading (SMT)
-  Multithreading em hardware
-  Escalonamento interno
+ Conceitos:
+  Thread em hardware
+  Thread em software
+
+ Tipos:
+  Fine-Grained Multithreading
+  Coarse-Grained Multithreading
+  Simultaneous Multithreading (SMT)
+
+ SMT:
+  Organização
+  Compartilhamento das unidades funcionais
+  Compartilhamento dos registradores
+  Compartilhamento do pipeline
+  Hyper-Threading
+  Vantagens
+  Limitações
+
+
+
+Recursos Modernos dos Processadores:
 
  Gerenciamento de Energia:
   DVFS
@@ -528,11 +545,27 @@ Recursos Modernos dos Processadores:
   Thermal Throttling
   Controle de temperatura
 
- Unidades Especializadas:
+ Arquiteturas Modernas:
+  Chiplets
+  Interposers
+  Empilhamento 3D (3D Stacking)
+  TSV (Through-Silicon Via)
+  SoC
+  Heterogeneous Computing
+
+ Aceleradores Especializadas:
   Extensões vetoriais (SIMD)
   Criptografia
   Inteligência Artificial
-  Aceleradores especializados
+  Aceleradores especializados:
+   NPU
+   TPU
+   DPU
+   IPU
+   Unidades criptográficas
+   Unidades SIMD
+   Tensor Cores
+   Matrix Engines
 
 
 
