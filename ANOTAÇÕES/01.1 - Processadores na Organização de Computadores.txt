@@ -490,3 +490,35 @@ Aplicações:
   Segurança de hardware
   Computação em nuvem
   Edge Computing
+
+
+
+Conclusão e Resumo:
+
+ Revisão dos Conceitos Fundamentais:
+  Organização geral da CPU
+  Unidade de Controle
+  Unidade Lógica e Aritmética
+  Banco de Registradores
+  Datapath
+  Control Path
+  Ciclo de instrução
+  Organização das instruções
+  Unidade de controle
+  Pipeline
+  Paralelismo
+  Processadores multinúcleo
+  Recursos modernos
+  Avaliação de desempenho
+
+ Preparação para Estudos Posteriores:
+  Arquitetura de Computadores
+  Projeto de Processadores
+  Sistemas Operacionais
+  Compiladores
+  Sistemas Embarcados
+  Computação Paralela
+  Computação de Alto Desempenho
+  Projeto Digital Avançado
+  Microarquitetura de Processadores
+  Coerência de Cache e Sistemas Multiprocessados
