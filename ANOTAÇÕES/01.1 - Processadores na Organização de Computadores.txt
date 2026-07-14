@@ -294,3 +294,27 @@ Organização das Instruções:
   Memória–Memória
   Load/Store
   Operações imediatas
+
+
+
+Filosofias de Organização dos Processadores:
+
+ Organização CISC:
+  Características
+  Organização interna
+  Execução das instruções
+  Microprogramação
+
+ Organização RISC:
+  Características
+  Load/Store
+  Grande banco de registradores
+  Instruções de tamanho fixo
+  Execução direta por hardware
+
+ Comparação entre RISC e CISC:
+  Organização interna
+  Complexidade
+  Desempenho
+  Flexibilidade
+  Aplicações
