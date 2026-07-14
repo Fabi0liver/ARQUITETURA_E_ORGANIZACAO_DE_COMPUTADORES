@@ -13,3 +13,40 @@ Introdução:
  Organização do processador versus Arquitetura do processador
  Modelo geral de funcionamento da CPU
  Visão geral da organização interna do processador
+
+
+
+Fundamentos Necessários:
+
+ Organização de Computadores
+  Organização versus Arquitetura de Computadores:
+  Modelo de Von Neumann
+  Modelo Harvard
+  Modelo Harvard Modificado
+ 
+ Representação de Dados:
+  Sistemas de numeração
+  Representação binária
+  Operações aritméticas em binário
+
+ Circuitos Digitais:
+  Álgebra Booleana
+  Portas lógicas
+  Circuitos combinacionais
+  Circuitos sequenciais
+
+ Componentes Digitais Fundamentais:
+  Flip-Flops
+  Registradores
+  Multiplexadores
+  Demultiplexadores
+  Codificadores
+  Decodificadores
+  Somadores
+  Comparadores
+
+ Conceitos Básicos:
+  Barramentos
+  Clock
+  Sincronização
+  Memória principal 
