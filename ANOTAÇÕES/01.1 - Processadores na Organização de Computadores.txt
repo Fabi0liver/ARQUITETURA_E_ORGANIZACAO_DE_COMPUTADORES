@@ -438,3 +438,27 @@ Arquiteturas de Processamento Paralelo:
   Comunicação entre processadores
 
 
+
+Recursos Modernos dos Processadores:
+
+ Execução:
+  Hyper-Threading (SMT)
+  Multithreading em hardware
+  Escalonamento interno
+
+ Gerenciamento de Energia:
+  DVFS
+  Turbo Boost / Boost Clock
+  Clock Gating
+  Power Gating
+
+ Controle Térmico:
+  Monitoramento térmico
+  Thermal Throttling
+  Controle de temperatura
+
+ Unidades Especializadas:
+  Extensões vetoriais (SIMD)
+  Criptografia
+  Inteligência Artificial
+  Aceleradores especializados
