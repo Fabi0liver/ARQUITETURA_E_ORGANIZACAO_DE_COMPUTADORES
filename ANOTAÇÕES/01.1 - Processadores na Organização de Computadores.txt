@@ -378,13 +378,18 @@ Pipeline:
   Hazard de dados
   Hazard de controle
 
+ Dependências entre instruções
+  RAW (Read After Write)
+  WAR (Write After Read)
+  WAW (Write After Write)
+  RAR (Read After Read)
+
  Técnicas de Minimização:
   Stall
   Bubble
+  Flush
   Forwarding
   Pipeline Interlock
-  Flush
-  Execução especulativa
 
  Predição de Desvios:
   Conceito
@@ -395,7 +400,16 @@ Pipeline:
   Pattern History Table (PHT)
   Branch Target Buffer (BTB)
   Return Address Stack (RAS)
+
+ Preditores modernos:
+  Two-Level Adaptive Predictor
+  Tournament Predictor
+  TAGE (Tagged Geometric Predictor)
+
+ Execução Especulativa:
+  Busca especulativa
   Execução especulativa
+  Recuperação após erro de predição
 
  Avaliação:
   Latência
@@ -412,6 +426,11 @@ Paralelismo em Nível de Instrução (ILP):
   Limitações
   Ganhos de desempenho
 
+ Técnicas de Emissão:
+  Single-Issue
+  Dual-Issue
+  Multiple-Issue
+
  Organização Superescalar:
   Conceito
   Organização interna
@@ -421,13 +440,24 @@ Paralelismo em Nível de Instrução (ILP):
   Execução paralela
   Escrita simultânea
   Commit
+  Organização das Unidades Funcionais:
+   Unidade Inteira (Integer Unit)
+   Unidade de Ponto Flutuante (FPU)
+   Unidade Vetorial
+   Unidade SIMD
+   Unidade Load/Store
+   Unidade de Branch
 
- Técnicas Avançadas:
-  Execução fora de ordem
-  Renomeação de registradores
-  Reservation Stations
-  Buffer de Reordenação (ROB)
-  Commit em ordem
+ Escalonamento Dinâmico:
+  Janela de Instruções:
+   Instruction Window
+   Scheduler
+  Técnicas Avançadas:
+   Execução fora de ordem
+   Renomeação de registradores
+   Reservation Stations
+   Buffer de Reordenação (ROB)
+   Commit em ordem
 
 
 
