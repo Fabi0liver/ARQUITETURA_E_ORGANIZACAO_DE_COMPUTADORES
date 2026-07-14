@@ -417,19 +417,24 @@ Processadores Multinúcleo:
 
 Arquiteturas de Processamento Paralelo:
 
- SIMD
-Conceito
-Organização
-Aplicações
-14.2 Processadores Vetoriais
-Registradores vetoriais
-Unidade vetorial
-14.3 GPUs
-Organização interna
-Multiprocessadores
-Núcleos de execução
-Hierarquia interna
-14.4 Multiprocessadores
-Memória compartilhada
-Memória distribuída
-Comunicação entre processadores
+ SIMD:
+  Conceito
+  Organização
+  Aplicações
+
+ Processadores Vetoriais:
+  Registradores vetoriais
+  Unidade vetorial
+
+ GPUs:
+  Organização interna
+  Multiprocessadores
+  Núcleos de execução
+  Hierarquia interna
+
+ Multiprocessadores:
+  Memória compartilhada
+  Memória distribuída
+  Comunicação entre processadores
+
+
