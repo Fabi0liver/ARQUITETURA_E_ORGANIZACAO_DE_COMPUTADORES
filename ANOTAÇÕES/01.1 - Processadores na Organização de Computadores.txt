@@ -462,3 +462,31 @@ Recursos Modernos dos Processadores:
   Criptografia
   Inteligência Artificial
   Aceleradores especializados
+
+
+
+Aplicações:
+
+ Projeto de Hardware:
+  Projeto de processadores
+  Projeto de microcontroladores
+  Projeto de sistemas embarcados
+
+ Desenvolvimento de Software:
+  Compiladores
+  Sistemas Operacionais
+  Programação de baixo nível
+  Firmware
+
+ Computação de Alto Desempenho:
+  HPC
+  Supercomputadores
+  Computação paralela
+
+ Tecnologias Modernas:
+  Inteligência Artificial
+  GPUs
+  Virtualização
+  Segurança de hardware
+  Computação em nuvem
+  Edge Computing
