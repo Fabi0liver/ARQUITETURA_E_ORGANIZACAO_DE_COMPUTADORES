@@ -270,3 +270,27 @@ Ciclo de Instrução:
 
 
 
+Organização das Instruções:
+
+ Formato das Instruções:
+  Campos da instrução
+  Opcode
+  Campos de operandos
+  Comprimento das instruções
+
+ Modos de Endereçamento:
+  Imediato
+  Direto
+  Indireto
+  Registrador
+  Indexado
+  Base + deslocamento
+  Relativo ao PC
+  Pilha
+
+ Tipos de Operações:
+  Registrador–Registrador
+  Registrador–Memória
+  Memória–Memória
+  Load/Store
+  Operações imediatas
