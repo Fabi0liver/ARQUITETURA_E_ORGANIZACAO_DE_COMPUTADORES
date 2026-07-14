@@ -210,3 +210,23 @@ Unidade de Controle:
   Microoperações lógicas
   Microoperações de deslocamento
   Microoperações de controle
+
+
+
+Caminho de Dados (Datapath):
+
+ Organização:
+  Estrutura
+  Fluxo de dados
+  Seleção de operandos
+  Escrita de resultados
+
+ Transferência entre Registradores:
+  Transferência de dados
+  Controle das transferências
+  Operações internas
+
+ Integração com a Unidade de Controle:
+  Sinais de controle
+  Controle do Datapath
+  Coordenação entre UC e Datapath
