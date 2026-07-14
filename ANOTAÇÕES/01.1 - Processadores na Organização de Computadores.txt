@@ -50,3 +50,39 @@ Fundamentos Necessários:
   Clock
   Sincronização
   Memória principal 
+
+
+
+Organização Geral do Processador:
+
+ Estrutura Geral da CPU:
+  Componentes internos do processador
+  Organização física da CPU
+  Organização lógica da CPU
+  Fluxo geral de informações
+  Comunicação entre os componentes internos
+
+ Componentes Fundamentais:
+  Unidade de Controle (Control Unit):
+   Função
+   Responsabilidades
+   Organização interna
+  Unidade Lógica e Aritmética (ULA / ALU):
+   Função
+   Organização
+   Papel na execução das instruções
+  Banco de Registradores:
+   Função
+   Organização
+   Comunicação com os demais componentes
+  Caminho de Dados (Datapath):
+   Conceito
+   Estrutura
+   Fluxo interno de dados
+  Caminho de Controle (Control Path):
+   Conceito
+   Organização
+   Controle das operações internas
+
+
+
