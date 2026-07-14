@@ -339,3 +339,38 @@ Desempenho do Processador:
   Consumo de energia
   Dissipação térmica
   Limites físicos do clock
+
+
+
+Pipeline:
+
+ Fundamentos:
+  Conceito
+  Objetivos
+  Organização em estágios
+
+ Estágios do Pipeline:
+  Fetch
+  Decode
+  Execute
+  Memory
+  Write Back
+
+ Hazards:
+  Hazard estrutural
+  Hazard de dados
+  Hazard de controle
+
+ Técnicas de Minimização:
+  Stall
+  Forwarding
+  Pipeline Interlock
+  Flush
+  Predição de desvios
+  Execução especulativa
+
+ Avaliação:
+  Latência
+  Throughput
+  Speedup
+  Eficiência
