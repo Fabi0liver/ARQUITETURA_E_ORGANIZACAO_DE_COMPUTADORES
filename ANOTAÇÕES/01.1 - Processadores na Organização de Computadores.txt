@@ -397,3 +397,39 @@ Paralelismo em Processadores:
   Branch Target Buffer (BTB)
   Branch History Table (BHT)
   Execução especulativa
+
+
+
+Processadores Multinúcleo:
+
+ Organização:
+  Núcleos de processamento
+  Compartilhamento de recursos
+  Comunicação entre núcleos
+
+ Organização Interna:
+  Cache privada
+  Cache compartilhada
+  Interconexões internas
+  Coerência de cache
+
+
+
+Arquiteturas de Processamento Paralelo:
+
+ SIMD
+Conceito
+Organização
+Aplicações
+14.2 Processadores Vetoriais
+Registradores vetoriais
+Unidade vetorial
+14.3 GPUs
+Organização interna
+Multiprocessadores
+Núcleos de execução
+Hierarquia interna
+14.4 Multiprocessadores
+Memória compartilhada
+Memória distribuída
+Comunicação entre processadores
