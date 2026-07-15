@@ -166,6 +166,9 @@ Hierarquia de Memória:
   Throughput
   Tempo médio de acesso
   Gargalo da memória (Memory Wall)
+  AMAT
+  CPI relacionado à memória
+  Memory Wall
 
 
 
@@ -272,6 +275,22 @@ Memória Principal:
   SDRAM
   DDR SDRAM
 
+ DRAM:
+  Burst Mode
+  Page Mode
+  Fast Page Mode
+  EDO RAM
+
+ SDRAM:
+  SDR SDRAM
+
+ DDR:
+  Prefetch
+  Burst Length
+  Bank Groups
+  Registered DDR
+  On-Die ECC
+
  Evolução DDR:
   DDR
   DDR2
@@ -324,6 +343,8 @@ Memórias Não Voláteis:
   EPROM
   EEPROM
   Flash ROM
+  Mask ROM
+  OTP ROM
 
  Flash Memory:
   NOR Flash
@@ -332,6 +353,12 @@ Memórias Não Voláteis:
   Bloco
   Wear Leveling
   Garbage Collection
+  Apagamento
+  Programação
+  Leitura
+  Bad Blocks
+  ECC
+  Over Provisioning
 
 
 
@@ -404,6 +431,9 @@ Memória Virtual:
   Espaço de endereçamento virtual
   Espaço de endereçamento físico
   MMU
+  Tradução de endereços
+  Tamanho da página
+  Huge Pages
 
  Paginação:
   Página
@@ -423,6 +453,64 @@ Memória Virtual:
    FIFO
    LRU
    Clock
+   LFU
+   Second Chance
+
+
+ Translation Lookaside Buffer (TLB):
+
+  Estrutura
+  Funcionamento
+  TLB Hit
+  TLB Miss
+  Associatividade
+  Flush
+
+
+
+Memória em Sistemas Multiprocessados
+  
+ Cache privada
+ Cache compartilhada
+ Coerência de memória
+ Consistência de memória
+ Protocolos:
+  MSI
+  MESI
+  MOSI
+  MOESI
+
+
+
+Memórias para GPU:
+ 
+ VRAM
+ GDDR
+ HBM
+ Unified Memory
+ Shared Memory
+ Texture Cache
+
+
+
+Memórias em Sistemas Embarcados:
+
+ EEPROM
+ NOR Flash
+ SRAM
+ FRAM
+ Memórias para microcontroladores
+
+
+
+Memórias para Servidores
+
+ ECC
+ Registered DIMM
+ Load Reduced DIMM
+ Memory Scrubbing
+ Memory Sparing
+ Memory Mirroring
 
 
 
@@ -465,18 +553,21 @@ Aplicações:
 
 Conclusão e Resumo:
 
- Organização da unidade de memória
- Características e classificação das memórias
- Endereçamento
- Interface CPU–Memória
- Hierarquia de memória
- Memória Cache
- Memória Principal
- Memórias não voláteis
- Memória Secundária
- Interfaces de armazenamento
- RAID
- Memória Virtual
- Integridade e correção de erros
- Tecnologias modernas
- Tendências futuras
+ Resumo:
+  Organização da unidade de memória
+  Endereçamento de memória
+  Hierarquia de memória
+  Memória Cache
+  Memória Principal (RAM)
+  Memórias Não Voláteis (ROM e Flash)
+  Memória Secundária (HDD, SSD e Ópticas)
+  Interfaces e RAID
+  Memória Virtual
+  Integridade e Correção de Erros
+  Tecnologias Modernas de Memória
+
+ Conclusão:
+  Integração das memórias na organização de computadores
+  Relação entre desempenho, custo e capacidade
+  Evolução das tecnologias de memória
+  Tendências das arquiteturas de memória
