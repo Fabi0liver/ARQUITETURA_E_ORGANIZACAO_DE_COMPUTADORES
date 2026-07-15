@@ -305,3 +305,65 @@ Memórias Não Voláteis:
   Bloco
   Wear Leveling
   Garbage Collection
+
+
+
+Memória Secundária:
+
+ Fundamentos:
+  Conceito
+  Organização
+  Persistência
+
+ Discos Magnéticos:
+  HDD
+  Estrutura física
+  Trilhas
+  Setores
+  Cilindros
+  Cabeças
+  Seek Time
+  Latência rotacional
+  Tempo de transferência
+
+ Unidades de Estado Sólido:
+  SSD
+  NAND Flash
+  Controladora
+  DRAM Cache
+  FTL
+  TRIM
+  SLC
+  MLC
+  TLC
+  QLC
+
+ Memórias Ópticas:
+  CD
+  DVD
+  Blu-ray
+
+
+
+Interfaces de Armazenamento:
+
+ Interfaces:
+  IDE
+  EIDE
+  SATA
+  SCSI
+  SAS
+  NVMe
+  PCI Express
+
+ Protocolos:
+  AHCI
+  NVMe
+
+ RAID:
+  Conceito
+  RAID 0
+  RAID 1
+  RAID 5
+  RAID 6
+  RAID 10
