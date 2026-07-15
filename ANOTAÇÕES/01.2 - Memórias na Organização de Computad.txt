@@ -1,0 +1,14 @@
+                                Memórias na Organização de Computadores 
+
+
+Introdução:
+
+ Memórias e Organização de Computadores
+ Conceito de memória
+ Função da memória em um sistema computacional
+ Importância das memórias para o desempenho
+ Evolução das tecnologias de memória
+ Organização das memórias
+ Organização das memórias versus Arquitetura de Computadores
+ Papel das memórias na organização do computador
+ Visão geral da hierarquia de memória 
