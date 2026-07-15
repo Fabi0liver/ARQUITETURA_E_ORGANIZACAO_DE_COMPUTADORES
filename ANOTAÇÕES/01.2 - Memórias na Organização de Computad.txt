@@ -88,6 +88,10 @@ Organização da Unidade de Memória:
   Linhas e colunas
   Bancos de memória
   Módulos de memória
+  Sense Amplifiers
+  Drivers
+  Barramentos internos
+  Interleaving
 
  Organização Lógica:
   Organização por bits
@@ -115,6 +119,16 @@ Endereçamento de Memória:
 
 
 
+Expansão de Memória:
+
+ Expansão por largura
+ Expansão por profundidade
+ Associação de chips
+ Seleção de chips
+ Decodificação de endereços
+
+
+
 Interface entre CPU e Memória:
 
  Comunicação:
@@ -129,6 +143,7 @@ Interface entre CPU e Memória:
   Temporização
   Wait States
   Burst Transfer
+  Handshake
 
 
 
@@ -165,6 +180,8 @@ Memória Cache:
 
  Organização:
   Linha de cache
+  Palavra
+  Conjunto
   Bloco
   Tag
   Índice
@@ -181,6 +198,13 @@ Memória Cache:
   Cold Miss
   Conflict Miss
   Capacity Miss
+  Coherence Miss
+
+ Técnicas:
+  Victim Cache
+  Write Buffer
+  Prefetch
+  Stream Buffer
 
  Níveis de Cache:
   Cache L1
@@ -192,6 +216,9 @@ Memória Cache:
   Cache separada
   Cache privada
   Cache compartilhada
+  Cache Inclusiva
+  Cache Exclusiva
+  Cache Não Inclusiva
 
  Mapeamento:
   Mapeamento direto
