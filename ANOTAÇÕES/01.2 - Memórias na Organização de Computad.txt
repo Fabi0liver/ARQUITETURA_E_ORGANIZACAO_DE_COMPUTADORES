@@ -112,3 +112,20 @@ Endereçamento de Memória:
  Ordenação dos Dados:
   Big Endian
   Little Endian
+
+
+
+Interface entre CPU e Memória:
+
+ Comunicação:
+  Barramento de dados
+  Barramento de endereços
+  Barramento de controle
+
+ Operações:
+  Leitura de memória
+  Escrita de memória
+  Ciclo de memória
+  Temporização
+  Wait States
+  Burst Transfer
