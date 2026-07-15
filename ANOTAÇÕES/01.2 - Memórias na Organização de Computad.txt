@@ -70,3 +70,26 @@ Organização Geral das Memórias
   Memória de acesso sequencial
   Memória de acesso direto
   Memória associativa
+
+
+
+Organização da Unidade de Memória:
+
+ Unidades de Informação:
+  Bit
+  Byte
+  Palavra
+  Célula de memória
+  Bloco de memória
+
+ Organização Física:
+  Chips de memória
+  Matrizes de memória
+  Linhas e colunas
+  Bancos de memória
+  Módulos de memória
+
+ Organização Lógica:
+  Organização por bits
+  Organização por palavras
+  Organização por blocos
