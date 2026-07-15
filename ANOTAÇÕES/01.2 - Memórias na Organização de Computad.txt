@@ -268,3 +268,40 @@ Memória Principal:
   Quad Channel
 
 
+
+Integridade e Correção de Erros:
+
+ Detecção de Erros:
+  Bit de paridade
+  Paridade par
+  Paridade ímpar
+
+ Correção de Erros:
+  Distância de Hamming
+  Código de Hamming
+  ECC
+  SECDED
+
+ Confiabilidade:
+  Soft Errors
+  Hard Errors
+  Refresh
+
+
+
+Memórias Não Voláteis:
+
+ ROM:
+  ROM
+  PROM
+  EPROM
+  EEPROM
+  Flash ROM
+
+ Flash Memory:
+  NOR Flash
+  NAND Flash
+  Página
+  Bloco
+  Wear Leveling
+  Garbage Collection
