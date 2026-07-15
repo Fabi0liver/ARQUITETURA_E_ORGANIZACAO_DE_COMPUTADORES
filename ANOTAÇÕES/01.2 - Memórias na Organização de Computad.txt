@@ -12,3 +12,30 @@ Introdução:
  Organização das memórias versus Arquitetura de Computadores
  Papel das memórias na organização do computador
  Visão geral da hierarquia de memória 
+
+
+
+Fundamentos Necessários:
+
+ Organização de Computadores:
+  Organização versus Arquitetura
+  Modelo de Von Neumann
+  Modelo Harvard
+  Barramentos
+  Ciclo de instrução
+ 
+ Representação de Dados:
+  Bit
+  Byte
+  Palavra
+  Sistemas de numeração
+  Representação binária
+
+ Circuitos Digitais:
+  Flip-Flops
+  Registradores
+  Multiplexadores
+  Decodificadores
+
+
+
