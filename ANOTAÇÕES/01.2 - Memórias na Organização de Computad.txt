@@ -367,3 +367,32 @@ Interfaces de Armazenamento:
   RAID 5
   RAID 6
   RAID 10
+
+
+
+Memória Virtual:
+
+ Fundamentos:
+  Conceito
+  Espaço de endereçamento virtual
+  Espaço de endereçamento físico
+  MMU
+
+ Paginação:
+  Página
+  Quadro de página
+  Tabela de páginas
+  TLB
+  Page Fault
+
+ Segmentação:
+  Conceito
+  Segmentos
+
+ Gerenciamento:
+  Swap
+  Demand Paging
+  Algoritmos de substituição:
+   FIFO
+   LRU
+   Clock
