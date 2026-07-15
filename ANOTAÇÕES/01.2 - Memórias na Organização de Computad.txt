@@ -93,3 +93,22 @@ Organização da Unidade de Memória:
   Organização por bits
   Organização por palavras
   Organização por blocos
+
+
+
+Endereçamento de Memória:
+
+ Fundamentos:
+  Espaço de endereçamento
+  Endereço físico
+  Endereço lógico
+  Capacidade de endereçamento
+
+ Organização dos Endereços:
+  Endereçamento por byte
+  Endereçamento por palavra
+  Alinhamento de memória
+
+ Ordenação dos Dados:
+  Big Endian
+  Little Endian
