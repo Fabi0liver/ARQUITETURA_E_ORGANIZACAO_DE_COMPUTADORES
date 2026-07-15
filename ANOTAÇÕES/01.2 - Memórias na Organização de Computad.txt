@@ -39,3 +39,34 @@ Fundamentos Necessários:
 
 
 
+Organização Geral das Memórias
+
+ Fundamentos:
+  Conceito de armazenamento
+  Dados e instruções
+  Memória volátil
+  Memória não volátil
+  Persistência dos dados
+
+ Características das Memórias:
+  Capacidade
+  Tempo de acesso
+  Tempo de ciclo
+  Latência
+  Largura de banda
+  Taxa de transferência
+  Custo por bit
+  Consumo de energia
+
+ Classificação das Memórias:
+  Memória primária
+  Memória secundária
+  Memória terciária
+  Memória volátil
+  Memória não volátil
+  Memória de leitura e escrita
+  Memória somente leitura
+  Memória de acesso aleatório
+  Memória de acesso sequencial
+  Memória de acesso direto
+  Memória associativa
