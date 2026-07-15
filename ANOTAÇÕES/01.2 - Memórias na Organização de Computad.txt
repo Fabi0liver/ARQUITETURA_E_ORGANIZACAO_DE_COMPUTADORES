@@ -215,3 +215,56 @@ Memória Cache:
   Protocolo MSI
   Protocolo MESI
   Protocolo MOESI
+
+
+
+Memória Principal:
+
+ Fundamentos:
+  Conceito
+  Organização
+  Estrutura física
+  Estrutura lógica
+
+ Organização Interna:
+  Linhas
+  Colunas
+  Bancos
+  Matrizes
+
+ Sinais de Controle:
+  Chip Select (CS)
+  Write Enable (WE)
+  Output Enable (OE)
+  RAS
+  CAS
+
+ Tecnologias RAM:
+  SRAM
+  DRAM
+  SDRAM
+  DDR SDRAM
+
+ Evolução DDR:
+  DDR
+  DDR2
+  DDR3
+  DDR4
+  DDR5
+
+ Módulos de Memória:
+  SIMM
+  DIMM
+  SO-DIMM
+  ECC DIMM
+
+ Desempenho:
+  Frequência
+  Clock
+  Latência
+  CAS Latency
+  Timings
+  Dual Channel
+  Quad Channel
+
+
