@@ -396,3 +396,26 @@ Memória Virtual:
    FIFO
    LRU
    Clock
+
+
+
+Tecnologias Modernas de Memória:
+
+ Memórias Especiais:
+  GDDR
+  HBM
+  LPDDR
+  CAM
+
+ Memórias Emergentes:
+  MRAM
+  FRAM
+  ReRAM
+  PCM
+  3D XPoint
+
+ Tendências:
+  Memória Persistente
+  Memória Unificada
+  Computação em Memória
+  CXL Memory
