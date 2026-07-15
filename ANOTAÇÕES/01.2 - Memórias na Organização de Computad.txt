@@ -151,3 +151,67 @@ Hierarquia de Memória:
   Throughput
   Tempo médio de acesso
   Gargalo da memória (Memory Wall)
+
+
+
+Memória Cache:
+
+ Fundamentos:
+  Conceito
+  Funcionamento
+  Princípio da Localidade
+  Localidade temporal
+  Localidade espacial
+
+ Organização:
+  Linha de cache
+  Bloco
+  Tag
+  Índice
+  Offset
+
+ Operações:
+  Cache Hit
+  Cache Miss
+  Tempo médio de acesso
+  Taxa de acertos
+  Taxa de falhas
+
+ Tipos de Miss:
+  Cold Miss
+  Conflict Miss
+  Capacity Miss
+
+ Níveis de Cache:
+  Cache L1
+  Cache L2
+  Cache L3
+
+ Organização da Cache:
+  Cache unificada
+  Cache separada
+  Cache privada
+  Cache compartilhada
+
+ Mapeamento:
+  Mapeamento direto
+  Mapeamento associativo
+  Mapeamento associativo por conjunto
+
+ Políticas de Substituição:
+  FIFO
+  LRU
+  LFU
+  Random
+
+ Políticas de Escrita:
+  Write Through
+  Write Back
+  Write Allocate
+  No Write Allocate
+
+ Coerência de Cache:
+  Conceito
+  Protocolo MSI
+  Protocolo MESI
+  Protocolo MOESI
