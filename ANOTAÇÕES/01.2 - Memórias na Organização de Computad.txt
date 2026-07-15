@@ -129,3 +129,25 @@ Interface entre CPU e Memória:
   Temporização
   Wait States
   Burst Transfer
+
+
+
+Hierarquia de Memória:
+
+ Fundamentos:
+  Conceito
+  Objetivos
+  Organização hierárquica
+
+ Níveis da Hierarquia:
+  Registradores
+  Memória Cache
+  Memória Principal
+  Memória Secundária
+  Armazenamento Externo
+
+ Avaliação:
+  Latência
+  Throughput
+  Tempo médio de acesso
+  Gargalo da memória (Memory Wall)
