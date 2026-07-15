@@ -419,3 +419,37 @@ Tecnologias Modernas de Memória:
   Memória Unificada
   Computação em Memória
   CXL Memory
+
+
+
+Aplicações:
+
+ Computadores pessoais
+ Servidores
+ Data Centers
+ Sistemas Embarcados
+ Dispositivos Móveis
+ GPUs
+ Inteligência Artificial
+ Computação em Nuvem
+ Supercomputadores
+
+
+
+Conclusão e Resumo:
+
+ Organização da unidade de memória
+ Características e classificação das memórias
+ Endereçamento
+ Interface CPU–Memória
+ Hierarquia de memória
+ Memória Cache
+ Memória Principal
+ Memórias não voláteis
+ Memória Secundária
+ Interfaces de armazenamento
+ RAID
+ Memória Virtual
+ Integridade e correção de erros
+ Tecnologias modernas
+ Tendências futuras
