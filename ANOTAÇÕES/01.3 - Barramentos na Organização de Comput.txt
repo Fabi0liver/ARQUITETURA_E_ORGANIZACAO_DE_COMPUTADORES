@@ -532,3 +532,51 @@ Protocolos e Comunicação:
   Sincronização
   Integridade da comunicação
   Coordenação de dispositivos
+
+
+
+Aplicações:
+ 
+ Computadores pessoais
+ Estações de trabalho
+ Servidores
+ Data Centers
+ Sistemas embarcados
+ Microcontroladores
+ Dispositivos móveis
+ GPUs
+ Sistemas industriais
+ Redes de computadores
+ Sistemas automotivos
+ Inteligência Artificial
+ Computação de Alto Desempenho (HPC)
+
+
+
+Conclusão e Resumo:
+
+ Resumo:
+  Organização dos barramentos
+  Estrutura do barramento do sistema
+  Barramento de Dados
+  Barramento de Endereços
+  Barramento de Controle
+  Comunicação entre componentes
+  Características e métricas de desempenho
+  Barramentos síncronos e assíncronos
+  Arbitragem e controle
+  DMA e interrupções
+  Barramentos de expansão
+  Barramentos paralelos
+  Barramentos seriais
+  Interfaces modernas
+  Protocolos de comunicação
+  Barramentos para sistemas embarcados
+
+ Conclusão:
+  Integração dos barramentos na organização de computadores
+  Evolução das tecnologias de interconexão
+  Relação entre largura de banda, latência e desempenho
+  Tendências dos barramentos modernos
+  Papel dos barramentos na escalabilidade dos sistemas
+  Comunicação eficiente entre os componentes do computador
