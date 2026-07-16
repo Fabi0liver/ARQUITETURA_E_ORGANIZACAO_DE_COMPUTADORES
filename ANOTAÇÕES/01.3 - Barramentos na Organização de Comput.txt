@@ -344,3 +344,28 @@ Arbitragem e Controle de Barramento:
   Conceito
   Funcionamento
   Compartilhamento do barramento
+
+
+
+Comunicação Especializada:
+
+ Interrupções:
+  Fundamentos:
+   Conceito
+   Solicitação de interrupção
+   Linhas de interrupção
+  Controle:
+   Vetor de interrupção
+   Tratamento de interrupções
+   Prioridades
+ 
+ DMA (Direct Memory Access):
+  Fundamentos:
+   Conceito
+   Objetivos
+   Comunicação direta
+  Operação:
+   Solicitação de DMA
+   Controle do barramento
+   Transferência direta
+   Liberação do barramento
