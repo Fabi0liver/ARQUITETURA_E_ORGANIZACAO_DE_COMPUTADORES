@@ -280,3 +280,39 @@ Operações dos Barramentos:
   Tempo de resposta
   Espera
   Temporização da comunicação
+
+
+
+Modos de Operação:
+
+ Barramentos Síncronos:
+  Fundamentos:
+   Conceito
+   Funcionamento
+   Clock compartilhado
+   Sincronização
+  Características:
+   Sinal de clock
+   Precisão
+   Alta velocidade
+   Comunicação sincronizada
+   Previsibilidade
+  Limitações:
+   Dependência do clock
+   Distância de comunicação
+   Escalabilidade
+
+ Barramentos Assíncronos:
+  Fundamentos:
+   Conceito
+   Funcionamento
+   Comunicação independente do clock
+  Características:
+   Handshake
+   Sinais de controle
+   Flexibilidade
+   Comunicação sob demanda
+  Limitações:
+   Maior latência
+   Menor previsibilidade
+   Menor velocidade
