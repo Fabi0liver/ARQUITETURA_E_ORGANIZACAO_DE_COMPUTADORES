@@ -44,6 +44,19 @@ Fundamentos Necessários:
   Clock
   Sinais digitais
 
+ Características Elétricas:
+  Linhas de sinal
+  Níveis de tensão
+  Impedância
+  Capacitância
+  Integridade do sinal
+  Reflexão de sinal
+  Crosstalk
+  Atenuação
+  Ruído elétrico
+  Margem de ruído
+  Terminadores (Termination)
+
 
 
 Organização Geral dos Barramentos:
@@ -73,6 +86,13 @@ Organização Geral dos Barramentos:
   Organização das linhas
   Separação por função
   Comunicação simultânea
+  Trilhas da placa-mãe
+  Backplane
+  Slots
+  Conectores
+  Topologia do barramento
+  Comprimento das linhas
+  Distribuição dos sinais
 
  Estrutura Lógica:
   Barramento de Dados
@@ -80,6 +100,8 @@ Organização Geral dos Barramentos:
   Barramento de Controle
   Integração entre os barramentos
   Operação conjunta dos barramentos
+
+
 
 
 
@@ -99,10 +121,18 @@ Características dos Barramentos:
   Conceito
   Frequência
   Clock
+  Clock do barramento
+  Ciclo do barramento
   Hertz (Hz)
   Ciclos por segundo
   Velocidade de comunicação
   Velocidade de transferência
+  Estados do barramento
+  Wait States
+  Burst Mode
+  Pipeline Transfer
+  Split Transaction
+  Posted Write
   
  Desempenho:
   Largura de banda:
@@ -273,6 +303,18 @@ Operações dos Barramentos:
   Confirmação
   Sincronização
 
+ Modos de Comunicação:
+  Simplex
+  Half-Duplex
+  Full-Duplex
+
+ Transferência:
+  Paralela
+  Serial
+  Síncrona
+  Assíncrona
+  Isócrona
+
  Temporização:
   Clock
   Ciclos de barramento
@@ -327,18 +369,30 @@ Arbitragem e Controle de Barramento:
   Controle de acesso
   Prioridade de acesso
   Conflitos de acesso
+  Mestre do barramento (Bus Master)
+  Escravo (Slave)
+  Bus Request (BR)
+  Bus Grant (BG)
 
  Métodos de Arbitragem:
   Arbitragem centralizada
   Arbitragem distribuída
   Prioridade fixa
   Prioridade dinâmica
+  Daisy Chain
+  Round Robin
+  Fair Arbitration
 
  Controle de Tráfego:
   Compartilhamento do barramento
   Controle de acesso
   Controle de utilização
   Prevenção de conflitos
+  Contenção do barramento
+  Conflitos
+  Exclusão mútua
+  Liberação do barramento
+  Timeout
 
  Cycle Stealing:
   Conceito
