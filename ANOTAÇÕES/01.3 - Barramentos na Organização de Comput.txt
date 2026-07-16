@@ -142,3 +142,41 @@ Barramento do Sistema:
   Barramento de Controle
   Comunicação integrada
   Coordenação das operações
+
+
+
+Barramento de Dados:
+
+ Fundamentos:
+  Conceito
+  Função
+  Transporte de dados
+  Comunicação entre componentes
+  Transferência de informações
+
+ Organização:
+  Fluxo de dados
+  Comunicação bidirecional
+  Integração com o barramento do sistema
+  Relação com barramento de endereços
+  Relação com barramento de controle
+
+ Características:
+  Largura do barramento
+  Quantidade de bits por transferência
+  Velocidade de transferência
+  Frequência de operação
+  Ciclos de clock
+
+ Operações:
+  Transferência de dados
+  Leitura
+  Escrita
+  Transporte de resultados
+  Comunicação entre dispositivos
+
+ Desempenho:
+  Gargalos
+  Eficiência
+  Volume de dados
+  Capacidade de transferência
