@@ -1,0 +1,18 @@
+                                Barramentos na Organização de Computadores
+
+
+
+Introdução:
+
+ Conceito de barramento
+ Função dos barramentos
+ Objetivos dos barramentos
+ Importância dos barramentos
+ Papel dos barramentos na organização do computador
+ Comunicação entre os componentes do sistema
+ Interconexão entre os componentes
+ Fluxo de informações no computador
+ Evolução dos barramentos
+ Barramentos na Organização versus Arquitetura de Computadores
+ Barramento do Sistema
+ Visão geral da estrutura de interconexão
