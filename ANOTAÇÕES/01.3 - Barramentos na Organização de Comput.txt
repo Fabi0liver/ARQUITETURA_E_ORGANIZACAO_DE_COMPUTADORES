@@ -43,3 +43,43 @@ Fundamentos Necessários:
   Decodificadores
   Clock
   Sinais digitais
+
+
+
+Organização Geral dos Barramentos:
+
+ Fundamentos:
+  Conceito de barramento
+  Sistema de interconexão
+  Comunicação interna
+  Compartilhamento de recursos
+  Transporte de informações
+  Fluxo de dados
+  Fluxo de endereços
+  Fluxo de sinais de controle
+  Coordenação entre componentes
+  Sincronização das operações
+  Organização da comunicação
+  Eficiência da comunicação
+  Escalabilidade do sistema
+  Gargalos de comunicação
+
+ Estrutura Física:
+  Condutores elétricos
+  Linhas do barramento
+  Barramento compartilhado
+  Interconexão física
+  Topologia de comunicação
+  Organização das linhas
+  Separação por função
+  Comunicação simultânea
+
+ Estrutura Lógica:
+  Barramento de Dados
+  Barramento de Endereços
+  Barramento de Controle
+  Integração entre os barramentos
+  Operação conjunta dos barramentos
+
+
+
