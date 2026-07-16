@@ -103,8 +103,6 @@ Organização Geral dos Barramentos:
 
 
 
-
-
 Características dos Barramentos:
 
  Largura:
@@ -144,6 +142,10 @@ Características dos Barramentos:
   Eficiência da comunicação
   Gargalos
   Escalabilidade
+  Eficiência
+  Overhead
+  Utilização
+  Saturação
 
  Avaliação de Desempenho:
   Relação entre largura e velocidade
@@ -152,6 +154,12 @@ Características dos Barramentos:
   Desempenho teórico
   Desempenho real
   Limitações do barramento
+
+ Segurança:
+  IOMMU
+  Proteção DMA
+  Isolamento de dispositivos
+  Secure Boot (visão geral)
 
 
 
@@ -173,7 +181,7 @@ Barramento do Sistema:
   Comunicação integrada
   Coordenação das operações
 
-
+ 
 
 Barramento de Dados:
 
@@ -526,6 +534,27 @@ Barramentos Seriais:
   Comunicação de alta velocidade
   Baixa latência
   Sistemas multiprocessados
+
+
+
+Comunicação CPU ↔ Memória:
+
+ Memory Bus
+ Front Side Bus (FSB)
+ Back Side Bus
+ QuickPath Interconnect (QPI)
+ DMI
+ Infinity Fabric
+ UPI
+
+
+
+Comunicação CPU ↔ Periféricos:
+
+ Memory Mapped I/O
+ Port Mapped I/O
+ MMIO
+ PMIO
 
 
 
