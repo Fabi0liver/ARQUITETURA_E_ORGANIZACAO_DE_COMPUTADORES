@@ -316,3 +316,31 @@ Modos de Operação:
    Maior latência
    Menor previsibilidade
    Menor velocidade
+
+
+
+Arbitragem e Controle de Barramento:
+
+ Arbitragem:
+  Conceito
+  Objetivos
+  Controle de acesso
+  Prioridade de acesso
+  Conflitos de acesso
+
+ Métodos de Arbitragem:
+  Arbitragem centralizada
+  Arbitragem distribuída
+  Prioridade fixa
+  Prioridade dinâmica
+
+ Controle de Tráfego:
+  Compartilhamento do barramento
+  Controle de acesso
+  Controle de utilização
+  Prevenção de conflitos
+
+ Cycle Stealing:
+  Conceito
+  Funcionamento
+  Compartilhamento do barramento
