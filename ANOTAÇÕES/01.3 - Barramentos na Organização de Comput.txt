@@ -122,3 +122,23 @@ Características dos Barramentos:
   Desempenho teórico
   Desempenho real
   Limitações do barramento
+
+
+
+Barramento do Sistema:
+
+ Fundamentos:
+  Conceito
+  Estrutura
+  Organização
+  Função
+  Componentes conectados
+  Comunicação do sistema
+  Fluxo interno de informações
+
+ Estrutura do Barramento do Sistema:
+  Barramento de Dados
+  Barramento de Endereços
+  Barramento de Controle
+  Comunicação integrada
+  Coordenação das operações
