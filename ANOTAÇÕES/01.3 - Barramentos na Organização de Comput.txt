@@ -180,3 +180,38 @@ Barramento de Dados:
   Eficiência
   Volume de dados
   Capacidade de transferência
+
+
+
+Barramento de Endereços
+
+ Fundamentos:
+  Conceito
+  Função
+  Endereçamento
+  Localização dos dados
+  Identificação de dispositivos
+
+ Organização:
+  Espaço de endereçamento
+  Capacidade de endereçamento
+  Largura do barramento
+  Quantidade de endereços
+
+ Endereçamento:
+  Endereço físico
+  Endereço lógico
+  Endereçamento de memória
+  Endereçamento de dispositivos
+  Endereçamento de E/S
+
+ Métodos de Endereçamento:
+  Endereçamento mapeado em memória
+  Portas de E/S
+  Espaços de endereçamento independentes
+
+ Operações:
+  Seleção de endereço
+  Geração de endereços
+  Localização de dados
+  Direcionamento de operações
