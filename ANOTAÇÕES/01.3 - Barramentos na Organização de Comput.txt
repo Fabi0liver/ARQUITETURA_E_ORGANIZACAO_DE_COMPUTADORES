@@ -255,3 +255,28 @@ Barramento de Controle:
   Barramento de controle de interrupções
   Barramento de controle de DMA
   Pinos de controle
+
+
+
+Operações dos Barramentos:
+
+ Comunicação:
+  Solicitação de acesso
+  Seleção do destino
+  Transferência de dados
+  Finalização da operação
+
+ Operações Básicas:
+  Leitura
+  Escrita
+  Transferência
+  Confirmação
+  Sincronização
+
+ Temporização:
+  Clock
+  Ciclos de barramento
+  Tempo de transferência
+  Tempo de resposta
+  Espera
+  Temporização da comunicação
