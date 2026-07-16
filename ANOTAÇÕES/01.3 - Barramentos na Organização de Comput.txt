@@ -369,3 +369,51 @@ Comunicação Especializada:
    Controle do barramento
    Transferência direta
    Liberação do barramento
+
+
+
+Barramentos de Expansão:
+
+ Fundamentos:
+  Conceito
+  Objetivos
+  Expansão do sistema
+  Integração de dispositivos
+  Comunicação com periféricos
+
+ Evolução:
+  Barramentos paralelos
+  Barramentos seriais
+  Comunicação compartilhada
+  Comunicação ponto a ponto
+
+
+
+Barramentos Paralelos:
+
+ ISA:
+  Arquitetura
+  Organização
+  8 bits
+  16 bits
+
+ EISA:
+  Arquitetura
+  Compatibilidade com ISA
+  32 bits
+
+ VLB:
+  Arquitetura
+  Comunicação local
+  Alto desempenho
+
+ PCI:
+  Arquitetura
+  Barramento paralelo
+  Compartilhamento
+  Expansão de dispositivos
+
+ AGP:
+  Interface gráfica dedicada
+  Comunicação gráfica
+  Alta largura de banda
