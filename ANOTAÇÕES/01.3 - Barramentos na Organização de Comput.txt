@@ -16,3 +16,30 @@ Introdução:
  Barramentos na Organização versus Arquitetura de Computadores
  Barramento do Sistema
  Visão geral da estrutura de interconexão
+
+
+
+Fundamentos Necessários:
+
+ Organização de Computadores:
+  Organização versus Arquitetura
+  Modelo de Von Neumann
+  Modelo Harvard
+  Componentes básicos do computador
+  Comunicação entre componentes
+  Ciclo de instrução
+  Estrutura básica do sistema computacional
+
+ Representação de Dados:
+  Bit
+  Byte
+  Palavra
+  Sistemas de numeração
+  Representação binária
+
+ Circuitos Digitais:
+  Registradores
+  Multiplexadores
+  Decodificadores
+  Clock
+  Sinais digitais
