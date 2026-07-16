@@ -417,3 +417,67 @@ Barramentos Paralelos:
   Interface gráfica dedicada
   Comunicação gráfica
   Alta largura de banda
+
+
+
+Barramentos Seriais:
+
+ PCI Express (PCIe):
+  Fundamentos:
+   Arquitetura serial
+   Comunicação ponto a ponto
+   Evolução do PCI
+  Organização:
+   Lanes
+   Comunicação bidirecional
+   Escalabilidade
+   Largura de banda
+  Configurações:
+   x1
+   x4
+   x8
+   x16
+
+ SATA:
+  Interface serial
+  Comunicação com armazenamento
+  Evolução do ATA
+
+ NVMe:
+  Interface de armazenamento
+  Operação sobre PCI Express
+  Baixa latência
+  Alta largura de banda
+
+ HyperTransport:
+  Comunicação de alta velocidade
+  Baixa latência
+  Sistemas multiprocessados
+
+
+
+Barramentos Externos:
+
+ USB:
+  Fundamentos:
+   Conceito
+   Arquitetura
+   Plug and Play
+   Hot Plug
+   Alimentação elétrica
+  Organização:
+   Host
+   Hub
+   Dispositivos
+   Topologia em árvore
+  Evolução:
+   USB 1.x
+   USB 2.0
+   USB 3.x
+   USB4
+  Conectores:
+   Tipo A
+   Tipo B
+   Mini USB
+   Micro USB
+   USB Tipo C
