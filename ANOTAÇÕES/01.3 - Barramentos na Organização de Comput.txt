@@ -299,9 +299,13 @@ Operações dos Barramentos:
  Operações Básicas:
   Leitura
   Escrita
-  Transferência
+  Leitura-modificação-escrita
+  Transferência de bloco
   Confirmação
   Sincronização
+  Burst Read
+  Burst Write
+  Operações atômicas
 
  Modos de Comunicação:
   Simplex
@@ -412,17 +416,32 @@ Comunicação Especializada:
    Vetor de interrupção
    Tratamento de interrupções
    Prioridades
+   IRQ
+   Interrupções mascaráveis
+   Não mascaráveis (NMI)
+   APIC
+   MSI
+   MSI-X
  
  DMA (Direct Memory Access):
   Fundamentos:
    Conceito
    Objetivos
    Comunicação direta
+   Controladora DMA
+   Barramento durante DMA
+  Modos:
+   Burst
+   Cycle Stealing
+   Transparent DMA
   Operação:
    Solicitação de DMA
    Controle do barramento
    Transferência direta
    Liberação do barramento
+  Vantagens:
+   Redução da carga da CPU
+   Alto desempenho
 
 
 
@@ -510,6 +529,15 @@ Barramentos Seriais:
 
 
 
+Barramentos Internos da CPU:
+
+ Barramento interno
+ Barramento da ULA
+ Barramento de registradores
+ Barramento interno de controle
+
+
+
 Barramentos Externos:
 
  USB:
@@ -535,6 +563,30 @@ Barramentos Externos:
    Mini USB
    Micro USB
    USB Tipo C
+
+ Thunderbolt
+ 
+ FireWire
+ 
+ DisplayPort
+ 
+ HDMI
+ 
+ Ethernet
+
+
+
+Barramentos em Processadores Modernos:
+
+ Interconexão em Chip (NoC)
+ Ring Bus
+ Mesh
+ Crossbar
+ Infinity Fabric
+ AMBA
+ AXI
+ AHB
+ APB
 
 
 
