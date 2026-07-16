@@ -215,3 +215,43 @@ Barramento de Endereços
   Geração de endereços
   Localização de dados
   Direcionamento de operações
+
+
+
+Barramento de Controle:
+
+ Fundamentos:
+  Conceito
+  Função
+  Coordenação das operações
+  Gerenciamento da comunicação
+  Sincronização
+
+ Organização:
+  Linhas de controle
+  Sinais de controle
+  Coordenação entre componentes
+  Controle das operações
+
+ Sinais de Controle:
+  Sinal de leitura (Read)
+  Sinal de escrita (Write)
+  Seleção de dispositivo
+  Interrupção
+  Reset
+  Habilitação
+  Confirmação de operação
+
+ Operações:
+  Controle de leitura
+  Controle de escrita
+  Controle de acesso
+  Controle da comunicação
+  Coordenação do fluxo de dados
+
+ Barramentos de Controle Especializados:
+  Barramento de controle da CPU
+  Barramento de controle da memória
+  Barramento de controle de interrupções
+  Barramento de controle de DMA
+  Pinos de controle
