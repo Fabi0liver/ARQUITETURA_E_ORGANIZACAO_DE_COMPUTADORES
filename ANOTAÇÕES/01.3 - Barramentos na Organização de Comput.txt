@@ -83,3 +83,42 @@ Organização Geral dos Barramentos:
 
 
 
+Características dos Barramentos:
+
+ Largura:
+  Conceito
+  Largura em bits
+  Barramentos de 8 bits
+  Barramentos de 16 bits
+  Barramentos de 32 bits
+  Barramentos de 64 bits
+  Quantidade de dados por ciclo
+  Relação entre largura e desempenho
+
+ Velocidade:
+  Conceito
+  Frequência
+  Clock
+  Hertz (Hz)
+  Ciclos por segundo
+  Velocidade de comunicação
+  Velocidade de transferência
+  
+ Desempenho:
+  Largura de banda:
+  Taxa de transferência
+  Throughput
+  Latência
+  Tempo de resposta
+  Tempo de acesso
+  Eficiência da comunicação
+  Gargalos
+  Escalabilidade
+
+ Avaliação de Desempenho:
+  Relação entre largura e velocidade
+  Impacto da frequência
+  Impacto da largura
+  Desempenho teórico
+  Desempenho real
+  Limitações do barramento
