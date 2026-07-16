@@ -481,3 +481,54 @@ Barramentos Externos:
    Mini USB
    Micro USB
    USB Tipo C
+
+
+
+Barramentos para Sistemas Embarcados:
+
+ I²C:
+  Arquitetura
+  SDA
+  SCL
+  Mestre
+  Escravo
+
+ SPI:
+  Arquitetura
+  MOSI
+  MISO
+  SCK
+  SS/CS
+
+ UART:
+  Comunicação serial
+  TX
+  RX
+  Comunicação assíncrona
+
+ RS-232:
+  Comunicação serial
+  Interface física
+  Comunicação bidirecional
+  
+ CAN:
+  Comunicação diferencial
+  Rede CAN
+  Múltiplos mestres
+  Arbitragem
+
+
+
+Protocolos e Comunicação:
+
+ Comunicação:
+  Mestre e escravo
+  Comunicação ponto a ponto
+  Comunicação compartilhada
+  Broadcast
+
+ Controle:
+  Handshake
+  Sincronização
+  Integridade da comunicação
+  Coordenação de dispositivos
