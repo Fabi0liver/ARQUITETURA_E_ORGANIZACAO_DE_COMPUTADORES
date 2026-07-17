@@ -15,19 +15,25 @@ Introdução:
 
 
 Fundamentos Necessários:
-Organização de Computadores
-Organização versus Arquitetura
-Componentes básicos do computador
-Comunicação entre os componentes
-Visão geral do sistema computacional
-Representação de Dados
-Bit
-Byte
-Palavra
-Dados digitais
-Informação e sinais digitais
-Comunicação Digital
-Transferência de dados
-Endereçamento
-Sinais de controle
-Sincronização
+
+ Organização de Computadores:
+  Organização versus Arquitetura
+  Componentes básicos do computador
+  Comunicação entre os componentes
+  Visão geral do sistema computacional
+
+ Representação de Dados:
+  Bit
+  Byte
+  Palavra
+  Dados digitais
+  Informação e sinais digitais
+
+ Comunicação Digital:
+  Transferência de dados
+  Endereçamento
+  Sinais de controle
+  Sincronização
+
+
+
