@@ -1,0 +1,33 @@
+                 Entrada e Saída na Organização de Computadores
+
+
+Introdução:
+
+ Conceito de Entrada e Saída (E/S)
+ Conceito de periféricos
+ Objetivos da Entrada e Saída
+ Importância da E/S
+ Papel da E/S na Organização de Computadores
+ Comunicação entre computador e ambiente externo
+ Fluxo de dados entre usuário, periféricos e sistema
+ Evolução dos sistemas de Entrada e Saída
+
+
+
+Fundamentos Necessários:
+Organização de Computadores
+Organização versus Arquitetura
+Componentes básicos do computador
+Comunicação entre os componentes
+Visão geral do sistema computacional
+Representação de Dados
+Bit
+Byte
+Palavra
+Dados digitais
+Informação e sinais digitais
+Comunicação Digital
+Transferência de dados
+Endereçamento
+Sinais de controle
+Sincronização
