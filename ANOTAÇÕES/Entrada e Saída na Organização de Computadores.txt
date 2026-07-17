@@ -316,3 +316,14 @@ Conclusão e Resumo:
   Funcionamento dos principais periféricos
   Desempenho da E/S
   Tecnologias modernas
+
+ Conclusão:
+  Papel da Entrada e Saída na Organização de Computadores
+  Integração entre periféricos e os demais componentes do sistema
+  Evolução das tecnologias de Entrada e Saída
+  Impacto da E/S no desempenho do computador
+  Relação entre hardware, controladores e software de E/S
+  Escalabilidade e expansão dos sistemas de Entrada e Saída
+  Tendências das interfaces e periféricos modernos
+  Desafios da comunicação entre dispositivos
+  Eficiência na transferência de dados
