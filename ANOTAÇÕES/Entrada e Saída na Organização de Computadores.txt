@@ -111,3 +111,65 @@ Comunicação entre Computador e Periféricos:
   Simplex
   Half-Duplex
   Full-Duplex
+
+
+
+Métodos de Transferência de Dados:
+
+ Entrada e Saída Programada:
+  Polling
+  Verificação de status
+
+ Entrada e Saída por Interrupção
+  Interrupções
+  Tratamento de interrupções
+  Prioridades de interrupção
+
+ DMA (Direct Memory Access):
+  Conceito
+  Controlador DMA
+  Transferência direta
+  Liberação do processador
+
+
+
+Interfaces e Protocolos de Comunicação:
+
+ Interfaces Cabeadas:
+  USB
+  SATA
+  PCI Express (PCIe)
+  Thunderbolt
+
+ Interfaces Sem Fio:
+  Bluetooth
+  Wi-Fi
+  NFC
+  Zigbee
+
+ Protocolos para Sistemas Embarcados:
+  I²C
+  SPI
+  UART
+  RS-232
+
+
+
+Dispositivos de Entrada:
+
+ Fundamentos:
+  Função
+  Organização
+  Funcionamento
+
+ Principais Dispositivos:
+  Teclado
+  Mouse
+  Scanner
+  Microfone
+  Webcam
+  Leitor biométrico
+  Leitor de código de barras
+  Joystick e Gamepad
+  Sensores
+  Tela sensível ao toque (Touchscreen)
