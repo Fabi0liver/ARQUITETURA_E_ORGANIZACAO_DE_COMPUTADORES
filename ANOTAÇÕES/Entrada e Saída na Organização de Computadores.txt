@@ -37,3 +37,49 @@ Fundamentos Necessários:
 
 
 
+Fundamentos de Entrada e Saída:
+
+ Conceitos Fundamentais:
+  Sistema de Entrada e Saída
+  Fluxo de Entrada
+  Fluxo de Saída
+  Fluxo bidirecional
+  Comunicação entre periféricos e computador
+  Operações de leitura
+  Operações de escrita
+
+ Classificação dos Periféricos:
+  Dispositivos de Entrada
+  Dispositivos de Saída
+  Dispositivos de Entrada/Saída
+
+ Características dos Periféricos:
+  Velocidade
+  Capacidade de transferência
+  Tempo de resposta
+  Compatibilidade
+  Interface de conexão
+
+
+
+Organização do Subsistema de Entrada e Saída:
+
+ Estrutura Geral:
+  Subsistema de E/S
+  Organização da comunicação
+  Interação entre periféricos e sistema
+  Fluxo de informações
+
+ Controladores de Entrada e Saída:
+  Fundamentos:
+   Conceito
+   Função
+   Organização
+   Controladora de dispositivos
+  Funcionamento:
+   Tradução de protocolos
+   Conversão de sinais
+   Gerenciamento da comunicação
+   Bufferização
+   Sincronização
+   Detecção de erros
