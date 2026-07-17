@@ -83,3 +83,31 @@ Organização do Subsistema de Entrada e Saída:
    Bufferização
    Sincronização
    Detecção de erros
+
+
+
+Endereçamento de Entrada e Saída:
+
+ Métodos de Endereçamento:
+  Entrada e Saída Mapeada na Memória (Memory-Mapped I/O)
+  Entrada e Saída Isolada (Port-Mapped I/O)
+
+ Espaço de Endereçamento:
+  Endereços de dispositivos
+  Portas de E/S
+  Registradores de dispositivos
+
+
+
+Comunicação entre Computador e Periféricos:
+
+ Tipos de Comunicação:
+  Comunicação Serial
+  Comunicação Paralela
+  Comunicação Síncrona
+  Comunicação Assíncrona
+
+ Modos de Transmissão:
+  Simplex
+  Half-Duplex
+  Full-Duplex
