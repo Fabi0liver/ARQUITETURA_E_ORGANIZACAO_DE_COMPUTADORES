@@ -1,329 +1,94 @@
-                 Entrada e Saída na Organização de Computadores
+                    Entrada e Saída na Organização de Computadores
 
 
 Introdução:
 
- Conceito de Entrada e Saída (E/S)
- Conceito de periféricos
- Objetivos da Entrada e Saída
- Importância da E/S
- Papel da E/S na Organização de Computadores
- Comunicação entre computador e ambiente externo
- Fluxo de dados entre usuário, periféricos e sistema
- Evolução dos sistemas de Entrada e Saída
+ Entrada e Saída (E/S):
+  Conceito de Entrada e Saída
+  Objetivos da Entrada e Saída
+  Importância da Entrada e Saída
+  Papel da Entrada e Saída na Organização de Computadores
+  Comunicação entre o computador e o ambiente externo
+  Fluxo de informações entre usuário, sistema e dispositivos
+  Interação entre hardware e periféricos
+  Organização do subsistema de Entrada e Saída
+  Evolução dos sistemas de Entrada e Saída
+  Entrada e Saída na Organização versus Arquitetura de Computadores
+  Visão geral do subsistema de E/S
+
+ Periféricos:
+  Conceito de periférico
+  Objetivos dos periféricos
+  Função dos periféricos
+  Classificação dos periféricos
+  Papel dos periféricos no sistema computacional
+  Integração dos periféricos ao computador
+  Comunicação entre periféricos e sistema
+  Evolução tecnológica dos periféricos
+
+ Comunicação do Sistema:
+  Comunicação entre processador e periféricos
+  Comunicação entre memória e periféricos
+  Comunicação entre controladores e dispositivos
+  Fluxo de entrada de dados
+  Fluxo de saída de dados
+  Fluxo bidirecional de informações
+  Organização da comunicação de E/S
 
 
 
 Fundamentos Necessários:
 
  Organização de Computadores:
-  Organização versus Arquitetura
-  Componentes básicos do computador
-  Comunicação entre os componentes
-  Visão geral do sistema computacional
+  Conceitos Fundamentais:
+   Organização versus Arquitetura
+   Estrutura básica de um computador
+   Modelo de Von Neumann
+   Modelo Harvard
+   Componentes básicos do sistema computacional
+   Organização funcional do computador
+   Comunicação entre componentes
+   Execução de operações de Entrada e Saída
+  Componentes Relacionados à E/S:
+   Processador (visão geral)
+   Memória principal (visão geral)
+   Barramentos (visão geral)
+   Controladores de dispositivos
+   Interfaces de comunicação
+   Registradores de E/S
 
  Representação de Dados:
-  Bit
-  Byte
-  Palavra
-  Dados digitais
-  Informação e sinais digitais
-
- Comunicação Digital:
-  Transferência de dados
-  Endereçamento
-  Sinais de controle
-  Sincronização
-
-
-
-Fundamentos de Entrada e Saída:
-
- Conceitos Fundamentais:
-  Sistema de Entrada e Saída
-  Fluxo de Entrada
-  Fluxo de Saída
-  Fluxo bidirecional
-  Comunicação entre periféricos e computador
-  Operações de leitura
-  Operações de escrita
-
- Classificação dos Periféricos:
-  Dispositivos de Entrada
-  Dispositivos de Saída
-  Dispositivos de Entrada/Saída
-
- Características dos Periféricos:
-  Velocidade
-  Capacidade de transferência
-  Tempo de resposta
-  Compatibilidade
-  Interface de conexão
-
-
-
-Organização do Subsistema de Entrada e Saída:
-
- Estrutura Geral:
-  Subsistema de E/S
-  Organização da comunicação
-  Interação entre periféricos e sistema
-  Fluxo de informações
-
- Controladores de Entrada e Saída:
-  Fundamentos:
-   Conceito
-   Função
-   Organização
-   Controladora de dispositivos
-  Funcionamento:
-   Tradução de protocolos
-   Conversão de sinais
-   Gerenciamento da comunicação
-   Bufferização
-   Sincronização
-   Detecção de erros
-
-
-
-Endereçamento de Entrada e Saída:
-
- Métodos de Endereçamento:
-  Entrada e Saída Mapeada na Memória (Memory-Mapped I/O)
-  Entrada e Saída Isolada (Port-Mapped I/O)
-
- Espaço de Endereçamento:
-  Endereços de dispositivos
-  Portas de E/S
-  Registradores de dispositivos
-
-
-
-Comunicação entre Computador e Periféricos:
-
- Tipos de Comunicação:
-  Comunicação Serial
-  Comunicação Paralela
-  Comunicação Síncrona
-  Comunicação Assíncrona
-
- Modos de Transmissão:
-  Simplex
-  Half-Duplex
-  Full-Duplex
-
-
-
-Métodos de Transferência de Dados:
-
- Entrada e Saída Programada:
-  Polling
-  Verificação de status
-
- Entrada e Saída por Interrupção
-  Interrupções
-  Tratamento de interrupções
-  Prioridades de interrupção
-
- DMA (Direct Memory Access):
-  Conceito
-  Controlador DMA
-  Transferência direta
-  Liberação do processador
-
-
-
-Interfaces e Protocolos de Comunicação:
-
- Interfaces Cabeadas:
-  USB
-  SATA
-  PCI Express (PCIe)
-  Thunderbolt
-
- Interfaces Sem Fio:
-  Bluetooth
-  Wi-Fi
-  NFC
-  Zigbee
-
- Protocolos para Sistemas Embarcados:
-  I²C
-  SPI
-  UART
-  RS-232
-
-
-
-Dispositivos de Entrada:
-
- Fundamentos:
-  Função
-  Organização
-  Funcionamento
-
- Principais Dispositivos:
-  Teclado
-  Mouse
-  Scanner
-  Microfone
-  Webcam
-  Leitor biométrico
-  Leitor de código de barras
-  Joystick e Gamepad
-  Sensores
-  Tela sensível ao toque (Touchscreen)
-
-
-
-Dispositivos de Saída:
-
- Fundamentos:
-  Função
-  Organização
-  Funcionamento
-
- Principais Dispositivos:
-  Monitor
-  Impressora
-  Caixas de som
-  Fones de ouvido
-  Projetor
-  Impressoras térmicas
-  Plotter
-
-
-
-Dispositivos de Entrada e Saída:
-
- Armazenamento:
-  HD
-  SSD
-  Pen Drive
-  Cartão de memória
-  Unidade óptica
-
- Comunicação:
-  Modem
-  Placa de rede
-  Adaptadores sem fio
-
- Multifuncionais:
-  Impressora multifuncional
-  Touchscreen
-
-
-
-Funcionamento dos Principais Periféricos:
-
- Teclados:
-  Teclado de membrana
-  Teclado mecânico
-  Matriz de teclas
-  Ghosting
-  N-Key Rollover
-
- Mouse:
-  Mecânico
-  Óptico
-  Laser
-  Sensor de movimento
-
- Monitores:
-  Tecnologias:
-   CRT
-   LCD
-   LED
-   OLED
-  Organização da Imagem:
-   Pixels
-   Subpixels
-   Resolução
-   Profundidade de cor
-   Taxa de atualização
-  Touchscreen:
-   Resistivo
-   Capacitivo
-   Infravermelho
-   Multitoque
-
-
-
-Desempenho da Entrada e Saída:
-
- Métricas:
-  Taxa de transferência
-  Largura de banda
-  Latência
-  Throughput
-  Tempo de resposta
-  Overhead
-
- Fatores de Desempenho:
-  Velocidade do dispositivo
-  Interface utilizada
-  Método de transferência
-  Driver
-  Gargalos
-
-
-
-Software de Suporte à Entrada e Saída:
-
- Drivers:
-  Conceito
-  Instalação
-  Comunicação com o hardware
-
- Gerenciamento de Dispositivos:
-  Detecção automática (Plug and Play)
-  Hot Plug
-  Configuração de dispositivos
-
-
-
-Tecnologias Modernas:
-
- Interfaces Modernas:
-  USB Tipo C
-  USB4
-  Thunderbolt
-  PCIe de alta velocidade
-
- Tendências:
-  Periféricos sem fio
-  Internet das Coisas (IoT)
-  Inteligência Artificial
-  Realidade Virtual
-  Realidade Aumentada
-  Interfaces neurais
-
-
-
-Conclusão e Resumo:
-
- Revisão:
-  Fundamentos de Entrada e Saída
-  Organização do subsistema de E/S
-  Controladores de E/S
-  Endereçamento de dispositivos
-  Métodos de transferência
-  Comunicação entre periféricos
-  Protocolos e interfaces
-  Dispositivos de Entrada
-  Dispositivos de Saída
-  Dispositivos de Entrada/Saída
-  Funcionamento dos principais periféricos
-  Desempenho da E/S
-  Tecnologias modernas
-
- Conclusão:
-  Papel da Entrada e Saída na Organização de Computadores
-  Integração entre periféricos e os demais componentes do sistema
-  Evolução das tecnologias de Entrada e Saída
-  Impacto da E/S no desempenho do computador
-  Relação entre hardware, controladores e software de E/S
-  Escalabilidade e expansão dos sistemas de Entrada e Saída
-  Tendências das interfaces e periféricos modernos
-  Desafios da comunicação entre dispositivos
-  Eficiência na transferência de dados
+  Dados Digitais:
+   Bit
+   Byte
+   Palavra
+   Representação binária
+   Organização dos dados
+   Conversão entre sinais físicos e digitais
+  Informação:
+   Dados de entrada
+   Dados processados
+   Dados de saída
+   Fluxo de informações
+
+ Circuitos Digitais:
+  Registradores
+  Multiplexadores
+  Decodificadores
+  Clock
+  Sinais digitais
+  Sincronização digital
+
+ Barramentos (Fundamentos):
+  Conceito de barramento
+  Função dos barramentos
+  Comunicação entre componentes
+  Compartilhamento do barramento
+  Transporte de informações
+  Barramento do sistema
+  Barramento de Entrada e Saída
+  Barramento de Dados
+  Barramento de Endereços
+  Barramento de Controle
+
+ 
