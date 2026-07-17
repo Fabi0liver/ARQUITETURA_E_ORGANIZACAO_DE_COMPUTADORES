@@ -213,3 +213,55 @@ Dispositivos de Entrada e Saída:
   Touchscreen
 
 
+
+Funcionamento dos Principais Periféricos:
+
+ Teclados:
+  Teclado de membrana
+  Teclado mecânico
+  Matriz de teclas
+  Ghosting
+  N-Key Rollover
+
+ Mouse:
+  Mecânico
+  Óptico
+  Laser
+  Sensor de movimento
+
+ Monitores:
+  Tecnologias:
+   CRT
+   LCD
+   LED
+   OLED
+  Organização da Imagem:
+   Pixels
+   Subpixels
+   Resolução
+   Profundidade de cor
+   Taxa de atualização
+  Touchscreen:
+   Resistivo
+   Capacitivo
+   Infravermelho
+   Multitoque
+
+
+
+Desempenho da Entrada e Saída:
+
+ Métricas:
+  Taxa de transferência
+  Largura de banda
+  Latência
+  Throughput
+  Tempo de resposta
+  Overhead
+
+ Fatores de Desempenho:
+  Velocidade do dispositivo
+  Interface utilizada
+  Método de transferência
+  Driver
+  Gargalos
