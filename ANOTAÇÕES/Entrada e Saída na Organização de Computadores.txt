@@ -173,3 +173,43 @@ Dispositivos de Entrada:
   Joystick e Gamepad
   Sensores
   Tela sensível ao toque (Touchscreen)
+
+
+
+Dispositivos de Saída:
+
+ Fundamentos:
+  Função
+  Organização
+  Funcionamento
+
+ Principais Dispositivos:
+  Monitor
+  Impressora
+  Caixas de som
+  Fones de ouvido
+  Projetor
+  Impressoras térmicas
+  Plotter
+
+
+
+Dispositivos de Entrada e Saída:
+
+ Armazenamento:
+  HD
+  SSD
+  Pen Drive
+  Cartão de memória
+  Unidade óptica
+
+ Comunicação:
+  Modem
+  Placa de rede
+  Adaptadores sem fio
+
+ Multifuncionais:
+  Impressora multifuncional
+  Touchscreen
+
+
