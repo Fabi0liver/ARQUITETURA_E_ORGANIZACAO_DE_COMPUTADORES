@@ -265,3 +265,54 @@ Desempenho da Entrada e Saída:
   Método de transferência
   Driver
   Gargalos
+
+
+
+Software de Suporte à Entrada e Saída:
+
+ Drivers:
+  Conceito
+  Instalação
+  Comunicação com o hardware
+
+ Gerenciamento de Dispositivos:
+  Detecção automática (Plug and Play)
+  Hot Plug
+  Configuração de dispositivos
+
+
+
+Tecnologias Modernas:
+
+ Interfaces Modernas:
+  USB Tipo C
+  USB4
+  Thunderbolt
+  PCIe de alta velocidade
+
+ Tendências:
+  Periféricos sem fio
+  Internet das Coisas (IoT)
+  Inteligência Artificial
+  Realidade Virtual
+  Realidade Aumentada
+  Interfaces neurais
+
+
+
+Conclusão e Resumo:
+
+ Revisão:
+  Fundamentos de Entrada e Saída
+  Organização do subsistema de E/S
+  Controladores de E/S
+  Endereçamento de dispositivos
+  Métodos de transferência
+  Comunicação entre periféricos
+  Protocolos e interfaces
+  Dispositivos de Entrada
+  Dispositivos de Saída
+  Dispositivos de Entrada/Saída
+  Funcionamento dos principais periféricos
+  Desempenho da E/S
+  Tecnologias modernas
