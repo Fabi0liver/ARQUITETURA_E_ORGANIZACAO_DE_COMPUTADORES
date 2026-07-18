@@ -1455,6 +1455,49 @@ Avaliação do Desempenho do Subsistema de Entrada e Saída:
 
 
 
+Aplicações:
+
+ Computadores de Uso Geral:
+  Computadores pessoais
+  Estações de trabalho
+  Servidores
+
+ Computação Corporativa:
+  Data Centers
+  Armazenamento em rede
+  Virtualização
+
+ Sistemas Embarcados:
+  Microcontroladores
+  Sistemas industriais
+  Automação
+
+ Dispositivos Móveis:
+  Smartphones
+  Tablets
+  Wearables
+
+ Sistemas Automotivos:
+  Sensores automotivos
+  Redes veiculares
+ 
+ Computação Científica:
+  HPC (High Performance Computing)
+  Aquisição de dados
+
+ Inteligência Artificial:
+  Sensores inteligentes
+  Dispositivos aceleradores
+  Aquisição de grandes volumes de dados
+
+ Internet das Coisas:
+  Casas inteligentes
+  Indústria 4.0
+  Agricultura inteligente
+  Cidades inteligentes
+
+
+
 Tendências da Entrada e Saída:
 
  Evolução Tecnológica:
