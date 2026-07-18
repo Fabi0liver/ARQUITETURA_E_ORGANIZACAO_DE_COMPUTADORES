@@ -1163,4 +1163,397 @@ Periféricos de Entrada e Saída:
    Simplex
    Half-Duplex
    Full-Duplex
+
+
+
+Características Gerais dos Periféricos:
  
+ Desempenho:
+  Taxa de transferência
+  Latência
+  Throughput
+  Tempo de resposta
+  Tempo de acesso
+  Eficiência
+  Overhead
+
+ Compatibilidade:
+  Drivers
+  Plug and Play
+  Hot Plug
+  Firmware
+  Atualizações
+
+ Confiabilidade:
+  Detecção de erros
+  Correção de erros
+  Integridade dos dados
+  Disponibilidade
+  Tolerância a falhas
+
+ Gerenciamento de Energia:
+  Consumo de energia
+  Estados de energia
+  Suspensão
+  Hibernação
+  Wake-on-Device
+
+
+
+Gerenciamento do Subsistema de Entrada e Saída:
+
+ Conceitos Gerais:
+  Conceito de gerenciamento de E/S
+  Objetivos do gerenciamento
+  Organização do subsistema de E/S
+  Coordenação das operações
+  Controle dos dispositivos
+  Compartilhamento de recursos
+  Eficiência operacional
+  Escalabilidade
+  Transparência de acesso
+
+ Gerenciamento de Dispositivos:
+  Organização:
+   Descoberta de dispositivos
+   Inicialização de dispositivos
+   Configuração de dispositivos
+   Registro de dispositivos
+   Ativação
+   Desativação
+   Remoção segura
+   Reconhecimento automático
+  Estados dos Dispositivos:
+   Disponível
+   Ocupado
+   Pronto
+   Em espera
+   Suspenso
+   Desconectado
+   Erro
+
+ Drivers de Dispositivos:
+  Fundamentos:
+   Conceito
+   Objetivos
+   Função
+   Interface entre hardware e sistema operacional
+  Organização:
+   Inicialização
+   Controle do dispositivo
+   Tradução de comandos
+   Gerenciamento de operações
+   Tratamento de erros
+  Tipos:
+   Drivers de entrada
+   Drivers de saída
+   Drivers de armazenamento
+   Drivers de comunicação
+   Drivers de vídeo
+   Drivers de áudio
+ 
+ Bufferização (Buffering):
+  Fundamentos:
+   Conceito
+   Objetivos
+   Armazenamento temporário
+   Sincronização da comunicação
+  Tipos:
+   Buffer simples
+   Buffer duplo
+   Buffer circular
+   Buffer em anel
+  Operações:
+   Escrita no buffer
+   Leitura do buffer
+   Esvaziamento
+   Sincronização
+  Benefícios:
+   Redução da latência
+   Aumento da eficiência
+   Redução de perdas
+   Balanceamento da velocidade
+
+ Cache de Entrada e Saída:
+  Fundamentos:
+   Conceito
+   Objetivos
+   Armazenamento temporário
+  Operações:
+   Cache de leitura
+   Cache de escrita
+   Pré-busca (Prefetch)
+   Write Through
+   Write Back
+
+ Filas de Entrada e Saída:
+  Fundamentos:
+   Conceito
+   Organização
+   Controle de solicitações
+  Operações:
+   Inserção
+   Remoção
+   Ordenação
+   Priorização
+  Escalonamento:
+   FIFO
+   Prioridade
+   Round Robin
+   Escalonamento por prazo
+
+
+
+Tratamento de Erros:
+
+ Conceitos:
+  Conceito de erro
+  Detecção de erros
+  Correção de erros
+  Recuperação
+
+ Tipos de Erros:
+  Erros de comunicação
+  Erros de transmissão
+  Erros físicos
+  Erros lógicos
+  Timeout
+  Perda de conexão
+
+ Técnicas:
+  Retransmissão
+  Verificação de integridade
+  Checksum
+  CRC
+  ECC (visão geral)
+
+
+
+Segurança em Entrada e Saída:
+
+ Conceitos:
+  Segurança de dispositivos
+  Controle de acesso
+  Proteção dos dados
+ 
+ Controle de Acesso:
+  Autenticação
+  Autorização
+  Permissões
+  Controle de privilégios
+
+ Proteção:
+  Isolamento de dispositivos
+  Proteção contra acesso indevido
+  Proteção DMA (visão geral)
+  IOMMU (visão geral)
+
+ Integridade:
+  Integridade dos dados
+  Integridade da comunicação
+  Verificação de consistência
+
+
+
+Virtualização de Entrada e Saída:
+
+ Conceitos:
+  Virtualização de dispositivos
+  Compartilhamento de dispositivos
+  Abstração do hardware
+
+ Técnicas:
+  Dispositivos virtuais
+  Emulação
+  Pass-through
+  Virtualização assistida por hardware
+
+
+
+Tecnologias Modernas de Entrada e Saída:
+
+ Evolução das Interfaces:
+  USB:
+   USB4
+   USB Tipo C
+   Power Delivery
+   Alt Mode
+  Thunderbolt:
+   Thunderbolt 3
+   Thunderbolt 4
+   Thunderbolt 5
+  PCI Express:
+   PCIe 4.0
+   PCIe 5.0
+   PCIe 6.0
+   PCIe 7.0 (visão geral)
+  Armazenamento:
+   NVMe
+   NVMe over Fabrics (visão geral)
+ 
+ Comunicação Sem Fio:
+  Evolução:
+   Bluetooth Low Energy
+   Wi-Fi 6
+   Wi-Fi 6E
+   Wi-Fi 7
+
+ Dispositivos Inteligentes:
+  Sensores:
+   Sensores inteligentes
+   Atuadores inteligentes
+  Internet das Coisas (IoT):
+   Conceito
+   Dispositivos conectados
+   Comunicação entre dispositivos
+  Edge Computing (visão geral)
+
+ Interfaces Humanas Modernas:
+  Realidade Virtual:
+   Dispositivos de RV
+   Rastreamento de movimento
+   Controladores
+  Realidade Aumentada:
+   Dispositivos de RA
+   Sensores espaciais
+  Realidade Mista
+  Interfaces por Gestos
+  Interfaces por Voz
+  Interfaces Hápticas
+  Interfaces Neurais (visão geral)
+
+
+
+Avaliação do Desempenho do Subsistema de Entrada e Saída:
+
+ Desempenho:
+  Tempo de resposta
+  Tempo de acesso
+  Latência
+  Throughput
+  Taxa de transferência
+  Largura de banda
+  Eficiência
+  Overhead
+
+ Utilização:
+  Utilização dos dispositivos
+  Utilização do barramento
+  Utilização dos controladores
+  Balanceamento da carga
+
+ Gargalos:
+  Gargalos de comunicação
+  Gargalos dos dispositivos
+  Gargalos dos controladores
+  Gargalos do barramento
+
+ Escalabilidade:
+  Crescimento do número de dispositivos
+  Expansão do sistema
+  Impacto no desempenho
+
+
+
+Tendências da Entrada e Saída:
+
+ Evolução Tecnológica:
+  Interfaces de alta velocidade
+  Comunicação de baixa latência
+  Maior largura de banda
+  Redução do consumo de energia
+  Miniaturização
+  Integração de dispositivos
+  Comunicação sem fio
+  Computação ubíqua
+
+ Novas Tecnologias:
+  Armazenamento de nova geração
+  Interfaces ópticas
+  Comunicação fotônica (visão geral)
+  Periféricos inteligentes
+  Dispositivos autônomos
+  Integração com Inteligência Artificial
+  Computação quântica (visão geral sobre E/S)
+
+
+
+Conclusão e Resumo:
+
+ Resumo:
+  Fundamentos:
+   Organização da Entrada e Saída
+   Estrutura do subsistema de E/S
+   Classificação dos periféricos
+   Comunicação entre dispositivos e computador
+  Organização:
+   Controladores de E/S
+   Registradores de E/S
+   Endereçamento de dispositivos
+   Entrada e Saída Mapeada em Memória (MMIO)
+   Entrada e Saída Isolada (PMIO)
+  Transferência de Dados:
+   Entrada e Saída Programada (Polling)
+   Entrada e Saída por Interrupções
+   Acesso Direto à Memória (DMA)
+  Comunicação:
+   Comunicação Serial
+   Comunicação Paralela
+   Comunicação Síncrona
+   Comunicação Assíncrona
+   Simplex
+   Half-Duplex
+   Full-Duplex
+  Protocolos e Interfaces:
+   USB
+   PCI Express
+   SATA
+   NVMe
+   Bluetooth
+   Wi-Fi
+   I²C
+   SPI
+   UART
+   NFC
+   Zigbee
+  Periféricos:
+   Dispositivos de Entrada
+   Dispositivos de Saída
+   Dispositivos de Entrada/Saída
+   Tecnologias de exibição
+   Tecnologias de armazenamento
+   Interfaces de rede
+  Gerenciamento:
+   Drivers
+   Bufferização
+   Cache
+   Filas de E/S
+   Tratamento de erros
+   Segurança
+   Virtualização
+  Desempenho:
+   Taxa de transferência
+   Largura de banda
+   Throughput
+   Latência
+   Overhead
+   Escalabilidade
+  Tecnologias Modernas:
+   Interfaces modernas
+   Comunicação sem fio
+   Internet das Coisas
+   Inteligência Artificial
+   Interfaces homem-máquina
+
+ Conclusão:
+  Papel da Entrada e Saída na Organização de Computadores
+  Integração entre periféricos e sistema computacional
+  Importância dos controladores de E/S
+  Importância dos métodos de transferência de dados
+  Evolução das interfaces de comunicação
+  Evolução dos periféricos
+  Relação entre desempenho e comunicação de E/S
+  Impacto da latência e da largura de banda
+  Escalabilidade do subsistema de Entrada e Saída
+  Tendências das tecnologias de Entrada e Saída
+  Papel da Entrada e Saída nos computadores modernos
