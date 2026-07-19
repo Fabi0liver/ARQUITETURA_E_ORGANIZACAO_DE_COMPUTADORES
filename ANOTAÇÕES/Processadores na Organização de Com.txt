@@ -1103,109 +1103,101 @@ Introdução:
 
  25.2 Técnicas de Emissão:
   25.2.1 Single-Issue:
-      Organização
-      Características
-
+	  Organização
+	  Características
   25.2.2 Dual-Issue:
-      Organização
-      Características
-
+	  Organização
+	  Características
   25.2.3 Multiple-Issue:
-      Organização
-      Características
+	  Organização
+	  Características
 
  25.3 Organização Superescalar:
   25.3.1 Conceitos:
-      Definição
-      Objetivos
-
+	  Definição
+	  Objetivos
   25.3.2 Organização Interna:
-      Múltiplas unidades funcionais
-      Busca múltipla
-      Decodificação múltipla
-      Emissão múltipla
-      Execução paralela
-      Write Back múltiplo
-      Commit
+	  Múltiplas unidades funcionais
+	  Busca múltipla
+	  Decodificação múltipla
+	  Emissão múltipla
+	  Execução paralela
+	  Write Back múltiplo
+	  Commit
 
  25.4 Largura da CPU:
   25.4.1 Front-End Width:
-      Fetch Width
-      Decode Width
-
+	  Fetch Width
+	  Decode Width
   25.4.2 Back-End Width:
-      Dispatch Width
-      Issue Width
-      Execute Width
-      Retire Width
+	  Dispatch Width
+	  Issue Width
+	  Execute Width
+	  Retire Width
+
 
 
 26. Escalonamento Dinâmico:
 
  26.1 Fundamentos:
-  26.1.1 Conceitos:
-      Escalonamento estático
-      Escalonamento dinâmico
+	Conceitos
+	Escalonamento estático
+	Escalonamento dinâmico
 
  26.2 Scheduler:
   26.2.1 Organização:
-      Scheduler Centralizado
-      Scheduler Distribuído
-
+	  Scheduler Centralizado
+	  Scheduler Distribuído
   26.2.2 Funcionamento:
-      Seleção das instruções
-      Emissão das instruções
+	  Seleção das instruções
+	  Emissão das instruções
 
- 26.3 Janela de Instruções:
-  26.3.1 Instruction Window:
-      Conceito
-      Organização
-      Funcionamento
+ 26.3 Janela de Instruções (Instruction Window):
+	Conceito
+	Organização
+	Funcionamento
+
 
 
 27. Execução Fora de Ordem:
 
  27.1 Fundamentos:
-  27.1.1 Conceitos:
-      Out-of-Order Execution
-      Objetivos
-      Benefícios
+	Conceitos
+	Out-of-Order Execution
+	Objetivos
+	Benefícios
 
  27.2 Renomeação de Registradores:
   27.2.1 Register Renaming:
-      Conceito
-      Objetivos
-
+	  Conceito
+	  Objetivos
   27.2.2 Rename Table:
-      Organização
-      Funcionamento
+	  Organização
+	  Funcionamento
 
   27.2.3 Physical Register File:
-      Conceito
-      Organização
-      Funcionamento
+	  Conceito
+	  Organização
+	  Funcionamento
 
  27.3 Reservation Stations:
-  27.3.1 Organização:
-      Conceito
-      Estrutura
-      Funcionamento
+	Conceito
+	Estrutura
+	Funcionamento
 
  27.4 Reorder Buffer (ROB):
   27.4.1 Organização:
-      Conceito
-      Estrutura
-      Funcionamento
-
+	  Conceito
+	  Estrutura
+	  Funcionamento
   27.4.2 Commit em Ordem:
-      Organização
-      Funcionamento
+	  Organização
+	  Funcionamento
 
  27.5 Common Data Bus (CDB):
-  27.5.1 Organização:
-      Conceito
-      Funcionamento
-      Distribuição dos resultados
+	Conceito
+	Funcionamento
+	Distribuição dos resultados
 
 
 28. Algoritmos Clássicos:
