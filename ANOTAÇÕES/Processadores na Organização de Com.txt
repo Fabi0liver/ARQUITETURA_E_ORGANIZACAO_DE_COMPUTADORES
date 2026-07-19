@@ -20,9 +20,9 @@ Introdução:
 
  1.1 Introdução aos Processadores:
   1.1.1 Computador como Sistema Computacional:
-         Conceito de computador
-         Componentes fundamentais do computador
-         Modelo básico de funcionamento
+	 Conceito de computador
+	 Componentes fundamentais do computador
+	 Modelo básico de funcionamento
 	 Fluxo geral de processamento
   1.1.2 Conceito de Processador:
 	 Definição de processador
