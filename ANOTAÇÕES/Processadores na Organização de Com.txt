@@ -305,3 +305,397 @@ Introdução:
 
 
 
+7. Organização do Banco de Registradores
+
+ 7.1 Fundamentos:
+  7.1.1 Conceito de Registrador:
+      Definição
+      Objetivos
+      Características
+      Importância no processador
+
+  7.1.2 Banco de Registradores:
+      Conceito
+      Organização
+      Estrutura
+      Papel na CPU
+
+  7.1.3 Fluxo de Dados:
+      Leitura de registradores
+      Escrita de registradores
+      Transferência entre registradores
+
+ 7.2 Classificação dos Registradores:
+  7.2.1 Registradores de Uso Geral (GPR):
+      Conceito
+      Organização
+      Aplicações
+
+  7.2.2 Registradores de Dados:
+      Conceito
+      Organização
+      Aplicações
+
+  7.2.3 Registradores de Endereço:
+      Conceito
+      Organização
+      Aplicações
+
+  7.2.4 Registradores de Controle:
+      Conceito
+      Organização
+      Aplicações
+
+  7.2.5 Registradores de Estado:
+      Conceito
+      Organização
+      Aplicações
+
+  7.2.6 Registradores de Ponto Flutuante:
+      Conceito
+      Organização
+      Aplicações
+
+  7.2.7 Registradores Vetoriais:
+      Conceito
+      Organização
+      Aplicações
+
+ 7.3 Registradores Especiais:
+  7.3.1 Program Counter (PC):
+      Conceito
+      Organização
+      Atualização
+
+  7.3.2 Instruction Register (IR):
+      Conceito
+      Organização
+      Utilização
+
+  7.3.3 Memory Address Register (MAR):
+      Conceito
+      Organização
+      Utilização
+
+  7.3.4 Memory Data Register (MDR/MBR):
+      Conceito
+      Organização
+      Utilização
+
+  7.3.5 Stack Pointer (SP):
+      Conceito
+      Organização
+      Utilização
+
+  7.3.6 Base Pointer (BP):
+      Conceito
+      Organização
+      Utilização
+
+  7.3.7 Frame Pointer (FP):
+      Conceito
+      Organização
+      Utilização
+
+  7.3.8 Accumulator (ACC):
+      Conceito
+      Organização
+      Utilização
+
+  7.3.9 Program Status Word (PSW):
+      Conceito
+      Organização
+      Utilização
+
+  7.3.10 Flags Register:
+      Conceito
+      Organização
+      Utilização
+
+ 7.4 Flags da CPU:
+  7.4.1 Flags Aritméticas:
+      Carry Flag
+      Overflow Flag
+      Auxiliary Carry Flag
+
+  7.4.2 Flags Lógicas:
+      Zero Flag
+      Sign Flag
+      Negative Flag
+      Parity Flag
+
+  7.4.3 Flags de Controle:
+      Interrupt Flag
+      Direction Flag
+      Trap Flag
+
+ 7.5 Organização Física do Banco de Registradores:
+  7.5.1 Estrutura Física:
+      Registradores arquiteturais
+      Organização interna
+      Largura dos registradores
+
+  7.5.2 Portas:
+      Porta de leitura
+      Portas múltiplas de leitura
+      Porta de escrita
+      Escrita simultânea
+
+  7.5.3 Temporização:
+      Tempo de leitura
+      Tempo de escrita
+      Sincronização
+
+
+8. Organização da Unidade Lógica e Aritmética (ALU)
+
+ 8.1 Fundamentos:
+  8.1.1 Conceitos:
+      Definição
+      Objetivos
+      Organização
+      Papel na CPU
+
+ 8.2 Organização Interna:
+  8.2.1 Entradas:
+      Operando A
+      Operando B
+      Seleção da operação
+
+  8.2.2 Saídas:
+      Resultado
+      Flags
+      Sinais de status
+
+ 8.3 Operações Aritméticas:
+      Soma
+      Subtração
+      Multiplicação
+      Divisão
+      Incremento
+      Decremento
+
+ 8.4 Operações Lógicas:
+      AND
+      OR
+      XOR
+      NOT
+      NAND
+      NOR
+
+ 8.5 Operações de Comparação:
+      Igualdade
+      Diferença
+      Maior que
+      Menor que
+
+ 8.6 Operações de Deslocamento:
+      Shift lógico
+      Shift aritmético
+      Rotação
+      Extensão de sinal
+
+ 8.7 Atualização das Flags:
+      Flags aritméticas
+      Flags lógicas
+      Flags de comparação
+
+
+9. Organização da Unidade de Ponto Flutuante (FPU)
+
+ 9.1 Fundamentos:
+  9.1.1 Conceitos:
+      Definição
+      Objetivos
+      Organização
+
+ 9.2 Representação em Ponto Flutuante:
+      IEEE 754
+      Precisão simples
+      Precisão dupla
+      Precisão estendida
+
+ 9.3 Operações:
+      Soma
+      Subtração
+      Multiplicação
+      Divisão
+      Raiz quadrada
+      Conversões
+
+ 9.4 Organização da FPU:
+      Registradores
+      Unidade aritmética
+      Unidade de controle
+
+
+10. Organização da Unidade de Controle
+
+ 10.1 Fundamentos:
+  10.1.1 Conceitos:
+       Definição
+       Objetivos
+       Organização
+
+ 10.2 Controle Cabeado (Hardwired Control):
+       Estrutura
+       Funcionamento
+       Vantagens
+       Limitações
+
+ 10.3 Controle Microprogramado:
+  10.3.1 Organização:
+       Memória de controle
+       Microprograma
+       Sequenciador
+
+  10.3.2 Microinstruções:
+       Formato
+       Campos
+       Execução
+
+ 10.4 Sequenciamento:
+       Sequenciamento das instruções
+       Sequenciamento das microinstruções
+
+ 10.5 Geração dos Sinais de Controle:
+       Controle da ALU
+       Controle dos registradores
+       Controle da memória
+       Controle do Datapath
+
+
+11. Microoperações
+
+ 11.1 Fundamentos:
+       Conceito
+       Organização
+       Objetivos
+
+ 11.2 Microoperações entre Registradores:
+       Transferência
+       Leitura
+       Escrita
+
+ 11.3 Microoperações Aritméticas:
+       Soma
+       Subtração
+       Incremento
+       Decremento
+
+ 11.4 Microoperações Lógicas:
+       AND
+       OR
+       XOR
+       NOT
+
+ 11.5 Microoperações de Deslocamento:
+       Shift lógico
+       Shift aritmético
+       Rotação
+
+ 11.6 Microoperações de Controle:
+       Sequenciamento
+       Atualização do PC
+       Atualização das flags
+
+
+12. Organização do Datapath
+
+ 12.1 Fundamentos:
+  12.1.1 Conceitos:
+       Definição
+       Objetivos
+       Organização
+
+ 12.2 Componentes do Datapath:
+       Banco de registradores
+       ALU
+       FPU
+       Multiplexadores
+       Barramentos internos
+
+ 12.3 Fluxo de Dados:
+  12.3.1 Entrada dos Dados:
+       Registradores
+       Operandos
+
+  12.3.2 Processamento:
+       Operações internas
+       Transferências
+
+  12.3.3 Saída dos Dados:
+       Escrita em registradores
+       Atualização do estado
+
+ 12.4 Controle do Datapath:
+       Seleção de operandos
+       Seleção das operações
+       Escrita dos resultados
+
+
+13. Organização do Control Path
+
+ 13.1 Fundamentos:
+  13.1.1 Conceitos:
+       Definição
+       Objetivos
+       Organização
+
+ 13.2 Controle da Execução:
+       Sequenciamento
+       Coordenação
+       Sincronização
+
+ 13.3 Comunicação com o Datapath:
+       Geração dos sinais
+       Controle das operações
+       Coordenação dos componentes
+
+
+14. Organização das Unidades Funcionais
+
+ 14.1 Unidade Inteira:
+       Organização
+       Operações suportadas
+       Integração com a ALU
+
+ 14.2 Unidade de Ponto Flutuante:
+       Organização
+       Operações suportadas
+       Integração com a FPU
+
+ 14.3 Unidade Vetorial:
+       Organização
+       Processamento vetorial
+       Registradores vetoriais
+
+ 14.4 Unidade SIMD:
+       Organização
+       Processamento paralelo
+       Operações SIMD
+
+ 14.5 Unidade Load/Store:
+       Organização
+       Operações de leitura
+       Operações de escrita
+       Comunicação com a memória
+
+ 14.6 Unidade de Branch:
+       Organização
+       Avaliação de desvios
+       Comunicação com a Unidade de Controle
+
+
+15. Integração dos Componentes da CPU
+
+ 15.1 Fluxo Geral:
+  15.1.1 Fluxo entre Front-End e Back-End
+  15.1.2 Fluxo entre Datapath e Control Path
+  15.1.3 Fluxo entre ALU e Banco de Registradores
+  15.1.4 Fluxo entre FPU e Banco de Registradores
+
+ 15.2 Coordenação Geral:
+  15.2.1 Coordenação das Unidades Funcionais
+  15.2.2 Coordenação da Unidade de Controle
+  15.2.3 Coordenação do Datapath
