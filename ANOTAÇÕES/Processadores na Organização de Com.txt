@@ -265,29 +265,29 @@ Introdução:
 6. Visão Geral dos Componentes Internos:
 
  6.1 Banco de Registradores:
-      Organização geral
-      Classificação
-      Papel na CPU
+	Organização geral
+	Classificação
+	Papel na CPU
 
  6.2 Unidade Lógica e Aritmética (ALU):
-      Organização geral
-      Papel na CPU
+	Organização geral
+	Papel na CPU
 
  6.3 Unidade de Ponto Flutuante (FPU):
-      Organização geral
-      Papel na CPU
+	Organização geral
+	Papel na CPU
 
  6.4 Unidade de Controle:
-      Organização geral
-      Papel na CPU
+	Organização geral
+	Papel na CPU
 
  6.5 Caminho de Dados (Datapath):
-      Organização geral
-      Papel na CPU
+	Organização geral
+	Papel na CPU
 
  6.6 Caminho de Controle (Control Path):
-      Organização geral
-      Papel na CPU
+	Organização geral
+	Papel na CPU
 
  6.7 Unidades Funcionais:
   6.7.1 Unidade Inteira:
@@ -309,273 +309,252 @@ Introdução:
 
  7.1 Fundamentos:
   7.1.1 Conceito de Registrador:
-      Definição
-      Objetivos
-      Características
-      Importância no processador
-
+	 Definição
+	 Objetivos
+ 	 Características
+	 Importância no processador
   7.1.2 Banco de Registradores:
-      Conceito
-      Organização
-      Estrutura
-      Papel na CPU
-
+	 Conceito
+	 Organização
+	 Estrutura
+	 Papel na CPU
   7.1.3 Fluxo de Dados:
-      Leitura de registradores
-      Escrita de registradores
-      Transferência entre registradores
+	 Leitura de registradores
+	 Escrita de registradores
+	 Transferência entre registradores
 
  7.2 Classificação dos Registradores:
   7.2.1 Registradores de Uso Geral (GPR):
-      Conceito
-      Organização
-      Aplicações
-
+	 Conceito
+	 Organização
+	 Aplicações
   7.2.2 Registradores de Dados:
-      Conceito
-      Organização
-      Aplicações
-
+	 Conceito
+	 Organização
+	 Aplicações
   7.2.3 Registradores de Endereço:
-      Conceito
-      Organização
-      Aplicações
-
+      	 Conceito
+	 Organização
+	 Aplicações
   7.2.4 Registradores de Controle:
-      Conceito
-      Organização
-      Aplicações
-
+	 Conceito
+	 Organização
+	 Aplicações
   7.2.5 Registradores de Estado:
-      Conceito
-      Organização
-      Aplicações
-
+	 Conceito
+	 Organização
+	 Aplicações
   7.2.6 Registradores de Ponto Flutuante:
-      Conceito
-      Organização
-      Aplicações
-
+	 Conceito
+	 Organização
+	 Aplicações
   7.2.7 Registradores Vetoriais:
-      Conceito
-      Organização
-      Aplicações
+	 Conceito
+	 Organização
+	 Aplicações
 
  7.3 Registradores Especiais:
   7.3.1 Program Counter (PC):
-      Conceito
-      Organização
-      Atualização
-
+	 Conceito
+	 Organização
+	 Atualização
   7.3.2 Instruction Register (IR):
-      Conceito
-      Organização
-      Utilização
-
+	 Conceito
+	 Organização
+	 Utilização
   7.3.3 Memory Address Register (MAR):
-      Conceito
-      Organização
-      Utilização
-
+	 Conceito
+	 Organização
+	 Utilização
   7.3.4 Memory Data Register (MDR/MBR):
-      Conceito
-      Organização
-      Utilização
-
+	 Conceito
+	 Organização
+	 Utilização
   7.3.5 Stack Pointer (SP):
-      Conceito
-      Organização
-      Utilização
-
+	 Conceito
+	 Organização
+	 Utilização
   7.3.6 Base Pointer (BP):
-      Conceito
-      Organização
-      Utilização
-
+	 Conceito
+	 Organização
+	 Utilização
   7.3.7 Frame Pointer (FP):
-      Conceito
-      Organização
-      Utilização
-
+	 Conceito
+	 Organização
+	 Utilização
   7.3.8 Accumulator (ACC):
-      Conceito
-      Organização
-      Utilização
-
+	 Conceito
+	 Organização
+	 Utilização	
   7.3.9 Program Status Word (PSW):
-      Conceito
-      Organização
-      Utilização
-
+	 Conceito
+	 Organização
+	 Utilização
   7.3.10 Flags Register:
-      Conceito
-      Organização
-      Utilização
+	 Conceito
+	 Organização
+	 Utilização
 
  7.4 Flags da CPU:
   7.4.1 Flags Aritméticas:
-      Carry Flag
-      Overflow Flag
-      Auxiliary Carry Flag
-
+	 Carry Flag
+	 Overflow Flag
+	 Auxiliary Carry Flag
   7.4.2 Flags Lógicas:
-      Zero Flag
-      Sign Flag
-      Negative Flag
-      Parity Flag
-
+	 Zero Flag
+	 Sign Flag
+	 Negative Flag
+	 Parity Flag
   7.4.3 Flags de Controle:
-      Interrupt Flag
-      Direction Flag
-      Trap Flag
+	 Interrupt Flag
+	 Direction Flag
+	 Trap Flag
 
  7.5 Organização Física do Banco de Registradores:
   7.5.1 Estrutura Física:
-      Registradores arquiteturais
-      Organização interna
-      Largura dos registradores
-
+	 Registradores arquiteturais
+	 Organização interna
+	 Largura dos registradores
   7.5.2 Portas:
-      Porta de leitura
-      Portas múltiplas de leitura
-      Porta de escrita
-      Escrita simultânea
-
+	 Porta de leitura
+	 Portas múltiplas de leitura
+	 Porta de escrita
+	 Escrita simultânea
   7.5.3 Temporização:
-      Tempo de leitura
-      Tempo de escrita
-      Sincronização
+	 Tempo de leitura
+	 Tempo de escrita
+	 Sincronização
 
 
 8. Organização da Unidade Lógica e Aritmética (ALU)
 
  8.1 Fundamentos:
   8.1.1 Conceitos:
-      Definição
-      Objetivos
-      Organização
-      Papel na CPU
+	 Definição
+	 Objetivos
+	 Organização
+ 	 Papel na CPU
 
  8.2 Organização Interna:
   8.2.1 Entradas:
-      Operando A
-      Operando B
-      Seleção da operação
+	 Operando A
+	 Operando B
+	 Seleção da operação
 
   8.2.2 Saídas:
-      Resultado
-      Flags
-      Sinais de status
+	 Resultado
+	 Flags
+	 Sinais de status
 
  8.3 Operações Aritméticas:
-      Soma
-      Subtração
-      Multiplicação
-      Divisão
-      Incremento
-      Decremento
+	Soma
+	Subtração
+	Multiplicação
+	Divisão
+	Incremento
+	Decremento
 
  8.4 Operações Lógicas:
-      AND
-      OR
-      XOR
-      NOT
-      NAND
-      NOR
+	AND
+	OR
+	XOR
+	NOT
+	NAND
+	NOR
 
  8.5 Operações de Comparação:
-      Igualdade
-      Diferença
-      Maior que
-      Menor que
+	Igualdade
+	Diferença
+	Maior que
+	Menor que
 
  8.6 Operações de Deslocamento:
-      Shift lógico
-      Shift aritmético
-      Rotação
-      Extensão de sinal
+	Shift lógico
+	Shift aritmético
+	Rotação
+	Extensão de sinal
 
  8.7 Atualização das Flags:
-      Flags aritméticas
-      Flags lógicas
-      Flags de comparação
+	Flags aritméticas
+	Flags lógicas
+	Flags de comparação
 
 
 9. Organização da Unidade de Ponto Flutuante (FPU)
 
  9.1 Fundamentos:
   9.1.1 Conceitos:
-      Definição
-      Objetivos
-      Organização
+	 Definição
+	 Objetivos
+	 Organização
 
  9.2 Representação em Ponto Flutuante:
-      IEEE 754
-      Precisão simples
-      Precisão dupla
-      Precisão estendida
+	IEEE 754
+	Precisão simples
+	Precisão dupla
+	Precisão estendida
 
  9.3 Operações:
-      Soma
-      Subtração
-      Multiplicação
-      Divisão
-      Raiz quadrada
-      Conversões
+	Soma
+	Subtração
+	Multiplicação
+	Divisão
+	Raiz quadrada
+	Conversões
 
  9.4 Organização da FPU:
-      Registradores
-      Unidade aritmética
-      Unidade de controle
+	Registradores
+	Unidade aritmética
+	Unidade de controle
+
 
 
 10. Organização da Unidade de Controle
 
  10.1 Fundamentos:
   10.1.1 Conceitos:
-       Definição
-       Objetivos
-       Organização
+	 Definição
+	 Objetivos
+	 Organização
 
  10.2 Controle Cabeado (Hardwired Control):
-       Estrutura
-       Funcionamento
-       Vantagens
-       Limitações
+	Estrutura
+	Funcionamento
+	Vantagens
+	Limitações
 
  10.3 Controle Microprogramado:
   10.3.1 Organização:
-       Memória de controle
-       Microprograma
-       Sequenciador
-
+	 Memória de controle
+	 Microprograma
+	 Sequenciador
   10.3.2 Microinstruções:
-       Formato
-       Campos
-       Execução
+	 Formato
+	 Campos
+	 Execução
 
  10.4 Sequenciamento:
-       Sequenciamento das instruções
-       Sequenciamento das microinstruções
+	Sequenciamento das instruções
+	Sequenciamento das microinstruções
 
  10.5 Geração dos Sinais de Controle:
-       Controle da ALU
-       Controle dos registradores
-       Controle da memória
-       Controle do Datapath
+	Controle da ALU
+	Controle dos registradores
+	Controle da memória
+	Controle do Datapath
 
 
-11. Microoperações
+11. Microoperações:
 
  11.1 Fundamentos:
-       Conceito
-       Organização
-       Objetivos
+	Conceito
+	Organização
+	Objetivos
 
  11.2 Microoperações entre Registradores:
-       Transferência
-       Leitura
-       Escrita
+	Transferência
+	Leitura
+	Escrita
 
  11.3 Microoperações Aritméticas:
        Soma
