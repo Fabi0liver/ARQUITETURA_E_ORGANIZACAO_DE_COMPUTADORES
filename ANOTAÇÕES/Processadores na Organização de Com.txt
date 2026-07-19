@@ -1,0 +1,90 @@
+                    Processadores na Organização de Computadores
+
+
+Introdução:
+
+ Processadores e Organização de Computadores
+ O que é um processador
+ Objetivos de um processador
+ Função do processador em um sistema computacional
+ A CPU como centro de processamento
+ Evolução histórica dos processadores
+ Importância da organização dos processadores
+ Organização versus Arquitetura de Processadores
+ Organização de Processadores dentro da Organização de Computadores
+ Visão geral da organização interna de uma CPU moderna
+
+
+
+1. Fundamentos dos Processadores
+
+ 1.1 Introdução aos Processadores:
+  1.1.1 Computador como Sistema Computacional:
+         Conceito de computador
+         Componentes fundamentais do computador
+         Modelo básico de funcionamento
+	 Fluxo geral de processamento
+  1.1.2 Conceito de Processador:
+	 Definição de processador
+	 Objetivos do processador
+	 Papel da CPU no computador
+	 A CPU como unidade central de processamento
+  1.1.3 Evolução Histórica dos Processadores:
+	 Primeiras CPUs
+	 Evolução tecnológica
+	 Gerações de processadores
+	 Tendências atuais
+  1.1.4 Importância da Organização dos Processadores:
+	 Organização como fator de desempenho
+	 Organização como fator de eficiência
+	 Organização como fator de escalabilidade
+	 Organização como base das microarquiteturas modernas
+
+ 1.2 Organização de Computadores e Processadores:
+  1.2.1 Organização versus Arquitetura:
+	 Arquitetura de Computadores
+	 Organização de Computadores
+	 Arquitetura do Processador
+ 	 Organização do Processador
+	 Relação entre Arquitetura e Organização
+  1.2.2 O Processador na Organização do Computador:
+	 Relação entre CPU, memória e dispositivos de E/S
+ 	 Papel do processador no sistema computacional
+	 Comunicação entre os componentes
+	 Fluxo geral das informações
+  1.2.3 Modelos Clássicos de Organização:
+ 	 Modelo de Von Neumann
+	 Modelo Harvard
+ 	 Modelo Harvard Modificado
+	 Comparação entre os modelos
+
+ 1.3 Conceitos Fundamentais:
+  1.3.1 Representação da Informação:
+	 Sistema Binário
+	 Sistema Hexadecimal
+	 Representação de números inteiros
+ 	 Complemento de Dois
+ 	 Representação em ponto flutuante (Introdução)
+  1.3.2 Componentes Digitais Fundamentais:
+	 Portas Lógicas
+	 Circuitos Combinacionais
+ 	 Circuitos Sequenciais
+	 Flip-Flops
+ 	 Registradores
+	 Multiplexadores
+	 Demultiplexadores
+	 Codificadores
+	 Decodificadores
+	 Somadores
+	 Comparadores
+  1.3.3 Conceitos de Temporização:
+	 Clock
+	 Ciclo de Clock
+	 Frequência
+	 Período
+	 Sincronização
+	 Temporização
+  1.3.4 Comunicação Básica:
+	 Barramento de Dados (Introdução)
+ 	 Barramento de Endereços (Introdução)
+	 Barramento de Controle (Introdução)
