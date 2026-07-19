@@ -1382,289 +1382,278 @@ Introdução:
 	Comunicação
 
 
-34. Organização da Coerência de Cache
+
+34. Organização da Coerência de Cache:
 
  34.1 Fundamentos:
-  34.1.1 Conceitos:
-      Compartilhamento de memória
-      Coerência de cache
-      Consistência de memória (Introdução)
+	Conceitos
+	Compartilhamento de memória
+	Coerência de cache
+	Consistência de memória (Introdução)
 
  34.2 Protocolos de Coerência:
   34.2.1 MESI:
-      Estados
-      Funcionamento
-      Atualização das linhas
-
+	  Estados
+	  Funcionamento
+	  Atualização das linhas
   34.2.2 MOESI:
-      Estados
-      Funcionamento
-      Comparação com MESI
+	  Estados
+	  Funcionamento
+	  Comparação com MESI
 
  34.3 Organização da Comunicação de Coerência:
-      Troca de mensagens
-      Invalidação
-      Atualização
-      Snooping (Introdução)
-      Diretórios (Introdução)
+	Troca de mensagens
+	Invalidação
+	Atualização
+	Snooping (Introdução)
+	Diretórios (Introdução)
+
 
 
 35. Organização dos Sistemas Multiprocessados
 
  35.1 Multiprocessadores:
-  35.1.1 Conceitos:
-      Multiprocessadores
-      Multicore
-      Many-Core
+	Conceitos
+	Multiprocessadores
+	Multicore
+	Many-Core
 
  35.2 Organização da Memória:
   35.2.1 UMA:
-      Organização
-      Características
-
+	  Organização
+	  Características
   35.2.2 NUMA:
-      Organização
-      Características
-      Comunicação
+	  Organização
+	  Características
+	  Comunicação
 
 
-36. Organização Física dos Processadores
+
+36. Organização Física dos Processadores:
 
  36.1 Fundamentos:
-  36.1.1 Projeto Físico:
-      Organização física
-      Distribuição dos componentes
-      Planejamento físico
+	Projeto Físico
+	Organização física
+	Distribuição dos componentes
+	Planejamento físico
 
  36.2 Floorplan:
-  36.2.1 Organização:
-      Distribuição dos blocos
-      Posicionamento das unidades funcionais
-      Organização interna
+	Distribuição dos blocos
+	Posicionamento das unidades funcionais
+	Organização interna
 
  36.3 Sistema de Clock:
   36.3.1 Clock Tree:
-      Organização
-      Distribuição
-
+	  Organização
+	  Distribuição
   36.3.2 Clock Distribution:
-      Organização
-      Sincronização
-
+	  Organização
+	  Sincronização
   36.3.3 Clock Domains:
-      Organização
-      Comunicação entre domínios
-
+	  Organização
+	  Comunicação entre domínios
   36.3.4 Clock Domain Crossing (CDC):
-      Conceito
-      Organização
-      Sincronização
-
+	  Conceito
+	  Organização
+	  Sincronização
   36.3.5 Clock Skew:
-      Conceito
-      Impacto
-
+	  Conceito
+	  Impacto
   36.3.6 Clock Jitter:
-      Conceito
-      Impacto
-
+	  Conceito
+	  Impacto
   36.3.7 PLL (Phase-Locked Loop):
-      Organização
-      Funcionamento
+	  Organização
+	  Funcionamento
 
 
-37. Organização Energética
+
+37. Organização Energética:
 
  37.1 Gerenciamento de Energia:
-  37.1.1 Fundamentos:
-      Consumo de energia
-      Eficiência energética
+	Fundamentos
+	Consumo de energia
+	Eficiência energética
 
  37.2 Técnicas de Economia de Energia:
   37.2.1 Clock Gating:
-      Organização
-      Funcionamento
-
+	  Organização
+	  Funcionamento
   37.2.2 Power Gating:
-      Organização
-      Funcionamento
-
+	  Organização
+	  Funcionamento
   37.2.3 DVFS:
-      Dynamic Voltage and Frequency Scaling
-      Organização
-      Funcionamento
-
+	  Dynamic Voltage and Frequency Scaling
+	  Organização
+	  Funcionamento
   37.2.4 Turbo Boost:
-      Organização
-      Funcionamento
+	  Organização
+	  Funcionamento
 
 
-38. Arquiteturas Modernas de Processadores
+
+38. Arquiteturas Modernas de Processadores:
 
  38.1 Chiplets:
   38.1.1 Fundamentos:
-      Conceito
-      Objetivos
-      Evolução
-
+	  Conceito
+	  Objetivos
+	  Evolução
   38.1.2 Organização:
-      Separação em chiplets
-      Comunicação
-      Escalabilidade
+	  Separação em chiplets
+	  Comunicação
+	  Escalabilidade
 
  38.2 Interconexões entre Chiplets:
-  38.2.1 Organização:
-      Infinity Fabric (Introdução)
-      UCIe (Introdução)
-      Interconexões proprietárias
+	Organização
+	Infinity Fabric (Introdução)
+	UCIe (Introdução)
+	Interconexões proprietárias
 
  38.3 Empilhamento 3D:
-  38.3.1 Organização:
-      TSV (Through-Silicon Via)
-      3D Stacking
-      Benefícios
-      Limitações
+	Organização
+	TSV (Through-Silicon Via)
+	3D Stacking
+	Benefícios
+	Limitações
 
  38.4 System-on-Chip (SoC):
-  38.4.1 Organização:
-      Conceito
-      Componentes integrados
-      Comunicação interna
+	Organização
+	Conceito
+	Componentes integrados
+	Comunicação interna
 
 
-39. Aceleradores Especializados
+
+39. Aceleradores Especializados:
 
  39.1 Fundamentos:
-  39.1.1 Evolução:
-      Crescimento da computação especializada
-      Integração ao processador
+	Evolução
+	Crescimento da computação especializada
+	Integração ao processador
 
  39.2 Neural Processing Unit (NPU):
-  39.2.1 Organização:
-      Estrutura
-      Funcionamento
-      Aplicações
+	Organização
+	Estrutura
+	Funcionamento
+	Aplicações
 
  39.3 Tensor Processing Unit (TPU):
-  39.3.1 Organização:
-      Estrutura
-      Funcionamento
-      Aplicações
+	Organização
+	Estrutura
+	Funcionamento
+	Aplicações
 
  39.4 Data Processing Unit (DPU):
-  39.4.1 Organização:
-      Estrutura
-      Funcionamento
-      Aplicações
+	Estrutura
+	Funcionamento
+	Aplicações
 
  39.5 Graphics Processing Unit (GPU):
-  39.5.1 Organização:
-      Organização interna
-      Comunicação com a CPU
-      Cooperação CPU-GPU
+	Organização interna
+	Comunicação com a CPU
+	Cooperação CPU-GPU
 
  39.6 Outros Aceleradores:
-      IPU
-      VPU
-      DSP
-      AI Engine
+	IPU
+	VPU
+	DSP
+	AI Engine
 
 
-40. Tendências da Organização dos Processadores
+
+40. Tendências da Organização dos Processadores:
 
  40.1 Processadores Heterogêneos:
-      Big.LITTLE
-      P-Cores
-      E-Cores
-      Arquiteturas híbridas
+	Big.LITTLE
+	P-Cores
+	E-Cores
+	Arquiteturas híbridas
 
  40.2 Integração de Componentes:
-      CPU + GPU
-      CPU + NPU
-      CPU + FPGA
+	CPU + GPU
+	CPU + NPU
+	CPU + FPGA
 
  40.3 Escalabilidade:
-      Muitos núcleos
-      Interconexões avançadas
-      Computação distribuída em chip
+	Muitos núcleos
+	Interconexões avançadas
+	Computação distribuída em chip
 
  40.4 Futuras Direções:
-      Computação orientada por IA
-      Arquiteturas reconfiguráveis
-      Novos modelos de organização
+	Computação orientada por IA
+	Arquiteturas reconfiguráveis
+	Novos modelos de organização
 
 
-41. Aplicações dos Processadores
+
+41. Aplicações dos Processadores:
 
  41.1 Computadores Pessoais:
-      Desktop
-      Notebook
-      Workstation
+	Desktop
+	Notebook
+	Workstation
 
  41.2 Servidores:
-      Data Centers
-      Computação em Nuvem
-      HPC
+	Data Centers
+	Computação em Nuvem
+	HPC
 
  41.3 Dispositivos Móveis:
-      Smartphones
-      Tablets
-      Wearables
+	Smartphones
+	Tablets
+	Wearables
 
  41.4 Sistemas Embarcados:
-      IoT
-      Automação
-      Indústria
+	IoT
+	Automação
+	Indústria
 
  41.5 Inteligência Artificial:
-      Inferência
-      Treinamento
-      Computação acelerada
+	Inferência
+	Treinamento
+	Computação acelerada
 
 
 42. Revisão Geral da Organização dos Processadores
 
  42.1 Fundamentos:
-      Organização da CPU
-      Componentes internos
-      Organização da execução
+	Organização da CPU
+	Componentes internos
+	Organização da execução
 
  42.2 Técnicas de Alto Desempenho:
-      Pipeline
-      Superpipeline
-      Organização Superescalar
-      ILP
-      SMT
-      Out-of-Order Execution
+	Pipeline
+	Superpipeline
+	Organização Superescalar
+	ILP
+	SMT
+	Out-of-Order Execution
 
  42.3 Organização dos Processadores Modernos:
-      Multicore
-      Comunicação entre núcleos
-      Coerência
-      Organização física
-      Aceleradores especializados
+	Multicore
+	Comunicação entre núcleos
+	Coerência
+	Organização física
+	Aceleradores especializados
 
 
-43. Conclusão
+
+43. Conclusão:
 
  43.1 Síntese da Organização dos Processadores:
-      Evolução da organização dos processadores
-      Integração entre os componentes da CPU
-      Evolução das técnicas de paralelismo
-      Evolução das microarquiteturas
-      Organização dos processadores modernos
+	Evolução da organização dos processadores
+	Integração entre os componentes da CPU
+	Evolução das técnicas de paralelismo
+	Evolução das microarquiteturas
+	Organização dos processadores modernos
 
  43.2 Relação com Outras Áreas:
-      Arquitetura de Computadores
-      Organização de Computadores
-      Sistemas Operacionais
-      Compiladores
-      Sistemas Paralelos
-      Computação de Alto Desempenho
-      Sistemas Embarcados
-      Inteligência Artificial
-
-
-
-
-
+	Arquitetura de Computadores
+	Organização de Computadores
+	Sistemas Operacionais
+	Compiladores
+	Sistemas Paralelos
+	Computação de Alto Desempenho
+	Sistemas Embarcados
+	Inteligência Artificial
