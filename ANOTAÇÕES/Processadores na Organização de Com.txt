@@ -720,11 +720,10 @@ Introdução:
 	  Instruções de três operandos
 
  16.3 Codificação das Instruções:
-  16.3.1  Organização:
+  16.3.1 Organização:
 	  Codificação do Opcode
 	  Codificação dos operandos
 	  Codificação dos registradores
-
   16.3.2 Decodificação:
 	  Processo de decodificação
 	  Interpretação dos campos
@@ -732,113 +731,98 @@ Introdução:
 
  16.4 Classes de Instruções:
   16.4.1 Transferência de Dados:
-       Load
-       Store
-       Move
-
+	  Load
+	  Store
+	  Move
   16.4.2 Operações Aritméticas:
-       Soma
-       Subtração
-       Multiplicação
-       Divisão
-
+	  Soma
+	  Subtração
+	  Multiplicação
+	  Divisão
   16.4.3 Operações Lógicas:
-       AND
-       OR
-       XOR
-       NOT
-
+	  AND
+	  OR
+	  XOR
+	  NOT
   16.4.4 Comparação:
-       Compare
-       Test
-
+	  Compare
+	  Test
   16.4.5 Desvios:
-       Branch
-       Jump
-       Call
-       Return
-
+	  Branch
+	  Jump
+	  Call
+	  Return
   16.4.6 Controle:
-       NOP
-       HALT
-       WAIT
+	  NOP
+	  HALT
+	  WAIT
+
 
 
 17. Modos de Endereçamento
 
  17.1 Fundamentos:
-  17.1.1 Conceitos:
-       Conceito de endereço
-       Operandos
-       Localização dos dados
+	Conceito de endereço
+	Operandos
+	Localização dos dados
 
  17.2 Modos de Endereçamento:
   17.2.1 Endereçamento Imediato:
-       Organização
-       Funcionamento
-
+	  Organização
+	  Funcionamento
   17.2.2 Endereçamento por Registrador:
-       Organização
-       Funcionamento
-
+	  Organização
+	  Funcionamento
   17.2.3 Endereçamento Direto:
-       Organização
-       Funcionamento
-
+	  Organização
+	  Funcionamento
   17.2.4 Endereçamento Indireto:
-       Organização
-       Funcionamento
-
+	  Organização
+	  Funcionamento
   17.2.5 Endereçamento Indexado:
-       Organização
-       Funcionamento
-
+	  Organização
+	  Funcionamento
   17.2.6 Endereçamento Base + Deslocamento:
-       Organização
-       Funcionamento
-
+	  Organização
+	  Funcionamento
   17.2.7 Endereçamento Relativo:
-       Organização
-       Funcionamento
+	  Organização
+	  Funcionamento
+
 
 
 18. Organização do Ciclo de Instrução
 
  18.1 Fundamentos:
-  18.1.1 Conceitos:
-       Definição
-       Objetivos
-       Organização geral
+	Definição
+	Objetivos
+	Organização geral
 
  18.2 Etapas do Ciclo:
   18.2.1 Busca da Instrução (Instruction Fetch):
-       Leitura do Program Counter
-       Busca da instrução
-       Atualização do Program Counter
-
+	  Leitura do Program Counter
+	  Busca da instrução
+	  Atualização do Program Counter
   18.2.2 Decodificação (Instruction Decode):
-       Decodificação do Opcode
-       Identificação dos operandos
-       Geração dos sinais de controle
-
+	  Decodificação do Opcode
+	  Identificação dos operandos
+	  Geração dos sinais de controle
   18.2.3 Busca dos Operandos:
-       Leitura dos registradores
-       Acesso à memória
-       Preparação dos operandos
-
+	  Leitura dos registradores
+	  Acesso à memória
+	  Preparação dos operandos
   18.2.4 Execução:
-       Operações na ALU
-       Operações na FPU
-       Operações de controle
-
+	  Operações na ALU
+	  Operações na FPU
+	  Operações de controle
   18.2.5 Acesso à Memória:
-       Operações de leitura
-       Operações de escrita
-
+	  Operações de leitura
+	  Operações de escrita
   18.2.6 Escrita dos Resultados (Write Back):
-       Escrita nos registradores
-       Atualização das flags
-       Atualização do estado da CPU
+	  Escrita nos registradores
+	  Atualização das flags
+	  Atualização do estado da CPU
+
 
 
 19. Organização do Fluxo de Controle
