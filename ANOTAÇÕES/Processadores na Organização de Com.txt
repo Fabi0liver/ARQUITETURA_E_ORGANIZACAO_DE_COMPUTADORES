@@ -150,3 +150,59 @@ Introdução:
 	 Fluxo de dados
 	 Fluxo de controle
 
+
+
+3.Organização do Front-End:
+
+ 3.1 Conceitos Gerais:
+  3.1.1 Objetivos:
+	 Organização do Front-End
+	 Papel do Front-End
+	 Comunicação com o Back-End
+
+ 3.2 Busca de Instruções:
+  3.2.1 Unidade de Busca:
+	 Instruction Fetch
+	 Sequenciamento das instruções
+	 Busca sequencial
+	 Busca por desvios
+
+ 3.3 Buffer de Pré-Busca:
+  3.3.1 Prefetch Buffer:
+	 Conceito
+	 Organização
+	 Funcionamento
+	 Busca antecipada
+	 Prefetch Sequencial
+	 Prefetch por Hardware
+
+ 3.4 Fila de Instruções:
+  3.4.1 Instruction Queue:
+	 Conceito
+	 Organização
+	 Funcionamento
+
+ 3.5 Unidade de Decodificação:
+  3.5.1 Decoder:
+	 Conceito
+	 Organização
+	 Funcionamento
+	 Decoder RISC
+	 Decoder CISC
+	 Decoder Múltiplo
+
+ 3.6 Cache de Micro-Operações:
+  3.6.1 Micro-op Cache:
+ 	 Conceito
+	 Organização
+	 Funcionamento
+	 Benefícios
+
+ 3.7 Loop Buffer:
+  3.7.1 Organização:
+	 Conceito
+	 Funcionamento
+ 	 Aplicações
+
+
+
