@@ -544,6 +544,7 @@ Introdução:
 	Controle do Datapath
 
 
+
 11. Microoperações:
 
  11.1 Fundamentos:
@@ -557,79 +558,80 @@ Introdução:
 	Escrita
 
  11.3 Microoperações Aritméticas:
-       Soma
-       Subtração
-       Incremento
-       Decremento
+	Soma
+	Subtração
+	Incremento
+	Decremento
 
  11.4 Microoperações Lógicas:
-       AND
-       OR
-       XOR
-       NOT
+	AND
+	OR
+	XOR
+	NOT
 
  11.5 Microoperações de Deslocamento:
-       Shift lógico
-       Shift aritmético
-       Rotação
+	Shift lógico
+	Shift aritmético
+	Rotação
 
  11.6 Microoperações de Controle:
-       Sequenciamento
-       Atualização do PC
-       Atualização das flags
+	Sequenciamento
+	Atualização do PC
+	Atualização das flags
 
 
-12. Organização do Datapath
+
+12. Organização do Datapath:
 
  12.1 Fundamentos:
   12.1.1 Conceitos:
-       Definição
-       Objetivos
-       Organização
+	 Definição
+	 Objetivos
+	 Organização
 
  12.2 Componentes do Datapath:
-       Banco de registradores
-       ALU
-       FPU
-       Multiplexadores
-       Barramentos internos
+	Banco de registradores
+	ALU
+	FPU
+	Multiplexadores
+	Barramentos internos
 
  12.3 Fluxo de Dados:
   12.3.1 Entrada dos Dados:
-       Registradores
-       Operandos
-
+	 Registradores
+	 Operandos
   12.3.2 Processamento:
-       Operações internas
-       Transferências
-
+	 Operações internas
+	 Transferências
   12.3.3 Saída dos Dados:
-       Escrita em registradores
-       Atualização do estado
+	 Escrita em registradores
+	 Atualização do estado
 
  12.4 Controle do Datapath:
-       Seleção de operandos
-       Seleção das operações
-       Escrita dos resultados
+	 Seleção de operandos
+	 Seleção das operações
+	 Escrita dos resultados
+
 
 
 13. Organização do Control Path
 
  13.1 Fundamentos:
   13.1.1 Conceitos:
-       Definição
-       Objetivos
-       Organização
+	 Definição
+	 Objetivos
+	 Organização
 
  13.2 Controle da Execução:
-       Sequenciamento
-       Coordenação
-       Sincronização
+	Sequenciamento
+	Coordenação
+	Sincronização
 
  13.3 Comunicação com o Datapath:
-       Geração dos sinais
-       Controle das operações
-       Coordenação dos componentes
+	Geração dos sinais
+	Controle das operações
+	Coordenação dos componentes
+
 
 
 14. Organização das Unidades Funcionais
