@@ -305,7 +305,7 @@ Introdução:
 
 
 
-7. Organização do Banco de Registradores
+7. Organização do Banco de Registradores:
 
  7.1 Fundamentos:
   7.1.1 Conceito de Registrador:
@@ -426,7 +426,8 @@ Introdução:
 	  Sincronização
 
 
-8. Organização da Unidade Lógica e Aritmética (ALU)
+
+8. Organização da Unidade Lógica e Aritmética (ALU):
 
  8.1 Fundamentos:
   8.1.1 Conceitos:
@@ -480,7 +481,8 @@ Introdução:
 	Flags de comparação
 
 
-9. Organização da Unidade de Ponto Flutuante (FPU)
+
+9. Organização da Unidade de Ponto Flutuante (FPU):
 
  9.1 Fundamentos:
   9.1.1 Conceitos:
@@ -509,7 +511,7 @@ Introdução:
 
 
 
-10. Organização da Unidade de Controle
+10. Organização da Unidade de Controle:
 
  10.1 Fundamentos:
   10.1.1 Conceitos:
@@ -634,7 +636,7 @@ Introdução:
 
 
 
-14. Organização das Unidades Funcionais
+14. Organização das Unidades Funcionais:
 
  14.1 Unidade Inteira:
 	Organização
@@ -685,7 +687,7 @@ Introdução:
 
 
 
-16. Organização das Instruções
+16. Organização das Instruções:
 
  16.1 Fundamentos:
   16.1.1 Conceitos:
@@ -759,7 +761,7 @@ Introdução:
 
 
 
-17. Modos de Endereçamento
+17. Modos de Endereçamento:
 
  17.1 Fundamentos:
 	Conceito de endereço
@@ -791,7 +793,7 @@ Introdução:
 
 
 
-18. Organização do Ciclo de Instrução
+18. Organização do Ciclo de Instrução:
 
  18.1 Fundamentos:
 	Definição
@@ -825,109 +827,103 @@ Introdução:
 
 
 
-19. Organização do Fluxo de Controle
+19. Organização do Fluxo de Controle:
 
  19.1 Sequenciamento das Instruções:
   19.1.1 Execução Sequencial:
-       Fluxo linear
-       Atualização do Program Counter
-
+	  Fluxo linear
+	  Atualização do Program Counter
   19.1.2 Alteração do Fluxo:
-       Saltos
-       Chamadas
-       Retornos
+	  Saltos
+	  Chamadas
+	  Retornos
 
  19.2 Desvios:
   19.2.1 Branch:
-       Branch incondicional
-       Branch condicional
-
+	  Branch incondicional
+	  Branch condicional
   19.2.2 Jump:
-       Jump absoluto
-       Jump relativo
-
+	  Jump absoluto
+	  Jump relativo
   19.2.3 Sub-rotinas:
-       Call
-       Return
+	  Call
+	  Return
 
  19.3 Interrupções (Introdução):
   19.3.1 Conceitos:
-       Definição
-       Objetivos
-       Importância
-
+	  Definição
+	  Objetivos
+	  Importância
   19.3.2 Organização:
-       Interrupções de hardware
-       Interrupções de software
-       Exceções
-
+	  Interrupções de hardware
+	  Interrupções de software
+	  Exceções
   19.3.3 Tratamento:
-       Salvamento do contexto
-       Rotina de serviço
-       Retorno da interrupção
+	  Salvamento do contexto
+	  Rotina de serviço
+	  Retorno da interrupção
 
 
-20. Organização da Execução das Instruções
+
+20. Organização da Execução das Instruções:
 
  20.1 Modelo de Execução Sequencial:
-  20.1.1 Organização:
-       Uma instrução por vez
-       Dependência entre etapas
-       Ordem de execução
+	Organização
+	Uma instrução por vez
+	Dependência entre etapas
+	Ordem de execução
 
  20.2 Fluxo dos Dados:
-  20.2.1 Comunicação entre Componentes:
-       Registradores
-       ALU
-       FPU
-       Unidade de Controle
-       Datapath
+	Comunicação entre Componentes
+	Registradores
+	ALU
+	FPU
+	Unidade de Controle
+	Datapath
 
  20.3 Fluxo dos Sinais de Controle:
-  20.3.1 Coordenação:
-       Controle do Datapath
-       Controle dos registradores
-       Controle das unidades funcionais
+	Coordenação
+	Controle do Datapath
+	Controle dos registradores
+	Controle das unidades funcionais
 
  20.4 Sincronização da Execução:
-  20.4.1 Clock:
-       Ciclos de clock
-       Sincronização das etapas
-       Coordenação da execução
+	Clock
+	Ciclos de clock
+	Sincronização das etapas
+	Coordenação da execução
 
 
-21. Desempenho da Execução
+
+21. Desempenho da Execução:
 
  21.1 Conceitos Fundamentais:
   21.1.1 Tempo de Execução:
-       Tempo de CPU
-       Tempo de instrução
-       Tempo de ciclo
-
+	  Tempo de CPU
+	  Tempo de instrução
+	  Tempo de ciclo
   21.1.2 CPI (Cycles Per Instruction):
-       Conceito
-       Interpretação
-
+	  Conceito
+	  Interpretação
   21.1.3 IPC (Instructions Per Cycle):
-       Conceito
-       Interpretação
-
+	  Conceito
+	  Interpretação
   21.1.4 Throughput:
-       Conceito
-       Medição
-
+	  Conceito
+	  Medição
   21.1.5 Latência:
-       Conceito
-       Medição
+	  Conceito
+	  Medição
 
  21.2 Fatores que Influenciam o Desempenho:
-       Frequência
-       Número de ciclos
-       Complexidade das instruções
-       Organização interna da CPU
+	Frequência
+	Número de ciclos
+	Complexidade das instruções
+	Organização interna da CPU
 
 
-22. Resumo da Organização da Execução
+
+22. Resumo da Organização da Execução:
 
  22.1 Fluxo Completo:
   22.1.1 Busca
