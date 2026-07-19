@@ -1200,85 +1200,63 @@ Introdução:
 	Distribuição dos resultados
 
 
+
 28. Algoritmos Clássicos:
 
  28.1 Scoreboarding:
   28.1.1 Conceitos:
-      Definição
-      Objetivos
-
+	  Definição
+	  Objetivos
   28.1.2 Organização:
-      Controle das dependências
-      Controle dos recursos
+	  Controle das dependências
+	  Controle dos recursos
 
  28.2 Algoritmo de Tomasulo:
   28.2.1 Conceitos:
-      Definição
-      Objetivos
-
+	  Definição
+	  Objetivos
   28.2.2 Componentes:
-      Reservation Stations
-      Register Renaming
-      Common Data Bus
-
+	  Reservation Stations
+	  Register Renaming
+	  Common Data Bus
   28.2.3 Funcionamento:
-      Emissão
-      Execução
-      Write Back
-
+	  Emissão
+	  Execução
+	  Write Back
   28.2.4 Comparação:
-      Tomasulo × Scoreboarding
+	  Tomasulo × Scoreboarding
+
 
 
 29. Organização das Unidades Funcionais:
 
  29.1 Unidade Inteira:
-      Organização
-      Paralelismo
+ 	Organização
+	Paralelismo
 
  29.2 Unidade de Ponto Flutuante:
-      Organização
-      Paralelismo
+	Organização
+	Paralelismo
 
  29.3 Unidade Vetorial:
-      Organização
-      Execução vetorial
+	Organização
+	Execução vetorial
 
  29.4 Unidade SIMD:
-      Organização
-      Processamento paralelo
+	Organização
+	Processamento paralelo
 
  29.5 Unidade Load/Store:
   29.5.1 Organização:
-      Load Queue
-      Store Queue
-      Store Buffer
-
+	  Load Queue
+	  Store Queue
+	  Store Buffer
   29.5.2 Memory Ordering (Introdução):
-      Conceito
-      Organização
-
+	  Conceito
+	  Organização
  29.6 Unidade de Branch:
-      Organização
-      Comunicação com os preditores
-
-
-30. Avaliação do Desempenho:
-
- 30.1 Métricas:
-      CPI
-      IPC
-      Throughput
-      Latência
-      Speedup
-
- 30.2 Fatores de Desempenho:
-      Profundidade do pipeline
-      Número de unidades funcionais
-      Largura da emissão
-      Eficiência da predição de desvios
-      Eficiência do escalonamento
-
+	  Organização
+	  Comunicação com os preditores
 
 
 
