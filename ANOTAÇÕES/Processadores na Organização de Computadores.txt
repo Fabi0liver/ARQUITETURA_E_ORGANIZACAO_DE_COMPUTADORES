@@ -1,0 +1,1659 @@
+                    Processadores na Organização de Computadores
+
+
+Introdução:
+
+ Processadores e Organização de Computadores
+ O que é um processador
+ Objetivos de um processador
+ Função do processador em um sistema computacional
+ A CPU como centro de processamento
+ Evolução histórica dos processadores
+ Importância da organização dos processadores
+ Organização versus Arquitetura de Processadores
+ Organização de Processadores dentro da Organização de Computadores
+ Visão geral da organização interna de uma CPU moderna
+
+
+
+1. Fundamentos dos Processadores
+
+ 1.1 Introdução aos Processadores:
+  1.1.1 Computador como Sistema Computacional:
+	  Conceito de computador
+	  Componentes fundamentais do computador
+	  Modelo básico de funcionamento
+	  Fluxo geral de processamento
+  1.1.2 Conceito de Processador:
+	  Definição de processador
+	  Objetivos do processador
+	  Papel da CPU no computador
+	  A CPU como unidade central de processamento
+  1.1.3 Evolução Histórica dos Processadores:
+	  Primeiras CPUs
+	  Evolução tecnológica
+	  Gerações de processadores
+	  Tendências atuais
+  1.1.4 Importância da Organização dos Processadores:
+	  Organização como fator de desempenho
+	  Organização como fator de eficiência
+	  Organização como fator de escalabilidade
+	  Organização como base das microarquiteturas modernas
+
+ 1.2 Organização de Computadores e Processadores:
+  1.2.1 Organização versus Arquitetura:
+	  Arquitetura de Computadores
+	  Organização de Computadores
+	  Arquitetura do Processador
+ 	  Organização do Processador
+	  Relação entre Arquitetura e Organização
+  1.2.2 O Processador na Organização do Computador:
+	  Relação entre CPU, memória e dispositivos de E/S
+ 	  Papel do processador no sistema computacional
+	  Comunicação entre os componentes
+	  Fluxo geral das informações
+  1.2.3 Modelos Clássicos de Organização:
+ 	  Modelo de Von Neumann
+	  Modelo Harvard
+ 	  Modelo Harvard Modificado
+	  Comparação entre os modelos
+
+ 1.3 Conceitos Fundamentais:
+  1.3.1 Representação da Informação:
+	  Sistema Binário
+	  Sistema Hexadecimal
+	  Representação de números inteiros
+ 	  Complemento de Dois
+ 	  Representação em ponto flutuante (Introdução)
+  1.3.2 Componentes Digitais Fundamentais:
+	  Portas Lógicas
+	  Circuitos Combinacionais
+ 	  Circuitos Sequenciais
+	  Flip-Flops
+ 	  Registradores
+	  Multiplexadores
+	  Demultiplexadores
+	  Codificadores
+	  Decodificadores
+	  Somadores
+	  Comparadores
+  1.3.3 Conceitos de Temporização:
+	  Clock
+	  Ciclo de Clock
+	  Frequência
+	  Período
+	  Sincronização
+	  Temporização
+  1.3.4 Comunicação Básica:
+	  Barramento de Dados (Introdução)
+ 	  Barramento de Endereços (Introdução)
+	  Barramento de Controle (Introdução)
+
+
+
+2. Organização Geral do Processador:
+
+ 2.1 Estrutura Geral da CPU:
+  2.1.1 Organização Física:
+	  Organização física do processador
+	  Blocos funcionais
+	  Comunicação entre blocos
+  2.1.2 Organização Lógica:
+	  Organização lógica da CPU
+	  Fluxo lógico de processamento
+	  Fluxo de informações
+  2.1.3 Organização Funcional:
+	  Organização por funções
+	  Cooperação entre componentes
+	  Visão geral do funcionamento
+
+ 2.2 Componentes Fundamentais da CPU:
+  2.2.1 Front-End:
+	  Conceito
+	  Objetivos
+	  Responsabilidades
+  2.2.2 Back-End:
+	  Conceito
+	  Objetivos
+	  Responsabilidades
+  2.2.3 Unidade de Controle:
+	  Conceito
+	  Objetivos
+  2.2.4 Caminho de Dados (Datapath):
+	  Conceito
+	  Objetivos
+  2.2.5 Caminho de Controle (Control Path):
+	  Conceito
+	  Objetivos
+  2.2.6 Banco de Registradores:
+	  Conceito
+	  Objetivos
+  2.2.7 Unidade Lógica e Aritmética (ALU):
+	  Conceito
+	 Objetivos
+  2.2.8  Unidade de Ponto Flutuante (FPU):
+	  Conceito
+	  Objetivos
+  2.2.9 Unidades Funcionais:
+	  Conceito
+	  Objetivos
+
+ 2.3 Fluxo Geral de Funcionamento:
+  2.3.1 Fluxo Simplificado de Execução:
+	  Busca
+	  Decodificação
+	  Busca dos operandos
+	  Execução
+	  Escrita dos resultados
+  2.3.2 Fluxo das Informações:
+	  Fluxo de instruções
+	  Fluxo de dados
+	  Fluxo de controle
+
+
+
+3.Organização do Front-End:
+
+ 3.1 Conceitos Gerais:
+  3.1.1 Objetivos:
+	  Organização do Front-End
+	  Papel do Front-End
+	  Comunicação com o Back-End
+
+ 3.2 Busca de Instruções:
+  3.2.1 Unidade de Busca:
+	  Instruction Fetch
+	  Sequenciamento das instruções
+	  Busca sequencial
+	  Busca por desvios
+
+ 3.3 Buffer de Pré-Busca:
+  3.3.1 Prefetch Buffer:
+	  Conceito
+	  Organização
+	  Funcionamento
+	  Busca antecipada
+	  Prefetch Sequencial
+	  Prefetch por Hardware
+
+ 3.4 Fila de Instruções:
+  3.4.1 Instruction Queue:
+	  Conceito
+	  Organização
+	  Funcionamento
+
+ 3.5 Unidade de Decodificação:
+  3.5.1 Decoder:
+	  Conceito
+	  Organização
+	  Funcionamento
+	  Decoder RISC
+	  Decoder CISC
+	  Decoder Múltiplo
+
+ 3.6 Cache de Micro-Operações:
+  3.6.1 Micro-op Cache:
+ 	  Conceito
+	  Organização
+	  Funcionamento
+	  Benefícios
+ 
+ 3.7 Loop Buffer:
+  3.7.1 Organização:
+	  Conceito
+	  Funcionamento
+ 	  Aplicações
+
+
+
+4. Organização do Back-End:
+
+ 4.1 Conceitos Gerais:
+  4.1.1 Objetivos:
+	  Organização
+	  Responsabilidades
+	  Comunicação com o Front-End
+  
+ 4.2 Componentes do Back-End:
+  4.2.1 Scheduler:
+	  Conceito
+	  Objetivos
+  4.2.2 Reservation Stations:
+ 	  Conceito
+	  Objetivos
+  4.2.3 Reorder Buffer (ROB):
+	  Conceito
+	  Objetivos
+  4.2.4 Common Data Bus (CDB):
+	  Conceito
+	  Objetivos
+  4.2.5 Commit:
+	  Conceito
+	  Objetivos
+  4.2.6 Write Back:
+ 	  Conceito
+	  Objetivos
+
+ 4.3 Fluxo Geral de Execução:
+  4.3.1 Processamento das Instruções:
+	  Recepção
+	  Escalonamento
+	  Execução
+	  Escrita
+	  Finalização
+
+
+5. Comunicação Interna da CPU
+
+ 5.1 Comunicação entre Componentes:
+  5.1.1 Barramentos Internos:
+	  Barramento interno de dados
+	  Barramento interno de controle
+	  Barramento interno de endereços
+  5.1.2 Interconexões:
+	  Caminhos internos
+	  Multiplexadores
+	  Buffers
+	  Drivers
+  5.1.3 Sincronização:
+	  Sincronização interna
+	  Controle do fluxo
+	  Coordenação dos componentes
+
+
+
+6. Visão Geral dos Componentes Internos:
+
+ 6.1 Banco de Registradores:
+	Organização geral
+	Classificação
+	Papel na CPU
+
+ 6.2 Unidade Lógica e Aritmética (ALU):
+	Organização geral
+	Papel na CPU
+
+ 6.3 Unidade de Ponto Flutuante (FPU):
+	Organização geral
+	Papel na CPU
+
+ 6.4 Unidade de Controle:
+	Organização geral
+	Papel na CPU
+
+ 6.5 Caminho de Dados (Datapath):
+	Organização geral
+	Papel na CPU
+
+ 6.6 Caminho de Controle (Control Path):
+	Organização geral
+	Papel na CPU
+
+ 6.7 Unidades Funcionais:
+  6.7.1 Unidade Inteira:
+	  Organização geral
+  6.7.2 Unidade de Ponto Flutuante:
+	  Organização geral
+  6.7.3 Unidade Vetorial:
+	  Organização geral
+  6.7.4 Unidade SIMD:
+	  Organização geral
+  6.7.5 Unidade Load/Store:
+	  Organização geral
+  6.7.6 Unidade de Branch:
+          Organização geral
+
+
+
+7. Organização do Banco de Registradores:
+
+ 7.1 Fundamentos:
+  7.1.1 Conceito de Registrador:
+	  Definição
+	  Objetivos
+ 	  Características
+	  Importância no processador
+  7.1.2 Banco de Registradores:
+	  Conceito
+	  Organização
+	  Estrutura
+	  Papel na CPU
+  7.1.3 Fluxo de Dados:
+	  Leitura de registradores
+	  Escrita de registradores
+	  Transferência entre registradores
+
+ 7.2 Classificação dos Registradores:
+  7.2.1 Registradores de Uso Geral (GPR):
+	  Conceito
+	  Organização
+	  Aplicações
+  7.2.2 Registradores de Dados:
+	  Conceito
+	  Organização
+	  Aplicações
+  7.2.3 Registradores de Endereço:
+      	  Conceito
+	  Organização
+	  Aplicações
+  7.2.4 Registradores de Controle:
+	  Conceito
+	  Organização
+	  Aplicações
+  7.2.5 Registradores de Estado:
+	  Conceito
+	  Organização
+	  Aplicações
+  7.2.6 Registradores de Ponto Flutuante:
+	  Conceito
+	  Organização
+	  Aplicações
+  7.2.7 Registradores Vetoriais:
+	  Conceito
+	  Organização
+	  Aplicações
+
+ 7.3 Registradores Especiais:
+  7.3.1 Program Counter (PC):
+	  Conceito
+	  Organização
+	  Atualização
+  7.3.2 Instruction Register (IR):
+	  Conceito
+	  Organização
+	  Utilização
+  7.3.3 Memory Address Register (MAR):
+	  Conceito
+	  Organização
+	  Utilização
+  7.3.4 Memory Data Register (MDR/MBR):
+	  Conceito
+	  Organização
+	  Utilização
+  7.3.5 Stack Pointer (SP):
+	  Conceito
+	  Organização
+	  Utilização
+  7.3.6 Base Pointer (BP):
+	  Conceito
+	  Organização
+	  Utilização
+  7.3.7 Frame Pointer (FP):
+	  Conceito
+	  Organização
+	  Utilização
+  7.3.8 Accumulator (ACC):
+	  Conceito
+	  Organização
+	  Utilização	
+  7.3.9 Program Status Word (PSW):
+	  Conceito
+	  Organização
+	  Utilização
+  7.3.10 Flags Register:
+	  Conceito
+	  Organização
+	  Utilização
+
+ 7.4 Flags da CPU:
+  7.4.1 Flags Aritméticas:
+	  Carry Flag
+	  Overflow Flag
+	  Auxiliary Carry Flag
+  7.4.2 Flags Lógicas:
+	  Zero Flag
+	  Sign Flag
+	  Negative Flag
+	  Parity Flag
+  7.4.3 Flags de Controle:
+	  Interrupt Flag
+	  Direction Flag
+	  Trap Flag
+
+ 7.5 Organização Física do Banco de Registradores:
+  7.5.1 Estrutura Física:
+	  Registradores arquiteturais
+	  Organização interna
+	  Largura dos registradores
+  7.5.2 Portas:
+	  Porta de leitura
+	  Portas múltiplas de leitura
+	  Porta de escrita
+	  Escrita simultânea
+  7.5.3 Temporização:
+	  Tempo de leitura
+	  Tempo de escrita
+	  Sincronização
+
+
+
+8. Organização da Unidade Lógica e Aritmética (ALU):
+
+ 8.1 Fundamentos:
+  8.1.1 Conceitos:
+	  Definição
+	  Objetivos
+	  Organização
+ 	  Papel na CPU
+
+ 8.2 Organização Interna:
+  8.2.1 Entradas:
+	  Operando A
+	  Operando B
+	  Seleção da operação
+
+  8.2.2 Saídas:
+	  Resultado
+	  Flags
+	  Sinais de status
+
+ 8.3 Operações Aritméticas:
+	Soma
+	Subtração
+	Multiplicação
+	Divisão
+	Incremento
+	Decremento
+
+ 8.4 Operações Lógicas:
+	AND
+	OR
+	XOR
+	NOT
+	NAND
+	NOR
+
+ 8.5 Operações de Comparação:
+	Igualdade
+	Diferença
+	Maior que
+	Menor que
+
+ 8.6 Operações de Deslocamento:
+	Shift lógico
+	Shift aritmético
+	Rotação
+	Extensão de sinal
+
+ 8.7 Atualização das Flags:
+	Flags aritméticas
+	Flags lógicas
+	Flags de comparação
+
+
+
+9. Organização da Unidade de Ponto Flutuante (FPU):
+
+ 9.1 Fundamentos:
+  9.1.1 Conceitos:
+	  Definição
+	  Objetivos
+	  Organização
+
+ 9.2 Representação em Ponto Flutuante:
+	IEEE 754
+	Precisão simples
+	Precisão dupla
+	Precisão estendida
+
+ 9.3 Operações:
+	Soma
+	Subtração
+	Multiplicação
+	Divisão
+	Raiz quadrada
+	Conversões
+
+ 9.4 Organização da FPU:
+	Registradores
+	Unidade aritmética
+	Unidade de controle
+
+
+
+10. Organização da Unidade de Controle:
+
+ 10.1 Fundamentos:
+  10.1.1 Conceitos:
+	  Definição
+	  Objetivos
+	  Organização
+
+ 10.2 Controle Cabeado (Hardwired Control):
+	Estrutura
+	Funcionamento
+	Vantagens
+	Limitações
+
+ 10.3 Controle Microprogramado:
+  10.3.1 Organização:
+	  Memória de controle
+	  Microprograma
+	  Sequenciador
+  10.3.2 Microinstruções:
+	  Formato
+	  Campos
+	  Execução
+
+ 10.4 Sequenciamento:
+	Sequenciamento das instruções
+	Sequenciamento das microinstruções
+
+ 10.5 Geração dos Sinais de Controle:
+	Controle da ALU
+	Controle dos registradores
+	Controle da memória
+	Controle do Datapath
+
+
+
+11. Microoperações:
+
+ 11.1 Fundamentos:
+	Conceito
+	Organização
+	Objetivos
+
+ 11.2 Microoperações entre Registradores:
+	Transferência
+	Leitura
+	Escrita
+
+ 11.3 Microoperações Aritméticas:
+	Soma
+	Subtração
+	Incremento
+	Decremento
+
+ 11.4 Microoperações Lógicas:
+	AND
+	OR
+	XOR
+	NOT
+
+ 11.5 Microoperações de Deslocamento:
+	Shift lógico
+	Shift aritmético
+	Rotação
+
+ 11.6 Microoperações de Controle:
+	Sequenciamento
+	Atualização do PC
+	Atualização das flags
+
+
+
+12. Organização do Datapath:
+
+ 12.1 Fundamentos:
+  12.1.1 Conceitos:
+	  Definição
+	  Objetivos
+	  Organização
+
+ 12.2 Componentes do Datapath:
+	Banco de registradores
+	ALU
+	FPU
+	Multiplexadores
+	Barramentos internos
+
+ 12.3 Fluxo de Dados:
+  12.3.1 Entrada dos Dados:
+	  Registradores
+	  Operandos
+  12.3.2 Processamento:
+	  Operações internas
+	  Transferências
+  12.3.3 Saída dos Dados:
+	  Escrita em registradores
+	  Atualização do estado
+
+ 12.4 Controle do Datapath:
+	 Seleção de operandos
+	 Seleção das operações
+	 Escrita dos resultados
+
+
+
+13. Organização do Control Path
+
+ 13.1 Fundamentos:
+  13.1.1 Conceitos:
+	  Definição
+	  Objetivos
+	  Organização
+
+ 13.2 Controle da Execução:
+	Sequenciamento
+	Coordenação
+	Sincronização
+
+ 13.3 Comunicação com o Datapath:
+	Geração dos sinais
+	Controle das operações
+	Coordenação dos componentes
+
+
+
+14. Organização das Unidades Funcionais:
+
+ 14.1 Unidade Inteira:
+	Organização
+	Operações suportadas
+	Integração com a ALU
+
+ 14.2 Unidade de Ponto Flutuante:
+	Organização
+	Operações suportadas
+	Integração com a FPU
+
+ 14.3 Unidade Vetorial:
+	Organização
+	Processamento vetorial
+	Registradores vetoriais
+
+ 14.4 Unidade SIMD:
+	Organização
+	Processamento paralelo
+	Operações SIMD
+
+ 14.5 Unidade Load/Store:
+	Organização
+	Operações de leitura
+	Operações de escrita
+	Comunicação com a memória
+
+ 14.6 Unidade de Branch:
+	Organização
+	Avaliação de desvios
+	Comunicação com a Unidade de Controle
+
+
+
+15. Integração dos Componentes da CPU
+
+ 15.1 Fluxo Geral:
+  15.1.1 Fluxo entre Front-End e Back-End
+  15.1.2 Fluxo entre Datapath e Control Path
+  15.1.3 Fluxo entre ALU e Banco de Registradores
+  15.1.4 Fluxo entre FPU e Banco de Registradores
+
+ 15.2 Coordenação Geral:
+  15.2.1 Coordenação das Unidades Funcionais
+  15.2.2 Coordenação da Unidade de Controle
+  15.2.3 Coordenação do Datapath
+
+
+
+
+16. Organização das Instruções:
+
+ 16.1 Fundamentos:
+  16.1.1 Conceitos:
+	  Conceito de instrução
+	  Papel das instruções na CPU
+	  Linguagem de máquina
+	  Relação entre instruções e hardware
+  16.1.2 Conjunto de Instruções (ISA):
+	  Conceito
+	  Objetivos
+	  Papel da ISA na organização do processador
+	  Organização lógica da ISA
+  16.1.3 Arquiteturas de Conjunto de Instruções:
+	  CISC
+	  RISC
+	  Comparação entre CISC e RISC
+	  Impacto na organização da CPU
+
+ 16.2 Formato das Instruções:
+  16.2.1 Estrutura Geral:
+	  Opcode
+	  Campo de operandos
+	  Campo de endereço
+	  Campos de controle
+  16.2.2 Tamanho das Instruções:
+	  Tamanho fixo
+	  Tamanho variável
+  16.2.3 Número de Operandos:
+	  Instruções de zero operandos
+	  Instruções de um operando
+	  Instruções de dois operandos
+	  Instruções de três operandos
+
+ 16.3 Codificação das Instruções:
+  16.3.1 Organização:
+	  Codificação do Opcode
+	  Codificação dos operandos
+	  Codificação dos registradores
+  16.3.2 Decodificação:
+	  Processo de decodificação
+	  Interpretação dos campos
+	  Geração das operações internas
+
+ 16.4 Classes de Instruções:
+  16.4.1 Transferência de Dados:
+	  Load
+	  Store
+	  Move
+  16.4.2 Operações Aritméticas:
+	  Soma
+	  Subtração
+	  Multiplicação
+	  Divisão
+  16.4.3 Operações Lógicas:
+	  AND
+	  OR
+	  XOR
+	  NOT
+  16.4.4 Comparação:
+	  Compare
+	  Test
+  16.4.5 Desvios:
+	  Branch
+	  Jump
+	  Call
+	  Return
+  16.4.6 Controle:
+	  NOP
+	  HALT
+	  WAIT
+
+
+
+17. Modos de Endereçamento:
+
+ 17.1 Fundamentos:
+	Conceito de endereço
+	Operandos
+	Localização dos dados
+
+ 17.2 Modos de Endereçamento:
+  17.2.1 Endereçamento Imediato:
+	  Organização
+	  Funcionamento
+  17.2.2 Endereçamento por Registrador:
+	  Organização
+	  Funcionamento
+  17.2.3 Endereçamento Direto:
+	  Organização
+	  Funcionamento
+  17.2.4 Endereçamento Indireto:
+	  Organização
+	  Funcionamento
+  17.2.5 Endereçamento Indexado:
+	  Organização
+	  Funcionamento
+  17.2.6 Endereçamento Base + Deslocamento:
+	  Organização
+	  Funcionamento
+  17.2.7 Endereçamento Relativo:
+	  Organização
+	  Funcionamento
+
+
+
+18. Organização do Ciclo de Instrução:
+
+ 18.1 Fundamentos:
+	Definição
+	Objetivos
+	Organização geral
+
+ 18.2 Etapas do Ciclo:
+  18.2.1 Busca da Instrução (Instruction Fetch):
+	  Leitura do Program Counter
+	  Busca da instrução
+	  Atualização do Program Counter
+  18.2.2 Decodificação (Instruction Decode):
+	  Decodificação do Opcode
+	  Identificação dos operandos
+	  Geração dos sinais de controle
+  18.2.3 Busca dos Operandos:
+	  Leitura dos registradores
+	  Acesso à memória
+	  Preparação dos operandos
+  18.2.4 Execução:
+	  Operações na ALU
+	  Operações na FPU
+	  Operações de controle
+  18.2.5 Acesso à Memória:
+	  Operações de leitura
+	  Operações de escrita
+  18.2.6 Escrita dos Resultados (Write Back):
+	  Escrita nos registradores
+	  Atualização das flags
+	  Atualização do estado da CPU
+
+
+
+19. Organização do Fluxo de Controle:
+
+ 19.1 Sequenciamento das Instruções:
+  19.1.1 Execução Sequencial:
+	  Fluxo linear
+	  Atualização do Program Counter
+  19.1.2 Alteração do Fluxo:
+	  Saltos
+	  Chamadas
+	  Retornos
+
+ 19.2 Desvios:
+  19.2.1 Branch:
+	  Branch incondicional
+	  Branch condicional
+  19.2.2 Jump:
+	  Jump absoluto
+	  Jump relativo
+  19.2.3 Sub-rotinas:
+	  Call
+	  Return
+
+ 19.3 Interrupções (Introdução):
+  19.3.1 Conceitos:
+	  Definição
+	  Objetivos
+	  Importância
+  19.3.2 Organização:
+	  Interrupções de hardware
+	  Interrupções de software
+	  Exceções
+  19.3.3 Tratamento:
+	  Salvamento do contexto
+	  Rotina de serviço
+	  Retorno da interrupção
+
+
+
+20. Organização da Execução das Instruções:
+
+ 20.1 Modelo de Execução Sequencial:
+	Organização
+	Uma instrução por vez
+	Dependência entre etapas
+	Ordem de execução
+
+ 20.2 Fluxo dos Dados:
+	Comunicação entre Componentes
+	Registradores
+	ALU
+	FPU
+	Unidade de Controle
+	Datapath
+
+ 20.3 Fluxo dos Sinais de Controle:
+	Coordenação
+	Controle do Datapath
+	Controle dos registradores
+	Controle das unidades funcionais
+
+ 20.4 Sincronização da Execução:
+	Clock
+	Ciclos de clock
+	Sincronização das etapas
+	Coordenação da execução
+
+
+
+21. Desempenho da Execução:
+
+ 21.1 Conceitos Fundamentais:
+  21.1.1 Tempo de Execução:
+	  Tempo de CPU
+	  Tempo de instrução
+	  Tempo de ciclo
+  21.1.2 CPI (Cycles Per Instruction):
+	  Conceito
+	  Interpretação
+  21.1.3 IPC (Instructions Per Cycle):
+	  Conceito
+	  Interpretação
+  21.1.4 Throughput:
+	  Conceito
+	  Medição
+  21.1.5 Latência:
+	  Conceito
+	  Medição
+
+ 21.2 Fatores que Influenciam o Desempenho:
+	Frequência
+	Número de ciclos
+	Complexidade das instruções
+	Organização interna da CPU
+
+
+
+22. Organização do Pipeline:
+
+ 22.1 Fundamentos:
+  22.1.1 Conceito de Pipeline:
+	  Definição
+	  Objetivos
+	  Evolução histórica
+	  Importância na organização da CPU
+  22.1.2 Organização do Pipeline:
+	  Execução sobreposta
+	  Estágios do pipeline
+	  Fluxo das instruções
+	  Sincronização entre estágios
+  22.1.3 Benefícios e Limitações:
+	  Aumento do throughput
+	  Latência
+	  Speedup
+	  Gargalos
+
+ 22.2 Pipeline Clássico:
+  22.2.1 Estágio IF (Instruction Fetch):
+	  Organização
+	  Busca da instrução
+	  Atualização do Program Counter
+  22.2.2 Estágio ID (Instruction Decode):
+	  Organização
+	  Decodificação
+	  Identificação dos operandos
+  22.2.3 Estágio EX (Execute):
+	  Organização
+	  Operações da ALU
+	  Operações da FPU
+  22.2.4 Estágio MEM (Memory Access):
+	  Organização
+	  Operações de leitura
+	  Operações de escrita
+  22.2.5 Estágio WB (Write Back):
+	  Organização
+	  Escrita dos resultados
+	  Atualização dos registradores
+
+ 22.3 Buffer de Pré-Busca (Prefetch Buffer):
+	Conceito
+	Organização
+	Funcionamento
+	Busca antecipada
+	Benefícios
+	Limitações
+
+ 22.4 Tipos de Pipeline:
+  22.4.1 Pipeline Escalar:
+	  Organização
+	  Características
+  22.4.2 Superpipeline:
+	  Organização
+	  Características
+	  Vantagens
+  22.4.3 Pipeline Superescalar:
+	  Organização
+	  Características
+	  Comparação com Pipeline Escalar
+	  Comparação com Superpipeline
+
+
+
+23. Hazards do Pipeline:
+
+ 23.1 Fundamentos:
+ 	Conceitos
+	Definição
+	Causas
+	Impacto no desempenho
+
+ 23.2 Hazard Estrutural:
+	Conceito
+	Causas
+	Soluções
+
+ 23.3 Hazard de Dados:
+  23.3.1 Dependências entre Instruções:
+	  RAW (Read After Write)
+	  WAR (Write After Read)
+	  WAW (Write After Write)
+	  RAR (Read After Read)
+
+ 23.4 Hazard de Controle:
+ 	Conceito
+	Branches
+	Saltos
+
+ 23.5 Técnicas de Minimização:
+  23.5.1 Stall:
+	  Conceito
+	  Funcionamento
+  23.5.2 Bubble:
+	  Conceito
+	  Funcionamento
+  23.5.3 Pipeline Flush:
+	  Conceito
+	  Funcionamento
+  23.5.4 Forwarding (Bypassing):
+	  Conceito
+	  Organização
+	  Funcionamento
+  23.5.5 Pipeline Interlock:
+	  Conceito
+	  Organização
+	  Funcionamento
+
+
+
+24. Predição de Desvios:
+
+ 24.1 Fundamentos:
+	Conceitos
+	Definição
+	Objetivos
+	Importância
+
+ 24.2 Predição Estática:
+	Always Taken
+	Always Not Taken
+	Backward Taken
+	Forward Not Taken
+
+ 24.3 Predição Dinâmica:
+  24.3.1 Branch History Table (BHT):
+	  Organização
+	  Funcionamento
+  24.3.2 Pattern History Table (PHT):
+	  Organização
+	  Funcionamento
+  24.3.3 Branch Target Buffer (BTB):
+	  Organização
+	  Funcionamento
+  24.3.4 Return Address Stack (RAS):
+	  Organização
+	  Funcionamento
+
+ 24.4 Preditores Modernos:
+  24.4.1 Preditor Local:
+	  Organização
+	  Funcionamento
+  24.4.2 Preditor Global:
+	  Organização
+	  Funcionamento
+  24.4.3 Two-Level Adaptive Predictor:
+	  Organização
+	  Funcionamento
+  24.4.4 Tournament Predictor:
+	  Organização
+	  Funcionamento
+  24.4.5 Hybrid Predictor:
+	  Organização
+	  Funcionamento
+  24.4.6 TAGE (Introdução):
+	  Conceito
+	  Organização
+	  Aplicações
+
+ 24.5 Execução Especulativa:
+  24.5.1 Conceitos:
+	  Definição
+	  Objetivos
+  24.5.2 Organização:
+	  Busca especulativa
+	  Execução especulativa
+	  Recuperação após erro de predição
+
+
+25. Paralelismo em Nível de Instrução (ILP):
+
+ 25.1 Fundamentos:
+	Conceitos
+	Definição
+	Objetivos
+	Limitações
+
+ 25.2 Técnicas de Emissão:
+  25.2.1 Single-Issue:
+	  Organização
+	  Características
+  25.2.2 Dual-Issue:
+	  Organização
+	  Características
+  25.2.3 Multiple-Issue:
+	  Organização
+	  Características
+
+ 25.3 Organização Superescalar:
+  25.3.1 Conceitos:
+	  Definição
+	  Objetivos
+  25.3.2 Organização Interna:
+	  Múltiplas unidades funcionais
+	  Busca múltipla
+	  Decodificação múltipla
+	  Emissão múltipla
+	  Execução paralela
+	  Write Back múltiplo
+	  Commit
+
+ 25.4 Largura da CPU:
+  25.4.1 Front-End Width:
+	  Fetch Width
+	  Decode Width
+  25.4.2 Back-End Width:
+	  Dispatch Width
+	  Issue Width
+	  Execute Width
+	  Retire Width
+
+
+
+26. Escalonamento Dinâmico:
+
+ 26.1 Fundamentos:
+	Conceitos
+	Escalonamento estático
+	Escalonamento dinâmico
+
+ 26.2 Scheduler:
+  26.2.1 Organização:
+	  Scheduler Centralizado
+	  Scheduler Distribuído
+  26.2.2 Funcionamento:
+	  Seleção das instruções
+	  Emissão das instruções
+
+ 26.3 Janela de Instruções (Instruction Window):
+	Conceito
+	Organização
+	Funcionamento
+
+
+
+27. Execução Fora de Ordem:
+
+ 27.1 Fundamentos:
+	Conceitos
+	Out-of-Order Execution
+	Objetivos
+	Benefícios
+
+ 27.2 Renomeação de Registradores:
+  27.2.1 Register Renaming:
+	  Conceito
+	  Objetivos
+  27.2.2 Rename Table:
+	  Organização
+	  Funcionamento
+
+  27.2.3 Physical Register File:
+	  Conceito
+	  Organização
+	  Funcionamento
+
+ 27.3 Reservation Stations:
+	Conceito
+	Estrutura
+	Funcionamento
+
+ 27.4 Reorder Buffer (ROB):
+  27.4.1 Organização:
+	  Conceito
+	  Estrutura
+	  Funcionamento
+  27.4.2 Commit em Ordem:
+	  Organização
+	  Funcionamento
+
+ 27.5 Common Data Bus (CDB):
+	Conceito
+	Funcionamento
+	Distribuição dos resultados
+
+
+
+28. Algoritmos Clássicos:
+
+ 28.1 Scoreboarding:
+  28.1.1 Conceitos:
+	  Definição
+	  Objetivos
+  28.1.2 Organização:
+	  Controle das dependências
+	  Controle dos recursos
+
+ 28.2 Algoritmo de Tomasulo:
+  28.2.1 Conceitos:
+	  Definição
+	  Objetivos
+  28.2.2 Componentes:
+	  Reservation Stations
+	  Register Renaming
+	  Common Data Bus
+  28.2.3 Funcionamento:
+	  Emissão
+	  Execução
+	  Write Back
+  28.2.4 Comparação:
+	  Tomasulo × Scoreboarding
+
+
+
+29. Organização das Unidades Funcionais:
+
+ 29.1 Unidade Inteira:
+ 	Organização
+	Paralelismo
+
+ 29.2 Unidade de Ponto Flutuante:
+	Organização
+	Paralelismo
+
+ 29.3 Unidade Vetorial:
+	Organização
+	Execução vetorial
+
+ 29.4 Unidade SIMD:
+	Organização
+	Processamento paralelo
+
+ 29.5 Unidade Load/Store:
+  29.5.1 Organização:
+	  Load Queue
+	  Store Queue
+	  Store Buffer
+  29.5.2 Memory Ordering (Introdução):
+	  Conceito
+	  Organização
+ 29.6 Unidade de Branch:
+	  Organização
+	  Comunicação com os preditores
+
+
+
+31. Organização dos Processadores Multicore:
+
+ 31.1 Fundamentos:
+  31.1.1 Evolução dos Processadores:
+	  Limitações do aumento da frequência
+	  A busca pelo paralelismo
+	  Surgimento dos processadores multicore
+	  Evolução das arquiteturas multicore
+  31.1.2 Conceitos:
+	  Processador Single-Core
+	  Processador Multi-Core
+	  Núcleo (Core)
+	  Thread
+	  Paralelismo em nível de núcleo
+
+ 31.2 Organização dos Núcleos:
+  31.2.1 Estrutura Geral:
+	  Organização dos núcleos
+	  Componentes compartilhados
+	  Componentes dedicados
+  31.2.2 Comunicação entre Núcleos:
+	  Compartilhamento de recursos
+	  Comunicação de dados
+	  Sincronização
+
+ 31.3 Classificação dos Processadores:
+  31.3.1 Número de Núcleos:
+	  Dual-Core
+	  Quad-Core
+	  Hexa-Core
+	  Octa-Core
+	  Many-Core
+  31.3.2 Organização dos Núcleos:
+	  Núcleos homogêneos
+	  Núcleos heterogêneos
+	  Arquiteturas híbridas
+
+
+
+32. Paralelismo em Nível de Processador:
+
+ 32.1 Taxonomia de Flynn:
+  32.1.1 Fundamentos:
+	  Conceito
+	  Objetivos
+	  Classificação das arquiteturas
+  32.1.2 SISD:
+	  Organização
+	  Características
+	  Aplicações
+  32.1.3 SIMD:
+	  Organização
+	  Características
+	  Aplicações
+  32.1.4 MISD:
+	  Organização
+	  Características
+	  Aplicações
+  32.1.5 MIMD:
+	  Organização
+	  Características
+	  Aplicações
+
+ 32.2 Simultaneous Multithreading (SMT):
+  32.2.1 Fundamentos:
+	  Conceito
+	  Objetivos
+	  Evolução
+  32.2.2 Organização:
+	  Compartilhamento de recursos
+	  Compartilhamento das unidades funcionais
+	  Compartilhamento do Front-End
+	  Compartilhamento do Back-End
+  32.2.3 Funcionamento:
+	  Execução simultânea de threads
+ 	  Escalonamento
+	  Benefícios
+	  Limitações
+
+ 32.3 Hyper-Threading:
+	Conceitos
+	Organização
+	Funcionamento
+	Relação com SMT
+
+
+
+33. Organização da Comunicação entre Núcleos:
+
+ 33.1 Fundamentos:
+	Conceitos
+	Comunicação interna
+	Compartilhamento de informações
+	Escalabilidade
+
+ 33.2 Barramento Compartilhado:
+	Estrutura
+	Funcionamento
+	Limitações
+
+ 33.3 Ring Bus:
+	Estrutura
+	Funcionamento
+	Aplicações
+
+ 33.4 Crossbar:
+	Estrutura
+	Funcionamento
+	Escalabilidade
+
+ 33.5 Mesh Network:
+	Estrutura
+	Comunicação bidimensional
+	Escalabilidade
+
+ 33.6 Network-on-Chip (NoC):
+	Conceito
+	Estrutura
+	Roteamento
+	Comunicação
+
+
+
+34. Organização da Coerência de Cache:
+
+ 34.1 Fundamentos:
+	Conceitos
+	Compartilhamento de memória
+	Coerência de cache
+	Consistência de memória (Introdução)
+
+ 34.2 Protocolos de Coerência:
+  34.2.1 MESI:
+	  Estados
+	  Funcionamento
+	  Atualização das linhas
+  34.2.2 MOESI:
+	  Estados
+	  Funcionamento
+	  Comparação com MESI
+
+ 34.3 Organização da Comunicação de Coerência:
+	Troca de mensagens
+	Invalidação
+	Atualização
+	Snooping (Introdução)
+	Diretórios (Introdução)
+
+
+
+35. Organização dos Sistemas Multiprocessados
+
+ 35.1 Multiprocessadores:
+	Conceitos
+	Multiprocessadores
+	Multicore
+	Many-Core
+
+ 35.2 Organização da Memória:
+  35.2.1 UMA:
+	  Organização
+	  Características
+  35.2.2 NUMA:
+	  Organização
+	  Características
+	  Comunicação
+
+
+
+36. Organização Física dos Processadores:
+
+ 36.1 Fundamentos:
+	Projeto Físico
+	Organização física
+	Distribuição dos componentes
+	Planejamento físico
+
+ 36.2 Floorplan:
+	Distribuição dos blocos
+	Posicionamento das unidades funcionais
+	Organização interna
+
+ 36.3 Sistema de Clock:
+  36.3.1 Clock Tree:
+	  Organização
+	  Distribuição
+  36.3.2 Clock Distribution:
+	  Organização
+	  Sincronização
+  36.3.3 Clock Domains:
+	  Organização
+	  Comunicação entre domínios
+  36.3.4 Clock Domain Crossing (CDC):
+	  Conceito
+	  Organização
+	  Sincronização
+  36.3.5 Clock Skew:
+	  Conceito
+	  Impacto
+  36.3.6 Clock Jitter:
+	  Conceito
+	  Impacto
+  36.3.7 PLL (Phase-Locked Loop):
+	  Organização
+	  Funcionamento
+
+
+
+37. Organização Energética:
+
+ 37.1 Gerenciamento de Energia:
+	Fundamentos
+	Consumo de energia
+	Eficiência energética
+
+ 37.2 Técnicas de Economia de Energia:
+  37.2.1 Clock Gating:
+	  Organização
+	  Funcionamento
+  37.2.2 Power Gating:
+	  Organização
+	  Funcionamento
+  37.2.3 DVFS:
+	  Dynamic Voltage and Frequency Scaling
+	  Organização
+	  Funcionamento
+  37.2.4 Turbo Boost:
+	  Organização
+	  Funcionamento
+
+
+
+38. Arquiteturas Modernas de Processadores:
+
+ 38.1 Chiplets:
+  38.1.1 Fundamentos:
+	  Conceito
+	  Objetivos
+	  Evolução
+  38.1.2 Organização:
+	  Separação em chiplets
+	  Comunicação
+	  Escalabilidade
+
+ 38.2 Interconexões entre Chiplets:
+	Organização
+	Infinity Fabric (Introdução)
+	UCIe (Introdução)
+	Interconexões proprietárias
+
+ 38.3 Empilhamento 3D:
+	Organização
+	TSV (Through-Silicon Via)
+	3D Stacking
+	Benefícios
+	Limitações
+
+ 38.4 System-on-Chip (SoC):
+	Organização
+	Conceito
+	Componentes integrados
+	Comunicação interna
+
+
+
+39. Aceleradores Especializados:
+
+ 39.1 Fundamentos:
+	Evolução
+	Crescimento da computação especializada
+	Integração ao processador
+
+ 39.2 Neural Processing Unit (NPU):
+	Organização
+	Estrutura
+	Funcionamento
+	Aplicações
+
+ 39.3 Tensor Processing Unit (TPU):
+	Organização
+	Estrutura
+	Funcionamento
+	Aplicações
+
+ 39.4 Data Processing Unit (DPU):
+	Estrutura
+	Funcionamento
+	Aplicações
+
+ 39.5 Graphics Processing Unit (GPU):
+	Organização interna
+	Comunicação com a CPU
+	Cooperação CPU-GPU
+
+ 39.6 Outros Aceleradores:
+	IPU
+	VPU
+	DSP
+	AI Engine
+
+
+
+40. Tendências da Organização dos Processadores:
+
+ 40.1 Processadores Heterogêneos:
+	Big.LITTLE
+	P-Cores
+	E-Cores
+	Arquiteturas híbridas
+
+ 40.2 Integração de Componentes:
+	CPU + GPU
+	CPU + NPU
+	CPU + FPGA
+
+ 40.3 Escalabilidade:
+	Muitos núcleos
+	Interconexões avançadas
+	Computação distribuída em chip
+
+ 40.4 Futuras Direções:
+	Computação orientada por IA
+	Arquiteturas reconfiguráveis
+	Novos modelos de organização
+
+
+
+41. Aplicações dos Processadores:
+
+ 41.1 Computadores Pessoais:
+	Desktop
+	Notebook
+	Workstation
+
+ 41.2 Servidores:
+	Data Centers
+	Computação em Nuvem
+	HPC
+
+ 41.3 Dispositivos Móveis:
+	Smartphones
+	Tablets
+	Wearables
+
+ 41.4 Sistemas Embarcados:
+	IoT
+	Automação
+	Indústria
+
+ 41.5 Inteligência Artificial:
+	Inferência
+	Treinamento
+	Computação acelerada
+
+
+42. Revisão Geral da Organização dos Processadores
+
+ 42.1 Fundamentos:
+	Organização da CPU
+	Componentes internos
+	Organização da execução
+
+ 42.2 Técnicas de Alto Desempenho:
+	Pipeline
+	Superpipeline
+	Organização Superescalar
+	ILP
+	SMT
+	Out-of-Order Execution
+
+ 42.3 Organização dos Processadores Modernos:
+	Multicore
+	Comunicação entre núcleos
+	Coerência
+	Organização física
+	Aceleradores especializados
+
+
+
+43. Conclusão:
+
+ 43.1 Síntese da Organização dos Processadores:
+	Evolução da organização dos processadores
+	Integração entre os componentes da CPU
+	Evolução das técnicas de paralelismo
+	Evolução das microarquiteturas
+	Organização dos processadores modernos
+
+ 43.2 Relação com Outras Áreas:
+	Arquitetura de Computadores
+	Organização de Computadores
+	Sistemas Operacionais
+	Compiladores
+	Sistemas Paralelos
+	Computação de Alto Desempenho
+	Sistemas Embarcados
+	Inteligência Artificial
