@@ -923,19 +923,378 @@ Introdução:
 
 
 
-22. Resumo da Organização da Execução:
+22. Organização do Pipeline:
 
- 22.1 Fluxo Completo:
-  22.1.1 Busca
-  22.1.2 Decodificação
-  22.1.3 Busca dos operandos
-  22.1.4 Execução
-  22.1.5 Acesso à memória
-  22.1.6 Escrita dos resultados
+ 22.1 Fundamentos:
+  22.1.1 Conceito de Pipeline:
+	  Definição
+	  Objetivos
+	  Evolução histórica
+	  Importância na organização da CPU
+  22.1.2 Organização do Pipeline:
+	  Execução sobreposta
+	  Estágios do pipeline
+	  Fluxo das instruções
+	  Sincronização entre estágios
+  22.1.3 Benefícios e Limitações:
+	  Aumento do throughput
+	  Latência
+	  Speedup
+	  Gargalos
 
- 22.2 Integração dos Componentes:
-  22.2.1 Unidade de Controle
-  22.2.2 Datapath
-  22.2.3 Banco de Registradores
-  22.2.4 ALU
-  22.2.5 FPU
+ 22.2 Pipeline Clássico:
+  22.2.1 Estágio IF (Instruction Fetch):
+	  Organização
+	  Busca da instrução
+	  Atualização do Program Counter
+  22.2.2 Estágio ID (Instruction Decode):
+	  Organização
+	  Decodificação
+	  Identificação dos operandos
+  22.2.3 Estágio EX (Execute):
+	  Organização
+	  Operações da ALU
+	  Operações da FPU
+  22.2.4 Estágio MEM (Memory Access):
+	  Organização
+	  Operações de leitura
+	  Operações de escrita
+  22.2.5 Estágio WB (Write Back):
+	  Organização
+	  Escrita dos resultados
+	  Atualização dos registradores
+
+ 22.3 Buffer de Pré-Busca (Prefetch Buffer):
+	Conceito
+	Organização
+	Funcionamento
+	Busca antecipada
+	Benefícios
+	Limitações
+
+ 22.4 Tipos de Pipeline:
+  22.4.1 Pipeline Escalar:
+	  Organização
+	  Características
+  22.4.2 Superpipeline:
+	  Organização
+	  Características
+	  Vantagens
+  22.4.3 Pipeline Superescalar:
+	  Organização
+	  Características
+	  Comparação com Pipeline Escalar
+	  Comparação com Superpipeline
+
+
+
+23. Hazards do Pipeline:
+
+ 23.1 Fundamentos:
+ 	Conceitos
+	Definição
+	Causas
+	Impacto no desempenho
+
+ 23.2 Hazard Estrutural:
+	Conceito
+	Causas
+	Soluções
+
+ 23.3 Hazard de Dados:
+  23.3.1 Dependências entre Instruções:
+	  RAW (Read After Write)
+	  WAR (Write After Read)
+	  WAW (Write After Write)
+	  RAR (Read After Read)
+
+ 23.4 Hazard de Controle:
+ 	Conceito
+	Branches
+	Saltos
+
+ 23.5 Técnicas de Minimização:
+  23.5.1 Stall:
+	  Conceito
+	  Funcionamento
+  23.5.2 Bubble:
+	  Conceito
+	  Funcionamento
+  23.5.3 Pipeline Flush:
+	  Conceito
+	  Funcionamento
+  23.5.4 Forwarding (Bypassing):
+	  Conceito
+	  Organização
+	  Funcionamento
+  23.5.5 Pipeline Interlock:
+	  Conceito
+	  Organização
+	  Funcionamento
+
+
+
+24. Predição de Desvios:
+
+ 24.1 Fundamentos:
+	Conceitos
+	Definição
+	Objetivos
+	Importância
+
+ 24.2 Predição Estática:
+	Always Taken
+	Always Not Taken
+	Backward Taken
+	Forward Not Taken
+
+ 24.3 Predição Dinâmica:
+  24.3.1 Branch History Table (BHT):
+	  Organização
+	  Funcionamento
+  24.3.2 Pattern History Table (PHT):
+	  Organização
+	  Funcionamento
+  24.3.3 Branch Target Buffer (BTB):
+	  Organização
+	  Funcionamento
+  24.3.4 Return Address Stack (RAS):
+	  Organização
+	  Funcionamento
+
+ 24.4 Preditores Modernos:
+  24.4.1 Preditor Local:
+	  Organização
+	  Funcionamento
+  24.4.2 Preditor Global:
+	  Organização
+	  Funcionamento
+  24.4.3 Two-Level Adaptive Predictor:
+	  Organização
+	  Funcionamento
+  24.4.4 Tournament Predictor:
+	  Organização
+	  Funcionamento
+  24.4.5 Hybrid Predictor:
+	  Organização
+	  Funcionamento
+  24.4.6 TAGE (Introdução):
+	  Conceito
+	  Organização
+	  Aplicações
+
+ 24.5 Execução Especulativa:
+  24.5.1 Conceitos:
+	  Definição
+	  Objetivos
+  24.5.2 Organização:
+	  Busca especulativa
+	  Execução especulativa
+	  Recuperação após erro de predição
+
+
+25. Paralelismo em Nível de Instrução (ILP):
+
+ 25.1 Fundamentos:
+	Conceitos
+	Definição
+	Objetivos
+	Limitações
+
+ 25.2 Técnicas de Emissão:
+  25.2.1 Single-Issue:
+      Organização
+      Características
+
+  25.2.2 Dual-Issue:
+      Organização
+      Características
+
+  25.2.3 Multiple-Issue:
+      Organização
+      Características
+
+ 25.3 Organização Superescalar:
+  25.3.1 Conceitos:
+      Definição
+      Objetivos
+
+  25.3.2 Organização Interna:
+      Múltiplas unidades funcionais
+      Busca múltipla
+      Decodificação múltipla
+      Emissão múltipla
+      Execução paralela
+      Write Back múltiplo
+      Commit
+
+ 25.4 Largura da CPU:
+  25.4.1 Front-End Width:
+      Fetch Width
+      Decode Width
+
+  25.4.2 Back-End Width:
+      Dispatch Width
+      Issue Width
+      Execute Width
+      Retire Width
+
+
+26. Escalonamento Dinâmico:
+
+ 26.1 Fundamentos:
+  26.1.1 Conceitos:
+      Escalonamento estático
+      Escalonamento dinâmico
+
+ 26.2 Scheduler:
+  26.2.1 Organização:
+      Scheduler Centralizado
+      Scheduler Distribuído
+
+  26.2.2 Funcionamento:
+      Seleção das instruções
+      Emissão das instruções
+
+ 26.3 Janela de Instruções:
+  26.3.1 Instruction Window:
+      Conceito
+      Organização
+      Funcionamento
+
+
+27. Execução Fora de Ordem:
+
+ 27.1 Fundamentos:
+  27.1.1 Conceitos:
+      Out-of-Order Execution
+      Objetivos
+      Benefícios
+
+ 27.2 Renomeação de Registradores:
+  27.2.1 Register Renaming:
+      Conceito
+      Objetivos
+
+  27.2.2 Rename Table:
+      Organização
+      Funcionamento
+
+  27.2.3 Physical Register File:
+      Conceito
+      Organização
+      Funcionamento
+
+ 27.3 Reservation Stations:
+  27.3.1 Organização:
+      Conceito
+      Estrutura
+      Funcionamento
+
+ 27.4 Reorder Buffer (ROB):
+  27.4.1 Organização:
+      Conceito
+      Estrutura
+      Funcionamento
+
+  27.4.2 Commit em Ordem:
+      Organização
+      Funcionamento
+
+ 27.5 Common Data Bus (CDB):
+  27.5.1 Organização:
+      Conceito
+      Funcionamento
+      Distribuição dos resultados
+
+
+28. Algoritmos Clássicos:
+
+ 28.1 Scoreboarding:
+  28.1.1 Conceitos:
+      Definição
+      Objetivos
+
+  28.1.2 Organização:
+      Controle das dependências
+      Controle dos recursos
+
+ 28.2 Algoritmo de Tomasulo:
+  28.2.1 Conceitos:
+      Definição
+      Objetivos
+
+  28.2.2 Componentes:
+      Reservation Stations
+      Register Renaming
+      Common Data Bus
+
+  28.2.3 Funcionamento:
+      Emissão
+      Execução
+      Write Back
+
+  28.2.4 Comparação:
+      Tomasulo × Scoreboarding
+
+
+29. Organização das Unidades Funcionais:
+
+ 29.1 Unidade Inteira:
+      Organização
+      Paralelismo
+
+ 29.2 Unidade de Ponto Flutuante:
+      Organização
+      Paralelismo
+
+ 29.3 Unidade Vetorial:
+      Organização
+      Execução vetorial
+
+ 29.4 Unidade SIMD:
+      Organização
+      Processamento paralelo
+
+ 29.5 Unidade Load/Store:
+  29.5.1 Organização:
+      Load Queue
+      Store Queue
+      Store Buffer
+
+  29.5.2 Memory Ordering (Introdução):
+      Conceito
+      Organização
+
+ 29.6 Unidade de Branch:
+      Organização
+      Comunicação com os preditores
+
+
+30. Avaliação do Desempenho:
+
+ 30.1 Métricas:
+      CPI
+      IPC
+      Throughput
+      Latência
+      Speedup
+
+ 30.2 Fatores de Desempenho:
+      Profundidade do pipeline
+      Número de unidades funcionais
+      Largura da emissão
+      Eficiência da predição de desvios
+      Eficiência do escalonamento
+
+
+
+
+
+
+Reestruture essa lista seguindo a lista acima, seguindo as marcações dos tópicos a partir da marcação do último tópico da lista acima. Faça a lista no formato .txt
+
+
+
+
+
