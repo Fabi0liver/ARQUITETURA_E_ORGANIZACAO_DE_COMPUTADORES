@@ -181,62 +181,111 @@
 
  5.1 Fundamentos:
   5.1.1 Conceitos:
-	  Objetivos
-	  Organização hierárquica
-	  Localidade temporal (Introdução)
-	  Localidade espacial (Introdução)
+	  Objetivos da Hierarquia de Memória
+	  Organização Hierárquica
+	  Princípio da Localidade
+	  Localidade Temporal
+	  Localidade Espacial
+	  Compromisso entre Custo, Capacidade e Desempenho
   5.1.2 Níveis da Hierarquia:
 	  Registradores
-	  Cache
-	  Memória Principal
+	  Memória Cache
+	  Memória Principal (RAM)
 	  Memória Secundária
 	  Armazenamento Externo
-  5.1.3 Avaliação Geral:
+	  Memória Virtual
+  5.1.3 Características dos Níveis:
+	  Capacidade
+	  Velocidade de Acesso
 	  Latência
-	  Throughput
-	  Gargalo de memória
-	  AMAT
+	  Largura de Banda (Throughput)
+	  Custo por Bit
+	  Volatilidade
+  5.1.4 Fluxo de Dados na Hierarquia:
+	  Transferência entre Níveis
+	  Blocos de Memória
+	  Princípio da Proximidade ao Processador
+
+ 5.2 Avaliação de Desempenho:
+  5.2.1 Métricas:
+	  Latência
+	  Throughput (Largura de Banda)
+	  Tempo de Acesso
+	  Tempo de Ciclo da Memória
+  5.2.2 Eficiência da Hierarquia:
+	  Gargalo de Memória
+	  Taxa de Acertos (Hit Rate)
+	  Taxa de Falhas (Miss Rate)
+	  Penalidade de Falha (Miss Penalty)
+	  Tempo Médio de Acesso à Memória (AMAT)
 
 
 
 6. Hierarquia de Memória:
 
- 6.1 Fundamentos da Hierarquia:
+ 6.1 Fundamentos:
   6.1.1 Conceitos Gerais:
-	  Conceito de hierarquia de memória
+	  Conceito de Hierarquia de Memória
 	  Objetivos
-	  Princípio da localidade
-	  Balanceamento entre custo, capacidade e desempenho
+	  Organização Hierárquica
+	  Balanceamento entre Custo, Capacidade e Desempenho
+	  Memory Wall
   6.1.2 Princípios de Localidade:
-	  Localidade temporal
-	  Localidade espacial
-	  Localidade sequencial
+	  Localidade Temporal
+	  Localidade Espacial
+	  Localidade Sequencial
 	  Working Set
 	  Regra 90/10
-  6.1.3 Avaliação:
+	  Padrões de Acesso à Memória
+   6.1.3 Avaliação:
 	  Latência
 	  Throughput
+	  Tempo de Acesso
+	  Tempo de Ciclo
 	  AMAT
-	  Memory Wall
-	  CPI relacionado à memória
+	  CPI relacionado à Memória
+	  Gargalo de Memória
+	  Eficiência da Hierarquia
 
  6.2 Níveis da Hierarquia:
   6.2.1 Registradores:
 	  Papel
+	  Organização Geral
+	  Tipos de Registradores
 	  Velocidade
-	  Organização geral
+	  Relação com a CPU
   6.2.2 Memória Cache:
 	  Papel
 	  Organização
-	  Relação com CPU
+	  Níveis (L1, L2 e L3)
+	  Linhas de Cache
+	  Blocos de Cache
+	  Relação com a CPU
   6.2.3 Memória Principal:
 	  Papel
 	  Organização
-	  Relação com cache
+	  RAM Estática (SRAM)
+	  RAM Dinâmica (DRAM)
+	  Relação com a Cache
   6.2.4 Memória Secundária:
+	  Papel
 	  HDD
 	  SSD
 	  Persistência
+	  Desempenho Comparativo
+  6.2.5 Armazenamento Externo:
+	  Pen Drive
+	  Cartão de Memória
+	  Disco Óptico
+	  HD Externo
+	  SSD Externo
+	  Armazenamento em Nuvem
+  6.2.6 Memória Virtual:
+	  Conceito
+	  Paginação
+	  Memória Física × Memória Virtual
+	  Swap
+	  Falta de Página (Page Fault)
 
 
 
@@ -316,59 +365,102 @@
 
 9. Otimizações da Cache:
 
-9.1 Técnicas
+ 9.1 Técnicas de Otimização:
+  9.1.1 Soluções em Hardware:
+	  Prefetch
+	  Hardware Prefetcher
+	  Stream Buffer
+	  Victim Cache
+	  Write Buffer
+	  Non-Blocking Cache
+	  Cache Way Prediction
+	  Trace Cache
+	  Cache Compression
+	  Sectored Cache
+  9.1.2 Soluções em Software:
+	  Cache Blocking
+	  Loop Tiling
+	  Loop Interchange
+	  Loop Fusion
+	  Loop Unrolling
+	  Data Alignment
+	  Data Padding
+	  Page Coloring
+	  Software Prefetching
+	  Data Layout Optimization
 
-9.1.1 Hardware
+ 9.2 Problemas de Cache:
+  9.2.1 Problemas de Desempenho:
+	  Cache Thrashing
+	  False Sharing
+	  Aliasing
+	  Cache Pollution
+	  Conflict Misses
+	  Capacity Misses
+	  Compulsory Misses
+	  Coherence Overhead
+	  Cache Line Contention
+	  TLB Misses
+  9.2.2 Problemas de Consistência:
+	  Cache Coherence
+	  Memory Consistency
+	  Write Contention
+	  Race Conditions
 
--   Prefetch
--   Hardware Prefetcher
--   Stream Buffer
--   Victim Cache
--   Write Buffer
--   Non-Blocking Cache
 
-9.1.2 Software
 
--   Cache Blocking
--   Loop Tiling
--   Data Alignment
--   Page Coloring
+10. Coerência e Consistência de Cache e Memória:
 
-9.2 Problemas
+ 10.1 Coerência de Cache:
+  10.1.1 Conceitos:
+ 	  Compartilhamento de Dados:
+	  Invalidação
+	  Atualização (Write Update)
+	  Estados da Cache
+	  Falso Compartilhamento (False Sharing)
+	  Granularidade da Coerência (Cache Line)
+  10.1.2 Protocolos de Coerência:
+	  MSI
+ 	  MESI
+	  MOSI
+	  MOESI
+	  MESIF
+	  Dragon Protocol
+	  Directory-Based
+	  Snooping
+  10.1.3 Implementação da Coerência:
+	  Barramento Compartilhado
+	  Diretórios Centralizados
+	  Diretórios Distribuídos
+	  Escalabilidade dos Protocolos
 
-9.2.1 Desempenho
+ 10.2 Consistência de Memória
+  10.2.1 Modelos de Consistência:
+	  Sequential Consistency
+	  Processor Consistency
+	  Weak Consistency
+	  Release Consistency
+	  Relaxed Consistency
+ 	  Memory Ordering (Introdução)
+  	  Total Store Order (TSO)
+	  Partial Store Order (PSO)
+	  Relaxed Memory Model (RMO)
+  10.2.2 Mecanismos de Sincronização:
+	  Memory Barriers (Memory Fences)
+	  Operações Atômicas
+	  Locks
+	  Spinlocks
+	  Compare-and-Swap (CAS)
+	  Load-Linked / Store-Conditional (LL/SC)
+  10.2.3 Problemas Relacionados:
+	  Reordenação de Instruções
+ 	  Reordenação de Memória
+	  Visibilidade entre Processadores
+	  Condições de Corrida (Race Conditions)
+	  Consistência vs. Coerência
 
--   Cache Thrashing
--   False Sharing
--   Aliasing
--   Pollution
 
-10. Coerência e Consistência da Cache
 
-10.1 Coerência
-
-10.1.1 Conceitos
-
--   Compartilhamento
--   Invalidação
--   Atualização
-
-10.1.2 Protocolos
-
--   MSI
--   MESI
--   MOSI
--   MOESI
--   Directory-Based
--   Snooping
-
-10.2 Consistência de Memória
-
-10.2.1 Modelos
-
--   Sequential Consistency
--   Relaxed Consistency
--   Memory Ordering (Introdução)
 
 11. Revisão da Hierarquia e Cache
 
