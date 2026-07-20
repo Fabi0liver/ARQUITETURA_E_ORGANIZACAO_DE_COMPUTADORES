@@ -179,177 +179,142 @@
 
 5. Visão Geral da Hierarquia de Memória:
 
-5.1 Fundamentos
-
-5.1.1 Conceitos
-
--   Objetivos
--   Organização hierárquica
--   Localidade temporal (Introdução)
--   Localidade espacial (Introdução)
-
-5.1.2 Níveis da Hierarquia
-
--   Registradores
--   Cache
--   Memória Principal
--   Memória Secundária
--   Armazenamento Externo
-
-5.1.3 Avaliação Geral
-
--   Latência
--   Throughput
--   Gargalo de memória
--   AMAT
+ 5.1 Fundamentos:
+  5.1.1 Conceitos:
+	  Objetivos
+	  Organização hierárquica
+	  Localidade temporal (Introdução)
+	  Localidade espacial (Introdução)
+  5.1.2 Níveis da Hierarquia:
+	  Registradores
+	  Cache
+	  Memória Principal
+	  Memória Secundária
+	  Armazenamento Externo
+  5.1.3 Avaliação Geral:
+	  Latência
+	  Throughput
+	  Gargalo de memória
+	  AMAT
 
 
 
+6. Hierarquia de Memória:
 
-6. Hierarquia de Memória
+ 6.1 Fundamentos da Hierarquia:
+  6.1.1 Conceitos Gerais:
+	  Conceito de hierarquia de memória
+	  Objetivos
+	  Princípio da localidade
+	  Balanceamento entre custo, capacidade e desempenho
+  6.1.2 Princípios de Localidade:
+	  Localidade temporal
+	  Localidade espacial
+	  Localidade sequencial
+	  Working Set
+	  Regra 90/10
+  6.1.3 Avaliação:
+	  Latência
+	  Throughput
+	  AMAT
+	  Memory Wall
+	  CPI relacionado à memória
 
-6.1 Fundamentos da Hierarquia
+ 6.2 Níveis da Hierarquia:
+  6.2.1 Registradores:
+	  Papel
+	  Velocidade
+	  Organização geral
+  6.2.2 Memória Cache:
+	  Papel
+	  Organização
+	  Relação com CPU
+  6.2.3 Memória Principal:
+	  Papel
+	  Organização
+	  Relação com cache
+  6.2.4 Memória Secundária:
+	  HDD
+	  SSD
+	  Persistência
 
-6.1.1 Conceitos Gerais
 
--   Conceito de hierarquia de memória
--   Objetivos
--   Princípio da localidade
--   Balanceamento entre custo, capacidade e desempenho
 
-6.1.2 Princípios de Localidade
+7. Fundamentos da Memória Cache:
 
--   Localidade temporal
--   Localidade espacial
--   Localidade sequencial
--   Working Set
--   Regra 90/10
+ 7.1 Conceitos:
+  7.1.1 Introdução:
+	  Definição
+	  Objetivos
+	  Funcionamento
+	  Benefícios
+  7.1.2 Estrutura:
+	  Linha
+	  Bloco
+	  Palavra
+	  Tag
+	  Índice
+	  Offset
+	  Conjunto
 
-6.1.3 Avaliação
+ 7.2 Operações:
+  7.2.1 Acessos:
+	  Cache Hit
+	  Cache Miss
+	  Hit Time
+	  Miss Penalty
+	  Taxa de acertos
+	  Taxa de falhas
+  7.2.2 Tipos de Miss:
+	  Cold
+	  Conflict
+	  Capacity
+	  Coherence
 
--   Latência
--   Throughput
--   AMAT
--   Memory Wall
--   CPI relacionado à memória
 
-6.2 Níveis da Hierarquia
 
-6.2.1 Registradores
+8. Organização da Cache:
 
--   Papel
--   Velocidade
--   Organização geral
+ 8.1 Níveis:
+  8.1.1 Organização:
+	  L1
+	  L2
+	  L3
+	  L4
+  8.1.2 Classificações:
+	  Unificada
+	  Separada
+	  Privada
+	  Compartilhada
+	  Inclusiva
+	  Exclusiva
+	  Não inclusiva
 
-6.2.2 Memória Cache
+ 8.2 Mapeamento:
+  8.2.1 Direto:
+	  Organização
+	  Funcionamento
+  8.2.2 Associativo:
+	  Totalmente associativo
+	  Associativo por conjunto
 
--   Papel
--   Organização
--   Relação com CPU
+ 8.3 Políticas:
+  8.3.1 Substituição:
+	  FIFO
+	  LRU
+	  LFU
+	  Random
+	  PLRU
+  8.3.2 Escrita:
+	  Write Through
+	  Write Back
+	  Write Allocate
+	  No Write Allocate
+	  Write Combining
 
-6.2.3 Memória Principal
 
--   Papel
--   Organização
--   Relação com cache
 
-6.2.4 Memória Secundária
-
--   HDD
--   SSD
--   Persistência
-
-7. Fundamentos da Memória Cache
-
-7.1 Conceitos
-
-7.1.1 Introdução
-
--   Definição
--   Objetivos
--   Funcionamento
--   Benefícios
-
-7.1.2 Estrutura
-
--   Linha
--   Bloco
--   Palavra
--   Tag
--   Índice
--   Offset
--   Conjunto
-
-7.2 Operações
-
-7.2.1 Acessos
-
--   Cache Hit
--   Cache Miss
--   Hit Time
--   Miss Penalty
--   Taxa de acertos
--   Taxa de falhas
-
-7.2.2 Tipos de Miss
-
--   Cold
--   Conflict
--   Capacity
--   Coherence
-
-8. Organização da Cache
-
-8.1 Níveis
-
-8.1.1 Organização
-
--   L1
--   L2
--   L3
--   L4
-
-8.1.2 Classificações
-
--   Unificada
--   Separada
--   Privada
--   Compartilhada
--   Inclusiva
--   Exclusiva
--   Não inclusiva
-
-8.2 Mapeamento
-
-8.2.1 Direto
-
--   Organização
--   Funcionamento
-
-8.2.2 Associativo
-
--   Totalmente associativo
--   Associativo por conjunto
-
-8.3 Políticas
-
-8.3.1 Substituição
-
--   FIFO
--   LRU
--   LFU
--   Random
--   PLRU
-
-8.3.2 Escrita
-
--   Write Through
--   Write Back
--   Write Allocate
--   No Write Allocate
--   Write Combining
-
-9. Otimizações da Cache
+9. Otimizações da Cache:
 
 9.1 Técnicas
 
