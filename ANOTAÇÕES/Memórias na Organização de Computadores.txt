@@ -1455,21 +1455,68 @@
   28.1.1 Tecnologias:
 	  HBM
 	  HBM2
+	  HBM2E
 	  HBM3
+	  HBM3E
 	  CAM
 	  TCAM
 	  NVDIMM
 	  Persistent Memory
 	  CXL Memory
 	  Memórias 3D
+	  3D DRAM
+	  3D NAND
+	  MRAM
+	  STT-MRAM
+	  PCM
+	  ReRAM
+	  FeRAM
+	  Memórias Híbridas
+  28.1.2 Características:
+	  Latência
+	  Throughput
+	  Bandwidth
+	  Persistência
+	  Escalabilidade
+	  Consumo de Energia
+	  Densidade
+	  Endurance
+	  Custo
 
  28.2 Tendências:
   28.2.1 Evolução:
 	  Chiplets
 	  Near-Memory Computing
-	  Processing-in-Memory
-	  Compute Express Link
+	  Processing-in-Memory (PIM)
+	  Compute Express Link (CXL)
 	  Unified Memory
+	  Memory Pooling
+	  Disaggregated Memory
+	  Memory Fabric
+	  Composable Memory
+	  Heterogeneous Memory
+  28.2.2 Arquiteturas Emergentes:
+	  Data-Centric Computing
+	  Memory-Centric Computing
+	  Memory-Driven Computing
+	  AI Accelerators
+	  Domain-Specific Architectures
+	  High-Bandwidth Interconnects
+
+ 28.3 Integração das Novas Memórias:
+  28.3.1 Aplicação na Hierarquia:
+	  Cache
+	  Memória Principal
+	  Memória Persistente
+	  Armazenamento
+	  Memória Compartilhada
+  28.3.2 Desafios:
+	  Compatibilidade
+	  Escalabilidade
+	  Coerência
+	  Consistência
+	  Eficiência Energética
+	  Custo
 
 
 
@@ -1482,14 +1529,52 @@
 	  Deduplicação
 	  Tiered Memory
 	  Memory Pooling
+	  Memory Compression
+	  Adaptive Replacement
+	  Dynamic Memory Scheduling
+	  Dynamic Refresh
+	  Row Buffer Optimization
+  29.1.2 Eficiência:
+	  Redução da Latência
+	  Economia de Energia
+	  Paralelismo
+	  Balanceamento de Carga
+	  Balanceamento de Canais
+	  Balanceamento de Bancos
 
  29.2 Software:
   29.2.1 Técnicas:
 	  Huge Pages
+	  Transparent Huge Pages
 	  NUMA Awareness
 	  Data Locality
 	  Memory Profiling
 	  Otimização de Alocadores
+	  Cache Blocking
+	  Software Prefetch
+	  Data Alignment
+	  Memory Mapping
+  29.2.2 Ferramentas:
+	  Profilers
+	  Memory Debuggers
+	  Leak Detection
+	  Heap Profiling
+	  Performance Counters
+
+
+ 29.3 Eficiência Energética:
+  29.3.1 Técnicas:
+	  Dynamic Voltage Scaling
+	  Dynamic Frequency Scaling
+	  Low-Power Memory
+	  Self Refresh
+	  Power Gating
+	  Clock Gating
+  29.3.2 Gerenciamento:
+	  Thermal Management
+	  Energy-Aware Scheduling
+	  Memory Power States
+	  Energy Monitoring
 
 
 
@@ -1502,6 +1587,16 @@
 	  Memory Encryption
 	  Memory Tagging
 	  Secure Memory
+	  Secure Boot
+	  Trusted Execution Environment (TEE)
+	  Memory Isolation
+	  Access Control
+  30.1.2 Integridade:
+	  ECC
+	  Memory Authentication
+	  Secure Storage
+	  Secure Erase
+ 	  Integrity Verification
 
  30.2 Vulnerabilidades:
   30.2.1 Ataques:
@@ -1510,6 +1605,30 @@
 	  Use-after-Free
 	  Cold Boot Attack
 	  Side Channels
+	  Spectre
+	  Meltdown
+	  Fault Injection
+	  DMA Attacks
+  30.2.2 Mitigações:
+	  ECC
+	  Memory Fencing
+	  Bounds Checking
+	  Stack Canaries
+	  Shadow Stack
+	  Pointer Authentication
+	  Software Hardening
+
+ 30.3 Monitoramento:
+  30.3.1 Detecção:
+	  Monitoramento de Integridade
+	  Detecção de Intrusão
+	  Detecção de Corrupção
+	  Auditoria
+  30.3.2 Recuperação:
+	  Recuperação de Erros
+	  Reinicialização Segura
+	  Failover
+	  Logging
 
 
 
@@ -1518,38 +1637,103 @@
  31.1 Ambientes:
   31.1.1 Sistemas:
 	  Computadores pessoais
+	  Workstations
 	  Servidores
 	  Data Centers
 	  HPC
-	  Computação em Nuvem
+	  Computação em Nuvem	
+	  Edge Computing
   31.1.2 Plataformas:
 	  Smartphones
+	  Tablets
 	  Sistemas Embarcados
 	  IoT
 	  GPUs
 	  Inteligência Artificial
+	  Veículos Autônomos
+
+ 31.2 Aplicações Especializadas:
+  31.2.1 Inteligência Artificial:
+	  Inferência
+	  Treinamento
+	  Memória para Aceleradores
+	  Unified Memory
+  31.2.2 Big Data:
+	  Bancos de Dados em Memória
+	  Analytics
+	  Processamento Distribuído
+	  Data Lakes
+
+ 31.3 Estudos de Caso:
+  31.3.1 Arquiteturas:
+	  CPUs Modernas
+	  GPUs Modernas
+	  Servidores
+	  Supercomputadores
+  31.3.2 Comparações:
+	  Desktop
+	  Mobile
+	  Servidor
+	  HPC
 
 
 32. Revisão Geral:
 
  32.1 Integração:
   32.1.1 Revisão:
-	  Hierarquia de memória
+	  Hierarquia de Memória
 	  Cache
 	  RAM
+	  Memórias Não Voláteis
 	  Armazenamento
 	  Memória Virtual
+	  Gerenciamento de Memória
 	  Multiprocessadores
-	  Tecnologias modernas
+	  Consistência
+	  Tecnologias Modernas
+  32.1.2 Integração dos Conceitos:
+	  Fluxo Completo da Memória
+	  Comunicação CPU–Memória
+	  Comunicação CPU–Cache–RAM–SSD
+	  Balanceamento entre Custo e Desempenho
+	  Escalabilidade
+
+ 32.2 Avaliação Geral:
+  32.2.1 Desempenho:
+ 	  Latência
+	  Throughput
+	  AMAT
+	  Gargalos
+	  Memory Wall
+  32.2.2 Tendências:
+	  Memórias Persistentes
+	  CXL
+	  PIM
+	  Memória Desagregada
+	  Computação Centrada na Memória
 
 
 
-33. Conclusão
+33. Conclusão:
 
- 33.1 Encerramento:
-  33.1.1 Síntese:
-	  Evolução das memórias
-	  Impacto no desempenho
-	  Tendências futuras
-	  Integração com novas arquiteturas
-	  Perspectivas de pesquisa
+ 33.1 Síntese:
+	Evolução das Memórias
+	Impacto no Desempenho
+	Integração entre Tecnologias
+	Papel na Arquitetura de Computadores
+	Perspectivas Futuras
+
+ 33.2 Tendências Futuras:
+	Memórias Emergentes
+	Arquiteturas Heterogêneas
+	Inteligência Artificial
+	Computação Quântica (Introdução)
+	Computação Neuromórfica (Introdução)
+	Sustentabilidade e Eficiência Energética
+
+ 33.3 Perspectivas de Pesquisa:
+	Novos Materiais
+	Novas Arquiteturas de Memória
+	Memória Universal
+	Segurança das Memórias
+	Escalabilidade para Exascale
