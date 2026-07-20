@@ -348,13 +348,16 @@
 	  Cache Miss
 	  Hit Time
 	  Miss Penalty
-	  Taxa de acertos
-	  Taxa de falhas
+	  Hit Rate
+	  Miss Rate
+	  AMAT
   7.2.2 Tipos de Miss:
-	  Cold
+	  Cold (Compulsory)
 	  Conflict
 	  Capacity
 	  Coherence
+	  Read Miss
+	  Write Miss
 
 
 
@@ -366,6 +369,7 @@
 	  L2
 	  L3
 	  L4
+	  Last Level Cache (LLC)
   8.1.2 Classificações:
 	  Unificada
 	  Separada
@@ -374,14 +378,19 @@
 	  Inclusiva
 	  Exclusiva
 	  Não inclusiva
+	  Não Exclusiva
 
  8.2 Mapeamento:
   8.2.1 Direto:
 	  Organização
 	  Funcionamento
+	  Vantagens
+	  Desvantagens
   8.2.2 Associativo:
-	  Totalmente associativo
-	  Associativo por conjunto
+	  Totalmente Associativo
+	  Associativo por Conjunto
+	  Grau de Associatividade
+	  Comparação entre Métodos
 
  8.3 Políticas:
   8.3.1 Substituição:
@@ -389,14 +398,17 @@
 	  LRU
 	  LFU
 	  Random
-	  PLRU
+	  Pseudo-LRU (PLRU)
+	  MRU
+	  NRU
   8.3.2 Escrita:
 	  Write Through
 	  Write Back
 	  Write Allocate
 	  No Write Allocate
 	  Write Combining
-
+	  Write Buffering
+          Read Around
 
 
 9. Otimizações da Cache:
@@ -405,25 +417,34 @@
   9.1.1 Soluções em Hardware:
 	  Prefetch
 	  Hardware Prefetcher
+	  Software Prefetch
 	  Stream Buffer
 	  Victim Cache
 	  Write Buffer
+	  Fill Buffer
 	  Non-Blocking Cache
+	  Lockup-Free Cache
 	  Cache Way Prediction
 	  Trace Cache
 	  Cache Compression
 	  Sectored Cache
+	  Critical Word First
+	  Early Restart
+	  Multi-Banked Cache
   9.1.2 Soluções em Software:
 	  Cache Blocking
 	  Loop Tiling
 	  Loop Interchange
 	  Loop Fusion
+	  Loop Fission
 	  Loop Unrolling
 	  Data Alignment
 	  Data Padding
-	  Page Coloring
-	  Software Prefetching
 	  Data Layout Optimization
+	  Structure Splitting
+	  Array Padding
+	  Software Prefetching
+	  Page Coloring
 
  9.2 Problemas de Cache:
   9.2.1 Problemas de Desempenho:
@@ -437,11 +458,14 @@
 	  Coherence Overhead
 	  Cache Line Contention
 	  TLB Misses
+	  Ping-Pong Effect
   9.2.2 Problemas de Consistência:
 	  Cache Coherence
 	  Memory Consistency
 	  Write Contention
 	  Race Conditions
+	  Deadlock (Introdução)
+	  Livelock (Introdução)
 
 
 
@@ -455,6 +479,8 @@
 	  Estados da Cache
 	  Falso Compartilhamento (False Sharing)
 	  Granularidade da Coerência (Cache Line)
+	  Domínio de Coerência
+	  Coerência em Multiprocessadores
   10.1.2 Protocolos de Coerência:
 	  MSI
  	  MESI
@@ -462,13 +488,17 @@
 	  MOESI
 	  MESIF
 	  Dragon Protocol
+	  Firefly Protocol
 	  Directory-Based
 	  Snooping
+	  Broadcast
   10.1.3 Implementação da Coerência:
 	  Barramento Compartilhado
 	  Diretórios Centralizados
 	  Diretórios Distribuídos
 	  Escalabilidade dos Protocolos
+	  Filtragem de Snooping
+	  Interconexões Coerentes
 
  10.2 Consistência de Memória
   10.2.1 Modelos de Consistência:
@@ -477,237 +507,216 @@
 	  Weak Consistency
 	  Release Consistency
 	  Relaxed Consistency
- 	  Memory Ordering (Introdução)
+ 	  Memory Ordering 
   	  Total Store Order (TSO)
 	  Partial Store Order (PSO)
 	  Relaxed Memory Model (RMO)
+	  Acquire-Release
+	  Sequentially Consistent Atomics
   10.2.2 Mecanismos de Sincronização:
-	  Memory Barriers (Memory Fences)
+	  Memory Barriers
+	  Memory Fences
 	  Operações Atômicas
 	  Locks
 	  Spinlocks
+	  Mutex
+	  Semáforos
 	  Compare-and-Swap (CAS)
 	  Load-Linked / Store-Conditional (LL/SC)
+	  Fetch-and-Add
+	  Test-and-Set
   10.2.3 Problemas Relacionados:
 	  Reordenação de Instruções
  	  Reordenação de Memória
 	  Visibilidade entre Processadores
-	  Condições de Corrida (Race Conditions)
-	  Consistência vs. Coerência
+	  Consistência versus Coerência
+	  Data Races
+	  Sincronização Incorreta
 
 
 
 
-11. Revisão da Hierarquia e Cache
+11. Hierarquia e Cache
 
-11.1 Integração
+ 11.1 Relação entre Hierarquia e Cache:
+	Fluxo CPU–Cache–RAM
+	Fluxo entre os níveis da hierarquia
+	Localidade de referência
+	Gargalos
+	Critérios de desempenho
+	Impacto da cache no desempenho
+	Balanceamento entre capacidade, custo e velocidade
+	AMAT na hierarquia
+	Memory Wall
+	Estudos de caso
 
-11.1.1 Relação entre Hierarquia e Cache
-
--   Fluxo CPU–Cache–RAM
--   Gargalos
--   Critérios de desempenho
 
 
+12. Memória Principal:
 
-12. Memória Principal
+ 12.1 Fundamentos:
+  12.1.1 Conceitos Gerais:
+	  Definição
+	  Objetivos
+	  Papel na hierarquia
+	  Organização física
+	  Organização lógica
+   12.1.2 Estrutura Interna:
+	  Células
+	  Linhas
+	  Colunas
+	  Matrizes
+	  Bancos
+	  Bank Groups
+	  Ranks
+	  Channels
 
-12.1 Fundamentos
+ 12.2 Tecnologias RAM:
+  12.2.1 SRAM:
+	  Estrutura
+	  Funcionamento
+	  Aplicações
+  12.2.2 DRAM:
+	  Estrutura
+	  Funcionamento
+	  Refresh
+	  Burst Mode
+	  Page Mode
+	  Fast Page Mode
+	  EDO
+  12.2.3 SDRAM:
+	  SDR SDRAM
+	  Sincronização
+	  Clock
+   12.2.4 DDR SDRAM:
+	  DDR
+	  DDR2
+	  DDR3
+ 	  DDR4
+	  DDR5
+	  LPDDR
+	  GDDR
+	  HBM (Introdução)
 
-12.1.1 Conceitos Gerais
 
--   Definição
--   Objetivos
--   Papel na hierarquia
--   Organização física
--   Organização lógica
+13. Organização da DRAM:
 
-12.1.2 Estrutura Interna
+ 13.1 Estrutura Física:
+  13.1.1 Organização:
+	  Bancos
+	  Matrizes
+	  Sense Amplifiers
+	  Row Buffer
+	  Barramentos internos
+  13.1.2 Operações:
+	  Activate
+	  Read
+	  Write
+	  Precharge
+	  Refresh
 
--   Células
--   Linhas
--   Colunas
--   Matrizes
--   Bancos
--   Bank Groups
--   Ranks
--   Channels
+ 13.2 Temporização:
+  13.2.1 Timings:
+	  CAS Latency
+	  RAS
+	  tRCD
+	  tRP
+	  tRAS
+	  Command Rate
+  13.2.2 Burst:
+	  Burst Length
+	  Prefetch
+	  Open Page
+	  Closed Page
 
-12.2 Tecnologias RAM
 
-12.2.1 SRAM
-
--   Estrutura
--   Funcionamento
--   Aplicações
-
-12.2.2 DRAM
-
--   Estrutura
--   Funcionamento
--   Refresh
--   Burst Mode
--   Page Mode
--   Fast Page Mode
--   EDO
-
-12.2.3 SDRAM
-
--   SDR SDRAM
--   Sincronização
--   Clock
-
-12.2.4 DDR SDRAM
-
--   DDR
--   DDR2
--   DDR3
--   DDR4
--   DDR5
--   LPDDR
--   GDDR
--   HBM (Introdução)
-
-13. Organização da DRAM
-
-13.1 Estrutura Física
-
-13.1.1 Organização
-
--   Bancos
--   Matrizes
--   Sense Amplifiers
--   Row Buffer
--   Barramentos internos
-
-13.1.2 Operações
-
--   Activate
--   Read
--   Write
--   Precharge
--   Refresh
-
-13.2 Temporização
-
-13.2.1 Timings
-
--   CAS Latency
--   RAS
--   tRCD
--   tRP
--   tRAS
--   Command Rate
-
-13.2.2 Burst
-
--   Burst Length
--   Prefetch
--   Open Page
--   Closed Page
 
 14. Controladores de Memória
 
-14.1 Fundamentos
+ 14.1 Fundamentos: 
+	Conceitos
+	Memory Controller
+	Objetivos
+	Organização
+	Controlador integrado
 
-14.1.1 Conceitos
+ 14.2 Gerenciamento:
+  14.2.1 Escalonamento:
+	  Memory Scheduling
+	  FCFS
+	  FR-FCFS
+  14.2.2 Paralelismo:
+	  Channel Interleaving
+	  Bank Interleaving
+	  Rank Interleaving
 
--   Memory Controller
--   Objetivos
--   Organização
--   Controlador integrado
 
-14.2 Gerenciamento
 
-14.2.1 Escalonamento
+15. Módulos de Memória:
 
--   Memory Scheduling
--   FCFS
--   FR-FCFS
+ 15.1 Tipos:
+	SIMM
+	DIMM
+	SO-DIMM
+	UDIMM
+	RDIMM
+	LRDIMM
+	ECC DIMM
 
-14.2.2 Paralelismo
+ 15.2 Desempenho:
+	Frequência
+	Clock
+	Largura do barramento
+	Dual Channel
+	Triple Channel
+	Quad Channel
+	Multi Channel
 
--   Channel Interleaving
--   Bank Interleaving
--   Rank Interleaving
 
-15. Módulos de Memória
 
-15.1 Tipos
 
-15.1.1 Organização
+16. Integridade e Confiabilidade:
 
--   SIMM
--   DIMM
--   SO-DIMM
--   UDIMM
--   RDIMM
--   LRDIMM
--   ECC DIMM
+ 16.1 Detecção de Erros:
+	Bit de Paridade
+	Paridade Par
+	Paridade Ímpar
+	Checksum
+	CRC 
 
-15.2 Desempenho
+ 16.2 Correção de Erros:
+	ECC
+	Código de Hamming
+	SEC
+	SECDED
+	Chipkill
+	ECC avançado
 
-15.2.1 Características
+ 16.3 Confiabilidade:
+	RAS
+	Soft Errors
+	Hard Errors
+	Memory Scrubbing
+	Memory Sparing
+	Memory Mirroring
+	Patrol Scrubbing
 
--   Frequência
--   Clock
--   Largura do barramento
--   Dual Channel
--   Triple Channel
--   Quad Channel
--   Multi Channel
 
-16. Integridade e Confiabilidade
 
-16.1 Detecção de Erros
+17. Avaliação da Memória Principal:
 
-16.1.1 Técnicas
+ 17.1 Métricas:
+	Latência
+	Throughput
+	Bandwidth
+	Eficiência
+	Gargalos
 
--   Bit de Paridade
--   Paridade Par
--   Paridade Ímpar
--   Checksum
--   CRC (Introdução)
-
-16.2 Correção de Erros
-
-16.2.1 ECC
-
--   Código de Hamming
--   SEC
--   SECDED
--   Chipkill
--   ECC avançado
-
-16.3 Confiabilidade
-
-16.3.1 RAS
-
--   Soft Errors
--   Hard Errors
--   Memory Scrubbing
--   Memory Sparing
--   Memory Mirroring
--   Patrol Scrubbing
-
-17. Avaliação da Memória Principal
-
-17.1 Desempenho
-
-17.1.1 Métricas
-
--   Latência
--   Throughput
--   Bandwidth
--   Eficiência
--   Gargalos
-
-17.1.2 Otimizações
-
--   Balanceamento de canais
--   Balanceamento de bancos
--   Ajuste de timings
--   Overclock (Introdução)
+ 17.2 Otimizações:
+	Balanceamento de canais
+	Balanceamento de bancos
+	Ajuste de timings
+	Overclock (Introdução)
 
 
 
