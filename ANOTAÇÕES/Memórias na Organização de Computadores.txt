@@ -11,16 +11,21 @@
 	  Papel da memória no computador
 	  Dados e instruções
 	  Armazenamento de informações
+	  Programa armazenado
+	  Unidade de armazenamento
   1.1.2 Importância das Memórias:
 	  Desempenho do sistema
 	  Comunicação CPU–Memória
 	  Relação entre capacidade, custo e velocidade
-	  Evolução tecnológica das memórias 
+	  Evolução tecnológica das memórias
+	  Escalabilidade
+	  Eficiência energética
   1.1.3 Organização das Memórias:
 	  Organização versus Arquitetura de Computadores
 	  Papel das memórias na Organização de Computadores
 	  Visão geral da hierarquia de memória
 	  Classificação geral das memórias
+	  Fluxo geral dos dados
 
  1.2 Organização de Computadores e Memórias:
   1.2.1 Organização versus Arquitetura:
@@ -30,24 +35,31 @@
 	  Papel das memórias
   1.2.2 Modelos Clássicos:
 	  Modelo de Von Neumann
+	  Gargalo de Von Neumann
 	  Modelo Harvard
 	  Modelo Harvard Modificado
 	  Comparação dos modelos
   1.2.3 Comunicação com os demais componentes:
 	  CPU
 	  Barramentos
-	  Dispositivos de E/S
+	  Dispositivos de Entrada e Saída
+	  Controlador de memória
+	  DMA (Direct Memory Access)
 	  Fluxo geral das informações
 
- 1.3 Conceitos Fundamentais:
-  1.3.1 Representação da Informação
+ 1.3 Conceitos Fundamentais
+  1.3.1 Representação da Informação:
 	  Bit
+	  Nibble
 	  Byte
 	  Palavra
+	  Palavra dupla
 	  Sistemas de numeração
 	  Representação binária
+	  Representação hexadecimal
   1.3.2 Componentes Digitais Fundamentais:
 	  Flip-Flops
+	  Latches
 	  Registradores
 	  Multiplexadores
 	  Demultiplexadores
@@ -56,10 +68,13 @@
 	  Buffers
 	  Drivers
 	  Sense Amplifiers
+	  Tri-State Buffers
   1.3.3 Comunicação Básica:
-	  Barramento de Dados
+ 	  Barramento de Dados
 	  Barramento de Endereços
 	  Barramento de Controle
+	  Ciclo de barramento
+	  Sincronização
 
 
 
@@ -72,6 +87,7 @@
 	  Persistência
 	  Volatilidade
 	  Não volatilidade
+	  Retenção de dados
   2.1.2 Características das Memórias:
 	  Capacidade
 	  Latência
@@ -81,10 +97,14 @@
 	  Throughput
 	  Custo por bit
 	  Consumo de energia
+	  Densidade de armazenamento
+	  Escalabilidade
   2.1.3 Métricas de Desempenho:
-	  AMAT (Introdução)
-	  Memory Wall (Introdução)
-	  CPI relacionado à memória (Introdução)
+          Latência
+	  Throughput
+	  AMAT 
+	  Memory Wall 
+	  CPI relacionado à memória 
 
  2.2 Classificação das Memórias:
   2.2.1 Quanto à Persistência:
@@ -100,6 +120,7 @@
 	  Secundária
 	  Terciária
 	  Cache
+	  Registradores
 
 
 
@@ -115,6 +136,7 @@
 	  Ranks
 	  Canais
 	  Módulos
+	  Encapsulamentos
   3.1.2 Organização Interna:
 	  Células
 	  Blocos
@@ -122,6 +144,7 @@
 	  Interleaving
 	  Organização por bits
 	  Organização por palavras
+	  Bancos independentes
 
  3.2 Organização Lógica:
   3.2.1 Estruturas Lógicas:
@@ -129,20 +152,21 @@
 	  Organização por blocos
 	  Organização linear
 	  Organização hierárquica
+	  Segmentação lógica
   3.2.2 Unidades de Informação:
 	  Bit
 	  Byte
 	  Palavra
 	  Bloco
 	  Linha de memória
+	  Página
 
  3.3 Expansão de Memória:
-  3.3.1 Técnicas de Expansão:
-	  Expansão por largura
-	  Expansão por profundidade
-	  Associação de chips
-	  Decodificação de endereços
-	  Seleção de chips
+	Expansão por largura
+	Expansão por profundidade
+	Associação de chips
+	Decodificação de endereços
+	Seleção de chips
 
 
 
@@ -154,10 +178,12 @@
 	  Endereço lógico
 	  Espaço de endereçamento
 	  Capacidade de endereçamento
+	  Faixa de endereçamento
   4.1.2 Organização:
  	  Endereçamento por byte
 	  Endereçamento por palavra
  	  Alinhamento
+	  Desalinhamento
 	  Big Endian
 	  Little Endian
 
@@ -166,6 +192,7 @@
 	  Barramento de dados
 	  Barramento de endereços
 	  Barramento de controle
+          Controlador de memória
   4.2.2 Operações:
 	  Leitura
 	  Escrita
@@ -174,6 +201,7 @@
 	  Wait States
 	  Handshake
 	  Burst Transfer
+          Pipeline de memória
 
 
 
@@ -186,6 +214,7 @@
 	  Princípio da Localidade
 	  Localidade Temporal
 	  Localidade Espacial
+ 	  Localidade Sequencial
 	  Compromisso entre Custo, Capacidade e Desempenho
   5.1.2 Níveis da Hierarquia:
 	  Registradores
@@ -205,6 +234,7 @@
 	  Transferência entre Níveis
 	  Blocos de Memória
 	  Princípio da Proximidade ao Processador
+          Promoção e substituição de dados
 
  5.2 Avaliação de Desempenho:
   5.2.1 Métricas:
@@ -227,9 +257,8 @@
   6.1.1 Conceitos Gerais:
 	  Conceito de Hierarquia de Memória
 	  Objetivos
-	  Organização Hierárquica
+	  Princípio da localidade
 	  Balanceamento entre Custo, Capacidade e Desempenho
-	  Memory Wall
   6.1.2 Princípios de Localidade:
 	  Localidade Temporal
 	  Localidade Espacial
@@ -237,15 +266,14 @@
 	  Working Set
 	  Regra 90/10
 	  Padrões de Acesso à Memória
+	  Princípio de Pareto
    6.1.3 Avaliação:
 	  Latência
 	  Throughput
-	  Tempo de Acesso
-	  Tempo de Ciclo
 	  AMAT
-	  CPI relacionado à Memória
-	  Gargalo de Memória
-	  Eficiência da Hierarquia
+	  Memory Wall
+	  CPI relacionado à memória
+	  Gargalo de largura de banda
 
  6.2 Níveis da Hierarquia:
   6.2.1 Registradores:
@@ -297,6 +325,11 @@
 	  Objetivos
 	  Funcionamento
 	  Benefícios
+	  Princípio da Localidade
+	  Localidade Temporal
+	  Localidade Espacial
+	  Localidade Sequencial
+	  Papel da Cache na Hierarquia
   7.1.2 Estrutura:
 	  Linha
 	  Bloco
@@ -305,6 +338,9 @@
 	  Índice
 	  Offset
 	  Conjunto
+	  Validade (Valid Bit)
+	  Bit Sujo (Dirty Bit)
+	  Bits de Estado
 
  7.2 Operações:
   7.2.1 Acessos:
