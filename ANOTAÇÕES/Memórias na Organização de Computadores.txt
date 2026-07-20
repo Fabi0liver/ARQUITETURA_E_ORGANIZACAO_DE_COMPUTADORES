@@ -1148,177 +1148,304 @@
 
 
 
-23. Memória Virtual
+23. Memória Virtual:
 
-23.1 Fundamentos
+ 23.1 Fundamentos:
+  23.1.1 Conceitos Gerais:
+	  Definição
+	  Objetivos
+	  Espaço de endereçamento virtual
+	  Espaço de endereçamento físico
+	  Abstração da memória
+	  Endereços Virtuais
+	  Endereços Físicos
+	  Tradução de Endereços
+	  Transparência para os Processos
+	  Relação com a Memória Principal
+  23.1.2 Benefícios:
+	  Isolamento
+	  Proteção
+	  Compartilhamento
+	  Expansão lógica da memória
+	  Execução de programas maiores que a RAM
+	  Multiprogramação
+	  Relocação
+	  Eficiência da Memória
 
-23.1.1 Conceitos Gerais
+ 23.2 Paginação:
+  23.2.1 Conceitos:
+	  Página
+	  Quadro (Frame)
+	  Tabela de Páginas
+	  Diretório de Páginas
+	  Endereço Virtual
+	  Endereço Físico
+	  Offset
+	  Número da Página
+	  Bits de Controle
+	  Bit de Presença
+	  Bit de Modificação (Dirty)
+	  Bit de Referência (Accessed)
+  23.2.2 Políticas:
+	  FIFO
+	  LRU
+	  Clock
+	  Second Chance
+	  NRU
+	  LFU
+	  MFU
+	  Working Set
+	  WSClock
+	  Random
 
-- Definição
-- Objetivos
-- Espaço de endereçamento virtual
-- Espaço de endereçamento físico
-- Abstração da memória
+ 23.3 Segmentação:
+	Segmentos
+	Base
+	Limite
+	Proteção
+	Compartilhamento
+	Tabela de Segmentos
+	Segmentação Pura
+	Segmentação com Paginação
 
-23.1.2 Benefícios
+ 23.4 MMU e TLB:
+  23.4.1 MMU:
+	  Tradução de endereços
+	  Proteção
+	  Permissões
+	  Controle de acesso
+	  Relocação
+	  Tradução Virtual–Física
+  23.4.2 TLB:
+	  Estrutura
+	  Associatividade
+	  TLB Hit
+	  TLB Miss
+	  Reposição
+	  Flush
+	  Shootdown
+	  Multi-Level TLB
 
-- Isolamento
-- Proteção
-- Compartilhamento
-- Expansão lógica da memória
-- Execução de programas maiores que a RAM
 
-23.2 Paginação
+ 23.5 Implementação da Memória Virtual:
+  23.5.1 Estruturas:
+	  Tabela de Páginas de Nível Único
+	  Tabelas Multinível
+	  Tabela de Páginas Invertida
+	  Hash Page Table
+  23.5.2 Otimizações:
+	  Huge Pages
+	  Transparent Huge Pages
+	  Shared Pages
+	  Copy-on-Write
+	  Zero Page
 
-23.2.1 Conceitos
 
-- Página
-- Quadro
-- Tabela de páginas
-- Endereço virtual
-- Endereço físico
 
-23.2.2 Políticas
+24. Gerenciamento de Memória:
 
-- FIFO
-- LRU
-- Clock
-- LFU
-- Working Set
+ 24.1 Alocação:
+  24.1.1 Técnicas:
+	  Contígua
+	  Não Contígua
+	  First Fit
+	  Next Fit
+	  Best Fit
+	  Worst Fit
+	  Buddy System
+	  Slab Allocator
+	  Pool Allocator
+	  Bitmap Allocation
+  24.1.2 Fragmentação:
+	  Fragmentação Interna
+	  Fragmentação Externa
+	  Compactação
+	  Coalescência
 
-23.3 Segmentação
+24.2 Paginação por Demanda:
+ 24.2.1 Operações:
+	  Page Fault
+	  Minor Page Fault
+	  Major Page Fault
+	  Swap In
+	  Swap Out
+	  Copy-on-Write
+	  Zero Page
+	  Demand Paging
+	  Lazy Allocation
+  24.2.2 Swap:
+	  Área de Swap
+	  Arquivo de Swap
+	  Política de Swap
+	  Thrashing
 
-23.3.1 Organização
+ 24.3 Gerenciamento Avançado:
+  24.3.1 Otimizações:
+	  Prefetch de Páginas
+	  Reclaim de Memória
+	  Compressão de Memória
+	  Memory Ballooning
+	  Deduplicação de Páginas
+  24.3.2 Monitoramento:
+	  Uso da Memória
+	  Working Set
+	  Resident Set Size (RSS)
+	  Virtual Memory Size (VSZ)
 
-- Segmentos
-- Base
-- Limite
-- Proteção
-- Compartilhamento
 
-23.4 MMU e TLB
 
-23.4.1 MMU
+25. Multiprocessadores e Memória:
 
-- Tradução de endereços
-- Proteção
-- Permissões
-- Controle de acesso
+ 25.1 Arquiteturas:
+  25.1.1 Modelos:
+	  UMA
+	  NUMA
+	  ccNUMA
+	  COMA
+	  DSM
+	  SMP
+	  AMP
+  25.1.2 Interconexão:
+	  Barramento Compartilhado
+	  Crossbar
+	  Ring
+	  Mesh
+	  NoC 
 
-23.4.2 TLB
+ 25.2 Memória Compartilhada:
+  25.2.1 Organização:
+	  Compartilhamento
+	  Sincronização
+	  Locks
+	  Semáforos
+	  Barreiras
+	  Monitores
+	  Mutex
+	  Variáveis de Condição
+  25.2.2 Desempenho:
+	  Localidade NUMA
+	  Migração de Dados
+	  Afinidade de Memória
+	  Afinidade de CPU
 
-- Estrutura
-- Hit
-- Miss
-- Reposição
-- Flush
+ 25.3 Memória Distribuída:
+  25.3.1 Conceitos:
+	  Nós
+	  Comunicação
+	  MPI
+	  DSM
+	  Coerência
+	  Passagem de Mensagens
+	  Comunicação Coletiva
+  25.3.2 Escalabilidade:
+	  Latência
+	  Throughput
+	  Balanceamento de Carga
+	  Particionamento de Dados
 
-24. Gerenciamento de Memória
 
-24.1 Alocação
 
-24.1.1 Técnicas
+26. Consistência e Sincronização:
 
-- Contígua
-- Não contígua
-- Buddy System
-- Slab Allocator
-- Pool Allocator
+ 26.1 Modelos
+  26.1.1 Consistência:
+	  Sequential Consistency
+	  Processor Consistency
+	  Weak Consistency
+	  Release Consistency
+	  Acquire/Release
+	  Relaxed Consistency
+	  TSO
+	  PSO
+	  RMO
+	  Memory Fences
+  26.1.2 Ordenação:
+	  Reordenação de Instruções
+	  Reordenação de Memória
+	  Dependências
+	  Visibilidade
 
-24.2 Paginação por Demanda
+ 26.2 Operações Atômicas:
+  26.2.1 Instruções:
+	  Compare-and-Swap
+	  Test-and-Set
+	  Fetch-and-Add
+	  Fetch-and-Sub
+	  Exchange
+	  Load Linked
+	  Store Conditional
+	  Atomic Read-Modify-Write
+  26.2.2 Sincronização:
+	  Spinlock
+	  Mutex
+	  Semáforo
+	  RW Lock
+	  Barrier
+	  Operações Lock-Free
+	  Wait-Free
 
-24.2.1 Operações
+ 26.3 Problemas de Concorrência:
+  26.3.1 Condições:
+   	  Race Condition
+	  Deadlock
+	  Livelock
+	  Starvation
+	  Priority Inversion
+  26.3.2 Ferramentas:
+	  Detectores de Corrida
+	  Profilers
+	  Análise de Concorrência
 
-- Page Fault
-- Swap In
-- Swap Out
-- Copy-on-Write
-- Zero Page
 
-25. Multiprocessadores e Memória
 
-25.1 Arquiteturas
+27. Sistemas Especializados de Memória:
 
-25.1.1 Modelos
+ 27.1 GPUs:
+  27.1.1 Hierarquia:
+	  Registers
+	  Local Memory
+	  Shared Memory
+	  Global Memory
+	  Constant Memory
+	  Texture Memory
+	  L1 Cache
+	  L2 Cache
+  27.1.2 Organização:
+	  Warps
+	  Thread Blocks
+	  Coalesced Access
+	  Shared Memory Banks
 
-- UMA
-- NUMA
-- COMA
-- ccNUMA
+ 27.2 Sistemas Embarcados:
+  27.2.1 Organização:
+	  SRAM Embarcada
+	  Flash Embarcada
+	  EEPROM
+	  OTP Memory
+	  Memória em Microcontroladores
+	  Execução XIP
+	  Memória em SoCs
+  27.2.2 Gerenciamento:
+	  Bootloader
+	  Boot ROM
+	  Mapeamento de Memória
+	  Baixo Consumo de Energia
 
-25.2 Memória Compartilhada
-
-25.2.1 Organização
-
-- Compartilhamento
-- Sincronização
-- Locks
-- Semáforos
-- Barreiras
-
-25.3 Memória Distribuída
-
-25.3.1 Conceitos
-
-- Nós
-- Comunicação
-- MPI
-- DSM
-- Coerência
-
-26. Consistência e Sincronização
-
-26.1 Modelos
-
-26.1.1 Consistência
-
-- Sequential Consistency
-- Weak Consistency
-- Release Consistency
-- Acquire/Release
-- Memory Fences
-
-26.2 Operações Atômicas
-
-26.2.1 Instruções
-
-- Compare-and-Swap
-- Test-and-Set
-- Fetch-and-Add
-- Load Linked
-- Store Conditional
-
-27. Sistemas Especializados de Memória
-
-27.1 GPUs
-
-27.1.1 Hierarquia
-
-- Global Memory
-- Shared Memory
-- Constant Memory
-- Texture Memory
-- Registers
-
-27.2 Sistemas Embarcados
-
-27.2.1 Organização
-
-- SRAM embarcada
-- Flash embarcada
-- EEPROM
-- Memória em microcontroladores
-- Execução XIP
-
-27.3 Sistemas de Alto Desempenho
-
-27.3.1 HPC
-
-- HBM
-- CXL (Introdução)
-- Memória persistente
-- Hierarquia híbrida
-- Escalabilidade
+ 27.3 Sistemas de Alto Desempenho:
+  27.3.1 HPC:
+	  HBM
+	  CXL
+	  Memória Persistente
+	  Hierarquia Híbrida
+	  Escalabilidade
+	  NUMA
+	 Memória Desagregada
+  27.3.2 Aceleração:
+	  GPUDirect
+	  Unified Memory
+	  RDMA
+	  Memory Pooling
+	  Near-Memory Computing (Introdução)
 
 
 
