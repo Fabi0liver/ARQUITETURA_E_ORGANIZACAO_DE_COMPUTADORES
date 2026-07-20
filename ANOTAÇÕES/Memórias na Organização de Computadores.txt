@@ -889,6 +889,10 @@
 	  Volatilidade versus não volatilidade
 	  Papel na hierarquia de memória
 	  Características gerais
+	  Retenção de Dados
+	  Durabilidade
+	  Endurance
+	  Tempo de Retenção
   18.1.2 Classificação:
 	  ROM
 	  PROM
@@ -896,6 +900,7 @@
 	  EEPROM
 	  Flash NOR
 	  Flash NAND
+	  Memórias Emergentes
 
  18.2 Tecnologias de Memórias Não Voláteis:
   18.2.1 ROM e Derivadas:
@@ -903,20 +908,51 @@
 	  PROM
 	  EPROM
 	  EEPROM
+	  OTP ROM
   18.2.2 Flash Memory:
 	  NOR Flash
 	  NAND Flash
+	  Planar NAND
+	  3D NAND
 	  SLC
 	  MLC
 	  TLC
 	  QLC
 	  PLC
-  18.2.3 Memórias Emergentes:
+	  pSLC
+  18.2.3 Organização da Flash:
+	  Página
+	  Bloco
+	  Plano
+	  Die
+	  Canal
+	  Operações de Leitura
+	  Operações de Escrita
+	  Operações de Apagamento
+  18.2.4 Memórias Emergentes:
 	  MRAM
+	  STT-MRAM
 	  FRAM
 	  PCM
 	  ReRAM
 	  3D XPoint
+	  NVDIMM
+	  CXL Memory
+
+ 18.3 Características das Memórias Não Voláteis:
+  18.3.1 Desempenho:
+	  Latência
+	  Throughput
+	  Tempo de Leitura
+	  Tempo de Escrita
+	  Tempo de Apagamento
+  18.3.2 Confiabilidade:
+	  Endurance
+	  Retenção de Dados
+	  Wear-Out
+	  Bad Blocks
+	  ECC
+
 
 
 19. Dispositivos de Armazenamento
@@ -924,17 +960,22 @@
  19.1 Armazenamento Magnético:
   19.1.1 HDD:
 	  Estrutura
-	  Pratos ou Discos
+	  Pratos
 	  Trilhas
 	  Setores
-	  Cabeças de Leitura
+	  Cilindros
+	  Cabeças de Leitura/Escrita
 	  Atuador
+	  Motor do Spindle
+	  Cache Interno
   19.1.2 Funcionamento:
 	  Leitura
 	  Escrita
 	  Seek Time
 	  Rotational Latency
 	  Transfer Rate
+	  Command Queue
+	  Cache de Disco
 
  19.2 Armazenamento em Estado Sólido:
   19.2.1 SSD:
@@ -942,13 +983,32 @@
 	  Controladora
 	  NAND Flash
 	  DRAM Cache
+	  SRAM Cache
 	  SLC Cache
+	  Flash Translation Layer (FTL)
   19.2.2 Gerenciamento:
 	  Wear Leveling
 	  Garbage Collection
 	  Over-Provisioning
 	  TRIM
 	  Bad Block Management
+	  ECC
+	  Background Refresh
+	  Thermal Management
+
+ 19.3 Organização Interna dos Dispositivos:
+  19.3.1 HDD:
+	  Cache
+	  Buffer
+	  Firmware
+	  Tabelas de Defeitos
+  19.3.2 SSD:
+	  Controller
+	  Canais
+	  Dies
+	  Planos
+	  Filas Internas
+	  Paralelismo Interno
 
 
 
@@ -959,40 +1019,85 @@
 	  PATA
 	  SATA
 	  SAS
-	  NVMe
 	  PCI Express
+	  NVMe
+	  M.2
+	  U.2
+	  EDSFF
   20.1.2 Protocolos:
+	  ATA
 	  AHCI
 	  NVMe
+	  NCQ
 	  Command Queues
 	  Submission Queues
 	  Completion Queues
+	  DMA
+	  PRP
+	  SGL
 
  20.2 Interfaces Externas:
   20.2.1 Conectividade:
 	  USB
 	  Thunderbolt
 	  eSATA
+	  FireWire (IEEE 1394)
 	  Network Storage
+  20.2.2 Armazenamento em Rede:
+	  NAS
+	  SAN
+	  iSCSI
+	  Fibre Channel
+	  NVMe over Fabrics (Introdução)
 
 
-
+ 
 21. Organização dos Dados em Armazenamento:
 
  21.1 Estruturas Lógicas:
   21.1.1 Organização:
 	  Blocos
 	  Setores Lógicos
+	  Setores Físicos
 	  Clusters
+	  Extents
 	  Partições
 	  Volumes
+	  Espaço Livre
   21.1.2 Endereçamento:
 	  LBA
 	  CHS (Histórico)
 	  Mapeamento lógico-físico
+	  Flash Translation Layer (FTL)
+	  Tradução de Endereços
+
+ 21.2 Organização Física:
+  21.2.1 HDD:
+	  Trilhas
+	  Setores
+	  Cilindros
+	  Zonas
+  21.2.2 SSD:
+	  Páginas
+	  Blocos
+	  Planos
+	  Dies
+ 	  Canais
+
+ 21.3 Gerenciamento dos Dados:
+  21.3.1 Alocação:
+	  Contígua
+	  Encadeada
+	  Indexada
+	  Extents
+  21.3.2 Fragmentação:
+	  Fragmentação Interna
+	  Fragmentação Externa
+	  Desfragmentação
+	  Write Amplification
 
 
-
+ 
 22. Avaliação dos Sistemas de Armazenamento:
 
  22.1 Desempenho:
@@ -1000,15 +1105,46 @@
 	  Latência
 	  IOPS
 	  Throughput
-	  Tempo de resposta
-	  Eficiência energética
-  22.1.2 Confiabilidade:
+	  Bandwidth
+	  Tempo de Resposta
+	  Tempo Médio de Acesso
+	  Queue Depth
+	  Eficiência Energética
+  22.1.2 Gargalos:
+	  Gargalos de Interface
+	  Gargalos da Controladora
+	  Gargalos da NAND
+	  Gargalos Mecânicos
+	  Saturação de Filas
+
+ 22.2 Confiabilidade:
+  22.2.1 Métricas:
 	  MTBF
+	  AFR
 	  TBW
 	  DWPD
-	  Retenção de dados
+	  UBER
+	  Retenção de Dados
 	  Durabilidade
+  22.2.2 Proteção de Dados:
+	  ECC
+	  RAID (Introdução)
+	  Power Loss Protection
+	  SMART
+	  Monitoramento de Saúde
 
+ 22.3 Otimização:
+  22.3.1 SSD:
+	  TRIM
+	  Garbage Collection
+	  Wear Leveling
+	  Over-Provisioning
+	  Atualização de Firmware
+  22.3.2 HDD:
+	  Cache
+	  NCQ
+	  Desfragmentação
+	  Alinhamento de Partições
 
 
 
