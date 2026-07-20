@@ -880,159 +880,134 @@
 
 
 
-18. Memórias Não Voláteis
+18. Memórias Não Voláteis:
 
 18.1 Fundamentos das Memórias Não Voláteis
+ 18.1.1 Conceitos Gerais:
+	  Definição
+	  Persistência
+	  Volatilidade versus não volatilidade
+	  Papel na hierarquia de memória
+	  Características gerais
+  18.1.2 Classificação:
+	  ROM
+	  PROM
+	  EPROM
+	  EEPROM
+	  Flash NOR
+	  Flash NAND
 
-18.1.1 Conceitos Gerais
+ 18.2 Tecnologias de Memórias Não Voláteis:
+  18.2.1 ROM e Derivadas:
+	  Mask ROM
+	  PROM
+	  EPROM
+	  EEPROM
+  18.2.2 Flash Memory:
+	  NOR Flash
+	  NAND Flash
+	  SLC
+	  MLC
+	  TLC
+	  QLC
+	  PLC
+  18.2.3 Memórias Emergentes:
+	  MRAM
+	  FRAM
+	  PCM
+	  ReRAM
+	  3D XPoint
 
-- Definição
-- Persistência
-- Volatilidade versus não volatilidade
-- Papel na hierarquia de memória
-- Características gerais
-
-18.1.2 Classificação
-
-- ROM
-- PROM
-- EPROM
-- EEPROM
-- Flash NOR
-- Flash NAND
-
-18.2 Tecnologias de Memórias Não Voláteis
-
-18.2.1 ROM e Derivadas
-
-- Mask ROM
-- PROM
-- EPROM
-- EEPROM
-
-18.2.2 Flash Memory
-
-- NOR Flash
-- NAND Flash
-- SLC
-- MLC
-- TLC
-- QLC
-- PLC
-
-18.2.3 Memórias Emergentes
-
-- MRAM
-- FRAM
-- PCM
-- ReRAM
-- 3D XPoint
 
 19. Dispositivos de Armazenamento
 
-19.1 Armazenamento Magnético
+ 19.1 Armazenamento Magnético:
+  19.1.1 HDD:
+	  Estrutura
+	  Pratos ou Discos
+	  Trilhas
+	  Setores
+	  Cabeças de Leitura
+	  Atuador
+  19.1.2 Funcionamento:
+	  Leitura
+	  Escrita
+	  Seek Time
+	  Rotational Latency
+	  Transfer Rate
 
-19.1.1 HDD
+ 19.2 Armazenamento em Estado Sólido:
+  19.2.1 SSD:
+	  Estrutura
+	  Controladora
+	  NAND Flash
+	  DRAM Cache
+	  SLC Cache
+  19.2.2 Gerenciamento:
+	  Wear Leveling
+	  Garbage Collection
+	  Over-Provisioning
+	  TRIM
+	  Bad Block Management
 
-- Estrutura
-- Pratos
-- Trilhas
-- Setores
-- Cabeças
-- Atuador
 
-19.1.2 Funcionamento
 
-- Leitura
-- Escrita
-- Seek Time
-- Rotational Latency
-- Transfer Rate
+20. Interfaces de Armazenamento:
 
-19.2 Armazenamento em Estado Sólido
+ 20.1 Interfaces Internas:
+  20.1.1 Padrões:
+	  PATA
+	  SATA
+	  SAS
+	  NVMe
+	  PCI Express
+  20.1.2 Protocolos:
+	  AHCI
+	  NVMe
+	  Command Queues
+	  Submission Queues
+	  Completion Queues
 
-19.2.1 SSD
+ 20.2 Interfaces Externas:
+  20.2.1 Conectividade:
+	  USB
+	  Thunderbolt
+	  eSATA
+	  Network Storage
 
-- Estrutura
-- Controladora
-- NAND Flash
-- DRAM Cache
-- SLC Cache
 
-19.2.2 Gerenciamento
 
-- Wear Leveling
-- Garbage Collection
-- Over-Provisioning
-- TRIM
-- Bad Block Management
+21. Organização dos Dados em Armazenamento:
 
-20. Interfaces de Armazenamento
+ 21.1 Estruturas Lógicas:
+  21.1.1 Organização:
+	  Blocos
+	  Setores Lógicos
+	  Clusters
+	  Partições
+	  Volumes
+  21.1.2 Endereçamento:
+	  LBA
+	  CHS (Histórico)
+	  Mapeamento lógico-físico
 
-20.1 Interfaces Internas
 
-20.1.1 Padrões
 
-- PATA
-- SATA
-- SAS
-- NVMe
-- PCI Express
+22. Avaliação dos Sistemas de Armazenamento:
 
-20.1.2 Protocolos
-
-- AHCI
-- NVMe
-- Command Queues
-- Submission Queues
-- Completion Queues
-
-20.2 Interfaces Externas
-
-20.2.1 Conectividade
-
-- USB
-- Thunderbolt
-- eSATA
-- Network Storage
-
-21. Organização dos Dados em Armazenamento
-
-21.1 Estruturas Lógicas
-
-21.1.1 Organização
-
-- Blocos
-- Setores Lógicos
-- Clusters
-- Partições
-- Volumes
-
-21.1.2 Endereçamento
-
-- LBA
-- CHS (Histórico)
-- Mapeamento lógico-físico
-
-22. Avaliação dos Sistemas de Armazenamento
-
-22.1 Desempenho
-
-22.1.1 Métricas
-
-- Latência
-- IOPS
-- Throughput
-- Tempo de resposta
-- Eficiência energética
-
-22.1.2 Confiabilidade
-
-- MTBF
-- TBW
-- DWPD
-- Retenção de dados
-- Durabilidade
+ 22.1 Desempenho:
+  22.1.1 Métricas:
+	  Latência
+	  IOPS
+	  Throughput
+	  Tempo de resposta
+	  Eficiência energética
+  22.1.2 Confiabilidade:
+	  MTBF
+	  TBW
+	  DWPD
+	  Retenção de dados
+	  Durabilidade
 
 
 
