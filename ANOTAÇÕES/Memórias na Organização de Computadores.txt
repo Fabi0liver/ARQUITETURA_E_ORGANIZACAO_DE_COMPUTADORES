@@ -1,0 +1,1098 @@
+                                Memórias na Organização de Computadores
+
+
+
+1.1 Introdução às Memórias
+
+1.1.1 Memórias como componente do sistema computacional
+
+-   Conceito de memória
+-   Objetivos da memória
+-   Papel da memória no computador
+-   Dados e instruções
+-   Armazenamento de informações
+
+1.1.2 Importância das Memórias
+
+-   Desempenho do sistema
+-   Comunicação CPU–Memória
+-   Relação entre capacidade, custo e velocidade
+-   Evolução tecnológica das memórias
+
+1.1.3 Organização das Memórias
+
+-   Organização versus Arquitetura de Computadores
+-   Papel das memórias na Organização de Computadores
+-   Visão geral da hierarquia de memória
+-   Classificação geral das memórias
+
+1.2 Organização de Computadores e Memórias
+
+1.2.1 Organização versus Arquitetura
+
+-   Organização de Computadores
+-   Arquitetura de Computadores
+-   Relação entre organização e arquitetura
+-   Papel das memórias
+
+1.2.2 Modelos Clássicos
+
+-   Modelo de Von Neumann
+-   Modelo Harvard
+-   Modelo Harvard Modificado
+-   Comparação dos modelos
+
+1.2.3 Comunicação com os demais componentes
+
+-   CPU
+-   Barramentos
+-   Dispositivos de E/S
+-   Fluxo geral das informações
+
+1.3 Conceitos Fundamentais
+
+1.3.1 Representação da Informação
+
+-   Bit
+-   Byte
+-   Palavra
+-   Sistemas de numeração
+-   Representação binária
+
+1.3.2 Componentes Digitais Fundamentais
+
+-   Flip-Flops
+-   Registradores
+-   Multiplexadores
+-   Demultiplexadores
+-   Codificadores
+-   Decodificadores
+-   Buffers
+-   Drivers
+-   Sense Amplifiers
+
+1.3.3 Comunicação Básica
+
+-   Barramento de Dados
+-   Barramento de Endereços
+-   Barramento de Controle
+
+2. Fundamentos das Memórias
+
+2.1 Conceitos Fundamentais
+
+2.1.1 Armazenamento de Dados
+
+-   Dados
+-   Instruções
+-   Persistência
+-   Volatilidade
+-   Não volatilidade
+
+2.1.2 Características das Memórias
+
+-   Capacidade
+-   Latência
+-   Tempo de acesso
+-   Tempo de ciclo
+-   Largura de banda
+-   Throughput
+-   Custo por bit
+-   Consumo de energia
+
+2.1.3 Métricas de Desempenho
+
+-   AMAT (Introdução)
+-   Memory Wall (Introdução)
+-   CPI relacionado à memória (Introdução)
+
+2.2 Classificação das Memórias
+
+2.2.1 Quanto à Persistência
+
+-   Voláteis
+-   Não voláteis
+
+2.2.2 Quanto ao Método de Acesso
+
+-   Aleatório
+-   Sequencial
+-   Direto
+-   Associativo
+
+2.2.3 Quanto à Função
+
+-   Primária
+-   Secundária
+-   Terciária
+-   Cache
+
+3. Organização Geral das Memórias
+
+3.1 Organização Física
+
+3.1.1 Estrutura Física
+
+-   Chips
+-   Matrizes
+-   Linhas
+-   Colunas
+-   Bancos
+-   Ranks
+-   Canais
+-   Módulos
+
+3.1.2 Organização Interna
+
+-   Células
+-   Blocos
+-   Palavras
+-   Interleaving
+-   Organização por bits
+-   Organização por palavras
+
+3.2 Organização Lógica
+
+3.2.1 Estruturas Lógicas
+
+-   Espaço de endereçamento
+-   Organização por blocos
+-   Organização linear
+-   Organização hierárquica
+
+3.2.2 Unidades de Informação
+
+-   Bit
+-   Byte
+-   Palavra
+-   Bloco
+-   Linha de memória
+
+3.3 Expansão de Memória
+
+3.3.1 Técnicas de Expansão
+
+-   Expansão por largura
+-   Expansão por profundidade
+-   Associação de chips
+-   Decodificação de endereços
+-   Seleção de chips
+
+4. Endereçamento e Interface da Memória
+
+4.1 Endereçamento
+
+4.1.1 Conceitos
+
+-   Endereço físico
+-   Endereço lógico
+-   Espaço de endereçamento
+-   Capacidade de endereçamento
+
+4.1.2 Organização
+
+-   Endereçamento por byte
+-   Endereçamento por palavra
+-   Alinhamento
+-   Big Endian
+-   Little Endian
+
+4.2 Interface CPU–Memória
+
+4.2.1 Comunicação
+
+-   Barramento de dados
+-   Barramento de endereços
+-   Barramento de controle
+
+4.2.2 Operações
+
+-   Leitura
+-   Escrita
+-   Ciclo de memória
+-   Temporização
+-   Wait States
+-   Handshake
+-   Burst Transfer
+
+5. Visão Geral da Hierarquia de Memória
+
+5.1 Fundamentos
+
+5.1.1 Conceitos
+
+-   Objetivos
+-   Organização hierárquica
+-   Localidade temporal (Introdução)
+-   Localidade espacial (Introdução)
+
+5.1.2 Níveis da Hierarquia
+
+-   Registradores
+-   Cache
+-   Memória Principal
+-   Memória Secundária
+-   Armazenamento Externo
+
+5.1.3 Avaliação Geral
+
+-   Latência
+-   Throughput
+-   Gargalo de memória
+-   AMAT
+
+
+
+
+6. Hierarquia de Memória
+
+6.1 Fundamentos da Hierarquia
+
+6.1.1 Conceitos Gerais
+
+-   Conceito de hierarquia de memória
+-   Objetivos
+-   Princípio da localidade
+-   Balanceamento entre custo, capacidade e desempenho
+
+6.1.2 Princípios de Localidade
+
+-   Localidade temporal
+-   Localidade espacial
+-   Localidade sequencial
+-   Working Set
+-   Regra 90/10
+
+6.1.3 Avaliação
+
+-   Latência
+-   Throughput
+-   AMAT
+-   Memory Wall
+-   CPI relacionado à memória
+
+6.2 Níveis da Hierarquia
+
+6.2.1 Registradores
+
+-   Papel
+-   Velocidade
+-   Organização geral
+
+6.2.2 Memória Cache
+
+-   Papel
+-   Organização
+-   Relação com CPU
+
+6.2.3 Memória Principal
+
+-   Papel
+-   Organização
+-   Relação com cache
+
+6.2.4 Memória Secundária
+
+-   HDD
+-   SSD
+-   Persistência
+
+7. Fundamentos da Memória Cache
+
+7.1 Conceitos
+
+7.1.1 Introdução
+
+-   Definição
+-   Objetivos
+-   Funcionamento
+-   Benefícios
+
+7.1.2 Estrutura
+
+-   Linha
+-   Bloco
+-   Palavra
+-   Tag
+-   Índice
+-   Offset
+-   Conjunto
+
+7.2 Operações
+
+7.2.1 Acessos
+
+-   Cache Hit
+-   Cache Miss
+-   Hit Time
+-   Miss Penalty
+-   Taxa de acertos
+-   Taxa de falhas
+
+7.2.2 Tipos de Miss
+
+-   Cold
+-   Conflict
+-   Capacity
+-   Coherence
+
+8. Organização da Cache
+
+8.1 Níveis
+
+8.1.1 Organização
+
+-   L1
+-   L2
+-   L3
+-   L4
+
+8.1.2 Classificações
+
+-   Unificada
+-   Separada
+-   Privada
+-   Compartilhada
+-   Inclusiva
+-   Exclusiva
+-   Não inclusiva
+
+8.2 Mapeamento
+
+8.2.1 Direto
+
+-   Organização
+-   Funcionamento
+
+8.2.2 Associativo
+
+-   Totalmente associativo
+-   Associativo por conjunto
+
+8.3 Políticas
+
+8.3.1 Substituição
+
+-   FIFO
+-   LRU
+-   LFU
+-   Random
+-   PLRU
+
+8.3.2 Escrita
+
+-   Write Through
+-   Write Back
+-   Write Allocate
+-   No Write Allocate
+-   Write Combining
+
+9. Otimizações da Cache
+
+9.1 Técnicas
+
+9.1.1 Hardware
+
+-   Prefetch
+-   Hardware Prefetcher
+-   Stream Buffer
+-   Victim Cache
+-   Write Buffer
+-   Non-Blocking Cache
+
+9.1.2 Software
+
+-   Cache Blocking
+-   Loop Tiling
+-   Data Alignment
+-   Page Coloring
+
+9.2 Problemas
+
+9.2.1 Desempenho
+
+-   Cache Thrashing
+-   False Sharing
+-   Aliasing
+-   Pollution
+
+10. Coerência e Consistência da Cache
+
+10.1 Coerência
+
+10.1.1 Conceitos
+
+-   Compartilhamento
+-   Invalidação
+-   Atualização
+
+10.1.2 Protocolos
+
+-   MSI
+-   MESI
+-   MOSI
+-   MOESI
+-   Directory-Based
+-   Snooping
+
+10.2 Consistência de Memória
+
+10.2.1 Modelos
+
+-   Sequential Consistency
+-   Relaxed Consistency
+-   Memory Ordering (Introdução)
+
+11. Revisão da Hierarquia e Cache
+
+11.1 Integração
+
+11.1.1 Relação entre Hierarquia e Cache
+
+-   Fluxo CPU–Cache–RAM
+-   Gargalos
+-   Critérios de desempenho
+
+
+
+12. Memória Principal
+
+12.1 Fundamentos
+
+12.1.1 Conceitos Gerais
+
+-   Definição
+-   Objetivos
+-   Papel na hierarquia
+-   Organização física
+-   Organização lógica
+
+12.1.2 Estrutura Interna
+
+-   Células
+-   Linhas
+-   Colunas
+-   Matrizes
+-   Bancos
+-   Bank Groups
+-   Ranks
+-   Channels
+
+12.2 Tecnologias RAM
+
+12.2.1 SRAM
+
+-   Estrutura
+-   Funcionamento
+-   Aplicações
+
+12.2.2 DRAM
+
+-   Estrutura
+-   Funcionamento
+-   Refresh
+-   Burst Mode
+-   Page Mode
+-   Fast Page Mode
+-   EDO
+
+12.2.3 SDRAM
+
+-   SDR SDRAM
+-   Sincronização
+-   Clock
+
+12.2.4 DDR SDRAM
+
+-   DDR
+-   DDR2
+-   DDR3
+-   DDR4
+-   DDR5
+-   LPDDR
+-   GDDR
+-   HBM (Introdução)
+
+13. Organização da DRAM
+
+13.1 Estrutura Física
+
+13.1.1 Organização
+
+-   Bancos
+-   Matrizes
+-   Sense Amplifiers
+-   Row Buffer
+-   Barramentos internos
+
+13.1.2 Operações
+
+-   Activate
+-   Read
+-   Write
+-   Precharge
+-   Refresh
+
+13.2 Temporização
+
+13.2.1 Timings
+
+-   CAS Latency
+-   RAS
+-   tRCD
+-   tRP
+-   tRAS
+-   Command Rate
+
+13.2.2 Burst
+
+-   Burst Length
+-   Prefetch
+-   Open Page
+-   Closed Page
+
+14. Controladores de Memória
+
+14.1 Fundamentos
+
+14.1.1 Conceitos
+
+-   Memory Controller
+-   Objetivos
+-   Organização
+-   Controlador integrado
+
+14.2 Gerenciamento
+
+14.2.1 Escalonamento
+
+-   Memory Scheduling
+-   FCFS
+-   FR-FCFS
+
+14.2.2 Paralelismo
+
+-   Channel Interleaving
+-   Bank Interleaving
+-   Rank Interleaving
+
+15. Módulos de Memória
+
+15.1 Tipos
+
+15.1.1 Organização
+
+-   SIMM
+-   DIMM
+-   SO-DIMM
+-   UDIMM
+-   RDIMM
+-   LRDIMM
+-   ECC DIMM
+
+15.2 Desempenho
+
+15.2.1 Características
+
+-   Frequência
+-   Clock
+-   Largura do barramento
+-   Dual Channel
+-   Triple Channel
+-   Quad Channel
+-   Multi Channel
+
+16. Integridade e Confiabilidade
+
+16.1 Detecção de Erros
+
+16.1.1 Técnicas
+
+-   Bit de Paridade
+-   Paridade Par
+-   Paridade Ímpar
+-   Checksum
+-   CRC (Introdução)
+
+16.2 Correção de Erros
+
+16.2.1 ECC
+
+-   Código de Hamming
+-   SEC
+-   SECDED
+-   Chipkill
+-   ECC avançado
+
+16.3 Confiabilidade
+
+16.3.1 RAS
+
+-   Soft Errors
+-   Hard Errors
+-   Memory Scrubbing
+-   Memory Sparing
+-   Memory Mirroring
+-   Patrol Scrubbing
+
+17. Avaliação da Memória Principal
+
+17.1 Desempenho
+
+17.1.1 Métricas
+
+-   Latência
+-   Throughput
+-   Bandwidth
+-   Eficiência
+-   Gargalos
+
+17.1.2 Otimizações
+
+-   Balanceamento de canais
+-   Balanceamento de bancos
+-   Ajuste de timings
+-   Overclock (Introdução)
+
+
+
+18. Memórias Não Voláteis
+
+18.1 Fundamentos das Memórias Não Voláteis
+
+18.1.1 Conceitos Gerais
+
+- Definição
+- Persistência
+- Volatilidade versus não volatilidade
+- Papel na hierarquia de memória
+- Características gerais
+
+18.1.2 Classificação
+
+- ROM
+- PROM
+- EPROM
+- EEPROM
+- Flash NOR
+- Flash NAND
+
+18.2 Tecnologias de Memórias Não Voláteis
+
+18.2.1 ROM e Derivadas
+
+- Mask ROM
+- PROM
+- EPROM
+- EEPROM
+
+18.2.2 Flash Memory
+
+- NOR Flash
+- NAND Flash
+- SLC
+- MLC
+- TLC
+- QLC
+- PLC
+
+18.2.3 Memórias Emergentes
+
+- MRAM
+- FRAM
+- PCM
+- ReRAM
+- 3D XPoint
+
+19. Dispositivos de Armazenamento
+
+19.1 Armazenamento Magnético
+
+19.1.1 HDD
+
+- Estrutura
+- Pratos
+- Trilhas
+- Setores
+- Cabeças
+- Atuador
+
+19.1.2 Funcionamento
+
+- Leitura
+- Escrita
+- Seek Time
+- Rotational Latency
+- Transfer Rate
+
+19.2 Armazenamento em Estado Sólido
+
+19.2.1 SSD
+
+- Estrutura
+- Controladora
+- NAND Flash
+- DRAM Cache
+- SLC Cache
+
+19.2.2 Gerenciamento
+
+- Wear Leveling
+- Garbage Collection
+- Over-Provisioning
+- TRIM
+- Bad Block Management
+
+20. Interfaces de Armazenamento
+
+20.1 Interfaces Internas
+
+20.1.1 Padrões
+
+- PATA
+- SATA
+- SAS
+- NVMe
+- PCI Express
+
+20.1.2 Protocolos
+
+- AHCI
+- NVMe
+- Command Queues
+- Submission Queues
+- Completion Queues
+
+20.2 Interfaces Externas
+
+20.2.1 Conectividade
+
+- USB
+- Thunderbolt
+- eSATA
+- Network Storage
+
+21. Organização dos Dados em Armazenamento
+
+21.1 Estruturas Lógicas
+
+21.1.1 Organização
+
+- Blocos
+- Setores Lógicos
+- Clusters
+- Partições
+- Volumes
+
+21.1.2 Endereçamento
+
+- LBA
+- CHS (Histórico)
+- Mapeamento lógico-físico
+
+22. Avaliação dos Sistemas de Armazenamento
+
+22.1 Desempenho
+
+22.1.1 Métricas
+
+- Latência
+- IOPS
+- Throughput
+- Tempo de resposta
+- Eficiência energética
+
+22.1.2 Confiabilidade
+
+- MTBF
+- TBW
+- DWPD
+- Retenção de dados
+- Durabilidade
+
+
+
+
+23. Memória Virtual
+
+23.1 Fundamentos
+
+23.1.1 Conceitos Gerais
+
+- Definição
+- Objetivos
+- Espaço de endereçamento virtual
+- Espaço de endereçamento físico
+- Abstração da memória
+
+23.1.2 Benefícios
+
+- Isolamento
+- Proteção
+- Compartilhamento
+- Expansão lógica da memória
+- Execução de programas maiores que a RAM
+
+23.2 Paginação
+
+23.2.1 Conceitos
+
+- Página
+- Quadro
+- Tabela de páginas
+- Endereço virtual
+- Endereço físico
+
+23.2.2 Políticas
+
+- FIFO
+- LRU
+- Clock
+- LFU
+- Working Set
+
+23.3 Segmentação
+
+23.3.1 Organização
+
+- Segmentos
+- Base
+- Limite
+- Proteção
+- Compartilhamento
+
+23.4 MMU e TLB
+
+23.4.1 MMU
+
+- Tradução de endereços
+- Proteção
+- Permissões
+- Controle de acesso
+
+23.4.2 TLB
+
+- Estrutura
+- Hit
+- Miss
+- Reposição
+- Flush
+
+24. Gerenciamento de Memória
+
+24.1 Alocação
+
+24.1.1 Técnicas
+
+- Contígua
+- Não contígua
+- Buddy System
+- Slab Allocator
+- Pool Allocator
+
+24.2 Paginação por Demanda
+
+24.2.1 Operações
+
+- Page Fault
+- Swap In
+- Swap Out
+- Copy-on-Write
+- Zero Page
+
+25. Multiprocessadores e Memória
+
+25.1 Arquiteturas
+
+25.1.1 Modelos
+
+- UMA
+- NUMA
+- COMA
+- ccNUMA
+
+25.2 Memória Compartilhada
+
+25.2.1 Organização
+
+- Compartilhamento
+- Sincronização
+- Locks
+- Semáforos
+- Barreiras
+
+25.3 Memória Distribuída
+
+25.3.1 Conceitos
+
+- Nós
+- Comunicação
+- MPI
+- DSM
+- Coerência
+
+26. Consistência e Sincronização
+
+26.1 Modelos
+
+26.1.1 Consistência
+
+- Sequential Consistency
+- Weak Consistency
+- Release Consistency
+- Acquire/Release
+- Memory Fences
+
+26.2 Operações Atômicas
+
+26.2.1 Instruções
+
+- Compare-and-Swap
+- Test-and-Set
+- Fetch-and-Add
+- Load Linked
+- Store Conditional
+
+27. Sistemas Especializados de Memória
+
+27.1 GPUs
+
+27.1.1 Hierarquia
+
+- Global Memory
+- Shared Memory
+- Constant Memory
+- Texture Memory
+- Registers
+
+27.2 Sistemas Embarcados
+
+27.2.1 Organização
+
+- SRAM embarcada
+- Flash embarcada
+- EEPROM
+- Memória em microcontroladores
+- Execução XIP
+
+27.3 Sistemas de Alto Desempenho
+
+27.3.1 HPC
+
+- HBM
+- CXL (Introdução)
+- Memória persistente
+- Hierarquia híbrida
+- Escalabilidade
+
+
+
+28. Tecnologias Modernas de Memória
+
+28.1 Memórias Avançadas
+
+28.1.1 Tecnologias
+- HBM
+- HBM2
+- HBM3
+- CAM
+- TCAM
+- NVDIMM
+- Persistent Memory
+- CXL Memory
+- Memórias 3D
+
+28.2 Tendências
+
+28.2.1 Evolução
+- Chiplets
+- Near-Memory Computing
+- Processing-in-Memory
+- Compute Express Link
+- Unified Memory
+
+29. Otimizações Avançadas
+
+29.1 Hardware
+
+29.1.1 Técnicas
+- Prefetch Adaptativo
+- Compressão de Memória
+- Deduplicação
+- Tiered Memory
+- Memory Pooling
+
+29.2 Software
+
+29.2.1 Técnicas
+- Huge Pages
+- NUMA Awareness
+- Data Locality
+- Memory Profiling
+- Otimização de Alocadores
+
+30. Segurança da Memória
+
+30.1 Proteção
+
+30.1.1 Técnicas
+- ASLR
+- DEP
+- Memory Encryption
+- Memory Tagging
+- Secure Memory
+
+30.2 Vulnerabilidades
+
+30.2.1 Ataques
+- RowHammer
+- Buffer Overflow
+- Use-after-Free
+- Cold Boot Attack
+- Side Channels
+
+31. Aplicações
+
+31.1 Ambientes
+
+31.1.1 Sistemas
+- Computadores pessoais
+- Servidores
+- Data Centers
+- HPC
+- Computação em Nuvem
+
+31.1.2 Plataformas
+- Smartphones
+- Sistemas Embarcados
+- IoT
+- GPUs
+- Inteligência Artificial
+
+32. Revisão Geral
+
+32.1 Integração
+
+32.1.1 Revisão
+- Hierarquia de memória
+- Cache
+- RAM
+- Armazenamento
+- Memória Virtual
+- Multiprocessadores
+- Tecnologias modernas
+
+33. Conclusão
+
+33.1 Encerramento
+
+33.1.1 Síntese
+- Evolução das memórias
+- Impacto no desempenho
+- Tendências futuras
+- Integração com novas arquiteturas
+- Perspectivas de pesquisa
+
+
+
+
