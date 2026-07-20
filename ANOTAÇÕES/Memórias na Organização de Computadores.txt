@@ -535,7 +535,6 @@
 
 
 
-
 11. Hierarquia e Cache
 
  11.1 Relação entre Hierarquia e Cache:
@@ -561,6 +560,10 @@
 	  Papel na hierarquia
 	  Organização física
 	  Organização lógica
+	  Características gerais
+ 	  Volatilidade
+	  Capacidade
+	  Escalabilidade
    12.1.2 Estrutura Interna:
 	  Células
 	  Linhas
@@ -570,24 +573,41 @@
 	  Bank Groups
 	  Ranks
 	  Channels
+	  Subarrays
+	  Row Buffer
+	  Sense Amplifiers
+	  Barramentos internos
 
  12.2 Tecnologias RAM:
   12.2.1 SRAM:
 	  Estrutura
 	  Funcionamento
-	  Aplicações
+	  Célula de 6T
+	  Operações de leitura
+	  Operações de escrita
+	  Consumo de energia
+	  Aplicações  
   12.2.2 DRAM:
 	  Estrutura
 	  Funcionamento
+	  Célula 1T1C
 	  Refresh
+	  Refresh Distribuído
+	  Auto Refresh
+	  Self Refresh
 	  Burst Mode
 	  Page Mode
 	  Fast Page Mode
 	  EDO
+	  FPM
+	  BEDO
   12.2.3 SDRAM:
 	  SDR SDRAM
 	  Sincronização
 	  Clock
+	  Pipeline
+	  Burst
+	  Banco de memória
    12.2.4 DDR SDRAM:
 	  DDR
 	  DDR2
@@ -596,7 +616,26 @@
 	  DDR5
 	  LPDDR
 	  GDDR
-	  HBM (Introdução)
+	  HBM
+	  HBM2
+	  HBM3
+	  Wide I/O
+
+ 12.3 Operações da Memória Principal:
+  12.3.1 Operações Básicas:
+	  Leitura
+	  Escrita
+	  Ciclo de memória
+	  Ativação de linha
+	  Pré-carga
+	  Refresh
+  12.3.2 Organização dos Acessos:
+	  Acesso Sequencial
+	  Acesso Aleatório
+	  Burst Access
+	  Interleaving
+	  Paralelismo de Bancos
+
 
 
 13. Organização da DRAM:
@@ -604,30 +643,60 @@
  13.1 Estrutura Física:
   13.1.1 Organização:
 	  Bancos
-	  Matrizes
+	  Bank Groups
+ 	  Matrizes
+	  Subarrays
 	  Sense Amplifiers
 	  Row Buffer
 	  Barramentos internos
+	  Decoder de Linhas
+	  Decoder de Colunas
   13.1.2 Operações:
 	  Activate
 	  Read
 	  Write
 	  Precharge
 	  Refresh
+	  Auto Refresh
+	  Self Refresh
+	  All Bank Refresh
+	  Per Bank Refresh
 
  13.2 Temporização:
   13.2.1 Timings:
-	  CAS Latency
+	  CAS Latency (CL)
 	  RAS
 	  tRCD
 	  tRP
 	  tRAS
-	  Command Rate
+	  tRC
+	  tRFC
+	  tRRD
+	  tFAW
+	  tCCD
+	  Command Rate (CR)
   13.2.2 Burst:
 	  Burst Length
+	  Burst Chop
 	  Prefetch
 	  Open Page
 	  Closed Page
+	  Open Row Policy
+	  Closed Row Policy
+
+ 13.3 Arquitetura da DRAM:
+  13.3.1 Organização:
+	  Organização por Bancos
+	  Organização por Ranks
+	  Organização por Canais
+	  Organização por Módulos
+	  Paralelismo Interno
+  13.3.2 Eficiência
+	  Localidade de Linha
+	  Row Buffer Hits
+	  Row Buffer Misses
+	  Row Buffer Conflicts
+	  Eficiência do Paralelismo
 
 
 
@@ -638,39 +707,89 @@
 	Memory Controller
 	Objetivos
 	Organização
-	Controlador integrado
+	Controlador Integrado
+	Controlador Externo
+	Interface CPU–Memória
+	Interface DRAM
 
  14.2 Gerenciamento:
   14.2.1 Escalonamento:
 	  Memory Scheduling
 	  FCFS
 	  FR-FCFS
+	  Round Robin
+	  Quality of Service (QoS)
+	  Priorização de Requisições
   14.2.2 Paralelismo:
 	  Channel Interleaving
 	  Bank Interleaving
 	  Rank Interleaving
+	  Bank Group Interleaving
+	  Paralelismo de Requisições
+
+ 14.3 Funções do Controlador:
+  14.3.1 Gerenciamento:
+	  Tradução de Endereços
+	  Gerenciamento de Refresh
+	  Gerenciamento de Timings
+	  Gerenciamento de Filas
+	  Reordenação de Acessos
+  14.3.2 Otimizações:
+ 	  Row Buffer Management
+	  Open Page Policy
+	  Closed Page Policy
+	  Prefetch
+	  Balanceamento de Canais
 
 
 
 15. Módulos de Memória:
 
  15.1 Tipos:
-	SIMM
-	DIMM
-	SO-DIMM
-	UDIMM
-	RDIMM
-	LRDIMM
-	ECC DIMM
+  15.1.1 Formatos:
+	  SIMM
+	  DIMM
+	  SO-DIMM
+	  MicroDIMM
+	  CAMM
+  15.1.2 Classificações:
+	  UDIMM
+	  RDIMM
+	  LRDIMM
+	  ECC DIMM
+	  Registered
+	  Buffered
+	  Unbuffered
 
- 15.2 Desempenho:
-	Frequência
-	Clock
-	Largura do barramento
-	Dual Channel
-	Triple Channel
-	Quad Channel
-	Multi Channel
+ 15.2 Organização:
+  15.2.1 Estrutura:
+	  Chips
+	  Ranks
+	  Bancos
+	  Barramento de Dados
+	  SPD
+	  PMIC (DDR5)
+  15.2.2 Compatibilidade:
+	  Capacidade
+	  Frequência
+	  Latência
+	  Tensão
+	  Geração DDR
+
+ 15.3 Desempenho:
+  15.3.1 Características:
+	  Frequência
+	  Clock
+	  Data Rate
+	  Largura do Barramento
+	  Bandwidth
+  15.3.2 Configurações:
+	  Single Channel
+	  Dual Channel
+	  Triple Channel
+	  Quad Channel
+	  Multi Channel
+	  Flex Mode
 
 
 
