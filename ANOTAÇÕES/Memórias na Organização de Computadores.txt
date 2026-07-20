@@ -793,49 +793,90 @@
 
 
 
-
 16. Integridade e Confiabilidade:
 
  16.1 Detecção de Erros:
-	Bit de Paridade
-	Paridade Par
-	Paridade Ímpar
-	Checksum
-	CRC 
+  16.1.1 Técnicas:
+	  Bit de Paridade
+	  Paridade Par
+	  Paridade Ímpar
+	  Checksum
+	  CRC
+  16.1.2 Classificação:
+	  Detecção de Erro Simples
+	  Detecção de Erros Múltiplos
+	  Limitações
 
  16.2 Correção de Erros:
-	ECC
-	Código de Hamming
-	SEC
-	SECDED
-	Chipkill
-	ECC avançado
+  16.2.1 Técnicas:
+	  ECC
+	  Código de Hamming
+	  SEC
+	  SECDED
+	  Chipkill
+	  Lockstep
+	  ECC Avançado
+  16.2.2 Funcionamento:
+ 	  Geração dos Bits ECC
+	  Correção Automática
+	  Detecção de Múltiplos Erros
+	  Relatórios de Erro
 
  16.3 Confiabilidade:
-	RAS
-	Soft Errors
-	Hard Errors
-	Memory Scrubbing
-	Memory Sparing
-	Memory Mirroring
-	Patrol Scrubbing
+  16.3.1 Recursos:
+	  RAS
+	  Soft Errors
+	  Hard Errors
+	  Memory Scrubbing
+	  Patrol Scrubbing
+	  Demand Scrubbing
+	  Memory Sparing
+	  Memory Mirroring
+	  Hot Add Memory
+  16.3.2 Disponibilidade:
+	  Failover
+	  Tolerância a Falhas
+	  Monitoramento de Erros
+	  Diagnóstico
 
 
 
 17. Avaliação da Memória Principal:
 
  17.1 Métricas:
-	Latência
-	Throughput
-	Bandwidth
-	Eficiência
-	Gargalos
+  17.1.1 Desempenho:
+	  Latência
+	  Throughput
+	  Bandwidth
+	  Tempo de Acesso
+	  Tempo de Ciclo
+	  Eficiência
+	  Utilização dos Bancos
+	  Utilização dos Canais
+	  Gargalos
+  17.1.2 Indicadores:
+	  IPC Relacionado à Memória
+	  AMAT
+	  Row Buffer Hit Rate
+	  Eficiência do Controlador
+	  Eficiência Energética
 
  17.2 Otimizações:
-	Balanceamento de canais
-	Balanceamento de bancos
-	Ajuste de timings
-	Overclock (Introdução)
+  17.2.1 Hardware:
+	  Balanceamento de Canais
+	  Balanceamento de Bancos
+	  Balanceamento de Ranks
+	  Ajuste de Timings
+	  Interleaving
+	  Prefetch
+  17.2.2 Configuração:
+	  Overclock 
+	  Underclock
+	  Undervolting
+	  Perfis XMP
+	  Perfis EXPO
+	  Ajuste Manual de Timings
+	  Ajuste de Frequência
 
 
 
