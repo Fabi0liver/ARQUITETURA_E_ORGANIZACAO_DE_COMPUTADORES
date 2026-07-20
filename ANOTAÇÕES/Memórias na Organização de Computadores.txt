@@ -72,134 +72,112 @@
 	  Persistência
 	  Volatilidade
 	  Não volatilidade
+  2.1.2 Características das Memórias:
+	  Capacidade
+	  Latência
+	  Tempo de acesso
+	  Tempo de ciclo
+	  Largura de banda
+	  Throughput
+	  Custo por bit
+	  Consumo de energia
+  2.1.3 Métricas de Desempenho:
+	  AMAT (Introdução)
+	  Memory Wall (Introdução)
+	  CPI relacionado à memória (Introdução)
 
-2.1.2 Características das Memórias
+ 2.2 Classificação das Memórias:
+  2.2.1 Quanto à Persistência:
+	  Voláteis
+	  Não voláteis
+  2.2.2 Quanto ao Método de Acesso:
+	  Aleatório
+	  Sequencial
+	  Direto
+	  Associativo
+  2.2.3 Quanto à Função:
+	  Primária
+	  Secundária
+	  Terciária
+	  Cache
 
--   Capacidade
--   Latência
--   Tempo de acesso
--   Tempo de ciclo
--   Largura de banda
--   Throughput
--   Custo por bit
--   Consumo de energia
 
-2.1.3 Métricas de Desempenho
-
--   AMAT (Introdução)
--   Memory Wall (Introdução)
--   CPI relacionado à memória (Introdução)
-
-2.2 Classificação das Memórias
-
-2.2.1 Quanto à Persistência
-
--   Voláteis
--   Não voláteis
-
-2.2.2 Quanto ao Método de Acesso
-
--   Aleatório
--   Sequencial
--   Direto
--   Associativo
-
-2.2.3 Quanto à Função
-
--   Primária
--   Secundária
--   Terciária
--   Cache
 
 3. Organização Geral das Memórias
 
-3.1 Organização Física
+ 3.1 Organização Física:
+  3.1.1 Estrutura Física:
+	  Chips
+	  Matrizes
+	  Linhas
+	  Colunas
+	  Bancos
+	  Ranks
+	  Canais
+	  Módulos
+  3.1.2 Organização Interna:
+	  Células
+	  Blocos
+	  Palavras
+	  Interleaving
+	  Organização por bits
+	  Organização por palavras
 
-3.1.1 Estrutura Física
+ 3.2 Organização Lógica:
+  3.2.1 Estruturas Lógicas:
+	  Espaço de endereçamento
+	  Organização por blocos
+	  Organização linear
+	  Organização hierárquica
+  3.2.2 Unidades de Informação:
+	  Bit
+	  Byte
+	  Palavra
+	  Bloco
+	  Linha de memória
 
--   Chips
--   Matrizes
--   Linhas
--   Colunas
--   Bancos
--   Ranks
--   Canais
--   Módulos
+ 3.3 Expansão de Memória:
+  3.3.1 Técnicas de Expansão:
+	  Expansão por largura
+	  Expansão por profundidade
+	  Associação de chips
+	  Decodificação de endereços
+	  Seleção de chips
 
-3.1.2 Organização Interna
 
--   Células
--   Blocos
--   Palavras
--   Interleaving
--   Organização por bits
--   Organização por palavras
 
-3.2 Organização Lógica
+4. Endereçamento e Interface da Memória:
 
-3.2.1 Estruturas Lógicas
+ 4.1 Endereçamento:
+  4.1.1 Conceitos:
+	  Endereço físico
+	  Endereço lógico
+	  Espaço de endereçamento
+	  Capacidade de endereçamento
+  4.1.2 Organização:
+ 	  Endereçamento por byte
+	  Endereçamento por palavra
+ 	  Alinhamento
+	  Big Endian
+	  Little Endian
 
--   Espaço de endereçamento
--   Organização por blocos
--   Organização linear
--   Organização hierárquica
+ 4.2 Interface CPU–Memória:
+  4.2.1 Comunicação:
+	  Barramento de dados
+	  Barramento de endereços
+	  Barramento de controle
+  4.2.2 Operações:
+	  Leitura
+	  Escrita
+	  Ciclo de memória
+	  Temporização
+	  Wait States
+	  Handshake
+	  Burst Transfer
 
-3.2.2 Unidades de Informação
 
--   Bit
--   Byte
--   Palavra
--   Bloco
--   Linha de memória
 
-3.3 Expansão de Memória
-
-3.3.1 Técnicas de Expansão
-
--   Expansão por largura
--   Expansão por profundidade
--   Associação de chips
--   Decodificação de endereços
--   Seleção de chips
-
-4. Endereçamento e Interface da Memória
-
-4.1 Endereçamento
-
-4.1.1 Conceitos
-
--   Endereço físico
--   Endereço lógico
--   Espaço de endereçamento
--   Capacidade de endereçamento
-
-4.1.2 Organização
-
--   Endereçamento por byte
--   Endereçamento por palavra
--   Alinhamento
--   Big Endian
--   Little Endian
-
-4.2 Interface CPU–Memória
-
-4.2.1 Comunicação
-
--   Barramento de dados
--   Barramento de endereços
--   Barramento de controle
-
-4.2.2 Operações
-
--   Leitura
--   Escrita
--   Ciclo de memória
--   Temporização
--   Wait States
--   Handshake
--   Burst Transfer
-
-5. Visão Geral da Hierarquia de Memória
+5. Visão Geral da Hierarquia de Memória:
 
 5.1 Fundamentos
 
