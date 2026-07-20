@@ -1449,112 +1449,107 @@
 
 
 
-28. Tecnologias Modernas de Memória
+28. Tecnologias Modernas de Memória:
 
-28.1 Memórias Avançadas
+ 28.1 Memórias Avançadas:
+  28.1.1 Tecnologias:
+	  HBM
+	  HBM2
+	  HBM3
+	  CAM
+	  TCAM
+	  NVDIMM
+	  Persistent Memory
+	  CXL Memory
+	  Memórias 3D
 
-28.1.1 Tecnologias
-- HBM
-- HBM2
-- HBM3
-- CAM
-- TCAM
-- NVDIMM
-- Persistent Memory
-- CXL Memory
-- Memórias 3D
+ 28.2 Tendências:
+  28.2.1 Evolução:
+	  Chiplets
+	  Near-Memory Computing
+	  Processing-in-Memory
+	  Compute Express Link
+	  Unified Memory
 
-28.2 Tendências
 
-28.2.1 Evolução
-- Chiplets
-- Near-Memory Computing
-- Processing-in-Memory
-- Compute Express Link
-- Unified Memory
 
 29. Otimizações Avançadas
 
-29.1 Hardware
+29.1 Hardware:
+ 29.1.1 Técnicas:
+	  Prefetch Adaptativo
+	  Compressão de Memória
+	  Deduplicação
+	  Tiered Memory
+	  Memory Pooling
 
-29.1.1 Técnicas
-- Prefetch Adaptativo
-- Compressão de Memória
-- Deduplicação
-- Tiered Memory
-- Memory Pooling
+ 29.2 Software:
+  29.2.1 Técnicas:
+	  Huge Pages
+	  NUMA Awareness
+	  Data Locality
+	  Memory Profiling
+	  Otimização de Alocadores
 
-29.2 Software
 
-29.2.1 Técnicas
-- Huge Pages
-- NUMA Awareness
-- Data Locality
-- Memory Profiling
-- Otimização de Alocadores
 
-30. Segurança da Memória
+30. Segurança da Memória:
 
-30.1 Proteção
+ 30.1 Proteção:
+  30.1.1 Técnicas:
+	  ASLR
+	  DEP
+	  Memory Encryption
+	  Memory Tagging
+	  Secure Memory
 
-30.1.1 Técnicas
-- ASLR
-- DEP
-- Memory Encryption
-- Memory Tagging
-- Secure Memory
+ 30.2 Vulnerabilidades:
+  30.2.1 Ataques:
+	  RowHammer
+	  Buffer Overflow
+	  Use-after-Free
+	  Cold Boot Attack
+	  Side Channels
 
-30.2 Vulnerabilidades
 
-30.2.1 Ataques
-- RowHammer
-- Buffer Overflow
-- Use-after-Free
-- Cold Boot Attack
-- Side Channels
 
-31. Aplicações
+31. Aplicações:
 
-31.1 Ambientes
+ 31.1 Ambientes:
+  31.1.1 Sistemas:
+	  Computadores pessoais
+	  Servidores
+	  Data Centers
+	  HPC
+	  Computação em Nuvem
+  31.1.2 Plataformas:
+	  Smartphones
+	  Sistemas Embarcados
+	  IoT
+	  GPUs
+	  Inteligência Artificial
 
-31.1.1 Sistemas
-- Computadores pessoais
-- Servidores
-- Data Centers
-- HPC
-- Computação em Nuvem
 
-31.1.2 Plataformas
-- Smartphones
-- Sistemas Embarcados
-- IoT
-- GPUs
-- Inteligência Artificial
+32. Revisão Geral:
 
-32. Revisão Geral
+ 32.1 Integração:
+  32.1.1 Revisão:
+	  Hierarquia de memória
+	  Cache
+	  RAM
+	  Armazenamento
+	  Memória Virtual
+	  Multiprocessadores
+	  Tecnologias modernas
 
-32.1 Integração
 
-32.1.1 Revisão
-- Hierarquia de memória
-- Cache
-- RAM
-- Armazenamento
-- Memória Virtual
-- Multiprocessadores
-- Tecnologias modernas
 
 33. Conclusão
 
-33.1 Encerramento
-
-33.1.1 Síntese
-- Evolução das memórias
-- Impacto no desempenho
-- Tendências futuras
-- Integração com novas arquiteturas
-- Perspectivas de pesquisa
-
-
-
-
+ 33.1 Encerramento:
+  33.1.1 Síntese:
+	  Evolução das memórias
+	  Impacto no desempenho
+	  Tendências futuras
+	  Integração com novas arquiteturas
+	  Perspectivas de pesquisa
