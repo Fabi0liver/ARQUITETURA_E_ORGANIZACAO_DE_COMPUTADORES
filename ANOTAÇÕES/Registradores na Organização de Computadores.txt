@@ -313,7 +313,7 @@
 
 
 
-Parte 2 — Registradores Fundamentais da CPU:
+*Parte 2 — Registradores Fundamentais da CPU:
 
 
 5. Registradores de Propósito Geral:
@@ -960,5 +960,77 @@ Parte 2 — Registradores Fundamentais da CPU:
 	  Entrada em exceções
 	  Retorno de exceções
 
+
+
+*Parte 3 — Organização Física dos Registradores:
+
+
+14. Banco de Registradores:
+
+ 14.1 Conceitos Gerais:
+
+  14.1.1 Register File:
+	  Conceito
+	  Objetivos
+	  Organização geral
+	  Papel na CPU
+
+  14.1.2 Estrutura:
+	  Conjunto de registradores
+	  Organização por palavras
+	  Endereçamento interno
+	  Seleção
+
+
+ 14.2 Organização do Banco:
+
+  14.2.1 Organização Física:
+	  Organização matricial
+	  Linhas de seleção
+	  Linhas de dados
+	  Portas
+
+  14.2.2 Organização Lógica:
+	  Numeração
+	  Endereçamento
+	  Seleção
+
+
+ 14.3 Portas de Acesso:
+
+  14.3.1 Portas de Leitura:
+	  Leitura simples
+	  Leituras simultâneas
+	  Seleção
+
+  14.3.2 Portas de Escrita:
+	  Escrita
+	  Escritas simultâneas
+	  Atualização
+
+  14.3.3 Banco Multiporta:
+	  Conceito
+	  Organização
+	  Benefícios
+	  Limitações
+
+
+ 14.4 Operações no Banco:
+
+  14.4.1 Leitura:
+	  Seleção
+	  Disponibilização
+	  Transferência
+
+  14.4.2 Escrita:
+	  Seleção do destino
+	  Atualização
+	  Sincronização
+
+  14.4.3 Operações Simultâneas:
+	  Leituras paralelas
+	  Escritas paralelas
+	  Conflitos
+	  Arbitragem
 
 
