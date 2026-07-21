@@ -840,5 +840,68 @@ Parte 2 — Registradores Fundamentais da CPU:
 
 
 
+12. Registradores de Interrupções e Exceções:
+
+ 12.1 Exception Program Counter (EPC):
+
+  12.1.1 Conceitos:
+	  Endereço da instrução interrompida
+	  Salvamento do PC
+
+  12.1.2 Funcionamento:
+	  Entrada na exceção
+	  Retorno da exceção
+	  Restauração do fluxo
+
+
+ 12.2 Exception Cause Register:
+	
+  12.2.1 Conceitos:
+	  Causa da exceção
+	  Identificação do evento
+
+  12.2.2 Tipos:
+	  Exceções síncronas
+	  Interrupções assíncronas
+	  Falhas
+	  Traps
+
+
+ 12.3 Interrupt Mask Register:
+
+  12.3.1 Conceitos:
+	  Máscara de interrupções
+	  Habilitação
+	  Desabilitação
+
+  12.3.2 Organização:
+	  Bits de máscara
+	  Prioridades
+	  Interrupções individuais
+
+
+ 12.4 Interrupt Vector Base Register:
+
+  12.4.1 Conceitos:
+	  Endereço base dos vetores
+
+  12.4.2 Funcionamento:
+	  Tabela de vetores
+	  Localização dos handlers
+	  Redirecionamento
+
+
+ 12.5 Exception Vector Register:
+
+  12.5.1 Conceitos:
+	  Vetores de exceção
+	  Endereços dos handlers
+
+  12.5.2 Organização:
+	  Tabela de exceções
+	  Tratamento
+	  Retorno
+
+
 
 
