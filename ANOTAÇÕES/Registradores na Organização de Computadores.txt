@@ -1034,3 +1034,140 @@
 	  Arbitragem
 
 
+
+15. Operações com Registradores:
+
+ 15.1 Operações Básicas:
+
+  15.1.1 Transferência:
+ 	  Load
+	  Store
+	  Move
+	  Copy
+	  Exchange
+
+  15.1.2 Atualização:
+	  Inicialização
+	  Limpeza
+	  Reinicialização
+	  Preservação
+
+  15.1.3 Manipulação:
+	  Incremento
+	  Decremento
+	  Complemento
+	  Negação
+
+ 
+ 15.2 Micro-operações:
+
+  15.2.1 Transferência:
+	  Registrador → registrador
+	  Transferência paralela
+	  Transferência serial
+	  Transferência condicional
+
+  15.2.2 Aritmética:
+	  Soma
+	  Subtração
+	  Incremento
+	  Decremento
+	  Comparação
+
+  15.2.3 Lógica:
+	  AND
+	  OR
+	  XOR
+	  NOT
+	  Teste
+
+  15.2.4 Deslocamento:
+	  Deslocamento lógico
+	  Deslocamento aritmético
+	  Esquerda
+	  Direita
+
+  15.2.5 Rotação:
+	  Rotação à esquerda
+	  Rotação à direita
+	  Rotação com Carry
+
+
+
+16. Linguagem de Transferência entre Registradores (RTL):
+
+ 16.1 Conceitos:
+
+  16.1.1 Register Transfer Language:
+	  Definição
+	  Objetivos
+	  Representação simbólica
+	  Nível de abstração
+
+  16.1.2 Elementos:
+	  Registradores
+	  Operadores
+	  Transferências
+	  Condições
+	  Controle
+
+
+ 16.2 Representação:
+
+  16.2.1 Transferência Simples:
+	  Origem
+	  Destino
+
+  16.2.2 Transferência Condicional:
+	  Condições
+	  Controle
+
+  16.2.3 Operações:
+	  Aritméticas
+	  Lógicas
+	  Deslocamentos
+
+
+
+17. Transferência entre Registradores:
+
+ 17.1 Conceitos:
+
+  17.1.1 Elementos:
+	  Registrador de origem
+	  Registrador de destino
+	  Barramentos
+	  Sinais de controle
+	  Clock
+
+  17.1.2 Características:
+	  Síncrona
+	  Paralela
+	  Controlada
+	  Temporária
+
+ 
+ 17.2 Controle:
+
+  17.2.1 Sinais:
+	  Read Enable
+	  Write Enable
+	  Enable
+	  Clock
+	  Reset
+
+  17.2.2 Sequenciamento
+	  Seleção da origem
+	  Seleção do destino
+	  Leitura
+	  Escrita
+	  Atualização
+
+
+
+
+
+
+
+
+
