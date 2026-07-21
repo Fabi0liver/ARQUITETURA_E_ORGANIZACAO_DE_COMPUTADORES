@@ -1258,5 +1258,325 @@
 
 
 
+* Parte 4 — Registradores em Processadores Modernos:
+
+
+20. Registradores Arquiteturais e Físicos:
+
+ 20.1 Registradores Arquiteturais:
+ 
+  20.1.1 Conceitos:
+	  Definição
+	  Registradores definidos pela ISA
+	  Estado visível da máquina
+
+  20.1.2 Características:
+	  Visibilidade
+	  Nomeação
+	  Largura
+	  Operações permitidas
+
+
+ 20.2 Registradores Físicos:
+
+  20.2.1 Conceitos:
+	  Registradores internos reais
+	  Armazenamento de valores
+
+  20.2.2 Organização:
+	  Quantidade física
+	  Relação com registradores arquiteturais
+	  Estado interno
+
+
+ 20.3 Estado do Processador:
+
+  20.3.1 Estado Arquitetural:
+	  Registradores visíveis
+	  PC
+	  Flags
+ 	  Memória observável
+
+  20.3.2 Estado Microarquitetural:
+	  Registradores físicos
+	  Buffers
+	  Pipeline
+	  Caches
+	  Unidades internas
+
+
+
+21. Renomeação de Registradores:
+
+ 21.1 Conceitos:
+
+  21.1.1 Register Renaming:
+	  Definição
+	  Objetivos
+	  Registradores lógicos
+	  Registradores físicos
+
+  21.1.2 Dependências:
+	  RAW
+	  WAR
+	  WAW
+
+
+ 21.2 Estruturas:
+
+  21.2.1 Rename Map:
+	  Mapeamento
+	  Atualização
+	  Associação
+
+  21.2.2 Free List:
+	  Registradores disponíveis
+	  Alocação
+	  Liberação
+
+  21.2.3 Reclaiming:
+	  Recuperação
+	  Liberação de registradores antigos
+
+
+
+22. Registradores de Pipeline:
+
+ 22.1 Conceitos:
+
+  22.1.1 Pipeline Registers:
+	  Armazenamento entre estágios
+	  Separação dos estágios
+	  Sincronização
+
+  22.1.2 Estágios:
+	  IF/ID
+	  ID/EX
+	  EX/MEM
+	  MEM/WB
+
+
+ 22.2 Funcionamento:
+
+  22.2.1 Armazenamento:
+	  Instruções
+	  Operandos
+	  Resultados
+	  Sinais de controle
+
+  22.2.2 Atualização:
+	  Clock
+	  Avanço dos estágios
+	  Flush
+
+
+ 22.3 Hazards:
+
+  22.3.1 Data Hazards:
+	  RAW
+	  WAR
+	  WAW
+
+  22.3.2 Control Hazards:
+	  Branches
+	  Jumps
+	  Flush
+
+  22.3.3 Structural Hazards:
+	  Conflitos de recursos
+	  Compartilhamento
+
+
+ 22.4 Técnicas de Solução:
+
+  22.4.1 Stall:
+	  Espera
+	  Bolhas
+
+  22.4.2 Forwarding:
+	  Bypassing
+	  Encaminhamento de resultados
+
+  22.4.3 Register Renaming:
+	  Eliminação de dependências falsas
+
+
+
+23. Execução Fora de Ordem:
+
+ 23.1 Fundamentos:
+
+  23.1.1 Conceitos:
+	  Out-of-Order Execution
+	  Execução dinâmica
+	  Paralelismo de instruções
+
+  23.1.2 Objetivos:
+	  Aproveitamento das unidades funcionais
+	  Redução de esperas
+	  Aumento do IPC
+
+
+ 23.2 Estruturas:
+
+  23.2.1 Reservation Stations:
+	  Armazenamento de operandos
+	  Instruções aguardando execução
+
+  23.2.2 Reorder Buffer:
+	  Resultados temporários
+	  Ordem arquitetural
+	  Commit
+
+  23.2.3 Rename Map:
+	  Mapeamento lógico-físico
+
+  23.2.4 Free List:
+	  Alocação de registradores físicos
+
+
+ 23.3 Commit:
+
+  23.3.1 Commit Arquitetural:
+	  Confirmação dos resultados
+	  Atualização do estado arquitetural
+
+  23.3.2 Recuperação:
+	  Exceções
+	  Especulação incorreta
+	  Descartamento de resultados
+
+
+
+24. Registradores de Ponto Flutuante:
+
+ 24.1 Conceitos:
+
+  24.1.1 Fundamentos:
+	  Definição
+	  Objetivos
+	  Representação de números
+
+  24.1.2 Organização:
+	  Banco de registradores
+	  Largura
+	  Unidade de ponto flutuante
+
+
+ 24.2 Aplicações:
+	Computação científica
+	Engenharia
+	Computação gráfica
+	Inteligência Artificial
+	Processamento numérico
+
+
+
+25. Registradores Vetoriais, SIMD e de Predicado:
+
+ 25.1 Registradores Vetoriais:
+
+  25.1.1 Conceitos:
+	  Dados vetoriais
+	  Paralelismo de dados
+	  Largura
+
+  25.1.2 Aplicações:
+	  Imagens
+	  Áudio
+	  Vídeo
+	  Simulações
+
+
+ 25.2 Registradores SIMD:
+
+  25.2.1 Conceitos:
+	  Single Instruction Multiple Data
+	  Elementos
+	  Lanes
+
+ 25.2.2 Operações:
+	  Paralelismo
+	  Operações simultâneas
+	  Atualização
+
+
+ 25.3 Registradores de Máscara:
+
+  25.3.1 Conceitos:
+	  Máscaras
+	  Seleção de elementos
+
+  25.3.2 Aplicações:
+	  Operações condicionais
+	  Vetorização
+	  Predicação
+
+ 
+ 25.4 Registradores de Predicado:
+
+  25.4.1 Conceitos:
+	  Predicação
+	  Condições
+
+  25.4.2 Aplicações:
+	  Execução condicional
+	  Controle de operações vetoriais
+
+
+
+26. Registradores Especializados Modernos:
+
+ 26.1 Registradores de Depuração:
+
+  26.1.1 Funções:
+	  Breakpoints
+	  Watchpoints
+	  Controle de depuração
+
+  26.1.2 Monitoramento:
+	  Execução
+	  Eventos
+	  Estado interno
+
+
+ 26.2 Registradores de Desempenho:
+
+  26.2.1 Performance Counters:
+	  Contadores
+	  Eventos
+
+  26.2.2 Monitoramento:
+	  Instruções
+	  Cache misses
+	  Branches
+	  Ciclos
+
+
+ 26.3 Model-Specific Registers (MSRs):
+
+  26.3.1 Conceitos:
+	  Registradores específicos do modelo
+	  Configuração do processador
+
+  26.3.2 Aplicações:
+	  Controle
+	  Desempenho
+	  Energia
+	  Diagnóstico
+
+
+ 26.4 Configuration Registers:
+	Recursos
+	Modos
+	Periféricos
+	Memória
+
+
+
+
+
+
+
 
 
