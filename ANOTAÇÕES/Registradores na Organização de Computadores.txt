@@ -530,3 +530,91 @@ Parte 2 — Registradores Fundamentais da CPU:
 
 
 
+8. Registradores de Memória e Endereçamento:
+
+ 8.1 Memory Address Register (MAR):
+
+  8.1.1 Conceitos:
+	  Definição
+	  Endereço da operação de memória
+  	  Relação com a CPU
+
+  8.1.2 Funcionamento:
+	  Envio do endereço
+	  Barramento de endereços
+	  Leitura da memória
+	  Escrita na memória
+
+
+ 8.2 Memory Data Register (MDR):
+
+  8.2.1 Conceitos:
+	  Definição
+	  Dados da operação de memória
+
+  8.2.2 Funcionamento:
+	  Dados memória → CPU
+	  Dados CPU → memória
+	  Barramento de dados
+
+ 
+ 8.3 Memory Buffer Register (MBR):
+
+  8.3.1 Conceitos:
+	  Definição
+	  Relação com o MDR
+	  Diferenças de nomenclatura
+
+  8.3.2 Funcionamento:
+	  Armazenamento temporário
+	  Leitura
+	  Escrita
+
+
+ 8.4 Base Register:
+
+  8.4.1 Conceitos:
+	  Endereço base
+	  Endereçamento relativo
+
+  8.4.2 Aplicações:
+	  Relocação
+	  Segmentação
+	  Proteção
+	  Cálculo de endereços
+
+
+ 8.5 Index Register:
+
+  8.5.1 Conceitos:
+	  Índice
+	  Endereçamento indexado
+
+  8.5.2 Aplicações:
+	  Vetores
+	  Arrays
+	  Estruturas de dados
+	  Loops
+
+ 
+ 8.6 Cálculo do Endereço Efetivo:
+ 
+  8.6.1 Componentes:
+	  Endereço base
+	  Índice
+	  Deslocamento
+	  Escala
+
+  8.6.2 Modos de Endereçamento:
+	  Direto
+	  Indireto
+	  Base
+	  Indexado
+	  Base + deslocamento
+	  Base + índice
+	  Base + índice + escala
+
+
+
+
+
