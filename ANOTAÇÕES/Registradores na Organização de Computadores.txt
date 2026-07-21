@@ -1165,7 +1165,96 @@
 
 
 
+18. Comunicação com os Componentes da CPU:
 
+ 18.1 Comunicação com a ULA:
+
+  18.1.1 Operandos:
+	  Seleção
+	  Leitura
+	  Transferência
+
+  18.1.2 Resultados:
+	  Resultado
+	  Escrita
+	  Atualização
+
+
+ 18.2 Comunicação com a Unidade de Controle:
+
+  18.2.1 Controle:
+	  Seleção
+	  Leitura
+	  Escrita
+	  Sinais
+
+  18.2.2 Coordenação:
+	  Sequenciamento
+	  Sincronização
+	  Atualização
+
+ 
+ 18.3 Comunicação com a Memória:
+
+  18.3.1 Leitura:
+	  MAR
+	  MDR
+	  Dados
+
+  18.3.2 Escrita:
+	  Endereço
+	  Dados
+	  Controle
+
+
+
+19. Implementação Física dos Registradores:
+
+ 19.1 Estrutura Física:
+
+  19.1.1 Elementos de Armazenamento:
+	  Flip-Flops
+	  Latches
+	  Células de armazenamento
+
+  19.1.2 Construção:
+	  Entradas
+	  Saídas
+	  Clock
+	  Linhas de controle
+
+
+ 19.2 Circuitos de Controle
+
+  19.2.1 Escrita:
+	  Write Enable
+	  Seleção
+	  Atualização
+
+  19.2.2 Leitura:
+	  Read Enable
+	  Seleção
+	  Disponibilização
+
+  19.2.3 Controle Geral:
+	  Enable
+	  Reset
+	  Clear
+	  Clock
+
+
+ 19.3 Temporização:
+
+  19.3.1 Sincronização:
+	  Clock
+	  Borda de subida
+	  Borda de descida
+
+  19.3.2 Tempos:
+	  Setup
+	  Hold
+	  Propagação
+ 	  Acesso
 
 
 
