@@ -454,3 +454,79 @@ Parte 2 — Registradores Fundamentais da CPU:
 	  Chamadas de funções
 	  Procedimentos
 	  Exceções
+
+
+
+7. Registradores da Pilha:
+
+ 7.1 Stack Pointer (SP):
+
+  7.1.1 Conceitos:
+	  Definição
+	  Topo da pilha
+	  Endereçamento da pilha
+
+  7.1.2 Operações:
+	  Push
+	  Pop
+	  Atualização
+	  Crescimento da pilha
+	  Redução da pilha
+
+  7.1.3 Utilização:
+	  Chamadas de funções
+	  Variáveis locais
+	  Parâmetros
+	  Endereços de retorno
+	  Interrupções
+
+
+ 7.2 Frame Pointer (FP/BP):
+
+  7.2.1 Conceitos:
+	  Definição
+	  Quadro de pilha
+	  Stack Frame
+
+  7.2.2 Organização:
+	  Variáveis locais
+	  Parâmetros
+	  Endereço de retorno
+	  Registradores salvos
+
+  7.2.3 Relação com Compiladores:
+	  Convenções de chamada
+	  Acesso a variáveis
+	  Frame Pointer Elimination
+	  Otimização
+
+ 
+ 7.3 Stack Limit Register:
+
+  7.3.1 Conceitos:
+	  Limite da pilha
+	  Endereço mínimo
+	  Endereço máximo
+
+  7.3.2 Proteção:
+	  Detecção de Stack Overflow
+	  Limites de acesso
+	  Proteção de memória
+
+
+ 7.4 Registradores de Pilha por Modo:
+
+  7.4.1 Pilha de Usuário:
+	  User Stack Pointer
+	  Espaço de usuário
+
+  7.4.2 Pilha do Sistema:
+	  Supervisor Stack Pointer
+	  Kernel Stack Pointer
+
+  7.4.3 Pilha de Exceções:
+	  Exception Stack Pointer
+ 	  Salvamento do contexto
+
+
+
