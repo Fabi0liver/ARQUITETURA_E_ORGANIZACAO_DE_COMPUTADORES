@@ -79,3 +79,76 @@
 	  Atualização contínua dos valores
 
 
+
+2. Fundamentos dos Registradores:
+
+ 2.1 Organização dos Dados:
+
+  2.1.1 Unidade de Armazenamento:
+	  Bit
+	  Campo
+	  Palavra
+	  Palavra dupla
+	  Palavra da máquina
+
+  2.1.2 Representação das Informações:
+	  Dados inteiros
+	  Dados sem sinal
+	  Dados com sinal
+	  Endereços
+	  Códigos de operação
+	  Informações de controle
+
+  2.1.3 Largura dos Registradores:
+	  Registradores de 8 bits
+	  Registradores de 16 bits
+	  Registradores de 32 bits
+	  Registradores de 64 bits
+	  Registradores de largura ampliada
+
+
+ 2.2 Estrutura Geral:
+
+  2.2.1 Organização Interna:
+	  Bits de armazenamento
+	  Organização por palavra
+	  Entradas
+	  Saídas
+	  Linhas de controle
+
+  2.2.2 Controle das Operações:
+	  Clock
+	  Enable
+	  Write Enable
+	  Read Enable
+	  Reset
+	  Clear
+
+  2.2.3 Estados Operacionais:
+	  Estado de leitura
+	  Estado de escrita
+	  Estado de espera
+	  Estado de atualização
+
+
+ 2.3 Características de Desempenho:
+
+  2.3.1 Tempo:
+	  Tempo de acesso
+	  Tempo de leitura
+	  Tempo de escrita
+	  Latência
+
+  2.3.2 Eficiência:
+	  Taxa de utilização
+	  Paralelismo
+	  Disponibilidade dos dados
+	  Influência no desempenho do processador
+
+  2.3.3 Restrições:
+	  Quantidade limitada
+	  Área ocupada no processador
+	  Consumo de energia
+	  Complexidade de implementação
+
+
