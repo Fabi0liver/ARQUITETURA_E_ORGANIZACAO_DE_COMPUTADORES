@@ -769,6 +769,75 @@ Parte 2 — Registradores Fundamentais da CPU:
 
 
 
+11. Registradores de Gerenciamento de Memória:
+
+ 11.1 Page Table Base Register (PTBR):
+
+  11.1.1 Conceitos:
+ 	  Definição
+	  Tabela de páginas
+	  Endereço base
+
+  11.1.2 Funcionamento:
+	  Tradução de endereços
+	  Relação com a MMU
+	  Troca de espaço de endereçamento
+
+
+ 11.2 Translation Table Base Register (TTBR):
+
+  11.2.1 Conceitos:
+	  Definição
+	 Tabelas de tradução
+
+  11.2.2 Organização:
+	  TTBR0
+	  TTBR1
+	  Tabelas de páginas
+
+  11.2.3 Aplicação:
+	  Arquiteturas ARM
+	  Memória virtual
+	  MMU
+
+
+ 11.3 Control Register CR3:
+
+  11.3.1 Conceitos:
+	  Definição
+	  Relação com a tabela de páginas
+
+  11.3.2 Funcionamento:
+	  Endereço da estrutura de páginas
+	  Troca de espaço de endereçamento
+	  Relação com o TLB
+
+
+ 11.4 Registradores de Segmentação:
+
+  11.4.1 Segment Registers:
+	  Code Segment
+	  Data Segment
+	  Stack Segment
+
+  11.4.2 Organização:
+	  Seletores
+	  Descritores
+	  Segmentos
+
+ 
+ 11.5 Registradores de Proteção de Memória:
+
+  11.5.1 Controle:
+	  Limites
+	  Permissões
+	  Níveis de privilégio
+
+  11.5.2 Aplicações:
+	  Proteção
+	  Isolamento
+	  Segurança
+
 
 
 
