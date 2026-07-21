@@ -1768,3 +1768,302 @@
 	  Consumo
 
 
+
+* Parte 6 — Desempenho, Limitações e Aplicações:
+
+
+31. Avaliação de Desempenho dos Registradores:
+
+ 31.1 Características:
+
+  31.1.1 Velocidade:
+	  Tempo de acesso
+	  Latência
+  	  Throughput
+
+  31.1.2 Eficiência:
+	  Frequência de utilização
+	  Disponibilidade
+	  Reutilização
+
+
+ 31.2 Fatores de Influência:
+
+  31.2.1 Organização:
+	  Quantidade
+	  Portas
+	  Banco
+	  Interligação
+
+  31.2.2 Implementação:
+	  Tecnologia
+	  Temporização
+	  Distribuição física
+
+
+
+32. Problemas e Limitações:
+
+ 32.1 Limitações Arquiteturais:
+
+  32.1.1 Quantidade:
+	  Limitação física
+	  Impacto no desempenho
+
+  32.1.2 Largura:
+	  Compatibilidade
+	  Operações
+	  Evolução
+
+
+ 32.2 Problemas Operacionais:
+
+  32.2.1 Conflitos:
+	  Leituras simultâneas
+	  Escritas simultâneas
+
+  32.2.2 Dependências:
+	  RAW
+	  WAR
+	  WAW
+
+  32.2.3 Gargalos:
+	  Banco de registradores
+	  Barramentos
+	  Comunicação interna
+
+ 
+ 32.3 Limitações Tecnológicas:
+
+  32.3.1 Área:
+	  Espaço
+	  Complexidade
+
+  32.3.2 Energia:
+	  Consumo
+	  Dissipação térmica
+
+
+
+33. Aplicações dos Registradores:
+
+ 33.1 Processamento:
+
+  33.1.1 Operações:
+	  Aritmética
+	  Lógica
+	  Comparação
+	  Deslocamento
+
+  33.1.2 Dados:
+	  Armazenamento temporário
+	  Transferência
+	  Resultados
+
+  33.1.3 Controle:
+	  Sequenciamento
+	  Fluxo
+	  Estado
+
+
+ 33.2 Diferentes Processadores:
+
+  33.2.1 Processadores Gerais:
+	  Registradores gerais
+	  Registradores especializados
+
+  33.2.2 Microcontroladores:
+	  Bancos de registradores
+	  Registradores de periféricos
+	  Sistemas embarcados
+
+  33.2.3 DSPs:
+	  Acumuladores
+	  Registradores de endereço
+	  Operações vetoriais
+
+  33.2.4 GPUs:
+	  Registradores por thread
+	  Bancos de registradores
+	  Ocupação
+
+
+
+34. Tendências Modernas:
+
+ 34.1 Evolução:
+
+  34.1.1 Capacidade:
+	  Maior largura
+	  Maior quantidade
+	  Novos tipos de dados
+
+  34.1.2 Especialização:
+	  Vetoriais
+	  SIMD
+	  Predicados
+	  Máscaras
+	  IA
+
+
+ 34.2 Eficiência:
+
+  34.2.1 Energia:
+	  Clock Gating
+	  Power Gating
+	  Ativação seletiva
+
+  34.2.2 Desempenho:
+	  Paralelismo
+	  Redução de latência
+	  Otimização dos acessos
+
+
+
+35. Revisão Geral:
+
+ 35.1 Fundamentos:
+	Registradores
+	Funções
+	Características
+	Organização
+
+
+ 35.2 Registradores Fundamentais:
+
+  35.2.1 Fluxo:
+	  PC
+	  IP
+	  LR
+
+  35.2.2 Pilha:
+	  SP
+	  FP
+	  Stack Limit Register
+
+  35.2.3 Memória:
+	  MAR
+	  MDR
+	  MBR
+	  Base Register
+	  Index Register
+
+  35.2.4 Instruções:
+	  IR
+	  Opcode Registers
+	  Microinstruction Register
+
+  35.2.5 Estado e Controle:
+	  Flags
+	  SR
+	  PSW
+ 	  MSR
+	  CSRs
+
+  35.2.6 Memória Virtual:
+	  PTBR
+	  TTBR
+	  CR3
+
+  35.2.7 Interrupções:
+	  EPC
+	  Cause Register
+	  Interrupt Mask Register
+	  Vector Base Register
+
+
+ 35.3 Processadores Modernos:
+
+  35.3.1 Organização:
+	  Registradores arquiteturais
+	  Registradores físicos
+	  Rename Map
+	  Free List
+
+  35.3.2 Execução:
+	  Pipeline
+	  Forwarding
+	  Register Renaming
+	  Execução fora de ordem
+	  Reorder Buffer
+	  Commit
+
+
+ 35.4 Software e Arquitetura:
+
+  35.4.1 Compiladores:
+	  Register Allocation
+	  Spilling
+
+  35.4.2 ABI:
+	  Caller-Saved
+	  Callee-Saved
+	  Passagem de argumentos
+
+  35.4.3 Arquiteturas:
+	  x86
+	  ARM
+	  RISC-V
+	  MIPS
+	  PowerPC
+
+
+
+36. Conclusão:
+
+ 36.1 Síntese do Estudo:
+
+  36.1.1 Papel dos Registradores:
+	  Armazenamento temporário
+	  Comunicação interna
+	  Apoio à execução
+	  Controle do processador
+
+  36.1.2 Importância:
+	  Desempenho
+	  Eficiência
+	  Organização do fluxo de dados
+
+
+ 36.2 Integração com a Organização de Computadores:
+
+  36.2.1 Relação com a CPU:
+	  ULA
+	  Unidade de Controle
+	  Datapath
+	  Pipeline
+
+  36.2.2 Relação com a Memória:
+	  MAR
+	  MDR
+	  MMU
+	  Memória virtual
+
+  36.2.3 Relação com o Software:
+	  ISA
+	  Compiladores
+	  ABI
+	  Sistema Operacional
+
+
+ 36.3 Visão Integrada:
+
+  36.3.1 Registradores como Elemento Central:
+	  Dados
+	  Endereços
+	  Instruções
+	  Controle
+	  Estado
+
+  36.3.2 Evolução:
+	  Registradores tradicionais
+	  Registradores arquiteturais
+	  Registradores físicos
+	  Renomeação
+	  Paralelismo
+	  Especialização
+  36.3.3 Papel na Computação Moderna:
+	  Execução eficiente
+	  Paralelismo
+	  Desempenho
+	  Integração entre hardware e software
