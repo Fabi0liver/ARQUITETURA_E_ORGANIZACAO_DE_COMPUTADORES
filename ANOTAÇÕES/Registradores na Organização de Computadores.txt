@@ -684,6 +684,92 @@ Parte 2 — Registradores Fundamentais da CPU:
 
 
 
+10. Registradores de Estado e Controle:
+
+ 10.1 Registradores de Flags:
+
+  10.1.1 Flags Aritméticas:
+	  Carry Flag
+	  Zero Flag
+	  Sign Flag
+	  Overflow Flag
+	  Auxiliary Carry Flag
+
+  10.1.2 Flags Lógicas:
+	  Parity Flag
+	  Zero Flag
+	  Sign Flag
+
+  10.1.3 Flags de Controle:
+	  Interrupt Flag
+	  Direction Flag
+	  Trap Flag
+
+
+ 10.2 Status Register (SR):
+
+  10.2.1 Conceitos:
+	  Definição
+	  Estado do processador
+	  Campos do registrador
+
+  10.2.2 Informações Armazenadas:
+	  Flags
+	  Bits de controle
+	  Bits de modo
+	  Bits de interrupção
+
+
+ 10.3 Program Status Word (PSW):
+
+  10.3.1 Conceitos:
+	  Definição
+	  Estado completo da CPU
+
+  10.3.2 Componentes:
+	  Flags
+	  Modo de execução
+	  Nível de privilégio
+	  Estado de interrupções
+
+  10.3.3 Utilização:
+	  Troca de contexto
+	  Interrupções
+	  Exceções
+
+
+ 10.4 Machine Status Register (MSR):
+
+  10.4.1 Conceitos:
+	  Estado da máquina
+	  Controle do processador
+
+  10.4.2 Funções:
+	  Controle de interrupções
+	  Modos de operação
+	  Exceções
+	  Recursos do processador
+
+
+ 10.5 Control and Status Registers (CSRs):
+
+  10.5.1 Conceitos:
+	  Registradores de controle
+	  Registradores de estado
+
+  10.5.2 Organização:
+	  CSRs de máquina
+	  CSRs de supervisor
+	  CSRs de usuário
+
+  10.5.3 Acesso:
+	  Instruções específicas
+	  Acesso privilegiado
+	  Controle de permissões
+
+
+
+
 
 
 
