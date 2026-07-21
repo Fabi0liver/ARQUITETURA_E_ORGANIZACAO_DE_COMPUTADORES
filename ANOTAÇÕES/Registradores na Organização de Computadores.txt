@@ -223,6 +223,90 @@
 
 
 
+4. Classificação dos Registradores:
+
+ 4.1 Classificação Quanto à Função:
+
+  4.1.1 Registradores de Dados:
+	  Operandos
+	  Resultados
+	  Dados temporários
+	  Dados provenientes da memória
+
+  4.1.2 Registradores de Endereços:
+	  Endereços de memória
+	  Endereços de instruções
+	  Endereços efetivos
+	  Endereços de pilha
+
+  4.1.3 Registradores de Controle:
+	  Controle da execução
+	  Controle da CPU
+	  Controle da memória
+	  Controle das interrupções
+	  Controle dos modos de operação
+
+  4.1.4 Registradores de Estado:
+	  Flags
+	  Estado do processador
+	  Estado das operações
+	  Condições da ULA
+
+  4.1.5 Registradores de Instrução:
+	  Instrução corrente
+	  Opcode
+	  Campos da instrução
+	  Informações de decodificação
+
+  4.1.6 Registradores Temporários:
+	  Resultados intermediários
+	  Micro-operações
+	  Dados internos
+	  Apoio ao datapath
+
+ 
+ 4.2 Classificação Quanto ao Uso:
+
+  4.2.1 Registradores Visíveis ao Programador:
+	  Registradores arquiteturais
+	  Acesso por instruções
+	  Manipulação pela ISA
+	  Estado visível da máquina
+
+  4.2.2 Registradores Não Visíveis ao Programador:
+	  Registradores internos
+	  Registradores temporários
+	  Uso exclusivo do hardware
+	  Controle automático
+
+  4.2.3 Registradores de Uso Exclusivo da CPU:
+	  Registradores internos da Unidade de Controle
+	  Registradores internos da ULA
+	  Registradores de interface
+	  Registradores auxiliares
 
 
+ 4.3 Classificação Quanto à Especialização:
+
+  4.3.1 Registradores de Propósito Geral:
+	  Flexibilidade
+	  Utilização geral
+	  Armazenamento temporário
+	  Operandos
+
+  4.3.2 Registradores de Propósito Específico:
+	  Funções dedicadas
+	  Controle do processamento
+	  Apoio à execução
+	  Comunicação interna
+
+  4.3.3 Registradores Especializados:
+	  Ponto flutuante
+	  Vetoriais
+	  SIMD
+	  Predicados
+	  Máscaras
+	  Depuração
+	  Desempenho
+	  Configuração
 
