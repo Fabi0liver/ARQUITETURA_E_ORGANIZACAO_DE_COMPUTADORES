@@ -152,3 +152,77 @@
 	  Complexidade de implementação
 
 
+
+3. Organização Geral dos Registradores:
+
+ 3.1 Organização Funcional:
+
+  3.1.1 Organização por Finalidade:
+	  Registradores de dados
+	  Registradores de endereços
+	  Registradores de controle
+	  Registradores de estado
+	  Registradores temporários
+
+  3.1.2 Organização por Visibilidade:
+	  Registradores visíveis ao programador
+	  Registradores arquiteturais
+	  Registradores internos
+	  Registradores físicos
+	  Registradores de uso exclusivo do hardware
+
+  3.1.3 Organização por Especialização:
+	  Propósito geral
+	  Propósito específico
+	  Registradores especializados
+
+
+ 3.2 Organização Física:
+
+  3.2.1 Distribuição na CPU:
+	  Localização dos registradores
+	  Proximidade com a ULA
+	  Interligação por barramentos internos
+	  Organização em bancos
+  
+  3.2.2 Estruturas de Interconexão:
+	  Caminhos de dados
+	  Barramentos internos
+	  Multiplexação
+	  Seleção de registradores
+
+  3.2.3 Organização do Conjunto de Registradores:
+	  Quantidade de registradores
+	  Agrupamento funcional
+	  Organização lógica
+	  Organização física
+
+
+ 3.3 Critérios de Organização:
+  
+  3.3.1 Critérios de Projeto:
+	  Desempenho
+	  Área de hardware
+	  Consumo de energia
+	  Complexidade
+	  Escalabilidade
+
+  3.3.2 Critérios de Utilização:
+	  Frequência de acesso
+	  Compartilhamento de dados
+	  Comunicação interna
+	  Eficiência operacional
+
+  3.3.3 Critérios de Classificação:
+	  Função
+	  Estrutura
+	  Operação
+	  Finalidade
+	  Visibilidade
+	  Organização
+
+
+
+
+
+
