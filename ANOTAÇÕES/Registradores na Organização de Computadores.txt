@@ -616,5 +616,74 @@ Parte 2 — Registradores Fundamentais da CPU:
 
 
 
+9. Registradores de Instruções:
+
+ 9.1 Instruction Register (IR):
+
+  9.1.1 Conceitos:
+	  Definição
+	  Instrução corrente
+	  Ciclo de instrução
+
+  9.1.2 Funcionamento:
+	  Recebimento da instrução
+	  Armazenamento
+	  Decodificação
+	  Atualização
+
+  9.1.3 Relação com a Unidade de Controle:
+	  Decodificação
+	  Geração de sinais
+	  Controle das micro-operações
+
+
+ 9.2 Campos da Instrução:
+
+  9.2.1 Opcode:
+	  Código da operação
+	  Decodificação
+
+  9.2.2 Operandos:
+	  Registradores
+	  Imediatos
+	  Endereços
+
+  9.2.3 Modos de Endereçamento:
+	  Identificação
+	  Decodificação
+	  Controle
+
+
+ 9.3 Registradores Auxiliares de Instrução:
+
+  9.3.1 Registradores Temporários:
+	  Dados intermediários
+	  Campos da instrução
+	  Operandos
+
+  9.3.2 Registradores de Decodificação:
+	  Opcode Register
+	  Operand Registers
+	  Instruction Fields
+
+
+ 9.4 Registradores de Microinstruções:
+
+  9.4.1 Microinstruction Register:
+	  Microinstrução corrente
+	  Controle microprogramado
+
+  9.4.2 Microprogram Counter:
+	  Endereço da próxima microinstrução
+	  Sequenciamento
+
+  9.4.3 Microsequenciamento:
+	  Controle
+	  Desvios
+	  Micro-operações
+
+
+
+
 
 
