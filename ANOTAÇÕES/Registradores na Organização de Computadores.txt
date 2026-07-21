@@ -1574,9 +1574,197 @@
 
 
 
+* Parte 5 — Registradores, Software e Arquiteturas:
+
+
+27. Alocação de Registradores por Compiladores:
+
+ 27.1 Fundamentos:
+
+  27.1.1 Conceitos:
+	  Register Allocation
+	  Register Assignment
+	  Variáveis em registradores
+	  Limitação de registradores
+
+  27.1.2 Objetivos:
+	  Reduzir acessos à memória
+	  Aumentar desempenho
+	  Melhorar o código
+
+
+ 27.2 Técnicas:
+
+  27.2.1 Alocação Local:
+	  Blocos básicos
+	  Variáveis locais
+
+  27.2.2 Alocação Global:
+	  Funções
+	  Fluxo de controle
+
+  27.2.3 Graph Coloring:
+	  Interferência
+	  Coloração
+
+  27.2.4 Linear Scan:
+	  Intervalos de vida
+	  Alocação rápida
+
+
+ 27.3 Spilling:
+
+  27.3.1 Conceitos:
+	  Transferência para a memória
+	  Limitação dos registradores
+
+  27.3.2 Impacto:
+	  Latência
+	  Acessos adicionais
+	  Desempenho
 
 
 
+28. Registradores e Convenções de Chamada:
 
+ 28.1 Application Binary Interface (ABI):
+
+  28.1.1 Conceitos:
+	  ABI
+	  Compatibilidade binária
+	  Convenções
+
+  28.1.2 Organização:
+	  Registradores
+	  Pilha
+	  Argumentos
+	  Retornos
+
+
+ 28.2 Caller-Saved Registers:
+	Conceitos:
+	Registradores temporários
+	Responsabilidade do chamador
+
+
+ 28.3 Callee-Saved Registers:
+	Conceitos
+	Registradores preservados
+	Responsabilidade da função chamada
+
+ 28.4 Passagem de Argumentos:
+
+  28.4.1 Registradores:
+	  Argumentos inteiros
+	  Argumentos de ponto flutuante
+
+  28.4.2 Memória:
+	  Argumentos adicionais
+	  Stack
+
+ 28.5 Retorno de Valores:
+	Retorno por Registradores
+	Inteiros
+	Ponto flutuante
+	Estruturas
+
+
+
+29. Comparação entre Arquiteturas:
+
+ 29.1 x86:
+	General Purpose Registers
+	RIP
+	RFLAGS
+	Segment Registers
+	Control Registers
+	Debug Registers
+	MSRs
+
+
+ 29.2 ARM:
+	General Purpose Registers
+	PC
+	LR
+	SP
+	Program Status Register
+	System Registers
+	TTBR
+
+
+ 29.3 RISC-V:
+
+  29.3.1 Registradores:
+	  Integer Registers
+	  Floating-Point Registers
+	  PC
+	  CSRs
+
+  29.3.2 Níveis:
+	  Machine
+	  Supervisor
+	  User
+
+
+ 29.4 MIPS:
+	General Purpose Registers
+	HI
+	LO
+	PC
+	Status Register
+	Cause Register
+	EPC
+
+
+ 29.5 PowerPC:
+	General Purpose Registers
+	Condition Register
+	Link Register
+	Count Register
+	Machine State Register
+
+
+
+30. Registradores em Arquiteturas RISC e CISC:
+
+ 30.1 RISC:
+
+  30.1.1 Organização:
+ 	  Grande conjunto de registradores
+	  Load/Store
+	  Operações entre registradores
+
+  30.1.2 Impacto:
+	  Pipeline
+	  Compiladores
+	  Desempenho
+
+
+ 30.2 CISC:
+
+  30.2.1 Organização:
+	  Registradores especializados
+	  Instruções complexas
+	  Modos de endereçamento
+
+  30.2.2 Impacto:
+	  Decodificação
+	  Micro-operações
+	  Complexidade
+
+
+ 30.3 Comparação:
+
+  30.3.1 Critérios:
+	  Quantidade
+	  Largura
+	  Especialização
+	  Complexidade
+
+  30.3.2 Impactos:
+	  Compilador
+	  Desempenho
+	  Área
+	  Consumo
 
 
