@@ -1744,108 +1744,134 @@ PARTE 4 — APLICAÇÕES, PROJETO E CONSOLIDAÇÃO DA MEMÓRIA CACHE:
 
 
 
-27. Integração da Memória Cache na Organização de Computadores
-27.1 Relação com os Componentes do Computador
-27.1.1 Processador
-Unidade de Controle
-ULA
-Registradores
-Pipeline
-27.1.2 Sistema de Memória
-Hierarquia
-Memória principal
-Memória virtual
-Armazenamento secundário
-27.1.3 Sistema de Barramentos
-Barramento de dados
-Barramento de endereços
-Barramento de controle
-Comunicação
-27.2 Fluxo Completo da Informação
-27.2.1 Execução de Instruções
-Busca
-Decodificação
-Execução
-Acesso à memória
-27.2.2 Fluxo dos Dados
-CPU
-Cache
-RAM
-Armazenamento
-27.2.3 Papel da Cache
-Redução da latência
-Otimização
-Coordenação
-Desempenho global
-27.3 Papel na Arquitetura Moderna
-27.3.1 Computadores Pessoais
-Organização
-Desempenho
-Eficiência
-27.3.2 Servidores
-Grandes caches
-Compartilhamento
-Escalabilidade
-27.3.3 Sistemas Especializados
-Embarcados
-HPC
-Inteligência Artificial
-GPUs
+27. Integração da Memória Cache na Organização de Computadores:
+
+ 27.1 Relação com os Componentes do Computador:
+
+  27.1.1 Processador:
+  	  Unidade de Controle
+	  ULA
+	  Registradores
+	  Pipeline
+
+  27.1.2 Sistema de Memória:
+	  Hierarquia
+	  Memória principal
+	  Memória virtual
+	  Armazenamento secundário
+
+  27.1.3 Sistema de Barramentos:
+	  Barramento de dados
+	  Barramento de endereços
+	  Barramento de controle
+	  Comunicação
+
+
+ 27.2 Fluxo Completo da Informação:
+
+  27.2.1 Execução de Instruções:
+	  Busca
+	  Decodificação
+	  Execução
+	  Acesso à memória
+
+  27.2.2 Fluxo dos Dados:
+	  CPU
+	  Cache
+	  RAM
+	  Armazenamento
+
+  27.2.3 Papel da Cache:
+	  Redução da latência
+	  Otimização
+	  Coordenação
+	  Desempenho global
+
+ 27.3 Papel na Arquitetura Moderna:
+
+  27.3.1 Computadores Pessoais:
+	  Organização
+	  Desempenho
+	  Eficiência
+
+  27.3.2 Servidores:
+	  Grandes caches
+	  Compartilhamento
+	  Escalabilidade
+
+  27.3.3 Sistemas Especializados:
+	  Embarcados
+	  HPC
+	  Inteligência Artificial
+	  GPUs
 
 
 
-28. Revisão Geral da Memória Cache
-28.1 Fundamentos
-28.1.1 Conceitos Fundamentais
-Finalidade da cache
-Hierarquia de memória
-Localidade
-SRAM
-28.1.2 Organização
-Linhas
-Blocos
-Conjuntos
-Tags
-Cache Controller
-28.1.3 Funcionamento
-Leitura
-Escrita
-Hit
-Miss
-Fluxo de acesso
-28.2 Organização e Desempenho
-28.2.1 Estruturas
-Níveis
-Mapeamentos
-Associatividade
-Organização entre níveis
-28.2.2 Políticas
-Substituição
-Escrita
-Coerência
-Prefetching
-28.2.3 Otimizações
-Buffers
-Técnicas clássicas
-Técnicas modernas
-Segurança
+28. Revisão Geral da Memória Cache:
+
+ 28.1 Fundamentos:
+
+  28.1.1 Conceitos Fundamentais:
+	  Finalidade da cache
+	  Hierarquia de memória
+	  Localidade
+	  SRAM
+
+  28.1.2 Organização:
+	  Linhas
+	  Blocos
+	  Conjuntos
+	  Tags
+	  Cache Controller
+
+  28.1.3 Funcionamento:
+	  Leitura
+	  Escrita
+	  Hit
+	  Miss
+	  Fluxo de acesso
+
+
+ 28.2 Organização e Desempenho:
+
+  28.2.1 Estruturas:
+	  Níveis
+	  Mapeamentos
+	  Associatividade
+	  Organização entre níveis
+
+  28.2.2 Políticas:
+	  Substituição
+	  Escrita
+	  Coerência
+	  Prefetching
+
+  28.2.3 Otimizações:
+	  Buffers
+	  Técnicas clássicas
+	  Técnicas modernas
+	  Segurança
 
 
 
-29. Conclusão
-29.1 Síntese Geral
-29.1.1 Papel da Memória Cache
-Redução da latência
-Aumento do desempenho
-Otimização da hierarquia de memória
-Coordenação entre CPU e memória principal
-29.1.2 Integração na Arquitetura do Computador
-Processador
-Hierarquia de memória
-Barramentos
-Memória virtual
-29.1.3 Evolução e Perspectivas
-Evolução das arquiteturas
-Novas tecnologias
-Tendências futuras
-Importância da memória cache na Organização de Computadores
+29. Conclusão:
+
+ 29.1 Síntese Geral:
+
+  29.1.1 Papel da Memória Cache:
+	  Redução da latência
+	  Aumento do desempenho
+	  Otimização da hierarquia de memória
+	  Coordenação entre CPU e memória principal
+
+  29.1.2 Integração na Arquitetura do Computador:
+	  Processador
+	  Hierarquia de memória
+	  Barramentos
+	  Memória virtual
+
+  29.1.3 Evolução e Perspectivas:
+	  Evolução das arquiteturas
+	  Novas tecnologias
+	  Tendências futuras
+	  Importância da memória cache na Organização de Computadores
