@@ -1599,116 +1599,148 @@ PARTE 4 — APLICAÇÕES, PROJETO E CONSOLIDAÇÃO DA MEMÓRIA CACHE:
 
 
 
-24. Projeto da Memória Cache
-24.1 Critérios de Projeto
-24.1.1 Capacidade
-Dimensionamento
-Custo
-Desempenho
-Limitações
-24.1.2 Latência
-Tempo de acesso
-Influência no desempenho
-Balanceamento
-24.1.3 Consumo de Energia
-Eficiência energética
-Dissipação térmica
-Custos
-Vida útil
-24.2 Decisões Arquiteturais
-24.2.1 Tamanho da Linha (Cache Line Size)
-Critérios de escolha
-Impacto na localidade
-Relação com Miss Rate
-24.2.2 Grau de Associatividade
-Escolha da associatividade
-Impacto no desempenho
-Complexidade do hardware
-24.2.3 Capacidade dos Níveis
-L1
-L2
-L3
-LLC
-Balanceamento
-24.3 Componentes do Projeto
-24.3.1 Algoritmos
-Mapeamento
-Substituição
-Escrita
-Coerência
-24.3.2 Organização Física
-Estrutura
-Controladores
-Comunicação
-Barramentos
-24.3.3 Objetivos
-Alto desempenho
-Baixa latência
-Escalabilidade
-Eficiência energética
+24. Projeto da Memória Cache:
+
+ 24.1 Critérios de Projeto:
+
+  24.1.1 Capacidade:
+	  Dimensionamento
+	  Custo
+	  Desempenho
+	  Limitações
+
+  24.1.2 Latência:
+	  Tempo de acesso
+	  Influência no desempenho
+	  Balanceamento
+
+  24.1.3 Consumo de Energia:
+	  Eficiência energética
+	  Dissipação térmica
+	  Custos
+	  Vida útil
+
+
+ 24.2 Decisões Arquiteturais:
+
+  24.2.1 Tamanho da Linha (Cache Line Size):
+	  Critérios de escolha
+	  Impacto na localidade
+	  Relação com Miss Rate
+
+  24.2.2 Grau de Associatividade:
+	  Escolha da associatividade
+	  Impacto no desempenho
+	  Complexidade do hardware
+
+  24.2.3 Capacidade dos Níveis:
+	  L1
+	  L2
+	  L3
+	  LLC
+	  Balanceamento
+
+
+ 24.3 Componentes do Projeto:
+
+  24.3.1 Algoritmos:
+	  Mapeamento
+	  Substituição
+	  Escrita
+	  Coerência
+
+  24.3.2 Organização Física:
+	  Estrutura
+	  Controladores
+	  Comunicação
+	  Barramentos
+
+  24.3.3 Objetivos:
+	  Alto desempenho
+	  Baixa latência
+	  Escalabilidade
+	  Eficiência energética
 
 
 
-25. Trade-offs Arquiteturais
-25.1 Compromissos de Projeto
-25.1.1 Velocidade × Capacidade
-Maior capacidade
-Maior latência
-Balanceamento
-25.1.2 Desempenho × Custo
-Área de silício
-Complexidade
-Custo-benefício
-25.1.3 Energia × Desempenho
-Consumo
-Eficiência
-Dissipação térmica
-25.2 Trade-offs da Organização
-25.2.1 Associatividade
-Associatividade elevada
-Custo adicional
-Redução de conflitos
-25.2.2 Cache Line Size
-Linhas pequenas
-Linhas grandes
-Impacto no desempenho
-25.2.3 Hierarquia
-Mais níveis
-Menor latência
-Complexidade
-Escalabilidade
+25. Trade-offs Arquiteturais:
+
+ 25.1 Compromissos de Projeto:
+
+  25.1.1 Velocidade × Capacidade:
+	  Maior capacidade
+	  Maior latência
+	  Balanceamento
+
+  25.1.2 Desempenho × Custo:
+	  Área de silício
+	  Complexidade
+	  Custo-benefício
+
+  25.1.3 Energia × Desempenho:
+	  Consumo
+	  Eficiência
+	  Dissipação térmica
+
+
+ 25.2 Trade-offs da Organização:
+
+  25.2.1 Associatividade:
+	  Associatividade elevada
+	  Custo adicional
+	  Redução de conflitos
+
+  25.2.2 Cache Line Size:
+	  Linhas pequenas
+	  Linhas grandes
+	  Impacto no desempenho
+
+  25.2.3 Hierarquia:
+	  Mais níveis
+	  Menor latência
+	  Complexidade
+	  Escalabilidade
 
 
 
-26. Tendências da Memória Cache
-26.1 Evolução Tecnológica
-26.1.1 Novas Tecnologias
-Evolução da SRAM
-Novos materiais
-Otimizações
-26.1.2 Novas Técnicas
-Políticas adaptativas
-Otimizações modernas
-Inteligência aplicada ao gerenciamento
-26.1.3 Escalabilidade
-Processadores multinúcleo
-Many-Core
-Grandes servidores
-HPC
-26.2 Tendências Arquiteturais
-26.2.1 Inteligência Artificial
-Gerenciamento inteligente
-Otimização automática
-Predição de acessos
-26.2.2 Novas Arquiteturas
-Computação heterogênea
-Sistemas aceleradores
-Integração CPU-GPU
-26.2.3 Pesquisas Atuais
-Novos algoritmos
-Eficiência energética
-Escalabilidade
-Futuras arquiteturas
+26. Tendências da Memória Cache:
+
+ 26.1 Evolução Tecnológica:
+
+  26.1.1 Novas Tecnologias:
+	  Evolução da SRAM
+	  Novos materiais
+	  Otimizações
+
+  26.1.2 Novas Técnicas:
+	  Políticas adaptativas
+	  Otimizações modernas
+	  Inteligência aplicada ao gerenciamento
+
+  26.1.3 Escalabilidade:
+	  Processadores multinúcleo
+	  Many-Core
+	  Grandes servidores
+	  HPC
+
+
+ 26.2 Tendências Arquiteturais:
+
+  26.2.1 Inteligência Artificial:
+	  Gerenciamento inteligente
+	  Otimização automática
+	  Predição de acessos
+
+  26.2.2 Novas Arquiteturas:
+	  Computação heterogênea
+	  Sistemas aceleradores
+	  Integração CPU-GPU
+
+  26.2.3 Pesquisas Atuais:
+	  Novos algoritmos
+	  Eficiência energética
+	  Escalabilidade
+	  Futuras arquiteturas
 
 
 
