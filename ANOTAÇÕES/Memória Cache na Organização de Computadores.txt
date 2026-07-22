@@ -73,68 +73,85 @@ PARTE 1 — FUNDAMENTOS E ORGANIZAÇÃO DA MEMÓRIA CACHE
 
 
 2. Hierarquia de Memória e Princípio da Localidade
-2.1 Hierarquia de Memória
-2.1.1 Organização da Hierarquia
-Registradores
-Cache
-Memória principal
-Memória secundária
-Memória terciária
-2.1.2 Características da Hierarquia
-Capacidade
-Velocidade
-Latência
-Custo por bit
-Frequência de acesso
-2.1.3 Fluxo dos Dados
-CPU → Cache
-Cache → Memória principal
-Memória principal → Armazenamento
-Fluxo completo de acesso
-2.2 Tecnologias de Memória
-2.2.1 SRAM
-Conceito
-Estrutura
-Funcionamento
-Aplicações na cache
-2.2.2 DRAM
-Conceito
-Estrutura
-Funcionamento
-Aplicações na memória principal
-2.2.3 Comparação entre SRAM e DRAM
-Velocidade
-Latência
-Capacidade
-Custo
-Consumo de energia
-2.3 Princípio da Localidade
-2.3.1 Localidade de Referência
-Conceito
-Funcionamento
-Importância para a cache
-2.3.2 Localidade Temporal
-Reutilização de dados
-Frequência de acesso
-Persistência das informações
-2.3.3 Localidade Espacial
-Dados adjacentes
-Blocos contíguos
-Transferência em bloco
-2.3.4 Localidade Sequencial
-Execução sequencial de instruções
-Fluxo de programas
-Aproveitamento pela cache
-2.3.5 Working Set
-Conceito
-Conjunto de trabalho
-Região ativa da memória
-Influência sobre o desempenho
+
+ 2.1 Hierarquia de Memória:
+
+  2.1.1 Organização da Hierarquia:
+	  Registradores
+	  Cache
+	  Memória principal
+	  Memória secundária
+	  Memória terciária
+
+  2.1.2 Características da Hierarquia:
+	  Capacidade
+	  Velocidade
+	  Latência
+	  Custo por bit
+	  Frequência de acesso
+
+  2.1.3 Fluxo dos Dados:
+	  CPU → Cache
+	  Cache → Memória principal
+	  Memória principal → Armazenamento
+	  Fluxo completo de acesso
+
+
+ 2.2 Tecnologias de Memória:
+	
+  2.2.1 SRAM:
+	  Conceito
+	  Estrutura
+	  Funcionamento
+	  Aplicações na cache
+
+  2.2.2 DRAM:
+	  Conceito
+	  Estrutura
+	  Funcionamento
+	  Aplicações na memória principal
+
+  2.2.3 Comparação entre SRAM e DRAM:
+	  Velocidade
+	  Latência
+	  Capacidade
+	  Custo
+	  Consumo de energia
+
+
+ 2.3 Princípio da Localidade:
+
+  2.3.1 Localidade de Referência:
+	  Conceito
+	  Funcionamento
+	  Importância para a cache
+
+  2.3.2 Localidade Temporal:
+	  Reutilização de dados
+	  Frequência de acesso
+	  Persistência das informações
+
+  2.3.3 Localidade Espacial:
+	  Dados adjacentes
+	  Blocos contíguos
+	  Transferência em bloco
+
+  2.3.4 Localidade Sequencial:
+	  Execução sequencial de instruções
+	  Fluxo de programas
+	  Aproveitamento pela cache
+
+  2.3.5 Working Set:
+	  Conceito
+	  Conjunto de trabalho
+	  Região ativa da memória
+	  Influência sobre o desempenho
 
 
 
-3. Organização Geral da Memória Cache
-3.1 Estrutura Física
+3. Organização Geral da Memória Cache:
+
+ 3.1 Estrutura Física:
 3.1.1 Organização Física
 Chips de memória cache
 Bancos
