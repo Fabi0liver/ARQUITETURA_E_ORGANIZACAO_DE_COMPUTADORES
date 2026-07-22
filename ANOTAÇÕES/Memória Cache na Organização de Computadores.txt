@@ -1409,152 +1409,193 @@ PARTE 3 — OTIMIZAÇÕES, COERÊNCIA E INTEGRAÇÃO DA MEMÓRIA CACHE:
 
 
 
-21. Segurança da Memória Cache
-21.1 Fundamentos
-21.1.1 Conceitos
-Segurança da cache
-Compartilhamento de recursos
-Canais laterais
-21.1.2 Vulnerabilidades
-Vazamento de informações
-Tempo de acesso
-Compartilhamento da cache
-21.1.3 Objetivos
-Confidencialidade
-Integridade
-Confiabilidade
-21.2 Ataques Baseados em Cache
-21.2.1 Cache Timing
-Conceito
-Funcionamento
-Exploração
-21.2.2 Side Channel Attacks
-Conceito
-Tipos
-Mitigações
-21.2.3 Vulnerabilidades Arquiteturais
-Spectre
-Meltdown
-Relação com a memória cache
-21.3 Técnicas de Proteção
-21.3.1 Soluções por Hardware
-Isolamento
-Alterações arquiteturais
-Proteções
-21.3.2 Soluções por Software
-Atualizações
-Sistemas operacionais
-Compiladores
-21.3.3 Boas Práticas
-Monitoramento
-Atualizações
-Gerenciamento da segurança
+21. Segurança da Memória Cache:
+
+ 21.1 Fundamentos:
+
+  21.1.1 Conceitos:
+	  Segurança da cache
+	  Compartilhamento de recursos
+	  Canais laterais
+
+  21.1.2 Vulnerabilidades:
+	  Vazamento de informações
+	  Tempo de acesso
+	  Compartilhamento da cache
+
+  21.1.3 Objetivos:
+	  Confidencialidade
+	  Integridade
+	  Confiabilidade
+
+
+ 21.2 Ataques Baseados em Cache:
+
+  21.2.1 Cache Timing:
+	  Conceito
+	  Funcionamento
+	  Exploração
+
+  21.2.2 Side Channel Attacks:
+	  Conceito
+	  Tipos
+	  Mitigações
+
+  21.2.3 Vulnerabilidades Arquiteturais:
+	  Spectre
+	  Meltdown
+	  Relação com a memória cache
+
+
+ 21.3 Técnicas de Proteção:
+
+  21.3.1 Soluções por Hardware:
+	  Isolamento
+	  Alterações arquiteturais
+	  Proteções
+
+  21.3.2 Soluções por Software:
+	  Atualizações
+	  Sistemas operacionais
+	  Compiladores
+ 
+  21.3.3 Boas Práticas:
+	  Monitoramento
+	  Atualizações
+	  Gerenciamento da segurança
 
 
 
-PARTE 4 — APLICAÇÕES, PROJETO E CONSOLIDAÇÃO DA MEMÓRIA CACHE
+PARTE 4 — APLICAÇÕES, PROJETO E CONSOLIDAÇÃO DA MEMÓRIA CACHE:
 
 
-22. Memória Cache em Arquiteturas Reais
-22.1 Implementações Comerciais
-22.1.1 Arquiteturas Intel x86
-Organização geral da cache
-Hierarquia L1, L2 e L3
-Cache privada e compartilhada
-Características gerais
-22.1.2 Arquiteturas AMD
-Organização da cache
-Hierarquia multinível
-Compartilhamento entre núcleos
-Características gerais
-22.1.3 Arquiteturas ARM
-Cache para dispositivos móveis
-Organização da I-Cache e D-Cache
-Eficiência energética
-Características gerais
-22.2 Outras Arquiteturas
-22.2.1 RISC-V
-Organização geral
-Hierarquia
-Flexibilidade de implementação
-Aplicações
-22.2.2 GPUs
-Organização da cache
-Cache para processamento paralelo
-Particularidades
-Aplicações
-22.2.3 Sistemas Clássicos
-Game Boy (visão geral)
-Organização da memória
-Cache em arquiteturas simples
-Comparação com arquiteturas modernas
-22.3 Comparação entre Arquiteturas
-22.3.1 Organização
-Intel
-AMD
-ARM
-RISC-V
-22.3.2 Estratégias
-Hierarquia
-Compartilhamento
-Eficiência energética
-Desempenho
-22.3.3 Tendências
-Evolução das arquiteturas
-Novas tecnologias
-Escalabilidade
-Integração
+22. Memória Cache em Arquiteturas Reais:
+
+ 22.1 Implementações Comerciais:
+
+  22.1.1 Arquiteturas Intel x86:
+	  Organização geral da cache
+	  Hierarquia L1, L2 e L3
+	  Cache privada e compartilhada
+	  Características gerais
+
+  22.1.2 Arquiteturas AMD:
+	  Organização da cache
+	  Hierarquia multinível
+	  Compartilhamento entre núcleos
+	  Características gerais
+
+  22.1.3 Arquiteturas ARM:
+	  Cache para dispositivos móveis
+	  Organização da I-Cache e D-Cache
+	  Eficiência energética
+	  Características gerais
+
+
+ 22.2 Outras Arquiteturas:
+	
+  22.2.1 RISC-V:
+	  Organização geral
+	  Hierarquia
+	  Flexibilidade de implementação
+	  Aplicações
+
+  22.2.2 GPUs:
+	  Organização da cache
+	  Cache para processamento paralelo
+	  Particularidades
+	  Aplicações
+
+  22.2.3 Sistemas Clássicos:
+	  Organização da memória
+	  Cache em arquiteturas simples
+	  Comparação com arquiteturas modernas
+
+
+ 22.3 Comparação entre Arquiteturas:
+
+  22.3.1 Organização:
+	  Intel
+	  AMD
+	  ARM
+	  RISC-V
+
+  22.3.2 Estratégias:
+	  Hierarquia
+	  Compartilhamento
+	  Eficiência energética
+	  Desempenho
+
+  22.3.3 Tendências:
+	  Evolução das arquiteturas
+	  Novas tecnologias
+	  Escalabilidade
+	  Integração
 
 
 
-23. Cache em Sistemas Especiais
-23.1 Computação de Alto Desempenho
-23.1.1 HPC (High Performance Computing)
-Hierarquias complexas
-Paralelismo
-Grande volume de dados
-Desempenho
-23.1.2 NUMA (Non-Uniform Memory Access)
-Conceito
-Organização
-Relação com a cache
-Impacto no desempenho
-23.1.3 Servidores
-Grandes caches compartilhadas
-Escalabilidade
-Alto desempenho
-Aplicações
-23.2 Sistemas Embarcados
-23.2.1 Microcontroladores
-Organização da cache
-Limitações
-Aplicações
-23.2.2 Sistemas de Tempo Real
-Determinismo
-Cache Locking
-Previsibilidade
-Desempenho
-23.2.3 Dispositivos Móveis
-Eficiência energética
-Arquiteturas ARM
-Organização da cache
-Otimizações
-23.3 Inteligência Artificial e Processamento Gráfico
-23.3.1 Inteligência Artificial
-Aceleração de inferência
-Processamento matricial
-Reutilização de dados
-Desempenho
-23.3.2 GPUs
-Hierarquia de memória
-Cache especializada
-Processamento paralelo
-Eficiência
-23.3.3 Computação Científica
-Simulações
-Modelagem
-Processamento intensivo
-HPC
+23. Cache em Sistemas Especiais:
+
+ 23.1 Computação de Alto Desempenho:
+
+  23.1.1 HPC (High Performance Computing):
+	  Hierarquias complexas
+	  Paralelismo
+	  Grande volume de dados
+	  Desempenho
+
+  23.1.2 NUMA (Non-Uniform Memory Access):
+	  Conceito
+	  Organização
+	  Relação com a cache
+	  Impacto no desempenho
+
+  23.1.3 Servidores:
+	  Grandes caches compartilhadas
+	  Escalabilidade
+	  Alto desempenho
+	  Aplicações
+
+
+ 23.2 Sistemas Embarcados:
+
+  23.2.1 Microcontroladores:
+	  Organização da cache
+	  Limitações
+	  Aplicações
+
+  23.2.2 Sistemas de Tempo Real:
+	  Determinismo
+	  Cache Locking
+	  Previsibilidade
+	  Desempenho
+
+  23.2.3 Dispositivos Móveis:
+ 	  Eficiência energética
+	  Arquiteturas ARM
+ 	  Organização da cache
+	  Otimizações
+
+
+ 23.3 Inteligência Artificial e Processamento Gráfico:
+
+  23.3.1 Inteligência Artificial:
+	  Aceleração de inferência
+	  Processamento matricial
+	  Reutilização de dados
+	  Desempenho
+
+  23.3.2 GPUs:
+	  Hierarquia de memória
+	  Cache especializada
+	  Processamento paralelo
+	  Eficiência
+
+  23.3.3 Computação Científica:
+	  Simulações
+	  Modelagem
+	  Processamento intensivo
+	  HPC
 
 
 
