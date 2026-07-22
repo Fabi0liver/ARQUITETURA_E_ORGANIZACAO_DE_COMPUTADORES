@@ -286,105 +286,138 @@ PARTE 1 — FUNDAMENTOS E ORGANIZAÇÃO DA MEMÓRIA CACHE
 
 
 
-5. Cache Controller
-5.1 Conceitos Fundamentais
-5.1.1 Definição
-Conceito de Cache Controller
-Papel na memória cache
-Responsabilidades
-5.1.2 Funções
-Controle das operações
-Gerenciamento da cache
-Coordenação dos acessos
-Comunicação entre componentes
-5.1.3 Organização Interna
-Estrutura lógica
-Blocos funcionais
-Fluxo de controle
-5.2 Operações Controladas
-5.2.1 Leitura
-Recepção da requisição
-Busca dos dados
-Retorno para a CPU
-5.2.2 Escrita
-Atualização da cache
-Atualização da memória principal
-Controle das políticas de escrita
-5.2.3 Substituição
-Seleção da linha
-Remoção
-Inserção
-Atualização dos estados
-5.3 Comunicação
-5.3.1 Comunicação com a CPU
-Recepção das requisições
-Envio dos dados
-Controle do fluxo
-5.3.2 Comunicação com a Memória Principal
-Transferência de blocos
-Escrita
-Atualização
-Sincronização
-5.3.3 Comunicação com Outros Níveis da Cache
-Transferência entre níveis
-Coordenação
-Hierarquia
+5. Cache Controller:
+
+ 5.1 Conceitos Fundamentais:
+
+  5.1.1 Definição:
+	  Conceito de Cache Controller
+	  Papel na memória cache
+	  Responsabilidades
+
+  5.1.2 Funções:
+	  Controle das operações
+	  Gerenciamento da cache
+	  Coordenação dos acessos
+	  Comunicação entre componentes
+
+  5.1.3 Organização Interna:
+	  Estrutura lógica
+	  Blocos funcionais
+	  Fluxo de controle
+
+
+ 5.2 Operações Controladas:
+
+  5.2.1 Leitura:
+	  Recepção da requisição
+	  Busca dos dados
+	  Retorno para a CPU
+
+  5.2.2 Escrita:
+	  Atualização da cache
+	  Atualização da memória principal
+	  Controle das políticas de escrita
+
+  5.2.3 Substituição:
+	  Seleção da linha
+	  Remoção
+	  Inserção
+	  Atualização dos estados
+
+
+ 5.3 Comunicação:
+
+  5.3.1 Comunicação com a CPU:
+	  Recepção das requisições
+	  Envio dos dados
+	  Controle do fluxo
+
+  5.3.2 Comunicação com a Memória Principal:
+	  Transferência de blocos
+	  Escrita
+	  Atualização
+	  Sincronização
+
+  5.3.3 Comunicação com Outros Níveis da Cache:
+	  Transferência entre níveis
+	  Coordenação
+	  Hierarquia
 
 
 
-6. Organização dos Níveis da Cache
-6.1 Cache L1
-6.1.1 Características
-Organização
-Capacidade
-Latência
-Velocidade
-6.1.2 Funcionamento
-Primeira consulta
-Armazenamento de dados
-Armazenamento de instruções
-6.2 Cache L2
-6.2.1 Características
-Organização
-Capacidade
-Compartilhamento
-Desempenho
-6.2.2 Funcionamento
-Segunda consulta
-Integração com L1
-Atualização
-6.3 Cache L3
-6.3.1 Características
-Organização
-Compartilhamento
-Capacidade
-Latência
-6.3.2 Funcionamento
-Último nível de cache
-Comunicação com a RAM
-Compartilhamento entre núcleos
-6.4 Last Level Cache (LLC)
-6.4.1 Conceitos
-Definição
-Objetivos
-Papel na hierarquia
-6.4.2 Organização
-Cache compartilhada
-Escalabilidade
-Eficiência
-6.5 Cache L4
-6.5.1 Conceitos
-Definição
-Utilização
-Características
-6.5.2 Aplicações
-Processadores específicos
-Sistemas de alto desempenho
-Memória embarcada
+6. Organização dos Níveis da Cache:
+
+ 6.1 Cache L1:
+
+  6.1.1 Características:
+	  Organização
+	  Capacidade
+	  Latência
+	  Velocidade
+
+  6.1.2 Funcionamento:
+	  Primeira consulta
+	  Armazenamento de dados
+	  Armazenamento de instruções
+
+
+ 6.2 Cache L2:
+
+  6.2.1 Características:
+	  Organização
+	  Capacidade
+	  Compartilhamento
+	  Desempenho
+
+  6.2.2 Funcionamento:
+	  Segunda consulta
+	  Integração com L1
+	  Atualização
+
+
+ 6.3 Cache L3:
+
+  6.3.1 Características:
+	  Organização
+	  Compartilhamento
+	  Capacidade
+	  Latência
+
+  6.3.2 Funcionamento:
+	  Último nível de cache
+	  Comunicação com a RAM
+	  Compartilhamento entre núcleos
+
+
+ 6.4 Last Level Cache (LLC):
+
+  6.4.1 Conceitos:
+	  Definição
+	  Objetivos
+	  Papel na hierarquia
+
+  6.4.2 Organização:
+	  Cache compartilhada
+	  Escalabilidade
+	  Eficiência
+
+
+ 6.5 Cache L4:
+
+  6.5.1 Conceitos:
+	  Definição
+	  Utilização
+	  Características
+
+  6.5.2 Aplicações:
+	  Processadores específicos
+	  Sistemas de alto desempenho
+	  Memória embarcada
 
 
 
-7. Organizações da Memória Cache
+7. Organizações da Memória Cache:
 7.1 Cache Unificada
 7.1.1 Conceitos
 Definição
