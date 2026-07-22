@@ -996,134 +996,172 @@ PARTE 2 — FUNCIONAMENTO, MAPEAMENTO E ORGANIZAÇÃO DA MEMÓRIA CACHE:
 
 
 
-15. Problemas da Memória Cache
-15.1 Thrashing (Cache Thrashing)
-15.1.1 Conceitos
-Definição
-Causas
-Relação com o mapeamento direto
-15.1.2 Funcionamento
-Expulsões repetitivas
-Disputa pela mesma linha
-Queda de desempenho
-15.1.3 Técnicas de Redução
-Maior associatividade
-Melhor política de substituição
-Reorganização dos dados
-15.2 Cache Pollution
-15.2.1 Conceitos
-Definição
-Inserção de dados pouco úteis
-Redução da eficiência
-15.2.2 Causas
-Acessos sequenciais extensos
-Prefetch inadequado
-Políticas de substituição
-15.2.3 Mitigações
-Melhor gerenciamento
-Algoritmos adaptativos
-Ajuste das políticas
-15.3 False Sharing e Ping-Pong Effect
-15.3.1 False Sharing
-Conceito
-Causas
-Consequências
-15.3.2 Ping-Pong Effect
-Conceito
-Atualizações constantes
-Compartilhamento excessivo
-15.3.3 Impacto no Desempenho
-Aumento do tráfego
-Redução da escalabilidade
-Penalidades de sincronização
+15. Problemas da Memória Cache:
+
+ 15.1 Thrashing (Cache Thrashing):
+
+  15.1.1 Conceitos:
+	  Definição
+	  Causas
+	  Relação com o mapeamento direto
+
+  15.1.2 Funcionamento:
+	  Expulsões repetitivas
+	  Disputa pela mesma linha
+	  Queda de desempenho
+
+  15.1.3 Técnicas de Redução:
+	  Maior associatividade
+	  Melhor política de substituição
+	  Reorganização dos dados
+
+
+ 15.2 Cache Pollution:
+
+  15.2.1 Conceitos:
+	  Definição
+	  Inserção de dados pouco úteis
+	  Redução da eficiência
+
+  15.2.2 Causas:
+	  Acessos sequenciais extensos
+	  Prefetch inadequado
+	  Políticas de substituição
+
+  15.2.3 Mitigações:
+	  Melhor gerenciamento
+	  Algoritmos adaptativos
+	  Ajuste das políticas
+
+ 
+ 15.3 False Sharing e Ping-Pong Effect:
+
+  15.3.1 False Sharing:
+	  Conceito
+	  Causas
+	  Consequências
+
+  15.3.2 Ping-Pong Effect:
+	  Conceito
+	  Atualizações constantes
+	  Compartilhamento excessivo
+
+  15.3.3 Impacto no Desempenho:
+	  Aumento do tráfego
+	  Redução da escalabilidade
+	  Penalidades de sincronização
 
 
 
-PARTE 3 — OTIMIZAÇÕES, COERÊNCIA E INTEGRAÇÃO DA MEMÓRIA CACHE
+PARTE 3 — OTIMIZAÇÕES, COERÊNCIA E INTEGRAÇÃO DA MEMÓRIA CACHE:
 
 
-16. Técnicas de Busca Antecipada (Prefetching)
-16.1 Fundamentos do Prefetching
-16.1.1 Conceitos
-Definição de Prefetching
-Objetivos
-Funcionamento geral
-Relação com o princípio da localidade
-16.1.2 Benefícios
-Redução de Cache Miss
-Redução da latência
-Aumento do desempenho
-Melhor aproveitamento da memória
-16.1.3 Limitações
-Consumo de largura de banda
-Cache Pollution
-Consumo de energia
-Eficiência dependente da carga de trabalho
-16.2 Tipos de Prefetching
-16.2.1 Hardware Prefetch
-Conceito
-Funcionamento
-Vantagens
-Aplicações
-16.2.2 Software Prefetch
-Conceito
-Instruções de prefetch
-Funcionamento
-Aplicações
-16.2.3 Instruction Prefetch
-Busca antecipada de instruções
-Pipeline
-Fluxo de execução
-Desempenho
-16.2.4 Data Prefetch
-Busca antecipada de dados
-Localidade espacial
-Localidade temporal
-Eficiência
+16. Técnicas de Busca Antecipada (Prefetching):
+
+ 16.1 Fundamentos do Prefetching:
+
+  16.1.1 Conceitos:
+	  Definição de Prefetching
+	  Objetivos
+	  Funcionamento geral
+	  Relação com o princípio da localidade
+
+  16.1.2 Benefícios:
+	  Redução de Cache Miss
+	  Redução da latência
+	  Aumento do desempenho
+	  Melhor aproveitamento da memória
+
+  16.1.3 Limitações:
+	  Consumo de largura de banda
+	  Cache Pollution
+	  Consumo de energia
+	  Eficiência dependente da carga de trabalho
+
+
+ 16.2 Tipos de Prefetching:
+
+  16.2.1 Hardware Prefetch:
+	  Conceito
+	  Funcionamento
+	  Vantagens
+	  Aplicações
+
+  16.2.2 Software Prefetch:
+	  Conceito
+	  Instruções de prefetch
+	  Funcionamento
+	  Aplicações
+
+  16.2.3 Instruction Prefetch:
+	  Busca antecipada de instruções
+	  Pipeline
+	  Fluxo de execução
+	  Desempenho
+
+  16.2.4 Data Prefetch:
+ 	  Busca antecipada de dados
+	  Localidade espacial
+	  Localidade temporal
+	  Eficiência
 
 
 
-17. Técnicas Clássicas de Otimização
-17.1 Critical Word First
-17.1.1 Conceitos
-Definição
-Objetivos
-Funcionamento
-17.1.2 Processo
-Palavra crítica
-Transferência parcial
-Continuação da execução
-17.1.3 Benefícios
-Redução da latência
-Melhor resposta ao processador
-Aplicações
-17.2 Early Restart
-17.2.1 Conceitos
-Definição
-Objetivos
-Funcionamento
-17.2.2 Processo
-Recepção parcial do bloco
-Reinício antecipado da execução
-Transferência restante
-17.2.3 Comparação
-Early Restart
-Critical Word First
-Semelhanças
-Diferenças
-17.3 Buffers Auxiliares
-17.3.1 Victim Cache
-Conceito
-Funcionamento
-Redução de misses por conflito
-17.3.2 Write Buffer
-Conceito
-Funcionamento
-Redução da latência de escrita
-17.3.3 Stream Buffer
-Conceito
-Funcionamento
-Relação com Prefetching
+17. Técnicas Clássicas de Otimização:
+
+ 17.1 Critical Word First:
+
+  17.1.1 Conceitos:
+	  Definição
+	  Objetivos
+	  Funcionamento
+
+  17.1.2 Processo:
+ 	  Palavra crítica
+	  Transferência parcial
+	  Continuação da execução
+
+  17.1.3 Benefícios:
+	  Redução da latência
+	  Melhor resposta ao processador
+	  Aplicações
+
+
+ 17.2 Early Restart:
+
+  17.2.1 Conceitos:
+	  Definição
+	  Objetivos
+	  Funcionamento
+
+  17.2.2 Processo:
+	  Recepção parcial do bloco
+	  Reinício antecipado da execução
+	  Transferência restante
+
+  17.2.3 Comparação:
+	  Early Restart
+	  Critical Word First
+	  Semelhanças
+	  Diferenças
+
+
+ 17.3 Buffers Auxiliares:
+
+  17.3.1 Victim Cache:
+	  Conceito
+	  Funcionamento
+	  Redução de misses por conflito
+
+  17.3.2 Write Buffer:
+	  Conceito
+	  Funcionamento
+	  Redução da latência de escrita
+
+  17.3.3 Stream Buffer:
+	  Conceito
+	  Funcionamento
+	  Relação com Prefetching
 
 
 
