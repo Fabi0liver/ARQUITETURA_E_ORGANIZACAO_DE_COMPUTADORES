@@ -418,42 +418,54 @@ PARTE 1 — FUNDAMENTOS E ORGANIZAÇÃO DA MEMÓRIA CACHE
 
 
 7. Organizações da Memória Cache:
-7.1 Cache Unificada
-7.1.1 Conceitos
-Definição
-Objetivos
-Organização
-7.1.2 Funcionamento
-Compartilhamento entre dados e instruções
-Gerenciamento do espaço
-Fluxo de acesso
-7.2 Cache Separada
-7.2.1 Cache de Instruções (I-Cache)
-Conceito
-Organização
-Busca de instruções
-7.2.2 Cache de Dados (D-Cache)
-Conceito
-Organização
-Armazenamento dos dados
-7.2.3 Comparação entre I-Cache e D-Cache
-Vantagens
-Limitações
-Aplicações
-7.3 Organização Inspirada nas Arquiteturas
-7.3.1 Arquitetura Harvard
-Separação entre instruções e dados
-Organização da cache
-Aplicações
-7.3.2 Arquitetura Von Neumann
-Memória unificada
-Organização da cache
-Características
-7.3.3 Exemplos de Arquiteturas Reais
-Intel x86 (visão geral)
-ARM (visão geral)
-Game Boy (como exemplo histórico de organização)
-Comparação geral das abordagens
+
+ 7.1 Cache Unificada:
+
+  7.1.1 Conceitos:
+ 	  Definição
+	  Objetivos
+	  Organização
+
+  7.1.2 Funcionamento:
+	  Compartilhamento entre dados e instruções
+	  Gerenciamento do espaço
+	  Fluxo de acesso
+
+
+ 7.2 Cache Separada:
+
+  7.2.1 Cache de Instruções (I-Cache):
+	  Conceito
+	  Organização
+	  Busca de instruções
+
+  7.2.2 Cache de Dados (D-Cache):
+	  Conceito
+	  Organização
+	  Armazenamento dos dados
+
+  7.2.3 Comparação entre I-Cache e D-Cache:
+	  Vantagens
+	  Limitações
+	  Aplicações
+
+
+ 7.3 Organização Inspirada nas Arquiteturas:
+
+  7.3.1 Arquitetura Harvard:
+	  Separação entre instruções e dados
+	  Organização da cache
+	  Aplicações
+
+  7.3.2 Arquitetura Von Neumann:
+	  Memória unificada
+	  Organização da cache
+	  Características
+
+  7.3.3 Exemplos de Arquiteturas Reais:
+	  Intel x86 (visão geral)
+	  ARM (visão geral)
+	  Comparação geral das abordagens
 
 
 
