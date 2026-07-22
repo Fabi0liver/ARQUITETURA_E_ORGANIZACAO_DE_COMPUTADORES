@@ -4,57 +4,71 @@
 PARTE 1 — FUNDAMENTOS E ORGANIZAÇÃO DA MEMÓRIA CACHE
 
 
-1. Introdução à Memória Cache
-1.1 Conceitos Fundamentais
-1.1.1 Definição da Memória Cache
-Conceito de memória cache
-Finalidade da memória cache
-Características gerais
-Papel na Organização de Computadores
-1.1.2 Objetivos da Memória Cache
-Redução da latência
-Aumento do desempenho
-Redução do gargalo entre CPU e memória principal
-Aproveitamento da localidade
-Balanceamento entre custo e velocidade
-1.1.3 Importância da Memória Cache
-Evolução do desempenho dos processadores
-Desigualdade entre CPU e memória principal
-Memory Wall
-Necessidade da memória cache
-Impacto no desempenho dos sistemas
-1.2 Evolução Histórica
-1.2.1 Surgimento da Memória Cache
-Primeiras implementações
-Motivações para sua criação
-Evolução histórica
-1.2.2 Evolução das Arquiteturas de Cache
-Cache de nível único
-Cache multinível
-Cache em sistemas multinúcleo
-Evolução até arquiteturas atuais
-1.2.3 Tendências da Evolução
-Crescimento da capacidade
-Redução da latência
-Otimizações arquiteturais
-Novas tecnologias
-1.3 Papel da Cache na Arquitetura do Computador
-1.3.1 Relação com a CPU
-Busca de instruções
-Busca de dados
-Comunicação com o processador
-Redução do tempo de espera
-1.3.2 Relação com a Memória Principal
-Transferência de blocos
-Atualização dos dados
-Comunicação com a RAM
-Hierarquia de acesso
-1.3.3 Relação com a Hierarquia de Memória
-Registradores
-Cache
-Memória principal
-Memória secundária
-Memória virtual
+1. Introdução à Memória Cache:
+
+ 1.1 Conceitos Fundamentais:
+
+  1.1.1 Definição da Memória Cache:
+	  Conceito de memória cache
+	  Finalidade da memória cache
+	  Características gerais
+	  Papel na Organização de Computadores
+
+  1.1.2 Objetivos da Memória Cache:
+	  Redução da latência
+	  Aumento do desempenho
+	  Redução do gargalo entre CPU e memória principal
+	  Aproveitamento da localidade
+	  Balanceamento entre custo e velocidade
+
+  1.1.3 Importância da Memória Cache:
+	  Evolução do desempenho dos processadores
+	  Desigualdade entre CPU e memória principal
+	  Memory Wall
+	  Necessidade da memória cache
+	  Impacto no desempenho dos sistemas
+
+
+ 1.2 Evolução Histórica:
+
+  1.2.1 Surgimento da Memória Cache:
+	  Primeiras implementações
+	  Motivações para sua criação
+	  Evolução histórica
+
+  1.2.2 Evolução das Arquiteturas de Cache:
+	  Cache de nível único
+	  Cache multinível
+	  Cache em sistemas multinúcleo
+	  Evolução até arquiteturas atuais
+
+  1.2.3 Tendências da Evolução:
+	  Crescimento da capacidade
+	  Redução da latência
+	  Otimizações arquiteturais
+	  Novas tecnologias
+
+
+ 1.3 Papel da Cache na Arquitetura do Computador:
+
+  1.3.1 Relação com a CPU:
+	  Busca de instruções
+	  Busca de dados
+	  Comunicação com o processador
+	  Redução do tempo de espera
+
+  1.3.2 Relação com a Memória Principal:
+	  Transferência de blocos
+	  Atualização dos dados
+	  Comunicação com a RAM
+	  Hierarquia de acesso
+
+  1.3.3 Relação com a Hierarquia de Memória:
+	  Registradores
+	  Cache
+	  Memória principal
+	  Memória secundária
+	  Memória virtual
 
 
 
