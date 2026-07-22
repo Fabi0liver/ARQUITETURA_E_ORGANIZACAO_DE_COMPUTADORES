@@ -152,108 +152,137 @@ PARTE 1 — FUNDAMENTOS E ORGANIZAÇÃO DA MEMÓRIA CACHE
 3. Organização Geral da Memória Cache:
 
  3.1 Estrutura Física:
-3.1.1 Organização Física
-Chips de memória cache
-Bancos
-Matrizes
-Organização física interna
-3.1.2 Organização Hierárquica
-Cache L1
-Cache L2
-Cache L3
-Last Level Cache (LLC)
-Cache L4
-3.1.3 Organização por Processadores
-Cache privada
-Cache compartilhada
-Organização híbrida
-3.2 Estrutura Lógica
-3.2.1 Organização em Blocos
-Blocos de memória
-Blocos da cache
-Tamanho do bloco
-Transferência em blocos
-3.2.2 Organização em Linhas
-Linha de cache
-Relação entre bloco e linha
-Granularidade
-3.2.3 Organização em Conjuntos
-Conjuntos
-Associatividade
-Distribuição das linhas
-Organização lógica
-3.3 Componentes Básicos
-3.3.1 Dados
-Dados armazenados
-Instruções armazenadas
-Organização das informações
-3.3.2 Informações de Controle
-Tag
-Bits de controle
-Estado da linha
-Metadados
-3.3.3 Organização Geral
-Estrutura da cache
-Fluxo de acesso
-Localização das informações
+
+  3.1.1 Organização Física:
+	  Chips de memória cache
+	  Bancos
+	  Matrizes
+	  Organização física interna
+
+  3.1.2 Organização Hierárquica:
+	  Cache L1
+	  Cache L2
+	  Cache L3
+	  Last Level Cache (LLC)
+	  Cache L4
+
+  3.1.3 Organização por Processadores:
+	  Cache privada
+	  Cache compartilhada
+	  Organização híbrida
+
+
+ 3.2 Estrutura Lógica:
+
+  3.2.1 Organização em Blocos:
+	  Blocos de memória
+	  Blocos da cache
+	  Tamanho do bloco
+	  Transferência em blocos
+
+  3.2.2 Organização em Linhas:
+	  Linha de cache
+	  Relação entre bloco e linha
+	  Granularidade
+
+  3.2.3 Organização em Conjuntos:
+	  Conjuntos
+	  Associatividade
+	  Distribuição das linhas
+	  Organização lógica
+
+
+ 3.3 Componentes Básicos:
+
+  3.3.1 Dados:
+	  Dados armazenados
+	  Instruções armazenadas
+	  Organização das informações
+
+  3.3.2 Informações de Controle:
+	  Tag
+	  Bits de controle
+	  Estado da linha
+	  Metadados
+
+  3.3.3 Organização Geral:
+	  Estrutura da cache
+	  Fluxo de acesso
+	  Localização das informações
 
 
 
 4. Estrutura Interna da Linha de Cache
-4.1 Linha de Cache (Cache Line)
-4.1.1 Conceitos
-Definição de linha de cache
-Organização da linha
-Função da linha
-Relação com os blocos
-4.1.2 Cache Line Size
-Conceito
-Tamanho da linha
-Influência no desempenho
-Critérios para escolha do tamanho
-4.1.3 Organização dos Dados
-Dados armazenados
-Organização interna
-Alinhamento
-Granularidade
-4.2 Campos de Endereçamento
-4.2.1 Tag
-Conceito
-Função
-Comparação
-Identificação do bloco
-4.2.2 Índice (Index)
-Conceito
-Seleção da linha
-Organização
-Relação com os conjuntos
-4.2.3 Offset
-Conceito
-Seleção do byte
-Endereçamento interno
-Organização
-4.3 Bits de Controle
-4.3.1 Valid Bit
-Conceito
-Inicialização
-Validação da linha
-4.3.2 Dirty Bit
-Conceito
-Atualização
-Relação com Write Back
-4.3.3 Replacement Bits
-Controle de substituição
-Informações de uso
-Políticas de substituição
-4.3.4 Coherence Bits
-Estados da linha
-Controle de coerência
-Compartilhamento
-4.3.5 ECC (Error Correcting Code)
-Conceito
-Detecção de erros
-Correção de erros
-Aplicações na cache
+
+ 4.1 Linha de Cache (Cache Line):
+
+  4.1.1 Conceitos:
+	  Definição de linha de cache
+	  Organização da linha
+	  Função da linha
+	  Relação com os blocos
+
+  4.1.2 Cache Line Size:
+	  Conceito
+	  Tamanho da linha
+	  Influência no desempenho
+	  Critérios para escolha do tamanho
+
+  4.1.3 Organização dos Dados:
+	  Dados armazenados
+	  Organização interna
+	  Alinhamento
+	  Granularidade
+
+
+ 4.2 Campos de Endereçamento:
+
+  4.2.1 Tag:
+	  Conceito
+	  Função
+	  Comparação
+	  Identificação do bloco
+
+  4.2.2 Índice (Index):
+	  Conceito
+	  Seleção da linha
+	  Organização
+	  Relação com os conjuntos
+
+  4.2.3 Offset:
+	  Conceito
+	  Seleção do byte
+	  Endereçamento interno
+	  Organização
+
+
+ 4.3 Bits de Controle:
+
+  4.3.1 Valid Bit:
+	  Conceito
+	  Inicialização
+	  Validação da linha
+
+  4.3.2 Dirty Bit:
+	  Conceito
+	  Atualização
+	  Relação com Write Back
+
+  4.3.3 Replacement Bits:
+	  Controle de substituição
+	  Informações de uso
+	  Políticas de substituição
+
+  4.3.4 Coherence Bits:
+	  Estados da linha
+	  Controle de coerência
+	  Compartilhamento
+
+  4.3.5 ECC (Error Correcting Code):
+	  Conceito
+	  Detecção de erros
+	  Correção de erros
+	  Aplicações na cache
 
 
 
