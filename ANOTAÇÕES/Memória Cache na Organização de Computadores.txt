@@ -640,104 +640,142 @@ PARTE 2 — FUNCIONAMENTO, MAPEAMENTO E ORGANIZAÇÃO DA MEMÓRIA CACHE:
 
 
 
-10. Cache Hit e Cache Miss
-10.1 Cache Hit
-10.1.1 Conceitos
-Definição
-Identificação
-Importância
-10.1.2 Funcionamento
-Comparação da Tag
-Linha válida
-Recuperação dos dados
-10.1.3 Consequências
-Baixa latência
-Alto desempenho
-Continuidade da execução
-10.2 Cache Miss
-10.2.1 Conceitos
-Definição
-Identificação
-Necessidade de acesso à RAM
-10.2.2 Funcionamento
-Busca na memória principal
-Transferência do bloco
-Atualização da cache
-10.2.3 Consequências
-Aumento da latência
-Penalidade de acesso
-Atualização das estatísticas
-10.3 Métricas de Desempenho
-10.3.1 Hit Rate
-Conceito
-Cálculo
-Interpretação
-10.3.2 Miss Rate
-Conceito
-Relação com Hit Rate
-Interpretação
-10.3.3 Miss Penalty
-Conceito
-Tempo adicional
-Influência no desempenho
-10.4 Average Memory Access Time (AMAT)
-10.4.1 Conceitos
-Definição
-Objetivos
-Importância
-10.4.2 Componentes
-Hit Time
-Miss Rate
-Miss Penalty
-10.4.3 Utilização
-Comparação de arquiteturas
-Avaliação do desempenho
-Otimização da cache
+10. Cache Hit e Cache Miss:
+
+ 10.1 Cache Hit:
+
+  10.1.1 Conceitos:
+	  Definição
+	  Identificação
+	  Importância
+
+  10.1.2 Funcionamento:
+	  Comparação da Tag
+	  Linha válida
+	  Recuperação dos dados
+
+  10.1.3 Consequências:
+	  Baixa latência
+	  Alto desempenho
+	  Continuidade da execução
+
+
+ 10.2 Cache Miss:
+
+  10.2.1 Conceitos:
+	  Definição
+	  Identificação
+	  Necessidade de acesso à RAM
+
+  10.2.2 Funcionamento:
+	  Busca na memória principal
+	  Transferência do bloco
+	  Atualização da cache
+
+  10.2.3 Consequências:
+	  Aumento da latência
+	  Penalidade de acesso
+	  Atualização das estatísticas
+
+
+ 10.3 Métricas de Desempenho:
+
+  10.3.1 Hit Rate:
+	  Conceito
+	  Cálculo
+	  Interpretação
+
+  10.3.2 Miss Rate:
+	  Conceito
+	  Relação com Hit Rate
+	  Interpretação
+
+  10.3.3 Miss Penalty:
+	  Conceito
+	  Tempo adicional
+	  Influência no desempenho
+
+
+ 10.4 Average Memory Access Time (AMAT):
+
+  10.4.1 Conceitos:
+	  Definição
+	  Objetivos
+	  Importância
+
+  10.4.2 Componentes:
+	  Hit Time
+	  Miss Rate
+	  Miss Penalty
+
+  10.4.3 Utilização:
+	  Comparação de arquiteturas
+	  Avaliação do desempenho
+	  Otimização da cache
 
 
 
-11. Tipos de Cache Miss
-11.1 Miss Compulsório
-11.1.1 Conceitos
-Primeiro acesso
-Bloco inexistente
-Inicialização da cache
-11.1.2 Características
-Ocorrência inevitável
-Relação com o programa
-11.1.3 Técnicas de Redução
-Prefetch
-Inicialização antecipada
-11.2 Miss por Capacidade
-11.2.1 Conceitos
-Limitação da capacidade
-Working Set
-11.2.2 Características
-Saturação
-Substituições constantes
-11.2.3 Soluções
-Maior capacidade
-Melhor organização
-11.3 Miss por Conflito
-11.3.1 Conceitos
-Colisão entre blocos
-Disputa por linhas
-11.3.2 Características
-Dependência do mapeamento
-Influência da associatividade
-11.3.3 Soluções
-Associatividade
-Melhor algoritmo de substituição
-11.4 Miss por Coerência
-11.4.1 Conceitos
-Atualizações em múltiplos núcleos
-Compartilhamento
-11.4.2 Características
-Invalidação
-Sincronização
-11.4.3 Consequências
-Penalidade de acesso
-Impacto no desempenho
+11. Tipos de Cache Miss:
+
+ 11.1 Miss Compulsório:
+
+  11.1.1 Conceitos:
+	  Primeiro acesso
+	  Bloco inexistente
+	  Inicialização da cache
+
+  11.1.2 Características:
+	  Ocorrência inevitável
+	  Relação com o programa
+
+  11.1.3 Técnicas de Redução:
+	  Prefetch
+	  Inicialização antecipada
+
+
+ 11.2 Miss por Capacidade:
+
+  11.2.1 Conceitos:
+	  Limitação da capacidade
+	  Working Set
+
+  11.2.2 Características:
+	  Saturação
+	  Substituições constantes
+
+  11.2.3 Soluções:
+	  Maior capacidade
+	  Melhor organização
+
+
+ 11.3 Miss por Conflito:
+
+  11.3.1 Conceitos:
+	  Colisão entre blocos
+	  Disputa por linhas
+
+  11.3.2 Características:
+	  Dependência do mapeamento
+	  Influência da associatividade
+
+  11.3.3 Soluções:
+	  Associatividade
+	  Melhor algoritmo de substituição
+
+
+ 11.4 Miss por Coerência:
+
+  11.4.1 Conceitos:
+	  Atualizações em múltiplos núcleos
+	  Compartilhamento
+
+  11.4.2 Características:
+	  Invalidação
+	  Sincronização
+
+  11.4.3 Consequências:
+	  Penalidade de acesso
+	  Impacto no desempenho
 
 
 
