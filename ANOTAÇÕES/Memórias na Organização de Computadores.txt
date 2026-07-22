@@ -1,10 +1,13 @@
                                 Memórias na Organização de Computadores
 
 
+* PARTE 1 — FUNDAMENTOS E ORGANIZAÇÃO DAS MEMÓRIAS:
+
 
 1. Introdução:
 
  1.1 Introdução às Memórias:
+
   1.1.1 Memórias como componente do sistema computacional:
 	  Conceito de memória
 	  Objetivos da memória
@@ -13,6 +16,7 @@
 	  Armazenamento de informações
 	  Programa armazenado
 	  Unidade de armazenamento
+
   1.1.2 Importância das Memórias:
 	  Desempenho do sistema
 	  Comunicação CPU–Memória
@@ -20,6 +24,7 @@
 	  Evolução tecnológica das memórias
 	  Escalabilidade
 	  Eficiência energética
+
   1.1.3 Organização das Memórias:
 	  Organização versus Arquitetura de Computadores
 	  Papel das memórias na Organização de Computadores
@@ -27,18 +32,22 @@
 	  Classificação geral das memórias
 	  Fluxo geral dos dados
 
+
  1.2 Organização de Computadores e Memórias:
+
   1.2.1 Organização versus Arquitetura:
 	  Organização de Computadores
 	  Arquitetura de Computadores
 	  Relação entre organização e arquitetura
 	  Papel das memórias
+
   1.2.2 Modelos Clássicos:
 	  Modelo de Von Neumann
 	  Gargalo de Von Neumann
 	  Modelo Harvard
 	  Modelo Harvard Modificado
 	  Comparação dos modelos
+
   1.2.3 Comunicação com os demais componentes:
 	  CPU
 	  Barramentos
@@ -47,7 +56,9 @@
 	  DMA (Direct Memory Access)
 	  Fluxo geral das informações
 
+
  1.3 Conceitos Fundamentais
+
   1.3.1 Representação da Informação:
 	  Bit
 	  Nibble
@@ -57,6 +68,7 @@
 	  Sistemas de numeração
 	  Representação binária
 	  Representação hexadecimal
+
   1.3.2 Componentes Digitais Fundamentais:
 	  Flip-Flops
 	  Latches
@@ -69,6 +81,7 @@
 	  Drivers
 	  Sense Amplifiers
 	  Tri-State Buffers
+
   1.3.3 Comunicação Básica:
  	  Barramento de Dados
 	  Barramento de Endereços
@@ -81,6 +94,7 @@
 2. Fundamentos das Memórias:
 
  2.1 Conceitos Fundamentais:
+
   2.1.1 Armazenamento de Dados:
 	  Dados
 	  Instruções
@@ -88,6 +102,7 @@
 	  Volatilidade
 	  Não volatilidade
 	  Retenção de dados
+
   2.1.2 Características das Memórias:
 	  Capacidade
 	  Latência
@@ -99,6 +114,7 @@
 	  Consumo de energia
 	  Densidade de armazenamento
 	  Escalabilidade
+
   2.1.3 Métricas de Desempenho:
           Latência
 	  Throughput
@@ -106,15 +122,19 @@
 	  Memory Wall 
 	  CPI relacionado à memória 
 
+
  2.2 Classificação das Memórias:
+
   2.2.1 Quanto à Persistência:
 	  Voláteis
 	  Não voláteis
+
   2.2.2 Quanto ao Método de Acesso:
 	  Aleatório
 	  Sequencial
 	  Direto
 	  Associativo
+
   2.2.3 Quanto à Função:
 	  Primária
 	  Secundária
@@ -127,6 +147,7 @@
 3. Organização Geral das Memórias
 
  3.1 Organização Física:
+
   3.1.1 Estrutura Física:
 	  Chips
 	  Matrizes
@@ -137,6 +158,7 @@
 	  Canais
 	  Módulos
 	  Encapsulamentos
+
   3.1.2 Organização Interna:
 	  Células
 	  Blocos
@@ -146,13 +168,16 @@
 	  Organização por palavras
 	  Bancos independentes
 
+
  3.2 Organização Lógica:
+
   3.2.1 Estruturas Lógicas:
 	  Espaço de endereçamento
 	  Organização por blocos
 	  Organização linear
 	  Organização hierárquica
 	  Segmentação lógica
+
   3.2.2 Unidades de Informação:
 	  Bit
 	  Byte
@@ -160,6 +185,7 @@
 	  Bloco
 	  Linha de memória
 	  Página
+
 
  3.3 Expansão de Memória:
 	Expansão por largura
@@ -173,12 +199,14 @@
 4. Endereçamento e Interface da Memória:
 
  4.1 Endereçamento:
+
   4.1.1 Conceitos:
 	  Endereço físico
 	  Endereço lógico
 	  Espaço de endereçamento
 	  Capacidade de endereçamento
 	  Faixa de endereçamento
+
   4.1.2 Organização:
  	  Endereçamento por byte
 	  Endereçamento por palavra
@@ -187,12 +215,15 @@
 	  Big Endian
 	  Little Endian
 
+
  4.2 Interface CPU–Memória:
+
   4.2.1 Comunicação:
 	  Barramento de dados
 	  Barramento de endereços
 	  Barramento de controle
           Controlador de memória
+
   4.2.2 Operações:
 	  Leitura
 	  Escrita
@@ -208,6 +239,7 @@
 5. Visão Geral da Hierarquia de Memória:
 
  5.1 Fundamentos:
+
   5.1.1 Conceitos:
 	  Objetivos da Hierarquia de Memória
 	  Organização Hierárquica
@@ -216,6 +248,7 @@
 	  Localidade Espacial
  	  Localidade Sequencial
 	  Compromisso entre Custo, Capacidade e Desempenho
+
   5.1.2 Níveis da Hierarquia:
 	  Registradores
 	  Memória Cache
@@ -223,6 +256,7 @@
 	  Memória Secundária
 	  Armazenamento Externo
 	  Memória Virtual
+
   5.1.3 Características dos Níveis:
 	  Capacidade
 	  Velocidade de Acesso
@@ -230,18 +264,22 @@
 	  Largura de Banda (Throughput)
 	  Custo por Bit
 	  Volatilidade
+
   5.1.4 Fluxo de Dados na Hierarquia:
 	  Transferência entre Níveis
 	  Blocos de Memória
 	  Princípio da Proximidade ao Processador
           Promoção e substituição de dados
 
+
  5.2 Avaliação de Desempenho:
+
   5.2.1 Métricas:
 	  Latência
 	  Throughput (Largura de Banda)
 	  Tempo de Acesso
 	  Tempo de Ciclo da Memória
+
   5.2.2 Eficiência da Hierarquia:
 	  Gargalo de Memória
 	  Taxa de Acertos (Hit Rate)
@@ -251,14 +289,19 @@
 
 
 
+* PARTE 2 — HIERARQUIA E MEMÓRIA CACHE:
+
+
 6. Hierarquia de Memória:
 
  6.1 Fundamentos:
+
   6.1.1 Conceitos Gerais:
 	  Conceito de Hierarquia de Memória
 	  Objetivos
 	  Princípio da localidade
 	  Balanceamento entre Custo, Capacidade e Desempenho
+
   6.1.2 Princípios de Localidade:
 	  Localidade Temporal
 	  Localidade Espacial
@@ -267,6 +310,7 @@
 	  Regra 90/10
 	  Padrões de Acesso à Memória
 	  Princípio de Pareto
+
    6.1.3 Avaliação:
 	  Latência
 	  Throughput
@@ -275,13 +319,16 @@
 	  CPI relacionado à memória
 	  Gargalo de largura de banda
 
+
  6.2 Níveis da Hierarquia:
+
   6.2.1 Registradores:
 	  Papel
 	  Organização Geral
 	  Tipos de Registradores
 	  Velocidade
 	  Relação com a CPU
+
   6.2.2 Memória Cache:
 	  Papel
 	  Organização
@@ -289,18 +336,21 @@
 	  Linhas de Cache
 	  Blocos de Cache
 	  Relação com a CPU
+
   6.2.3 Memória Principal:
 	  Papel
 	  Organização
 	  RAM Estática (SRAM)
 	  RAM Dinâmica (DRAM)
 	  Relação com a Cache
+
   6.2.4 Memória Secundária:
 	  Papel
 	  HDD
 	  SSD
 	  Persistência
 	  Desempenho Comparativo
+
   6.2.5 Armazenamento Externo:
 	  Pen Drive
 	  Cartão de Memória
@@ -308,6 +358,7 @@
 	  HD Externo
 	  SSD Externo
 	  Armazenamento em Nuvem
+
   6.2.6 Memória Virtual:
 	  Conceito
 	  Paginação
@@ -320,6 +371,7 @@
 7. Fundamentos da Memória Cache:
 
  7.1 Conceitos:
+
   7.1.1 Introdução:
 	  Definição
 	  Objetivos
@@ -330,6 +382,7 @@
 	  Localidade Espacial
 	  Localidade Sequencial
 	  Papel da Cache na Hierarquia
+
   7.1.2 Estrutura:
 	  Linha
 	  Bloco
@@ -342,7 +395,9 @@
 	  Bit Sujo (Dirty Bit)
 	  Bits de Estado
 
+
  7.2 Operações:
+
   7.2.1 Acessos:
 	  Cache Hit
 	  Cache Miss
@@ -351,6 +406,7 @@
 	  Hit Rate
 	  Miss Rate
 	  AMAT
+
   7.2.2 Tipos de Miss:
 	  Cold (Compulsory)
 	  Conflict
@@ -364,12 +420,14 @@
 8. Organização da Cache:
 
  8.1 Níveis:
+
   8.1.1 Organização:
 	  L1
 	  L2
 	  L3
 	  L4
 	  Last Level Cache (LLC)
+
   8.1.2 Classificações:
 	  Unificada
 	  Separada
@@ -380,19 +438,24 @@
 	  Não inclusiva
 	  Não Exclusiva
 
+
  8.2 Mapeamento:
+
   8.2.1 Direto:
 	  Organização
 	  Funcionamento
 	  Vantagens
 	  Desvantagens
+
   8.2.2 Associativo:
 	  Totalmente Associativo
 	  Associativo por Conjunto
 	  Grau de Associatividade
 	  Comparação entre Métodos
 
+
  8.3 Políticas:
+
   8.3.1 Substituição:
 	  FIFO
 	  LRU
@@ -401,6 +464,7 @@
 	  Pseudo-LRU (PLRU)
 	  MRU
 	  NRU
+
   8.3.2 Escrita:
 	  Write Through
 	  Write Back
@@ -414,6 +478,7 @@
 9. Otimizações da Cache:
 
  9.1 Técnicas de Otimização:
+
   9.1.1 Soluções em Hardware:
 	  Prefetch
 	  Hardware Prefetcher
@@ -431,6 +496,7 @@
 	  Critical Word First
 	  Early Restart
 	  Multi-Banked Cache
+
   9.1.2 Soluções em Software:
 	  Cache Blocking
 	  Loop Tiling
@@ -446,7 +512,9 @@
 	  Software Prefetching
 	  Page Coloring
 
+
  9.2 Problemas de Cache:
+
   9.2.1 Problemas de Desempenho:
 	  Cache Thrashing
 	  False Sharing
@@ -459,6 +527,7 @@
 	  Cache Line Contention
 	  TLB Misses
 	  Ping-Pong Effect
+
   9.2.2 Problemas de Consistência:
 	  Cache Coherence
 	  Memory Consistency
@@ -472,6 +541,7 @@
 10. Coerência e Consistência de Cache e Memória:
 
  10.1 Coerência de Cache:
+
   10.1.1 Conceitos:
  	  Compartilhamento de Dados:
 	  Invalidação
@@ -481,6 +551,7 @@
 	  Granularidade da Coerência (Cache Line)
 	  Domínio de Coerência
 	  Coerência em Multiprocessadores
+
   10.1.2 Protocolos de Coerência:
 	  MSI
  	  MESI
@@ -492,6 +563,7 @@
 	  Directory-Based
 	  Snooping
 	  Broadcast
+
   10.1.3 Implementação da Coerência:
 	  Barramento Compartilhado
 	  Diretórios Centralizados
@@ -500,7 +572,9 @@
 	  Filtragem de Snooping
 	  Interconexões Coerentes
 
- 10.2 Consistência de Memória
+
+ 10.2 Consistência de Memória:
+
   10.2.1 Modelos de Consistência:
 	  Sequential Consistency
 	  Processor Consistency
@@ -513,6 +587,7 @@
 	  Relaxed Memory Model (RMO)
 	  Acquire-Release
 	  Sequentially Consistent Atomics
+
   10.2.2 Mecanismos de Sincronização:
 	  Memory Barriers
 	  Memory Fences
@@ -525,6 +600,7 @@
 	  Load-Linked / Store-Conditional (LL/SC)
 	  Fetch-and-Add
 	  Test-and-Set
+
   10.2.3 Problemas Relacionados:
 	  Reordenação de Instruções
  	  Reordenação de Memória
@@ -551,9 +627,13 @@
 
 
 
+* PARTE 3 — MEMÓRIA PRINCIPAL E INTEGRIDADE
+
+
 12. Memória Principal:
 
  12.1 Fundamentos:
+
   12.1.1 Conceitos Gerais:
 	  Definição
 	  Objetivos
@@ -564,6 +644,7 @@
  	  Volatilidade
 	  Capacidade
 	  Escalabilidade
+
    12.1.2 Estrutura Interna:
 	  Células
 	  Linhas
@@ -578,7 +659,9 @@
 	  Sense Amplifiers
 	  Barramentos internos
 
+
  12.2 Tecnologias RAM:
+
   12.2.1 SRAM:
 	  Estrutura
 	  Funcionamento
@@ -587,6 +670,7 @@
 	  Operações de escrita
 	  Consumo de energia
 	  Aplicações  
+
   12.2.2 DRAM:
 	  Estrutura
 	  Funcionamento
@@ -601,6 +685,7 @@
 	  EDO
 	  FPM
 	  BEDO
+
   12.2.3 SDRAM:
 	  SDR SDRAM
 	  Sincronização
@@ -608,6 +693,7 @@
 	  Pipeline
 	  Burst
 	  Banco de memória
+
    12.2.4 DDR SDRAM:
 	  DDR
 	  DDR2
@@ -621,7 +707,9 @@
 	  HBM3
 	  Wide I/O
 
+
  12.3 Operações da Memória Principal:
+
   12.3.1 Operações Básicas:
 	  Leitura
 	  Escrita
@@ -629,6 +717,7 @@
 	  Ativação de linha
 	  Pré-carga
 	  Refresh
+
   12.3.2 Organização dos Acessos:
 	  Acesso Sequencial
 	  Acesso Aleatório
@@ -641,6 +730,7 @@
 13. Organização da DRAM:
 
  13.1 Estrutura Física:
+
   13.1.1 Organização:
 	  Bancos
 	  Bank Groups
@@ -651,6 +741,7 @@
 	  Barramentos internos
 	  Decoder de Linhas
 	  Decoder de Colunas
+
   13.1.2 Operações:
 	  Activate
 	  Read
@@ -662,7 +753,9 @@
 	  All Bank Refresh
 	  Per Bank Refresh
 
+
  13.2 Temporização:
+
   13.2.1 Timings:
 	  CAS Latency (CL)
 	  RAS
@@ -675,6 +768,7 @@
 	  tFAW
 	  tCCD
 	  Command Rate (CR)
+
   13.2.2 Burst:
 	  Burst Length
 	  Burst Chop
@@ -684,13 +778,16 @@
 	  Open Row Policy
 	  Closed Row Policy
 
+
  13.3 Arquitetura da DRAM:
+
   13.3.1 Organização:
 	  Organização por Bancos
 	  Organização por Ranks
 	  Organização por Canais
 	  Organização por Módulos
 	  Paralelismo Interno
+
   13.3.2 Eficiência
 	  Localidade de Linha
 	  Row Buffer Hits
@@ -712,7 +809,9 @@
 	Interface CPU–Memória
 	Interface DRAM
 
+
  14.2 Gerenciamento:
+
   14.2.1 Escalonamento:
 	  Memory Scheduling
 	  FCFS
@@ -720,6 +819,7 @@
 	  Round Robin
 	  Quality of Service (QoS)
 	  Priorização de Requisições
+
   14.2.2 Paralelismo:
 	  Channel Interleaving
 	  Bank Interleaving
@@ -727,13 +827,16 @@
 	  Bank Group Interleaving
 	  Paralelismo de Requisições
 
+
  14.3 Funções do Controlador:
+
   14.3.1 Gerenciamento:
 	  Tradução de Endereços
 	  Gerenciamento de Refresh
 	  Gerenciamento de Timings
 	  Gerenciamento de Filas
 	  Reordenação de Acessos
+
   14.3.2 Otimizações:
  	  Row Buffer Management
 	  Open Page Policy
@@ -746,12 +849,14 @@
 15. Módulos de Memória:
 
  15.1 Tipos:
+
   15.1.1 Formatos:
 	  SIMM
 	  DIMM
 	  SO-DIMM
 	  MicroDIMM
 	  CAMM
+
   15.1.2 Classificações:
 	  UDIMM
 	  RDIMM
@@ -761,7 +866,9 @@
 	  Buffered
 	  Unbuffered
 
+
  15.2 Organização:
+
   15.2.1 Estrutura:
 	  Chips
 	  Ranks
@@ -769,6 +876,7 @@
 	  Barramento de Dados
 	  SPD
 	  PMIC (DDR5)
+
   15.2.2 Compatibilidade:
 	  Capacidade
 	  Frequência
@@ -776,13 +884,16 @@
 	  Tensão
 	  Geração DDR
 
+
  15.3 Desempenho:
+
   15.3.1 Características:
 	  Frequência
 	  Clock
 	  Data Rate
 	  Largura do Barramento
 	  Bandwidth
+
   15.3.2 Configurações:
 	  Single Channel
 	  Dual Channel
@@ -796,18 +907,22 @@
 16. Integridade e Confiabilidade:
 
  16.1 Detecção de Erros:
+
   16.1.1 Técnicas:
 	  Bit de Paridade
 	  Paridade Par
 	  Paridade Ímpar
 	  Checksum
 	  CRC
+
   16.1.2 Classificação:
 	  Detecção de Erro Simples
 	  Detecção de Erros Múltiplos
 	  Limitações
 
+
  16.2 Correção de Erros:
+
   16.2.1 Técnicas:
 	  ECC
 	  Código de Hamming
@@ -816,13 +931,16 @@
 	  Chipkill
 	  Lockstep
 	  ECC Avançado
+
   16.2.2 Funcionamento:
  	  Geração dos Bits ECC
 	  Correção Automática
 	  Detecção de Múltiplos Erros
 	  Relatórios de Erro
 
+
  16.3 Confiabilidade:
+
   16.3.1 Recursos:
 	  RAS
 	  Soft Errors
@@ -833,6 +951,7 @@
 	  Memory Sparing
 	  Memory Mirroring
 	  Hot Add Memory
+
   16.3.2 Disponibilidade:
 	  Failover
 	  Tolerância a Falhas
@@ -844,6 +963,7 @@
 17. Avaliação da Memória Principal:
 
  17.1 Métricas:
+
   17.1.1 Desempenho:
 	  Latência
 	  Throughput
@@ -854,6 +974,7 @@
 	  Utilização dos Bancos
 	  Utilização dos Canais
 	  Gargalos
+
   17.1.2 Indicadores:
 	  IPC Relacionado à Memória
 	  AMAT
@@ -861,7 +982,9 @@
 	  Eficiência do Controlador
 	  Eficiência Energética
 
+
  17.2 Otimizações:
+
   17.2.1 Hardware:
 	  Balanceamento de Canais
 	  Balanceamento de Bancos
@@ -869,6 +992,7 @@
 	  Ajuste de Timings
 	  Interleaving
 	  Prefetch
+
   17.2.2 Configuração:
 	  Overclock 
 	  Underclock
@@ -880,9 +1004,13 @@
 
 
 
+*PARTE 4 — MEMÓRIAS NÃO VOLÁTEIS E ARMAZENAMENTO:
+
+
 18. Memórias Não Voláteis:
 
-18.1 Fundamentos das Memórias Não Voláteis
+18.1 Fundamentos das Memórias Não Voláteis:
+
  18.1.1 Conceitos Gerais:
 	  Definição
 	  Persistência
@@ -893,6 +1021,7 @@
 	  Durabilidade
 	  Endurance
 	  Tempo de Retenção
+
   18.1.2 Classificação:
 	  ROM
 	  PROM
@@ -902,13 +1031,16 @@
 	  Flash NAND
 	  Memórias Emergentes
 
+
  18.2 Tecnologias de Memórias Não Voláteis:
+
   18.2.1 ROM e Derivadas:
 	  Mask ROM
 	  PROM
 	  EPROM
 	  EEPROM
 	  OTP ROM
+
   18.2.2 Flash Memory:
 	  NOR Flash
 	  NAND Flash
@@ -920,6 +1052,7 @@
 	  QLC
 	  PLC
 	  pSLC
+
   18.2.3 Organização da Flash:
 	  Página
 	  Bloco
@@ -929,6 +1062,7 @@
 	  Operações de Leitura
 	  Operações de Escrita
 	  Operações de Apagamento
+
   18.2.4 Memórias Emergentes:
 	  MRAM
 	  STT-MRAM
@@ -939,13 +1073,16 @@
 	  NVDIMM
 	  CXL Memory
 
+
  18.3 Características das Memórias Não Voláteis:
+
   18.3.1 Desempenho:
 	  Latência
 	  Throughput
 	  Tempo de Leitura
 	  Tempo de Escrita
 	  Tempo de Apagamento
+
   18.3.2 Confiabilidade:
 	  Endurance
 	  Retenção de Dados
@@ -958,6 +1095,7 @@
 19. Dispositivos de Armazenamento
 
  19.1 Armazenamento Magnético:
+
   19.1.1 HDD:
 	  Estrutura
 	  Pratos
@@ -968,6 +1106,7 @@
 	  Atuador
 	  Motor do Spindle
 	  Cache Interno
+
   19.1.2 Funcionamento:
 	  Leitura
 	  Escrita
@@ -977,7 +1116,9 @@
 	  Command Queue
 	  Cache de Disco
 
+
  19.2 Armazenamento em Estado Sólido:
+
   19.2.1 SSD:
 	  Estrutura
 	  Controladora
@@ -986,6 +1127,7 @@
 	  SRAM Cache
 	  SLC Cache
 	  Flash Translation Layer (FTL)
+
   19.2.2 Gerenciamento:
 	  Wear Leveling
 	  Garbage Collection
@@ -996,12 +1138,15 @@
 	  Background Refresh
 	  Thermal Management
 
+
  19.3 Organização Interna dos Dispositivos:
+
   19.3.1 HDD:
 	  Cache
 	  Buffer
 	  Firmware
 	  Tabelas de Defeitos
+
   19.3.2 SSD:
 	  Controller
 	  Canais
@@ -1015,6 +1160,7 @@
 20. Interfaces de Armazenamento:
 
  20.1 Interfaces Internas:
+
   20.1.1 Padrões:
 	  PATA
 	  SATA
@@ -1024,6 +1170,7 @@
 	  M.2
 	  U.2
 	  EDSFF
+
   20.1.2 Protocolos:
 	  ATA
 	  AHCI
@@ -1036,13 +1183,16 @@
 	  PRP
 	  SGL
 
+
  20.2 Interfaces Externas:
+
   20.2.1 Conectividade:
 	  USB
 	  Thunderbolt
 	  eSATA
 	  FireWire (IEEE 1394)
 	  Network Storage
+
   20.2.2 Armazenamento em Rede:
 	  NAS
 	  SAN
@@ -1055,6 +1205,7 @@
 21. Organização dos Dados em Armazenamento:
 
  21.1 Estruturas Lógicas:
+
   21.1.1 Organização:
 	  Blocos
 	  Setores Lógicos
@@ -1064,6 +1215,7 @@
 	  Partições
 	  Volumes
 	  Espaço Livre
+
   21.1.2 Endereçamento:
 	  LBA
 	  CHS (Histórico)
@@ -1071,12 +1223,15 @@
 	  Flash Translation Layer (FTL)
 	  Tradução de Endereços
 
+
  21.2 Organização Física:
+
   21.2.1 HDD:
 	  Trilhas
 	  Setores
 	  Cilindros
 	  Zonas
+
   21.2.2 SSD:
 	  Páginas
 	  Blocos
@@ -1084,12 +1239,15 @@
 	  Dies
  	  Canais
 
+
  21.3 Gerenciamento dos Dados:
+
   21.3.1 Alocação:
 	  Contígua
 	  Encadeada
 	  Indexada
 	  Extents
+
   21.3.2 Fragmentação:
 	  Fragmentação Interna
 	  Fragmentação Externa
@@ -1101,6 +1259,7 @@
 22. Avaliação dos Sistemas de Armazenamento:
 
  22.1 Desempenho:
+
   22.1.1 Métricas:
 	  Latência
 	  IOPS
@@ -1110,6 +1269,7 @@
 	  Tempo Médio de Acesso
 	  Queue Depth
 	  Eficiência Energética
+
   22.1.2 Gargalos:
 	  Gargalos de Interface
 	  Gargalos da Controladora
@@ -1117,7 +1277,9 @@
 	  Gargalos Mecânicos
 	  Saturação de Filas
 
+
  22.2 Confiabilidade:
+
   22.2.1 Métricas:
 	  MTBF
 	  AFR
@@ -1126,6 +1288,7 @@
 	  UBER
 	  Retenção de Dados
 	  Durabilidade
+
   22.2.2 Proteção de Dados:
 	  ECC
 	  RAID (Introdução)
@@ -1133,13 +1296,16 @@
 	  SMART
 	  Monitoramento de Saúde
 
+
  22.3 Otimização:
+
   22.3.1 SSD:
 	  TRIM
 	  Garbage Collection
 	  Wear Leveling
 	  Over-Provisioning
 	  Atualização de Firmware
+
   22.3.2 HDD:
 	  Cache
 	  NCQ
@@ -1148,9 +1314,13 @@
 
 
 
+* PARTE 5 — MEMÓRIA VIRTUAL E SISTEMAS ESPECIALIZADOS:
+
+
 23. Memória Virtual:
 
  23.1 Fundamentos:
+
   23.1.1 Conceitos Gerais:
 	  Definição
 	  Objetivos
@@ -1162,6 +1332,7 @@
 	  Tradução de Endereços
 	  Transparência para os Processos
 	  Relação com a Memória Principal
+
   23.1.2 Benefícios:
 	  Isolamento
 	  Proteção
@@ -1172,7 +1343,9 @@
 	  Relocação
 	  Eficiência da Memória
 
+
  23.2 Paginação:
+
   23.2.1 Conceitos:
 	  Página
 	  Quadro (Frame)
@@ -1186,6 +1359,7 @@
 	  Bit de Presença
 	  Bit de Modificação (Dirty)
 	  Bit de Referência (Accessed)
+
   23.2.2 Políticas:
 	  FIFO
 	  LRU
@@ -1198,6 +1372,7 @@
 	  WSClock
 	  Random
 
+
  23.3 Segmentação:
 	Segmentos
 	Base
@@ -1208,7 +1383,9 @@
 	Segmentação Pura
 	Segmentação com Paginação
 
+
  23.4 MMU e TLB:
+
   23.4.1 MMU:
 	  Tradução de endereços
 	  Proteção
@@ -1216,6 +1393,7 @@
 	  Controle de acesso
 	  Relocação
 	  Tradução Virtual–Física
+
   23.4.2 TLB:
 	  Estrutura
 	  Associatividade
@@ -1228,11 +1406,13 @@
 
 
  23.5 Implementação da Memória Virtual:
+
   23.5.1 Estruturas:
 	  Tabela de Páginas de Nível Único
 	  Tabelas Multinível
 	  Tabela de Páginas Invertida
 	  Hash Page Table
+
   23.5.2 Otimizações:
 	  Huge Pages
 	  Transparent Huge Pages
@@ -1245,6 +1425,7 @@
 24. Gerenciamento de Memória:
 
  24.1 Alocação:
+
   24.1.1 Técnicas:
 	  Contígua
 	  Não Contígua
@@ -1256,14 +1437,17 @@
 	  Slab Allocator
 	  Pool Allocator
 	  Bitmap Allocation
+
   24.1.2 Fragmentação:
 	  Fragmentação Interna
 	  Fragmentação Externa
 	  Compactação
 	  Coalescência
 
-24.2 Paginação por Demanda:
- 24.2.1 Operações:
+
+ 24.2 Paginação por Demanda:
+
+  24.2.1 Operações:
 	  Page Fault
 	  Minor Page Fault
 	  Major Page Fault
@@ -1273,19 +1457,23 @@
 	  Zero Page
 	  Demand Paging
 	  Lazy Allocation
+
   24.2.2 Swap:
 	  Área de Swap
 	  Arquivo de Swap
 	  Política de Swap
 	  Thrashing
 
+
  24.3 Gerenciamento Avançado:
+
   24.3.1 Otimizações:
 	  Prefetch de Páginas
 	  Reclaim de Memória
 	  Compressão de Memória
 	  Memory Ballooning
 	  Deduplicação de Páginas
+
   24.3.2 Monitoramento:
 	  Uso da Memória
 	  Working Set
@@ -1297,6 +1485,7 @@
 25. Multiprocessadores e Memória:
 
  25.1 Arquiteturas:
+
   25.1.1 Modelos:
 	  UMA
 	  NUMA
@@ -1305,6 +1494,7 @@
 	  DSM
 	  SMP
 	  AMP
+
   25.1.2 Interconexão:
 	  Barramento Compartilhado
 	  Crossbar
@@ -1312,7 +1502,9 @@
 	  Mesh
 	  NoC 
 
+
  25.2 Memória Compartilhada:
+
   25.2.1 Organização:
 	  Compartilhamento
 	  Sincronização
@@ -1322,13 +1514,16 @@
 	  Monitores
 	  Mutex
 	  Variáveis de Condição
+
   25.2.2 Desempenho:
 	  Localidade NUMA
 	  Migração de Dados
 	  Afinidade de Memória
 	  Afinidade de CPU
 
+
  25.3 Memória Distribuída:
+
   25.3.1 Conceitos:
 	  Nós
 	  Comunicação
@@ -1337,6 +1532,7 @@
 	  Coerência
 	  Passagem de Mensagens
 	  Comunicação Coletiva
+
   25.3.2 Escalabilidade:
 	  Latência
 	  Throughput
@@ -1347,7 +1543,8 @@
 
 26. Consistência e Sincronização:
 
- 26.1 Modelos
+ 26.1 Modelos:
+
   26.1.1 Consistência:
 	  Sequential Consistency
 	  Processor Consistency
@@ -1359,13 +1556,16 @@
 	  PSO
 	  RMO
 	  Memory Fences
+
   26.1.2 Ordenação:
 	  Reordenação de Instruções
 	  Reordenação de Memória
 	  Dependências
 	  Visibilidade
 
+
  26.2 Operações Atômicas:
+
   26.2.1 Instruções:
 	  Compare-and-Swap
 	  Test-and-Set
@@ -1375,6 +1575,7 @@
 	  Load Linked
 	  Store Conditional
 	  Atomic Read-Modify-Write
+
   26.2.2 Sincronização:
 	  Spinlock
 	  Mutex
@@ -1384,13 +1585,16 @@
 	  Operações Lock-Free
 	  Wait-Free
 
+
  26.3 Problemas de Concorrência:
+
   26.3.1 Condições:
    	  Race Condition
 	  Deadlock
 	  Livelock
 	  Starvation
 	  Priority Inversion
+
   26.3.2 Ferramentas:
 	  Detectores de Corrida
 	  Profilers
@@ -1401,6 +1605,7 @@
 27. Sistemas Especializados de Memória:
 
  27.1 GPUs:
+
   27.1.1 Hierarquia:
 	  Registers
 	  Local Memory
@@ -1410,13 +1615,16 @@
 	  Texture Memory
 	  L1 Cache
 	  L2 Cache
+
   27.1.2 Organização:
 	  Warps
 	  Thread Blocks
 	  Coalesced Access
 	  Shared Memory Banks
 
+
  27.2 Sistemas Embarcados:
+
   27.2.1 Organização:
 	  SRAM Embarcada
 	  Flash Embarcada
@@ -1425,13 +1633,16 @@
 	  Memória em Microcontroladores
 	  Execução XIP
 	  Memória em SoCs
+
   27.2.2 Gerenciamento:
 	  Bootloader
 	  Boot ROM
 	  Mapeamento de Memória
 	  Baixo Consumo de Energia
 
+
  27.3 Sistemas de Alto Desempenho:
+
   27.3.1 HPC:
 	  HBM
 	  CXL
@@ -1440,6 +1651,7 @@
 	  Escalabilidade
 	  NUMA
 	 Memória Desagregada
+
   27.3.2 Aceleração:
 	  GPUDirect
 	  Unified Memory
@@ -1449,9 +1661,13 @@
 
 
 
+*PARTE 6 — TECNOLOGIAS MODERNAS E OTIMIZAÇÕES:
+
+
 28. Tecnologias Modernas de Memória:
 
  28.1 Memórias Avançadas:
+
   28.1.1 Tecnologias:
 	  HBM
 	  HBM2
@@ -1472,6 +1688,7 @@
 	  ReRAM
 	  FeRAM
 	  Memórias Híbridas
+
   28.1.2 Características:
 	  Latência
 	  Throughput
@@ -1483,7 +1700,9 @@
 	  Endurance
 	  Custo
 
+
  28.2 Tendências:
+
   28.2.1 Evolução:
 	  Chiplets
 	  Near-Memory Computing
@@ -1495,6 +1714,7 @@
 	  Memory Fabric
 	  Composable Memory
 	  Heterogeneous Memory
+
   28.2.2 Arquiteturas Emergentes:
 	  Data-Centric Computing
 	  Memory-Centric Computing
@@ -1503,13 +1723,16 @@
 	  Domain-Specific Architectures
 	  High-Bandwidth Interconnects
 
+
  28.3 Integração das Novas Memórias:
+
   28.3.1 Aplicação na Hierarquia:
 	  Cache
 	  Memória Principal
 	  Memória Persistente
 	  Armazenamento
 	  Memória Compartilhada
+
   28.3.2 Desafios:
 	  Compatibilidade
 	  Escalabilidade
@@ -1522,8 +1745,9 @@
 
 29. Otimizações Avançadas
 
-29.1 Hardware:
- 29.1.1 Técnicas:
+ 29.1 Hardware:
+
+  29.1.1 Técnicas:
 	  Prefetch Adaptativo
 	  Compressão de Memória
 	  Deduplicação
@@ -1534,6 +1758,7 @@
 	  Dynamic Memory Scheduling
 	  Dynamic Refresh
 	  Row Buffer Optimization
+
   29.1.2 Eficiência:
 	  Redução da Latência
 	  Economia de Energia
@@ -1542,7 +1767,9 @@
 	  Balanceamento de Canais
 	  Balanceamento de Bancos
 
+
  29.2 Software:
+
   29.2.1 Técnicas:
 	  Huge Pages
 	  Transparent Huge Pages
@@ -1554,6 +1781,7 @@
 	  Software Prefetch
 	  Data Alignment
 	  Memory Mapping
+
   29.2.2 Ferramentas:
 	  Profilers
 	  Memory Debuggers
@@ -1563,6 +1791,7 @@
 
 
  29.3 Eficiência Energética:
+
   29.3.1 Técnicas:
 	  Dynamic Voltage Scaling
 	  Dynamic Frequency Scaling
@@ -1570,6 +1799,7 @@
 	  Self Refresh
 	  Power Gating
 	  Clock Gating
+
   29.3.2 Gerenciamento:
 	  Thermal Management
 	  Energy-Aware Scheduling
@@ -1578,9 +1808,13 @@
 
 
 
+* PARTE 7 — SEGURANÇA, APLICAÇÕES E ENCERRAMENTO:
+
+
 30. Segurança da Memória:
 
  30.1 Proteção:
+
   30.1.1 Técnicas:
 	  ASLR
 	  DEP
@@ -1591,6 +1825,7 @@
 	  Trusted Execution Environment (TEE)
 	  Memory Isolation
 	  Access Control
+
   30.1.2 Integridade:
 	  ECC
 	  Memory Authentication
@@ -1598,7 +1833,10 @@
 	  Secure Erase
  	  Integrity Verification
 
+
+
  30.2 Vulnerabilidades:
+
   30.2.1 Ataques:
 	  RowHammer
 	  Buffer Overflow
@@ -1609,6 +1847,7 @@
 	  Meltdown
 	  Fault Injection
 	  DMA Attacks
+
   30.2.2 Mitigações:
 	  ECC
 	  Memory Fencing
@@ -1618,12 +1857,15 @@
 	  Pointer Authentication
 	  Software Hardening
 
+
  30.3 Monitoramento:
+
   30.3.1 Detecção:
 	  Monitoramento de Integridade
 	  Detecção de Intrusão
 	  Detecção de Corrupção
 	  Auditoria
+
   30.3.2 Recuperação:
 	  Recuperação de Erros
 	  Reinicialização Segura
@@ -1635,6 +1877,7 @@
 31. Aplicações:
 
  31.1 Ambientes:
+
   31.1.1 Sistemas:
 	  Computadores pessoais
 	  Workstations
@@ -1643,6 +1886,7 @@
 	  HPC
 	  Computação em Nuvem	
 	  Edge Computing
+
   31.1.2 Plataformas:
 	  Smartphones
 	  Tablets
@@ -1652,24 +1896,30 @@
 	  Inteligência Artificial
 	  Veículos Autônomos
 
+
  31.2 Aplicações Especializadas:
+
   31.2.1 Inteligência Artificial:
 	  Inferência
 	  Treinamento
 	  Memória para Aceleradores
 	  Unified Memory
+
   31.2.2 Big Data:
 	  Bancos de Dados em Memória
 	  Analytics
 	  Processamento Distribuído
 	  Data Lakes
 
+
  31.3 Estudos de Caso:
+
   31.3.1 Arquiteturas:
 	  CPUs Modernas
 	  GPUs Modernas
 	  Servidores
 	  Supercomputadores
+
   31.3.2 Comparações:
 	  Desktop
 	  Mobile
@@ -1677,9 +1927,11 @@
 	  HPC
 
 
+
 32. Revisão Geral:
 
  32.1 Integração:
+
   32.1.1 Revisão:
 	  Hierarquia de Memória
 	  Cache
@@ -1691,6 +1943,7 @@
 	  Multiprocessadores
 	  Consistência
 	  Tecnologias Modernas
+
   32.1.2 Integração dos Conceitos:
 	  Fluxo Completo da Memória
 	  Comunicação CPU–Memória
@@ -1698,13 +1951,16 @@
 	  Balanceamento entre Custo e Desempenho
 	  Escalabilidade
 
+
  32.2 Avaliação Geral:
+
   32.2.1 Desempenho:
  	  Latência
 	  Throughput
 	  AMAT
 	  Gargalos
 	  Memory Wall
+
   32.2.2 Tendências:
 	  Memórias Persistentes
 	  CXL
@@ -1723,6 +1979,7 @@
 	Papel na Arquitetura de Computadores
 	Perspectivas Futuras
 
+
  33.2 Tendências Futuras:
 	Memórias Emergentes
 	Arquiteturas Heterogêneas
@@ -1730,6 +1987,7 @@
 	Computação Quântica (Introdução)
 	Computação Neuromórfica (Introdução)
 	Sustentabilidade e Eficiência Energética
+
 
  33.3 Perspectivas de Pesquisa:
 	Novos Materiais
