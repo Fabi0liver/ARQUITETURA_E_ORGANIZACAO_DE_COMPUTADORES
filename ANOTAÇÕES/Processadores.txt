@@ -4,90 +4,111 @@
 PARTE 1 — FUNDAMENTOS DOS PROCESSADORES:
 
 
-1. Introdução aos Processadores
-1.1 Conceitos Fundamentais
-1.1.1 Processador como Unidade Central de Processamento [PROFUNDO]
-Conceito de processador
-Conceito de CPU (Central Processing Unit)
-Processador como unidade de processamento
-Processador como executor de instruções
-Processador como unidade de transformação de dados
-Processador como unidade de controle
-Objetivos do processador
-Funções fundamentais da CPU
-Execução de operações
-Manipulação de dados
-Controle da sequência de processamento
-Atualização do estado computacional
-1.1.2 Importância dos Processadores [PROFUNDO]
-Papel do processador na computação
-Papel na Arquitetura de Computadores
-Papel na Organização de Computadores
-Execução de programas
-Processamento de dados
-Coordenação das operações
-Controle do fluxo de informações
-Comunicação com os demais componentes
-Relação entre hardware e software
-1.1.3 Características Gerais dos Processadores [PROFUNDO]
-Dispositivo eletrônico programável
-Processamento baseado em instruções
-Operações sequenciais e paralelas
-Funcionamento sincronizado por clock
-Processamento de dados
-Controle das operações
-Armazenamento temporário de informações
-Comunicação interna entre unidades
-Integração entre hardware e software
-1.2 O Processador no Sistema Computacional
-1.2.1 Relação com os Demais Componentes [VISÃO GERAL]
-Memória principal
-Memória cache
-Barramentos
-Dispositivos de entrada e saída
-Controladores
-Armazenamento secundário
-Interconexões do sistema
-Fluxo geral de dados
-1.2.2 Papel da CPU na Organização do Computador [PROFUNDO]
-Coordenação do processamento
-Execução dos programas
-Manipulação dos dados
-Controle das operações
-Comunicação com outros componentes
-Sincronização
-Atualização do estado do sistema
-1.2.3 Fluxo Geral de Funcionamento [PROFUNDO]
-Recepção de instruções
-Interpretação da operação
-Obtenção dos dados
-Processamento
-Produção dos resultados
-Atualização do estado da CPU
-1.3 Arquitetura e Organização dos Processadores
-1.3.1 Arquitetura de Computadores [VISÃO GERAL]
-Conceito de arquitetura
-Interface hardware–software
-Recursos visíveis ao programador
-Conjunto de instruções
-Tipos de dados
-Modos de operação
-Modelo de execução
-1.3.2 Organização de Computadores [PROFUNDO]
-Implementação física dos recursos
-Organização dos componentes
-Estrutura interna da CPU
-Fluxo de dados
-Fluxo de controle
-Interconexão dos componentes
-Organização funcional
-1.3.3 Arquitetura × Organização [PROFUNDO]
-Diferenças
-Relação entre os conceitos
-Complementaridade
-Exemplos
-Impacto das decisões organizacionais
-Uma mesma arquitetura com diferentes organizações
+1. Introdução aos Processadores:
+
+ 1.1 Conceitos Fundamentais:
+
+  1.1.1 Processador como Unidade Central de Processamento:
+	  Conceito de processador
+	  Conceito de CPU (Central Processing Unit)
+	  Processador como unidade de processamento
+	  Processador como executor de instruções
+	  Processador como unidade de transformação de dados
+	  Processador como unidade de controle
+	  Objetivos do processador
+	  Funções fundamentais da CPU
+	  Execução de operações
+	  Manipulação de dados
+	  Controle da sequência de processamento
+	  Atualização do estado computacional
+
+  1.1.2 Importância dos Processadores:
+	  Papel do processador na computação
+	  Papel na Arquitetura de Computadores
+	  Papel na Organização de Computadores
+	  Execução de programas
+	  Processamento de dados
+	  Coordenação das operações
+	  Controle do fluxo de informações
+	  Comunicação com os demais componentes
+	  Relação entre hardware e software
+
+  1.1.3 Características Gerais dos Processadores:
+	  Dispositivo eletrônico programável
+	  Processamento baseado em instruções
+	  Operações sequenciais e paralelas
+	  Funcionamento sincronizado por clock
+	  Processamento de dados
+	  Controle das operações
+	  Armazenamento temporário de informações
+	  Comunicação interna entre unidades
+	  Integração entre hardware e software
+
+
+ 1.2 O Processador no Sistema Computacional:
+
+  1.2.1 Relação com os Demais Componentes:Memória principal:
+	  Memória principal
+	  Memória cache
+	  Barramentos
+	  Dispositivos de entrada e saída
+	  Controladores
+	  Armazenamento secundário
+	  Interconexões do sistema
+	  Fluxo geral de dados
+
+  1.2.2 Papel da CPU na Organização do Computador:
+	  Coordenação do processamento
+	  Execução dos programas
+	  Manipulação dos dados
+	  Controle das operações
+	  Comunicação com outros componentes
+	  Sincronização
+	  Atualização do estado do sistema
+
+  1.2.3 Fluxo Geral de Funcionamento:
+	  Recepção de instruções
+	  Interpretação da operação
+	  Obtenção dos dados
+	  Processamento
+	  Produção dos resultados
+	  Atualização do estado da CPU
+
+
+ 1.3 Arquitetura e Organização dos Processadores:
+
+  1.3.1 Arquitetura de Computadores:
+	  Conceito de arquitetura
+	  Interface hardware–software
+	  Recursos visíveis ao programador
+	  Conjunto de instruções
+	  Tipos de dados
+	  Modos de operação
+	  Modelo de execução
+
+  1.3.2 Organização de Computadores:
+	  Implementação física dos recursos
+	  Organização dos componentes
+	  Estrutura interna da CPU
+	  Fluxo de dados
+	  Fluxo de controle
+	  Interconexão dos componentes
+	  Organização funcional
+
+  1.3.3 Microarquitetura:
+	  Conceito
+	  Implementação da arquitetura
+	  Organização interna do processador
+	  Relação entre ISA e hardware
+	  Exemplos de microarquiteturas
+
+  1.3.4 Arquitetura × Organização:
+	  Diferenças
+	  Relação entre os conceitos
+	  Complementaridade
+	  Exemplos
+	  Impacto das decisões organizacionais
+	  Uma mesma arquitetura com diferentes organizações
 
 
 
