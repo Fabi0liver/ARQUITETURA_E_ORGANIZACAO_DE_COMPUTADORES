@@ -1742,267 +1742,369 @@ PARTE 5 — ARQUITETURAS, TECNOLOGIAS E TENDÊNCIAS DOS PROCESSADORES:
 
 
 
-29. Desempenho dos Processadores
-29.1 Fundamentos
-29.1.1 Conceitos
-Desempenho
-Eficiência
-Throughput
-Latência
-Tempo de resposta
-29.1.2 Fatores de Desempenho
-Frequência
-IPC
-CPI
-Paralelismo
-Pipeline
-Cache
-Memória
-29.2 Avaliação
-29.2.1 Métricas
-Clock
-IPC
-CPI
-MIPS
-FLOPS
-Benchmark
-29.2.2 Benchmarks
-Benchmarks sintéticos
-Benchmarks reais
-SPEC
-Geekbench
-Cinebench
-29.3 Otimização
-29.3.1 Técnicas
-Pipeline
-Superescalar
-Out-of-Order
-SMT
-Vetorização
-29.3.2 Limitações
-Gargalos
-Lei de Amdahl
-Consumo de energia
-Dissipação térmica
-30. Eficiência Energética e Gerenciamento Térmico
-30.1 Consumo de Energia
-30.1.1 Fundamentos
-Consumo estático
-Consumo dinâmico
-Potência
-Eficiência energética
-30.1.2 Fatores
-Frequência
-Tensão
-Número de núcleos
-Carga de trabalho
-30.2 Controle Energético
-30.2.1 Técnicas
-Dynamic Voltage Scaling
-Dynamic Frequency Scaling
-Clock Gating
-Power Gating
-Estados de baixo consumo
-30.2.2 Gerenciamento
-Controle térmico
-Thermal Throttling
-Boost automático
-Balanceamento energético
-30.3 Dissipação de Calor
-30.3.1 Fontes de Calor
-Comutação dos transistores
-Vazamento
-Alta frequência
-30.3.2 Soluções
-Dissipadores
-Ventoinhas
-Heat Pipes
-Câmara de vapor
-Refrigeração líquida
+29. Desempenho dos Processadores:
+
+ 29.1 Fundamentos:
+
+  29.1.1 Conceitos:
+	  Desempenho
+	  Eficiência
+	  Throughput
+	  Latência
+	  Tempo de resposta
+
+  29.1.2 Fatores de Desempenho:
+	  Frequência
+	  IPC
+	  CPI
+	  Paralelismo
+	  Pipeline
+	  Cache
+	  Memória
+
+
+ 29.2 Avaliação:
+
+  29.2.1 Métricas:
+	  Clock
+	  IPC
+	  CPI
+	  MIPS
+	  FLOPS
+	  Benchmark
+
+  29.2.2 Benchmarks:
+	  Benchmarks sintéticos
+	  Benchmarks reais
+	  SPEC
+	  Geekbench
+	  Cinebench
+
+
+ 29.3 Otimização:
+
+  29.3.1 Técnicas:
+	  Pipeline
+	  Superescalar
+	  Out-of-Order
+	  SMT
+	  Vetorização
+
+  29.3.2 Limitações:
+	  Gargalos
+	  Lei de Amdahl
+	  Consumo de energia
+	  Dissipação térmica
+
+
+
+30. Eficiência Energética e Gerenciamento Térmico:
+
+ 30.1 Consumo de Energia:
+
+  30.1.1 Fundamentos
+	  Consumo estático
+	  Consumo dinâmico
+	  Potência
+	  Eficiência energética
+
+  30.1.2 Fatores:
+	  Frequência
+	  Tensão
+	  Número de núcleos
+	  Carga de trabalho
+
+
+ 30.2 Controle Energético:
+
+  30.2.1 Técnicas:
+	  Dynamic Voltage Scaling
+	  Dynamic Frequency Scaling
+	  Clock Gating
+	  Power Gating
+	  Estados de baixo consumo
+
+  30.2.2 Gerenciamento:
+	  Controle térmico
+	  Thermal Throttling
+	  Boost automático
+	  Balanceamento energético
+
+ 
+ 30.3 Dissipação de Calor:
+
+  30.3.1 Fontes de Calor
+	  Comutação dos transistores
+	  Vazamento
+	  Alta frequência
+
+  30.3.2 Soluções:
+	  Dissipadores
+	  Ventoinhas
+	  Heat Pipes
+	  Câmara de vapor
+	  Refrigeração líquida
+
+
+
 31. Fabricação dos Processadores
-31.1 Fundamentos
-31.1.1 Conceitos
-Fabricação de semicondutores
-Wafer
-Die
-Chip
-31.1.2 Materiais
-Silício
-Dopagem
-Camadas metálicas
-Isolantes
-31.2 Processo de Fabricação
-31.2.1 Etapas
-Fotolitografia
-Deposição
-Gravação
-Implantação iônica
-Metalização
-31.2.2 Empacotamento
-Encapsulamento
-Testes
-Corte dos dies
-Montagem
-31.3 Evolução Tecnológica
-31.3.1 Processos de Fabricação
-Escalonamento
-Nós tecnológicos
-Densidade de transistores
-31.3.2 Tecnologias Modernas
-FinFET
-GAAFET
-Empilhamento 3D
-Chiplets
-32. Organização Física dos Processadores
-32.1 Estrutura Física
-32.1.1 Componentes
-Núcleos
-Cache integrada
-Controladores internos
-Interconexões
-32.1.2 Layout
-Distribuição funcional
-Organização dos blocos
-Fluxo físico
-32.2 Comunicação Interna
-32.2.1 Interconexões
-Barramento interno
-Ring Bus
-Mesh
-Crossbar
-NoC
-32.2.2 Organização
-Comunicação entre núcleos
-Comunicação com cache
-Comunicação com controladores
-32.3 Arquiteturas Físicas Modernas
-32.3.1 Organização
-Monolítica
-Chiplets
-Multi-Die
-Tiles
-32.3.2 Tecnologias
-Interposer
-EMIB
-Infinity Fabric
-Empilhamento 3D
-33. Recursos Arquiteturais Modernos
-33.1 Extensões de Instruções
-33.1.1 SIMD
-MMX
-SSE
-AVX
-AVX2
-AVX-512
-33.1.2 Outras Extensões
-AES-NI
-SHA
-AMX
-Extensões vetoriais
-Extensões para IA
-33.2 Virtualização em Hardware
-33.2.1 Fundamentos
-Conceitos
-Objetivos
-Máquinas virtuais
-Hipervisores
-33.2.2 Tecnologias
-Intel VT-x
-AMD-V
-Virtualização assistida por hardware
-33.3 Recursos Avançados
-33.3.1 Segurança
-Execução protegida
-Isolamento
-Controle de privilégios
-33.3.2 Recursos Especiais
-Criptografia por hardware
-Geradores de números aleatórios
-Monitoramento de desempenho
-Contadores de hardware
-34. Segurança em Processadores
-34.1 Fundamentos
-34.1.1 Conceitos
-Segurança em hardware
-Objetivos
-Ameaças
-Superfície de ataque
-34.1.2 Níveis de Privilégio
-Modo usuário
-Modo kernel
-Controle de privilégios
-34.2 Vulnerabilidades
-34.2.1 Execução Especulativa
-Conceitos
-Impactos na segurança
-34.2.2 Vulnerabilidades Conhecidas
-Spectre
-Meltdown
-Outras vulnerabilidades relacionadas
-34.3 Mitigações
-34.3.1 Soluções em Hardware
-Alterações na microarquitetura
-Isolamento
-Proteções adicionais
-34.3.2 Soluções em Software
-Atualizações
-Mitigações no sistema operacional
-Mitigações em compiladores
-35. Tendências e Futuro dos Processadores
-35.1 Evolução Tecnológica
-35.1.1 Tendências
-Aumento da integração
-Mais núcleos
-Eficiência energética
-IA integrada
-35.1.2 Novas Tecnologias
-Empilhamento 3D
-Chiplets
-Novos materiais
-Fotônica
-Computação quântica (visão geral)
-35.2 Novas Arquiteturas
-35.2.1 Evolução
-RISC-V
-Computação heterogênea
-Arquiteturas especializadas
-35.2.2 Inteligência Artificial
-NPUs
-Aceleradores dedicados
-Processadores para IA
-35.3 Perspectivas
-35.3.1 Desafios
-Limites físicos
-Consumo energético
-Dissipação térmica
-Escalabilidade
-35.3.2 Futuro
-Novas arquiteturas
-Novos processos de fabricação
-Integração crescente
-Novos paradigmas computacionais
-36. Revisão Geral dos Processadores
-36.1 Fundamentos
-Conceitos fundamentais
-Organização da CPU
-Componentes internos
-Fluxo de funcionamento
-36.2 Microarquitetura
-Pipeline
-Superescalar
-Execução Fora de Ordem
-Execução Especulativa
-Front-End
-Back-End
-Paralelismo
-36.3 Arquiteturas Modernas
-Multicore
-SMT
-Processadores heterogêneos
-ISA
-Recursos modernos
-36.4 Panorama Geral
-Evolução histórica
-Tecnologias atuais
-Tendências futuras
-Integração dos conceitos
+
+ 31.1 Fundamentos:
+
+  31.1.1 Conceitos:
+	  Fabricação de semicondutores
+	  Wafer
+	  Die
+	  Chip
+
+  31.1.2 Materiais:
+	  Silício
+	  Dopagem
+	  Camadas metálicas
+	  Isolantes
+
+
+ 31.2 Processo de Fabricação:
+
+  31.2.1 Etapas:
+	  Fotolitografia
+	  Deposição
+	  Gravação
+	  Implantação iônica
+	  Metalização
+
+  31.2.2 Empacotamento:
+	  Encapsulamento
+	  Testes
+	  Corte dos dies
+	  Montagem
+
+
+ 31.3 Evolução Tecnológica:
+
+  31.3.1 Processos de Fabricação:
+	  Escalonamento
+	  Nós tecnológicos
+	  Densidade de transistores
+
+  31.3.2 Tecnologias Modernas:
+	  FinFET
+	  GAAFET
+	  Empilhamento 3D
+	  Chiplets
+
+
+
+32. Organização Física dos Processadores:
+
+ 32.1 Estrutura Física:
+
+  32.1.1 Componentes:
+	  Núcleos
+	  Cache integrada
+	  Controladores internos
+	  Interconexões
+
+  32.1.2 Layout:
+	  Distribuição funcional
+	  Organização dos blocos
+	  Fluxo físico
+
+
+ 32.2 Comunicação Interna:
+
+  32.2.1 Interconexões:
+	  Barramento interno
+	  Ring Bus
+	  Mesh
+	  Crossbar
+	  NoC
+
+  32.2.2 Organização:
+	  Comunicação entre núcleos
+	  Comunicação com cache
+	  Comunicação com controladores
+
+
+ 32.3 Arquiteturas Físicas Modernas:
+
+  32.3.1 Organização:
+	  Monolítica
+	  Chiplets
+	  Multi-Die
+	  Tiles
+
+  32.3.2 Tecnologias:
+	  Interposer
+	  EMIB
+	  Infinity Fabric
+	  Empilhamento 3D
+
+
+
+33. Recursos Arquiteturais Modernos:
+
+ 33.1 Extensões de Instruções:
+
+  33.1.1 SIMD:
+	  MMX
+	  SSE
+	  AVX
+	  AVX2
+	  AVX-512
+
+  33.1.2 Outras Extensões:
+	  AES-NI
+	  SHA
+	  AMX
+	  Extensões vetoriais
+	  Extensões para IA
+
+
+ 33.2 Virtualização em Hardware:
+
+  33.2.1 Fundamentos:
+	  Conceitos
+	  Objetivos
+	  Máquinas virtuais
+	  Hipervisores
+
+  33.2.2 Tecnologias:
+	  Intel VT-x
+	  AMD-V
+	  Virtualização assistida por hardware
+
+
+ 33.3 Recursos Avançados:
+
+  33.3.1 Segurança:
+	  Execução protegida
+	  Isolamento
+	  Controle de privilégios
+
+  33.3.2 Recursos Especiais:
+	  Criptografia por hardware
+	  Geradores de números aleatórios
+	  Monitoramento de desempenho
+	  Contadores de hardware
+
+
+
+34. Segurança em Processadores:
+
+ 34.1 Fundamentos:
+
+  34.1.1 Conceitos:
+	  Segurança em hardware
+	  Objetivos
+	  Ameaças
+	  Superfície de ataque
+
+  34.1.2 Níveis de Privilégio:
+	  Modo usuário
+	  Modo kernel
+	  Controle de privilégios
+
+ 
+ 34.2 Vulnerabilidades:
+
+  34.2.1 Execução Especulativa:
+	  Conceitos
+	  Impactos na segurança
+
+  34.2.2 Vulnerabilidades Conhecidas:
+	  Spectre
+	  Meltdown
+ 	  Outras vulnerabilidades relacionadas
+
+
+ 34.3 Mitigações:
+
+  34.3.1 Soluções em Hardware:
+	  Alterações na microarquitetura
+	  Isolamento
+	  Proteções adicionais
+
+  34.3.2 Soluções em Software:
+	  Atualizações
+	  Mitigações no sistema operacional
+	  Mitigações em compiladores
+
+
+
+35. Tendências e Futuro dos Processadores:
+
+ 35.1 Evolução Tecnológica:
+
+  35.1.1 Tendências:
+	  Aumento da integração
+	  Mais núcleos
+	  Eficiência energética
+	  IA integrada
+
+  35.1.2 Novas Tecnologias:
+	  Empilhamento 3D
+	  Chiplets
+	  Novos materiais
+	  Fotônica
+	  Computação quântica 
+
+
+ 35.2 Novas Arquiteturas:
+
+  35.2.1 Evolução:
+	  RISC-V
+	  Computação heterogênea
+	  Arquiteturas especializadas
+
+  35.2.2 Inteligência Artificial:
+	  NPUs
+	  Aceleradores dedicados
+	  Processadores para IA
+
+
+ 35.3 Perspectivas:
+
+  35.3.1 Desafios:
+	  Limites físicos
+	  Consumo energético
+	  Dissipação térmica
+	  Escalabilidade
+
+  35.3.2 Futuro:
+	  Novas arquiteturas
+	  Novos processos de fabricação
+	  Integração crescente
+	  Novos paradigmas computacionais
+
+
+
+36. Revisão Geral dos Processadores:
+
+ 36.1 Fundamentos:
+	Conceitos fundamentais
+	Organização da CPU
+	Componentes internos
+	Fluxo de funcionamento
+
+ 36.2 Microarquitetura:
+	Pipeline
+	Superescalar
+	Execução Fora de Ordem
+	Execução Especulativa
+	Front-End
+	Back-End
+	Paralelismo
+
+ 36.3 Arquiteturas Modernas:
+	Multicore
+	SMT
+	Processadores heterogêneos
+	ISA
+	Recursos modernos
+
+ 36.4 Panorama Geral
+	Evolução histórica
+	Tecnologias atuais
+	Tendências futuras
+	Integração dos conceitos
