@@ -1,0 +1,1396 @@
+                                              Processadores 
+
+
+PARTE 1 — FUNDAMENTOS DOS PROCESSADORES:
+
+
+1. Introdução aos Processadores
+1.1 Conceitos Fundamentais
+1.1.1 Processador como Unidade Central de Processamento [PROFUNDO]
+Conceito de processador
+Conceito de CPU (Central Processing Unit)
+Processador como unidade de processamento
+Processador como executor de instruções
+Processador como unidade de transformação de dados
+Processador como unidade de controle
+Objetivos do processador
+Funções fundamentais da CPU
+Execução de operações
+Manipulação de dados
+Controle da sequência de processamento
+Atualização do estado computacional
+1.1.2 Importância dos Processadores [PROFUNDO]
+Papel do processador na computação
+Papel na Arquitetura de Computadores
+Papel na Organização de Computadores
+Execução de programas
+Processamento de dados
+Coordenação das operações
+Controle do fluxo de informações
+Comunicação com os demais componentes
+Relação entre hardware e software
+1.1.3 Características Gerais dos Processadores [PROFUNDO]
+Dispositivo eletrônico programável
+Processamento baseado em instruções
+Operações sequenciais e paralelas
+Funcionamento sincronizado por clock
+Processamento de dados
+Controle das operações
+Armazenamento temporário de informações
+Comunicação interna entre unidades
+Integração entre hardware e software
+1.2 O Processador no Sistema Computacional
+1.2.1 Relação com os Demais Componentes [VISÃO GERAL]
+Memória principal
+Memória cache
+Barramentos
+Dispositivos de entrada e saída
+Controladores
+Armazenamento secundário
+Interconexões do sistema
+Fluxo geral de dados
+1.2.2 Papel da CPU na Organização do Computador [PROFUNDO]
+Coordenação do processamento
+Execução dos programas
+Manipulação dos dados
+Controle das operações
+Comunicação com outros componentes
+Sincronização
+Atualização do estado do sistema
+1.2.3 Fluxo Geral de Funcionamento [PROFUNDO]
+Recepção de instruções
+Interpretação da operação
+Obtenção dos dados
+Processamento
+Produção dos resultados
+Atualização do estado da CPU
+1.3 Arquitetura e Organização dos Processadores
+1.3.1 Arquitetura de Computadores [VISÃO GERAL]
+Conceito de arquitetura
+Interface hardware–software
+Recursos visíveis ao programador
+Conjunto de instruções
+Tipos de dados
+Modos de operação
+Modelo de execução
+1.3.2 Organização de Computadores [PROFUNDO]
+Implementação física dos recursos
+Organização dos componentes
+Estrutura interna da CPU
+Fluxo de dados
+Fluxo de controle
+Interconexão dos componentes
+Organização funcional
+1.3.3 Arquitetura × Organização [PROFUNDO]
+Diferenças
+Relação entre os conceitos
+Complementaridade
+Exemplos
+Impacto das decisões organizacionais
+Uma mesma arquitetura com diferentes organizações
+
+
+
+2. Evolução dos Processadores
+2.1 Evolução Histórica
+2.1.1 Primeiros Processadores [CONTEXTO]
+Computadores sem CPU integrada
+Processadores discretos
+Unidades de processamento formadas por vários circuitos
+Primeiros microprocessadores
+Integração da CPU em um único chip
+2.1.2 Evolução Tecnológica [PROFUNDO]
+Aumento da integração
+Aumento da densidade de transistores
+Redução do tamanho dos componentes
+Evolução da frequência
+Aumento da capacidade de processamento
+Redução do consumo
+Evolução dos processos de fabricação
+2.1.3 Evolução da Organização Interna [PROFUNDO]
+CPUs simples
+Integração de novas unidades funcionais
+Aumento da complexidade
+Pipeline
+Paralelismo
+Múltiplos núcleos
+Processadores heterogêneos
+2.2 Gerações dos Processadores
+2.2.1 Primeiras Gerações [CONTEXTO]
+Processadores de 4 bits
+Processadores de 8 bits
+Processadores de 16 bits
+Evolução da largura de palavra
+2.2.2 Evolução para 32 e 64 Bits [PROFUNDO]
+Processadores de 32 bits
+Processadores de 64 bits
+Largura da palavra
+Largura dos dados
+Capacidade de representação
+Espaço de endereçamento [VISÃO GERAL]
+2.2.3 Tendências da Evolução [PROFUNDO]
+Maior integração
+Maior eficiência energética
+Paralelismo
+Multicore
+Heterogeneidade
+Especialização
+Aceleradores integrados
+2.3 Evolução das Arquiteturas de Processadores
+2.3.1 Evolução da Organização Física [PROFUNDO]
+Processadores discretos
+Chip único
+Múltiplos núcleos
+Múltiplos dies
+Chiplets
+Empilhamento 3D
+2.3.2 Evolução da Organização Lógica [PROFUNDO]
+Execução sequencial
+Pipeline
+Execução superescalar
+Paralelismo de instruções
+Multicore
+SMT
+Heterogeneidade
+
+
+
+3. Organização Geral da CPU
+3.1 Estrutura Geral
+3.1.1 Organização Física [PROFUNDO]
+Componentes internos
+Blocos funcionais
+Interconexões
+Distribuição física
+Núcleos
+Unidades de execução
+3.1.2 Organização Lógica [PROFUNDO]
+Organização funcional
+Fluxo de informações
+Fluxo de dados
+Fluxo de controle
+Organização hierárquica
+3.1.3 Organização Funcional [PROFUNDO]
+Processamento de dados
+Controle das operações
+Armazenamento temporário
+Comunicação interna
+Coordenação dos componentes
+3.2 Componentes Fundamentais
+3.2.1 Unidade de Controle [PROFUNDO]
+Coordenação das operações
+Geração de sinais de controle
+Sequenciamento
+Controle temporal
+Comunicação com o datapath
+3.2.2 Unidade Lógica e Aritmética — ALU [PROFUNDO]
+Operações aritméticas
+Operações lógicas
+Comparações
+Deslocamentos
+Produção de resultados
+3.2.3 Unidade de Ponto Flutuante — FPU [PROFUNDO]
+Operações em ponto flutuante
+Operações matemáticas
+Processamento científico
+Relação com o processamento de dados numéricos
+3.2.4 Banco de Registradores [VISÃO GERAL]
+Armazenamento temporário
+Leitura
+Escrita
+Comunicação com as unidades funcionais
+3.2.5 Unidades Funcionais Especializadas [PROFUNDO]
+Address Generation Unit — AGU
+Load/Store Unit — LSU
+Unidades vetoriais
+Unidades SIMD
+Unidades de controle de fluxo
+Aceleradores especializados
+3.2.6 Datapath e Control Path [VISÃO GERAL]
+Caminho de dados
+Caminho de controle
+Relação entre ambos
+Integração funcional
+3.3 Fluxo Geral de Funcionamento
+3.3.1 Fluxo das Informações [PROFUNDO]
+Entrada de instruções
+Entrada de dados
+Processamento
+Produção dos resultados
+Atualização do estado
+3.3.2 Coordenação Geral [PROFUNDO]
+Comunicação
+Sincronização
+Controle interno
+Coordenação entre unidades
+
+
+
+4. Modelos Clássicos de Organização
+4.1 Arquitetura de Von Neumann
+4.1.1 Conceitos Fundamentais [VISÃO GERAL]
+Programa armazenado
+Memória unificada
+Organização geral
+Funcionamento básico
+4.1.2 Características [PROFUNDO]
+Compartilhamento da memória
+Compartilhamento dos caminhos de comunicação
+Fluxo de execução
+Gargalo de Von Neumann
+Implicações para a organização do processador
+4.2 Arquitetura Harvard
+4.2.1 Conceitos Fundamentais [VISÃO GERAL]
+Separação entre instruções e dados
+Organização geral
+Funcionamento básico
+4.2.2 Características [PROFUNDO]
+Memórias independentes
+Caminhos independentes
+Acesso simultâneo
+Vantagens
+Limitações
+4.3 Arquitetura Harvard Modificada
+4.3.1 Organização [PROFUNDO]
+Integração das abordagens
+Separação lógica
+Compartilhamento físico
+Compartilhamento controlado
+Aplicações modernas
+4.3.2 Comparação entre os Modelos [PROFUNDO]
+Von Neumann
+Harvard
+Harvard modificada
+Impacto na organização dos processadores
+
+
+5. Fundamentos Digitais Aplicados aos Processadores
+5.1 Representação das Informações
+5.1.1 Sistemas de Numeração [VISÃO GERAL]
+Binário
+Hexadecimal
+Conversões básicas
+5.1.2 Representação dos Dados [PROFUNDO]
+Bits
+Bytes
+Palavras
+Palavra de máquina
+Dados inteiros
+Dados em ponto flutuante
+Dados escalares
+Dados vetoriais
+5.2 Componentes Digitais Fundamentais
+5.2.1 Circuitos Lógicos [VISÃO GERAL]
+Portas lógicas
+Circuitos combinacionais
+Circuitos sequenciais
+5.2.2 Elementos de Armazenamento [VISÃO GERAL]
+Latches
+Flip-flops
+Registradores
+5.2.3 Componentes de Interligação [VISÃO GERAL]
+Multiplexadores
+Demultiplexadores
+Codificadores
+Decodificadores
+Buffers
+5.3 Clock e Temporização
+5.3.1 Clock do Processador [PROFUNDO]
+Sinal de clock
+Frequência
+Período
+Ciclo de clock
+Clock base
+Clock boost/turbo
+5.3.2 Sincronização [PROFUNDO]
+Sincronização das operações
+Temporização interna
+Coordenação entre componentes
+Estados de operação
+5.3.3 Comunicação Interna [VISÃO GERAL]
+Fluxo de dados
+Fluxo de controle
+Interconexões internas
+
+
+
+PARTE 2 — ESTRUTURA E FUNCIONAMENTO BÁSICO DO PROCESSADOR:
+
+
+6. Estrutura Interna da CPU
+6.1 Organização Geral
+6.1.1 Estrutura da CPU [PROFUNDO]
+Organização interna
+Blocos funcionais
+Componentes principais
+Organização hierárquica
+Fluxo interno
+6.1.2 Organização Física [PROFUNDO]
+Componentes físicos
+Interconexões
+Organização em blocos
+Distribuição funcional
+Estrutura modular
+6.1.3 Organização Lógica [PROFUNDO]
+Fluxo de dados
+Fluxo de controle
+Comunicação interna
+Coordenação
+6.2 Componentes Fundamentais
+6.2.1 Unidade de Controle [PROFUNDO]
+Organização
+Responsabilidades
+Entradas
+Saídas
+Comunicação
+6.2.2 ALU [PROFUNDO]
+Organização
+Operações
+Entradas
+Saídas
+Comunicação
+6.2.3 FPU [PROFUNDO]
+Organização
+Operações
+Comunicação
+Aplicações
+6.2.4 Banco de Registradores [VISÃO GERAL]
+Organização
+Leitura
+Escrita
+Portas
+Comunicação
+6.2.5 Unidades Funcionais Adicionais [PROFUNDO]
+AGU
+LSU
+Unidade vetorial
+Unidade SIMD
+Unidade de branch
+6.3 Comunicação Interna
+6.3.1 Fluxo de Dados [PROFUNDO]
+Transferência
+Caminhos internos
+Interligação
+Entrada
+Processamento
+Saída
+6.3.2 Fluxo de Controle [PROFUNDO]
+Sinais
+Coordenação
+Sequenciamento
+Sincronização
+6.3.3 Organização da Comunicação [PROFUNDO]
+Comunicação entre unidades
+Compartilhamento de recursos
+Interconexões
+Atualização do estado
+
+
+
+7. Ciclo de Instrução
+7.1 Fundamentos
+7.1.1 Conceitos [VISÃO GERAL]
+Conceito de ciclo de instrução
+Objetivos
+Relação com o processador
+Relação com memória
+7.1.2 Estrutura Geral [VISÃO GERAL]
+Busca
+Decodificação
+Execução
+Acesso a dados
+Escrita de resultados
+7.2 Etapas do Ciclo
+7.2.1 Busca — Fetch [VISÃO GERAL]
+Leitura da instrução
+Localização da instrução
+Participação do PC
+7.2.2 Decodificação — Decode [VISÃO GERAL]
+Interpretação
+Identificação da operação
+Identificação dos operandos
+7.2.3 Execução — Execute [VISÃO GERAL]
+Processamento
+ALU
+FPU
+Unidades funcionais
+7.2.4 Escrita dos Resultados — Write Back [VISÃO GERAL]
+Atualização dos resultados
+Atualização do estado
+7.3 Evolução da Execução
+7.3.1 Execução Sequencial [PROFUNDO]
+Uma instrução por vez
+Limitações
+7.3.2 Introdução ao Pipeline [VISÃO GERAL]
+Sobreposição
+Estágios
+7.3.3 Introdução ao Paralelismo [VISÃO GERAL]
+Paralelismo de instruções
+Paralelismo de dados
+Paralelismo de tarefas
+7.3.4 Introdução à Execução Fora de Ordem [VISÃO GERAL]
+Motivação
+Conceito geral
+Benefícios
+
+
+
+8. Unidade de Controle
+8.1 Fundamentos
+8.1.1 Conceitos [PROFUNDO]
+Definição
+Objetivos
+Funções
+Responsabilidades
+8.1.2 Papel na CPU [PROFUNDO]
+Coordenação
+Sequenciamento
+Comunicação
+Controle
+8.2 Organização
+8.2.1 Estrutura [PROFUNDO]
+Blocos internos
+Entradas
+Saídas
+Fluxo de controle
+8.2.2 Funcionamento [PROFUNDO]
+Geração de sinais
+Sequenciamento
+Sincronização
+Controle temporal
+8.3 Tipos de Unidade de Controle
+8.3.1 Controle Cabeado [PROFUNDO]
+Organização
+Funcionamento
+Vantagens
+Limitações
+8.3.2 Controle Microprogramado [PROFUNDO]
+Organização
+Microprogramas
+Memória de controle
+Vantagens
+Limitações
+
+
+
+9. Unidade Lógica e Aritmética — ALU
+9.1 Fundamentos
+9.1.1 Conceitos [PROFUNDO]
+Definição
+Objetivos
+Papel na CPU
+9.1.2 Organização [PROFUNDO]
+Entradas
+Saídas
+Unidade de operação
+Comunicação com registradores
+Comunicação com control path
+9.2 Operações
+9.2.1 Operações Aritméticas [PROFUNDO]
+Soma
+Subtração
+Incremento
+Decremento
+Comparação
+9.2.2 Operações Lógicas [PROFUNDO]
+AND
+OR
+XOR
+NOT
+9.2.3 Operações de Deslocamento [PROFUNDO]
+Shift lógico
+Shift aritmético
+Rotações
+9.3 Flags
+9.3.1 Indicadores de Estado [PROFUNDO]
+Carry
+Zero
+Overflow
+Sign
+Parity
+Auxiliary Carry
+9.3.2 Atualização dos Flags [PROFUNDO]
+Operações aritméticas
+Operações lógicas
+Comparações
+
+
+
+10. Unidade de Ponto Flutuante — FPU
+10.1 Fundamentos
+10.1.1 Conceitos [PROFUNDO]
+Definição
+Objetivos
+Evolução histórica
+10.1.2 Papel na CPU [PROFUNDO]
+Processamento científico
+Engenharia
+Gráficos
+IA
+Computação de alto desempenho
+10.2 Organização
+10.2.1 Estrutura [PROFUNDO]
+Componentes
+Caminhos de dados
+Comunicação com a CPU
+10.2.2 Operações [PROFUNDO]
+Soma
+Subtração
+Multiplicação
+Divisão
+Raiz quadrada
+10.3 Representação Numérica
+10.3.1 Conceitos [PROFUNDO]
+Ponto fixo
+Ponto flutuante
+Precisão
+Intervalo numérico
+10.3.2 IEEE 754 [VISÃO GERAL]
+Sinal
+Expoente
+Fração/significando
+Precisão
+
+
+
+
+PARTE 3 — ORGANIZAÇÃO INTERNA DO PROCESSADOR:
+
+
+11. Banco de Registradores
+11.1 Fundamentos
+11.1.1 Conceitos [VISÃO GERAL]
+Registrador
+Banco de registradores
+Armazenamento temporário
+Papel na CPU
+11.1.2 Características Gerais [VISÃO GERAL]
+Alta velocidade
+Baixa capacidade
+Comunicação direta
+Organização interna
+11.2 Organização
+11.2.1 Estrutura [VISÃO GERAL]
+Registradores gerais
+Registradores especiais
+Organização física
+Organização lógica
+11.2.2 Comunicação [PROFUNDO]
+Leitura
+Escrita
+Portas de leitura
+Portas de escrita
+Relação com o datapath
+11.3 Principais Categorias [VISÃO GERAL]
+Registradores de uso geral
+Registradores de dados
+Registradores de endereços
+Registradores de controle
+Registradores de estado
+
+
+
+12. Microoperações
+12.1 Fundamentos
+12.1.1 Conceitos [PROFUNDO]
+Definição
+Papel na execução
+Relação com o controle
+Relação com o datapath
+12.1.2 Organização [PROFUNDO]
+Sequência
+Controle
+Sincronização
+Dependências
+12.2 Tipos de Microoperações
+12.2.1 Transferência de Dados [PROFUNDO]
+Transferência entre registradores
+Transferência para a ALU
+Transferência para unidades funcionais
+12.2.2 Operações Aritméticas [PROFUNDO]
+Soma
+Subtração
+Incremento
+Decremento
+12.2.3 Operações Lógicas [PROFUNDO]
+AND
+OR
+XOR
+NOT
+12.2.4 Operações de Deslocamento [PROFUNDO]
+Shift
+Rotação
+12.2.5 Microoperações de Controle [PROFUNDO]
+Geração de sinais
+Sequenciamento
+Controle temporal
+
+
+
+13. Caminho de Dados — Datapath
+13.1 Fundamentos
+13.1.1 Conceitos [PROFUNDO]
+Definição
+Objetivos
+Papel no processador
+Relação com o control path
+13.1.2 Organização Geral [PROFUNDO]
+Fluxo de dados
+Componentes
+Caminhos de transferência
+Entradas e saídas
+13.2 Componentes do Datapath
+13.2.1 Componentes Principais [PROFUNDO]
+ALU
+Banco de registradores
+Multiplexadores
+Barramentos internos
+Unidades funcionais
+13.2.2 Componentes Especializados [PROFUNDO]
+FPU
+AGU
+LSU
+Unidade vetorial
+Unidade de branch
+13.3 Funcionamento
+13.3.1 Operações [PROFUNDO]
+Leitura
+Transferência
+Processamento
+Escrita
+13.3.2 Integração [PROFUNDO]
+Unidade de Controle
+ALU
+Registradores
+Unidades funcionais
+Comunicação externa [VISÃO GERAL]
+
+
+
+14. Caminho de Controle — Control Path
+14.1 Fundamentos
+14.1.1 Conceitos [PROFUNDO]
+Definição
+Objetivos
+Papel na CPU
+Relação com o datapath
+14.1.2 Organização [PROFUNDO]
+Fluxo de controle
+Geração de sinais
+Coordenação
+Sequenciamento
+14.2 Funcionamento
+14.2.1 Controle da Execução [PROFUNDO]
+Sequenciamento
+Controle temporal
+Ativação de componentes
+Coordenação
+14.2.2 Sinais de Controle [PROFUNDO]
+Controle da ALU
+Controle dos registradores
+Controle das unidades funcionais
+Controle dos barramentos
+14.3 Integração
+14.3.1 Relação com o Datapath [PROFUNDO]
+Coordenação
+Sincronização
+Comunicação
+14.3.2 Papel na Execução [VISÃO GERAL]
+Busca
+Decodificação
+Execução
+Finalização
+
+
+
+15. Comunicação Interna e Interconexões da CPU
+15.1 Comunicação Interna
+15.1.1 Organização [PROFUNDO]
+Comunicação entre componentes
+Fluxo de dados
+Fluxo de controle
+Sincronização
+15.1.2 Interconexões [PROFUNDO]
+Caminhos internos
+Conexões dedicadas
+Compartilhamento de recursos
+Interconexões entre unidades
+15.2 Barramentos Internos
+15.2.1 Organização [PROFUNDO]
+Barramento de dados
+Barramento de controle
+Barramento de endereços
+15.2.2 Transferências [PROFUNDO]
+Dados
+Sinais
+Controle das transferências
+15.3 Organização das Interconexões
+15.3.1 Estruturas [PROFUNDO]
+Barramento único
+Barramentos múltiplos
+Interligações dedicadas
+15.3.2 Características [PROFUNDO]
+Desempenho
+Latência
+Largura de banda
+Escalabilidade
+Complexidade
+
+
+16. Integração dos Componentes da CPU
+16.1 Organização Geral
+16.1.1 Integração Funcional [PROFUNDO]
+Unidade de Controle
+ALU
+FPU
+AGU
+LSU
+Banco de Registradores
+Datapath
+Control Path
+16.1.2 Coordenação [PROFUNDO]
+Sequenciamento
+Comunicação
+Sincronização
+Fluxo interno
+16.2 Fluxo Geral do Processamento
+16.2.1 Execução de uma Operação [PROFUNDO]
+Entrada
+Leitura dos operandos
+Seleção da unidade funcional
+Processamento
+Produção do resultado
+Atualização do estado
+16.2.2 Fluxo dos Dados [PROFUNDO]
+Entrada
+Transferência
+Processamento
+Armazenamento temporário
+Saída
+16.3 Visão Integrada da CPU
+16.3.1 Funcionamento Integrado [PROFUNDO]
+Comunicação
+Coordenação
+Fluxo de informações
+CPU como sistema integrado
+16.3.2 Evolução para Processadores Modernos [VISÃO GERAL]
+Pipeline
+Paralelismo
+Multicore
+SMT
+Heterogeneidade
+
+
+
+PARTE 4 — ORGANIZAÇÃO DOS PROCESSADORES MODERNOS:
+
+
+17. Pipeline de Instruções
+17.1 Fundamentos
+17.1.1 Conceitos [VISÃO GERAL]
+Definição
+Objetivos
+Motivação
+Relação com desempenho
+17.1.2 Evolução [VISÃO GERAL]
+Execução sequencial
+Pipeline
+Processadores modernos
+17.2 Organização
+17.2.1 Estágios [VISÃO GERAL]
+Fetch
+Decode
+Execute
+Memory
+Write Back
+17.2.2 Funcionamento Geral [VISÃO GERAL]
+Sobreposição
+Fluxo contínuo
+Sincronização
+17.3 Problemas
+17.3.1 Hazards [VISÃO GERAL]
+Estruturais
+De dados
+De controle
+17.3.2 Soluções [VISÃO GERAL]
+Stall
+Forwarding
+Predição de desvios
+
+
+
+18. Organização Moderna dos Processadores
+18.1 Fundamentos
+18.1.1 Conceitos [VISÃO GERAL]
+Organização moderna
+Complexidade
+Paralelismo interno
+Especialização
+18.1.2 Relação entre Conceitos [VISÃO GERAL]
+ISA
+Organização
+Microarquitetura
+Implementação
+18.2 Organização Geral
+18.2.1 Blocos Funcionais [VISÃO GERAL]
+Front-end
+Back-end
+Datapath
+Control Path
+Unidades funcionais
+18.2.2 Fluxo Geral [VISÃO GERAL]
+Busca
+Decodificação
+Emissão
+Execução
+Finalização
+18.3 Evolução
+18.3.1 Processadores Clássicos [PROFUNDO]
+Organização simples
+Execução sequencial
+Poucas unidades funcionais
+18.3.2 Processadores Modernos [PROFUNDO]
+Múltiplas unidades
+Paralelismo
+Especialização
+Execução simultânea
+
+
+
+19. Paralelismo em Processadores
+19.1 Fundamentos
+19.1.1 Conceitos [PROFUNDO]
+Definição
+Objetivos
+Evolução
+Benefícios
+Limitações
+19.1.2 Classificação [PROFUNDO]
+Paralelismo em nível de bits
+Paralelismo em nível de instruções
+Paralelismo em nível de dados
+Paralelismo em nível de tarefas
+19.2 Formas de Paralelismo
+19.2.1 Pipeline [VISÃO GERAL]
+Sobreposição de etapas
+19.2.2 Superescalar [PROFUNDO]
+Múltiplas instruções por ciclo
+Múltiplas unidades funcionais
+Paralelismo de instruções
+19.2.3 Multicore [VISÃO GERAL]
+Múltiplos núcleos
+19.2.4 SIMD [PROFUNDO]
+Uma instrução
+Múltiplos dados
+Operações vetoriais
+19.2.5 SMT [VISÃO GERAL]
+Múltiplos fluxos de execução
+19.3 Limitações
+19.3.1 Desafios [PROFUNDO]
+Dependências
+Sincronização
+Compartilhamento de recursos
+Limitações de escalabilidade
+19.3.2 Amdahl [PROFUNDO]
+Parte sequencial
+Ganho máximo
+Limitações do paralelismo
+
+
+
+20. Processadores Multicore
+20.1 Fundamentos
+20.1.1 Conceitos [PROFUNDO]
+Núcleo
+Multicore
+Single-core versus multicore
+Evolução
+20.1.2 Motivação [PROFUNDO]
+Limites da frequência
+Consumo energético
+Necessidade de desempenho
+Escalabilidade
+20.2 Organização
+20.2.1 Núcleos [PROFUNDO]
+Organização
+Núcleos homogêneos
+Núcleos heterogêneos
+20.2.2 Compartilhamento de Recursos [VISÃO GERAL]
+Cache
+Memória
+Interconexão
+Comunicação
+20.2.3 Interconexão [PROFUNDO]
+Barramento
+Crossbar
+Ring
+Mesh
+NoC
+20.3 Escalabilidade
+20.3.1 Número de Núcleos [PROFUNDO]
+Dual-core
+Quad-core
+Hexa-core
+Octa-core
+Many-core
+20.3.2 Desafios [PROFUNDO]
+Comunicação
+Sincronização
+Compartilhamento
+Coerência de cache [VISÃO GERAL]
+Balanceamento de carga
+
+
+
+21. Processamento Simultâneo
+21.1 SMT
+21.1.1 Conceitos [PROFUNDO]
+Definição
+Objetivos
+Funcionamento geral
+21.1.2 Organização [PROFUNDO]
+Threads lógicas
+Compartilhamento de recursos
+Recursos físicos
+21.2 Hyper-Threading
+21.2.1 Implementação [VISÃO GERAL]
+Conceito
+Organização
+Funcionamento
+21.2.2 Benefícios e Limitações [PROFUNDO]
+Ganho de desempenho
+Compartilhamento
+Eficiência
+Limitações
+21.3 Comparação
+21.3.1 Modelos de Processamento [PROFUNDO]
+Single-core
+Multicore
+SMT
+Multicore + SMT
+
+
+
+22. Processadores Heterogêneos e Especializados
+22.1 Processadores Heterogêneos
+22.1.1 Conceitos [PROFUNDO]
+Computação heterogênea
+Objetivos
+Evolução
+22.1.2 Organização [PROFUNDO]
+Núcleos de desempenho
+Núcleos de eficiência
+Arquiteturas híbridas
+big.LITTLE
+22.2 Coprocessadores e Aceleradores
+22.2.1 Processadores Especializados [VISÃO GERAL]
+DSP
+GPU
+NPU
+TPU
+Aceleradores de IA
+22.2.2 Integração [PROFUNDO]
+CPU + GPU
+CPU + aceleradores
+SoCs
+Sistemas heterogêneos
+22.3 Tendências
+22.3.1 Arquiteturas Modernas [PROFUNDO]
+Chiplets
+Empilhamento 3D
+Aceleradores integrados
+Computação heterogênea
+IA embarcada
+
+
+
+PARTE 5 — CARACTERÍSTICAS, ORGANIZAÇÃO FÍSICA E EVOLUÇÃO DOS PROCESSADORES:
+
+
+23. Características dos Processadores
+23.1 Características Gerais
+23.1.1 Conceitos [PROFUNDO]
+Características arquiteturais
+Características organizacionais
+Especificações
+Recursos da CPU
+23.1.2 Organização Geral [PROFUNDO]
+Palavra do processador
+Largura dos registradores
+Largura dos dados
+Espaço de endereçamento [VISÃO GERAL]
+Modos de operação [VISÃO GERAL]
+23.2 Características Operacionais
+23.2.1 Clock [PROFUNDO]
+Frequência
+Período
+Ciclo
+Clock base
+Turbo/Boost
+23.2.2 Métricas Básicas [PROFUNDO]
+CPI
+IPC
+Throughput
+Latência
+Tempo de execução
+23.3 Recursos Arquiteturais
+23.3.1 Recursos Gerais [VISÃO GERAL]
+Extensões
+Recursos de controle
+Recursos de processamento
+Compatibilidade
+
+
+
+24. Organização Física dos Processadores
+24.1 Estrutura Física
+24.1.1 Componentes [PROFUNDO]
+Chip
+Die
+Core
+Chiplet
+Package
+24.1.2 Organização Física [PROFUNDO]
+Distribuição dos componentes
+Interligações
+Blocos
+Integração
+24.2 Encapsulamento
+24.2.1 Encapsulamentos [VISÃO GERAL]
+DIP
+PGA
+LGA
+BGA
+24.2.2 Soquetes [VISÃO GERAL]
+Conceito
+Compatibilidade
+Instalação
+Evolução
+24.3 Integração Física
+24.3.1 Organização [PROFUNDO]
+CPU monolítica
+MCM
+Chiplets
+Empilhamento 3D
+
+
+25. Fabricação dos Processadores
+25.1 Fundamentos
+25.1.1 Processo de Fabricação [VISÃO GERAL]
+Wafer
+Fotolitografia
+Fabricação
+Testes
+Encapsulamento
+25.1.2 Litografia [VISÃO GERAL]
+Nós tecnológicos
+Evolução
+Redução dos transistores
+25.2 Transistores
+25.2.1 Evolução [VISÃO GERAL]
+MOSFET
+FinFET
+GAAFET
+25.2.2 Impacto [PROFUNDO]
+Desempenho
+Consumo
+Densidade
+Escalabilidade
+25.3 Desafios
+25.3.1 Limitações [PROFUNDO]
+Dissipação térmica
+Consumo
+Escala nanométrica
+Limites físicos
+
+
+
+26. Consumo de Energia e Gerenciamento Térmico
+26.1 Consumo de Energia
+26.1.1 Conceitos [PROFUNDO]
+Potência
+Consumo
+Energia
+Eficiência energética
+Energia dinâmica
+Energia estática
+26.1.2 Tecnologias [PROFUNDO]
+DVFS
+Clock Gating
+Power Gating
+26.2 Dissipação Térmica
+26.2.1 Conceitos [PROFUNDO]
+Calor
+Temperatura
+TDP
+Limites térmicos
+26.2.2 Refrigeração [VISÃO GERAL]
+Dissipadores
+Ventoinhas
+Water Cooler
+Soluções industriais
+26.3 Gerenciamento
+26.3.1 Controle [PROFUNDO]
+Monitoramento
+Thermal Throttling
+Proteção térmica
+Balanceamento energético
+
+
+
+27. Classificação dos Processadores
+27.1 Quanto à Organização
+27.1.1 Organização Interna [PROFUNDO]
+Single-core
+Multicore
+Many-core
+27.1.2 Organização dos Núcleos [PROFUNDO]
+Homogêneos
+Heterogêneos
+27.2 Quanto à Aplicação
+27.2.1 Computação Geral [VISÃO GERAL]
+Desktop
+Notebook
+Servidores
+27.2.2 Sistemas Especiais [VISÃO GERAL]
+Embarcados
+Tempo real
+Dispositivos móveis
+IoT
+27.3 Quanto à Finalidade
+27.3.1 Processadores Especializados [VISÃO GERAL]
+DSP
+GPU
+NPU
+TPU
+Coprocessadores
+
+
+
+28. Arquiteturas de Processadores 
+28.1 Conceitos Fundamentais
+28.1.1 ISA [VISÃO GERAL]
+Conceito
+Papel
+Relação com a CPU
+Relação com a organização
+28.1.2 Arquitetura × Microarquitetura [PROFUNDO]
+Diferenças
+Relação
+Implementações
+Uma ISA, múltiplas microarquiteturas
+28.2 Principais Famílias
+28.2.1 Arquiteturas Clássicas [VISÃO GERAL]
+CISC
+RISC
+28.2.2 Arquiteturas e Abordagens Modernas [VISÃO GERAL]
+VLIW
+EPIC
+ARM
+x86
+RISC-V
+28.3 Compatibilidade
+28.3.1 Software e Hardware [PROFUNDO]
+Compatibilidade
+Portabilidade
+Evolução
+Compatibilidade entre gerações
+
+
+
+29. Evolução Tecnológica dos Processadores
+29.1 Evolução da CPU
+29.1.1 Tendências [PROFUNDO]
+Integração
+Miniaturização
+Complexidade
+Especialização
+29.1.2 Evolução da Organização [PROFUNDO]
+Processadores simples
+Pipeline
+Superescalar
+Multicore
+Heterogêneos
+29.2 Tecnologias Modernas
+29.2.1 Recursos Atuais [PROFUNDO]
+Chiplets
+Empilhamento 3D
+Aceleradores integrados
+IA embarcada
+29.2.2 Segurança em Hardware [VISÃO GERAL]
+Execução segura
+Virtualização
+Trusted Execution
+Isolamento
+29.3 Tendências Futuras
+29.3.1 Próximas Gerações [CONTEXTO]
+Novos materiais
+Novos transistores
+Computação heterogênea
+Computação orientada à IA
+Novos paradigmas de integração
+
+
+30. Desempenho dos Processadores
+30.1 Fundamentos de Desempenho
+30.1.1 Conceitos [PROFUNDO]
+Desempenho
+Tempo de execução
+Latência
+Throughput
+Capacidade de processamento
+30.1.2 Métricas [PROFUNDO]
+Frequência
+CPI
+IPC
+Instruções por segundo
+Operações por segundo
+30.2 Fatores que Influenciam o Desempenho
+30.2.1 Fatores Internos [PROFUNDO]
+Frequência
+Paralelismo
+Número de unidades funcionais
+Número de núcleos
+Eficiência da organização
+30.2.2 Fatores Externos [VISÃO GERAL]
+Memória
+Cache
+Barramentos
+Sistema operacional
+Aplicação
+30.3 Limitações de Desempenho
+30.3.1 Limitações Físicas [PROFUNDO]
+Consumo
+Temperatura
+Frequência
+Densidade
+30.3.2 Limitações Computacionais [PROFUNDO]
+Dependências
+Parte sequencial
+Comunicação
+Sincronização
+30.3.3 Lei de Amdahl [PROFUNDO]
+Parte sequencial
+Parte paralela
+Ganho máximo
+Limitações
+
+
+PARTE 6 — CONCLUSÃO E INTEGRAÇÃO DOS PROCESSADORES:
+
+
+31. Integração dos Processadores na Arquitetura e Organização de Computadores
+31.1 O Processador no Sistema Computacional
+31.1.1 Relação com os Demais Componentes [VISÃO GERAL]
+Memória principal
+Cache
+Barramentos
+E/S
+Controladores
+Armazenamento
+31.1.2 Comunicação do Processador [VISÃO GERAL]
+Fluxo de instruções
+Fluxo de dados
+Fluxo de controle
+Comunicação com memória
+Comunicação com dispositivos
+31.2 Relação com os Demais Assuntos
+31.2.1 Organização de Computadores [VISÃO GERAL]
+CPU
+Memória
+Comunicação
+Sistema computacional
+31.2.2 Arquitetura de Computadores [VISÃO GERAL]
+ISA
+Ciclo de instrução
+Pipeline
+Microarquitetura
+Paralelismo
+Multiprocessamento
+Hierarquia de memória
+31.3 O Processador como Centro do Sistema
+31.3.1 Papel da CPU [PROFUNDO]
+Coordenação
+Execução
+Processamento
+Integração hardware–software
+31.3.2 Evolução da CPU [PROFUNDO]
+Processadores clássicos
+Processadores modernos
+Tendências futuras
+
+
+
+32. Revisão Geral dos Processadores
+32.1 Revisão dos Fundamentos
+32.1.1 Conceitos Fundamentais
+Conceito de processador
+Importância
+Evolução
+Organização geral
+32.1.2 Organização Interna
+Unidade de Controle
+ALU
+FPU
+AGU
+LSU
+Registradores
+Datapath
+Control Path
+32.2 Revisão dos Processadores Modernos
+32.2.1 Tecnologias Modernas
+Pipeline
+Superescalar
+Paralelismo
+Multicore
+SMT
+Heterogeneidade
+Aceleradores
+32.2.2 Organização Física
+Litografia
+Chiplets
+Fabricação
+Energia
+Térmica
+32.3 Revisão Integrada
+32.3.1 Funcionamento Geral
+Fluxo de processamento
+Comunicação
+Organização interna
+Organização moderna
+Desempenho
+
+
+
+33. Conclusão
+33.1 Síntese Geral
+33.1.1 O Estudo dos Processadores
+Importância
+Evolução
+Organização interna
+Organização moderna
+Papel na Arquitetura e Organização
+33.1.2 Visão Integrada
+Hardware e software
+Comunicação
+Evolução tecnológica
+Processadores modernos
+33.2 Preparação para os Próximos Estudos
+33.2.1 Continuação da Disciplina [VISÃO GERAL]
+Registradores
+ISA
+Ciclo de Instrução
+Pipeline
+Microarquitetura
+Memórias
+Cache
+Barramentos
+Entrada e Saída
+Desempenho
+Paralelismo
+Multiprocessadores
+33.2.2 Continuidade do Aprendizado
+Consolidação dos fundamentos
+Integração dos conhecimentos
+Aprofundamento dos subsistemas
+Estudo de arquiteturas reais
