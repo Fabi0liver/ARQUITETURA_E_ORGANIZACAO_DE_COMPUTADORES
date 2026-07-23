@@ -977,82 +977,224 @@ PARTE 3 — ORGANIZAÇÃO INTERNA DOS PROCESSADORES MODERNOS:
 
 
 
-15. Comunicação Interna e Interconexões da CPU
-15.1 Comunicação Interna
-15.1.1 Organização [PROFUNDO]
-Comunicação entre componentes
-Fluxo de dados
-Fluxo de controle
-Sincronização
-15.1.2 Interconexões [PROFUNDO]
-Caminhos internos
-Conexões dedicadas
-Compartilhamento de recursos
-Interconexões entre unidades
-15.2 Barramentos Internos
-15.2.1 Organização [PROFUNDO]
-Barramento de dados
-Barramento de controle
-Barramento de endereços
-15.2.2 Transferências [PROFUNDO]
-Dados
-Sinais
-Controle das transferências
-15.3 Organização das Interconexões
-15.3.1 Estruturas [PROFUNDO]
-Barramento único
-Barramentos múltiplos
-Interligações dedicadas
-15.3.2 Características [PROFUNDO]
-Desempenho
-Latência
-Largura de banda
-Escalabilidade
-Complexidade
+15. Comunicação Interna e Interconexões:
+
+ 15.1 Comunicação Interna:
+
+  15.1.1 Organização:
+	  Comunicação entre componentes
+	  Fluxo de dados
+	  Fluxo de controle
+	  Sincronização
+
+  15.1.2 Interconexões:
+	  Caminhos internos
+	  Conexões dedicadas
+	  Compartilhamento de recursos
+	  Interconexões entre unidades
 
 
-16. Integração dos Componentes da CPU
-16.1 Organização Geral
-16.1.1 Integração Funcional [PROFUNDO]
-Unidade de Controle
-ALU
-FPU
-AGU
-LSU
-Banco de Registradores
-Datapath
-Control Path
-16.1.2 Coordenação [PROFUNDO]
-Sequenciamento
-Comunicação
-Sincronização
-Fluxo interno
-16.2 Fluxo Geral do Processamento
-16.2.1 Execução de uma Operação [PROFUNDO]
-Entrada
-Leitura dos operandos
-Seleção da unidade funcional
-Processamento
-Produção do resultado
-Atualização do estado
-16.2.2 Fluxo dos Dados [PROFUNDO]
-Entrada
-Transferência
-Processamento
-Armazenamento temporário
-Saída
-16.3 Visão Integrada da CPU
-16.3.1 Funcionamento Integrado [PROFUNDO]
-Comunicação
-Coordenação
-Fluxo de informações
-CPU como sistema integrado
-16.3.2 Evolução para Processadores Modernos [VISÃO GERAL]
-Pipeline
-Paralelismo
-Multicore
-SMT
-Heterogeneidade
+ 15.2 Barramentos Internos:
+
+  15.2.1 Organização:
+	  Barramento de dados
+	  Barramento de controle
+	  Barramento de endereços
+
+  15.2.2 Transferências:
+	  Dados
+	  Endereços
+	  Sinais de controle
+	  Sincronização
+
+
+ 15.3 Organização das Interconexões:
+
+  15.3.1 Estruturas:
+	  Barramento único
+	  Barramentos múltiplos
+	  Interligações dedicadas
+	  Crossbar interno
+	  Redes internas (NoC)
+
+  15.3.2 Características:
+	  Desempenho
+	  Latência
+	  Largura de banda
+	  Escalabilidade
+	  Complexidade
+
+
+
+16. Front-End dos Processadores:
+
+ 16.1 Fundamentos:
+
+  16.1.1 Conceitos:
+	  Definição
+	  Objetivos
+	  Papel no processador moderno
+	  Relação com o Back-End
+
+  16.1.2 Organização Geral:
+	  Fluxo de instruções
+	  Busca
+	  Decodificação
+	  Preparação da execução
+
+
+ 16.2 Componentes:
+
+  16.2.1 Unidade de Busca:
+	  Instruction Fetch Unit
+	  Program Counter
+	  Busca de instruções
+	  Prefetch
+
+  16.2.2 Unidade de Decodificação:
+	  Decodificadores
+	  Conversão para micro-operações
+	  Decodificação simples
+	  Decodificação complexa
+
+  16.2.3 Cache de Micro-operações:
+	  Organização
+	  Funcionamento
+	  Benefícios
+
+  16.2.4 Predição de Desvios:
+	  Branch Prediction
+	  BTB
+ 	  RAS
+	  Histórico de desvios
+
+
+ 16.3 Fluxo do Front-End:
+
+  16.3.1 Etapas:
+	  Busca
+	  Pré-busca
+	  Decodificação
+	  Geração das micro-operações
+	  Envio ao Back-End
+
+
+
+17. Back-End dos Processadores:
+
+ 17.1 Fundamentos:
+
+  17.1.1 Conceitos:
+	  Definição
+	  Objetivos
+	  Relação com o Front-End
+
+  17.1.2 Organização Geral:
+	  Execução
+	  Agendamento
+	  Controle de dependências
+	  Finalização
+
+  
+ 17.2 Componentes:
+
+  17.2.1 Register Renaming:
+	  Objetivos
+	  Registradores físicos
+	  Eliminação de dependências falsas
+
+  17.2.2 Scheduler:
+	  Agendamento
+	  Seleção de instruções
+	  Disponibilidade das unidades funcionais
+
+  17.2.3 Reservation Stations:
+	  Organização
+	  Espera por operandos
+	  Emissão
+
+  17.2.4 Reorder Buffer (ROB):
+	  Organização
+	  Reordenação
+	  Commit
+	  Precisão das exceções
+
+
+ 17.3 Execução:
+
+  17.3.1 Unidades de Execução:
+	  ALU
+	  FPU
+	  AGU
+	  LSU
+	  Unidade Vetorial
+	  Unidade SIMD
+
+  17.3.2 Finalização:
+	  Write Back
+	  Retirement
+	  Atualização do estado arquitetural
+
+
+
+18. Integração dos Componentes da CPU:
+
+ 18.1 Organização Geral:
+
+  18.1.1 Integração Funcional:
+	  Unidade de Controle
+	  Banco de Registradores
+	  ALU
+	  FPU
+	  AGU
+	  LSU
+	  Datapath
+	  Control Path
+	  Front-End
+	  Back-End
+
+  18.1.2 Coordenação:
+	  Sequenciamento
+	  Comunicação
+	  Sincronização
+	  Fluxo interno
+
+  
+ 18.2 Fluxo Geral do Processamento:
+
+  18.2.1 Execução de uma Instrução:
+	  Busca
+	  Decodificação
+	  Geração de micro-operações
+	  Register Renaming
+	  Agendamento
+	  Execução
+	  Write Back
+	  Retirement
+
+  18.2.2 Fluxo dos Dados:
+	  Entrada
+	  Transferência
+	  Processamento
+	  Armazenamento temporário
+	  Saída
+
+
+ 18.3 Visão Integrada:
+
+  18.3.1 Funcionamento Integrado:
+	  Comunicação
+	  Coordenação
+	  Fluxo das informações
+	  Integração dos componentes
+
+  18.3.2 Transição para Processadores Modernos:
+	  Pipeline
+	  Execução Superescalar
+	  Execução Fora de Ordem
+	  SMT
+	  Multicore
+	  Computação Heterogênea
 
 
 
