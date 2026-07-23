@@ -698,190 +698,282 @@ PARTE 2 — ESTRUTURA E FUNCIONAMENTO BÁSICO DO PROCESSADOR:
 
 
 
-10. Unidade de Ponto Flutuante — FPU
-10.1 Fundamentos
-10.1.1 Conceitos [PROFUNDO]
-Definição
-Objetivos
-Evolução histórica
-10.1.2 Papel na CPU [PROFUNDO]
-Processamento científico
-Engenharia
-Gráficos
-IA
-Computação de alto desempenho
-10.2 Organização
-10.2.1 Estrutura [PROFUNDO]
-Componentes
-Caminhos de dados
-Comunicação com a CPU
-10.2.2 Operações [PROFUNDO]
-Soma
-Subtração
-Multiplicação
-Divisão
-Raiz quadrada
-10.3 Representação Numérica
-10.3.1 Conceitos [PROFUNDO]
-Ponto fixo
-Ponto flutuante
-Precisão
-Intervalo numérico
-10.3.2 IEEE 754 [VISÃO GERAL]
-Sinal
-Expoente
-Fração/significando
-Precisão
+10. Unidade de Ponto Flutuante (FPU):
+
+ 10.1 Fundamentos:
+
+  10.1.1 Conceitos:
+	  Definição
+	  Objetivos
+	  Evolução histórica
+
+  10.1.2 Papel na CPU:
+	  Processamento científico
+	  Engenharia
+	  Gráficos
+	  Inteligência Artificial
+	  Computação de alto desempenho
+
+
+ 10.2 Organização:
+
+  10.2.1 Estrutura:
+	  Componentes
+	  Caminhos de dados
+	  Comunicação com a CPU
+	  Pipeline da FPU
+
+  10.2.2 Operações:
+	  Soma
+	  Subtração
+	  Multiplicação
+	  Divisão
+	  Raiz quadrada
+	  Operações vetoriais
+
+
+ 10.3 Representação Numérica:
+
+  10.3.1 Conceitos:
+ 	  Ponto fixo
+	  Ponto flutuante
+	  Precisão
+	  Intervalo numérico
+
+   10.3.2 IEEE 754:
+	  Estrutura do número
+	  Bit de sinal
+	  Expoente
+	  Significando
+	  Precisão simples
+	  Precisão dupla
+ 	  Casos especiais
 
 
 
-
-PARTE 3 — ORGANIZAÇÃO INTERNA DO PROCESSADOR:
-
-
-11. Banco de Registradores
-11.1 Fundamentos
-11.1.1 Conceitos [VISÃO GERAL]
-Registrador
-Banco de registradores
-Armazenamento temporário
-Papel na CPU
-11.1.2 Características Gerais [VISÃO GERAL]
-Alta velocidade
-Baixa capacidade
-Comunicação direta
-Organização interna
-11.2 Organização
-11.2.1 Estrutura [VISÃO GERAL]
-Registradores gerais
-Registradores especiais
-Organização física
-Organização lógica
-11.2.2 Comunicação [PROFUNDO]
-Leitura
-Escrita
-Portas de leitura
-Portas de escrita
-Relação com o datapath
-11.3 Principais Categorias [VISÃO GERAL]
-Registradores de uso geral
-Registradores de dados
-Registradores de endereços
-Registradores de controle
-Registradores de estado
+PARTE 3 — ORGANIZAÇÃO INTERNA DOS PROCESSADORES MODERNOS:
 
 
+11. Banco de Registradores:
 
-12. Microoperações
-12.1 Fundamentos
-12.1.1 Conceitos [PROFUNDO]
-Definição
-Papel na execução
-Relação com o controle
-Relação com o datapath
-12.1.2 Organização [PROFUNDO]
-Sequência
-Controle
-Sincronização
-Dependências
-12.2 Tipos de Microoperações
-12.2.1 Transferência de Dados [PROFUNDO]
-Transferência entre registradores
-Transferência para a ALU
-Transferência para unidades funcionais
-12.2.2 Operações Aritméticas [PROFUNDO]
-Soma
-Subtração
-Incremento
-Decremento
-12.2.3 Operações Lógicas [PROFUNDO]
-AND
-OR
-XOR
-NOT
-12.2.4 Operações de Deslocamento [PROFUNDO]
-Shift
-Rotação
-12.2.5 Microoperações de Controle [PROFUNDO]
-Geração de sinais
-Sequenciamento
-Controle temporal
+ 11.1 Fundamentos:
+
+  11.1.1 Conceitos:
+	  Registrador
+	  Banco de registradores
+	  Armazenamento temporário
+	  Papel na CPU
+	  Relação com o ciclo de instrução
+
+  11.1.2 Características Gerais:
+	  Alta velocidade
+	  Baixa capacidade
+	  Comunicação direta
+	  Organização interna
+	  Tempo de acesso
+
+
+ 11.2 Organização:
+
+  11.2.1 Estrutura:
+	  Registradores de uso geral
+	  Registradores especiais
+	  Organização física
+	  Organização lógica
+	  Banco de registradores físicos
+	  Banco de registradores arquiteturais
+
+  11.2.2 Comunicação:
+	  Leitura
+	  Escrita
+	  Portas de leitura
+	  Portas de escrita
+	  Comunicação com o Datapath
+	  Comunicação com as unidades funcionais
+
+
+ 11.3 Principais Categorias:
+
+  11.3.1 Registradores de Uso Geral:
+	  Operandos
+	  Resultados
+
+  11.3.2 Registradores Especiais:
+	  Program Counter (PC)
+	  Instruction Register (IR)
+	  Stack Pointer (SP)
+	  Base Pointer (BP)
+	  Status Register
+	  Flags
+
+  11.3.3 Registradores Arquiteturais e Físicos:
+	  Conceitos
+	  Diferenças
+	  Papel na execução moderna
 
 
 
-13. Caminho de Dados — Datapath
-13.1 Fundamentos
-13.1.1 Conceitos [PROFUNDO]
-Definição
-Objetivos
-Papel no processador
-Relação com o control path
-13.1.2 Organização Geral [PROFUNDO]
-Fluxo de dados
-Componentes
-Caminhos de transferência
-Entradas e saídas
-13.2 Componentes do Datapath
-13.2.1 Componentes Principais [PROFUNDO]
-ALU
-Banco de registradores
-Multiplexadores
-Barramentos internos
-Unidades funcionais
-13.2.2 Componentes Especializados [PROFUNDO]
-FPU
-AGU
-LSU
-Unidade vetorial
-Unidade de branch
-13.3 Funcionamento
-13.3.1 Operações [PROFUNDO]
-Leitura
-Transferência
-Processamento
-Escrita
-13.3.2 Integração [PROFUNDO]
-Unidade de Controle
-ALU
-Registradores
-Unidades funcionais
-Comunicação externa [VISÃO GERAL]
+12. Microoperações:
+
+ 12.1 Fundamentos:
+
+  12.1.1 Conceitos:
+	  Definição
+	  Papel na execução
+	  Relação com o controle
+	  Relação com o datapath
+
+   12.1.2 Organização:
+	  Sequenciamento
+	  Controle
+	  Sincronização
+	  Dependências
+	  Fluxo interno
+
+
+ 12.2 Tipos de Microoperações:
+
+  12.2.1 Transferência de Dados:
+	  Entre registradores
+	  Para ALU
+	  Para FPU
+	  Para unidades funcionais
+
+  12.2.2 Operações Aritméticas:
+	  Soma
+	  Subtração
+	  Incremento
+	  Decremento
+
+  12.2.3 Operações Lógicas:
+ 	  AND
+	  OR
+	  XOR
+	  NOT
+
+  12.2.4 Operações de Deslocamento:
+	  Shift
+	  Rotação
+
+  12.2.5 Microoperações de Controle:
+	  Geração de sinais
+	  Sequenciamento
+	  Controle temporal
+
+
+ 12.3 Fluxo das Microoperações:
+
+  12.3.1 Geração:
+	  Decodificação
+	  Conversão da instrução
+	  Formação das micro-operações
+
+  12.3.2 Execução:
+	  Emissão
+	  Agendamento
+	  Execução
+	  Finalização
 
 
 
-14. Caminho de Controle — Control Path
-14.1 Fundamentos
-14.1.1 Conceitos [PROFUNDO]
-Definição
-Objetivos
-Papel na CPU
-Relação com o datapath
-14.1.2 Organização [PROFUNDO]
-Fluxo de controle
-Geração de sinais
-Coordenação
-Sequenciamento
-14.2 Funcionamento
-14.2.1 Controle da Execução [PROFUNDO]
-Sequenciamento
-Controle temporal
-Ativação de componentes
-Coordenação
-14.2.2 Sinais de Controle [PROFUNDO]
-Controle da ALU
-Controle dos registradores
-Controle das unidades funcionais
-Controle dos barramentos
-14.3 Integração
-14.3.1 Relação com o Datapath [PROFUNDO]
-Coordenação
-Sincronização
-Comunicação
-14.3.2 Papel na Execução [VISÃO GERAL]
-Busca
-Decodificação
-Execução
-Finalização
+13. Caminho de Dados (Datapath)
+
+ 13.1 Fundamentos:
+
+  13.1.1 Conceitos:
+	  Definição
+	  Objetivos
+	  Papel no processador
+	  Relação com o control path
+
+  13.1.2 Organização Geral:
+	  Fluxo de dados
+	  Componentes
+	  Caminhos de transferência
+	  Entradas 
+	  Saídas
+
+
+ 13.2 Componentes do Datapath:
+
+  13.2.1 Componentes Principais:
+	  ALU
+	  Banco de registradores
+	  Multiplexadores
+	  Barramentos internos
+	  Unidades funcionais
+
+  13.2.2 Componentes Especializados:
+	  FPU
+	  AGU
+	  LSU
+	  Unidade vetorial
+	  Unidade SIMD
+	  Unidade de branch
+
+
+ 13.3 Funcionamento:
+
+  13.3.1 Operações:
+	  Leitura
+	  Transferência
+	  Processamento
+	  Escrita
+
+  13.3.2 Integração:
+	  Unidade de Controle
+	  ALU
+	  Registradores
+	  FPU
+	  Unidades funcionais
+	  Comunicação externa
+
+
+
+14. Caminho de Controle (Control Path)
+
+ 14.1 Fundamentos:
+
+  14.1.1 Conceitos:
+	  Definição
+	  Objetivos
+	  Papel na CPU
+	  Relação com o datapath
+
+  14.1.2 Organização:
+	  Fluxo de controle
+	  Geração de sinais
+	  Coordenação
+	  Sequenciamento
+
+
+ 14.2 Funcionamento:
+
+  14.2.1 Controle da Execução:
+	  Sequenciamento
+	  Controle temporal
+	  Ativação de componentes
+	  Coordenação
+
+  14.2.2 Sinais de Controle:
+	  Controle da ALU
+	  Controle dos registradores
+	  Controle das unidades funcionais
+	  Controle dos barramentos
+
+
+ 14.3 Integração:
+
+  14.3.1 Relação com o Datapath:
+	  Coordenação
+	  Sincronização
+	  Comunicação
+
+14.3.2 Papel na Execução:
+	  Busca
+	  Decodificação
+	  Execução
+	  Finalização
 
 
 
