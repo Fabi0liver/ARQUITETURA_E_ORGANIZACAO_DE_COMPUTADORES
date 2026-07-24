@@ -1068,6 +1068,8 @@ PARTE 3 — MEMÓRIA PRINCIPAL E INTEGRIDADE:
 	  Tolerância a Falhas
 	  Monitoramento de Erros
 	  Diagnóstico
+	  Disponibilidade da memória em sistemas críticos
+	  Continuidade de operação
 
 
 
@@ -1085,6 +1087,8 @@ PARTE 3 — MEMÓRIA PRINCIPAL E INTEGRIDADE:
 	  Utilização dos Bancos
 	  Utilização dos Canais
 	  Gargalos
+	  Eficiência da utilização da memória
+	  Escalabilidade da memória principal
 
   17.1.2 Indicadores:
 	  IPC Relacionado à Memória
@@ -1092,6 +1096,8 @@ PARTE 3 — MEMÓRIA PRINCIPAL E INTEGRIDADE:
 	  Row Buffer Hit Rate
 	  Eficiência do Controlador
 	  Eficiência Energética
+	  Eficiência da arquitetura de memória
+	  Aproveitamento da largura de banda
 
 
  17.2 Otimizações:
@@ -1103,6 +1109,8 @@ PARTE 3 — MEMÓRIA PRINCIPAL E INTEGRIDADE:
 	  Ajuste de Timings
 	  Interleaving
 	  Prefetch
+	  Balanceamento entre latência e largura de banda
+	  Otimização do paralelismo interno
 
   17.2.2 Configuração:
 	  Overclock 
@@ -1112,10 +1120,12 @@ PARTE 3 — MEMÓRIA PRINCIPAL E INTEGRIDADE:
 	  Perfis EXPO
 	  Ajuste Manual de Timings
 	  Ajuste de Frequência
+	  Compromisso entre desempenho, estabilidade e consumo
+	  Avaliação do impacto das configurações
 
 
 
-*PARTE 4 — MEMÓRIAS NÃO VOLÁTEIS E ARMAZENAMENTO:
+PARTE 4 — MEMÓRIAS NÃO VOLÁTEIS E ARMAZENAMENTO:
 
 
 18. Memórias Não Voláteis:
@@ -1132,6 +1142,9 @@ PARTE 3 — MEMÓRIA PRINCIPAL E INTEGRIDADE:
 	  Durabilidade
 	  Endurance
 	  Tempo de Retenção
+	  Papel na arquitetura do sistema computacional
+	  Integração com a hierarquia de memória
+	  Compromisso entre persistência e desempenho
 
   18.1.2 Classificação:
 	  ROM
@@ -1141,6 +1154,8 @@ PARTE 3 — MEMÓRIA PRINCIPAL E INTEGRIDADE:
 	  Flash NOR
 	  Flash NAND
 	  Memórias Emergentes
+	  Memórias para armazenamento
+	  Memórias persistentes na memória principal
 
 
  18.2 Tecnologias de Memórias Não Voláteis:
@@ -1163,6 +1178,8 @@ PARTE 3 — MEMÓRIA PRINCIPAL E INTEGRIDADE:
 	  QLC
 	  PLC
 	  pSLC
+	  Compromissos entre densidade, desempenho e durabilidade
+	  Critérios de utilização das tecnologias Flash
 
   18.2.3 Organização da Flash:
 	  Página
@@ -1183,6 +1200,8 @@ PARTE 3 — MEMÓRIA PRINCIPAL E INTEGRIDADE:
 	  3D XPoint
 	  NVDIMM
 	  CXL Memory
+	  Integração das memórias persistentes à arquitetura
+	  Aplicações na hierarquia de memória
 
 
  18.3 Características das Memórias Não Voláteis:
@@ -1193,6 +1212,8 @@ PARTE 3 — MEMÓRIA PRINCIPAL E INTEGRIDADE:
 	  Tempo de Leitura
 	  Tempo de Escrita
 	  Tempo de Apagamento
+	  Influência na hierarquia de memória
+	  Comparação com a memória principal
 
   18.3.2 Confiabilidade:
 	  Endurance
@@ -1226,6 +1247,8 @@ PARTE 3 — MEMÓRIA PRINCIPAL E INTEGRIDADE:
 	  Transfer Rate
 	  Command Queue
 	  Cache de Disco
+	  Fluxo de acesso aos dados
+	  Integração com o subsistema de memória
 
 
  19.2 Armazenamento em Estado Sólido:
@@ -1248,6 +1271,8 @@ PARTE 3 — MEMÓRIA PRINCIPAL E INTEGRIDADE:
 	  ECC
 	  Background Refresh
 	  Thermal Management
+	  Otimização da vida útil
+	  Influência da controladora no desempenho
 
 
  19.3 Organização Interna dos Dispositivos:
@@ -1265,6 +1290,8 @@ PARTE 3 — MEMÓRIA PRINCIPAL E INTEGRIDADE:
 	  Planos
 	  Filas Internas
 	  Paralelismo Interno
+	  Fluxo interno das operações
+	  Escalabilidade do paralelismo
 
 
 
@@ -1293,6 +1320,8 @@ PARTE 3 — MEMÓRIA PRINCIPAL E INTEGRIDADE:
 	  DMA
 	  PRP
 	  SGL
+	  Fluxo de comunicação entre CPU, memória e armazenamento
+	  Eficiência dos protocolos de acesso
 
 
  20.2 Interfaces Externas:
@@ -1309,10 +1338,12 @@ PARTE 3 — MEMÓRIA PRINCIPAL E INTEGRIDADE:
 	  SAN
 	  iSCSI
 	  Fibre Channel
-	  NVMe over Fabrics (Introdução)
+	  NVMe over Fabrics 
+	  Desagregação do armazenamento
+	  Compartilhamento remoto de memória persistente
 
 
- 
+
 21. Organização dos Dados em Armazenamento:
 
  21.1 Estruturas Lógicas:
@@ -1333,6 +1364,8 @@ PARTE 3 — MEMÓRIA PRINCIPAL E INTEGRIDADE:
 	  Mapeamento lógico-físico
 	  Flash Translation Layer (FTL)
 	  Tradução de Endereços
+	  Espaço de endereçamento do armazenamento
+	  Mapeamento entre memória principal e armazenamento
 
 
  21.2 Organização Física:
@@ -1349,6 +1382,8 @@ PARTE 3 — MEMÓRIA PRINCIPAL E INTEGRIDADE:
 	  Planos
 	  Dies
  	  Canais
+	  Organização hierárquica interna
+	  Distribuição das operações entre canais
 
 
  21.3 Gerenciamento dos Dados:
@@ -1364,6 +1399,8 @@ PARTE 3 — MEMÓRIA PRINCIPAL E INTEGRIDADE:
 	  Fragmentação Externa
 	  Desfragmentação
 	  Write Amplification
+	  Impacto da fragmentação no desempenho
+	  Eficiência da organização física
 
 
  
@@ -1380,6 +1417,8 @@ PARTE 3 — MEMÓRIA PRINCIPAL E INTEGRIDADE:
 	  Tempo Médio de Acesso
 	  Queue Depth
 	  Eficiência Energética
+	  Eficiência da utilização da interface
+	  Escalabilidade do subsistema de armazenamento
 
   22.1.2 Gargalos:
 	  Gargalos de Interface
@@ -1387,6 +1426,8 @@ PARTE 3 — MEMÓRIA PRINCIPAL E INTEGRIDADE:
 	  Gargalos da NAND
 	  Gargalos Mecânicos
 	  Saturação de Filas
+	  Impacto da comunicação CPU–armazenamento
+	  Balanceamento entre interface e dispositivo
 
 
  22.2 Confiabilidade:
@@ -1406,6 +1447,8 @@ PARTE 3 — MEMÓRIA PRINCIPAL E INTEGRIDADE:
 	  Power Loss Protection
 	  SMART
 	  Monitoramento de Saúde
+	  Disponibilidade do armazenamento
+	  Continuidade operacional
 
 
  22.3 Otimização:
@@ -1416,12 +1459,16 @@ PARTE 3 — MEMÓRIA PRINCIPAL E INTEGRIDADE:
 	  Wear Leveling
 	  Over-Provisioning
 	  Atualização de Firmware
+	  Otimização da utilização dos canais internos
+	  Balanceamento das operações de leitura e escrita
 
   22.3.2 HDD:
 	  Cache
 	  NCQ
 	  Desfragmentação
 	  Alinhamento de Partições
+	  Otimização da organização física
+	  Redução da latência mecânica
 
 
 
