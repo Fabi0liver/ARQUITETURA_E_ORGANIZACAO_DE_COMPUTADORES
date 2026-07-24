@@ -1,14 +1,22 @@
-                                                           Memórias 
+                                                           Memórias
 
+
+A classificação abaixo indica a profundidade recomendada para cada grande tópico da lista.
+
+[P] Profundidade — estudar mecanismos, estruturas, funcionamento interno e relações entre componentes.
+[I] Intermediário — compreender bem o funcionamento e as relações principais, sem precisar dominar todos os detalhes de implementação.
+[V] Visão geral — saber o que é, para que serve e como se relaciona com os registradores.
+
+ 
 
 PARTE 1 — FUNDAMENTOS E ORGANIZAÇÃO DAS MEMÓRIAS:
 
 
-1. Introdução:
+1. Introdução — [P]:
 
- 1.1 Introdução às Memórias:
+ 1.1 Introdução às Memórias — [P]:
 
-  1.1.1 Memórias como componente do sistema computacional:
+  1.1.1 Memórias como componente do sistema computacional — [I]:
 	  Conceito de memória
 	  Objetivos da memória
 	  Papel da memória no computador
@@ -17,7 +25,7 @@ PARTE 1 — FUNDAMENTOS E ORGANIZAÇÃO DAS MEMÓRIAS:
 	  Programa armazenado
 	  Unidade de armazenamento
 
-  1.1.2 Importância das Memórias:
+  1.1.2 Importância das Memórias — [I]:
 	  Desempenho do sistema
 	  Comunicação CPU–Memória
 	  Relação entre capacidade, custo e velocidade
@@ -27,7 +35,7 @@ PARTE 1 — FUNDAMENTOS E ORGANIZAÇÃO DAS MEMÓRIAS:
 	  Hierarquia como princípio de projeto
 	  Impacto das memórias na arquitetura do sistema
 
-  1.1.3 Organização das Memórias:
+  1.1.3 Organização das Memórias — [P]:
 	  Organização versus Arquitetura de Computadores
 	  Papel das memórias na Organização de Computadores
 	  Visão geral da hierarquia de memória
@@ -38,15 +46,15 @@ PARTE 1 — FUNDAMENTOS E ORGANIZAÇÃO DAS MEMÓRIAS:
 	  Visão da memória pelo processador
 
 
- 1.2 Organização de Computadores e Memórias:
+ 1.2 Organização de Computadores e Memórias — [P]:
 
-  1.2.1 Organização versus Arquitetura:
+  1.2.1 Organização versus Arquitetura — [I]:
 	  Organização de Computadores
 	  Arquitetura de Computadores
 	  Relação entre organização e arquitetura
 	  Papel das memórias
 
-  1.2.2 Modelos Clássicos:
+  1.2.2 Modelos Clássicos — [P]:
 	  Modelo de Von Neumann
 	  Gargalo de Von Neumann
 	  Modelo Harvard
@@ -56,7 +64,7 @@ PARTE 1 — FUNDAMENTOS E ORGANIZAÇÃO DAS MEMÓRIAS:
 	  Espaços separados de memória
 	  Impacto da organização da memória no desempenho
 
-  1.2.3 Comunicação com os demais componentes:
+  1.2.3 Comunicação com os demais componentes — [P]:
 	  CPU
 	  Barramentos
 	  Dispositivos de Entrada e Saída
@@ -68,9 +76,9 @@ PARTE 1 — FUNDAMENTOS E ORGANIZAÇÃO DAS MEMÓRIAS:
 	  Compartilhamento dos barramentos
 
 
- 1.3 Conceitos Fundamentais
+ 1.3 Conceitos Fundamentais — [P]:
 
-  1.3.1 Representação da Informação:
+  1.3.1 Representação da Informação — [I]:
 	  Bit
 	  Nibble
 	  Byte
@@ -82,7 +90,7 @@ PARTE 1 — FUNDAMENTOS E ORGANIZAÇÃO DAS MEMÓRIAS:
 	  Representação dos endereços de memória
 	  Granularidade de endereçamento
 
-  1.3.2 Componentes Digitais Fundamentais:
+  1.3.2 Componentes Digitais Fundamentais — [P]:
 	  Flip-Flops
 	  Latches
 	  Registradores
@@ -98,7 +106,7 @@ PARTE 1 — FUNDAMENTOS E ORGANIZAÇÃO DAS MEMÓRIAS:
 	  Decodificadores de endereço
 	  Circuitos de leitura e escrita
 
-  1.3.3 Comunicação Básica:
+  1.3.3 Comunicação Básica — [P]:
  	  Barramento de Dados
 	  Barramento de Endereços
 	  Barramento de Controle
@@ -110,11 +118,11 @@ PARTE 1 — FUNDAMENTOS E ORGANIZAÇÃO DAS MEMÓRIAS:
 
 
 
-2. Fundamentos das Memórias:
+2. Fundamentos das Memórias — [P]:
 
- 2.1 Conceitos Fundamentais:
+ 2.1 Conceitos Fundamentais — [P]:
 
-  2.1.1 Armazenamento de Dados:
+  2.1.1 Armazenamento de Dados — [P]:
 	  Dados
 	  Instruções
 	  Persistência
@@ -124,7 +132,7 @@ PARTE 1 — FUNDAMENTOS E ORGANIZAÇÃO DAS MEMÓRIAS:
 	  Localidade de referência
 	  Movimentação de dados entre níveis
 
-  2.1.2 Características das Memórias:
+  2.1.2 Características das Memórias — [P]:
 	  Capacidade
 	  Latência
 	  Tempo de acesso
@@ -138,7 +146,7 @@ PARTE 1 — FUNDAMENTOS E ORGANIZAÇÃO DAS MEMÓRIAS:
 	  Granularidade de acesso
 	  Granularidade de transferência
 
-  2.1.3 Métricas de Desempenho:
+  2.1.3 Métricas de Desempenho — [P]:
           Latência
 	  Throughput
 	  AMAT 
@@ -148,19 +156,19 @@ PARTE 1 — FUNDAMENTOS E ORGANIZAÇÃO DAS MEMÓRIAS:
 	  Influência da hierarquia no CPI
 
 
- 2.2 Classificação das Memórias:
+ 2.2 Classificação das Memórias — [I]:
 
-  2.2.1 Quanto à Persistência:
+  2.2.1 Quanto à Persistência — [V]:
 	  Voláteis
 	  Não voláteis
 
-  2.2.2 Quanto ao Método de Acesso:
+  2.2.2 Quanto ao Método de Acesso — [P]:
 	  Aleatório
 	  Sequencial
 	  Direto
 	  Associativo
 
-  2.2.3 Quanto à Função:
+  2.2.3 Quanto à Função — [I]:
 	  Primária
 	  Secundária
 	  Terciária
@@ -172,11 +180,11 @@ PARTE 1 — FUNDAMENTOS E ORGANIZAÇÃO DAS MEMÓRIAS:
 
 
 
-3. Organização Geral das Memórias
+3. Organização Geral das Memórias — [P]:
 
- 3.1 Organização Física:
+ 3.1 Organização Física — [P]:
 
-  3.1.1 Estrutura Física:
+  3.1.1 Estrutura Física — [P]:
 	  Chips
 	  Matrizes
 	  Linhas
@@ -187,7 +195,7 @@ PARTE 1 — FUNDAMENTOS E ORGANIZAÇÃO DAS MEMÓRIAS:
 	  Módulos
 	  Encapsulamentos
 
-  3.1.2 Organização Interna:
+  3.1.2 Organização Interna — [P]:
 	  Células
 	  Blocos
 	  Palavras
@@ -197,9 +205,9 @@ PARTE 1 — FUNDAMENTOS E ORGANIZAÇÃO DAS MEMÓRIAS:
 	  Bancos independentes
 
 
- 3.2 Organização Lógica:
+ 3.2 Organização Lógica — [P]:
 
-  3.2.1 Estruturas Lógicas:
+  3.2.1 Estruturas Lógicas — [P]:
 	  Espaço de endereçamento
 	  Organização por blocos
 	  Organização linear
@@ -209,7 +217,7 @@ PARTE 1 — FUNDAMENTOS E ORGANIZAÇÃO DAS MEMÓRIAS:
 	  Espaço contínuo de memória
 	  Espaço não contínuo de memória
 
-  3.2.2 Unidades de Informação:
+  3.2.2 Unidades de Informação — [I]:
 	  Bit
 	  Byte
 	  Palavra
@@ -218,7 +226,7 @@ PARTE 1 — FUNDAMENTOS E ORGANIZAÇÃO DAS MEMÓRIAS:
 	  Página
 
 
- 3.3 Expansão de Memória:
+ 3.3 Expansão de Memória — [P]:
 	Expansão por largura
 	Expansão por profundidade
 	Associação de chips
@@ -229,11 +237,11 @@ PARTE 1 — FUNDAMENTOS E ORGANIZAÇÃO DAS MEMÓRIAS:
 
 
 
-4. Endereçamento e Interface da Memória:
+4. Endereçamento e Interface da Memória — [P]:
 
- 4.1 Endereçamento:
+ 4.1 Endereçamento — [P]:
 
-  4.1.1 Conceitos:
+  4.1.1 Conceitos — [P]:
 	  Endereço físico
 	  Endereço lógico
 	  Espaço de endereçamento
@@ -242,7 +250,7 @@ PARTE 1 — FUNDAMENTOS E ORGANIZAÇÃO DAS MEMÓRIAS:
 	  Mapa de endereçamento
 	  Memória endereçável
 
-  4.1.2 Organização:
+  4.1.2 Organização — [P]:
  	  Endereçamento por byte
 	  Endereçamento por palavra
  	  Alinhamento
@@ -251,15 +259,15 @@ PARTE 1 — FUNDAMENTOS E ORGANIZAÇÃO DAS MEMÓRIAS:
 	  Little Endian
 
 
- 4.2 Interface CPU–Memória:
+ 4.2 Interface CPU–Memória — [P]:
 
-  4.2.1 Comunicação:
+  4.2.1 Comunicação — [P]:
 	  Barramento de dados
 	  Barramento de endereços
 	  Barramento de controle
           Controlador de memória
 
-  4.2.2 Operações:
+  4.2.2 Operações — [P]:
 	  Leitura
 	  Escrita
 	  Ciclo de memória
@@ -273,11 +281,11 @@ PARTE 1 — FUNDAMENTOS E ORGANIZAÇÃO DAS MEMÓRIAS:
 
 
 
-5. Visão Geral da Hierarquia de Memória:
+5. Visão Geral da Hierarquia de Memória — [P]:
 
- 5.1 Fundamentos:
+ 5.1 Fundamentos — [P]:
 
-  5.1.1 Conceitos:
+  5.1.1 Conceitos — [P]:
 	  Objetivos da Hierarquia de Memória
 	  Organização Hierárquica
 	  Princípio da Localidade
@@ -288,7 +296,7 @@ PARTE 1 — FUNDAMENTOS E ORGANIZAÇÃO DAS MEMÓRIAS:
 	  Transparência da hierarquia para o processador
 	  Exploração da localidade
 
-  5.1.2 Níveis da Hierarquia:
+  5.1.2 Níveis da Hierarquia — [P]:
 	  Registradores
 	  Memória Cache
 	  Memória Principal (RAM)
@@ -296,7 +304,7 @@ PARTE 1 — FUNDAMENTOS E ORGANIZAÇÃO DAS MEMÓRIAS:
 	  Armazenamento Externo
 	  Memória Virtual
 
-  5.1.3 Características dos Níveis:
+  5.1.3 Características dos Níveis — [I]:
 	  Capacidade
 	  Velocidade de Acesso
 	  Latência
@@ -304,22 +312,22 @@ PARTE 1 — FUNDAMENTOS E ORGANIZAÇÃO DAS MEMÓRIAS:
 	  Custo por Bit
 	  Volatilidade
 
-  5.1.4 Fluxo de Dados na Hierarquia:
+  5.1.4 Fluxo de Dados na Hierarquia — [P]:
 	  Transferência entre Níveis
 	  Blocos de Memória
 	  Princípio da Proximidade ao Processador
           Promoção e substituição de dados
 
 
- 5.2 Avaliação de Desempenho:
+ 5.2 Avaliação de Desempenho — [P]:
 
-  5.2.1 Métricas:
+  5.2.1 Métricas — [P]:
 	  Latência
 	  Throughput (Largura de Banda)
 	  Tempo de Acesso
 	  Tempo de Ciclo da Memória
 
-  5.2.2 Eficiência da Hierarquia:
+  5.2.2 Eficiência da Hierarquia — [P]:
 	  Gargalo de Memória
 	  Taxa de Acertos (Hit Rate)
 	  Taxa de Falhas (Miss Rate)
@@ -331,11 +339,11 @@ PARTE 1 — FUNDAMENTOS E ORGANIZAÇÃO DAS MEMÓRIAS:
 PARTE 2 — HIERARQUIA E MEMÓRIA CACHE:
 
 
-6. Hierarquia de Memória:
+6. Hierarquia de Memória — [P]:
 
- 6.1 Fundamentos:
+ 6.1 Fundamentos — [P]:
 
-  6.1.1 Conceitos Gerais:
+  6.1.1 Conceitos Gerais — [P]:
 	  Conceito de Hierarquia de Memória
 	  Objetivos
 	  Princípio da localidade
@@ -344,7 +352,7 @@ PARTE 2 — HIERARQUIA E MEMÓRIA CACHE:
 	  Exploração da localidade na arquitetura do sistema
 	  Fluxo hierárquico dos acessos à memória
 
-  6.1.2 Princípios de Localidade:
+  6.1.2 Princípios de Localidade — [P]:
 	  Localidade Temporal
 	  Localidade Espacial
 	  Localidade Sequencial
@@ -353,7 +361,7 @@ PARTE 2 — HIERARQUIA E MEMÓRIA CACHE:
 	  Padrões de Acesso à Memória
 	  Princípio de Pareto
 
-   6.1.3 Avaliação:
+   6.1.3 Avaliação — [P]:
 	  Latência
 	  Throughput
 	  AMAT
@@ -364,16 +372,16 @@ PARTE 2 — HIERARQUIA E MEMÓRIA CACHE:
 	  Escalabilidade da hierarquia de memória
 
 
- 6.2 Níveis da Hierarquia:
+ 6.2 Níveis da Hierarquia — [P]:
 
-  6.2.1 Registradores:
+  6.2.1 Registradores — [I]:
 	  Papel
 	  Organização Geral
 	  Tipos de Registradores
 	  Velocidade
 	  Relação com a CPU
 
-  6.2.2 Memória Cache:
+  6.2.2 Memória Cache — [P]:
 	  Papel
 	  Organização
 	  Níveis (L1, L2 e L3)
@@ -383,7 +391,7 @@ PARTE 2 — HIERARQUIA E MEMÓRIA CACHE:
 	  Papel entre CPU e memória principal
 	  Transparência para o software
 
-  6.2.3 Memória Principal:
+  6.2.3 Memória Principal — [P]:
 	  Papel
 	  Organização
 	  RAM Estática (SRAM)
@@ -392,14 +400,14 @@ PARTE 2 — HIERARQUIA E MEMÓRIA CACHE:
 	  Papel como memória de trabalho do sistema
 	  Integração com a hierarquia
 
-  6.2.4 Memória Secundária:
+  6.2.4 Memória Secundária — [I]:
 	  Papel
 	  HDD
 	  SSD
 	  Persistência
 	  Desempenho Comparativo
 
-  6.2.5 Armazenamento Externo:
+  6.2.5 Armazenamento Externo — [V]:
 	  Pen Drive
 	  Cartão de Memória
 	  Disco Óptico
@@ -407,7 +415,7 @@ PARTE 2 — HIERARQUIA E MEMÓRIA CACHE:
 	  SSD Externo
 	  Armazenamento em Nuvem
 
-  6.2.6 Memória Virtual:
+  6.2.6 Memória Virtual — [P]:
 	  Conceito
 	  Paginação
 	  Memória Física × Memória Virtual
@@ -417,11 +425,11 @@ PARTE 2 — HIERARQUIA E MEMÓRIA CACHE:
 
 
 
-7. Fundamentos da Memória Cache:
+7. Fundamentos da Memória Cache — [P]:
 
- 7.1 Conceitos:
+ 7.1 Conceitos — [P]:
 
-  7.1.1 Introdução:
+  7.1.1 Introdução — [P]:
 	  Definição
 	  Objetivos
 	  Funcionamento
@@ -435,7 +443,7 @@ PARTE 2 — HIERARQUIA E MEMÓRIA CACHE:
 	  Objetivos da cache na arquitetura do sistema
 	  Redução da diferença de velocidade CPU–RAM
 
-  7.1.2 Estrutura:
+  7.1.2 Estrutura — [P]:
 	  Linha
 	  Bloco
 	  Palavra
@@ -451,7 +459,7 @@ PARTE 2 — HIERARQUIA E MEMÓRIA CACHE:
 	  Granularidade da transferência
 
 
- 7.2 Operações:
+ 7.2 Operações — [P]:
 
   7.2.1 Acessos:
 	  Cache Hit
@@ -464,7 +472,7 @@ PARTE 2 — HIERARQUIA E MEMÓRIA CACHE:
 	  Fluxo de acesso à cache
 	  Propagação do acesso entre os níveis
 
-  7.2.2 Tipos de Miss:
+  7.2.2 Tipos de Miss — [P]:
 	  Cold (Compulsory)
 	  Conflict
 	  Capacity
@@ -474,11 +482,11 @@ PARTE 2 — HIERARQUIA E MEMÓRIA CACHE:
 
 
 
-8. Organização da Cache:
+8. Organização da Cache — [P]:
 
- 8.1 Níveis:
+ 8.1 Níveis — [P]:
 
-  8.1.1 Organização:
+  8.1.1 Organização — [P]:
 	  L1
 	  L2
 	  L3
@@ -487,7 +495,7 @@ PARTE 2 — HIERARQUIA E MEMÓRIA CACHE:
 	  Hierarquia multinível
 	  Compartilhamento entre níveis
 
-  8.1.2 Classificações:
+  8.1.2 Classificações — [P]:
 	  Unificada
 	  Separada
 	  Privada
@@ -500,15 +508,15 @@ PARTE 2 — HIERARQUIA E MEMÓRIA CACHE:
 	  Fluxo entre caches
 
 
- 8.2 Mapeamento:
+ 8.2 Mapeamento — [P]:
 
-  8.2.1 Direto:
+  8.2.1 Direto — [P]:
 	  Organização
 	  Funcionamento
 	  Vantagens
 	  Desvantagens
 
-  8.2.2 Associativo:
+  8.2.2 Associativo — [P]:
 	  Totalmente Associativo
 	  Associativo por Conjunto
 	  Grau de Associatividade
@@ -517,9 +525,9 @@ PARTE 2 — HIERARQUIA E MEMÓRIA CACHE:
 	  Complexidade de implementação
 
 
- 8.3 Políticas:
+ 8.3 Políticas — [P]:
 
-  8.3.1 Substituição:
+  8.3.1 Substituição — [P]:
 	  FIFO
 	  LRU
 	  LFU
@@ -528,7 +536,7 @@ PARTE 2 — HIERARQUIA E MEMÓRIA CACHE:
 	  MRU
 	  NRU
 
-  8.3.2 Escrita:
+  8.3.2 Escrita — [P]:
 	  Write Through
 	  Write Back
 	  Write Allocate
@@ -540,11 +548,11 @@ PARTE 2 — HIERARQUIA E MEMÓRIA CACHE:
 	  Consistência entre cache e memória principal
 
 
-9. Otimizações da Cache:
+9. Otimizações da Cache — [P]:
 
- 9.1 Técnicas de Otimização:
+ 9.1 Técnicas de Otimização — [P]:
 
-  9.1.1 Soluções em Hardware:
+  9.1.1 Soluções em Hardware — [P]:
 	  Prefetch
 	  Hardware Prefetcher
 	  Software Prefetch
@@ -565,7 +573,7 @@ PARTE 2 — HIERARQUIA E MEMÓRIA CACHE:
 	  Bandwidth Optimization
 	  Latency Hiding
 
-  9.1.2 Soluções em Software:
+  9.1.2 Soluções em Software — [I]:
 	  Cache Blocking
 	  Loop Tiling
 	  Loop Interchange
@@ -583,9 +591,9 @@ PARTE 2 — HIERARQUIA E MEMÓRIA CACHE:
 	  Redução de conflitos de cache
 
 
- 9.2 Problemas de Cache:
+ 9.2 Problemas de Cache — [P]:
 
-  9.2.1 Problemas de Desempenho:
+  9.2.1 Problemas de Desempenho — [P]:
 	  Cache Thrashing
 	  False Sharing
 	  Aliasing
@@ -600,7 +608,7 @@ PARTE 2 — HIERARQUIA E MEMÓRIA CACHE:
 	  Interferência entre aplicações
 	  Degradação da eficiência da hierarquia
 
-  9.2.2 Problemas de Consistência:
+  9.2.2 Problemas de Consistência — [P]:
 	  Cache Coherence
 	  Memory Consistency
 	  Write Contention
@@ -612,11 +620,11 @@ PARTE 2 — HIERARQUIA E MEMÓRIA CACHE:
 
 
 
-10. Coerência e Consistência de Cache e Memória:
+10. Coerência e Consistência de Cache e Memória — [P]:
 
- 10.1 Coerência de Cache:
+ 10.1 Coerência de Cache — [P]:
 
-  10.1.1 Conceitos:
+  10.1.1 Conceitos — [P]:
  	  Compartilhamento de Dados:
 	  Invalidação
 	  Atualização (Write Update)
@@ -626,7 +634,7 @@ PARTE 2 — HIERARQUIA E MEMÓRIA CACHE:
 	  Domínio de Coerência
 	  Coerência em Multiprocessadores
 
-  10.1.2 Protocolos de Coerência:
+  10.1.2 Protocolos de Coerência — [P]:
 	  MSI
  	  MESI
 	  MOSI
@@ -638,7 +646,7 @@ PARTE 2 — HIERARQUIA E MEMÓRIA CACHE:
 	  Snooping
 	  Broadcast
 
-  10.1.3 Implementação da Coerência:
+  10.1.3 Implementação da Coerência — [P]:
 	  Barramento Compartilhado
 	  Diretórios Centralizados
 	  Diretórios Distribuídos
@@ -649,9 +657,9 @@ PARTE 2 — HIERARQUIA E MEMÓRIA CACHE:
 	  Impacto da coerência na hierarquia
 
 
- 10.2 Consistência de Memória:
+ 10.2 Consistência de Memória — [P]:
 
-  10.2.1 Modelos de Consistência:
+  10.2.1 Modelos de Consistência — [P]:
 	  Sequential Consistency
 	  Processor Consistency
 	  Weak Consistency
@@ -666,7 +674,7 @@ PARTE 2 — HIERARQUIA E MEMÓRIA CACHE:
 	  Visibilidade das operações de memória
 	  Ordenação observável dos acessos
 
-  10.2.2 Mecanismos de Sincronização:
+  10.2.2 Mecanismos de Sincronização — [P]:
 	  Memory Barriers
 	  Memory Fences
 	  Operações Atômicas
@@ -679,7 +687,7 @@ PARTE 2 — HIERARQUIA E MEMÓRIA CACHE:
 	  Fetch-and-Add
 	  Test-and-Set
 
-  10.2.3 Problemas Relacionados:
+  10.2.3 Problemas Relacionados — [P]:
 	  Reordenação de Instruções
  	  Reordenação de Memória
 	  Visibilidade entre Processadores
@@ -689,9 +697,9 @@ PARTE 2 — HIERARQUIA E MEMÓRIA CACHE:
 
 
 
-11. Hierarquia e Cache
+11. Hierarquia e Cache — [P]:
 
- 11.1 Relação entre Hierarquia e Cache:
+ 11.1 Relação entre Hierarquia e Cache — [P]:
 	Fluxo CPU–Cache–RAM
 	Fluxo entre os níveis da hierarquia
 	Localidade de referência
@@ -712,11 +720,11 @@ PARTE 2 — HIERARQUIA E MEMÓRIA CACHE:
 PARTE 3 — MEMÓRIA PRINCIPAL E INTEGRIDADE:
 
 
-12. Memória Principal:
+12. Memória Principal — [P]:
 
- 12.1 Fundamentos:
+ 12.1 Fundamentos — [P]:
 
-  12.1.1 Conceitos Gerais:
+  12.1.1 Conceitos Gerais — [P]:
 	  Definição
 	  Objetivos
 	  Papel na hierarquia
@@ -730,7 +738,7 @@ PARTE 3 — MEMÓRIA PRINCIPAL E INTEGRIDADE:
 	  Memória principal como espaço de execução dos programas
 	  Integração com a hierarquia de memória
 
-   12.1.2 Estrutura Interna:
+   12.1.2 Estrutura Interna — [P]:
 	  Células
 	  Linhas
 	  Colunas
@@ -748,9 +756,9 @@ PARTE 3 — MEMÓRIA PRINCIPAL E INTEGRIDADE:
 	  Granularidade de acesso
 
 
- 12.2 Tecnologias RAM:
+ 12.2 Tecnologias RAM — [P]:
 
-  12.2.1 SRAM:
+  12.2.1 SRAM — [P]:
 	  Estrutura
 	  Funcionamento
 	  Célula de 6T
@@ -759,7 +767,7 @@ PARTE 3 — MEMÓRIA PRINCIPAL E INTEGRIDADE:
 	  Consumo de energia
 	  Aplicações  
 
-  12.2.2 DRAM:
+  12.2.2 DRAM — [P]:
 	  Estrutura
 	  Funcionamento
 	  Célula 1T1C
@@ -776,7 +784,7 @@ PARTE 3 — MEMÓRIA PRINCIPAL E INTEGRIDADE:
 	  Evolução das arquiteturas DRAM
 	  Impacto das gerações no desempenho do sistema
 
-  12.2.3 SDRAM:
+  12.2.3 SDRAM — [P]:
 	  SDR SDRAM
 	  Sincronização
 	  Clock
@@ -784,7 +792,7 @@ PARTE 3 — MEMÓRIA PRINCIPAL E INTEGRIDADE:
 	  Burst
 	  Banco de memória
 
-   12.2.4 DDR SDRAM:
+   12.2.4 DDR SDRAM — [P]:
 	  DDR
 	  DDR2
 	  DDR3
@@ -800,9 +808,9 @@ PARTE 3 — MEMÓRIA PRINCIPAL E INTEGRIDADE:
 	  Aplicações das diferentes tecnologias
 
 
- 12.3 Operações da Memória Principal:
+ 12.3 Operações da Memória Principal — [P]:
 
-  12.3.1 Operações Básicas:
+  12.3.1 Operações Básicas — [P]:
 	  Leitura
 	  Escrita
 	  Ciclo de memória
@@ -810,7 +818,7 @@ PARTE 3 — MEMÓRIA PRINCIPAL E INTEGRIDADE:
 	  Pré-carga
 	  Refresh
 
-  12.3.2 Organização dos Acessos:
+  12.3.2 Organização dos Acessos — [P]:
 	  Acesso Sequencial
 	  Acesso Aleatório
 	  Burst Access
@@ -821,11 +829,11 @@ PARTE 3 — MEMÓRIA PRINCIPAL E INTEGRIDADE:
 
 
 
-13. Organização da DRAM:
+13. Organização da DRAM — [P]:
 
- 13.1 Estrutura Física:
+ 13.1 Estrutura Física — [P]:
 
-  13.1.1 Organização:
+  13.1.1 Organização — [P]:
 	  Bancos
 	  Bank Groups
  	  Matrizes
@@ -838,7 +846,7 @@ PARTE 3 — MEMÓRIA PRINCIPAL E INTEGRIDADE:
 	  Organização hierárquica da DRAM
 	  Distribuição física dos bancos
 
-  13.1.2 Operações:
+  13.1.2 Operações — [P]:
 	  Activate
 	  Read
 	  Write
@@ -850,9 +858,9 @@ PARTE 3 — MEMÓRIA PRINCIPAL E INTEGRIDADE:
 	  Per Bank Refresh
 
 
- 13.2 Temporização:
+ 13.2 Temporização — [P]:
 
-  13.2.1 Timings:
+  13.2.1 Timings — [P]:
 	  CAS Latency (CL)
 	  RAS
 	  tRCD
@@ -867,7 +875,7 @@ PARTE 3 — MEMÓRIA PRINCIPAL E INTEGRIDADE:
 	  Influência dos timings na latência
 	  Compromisso entre frequência e temporização
 
-  13.2.2 Burst:
+  13.2.2 Burst — [P]:
 	  Burst Length
 	  Burst Chop
 	  Prefetch
@@ -877,16 +885,16 @@ PARTE 3 — MEMÓRIA PRINCIPAL E INTEGRIDADE:
 	  Closed Row Policy
 
 
- 13.3 Arquitetura da DRAM:
+ 13.3 Arquitetura da DRAM — [P]:
 
-  13.3.1 Organização:
+  13.3.1 Organização — [P]:
 	  Organização por Bancos
 	  Organização por Ranks
 	  Organização por Canais
 	  Organização por Módulos
 	  Paralelismo Interno
 
-  13.3.2 Eficiência
+  13.3.2 Eficiência — [P]:
 	  Localidade de Linha
 	  Row Buffer Hits
 	  Row Buffer Misses
@@ -896,9 +904,9 @@ PARTE 3 — MEMÓRIA PRINCIPAL E INTEGRIDADE:
 	  Localidade de acesso
 
 
-14. Controladores de Memória
+14. Controladores de Memória — [P]:
 
- 14.1 Fundamentos: 
+ 14.1 Fundamentos — [P]: 
 	Conceitos
 	Memory Controller
 	Objetivos
@@ -911,9 +919,9 @@ PARTE 3 — MEMÓRIA PRINCIPAL E INTEGRIDADE:
 	Integração entre CPU, cache e memória principal
 
 
- 14.2 Gerenciamento:
+ 14.2 Gerenciamento — [P]:
 
-  14.2.1 Escalonamento:
+  14.2.1 Escalonamento — [P]:
 	  Memory Scheduling
 	  FCFS
 	  FR-FCFS
@@ -923,7 +931,7 @@ PARTE 3 — MEMÓRIA PRINCIPAL E INTEGRIDADE:
 	  Justiça no atendimento das requisições
 	  Otimização da utilização da memória
 
-  14.2.2 Paralelismo:
+  14.2.2 Paralelismo — [P]:
 	  Channel Interleaving
 	  Bank Interleaving
 	  Rank Interleaving
@@ -933,16 +941,16 @@ PARTE 3 — MEMÓRIA PRINCIPAL E INTEGRIDADE:
 	  Maximização da largura de banda
 
 
- 14.3 Funções do Controlador:
+ 14.3 Funções do Controlador — [P]:
 
-  14.3.1 Gerenciamento:
+  14.3.1 Gerenciamento — [P]:
 	  Tradução de Endereços
 	  Gerenciamento de Refresh
 	  Gerenciamento de Timings
 	  Gerenciamento de Filas
 	  Reordenação de Acessos
 
-  14.3.2 Otimizações:
+  14.3.2 Otimizações — [P]:
  	  Row Buffer Management
 	  Open Page Policy
 	  Closed Page Policy
@@ -953,18 +961,18 @@ PARTE 3 — MEMÓRIA PRINCIPAL E INTEGRIDADE:
 
 
 
-15. Módulos de Memória:
+15. Módulos de Memória — [I]:
 
- 15.1 Tipos:
+ 15.1 Tipos — [I]:
 
-  15.1.1 Formatos:
+  15.1.1 Formatos — [V]:
 	  SIMM
 	  DIMM
 	  SO-DIMM
 	  MicroDIMM
 	  CAMM
 
-  15.1.2 Classificações:
+  15.1.2 Classificações — [I]:
 	  UDIMM
 	  RDIMM
 	  LRDIMM
@@ -974,9 +982,9 @@ PARTE 3 — MEMÓRIA PRINCIPAL E INTEGRIDADE:
 	  Unbuffered
 
 
- 15.2 Organização:
+ 15.2 Organização — [P]:
 
-  15.2.1 Estrutura:
+  15.2.1 Estrutura — [P]:
 	  Chips
 	  Ranks
 	  Bancos
@@ -986,7 +994,7 @@ PARTE 3 — MEMÓRIA PRINCIPAL E INTEGRIDADE:
 	  Organização lógica dos módulos
 	  Mapeamento entre módulos e canais
 
-  15.2.2 Compatibilidade:
+  15.2.2 Compatibilidade — [I]:
 	  Capacidade
 	  Frequência
 	  Latência
@@ -994,16 +1002,16 @@ PARTE 3 — MEMÓRIA PRINCIPAL E INTEGRIDADE:
 	  Geração DDR
 
 
- 15.3 Desempenho:
+ 15.3 Desempenho — [P]:
 
-  15.3.1 Características:
+  15.3.1 Características — [P]:
 	  Frequência
 	  Clock
 	  Data Rate
 	  Largura do Barramento
 	  Bandwidth
 
-  15.3.2 Configurações:
+  15.3.2 Configurações — [P]:
 	  Single Channel
 	  Dual Channel
 	  Triple Channel
@@ -1015,26 +1023,26 @@ PARTE 3 — MEMÓRIA PRINCIPAL E INTEGRIDADE:
 
 
 
-16. Integridade e Confiabilidade:
+16. Integridade e Confiabilidade — [P]:
 
- 16.1 Detecção de Erros:
+ 16.1 Detecção de Erros — [P]:
 
-  16.1.1 Técnicas:
+  16.1.1 Técnicas — [P]:
 	  Bit de Paridade
 	  Paridade Par
 	  Paridade Ímpar
 	  Checksum
 	  CRC
 
-  16.1.2 Classificação:
+  16.1.2 Classificação — [I]:
 	  Detecção de Erro Simples
 	  Detecção de Erros Múltiplos
 	  Limitações
 
 
- 16.2 Correção de Erros:
+ 16.2 Correção de Erros — [P]:
 
-  16.2.1 Técnicas:
+  16.2.1 Técnicas — [P]:
 	  ECC
 	  Código de Hamming
 	  SEC
@@ -1043,16 +1051,16 @@ PARTE 3 — MEMÓRIA PRINCIPAL E INTEGRIDADE:
 	  Lockstep
 	  ECC Avançado
 
-  16.2.2 Funcionamento:
+  16.2.2 Funcionamento — [P]:
  	  Geração dos Bits ECC
 	  Correção Automática
 	  Detecção de Múltiplos Erros
 	  Relatórios de Erro
 
 
- 16.3 Confiabilidade:
+ 16.3 Confiabilidade — [P]:
 
-  16.3.1 Recursos:
+  16.3.1 Recursos — [P]:
 	  RAS
 	  Soft Errors
 	  Hard Errors
@@ -1063,7 +1071,7 @@ PARTE 3 — MEMÓRIA PRINCIPAL E INTEGRIDADE:
 	  Memory Mirroring
 	  Hot Add Memory
 
-  16.3.2 Disponibilidade:
+  16.3.2 Disponibilidade — [I]:
 	  Failover
 	  Tolerância a Falhas
 	  Monitoramento de Erros
@@ -1073,11 +1081,11 @@ PARTE 3 — MEMÓRIA PRINCIPAL E INTEGRIDADE:
 
 
 
-17. Avaliação da Memória Principal:
+17. Avaliação da Memória Principal — [P]:
 
- 17.1 Métricas:
+ 17.1 Métricas — [P]:
 
-  17.1.1 Desempenho:
+  17.1.1 Desempenho — [P]:
 	  Latência
 	  Throughput
 	  Bandwidth
@@ -1090,7 +1098,7 @@ PARTE 3 — MEMÓRIA PRINCIPAL E INTEGRIDADE:
 	  Eficiência da utilização da memória
 	  Escalabilidade da memória principal
 
-  17.1.2 Indicadores:
+  17.1.2 Indicadores — [P]:
 	  IPC Relacionado à Memória
 	  AMAT
 	  Row Buffer Hit Rate
@@ -1100,9 +1108,9 @@ PARTE 3 — MEMÓRIA PRINCIPAL E INTEGRIDADE:
 	  Aproveitamento da largura de banda
 
 
- 17.2 Otimizações:
+ 17.2 Otimizações — [P]:
 
-  17.2.1 Hardware:
+  17.2.1 Hardware — [P]:
 	  Balanceamento de Canais
 	  Balanceamento de Bancos
 	  Balanceamento de Ranks
@@ -1112,7 +1120,7 @@ PARTE 3 — MEMÓRIA PRINCIPAL E INTEGRIDADE:
 	  Balanceamento entre latência e largura de banda
 	  Otimização do paralelismo interno
 
-  17.2.2 Configuração:
+  17.2.2 Configuração — [I]:
 	  Overclock 
 	  Underclock
 	  Undervolting
@@ -1128,11 +1136,11 @@ PARTE 3 — MEMÓRIA PRINCIPAL E INTEGRIDADE:
 PARTE 4 — MEMÓRIAS NÃO VOLÁTEIS E ARMAZENAMENTO:
 
 
-18. Memórias Não Voláteis:
+18. Memórias Não Voláteis — [P]:
 
-18.1 Fundamentos das Memórias Não Voláteis:
+18.1 Fundamentos das Memórias Não Voláteis — [P]:
 
- 18.1.1 Conceitos Gerais:
+ 18.1.1 Conceitos Gerais — [P]:
 	  Definição
 	  Persistência
 	  Volatilidade versus não volatilidade
@@ -1146,7 +1154,7 @@ PARTE 4 — MEMÓRIAS NÃO VOLÁTEIS E ARMAZENAMENTO:
 	  Integração com a hierarquia de memória
 	  Compromisso entre persistência e desempenho
 
-  18.1.2 Classificação:
+  18.1.2 Classificação — [I]:
 	  ROM
 	  PROM
 	  EPROM
@@ -1158,16 +1166,16 @@ PARTE 4 — MEMÓRIAS NÃO VOLÁTEIS E ARMAZENAMENTO:
 	  Memórias persistentes na memória principal
 
 
- 18.2 Tecnologias de Memórias Não Voláteis:
+ 18.2 Tecnologias de Memórias Não Voláteis — [P]:
 
-  18.2.1 ROM e Derivadas:
+  18.2.1 ROM e Derivadas — [I]:
 	  Mask ROM
 	  PROM
 	  EPROM
 	  EEPROM
 	  OTP ROM
 
-  18.2.2 Flash Memory:
+  18.2.2 Flash Memory — [P]:
 	  NOR Flash
 	  NAND Flash
 	  Planar NAND
@@ -1181,7 +1189,7 @@ PARTE 4 — MEMÓRIAS NÃO VOLÁTEIS E ARMAZENAMENTO:
 	  Compromissos entre densidade, desempenho e durabilidade
 	  Critérios de utilização das tecnologias Flash
 
-  18.2.3 Organização da Flash:
+  18.2.3 Organização da Flash — [P]:
 	  Página
 	  Bloco
 	  Plano
@@ -1191,7 +1199,7 @@ PARTE 4 — MEMÓRIAS NÃO VOLÁTEIS E ARMAZENAMENTO:
 	  Operações de Escrita
 	  Operações de Apagamento
 
-  18.2.4 Memórias Emergentes:
+  18.2.4 Memórias Emergentes — [I]:
 	  MRAM
 	  STT-MRAM
 	  FRAM
@@ -1204,9 +1212,9 @@ PARTE 4 — MEMÓRIAS NÃO VOLÁTEIS E ARMAZENAMENTO:
 	  Aplicações na hierarquia de memória
 
 
- 18.3 Características das Memórias Não Voláteis:
+ 18.3 Características das Memórias Não Voláteis — [P]:
 
-  18.3.1 Desempenho:
+  18.3.1 Desempenho — [P]:
 	  Latência
 	  Throughput
 	  Tempo de Leitura
@@ -1215,7 +1223,7 @@ PARTE 4 — MEMÓRIAS NÃO VOLÁTEIS E ARMAZENAMENTO:
 	  Influência na hierarquia de memória
 	  Comparação com a memória principal
 
-  18.3.2 Confiabilidade:
+  18.3.2 Confiabilidade — [I]:
 	  Endurance
 	  Retenção de Dados
 	  Wear-Out
@@ -1224,11 +1232,11 @@ PARTE 4 — MEMÓRIAS NÃO VOLÁTEIS E ARMAZENAMENTO:
 
 
 
-19. Dispositivos de Armazenamento
+19. Dispositivos de Armazenamento — [P]:
 
- 19.1 Armazenamento Magnético:
+ 19.1 Armazenamento Magnético — [P]:
 
-  19.1.1 HDD:
+  19.1.1 HDD — [P]:
 	  Estrutura
 	  Pratos
 	  Trilhas
@@ -1239,7 +1247,7 @@ PARTE 4 — MEMÓRIAS NÃO VOLÁTEIS E ARMAZENAMENTO:
 	  Motor do Spindle
 	  Cache Interno
 
-  19.1.2 Funcionamento:
+  19.1.2 Funcionamento — [P]:
 	  Leitura
 	  Escrita
 	  Seek Time
@@ -1251,9 +1259,9 @@ PARTE 4 — MEMÓRIAS NÃO VOLÁTEIS E ARMAZENAMENTO:
 	  Integração com o subsistema de memória
 
 
- 19.2 Armazenamento em Estado Sólido:
+ 19.2 Armazenamento em Estado Sólido — [P]:
 
-  19.2.1 SSD:
+  19.2.1 SSD — [P]:
 	  Estrutura
 	  Controladora
 	  NAND Flash
@@ -1262,7 +1270,7 @@ PARTE 4 — MEMÓRIAS NÃO VOLÁTEIS E ARMAZENAMENTO:
 	  SLC Cache
 	  Flash Translation Layer (FTL)
 
-  19.2.2 Gerenciamento:
+  19.2.2 Gerenciamento — [P]:
 	  Wear Leveling
 	  Garbage Collection
 	  Over-Provisioning
@@ -1275,15 +1283,15 @@ PARTE 4 — MEMÓRIAS NÃO VOLÁTEIS E ARMAZENAMENTO:
 	  Influência da controladora no desempenho
 
 
- 19.3 Organização Interna dos Dispositivos:
+ 19.3 Organização Interna dos Dispositivos — [P]:
 
-  19.3.1 HDD:
+  19.3.1 HDD — [I]:
 	  Cache
 	  Buffer
 	  Firmware
 	  Tabelas de Defeitos
 
-  19.3.2 SSD:
+  19.3.2 SSD — [P]:
 	  Controller
 	  Canais
 	  Dies
@@ -1295,11 +1303,11 @@ PARTE 4 — MEMÓRIAS NÃO VOLÁTEIS E ARMAZENAMENTO:
 
 
 
-20. Interfaces de Armazenamento:
+20. Interfaces de Armazenamento — [I]:
 
- 20.1 Interfaces Internas:
+ 20.1 Interfaces Internas — [I]:
 
-  20.1.1 Padrões:
+  20.1.1 Padrões — [I]:
 	  PATA
 	  SATA
 	  SAS
@@ -1309,7 +1317,7 @@ PARTE 4 — MEMÓRIAS NÃO VOLÁTEIS E ARMAZENAMENTO:
 	  U.2
 	  EDSFF
 
-  20.1.2 Protocolos:
+  20.1.2 Protocolos — [P]:
 	  ATA
 	  AHCI
 	  NVMe
@@ -1324,16 +1332,16 @@ PARTE 4 — MEMÓRIAS NÃO VOLÁTEIS E ARMAZENAMENTO:
 	  Eficiência dos protocolos de acesso
 
 
- 20.2 Interfaces Externas:
+ 20.2 Interfaces Externas — [I]:
 
-  20.2.1 Conectividade:
+  20.2.1 Conectividade — [V]:
 	  USB
 	  Thunderbolt
 	  eSATA
 	  FireWire (IEEE 1394)
 	  Network Storage
 
-  20.2.2 Armazenamento em Rede:
+  20.2.2 Armazenamento em Rede — [I]:
 	  NAS
 	  SAN
 	  iSCSI
@@ -1344,11 +1352,11 @@ PARTE 4 — MEMÓRIAS NÃO VOLÁTEIS E ARMAZENAMENTO:
 
 
 
-21. Organização dos Dados em Armazenamento:
+21. Organização dos Dados em Armazenamento — [P]:
 
- 21.1 Estruturas Lógicas:
+ 21.1 Estruturas Lógicas — [P]:
 
-  21.1.1 Organização:
+  21.1.1 Organização — [I]:
 	  Blocos
 	  Setores Lógicos
 	  Setores Físicos
@@ -1358,7 +1366,7 @@ PARTE 4 — MEMÓRIAS NÃO VOLÁTEIS E ARMAZENAMENTO:
 	  Volumes
 	  Espaço Livre
 
-  21.1.2 Endereçamento:
+  21.1.2 Endereçamento — [P]:
 	  LBA
 	  CHS (Histórico)
 	  Mapeamento lógico-físico
@@ -1368,15 +1376,15 @@ PARTE 4 — MEMÓRIAS NÃO VOLÁTEIS E ARMAZENAMENTO:
 	  Mapeamento entre memória principal e armazenamento
 
 
- 21.2 Organização Física:
+ 21.2 Organização Física — [P]:
 
-  21.2.1 HDD:
+  21.2.1 HDD — [I]:
 	  Trilhas
 	  Setores
 	  Cilindros
 	  Zonas
 
-  21.2.2 SSD:
+  21.2.2 SSD — [P]:
 	  Páginas
 	  Blocos
 	  Planos
@@ -1386,15 +1394,15 @@ PARTE 4 — MEMÓRIAS NÃO VOLÁTEIS E ARMAZENAMENTO:
 	  Distribuição das operações entre canais
 
 
- 21.3 Gerenciamento dos Dados:
+ 21.3 Gerenciamento dos Dados — [P]:
 
-  21.3.1 Alocação:
+  21.3.1 Alocação — [I]:
 	  Contígua
 	  Encadeada
 	  Indexada
 	  Extents
 
-  21.3.2 Fragmentação:
+  21.3.2 Fragmentação — [P]:
 	  Fragmentação Interna
 	  Fragmentação Externa
 	  Desfragmentação
@@ -1404,11 +1412,11 @@ PARTE 4 — MEMÓRIAS NÃO VOLÁTEIS E ARMAZENAMENTO:
 
 
  
-22. Avaliação dos Sistemas de Armazenamento:
+22. Avaliação dos Sistemas de Armazenamento — [P]:
 
- 22.1 Desempenho:
+ 22.1 Desempenho — [P]:
 
-  22.1.1 Métricas:
+  22.1.1 Métricas — [P]:
 	  Latência
 	  IOPS
 	  Throughput
@@ -1420,7 +1428,7 @@ PARTE 4 — MEMÓRIAS NÃO VOLÁTEIS E ARMAZENAMENTO:
 	  Eficiência da utilização da interface
 	  Escalabilidade do subsistema de armazenamento
 
-  22.1.2 Gargalos:
+  22.1.2 Gargalos — [P]:
 	  Gargalos de Interface
 	  Gargalos da Controladora
 	  Gargalos da NAND
@@ -1430,9 +1438,9 @@ PARTE 4 — MEMÓRIAS NÃO VOLÁTEIS E ARMAZENAMENTO:
 	  Balanceamento entre interface e dispositivo
 
 
- 22.2 Confiabilidade:
+ 22.2 Confiabilidade — [P]:
 
-  22.2.1 Métricas:
+  22.2.1 Métricas — [I]:
 	  MTBF
 	  AFR
 	  TBW
@@ -1441,7 +1449,7 @@ PARTE 4 — MEMÓRIAS NÃO VOLÁTEIS E ARMAZENAMENTO:
 	  Retenção de Dados
 	  Durabilidade
 
-  22.2.2 Proteção de Dados:
+  22.2.2 Proteção de Dados — [P]:
 	  ECC
 	  RAID (Introdução)
 	  Power Loss Protection
@@ -1451,9 +1459,9 @@ PARTE 4 — MEMÓRIAS NÃO VOLÁTEIS E ARMAZENAMENTO:
 	  Continuidade operacional
 
 
- 22.3 Otimização:
+ 22.3 Otimização — [P]:
 
-  22.3.1 SSD:
+  22.3.1 SSD — [P]:
 	  TRIM
 	  Garbage Collection
 	  Wear Leveling
@@ -1462,7 +1470,7 @@ PARTE 4 — MEMÓRIAS NÃO VOLÁTEIS E ARMAZENAMENTO:
 	  Otimização da utilização dos canais internos
 	  Balanceamento das operações de leitura e escrita
 
-  22.3.2 HDD:
+  22.3.2 HDD — [I]:
 	  Cache
 	  NCQ
 	  Desfragmentação
