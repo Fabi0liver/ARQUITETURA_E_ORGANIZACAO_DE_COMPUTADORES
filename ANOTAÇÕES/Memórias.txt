@@ -328,7 +328,7 @@ PARTE 1 — FUNDAMENTOS E ORGANIZAÇÃO DAS MEMÓRIAS:
 
 
 
-* PARTE 2 — HIERARQUIA E MEMÓRIA CACHE:
+PARTE 2 — HIERARQUIA E MEMÓRIA CACHE:
 
 
 6. Hierarquia de Memória:
@@ -340,6 +340,9 @@ PARTE 1 — FUNDAMENTOS E ORGANIZAÇÃO DAS MEMÓRIAS:
 	  Objetivos
 	  Princípio da localidade
 	  Balanceamento entre Custo, Capacidade e Desempenho
+	  Transparência da hierarquia para o processador
+	  Exploração da localidade na arquitetura do sistema
+	  Fluxo hierárquico dos acessos à memória
 
   6.1.2 Princípios de Localidade:
 	  Localidade Temporal
@@ -357,6 +360,8 @@ PARTE 1 — FUNDAMENTOS E ORGANIZAÇÃO DAS MEMÓRIAS:
 	  Memory Wall
 	  CPI relacionado à memória
 	  Gargalo de largura de banda
+	  Latência efetiva da hierarquia
+	  Escalabilidade da hierarquia de memória
 
 
  6.2 Níveis da Hierarquia:
@@ -375,6 +380,8 @@ PARTE 1 — FUNDAMENTOS E ORGANIZAÇÃO DAS MEMÓRIAS:
 	  Linhas de Cache
 	  Blocos de Cache
 	  Relação com a CPU
+	  Papel entre CPU e memória principal
+	  Transparência para o software
 
   6.2.3 Memória Principal:
 	  Papel
@@ -382,6 +389,8 @@ PARTE 1 — FUNDAMENTOS E ORGANIZAÇÃO DAS MEMÓRIAS:
 	  RAM Estática (SRAM)
 	  RAM Dinâmica (DRAM)
 	  Relação com a Cache
+	  Papel como memória de trabalho do sistema
+	  Integração com a hierarquia
 
   6.2.4 Memória Secundária:
 	  Papel
@@ -404,6 +413,7 @@ PARTE 1 — FUNDAMENTOS E ORGANIZAÇÃO DAS MEMÓRIAS:
 	  Memória Física × Memória Virtual
 	  Swap
 	  Falta de Página (Page Fault)
+	  Integração com a hierarquia de memória
 
 
 
@@ -421,6 +431,9 @@ PARTE 1 — FUNDAMENTOS E ORGANIZAÇÃO DAS MEMÓRIAS:
 	  Localidade Espacial
 	  Localidade Sequencial
 	  Papel da Cache na Hierarquia
+	  Transparência da cache
+	  Objetivos da cache na arquitetura do sistema
+	  Redução da diferença de velocidade CPU–RAM
 
   7.1.2 Estrutura:
 	  Linha
@@ -433,6 +446,9 @@ PARTE 1 — FUNDAMENTOS E ORGANIZAÇÃO DAS MEMÓRIAS:
 	  Validade (Valid Bit)
 	  Bit Sujo (Dirty Bit)
 	  Bits de Estado
+	  Endereço da linha de cache
+	  Organização dos conjuntos
+	  Granularidade da transferência
 
 
  7.2 Operações:
@@ -445,6 +461,8 @@ PARTE 1 — FUNDAMENTOS E ORGANIZAÇÃO DAS MEMÓRIAS:
 	  Hit Rate
 	  Miss Rate
 	  AMAT
+	  Fluxo de acesso à cache
+	  Propagação do acesso entre os níveis
 
   7.2.2 Tipos de Miss:
 	  Cold (Compulsory)
@@ -466,6 +484,8 @@ PARTE 1 — FUNDAMENTOS E ORGANIZAÇÃO DAS MEMÓRIAS:
 	  L3
 	  L4
 	  Last Level Cache (LLC)
+	  Hierarquia multinível
+	  Compartilhamento entre níveis
 
   8.1.2 Classificações:
 	  Unificada
@@ -476,6 +496,8 @@ PARTE 1 — FUNDAMENTOS E ORGANIZAÇÃO DAS MEMÓRIAS:
 	  Exclusiva
 	  Não inclusiva
 	  Não Exclusiva
+	  Organização multinível
+	  Fluxo entre caches
 
 
  8.2 Mapeamento:
@@ -491,6 +513,8 @@ PARTE 1 — FUNDAMENTOS E ORGANIZAÇÃO DAS MEMÓRIAS:
 	  Associativo por Conjunto
 	  Grau de Associatividade
 	  Comparação entre Métodos
+	  Impacto da associatividade no desempenho
+	  Complexidade de implementação
 
 
  8.3 Políticas:
@@ -512,6 +536,8 @@ PARTE 1 — FUNDAMENTOS E ORGANIZAÇÃO DAS MEMÓRIAS:
 	  Write Combining
 	  Write Buffering
           Read Around
+	  Impacto das políticas de escrita na hierarquia
+	  Consistência entre cache e memória principal
 
 
 9. Otimizações da Cache:
@@ -535,6 +561,9 @@ PARTE 1 — FUNDAMENTOS E ORGANIZAÇÃO DAS MEMÓRIAS:
 	  Critical Word First
 	  Early Restart
 	  Multi-Banked Cache
+	  Cache Hierarchy Optimization
+	  Bandwidth Optimization
+	  Latency Hiding
 
   9.1.2 Soluções em Software:
 	  Cache Blocking
@@ -550,6 +579,8 @@ PARTE 1 — FUNDAMENTOS E ORGANIZAÇÃO DAS MEMÓRIAS:
 	  Array Padding
 	  Software Prefetching
 	  Page Coloring
+	  Otimização da localidade de referência
+	  Redução de conflitos de cache
 
 
  9.2 Problemas de Cache:
@@ -566,14 +597,18 @@ PARTE 1 — FUNDAMENTOS E ORGANIZAÇÃO DAS MEMÓRIAS:
 	  Cache Line Contention
 	  TLB Misses
 	  Ping-Pong Effect
+	  Interferência entre aplicações
+	  Degradação da eficiência da hierarquia
 
   9.2.2 Problemas de Consistência:
 	  Cache Coherence
 	  Memory Consistency
 	  Write Contention
 	  Race Conditions
-	  Deadlock (Introdução)
-	  Livelock (Introdução)
+	  Deadlock 
+	  Livelock 
+	  Escalabilidade da coerência
+	  Impacto da consistência no desempenho
 
 
 
@@ -610,6 +645,8 @@ PARTE 1 — FUNDAMENTOS E ORGANIZAÇÃO DAS MEMÓRIAS:
 	  Escalabilidade dos Protocolos
 	  Filtragem de Snooping
 	  Interconexões Coerentes
+	  Escalabilidade em sistemas multinúcleo
+	  Impacto da coerência na hierarquia
 
 
  10.2 Consistência de Memória:
@@ -626,6 +663,8 @@ PARTE 1 — FUNDAMENTOS E ORGANIZAÇÃO DAS MEMÓRIAS:
 	  Relaxed Memory Model (RMO)
 	  Acquire-Release
 	  Sequentially Consistent Atomics
+	  Visibilidade das operações de memória
+	  Ordenação observável dos acessos
 
   10.2.2 Mecanismos de Sincronização:
 	  Memory Barriers
@@ -663,10 +702,14 @@ PARTE 1 — FUNDAMENTOS E ORGANIZAÇÃO DAS MEMÓRIAS:
 	AMAT na hierarquia
 	Memory Wall
 	Estudos de caso
+	Fluxo completo de um acesso à memória
+	Integração entre cache, memória principal e memória virtual
+	Escalabilidade da hierarquia
+	Influência da hierarquia na arquitetura multicore
 
 
 
-* PARTE 3 — MEMÓRIA PRINCIPAL E INTEGRIDADE
+PARTE 3 — MEMÓRIA PRINCIPAL E INTEGRIDADE:
 
 
 12. Memória Principal:
