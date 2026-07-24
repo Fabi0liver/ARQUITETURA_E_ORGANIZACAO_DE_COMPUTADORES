@@ -1472,7 +1472,7 @@ PARTE 4 — MEMÓRIAS NÃO VOLÁTEIS E ARMAZENAMENTO:
 
 
 
-* PARTE 5 — MEMÓRIA VIRTUAL E SISTEMAS ESPECIALIZADOS:
+PARTE 5 — MEMÓRIA VIRTUAL E SISTEMAS ESPECIALIZADOS:
 
 
 23. Memória Virtual:
@@ -1490,6 +1490,9 @@ PARTE 4 — MEMÓRIAS NÃO VOLÁTEIS E ARMAZENAMENTO:
 	  Tradução de Endereços
 	  Transparência para os Processos
 	  Relação com a Memória Principal
+	  Papel na arquitetura do sistema
+	  Integração com a hierarquia de memória
+	  Transparência da memória virtual para os programas
 
   23.1.2 Benefícios:
 	  Isolamento
@@ -1500,6 +1503,8 @@ PARTE 4 — MEMÓRIAS NÃO VOLÁTEIS E ARMAZENAMENTO:
 	  Multiprogramação
 	  Relocação
 	  Eficiência da Memória
+	  Escalabilidade do espaço de memória
+	  Abstração da memória física
 
 
  23.2 Paginação:
@@ -1517,6 +1522,8 @@ PARTE 4 — MEMÓRIAS NÃO VOLÁTEIS E ARMAZENAMENTO:
 	  Bit de Presença
 	  Bit de Modificação (Dirty)
 	  Bit de Referência (Accessed)
+	  Granularidade da paginação
+	  Localidade na paginação
 
   23.2.2 Políticas:
 	  FIFO
@@ -1551,6 +1558,8 @@ PARTE 4 — MEMÓRIAS NÃO VOLÁTEIS E ARMAZENAMENTO:
 	  Controle de acesso
 	  Relocação
 	  Tradução Virtual–Física
+	  Papel da MMU na arquitetura do sistema
+	  Integração entre CPU, TLB e memória principal
 
   23.4.2 TLB:
 	  Estrutura
@@ -1561,6 +1570,8 @@ PARTE 4 — MEMÓRIAS NÃO VOLÁTEIS E ARMAZENAMENTO:
 	  Flush
 	  Shootdown
 	  Multi-Level TLB
+	  Papel do TLB no desempenho da memória
+	  Integração com a hierarquia de memória
 
 
  23.5 Implementação da Memória Virtual:
@@ -1577,6 +1588,8 @@ PARTE 4 — MEMÓRIAS NÃO VOLÁTEIS E ARMAZENAMENTO:
 	  Shared Pages
 	  Copy-on-Write
 	  Zero Page
+	  Redução da sobrecarga de tradução
+	  Otimização da utilização da memória física
 
 
 
@@ -1595,6 +1608,8 @@ PARTE 4 — MEMÓRIAS NÃO VOLÁTEIS E ARMAZENAMENTO:
 	  Slab Allocator
 	  Pool Allocator
 	  Bitmap Allocation
+	  Eficiência da utilização da memória
+	  Escalabilidade dos mecanismos de alocação
 
   24.1.2 Fragmentação:
 	  Fragmentação Interna
@@ -1621,6 +1636,8 @@ PARTE 4 — MEMÓRIAS NÃO VOLÁTEIS E ARMAZENAMENTO:
 	  Arquivo de Swap
 	  Política de Swap
 	  Thrashing
+	  Impacto da memória secundária no desempenho
+	  Integração entre RAM e armazenamento
 
 
  24.3 Gerenciamento Avançado:
@@ -1631,12 +1648,16 @@ PARTE 4 — MEMÓRIAS NÃO VOLÁTEIS E ARMAZENAMENTO:
 	  Compressão de Memória
 	  Memory Ballooning
 	  Deduplicação de Páginas
+	  Balanceamento entre desempenho e utilização da memória
+	  Eficiência da memória virtual
 
   24.3.2 Monitoramento:
 	  Uso da Memória
 	  Working Set
 	  Resident Set Size (RSS)
 	  Virtual Memory Size (VSZ)
+	  Eficiência da utilização da memória
+	  Comportamento dos acessos
 
 
 
@@ -1652,6 +1673,8 @@ PARTE 4 — MEMÓRIAS NÃO VOLÁTEIS E ARMAZENAMENTO:
 	  DSM
 	  SMP
 	  AMP
+	  Organização do espaço de memória
+	  Escalabilidade dos modelos
 
   25.1.2 Interconexão:
 	  Barramento Compartilhado
@@ -1659,6 +1682,8 @@ PARTE 4 — MEMÓRIAS NÃO VOLÁTEIS E ARMAZENAMENTO:
 	  Ring
 	  Mesh
 	  NoC 
+	  Impacto da interconexão na latência
+	  Escalabilidade da comunicação entre memórias
 
 
  25.2 Memória Compartilhada:
@@ -1678,6 +1703,8 @@ PARTE 4 — MEMÓRIAS NÃO VOLÁTEIS E ARMAZENAMENTO:
 	  Migração de Dados
 	  Afinidade de Memória
 	  Afinidade de CPU
+	  Localidade de memória
+	  Escalabilidade do acesso compartilhado
 
 
  25.3 Memória Distribuída:
@@ -1696,6 +1723,8 @@ PARTE 4 — MEMÓRIAS NÃO VOLÁTEIS E ARMAZENAMENTO:
 	  Throughput
 	  Balanceamento de Carga
 	  Particionamento de Dados
+	  Distribuição do espaço de memória
+	  Eficiência do acesso remoto
 
 
 
@@ -1714,12 +1743,16 @@ PARTE 4 — MEMÓRIAS NÃO VOLÁTEIS E ARMAZENAMENTO:
 	  PSO
 	  RMO
 	  Memory Fences
+	  Visibilidade global das operações
+	  Ordenação observável da memória
 
   26.1.2 Ordenação:
 	  Reordenação de Instruções
 	  Reordenação de Memória
 	  Dependências
 	  Visibilidade
+	  Dependências de memória
+	  Sincronização entre núcleos
 
 
  26.2 Operações Atômicas:
@@ -1742,6 +1775,8 @@ PARTE 4 — MEMÓRIAS NÃO VOLÁTEIS E ARMAZENAMENTO:
 	  Barrier
 	  Operações Lock-Free
 	  Wait-Free
+	  Escalabilidade dos mecanismos de sincronização
+	  Eficiência em arquiteturas multicore
 
 
  26.3 Problemas de Concorrência:
@@ -1757,6 +1792,8 @@ PARTE 4 — MEMÓRIAS NÃO VOLÁTEIS E ARMAZENAMENTO:
 	  Detectores de Corrida
 	  Profilers
 	  Análise de Concorrência
+	  Avaliação da eficiência da sincronização
+	  Identificação de gargalos de memória
 
 
 
