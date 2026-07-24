@@ -99,7 +99,7 @@ Parte 1 — Fundamentos dos Registradores:
 
 2. Fundamentos dos Registradores — [P]:
 
- 2.1 Organização dos Dados:
+ 2.1 Organização dos Dados — [P] :
 
   2.1.1 Unidade de Armazenamento:
 	  Bit
@@ -183,7 +183,7 @@ Parte 1 — Fundamentos dos Registradores:
 
 3. Organização Geral dos Registradores — [P]:
 
- 3.1 Organização Funcional — [P]:
+ 3.1 Organização Funcional  — [P]:
 
   3.1.1 Organização por Finalidade:
 	  Registradores de dados
@@ -259,7 +259,7 @@ Parte 1 — Fundamentos dos Registradores:
 
 4. Classificação dos Registradores — [I]:
 
- 4.1 Classificação Quanto à Função:
+ 4.1 Classificação Quanto à Função — [I]:
 
   4.1.1 Registradores de Dados:
 	  Operandos
@@ -299,7 +299,7 @@ Parte 1 — Fundamentos dos Registradores:
 	  Apoio ao datapath
 
  
- 4.2 Classificação Quanto ao Uso:
+ 4.2 Classificação Quanto ao Uso — [I]:
 
   4.2.1 Registradores Visíveis ao Programador:
 	  Registradores arquiteturais
@@ -320,7 +320,7 @@ Parte 1 — Fundamentos dos Registradores:
 	  Registradores auxiliares
 
 
- 4.3 Classificação Quanto à Especialização:
+ 4.3 Classificação Quanto à Especialização — [I]:
 
   4.3.1 Registradores de Propósito Geral:
 	  Flexibilidade
@@ -344,7 +344,7 @@ Parte 1 — Fundamentos dos Registradores:
 	  Desempenho
 	  Configuração
 
-  4.3.4 Classificação quanto à Participação no Processamento:
+  4.3.4 Classificação quanto à Participação no Processamento — [I]:
 	  Registradores utilizados na busca de instruções
 	  Registradores utilizados na execução
 	  Registradores utilizados no controle
@@ -357,7 +357,7 @@ Parte 2 — Registradores Fundamentais da CPU:
 
 5. Registradores de Propósito Geral — [P]:
 
- 5.1 Fundamentos:
+ 5.1 Fundamentos — [P] :
 
   5.1.1 Conceitos:
 	  Definição
@@ -381,7 +381,7 @@ Parte 2 — Registradores Fundamentais da CPU:
 	  Compartilhamento
 
 
- 5.2 Utilização:
+ 5.2 Utilização — [P]:
 
   5.2.1 Armazenamento:
 	  Operandos
@@ -410,7 +410,7 @@ Parte 2 — Registradores Fundamentais da CPU:
 	  Dependência entre operações
 
 
- 5.3 Organização:
+ 5.3 Organização — [P]:
 
   5.3.1 Organização Física:
 	  Banco de registradores
@@ -574,7 +574,7 @@ Parte 2 — Registradores Fundamentais da CPU:
  	  Salvamento do contexto
 
 
- 7.5 Organização da Pilha pelos Registradores:
+ 7.5 Organização da Pilha pelos Registradores — [P]:
 
   7.5.1 Crescimento da Pilha:
 	  Crescimento ascendente
@@ -673,7 +673,7 @@ Parte 2 — Registradores Fundamentais da CPU:
 	  Base + índice + escala
 
 
- 8.7 Fluxo de Endereçamento:
+ 8.7 Fluxo de Endereçamento — [P]:
 
   8.7.1 Formação do Endereço:
 	  Endereço lógico
@@ -755,7 +755,7 @@ Parte 2 — Registradores Fundamentais da CPU:
 	  Micro-operações
 
 
- 9.5 Fluxo da Instrução pelos Registradores:
+ 9.5 Fluxo da Instrução pelos Registradores — [P]:
 
   9.5.1 Caminho da Instrução:
 	  Memória
@@ -854,7 +854,7 @@ Parte 2 — Registradores Fundamentais da CPU:
 	  Controle de permissões
 
 
- 10.6 Atualização dos Registradores de Estado:
+ 10.6 Atualização dos Registradores de Estado — [P]:
 
   10.6.1 Atualização pelas Operações:
 	  Operações aritméticas
@@ -939,7 +939,7 @@ Parte 2 — Registradores Fundamentais da CPU:
 	  Segurança
 
 
- 11.6 Cooperação entre os Registradores de Memória:
+ 11.6 Cooperação entre os Registradores de Memória — [I]:
 
   11.6.1 Fluxo de Tradução:
 	  PTBR
@@ -1086,7 +1086,7 @@ Parte 2 — Registradores Fundamentais da CPU:
 	  Retorno de exceções
 
 
- 13.4 Organização dos Registradores durante a Troca de Contexto:
+ 13.4 Organização dos Registradores durante a Troca de Contexto — [P]:
 
   13.4.1 Registradores Preservados:
 	  Registradores gerais
@@ -1109,7 +1109,7 @@ Parte 3 — Organização Física dos Registradores:
 
 14. Banco de Registradores — [P]:
 
- 14.1 Conceitos Gerais:
+ 14.1 Conceitos Gerais — [P] :
 
   14.1.1 Register File:
 	  Conceito
@@ -1124,7 +1124,7 @@ Parte 3 — Organização Física dos Registradores:
 	  Seleção
 
 
- 14.2 Organização do Banco:
+ 14.2 Organização do Banco — [P]:
 
   14.2.1 Organização Física:
 	  Organização matricial
@@ -1144,7 +1144,7 @@ Parte 3 — Organização Física dos Registradores:
 	  Compartilhamento entre bancos
 
 
- 14.3 Portas de Acesso:
+ 14.3 Portas de Acesso — [P]:
 
   14.3.1 Portas de Leitura:
 	  Leitura simples
@@ -1169,7 +1169,7 @@ Parte 3 — Organização Física dos Registradores:
 	  Controle das portas de acesso
 
 
- 14.4 Operações no Banco:
+ 14.4 Operações no Banco — [P]:
 
   14.4.1 Leitura:
 	  Seleção
@@ -1262,7 +1262,7 @@ Parte 3 — Organização Física dos Registradores:
 
 16. Linguagem de Transferência entre Registradores (RTL) — [P]:
 
- 16.1 Conceitos:
+ 16.1 Conceitos — [P]:
 
   16.1.1 Register Transfer Language:
 	  Definição
@@ -1278,7 +1278,7 @@ Parte 3 — Organização Física dos Registradores:
 	  Controle
 
 
- 16.2 Representação:
+ 16.2 Representação — [P]:
 
   16.2.1 Transferência Simples:
 	  Origem
@@ -1303,7 +1303,7 @@ Parte 3 — Organização Física dos Registradores:
 
 17. Transferência entre Registradores — [P]:
 
- 17.1 Conceitos:
+ 17.1 Conceitos — [P]:
 
   17.1.1 Elementos:
 	  Registrador de origem
@@ -1319,7 +1319,7 @@ Parte 3 — Organização Física dos Registradores:
 	  Temporária
 
  
- 17.2 Controle:
+ 17.2 Controle — [P]:
 
   17.2.1 Sinais:
 	  Read Enable
@@ -1448,7 +1448,7 @@ Parte 3 — Organização Física dos Registradores:
 	  Estabilidade dos dados
 
 
- 19.4 Integração Física dos Registradores:
+ 19.4 Integração Física dos Registradores — [P]:
 
   19.4.1 Integração ao Datapath:
 	  Caminhos de dados
@@ -1486,7 +1486,7 @@ Parte 4 — Registradores em Processadores Modernos:
 	  Operações permitidas
 
 
- 20.2 Registradores Físicos:
+ 20.2 Registradores Físicos — [P]:
 
   20.2.1 Conceitos:
 	  Registradores internos reais
@@ -1504,7 +1504,7 @@ Parte 4 — Registradores em Processadores Modernos:
 	  Reutilização
 
 
- 20.3 Estado do Processador:
+ 20.3 Estado do Processador — [P]:
 
   20.3.1 Estado Arquitetural:
 	  Registradores visíveis
@@ -1529,7 +1529,7 @@ Parte 4 — Registradores em Processadores Modernos:
 
 21. Renomeação de Registradores — [P]:
 
- 21.1 Conceitos:
+ 21.1 Conceitos — [P]:
 
   21.1.1 Register Renaming:
 	  Definição
@@ -1549,7 +1549,7 @@ Parte 4 — Registradores em Processadores Modernos:
 	  Liberação após o commit
 
 
- 21.2 Estruturas:
+ 21.2 Estruturas — [P]:
 
   21.2.1 Rename Map:
 	  Mapeamento
@@ -1575,7 +1575,7 @@ Parte 4 — Registradores em Processadores Modernos:
 
 22. Registradores de Pipeline — [P]:
 
- 22.1 Conceitos:
+ 22.1 Conceitos — [P]:
 
   22.1.1 Pipeline Registers:
 	  Armazenamento entre estágios
@@ -1589,7 +1589,7 @@ Parte 4 — Registradores em Processadores Modernos:
 	  MEM/WB
 
 
- 22.2 Funcionamento:
+ 22.2 Funcionamento — [P]:
 
   22.2.1 Armazenamento:
 	  Instruções
@@ -1609,7 +1609,7 @@ Parte 4 — Registradores em Processadores Modernos:
 	  Limpeza dos registradores
 
 
- 22.3 Hazards:
+ 22.3 Hazards — [P]:
 
   22.3.1 Data Hazards:
 	  RAW
@@ -1626,7 +1626,7 @@ Parte 4 — Registradores em Processadores Modernos:
 	  Compartilhamento
 
 
- 22.4 Técnicas de Solução:
+ 22.4 Técnicas de Solução — [P]:
 
   22.4.1 Stall:
 	  Espera
@@ -1649,7 +1649,7 @@ Parte 4 — Registradores em Processadores Modernos:
 
 23. Execução Fora de Ordem — [P]:
 
- 23.1 Fundamentos:
+ 23.1 Fundamentos — [P]:
 
   23.1.1 Conceitos:
 	  Out-of-Order Execution
@@ -1662,7 +1662,7 @@ Parte 4 — Registradores em Processadores Modernos:
 	  Aumento do IPC
 
 
- 23.2 Estruturas:
+ 23.2 Estruturas — [P]:
 
   23.2.1 Reservation Stations:
 	  Armazenamento de operandos
@@ -1686,7 +1686,7 @@ Parte 4 — Registradores em Processadores Modernos:
 	  Disponibilização para outras instruções
 
 
- 23.3 Commit:
+ 23.3 Commit — [P]:
 
   23.3.1 Commit Arquitetural:
 	  Confirmação dos resultados
@@ -1706,7 +1706,7 @@ Parte 4 — Registradores em Processadores Modernos:
 
 24. Registradores de Ponto Flutuante — [I]:
 
- 24.1 Conceitos:
+ 24.1 Conceitos — [I]:
 
   24.1.1 Fundamentos:
 	  Definição
@@ -1719,7 +1719,7 @@ Parte 4 — Registradores em Processadores Modernos:
 	  Unidade de ponto flutuante
 
 
- 24.2 Operações sobre os Registradores:
+ 24.2 Operações sobre os Registradores — [I]:
 
   24.2.1 Operações Básicas
 	  Leitura
@@ -1733,7 +1733,7 @@ Parte 4 — Registradores em Processadores Modernos:
 	  Independência do banco inteiro
 
 
- 24.3 Aplicações:
+ 24.3 Aplicações — [V]:
 	Computação científica
 	Engenharia
 	Computação gráfica
@@ -1744,7 +1744,7 @@ Parte 4 — Registradores em Processadores Modernos:
 
 25. Registradores Vetoriais, SIMD e de Predicado — [I]:
 
- 25.1 Registradores Vetoriais:
+ 25.1 Registradores Vetoriais — [I]:
 
   25.1.1 Conceitos:
 	  Dados vetoriais
@@ -1763,7 +1763,7 @@ Parte 4 — Registradores em Processadores Modernos:
 	  Agrupamento dos elementos
 
 
- 25.2 Registradores SIMD:
+ 25.2 Registradores SIMD — [I]:
 
   25.2.1 Conceitos:
 	  Single Instruction Multiple Data
@@ -1781,7 +1781,7 @@ Parte 4 — Registradores em Processadores Modernos:
 	  Distribuição das lanes
 
 
- 25.3 Registradores de Máscara:
+ 25.3 Registradores de Máscara — [I]:
 
   25.3.1 Conceitos:
 	  Máscaras
@@ -1798,7 +1798,7 @@ Parte 4 — Registradores em Processadores Modernos:
 	  Controle das operações vetoriais
 
  
- 25.4 Registradores de Predicado:
+ 25.4 Registradores de Predicado — [I]:
 
   25.4.1 Conceitos:
 	  Predicação
@@ -1869,7 +1869,7 @@ Parte 4 — Registradores em Processadores Modernos:
 	Memória
 
 
- 26.5 Cooperação entre Registradores Especializados:
+ 26.5 Cooperação entre Registradores Especializados — [I]:
 
   26.5.1 Compartilhamento:
 	  Controle
@@ -1888,7 +1888,7 @@ Parte 5 — Registradores, Software e Arquiteturas:
 
 27. Alocação de Registradores por Compiladores — [I]:
 
- 27.1 Fundamentos:
+ 27.1 Fundamentos — [I]:
 
   27.1.1 Conceitos:
 	  Register Allocation
@@ -1905,7 +1905,7 @@ Parte 5 — Registradores, Software e Arquiteturas:
 	  Maximizar reutilização dos registradores
 
 
- 27.2 Técnicas:
+ 27.2 Técnicas — [I]:
 
   27.2.1 Alocação Local:
 	  Blocos básicos
@@ -1953,7 +1953,7 @@ Parte 5 — Registradores, Software e Arquiteturas:
 
 28. Registradores e Convenções de Chamada — [I]:
 
- 28.1 Application Binary Interface (ABI):
+ 28.1 Application Binary Interface (ABI) — [I]:
 
   28.1.1 Conceitos:
 	  ABI
@@ -1972,7 +1972,7 @@ Parte 5 — Registradores, Software e Arquiteturas:
 	  Convenções de salvamento
 
 
- 28.2 Caller-Saved Registers:
+ 28.2 Caller-Saved Registers — [I]:
 	Conceitos:
 	Registradores temporários
 	Responsabilidade do chamador
@@ -1980,7 +1980,7 @@ Parte 5 — Registradores, Software e Arquiteturas:
 	Restauração após retorno
 
 
- 28.3 Callee-Saved Registers:
+ 28.3 Callee-Saved Registers — [I]:
 	Conceitos
 	Registradores preservados
 	Responsabilidade da função chamada
@@ -1988,7 +1988,7 @@ Parte 5 — Registradores, Software e Arquiteturas:
 	Restauração no epílogo
 
 
- 28.4 Passagem de Argumentos:
+ 28.4 Passagem de Argumentos — [I]:
 
   28.4.1 Registradores:
 	  Argumentos inteiros
@@ -2002,7 +2002,7 @@ Parte 5 — Registradores, Software e Arquiteturas:
 	  Overflow de argumentos
 	  Alinhamento
 
- 28.5 Retorno de Valores:
+ 28.5 Retorno de Valores — [I]:
 	Retorno por Registradores
 	Inteiros
 	Ponto flutuante
@@ -2015,7 +2015,7 @@ Parte 5 — Registradores, Software e Arquiteturas:
 
 29. Comparação entre Arquiteturas — [I]:
 
- 29.1 x86:
+ 29.1 x86 — [I]:
 	General Purpose Registers
 	RIP
 	RFLAGS
@@ -2025,7 +2025,7 @@ Parte 5 — Registradores, Software e Arquiteturas:
 	MSRs
 
 
- 29.2 ARM:
+ 29.2 ARM — [I]:
 	General Purpose Registers
 	PC
 	LR
@@ -2035,7 +2035,7 @@ Parte 5 — Registradores, Software e Arquiteturas:
 	TTBR
 
 
- 29.3 RISC-V:
+ 29.3 RISC-V — [I]:
 
   29.3.1 Registradores:
 	  Integer Registers
@@ -2049,7 +2049,7 @@ Parte 5 — Registradores, Software e Arquiteturas:
 	  User
 
 
- 29.4 MIPS:
+ 29.4 MIPS — [I]:
 	General Purpose Registers
 	HI
 	LO
@@ -2059,7 +2059,7 @@ Parte 5 — Registradores, Software e Arquiteturas:
 	EPC
 
 
- 29.5 PowerPC:
+ 29.5 PowerPC — [I]:
 	General Purpose Registers
 	Condition Register
 	Link Register
@@ -2067,7 +2067,7 @@ Parte 5 — Registradores, Software e Arquiteturas:
 	Machine State Register
 
 
- 29.6 Comparação Geral dos Registradores:
+ 29.6 Comparação Geral dos Registradores — [I]:
 
   29.6.1 Organização:
 	  Quantidade de registradores
@@ -2090,7 +2090,7 @@ Parte 5 — Registradores, Software e Arquiteturas:
 
 30. Registradores em Arquiteturas RISC e CISC — [I]:
 
- 30.1 RISC:
+ 30.1 RISC — [I]:
 
   30.1.1 Organização:
  	  Grande conjunto de registradores
@@ -2105,7 +2105,7 @@ Parte 5 — Registradores, Software e Arquiteturas:
 	  Eficiência da alocação
 	  Facilidade de otimização
 
- 30.2 CISC:
+ 30.2 CISC — [I]:
 
   30.2.1 Organização:
 	  Registradores especializados
@@ -2120,7 +2120,7 @@ Parte 5 — Registradores, Software e Arquiteturas:
 	  Uso de registradores internos
 
 
- 30.3 Comparação:
+ 30.3 Comparação — [I]:
 
   30.3.1 Critérios:
 	  Quantidade
@@ -2147,7 +2147,7 @@ Parte 6 — Desempenho, Limitações e Aplicações:
 
 31. Avaliação de Desempenho dos Registradores — [I]:
 
- 31.1 Características:
+ 31.1 Características — [I]:
 
   31.1.1 Velocidade:
 	  Tempo de acesso
@@ -2157,7 +2157,7 @@ Parte 6 — Desempenho, Limitações e Aplicações:
 	  Tempo de leitura
 	  Tempo de ciclo do banco de registradores
 
-  31.1.2 Eficiência:
+  31.1.2 Eficiência :
 	  Frequência de utilização
 	  Disponibilidade
 	  Reutilização
@@ -2166,7 +2166,7 @@ Parte 6 — Desempenho, Limitações e Aplicações:
 	  Balanceamento entre leitura e escrita
 
 
- 31.2 Fatores de Influência:
+ 31.2 Fatores de Influência — [I]:
 
   31.2.1 Organização:
 	  Quantidade
@@ -2189,7 +2189,7 @@ Parte 6 — Desempenho, Limitações e Aplicações:
 
 32. Problemas e Limitações — [I]:
 
- 32.1 Limitações Arquiteturais:
+ 32.1 Limitações Arquiteturais — [I]:
 
   32.1.1 Quantidade:
 	  Limitação física
@@ -2205,7 +2205,7 @@ Parte 6 — Desempenho, Limitações e Aplicações:
 	  Impacto sobre o banco de registradores
 
 
- 32.2 Problemas Operacionais:
+ 32.2 Problemas Operacionais — [I]:
 
   32.2.1 Conflitos:
 	  Leituras simultâneas
@@ -2226,7 +2226,7 @@ Parte 6 — Desempenho, Limitações e Aplicações:
 	  Saturação do banco de registradores
 
  
- 32.3 Limitações Tecnológicas:
+ 32.3 Limitações Tecnológicas — [I]:
 
   32.3.1 Área:
 	  Espaço
@@ -2245,7 +2245,7 @@ Parte 6 — Desempenho, Limitações e Aplicações:
 
 33. Aplicações dos Registradores — [V]:
 
- 33.1 Processamento:
+ 33.1 Processamento — [V]:
 
   33.1.1 Operações:
 	  Aritmética
@@ -2270,7 +2270,7 @@ Parte 6 — Desempenho, Limitações e Aplicações:
 	  Controle de interrupções
 
 
- 33.2 Diferentes Processadores:
+ 33.2 Diferentes Processadores — [V]:
 
   33.2.1 Processadores Gerais:
 	  Registradores gerais
@@ -2304,7 +2304,7 @@ Parte 6 — Desempenho, Limitações e Aplicações:
 
 34. Tendências Modernas — [V]:
 
- 34.1 Evolução:
+ 34.1 Evolução — [V]:
 
   34.1.1 Capacidade:
 	  Maior largura
@@ -2323,7 +2323,7 @@ Parte 6 — Desempenho, Limitações e Aplicações:
 	  Registradores para aceleração especializada
 
 
- 34.2 Eficiência:
+ 34.2 Eficiência — [V]:
 
   34.2.1 Energia:
 	  Clock Gating
@@ -2343,14 +2343,14 @@ Parte 6 — Desempenho, Limitações e Aplicações:
 
 35. Revisão Geral — [I]:
 
- 35.1 Fundamentos:
+ 35.1 Fundamentos — [I]:
 	Registradores
 	Funções
 	Características
 	Organização
 
 
- 35.2 Registradores Fundamentais:
+ 35.2 Registradores Fundamentais — [I]:
 
   35.2.1 Fluxo:
 	  PC
@@ -2393,7 +2393,7 @@ Parte 6 — Desempenho, Limitações e Aplicações:
 	  Vector Base Register
 
 
- 35.3 Processadores Modernos:
+ 35.3 Processadores Modernos — [I]:
 
   35.3.1 Organização:
 	  Registradores arquiteturais
@@ -2410,7 +2410,7 @@ Parte 6 — Desempenho, Limitações e Aplicações:
 	  Commit
 
 
- 35.4 Software e Arquitetura:
+ 35.4 Software e Arquitetura — [I]:
 
   35.4.1 Compiladores:
 	  Register Allocation
@@ -2432,7 +2432,7 @@ Parte 6 — Desempenho, Limitações e Aplicações:
 
 36. Conclusão — [V]:
 
- 36.1 Síntese do Estudo:
+ 36.1 Síntese do Estudo — [V]:
 
   36.1.1 Papel dos Registradores:
 	  Armazenamento temporário
@@ -2450,7 +2450,7 @@ Parte 6 — Desempenho, Limitações e Aplicações:
 	  Suporte às arquiteturas modernas
 
 
- 36.2 Integração com a Organização de Computadores:
+ 36.2 Integração com a Organização de Computadores — [V]:
 
   36.2.1 Relação com a CPU:
 	  ULA
@@ -2477,7 +2477,7 @@ Parte 6 — Desempenho, Limitações e Aplicações:
 	  Máquinas virtuais
 
 
- 36.3 Visão Integrada:
+ 36.3 Visão Integrada — [V]:
 
   36.3.1 Registradores como Elemento Central:
 	  Dados
