@@ -1810,12 +1810,16 @@ PARTE 5 — MEMÓRIA VIRTUAL E SISTEMAS ESPECIALIZADOS:
 	  Texture Memory
 	  L1 Cache
 	  L2 Cache
+	  Integração com a memória principal
+	  Fluxo hierárquico dos acessos
 
   27.1.2 Organização:
 	  Warps
 	  Thread Blocks
 	  Coalesced Access
 	  Shared Memory Banks
+	  Localidade de memória em GPUs
+	  Eficiência do acesso paralelo
 
 
  27.2 Sistemas Embarcados:
@@ -1834,6 +1838,8 @@ PARTE 5 — MEMÓRIA VIRTUAL E SISTEMAS ESPECIALIZADOS:
 	  Boot ROM
 	  Mapeamento de Memória
 	  Baixo Consumo de Energia
+	  Organização da memória embarcada
+	  Integração com a arquitetura do SoC
 
 
  27.3 Sistemas de Alto Desempenho:
@@ -1845,18 +1851,22 @@ PARTE 5 — MEMÓRIA VIRTUAL E SISTEMAS ESPECIALIZADOS:
 	  Hierarquia Híbrida
 	  Escalabilidade
 	  NUMA
-	 Memória Desagregada
+	  Memória Desagregada
+	  Hierarquias híbridas de memória
+	  Escalabilidade da memória em larga escala
 
   27.3.2 Aceleração:
 	  GPUDirect
 	  Unified Memory
 	  RDMA
 	  Memory Pooling
-	  Near-Memory Computing (Introdução)
+	  Near-Memory Computing
+	  Integração entre aceleradores e memória
+	  Compartilhamento de memória entre dispositivos
 
 
 
-*PARTE 6 — TECNOLOGIAS MODERNAS E OTIMIZAÇÕES:
+PARTE 6 — TECNOLOGIAS MODERNAS E OTIMIZAÇÕES:
 
 
 28. Tecnologias Modernas de Memória:
