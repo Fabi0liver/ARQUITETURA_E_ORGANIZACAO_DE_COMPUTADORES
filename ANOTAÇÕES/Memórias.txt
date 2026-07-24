@@ -2058,6 +2058,9 @@ PARTE 6 — TECNOLOGIAS MODERNAS E OTIMIZAÇÕES:
 	  Trusted Execution Environment (TEE)
 	  Memory Isolation
 	  Access Control
+	  Proteção do espaço de endereçamento
+	  Isolamento entre domínios de memória
+	  Proteção em arquiteturas multicore
 
   30.1.2 Integridade:
 	  ECC
@@ -2065,6 +2068,8 @@ PARTE 6 — TECNOLOGIAS MODERNAS E OTIMIZAÇÕES:
 	  Secure Storage
 	  Secure Erase
  	  Integrity Verification
+	  Confiabilidade da memória em nível de sistema
+	  Proteção da integridade dos dados na hierarquia
 
 
 
@@ -2080,6 +2085,8 @@ PARTE 6 — TECNOLOGIAS MODERNAS E OTIMIZAÇÕES:
 	  Meltdown
 	  Fault Injection
 	  DMA Attacks
+	  Ataques à hierarquia de memória
+	  Exploração da localidade de memória
 
   30.2.2 Mitigações:
 	  ECC
@@ -2089,6 +2096,8 @@ PARTE 6 — TECNOLOGIAS MODERNAS E OTIMIZAÇÕES:
 	  Shadow Stack
 	  Pointer Authentication
 	  Software Hardening
+	  Proteção da hierarquia de memória
+	  Mitigações em nível de hardware
 
 
  30.3 Monitoramento:
@@ -2104,6 +2113,8 @@ PARTE 6 — TECNOLOGIAS MODERNAS E OTIMIZAÇÕES:
 	  Reinicialização Segura
 	  Failover
 	  Logging
+	  Recuperação da integridade da memória
+	  Continuidade operacional
 
 
 
@@ -2119,6 +2130,8 @@ PARTE 6 — TECNOLOGIAS MODERNAS E OTIMIZAÇÕES:
 	  HPC
 	  Computação em Nuvem	
 	  Edge Computing
+	  Sistemas com memória heterogênea
+	  Sistemas com memória persistente
 
   31.1.2 Plataformas:
 	  Smartphones
@@ -2128,6 +2141,10 @@ PARTE 6 — TECNOLOGIAS MODERNAS E OTIMIZAÇÕES:
 	  GPUs
 	  Inteligência Artificial
 	  Veículos Autônomos
+	  Sistemas acelerados por memória
+	  Arquiteturas heterogêneas
+	  Sistemas acelerados por memória
+	  Arquiteturas heterogêneas
 
 
  31.2 Aplicações Especializadas:
@@ -2137,12 +2154,16 @@ PARTE 6 — TECNOLOGIAS MODERNAS E OTIMIZAÇÕES:
 	  Treinamento
 	  Memória para Aceleradores
 	  Unified Memory
+	  HBM em aceleradores
+	  Hierarquias de memória para IA
 
   31.2.2 Big Data:
 	  Bancos de Dados em Memória
 	  Analytics
 	  Processamento Distribuído
 	  Data Lakes
+	  Memória persistente em bancos de dados
+	  Hierarquias híbridas de armazenamento
 
 
  31.3 Estudos de Caso:
@@ -2152,12 +2173,16 @@ PARTE 6 — TECNOLOGIAS MODERNAS E OTIMIZAÇÕES:
 	  GPUs Modernas
 	  Servidores
 	  Supercomputadores
+	  Sistemas com memória desagregada
+	  Arquiteturas baseadas em CXL
 
   31.3.2 Comparações:
 	  Desktop
 	  Mobile
 	  Servidor
 	  HPC
+	  Comparação das hierarquias de memória
+	  Comparação das organizações de memória
 
 
 
@@ -2183,6 +2208,8 @@ PARTE 6 — TECNOLOGIAS MODERNAS E OTIMIZAÇÕES:
 	  Comunicação CPU–Cache–RAM–SSD
 	  Balanceamento entre Custo e Desempenho
 	  Escalabilidade
+	  Integração entre arquitetura e organização das memórias
+	  Evolução das hierarquias de memória
 
 
  32.2 Avaliação Geral:
@@ -2193,6 +2220,8 @@ PARTE 6 — TECNOLOGIAS MODERNAS E OTIMIZAÇÕES:
 	  AMAT
 	  Gargalos
 	  Memory Wall
+	  Eficiência da hierarquia de memória
+	  Escalabilidade do subsistema de memória
 
   32.2.2 Tendências:
 	  Memórias Persistentes
@@ -2200,6 +2229,8 @@ PARTE 6 — TECNOLOGIAS MODERNAS E OTIMIZAÇÕES:
 	  PIM
 	  Memória Desagregada
 	  Computação Centrada na Memória
+	  Hierarquias híbridas
+	  Integração entre memórias voláteis e persistentes
 
 
 
@@ -2211,6 +2242,8 @@ PARTE 6 — TECNOLOGIAS MODERNAS E OTIMIZAÇÕES:
 	Integração entre Tecnologias
 	Papel na Arquitetura de Computadores
 	Perspectivas Futuras
+	Integração entre arquitetura e organização das memórias
+	Evolução da hierarquia de memória
 
 
  33.2 Tendências Futuras:
@@ -2220,6 +2253,8 @@ PARTE 6 — TECNOLOGIAS MODERNAS E OTIMIZAÇÕES:
 	Computação Quântica (Introdução)
 	Computação Neuromórfica (Introdução)
 	Sustentabilidade e Eficiência Energética
+	Hierarquias heterogêneas de memória
+	Memórias persistentes como memória principal
 
 
  33.3 Perspectivas de Pesquisa:
@@ -2228,3 +2263,5 @@ PARTE 6 — TECNOLOGIAS MODERNAS E OTIMIZAÇÕES:
 	Memória Universal
 	Segurança das Memórias
 	Escalabilidade para Exascale
+	Integração de novas tecnologias de memória
+	Novos modelos de hierarquia de memória
