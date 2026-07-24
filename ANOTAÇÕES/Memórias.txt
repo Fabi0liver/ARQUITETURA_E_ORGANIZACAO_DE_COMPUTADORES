@@ -1893,6 +1893,8 @@ PARTE 6 — TECNOLOGIAS MODERNAS E OTIMIZAÇÕES:
 	  ReRAM
 	  FeRAM
 	  Memórias Híbridas
+	  Hierarquias híbridas de memória
+	  Integração entre diferentes tecnologias de memória
 
   28.1.2 Características:
 	  Latência
@@ -1904,6 +1906,9 @@ PARTE 6 — TECNOLOGIAS MODERNAS E OTIMIZAÇÕES:
 	  Densidade
 	  Endurance
 	  Custo
+	  Escalabilidade da capacidade
+	  Integração com a hierarquia de memória
+	  Compromissos entre desempenho, capacidade e persistência	
 
 
  28.2 Tendências:
@@ -1919,6 +1924,9 @@ PARTE 6 — TECNOLOGIAS MODERNAS E OTIMIZAÇÕES:
 	  Memory Fabric
 	  Composable Memory
 	  Heterogeneous Memory
+	  Hierarquias heterogêneas de memória
+	  Integração entre memória volátil e persistente
+	  Compartilhamento transparente de memória
 
   28.2.2 Arquiteturas Emergentes:
 	  Data-Centric Computing
@@ -1927,6 +1935,9 @@ PARTE 6 — TECNOLOGIAS MODERNAS E OTIMIZAÇÕES:
 	  AI Accelerators
 	  Domain-Specific Architectures
 	  High-Bandwidth Interconnects
+	  Escalabilidade das arquiteturas de memória
+	  Desagregação dos recursos de memória
+	  Integração entre memória e aceleradores
 
 
  28.3 Integração das Novas Memórias:
@@ -1937,6 +1948,8 @@ PARTE 6 — TECNOLOGIAS MODERNAS E OTIMIZAÇÕES:
 	  Memória Persistente
 	  Armazenamento
 	  Memória Compartilhada
+	  Substituição parcial da DRAM
+	  Expansão transparente da memória principal
 
   28.3.2 Desafios:
 	  Compatibilidade
@@ -1945,6 +1958,8 @@ PARTE 6 — TECNOLOGIAS MODERNAS E OTIMIZAÇÕES:
 	  Consistência
 	  Eficiência Energética
 	  Custo
+	  Balanceamento entre diferentes tecnologias
+	  Migração de dados entre níveis
 
 
 
@@ -1963,6 +1978,9 @@ PARTE 6 — TECNOLOGIAS MODERNAS E OTIMIZAÇÕES:
 	  Dynamic Memory Scheduling
 	  Dynamic Refresh
 	  Row Buffer Optimization
+	  Balanceamento dinâmico da hierarquia
+	  Adaptação dinâmica aos padrões de acesso
+	  Otimização da movimentação de dados
 
   29.1.2 Eficiência:
 	  Redução da Latência
@@ -1971,6 +1989,8 @@ PARTE 6 — TECNOLOGIAS MODERNAS E OTIMIZAÇÕES:
 	  Balanceamento de Carga
 	  Balanceamento de Canais
 	  Balanceamento de Bancos
+	  Escalabilidade do subsistema de memória
+	  Eficiência da utilização da largura de banda
 
 
  29.2 Software:
@@ -1986,6 +2006,8 @@ PARTE 6 — TECNOLOGIAS MODERNAS E OTIMIZAÇÕES:
 	  Software Prefetch
 	  Data Alignment
 	  Memory Mapping
+	  Otimização da localidade de memória
+	  Redução da movimentação de dados
 
   29.2.2 Ferramentas:
 	  Profilers
@@ -1993,6 +2015,8 @@ PARTE 6 — TECNOLOGIAS MODERNAS E OTIMIZAÇÕES:
 	  Leak Detection
 	  Heap Profiling
 	  Performance Counters
+	  Análise do comportamento da memória
+	  Avaliação dos acessos à memória
 
 
  29.3 Eficiência Energética:
@@ -2004,12 +2028,16 @@ PARTE 6 — TECNOLOGIAS MODERNAS E OTIMIZAÇÕES:
 	  Self Refresh
 	  Power Gating
 	  Clock Gating
+	  Otimização energética da hierarquia de memória
+	  Redução do consumo durante acessos ociosos
 
   29.3.2 Gerenciamento:
 	  Thermal Management
 	  Energy-Aware Scheduling
 	  Memory Power States
 	  Energy Monitoring
+	  Balanceamento entre desempenho e consumo
+	  Escalonamento energético da memória
 
 
 
