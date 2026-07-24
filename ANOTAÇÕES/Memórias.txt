@@ -726,6 +726,9 @@ PARTE 3 — MEMÓRIA PRINCIPAL E INTEGRIDADE:
  	  Volatilidade
 	  Capacidade
 	  Escalabilidade
+	  Papel da memória principal na arquitetura do computador
+	  Memória principal como espaço de execução dos programas
+	  Integração com a hierarquia de memória
 
    12.1.2 Estrutura Interna:
 	  Células
@@ -740,6 +743,9 @@ PARTE 3 — MEMÓRIA PRINCIPAL E INTEGRIDADE:
 	  Row Buffer
 	  Sense Amplifiers
 	  Barramentos internos
+	  Organização do caminho de dados interno
+	  Paralelismo interno da memória
+	  Granularidade de acesso
 
 
  12.2 Tecnologias RAM:
@@ -767,6 +773,8 @@ PARTE 3 — MEMÓRIA PRINCIPAL E INTEGRIDADE:
 	  EDO
 	  FPM
 	  BEDO
+	  Evolução das arquiteturas DRAM
+	  Impacto das gerações no desempenho do sistema
 
   12.2.3 SDRAM:
 	  SDR SDRAM
@@ -788,6 +796,8 @@ PARTE 3 — MEMÓRIA PRINCIPAL E INTEGRIDADE:
 	  HBM2
 	  HBM3
 	  Wide I/O
+	  Evolução das interfaces DDR
+	  Aplicações das diferentes tecnologias
 
 
  12.3 Operações da Memória Principal:
@@ -806,6 +816,8 @@ PARTE 3 — MEMÓRIA PRINCIPAL E INTEGRIDADE:
 	  Burst Access
 	  Interleaving
 	  Paralelismo de Bancos
+	  Fluxo completo de um acesso à memória principal
+  	  Eficiência dos acessos
 
 
 
@@ -823,6 +835,8 @@ PARTE 3 — MEMÓRIA PRINCIPAL E INTEGRIDADE:
 	  Barramentos internos
 	  Decoder de Linhas
 	  Decoder de Colunas
+	  Organização hierárquica da DRAM
+	  Distribuição física dos bancos
 
   13.1.2 Operações:
 	  Activate
@@ -850,6 +864,8 @@ PARTE 3 — MEMÓRIA PRINCIPAL E INTEGRIDADE:
 	  tFAW
 	  tCCD
 	  Command Rate (CR)
+	  Influência dos timings na latência
+	  Compromisso entre frequência e temporização
 
   13.2.2 Burst:
 	  Burst Length
@@ -876,7 +892,8 @@ PARTE 3 — MEMÓRIA PRINCIPAL E INTEGRIDADE:
 	  Row Buffer Misses
 	  Row Buffer Conflicts
 	  Eficiência do Paralelismo
-
+	  Eficiência do Row Buffer
+	  Localidade de acesso
 
 
 14. Controladores de Memória
@@ -890,6 +907,8 @@ PARTE 3 — MEMÓRIA PRINCIPAL E INTEGRIDADE:
 	Controlador Externo
 	Interface CPU–Memória
 	Interface DRAM
+	Papel do controlador na arquitetura do sistema
+	Integração entre CPU, cache e memória principal
 
 
  14.2 Gerenciamento:
@@ -901,6 +920,8 @@ PARTE 3 — MEMÓRIA PRINCIPAL E INTEGRIDADE:
 	  Round Robin
 	  Quality of Service (QoS)
 	  Priorização de Requisições
+	  Justiça no atendimento das requisições
+	  Otimização da utilização da memória
 
   14.2.2 Paralelismo:
 	  Channel Interleaving
@@ -908,6 +929,8 @@ PARTE 3 — MEMÓRIA PRINCIPAL E INTEGRIDADE:
 	  Rank Interleaving
 	  Bank Group Interleaving
 	  Paralelismo de Requisições
+	  Exploração do paralelismo da DRAM
+	  Maximização da largura de banda
 
 
  14.3 Funções do Controlador:
@@ -925,6 +948,8 @@ PARTE 3 — MEMÓRIA PRINCIPAL E INTEGRIDADE:
 	  Closed Page Policy
 	  Prefetch
 	  Balanceamento de Canais
+	  Redução da latência média
+	  Otimização da ocupação dos bancos
 
 
 
@@ -958,6 +983,8 @@ PARTE 3 — MEMÓRIA PRINCIPAL E INTEGRIDADE:
 	  Barramento de Dados
 	  SPD
 	  PMIC (DDR5)
+	  Organização lógica dos módulos
+	  Mapeamento entre módulos e canais
 
   15.2.2 Compatibilidade:
 	  Capacidade
@@ -983,6 +1010,8 @@ PARTE 3 — MEMÓRIA PRINCIPAL E INTEGRIDADE:
 	  Quad Channel
 	  Multi Channel
 	  Flex Mode
+	  Escalabilidade da largura de banda
+	  Impacto das configurações na arquitetura de memória
 
 
 
