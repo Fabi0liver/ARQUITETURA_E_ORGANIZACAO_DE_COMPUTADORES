@@ -2118,14 +2118,14 @@ PARTE 5 — ARQUITETURAS, TECNOLOGIAS E TENDÊNCIAS DOS PROCESSADORES
 
 
 
-PARTE 6 — CONCLUSÃO E INTEGRAÇÃO DOS CONCEITOS:
+PARTE 6 — CONCLUSÃO E INTEGRAÇÃO DOS CONCEITOS
 
 
-37. Integração Geral dos Componentes da CPU:
+37. Integração Geral dos Componentes da CPU — [P]
 
- 37.1 Visão Geral:
+ 37.1 Visão Geral — [P]
 
-  37.1.1 Organização Integrada:
+  37.1.1 Organização Integrada — [P]
 	  Unidade de Controle
 	  Datapath
 	  Control Path
@@ -2138,7 +2138,7 @@ PARTE 6 — CONCLUSÃO E INTEGRAÇÃO DOS CONCEITOS:
 	  Front-End
 	  Back-End
 
-  37.1.2 Comunicação entre Componentes:
+  37.1.2 Comunicação entre Componentes — [P]
 	  Fluxo de instruções
 	  Fluxo de dados
 	  Fluxo de controle
@@ -2146,9 +2146,9 @@ PARTE 6 — CONCLUSÃO E INTEGRAÇÃO DOS CONCEITOS:
 	  Sincronização interna
 
 
- 37.2 Fluxo Completo de Execução:
+ 37.2 Fluxo Completo de Execução — [P]
 
-  37.2.1 Caminho da Instrução
+  37.2.1 Caminho da Instrução — [P]
 	  Busca (Fetch)
 	  Decodificação (Decode)
 	  Conversão em Micro-operações
@@ -2160,7 +2160,7 @@ PARTE 6 — CONCLUSÃO E INTEGRAÇÃO DOS CONCEITOS:
 	  Commit
 	  Retirement
 
-  37.2.2 Caminho dos Dados:
+  37.2.2 Caminho dos Dados — [P]
 	  Leitura dos operandos
 	  Transferência pelos caminhos internos
 	  Processamento nas unidades funcionais
@@ -2168,9 +2168,9 @@ PARTE 6 — CONCLUSÃO E INTEGRAÇÃO DOS CONCEITOS:
 	  Escrita dos resultados
 
 
- 37.3 Integração da Microarquitetura:
+ 37.3 Integração da Microarquitetura — [P]
 
-  37.3.1 Componentes Modernos:
+  37.3.1 Componentes Modernos — [P]
 	  Pipeline
 	  Execução Superescalar
 	  Execução Fora de Ordem
@@ -2181,7 +2181,7 @@ PARTE 6 — CONCLUSÃO E INTEGRAÇÃO DOS CONCEITOS:
 	  Reservation Stations
 	  Reorder Buffer
 
-  37.3.2 Organização da CPU Moderna:
+  37.3.2 Organização da CPU Moderna — [P]
 	  Front-End
 	  Back-End
 	  Datapath
@@ -2191,53 +2191,53 @@ PARTE 6 — CONCLUSÃO E INTEGRAÇÃO DOS CONCEITOS:
 
 
 
-38. Comparação entre Arquiteturas de Processadores:
+38. Comparação entre Arquiteturas de Processadores — [I]
 
- 38.1 Modelos de Organização:
+ 38.1 Modelos de Organização — [I]
 
-  38.1.1 Von Neumann:
+  38.1.1 Von Neumann — [I]
 	  Características
 	  Organização
 	  Vantagens
 	  Limitações
 
-  38.1.2 Harvard:
+  38.1.2 Harvard — [I]
 	  Características
 	  Organização
 	  Vantagens
 	  Limitações
 
-  38.1.3 Harvard Modificada:
+  38.1.3 Harvard Modificada — [I]
 	  Organização
 	  Aplicações
 	  Comparações
 
 
- 38.2 Filosofias de Projeto:
+ 38.2 Filosofias de Projeto — [I]
 
-  38.2.1 CISC:
+  38.2.1 CISC — [I]
 	  Organização
 	  Características
 	  Aplicações
 
-  38.2.2 RISC:
+  38.2.2 RISC — [I]
 	  Organização
 	  Características
 	  Aplicações
 
-  38.2.3 Arquiteturas Abertas:
+  38.2.3 Arquiteturas Abertas — [I]
 	  RISC-V
 	  Tendências
 	  Aplicações
 
 
- 38.3 Evolução da CPU:
+ 38.3 Evolução da CPU — [I]
 
-  38.3.1 Processadores Clássicos:
+  38.3.1 Processadores Clássicos — [I]
 	  Execução Sequencial
 	  Pipeline Simples
 
-  38.3.2 Processadores Modernos:
+  38.3.2 Processadores Modernos — [I]
 	  Superescalar
 	  Out-of-Order
 	  SMT
@@ -2246,11 +2246,11 @@ PARTE 6 — CONCLUSÃO E INTEGRAÇÃO DOS CONCEITOS:
 
 
 
-39. Panorama Geral dos Processadores:
+39. Panorama Geral dos Processadores — [V/I]
 
- 39.1 Evolução Histórica:
+ 39.1 Evolução Histórica — [V]
 
-  39.1.1 Linha do Tempo:
+  39.1.1 Linha do Tempo — [V]
 	  Primeiros Processadores
 	  Integração em Chip
 	  Pipeline
@@ -2259,16 +2259,16 @@ PARTE 6 — CONCLUSÃO E INTEGRAÇÃO DOS CONCEITOS:
 	  Multicore
 	  IA Integrada
 
-  39.1.2 Evolução Tecnológica:
+  39.1.2 Evolução Tecnológica — [V]
 	  Escalonamento
 	  Miniaturização
 	  Novos Materiais
 	  Novas Arquiteturas
 
 
- 39.2 Organização Atual:
+ 39.2 Organização Atual — [I]
 
-  39.2.1 Recursos Presentes:
+  39.2.1 Recursos Presentes — [I]
 	  Front-End
 	  Back-End
 	  Pipeline
@@ -2277,7 +2277,7 @@ PARTE 6 — CONCLUSÃO E INTEGRAÇÃO DOS CONCEITOS:
 	  Segurança
 	  Virtualização
 
-  39.2.2 Tecnologias Atuais:
+  39.2.2 Tecnologias Atuais — [I]
 	  Chiplets
 	  Empilhamento 3D
 	  NPUs
@@ -2285,16 +2285,16 @@ PARTE 6 — CONCLUSÃO E INTEGRAÇÃO DOS CONCEITOS:
 	  IA Embarcada
 
 
- 39.3 Tendências Futuras:
+ 39.3 Tendências Futuras — [V]
 
-  39.3.1 Evolução:
+  39.3.1 Evolução — [V]
 	  Mais Paralelismo
 	  Mais Especialização
 	  Melhor Eficiência Energética
 	  Integração de IA
 	  Novos Processos de Fabricação
 
-  39.3.2 Novos Paradigmas:
+  39.3.2 Novos Paradigmas — [V]
 	  Computação Quântica
 	  Computação Neuromórfica
 	  Computação Fotônica
@@ -2302,17 +2302,17 @@ PARTE 6 — CONCLUSÃO E INTEGRAÇÃO DOS CONCEITOS:
 
 
 
-40. Conclusão:
+40. Conclusão — [V]
 
- 40.1 Síntese dos Conceitos:
+ 40.1 Síntese dos Conceitos — [V]
 
-  40.1.1 Fundamentos:
+  40.1.1 Fundamentos — [V]
 	  Papel do Processador
 	  Organização Interna
 	  Funcionamento Geral
 	  Execução das Instruções
 
-  40.1.2 Microarquitetura:
+  40.1.2 Microarquitetura — [V]
 	  Pipeline
 	  Front-End
 	  Back-End
@@ -2320,7 +2320,7 @@ PARTE 6 — CONCLUSÃO E INTEGRAÇÃO DOS CONCEITOS:
 	  Execução Especulativa
 	  Paralelismo
 
-  40.1.3 Arquiteturas Modernas:
+  40.1.3 Arquiteturas Modernas — [V]
 	  Multicore
 	  SMT
 	  Computação Heterogênea
@@ -2329,9 +2329,9 @@ PARTE 6 — CONCLUSÃO E INTEGRAÇÃO DOS CONCEITOS:
 	  Virtualização
 
 
- 40.2 Relação com a Arquitetura e Organização de Computadores:
+ 40.2 Relação com a Arquitetura e Organização de Computadores — [I]
 
-  40.2.1 Integração com Outros Componentes:
+  40.2.1 Integração com Outros Componentes — [I]
 	  Memória Principal
 	  Memória Cache
 	  Barramentos
@@ -2339,7 +2339,7 @@ PARTE 6 — CONCLUSÃO E INTEGRAÇÃO DOS CONCEITOS:
 	  Armazenamento
 	  Sistemas Multiprocessados
 
-  40.2.2 Continuidade dos Estudos:
+  40.2.2 Continuidade dos Estudos — [V]
 	  Memórias
 	  Barramentos
 	  Entrada e Saída
