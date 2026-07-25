@@ -402,23 +402,23 @@ PARTE 1 — FUNDAMENTOS DOS PROCESSADORES
 
 
 
-PARTE 2 — ESTRUTURA E FUNCIONAMENTO BÁSICO DO PROCESSADOR:
+PARTE 2 — ESTRUTURA E FUNCIONAMENTO BÁSICO DO PROCESSADOR
 
 
-6. Estrutura Interna da CPU:
+6. Estrutura Interna da CPU — [P]
 
- 6.1 Organização Geral:
+ 6.1 Organização Geral — [P]
 
-  6.1.1 Estrutura da CPU:
+  6.1.1 Estrutura da CPU — [P]
 	  Organização interna
 	  Blocos funcionais
 	  Componentes principais
 	  Organização hierárquica
 	  Fluxo interno
-  	  Estrutura modular
+	  Estrutura modular
 	  Integração entre componentes
 
- 6.1.2 Organização Física:
+  6.1.2 Organização Física — [P]
 	  Componentes físicos
 	  Interconexões
 	  Organização em blocos
@@ -427,7 +427,7 @@ PARTE 2 — ESTRUTURA E FUNCIONAMENTO BÁSICO DO PROCESSADOR:
 	  Estrutura modular
 	  Integração física
 
-  6.1.3 Organização Lógica:
+  6.1.3 Organização Lógica — [P]
 	  Fluxo de dados
 	  Fluxo de controle
 	  Comunicação interna
@@ -435,16 +435,16 @@ PARTE 2 — ESTRUTURA E FUNCIONAMENTO BÁSICO DO PROCESSADOR:
 	  Organização funcional
 
 
- 6.2 Componentes Fundamentais:
+ 6.2 Componentes Fundamentais — [P]
 
-  6.2.1 Unidade de Controle:
+  6.2.1 Unidade de Controle — [P]
 	  Organização
 	  Responsabilidades
 	  Entradas
 	  Saídas
 	  Comunicação
 
-  6.2.2 Unidade Lógica e Aritmética (ALU):
+  6.2.2 Unidade Lógica e Aritmética (ALU) — [P]
 	  Organização
 	  Operações
 	  Entradas
@@ -452,32 +452,32 @@ PARTE 2 — ESTRUTURA E FUNCIONAMENTO BÁSICO DO PROCESSADOR:
 	  Comunicação
 	  Execução de operações inteiras
 
-  6.2.3 Unidade de Ponto Flutuante (FPU):
+  6.2.3 Unidade de Ponto Flutuante (FPU) — [I]
 	  Organização
 	  Operações
 	  Comunicação
 	  Processamento numérico
 	  Aplicações
 
-  6.2.4 Banco de Registradores:
+  6.2.4 Banco de Registradores — [P]
 	  Organização
 	  Leitura
 	  Escrita
-	  Portasde acesso
+	  Portas de acesso
 	  Comunicação
 
-  6.2.5 Unidades Funcionais Especializadas:
+  6.2.5 Unidades Funcionais Especializadas — [I]
 	  AGU
 	  LSU
 	  Unidade vetorial
 	  Unidade SIMD
 	  Unidade de branch
-  	  Aceleradores especializados
+	  Aceleradores especializados
 
 
- 6.3 Comunicação Interna:
+ 6.3 Comunicação Interna — [P]
 
-  6.3.1 Fluxo de Dados:
+  6.3.1 Fluxo de Dados — [P]
 	  Transferência
 	  Caminhos internos
 	  Interligação
@@ -485,13 +485,13 @@ PARTE 2 — ESTRUTURA E FUNCIONAMENTO BÁSICO DO PROCESSADOR:
 	  Processamento
 	  Saída
 
-  6.3.2 Fluxo de Controle:
+  6.3.2 Fluxo de Controle — [P]
 	  Sinais de controle
 	  Coordenação
 	  Sequenciamento
 	  Sincronização
 
-  6.3.3 Organização da Comunicação:
+  6.3.3 Organização da Comunicação — [P]
 	  Comunicação entre unidades
 	  Compartilhamento de recursos
 	  Interconexões
@@ -499,18 +499,18 @@ PARTE 2 — ESTRUTURA E FUNCIONAMENTO BÁSICO DO PROCESSADOR:
 
 
 
-7. Ciclo de Instrução:
+7. Ciclo de Instrução — [P]
 
- 7.1 Fundamentos:
+ 7.1 Fundamentos — [P]
 
-  7.1.1 Conceitos:
+  7.1.1 Conceitos — [P]
 	  Conceito de ciclo de instrução
 	  Objetivos
 	  Relação com o processador
 	  Relação com memória
 	  Relação com o conjunto de instruções (ISA)
 
-  7.1.2 Estrutura Geral:
+  7.1.2 Estrutura Geral — [P]
 	  Busca
 	  Decodificação
 	  Execução
@@ -519,21 +519,21 @@ PARTE 2 — ESTRUTURA E FUNCIONAMENTO BÁSICO DO PROCESSADOR:
 	  Atualização do estado
 
 
- 7.2 Etapas do Ciclo:
+ 7.2 Etapas do Ciclo — [P]
 
-  7.2.1 Busca (Fetch):
+  7.2.1 Busca (Fetch) — [P]
 	  Leitura da instrução
 	  Localização da instrução
 	  Participação do Program Counter (PC)
 	  Atualização do PC
 
-  7.2.2 Decodificação (Decode):
+  7.2.2 Decodificação (Decode) — [P]
 	  Interpretação da instrução
 	  Identificação da operação
 	  Identificação dos operandos
 	  Seleção das unidades funcionais
 
-  7.2.3 Execução (Execute):
+  7.2.3 Execução (Execute) — [P]
 	  Processamento
 	  ALU
 	  FPU
@@ -541,55 +541,55 @@ PARTE 2 — ESTRUTURA E FUNCIONAMENTO BÁSICO DO PROCESSADOR:
 	  LSU
 	  Unidades Vetoriais
 
-  7.2.4 Acesso à Memória (Memory):
+  7.2.4 Acesso à Memória (Memory) — [P]
 	  Operações de leitura
 	  Operações de escrita
 	  Comunicação com a memória
 
-  7.2.4 Escrita dos Resultados (Write Back):
+  7.2.5 Escrita dos Resultados (Write Back) — [P]
 	  Atualização dos registradores
 	  Atualização dos resultados
 	  Atualização do estado da CPU
 
 
- 7.3 Micro-operações:
+ 7.3 Micro-operações — [P]
 
-  7.3.1 Conceitos:
+  7.3.1 Conceitos — [P]
 	  Conceito de micro-operação
 	  Relação entre instruções e micro-operações
 	  Papel na execução interna
 
-  7.3.2 Conversão em Micro-operações:
+  7.3.2 Conversão em Micro-operações — [P]
 	  Decodificação em micro-operações
 	  Fluxo interno
 	  Micro-operações simples
 	  Micro-operações complexas
 
-  7.3.3 Cache de Micro-operações:
+  7.3.3 Cache de Micro-operações — [I]
 	  Conceito
 	  Funcionamento
 	  Benefícios
 	  Aplicações em processadores modernos
 
 
- 7.4 Evolução da Execução:
+ 7.4 Evolução da Execução — [I/P]
 
-  7.4.1 Execução Sequencial:
+  7.4.1 Execução Sequencial — [I]
 	  Uma instrução por vez
 	  Organização clássica
 	  Limitações
 
-  7.4.2 Introdução ao Pipeline:
- 	  Sobreposição das etapas
+  7.4.2 Introdução ao Pipeline — [I]
+	  Sobreposição das etapas
 	  Estágios
 	  Fluxo contínuo
 
-  7.4.3 Introdução ao Paralelismo:
+  7.4.3 Introdução ao Paralelismo — [I]
 	  Paralelismo de instruções
 	  Paralelismo de dados
 	  Paralelismo de tarefas
 
-  7.3.4 Introdução à Execução Fora de Ordem:
+  7.4.4 Introdução à Execução Fora de Ordem — [I]
 	  Motivação
 	  Conceito geral
 	  Benefícios
@@ -597,32 +597,32 @@ PARTE 2 — ESTRUTURA E FUNCIONAMENTO BÁSICO DO PROCESSADOR:
 
 
 
-8. Unidade de Controle:
+8. Unidade de Controle — [P]
 
- 8.1 Fundamentos:
+ 8.1 Fundamentos — [P]
 
-  8.1.1 Conceitos:
+  8.1.1 Conceitos — [P]
 	  Definição
 	  Objetivos
 	  Funções
 	  Responsabilidades
 
-  8.1.2 Papel na CPU:
+  8.1.2 Papel na CPU — [P]
 	  Coordenação
 	  Sequenciamento
 	  Comunicação
 	  Controle
 
 
- 8.2 Organização:
+ 8.2 Organização — [P]
 
-  8.2.1 Estrutura:
+  8.2.1 Estrutura — [P]
 	  Blocos internos
 	  Entradas
 	  Saídas
 	  Fluxo de controle
 
-  8.2.2 Funcionamento:
+  8.2.2 Funcionamento — [P]
 	  Geração de sinais
 	  Sequenciamento
 	  Sincronização
@@ -630,15 +630,15 @@ PARTE 2 — ESTRUTURA E FUNCIONAMENTO BÁSICO DO PROCESSADOR:
 	  Atualização do estado
 
 
- 8.3 Tipos de Unidade de Controle:
+ 8.3 Tipos de Unidade de Controle — [P]
 
-  8.3.1 Controle Cabeado:
+  8.3.1 Controle Cabeado — [P]
 	  Organização
 	  Funcionamento
 	  Vantagens
-  	  Limitações
+	  Limitações
 
-  8.3.2 Controle Microprogramado:
+  8.3.2 Controle Microprogramado — [P]
 	  Organização
 	  Microprogramas
 	  Memória de controle
@@ -647,16 +647,16 @@ PARTE 2 — ESTRUTURA E FUNCIONAMENTO BÁSICO DO PROCESSADOR:
 
 
 
-9. Unidade Lógica e Aritmética (ALU)
+9. Unidade Lógica e Aritmética (ALU) — [P]
 
- 9.1 Fundamentos:
+ 9.1 Fundamentos — [P]
 
-  9.1.1 Conceitos:
+  9.1.1 Conceitos — [P]
 	  Definição
 	  Objetivos
 	  Papel na CPU
 
-  9.1.2 Organização:
+  9.1.2 Organização — [P]
 	  Entradas
 	  Saídas
 	  Unidade de operação
@@ -664,9 +664,9 @@ PARTE 2 — ESTRUTURA E FUNCIONAMENTO BÁSICO DO PROCESSADOR:
 	  Comunicação com o datapath
 
 
- 9.2 Operações:
+ 9.2 Operações — [P]
 
-  9.2.1 Operações Aritméticas:
+  9.2.1 Operações Aritméticas — [P]
 	  Soma
 	  Subtração
 	  Multiplicação inteira
@@ -675,21 +675,21 @@ PARTE 2 — ESTRUTURA E FUNCIONAMENTO BÁSICO DO PROCESSADOR:
 	  Decremento
 	  Comparação
 
-  9.2.2 Operações Lógicas:
+  9.2.2 Operações Lógicas — [P]
 	  AND
 	  OR
 	  XOR
 	  NOT
 
-  9.2.3 Operações de Deslocamento:
+  9.2.3 Operações de Deslocamento — [P]
 	  Shift lógico
 	  Shift aritmético
 	  Rotações
 
 
- 9.3 Flags:
+ 9.3 Flags — [P]
 
-  9.3.1 Indicadores de Estado:
+  9.3.1 Indicadores de Estado — [P]
 	  Carry
 	  Zero
 	  Overflow
@@ -697,7 +697,7 @@ PARTE 2 — ESTRUTURA E FUNCIONAMENTO BÁSICO DO PROCESSADOR:
 	  Parity
 	  Auxiliary Carry
 
-  9.3.2 Atualização dos Flags:
+  9.3.2 Atualização dos Flags — [P]
 	  Operações aritméticas
 	  Operações lógicas
 	  Comparações
@@ -705,16 +705,16 @@ PARTE 2 — ESTRUTURA E FUNCIONAMENTO BÁSICO DO PROCESSADOR:
 
 
 
-10. Unidade de Ponto Flutuante (FPU):
+10. Unidade de Ponto Flutuante (FPU) — [I/P]
 
- 10.1 Fundamentos:
+ 10.1 Fundamentos — [I]
 
-  10.1.1 Conceitos:
+  10.1.1 Conceitos — [I]
 	  Definição
 	  Objetivos
 	  Evolução histórica
 
-  10.1.2 Papel na CPU:
+  10.1.2 Papel na CPU — [I]
 	  Processamento científico
 	  Engenharia
 	  Gráficos
@@ -722,15 +722,15 @@ PARTE 2 — ESTRUTURA E FUNCIONAMENTO BÁSICO DO PROCESSADOR:
 	  Computação de alto desempenho
 
 
- 10.2 Organização:
+ 10.2 Organização — [P]
 
-  10.2.1 Estrutura:
+  10.2.1 Estrutura — [P]
 	  Componentes
 	  Caminhos de dados
 	  Comunicação com a CPU
 	  Pipeline da FPU
 
-  10.2.2 Operações:
+  10.2.2 Operações — [P]
 	  Soma
 	  Subtração
 	  Multiplicação
@@ -739,22 +739,22 @@ PARTE 2 — ESTRUTURA E FUNCIONAMENTO BÁSICO DO PROCESSADOR:
 	  Operações vetoriais
 
 
- 10.3 Representação Numérica:
+ 10.3 Representação Numérica — [P]
 
-  10.3.1 Conceitos:
- 	  Ponto fixo
+  10.3.1 Conceitos — [P]
+	  Ponto fixo
 	  Ponto flutuante
 	  Precisão
 	  Intervalo numérico
 
-   10.3.2 IEEE 754:
+  10.3.2 IEEE 754 — [P]
 	  Estrutura do número
 	  Bit de sinal
 	  Expoente
 	  Significando
 	  Precisão simples
 	  Precisão dupla
- 	  Casos especiais
+	  Casos especiais
 
 
 
