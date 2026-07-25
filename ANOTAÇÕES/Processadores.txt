@@ -758,21 +758,21 @@ PARTE 2 — ESTRUTURA E FUNCIONAMENTO BÁSICO DO PROCESSADOR
 
 
 
-PARTE 3 — ORGANIZAÇÃO INTERNA DOS PROCESSADORES MODERNOS:
+PARTE 3 — ORGANIZAÇÃO INTERNA DOS PROCESSADORES MODERNOS
 
 
-11. Banco de Registradores:
+11. Banco de Registradores — [P]
 
- 11.1 Fundamentos:
+ 11.1 Fundamentos — [P]
 
-  11.1.1 Conceitos:
+  11.1.1 Conceitos — [P]
 	  Registrador
 	  Banco de registradores
 	  Armazenamento temporário
 	  Papel na CPU
 	  Relação com o ciclo de instrução
 
-  11.1.2 Características Gerais:
+  11.1.2 Características Gerais — [P]
 	  Alta velocidade
 	  Baixa capacidade
 	  Comunicação direta
@@ -780,9 +780,9 @@ PARTE 3 — ORGANIZAÇÃO INTERNA DOS PROCESSADORES MODERNOS:
 	  Tempo de acesso
 
 
- 11.2 Organização:
+ 11.2 Organização — [P]
 
-  11.2.1 Estrutura:
+  11.2.1 Estrutura — [P]
 	  Registradores de uso geral
 	  Registradores especiais
 	  Organização física
@@ -790,7 +790,7 @@ PARTE 3 — ORGANIZAÇÃO INTERNA DOS PROCESSADORES MODERNOS:
 	  Banco de registradores físicos
 	  Banco de registradores arquiteturais
 
-  11.2.2 Comunicação:
+  11.2.2 Comunicação — [P]
 	  Leitura
 	  Escrita
 	  Portas de leitura
@@ -799,13 +799,13 @@ PARTE 3 — ORGANIZAÇÃO INTERNA DOS PROCESSADORES MODERNOS:
 	  Comunicação com as unidades funcionais
 
 
- 11.3 Principais Categorias:
+ 11.3 Principais Categorias — [I/P]
 
-  11.3.1 Registradores de Uso Geral:
+  11.3.1 Registradores de Uso Geral — [I]
 	  Operandos
 	  Resultados
 
-  11.3.2 Registradores Especiais:
+  11.3.2 Registradores Especiais — [P]
 	  Program Counter (PC)
 	  Instruction Register (IR)
 	  Stack Pointer (SP)
@@ -813,24 +813,24 @@ PARTE 3 — ORGANIZAÇÃO INTERNA DOS PROCESSADORES MODERNOS:
 	  Status Register
 	  Flags
 
-  11.3.3 Registradores Arquiteturais e Físicos:
+  11.3.3 Registradores Arquiteturais e Físicos — [P]
 	  Conceitos
 	  Diferenças
 	  Papel na execução moderna
 
 
 
-12. Microoperações:
+12. Microoperações — [P]
 
- 12.1 Fundamentos:
+ 12.1 Fundamentos — [P]
 
-  12.1.1 Conceitos:
+  12.1.1 Conceitos — [P]
 	  Definição
 	  Papel na execução
 	  Relação com o controle
 	  Relação com o datapath
 
-   12.1.2 Organização:
+  12.1.2 Organização — [P]
 	  Sequenciamento
 	  Controle
 	  Sincronização
@@ -838,44 +838,44 @@ PARTE 3 — ORGANIZAÇÃO INTERNA DOS PROCESSADORES MODERNOS:
 	  Fluxo interno
 
 
- 12.2 Tipos de Microoperações:
+ 12.2 Tipos de Microoperações — [P]
 
-  12.2.1 Transferência de Dados:
+  12.2.1 Transferência de Dados — [P]
 	  Entre registradores
 	  Para ALU
 	  Para FPU
 	  Para unidades funcionais
 
-  12.2.2 Operações Aritméticas:
+  12.2.2 Operações Aritméticas — [P]
 	  Soma
 	  Subtração
 	  Incremento
 	  Decremento
 
-  12.2.3 Operações Lógicas:
- 	  AND
+  12.2.3 Operações Lógicas — [P]
+	  AND
 	  OR
 	  XOR
 	  NOT
 
-  12.2.4 Operações de Deslocamento:
+  12.2.4 Operações de Deslocamento — [P]
 	  Shift
 	  Rotação
 
-  12.2.5 Microoperações de Controle:
+  12.2.5 Microoperações de Controle — [P]
 	  Geração de sinais
 	  Sequenciamento
 	  Controle temporal
 
 
- 12.3 Fluxo das Microoperações:
+ 12.3 Fluxo das Microoperações — [P]
 
-  12.3.1 Geração:
+  12.3.1 Geração — [P]
 	  Decodificação
 	  Conversão da instrução
 	  Formação das micro-operações
 
-  12.3.2 Execução:
+  12.3.2 Execução — [P]
 	  Emissão
 	  Agendamento
 	  Execução
@@ -883,34 +883,34 @@ PARTE 3 — ORGANIZAÇÃO INTERNA DOS PROCESSADORES MODERNOS:
 
 
 
-13. Caminho de Dados (Datapath)
+13. Caminho de Dados (Datapath) — [P]
 
- 13.1 Fundamentos:
+ 13.1 Fundamentos — [P]
 
-  13.1.1 Conceitos:
+  13.1.1 Conceitos — [P]
 	  Definição
 	  Objetivos
 	  Papel no processador
 	  Relação com o control path
 
-  13.1.2 Organização Geral:
+  13.1.2 Organização Geral — [P]
 	  Fluxo de dados
 	  Componentes
 	  Caminhos de transferência
-	  Entradas 
+	  Entradas
 	  Saídas
 
 
- 13.2 Componentes do Datapath:
+ 13.2 Componentes do Datapath — [P]
 
-  13.2.1 Componentes Principais:
+  13.2.1 Componentes Principais — [P]
 	  ALU
 	  Banco de registradores
 	  Multiplexadores
 	  Barramentos internos
 	  Unidades funcionais
 
-  13.2.2 Componentes Especializados:
+  13.2.2 Componentes Especializados — [P]
 	  FPU
 	  AGU
 	  LSU
@@ -919,15 +919,15 @@ PARTE 3 — ORGANIZAÇÃO INTERNA DOS PROCESSADORES MODERNOS:
 	  Unidade de branch
 
 
- 13.3 Funcionamento:
+ 13.3 Funcionamento — [P]
 
-  13.3.1 Operações:
+  13.3.1 Operações — [P]
 	  Leitura
 	  Transferência
 	  Processamento
 	  Escrita
 
-  13.3.2 Integração:
+  13.3.2 Integração — [P]
 	  Unidade de Controle
 	  ALU
 	  Registradores
@@ -937,46 +937,46 @@ PARTE 3 — ORGANIZAÇÃO INTERNA DOS PROCESSADORES MODERNOS:
 
 
 
-14. Caminho de Controle (Control Path)
+14. Caminho de Controle (Control Path) — [P]
 
- 14.1 Fundamentos:
+ 14.1 Fundamentos — [P]
 
-  14.1.1 Conceitos:
+  14.1.1 Conceitos — [P]
 	  Definição
 	  Objetivos
 	  Papel na CPU
 	  Relação com o datapath
 
-  14.1.2 Organização:
+  14.1.2 Organização — [P]
 	  Fluxo de controle
 	  Geração de sinais
 	  Coordenação
 	  Sequenciamento
 
 
- 14.2 Funcionamento:
+ 14.2 Funcionamento — [P]
 
-  14.2.1 Controle da Execução:
+  14.2.1 Controle da Execução — [P]
 	  Sequenciamento
 	  Controle temporal
 	  Ativação de componentes
 	  Coordenação
 
-  14.2.2 Sinais de Controle:
+  14.2.2 Sinais de Controle — [P]
 	  Controle da ALU
 	  Controle dos registradores
 	  Controle das unidades funcionais
 	  Controle dos barramentos
 
 
- 14.3 Integração:
+ 14.3 Integração — [P]
 
-  14.3.1 Relação com o Datapath:
+  14.3.1 Relação com o Datapath — [P]
 	  Coordenação
 	  Sincronização
 	  Comunicação
 
-14.3.2 Papel na Execução:
+  14.3.2 Papel na Execução — [P]
 	  Busca
 	  Decodificação
 	  Execução
@@ -984,47 +984,47 @@ PARTE 3 — ORGANIZAÇÃO INTERNA DOS PROCESSADORES MODERNOS:
 
 
 
-15. Comunicação Interna e Interconexões:
+15. Comunicação Interna e Interconexões — [P]
 
- 15.1 Comunicação Interna:
+ 15.1 Comunicação Interna — [P]
 
-  15.1.1 Organização:
+  15.1.1 Organização — [P]
 	  Comunicação entre componentes
 	  Fluxo de dados
 	  Fluxo de controle
 	  Sincronização
 
-  15.1.2 Interconexões:
+  15.1.2 Interconexões — [P]
 	  Caminhos internos
 	  Conexões dedicadas
 	  Compartilhamento de recursos
 	  Interconexões entre unidades
 
 
- 15.2 Barramentos Internos:
+ 15.2 Barramentos Internos — [P]
 
-  15.2.1 Organização:
+  15.2.1 Organização — [P]
 	  Barramento de dados
 	  Barramento de controle
 	  Barramento de endereços
 
-  15.2.2 Transferências:
+  15.2.2 Transferências — [P]
 	  Dados
 	  Endereços
 	  Sinais de controle
 	  Sincronização
 
 
- 15.3 Organização das Interconexões:
+ 15.3 Organização das Interconexões — [I/P]
 
-  15.3.1 Estruturas:
+  15.3.1 Estruturas — [P]
 	  Barramento único
 	  Barramentos múltiplos
 	  Interligações dedicadas
 	  Crossbar interno
 	  Redes internas (NoC)
 
-  15.3.2 Características:
+  15.3.2 Características — [P]
 	  Desempenho
 	  Latência
 	  Largura de banda
@@ -1033,52 +1033,52 @@ PARTE 3 — ORGANIZAÇÃO INTERNA DOS PROCESSADORES MODERNOS:
 
 
 
-16. Front-End dos Processadores:
+16. Front-End dos Processadores — [P]
 
- 16.1 Fundamentos:
+ 16.1 Fundamentos — [P]
 
-  16.1.1 Conceitos:
+  16.1.1 Conceitos — [P]
 	  Definição
 	  Objetivos
 	  Papel no processador moderno
 	  Relação com o Back-End
 
-  16.1.2 Organização Geral:
+  16.1.2 Organização Geral — [P]
 	  Fluxo de instruções
 	  Busca
 	  Decodificação
 	  Preparação da execução
 
 
- 16.2 Componentes:
+ 16.2 Componentes — [P]
 
-  16.2.1 Unidade de Busca:
+  16.2.1 Unidade de Busca — [P]
 	  Instruction Fetch Unit
 	  Program Counter
 	  Busca de instruções
 	  Prefetch
 
-  16.2.2 Unidade de Decodificação:
+  16.2.2 Unidade de Decodificação — [P]
 	  Decodificadores
 	  Conversão para micro-operações
 	  Decodificação simples
 	  Decodificação complexa
 
-  16.2.3 Cache de Micro-operações:
+  16.2.3 Cache de Micro-operações — [P]
 	  Organização
 	  Funcionamento
 	  Benefícios
 
-  16.2.4 Predição de Desvios:
+  16.2.4 Predição de Desvios — [P]
 	  Branch Prediction
 	  BTB
- 	  RAS
+	  RAS
 	  Histórico de desvios
 
 
- 16.3 Fluxo do Front-End:
+ 16.3 Fluxo do Front-End — [P]
 
-  16.3.1 Etapas:
+  16.3.1 Etapas — [P]
 	  Busca
 	  Pré-busca
 	  Decodificação
@@ -1087,49 +1087,49 @@ PARTE 3 — ORGANIZAÇÃO INTERNA DOS PROCESSADORES MODERNOS:
 
 
 
-17. Back-End dos Processadores:
+17. Back-End dos Processadores — [P]
 
- 17.1 Fundamentos:
+ 17.1 Fundamentos — [P]
 
-  17.1.1 Conceitos:
+  17.1.1 Conceitos — [P]
 	  Definição
 	  Objetivos
 	  Relação com o Front-End
 
-  17.1.2 Organização Geral:
+  17.1.2 Organização Geral — [P]
 	  Execução
 	  Agendamento
 	  Controle de dependências
 	  Finalização
 
-  
- 17.2 Componentes:
 
-  17.2.1 Register Renaming:
+ 17.2 Componentes — [P]
+
+  17.2.1 Register Renaming — [P]
 	  Objetivos
 	  Registradores físicos
 	  Eliminação de dependências falsas
 
-  17.2.2 Scheduler:
+  17.2.2 Scheduler — [P]
 	  Agendamento
 	  Seleção de instruções
 	  Disponibilidade das unidades funcionais
 
-  17.2.3 Reservation Stations:
+  17.2.3 Reservation Stations — [P]
 	  Organização
 	  Espera por operandos
 	  Emissão
 
-  17.2.4 Reorder Buffer (ROB):
+  17.2.4 Reorder Buffer (ROB) — [P]
 	  Organização
 	  Reordenação
 	  Commit
 	  Precisão das exceções
 
 
- 17.3 Execução:
+ 17.3 Execução — [P]
 
-  17.3.1 Unidades de Execução:
+  17.3.1 Unidades de Execução — [P]
 	  ALU
 	  FPU
 	  AGU
@@ -1137,18 +1137,18 @@ PARTE 3 — ORGANIZAÇÃO INTERNA DOS PROCESSADORES MODERNOS:
 	  Unidade Vetorial
 	  Unidade SIMD
 
-  17.3.2 Finalização:
+  17.3.2 Finalização — [P]
 	  Write Back
 	  Retirement
 	  Atualização do estado arquitetural
 
 
 
-18. Integração dos Componentes da CPU:
+18. Integração dos Componentes da CPU — [P]
 
- 18.1 Organização Geral:
+ 18.1 Organização Geral — [P]
 
-  18.1.1 Integração Funcional:
+  18.1.1 Integração Funcional — [P]
 	  Unidade de Controle
 	  Banco de Registradores
 	  ALU
@@ -1160,16 +1160,16 @@ PARTE 3 — ORGANIZAÇÃO INTERNA DOS PROCESSADORES MODERNOS:
 	  Front-End
 	  Back-End
 
-  18.1.2 Coordenação:
+  18.1.2 Coordenação — [P]
 	  Sequenciamento
 	  Comunicação
 	  Sincronização
 	  Fluxo interno
 
-  
- 18.2 Fluxo Geral do Processamento:
 
-  18.2.1 Execução de uma Instrução:
+ 18.2 Fluxo Geral do Processamento — [P]
+
+  18.2.1 Execução de uma Instrução — [P]
 	  Busca
 	  Decodificação
 	  Geração de micro-operações
@@ -1179,7 +1179,7 @@ PARTE 3 — ORGANIZAÇÃO INTERNA DOS PROCESSADORES MODERNOS:
 	  Write Back
 	  Retirement
 
-  18.2.2 Fluxo dos Dados:
+  18.2.2 Fluxo dos Dados — [P]
 	  Entrada
 	  Transferência
 	  Processamento
@@ -1187,15 +1187,15 @@ PARTE 3 — ORGANIZAÇÃO INTERNA DOS PROCESSADORES MODERNOS:
 	  Saída
 
 
- 18.3 Visão Integrada:
+ 18.3 Visão Integrada — [I/P]
 
-  18.3.1 Funcionamento Integrado:
+  18.3.1 Funcionamento Integrado — [P]
 	  Comunicação
 	  Coordenação
 	  Fluxo das informações
 	  Integração dos componentes
 
-  18.3.2 Transição para Processadores Modernos:
+  18.3.2 Transição para Processadores Modernos — [I]
 	  Pipeline
 	  Execução Superescalar
 	  Execução Fora de Ordem
