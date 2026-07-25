@@ -1679,30 +1679,30 @@ PARTE 4 — MICROARQUITETURA E PROCESSADORES MODERNOS
 
 
 
-PARTE 5 — ARQUITETURAS, TECNOLOGIAS E TENDÊNCIAS DOS PROCESSADORES:
+PARTE 5 — ARQUITETURAS, TECNOLOGIAS E TENDÊNCIAS DOS PROCESSADORES
 
 
-28. Arquitetura do Conjunto de Instruções (ISA):
+28. Arquitetura do Conjunto de Instruções (ISA) — [P]
 
- 28.1 Fundamentos:
+ 28.1 Fundamentos — [P]
 
-  28.1.1 Conceitos:
+  28.1.1 Conceitos — [P]
 	  Definição
 	  Objetivos
 	  Interface entre hardware e software
 	  Papel da ISA
 	  Relação com a microarquitetura
 
-  28.1.2 Organização:
+  28.1.2 Organização — [P]
 	  Modelo de programação
 	  Recursos visíveis ao programador
 	  Registradores arquiteturais
 	  Formato das instruções
 
 
- 28.2 Conjunto de Instruções:
+ 28.2 Conjunto de Instruções — [P]
 
-  28.2.1 Tipos de Instruções:
+  28.2.1 Tipos de Instruções — [P]
 	  Transferência de dados
 	  Operações aritméticas
 	  Operações lógicas
@@ -1711,13 +1711,13 @@ PARTE 5 — ARQUITETURAS, TECNOLOGIAS E TENDÊNCIAS DOS PROCESSADORES:
 	  Entrada e saída
 	  Operações vetoriais
 
-  28.2.2 Formatos:
+  28.2.2 Formatos — [P]
 	  Campos da instrução
 	  Opcode
 	  Operandos
 	  Tamanho das instruções
 
-  28.2.3 Modos de Endereçamento:
+  28.2.3 Modos de Endereçamento — [P]
 	  Imediato
 	  Direto
 	  Indireto
@@ -1727,21 +1727,21 @@ PARTE 5 — ARQUITETURAS, TECNOLOGIAS E TENDÊNCIAS DOS PROCESSADORES:
 	  Relativo
 
 
- 28.3 Evolução das ISAs:
+ 28.3 Evolução das ISAs — [I/P]
 
-  28.3.1 CISC:
+  28.3.1 CISC — [P]
 	  Conceitos
 	  Características
 	  Vantagens
 	  Limitações
 
-  28.3.2 RISC:
+  28.3.2 RISC — [P]
 	  Conceitos
 	  Características
 	  Vantagens
 	  Limitações
 
-  28.3.3 Arquiteturas Modernas:
+  28.3.3 Arquiteturas Modernas — [I]
 	  x86
 	  ARM
 	  RISC-V
@@ -1749,18 +1749,18 @@ PARTE 5 — ARQUITETURAS, TECNOLOGIAS E TENDÊNCIAS DOS PROCESSADORES:
 
 
 
-29. Desempenho dos Processadores:
+29. Desempenho dos Processadores — [P]
 
- 29.1 Fundamentos:
+ 29.1 Fundamentos — [P]
 
-  29.1.1 Conceitos:
+  29.1.1 Conceitos — [P]
 	  Desempenho
 	  Eficiência
 	  Throughput
 	  Latência
 	  Tempo de resposta
 
-  29.1.2 Fatores de Desempenho:
+  29.1.2 Fatores de Desempenho — [P]
 	  Frequência
 	  IPC
 	  CPI
@@ -1770,9 +1770,9 @@ PARTE 5 — ARQUITETURAS, TECNOLOGIAS E TENDÊNCIAS DOS PROCESSADORES:
 	  Memória
 
 
- 29.2 Avaliação:
+ 29.2 Avaliação — [I/P]
 
-  29.2.1 Métricas:
+  29.2.1 Métricas — [P]
 	  Clock
 	  IPC
 	  CPI
@@ -1780,7 +1780,7 @@ PARTE 5 — ARQUITETURAS, TECNOLOGIAS E TENDÊNCIAS DOS PROCESSADORES:
 	  FLOPS
 	  Benchmark
 
-  29.2.2 Benchmarks:
+  29.2.2 Benchmarks — [I]
 	  Benchmarks sintéticos
 	  Benchmarks reais
 	  SPEC
@@ -1788,16 +1788,16 @@ PARTE 5 — ARQUITETURAS, TECNOLOGIAS E TENDÊNCIAS DOS PROCESSADORES:
 	  Cinebench
 
 
- 29.3 Otimização:
+ 29.3 Otimização — [P]
 
-  29.3.1 Técnicas:
+  29.3.1 Técnicas — [P]
 	  Pipeline
 	  Superescalar
 	  Out-of-Order
 	  SMT
 	  Vetorização
 
-  29.3.2 Limitações:
+  29.3.2 Limitações — [P]
 	  Gargalos
 	  Lei de Amdahl
 	  Consumo de energia
@@ -1805,47 +1805,47 @@ PARTE 5 — ARQUITETURAS, TECNOLOGIAS E TENDÊNCIAS DOS PROCESSADORES:
 
 
 
-30. Eficiência Energética e Gerenciamento Térmico:
+30. Eficiência Energética e Gerenciamento Térmico — [P]
 
- 30.1 Consumo de Energia:
+ 30.1 Consumo de Energia — [P]
 
-  30.1.1 Fundamentos
+  30.1.1 Fundamentos — [P]
 	  Consumo estático
 	  Consumo dinâmico
 	  Potência
 	  Eficiência energética
 
-  30.1.2 Fatores:
+  30.1.2 Fatores — [P]
 	  Frequência
 	  Tensão
 	  Número de núcleos
 	  Carga de trabalho
 
 
- 30.2 Controle Energético:
+ 30.2 Controle Energético — [P]
 
-  30.2.1 Técnicas:
+  30.2.1 Técnicas — [P]
 	  Dynamic Voltage Scaling
 	  Dynamic Frequency Scaling
 	  Clock Gating
 	  Power Gating
 	  Estados de baixo consumo
 
-  30.2.2 Gerenciamento:
+  30.2.2 Gerenciamento — [P]
 	  Controle térmico
 	  Thermal Throttling
 	  Boost automático
 	  Balanceamento energético
 
- 
- 30.3 Dissipação de Calor:
 
-  30.3.1 Fontes de Calor
+ 30.3 Dissipação de Calor — [I/P]
+
+  30.3.1 Fontes de Calor — [P]
 	  Comutação dos transistores
 	  Vazamento
 	  Alta frequência
 
-  30.3.2 Soluções:
+  30.3.2 Soluções — [I]
 	  Dissipadores
 	  Ventoinhas
 	  Heat Pipes
@@ -1854,47 +1854,47 @@ PARTE 5 — ARQUITETURAS, TECNOLOGIAS E TENDÊNCIAS DOS PROCESSADORES:
 
 
 
-31. Fabricação dos Processadores
+31. Fabricação dos Processadores — [I/P]
 
- 31.1 Fundamentos:
+ 31.1 Fundamentos — [I]
 
-  31.1.1 Conceitos:
+  31.1.1 Conceitos — [I]
 	  Fabricação de semicondutores
 	  Wafer
 	  Die
 	  Chip
 
-  31.1.2 Materiais:
+  31.1.2 Materiais — [I]
 	  Silício
 	  Dopagem
 	  Camadas metálicas
 	  Isolantes
 
 
- 31.2 Processo de Fabricação:
+ 31.2 Processo de Fabricação — [P]
 
-  31.2.1 Etapas:
+  31.2.1 Etapas — [P]
 	  Fotolitografia
 	  Deposição
 	  Gravação
 	  Implantação iônica
 	  Metalização
 
-  31.2.2 Empacotamento:
+  31.2.2 Empacotamento — [I]
 	  Encapsulamento
 	  Testes
 	  Corte dos dies
 	  Montagem
 
 
- 31.3 Evolução Tecnológica:
+ 31.3 Evolução Tecnológica — [I]
 
-  31.3.1 Processos de Fabricação:
+  31.3.1 Processos de Fabricação — [I]
 	  Escalonamento
 	  Nós tecnológicos
 	  Densidade de transistores
 
-  31.3.2 Tecnologias Modernas:
+  31.3.2 Tecnologias Modernas — [I]
 	  FinFET
 	  GAAFET
 	  Empilhamento 3D
@@ -1902,46 +1902,46 @@ PARTE 5 — ARQUITETURAS, TECNOLOGIAS E TENDÊNCIAS DOS PROCESSADORES:
 
 
 
-32. Organização Física dos Processadores:
+32. Organização Física dos Processadores — [P]
 
- 32.1 Estrutura Física:
+ 32.1 Estrutura Física — [P]
 
-  32.1.1 Componentes:
+  32.1.1 Componentes — [P]
 	  Núcleos
 	  Cache integrada
 	  Controladores internos
 	  Interconexões
 
-  32.1.2 Layout:
+  32.1.2 Layout — [P]
 	  Distribuição funcional
 	  Organização dos blocos
 	  Fluxo físico
 
 
- 32.2 Comunicação Interna:
+ 32.2 Comunicação Interna — [P]
 
-  32.2.1 Interconexões:
+  32.2.1 Interconexões — [P]
 	  Barramento interno
 	  Ring Bus
 	  Mesh
 	  Crossbar
 	  NoC
 
-  32.2.2 Organização:
+  32.2.2 Organização — [P]
 	  Comunicação entre núcleos
 	  Comunicação com cache
 	  Comunicação com controladores
 
 
- 32.3 Arquiteturas Físicas Modernas:
+ 32.3 Arquiteturas Físicas Modernas — [P]
 
-  32.3.1 Organização:
+  32.3.1 Organização — [P]
 	  Monolítica
 	  Chiplets
 	  Multi-Die
 	  Tiles
 
-  32.3.2 Tecnologias:
+  32.3.2 Tecnologias — [I]
 	  Interposer
 	  EMIB
 	  Infinity Fabric
@@ -1949,18 +1949,18 @@ PARTE 5 — ARQUITETURAS, TECNOLOGIAS E TENDÊNCIAS DOS PROCESSADORES:
 
 
 
-33. Recursos Arquiteturais Modernos:
+33. Recursos Arquiteturais Modernos — [I/P]
 
- 33.1 Extensões de Instruções:
+ 33.1 Extensões de Instruções — [I]
 
-  33.1.1 SIMD:
+  33.1.1 SIMD — [P]
 	  MMX
 	  SSE
 	  AVX
 	  AVX2
 	  AVX-512
 
-  33.1.2 Outras Extensões:
+  33.1.2 Outras Extensões — [I]
 	  AES-NI
 	  SHA
 	  AMX
@@ -1968,28 +1968,28 @@ PARTE 5 — ARQUITETURAS, TECNOLOGIAS E TENDÊNCIAS DOS PROCESSADORES:
 	  Extensões para IA
 
 
- 33.2 Virtualização em Hardware:
+ 33.2 Virtualização em Hardware — [I]
 
-  33.2.1 Fundamentos:
+  33.2.1 Fundamentos — [I]
 	  Conceitos
 	  Objetivos
 	  Máquinas virtuais
 	  Hipervisores
 
-  33.2.2 Tecnologias:
+  33.2.2 Tecnologias — [I]
 	  Intel VT-x
 	  AMD-V
 	  Virtualização assistida por hardware
 
 
- 33.3 Recursos Avançados:
+ 33.3 Recursos Avançados — [I]
 
-  33.3.1 Segurança:
+  33.3.1 Segurança — [I]
 	  Execução protegida
 	  Isolamento
 	  Controle de privilégios
 
-  33.3.2 Recursos Especiais:
+  33.3.2 Recursos Especiais — [I]
 	  Criptografia por hardware
 	  Geradores de números aleatórios
 	  Monitoramento de desempenho
@@ -1997,88 +1997,88 @@ PARTE 5 — ARQUITETURAS, TECNOLOGIAS E TENDÊNCIAS DOS PROCESSADORES:
 
 
 
-34. Segurança em Processadores:
+34. Segurança em Processadores — [P]
 
- 34.1 Fundamentos:
+ 34.1 Fundamentos — [P]
 
-  34.1.1 Conceitos:
+  34.1.1 Conceitos — [P]
 	  Segurança em hardware
 	  Objetivos
 	  Ameaças
 	  Superfície de ataque
 
-  34.1.2 Níveis de Privilégio:
+  34.1.2 Níveis de Privilégio — [P]
 	  Modo usuário
 	  Modo kernel
 	  Controle de privilégios
 
- 
- 34.2 Vulnerabilidades:
 
-  34.2.1 Execução Especulativa:
+ 34.2 Vulnerabilidades — [P]
+
+  34.2.1 Execução Especulativa — [P]
 	  Conceitos
 	  Impactos na segurança
 
-  34.2.2 Vulnerabilidades Conhecidas:
+  34.2.2 Vulnerabilidades Conhecidas — [I]
 	  Spectre
 	  Meltdown
- 	  Outras vulnerabilidades relacionadas
+	  Outras vulnerabilidades relacionadas
 
 
- 34.3 Mitigações:
+ 34.3 Mitigações — [P]
 
-  34.3.1 Soluções em Hardware:
+  34.3.1 Soluções em Hardware — [P]
 	  Alterações na microarquitetura
 	  Isolamento
 	  Proteções adicionais
 
-  34.3.2 Soluções em Software:
+  34.3.2 Soluções em Software — [I]
 	  Atualizações
 	  Mitigações no sistema operacional
 	  Mitigações em compiladores
 
 
 
-35. Tendências e Futuro dos Processadores:
+35. Tendências e Futuro dos Processadores — [I]
 
- 35.1 Evolução Tecnológica:
+ 35.1 Evolução Tecnológica — [I]
 
-  35.1.1 Tendências:
+  35.1.1 Tendências — [V]
 	  Aumento da integração
 	  Mais núcleos
 	  Eficiência energética
 	  IA integrada
 
-  35.1.2 Novas Tecnologias:
+  35.1.2 Novas Tecnologias — [V]
 	  Empilhamento 3D
 	  Chiplets
 	  Novos materiais
 	  Fotônica
-	  Computação quântica 
+	  Computação quântica
 
 
- 35.2 Novas Arquiteturas:
+ 35.2 Novas Arquiteturas — [I]
 
-  35.2.1 Evolução:
+  35.2.1 Evolução — [I]
 	  RISC-V
 	  Computação heterogênea
 	  Arquiteturas especializadas
 
-  35.2.2 Inteligência Artificial:
+  35.2.2 Inteligência Artificial — [I]
 	  NPUs
 	  Aceleradores dedicados
 	  Processadores para IA
 
 
- 35.3 Perspectivas:
+ 35.3 Perspectivas — [V/I]
 
-  35.3.1 Desafios:
+  35.3.1 Desafios — [I]
 	  Limites físicos
 	  Consumo energético
 	  Dissipação térmica
 	  Escalabilidade
 
-  35.3.2 Futuro:
+  35.3.2 Futuro — [V]
 	  Novas arquiteturas
 	  Novos processos de fabricação
 	  Integração crescente
@@ -2086,15 +2086,15 @@ PARTE 5 — ARQUITETURAS, TECNOLOGIAS E TENDÊNCIAS DOS PROCESSADORES:
 
 
 
-36. Revisão Geral dos Processadores:
+36. Revisão Geral dos Processadores — [V]
 
- 36.1 Fundamentos:
+ 36.1 Fundamentos — [V]
 	Conceitos fundamentais
 	Organização da CPU
 	Componentes internos
 	Fluxo de funcionamento
 
- 36.2 Microarquitetura:
+ 36.2 Microarquitetura — [V]
 	Pipeline
 	Superescalar
 	Execução Fora de Ordem
@@ -2103,14 +2103,14 @@ PARTE 5 — ARQUITETURAS, TECNOLOGIAS E TENDÊNCIAS DOS PROCESSADORES:
 	Back-End
 	Paralelismo
 
- 36.3 Arquiteturas Modernas:
+ 36.3 Arquiteturas Modernas — [V]
 	Multicore
 	SMT
 	Processadores heterogêneos
 	ISA
 	Recursos modernos
 
- 36.4 Panorama Geral
+ 36.4 Panorama Geral — [V]
 	Evolução histórica
 	Tecnologias atuais
 	Tendências futuras
