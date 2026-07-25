@@ -16,7 +16,7 @@ Parte 1 — Fundamentos dos Registradores:
 
  1.1 Visão Geral — [P]:
 
-  1.1.1 Conceitos Fundamentais:
+  1.1.1 Conceitos Fundamentais — [P]:
 	  Conceito de registrador
 	  Objetivos dos registradores
 	  Papel dos registradores na Organização de Computadores
@@ -24,7 +24,7 @@ Parte 1 — Fundamentos dos Registradores:
 	  Armazenamento temporário de informações
 	  Relação entre registradores e execução das instruções
 
-  1.1.2 Importância dos Registradores:
+  1.1.2 Importância dos Registradores — [P]:
 	  Influência no desempenho do processador
 	  Redução dos acessos à memória
 	  Armazenamento imediato de operandos
@@ -32,7 +32,7 @@ Parte 1 — Fundamentos dos Registradores:
 	  Suporte às operações internas da CPU
 	  Papel na eficiência computacional
 
-  1.1.3 Registradores na Hierarquia de Memória:
+  1.1.3 Registradores na Hierarquia de Memória — [P]:
 	  Registradores como nível mais alto da hierarquia
 	  Proximidade com a ULA
 	  Relação entre velocidade, capacidade e custo
@@ -43,21 +43,21 @@ Parte 1 — Fundamentos dos Registradores:
 
  1.2 Características Gerais — [P]:
 
-  1.2.1 Características Funcionais:
+  1.2.1 Características Funcionais — [P]:
 	  Volatilidade
 	  Alta velocidade de acesso
 	  Baixa capacidade de armazenamento
 	  Acesso direto pelo processador
 	  Operação sincronizada pelo clock
 
-  1.2.2 Características Estruturais:
+  1.2.2 Características Estruturais — [P]:
 	  Largura do registrador
 	  Quantidade de bits
 	  Organização por palavra
 	  Capacidade individual
 	  Capacidade total do conjunto de registradores
 
-  1.2.3 Características Operacionais:
+  1.2.3 Características Operacionais — [P]:
 	  Leitura
 	  Escrita
 	  Atualização
@@ -68,27 +68,27 @@ Parte 1 — Fundamentos dos Registradores:
 
  1.3 Papel dos Registradores no Processamento — [P]:
 
-  1.3.1 Armazenamento Temporário:
+  1.3.1 Armazenamento Temporário — [P]:
 	  Dados
 	  Endereços
 	  Instruções
 	  Resultados intermediários
 	  Informações de controle
 
-  1.3.2 Participação na Execução:
+  1.3.2 Participação na Execução — [P]:
 	  Busca de informações
 	  Manipulação de operandos
 	  Armazenamento de resultados
 	  Controle do processamento
 	  Sequenciamento das operações
 
-  1.3.3 Fluxo Geral de Informações:
+  1.3.3 Fluxo Geral de Informações — [P]:
 	  Entrada de dados nos registradores
 	  Processamento interno
 	  Saída dos resultados
 	  Atualização contínua dos valores
 
-  1.3.4 Papel dos Registradores no Ciclo de Instrução:
+  1.3.4 Papel dos Registradores no Ciclo de Instrução — [P]:
 	  Participação na busca da instrução
 	  Participação na decodificação
 	  Participação na execução
@@ -108,7 +108,7 @@ Parte 1 — Fundamentos dos Registradores:
 	  Palavra dupla
 	  Palavra da máquina
 
-  2.1.2 Representação das Informações:
+  2.1.2 Representação das Informações — [P]:
 	  Dados inteiros
 	  Dados sem sinal
 	  Dados com sinal
@@ -116,14 +116,14 @@ Parte 1 — Fundamentos dos Registradores:
 	  Códigos de operação
 	  Informações de controle
 
-  2.1.3 Largura dos Registradores:
+  2.1.3 Largura dos Registradores — [P]:
 	  Registradores de 8 bits
 	  Registradores de 16 bits
 	  Registradores de 32 bits
 	  Registradores de 64 bits
 	  Registradores de largura ampliada
 
-  2.1.4 Organização dos Dados nos Registradores:
+  2.1.4 Organização dos Dados nos Registradores — [P]:
 	  Alinhamento dos dados
 	  Representação por palavra da máquina
 	  Organização conforme a largura do registrador
@@ -138,7 +138,7 @@ Parte 1 — Fundamentos dos Registradores:
 	  Saídas
 	  Linhas de controle
 
-  2.2.2 Controle das Operações:
+  2.2.2 Controle das Operações — [P]:
 	  Clock
 	  Enable
 	  Write Enable
@@ -146,7 +146,7 @@ Parte 1 — Fundamentos dos Registradores:
 	  Reset
 	  Clear
 
-  2.2.3 Estados Operacionais:
+  2.2.3 Estados Operacionais — [P]:
 	  Estado de leitura
 	  Estado de escrita
 	  Estado de espera
@@ -155,25 +155,25 @@ Parte 1 — Fundamentos dos Registradores:
 
  2.3 Características de Desempenho — [I]:
 
-  2.3.1 Tempo:
+  2.3.1 Tempo — [I]:
 	  Tempo de acesso
 	  Tempo de leitura
 	  Tempo de escrita
 	  Latência
 
-  2.3.2 Eficiência:
+  2.3.2 Eficiência — [I]:
 	  Taxa de utilização
 	  Paralelismo
 	  Disponibilidade dos dados
 	  Influência no desempenho do processador
 
-  2.3.3 Restrições:
+  2.3.3 Restrições — [I]:
 	  Quantidade limitada
 	  Área ocupada no processador
 	  Consumo de energia
 	  Complexidade de implementação
 
-  2.3.4 Fatores que Influenciam o Uso dos Registradores:
+  2.3.4 Fatores que Influenciam o Uso dos Registradores — [I]:
 	  Frequência de acesso
 	  Localidade temporal
 	  Reutilização dos dados
@@ -192,14 +192,14 @@ Parte 1 — Fundamentos dos Registradores:
 	  Registradores de estado
 	  Registradores temporários
 
-  3.1.2 Organização por Visibilidade:
+  3.1.2 Organização por Visibilidade — [P]:
 	  Registradores visíveis ao programador
 	  Registradores arquiteturais
 	  Registradores internos
 	  Registradores físicos
 	  Registradores de uso exclusivo do hardware
 
-  3.1.3 Organização por Especialização:
+  3.1.3 Organização por Especialização — [P]:
 	  Propósito geral
 	  Propósito específico
 	  Registradores especializados
@@ -207,19 +207,19 @@ Parte 1 — Fundamentos dos Registradores:
 
  3.2 Organização Física — [P]:
 
-  3.2.1 Distribuição na CPU:
+  3.2.1 Distribuição na CPU — [P]:
 	  Localização dos registradores
 	  Proximidade com a ULA
 	  Interligação por barramentos internos
 	  Organização em bancos
   
-  3.2.2 Estruturas de Interconexão:
+  3.2.2 Estruturas de Interconexão — [P]:
 	  Caminhos de dados
 	  Barramentos internos
 	  Multiplexação
 	  Seleção de registradores
 
-  3.2.3 Organização do Conjunto de Registradores:
+  3.2.3 Organização do Conjunto de Registradores — [P]:
 	  Quantidade de registradores
 	  Agrupamento funcional
 	  Organização lógica
@@ -228,20 +228,20 @@ Parte 1 — Fundamentos dos Registradores:
 
  3.3 Critérios de Organização — [I]:
   
-  3.3.1 Critérios de Projeto:
+  3.3.1 Critérios de Projeto — [I]:
 	  Desempenho
 	  Área de hardware
 	  Consumo de energia
 	  Complexidade
 	  Escalabilidade
 
-  3.3.2 Critérios de Utilização:
+  3.3.2 Critérios de Utilização — [I]:
 	  Frequência de acesso
 	  Compartilhamento de dados
 	  Comunicação interna
 	  Eficiência operacional
 
-  3.3.3 Critérios de Classificação:
+  3.3.3 Critérios de Classificação — [I]:
 	  Função
 	  Estrutura
 	  Operação
@@ -249,7 +249,7 @@ Parte 1 — Fundamentos dos Registradores:
 	  Visibilidade
 	  Organização
 
-  3.3.4 Cooperação entre Registradores:
+  3.3.4 Cooperação entre Registradores — [I]:
 	  Compartilhamento de informações
 	  Fluxo de dados entre registradores
 	  Dependência funcional
@@ -261,38 +261,38 @@ Parte 1 — Fundamentos dos Registradores:
 
  4.1 Classificação Quanto à Função — [I]:
 
-  4.1.1 Registradores de Dados:
+  4.1.1 Registradores de Dados — [I]:
 	  Operandos
 	  Resultados
 	  Dados temporários
 	  Dados provenientes da memória
 
-  4.1.2 Registradores de Endereços:
+  4.1.2 Registradores de Endereços — [I]:
 	  Endereços de memória
 	  Endereços de instruções
 	  Endereços efetivos
 	  Endereços de pilha
 
-  4.1.3 Registradores de Controle:
+  4.1.3 Registradores de Controle — [I]:
 	  Controle da execução
 	  Controle da CPU
 	  Controle da memória
 	  Controle das interrupções
 	  Controle dos modos de operação
 
-  4.1.4 Registradores de Estado:
+  4.1.4 Registradores de Estado — [I]:
 	  Flags
 	  Estado do processador
 	  Estado das operações
 	  Condições da ULA
 
-  4.1.5 Registradores de Instrução:
+  4.1.5 Registradores de Instrução — [I]:
 	  Instrução corrente
 	  Opcode
 	  Campos da instrução
 	  Informações de decodificação
 
-  4.1.6 Registradores Temporários:
+  4.1.6 Registradores Temporários — [I]:
 	  Resultados intermediários
 	  Micro-operações
 	  Dados internos
@@ -301,19 +301,19 @@ Parte 1 — Fundamentos dos Registradores:
  
  4.2 Classificação Quanto ao Uso — [I]:
 
-  4.2.1 Registradores Visíveis ao Programador:
+  4.2.1 Registradores Visíveis ao Programador — [I]:
 	  Registradores arquiteturais
 	  Acesso por instruções
 	  Manipulação pela ISA
 	  Estado visível da máquina
 
-  4.2.2 Registradores Não Visíveis ao Programador:
+  4.2.2 Registradores Não Visíveis ao Programador — [I]:
 	  Registradores internos
 	  Registradores temporários
 	  Uso exclusivo do hardware
 	  Controle automático
 
-  4.2.3 Registradores de Uso Exclusivo da CPU:
+  4.2.3 Registradores de Uso Exclusivo da CPU — [I]:
 	  Registradores internos da Unidade de Controle
 	  Registradores internos da ULA
 	  Registradores de interface
@@ -322,19 +322,19 @@ Parte 1 — Fundamentos dos Registradores:
 
  4.3 Classificação Quanto à Especialização — [I]:
 
-  4.3.1 Registradores de Propósito Geral:
+  4.3.1 Registradores de Propósito Geral — [I]:
 	  Flexibilidade
 	  Utilização geral
 	  Armazenamento temporário
 	  Operandos
 
-  4.3.2 Registradores de Propósito Específico:
+  4.3.2 Registradores de Propósito Específico — [I]:
 	  Funções dedicadas
 	  Controle do processamento
 	  Apoio à execução
 	  Comunicação interna
 
-  4.3.3 Registradores Especializados:
+  4.3.3 Registradores Especializados — [I]:
 	  Ponto flutuante
 	  Vetoriais
 	  SIMD
@@ -359,21 +359,21 @@ Parte 2 — Registradores Fundamentais da CPU:
 
  5.1 Fundamentos — [P] :
 
-  5.1.1 Conceitos:
+  5.1.1 Conceitos — [P]:
 	  Definição
 	  Objetivos
 	  Organização
 	  Características
 	  Papel no processamento
 
-  5.1.2 Estrutura:
+  5.1.2 Estrutura — [P]:
 	  Quantidade de registradores
 	  Identificação
 	  Largura
 	  Organização lógica
 	  Organização física
 
-  5.1.3 Características Operacionais:
+  5.1.3 Características Operacionais — [P]:
 	  Leitura
 	  Escrita
 	  Atualização
@@ -383,27 +383,27 @@ Parte 2 — Registradores Fundamentais da CPU:
 
  5.2 Utilização — [P]:
 
-  5.2.1 Armazenamento:
+  5.2.1 Armazenamento — [P]:
 	  Operandos
 	  Resultados
 	  Variáveis temporárias
 	  Constantes
 	  Endereços temporários
 
-  5.2.2 Participação nas Operações:
+  5.2.2 Participação nas Operações — [P]:
 	  Operações aritméticas
 	  Operações lógicas
 	  Operações de deslocamento
 	  Operações de comparação
 	  Transferência de dados
 
-  5.2.3 Fluxo de Dados:
+  5.2.3 Fluxo de Dados — [P]:
 	  Entrada de dados
 	  Saída de dados
 	  Comunicação com a ULA
 	  Comunicação com outros registradores
 
-  5.2.4 Organização da Utilização:
+  5.2.4 Organização da Utilização — [P]:
 	  Compartilhamento entre instruções
 	  Reutilização dos registradores
 	  Vida útil temporária dos dados
@@ -412,19 +412,19 @@ Parte 2 — Registradores Fundamentais da CPU:
 
  5.3 Organização — [P]:
 
-  5.3.1 Organização Física:
+  5.3.1 Organização Física — [P]:
 	  Banco de registradores
 	  Distribuição
 	  Interligação
 	  Barramentos internos
 
- 5.3.2 Organização Lógica:
+ 5.3.2 Organização Lógica — [P]:
 	  Identificação
 	  Seleção
 	  Endereçamento interno
 	  Controle de acesso
 
- 5.3.3 Critérios de Projeto:
+ 5.3.3 Critérios de Projeto — [I]:
 	  Quantidade
 	  Desempenho
 	  Área ocupada
@@ -437,13 +437,13 @@ Parte 2 — Registradores Fundamentais da CPU:
 
  6.1 Program Counter (PC) — [P]:
 
-  6.1.1 Conceitos:
+  6.1.1 Conceitos — [P]:
 	  Definição
 	  Objetivos
 	  Endereço da próxima instrução
 	  Relação com o fluxo de execução
 
-  6.1.2 Atualização:
+  6.1.2 Atualização — [P]:
 	  Incremento
 	  Branches
 	  Jumps
@@ -452,7 +452,7 @@ Parte 2 — Registradores Fundamentais da CPU:
 	  Interrupções
 	  Exceções
 
-  6.1.3 Relação com o Processamento:
+  6.1.3 Relação com o Processamento — [P]:
 	  Ciclo de busca
 	  Unidade de Controle
 	  Memória de instruções
@@ -462,19 +462,19 @@ Parte 2 — Registradores Fundamentais da CPU:
 
  6.2 Instruction Pointer (IP/EIP/RIP) — [I/P]:
 
-  6.2.1 Conceitos:
+  6.2.1 Conceitos — [I]:
 	  Definição
 	  Relação com o PC
 	  Evolução do IP
 	  Largura do registrador
 
-  6.2.2 Funcionamento:
+  6.2.2 Funcionamento — [P]:
 	  Endereço da instrução corrente
 	  Endereço da próxima instrução
 	  Atualização sequencial
 	  Alteração por desvios
 
-  6.2.3 Evolução:
+  6.2.3 Evolução — [I]:
 	  IP
 	  EIP
 	  RIP
@@ -483,18 +483,18 @@ Parte 2 — Registradores Fundamentais da CPU:
  
  6.3 Link Register (LR) — [I]:
 
-  6.3.1 Conceitos:
+  6.3.1 Conceitos — [I]:
 	  Definição
 	  Endereço de retorno
 	  Chamadas de subrotinas
 
-  6.3.2 Funcionamento:
+  6.3.2 Funcionamento — [I]:
 	  Armazenamento do endereço de retorno
 	  Retorno de funções
 	  Relação com a pilha
 	  Salvamento do LR
 
-  6.3.3 Aplicação:
+  6.3.3 Aplicação — [I]:
 	  Arquiteturas RISC
 	  Chamadas de funções
 	  Procedimentos
@@ -506,19 +506,19 @@ Parte 2 — Registradores Fundamentais da CPU:
 
  7.1 Stack Pointer (SP) — [P]:
 
-  7.1.1 Conceitos:
+  7.1.1 Conceitos — [P]:
 	  Definição
 	  Topo da pilha
 	  Endereçamento da pilha
 
-  7.1.2 Operações:
+  7.1.2 Operações — [P]:
 	  Push
 	  Pop
 	  Atualização
 	  Crescimento da pilha
 	  Redução da pilha
 
-  7.1.3 Utilização:
+  7.1.3 Utilização — [P]:
 	  Chamadas de funções
 	  Variáveis locais
 	  Parâmetros
@@ -528,18 +528,18 @@ Parte 2 — Registradores Fundamentais da CPU:
 
  7.2 Frame Pointer (FP/BP) — [P]:
 
-  7.2.1 Conceitos:
+  7.2.1 Conceitos — [P]:
 	  Definição
 	  Quadro de pilha
 	  Stack Frame
 
-  7.2.2 Organização:
+  7.2.2 Organização — [P]:
 	  Variáveis locais
 	  Parâmetros
 	  Endereço de retorno
 	  Registradores salvos
 
-  7.2.3 Relação com Compiladores:
+  7.2.3 Relação com Compiladores — [I]:
 	  Convenções de chamada
 	  Acesso a variáveis
 	  Frame Pointer Elimination
@@ -548,12 +548,12 @@ Parte 2 — Registradores Fundamentais da CPU:
  
  7.3 Stack Limit Register — [I]:
 
-  7.3.1 Conceitos:
+  7.3.1 Conceitos — [I]:
 	  Limite da pilha
 	  Endereço mínimo
 	  Endereço máximo
 
-  7.3.2 Proteção:
+  7.3.2 Proteção — [I]:
 	  Detecção de Stack Overflow
 	  Limites de acesso
 	  Proteção de memória
@@ -561,26 +561,26 @@ Parte 2 — Registradores Fundamentais da CPU:
 
  7.4 Registradores de Pilha por Modo — [I]:
 
-  7.4.1 Pilha de Usuário:
+  7.4.1 Pilha de Usuário — [I]:
 	  User Stack Pointer
 	  Espaço de usuário
 
-  7.4.2 Pilha do Sistema:
+  7.4.2 Pilha do Sistema — [I]:
 	  Supervisor Stack Pointer
 	  Kernel Stack Pointer
 
-  7.4.3 Pilha de Exceções:
+  7.4.3 Pilha de Exceções — [I]:
 	  Exception Stack Pointer
  	  Salvamento do contexto
 
 
  7.5 Organização da Pilha pelos Registradores — [P]:
 
-  7.5.1 Crescimento da Pilha:
+  7.5.1 Crescimento da Pilha — [I]:
 	  Crescimento ascendente
 	  Crescimento descendente
 
-  7.5.2 Atualização dos Registradores da Pilha:
+  7.5.2 Atualização dos Registradores da Pilha — [P]:
 	  Atualização do SP
 	  Atualização do FP
 	  Atualização durante chamadas
@@ -592,12 +592,12 @@ Parte 2 — Registradores Fundamentais da CPU:
 
  8.1 Memory Address Register (MAR) — [P]:
 
-  8.1.1 Conceitos:
+  8.1.1 Conceitos — [P]:
 	  Definição
 	  Endereço da operação de memória
   	  Relação com a CPU
 
-  8.1.2 Funcionamento:
+  8.1.2 Funcionamento — [P]:
 	  Envio do endereço
 	  Barramento de endereços
 	  Leitura da memória
@@ -606,24 +606,24 @@ Parte 2 — Registradores Fundamentais da CPU:
 
  8.2 Memory Data Register (MDR) — [P]:
 
-  8.2.1 Conceitos:
+  8.2.1 Conceitos — [P]:
 	  Definição
 	  Dados da operação de memória
 
-  8.2.2 Funcionamento:
+  8.2.2 Funcionamento — [P]:
 	  Dados memória → CPU
 	  Dados CPU → memória
 	  Barramento de dados
 
  
- 8.3 Memory Buffer Register (MBR) — [P]:
+ 8.3 Memory Buffer Register (MBR) — [I]:
 
-  8.3.1 Conceitos:
+  8.3.1 Conceitos — [I]:
 	  Definição
 	  Relação com o MDR
 	  Diferenças de nomenclatura
 
-  8.3.2 Funcionamento:
+  8.3.2 Funcionamento — [I]:
 	  Armazenamento temporário
 	  Leitura
 	  Escrita
@@ -631,11 +631,11 @@ Parte 2 — Registradores Fundamentais da CPU:
 
  8.4 Base Register — [P]:
 
-  8.4.1 Conceitos:
+  8.4.1 Conceitos — [P]:
 	  Endereço base
 	  Endereçamento relativo
 
-  8.4.2 Aplicações:
+  8.4.2 Aplicações — [P]:
 	  Relocação
 	  Segmentação
 	  Proteção
@@ -644,11 +644,11 @@ Parte 2 — Registradores Fundamentais da CPU:
 
  8.5 Index Register — [P]:
 
-  8.5.1 Conceitos:
+  8.5.1 Conceitos — [P]:
 	  Índice
 	  Endereçamento indexado
 
-  8.5.2 Aplicações:
+  8.5.2 Aplicações — [P]:
 	  Vetores
 	  Arrays
 	  Estruturas de dados
@@ -657,13 +657,13 @@ Parte 2 — Registradores Fundamentais da CPU:
  
  8.6 Cálculo do Endereço Efetivo — [P]:
  
-  8.6.1 Componentes:
+  8.6.1 Componentes — [P]:
 	  Endereço base
 	  Índice
 	  Deslocamento
 	  Escala
 
-  8.6.2 Modos de Endereçamento:
+  8.6.2 Modos de Endereçamento — [P]:
 	  Direto
 	  Indireto
 	  Base
@@ -675,12 +675,12 @@ Parte 2 — Registradores Fundamentais da CPU:
 
  8.7 Fluxo de Endereçamento — [P]:
 
-  8.7.1 Formação do Endereço:
+  8.7.1 Formação do Endereço — [P]:
 	  Endereço lógico
 	  Endereço efetivo
 	  Endereço físico
 
-  8.7.2 Participação dos Registradores:
+  8.7.2 Participação dos Registradores — [P]:
 	  Base Register
 	  Index Register
 	  MAR
@@ -692,18 +692,18 @@ Parte 2 — Registradores Fundamentais da CPU:
 
  9.1 Instruction Register (IR) — [P]:
 
-  9.1.1 Conceitos:
+  9.1.1 Conceitos — [P]:
 	  Definição
 	  Instrução corrente
 	  Ciclo de instrução
 
-  9.1.2 Funcionamento:
+  9.1.2 Funcionamento — [P]:
 	  Recebimento da instrução
 	  Armazenamento
 	  Decodificação
 	  Atualização
 
-  9.1.3 Relação com a Unidade de Controle:
+  9.1.3 Relação com a Unidade de Controle — [P]:
 	  Decodificação
 	  Geração de sinais
 	  Controle das micro-operações
@@ -711,16 +711,16 @@ Parte 2 — Registradores Fundamentais da CPU:
 
  9.2 Campos da Instrução — [P]:
 
-  9.2.1 Opcode:
+  9.2.1 Opcode — [P]:
 	  Código da operação
 	  Decodificação
 
-  9.2.2 Operandos:
+  9.2.2 Operandos — [P]:
 	  Registradores
 	  Imediatos
 	  Endereços
 
-  9.2.3 Modos de Endereçamento:
+  9.2.3 Modos de Endereçamento — [P]:
 	  Identificação
 	  Decodificação
 	  Controle
@@ -728,12 +728,12 @@ Parte 2 — Registradores Fundamentais da CPU:
 
  9.3 Registradores Auxiliares de Instrução — [I]:
 
-  9.3.1 Registradores Temporários:
+  9.3.1 Registradores Temporários — [I]:
 	  Dados intermediários
 	  Campos da instrução
 	  Operandos
 
-  9.3.2 Registradores de Decodificação:
+  9.3.2 Registradores de Decodificação — [V]:
 	  Opcode Register
 	  Operand Registers
 	  Instruction Fields
@@ -741,15 +741,15 @@ Parte 2 — Registradores Fundamentais da CPU:
 
  9.4 Registradores de Microinstruções — [I]:
 
-  9.4.1 Microinstruction Register:
+  9.4.1 Microinstruction Register — [I]:
 	  Microinstrução corrente
 	  Controle microprogramado
 
-  9.4.2 Microprogram Counter:
+  9.4.2 Microprogram Counter — [I]:
 	  Endereço da próxima microinstrução
 	  Sequenciamento
 
-  9.4.3 Microsequenciamento:
+  9.4.3 Microsequenciamento — [I]:
 	  Controle
 	  Desvios
 	  Micro-operações
@@ -757,13 +757,13 @@ Parte 2 — Registradores Fundamentais da CPU:
 
  9.5 Fluxo da Instrução pelos Registradores — [P]:
 
-  9.5.1 Caminho da Instrução:
+  9.5.1 Caminho da Instrução — [P]:
 	  Memória
 	  MAR
 	  MDR
 	  IR
 
-  9.5.2 Controle:
+  9.5.2 Controle — [P]:
   	  Atualização do IR
 	  Decodificação
 	  Liberação para execução
@@ -774,19 +774,19 @@ Parte 2 — Registradores Fundamentais da CPU:
 
  10.1 Registradores de Flags — [P]:
 
-  10.1.1 Flags Aritméticas:
+  10.1.1 Flags Aritméticas — [P]:
 	  Carry Flag
 	  Zero Flag
 	  Sign Flag
 	  Overflow Flag
 	  Auxiliary Carry Flag
 
-  10.1.2 Flags Lógicas:
+  10.1.2 Flags Lógicas — [I]:
 	  Parity Flag
 	  Zero Flag
 	  Sign Flag
 
-  10.1.3 Flags de Controle:
+  10.1.3 Flags de Controle — [P]:
 	  Interrupt Flag
 	  Direction Flag
 	  Trap Flag
@@ -794,12 +794,12 @@ Parte 2 — Registradores Fundamentais da CPU:
 
  10.2 Status Register (SR) — [P]:
 
-  10.2.1 Conceitos:
+  10.2.1 Conceitos — [P]:
 	  Definição
 	  Estado do processador
 	  Campos do registrador
 
-  10.2.2 Informações Armazenadas:
+  10.2.2 Informações Armazenadas — [P]:
 	  Flags
 	  Bits de controle
 	  Bits de modo
@@ -808,17 +808,17 @@ Parte 2 — Registradores Fundamentais da CPU:
 
  10.3 Program Status Word (PSW) — [I/P]:
 
-  10.3.1 Conceitos:
+  10.3.1 Conceitos — [I]:
 	  Definição
 	  Estado completo da CPU
 
-  10.3.2 Componentes:
+  10.3.2 Componentes — [P]:
 	  Flags
 	  Modo de execução
 	  Nível de privilégio
 	  Estado de interrupções
 
-  10.3.3 Utilização:
+  10.3.3 Utilização — [P]:
 	  Troca de contexto
 	  Interrupções
 	  Exceções
@@ -826,11 +826,11 @@ Parte 2 — Registradores Fundamentais da CPU:
 
  10.4 Machine Status Register (MSR) — [I]:
 
-  10.4.1 Conceitos:
+  10.4.1 Conceitos — [I]:
 	  Estado da máquina
 	  Controle do processador
 
-  10.4.2 Funções:
+  10.4.2 Funções — [I]:
 	  Controle de interrupções
 	  Modos de operação
 	  Exceções
@@ -839,16 +839,16 @@ Parte 2 — Registradores Fundamentais da CPU:
 
  10.5 Control and Status Registers (CSRs) — [I/P]:
 
-  10.5.1 Conceitos:
+  10.5.1 Conceitos — [I]:
 	  Registradores de controle
 	  Registradores de estado
 
-  10.5.2 Organização:
+  10.5.2 Organização — [I]:
 	  CSRs de máquina
 	  CSRs de supervisor
 	  CSRs de usuário
 
-  10.5.3 Acesso:
+  10.5.3 Acesso — [P]:
 	  Instruções específicas
 	  Acesso privilegiado
 	  Controle de permissões
@@ -856,13 +856,13 @@ Parte 2 — Registradores Fundamentais da CPU:
 
  10.6 Atualização dos Registradores de Estado — [P]:
 
-  10.6.1 Atualização pelas Operações:
+  10.6.1 Atualização pelas Operações — [P]:
 	  Operações aritméticas
 	  Operações lógicas
 	  Comparações
 	  Exceções
 
-  10.6.2 Atualização pelo Sistema:
+  10.6.2 Atualização pelo Sistema — [P]:
 	  Interrupções
 	  Mudança de modo
 	  Inicialização
@@ -873,12 +873,12 @@ Parte 2 — Registradores Fundamentais da CPU:
 
  11.1 Page Table Base Register (PTBR) — [I]:
 
-  11.1.1 Conceitos:
+  11.1.1 Conceitos — [I]:
  	  Definição
 	  Tabela de páginas
 	  Endereço base
 
-  11.1.2 Funcionamento:
+  11.1.2 Funcionamento — [I]:
 	  Tradução de endereços
 	  Relação com a MMU
 	  Troca de espaço de endereçamento
@@ -886,16 +886,16 @@ Parte 2 — Registradores Fundamentais da CPU:
 
  11.2 Translation Table Base Register (TTBR) — [I]:
 
-  11.2.1 Conceitos:
+  11.2.1 Conceitos — [I]:
 	  Definição
 	 Tabelas de tradução
 
-  11.2.2 Organização:
+  11.2.2 Organização — [I]:
 	  TTBR0
 	  TTBR1
 	  Tabelas de páginas
 
-  11.2.3 Aplicação:
+  11.2.3 Aplicação — [I]:
 	  Arquiteturas ARM
 	  Memória virtual
 	  MMU
@@ -903,11 +903,11 @@ Parte 2 — Registradores Fundamentais da CPU:
 
  11.3 Control Register CR3 — [I]:
 
-  11.3.1 Conceitos:
+  11.3.1 Conceitos — [I]:
 	  Definição
 	  Relação com a tabela de páginas
 
-  11.3.2 Funcionamento:
+  11.3.2 Funcionamento — [I]:
 	  Endereço da estrutura de páginas
 	  Troca de espaço de endereçamento
 	  Relação com o TLB
@@ -915,12 +915,12 @@ Parte 2 — Registradores Fundamentais da CPU:
 
  11.4 Registradores de Segmentação — [I]:
 
-  11.4.1 Segment Registers:
+  11.4.1 Segment Registers — [I]:
 	  Code Segment
 	  Data Segment
 	  Stack Segment
 
-  11.4.2 Organização:
+  11.4.2 Organização — [I]:
 	  Seletores
 	  Descritores
 	  Segmentos
@@ -928,12 +928,12 @@ Parte 2 — Registradores Fundamentais da CPU:
  
  11.5 Registradores de Proteção de Memória — [I]:
 
-  11.5.1 Controle:
+  11.5.1 Controle — [I]:
 	  Limites
 	  Permissões
 	  Níveis de privilégio
 
-  11.5.2 Aplicações:
+  11.5.2 Aplicações — [I]:
 	  Proteção
 	  Isolamento
 	  Segurança
@@ -941,12 +941,12 @@ Parte 2 — Registradores Fundamentais da CPU:
 
  11.6 Cooperação entre os Registradores de Memória — [I]:
 
-  11.6.1 Fluxo de Tradução:
+  11.6.1 Fluxo de Tradução — [I]:
 	  PTBR
 	  TTBR
 	  CR3
 
-  11.6.2 Cooperação com Outros Registradores:
+  11.6.2 Cooperação com Outros Registradores — [I]:
 	  MAR
 	  Base Register
 	  Index Register
@@ -957,11 +957,11 @@ Parte 2 — Registradores Fundamentais da CPU:
 
  12.1 Exception Program Counter (EPC) — [I]:
 
-  12.1.1 Conceitos:
+  12.1.1 Conceitos — [I]:
 	  Endereço da instrução interrompida
 	  Salvamento do PC
 
-  12.1.2 Funcionamento:
+  12.1.2 Funcionamento — [I]:
 	  Entrada na exceção
 	  Retorno da exceção
 	  Restauração do fluxo
@@ -969,11 +969,11 @@ Parte 2 — Registradores Fundamentais da CPU:
 
  12.2 Exception Cause Register — [I]:
 	
-  12.2.1 Conceitos:
+  12.2.1 Conceitos — [I]:
 	  Causa da exceção
 	  Identificação do evento
 
-  12.2.2 Tipos:
+  12.2.2 Tipos — [I]:
 	  Exceções síncronas
 	  Interrupções assíncronas
 	  Falhas
@@ -982,12 +982,12 @@ Parte 2 — Registradores Fundamentais da CPU:
 
  12.3 Interrupt Mask Register — [I]:
 
-  12.3.1 Conceitos:
+  12.3.1 Conceitos — [I]:
 	  Máscara de interrupções
 	  Habilitação
 	  Desabilitação
 
-  12.3.2 Organização:
+  12.3.2 Organização — [I]:
 	  Bits de máscara
 	  Prioridades
 	  Interrupções individuais
@@ -995,10 +995,10 @@ Parte 2 — Registradores Fundamentais da CPU:
 
  12.4 Interrupt Vector Base Register — [I]:
 
-  12.4.1 Conceitos:
+  12.4.1 Conceitos — [I]:
 	  Endereço base dos vetores
 
-  12.4.2 Funcionamento:
+  12.4.2 Funcionamento — [I]:
 	  Tabela de vetores
 	  Localização dos handlers
 	  Redirecionamento
@@ -1006,11 +1006,11 @@ Parte 2 — Registradores Fundamentais da CPU:
 
  12.5 Exception Vector Register — [I]:
 
-  12.5.1 Conceitos:
+  12.5.1 Conceitos — [I]:
 	  Vetores de exceção
 	  Endereços dos handlers
 
-  12.5.2 Organização:
+  12.5.2 Organização — [I]:
 	  Tabela de exceções
 	  Tratamento
 	  Retorno
@@ -1018,12 +1018,12 @@ Parte 2 — Registradores Fundamentais da CPU:
 
  12.6 Fluxo de Tratamento de Exceções — [I]:
 
-  12.6.1 Entrada:
+  12.6.1 Entrada — [I]:
 	  Salvamento do PC
 	  Atualização dos registradores de estado
 	  Identificação da causa
 
-  12.6.2 Retorno:
+  12.6.2 Retorno — [I]:
 	  Restauração dos registradores
 	  Continuação da execução
 
@@ -1033,32 +1033,32 @@ Parte 2 — Registradores Fundamentais da CPU:
 
  13.1 Níveis de Privilégio — [I]:
 
-  13.1.1 User Mode:
+  13.1.1 User Mode — [I]:
 	  Execução de usuário
 	  Restrições de acesso
 
-  13.1.2 Supervisor Mode:
+  13.1.2 Supervisor Mode — [I]:
 	  Controle do sistema
 	  Operações privilegiadas
 
-  13.1.3 Machine Mode:
+  13.1.3 Machine Mode — [I]:
 	  Controle de baixo nível
 	  Inicialização
 	  Gerenciamento do hardware
 
-  13.1.4 Kernel Mode:
+  13.1.4 Kernel Mode — [I]:
 	  Controle do sistema operacional
 	  Acesso privilegiado
 
 
  13.2 Registradores Privilegiados — [I]:
 
-  13.2.1 Características:
+  13.2.1 Características — [I]:
 	  Acesso restrito
 	  Instruções privilegiadas
 	  Controle do sistema
 
-  13.2.2 Funções:
+  13.2.2 Funções — [I]:
 	  Controle de memória
 	  Controle de interrupções
 	  Controle de exceções
@@ -1067,19 +1067,19 @@ Parte 2 — Registradores Fundamentais da CPU:
 
  13.3 Troca de Contexto — [P]:
 
-  13.3.1 Salvamento:
+  13.3.1 Salvamento — [P]:
 	  Registradores gerais
 	  PC
 	  SP
 	  Flags
 	  Registradores de controle
 
-  13.3.2 Restauração:
+  13.3.2 Restauração — [P]:
 	  Estado do processo
 	  Estado da thread
 	  Retorno à execução
 
-  13.3.3 Mudança de Modo:
+  13.3.3 Mudança de Modo — [P]:
 	  Usuário → Kernel
 	  Kernel → Usuário
 	  Entrada em exceções
@@ -1088,17 +1088,17 @@ Parte 2 — Registradores Fundamentais da CPU:
 
  13.4 Organização dos Registradores durante a Troca de Contexto — [P]:
 
-  13.4.1 Registradores Preservados:
+  13.4.1 Registradores Preservados — [P]:
 	  Registradores gerais
 	  Registradores de controle
 	  Registradores de estado
 
-  13.4.2 Sequência de Atualização:
+  13.4.2 Sequência de Atualização — [P]:
 	  Salvamento
 	  Atualização
 	  Restauração
 
-  13.4.3 Continuidade da Execução:
+  13.4.3 Continuidade da Execução — [P]:
 	  Retorno ao processo
 	  Retorno ao modo anterior
 
@@ -1111,13 +1111,13 @@ Parte 3 — Organização Física dos Registradores:
 
  14.1 Conceitos Gerais — [P] :
 
-  14.1.1 Register File:
+  14.1.1 Register File — [P]:
 	  Conceito
 	  Objetivos
 	  Organização geral
 	  Papel na CPU
 
-  14.1.2 Estrutura:
+  14.1.2 Estrutura — [P]:
 	  Conjunto de registradores
 	  Organização por palavras
 	  Endereçamento interno
@@ -1126,18 +1126,18 @@ Parte 3 — Organização Física dos Registradores:
 
  14.2 Organização do Banco — [P]:
 
-  14.2.1 Organização Física:
+  14.2.1 Organização Física — [P]:
 	  Organização matricial
 	  Linhas de seleção
 	  Linhas de dados
 	  Portas
 
-  14.2.2 Organização Lógica:
+  14.2.2 Organização Lógica — [P]:
 	  Numeração
 	  Endereçamento
 	  Seleção
 
-  14.2.3 Organização Funcional:
+  14.2.3 Organização Funcional — [I]:
 	  Banco de registradores de propósito geral
 	  Banco de registradores especializados
 	  Bancos independentes
@@ -1146,23 +1146,23 @@ Parte 3 — Organização Física dos Registradores:
 
  14.3 Portas de Acesso — [P]:
 
-  14.3.1 Portas de Leitura:
+  14.3.1 Portas de Leitura — [P]:
 	  Leitura simples
 	  Leituras simultâneas
 	  Seleção
 
-  14.3.2 Portas de Escrita:
+  14.3.2 Portas de Escrita — [P]:
 	  Escrita
 	  Escritas simultâneas
 	  Atualização
 
-  14.3.3 Banco Multiporta:
+  14.3.3 Banco Multiporta — [P]:
 	  Conceito
 	  Organização
 	  Benefícios
 	  Limitações
 
-  14.3.4 Seleção de Registradores:
+  14.3.4 Seleção de Registradores — [P]:
 	  Seleção da origem
 	  Seleção do destino
 	  Decodificação do registrador
@@ -1171,23 +1171,23 @@ Parte 3 — Organização Física dos Registradores:
 
  14.4 Operações no Banco — [P]:
 
-  14.4.1 Leitura:
+  14.4.1 Leitura — [P]:
 	  Seleção
 	  Disponibilização
 	  Transferência
 
-  14.4.2 Escrita:
+  14.4.2 Escrita — [P]:
 	  Seleção do destino
 	  Atualização
 	  Sincronização
 
-  14.4.3 Operações Simultâneas:
+  14.4.3 Operações Simultâneas — [P]:
 	  Leituras paralelas
 	  Escritas paralelas
 	  Conflitos
 	  Arbitragem
 
-  14.4.4 Conflitos de Acesso:
+  14.4.4 Conflitos de Acesso — [P]:
 	  Conflitos de leitura
 	  Conflitos de escrita
 	  Leitura e escrita simultâneas
@@ -1199,20 +1199,20 @@ Parte 3 — Organização Física dos Registradores:
 
  15.1 Operações Básicas — [P]:
 
-  15.1.1 Transferência:
+  15.1.1 Transferência — [P]:
  	  Load
 	  Store
 	  Move
 	  Copy
 	  Exchange
 
-  15.1.2 Atualização:
+  15.1.2 Atualização — [P]:
 	  Inicialização
 	  Limpeza
 	  Reinicialização
 	  Preservação
 
-  15.1.3 Manipulação:
+  15.1.3 Manipulação — [P]:
 	  Incremento
 	  Decremento
 	  Complemento
@@ -1221,38 +1221,38 @@ Parte 3 — Organização Física dos Registradores:
  
  15.2 Micro-operações — [P]:
 
-  15.2.1 Transferência:
+  15.2.1 Transferência — [P]:
 	  Registrador → registrador
 	  Transferência paralela
 	  Transferência serial
 	  Transferência condicional
 
-  15.2.2 Aritmética:
+  15.2.2 Aritmética — [P]:
 	  Soma
 	  Subtração
 	  Incremento
 	  Decremento
 	  Comparação
 
-  15.2.3 Lógica:
+  15.2.3 Lógica — [P]:
 	  AND
 	  OR
 	  XOR
 	  NOT
 	  Teste
 
-  15.2.4 Deslocamento:
+  15.2.4 Deslocamento — [P]:
 	  Deslocamento lógico
 	  Deslocamento aritmético
 	  Esquerda
 	  Direita
 
-  15.2.5 Rotação:
+  15.2.5 Rotação — [P]:
 	  Rotação à esquerda
 	  Rotação à direita
 	  Rotação com Carry
 
-  15.2.6 Sequenciamento das Micro-operações:
+  15.2.6 Sequenciamento das Micro-operações — [P]:
 	  Ordem das operações
 	  Dependência entre micro-operações
 	  Atualização dos registradores
@@ -1264,13 +1264,13 @@ Parte 3 — Organização Física dos Registradores:
 
  16.1 Conceitos — [P]:
 
-  16.1.1 Register Transfer Language:
+  16.1.1 Register Transfer Language — [P]:
 	  Definição
 	  Objetivos
 	  Representação simbólica
 	  Nível de abstração
 
-  16.1.2 Elementos:
+  16.1.2 Elementos — [P]:
 	  Registradores
 	  Operadores
 	  Transferências
@@ -1280,20 +1280,20 @@ Parte 3 — Organização Física dos Registradores:
 
  16.2 Representação — [P]:
 
-  16.2.1 Transferência Simples:
+  16.2.1 Transferência Simples — [P]:
 	  Origem
 	  Destino
 
-  16.2.2 Transferência Condicional:
+  16.2.2 Transferência Condicional — [P]:
 	  Condições
 	  Controle
 
-  16.2.3 Operações:
+  16.2.3 Operações — [P]:
 	  Aritméticas
 	  Lógicas
 	  Deslocamentos
 
-  16.2.4 Sequências RTL:
+  16.2.4 Sequências RTL — [P]:
 	  Sequências de transferências
 	  Dependência entre transferências
 	  Controle temporal
@@ -1305,14 +1305,14 @@ Parte 3 — Organização Física dos Registradores:
 
  17.1 Conceitos — [P]:
 
-  17.1.1 Elementos:
+  17.1.1 Elementos — [P]:
 	  Registrador de origem
 	  Registrador de destino
 	  Barramentos
 	  Sinais de controle
 	  Clock
 
-  17.1.2 Características:
+  17.1.2 Características — [P]:
 	  Síncrona
 	  Paralela
 	  Controlada
@@ -1321,21 +1321,21 @@ Parte 3 — Organização Física dos Registradores:
  
  17.2 Controle — [P]:
 
-  17.2.1 Sinais:
+  17.2.1 Sinais — [P]:
 	  Read Enable
 	  Write Enable
 	  Enable
 	  Clock
 	  Reset
 
-  17.2.2 Sequenciamento
+  17.2.2 Sequenciamento — [P]:
 	  Seleção da origem
 	  Seleção do destino
 	  Leitura
 	  Escrita
 	  Atualização
 
-  17.2.3 Caminhos de Transferência:
+  17.2.3 Caminhos de Transferência — [P]:
 	  Transferência direta
 	  Transferência via barramento
 	  Transferência através da ULA
@@ -1347,12 +1347,12 @@ Parte 3 — Organização Física dos Registradores:
 
  18.1 Comunicação com a ULA — [P]:
 
-  18.1.1 Operandos:
+  18.1.1 Operandos — [P]:
 	  Seleção
 	  Leitura
 	  Transferência
 
-  18.1.2 Resultados:
+  18.1.2 Resultados — [P]:
 	  Resultado
 	  Escrita
 	  Atualização
@@ -1360,13 +1360,13 @@ Parte 3 — Organização Física dos Registradores:
 
  18.2 Comunicação com a Unidade de Controle — [P]:
 
-  18.2.1 Controle:
+  18.2.1 Controle — [P]:
 	  Seleção
 	  Leitura
 	  Escrita
 	  Sinais
 
-  18.2.2 Coordenação:
+  18.2.2 Coordenação — [P]:
 	  Sequenciamento
 	  Sincronização
 	  Atualização
@@ -1374,17 +1374,17 @@ Parte 3 — Organização Física dos Registradores:
  
  18.3 Comunicação com a Memória — [P]:
 
-  18.3.1 Leitura:
+  18.3.1 Leitura — [P]:
 	  MAR
 	  MDR
 	  Dados
 
-  18.3.2 Escrita:
+  18.3.2 Escrita — [P]:
 	  Endereço
 	  Dados
 	  Controle
 
-  18.3.3 Fluxo Completo de Comunicação:
+  18.3.3 Fluxo Completo de Comunicação — [P]:
 	  Registradores → ULA
 	  ULA → Registradores
 	  Registradores → Memória
@@ -1397,12 +1397,12 @@ Parte 3 — Organização Física dos Registradores:
 
  19.1 Estrutura Física — [I]:
 
-  19.1.1 Elementos de Armazenamento:
+  19.1.1 Elementos de Armazenamento — [I]:
 	  Flip-Flops
 	  Latches
 	  Células de armazenamento
 
-  19.1.2 Construção:
+  19.1.2 Construção — [I]:
 	  Entradas
 	  Saídas
 	  Clock
@@ -1411,17 +1411,17 @@ Parte 3 — Organização Física dos Registradores:
 
  19.2 Circuitos de Controle — [I]:
 
-  19.2.1 Escrita:
+  19.2.1 Escrita — [I]:
 	  Write Enable
 	  Seleção
 	  Atualização
 
-  19.2.2 Leitura:
+  19.2.2 Leitura — [I]:
 	  Read Enable
 	  Seleção
 	  Disponibilização
 
-  19.2.3 Controle Geral:
+  19.2.3 Controle Geral — [I]:
 	  Enable
 	  Reset
 	  Clear
@@ -1430,18 +1430,18 @@ Parte 3 — Organização Física dos Registradores:
 
  19.3 Temporização — [P]:
 
-  19.3.1 Sincronização:
+  19.3.1 Sincronização — [P]:
 	  Clock
 	  Borda de subida
 	  Borda de descida
 
-  19.3.2 Tempos:
+  19.3.2 Tempos — [P]:
 	  Setup
 	  Hold
 	  Propagação
  	  Acesso
 
-  19.3.3 Atualização dos Registradores:
+  19.3.3 Atualização dos Registradores — [P]:
 	  Atualização síncrona
 	  Atualização simultânea
 	  Atualização seletiva
@@ -1450,17 +1450,17 @@ Parte 3 — Organização Física dos Registradores:
 
  19.4 Integração Física dos Registradores — [P]:
 
-  19.4.1 Integração ao Datapath:
+  19.4.1 Integração ao Datapath — [P]:
 	  Caminhos de dados
 	  Multiplexadores
 	  Barramentos internos
 
-  19.4.2 Integração ao Controle:
+  19.4.2 Integração ao Controle — [P]:
 	  Sinais de seleção
 	  Sinais de escrita
 	  Sinais de leitura
 
-  19.4.3 Integração ao Clock:
+  19.4.3 Integração ao Clock — [P]:
 	  Sincronização
 	  Atualização coordenada
 	  Controle temporal
@@ -1474,12 +1474,12 @@ Parte 4 — Registradores em Processadores Modernos:
 
  20.1 Registradores Arquiteturais — [P]:
  
-  20.1.1 Conceitos:
+  20.1.1 Conceitos — [P]:
 	  Definição
 	  Registradores definidos pela ISA
 	  Estado visível da máquina
 
-  20.1.2 Características:
+  20.1.2 Características — [P]:
 	  Visibilidade
 	  Nomeação
 	  Largura
@@ -1488,16 +1488,16 @@ Parte 4 — Registradores em Processadores Modernos:
 
  20.2 Registradores Físicos — [P]:
 
-  20.2.1 Conceitos:
+  20.2.1 Conceitos — [P]:
 	  Registradores internos reais
 	  Armazenamento de valores
 
-  20.2.2 Organização:
+  20.2.2 Organização — [P]:
 	  Quantidade física
 	  Relação com registradores arquiteturais
 	  Estado interno
 
-  20.2.3 Gerenciamento dos Registradores Físicos:
+  20.2.3 Gerenciamento dos Registradores Físicos — [P]:
 	  Alocação
 	  Utilização
 	  Liberação
@@ -1506,20 +1506,20 @@ Parte 4 — Registradores em Processadores Modernos:
 
  20.3 Estado do Processador — [P]:
 
-  20.3.1 Estado Arquitetural:
+  20.3.1 Estado Arquitetural — [P]:
 	  Registradores visíveis
 	  PC
 	  Flags
  	  Memória observável
 
-  20.3.2 Estado Microarquitetural:
+  20.3.2 Estado Microarquitetural — [P]:
 	  Registradores físicos
 	  Buffers
 	  Pipeline
 	  Caches
 	  Unidades internas
 
-  20.3.3 Evolução do Estado dos Registradores:
+  20.3.3 Evolução do Estado dos Registradores — [P]:
 	  Estado inicial
 	  Estado temporário
 	  Estado atualizado
@@ -1531,18 +1531,18 @@ Parte 4 — Registradores em Processadores Modernos:
 
  21.1 Conceitos — [P]:
 
-  21.1.1 Register Renaming:
+  21.1.1 Register Renaming — [P]:
 	  Definição
 	  Objetivos
 	  Registradores lógicos
 	  Registradores físicos
 
-  21.1.2 Dependências:
+  21.1.2 Dependências — [P]:
 	  RAW
 	  WAR
 	  WAW
 
-  21.1.3 Ciclo da Renomeação:
+  21.1.3 Ciclo da Renomeação — [P]:
 	  Identificação da instrução
 	  Alocação de registrador físico
 	  Atualização do mapeamento
@@ -1551,21 +1551,21 @@ Parte 4 — Registradores em Processadores Modernos:
 
  21.2 Estruturas — [P]:
 
-  21.2.1 Rename Map:
+  21.2.1 Rename Map — [P]:
 	  Mapeamento
 	  Atualização
 	  Associação
 
-  21.2.2 Free List:
+  21.2.2 Free List — [P]:
 	  Registradores disponíveis
 	  Alocação
 	  Liberação
 
-  21.2.3 Reclaiming:
+  21.2.3 Reclaiming — [P]:
 	  Recuperação
 	  Liberação de registradores antigos
 
-  21.2.4 Controle da Renomeação:
+  21.2.4 Controle da Renomeação — [P]:
 	  Atualização do Rename Map
 	  Controle da Free List
 	  Controle da reutilização
@@ -1577,12 +1577,12 @@ Parte 4 — Registradores em Processadores Modernos:
 
  22.1 Conceitos — [P]:
 
-  22.1.1 Pipeline Registers:
+  22.1.1 Pipeline Registers — [P]:
 	  Armazenamento entre estágios
 	  Separação dos estágios
 	  Sincronização
 
-  22.1.2 Estágios:
+  22.1.2 Estágios — [P]:
 	  IF/ID
 	  ID/EX
 	  EX/MEM
@@ -1591,18 +1591,18 @@ Parte 4 — Registradores em Processadores Modernos:
 
  22.2 Funcionamento — [P]:
 
-  22.2.1 Armazenamento:
+  22.2.1 Armazenamento — [P]:
 	  Instruções
 	  Operandos
 	  Resultados
 	  Sinais de controle
 
-  22.2.2 Atualização:
+  22.2.2 Atualização — [P]:
 	  Clock
 	  Avanço dos estágios
 	  Flush
 
-  22.2.3 Fluxo dos Registradores de Pipeline:
+  22.2.3 Fluxo dos Registradores de Pipeline — [P]:
 	  Armazenamento entre estágios
 	  Transferência entre estágios
 	  Atualização sincronizada
@@ -1611,35 +1611,35 @@ Parte 4 — Registradores em Processadores Modernos:
 
  22.3 Hazards — [P]:
 
-  22.3.1 Data Hazards:
+  22.3.1 Data Hazards — [P]:
 	  RAW
 	  WAR
 	  WAW
 
-  22.3.2 Control Hazards:
+  22.3.2 Control Hazards — [P]:
 	  Branches
 	  Jumps
 	  Flush
 
-  22.3.3 Structural Hazards:
+  22.3.3 Structural Hazards — [P]:
 	  Conflitos de recursos
 	  Compartilhamento
 
 
  22.4 Técnicas de Solução — [P]:
 
-  22.4.1 Stall:
+  22.4.1 Stall — [P]:
 	  Espera
 	  Bolhas
 
-  22.4.2 Forwarding:
+  22.4.2 Forwarding — [P]:
 	  Bypassing
 	  Encaminhamento de resultados
 
-  22.4.3 Register Renaming:
+  22.4.3 Register Renaming — [P]:
 	  Eliminação de dependências falsas
 
- 22.4.4 Recuperação dos Registradores:
+ 22.4.4 Recuperação dos Registradores — [P]:
 	  Após Flush
 	  Após Stall
 	  Após exceções
@@ -1651,12 +1651,12 @@ Parte 4 — Registradores em Processadores Modernos:
 
  23.1 Fundamentos — [P]:
 
-  23.1.1 Conceitos:
+  23.1.1 Conceitos — [P]:
 	  Out-of-Order Execution
 	  Execução dinâmica
 	  Paralelismo de instruções
 
-  23.1.2 Objetivos:
+  23.1.2 Objetivos — [P]:
 	  Aproveitamento das unidades funcionais
 	  Redução de esperas
 	  Aumento do IPC
@@ -1664,22 +1664,22 @@ Parte 4 — Registradores em Processadores Modernos:
 
  23.2 Estruturas — [P]:
 
-  23.2.1 Reservation Stations:
+  23.2.1 Reservation Stations — [P]:
 	  Armazenamento de operandos
 	  Instruções aguardando execução
 
-  23.2.2 Reorder Buffer:
+  23.2.2 Reorder Buffer — [P]:
 	  Resultados temporários
 	  Ordem arquitetural
 	  Commit
 
-  23.2.3 Rename Map:
+  23.2.3 Rename Map — [P]:
 	  Mapeamento lógico-físico
 
-  23.2.4 Free List:
+  23.2.4 Free List — [P]:
 	  Alocação de registradores físicos
 
-  23.2.5 Fluxo dos Operandos:
+  23.2.5 Fluxo dos Operandos — [P]:
 	  Leitura dos registradores
 	  Encaminhamento dos operandos
 	  Atualização dos resultados
@@ -1688,16 +1688,16 @@ Parte 4 — Registradores em Processadores Modernos:
 
  23.3 Commit — [P]:
 
-  23.3.1 Commit Arquitetural:
+  23.3.1 Commit Arquitetural — [P]:
 	  Confirmação dos resultados
 	  Atualização do estado arquitetural
 
-  23.3.2 Recuperação:
+  23.3.2 Recuperação — [P]:
 	  Exceções
 	  Especulação incorreta
 	  Descartamento de resultados
 
-  23.3.3 Atualização dos Registradores:
+  23.3.3 Atualização dos Registradores — [P]:
 	  Escrita definitiva
 	  Liberação dos registradores antigos
 	  Atualização do estado do processador
@@ -1708,12 +1708,12 @@ Parte 4 — Registradores em Processadores Modernos:
 
  24.1 Conceitos — [I]:
 
-  24.1.1 Fundamentos:
+  24.1.1 Fundamentos — [I]:
 	  Definição
 	  Objetivos
 	  Representação de números
 
-  24.1.2 Organização:
+  24.1.2 Organização — [I]:
 	  Banco de registradores
 	  Largura
 	  Unidade de ponto flutuante
@@ -1721,13 +1721,13 @@ Parte 4 — Registradores em Processadores Modernos:
 
  24.2 Operações sobre os Registradores — [I]:
 
-  24.2.1 Operações Básicas
+  24.2.1 Operações Básicas — [I]:
 	  Leitura
 	  Escrita
 	  Transferência
 	  Atualização
 
-  24.2.2 Organização do Banco:
+  24.2.2 Organização do Banco — [I]:
 	  Banco dedicado
 	  Comunicação com a FPU
 	  Independência do banco inteiro
@@ -1746,18 +1746,18 @@ Parte 4 — Registradores em Processadores Modernos:
 
  25.1 Registradores Vetoriais — [I]:
 
-  25.1.1 Conceitos:
+  25.1.1 Conceitos — [I]:
 	  Dados vetoriais
 	  Paralelismo de dados
 	  Largura
 
-  25.1.2 Aplicações:
+  25.1.2 Aplicações — [V]:
 	  Imagens
 	  Áudio
 	  Vídeo
 	  Simulações
 
-  25.1.3 Organização:
+  25.1.3 Organização — [I]:
 	  Banco vetorial
 	  Largura dos vetores
 	  Agrupamento dos elementos
@@ -1765,17 +1765,17 @@ Parte 4 — Registradores em Processadores Modernos:
 
  25.2 Registradores SIMD — [I]:
 
-  25.2.1 Conceitos:
+  25.2.1 Conceitos — [I]:
 	  Single Instruction Multiple Data
 	  Elementos
 	  Lanes
 
-  25.2.2 Operações:
+  25.2.2 Operações — [I]:
 	  Paralelismo
 	  Operações simultâneas
 	  Atualização
 
-  25.2.3 Organização:
+  25.2.3 Organização — [I]:
  	  Banco SIMD
 	  Paralelismo interno
 	  Distribuição das lanes
@@ -1783,16 +1783,16 @@ Parte 4 — Registradores em Processadores Modernos:
 
  25.3 Registradores de Máscara — [I]:
 
-  25.3.1 Conceitos:
+  25.3.1 Conceitos — [I]:
 	  Máscaras
 	  Seleção de elementos
 
-  25.3.2 Aplicações:
+  25.3.2 Aplicações — [I]:
 	  Operações condicionais
 	  Vetorização
 	  Predicação
 
-  25.3.3 Funcionamento:
+  25.3.3 Funcionamento — [I]:
 	  Ativação de elementos
 	  Desativação de elementos
 	  Controle das operações vetoriais
@@ -1800,15 +1800,15 @@ Parte 4 — Registradores em Processadores Modernos:
  
  25.4 Registradores de Predicado — [I]:
 
-  25.4.1 Conceitos:
+  25.4.1 Conceitos — [I]:
 	  Predicação
 	  Condições
 
-  25.4.2 Aplicações:
+  25.4.2 Aplicações — [I]:
 	  Execução condicional
 	  Controle de operações vetoriais
 
-  25.4.3 Organização:
+  25.4.3 Organização — [I]:
 	  Banco de predicados
 	  Atualização
 	  Comunicação com registradores vetoriais
@@ -1819,12 +1819,12 @@ Parte 4 — Registradores em Processadores Modernos:
 
  26.1 Registradores de Depuração — [I]:
 
-  26.1.1 Funções:
+  26.1.1 Funções — [I]:
 	  Breakpoints
 	  Watchpoints
 	  Controle de depuração
 
-  26.1.2 Monitoramento:
+  26.1.2 Monitoramento — [I]:
 	  Execução
 	  Eventos
 	  Estado interno
@@ -1832,17 +1832,17 @@ Parte 4 — Registradores em Processadores Modernos:
 
  26.2 Registradores de Desempenho — [I]:
 
-  26.2.1 Performance Counters:
+  26.2.1 Performance Counters — [I]:
 	  Contadores
 	  Eventos
 
-  26.2.2 Monitoramento:
+  26.2.2 Monitoramento — [I]:
 	  Instruções
 	  Cache misses
 	  Branches
 	  Ciclos
 
-  26.2.3 Informações Coletadas:
+  26.2.3 Informações Coletadas — [I]:
 	  Utilização dos registradores
 	  Eventos internos
 	  Estatísticas de execução
@@ -1851,18 +1851,18 @@ Parte 4 — Registradores em Processadores Modernos:
 
  26.3 Model-Specific Registers (MSRs) — [V/I]:
 
-  26.3.1 Conceitos:
+  26.3.1 Conceitos — [V]:
 	  Registradores específicos do modelo
 	  Configuração do processador
 
-  26.3.2 Aplicações:
+  26.3.2 Aplicações — [V]:
 	  Controle
 	  Desempenho
 	  Energia
 	  Diagnóstico
 
 
- 26.4 Configuration Registers:
+ 26.4 Configuration Registers — [V]:
 	Recursos
 	Modos
 	Periféricos
@@ -1871,12 +1871,12 @@ Parte 4 — Registradores em Processadores Modernos:
 
  26.5 Cooperação entre Registradores Especializados — [I]:
 
-  26.5.1 Compartilhamento:
+  26.5.1 Compartilhamento — [I]:
 	  Controle
 	  Configuração
 	  Diagnóstico
 
-  26.5.2 Integração:
+  26.5.2 Integração — [I]:
 	  Comunicação com os registradores de controle
 	  Comunicação com os registradores de estado
 	  Comunicação com o sistema
@@ -1890,13 +1890,13 @@ Parte 5 — Registradores, Software e Arquiteturas:
 
  27.1 Fundamentos — [I]:
 
-  27.1.1 Conceitos:
+  27.1.1 Conceitos — [I]:
 	  Register Allocation
 	  Register Assignment
 	  Variáveis em registradores
 	  Limitação de registradores
 
-  27.1.2 Objetivos:
+  27.1.2 Objetivos — [I]:
 	  Reduzir acessos à memória
 	  Aumentar desempenho
 	  Melhorar o código
@@ -1907,15 +1907,15 @@ Parte 5 — Registradores, Software e Arquiteturas:
 
  27.2 Técnicas — [I]:
 
-  27.2.1 Alocação Local:
+  27.2.1 Alocação Local — [I]:
 	  Blocos básicos
 	  Variáveis locais
 
-  27.2.2 Alocação Global:
+  27.2.2 Alocação Global — [I]:
 	  Funções
 	  Fluxo de controle
 
-  27.2.3 Graph Coloring:
+  27.2.3 Graph Coloring — [I]:
 	  Interferência
 	  Coloração
 	  Grafo de interferência
@@ -1924,7 +1924,7 @@ Parte 5 — Registradores, Software e Arquiteturas:
 	  Coalescing
 	  Simplificação
 
-  27.2.4 Linear Scan:
+  27.2.4 Linear Scan — [I]:
 	  Intervalos de vida
 	  Alocação rápida
 	  Intervalos ativos
@@ -1934,7 +1934,7 @@ Parte 5 — Registradores, Software e Arquiteturas:
 
  27.3 Spilling — [I]:
 
-  27.3.1 Conceitos:
+  27.3.1 Conceitos — [I]:
 	  Transferência para a memória
 	  Limitação dos registradores
 	  Spill Code
@@ -1942,7 +1942,7 @@ Parte 5 — Registradores, Software e Arquiteturas:
 	  Salvamento temporário
 	  Recuperação dos valores
 
-  27.3.2 Impacto:
+  27.3.2 Impacto — [I]:
 	  Latência
 	  Acessos adicionais
 	  Desempenho
@@ -1955,14 +1955,14 @@ Parte 5 — Registradores, Software e Arquiteturas:
 
  28.1 Application Binary Interface (ABI) — [I]:
 
-  28.1.1 Conceitos:
+  28.1.1 Conceitos — [I]:
 	  ABI
 	  Compatibilidade binária
 	  Convenções
 	  Interface entre módulos
 	  Compatibilidade entre compiladores
 
-  28.1.2 Organização:
+  28.1.2 Organização — [I]:
 	  Registradores
 	  Pilha
 	  Argumentos
@@ -1990,13 +1990,13 @@ Parte 5 — Registradores, Software e Arquiteturas:
 
  28.4 Passagem de Argumentos — [I]:
 
-  28.4.1 Registradores:
+  28.4.1 Registradores — [I]:
 	  Argumentos inteiros
 	  Argumentos de ponto flutuante
 	  Ordem de utilização dos registradores
 	  Limite de argumentos em registradores
 
-  28.4.2 Memória:
+  28.4.2 Memória — [I]:
 	  Argumentos adicionais
 	  Stack
 	  Overflow de argumentos
@@ -2037,13 +2037,13 @@ Parte 5 — Registradores, Software e Arquiteturas:
 
  29.3 RISC-V — [I]:
 
-  29.3.1 Registradores:
+  29.3.1 Registradores — [I]:
 	  Integer Registers
 	  Floating-Point Registers
 	  PC
 	  CSRs
 
-  29.3.2 Níveis:
+  29.3.2 Níveis — [I]:
 	  Machine
 	  Supervisor
 	  User
@@ -2069,19 +2069,19 @@ Parte 5 — Registradores, Software e Arquiteturas:
 
  29.6 Comparação Geral dos Registradores — [I]:
 
-  29.6.1 Organização:
+  29.6.1 Organização — [I]:
 	  Quantidade de registradores
 	  Largura
 	  Especialização
 	  Banco de registradores
 
-  29.6.2 Utilização:
+  29.6.2 Utilização — [I]:
 	  Uso geral
 	  Controle
 	  Sistema
 	  Ponto flutuante
 
-  29.6.3 Filosofia de Projeto:
+  29.6.3 Filosofia de Projeto — [I]:
 	  Organização dos registradores
 	  Facilidade para compiladores
 	  Escalabilidade
@@ -2092,12 +2092,12 @@ Parte 5 — Registradores, Software e Arquiteturas:
 
  30.1 RISC — [I]:
 
-  30.1.1 Organização:
+  30.1.1 Organização — [I]:
  	  Grande conjunto de registradores
 	  Load/Store
 	  Operações entre registradores
 
-  30.1.2 Impacto:
+  30.1.2 Impacto — [I]:
 	  Pipeline
 	  Compiladores
 	  Desempenho
@@ -2107,12 +2107,12 @@ Parte 5 — Registradores, Software e Arquiteturas:
 
  30.2 CISC — [I]:
 
-  30.2.1 Organização:
+  30.2.1 Organização — [I]:
 	  Registradores especializados
 	  Instruções complexas
 	  Modos de endereçamento
 
-  30.2.2 Impacto:
+  30.2.2 Impacto — [I]:
 	  Decodificação
 	  Micro-operações
 	  Complexidade
@@ -2122,7 +2122,7 @@ Parte 5 — Registradores, Software e Arquiteturas:
 
  30.3 Comparação — [I]:
 
-  30.3.1 Critérios:
+  30.3.1 Critérios — [I]:
 	  Quantidade
 	  Largura
 	  Especialização
@@ -2131,7 +2131,7 @@ Parte 5 — Registradores, Software e Arquiteturas:
 	  Eficiência de utilização
 	  Facilidade para compiladores
 
-  30.3.2 Impactos:
+  30.3.2 Impactos — [I]:
 	  Compilador
 	  Desempenho
 	  Área
@@ -2149,7 +2149,7 @@ Parte 6 — Desempenho, Limitações e Aplicações:
 
  31.1 Características — [I]:
 
-  31.1.1 Velocidade:
+  31.1.1 Velocidade — [I]:
 	  Tempo de acesso
 	  Latência
   	  Throughput
@@ -2157,7 +2157,7 @@ Parte 6 — Desempenho, Limitações e Aplicações:
 	  Tempo de leitura
 	  Tempo de ciclo do banco de registradores
 
-  31.1.2 Eficiência :
+  31.1.2 Eficiência — [I]:
 	  Frequência de utilização
 	  Disponibilidade
 	  Reutilização
@@ -2168,7 +2168,7 @@ Parte 6 — Desempenho, Limitações e Aplicações:
 
  31.2 Fatores de Influência — [I]:
 
-  31.2.1 Organização:
+  31.2.1 Organização — [I]:
 	  Quantidade
 	  Portas
 	  Banco
@@ -2177,7 +2177,7 @@ Parte 6 — Desempenho, Limitações e Aplicações:
 	  Número de portas de escrita
 	  Distribuição entre bancos
 
-  31.2.2 Implementação:
+  31.2.2 Implementação — [I]:
 	  Tecnologia
 	  Temporização
 	  Distribuição física
@@ -2191,13 +2191,13 @@ Parte 6 — Desempenho, Limitações e Aplicações:
 
  32.1 Limitações Arquiteturais — [I]:
 
-  32.1.1 Quantidade:
+  32.1.1 Quantidade — [I]:
 	  Limitação física
 	  Impacto no desempenho
 	  Pressão de registradores
 	  Necessidade de spilling
 
-  32.1.2 Largura:
+  32.1.2 Largura — [I]:
 	  Compatibilidade
 	  Operações
 	  Evolução
@@ -2207,18 +2207,18 @@ Parte 6 — Desempenho, Limitações e Aplicações:
 
  32.2 Problemas Operacionais — [I]:
 
-  32.2.1 Conflitos:
+  32.2.1 Conflitos — [I]:
 	  Leituras simultâneas
 	  Escritas simultâneas
 	  Conflitos entre leitura e escrita
 	  Conflitos de portas
 
-  32.2.2 Dependências:
+  32.2.2 Dependências — [I]:
 	  RAW
 	  WAR
 	  WAW
 
-  32.2.3 Gargalos:
+  32.2.3 Gargalos — [I]:
 	  Banco de registradores
 	  Barramentos
 	  Comunicação interna
@@ -2228,13 +2228,13 @@ Parte 6 — Desempenho, Limitações e Aplicações:
  
  32.3 Limitações Tecnológicas — [I]:
 
-  32.3.1 Área:
+  32.3.1 Área — [I]:
 	  Espaço
 	  Complexidade
    	  Crescimento do número de portas
 	  Escalabilidade física
 
-  32.3.2 Energia:
+  32.3.2 Energia — [I]:
 	  Consumo
 	  Dissipação térmica
 	  Energia por acesso
@@ -2247,7 +2247,7 @@ Parte 6 — Desempenho, Limitações e Aplicações:
 
  33.1 Processamento — [V]:
 
-  33.1.1 Operações:
+  33.1.1 Operações — [V]:
 	  Aritmética
 	  Lógica
 	  Comparação
@@ -2255,14 +2255,14 @@ Parte 6 — Desempenho, Limitações e Aplicações:
 	  Operações de endereço
 	  Operações de controle
 
-  33.1.2 Dados:
+  33.1.2 Dados — [V]:
 	  Armazenamento temporário
 	  Transferência
 	  Resultados
 	  Operandos intermediários
 	  Valores temporários
 
-  33.1.3 Controle:
+  33.1.3 Controle — [V]:
 	  Sequenciamento
 	  Fluxo
 	  Estado
@@ -2272,27 +2272,27 @@ Parte 6 — Desempenho, Limitações e Aplicações:
 
  33.2 Diferentes Processadores — [V]:
 
-  33.2.1 Processadores Gerais:
+  33.2.1 Processadores Gerais — [V]:
 	  Registradores gerais
 	  Registradores especializados
 	  Bancos de registradores
 	  Organização interna
 
-  33.2.2 Microcontroladores:
+  33.2.2 Microcontroladores — [V]:
 	  Bancos de registradores
 	  Registradores de periféricos
 	  Sistemas embarcados
 	  Registradores de configuração
 	  Registradores de controle de periféricos
 
-  33.2.3 DSPs:
+  33.2.3 DSPs — [V]:
 	  Acumuladores
 	  Registradores de endereço
 	  Operações vetoriais
 	  Registradores circulares
 	  Registradores de saturação
 
-  33.2.4 GPUs:
+  33.2.4 GPUs — [V]:
 	  Registradores por thread
 	  Bancos de registradores
 	  Ocupação
@@ -2306,14 +2306,14 @@ Parte 6 — Desempenho, Limitações e Aplicações:
 
  34.1 Evolução — [V]:
 
-  34.1.1 Capacidade:
+  34.1.1 Capacidade — [V]:
 	  Maior largura
 	  Maior quantidade
 	  Novos tipos de dados
 	  Escalabilidade dos bancos
 	  Bancos heterogêneos
 
-  34.1.2 Especialização:
+  34.1.2 Especialização — [V]:
 	  Vetoriais
 	  SIMD
 	  Predicados
@@ -2325,14 +2325,14 @@ Parte 6 — Desempenho, Limitações e Aplicações:
 
  34.2 Eficiência — [V]:
 
-  34.2.1 Energia:
+  34.2.1 Energia — [V]:
 	  Clock Gating
 	  Power Gating
 	  Ativação seletiva
 	  Bancos parcialmente ativos
 	  Redução de acessos desnecessários
 
-  34.2.2 Desempenho:
+  34.2.2 Desempenho — [V]:
 	  Paralelismo
 	  Redução de latência
 	  Otimização dos acessos
@@ -2352,41 +2352,41 @@ Parte 6 — Desempenho, Limitações e Aplicações:
 
  35.2 Registradores Fundamentais — [I]:
 
-  35.2.1 Fluxo:
+  35.2.1 Fluxo  — [I]:
 	  PC
 	  IP
 	  LR
 
-  35.2.2 Pilha:
+  35.2.2 Pilha  — [I]:
 	  SP
 	  FP
 	  Stack Limit Register
 
-  35.2.3 Memória:
+  35.2.3 Memória  — [I]:
 	  MAR
 	  MDR
 	  MBR
 	  Base Register
 	  Index Register
 
-  35.2.4 Instruções:
+  35.2.4 Instruções  — [I]:
 	  IR
 	  Opcode Registers
 	  Microinstruction Register
 
-  35.2.5 Estado e Controle:
+  35.2.5 Estado e Controle  — [I]:
 	  Flags
 	  SR
 	  PSW
  	  MSR
 	  CSRs
 
-  35.2.6 Memória Virtual:
+  35.2.6 Memória Virtual  — [I]:
 	  PTBR
 	  TTBR
 	  CR3
 
-  35.2.7 Interrupções:
+  35.2.7 Interrupções  — [I]:
 	  EPC
 	  Cause Register
 	  Interrupt Mask Register
@@ -2395,13 +2395,13 @@ Parte 6 — Desempenho, Limitações e Aplicações:
 
  35.3 Processadores Modernos — [I]:
 
-  35.3.1 Organização:
+  35.3.1 Organização — [I]:
 	  Registradores arquiteturais
 	  Registradores físicos
 	  Rename Map
 	  Free List
 
-  35.3.2 Execução:
+  35.3.2 Execução  — [I]:
 	  Pipeline
 	  Forwarding
 	  Register Renaming
@@ -2412,16 +2412,16 @@ Parte 6 — Desempenho, Limitações e Aplicações:
 
  35.4 Software e Arquitetura — [I]:
 
-  35.4.1 Compiladores:
+  35.4.1 Compiladores  — [I]:
 	  Register Allocation
 	  Spilling
 
-  35.4.2 ABI:
+  35.4.2 ABI  — [I]:
 	  Caller-Saved
 	  Callee-Saved
 	  Passagem de argumentos
 
-  35.4.3 Arquiteturas:
+  35.4.3 Arquiteturas  — [I]:
 	  x86
 	  ARM
 	  RISC-V
@@ -2442,7 +2442,7 @@ Parte 6 — Desempenho, Limitações e Aplicações:
 	  Suporte ao paralelismo
 	  Integração entre os componentes da CPU
 
-  36.1.2 Importância:
+  36.1.2 Importância — [V]:
 	  Desempenho
 	  Eficiência
 	  Organização do fluxo de dados
@@ -2460,7 +2460,7 @@ Parte 6 — Desempenho, Limitações e Aplicações:
 	  Banco de registradores
 	  Execução fora de ordem
 
-  36.2.2 Relação com a Memória:
+  36.2.2 Relação com a Memória — [V]:
 	  MAR
 	  MDR
 	  MMU
@@ -2468,7 +2468,7 @@ Parte 6 — Desempenho, Limitações e Aplicações:
 	  Cache (apenas interação com registradores)
 	  Tradução de endereços
 
-  36.2.3 Relação com o Software:
+  36.2.3 Relação com o Software — [V]:
 	  ISA
 	  Compiladores
 	  ABI
@@ -2486,7 +2486,7 @@ Parte 6 — Desempenho, Limitações e Aplicações:
 	  Controle
 	  Estado
 
-  36.3.2 Evolução:
+  36.3.2 Evolução — [V]:
 	  Registradores tradicionais
 	  Registradores arquiteturais
 	  Registradores físicos
@@ -2496,7 +2496,7 @@ Parte 6 — Desempenho, Limitações e Aplicações:
 	  Virtualização
 	  Computação heterogênea
 
-  36.3.3 Papel na Computação Moderna:
+  36.3.3 Papel na Computação Moderna — [V]:
 	  Execução eficiente
 	  Paralelismo
 	  Desempenho
