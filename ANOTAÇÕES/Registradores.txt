@@ -4,7 +4,8 @@
 A classificação abaixo indica a profundidade recomendada para cada grande tópico da lista.
 
 [P] Profundidade — estudar mecanismos, estruturas, funcionamento interno e relações entre componentes.
-[I] Intermediário — compreender bem o funcionamento e as relações principais, sem precisar dominar todos os detalhes de implementação.
+[I] Intermediário — compreender bem o funcionamento e as relações principais, sem precisar dominar todos os   
+   detalhes de implementação.
 [V] Visão geral — saber o que é, para que serve e como se relaciona com os registradores.
 
 
