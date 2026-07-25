@@ -572,11 +572,11 @@ PARTE 1 — FUNDAMENTOS DA MEMÓRIA CACHE NA  ARQUITETURA E ORGANIZAÇÃO DE COM
 PARTE 2 — FUNCIONAMENTO, MAPEAMENTO E ORGANIZAÇÃO DA MEMÓRIA CACHE:
 
 
-8. Funcionamento Geral da Memória Cache:
+8. Funcionamento Geral da Memória Cache — [P]
 
- 8.1 Fluxo de Acesso à Memória:
+ 8.1 Fluxo de Acesso à Memória — [P]
 
-  8.1.1 Processo Geral:
+  8.1.1 Processo Geral — [P]
 	  Solicitação da CPU
 	  Geração do endereço de memória
 	  Consulta à cache
@@ -584,66 +584,66 @@ PARTE 2 — FUNCIONAMENTO, MAPEAMENTO E ORGANIZAÇÃO DA MEMÓRIA CACHE:
 	  Acesso à memória principal
 	  Retorno dos dados ao processador
 
-  8.1.2 Ciclo de Leitura:
+  8.1.2 Ciclo de Leitura — [P]
 	  Recepção da requisição
 	  Verificação da cache
 	  Comparação das Tags
 	  Recuperação dos dados
 	  Atualização dos estados da linha
 
-  8.1.3 Ciclo de Escrita:
+  8.1.3 Ciclo de Escrita — [P]
 	  Recepção da escrita
 	  Atualização da linha
 	  Atualização da memória principal
 	  Controle das políticas de escrita
 
 
- 8.2 Operações Básicas:
+ 8.2 Operações Básicas — [P]
 
-  8.2.1 Operação de Leitura:
+  8.2.1 Operação de Leitura — [P]
 	  Consulta da linha
 	  Comparação das informações
 	  Recuperação do bloco
 	  Tempo de resposta
 
-  8.2.2 Operação de Escrita:
+  8.2.2 Operação de Escrita — [P]
 	  Escrita na cache
 	  Escrita na memória
 	  Atualização dos bits de controle
 
-  8.2.3 Atualização da Cache:
+  8.2.3 Atualização da Cache — [P]
 	  Inserção de blocos
 	  Atualização dos estados
 	  Atualização das estatísticas
 	  Liberação de linhas
 
 
- 8.3 Fluxo entre os Níveis da Cache:
+ 8.3 Fluxo entre os Níveis da Cache — [P]
 
-  8.3.1 Comunicação entre L1 e L2:
+  8.3.1 Comunicação entre L1 e L2 — [P]
 	  Transferência de blocos
 	  Atualização
 	  Hierarquia
 
-  8.3.2 Comunicação entre L2 e L3:
+  8.3.2 Comunicação entre L2 e L3 — [P]
 	  Consulta
 	  Transferência
 	  Compartilhamento
 
-  8.3.3 Comunicação com a Memória Principal:
+  8.3.3 Comunicação com a Memória Principal — [P]
 	  Busca de blocos
 	  Escrita
 	  Atualização
 	  Sincronização
 
-  8.3.4 Pipeline de Acesso à Cache:
+  8.3.4 Pipeline de Acesso à Cache — [P]
 	  Estágios do acesso
 	  Busca paralela
 	  Comparação das Tags
 	  Seleção da linha
 	  Retorno dos dados
   
-  8.3.5 Paralelismo no Acesso:
+  8.3.5 Paralelismo no Acesso — [P]
 	  Acessos simultâneos
 	  Banking
 	  Multiport Cache
@@ -651,93 +651,93 @@ PARTE 2 — FUNCIONAMENTO, MAPEAMENTO E ORGANIZAÇÃO DA MEMÓRIA CACHE:
 
 
 
-9. Mapeamento da Memória Cache:
+9. Mapeamento da Memória Cache — [P]
 
- 9.1 Conceitos Fundamentais:
+ 9.1 Conceitos Fundamentais — [P]
 
-  9.1.1 Objetivos do Mapeamento:
+  9.1.1 Objetivos do Mapeamento — [P]
 	  Localização dos blocos
 	  Organização das linhas
 	  Eficiência da busca
 	  Redução dos conflitos
 
-  9.1.2 Organização do Endereçamento:
+  9.1.2 Organização do Endereçamento — [P]
 	  Tag
 	  Índice
 	  Offset
 	  Conversão do endereço
 
-  9.1.3 Critérios de Escolha:
+  9.1.3 Critérios de Escolha — [P]
 	  Velocidade
 	  Complexidade
 	  Custo
 	  Desempenho
 
 
- 9.2 Mapeamento Direto:
+ 9.2 Mapeamento Direto — [P]
 
-  9.2.1 Conceitos:
+  9.2.1 Conceitos — [P]
 	  Organização
 	  Correspondência fixa
 	  Estrutura
 
-  9.2.2 Funcionamento:
+  9.2.2 Funcionamento — [P]
 	  Cálculo da linha
 	  Comparação da Tag
 	  Recuperação dos dados
 
-  9.2.3 Características:
+  9.2.3 Características — [P]
 	  Simplicidade
 	  Baixo custo
 	  Alta velocidade
 	  Limitações
 
 
- 9.3 Mapeamento Totalmente Associativo:
+ 9.3 Mapeamento Totalmente Associativo — [P]
 
-  9.3.1 Conceitos:
+  9.3.1 Conceitos — [P]
 	  Organização
 	  Correspondência livre
 	  Busca paralela
 
-  9.3.2 Funcionamento:
+  9.3.2 Funcionamento — [P]
 	  Comparação das Tags
 	  Seleção da linha
 	  Recuperação do bloco
 
-  9.3.3 Características:
+  9.3.3 Características — [I]
 	  Flexibilidade
 	  Complexidade
 	  Desempenho
 	  Custo
 
 
- 9.4 Mapeamento Associativo por Conjunto:
+ 9.4 Mapeamento Associativo por Conjunto — [P]
 
-  9.4.1 Conceitos:
+  9.4.1 Conceitos — [P]
 	  Organização em conjuntos
 	  Associatividade
 	  Vias
 
-  9.4.2 Funcionamento:
+  9.4.2 Funcionamento — [P]
 	  Seleção do conjunto
 	  Comparação das Tags
 	  Escolha da via
 
-  9.4.3 Características:
+  9.4.3 Características — [P]
 	  Flexibilidade
 	  Desempenho
 	  Escalabilidade
 
 
- 9.5 Grau de Associatividade:
+ 9.5 Grau de Associatividade — [P]
 
-  9.5.1 Associatividade:
+  9.5.1 Associatividade — [P]
 	  Conceito
 	  Objetivos
 	  Influência no desempenho
 
-  9.5.2 Tipos de Associatividade:
+  9.5.2 Tipos de Associatividade — [P]
 	  Direct-Mapped (1-Way)
 	  2-Way Set Associative
 	  4-Way Set Associative
@@ -745,26 +745,26 @@ PARTE 2 — FUNCIONAMENTO, MAPEAMENTO E ORGANIZAÇÃO DA MEMÓRIA CACHE:
 	  16-Way Set Associative
 	  Alta associatividade
 
-  9.5.3 Comparação entre os Métodos:
+  9.5.3 Comparação entre os Métodos — [P]
 	  Facilidade de implementação
 	  Taxa de acertos
 	  Taxa de conflitos
 	  Complexidade do hardware
 
 
- 9.6 Organização Arquitetural do Endereçamento:
+ 9.6 Organização Arquitetural do Endereçamento — [P]
 
-  9.6.1 Cache Fisicamente Indexada:
+  9.6.1 Cache Fisicamente Indexada — [P]
 	  PIPT (Physically Indexed Physically Tagged)
 	  Funcionamento
 	  Características
 
-  9.6.2 Cache Virtualmente Indexada:
+  9.6.2 Cache Virtualmente Indexada — [P]
 	  VIPT (Virtually Indexed Physically Tagged)
 	  Funcionamento
 	  Benefícios
 
-  9.6.3 Cache Virtualmente Endereçada:
+  9.6.3 Cache Virtualmente Endereçada — [I]
 	  VIVT (Virtually Indexed Virtually Tagged)
 	  Funcionamento
 	  Problemas
@@ -772,308 +772,308 @@ PARTE 2 — FUNCIONAMENTO, MAPEAMENTO E ORGANIZAÇÃO DA MEMÓRIA CACHE:
 
 
 
-10. Cache Hit e Cache Miss:
+10. Cache Hit e Cache Miss — [P]
 
- 10.1 Cache Hit:
+ 10.1 Cache Hit — [P]
 
-  10.1.1 Conceitos:
+  10.1.1 Conceitos — [P]
 	  Definição
 	  Identificação
 	  Importância
 
-  10.1.2 Funcionamento:
+  10.1.2 Funcionamento — [P]
 	  Comparação da Tag
 	  Linha válida
 	  Recuperação dos dados
 
-  10.1.3 Consequências:
+  10.1.3 Consequências — [P]
 	  Baixa latência
 	  Alto desempenho
 	  Continuidade da execução
 
 
- 10.2 Cache Miss:
+ 10.2 Cache Miss — [P]
 
-  10.2.1 Conceitos:
+  10.2.1 Conceitos — [P]
 	  Definição
 	  Identificação
 	  Necessidade de acesso à RAM
 
-  10.2.2 Funcionamento:
+  10.2.2 Funcionamento — [P]
 	  Busca na memória principal
 	  Transferência do bloco
 	  Atualização da cache
 
-  10.2.3 Consequências:
+  10.2.3 Consequências — [P]
 	  Aumento da latência
 	  Penalidade de acesso
 	  Atualização das estatísticas
 
 
- 10.3 Métricas de Desempenho:
+ 10.3 Métricas de Desempenho — [P]
 
-  10.3.1 Hit Rate:
+  10.3.1 Hit Rate — [P]
 	  Conceito
 	  Cálculo
 	  Interpretação
 
-  10.3.2 Miss Rate:
+  10.3.2 Miss Rate — [P]
 	  Conceito
 	  Relação com Hit Rate
 	  Interpretação
 
-  10.3.3 Miss Penalty:
+  10.3.3 Miss Penalty — [P]
 	  Conceito
 	  Tempo adicional
 	  Influência no desempenho
 
 
- 10.4 Average Memory Access Time (AMAT):
+ 10.4 Average Memory Access Time (AMAT) — [P]
 
-  10.4.1 Conceitos:
+  10.4.1 Conceitos — [P]
 	  Definição
 	  Objetivos
 	  Importância
 
-  10.4.2 Componentes:
+  10.4.2 Componentes — [P]
 	  Hit Time
 	  Miss Rate
 	  Miss Penalty
 
-  10.4.3 Utilização:
+  10.4.3 Utilização — [P]
 	  Comparação de arquiteturas
 	  Avaliação do desempenho
 	  Otimização da cache
 
 
- 10.5 Métricas Arquiteturais:
+ 10.5 Métricas Arquiteturais — [I]
 
-  10.5.1 IPC:
+  10.5.1 IPC — [I]
 	  Relação com a cache
 	  Gargalos
 
-  10.5.2 MPKI:
+  10.5.2 MPKI — [I]
 	  Misses por mil instruções
 	  Interpretação
 
-  10.5.3 Stall Cycles:
+  10.5.3 Stall Cycles — [I]
 	  Ciclos de espera
 	  Impacto dos misses
 
-  10.5.4 Memory Level Parallelism (MLP):
+  10.5.4 Memory Level Parallelism (MLP) — [P]
 	  Paralelismo de acessos
 	  Aproveitamento da cache
 
 
 
-11. Tipos de Cache Miss:
+11. Tipos de Cache Miss — [P]
 
- 11.1 Miss Compulsório:
+ 11.1 Miss Compulsório — [P]
 
-  11.1.1 Conceitos:
+  11.1.1 Conceitos — [P]
 	  Primeiro acesso
 	  Bloco inexistente
 	  Inicialização da cache
 
-  11.1.2 Características:
+  11.1.2 Características — [I]
 	  Ocorrência inevitável
 	  Relação com o programa
 
-  11.1.3 Técnicas de Redução:
+  11.1.3 Técnicas de Redução — [I]
 	  Prefetch
 	  Inicialização antecipada
 
 
- 11.2 Miss por Capacidade:
+ 11.2 Miss por Capacidade — [P]
 
-  11.2.1 Conceitos:
+  11.2.1 Conceitos — [P]
 	  Limitação da capacidade
 	  Working Set
 
-  11.2.2 Características:
+  11.2.2 Características — [P]
 	  Saturação
 	  Substituições constantes
 
-  11.2.3 Soluções:
+  11.2.3 Soluções — [I]
 	  Maior capacidade
 	  Melhor organização
 
 
- 11.3 Miss por Conflito:
+ 11.3 Miss por Conflito — [P]
 
-  11.3.1 Conceitos:
+  11.3.1 Conceitos — [P]
 	  Colisão entre blocos
 	  Disputa por linhas
 
-  11.3.2 Características:
+  11.3.2 Características — [P]
 	  Dependência do mapeamento
 	  Influência da associatividade
 
-  11.3.3 Soluções:
+  11.3.3 Soluções — [P]
 	  Associatividade
 	  Melhor algoritmo de substituição
 
 
- 11.4 Miss por Coerência:
+ 11.4 Miss por Coerência — [P]
 
-  11.4.1 Conceitos:
+  11.4.1 Conceitos — [P]
 	  Atualizações em múltiplos núcleos
 	  Compartilhamento
 
-  11.4.2 Características:
+  11.4.2 Características — [P]
 	  Invalidação
 	  Sincronização
 
-  11.4.3 Consequências:
+  11.4.3 Consequências — [P]
 	  Penalidade de acesso
 	  Impacto no desempenho
 
 
- 11.5 Misses Arquiteturais:
+ 11.5 Misses Arquiteturais — [I]
 
-  11.5.1 Miss por Compartilhamento:
+  11.5.1 Miss por Compartilhamento — [I]
 	  Compartilhamento excessivo
 	  Comunicação entre núcleos
 
-  11.5.2 Miss por Migração:
+  11.5.2 Miss por Migração — [V]
 	  Migração de processos
 	  Mudança de núcleo
 
- 11.5.3 Misses em Virtualização:
+  11.5.3 Misses em Virtualização — [V]
 	  Mudança de contexto
 	  Máquinas virtuais
 
 
 
-12. Políticas de Substituição:
+12. Políticas de Substituição — [P]
 
- 12.1 Fundamentos:
+ 12.1 Fundamentos — [P]
 
-  12.1.1 Objetivos:
+  12.1.1 Objetivos — [P]
 	  Seleção da linha
 	  Aproveitamento da cache
 	  Redução dos misses
 
-  12.1.2 Critérios:
+  12.1.2 Critérios — [P]
 	  Frequência de uso
 	  Tempo de uso
 	  Complexidade
 
-  12.1.3 Processo Geral:
+  12.1.3 Processo Geral — [P]
 	  Escolha
 	  Remoção
 	  Inserção
 
 
- 12.2 Algoritmos Clássicos:
+ 12.2 Algoritmos Clássicos — [P]
 
-  12.2.1 FIFO:
+  12.2.1 FIFO — [I]
 	  Conceito
 	  Funcionamento
  	  Aplicações
 
-  12.2.2 LRU:
+  12.2.2 LRU — [P]
 	  Conceito
 	  Funcionamento
 	  Aplicações
 
-  12.2.3 LFU:
+  12.2.3 LFU — [I]
 	  Conceito
 	  Funcionamento
 	  Aplicações
 
-  12.2.4 Random:
+  12.2.4 Random — [I]
 	  Conceito
 	  Funcionamento
 	  Aplicações
 
 
- 12.3 Algoritmos Modernos:
+ 12.3 Algoritmos Modernos — [P]
 
-  12.3.1 Pseudo-LRU (PLRU):
+  12.3.1 Pseudo-LRU (PLRU) — [P]
 	  Conceito
 	  Funcionamento
 	  Aplicações
 
-  12.3.2 Re-Reference Interval Prediction (RRIP):
+  12.3.2 Re-Reference Interval Prediction (RRIP) — [P]
 	  Conceito
 	  Funcionamento
 	  Objetivos
 
-  12.3.3 Dynamic Insertion Policy (DIP):
+  12.3.3 Dynamic Insertion Policy (DIP) — [P]
 	  Conceito
 	  Funcionamento
 	  Benefícios
 
-  12.3.4 Bimodal Insertion Policy (BIP):
+  12.3.4 Bimodal Insertion Policy (BIP) — [P]
 	  Conceito
 	  Funcionamento
 	 Aplicações
 
 
- 12.4 Comparação entre Algoritmos:
+ 12.4 Comparação entre Algoritmos — [I]
 
-  12.4.1 Critérios:
+  12.4.1 Critérios — [I]
  	  Complexidade
 	  Hardware
 	  Eficiência
 	  Desempenho
 
-  12.4.2 Vantagens:
+  12.4.2 Vantagens — [I]
 	  Algoritmos clássicos
 	  Algoritmos modernos
 
-  12.4.3 Limitações:
+  12.4.3 Limitações — [I]
 	  Sobrecarga
 	  Escalabilidade
 	  Custos
 
 
- 12.5 Políticas Arquiteturais Modernas:
+ 12.5 Políticas Arquiteturais Modernas — [I]
 
-  12.5.1 Adaptive Replacement:
+  12.5.1 Adaptive Replacement — [I]
 	  Ajuste dinâmico
 	  Adaptação ao workload
 
-  12.5.2 Machine Learning Replacement:
+  12.5.2 Machine Learning Replacement — [V]
 	  Predição baseada em histórico
 	  Tendências atuais
 
-  12.5.3 QoS-Aware Replacement:
+  12.5.3 QoS-Aware Replacement — [I]
 	  Compartilhamento
 	  Priorização
 
 
 
-13. Políticas de Escrita:
+13. Políticas de Escrita — [P]
 
- 13.1 Fundamentos:
+ 13.1 Fundamentos — [P]
 
-  13.1.1 Objetivos:
+  13.1.1 Objetivos — [P]
 	  Atualização dos dados
 	  Consistência
 	  Desempenho
 
-  13.1.2 Processo Geral:
+  13.1.2 Processo Geral — [P]
 	  Escrita na cache
 	  Escrita na RAM
 	  Controle do Dirty Bit
 
-  13.1.3 Critérios de Escolha:
+  13.1.3 Critérios de Escolha — [P]
 	  Desempenho
 	  Consistência
 	  Tráfego do barramento
 
 
- 13.2 Principais Políticas:
+ 13.2 Principais Políticas — [P]
 
-  13.2.1 Write Through:
+  13.2.1 Write Through — [P]
 	  Conceito
 	  Funcionamento
 	  Vantagens
 	  Limitações
 
-  13.2.2 Write Back:
+  13.2.2 Write Back — [P]
 	  Conceito
 	  Funcionamento
 	  Dirty Bit
@@ -1081,247 +1081,247 @@ PARTE 2 — FUNCIONAMENTO, MAPEAMENTO E ORGANIZAÇÃO DA MEMÓRIA CACHE:
 	  Limitações
 
  
- 13.3 Políticas de Alocação:
+ 13.3 Políticas de Alocação — [P]
 
-  13.3.1 Write Allocate:
+  13.3.1 Write Allocate — [P]
 	  Conceito
 	  Funcionamento
 	  Aplicações
 
-  13.3.2 No Write Allocate:
+  13.3.2 No Write Allocate — [P]
 	  Conceito
 	  Funcionamento
 	  Aplicações
 
-  13.3.3 Combinações das Políticas:
+  13.3.3 Combinações das Políticas — [P]
 	  Write Through + No Write Allocate
 	  Write Through + Write Allocate
 	  Write Back + Write Allocate
 	  Comparação das combinações
 
 
- 13.4 Write Combining:
+ 13.4 Write Combining — [I]
 
-  13.4.1 Conceitos:
+  13.4.1 Conceitos — [I]
 	  Definição
 	  Objetivos
 	  Funcionamento
 
-  13.4.2 Benefícios:
+  13.4.2 Benefícios — [I]
 	  Redução do tráfego
 	  Melhor aproveitamento do barramento
 	  Desempenho
 
-  13.4.3 Limitações:
+  13.4.3 Limitações — [I]
 	  Complexidade
 	  Dependência da arquitetura
 	  Aplicações
 
 
- 13.5 Buffers de Escrita:
+ 13.5 Buffers de Escrita — [P]
 
-  13.5.1 Write Buffer:
+  13.5.1 Write Buffer — [P]
 	  Conceito
 	  Organização
 	  Funcionamento
 
-  13.5.2 Store Buffer:
+  13.5.2 Store Buffer — [P]
 	  Conceito
 	  Escritas pendentes
 	  Integração com a cache
 
-  13.5.3 Write Queue:
+  13.5.3 Write Queue — [I]
 	  Organização
 	  Fluxo de escrita
 
 
- 13.6 Ordenação das Escritas:
+ 13.6 Ordenação das Escritas — [P]
 
-  13.6.1 Memory Ordering:
+  13.6.1 Memory Ordering — [P]
 	  Ordem das escritas
 	  Dependências
 
-  13.6.2 Memory Fence:
+  13.6.2 Memory Fence — [P]
 	  Conceito
 	  Funcionamento
 
-  13.6.3 Relação com a Cache:
+  13.6.3 Relação com a Cache — [P]
 	  Sincronização
 	  Visibilidade dos dados
 
 
 
-14. Organização entre os Níveis da Cache:
+14. Organização entre os Níveis da Cache — [P]
 
- 14.1 Cache Inclusiva:
+ 14.1 Cache Inclusiva — [P]
 
-  14.1.1 Conceitos:
+  14.1.1 Conceitos — [P]
 	  Definição
 	  Funcionamento
 	  Objetivos
 
-  14.1.2 Princípio da Inclusão:
+  14.1.2 Princípio da Inclusão — [P]
 	  Relação entre L1, L2 e L3
 	  Propagação dos blocos
 	  Consistência
 
-  14.1.3 Vantagens e Limitações:
+  14.1.3 Vantagens e Limitações — [I]
 	  Benefícios
 	  Desvantagens
 	  Aplicações
 
 
- 14.2 Cache Exclusiva:
+ 14.2 Cache Exclusiva — [P]
 
-  14.2.1 Conceitos:
+  14.2.1 Conceitos — [P]
 	  Definição
 	  Organização
 	  Funcionamento
 
-  14.2.2 Características:
+  14.2.2 Características — [P]
 	  Aproveitamento da capacidade
 	  Transferência entre níveis
 	  Desempenho
 
-  14.2.3 Comparação:
+  14.2.3 Comparação — [P]
 	  Inclusiva × Exclusiva
 	  Eficiência
 	  Complexidade
 
 
- 14.3 Non-Inclusive Non-Exclusive (NINE):
+ 14.3 Non-Inclusive Non-Exclusive (NINE) — [P]
 
-  14.3.1 Conceitos:
+  14.3.1 Conceitos — [P]
 	  Definição
 	  Organização
 	  Objetivos
 
-  14.3.2 Funcionamento:
+  14.3.2 Funcionamento — [P]
 	  Compartilhamento entre níveis
 	  Gerenciamento dos blocos
 	  Flexibilidade
 
-  14.3.3 Comparação Geral:
+  14.3.3 Comparação Geral — [P]
 	  Inclusiva
 	  Exclusiva
 	  NINE
 	  Critérios de utilização
 
 
- 14.4 Compartilhamento entre Níveis:
+ 14.4 Compartilhamento entre Níveis — [P]
 
-  14.4.1 Transferência de Blocos:
+  14.4.1 Transferência de Blocos — [P]
 	  Promoção
 	  Demoção
 	  Migração
 
-  14.4.2 Duplicação de Dados:
+  14.4.2 Duplicação de Dados — [I]
 	  Réplicas
 	  Consumo de capacidade
 
-  14.4.3 Eficiência:
+  14.4.3 Eficiência — [P]
 	  Latência
 	  Tráfego interno
 
  
- 14.5 Organização em Arquiteturas Modernas:
+ 14.5 Organização em Arquiteturas Modernas — [I]
 
-  14.5.1 Last Level Cache:
+  14.5.1 Last Level Cache — [I]
 	  Compartilhamento
 	  Escalabilidade
 
-  14.5.2 NUCA:
+  14.5.2 NUCA — [P]
 	  Non-Uniform Cache Access
 	  Latência variável
 
-  14.5.3 Chiplets:
+  14.5.3 Chiplets — [I]
 	  Organização distribuída
 	  Cache compartilhada
 
 
 
-15. Problemas da Memória Cache:
+15. Problemas da Memória Cache — [P]
 
- 15.1 Thrashing (Cache Thrashing):
+ 15.1 Thrashing (Cache Thrashing) — [P]
 
-  15.1.1 Conceitos:
+  15.1.1 Conceitos — [P]
 	  Definição
 	  Causas
 	  Relação com o mapeamento direto
 
-  15.1.2 Funcionamento:
+  15.1.2 Funcionamento — [P]
 	  Expulsões repetitivas
 	  Disputa pela mesma linha
 	  Queda de desempenho
 
-  15.1.3 Técnicas de Redução:
+  15.1.3 Técnicas de Redução — [P]
 	  Maior associatividade
 	  Melhor política de substituição
 	  Reorganização dos dados
 
 
- 15.2 Cache Pollution:
+ 15.2 Cache Pollution — [P]
 
-  15.2.1 Conceitos:
+  15.2.1 Conceitos — [P]
 	  Definição
 	  Inserção de dados pouco úteis
 	  Redução da eficiência
 
-  15.2.2 Causas:
+  15.2.2 Causas — [P]
 	  Acessos sequenciais extensos
 	  Prefetch inadequado
 	  Políticas de substituição
 
-  15.2.3 Mitigações:
+  15.2.3 Mitigações — [P]
 	  Melhor gerenciamento
 	  Algoritmos adaptativos
 	  Ajuste das políticas
 
  
- 15.3 False Sharing e Ping-Pong Effect:
+ 15.3 False Sharing e Ping-Pong Effect — [P]
 
-  15.3.1 False Sharing:
+  15.3.1 False Sharing — [P]
 	  Conceito
 	  Causas
 	  Consequências
 
-  15.3.2 Ping-Pong Effect:
+  15.3.2 Ping-Pong Effect — [P]
 	  Conceito
 	  Atualizações constantes
 	  Compartilhamento excessivo
 
-  15.3.3 Impacto no Desempenho:
+  15.3.3 Impacto no Desempenho — [P]
 	  Aumento do tráfego
 	  Redução da escalabilidade
 	  Penalidades de sincronização
 
 
- 15.4 Gargalos Arquiteturais:
+ 15.4 Gargalos Arquiteturais — [I]
 
-  15.4.1 Hot Spots:
+  15.4.1 Hot Spots — [I]
 	  Regiões muito acessadas
 	  Saturação
 
-  15.4.2 Congestionamento:
+  15.4.2 Congestionamento — [I]
 	  Tráfego entre níveis
 	  Contenção
 	 
-  15.4.3 Balanceamento:
+  15.4.3 Balanceamento — [I]
 	  Distribuição de acessos
 	  Otimização
 
 
- 15.5 Problemas em Arquiteturas Multicore:
+ 15.5 Problemas em Arquiteturas Multicore — [P]
 
-  15.5.1 Contenção:
+  15.5.1 Contenção — [P]
 	  Disputa pela LLC
 	  Compartilhamento
 
-  15.5.2 Interferência entre Aplicações:
+  15.5.2 Interferência entre Aplicações — [P]
 	  Cache Interference
 	  QoS
 
-  15.5.3 Escalabilidade:
+  15.5.3 Escalabilidade — [P]
 	  Crescimento do número de núcleos
 	  Limitações arquiteturais
 
