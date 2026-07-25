@@ -1205,113 +1205,113 @@ PARTE 3 — ORGANIZAÇÃO INTERNA DOS PROCESSADORES MODERNOS
 
 
 
-PARTE 4 — MICROARQUITETURA E PROCESSADORES MODERNOS:
+PARTE 4 — MICROARQUITETURA E PROCESSADORES MODERNOS
 
 
-19. Pipeline de Instruções:
+19. Pipeline de Instruções — [P]
 
- 19.1 Fundamentos:
+ 19.1 Fundamentos — [P]
 
-  19.1.1 Conceitos:
+  19.1.1 Conceitos — [P]
 	  Definição
 	  Objetivos
 	  Motivação
 	  Evolução histórica
 	  Relação com desempenho
 
-  19.1.2 Execução Sequencial × Pipeline:
+  19.1.2 Execução Sequencial × Pipeline — [P]
 	  Organização sequencial
 	  Sobreposição das instruções
 	  Ganhos de desempenho
 	  Limitações
 
 
- 19.2 Organização do Pipeline:
+ 19.2 Organização do Pipeline — [P]
 
-  19.2.1 Estágios Clássicos:
+  19.2.1 Estágios Clássicos — [P]
 	  Fetch
 	  Decode
 	  Execute
 	  Memory
 	  Write Back
 
-  19.2.2 Pipeline Moderno:
+  19.2.2 Pipeline Moderno — [P]
 	  Estágios adicionais
 	  Front-End
 	  Back-End
 	  Pipeline profundo
 	  Pipeline superscalar
 
-  19.2.3 Fluxo de Execução:
+  19.2.3 Fluxo de Execução — [P]
 	  Entrada das instruções
 	  Avanço entre estágios
 	  Sincronização
 	  Finalização
 
 
- 19.3 Hazards:
+ 19.3 Hazards — [P]
 
-  19.3.1 Hazards Estruturais:
+  19.3.1 Hazards Estruturais — [P]
 	  Definição
 	  Causas
 	  Exemplos
 
-  19.3.2 Hazards de Dados:
+  19.3.2 Hazards de Dados — [P]
 	  RAW
 	  WAR
 	  WAW
 	  Dependências
 
-  19.3.3 Hazards de Controle:
+  19.3.3 Hazards de Controle — [P]
 	  Branches
 	  Saltos
 	  Alteração do fluxo
 
 
- 19.4 Técnicas de Solução:
+ 19.4 Técnicas de Solução — [P]
 
-  19.4.1 Stall:
+  19.4.1 Stall — [P]
 	  Inserção de bolhas
 	  Controle
 
-  19.4.2 Forwarding:
+  19.4.2 Forwarding — [P]
 	  Encaminhamento de dados
 	  Redução de dependências
 
-  19.4.3 Predição de Desvios:
+  19.4.3 Predição de Desvios — [P]
 	  Branch Prediction
 	  Branch Target Buffer
 	  Return Address Stack
 
 
 
-20. Execução Superescalar:
+20. Execução Superescalar — [P]
 
- 20.1 Fundamentos:
+ 20.1 Fundamentos — [P]
 
-  20.1.1 Conceitos:
+  20.1.1 Conceitos — [P]
 	  Definição
 	  Objetivos
 	  Evolução
 
-  20.1.2 Organização:
+  20.1.2 Organização — [P]
 	  Emissão múltipla
 	  Múltiplas unidades funcionais
 	  Execução paralela
 
 
- 20.2 Funcionamento:
+ 20.2 Funcionamento — [P]
 
-  20.2.1 Busca e Decodificação:
+  20.2.1 Busca e Decodificação — [P]
 	  Busca múltipla
 	  Decodificação paralela
 
-  20.2.2 Emissão:
+  20.2.2 Emissão — [P]
 	  Dispatch
 	  Scheduler
 	  Balanceamento
 
-  20.2.3 Execução:
+  20.2.3 Execução — [P]
 	  Execução simultânea
 	  ALU
 	  FPU
@@ -1320,62 +1320,62 @@ PARTE 4 — MICROARQUITETURA E PROCESSADORES MODERNOS:
 	  SIMD
 
 
- 20.3 Limitações:
+ 20.3 Limitações — [I]
 
-  20.3.1 Dependências:
+  20.3.1 Dependências — [P]
 	  Dependências verdadeiras
 	  Dependências falsas
 
-  20.3.2 Gargalos:
+  20.3.2 Gargalos — [I]
 	  Front-End
 	  Back-End
 	  Memória
 
 
 
-21. Execução Fora de Ordem (Out-of-Order Execution):
+21. Execução Fora de Ordem (Out-of-Order Execution) — [P]
 
- 21.1 Fundamentos:
+ 21.1 Fundamentos — [P]
 
-  21.1.1 Conceitos:
+  21.1.1 Conceitos — [P]
 	  Definição
 	  Objetivos
 	  Evolução
 	  Diferença para execução em ordem
 
-  21.1.2 Motivação:
+  21.1.2 Motivação — [P]
 	  Melhor utilização das unidades funcionais
 	  Redução de stalls
 	  Aumento do paralelismo
 
 
- 21.2 Componentes:
+ 21.2 Componentes — [P]
 
-  21.2.1 Register Renaming:
+  21.2.1 Register Renaming — [P]
 	  Conceitos
 	  Registradores físicos
 	  Eliminação de dependências falsas
 
-  21.2.2 Reservation Stations:
+  21.2.2 Reservation Stations — [P]
 	  Organização
 	  Espera pelos operandos
 	  Emissão
 
-  21.2.3 Scheduler:
+  21.2.3 Scheduler — [P]
 	  Seleção de instruções
 	  Priorização
 	  Agendamento
 
-  21.2.4 Reorder Buffer (ROB):
+  21.2.4 Reorder Buffer (ROB) — [P]
 	  Organização
 	  Reordenação
 	  Commit
 	  Precisão das exceções
 
 
- 21.3 Funcionamento:
+ 21.3 Funcionamento — [P]
 
-  21.3.1 Fluxo Geral:
+  21.3.1 Fluxo Geral — [P]
 	  Rename
 	  Dispatch
 	  Issue
@@ -1383,140 +1383,140 @@ PARTE 4 — MICROARQUITETURA E PROCESSADORES MODERNOS:
 	  Write Back
 	  Commit
 
-  21.3.2 Benefícios:
+  21.3.2 Benefícios — [I]
 	  Melhor utilização da CPU
 	  Redução de dependências
 	  Maior IPC
 
-  21.3.3 Limitações:
+  21.3.3 Limitações — [I]
 	  Complexidade
 	  Consumo
 	  Área ocupada
 
 
 
-22. Execução Especulativa:
+22. Execução Especulativa — [P]
 
- 22.1 Fundamentos:
+ 22.1 Fundamentos — [P]
 
-  22.1.1 Conceitos:
+  22.1.1 Conceitos — [P]
 	  Definição
 	  Objetivos
 	  Relação com a predição de desvios
 
-  22.1.2 Funcionamento:
+  22.1.2 Funcionamento — [P]
 	  Predição
 	  Execução especulativa
 	  Validação
 	  Rollback
 
 
- 22.2 Técnicas:
+ 22.2 Técnicas — [P]
 
-  22.2.1 Branch Prediction:
+  22.2.1 Branch Prediction — [P]
 	  Preditores estáticos
 	  Preditores dinâmicos
 	  Histórico de desvios
 
-  22.2.2 Recuperação:
+  22.2.2 Recuperação — [P]
 	  Flush do pipeline
 	  Rollback
 	  Reexecução
 
 
- 22.3 Impactos:
+ 22.3 Impactos — [I/P]
 
-  22.3.1 Benefícios:
+  22.3.1 Benefícios — [I]
 	  Melhor desempenho
 	  Melhor utilização do pipeline
 
-  22.3.2 Limitações:
+  22.3.2 Limitações — [P]
 	  Penalidades
 	  Complexidade
 	  Segurança
 
 
 
-23. Paralelismo em Processadores:
+23. Paralelismo em Processadores — [P]
 
- 23.1 Fundamentos:
+ 23.1 Fundamentos — [P]
 
-  23.1.1 Conceitos:
+  23.1.1 Conceitos — [P]
 	  Definição
 	  Objetivos
 	  Evolução
 	  Benefícios
 
-  23.1.2 Classificação:
+  23.1.2 Classificação — [I]
 	  Paralelismo em nível de bits
 	  Paralelismo em nível de instruções
 	  Paralelismo em nível de dados
 	  Paralelismo em nível de tarefas
 
 
- 23.2 Formas de Paralelismo:
+ 23.2 Formas de Paralelismo — [P]
 
-  23.2.1 Pipeline:
-  	  Sobreposição das etapas
+  23.2.1 Pipeline — [P]
+	  Sobreposição das etapas
 
-  23.2.2 Superescalar:
+  23.2.2 Superescalar — [P]
 	  Múltiplas instruções por ciclo
 
-  23.2.3 Execução Fora de Ordem:
+  23.2.3 Execução Fora de Ordem — [P]
 	  Execução dinâmica
 
-  23.2.4 SIMD:
+  23.2.4 SIMD — [P]
 	  Uma instrução
 	  Múltiplos dados
 
-  23.2.5 Vetorização:
+  23.2.5 Vetorização — [P]
 	  Operações vetoriais
 	  Processamento paralelo
 
 
- 23.3 Limitações:
+ 23.3 Limitações — [I/P]
 
-  23.3.1 Dependências:
+  23.3.1 Dependências — [P]
 	  Dados
 	  Controle
 	  Recursos
 
-  23.3.2 Lei de Amdahl:
+  23.3.2 Lei de Amdahl — [P]
 	  Parte sequencial
 	  Ganho máximo
 	  Escalabilidade
 
 
 
-24. Processadores Multicore
+24. Processadores Multicore — [P]
 
- 24.1 Fundamentos:
+ 24.1 Fundamentos — [I/P]
 
-  24.1.1 Conceitos:
+  24.1.1 Conceitos — [I]
 	  Núcleo
 	  Single-core
 	  Multicore
 	  Many-core
 
-  24.1.2 Evolução:
+  24.1.2 Evolução — [I]
 	  Limites da frequência
 	  Eficiência energética
 	  Escalabilidade
 
 
- 24.2 Organização:
+ 24.2 Organização — [P]
 
-  24.2.1 Núcleos:
-  	  Homogêneos
+  24.2.1 Núcleos — [P]
+	  Homogêneos
 	  Heterogêneos
 
-  24.2.2 Compartilhamento:
+  24.2.2 Compartilhamento — [P]
 	  Cache
 	  Memória
 	  Barramentos
- 	  Interconexão
+	  Interconexão
 
-  24.2.3 Comunicação:
+  24.2.3 Comunicação — [P]
 	  Barramento
 	  Crossbar
 	  Ring
@@ -1524,16 +1524,16 @@ PARTE 4 — MICROARQUITETURA E PROCESSADORES MODERNOS:
 	  NoC
 
 
- 24.3 Escalabilidade:
+ 24.3 Escalabilidade — [P]
 
-  24.3.1 Número de Núcleos:
+  24.3.1 Número de Núcleos — [V]
 	  Dual-Core
 	  Quad-Core
 	  Hexa-Core
 	  Octa-Core
 	  Many-Core
 
-  24.3.2 Desafios:
+  24.3.2 Desafios — [P]
 	  Comunicação
 	  Sincronização
 	  Balanceamento de carga
@@ -1541,85 +1541,85 @@ PARTE 4 — MICROARQUITETURA E PROCESSADORES MODERNOS:
 
 
 
-25. Processamento Simultâneo (SMT):
+25. Processamento Simultâneo (SMT) — [P]
 
- 25.1 Simultaneous Multithreading:
+ 25.1 Simultaneous Multithreading — [P]
 
-  25.1.1 Conceitos:
+  25.1.1 Conceitos — [P]
 	  Definição
 	  Objetivos
 	  Funcionamento
 
-  25.1.2 Organização:
+  25.1.2 Organização — [P]
 	  Threads lógicas
 	  Compartilhamento de recursos
 	  Recursos físicos
 
 
- 25.2 Implementações:
+ 25.2 Implementações — [I/P]
 
-  25.2.1 Hyper-Threading:
+  25.2.1 Hyper-Threading — [I]
 	  Conceito
 	  Funcionamento
 	  Organização
 
-  25.2.2 Outras Implementações:
+  25.2.2 Outras Implementações — [I]
 	  SMT de múltiplas vias
 	  Comparações
 
 
- 25.3 Benefícios e Limitações:
+ 25.3 Benefícios e Limitações — [I/P]
 
-  25.3.1 Benefícios:
+  25.3.1 Benefícios — [I]
 	  Melhor utilização da CPU
 	  Aumento do throughput
 
-  25.3.2 Limitações:
+  25.3.2 Limitações — [P]
 	  Compartilhamento de recursos
 	  Contenção
 	  Eficiência variável
 
 
 
-26. Processadores Heterogêneos e Especializados:
+26. Processadores Heterogêneos e Especializados — [I/P]
 
- 26.1 Computação Heterogênea:
+ 26.1 Computação Heterogênea — [I]
 
-  26.1.1 Conceitos:
+  26.1.1 Conceitos — [I]
 	  Definição
 	  Objetivos
 	  Evolução
 
-  26.1.2 Organização:
+  26.1.2 Organização — [P]
 	  Núcleos de desempenho
 	  Núcleos de eficiência
 	  Arquiteturas híbridas
 	  big.LITTLE
 
 
- 26.2 Processadores Especializados:
+ 26.2 Processadores Especializados — [I]
 
-  26.2.1 Coprocessadores:
+  26.2.1 Coprocessadores — [I]
 	  DSP
 	  GPU
 	  NPU
 	  TPU
 
-  26.2.2 Aceleradores:
+  26.2.2 Aceleradores — [I]
 	  IA
 	  Criptografia
 	  Vetorização
 	  Processamento multimídia
 
 
- 26.3 Sistemas Modernos:
+ 26.3 Sistemas Modernos — [I]
 
-  26.3.1 SoCs:
+  26.3.1 SoCs — [I]
 	  Conceito
 	  Organização
 	  Integração
 
-  26.3.2 Tendências:
+  26.3.2 Tendências — [V]
 	  Chiplets
 	  Empilhamento 3D
 	  IA embarcada
@@ -1627,18 +1627,18 @@ PARTE 4 — MICROARQUITETURA E PROCESSADORES MODERNOS:
 
 
 
-27. Organização Geral dos Processadores Modernos:
+27. Organização Geral dos Processadores Modernos — [P]
 
- 27.1 Organização da Microarquitetura:
+ 27.1 Organização da Microarquitetura — [P]
 
-  27.1.1 Front-End:
+  27.1.1 Front-End — [P]
 	  Busca de instruções
 	  Prefetch
 	  Decodificação
 	  Cache de micro-operações
 	  Predição de desvios
 
-  27.1.2 Back-End:
+  27.1.2 Back-End — [P]
 	  Register Renaming
 	  Scheduler
 	  Reservation Stations
@@ -1646,9 +1646,9 @@ PARTE 4 — MICROARQUITETURA E PROCESSADORES MODERNOS:
 	  Retirement
 
 
- 27.2 Fluxo Completo da Execução:
+ 27.2 Fluxo Completo da Execução — [P]
 
-  27.2.1 Caminho das Instruções:
+  27.2.1 Caminho das Instruções — [P]
 	  Fetch
 	  Decode
 	  Rename
@@ -1659,16 +1659,16 @@ PARTE 4 — MICROARQUITETURA E PROCESSADORES MODERNOS:
 	  Commit
 	  Retirement
 
-  27.2.2 Comunicação Interna:
+  27.2.2 Comunicação Interna — [P]
 	  Fluxo de instruções
 	  Fluxo de dados
 	  Fluxo de controle
 	  Coordenação entre unidades
 
 
- 27.3 Visão Integrada:
+ 27.3 Visão Integrada — [P]
 
-  27.3.1 Integração da CPU Moderna:
+  27.3.1 Integração da CPU Moderna — [P]
 	  Front-End
 	  Back-End
 	  Pipeline
