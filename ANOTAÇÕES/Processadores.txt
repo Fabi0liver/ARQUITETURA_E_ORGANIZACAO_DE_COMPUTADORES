@@ -1,14 +1,21 @@
                                               Processadores 
 
 
-PARTE 1 — FUNDAMENTOS DOS PROCESSADORES:
+A classificação abaixo indica a profundidade recomendada para cada grande tópico da lista.
+
+[P] Profundidade — estudar mecanismos, estruturas, funcionamento interno e relações entre componentes.
+[I] Intermediário — compreender bem o funcionamento e as relações principais, sem precisar dominar todos os detalhes de implementação.
+[V] Visão geral — saber o que é, para que serve e como se relaciona com as Memórias.
 
 
-1. Introdução aos Processadores:
 
- 1.1 Conceitos Fundamentais:
+PARTE 1 — FUNDAMENTOS DOS PROCESSADORES
 
-  1.1.1 Processador como Unidade Central de Processamento:
+1. Introdução aos Processadores — [P]
+
+ 1.1 Conceitos Fundamentais — [P]
+
+  1.1.1 Processador como Unidade Central de Processamento — [P]
 	  Conceito de processador
 	  Conceito de CPU (Central Processing Unit)
 	  Processador como unidade de processamento
@@ -22,7 +29,7 @@ PARTE 1 — FUNDAMENTOS DOS PROCESSADORES:
 	  Controle da sequência de processamento
 	  Atualização do estado computacional
 
-  1.1.2 Importância dos Processadores:
+  1.1.2 Importância dos Processadores — [P]
 	  Papel do processador na computação
 	  Papel na Arquitetura de Computadores
 	  Papel na Organização de Computadores
@@ -33,7 +40,7 @@ PARTE 1 — FUNDAMENTOS DOS PROCESSADORES:
 	  Comunicação com os demais componentes
 	  Relação entre hardware e software
 
-  1.1.3 Características Gerais dos Processadores:
+  1.1.3 Características Gerais dos Processadores — [P]
 	  Dispositivo eletrônico programável
 	  Processamento baseado em instruções
 	  Operações sequenciais e paralelas
@@ -45,9 +52,9 @@ PARTE 1 — FUNDAMENTOS DOS PROCESSADORES:
 	  Integração entre hardware e software
 
 
- 1.2 O Processador no Sistema Computacional:
+ 1.2 O Processador no Sistema Computacional — [P]
 
-  1.2.1 Relação com os Demais Componentes:Memória principal:
+  1.2.1 Relação com os Demais Componentes — [P]
 	  Memória principal
 	  Memória cache
 	  Barramentos
@@ -57,7 +64,7 @@ PARTE 1 — FUNDAMENTOS DOS PROCESSADORES:
 	  Interconexões do sistema
 	  Fluxo geral de dados
 
-  1.2.2 Papel da CPU na Organização do Computador:
+  1.2.2 Papel da CPU na Organização do Computador — [P]
 	  Coordenação do processamento
 	  Execução dos programas
 	  Manipulação dos dados
@@ -66,7 +73,7 @@ PARTE 1 — FUNDAMENTOS DOS PROCESSADORES:
 	  Sincronização
 	  Atualização do estado do sistema
 
-  1.2.3 Fluxo Geral de Funcionamento:
+  1.2.3 Fluxo Geral de Funcionamento — [P]
 	  Recepção de instruções
 	  Interpretação da operação
 	  Obtenção dos dados
@@ -75,9 +82,9 @@ PARTE 1 — FUNDAMENTOS DOS PROCESSADORES:
 	  Atualização do estado da CPU
 
 
- 1.3 Arquitetura e Organização dos Processadores:
+ 1.3 Arquitetura e Organização dos Processadores — [P]
 
-  1.3.1 Arquitetura de Computadores:
+  1.3.1 Arquitetura de Computadores — [P]
 	  Conceito de arquitetura
 	  Interface hardware–software
 	  Recursos visíveis ao programador
@@ -86,7 +93,7 @@ PARTE 1 — FUNDAMENTOS DOS PROCESSADORES:
 	  Modos de operação
 	  Modelo de execução
 
-  1.3.2 Organização de Computadores:
+  1.3.2 Organização de Computadores — [P]
 	  Implementação física dos recursos
 	  Organização dos componentes
 	  Estrutura interna da CPU
@@ -95,14 +102,14 @@ PARTE 1 — FUNDAMENTOS DOS PROCESSADORES:
 	  Interconexão dos componentes
 	  Organização funcional
 
-  1.3.3 Microarquitetura:
+  1.3.3 Microarquitetura — [P]
 	  Conceito
 	  Implementação da arquitetura
 	  Organização interna do processador
 	  Relação entre ISA e hardware
 	  Exemplos de microarquiteturas
 
-  1.3.4 Arquitetura × Organização:
+  1.3.4 Arquitetura × Organização — [P]
 	  Diferenças
 	  Relação entre os conceitos
 	  Complementaridade
@@ -112,18 +119,18 @@ PARTE 1 — FUNDAMENTOS DOS PROCESSADORES:
 
 
 
-2. Evolução dos Processadores:
+2. Evolução dos Processadores — [I]
 
- 2.1 Evolução Histórica:
+ 2.1 Evolução Histórica — [I]
 
-  2.1.1 Primeiros Processadores:
+  2.1.1 Primeiros Processadores — [I]
 	  Computadores sem CPU integrada
 	  Processadores discretos
 	  Unidades de processamento formadas por vários circuitos
 	  Primeiros microprocessadores
 	  Integração da CPU em um único chip
 
-  2.1.2 Evolução Tecnológica:
+  2.1.2 Evolução Tecnológica — [I]
 	  Aumento da integração
 	  Aumento da densidade de transistores
 	  Redução do tamanho dos componentes
@@ -132,7 +139,7 @@ PARTE 1 — FUNDAMENTOS DOS PROCESSADORES:
 	  Redução do consumo
 	  Evolução dos processos de fabricação
 
-  2.1.3 Evolução da Organização Interna:
+  2.1.3 Evolução da Organização Interna — [I]
 	  CPUs simples
 	  Integração de novas unidades funcionais
 	  Aumento da complexidade
@@ -145,15 +152,15 @@ PARTE 1 — FUNDAMENTOS DOS PROCESSADORES:
 	  Processadores heterogêneos
 
 
- 2.2 Gerações dos Processadores:
+ 2.2 Gerações dos Processadores — [I]
 
-  2.2.1 Primeiras Gerações:
+  2.2.1 Primeiras Gerações — [V]
 	  Processadores de 4 bits
 	  Processadores de 8 bits
 	  Processadores de 16 bits
 	  Evolução da largura de palavra
 
-  2.2.2 Evolução para 32 e 64 Bits:
+  2.2.2 Evolução para 32 e 64 Bits — [I]
 	  Processadores de 32 bits
 	  Processadores de 64 bits
 	  Largura da palavra
@@ -161,7 +168,7 @@ PARTE 1 — FUNDAMENTOS DOS PROCESSADORES:
 	  Capacidade de representação
 	  Espaço de endereçamento
 
-  2.2.3 Tendências da Evolução:
+  2.2.3 Tendências da Evolução — [V]
 	  Maior integração
 	  Maior eficiência energética
 	  Paralelismo
@@ -173,17 +180,17 @@ PARTE 1 — FUNDAMENTOS DOS PROCESSADORES:
 	  IA embarcada
 
 
- 2.3 Evolução das Arquiteturas de Processadores:
+ 2.3 Evolução das Arquiteturas de Processadores — [I]
 
-  2.3.1 Evolução da Organização Física:
- 	  Processadores discretos
+  2.3.1 Evolução da Organização Física — [I]
+	  Processadores discretos
 	  Chip único
 	  Múltiplos núcleos
 	  Múltiplos dies
 	  Chiplets
 	  Empilhamento 3D
 
-  2.3.2 Evolução da Organização Lógica:
+  2.3.2 Evolução da Organização Lógica — [I]
 	  Execução sequencial
 	  Pipeline
 	  Execução superescalar
@@ -195,11 +202,11 @@ PARTE 1 — FUNDAMENTOS DOS PROCESSADORES:
 
 
 
-3. Organização Geral da CPU:
+3. Organização Geral da CPU — [P]
 
- 3.1 Estrutura Geral:
+ 3.1 Estrutura Geral — [P]
 
-  3.1.1 Organização Física:
+  3.1.1 Organização Física — [P]
 	  Componentes internos
 	  Blocos funcionais
 	  Interconexões
@@ -207,14 +214,14 @@ PARTE 1 — FUNDAMENTOS DOS PROCESSADORES:
 	  Núcleos
 	  Unidades de execução
 
-  3.1.2 Organização Lógica:
+  3.1.2 Organização Lógica — [P]
 	  Organização funcional
 	  Fluxo de informações
 	  Fluxo de dados
 	  Fluxo de controle
 	  Organização hierárquica
 
-  3.1.3 Organização Funcional:
+  3.1.3 Organização Funcional — [P]
 	  Processamento de dados
 	  Controle das operações
 	  Armazenamento temporário
@@ -222,35 +229,35 @@ PARTE 1 — FUNDAMENTOS DOS PROCESSADORES:
 	  Coordenação dos componentes
 
 
- 3.2 Componentes Fundamentais:
+ 3.2 Componentes Fundamentais — [P]
 
-  3.2.1 Unidade de Controle:
+  3.2.1 Unidade de Controle — [P]
 	  Coordenação das operações
 	  Geração de sinais de controle
 	  Sequenciamento
 	  Controle temporal
 	  Comunicação com o datapath
 
-  3.2.2 Unidade Lógica e Aritmética (ALU)
+  3.2.2 Unidade Lógica e Aritmética (ALU) — [P]
 	  Operações aritméticas
 	  Operações lógicas
 	  Comparações
 	  Deslocamentos
 	  Produção de resultados
 
-  3.2.3 Unidade de Ponto Flutuante (FPU):
+  3.2.3 Unidade de Ponto Flutuante (FPU) — [I]
 	  Operações em ponto flutuante
 	  Operações matemáticas
 	  Processamento científico
 	  Relação com o processamento de dados numéricos
 
-  3.2.4 Banco de Registradores:
+  3.2.4 Banco de Registradores — [P]
 	  Armazenamento temporário
 	  Leitura
 	  Escrita
 	  Comunicação com as unidades funcionais
 
-  3.2.5 Unidades Funcionais Especializadas:
+  3.2.5 Unidades Funcionais Especializadas — [I]
 	  Address Generation Unit (AGU)
 	  Load/Store Unit (LSU)
 	  Unidades vetoriais
@@ -258,23 +265,23 @@ PARTE 1 — FUNDAMENTOS DOS PROCESSADORES:
 	  Unidades de controle de fluxo
 	  Aceleradores especializados
 
-  3.2.6 Datapath e Control Path:
+  3.2.6 Datapath e Control Path — [P]
 	  Caminho de dados
 	  Caminho de controle
 	  Relação entre ambos
 	  Integração funcional
 
 
- 3.3 Fluxo Geral de Funcionamento:
- 
-  3.3.1 Fluxo das Informações:
+ 3.3 Fluxo Geral de Funcionamento — [P]
+
+  3.3.1 Fluxo das Informações — [P]
 	  Entrada de instruções
 	  Entrada de dados
 	  Processamento
 	  Produção dos resultados
 	  Atualização do estado
 
-  3.3.2 Coordenação Geral:
+  3.3.2 Coordenação Geral — [P]
 	  Comunicação
 	  Sincronização
 	  Controle interno
@@ -282,17 +289,17 @@ PARTE 1 — FUNDAMENTOS DOS PROCESSADORES:
 
 
 
-4. Modelos Clássicos de Organização:
+4. Modelos Clássicos de Organização — [I]
 
- 4.1 Arquitetura de Von Neumann:
+ 4.1 Arquitetura de Von Neumann — [P]
 
-  4.1.1 Conceitos Fundamentais:
+  4.1.1 Conceitos Fundamentais — [P]
 	  Programa armazenado
 	  Memória unificada
 	  Organização geral
 	  Funcionamento básico
 
-  4.1.2 Características:
+  4.1.2 Características — [P]
 	  Compartilhamento da memória
 	  Compartilhamento dos caminhos de comunicação
 	  Fluxo de execução
@@ -300,14 +307,14 @@ PARTE 1 — FUNDAMENTOS DOS PROCESSADORES:
 	  Implicações para a organização do processador
 
 
- 4.2 Arquitetura Harvard:
+ 4.2 Arquitetura Harvard — [P]
 
-  4.2.1 Conceitos Fundamentais:
+  4.2.1 Conceitos Fundamentais — [P]
 	  Separação entre instruções e dados
 	  Organização geral
 	  Funcionamento básico
 
-  4.2.2 Características:
+  4.2.2 Características — [P]
 	  Memórias independentes
 	  Caminhos independentes
 	  Acesso simultâneo
@@ -315,33 +322,33 @@ PARTE 1 — FUNDAMENTOS DOS PROCESSADORES:
 	  Limitações
 
 
- 4.3 Arquitetura Harvard Modificada:
-	Organização
-	Integração das abordagens
-	Separação lógica
-	Compartilhamento físico
-	Compartilhamento controlado
-	Aplicações modernas
-
-  
- 4.4 Comparação entre os Modelos:
-	Von Neumann
-	Harvard
-	Harvard modificada
-	Impacto na organização dos processadores
+ 4.3 Arquitetura Harvard Modificada — [I]
+	  Organização
+	  Integração das abordagens
+	  Separação lógica
+	  Compartilhamento físico
+	  Compartilhamento controlado
+	  Aplicações modernas
 
 
+ 4.4 Comparação entre os Modelos — [I]
+	  Von Neumann
+	  Harvard
+	  Harvard modificada
+	  Impacto na organização dos processadores
 
-5. Fundamentos Digitais Aplicados aos Processadores:
 
- 5.1 Representação das Informações:
 
-  5.1.1 Sistemas de Numeração:
+5. Fundamentos Digitais Aplicados aos Processadores — [P]
+
+ 5.1 Representação das Informações — [P]
+
+  5.1.1 Sistemas de Numeração — [I]
 	  Binário
 	  Hexadecimal
 	  Conversões básicas
 
-  5.1.2 Representação dos Dados:
+  5.1.2 Representação dos Dados — [P]
 	  Bits
 	  Bytes
 	  Palavras
@@ -352,29 +359,29 @@ PARTE 1 — FUNDAMENTOS DOS PROCESSADORES:
 	  Dados vetoriais
 
 
- 5.2 Componentes Digitais Fundamentais:
+ 5.2 Componentes Digitais Fundamentais — [P]
 
-  5.2.1 Circuitos Lógicos:
+  5.2.1 Circuitos Lógicos — [P]
 	  Portas lógicas
 	  Circuitos combinacionais
 	  Circuitos sequenciais
 
-  5.2.2 Elementos de Armazenamento:
+  5.2.2 Elementos de Armazenamento — [P]
 	  Latches
 	  Flip-flops
 	  Registradores
 
-  5.2.3 Componentes de Interligação:
+  5.2.3 Componentes de Interligação — [I]
 	  Multiplexadores
 	  Demultiplexadores
 	  Codificadores
 	  Decodificadores
 	  Buffers
 
- 
- 5.3 Clock e Temporização:
 
-  5.3.1 Clock do Processador:
+ 5.3 Clock e Temporização — [P]
+
+  5.3.1 Clock do Processador — [P]
 	  Sinal de clock
 	  Frequência
 	  Período
@@ -382,13 +389,13 @@ PARTE 1 — FUNDAMENTOS DOS PROCESSADORES:
 	  Clock base
 	  Clock boost/turbo
 
-  5.3.2 Sincronização:
+  5.3.2 Sincronização — [P]
 	  Sincronização das operações
 	  Temporização interna
 	  Coordenação entre componentes
 	  Estados de operação
 
-  5.3.3 Comunicação Interna:
+  5.3.3 Comunicação Interna — [P]
 	  Fluxo de dados
 	  Fluxo de controle
 	  Interconexões internas
