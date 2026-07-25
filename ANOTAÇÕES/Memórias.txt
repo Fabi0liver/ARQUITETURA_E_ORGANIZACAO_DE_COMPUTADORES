@@ -1483,11 +1483,11 @@ PARTE 4 — MEMÓRIAS NÃO VOLÁTEIS E ARMAZENAMENTO:
 PARTE 5 — MEMÓRIA VIRTUAL E SISTEMAS ESPECIALIZADOS:
 
 
-23. Memória Virtual:
+23. Memória Virtual — [P]:
 
- 23.1 Fundamentos:
+ 23.1 Fundamentos — [P]:
 
-  23.1.1 Conceitos Gerais:
+  23.1.1 Conceitos Gerais — [P]:
 	  Definição
 	  Objetivos
 	  Espaço de endereçamento virtual
@@ -1502,7 +1502,7 @@ PARTE 5 — MEMÓRIA VIRTUAL E SISTEMAS ESPECIALIZADOS:
 	  Integração com a hierarquia de memória
 	  Transparência da memória virtual para os programas
 
-  23.1.2 Benefícios:
+  23.1.2 Benefícios — [I]:
 	  Isolamento
 	  Proteção
 	  Compartilhamento
@@ -1515,9 +1515,9 @@ PARTE 5 — MEMÓRIA VIRTUAL E SISTEMAS ESPECIALIZADOS:
 	  Abstração da memória física
 
 
- 23.2 Paginação:
+ 23.2 Paginação — [P]:
 
-  23.2.1 Conceitos:
+  23.2.1 Conceitos — [P]:
 	  Página
 	  Quadro (Frame)
 	  Tabela de Páginas
@@ -1533,7 +1533,7 @@ PARTE 5 — MEMÓRIA VIRTUAL E SISTEMAS ESPECIALIZADOS:
 	  Granularidade da paginação
 	  Localidade na paginação
 
-  23.2.2 Políticas:
+  23.2.2 Políticas — [P]:
 	  FIFO
 	  LRU
 	  Clock
@@ -1546,7 +1546,7 @@ PARTE 5 — MEMÓRIA VIRTUAL E SISTEMAS ESPECIALIZADOS:
 	  Random
 
 
- 23.3 Segmentação:
+ 23.3 Segmentação — [P]:
 	Segmentos
 	Base
 	Limite
@@ -1557,9 +1557,9 @@ PARTE 5 — MEMÓRIA VIRTUAL E SISTEMAS ESPECIALIZADOS:
 	Segmentação com Paginação
 
 
- 23.4 MMU e TLB:
+ 23.4 MMU e TLB — [P]:
 
-  23.4.1 MMU:
+  23.4.1 MMU — [P]:
 	  Tradução de endereços
 	  Proteção
 	  Permissões
@@ -1569,7 +1569,7 @@ PARTE 5 — MEMÓRIA VIRTUAL E SISTEMAS ESPECIALIZADOS:
 	  Papel da MMU na arquitetura do sistema
 	  Integração entre CPU, TLB e memória principal
 
-  23.4.2 TLB:
+  23.4.2 TLB — [P]:
 	  Estrutura
 	  Associatividade
 	  TLB Hit
@@ -1582,15 +1582,15 @@ PARTE 5 — MEMÓRIA VIRTUAL E SISTEMAS ESPECIALIZADOS:
 	  Integração com a hierarquia de memória
 
 
- 23.5 Implementação da Memória Virtual:
+ 23.5 Implementação da Memória Virtual — [P]:
 
-  23.5.1 Estruturas:
+  23.5.1 Estruturas — [P]:
 	  Tabela de Páginas de Nível Único
 	  Tabelas Multinível
 	  Tabela de Páginas Invertida
 	  Hash Page Table
 
-  23.5.2 Otimizações:
+  23.5.2 Otimizações — [P]:
 	  Huge Pages
 	  Transparent Huge Pages
 	  Shared Pages
@@ -1601,11 +1601,11 @@ PARTE 5 — MEMÓRIA VIRTUAL E SISTEMAS ESPECIALIZADOS:
 
 
 
-24. Gerenciamento de Memória:
+24. Gerenciamento de Memória — [P]:
 
- 24.1 Alocação:
+ 24.1 Alocação — [P]:
 
-  24.1.1 Técnicas:
+  24.1.1 Técnicas — [P]:
 	  Contígua
 	  Não Contígua
 	  First Fit
@@ -1619,16 +1619,16 @@ PARTE 5 — MEMÓRIA VIRTUAL E SISTEMAS ESPECIALIZADOS:
 	  Eficiência da utilização da memória
 	  Escalabilidade dos mecanismos de alocação
 
-  24.1.2 Fragmentação:
+  24.1.2 Fragmentação — [P]:
 	  Fragmentação Interna
 	  Fragmentação Externa
 	  Compactação
 	  Coalescência
 
 
- 24.2 Paginação por Demanda:
+ 24.2 Paginação por Demanda — [P]:
 
-  24.2.1 Operações:
+  24.2.1 Operações — [P]:
 	  Page Fault
 	  Minor Page Fault
 	  Major Page Fault
@@ -1639,7 +1639,7 @@ PARTE 5 — MEMÓRIA VIRTUAL E SISTEMAS ESPECIALIZADOS:
 	  Demand Paging
 	  Lazy Allocation
 
-  24.2.2 Swap:
+  24.2.2 Swap — [P]:
 	  Área de Swap
 	  Arquivo de Swap
 	  Política de Swap
@@ -1648,9 +1648,9 @@ PARTE 5 — MEMÓRIA VIRTUAL E SISTEMAS ESPECIALIZADOS:
 	  Integração entre RAM e armazenamento
 
 
- 24.3 Gerenciamento Avançado:
+ 24.3 Gerenciamento Avançado — [P]:
 
-  24.3.1 Otimizações:
+  24.3.1 Otimizações — [P]:
 	  Prefetch de Páginas
 	  Reclaim de Memória
 	  Compressão de Memória
@@ -1659,7 +1659,7 @@ PARTE 5 — MEMÓRIA VIRTUAL E SISTEMAS ESPECIALIZADOS:
 	  Balanceamento entre desempenho e utilização da memória
 	  Eficiência da memória virtual
 
-  24.3.2 Monitoramento:
+  24.3.2 Monitoramento — [I]:
 	  Uso da Memória
 	  Working Set
 	  Resident Set Size (RSS)
@@ -1669,11 +1669,11 @@ PARTE 5 — MEMÓRIA VIRTUAL E SISTEMAS ESPECIALIZADOS:
 
 
 
-25. Multiprocessadores e Memória:
+25. Multiprocessadores e Memória — [P]:
 
- 25.1 Arquiteturas:
+ 25.1 Arquiteturas — [P]:
 
-  25.1.1 Modelos:
+  25.1.1 Modelos — [P]:
 	  UMA
 	  NUMA
 	  ccNUMA
@@ -1684,7 +1684,7 @@ PARTE 5 — MEMÓRIA VIRTUAL E SISTEMAS ESPECIALIZADOS:
 	  Organização do espaço de memória
 	  Escalabilidade dos modelos
 
-  25.1.2 Interconexão:
+  25.1.2 Interconexão — [P]:
 	  Barramento Compartilhado
 	  Crossbar
 	  Ring
@@ -1694,9 +1694,9 @@ PARTE 5 — MEMÓRIA VIRTUAL E SISTEMAS ESPECIALIZADOS:
 	  Escalabilidade da comunicação entre memórias
 
 
- 25.2 Memória Compartilhada:
+ 25.2 Memória Compartilhada — [P]:
 
-  25.2.1 Organização:
+  25.2.1 Organização — [P]:
 	  Compartilhamento
 	  Sincronização
 	  Locks
@@ -1706,7 +1706,7 @@ PARTE 5 — MEMÓRIA VIRTUAL E SISTEMAS ESPECIALIZADOS:
 	  Mutex
 	  Variáveis de Condição
 
-  25.2.2 Desempenho:
+  25.2.2 Desempenho — [P]:
 	  Localidade NUMA
 	  Migração de Dados
 	  Afinidade de Memória
@@ -1715,9 +1715,9 @@ PARTE 5 — MEMÓRIA VIRTUAL E SISTEMAS ESPECIALIZADOS:
 	  Escalabilidade do acesso compartilhado
 
 
- 25.3 Memória Distribuída:
+ 25.3 Memória Distribuída — [P]:
 
-  25.3.1 Conceitos:
+  25.3.1 Conceitos — [P]:
 	  Nós
 	  Comunicação
 	  MPI
@@ -1726,7 +1726,7 @@ PARTE 5 — MEMÓRIA VIRTUAL E SISTEMAS ESPECIALIZADOS:
 	  Passagem de Mensagens
 	  Comunicação Coletiva
 
-  25.3.2 Escalabilidade:
+  25.3.2 Escalabilidade — [P]:
 	  Latência
 	  Throughput
 	  Balanceamento de Carga
@@ -1736,11 +1736,11 @@ PARTE 5 — MEMÓRIA VIRTUAL E SISTEMAS ESPECIALIZADOS:
 
 
 
-26. Consistência e Sincronização:
+26. Consistência e Sincronização — [P]:
 
- 26.1 Modelos:
+ 26.1 Modelos — [P]:
 
-  26.1.1 Consistência:
+  26.1.1 Consistência — [P]:
 	  Sequential Consistency
 	  Processor Consistency
 	  Weak Consistency
@@ -1754,7 +1754,7 @@ PARTE 5 — MEMÓRIA VIRTUAL E SISTEMAS ESPECIALIZADOS:
 	  Visibilidade global das operações
 	  Ordenação observável da memória
 
-  26.1.2 Ordenação:
+  26.1.2 Ordenação — [P]:
 	  Reordenação de Instruções
 	  Reordenação de Memória
 	  Dependências
@@ -1763,9 +1763,9 @@ PARTE 5 — MEMÓRIA VIRTUAL E SISTEMAS ESPECIALIZADOS:
 	  Sincronização entre núcleos
 
 
- 26.2 Operações Atômicas:
+ 26.2 Operações Atômicas — [P]:
 
-  26.2.1 Instruções:
+  26.2.1 Instruções — [P]:
 	  Compare-and-Swap
 	  Test-and-Set
 	  Fetch-and-Add
@@ -1775,7 +1775,7 @@ PARTE 5 — MEMÓRIA VIRTUAL E SISTEMAS ESPECIALIZADOS:
 	  Store Conditional
 	  Atomic Read-Modify-Write
 
-  26.2.2 Sincronização:
+  26.2.2 Sincronização — [P]:
 	  Spinlock
 	  Mutex
 	  Semáforo
@@ -1787,16 +1787,16 @@ PARTE 5 — MEMÓRIA VIRTUAL E SISTEMAS ESPECIALIZADOS:
 	  Eficiência em arquiteturas multicore
 
 
- 26.3 Problemas de Concorrência:
+ 26.3 Problemas de Concorrência — [P]:
 
-  26.3.1 Condições:
+  26.3.1 Condições — [P]:
    	  Race Condition
 	  Deadlock
 	  Livelock
 	  Starvation
 	  Priority Inversion
 
-  26.3.2 Ferramentas:
+  26.3.2 Ferramentas — [I]:
 	  Detectores de Corrida
 	  Profilers
 	  Análise de Concorrência
@@ -1805,11 +1805,11 @@ PARTE 5 — MEMÓRIA VIRTUAL E SISTEMAS ESPECIALIZADOS:
 
 
 
-27. Sistemas Especializados de Memória:
+27. Sistemas Especializados de Memória — [I/P]:
 
- 27.1 GPUs:
+ 27.1 GPUs — [P]:
 
-  27.1.1 Hierarquia:
+  27.1.1 Hierarquia — [P]:
 	  Registers
 	  Local Memory
 	  Shared Memory
@@ -1821,7 +1821,7 @@ PARTE 5 — MEMÓRIA VIRTUAL E SISTEMAS ESPECIALIZADOS:
 	  Integração com a memória principal
 	  Fluxo hierárquico dos acessos
 
-  27.1.2 Organização:
+  27.1.2 Organização — [P]:
 	  Warps
 	  Thread Blocks
 	  Coalesced Access
@@ -1830,9 +1830,9 @@ PARTE 5 — MEMÓRIA VIRTUAL E SISTEMAS ESPECIALIZADOS:
 	  Eficiência do acesso paralelo
 
 
- 27.2 Sistemas Embarcados:
+ 27.2 Sistemas Embarcados — [I]:
 
-  27.2.1 Organização:
+  27.2.1 Organização — [I]:
 	  SRAM Embarcada
 	  Flash Embarcada
 	  EEPROM
@@ -1841,7 +1841,7 @@ PARTE 5 — MEMÓRIA VIRTUAL E SISTEMAS ESPECIALIZADOS:
 	  Execução XIP
 	  Memória em SoCs
 
-  27.2.2 Gerenciamento:
+  27.2.2 Gerenciamento — [I]:
 	  Bootloader
 	  Boot ROM
 	  Mapeamento de Memória
@@ -1850,9 +1850,9 @@ PARTE 5 — MEMÓRIA VIRTUAL E SISTEMAS ESPECIALIZADOS:
 	  Integração com a arquitetura do SoC
 
 
- 27.3 Sistemas de Alto Desempenho:
+ 27.3 Sistemas de Alto Desempenho — [P]:
 
-  27.3.1 HPC:
+  27.3.1 HPC — [P]:
 	  HBM
 	  CXL
 	  Memória Persistente
@@ -1863,7 +1863,7 @@ PARTE 5 — MEMÓRIA VIRTUAL E SISTEMAS ESPECIALIZADOS:
 	  Hierarquias híbridas de memória
 	  Escalabilidade da memória em larga escala
 
-  27.3.2 Aceleração:
+  27.3.2 Aceleração — [I]:
 	  GPUDirect
 	  Unified Memory
 	  RDMA
@@ -1877,11 +1877,11 @@ PARTE 5 — MEMÓRIA VIRTUAL E SISTEMAS ESPECIALIZADOS:
 PARTE 6 — TECNOLOGIAS MODERNAS E OTIMIZAÇÕES:
 
 
-28. Tecnologias Modernas de Memória:
+28. Tecnologias Modernas de Memória — [I/P]:
 
- 28.1 Memórias Avançadas:
+ 28.1 Memórias Avançadas — [P]:
 
-  28.1.1 Tecnologias:
+  28.1.1 Tecnologias — [I]:
 	  HBM
 	  HBM2
 	  HBM2E
@@ -1904,7 +1904,7 @@ PARTE 6 — TECNOLOGIAS MODERNAS E OTIMIZAÇÕES:
 	  Hierarquias híbridas de memória
 	  Integração entre diferentes tecnologias de memória
 
-  28.1.2 Características:
+  28.1.2 Características — [P]:
 	  Latência
 	  Throughput
 	  Bandwidth
@@ -1919,9 +1919,9 @@ PARTE 6 — TECNOLOGIAS MODERNAS E OTIMIZAÇÕES:
 	  Compromissos entre desempenho, capacidade e persistência	
 
 
- 28.2 Tendências:
+ 28.2 Tendências — [I]:
 
-  28.2.1 Evolução:
+  28.2.1 Evolução — [I]:
 	  Chiplets
 	  Near-Memory Computing
 	  Processing-in-Memory (PIM)
@@ -1936,7 +1936,7 @@ PARTE 6 — TECNOLOGIAS MODERNAS E OTIMIZAÇÕES:
 	  Integração entre memória volátil e persistente
 	  Compartilhamento transparente de memória
 
-  28.2.2 Arquiteturas Emergentes:
+  28.2.2 Arquiteturas Emergentes — [I]:
 	  Data-Centric Computing
 	  Memory-Centric Computing
 	  Memory-Driven Computing
@@ -1948,9 +1948,9 @@ PARTE 6 — TECNOLOGIAS MODERNAS E OTIMIZAÇÕES:
 	  Integração entre memória e aceleradores
 
 
- 28.3 Integração das Novas Memórias:
+ 28.3 Integração das Novas Memórias — [P]:
 
-  28.3.1 Aplicação na Hierarquia:
+  28.3.1 Aplicação na Hierarquia — [P]:
 	  Cache
 	  Memória Principal
 	  Memória Persistente
@@ -1959,7 +1959,7 @@ PARTE 6 — TECNOLOGIAS MODERNAS E OTIMIZAÇÕES:
 	  Substituição parcial da DRAM
 	  Expansão transparente da memória principal
 
-  28.3.2 Desafios:
+  28.3.2 Desafios — [P]:
 	  Compatibilidade
 	  Escalabilidade
 	  Coerência
@@ -1971,11 +1971,11 @@ PARTE 6 — TECNOLOGIAS MODERNAS E OTIMIZAÇÕES:
 
 
 
-29. Otimizações Avançadas
+29. Otimizações Avançadas — [P]:
 
- 29.1 Hardware:
+ 29.1 Hardware — [P]:
 
-  29.1.1 Técnicas:
+  29.1.1 Técnicas — [P]:
 	  Prefetch Adaptativo
 	  Compressão de Memória
 	  Deduplicação
@@ -1990,7 +1990,7 @@ PARTE 6 — TECNOLOGIAS MODERNAS E OTIMIZAÇÕES:
 	  Adaptação dinâmica aos padrões de acesso
 	  Otimização da movimentação de dados
 
-  29.1.2 Eficiência:
+  29.1.2 Eficiência — [P]:
 	  Redução da Latência
 	  Economia de Energia
 	  Paralelismo
@@ -2001,9 +2001,9 @@ PARTE 6 — TECNOLOGIAS MODERNAS E OTIMIZAÇÕES:
 	  Eficiência da utilização da largura de banda
 
 
- 29.2 Software:
+ 29.2 Software — [I]:
 
-  29.2.1 Técnicas:
+  29.2.1 Técnicas — [I]:
 	  Huge Pages
 	  Transparent Huge Pages
 	  NUMA Awareness
@@ -2017,7 +2017,7 @@ PARTE 6 — TECNOLOGIAS MODERNAS E OTIMIZAÇÕES:
 	  Otimização da localidade de memória
 	  Redução da movimentação de dados
 
-  29.2.2 Ferramentas:
+  29.2.2 Ferramentas — [I]:
 	  Profilers
 	  Memory Debuggers
 	  Leak Detection
@@ -2027,9 +2027,9 @@ PARTE 6 — TECNOLOGIAS MODERNAS E OTIMIZAÇÕES:
 	  Avaliação dos acessos à memória
 
 
- 29.3 Eficiência Energética:
+ 29.3 Eficiência Energética — [I/P]:
 
-  29.3.1 Técnicas:
+  29.3.1 Técnicas — [P]:
 	  Dynamic Voltage Scaling
 	  Dynamic Frequency Scaling
 	  Low-Power Memory
@@ -2039,7 +2039,7 @@ PARTE 6 — TECNOLOGIAS MODERNAS E OTIMIZAÇÕES:
 	  Otimização energética da hierarquia de memória
 	  Redução do consumo durante acessos ociosos
 
-  29.3.2 Gerenciamento:
+  29.3.2 Gerenciamento — [I]:
 	  Thermal Management
 	  Energy-Aware Scheduling
 	  Memory Power States
@@ -2049,14 +2049,14 @@ PARTE 6 — TECNOLOGIAS MODERNAS E OTIMIZAÇÕES:
 
 
 
-* PARTE 7 — SEGURANÇA, APLICAÇÕES E ENCERRAMENTO:
+PARTE 7 — SEGURANÇA, APLICAÇÕES E ENCERRAMENTO:
 
 
-30. Segurança da Memória:
+30. Segurança da Memória — [P]:
 
- 30.1 Proteção:
+ 30.1 Proteção — [P]:
 
-  30.1.1 Técnicas:
+  30.1.1 Técnicas — [P]:
 	  ASLR
 	  DEP
 	  Memory Encryption
@@ -2070,7 +2070,7 @@ PARTE 6 — TECNOLOGIAS MODERNAS E OTIMIZAÇÕES:
 	  Isolamento entre domínios de memória
 	  Proteção em arquiteturas multicore
 
-  30.1.2 Integridade:
+  30.1.2 Integridade — [P]:
 	  ECC
 	  Memory Authentication
 	  Secure Storage
@@ -2081,9 +2081,9 @@ PARTE 6 — TECNOLOGIAS MODERNAS E OTIMIZAÇÕES:
 
 
 
- 30.2 Vulnerabilidades:
+ 30.2 Vulnerabilidades — [P]:
 
-  30.2.1 Ataques:
+  30.2.1 Ataques — [P]:
 	  RowHammer
 	  Buffer Overflow
 	  Use-after-Free
@@ -2096,7 +2096,7 @@ PARTE 6 — TECNOLOGIAS MODERNAS E OTIMIZAÇÕES:
 	  Ataques à hierarquia de memória
 	  Exploração da localidade de memória
 
-  30.2.2 Mitigações:
+  30.2.2 Mitigações — [P]:
 	  ECC
 	  Memory Fencing
 	  Bounds Checking
@@ -2108,15 +2108,15 @@ PARTE 6 — TECNOLOGIAS MODERNAS E OTIMIZAÇÕES:
 	  Mitigações em nível de hardware
 
 
- 30.3 Monitoramento:
+ 30.3 Monitoramento — [I]:
 
-  30.3.1 Detecção:
+  30.3.1 Detecção — [I]:
 	  Monitoramento de Integridade
 	  Detecção de Intrusão
 	  Detecção de Corrupção
 	  Auditoria
 
-  30.3.2 Recuperação:
+  30.3.2 Recuperação — [I]:
 	  Recuperação de Erros
 	  Reinicialização Segura
 	  Failover
@@ -2126,11 +2126,11 @@ PARTE 6 — TECNOLOGIAS MODERNAS E OTIMIZAÇÕES:
 
 
 
-31. Aplicações:
+31. Aplicações — [I]:
 
- 31.1 Ambientes:
+ 31.1 Ambientes — [I]:
 
-  31.1.1 Sistemas:
+  31.1.1 Sistemas — [I]:
 	  Computadores pessoais
 	  Workstations
 	  Servidores
@@ -2141,7 +2141,7 @@ PARTE 6 — TECNOLOGIAS MODERNAS E OTIMIZAÇÕES:
 	  Sistemas com memória heterogênea
 	  Sistemas com memória persistente
 
-  31.1.2 Plataformas:
+  31.1.2 Plataformas — [I]:
 	  Smartphones
 	  Tablets
 	  Sistemas Embarcados
@@ -2155,9 +2155,9 @@ PARTE 6 — TECNOLOGIAS MODERNAS E OTIMIZAÇÕES:
 	  Arquiteturas heterogêneas
 
 
- 31.2 Aplicações Especializadas:
+ 31.2 Aplicações Especializadas — [I]:
 
-  31.2.1 Inteligência Artificial:
+  31.2.1 Inteligência Artificial — [I]:
 	  Inferência
 	  Treinamento
 	  Memória para Aceleradores
@@ -2165,7 +2165,7 @@ PARTE 6 — TECNOLOGIAS MODERNAS E OTIMIZAÇÕES:
 	  HBM em aceleradores
 	  Hierarquias de memória para IA
 
-  31.2.2 Big Data:
+  31.2.2 Big Data — [I]:
 	  Bancos de Dados em Memória
 	  Analytics
 	  Processamento Distribuído
@@ -2174,9 +2174,9 @@ PARTE 6 — TECNOLOGIAS MODERNAS E OTIMIZAÇÕES:
 	  Hierarquias híbridas de armazenamento
 
 
- 31.3 Estudos de Caso:
+ 31.3 Estudos de Caso — [I]:
 
-  31.3.1 Arquiteturas:
+  31.3.1 Arquiteturas — [I]:
 	  CPUs Modernas
 	  GPUs Modernas
 	  Servidores
@@ -2184,7 +2184,7 @@ PARTE 6 — TECNOLOGIAS MODERNAS E OTIMIZAÇÕES:
 	  Sistemas com memória desagregada
 	  Arquiteturas baseadas em CXL
 
-  31.3.2 Comparações:
+  31.3.2 Comparações — [I]:
 	  Desktop
 	  Mobile
 	  Servidor
@@ -2194,11 +2194,11 @@ PARTE 6 — TECNOLOGIAS MODERNAS E OTIMIZAÇÕES:
 
 
 
-32. Revisão Geral:
+32. Revisão Geral — [V]:
 
- 32.1 Integração:
+ 32.1 Integração — [V]:
 
-  32.1.1 Revisão:
+  32.1.1 Revisão — [V]:
 	  Hierarquia de Memória
 	  Cache
 	  RAM
@@ -2210,7 +2210,7 @@ PARTE 6 — TECNOLOGIAS MODERNAS E OTIMIZAÇÕES:
 	  Consistência
 	  Tecnologias Modernas
 
-  32.1.2 Integração dos Conceitos:
+  32.1.2 Integração dos Conceitos — [V]:
 	  Fluxo Completo da Memória
 	  Comunicação CPU–Memória
 	  Comunicação CPU–Cache–RAM–SSD
@@ -2220,9 +2220,9 @@ PARTE 6 — TECNOLOGIAS MODERNAS E OTIMIZAÇÕES:
 	  Evolução das hierarquias de memória
 
 
- 32.2 Avaliação Geral:
+ 32.2 Avaliação Geral — [I]:
 
-  32.2.1 Desempenho:
+  32.2.1 Desempenho — [I]:
  	  Latência
 	  Throughput
 	  AMAT
@@ -2231,7 +2231,7 @@ PARTE 6 — TECNOLOGIAS MODERNAS E OTIMIZAÇÕES:
 	  Eficiência da hierarquia de memória
 	  Escalabilidade do subsistema de memória
 
-  32.2.2 Tendências:
+  32.2.2 Tendências — [I]:
 	  Memórias Persistentes
 	  CXL
 	  PIM
@@ -2242,9 +2242,9 @@ PARTE 6 — TECNOLOGIAS MODERNAS E OTIMIZAÇÕES:
 
 
 
-33. Conclusão:
+33. Conclusão — [V]:
 
- 33.1 Síntese:
+ 33.1 Síntese — [V]:
 	Evolução das Memórias
 	Impacto no Desempenho
 	Integração entre Tecnologias
@@ -2254,7 +2254,7 @@ PARTE 6 — TECNOLOGIAS MODERNAS E OTIMIZAÇÕES:
 	Evolução da hierarquia de memória
 
 
- 33.2 Tendências Futuras:
+ 33.2 Tendências Futuras — [I]:
 	Memórias Emergentes
 	Arquiteturas Heterogêneas
 	Inteligência Artificial
@@ -2265,7 +2265,7 @@ PARTE 6 — TECNOLOGIAS MODERNAS E OTIMIZAÇÕES:
 	Memórias persistentes como memória principal
 
 
- 33.3 Perspectivas de Pesquisa:
+ 33.3 Perspectivas de Pesquisa — [V]:
 	Novos Materiais
 	Novas Arquiteturas de Memória
 	Memória Universal
