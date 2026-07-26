@@ -335,63 +335,64 @@ PARTE 2 — ESTRUTURA FÍSICA E ORGANIZAÇÃO INTERNA DA MEMÓRIA PRINCIPAL
  6.1 Organização Física Fundamental — [P]
 
   6.1.1 Componentes Estruturais — [P]
-      Células de memória
-      Matrizes de memória
-      Linhas (Rows)
-      Colunas (Columns)
-      Blocos físicos
-      Bancos
-      Subarrays
-      Organização hierárquica da memória
-      Organização física dos chips
+	  Células de memória
+	  Matrizes de memória
+	  Linhas (Rows)
+	  Colunas (Columns)
+	  Blocos físicos
+	  Bancos
+	  Subarrays
+	  Organização hierárquica da memória
+	  Organização física dos chips
 
   6.1.2 Componentes de Controle — [P]
-      Decodificadores de linha
-      Decodificadores de coluna
-      Circuitos de seleção
-      Drivers de linha
-      Drivers de coluna
-      Buffers internos
-      Sense Amplifiers
-      Circuitos de controle
-      Barramentos internos
+	  Decodificadores de linha
+	  Decodificadores de coluna
+	  Circuitos de seleção
+	  Drivers de linha
+	  Drivers de coluna
+	  Buffers internos
+	  Sense Amplifiers
+	  Circuitos de controle
+	  Barramentos internos
 
   6.1.3 Caminho dos Dados — [P]
-      Fluxo interno dos dados
-      Caminho da leitura
-      Caminho da escrita
-      Seleção da célula
-      Transferência interna
-      Interface interna da memória
-      Organização do Data Path
+	  Fluxo interno dos dados
+	  Caminho da leitura
+	  Caminho da escrita
+	  Seleção da célula
+	  Transferência interna
+	  Interface interna da memória
+	  Organização do Data Path
 
 
  6.2 Organização Física dos Chips — [I]
 
   6.2.1 Organização dos Circuitos Integrados — [I]
-      Chips de memória
-      Matrizes internas
-      Bancos internos
-      Subarrays
-      Organização por capacidade
-      Organização por largura de dados
-      Densidade de integração
+	  Chips de memória
+	  Matrizes internas
+	  Bancos internos
+	  Subarrays
+	  Organização por capacidade
+	  Organização por largura de dados
+	  Densidade de integração
 
   6.2.2 Organização dos Encapsulamentos — [V]
-      Encapsulamentos tradicionais
-      Distribuição dos pinos
-      Interfaces elétricas
-      Alimentação
-      Dissipação térmica
-      Limitações físicas
+	  Encapsulamentos tradicionais
+	  Distribuição dos pinos
+	  Interfaces elétricas
+	  Alimentação
+	  Dissipação térmica
+	  Limitações físicas
 
   6.2.3 Escalabilidade Física — [V]
-      Aumento da capacidade
-      Aumento da densidade
-      Escalabilidade dos chips
-      Escalabilidade da fabricação
-      Limitações tecnológicas
-      Evolução dos processos de fabricação
+	  Aumento da capacidade
+	  Aumento da densidade
+	  Escalabilidade dos chips
+	  Escalabilidade da fabricação
+	  Limitações tecnológicas
+	  Evolução dos processos de fabricação
+
 
 
 7. Células de Memória — [P]
@@ -399,61 +400,61 @@ PARTE 2 — ESTRUTURA FÍSICA E ORGANIZAÇÃO INTERNA DA MEMÓRIA PRINCIPAL
  7.1 Fundamentos das Células — [P]
 
   7.1.1 Conceitos — [P]
-      Definição
-      Finalidade
-      Unidade básica de armazenamento
-      Armazenamento de bits
-      Organização das células
-      Papel na memória principal
+	  Definição
+	  Finalidade
+	  Unidade básica de armazenamento
+	  Armazenamento de bits
+	  Organização das células
+	  Papel na memória principal
 
   7.1.2 Características — [I]
-      Capacidade de armazenamento
-      Tempo de retenção
-      Estabilidade
-      Consumo de energia
-      Velocidade
-      Escalabilidade
-      Área ocupada
+	  Capacidade de armazenamento
+	  Tempo de retenção
+	  Estabilidade
+	  Consumo de energia
+	  Velocidade
+	  Escalabilidade
+	  Área ocupada
 
   7.1.3 Organização das Células — [P]
-      Organização em linhas
-      Organização em colunas
-      Organização matricial
-      Interligação elétrica
-      Seleção individual
-      Endereçamento interno
+	  Organização em linhas
+	  Organização em colunas
+	  Organização matricial
+	  Interligação elétrica
+	  Seleção individual
+	  Endereçamento interno
 
 
  7.2 Tecnologias de Células — [P]
 
   7.2.1 Célula SRAM (Visão Comparativa) — [I]
-      Estrutura 6T
-      Armazenamento por Flip-Flops
-      Estabilidade
-      Velocidade
-      Consumo
-      Área ocupada
-      Aplicações
+	  Estrutura 6T
+	  Armazenamento por Flip-Flops
+	  Estabilidade
+	  Velocidade
+	  Consumo
+	  Área ocupada
+	  Aplicações
 
   7.2.2 Célula DRAM — [P]
-      Estrutura 1T1C
-      Transistor
-      Capacitor
-      Armazenamento da carga elétrica
-      Vazamento de carga
-      Necessidade de Refresh
-      Densidade elevada
-      Aplicações
+	  Estrutura 1T1C
+	  Transistor
+	  Capacitor
+	  Armazenamento da carga elétrica
+	  Vazamento de carga
+	  Necessidade de Refresh
+	  Densidade elevada
+	  Aplicações
 
   7.2.3 Comparação entre SRAM e DRAM — [I]
-      Estrutura
-      Funcionamento
-      Velocidade
-      Densidade
-      Consumo
-      Custo
-      Escalabilidade
-      Aplicações na arquitetura
+	  Estrutura
+	  Funcionamento
+	  Velocidade
+	  Densidade
+	  Consumo
+	  Custo
+	  Escalabilidade
+	  Aplicações na arquitetura
 
 
 8. Organização Matricial da DRAM — [P]
@@ -461,51 +462,52 @@ PARTE 2 — ESTRUTURA FÍSICA E ORGANIZAÇÃO INTERNA DA MEMÓRIA PRINCIPAL
  8.1 Matrizes de Memória — [P]
 
   8.1.1 Estrutura das Matrizes — [P]
-      Organização matricial
-      Linhas
-      Colunas
-      Cruzamento linha-coluna
-      Distribuição das células
-      Organização física
+	  Organização matricial
+	  Linhas
+	  Colunas
+	  Cruzamento linha-coluna
+	  Distribuição das células
+	  Organização física
 
   8.1.2 Seleção das Matrizes — [P]
-      Seleção de linhas
-      Seleção de colunas
-      Ativação da linha
-      Seleção da coluna
-      Caminho interno dos dados
-      Controle dos acessos
+	  Seleção de linhas
+	  Seleção de colunas
+	  Ativação da linha
+	  Seleção da coluna
+	  Caminho interno dos dados
+	  Controle dos acessos
 
   8.1.3 Organização Hierárquica — [P]
-      Matrizes
-      Submatrizes
-      Subarrays
-      Bancos
-      Organização completa da DRAM
+	  Matrizes
+	  Submatrizes
+	  Subarrays
+	  Bancos
+	  Organização completa da DRAM
 
 
  8.2 Decodificação Interna — [P]
 
   8.2.1 Decodificadores — [P]
-      Row Decoder
-      Column Decoder
-      Circuitos de seleção
-      Distribuição dos sinais
-      Hierarquia da decodificação
+  	  Row Decoder
+	  Column Decoder
+	  Circuitos de seleção
+	  Distribuição dos sinais
+	  Hierarquia da decodificação
 
   8.2.2 Endereçamento Interno — [P]
-      Endereço de linha
-      Endereço de coluna
-      Multiplexação de endereços
-      Organização do endereço
-      Seleção física da célula
+	  Endereço de linha
+	  Endereço de coluna
+	  Multiplexação de endereços
+	  Organização do endereço
+	  Seleção física da célula
 
   8.2.3 Eficiência da Organização — [I]
-      Tempo de seleção
-      Complexidade
-      Escalabilidade
-      Consumo
-      Influência na latência
+	  Tempo de seleção
+	  Complexidade
+	  Escalabilidade
+ 	  Consumo
+	  Influência na latência
+
 
 
 9. Bancos, Subarrays e Paralelismo Interno — [P]
@@ -513,50 +515,51 @@ PARTE 2 — ESTRUTURA FÍSICA E ORGANIZAÇÃO INTERNA DA MEMÓRIA PRINCIPAL
  9.1 Organização em Bancos — [P]
 
   9.1.1 Bancos de Memória — [P]
-      Definição
-      Organização
-      Independência
-      Funcionamento
-      Paralelismo
-      Distribuição dos dados
+	  Definição
+	  Organização
+	  Independência
+	  Funcionamento
+	  Paralelismo
+	  Distribuição dos dados
 
   9.1.2 Subarrays — [P]
-      Organização
-      Finalidade
-      Divisão física
-      Compartilhamento de recursos
-      Escalabilidade
-      Eficiência
+	  Organização
+	  Finalidade
+	  Divisão física
+	  Compartilhamento de recursos
+	  Escalabilidade
+	  Eficiência
 
   9.1.3 Organização Hierárquica — [I]
-      Células
-      Matrizes
-      Subarrays
-      Bancos
-      Chip completo
+	  Células
+	  Matrizes
+	  Subarrays
+	  Bancos
+	  Chip completo
 
 
  9.2 Paralelismo Interno — [P]
 
   9.2.1 Paralelismo de Bancos — [P]
-      Conceito
-      Objetivos
-      Funcionamento
-      Operações simultâneas
-      Ganho de desempenho
+	  Conceito
+	  Objetivos
+	  Funcionamento
+	  Operações simultâneas
+	  Ganho de desempenho
 
   9.2.2 Paralelismo dos Subarrays — [I]
-      Independência parcial
-      Compartilhamento interno
-      Aumento da eficiência
-      Redução da latência
+	  Independência parcial
+	  Compartilhamento interno
+	  Aumento da eficiência
+	  Redução da latência
 
   9.2.3 Eficiência Arquitetural — [I]
-      Utilização dos bancos
-      Balanceamento
-      Concorrência
-      Aproveitamento da largura de banda
-      Escalabilidade
+	  Utilização dos bancos
+	  Balanceamento
+	  Concorrência
+	  Aproveitamento da largura de banda
+	  Escalabilidade
+
 
 
 10. Row Buffer e Sense Amplifiers — [P]
@@ -564,50 +567,51 @@ PARTE 2 — ESTRUTURA FÍSICA E ORGANIZAÇÃO INTERNA DA MEMÓRIA PRINCIPAL
  10.1 Sense Amplifiers — [P]
 
   10.1.1 Fundamentos — [P]
-      Definição
-      Finalidade
-      Funcionamento
-      Amplificação do sinal
-      Recuperação da carga
-      Papel durante a leitura
+	  Definição
+	  Finalidade
+	  Funcionamento
+	  Amplificação do sinal
+	  Recuperação da carga
+	  Papel durante a leitura
 
   10.1.2 Operação — [P]
-      Detecção do estado lógico
-      Amplificação
-      Restauração da carga
-      Estabilização dos dados
-      Preparação para leitura
+	  Detecção do estado lógico
+	  Amplificação
+	  Restauração da carga
+	  Estabilização dos dados
+	  Preparação para leitura
 
   10.1.3 Características — [I]
-      Velocidade
-      Sensibilidade
-      Precisão
-      Consumo
-      Escalabilidade
+	  Velocidade
+	  Sensibilidade
+	  Precisão
+	  Consumo
+	  Escalabilidade
 
 
  10.2 Row Buffer — [P]
 
   10.2.1 Conceitos — [P]
-      Definição
-      Organização
-      Funcionamento
-      Papel na DRAM
-      Associação aos bancos
+	  Definição
+	  Organização
+	  Funcionamento
+	  Papel na DRAM
+	  Associação aos bancos
 
   10.2.2 Operações — [P]
-      Carregamento da linha
-      Permanência da linha ativa
-      Reutilização dos dados
-      Fechamento da linha
-      Relação com Precharge
+	  Carregamento da linha
+	  Permanência da linha ativa
+	  Reutilização dos dados
+	  Fechamento da linha
+	  Relação com Precharge
 
   10.2.3 Eficiência — [P]
-      Row Buffer Hit
-      Row Buffer Miss
-      Row Buffer Conflict
-      Localidade espacial
-      Influência na latência
+	  Row Buffer Hit
+	  Row Buffer Miss
+	  Row Buffer Conflict
+	  Localidade espacial
+	  Influência na latência
+
 
 
 11. Organização Lógica da Memória Principal — [I]
@@ -615,50 +619,50 @@ PARTE 2 — ESTRUTURA FÍSICA E ORGANIZAÇÃO INTERNA DA MEMÓRIA PRINCIPAL
  11.1 Organização do Espaço de Memória — [I]
 
   11.1.1 Espaço de Endereçamento — [I]
-      Organização linear
-      Espaço contínuo
-      Endereçamento físico
-      Capacidade de endereçamento
-      Distribuição dos endereços
+	  Organização linear
+	  Espaço contínuo
+	  Endereçamento físico
+	  Capacidade de endereçamento
+	  Distribuição dos endereços
 
   11.1.2 Organização dos Dados — [I]
-      Organização por bytes
-      Organização por palavras
-      Blocos de memória
-      Linhas de memória
-      Granularidade dos acessos
+	  Organização por bytes
+	  Organização por palavras
+	  Blocos de memória
+	  Linhas de memória
+	  Granularidade dos acessos
 
   11.1.3 Organização Funcional — [V]
-      Área de código
-      Área de dados
-      Pilha
-      Heap
-      Regiões reservadas
-      Organização lógica dos programas
+	  Área de código
+	  Área de dados
+	  Pilha
+	  Heap
+	  Regiões reservadas
+	  Organização lógica dos programas
 
 
  11.2 Mapeamento Interno — [P]
 
   11.2.1 Tradução do Endereço — [P]
-      Divisão do endereço
-      Linha
-      Coluna
-      Banco
-      Chip
-      Canal (visão geral)
+	  Divisão do endereço
+	  Linha
+	  Coluna
+	  Banco
+	  Chip
+	  Canal (visão geral)
 
   11.2.2 Seleção Física — [P]
-      Seleção da linha
-      Seleção da coluna
-      Seleção do banco
-      Seleção da célula
-      Caminho completo do acesso
+	  Seleção da linha
+	  Seleção da coluna
+	  Seleção do banco
+	  Seleção da célula
+	  Caminho completo do acesso
 
   11.2.3 Organização do Fluxo Interno — [I]
-      Caminho do endereço
-      Caminho dos dados
-      Caminho dos sinais de controle
-      Integração dos componentes internos
+	  Caminho do endereço
+	  Caminho dos dados
+	  Caminho dos sinais de controle
+	  Integração dos componentes internos
 
 
 
