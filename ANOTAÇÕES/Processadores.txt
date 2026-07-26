@@ -13,11 +13,11 @@ A classificação abaixo indica a profundidade recomendada para cada grande tóp
 PARTE 1 — FUNDAMENTOS DOS PROCESSADORES
 
 
-1. Introdução aos Processadores — [P]
+1. Introdução aos Processadores — [I]
 
- 1.1 Conceitos Fundamentais — [P]
+ 1.1 Conceitos Fundamentais — [I]
 
-  1.1.1 Processador como Unidade Central de Processamento — [P]
+  1.1.1 Processador como Unidade Central de Processamento — [I]
 	  Conceito de processador
 	  Conceito de CPU (Central Processing Unit)
 	  Processador como unidade de processamento
@@ -31,7 +31,7 @@ PARTE 1 — FUNDAMENTOS DOS PROCESSADORES
 	  Controle da sequência de processamento
 	  Atualização do estado computacional
 
-  1.1.2 Importância dos Processadores — [P]
+  1.1.2 Importância dos Processadores — [I]
 	  Papel do processador na computação
 	  Papel na Arquitetura de Computadores
 	  Papel na Organização de Computadores
@@ -42,7 +42,7 @@ PARTE 1 — FUNDAMENTOS DOS PROCESSADORES
 	  Comunicação com os demais componentes
 	  Relação entre hardware e software
 
-  1.1.3 Características Gerais dos Processadores — [P]
+  1.1.3 Características Gerais dos Processadores — [I]
 	  Dispositivo eletrônico programável
 	  Processamento baseado em instruções
 	  Operações sequenciais e paralelas
@@ -54,9 +54,9 @@ PARTE 1 — FUNDAMENTOS DOS PROCESSADORES
 	  Integração entre hardware e software
 
 
- 1.2 O Processador no Sistema Computacional — [P]
+ 1.2 O Processador no Sistema Computacional — [I]
 
-  1.2.1 Relação com os Demais Componentes — [P]
+  1.2.1 Relação com os Demais Componentes — [I]
 	  Memória principal
 	  Memória cache
 	  Barramentos
@@ -66,7 +66,7 @@ PARTE 1 — FUNDAMENTOS DOS PROCESSADORES
 	  Interconexões do sistema
 	  Fluxo geral de dados
 
-  1.2.2 Papel da CPU na Organização do Computador — [P]
+  1.2.2 Papel da CPU na Organização do Computador — [I]
 	  Coordenação do processamento
 	  Execução dos programas
 	  Manipulação dos dados
@@ -75,7 +75,7 @@ PARTE 1 — FUNDAMENTOS DOS PROCESSADORES
 	  Sincronização
 	  Atualização do estado do sistema
 
-  1.2.3 Fluxo Geral de Funcionamento — [P]
+  1.2.3 Fluxo Geral de Funcionamento — [I]
 	  Recepção de instruções
 	  Interpretação da operação
 	  Obtenção dos dados
@@ -84,9 +84,9 @@ PARTE 1 — FUNDAMENTOS DOS PROCESSADORES
 	  Atualização do estado da CPU
 
 
- 1.3 Arquitetura e Organização dos Processadores — [P]
+ 1.3 Arquitetura e Organização dos Processadores — [I]
 
-  1.3.1 Arquitetura de Computadores — [P]
+  1.3.1 Arquitetura de Computadores — [I]
 	  Conceito de arquitetura
 	  Interface hardware–software
 	  Recursos visíveis ao programador
@@ -95,7 +95,7 @@ PARTE 1 — FUNDAMENTOS DOS PROCESSADORES
 	  Modos de operação
 	  Modelo de execução
 
-  1.3.2 Organização de Computadores — [P]
+  1.3.2 Organização de Computadores — [I]
 	  Implementação física dos recursos
 	  Organização dos componentes
 	  Estrutura interna da CPU
@@ -104,14 +104,14 @@ PARTE 1 — FUNDAMENTOS DOS PROCESSADORES
 	  Interconexão dos componentes
 	  Organização funcional
 
-  1.3.3 Microarquitetura — [P]
+  1.3.3 Microarquitetura — [I]
 	  Conceito
 	  Implementação da arquitetura
 	  Organização interna do processador
 	  Relação entre ISA e hardware
 	  Exemplos de microarquiteturas
 
-  1.3.4 Arquitetura × Organização — [P]
+  1.3.4 Arquitetura × Organização — [I]
 	  Diferenças
 	  Relação entre os conceitos
 	  Complementaridade
@@ -156,7 +156,7 @@ PARTE 1 — FUNDAMENTOS DOS PROCESSADORES
 
  2.2 Gerações dos Processadores — [I]
 
-  2.2.1 Primeiras Gerações — [V]
+  2.2.1 Primeiras Gerações — [I]
 	  Processadores de 4 bits
 	  Processadores de 8 bits
 	  Processadores de 16 bits
@@ -170,7 +170,7 @@ PARTE 1 — FUNDAMENTOS DOS PROCESSADORES
 	  Capacidade de representação
 	  Espaço de endereçamento
 
-  2.2.3 Tendências da Evolução — [V]
+  2.2.3 Tendências da Evolução — [I]
 	  Maior integração
 	  Maior eficiência energética
 	  Paralelismo
@@ -204,11 +204,11 @@ PARTE 1 — FUNDAMENTOS DOS PROCESSADORES
 
 
 
-3. Organização Geral da CPU — [P]
+3. Organização Geral da CPU — [I]
 
- 3.1 Estrutura Geral — [P]
+ 3.1 Estrutura Geral — [I]
 
-  3.1.1 Organização Física — [P]
+  3.1.1 Organização Física — [I]
 	  Componentes internos
 	  Blocos funcionais
 	  Interconexões
@@ -216,14 +216,14 @@ PARTE 1 — FUNDAMENTOS DOS PROCESSADORES
 	  Núcleos
 	  Unidades de execução
 
-  3.1.2 Organização Lógica — [P]
+  3.1.2 Organização Lógica — [I]
 	  Organização funcional
 	  Fluxo de informações
 	  Fluxo de dados
 	  Fluxo de controle
 	  Organização hierárquica
 
-  3.1.3 Organização Funcional — [P]
+  3.1.3 Organização Funcional — [I]
 	  Processamento de dados
 	  Controle das operações
 	  Armazenamento temporário
@@ -231,16 +231,16 @@ PARTE 1 — FUNDAMENTOS DOS PROCESSADORES
 	  Coordenação dos componentes
 
 
- 3.2 Componentes Fundamentais — [P]
+ 3.2 Componentes Fundamentais — [I]
 
-  3.2.1 Unidade de Controle — [P]
+  3.2.1 Unidade de Controle — [I]
 	  Coordenação das operações
 	  Geração de sinais de controle
 	  Sequenciamento
 	  Controle temporal
 	  Comunicação com o datapath
 
-  3.2.2 Unidade Lógica e Aritmética (ALU) — [P]
+  3.2.2 Unidade Lógica e Aritmética (ALU) — [I]
 	  Operações aritméticas
 	  Operações lógicas
 	  Comparações
@@ -253,7 +253,7 @@ PARTE 1 — FUNDAMENTOS DOS PROCESSADORES
 	  Processamento científico
 	  Relação com o processamento de dados numéricos
 
-  3.2.4 Banco de Registradores — [P]
+  3.2.4 Banco de Registradores — [I]
 	  Armazenamento temporário
 	  Leitura
 	  Escrita
@@ -267,23 +267,23 @@ PARTE 1 — FUNDAMENTOS DOS PROCESSADORES
 	  Unidades de controle de fluxo
 	  Aceleradores especializados
 
-  3.2.6 Datapath e Control Path — [P]
+  3.2.6 Datapath e Control Path — [I]
 	  Caminho de dados
 	  Caminho de controle
 	  Relação entre ambos
 	  Integração funcional
 
 
- 3.3 Fluxo Geral de Funcionamento — [P]
+ 3.3 Fluxo Geral de Funcionamento — [I]
 
-  3.3.1 Fluxo das Informações — [P]
+  3.3.1 Fluxo das Informações — [I]
 	  Entrada de instruções
 	  Entrada de dados
 	  Processamento
 	  Produção dos resultados
 	  Atualização do estado
 
-  3.3.2 Coordenação Geral — [P]
+  3.3.2 Coordenação Geral — [I]
 	  Comunicação
 	  Sincronização
 	  Controle interno
@@ -291,7 +291,7 @@ PARTE 1 — FUNDAMENTOS DOS PROCESSADORES
 
 
 
-4. Modelos Clássicos de Organização — [I]
+4. Modelos Clássicos de Organização — [P]
 
  4.1 Arquitetura de Von Neumann — [P]
 
@@ -324,7 +324,7 @@ PARTE 1 — FUNDAMENTOS DOS PROCESSADORES
 	  Limitações
 
 
- 4.3 Arquitetura Harvard Modificada — [I]
+ 4.3 Arquitetura Harvard Modificada — [P]
 	  Organização
 	  Integração das abordagens
 	  Separação lógica
@@ -333,7 +333,7 @@ PARTE 1 — FUNDAMENTOS DOS PROCESSADORES
 	  Aplicações modernas
 
 
- 4.4 Comparação entre os Modelos — [I]
+ 4.4 Comparação entre os Modelos — [P]
 	  Von Neumann
 	  Harvard
 	  Harvard modificada
@@ -341,16 +341,16 @@ PARTE 1 — FUNDAMENTOS DOS PROCESSADORES
 
 
 
-5. Fundamentos Digitais Aplicados aos Processadores — [P]
+5. Fundamentos Digitais Aplicados aos Processadores — [I]
 
- 5.1 Representação das Informações — [P]
+ 5.1 Representação das Informações — [I]
 
   5.1.1 Sistemas de Numeração — [I]
 	  Binário
 	  Hexadecimal
 	  Conversões básicas
 
-  5.1.2 Representação dos Dados — [P]
+  5.1.2 Representação dos Dados — [I]
 	  Bits
 	  Bytes
 	  Palavras
@@ -361,14 +361,14 @@ PARTE 1 — FUNDAMENTOS DOS PROCESSADORES
 	  Dados vetoriais
 
 
- 5.2 Componentes Digitais Fundamentais — [P]
+ 5.2 Componentes Digitais Fundamentais — [I]
 
-  5.2.1 Circuitos Lógicos — [P]
+  5.2.1 Circuitos Lógicos — [I]
 	  Portas lógicas
 	  Circuitos combinacionais
 	  Circuitos sequenciais
 
-  5.2.2 Elementos de Armazenamento — [P]
+  5.2.2 Elementos de Armazenamento — [I]
 	  Latches
 	  Flip-flops
 	  Registradores
@@ -407,11 +407,11 @@ PARTE 1 — FUNDAMENTOS DOS PROCESSADORES
 PARTE 2 — ESTRUTURA E FUNCIONAMENTO BÁSICO DO PROCESSADOR
 
 
-6. Estrutura Interna da CPU — [P]
+6. Estrutura Interna da CPU — [I]
 
- 6.1 Organização Geral — [P]
+ 6.1 Organização Geral — [I]
 
-  6.1.1 Estrutura da CPU — [P]
+  6.1.1 Estrutura da CPU — [I]
 	  Organização interna
 	  Blocos funcionais
 	  Componentes principais
@@ -420,7 +420,7 @@ PARTE 2 — ESTRUTURA E FUNCIONAMENTO BÁSICO DO PROCESSADOR
 	  Estrutura modular
 	  Integração entre componentes
 
-  6.1.2 Organização Física — [P]
+  6.1.2 Organização Física — [I]
 	  Componentes físicos
 	  Interconexões
 	  Organização em blocos
@@ -429,7 +429,7 @@ PARTE 2 — ESTRUTURA E FUNCIONAMENTO BÁSICO DO PROCESSADOR
 	  Estrutura modular
 	  Integração física
 
-  6.1.3 Organização Lógica — [P]
+  6.1.3 Organização Lógica — [I]
 	  Fluxo de dados
 	  Fluxo de controle
 	  Comunicação interna
@@ -437,16 +437,16 @@ PARTE 2 — ESTRUTURA E FUNCIONAMENTO BÁSICO DO PROCESSADOR
 	  Organização funcional
 
 
- 6.2 Componentes Fundamentais — [P]
+ 6.2 Componentes Fundamentais — [I]
 
-  6.2.1 Unidade de Controle — [P]
+  6.2.1 Unidade de Controle — [I]
 	  Organização
 	  Responsabilidades
 	  Entradas
 	  Saídas
 	  Comunicação
 
-  6.2.2 Unidade Lógica e Aritmética (ALU) — [P]
+  6.2.2 Unidade Lógica e Aritmética (ALU) — [I]
 	  Organização
 	  Operações
 	  Entradas
@@ -461,7 +461,7 @@ PARTE 2 — ESTRUTURA E FUNCIONAMENTO BÁSICO DO PROCESSADOR
 	  Processamento numérico
 	  Aplicações
 
-  6.2.4 Banco de Registradores — [P]
+  6.2.4 Banco de Registradores — [I]
 	  Organização
 	  Leitura
 	  Escrita
@@ -477,9 +477,9 @@ PARTE 2 — ESTRUTURA E FUNCIONAMENTO BÁSICO DO PROCESSADOR
 	  Aceleradores especializados
 
 
- 6.3 Comunicação Interna — [P]
+ 6.3 Comunicação Interna — [I]
 
-  6.3.1 Fluxo de Dados — [P]
+  6.3.1 Fluxo de Dados — [I]
 	  Transferência
 	  Caminhos internos
 	  Interligação
@@ -487,13 +487,13 @@ PARTE 2 — ESTRUTURA E FUNCIONAMENTO BÁSICO DO PROCESSADOR
 	  Processamento
 	  Saída
 
-  6.3.2 Fluxo de Controle — [P]
+  6.3.2 Fluxo de Controle — [I]
 	  Sinais de controle
 	  Coordenação
 	  Sequenciamento
 	  Sincronização
 
-  6.3.3 Organização da Comunicação — [P]
+  6.3.3 Organização da Comunicação — [I]
 	  Comunicação entre unidades
 	  Compartilhamento de recursos
 	  Interconexões
@@ -567,14 +567,14 @@ PARTE 2 — ESTRUTURA E FUNCIONAMENTO BÁSICO DO PROCESSADOR
 	  Micro-operações simples
 	  Micro-operações complexas
 
-  7.3.3 Cache de Micro-operações — [I]
+  7.3.3 Cache de Micro-operações — [P]
 	  Conceito
 	  Funcionamento
 	  Benefícios
 	  Aplicações em processadores modernos
 
 
- 7.4 Evolução da Execução — [I/P]
+ 7.4 Evolução da Execução — [I]
 
   7.4.1 Execução Sequencial — [I]
 	  Uma instrução por vez
@@ -707,7 +707,7 @@ PARTE 2 — ESTRUTURA E FUNCIONAMENTO BÁSICO DO PROCESSADOR
 
 
 
-10. Unidade de Ponto Flutuante (FPU) — [I/P]
+10. Unidade de Ponto Flutuante (FPU) — [I]
 
  10.1 Fundamentos — [I]
 
@@ -724,15 +724,15 @@ PARTE 2 — ESTRUTURA E FUNCIONAMENTO BÁSICO DO PROCESSADOR
 	  Computação de alto desempenho
 
 
- 10.2 Organização — [P]
+ 10.2 Organização — [I]
 
-  10.2.1 Estrutura — [P]
+  10.2.1 Estrutura — [I]
 	  Componentes
 	  Caminhos de dados
 	  Comunicação com a CPU
 	  Pipeline da FPU
 
-  10.2.2 Operações — [P]
+  10.2.2 Operações — [I]
 	  Soma
 	  Subtração
 	  Multiplicação
@@ -743,7 +743,7 @@ PARTE 2 — ESTRUTURA E FUNCIONAMENTO BÁSICO DO PROCESSADOR
 
  10.3 Representação Numérica — [P]
 
-  10.3.1 Conceitos — [P]
+  10.3.1 Conceitos — [I]
 	  Ponto fixo
 	  Ponto flutuante
 	  Precisão
@@ -801,9 +801,9 @@ PARTE 3 — ORGANIZAÇÃO INTERNA DOS PROCESSADORES MODERNOS
 	  Comunicação com as unidades funcionais
 
 
- 11.3 Principais Categorias — [I/P]
+ 11.3 Principais Categorias — [P]
 
-  11.3.1 Registradores de Uso Geral — [I]
+  11.3.1 Registradores de Uso Geral — [P]
 	  Operandos
 	  Resultados
 
@@ -986,47 +986,47 @@ PARTE 3 — ORGANIZAÇÃO INTERNA DOS PROCESSADORES MODERNOS
 
 
 
-15. Comunicação Interna e Interconexões — [P]
+15. Comunicação Interna e Interconexões — [I]
 
- 15.1 Comunicação Interna — [P]
+ 15.1 Comunicação Interna — [I]
 
-  15.1.1 Organização — [P]
+  15.1.1 Organização — [I]
 	  Comunicação entre componentes
 	  Fluxo de dados
 	  Fluxo de controle
 	  Sincronização
 
-  15.1.2 Interconexões — [P]
+  15.1.2 Interconexões — [I]
 	  Caminhos internos
 	  Conexões dedicadas
 	  Compartilhamento de recursos
 	  Interconexões entre unidades
 
 
- 15.2 Barramentos Internos — [P]
+ 15.2 Barramentos Internos — [I]
 
-  15.2.1 Organização — [P]
+  15.2.1 Organização — [I]
 	  Barramento de dados
 	  Barramento de controle
 	  Barramento de endereços
 
-  15.2.2 Transferências — [P]
+  15.2.2 Transferências — [I]
 	  Dados
 	  Endereços
 	  Sinais de controle
 	  Sincronização
 
 
- 15.3 Organização das Interconexões — [I/P]
+ 15.3 Organização das Interconexões — [I]
 
-  15.3.1 Estruturas — [P]
+  15.3.1 Estruturas — [I]
 	  Barramento único
 	  Barramentos múltiplos
 	  Interligações dedicadas
 	  Crossbar interno
 	  Redes internas (NoC)
 
-  15.3.2 Características — [P]
+  15.3.2 Características — [I]
 	  Desempenho
 	  Latência
 	  Largura de banda
@@ -1146,11 +1146,11 @@ PARTE 3 — ORGANIZAÇÃO INTERNA DOS PROCESSADORES MODERNOS
 
 
 
-18. Integração dos Componentes da CPU — [P]
+18. Integração dos Componentes da CPU — [I]
 
- 18.1 Organização Geral — [P]
+ 18.1 Organização Geral — [I]
 
-  18.1.1 Integração Funcional — [P]
+  18.1.1 Integração Funcional — [I]
 	  Unidade de Controle
 	  Banco de Registradores
 	  ALU
@@ -1162,16 +1162,16 @@ PARTE 3 — ORGANIZAÇÃO INTERNA DOS PROCESSADORES MODERNOS
 	  Front-End
 	  Back-End
 
-  18.1.2 Coordenação — [P]
+  18.1.2 Coordenação — [I]
 	  Sequenciamento
 	  Comunicação
 	  Sincronização
 	  Fluxo interno
 
 
- 18.2 Fluxo Geral do Processamento — [P]
+ 18.2 Fluxo Geral do Processamento — [I]
 
-  18.2.1 Execução de uma Instrução — [P]
+  18.2.1 Execução de uma Instrução — [I]
 	  Busca
 	  Decodificação
 	  Geração de micro-operações
@@ -1181,7 +1181,7 @@ PARTE 3 — ORGANIZAÇÃO INTERNA DOS PROCESSADORES MODERNOS
 	  Write Back
 	  Retirement
 
-  18.2.2 Fluxo dos Dados — [P]
+  18.2.2 Fluxo dos Dados — [I]
 	  Entrada
 	  Transferência
 	  Processamento
@@ -1189,9 +1189,9 @@ PARTE 3 — ORGANIZAÇÃO INTERNA DOS PROCESSADORES MODERNOS
 	  Saída
 
 
- 18.3 Visão Integrada — [I/P]
+ 18.3 Visão Integrada — [I]
 
-  18.3.1 Funcionamento Integrado — [P]
+  18.3.1 Funcionamento Integrado — [I]
 	  Comunicação
 	  Coordenação
 	  Fluxo das informações
@@ -1322,13 +1322,13 @@ PARTE 4 — MICROARQUITETURA E PROCESSADORES MODERNOS
 	  SIMD
 
 
- 20.3 Limitações — [I]
+ 20.3 Limitações — [P]
 
   20.3.1 Dependências — [P]
 	  Dependências verdadeiras
 	  Dependências falsas
 
-  20.3.2 Gargalos — [I]
+  20.3.2 Gargalos — [P]
 	  Front-End
 	  Back-End
 	  Memória
@@ -1385,12 +1385,12 @@ PARTE 4 — MICROARQUITETURA E PROCESSADORES MODERNOS
 	  Write Back
 	  Commit
 
-  21.3.2 Benefícios — [I]
+  21.3.2 Benefícios — [P]
 	  Melhor utilização da CPU
 	  Redução de dependências
 	  Maior IPC
 
-  21.3.3 Limitações — [I]
+  21.3.3 Limitações — [P]
 	  Complexidade
 	  Consumo
 	  Área ocupada
@@ -1426,9 +1426,9 @@ PARTE 4 — MICROARQUITETURA E PROCESSADORES MODERNOS
 	  Reexecução
 
 
- 22.3 Impactos — [I/P]
+ 22.3 Impactos — [P]
 
-  22.3.1 Benefícios — [I]
+  22.3.1 Benefícios — [P]
 	  Melhor desempenho
 	  Melhor utilização do pipeline
 
@@ -1439,11 +1439,11 @@ PARTE 4 — MICROARQUITETURA E PROCESSADORES MODERNOS
 
 
 
-23. Paralelismo em Processadores — [P]
+23. Paralelismo em Processadores — [I]
 
- 23.1 Fundamentos — [P]
+ 23.1 Fundamentos — [I]
 
-  23.1.1 Conceitos — [P]
+  23.1.1 Conceitos — [I]
 	  Definição
 	  Objetivos
 	  Evolução
@@ -1456,29 +1456,29 @@ PARTE 4 — MICROARQUITETURA E PROCESSADORES MODERNOS
 	  Paralelismo em nível de tarefas
 
 
- 23.2 Formas de Paralelismo — [P]
+ 23.2 Formas de Paralelismo — [I]
 
-  23.2.1 Pipeline — [P]
+  23.2.1 Pipeline — [I]
 	  Sobreposição das etapas
 
-  23.2.2 Superescalar — [P]
+  23.2.2 Superescalar — [I]
 	  Múltiplas instruções por ciclo
 
-  23.2.3 Execução Fora de Ordem — [P]
+  23.2.3 Execução Fora de Ordem — [I]
 	  Execução dinâmica
 
-  23.2.4 SIMD — [P]
+  23.2.4 SIMD — [I]
 	  Uma instrução
 	  Múltiplos dados
 
-  23.2.5 Vetorização — [P]
+  23.2.5 Vetorização — [I]
 	  Operações vetoriais
 	  Processamento paralelo
 
 
- 23.3 Limitações — [I/P]
+ 23.3 Limitações — [I]
 
-  23.3.1 Dependências — [P]
+  23.3.1 Dependências — [I]
 	  Dados
 	  Controle
 	  Recursos
@@ -1490,9 +1490,9 @@ PARTE 4 — MICROARQUITETURA E PROCESSADORES MODERNOS
 
 
 
-24. Processadores Multicore — [P]
+24. Processadores Multicore — [I]
 
- 24.1 Fundamentos — [I/P]
+ 24.1 Fundamentos — [I]
 
   24.1.1 Conceitos — [I]
 	  Núcleo
@@ -1506,19 +1506,19 @@ PARTE 4 — MICROARQUITETURA E PROCESSADORES MODERNOS
 	  Escalabilidade
 
 
- 24.2 Organização — [P]
+ 24.2 Organização — [I]
 
-  24.2.1 Núcleos — [P]
+  24.2.1 Núcleos — [I]
 	  Homogêneos
 	  Heterogêneos
 
-  24.2.2 Compartilhamento — [P]
+  24.2.2 Compartilhamento — [I]
 	  Cache
 	  Memória
 	  Barramentos
 	  Interconexão
 
-  24.2.3 Comunicação — [P]
+  24.2.3 Comunicação — [I]
 	  Barramento
 	  Crossbar
 	  Ring
@@ -1526,16 +1526,16 @@ PARTE 4 — MICROARQUITETURA E PROCESSADORES MODERNOS
 	  NoC
 
 
- 24.3 Escalabilidade — [P]
+ 24.3 Escalabilidade — [I]
 
-  24.3.1 Número de Núcleos — [V]
+  24.3.1 Número de Núcleos — [I]
 	  Dual-Core
 	  Quad-Core
 	  Hexa-Core
 	  Octa-Core
 	  Many-Core
 
-  24.3.2 Desafios — [P]
+  24.3.2 Desafios — [I]
 	  Comunicação
 	  Sincronização
 	  Balanceamento de carga
@@ -1543,22 +1543,22 @@ PARTE 4 — MICROARQUITETURA E PROCESSADORES MODERNOS
 
 
 
-25. Processamento Simultâneo (SMT) — [P]
+25. Processamento Simultâneo (SMT) — [I]
 
- 25.1 Simultaneous Multithreading — [P]
+ 25.1 Simultaneous Multithreading — [I]
 
-  25.1.1 Conceitos — [P]
+  25.1.1 Conceitos — [I]
 	  Definição
 	  Objetivos
 	  Funcionamento
 
-  25.1.2 Organização — [P]
+  25.1.2 Organização — [I]
 	  Threads lógicas
 	  Compartilhamento de recursos
 	  Recursos físicos
 
 
- 25.2 Implementações — [I/P]
+ 25.2 Implementações — [I]
 
   25.2.1 Hyper-Threading — [I]
 	  Conceito
@@ -1570,20 +1570,20 @@ PARTE 4 — MICROARQUITETURA E PROCESSADORES MODERNOS
 	  Comparações
 
 
- 25.3 Benefícios e Limitações — [I/P]
+ 25.3 Benefícios e Limitações — [I]
 
   25.3.1 Benefícios — [I]
 	  Melhor utilização da CPU
 	  Aumento do throughput
 
-  25.3.2 Limitações — [P]
+  25.3.2 Limitações — [I]
 	  Compartilhamento de recursos
 	  Contenção
 	  Eficiência variável
 
 
 
-26. Processadores Heterogêneos e Especializados — [I/P]
+26. Processadores Heterogêneos e Especializados — [I]
 
  26.1 Computação Heterogênea — [I]
 
@@ -1592,7 +1592,7 @@ PARTE 4 — MICROARQUITETURA E PROCESSADORES MODERNOS
 	  Objetivos
 	  Evolução
 
-  26.1.2 Organização — [P]
+  26.1.2 Organização — [I]
 	  Núcleos de desempenho
 	  Núcleos de eficiência
 	  Arquiteturas híbridas
@@ -1621,7 +1621,7 @@ PARTE 4 — MICROARQUITETURA E PROCESSADORES MODERNOS
 	  Organização
 	  Integração
 
-  26.3.2 Tendências — [V]
+  26.3.2 Tendências — [I]
 	  Chiplets
 	  Empilhamento 3D
 	  IA embarcada
@@ -1629,18 +1629,18 @@ PARTE 4 — MICROARQUITETURA E PROCESSADORES MODERNOS
 
 
 
-27. Organização Geral dos Processadores Modernos — [P]
+27. Organização Geral dos Processadores Modernos — [I]
 
- 27.1 Organização da Microarquitetura — [P]
+ 27.1 Organização da Microarquitetura — [I]
 
-  27.1.1 Front-End — [P]
+  27.1.1 Front-End — [I]
 	  Busca de instruções
 	  Prefetch
 	  Decodificação
 	  Cache de micro-operações
 	  Predição de desvios
 
-  27.1.2 Back-End — [P]
+  27.1.2 Back-End — [I]
 	  Register Renaming
 	  Scheduler
 	  Reservation Stations
@@ -1648,9 +1648,9 @@ PARTE 4 — MICROARQUITETURA E PROCESSADORES MODERNOS
 	  Retirement
 
 
- 27.2 Fluxo Completo da Execução — [P]
+ 27.2 Fluxo Completo da Execução — [I]
 
-  27.2.1 Caminho das Instruções — [P]
+  27.2.1 Caminho das Instruções — [I]
 	  Fetch
 	  Decode
 	  Rename
@@ -1661,16 +1661,16 @@ PARTE 4 — MICROARQUITETURA E PROCESSADORES MODERNOS
 	  Commit
 	  Retirement
 
-  27.2.2 Comunicação Interna — [P]
+  27.2.2 Comunicação Interna — [I]
 	  Fluxo de instruções
 	  Fluxo de dados
 	  Fluxo de controle
 	  Coordenação entre unidades
 
 
- 27.3 Visão Integrada — [P]
+ 27.3 Visão Integrada — [I]
 
-  27.3.1 Integração da CPU Moderna — [P]
+  27.3.1 Integração da CPU Moderna — [I]
 	  Front-End
 	  Back-End
 	  Pipeline
@@ -1729,7 +1729,7 @@ PARTE 5 — ARQUITETURAS, TECNOLOGIAS E TENDÊNCIAS DOS PROCESSADORES
 	  Relativo
 
 
- 28.3 Evolução das ISAs — [I/P]
+ 28.3 Evolução das ISAs — [P]
 
   28.3.1 CISC — [P]
 	  Conceitos
@@ -1772,7 +1772,7 @@ PARTE 5 — ARQUITETURAS, TECNOLOGIAS E TENDÊNCIAS DOS PROCESSADORES
 	  Memória
 
 
- 29.2 Avaliação — [I/P]
+ 29.2 Avaliação — [P]
 
   29.2.1 Métricas — [P]
 	  Clock
@@ -1782,7 +1782,7 @@ PARTE 5 — ARQUITETURAS, TECNOLOGIAS E TENDÊNCIAS DOS PROCESSADORES
 	  FLOPS
 	  Benchmark
 
-  29.2.2 Benchmarks — [I]
+  29.2.2 Benchmarks — [V]
 	  Benchmarks sintéticos
 	  Benchmarks reais
 	  SPEC
@@ -1807,47 +1807,47 @@ PARTE 5 — ARQUITETURAS, TECNOLOGIAS E TENDÊNCIAS DOS PROCESSADORES
 
 
 
-30. Eficiência Energética e Gerenciamento Térmico — [P]
+30. Eficiência Energética e Gerenciamento Térmico — [I]
 
- 30.1 Consumo de Energia — [P]
+ 30.1 Consumo de Energia — [I]
 
-  30.1.1 Fundamentos — [P]
+  30.1.1 Fundamentos — [I]
 	  Consumo estático
 	  Consumo dinâmico
 	  Potência
 	  Eficiência energética
 
-  30.1.2 Fatores — [P]
+  30.1.2 Fatores — [I]
 	  Frequência
 	  Tensão
 	  Número de núcleos
 	  Carga de trabalho
 
 
- 30.2 Controle Energético — [P]
+ 30.2 Controle Energético — [I]
 
-  30.2.1 Técnicas — [P]
+  30.2.1 Técnicas — [I]
 	  Dynamic Voltage Scaling
 	  Dynamic Frequency Scaling
 	  Clock Gating
 	  Power Gating
 	  Estados de baixo consumo
 
-  30.2.2 Gerenciamento — [P]
+  30.2.2 Gerenciamento — [I]
 	  Controle térmico
 	  Thermal Throttling
 	  Boost automático
 	  Balanceamento energético
 
 
- 30.3 Dissipação de Calor — [I/P]
+ 30.3 Dissipação de Calor — [I]
 
-  30.3.1 Fontes de Calor — [P]
+  30.3.1 Fontes de Calor — [I]
 	  Comutação dos transistores
 	  Vazamento
 	  Alta frequência
 
-  30.3.2 Soluções — [I]
+  30.3.2 Soluções — [V]
 	  Dissipadores
 	  Ventoinhas
 	  Heat Pipes
@@ -1856,7 +1856,7 @@ PARTE 5 — ARQUITETURAS, TECNOLOGIAS E TENDÊNCIAS DOS PROCESSADORES
 
 
 
-31. Fabricação dos Processadores — [I/P]
+31. Fabricação dos Processadores — [V]
 
  31.1 Fundamentos — [I]
 
@@ -1873,16 +1873,16 @@ PARTE 5 — ARQUITETURAS, TECNOLOGIAS E TENDÊNCIAS DOS PROCESSADORES
 	  Isolantes
 
 
- 31.2 Processo de Fabricação — [P]
+ 31.2 Processo de Fabricação — [V]
 
-  31.2.1 Etapas — [P]
+  31.2.1 Etapas — [V]
 	  Fotolitografia
 	  Deposição
 	  Gravação
 	  Implantação iônica
 	  Metalização
 
-  31.2.2 Empacotamento — [I]
+  31.2.2 Empacotamento — [V]
 	  Encapsulamento
 	  Testes
 	  Corte dos dies
@@ -1904,40 +1904,40 @@ PARTE 5 — ARQUITETURAS, TECNOLOGIAS E TENDÊNCIAS DOS PROCESSADORES
 
 
 
-32. Organização Física dos Processadores — [P]
+32. Organização Física dos Processadores — [I]
 
- 32.1 Estrutura Física — [P]
+ 32.1 Estrutura Física — [I]
 
-  32.1.1 Componentes — [P]
+  32.1.1 Componentes — [I]
 	  Núcleos
 	  Cache integrada
 	  Controladores internos
 	  Interconexões
 
-  32.1.2 Layout — [P]
+  32.1.2 Layout — [I]
 	  Distribuição funcional
 	  Organização dos blocos
 	  Fluxo físico
 
 
- 32.2 Comunicação Interna — [P]
+ 32.2 Comunicação Interna — [I]
 
-  32.2.1 Interconexões — [P]
+  32.2.1 Interconexões — [I]
 	  Barramento interno
 	  Ring Bus
 	  Mesh
 	  Crossbar
 	  NoC
 
-  32.2.2 Organização — [P]
+  32.2.2 Organização — [I]
 	  Comunicação entre núcleos
 	  Comunicação com cache
 	  Comunicação com controladores
 
 
- 32.3 Arquiteturas Físicas Modernas — [P]
+ 32.3 Arquiteturas Físicas Modernas — [I]
 
-  32.3.1 Organização — [P]
+  32.3.1 Organização — [I]
 	  Monolítica
 	  Chiplets
 	  Multi-Die
@@ -1951,11 +1951,11 @@ PARTE 5 — ARQUITETURAS, TECNOLOGIAS E TENDÊNCIAS DOS PROCESSADORES
 
 
 
-33. Recursos Arquiteturais Modernos — [I/P]
+33. Recursos Arquiteturais Modernos — [I]
 
  33.1 Extensões de Instruções — [I]
 
-  33.1.1 SIMD — [P]
+  33.1.1 SIMD — [I]
 	  MMX
 	  SSE
 	  AVX
@@ -2041,9 +2041,9 @@ PARTE 5 — ARQUITETURAS, TECNOLOGIAS E TENDÊNCIAS DOS PROCESSADORES
 
 
 
-35. Tendências e Futuro dos Processadores — [I]
+35. Tendências e Futuro dos Processadores — [V]
 
- 35.1 Evolução Tecnológica — [I]
+ 35.1 Evolução Tecnológica — [V]
 
   35.1.1 Tendências — [V]
 	  Aumento da integração
@@ -2059,22 +2059,22 @@ PARTE 5 — ARQUITETURAS, TECNOLOGIAS E TENDÊNCIAS DOS PROCESSADORES
 	  Computação quântica
 
 
- 35.2 Novas Arquiteturas — [I]
+ 35.2 Novas Arquiteturas — [V]
 
-  35.2.1 Evolução — [I]
+  35.2.1 Evolução — [V]
 	  RISC-V
 	  Computação heterogênea
 	  Arquiteturas especializadas
 
-  35.2.2 Inteligência Artificial — [I]
+  35.2.2 Inteligência Artificial — [V]
 	  NPUs
 	  Aceleradores dedicados
 	  Processadores para IA
 
 
- 35.3 Perspectivas — [V/I]
+ 35.3 Perspectivas — [V]
 
-  35.3.1 Desafios — [I]
+  35.3.1 Desafios — [V]
 	  Limites físicos
 	  Consumo energético
 	  Dissipação térmica
@@ -2248,11 +2248,11 @@ PARTE 6 — CONCLUSÃO E INTEGRAÇÃO DOS CONCEITOS
 
 
 
-39. Panorama Geral dos Processadores — [V/I]
+39. Panorama Geral dos Processadores — [I]
 
- 39.1 Evolução Histórica — [V]
+ 39.1 Evolução Histórica — [I]
 
-  39.1.1 Linha do Tempo — [V]
+  39.1.1 Linha do Tempo — [I]
 	  Primeiros Processadores
 	  Integração em Chip
 	  Pipeline
@@ -2261,7 +2261,7 @@ PARTE 6 — CONCLUSÃO E INTEGRAÇÃO DOS CONCEITOS
 	  Multicore
 	  IA Integrada
 
-  39.1.2 Evolução Tecnológica — [V]
+  39.1.2 Evolução Tecnológica — [I]
 	  Escalonamento
 	  Miniaturização
 	  Novos Materiais
@@ -2287,16 +2287,16 @@ PARTE 6 — CONCLUSÃO E INTEGRAÇÃO DOS CONCEITOS
 	  IA Embarcada
 
 
- 39.3 Tendências Futuras — [V]
+ 39.3 Tendências Futuras — [I]
 
-  39.3.1 Evolução — [V]
+  39.3.1 Evolução — [I]
 	  Mais Paralelismo
 	  Mais Especialização
 	  Melhor Eficiência Energética
 	  Integração de IA
 	  Novos Processos de Fabricação
 
-  39.3.2 Novos Paradigmas — [V]
+  39.3.2 Novos Paradigmas — [I]
 	  Computação Quântica
 	  Computação Neuromórfica
 	  Computação Fotônica
@@ -2331,9 +2331,9 @@ PARTE 6 — CONCLUSÃO E INTEGRAÇÃO DOS CONCEITOS
 	  Virtualização
 
 
- 40.2 Relação com a Arquitetura e Organização de Computadores — [I]
+ 40.2 Relação com a Arquitetura e Organização de Computadores — [V]
 
-  40.2.1 Integração com Outros Componentes — [I]
+  40.2.1 Integração com Outros Componentes — [V]
 	  Memória Principal
 	  Memória Cache
 	  Barramentos
