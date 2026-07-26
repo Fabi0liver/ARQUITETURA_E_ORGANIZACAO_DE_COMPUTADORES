@@ -1319,61 +1319,62 @@ PARTE 5 — CONTROLADOR DE MEMÓRIA E ORGANIZAÇÃO DO SUBSISTEMA DE MEMÓRIA
  24.1 Fundamentos — [P]
 
   24.1.1 Conceitos Gerais — [P]
-      Definição
-      Objetivos
-      Funções
-      Papel na Arquitetura de Computadores
-      Papel na Organização de Computadores
-      Interface entre CPU e Memória Principal
-      Evolução dos controladores
+	  Definição
+	  Objetivos
+	  Funções
+	  Papel na Arquitetura de Computadores
+  	  Papel na Organização de Computadores
+	  Interface entre CPU e Memória Principal
+	  Evolução dos controladores
 
   24.1.2 Organização Geral — [P]
-      Estrutura interna
-      Componentes principais
-      Interface com o processador
-      Interface com os módulos de memória
-      Interface com os barramentos
-      Organização funcional
+	  Estrutura interna
+	  Componentes principais
+	  Interface com o processador
+	  Interface com os módulos de memória
+	  Interface com os barramentos
+ 	  Organização funcional
 
   24.1.3 Responsabilidades — [P]
-      Recepção das requisições
-      Tradução dos endereços físicos
-      Seleção dos canais
-      Seleção dos ranks
-      Seleção dos bancos
-      Seleção das linhas e colunas
-      Coordenação das operações DRAM
-      Controle da temporização
+	  Recepção das requisições
+	  Tradução dos endereços físicos
+ 	  Seleção dos canais
+  	  Seleção dos ranks
+	  Seleção dos bancos
+	  Seleção das linhas e colunas
+	  Coordenação das operações DRAM
+	  Controle da temporização
 
 
  24.2 Funcionamento — [P]
 
   24.2.1 Fluxo de Operação — [P]
-      Recepção da requisição
-      Análise do endereço
-      Seleção do destino
-      Verificação do estado da memória
-      Emissão dos comandos
-      Transferência dos dados
-      Finalização da operação
-      Mode Register Set (visão geral)
+	  Recepção da requisição
+	  Análise do endereço
+	  Seleção do destino
+	  Verificação do estado da memória
+	  Emissão dos comandos
+	  Transferência dos dados
+	  Finalização da operação
+	  Mode Register Set (visão geral)
 
   24.2.2 Gerenciamento das Operações — [P]
-      Activate
-      Read
-      Write
-      Precharge
-      Refresh
-      Sequenciamento dos comandos
-      Controle do estado dos bancos
+	  Activate
+	  Read
+ 	  Write
+	  Precharge
+  	  Refresh
+	  Sequenciamento dos comandos
+	  Controle do estado dos bancos
 
   24.2.3 Coordenação Geral — [P]
-      Controle do clock
-      Controle da temporização
-      Controle dos barramentos
-      Controle do paralelismo
-      Controle da largura de banda
-      Balanceamento das operações
+	  Controle do clock
+	  Controle da temporização
+	  Controle dos barramentos
+	  Controle do paralelismo
+	  Controle da largura de banda
+	  Balanceamento das operações
+
 
 
 25. Organização dos Módulos de Memória — [I]
@@ -1381,66 +1382,67 @@ PARTE 5 — CONTROLADOR DE MEMÓRIA E ORGANIZAÇÃO DO SUBSISTEMA DE MEMÓRIA
  25.1 Estrutura dos Módulos — [I]
 
   25.1.1 Conceitos Gerais — [I]
-      Definição
-      Finalidade
-      Organização física
-      Organização lógica
-      Relação entre chips e módulos
+	  Definição
+	  Finalidade
+	  Organização física
+	  Organização lógica
+	  Relação entre chips e módulos
 
   25.1.2 Componentes do Módulo — [V]
-      Chips DRAM
-      PCB
-      Trilhas elétricas
-      Conectores
-      SPD
-      PMIC (DDR5)
-      Sensores térmicos (Visão Geral)
+	  Chips DRAM
+	  PCB
+	  Trilhas elétricas
+	  Conectores
+	  SPD
+	  PMIC (DDR5)
+	  Sensores térmicos (Visão Geral)
 
   25.1.3 Organização Física — [V]
-      Face simples (Single-Sided)
-      Face dupla (Double-Sided)
-      Distribuição dos chips
-      Organização elétrica
-      Densidade do módulo
+	  Face simples (Single-Sided)
+	  Face dupla (Double-Sided)
+	  Distribuição dos chips
+ 	  Organização elétrica
+	  Densidade do módulo
 
 
   25.1.4 Interface Elétrica da DDR — [V]
-      Barramento de Endereços
-      Barramento de Comandos
-      Barramento de Dados
-      DQS
-      Clock
-      Chip Select
-      ODT (On-Die Termination)
+	  Barramento de Endereços
+	  Barramento de Comandos
+ 	  Barramento de Dados
+	  DQS
+	  Clock
+	  Chip Select
+  	  ODT (On-Die Termination)
 
 
  25.1.5 Organização dos Chips — [V]
-      x4
-      x8
-      x16
-      Relação com ECC
-      Relação com Ranks
+	  x4
+	  x8
+	  x16
+	  Relação com ECC
+	  Relação com Ranks
 
 
  25.2 Tipos de Módulos — [V]
 
   25.2.1 DIMM — [I]
-      Definição
-      Organização
-      Características
-      Aplicações
+	  Definição
+  	  Organização
+	  Características
+	  Aplicações
 
   25.2.2 SO-DIMM — [V]
-      Definição
-      Características
-      Aplicações
-      Comparação com DIMM
+	  Definição
+   	  Características
+	  Aplicações
+	  Comparação com DIMM
 
   25.2.3 CAMM (Visão Geral) — [V]
-      Conceitos
-      Organização
-      Objetivos
-      Aplicações futuras
+	  Conceitos
+	  Organização
+	  Objetivos
+  	  Aplicações futuras
+
 
 
 26. Organização Hierárquica dos Módulos — [P]
@@ -1448,51 +1450,52 @@ PARTE 5 — CONTROLADOR DE MEMÓRIA E ORGANIZAÇÃO DO SUBSISTEMA DE MEMÓRIA
  26.1 Chips, Ranks e Canais — [P]
 
   26.1.1 Chips DRAM — [P]
-      Organização
-      Capacidade
-      Largura de dados
-      Interligação
-      Funcionamento conjunto
+	  Organização
+	  Capacidade
+	  Largura de dados
+	  Interligação
+	  Funcionamento conjunto
 
   26.1.2 Ranks — [P]
-      Definição
-      Organização
-      Seleção
-      Funcionamento
-      Rank único
-      Dual Rank
-      Quad Rank
-      Benefícios
-      Limitações
+  	  Definição
+	  Organização
+	  Seleção
+	  Funcionamento
+	  Rank único
+	  Dual Rank
+	  Quad Rank
+	  Benefícios
+  	  Limitações
 
   26.1.3 Canais (Channels) — [P]
-      Definição
-      Organização
-      Comunicação independente
-      Paralelismo
-      Largura de banda
-      Escalabilidade
+	  Definição
+	  Organização
+	  Comunicação independente
+  	  Paralelismo
+  	  Largura de banda
+  	  Escalabilidade
 
 
  26.2 Configurações Multi-Channel — [I]
 
   26.2.1 Single Channel — [V]
-      Organização
-      Funcionamento
-      Limitações
+	  Organização
+	  Funcionamento
+	  Limitações
 
   26.2.2 Dual Channel — [I]
-      Organização
-      Funcionamento
-      Balanceamento
-      Ganho de largura de banda
+	  Organização
+	  Funcionamento
+	  Balanceamento
+	  Ganho de largura de banda
 
   26.2.3 Configurações Avançadas — [V]
-      Triple Channel
-      Quad Channel
-      Octa Channel
-      Aplicações
-      Escalabilidade
+	  Triple Channel
+	  Quad Channel
+	  Octa Channel
+	  Aplicações
+	  Escalabilidade
+
 
 
 27. Organização Interna da DDR Moderna — [P]
@@ -1500,49 +1503,50 @@ PARTE 5 — CONTROLADOR DE MEMÓRIA E ORGANIZAÇÃO DO SUBSISTEMA DE MEMÓRIA
  27.1 Evolução Arquitetural — [P]
 
   27.1.1 Organização dos Bancos — [P]
-      Bancos internos
-      Quantidade
-      Independência
-      Paralelismo
-      Distribuição das operações
+	  Bancos internos
+	  Quantidade
+	  Independência
+	  Paralelismo
+	  Distribuição das operações
 
   27.1.2 Bank Groups — [P]
-      Definição
-      Objetivos
-      Organização
-      Funcionamento
-      Benefícios
-      Limitações
+	  Definição
+  	  Objetivos
+	  Organização
+	  Funcionamento
+  	  Benefícios
+  	  Limitações
 
   27.1.3 Organização Hierárquica — [P]
-      Canal
-      Rank
-      Chip
-      Banco
-      Subarray
-      Linha
-      Coluna
-      Célula
+	  Canal
+	  Rank
+	  Chip
+	  Banco
+	  Subarray
+	  Linha
+	  Coluna
+	  Célula
 
 
  27.2 Paralelismo Interno — [P]
 
   27.2.1 Paralelismo entre Canais — [P]
-      Funcionamento
-      Independência
-      Balanceamento
-      Escalabilidade
+ 	  Funcionamento
+	  Independência
+  	  Balanceamento
+  	  Escalabilidade
 
   27.2.2 Paralelismo entre Ranks — [P]
-      Alternância entre ranks
-      Aproveitamento do barramento
-      Redução de esperas
+	  Alternância entre ranks
+  	  Aproveitamento do barramento
+	  Redução de esperas
 
   27.2.3 Paralelismo entre Bancos — [P]
-      Operações simultâneas
-      Sobreposição de comandos
-      Eficiência
-      Ganho de desempenho
+	  Operações simultâneas
+	  Sobreposição de comandos
+	  Eficiência
+   	  Ganho de desempenho
+
 
 
 28. Endereçamento da Memória Principal — [P]
@@ -1550,51 +1554,52 @@ PARTE 5 — CONTROLADOR DE MEMÓRIA E ORGANIZAÇÃO DO SUBSISTEMA DE MEMÓRIA
  28.1 Organização dos Endereços — [P]
 
   28.1.1 Endereço Físico — [P]
-      Definição
-      Estrutura
-      Espaço físico
-      Organização linear
+	  Definição
+	  Estrutura
+  	  Espaço físico
+  	  Organização linear
 
   28.1.2 Divisão do Endereço — [P]
-      Canal
-      Rank
-      Banco
-      Bank Group
-      Linha
-      Coluna
-      Byte Offset
+	  Canal
+	  Rank
+	  Banco
+	  Bank Group
+  	  Linha
+	  Coluna
+  	  Byte Offset
 
   28.1.3 Mapeamento dos Endereços — [P]
-      Tradução interna
-      Distribuição entre bancos
-      Distribuição entre canais
-      Distribuição entre ranks
-      Critérios de organização
+	  Tradução interna
+	  Distribuição entre bancos
+	  Distribuição entre canais
+	  Distribuição entre ranks
+	  Critérios de organização
 
 
  28.2 Mapeamento Arquitetural — [P]
 
   28.2.1 Interleaving de Endereços — [P]
-      Definição
-      Objetivos
-      Funcionamento
-      Interleaving entre canais
-      Interleaving entre ranks
-      Interleaving entre bancos
-      Interleaving entre linhas
-      Balanceamento dos acessos
+	  Definição
+	  Objetivos
+	  Funcionamento
+	  Interleaving entre canais
+	  Interleaving entre ranks
+	  Interleaving entre bancos
+	  Interleaving entre linhas
+	  Balanceamento dos acessos
 
   28.2.2 Distribuição das Requisições — [P]
-      Balanceamento
-      Paralelismo
-      Aproveitamento dos bancos
-      Aproveitamento dos canais
+	  Balanceamento
+  	  Paralelismo
+	  Aproveitamento dos bancos
+	  Aproveitamento dos canais
 
   28.2.3 Eficiência do Mapeamento — [P]
-      Localidade
-      Distribuição uniforme
-      Redução de conflitos
-      Impacto no desempenho
+	  Localidade
+	  Distribuição uniforme
+	  Redução de conflitos
+	  Impacto no desempenho
+
 
 
 29. Escalonamento de Requisições — [I]
@@ -1602,46 +1607,46 @@ PARTE 5 — CONTROLADOR DE MEMÓRIA E ORGANIZAÇÃO DO SUBSISTEMA DE MEMÓRIA
  29.1 Gerenciamento das Filas — [I]
 
   29.1.1 Filas de Requisição — [I]
-      Organização
-      Entrada das requisições
-      Priorização
-      Processamento
+	  Organização
+  	  Entrada das requisições
+	  Priorização
+	  Processamento
 
   29.1.2 Reordenação — [I]
-      Objetivos
-      Critérios
-      Benefícios
-      Limitações
+	  Objetivos
+	  Critérios
+	  Benefícios
+	  Limitações
 
   29.1.3 Dependências — [I]
-      Conflitos
-      Operações concorrentes
-      Restrições dos timings
-      Consistência
+	  Conflitos
+  	  Operações concorrentes
+	  Restrições dos timings
+	  Consistência
 
 
  29.2 Políticas de Escalonamento — [I]
 
   29.2.1 FCFS — [V]
-      Conceitos
-      Funcionamento
-      Benefícios
-      Limitações
+	  Conceitos
+  	  Funcionamento
+	  Benefícios
+  	  Limitações
 
   29.2.2 FR-FCFS — [I]
-      First Ready First Come First Serve
-      Objetivos
-      Funcionamento
-      Priorização de Row Buffer Hits
-      Benefícios
-      Limitações
+	  First Ready First Come First Serve
+	  Objetivos
+	  Funcionamento
+	  Priorização de Row Buffer Hits
+	  Benefícios
+	  Limitações
 
   29.2.3 Otimizações Modernas — [V]
-      Balanceamento
-      Paralelismo
-      Redução da latência
-      Maximização da largura de banda
-      Eficiência energética
+	  Balanceamento
+	  Paralelismo
+	  Redução da latência
+	  Maximização da largura de banda
+	  Eficiência energética
 
 
 
