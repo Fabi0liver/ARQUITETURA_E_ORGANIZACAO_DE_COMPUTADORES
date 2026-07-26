@@ -18,69 +18,70 @@ PARTE 1 — FUNDAMENTOS DA MEMÓRIA PRINCIPAL
  1.1 Conceitos Gerais — [I]
 
   1.1.1 Introdução à Memória Principal — [I]
-      Definição
-      Objetivos
-      Finalidade
-      Importância
-      Papel no sistema computacional
-      Papel na Arquitetura de Computadores
-      Papel na Organização de Computadores
-      Papel durante a execução de programas
-      Relação entre hardware e software
-      Memória principal como espaço de trabalho do sistema
-      Fluxo geral das informações
-      Evolução da memória principal
+	  Definição
+	  Objetivos
+	  Finalidade
+	  Importância
+	  Papel no sistema computacional
+	  Papel na Arquitetura de Computadores
+	  Papel na Organização de Computadores
+	  Papel durante a execução de programas
+	  Relação entre hardware e software
+	  Memória principal como espaço de trabalho do sistema
+	  Fluxo geral das informações
+	  Evolução da memória principal
 
   1.1.2 Importância da Memória Principal — [V]
-      Desempenho do sistema
-      Disponibilidade dos dados
-      Comunicação entre processador e memória
-      Execução de programas
-      Execução do sistema operacional
-      Compartilhamento de dados
-      Influência no desempenho da CPU
-      Influência na escalabilidade do sistema
-      Influência no consumo de energia
-      Influência no custo do computador
+	  Desempenho do sistema
+	  Disponibilidade dos dados
+	  Comunicação entre processador e memória
+	  Execução de programas
+	  Execução do sistema operacional
+	  Compartilhamento de dados
+	  Influência no desempenho da CPU
+	  Influência na escalabilidade do sistema
+	  Influência no consumo de energia
+	  Influência no custo do computador
 
   1.1.3 Papel na Hierarquia de Memória — [I]
-      Memória principal como nível intermediário
-      Relação com os registradores
-      Relação com a memória cache
-      Relação com a memória secundária
-      Fluxo geral dos dados
-      Papel como memória de trabalho
-      Transparência para o software
-      Compromisso entre capacidade, velocidade e custo
+	  Memória principal como nível intermediário
+	  Relação com os registradores
+	  Relação com a memória cache
+	  Relação com a memória secundária
+	  Fluxo geral dos dados
+	  Papel como memória de trabalho
+	  Transparência para o software
+	  Compromisso entre capacidade, velocidade e custo
 
 
  1.2 Arquitetura e Organização — [I]
 
   1.2.1 Memória Principal na Arquitetura de Computadores — [I]
-      Papel arquitetural
-      Visão da ISA
-      Modelo de memória observado pelo processador
-      Espaço de endereçamento
-      Organização do espaço de memória
-      Interface arquitetural
-      Independência da implementação física
+	  Papel arquitetural
+	  Visão da ISA
+	  Modelo de memória observado pelo processador
+	  Espaço de endereçamento
+	  Organização do espaço de memória
+	  Interface arquitetural
+	  Independência da implementação física
 
   1.2.2 Memória Principal na Organização de Computadores — [I]
-      Implementação física
-      Organização interna
-      Organização lógica
-      Organização dos módulos
-      Organização dos bancos
-      Organização dos canais
-      Organização dos acessos
-      Implementação do subsistema de memória
+	  Implementação física
+	  Organização interna
+	  Organização lógica
+	  Organização dos módulos
+	  Organização dos bancos
+	  Organização dos canais
+	  Organização dos acessos
+	  Implementação do subsistema de memória
 
   1.2.3 Organização versus Arquitetura — [V]
-      Diferenças
-      Complementaridade
-      Responsabilidades de cada área
-      Impacto na memória principal
-      Exemplos práticos
+	  Diferenças
+	  Complementaridade
+	  Responsabilidades de cada área
+	  Impacto na memória principal
+	  Exemplos práticos
+
 
 
 2. Fundamentos da Memória Principal — [I]
@@ -88,63 +89,64 @@ PARTE 1 — FUNDAMENTOS DA MEMÓRIA PRINCIPAL
  2.1 Conceitos Fundamentais — [I]
 
   2.1.1 Armazenamento de Informações — [V]
-      Dados
-      Instruções
-      Valores temporários
-      Variáveis
-      Objetos
-      Estruturas de dados
-      Código executável
-      Estado do programa
-      Contexto de execução
+	  Dados
+	  Instruções
+	  Valores temporários
+	  Variáveis
+	  Objetos
+	  Estruturas de dados
+	  Código executável
+	  Estado do programa
+	  Contexto de execução
 
   2.1.2 Características Fundamentais — [I]
-      Volatilidade
-      Persistência
-      Retenção de dados
-      Capacidade
-      Densidade
-      Escalabilidade
-      Granularidade de armazenamento
-      Granularidade de acesso
-      Granularidade de transferência
+	  Volatilidade
+	  Persistência
+	  Retenção de dados
+	  Capacidade
+	  Densidade
+	  Escalabilidade
+	  Granularidade de armazenamento
+	  Granularidade de acesso
+	  Granularidade de transferência
 
   2.1.3 Objetivos da Memória Principal — [V]
-      Armazenamento temporário
-      Execução eficiente dos programas
-      Compartilhamento entre CPU e dispositivos
-      Disponibilidade imediata dos dados
-      Suporte ao sistema operacional
-      Suporte às aplicações
-      Balanceamento entre custo e desempenho
+	  Armazenamento temporário
+	  Execução eficiente dos programas
+	  Compartilhamento entre CPU e dispositivos
+	  Disponibilidade imediata dos dados
+	  Suporte ao sistema operacional
+	  Suporte às aplicações
+	  Balanceamento entre custo e desempenho
 
 
  2.2 Representação da Informação — [I]
 
   2.2.1 Unidades Fundamentais — [V]
-      Bit
-      Byte
-      Palavra
-      Palavra dupla
-      Quad Word
-      Linha de memória
-      Bloco de transferência
+	  Bit
+	  Byte
+	  Palavra
+	  Palavra dupla
+	  Quad Word
+	  Linha de memória
+	  Bloco de transferência
 
   2.2.2 Organização dos Dados — [I]
-      Organização por bytes
-      Organização por palavras
-      Ordem dos bytes
-      Alinhamento
-      Desalinhamento
-      Granularidade dos acessos
+	  Organização por bytes
+	  Organização por palavras
+	  Ordem dos bytes
+	  Alinhamento
+	  Desalinhamento
+	  Granularidade dos acessos
 
   2.2.3 Endereçamento Básico — [I]
-      Endereço de memória
-      Espaço de endereçamento
-      Endereço físico
-      Capacidade de endereçamento
-      Faixa de endereçamento
-      Organização linear da memória
+	  Endereço de memória
+	  Espaço de endereçamento
+	  Endereço físico
+	  Capacidade de endereçamento
+	  Faixa de endereçamento
+	  Organização linear da memória
+
 
 
 3. Organização Geral da Memória Principal — [I]
@@ -152,61 +154,62 @@ PARTE 1 — FUNDAMENTOS DA MEMÓRIA PRINCIPAL
  3.1 Organização Física — [I]
 
   3.1.1 Estrutura Física — [I]
-      Chips de memória
-      Matrizes de memória
-      Linhas
-      Colunas
-      Bancos
-      Barramentos internos
-      Organização física dos chips
-      Organização física dos módulos
+	  Chips de memória
+	  Matrizes de memória
+	  Linhas
+	  Colunas
+	  Bancos
+	  Barramentos internos
+	  Organização física dos chips
+	  Organização física dos módulos
 
   3.1.2 Organização Hierárquica Interna — [I]
-      Células
-      Matrizes
-      Submatrizes
-      Bancos
-      Ranks (visão geral)
-      Canais (visão geral)
-      Hierarquia física da memória
+	  Células
+	  Matrizes
+	  Submatrizes
+	  Bancos
+	  Ranks (visão geral)
+	  Canais (visão geral)
+	  Hierarquia física da memória
 
   3.1.3 Componentes Fundamentais — [I]
-      Células de memória
-      Decodificadores
-      Sense Amplifiers
-      Drivers
-      Buffers
-      Circuitos de leitura
-      Circuitos de escrita
-      Circuitos de controle
+	  Células de memória
+	  Decodificadores
+	  Sense Amplifiers
+	  Drivers
+	  Buffers
+	  Circuitos de leitura
+	  Circuitos de escrita
+	  Circuitos de controle
 
 
  3.2 Organização Lógica — [I]
 
   3.2.1 Estrutura Lógica — [I]
-      Espaço linear
-      Organização dos endereços
-      Organização das palavras
-      Organização dos blocos
-      Continuidade lógica
-      Visão da CPU
+	  Espaço linear
+	  Organização dos endereços
+	  Organização das palavras
+	  Organização dos blocos
+	  Continuidade lógica
+	  Visão da CPU
 
   3.2.2 Organização Funcional — [V]
-      Área de código
-      Área de dados
-      Pilha
-      Heap
-      Espaço reservado ao sistema operacional
-      Áreas compartilhadas
-      Mapeamento lógico da memória
+	  Área de código
+	  Área de dados
+	  Pilha
+	  Heap
+	  Espaço reservado ao sistema operacional
+	  Áreas compartilhadas
+	  Mapeamento lógico da memória
 
   3.2.3 Organização dos Acessos — [I]
-      Acesso por endereço
-      Localização dos dados
-      Seleção das células
-      Fluxo de leitura
-      Fluxo de escrita
-      Caminho dos dados
+	  Acesso por endereço
+	  Localização dos dados
+	  Seleção das células
+	  Fluxo de leitura
+	  Fluxo de escrita
+	  Caminho dos dados
+
 
 
 4. Comunicação da Memória Principal — [I]
@@ -214,56 +217,57 @@ PARTE 1 — FUNDAMENTOS DA MEMÓRIA PRINCIPAL
  4.1 Interface com o Sistema — [I]
 
   4.1.1 Comunicação com o Processador — [I]
-      Solicitação de leitura
-      Solicitação de escrita
-      Endereçamento
-      Transferência de dados
-      Sincronização
-      Controle dos acessos
+	  Solicitação de leitura
+	  Solicitação de escrita
+	  Endereçamento
+	  Transferência de dados
+	  Sincronização
+	  Controle dos acessos
 
   4.1.2 Interface de Comunicação — [I]
-      Barramento de dados
-      Barramento de endereços
-      Barramento de controle
-      Sinais de leitura
-      Sinais de escrita
-      Temporização
-      Ciclo de memória
+	  Barramento de dados
+	  Barramento de endereços
+	  Barramento de controle
+	  Sinais de leitura
+	  Sinais de escrita
+	  Temporização
+	  Ciclo de memória
 
   4.1.3 Fluxo Geral de Comunicação — [I]
-      Geração do endereço
-      Seleção da posição de memória
-      Localização da informação
-      Transferência dos dados
-      Finalização da operação
+	  Geração do endereço
+	  Seleção da posição de memória
+	  Localização da informação
+	  Transferência dos dados
+	  Finalização da operação
 
 
  4.2 Operações Fundamentais — [I]
 
   4.2.1 Operações Básicas — [I]
-      Leitura
-      Escrita
-      Atualização
-      Armazenamento
-      Recuperação
-      Tempo de acesso
-      Tempo de ciclo
+	  Leitura
+	  Escrita
+	  Atualização
+	  Armazenamento
+	  Recuperação
+	  Tempo de acesso
+	  Tempo de ciclo
 
   4.2.2 Ciclo de Acesso — [I]
-      Início da requisição
-      Decodificação do endereço
-      Seleção da célula
-      Leitura dos dados
-      Escrita dos dados
-      Encerramento da operação
+	  Início da requisição
+	  Decodificação do endereço
+	  Seleção da célula
+	  Leitura dos dados
+	  Escrita dos dados
+	  Encerramento da operação
 
   4.2.3 Características dos Acessos — [I]
-      Acesso aleatório
-      Acesso sequencial (comparação)
-      Acessos independentes
-      Latência
-      Throughput
-      Eficiência do acesso
+	  Acesso aleatório
+	  Acesso sequencial (comparação)
+	  Acessos independentes
+	  Latência
+	  Throughput
+	  Eficiência do acesso
+
 
 
 5. Características da Memória Principal — [I]
@@ -271,55 +275,55 @@ PARTE 1 — FUNDAMENTOS DA MEMÓRIA PRINCIPAL
  5.1 Características Gerais — [I]
 
   5.1.1 Características Arquiteturais — [I]
-      Capacidade
-      Escalabilidade
-      Modularidade
-      Disponibilidade
-      Confiabilidade
-      Flexibilidade
-      Compatibilidade
+	  Capacidade
+	  Escalabilidade
+	  Modularidade
+	  Disponibilidade
+	  Confiabilidade
+	  Flexibilidade
+	  Compatibilidade
 
   5.1.2 Características de Desempenho — [I]
-      Latência
-      Tempo de acesso
-      Tempo de ciclo
-      Throughput
-      Largura de banda
-      Eficiência
-      Utilização
+	  Latência
+	  Tempo de acesso
+	  Tempo de ciclo
+	  Throughput
+	  Largura de banda
+	  Eficiência
+	  Utilização
 
   5.1.3 Características Elétricas — [V]
-      Alimentação
-      Consumo de energia
-      Dissipação térmica
-      Integridade dos sinais
-      Estabilidade
-      Confiabilidade elétrica
+	  Alimentação
+	  Consumo de energia
+	  Dissipação térmica
+	  Integridade dos sinais
+	  Estabilidade
+	  Confiabilidade elétrica
 
 
  5.2 Classificação Geral — [I]
 
   5.2.1 Quanto à Tecnologia — [V]
-      SRAM
-      DRAM
-      SDRAM
-      DDR SDRAM
-      LPDDR
-      HBM
+	  SRAM
+	  DRAM
+	  SDRAM
+	  DDR SDRAM
+	  LPDDR
+	  HBM
 
   5.2.2 Quanto à Organização — [V]
-      Organização por chips
-      Organização por módulos
-      Organização por canais
-      Organização por bancos
+	  Organização por chips
+	  Organização por módulos
+	  Organização por canais
+	  Organização por bancos
 
   5.2.3 Quanto à Aplicação — [V]
-      Computadores pessoais
-      Servidores
-      Workstations
-      Sistemas embarcados
-      Dispositivos móveis
-      Computação de alto desempenho
+	  Computadores pessoais
+	  Servidores
+	  Workstations
+	  Sistemas embarcados
+	  Dispositivos móveis
+	  Computação de alto desempenho
 
 
 
