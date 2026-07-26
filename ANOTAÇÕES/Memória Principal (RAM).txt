@@ -674,40 +674,40 @@ PARTE 3 — TECNOLOGIAS DA MEMÓRIA PRINCIPAL
  12.1 Fundamentos das Tecnologias RAM — [I]
 
   12.1.1 Conceitos Gerais — [I]
-      Memória de Acesso Aleatório (RAM)
-      Objetivos
-      Características gerais
-      Volatilidade
-      Leitura e escrita
-      Memória de trabalho
-      Papel na arquitetura do computador
-      Evolução das tecnologias RAM
-      Critérios de evolução
-      Compromissos entre desempenho, capacidade e custo
+	  Memória de Acesso Aleatório (RAM)
+	  Objetivos
+	  Características gerais
+	  Volatilidade
+	  Leitura e escrita
+	  Memória de trabalho
+	  Papel na arquitetura do computador
+	  Evolução das tecnologias RAM
+	  Critérios de evolução
+	  Compromissos entre desempenho, capacidade e custo
 
   12.1.2 Classificação das Tecnologias — [V]
-      SRAM
-      DRAM
-      SDRAM
-      DDR SDRAM
-      LPDDR
-      GDDR
-      HBM
-      Wide I/O
-      Comparação geral das tecnologias
+	  SRAM
+	  DRAM
+	  SDRAM
+	  DDR SDRAM
+	  LPDDR
+	  GDDR
+	  HBM
+ 	  Wide I/O
+	  Comparação geral das tecnologias
 
   12.1.3 Critérios de Comparação — [I]
-      Estrutura física
-      Método de armazenamento
-      Densidade
-      Capacidade
-      Latência
-      Throughput
-      Consumo de energia
-      Escalabilidade
-      Complexidade
-      Custo por bit
-      Aplicações
+	  Estrutura física
+	  Método de armazenamento
+	  Densidade
+	  Capacidade
+	  Latência
+	  Throughput
+	  Consumo de energia
+	  Escalabilidade
+	  Complexidade
+	  Custo por bit
+	  Aplicações
 
 
 13. SRAM (Static Random Access Memory) — [I]
@@ -715,50 +715,51 @@ PARTE 3 — TECNOLOGIAS DA MEMÓRIA PRINCIPAL
  13.1 Fundamentos — [I]
 
   13.1.1 Conceitos — [I]
-      Definição
-      Objetivos
-      Funcionamento geral
-      Memória estática
-      Ausência de Refresh
-      Armazenamento por Flip-Flops
+	  Definição
+	  Objetivos
+	  Funcionamento geral
+	  Memória estática
+	  Ausência de Refresh
+	  Armazenamento por Flip-Flops
 
   13.1.2 Estrutura da SRAM — [I]
-      Célula 6T
-      Transistores MOSFET
-      Inversores cruzados
-      Linhas de palavra
-      Linhas de bit
-      Circuitos auxiliares
+	  Célula 6T
+	  Transistores MOSFET
+	  Inversores cruzados
+	  Linhas de palavra
+	  Linhas de bit
+	  Circuitos auxiliares
 
   13.1.3 Características — [V]
-      Alta velocidade
-      Baixa latência
-      Baixa densidade
-      Alto custo
-      Maior consumo por área
-      Estabilidade
+	  Alta velocidade
+	  Baixa latência
+	  Baixa densidade
+	  Alto custo
+	  Maior consumo por área
+	  Estabilidade
 
 
  13.2 Papel na Memória Principal — [V]
 
   13.2.1 Relação com a DRAM — [V]
-      Diferenças estruturais
-      Diferenças de funcionamento
-      Comparação de desempenho
-      Comparação de densidade
-      Comparação de custo
+	  Diferenças estruturais
+	  Diferenças de funcionamento
+	  Comparação de desempenho
+	  Comparação de densidade
+	  Comparação de custo
 
   13.2.2 Aplicações — [V]
-      Cache
-      Buffers
-      Memórias embarcadas
-      Comparação com a memória principal
+	  Cache
+	  Buffers
+	  Memórias embarcadas
+	  Comparação com a memória principal
 
   13.2.3 Limitações — [V]
-      Escalabilidade
-      Área ocupada
-      Custo elevado
-      Limitações para grandes capacidades
+	  Escalabilidade
+	  Área ocupada
+	  Custo elevado
+	  Limitações para grandes capacidades
+
 
 
 14. DRAM (Dynamic Random Access Memory) — [P]
@@ -766,54 +767,55 @@ PARTE 3 — TECNOLOGIAS DA MEMÓRIA PRINCIPAL
  14.1 Fundamentos — [P]
 
   14.1.1 Conceitos Gerais — [P]
-      Definição
-      Objetivos
-      Funcionamento geral
-      Memória dinâmica
-      Armazenamento por carga elétrica
-      Necessidade de Refresh
-      Papel como memória principal
+	  Definição
+	  Objetivos
+	  Funcionamento geral
+	  Memória dinâmica
+	  Armazenamento por carga elétrica
+	  Necessidade de Refresh
+	  Papel como memória principal
 
   14.1.2 Estrutura da DRAM — [P]
-      Célula 1T1C
-      Transistor
-      Capacitor
-      Linhas de palavra
-      Linhas de bit
-      Sense Amplifiers
-      Organização matricial
+	  Célula 1T1C
+	  Transistor
+	  Capacitor
+	  Linhas de palavra
+	  Linhas de bit
+	  Sense Amplifiers
+	  Organização matricial
 
   14.1.3 Características — [I]
-      Alta densidade
-      Baixo custo por bit
-      Grande capacidade
-      Volatilidade
-      Escalabilidade
-      Compromisso entre desempenho e custo
+	  Alta densidade
+	  Baixo custo por bit
+	  Grande capacidade
+	  Volatilidade
+	  Escalabilidade
+	  Compromisso entre desempenho e custo
 
 
  14.2 Funcionamento Geral — [P]
 
   14.2.1 Armazenamento — [P]
-      Representação dos bits
-      Carga elétrica
-      Estado lógico
-      Retenção dos dados
-      Vazamento de carga
+	  Representação dos bits
+	  Carga elétrica
+	  Estado lógico
+	  Retenção dos dados
+	  Vazamento de carga
 
   14.2.2 Operações Fundamentais — [P]
-      Leitura
-      Escrita
-      Atualização
-      Refresh
-      Restauração dos dados
+	  Leitura
+	  Escrita
+	  Atualização
+	  Refresh
+	  Restauração dos dados
 
   14.2.3 Características Operacionais — [P]
-      Destrutividade da leitura
-      Necessidade de restauração
-      Dependência do Refresh
-      Organização temporal
-      Eficiência operacional
+	  Destrutividade da leitura
+	  Necessidade de restauração
+	  Dependência do Refresh
+	  Organização temporal
+	  Eficiência operacional
+
 
 
 15. SDRAM (Synchronous DRAM) — [I]
@@ -821,46 +823,47 @@ PARTE 3 — TECNOLOGIAS DA MEMÓRIA PRINCIPAL
  15.1 Fundamentos — [I]
 
   15.1.1 Conceitos — [I]
-      Definição
-      Objetivos
-      Sincronização por clock
-      Funcionamento síncrono
-      Evolução da DRAM convencional
+	  Definição
+	  Objetivos
+	  Sincronização por clock
+	  Funcionamento síncrono
+	  Evolução da DRAM convencional
 
   15.1.2 Organização — [I]
-      Clock
-      Pipeline
-      Bancos
-      Registradores internos
-      Interface síncrona
+	  Clock
+	  Pipeline
+  	  Bancos
+	  Registradores internos
+	  Interface síncrona
 
   15.1.3 Benefícios — [V]
-      Maior desempenho
-      Maior previsibilidade
-      Operações sincronizadas
-      Melhor aproveitamento da largura de banda
+	  Maior desempenho
+	  Maior previsibilidade
+	  Operações sincronizadas
+	  Melhor aproveitamento da largura de banda
 
 
  15.2 Evolução da SDRAM — [V]
 
   15.2.1 Tecnologias Históricas — [V]
-      SDR SDRAM
-      Fast Page Mode (FPM)
-      Extended Data Out (EDO)
-      Burst EDO (BEDO)
+	  SDR SDRAM
+	  Fast Page Mode (FPM)
+	  Extended Data Out (EDO)
+	  Burst EDO (BEDO)
 
   15.2.2 Evolução Arquitetural — [V]
-      Sincronização
-      Pipeline
-      Burst
-      Bancos independentes
-      Melhorias de desempenho
+	  Sincronização
+  	  Pipeline
+	  Burst
+	  Bancos independentes
+	  Melhorias de desempenho
 
   15.2.3 Limitações — [V]
-      Frequência
-      Largura de banda
-      Escalabilidade
-      Necessidade de evolução
+	  Frequência
+	  Largura de banda
+	  Escalabilidade
+	  Necessidade de evolução
+
 
 
 16. DDR SDRAM — [P]
@@ -868,54 +871,55 @@ PARTE 3 — TECNOLOGIAS DA MEMÓRIA PRINCIPAL
  16.1 Fundamentos — [P]
 
   16.1.1 Conceitos Gerais — [P]
-      Double Data Rate
-      Objetivos
-      Funcionamento
-      Transferência em dupla borda
-      Evolução da SDRAM
-      Compatibilidade arquitetural
+	  Double Data Rate
+	  Objetivos
+	  Funcionamento
+	  Transferência em dupla borda
+	  Evolução da SDRAM
+	  Compatibilidade arquitetural
 
   16.1.2 Organização Geral — [P]
-      Clock
-      Data Rate
-      Burst
-      Bancos
-      Prefetch
-      Interface externa
+ 	  Clock
+	  Data Rate
+	  Burst
+	  Bancos
+	  Prefetch
+	  Interface externa
 
   16.1.3 Benefícios — [I]
-      Aumento da largura de banda
-      Melhor aproveitamento do clock
-      Maior eficiência
-      Escalabilidade
+	  Aumento da largura de banda
+	  Melhor aproveitamento do clock
+	  Maior eficiência
+	  Escalabilidade
 
 
  16.2 Evolução das Gerações DDR — [I]
 
   16.2.1 Primeiras Gerações — [V]
-      DDR
-      DDR2
-      DDR3
-      Evolução das frequências
-      Evolução do Prefetch
+	  DDR
+	  DDR2
+	  DDR3
+  	  Evolução das frequências
+	  Evolução do Prefetch
 
   16.2.2 Gerações Modernas — [I]
-      DDR4
-      DDR5
-      Melhorias arquiteturais
-      Aumento da largura de banda
-      Redução do consumo
-      Aumento do paralelismo
+	  DDR4
+	  DDR5
+	  Melhorias arquiteturais
+	  Aumento da largura de banda
+	  Redução do consumo
+	  Aumento do paralelismo
 
   16.2.3 Comparação entre Gerações — [I]
-      Frequência
-      Taxa de transferência
-      Tensão
-      Prefetch
-      Organização dos bancos
-      Organização dos Bank Groups
-      Capacidade
-      Eficiência energética
+	  Frequência
+	  Taxa de transferência
+	  Tensão
+	  Prefetch
+	  Organização dos bancos
+	  Organização dos Bank Groups
+	  Capacidade
+	  Eficiência energética
+
 
 
 17. Tecnologias Especializadas de Memória Principal — [I]
@@ -923,48 +927,48 @@ PARTE 3 — TECNOLOGIAS DA MEMÓRIA PRINCIPAL
  17.1 Tecnologias Voltadas para Diferentes Aplicações — [I]
 
   17.1.1 LPDDR — [I]
-      Low Power DDR
-      Objetivos
-      Baixo consumo
-      Aplicações móveis
-      Evolução das gerações
+	  Low Power DDR
+	  Objetivos
+	  Baixo consumo
+	  Aplicações móveis
+	  Evolução das gerações
 
   17.1.2 GDDR — [V]
-      Graphics DDR
-      Objetivos
-      Alta largura de banda
-      Aplicações gráficas
-      Comparação com DDR convencional
+	  Graphics DDR
+	  Objetivos
+	  Alta largura de banda
+	  Aplicações gráficas
+	  Comparação com DDR convencional
 
   17.1.3 HBM — [I]
-      High Bandwidth Memory
-      Organização empilhada
-      TSV (Visão Geral)
-      Interposer (Visão Geral)
-      Alta largura de banda
-      Aplicações em HPC e IA
+	  High Bandwidth Memory
+	  Organização empilhada
+	  TSV (Visão Geral)
+  	  Interposer (Visão Geral)
+	  Alta largura de banda
+	  Aplicações em HPC e IA
 
 
  17.2 Tecnologias Emergentes — [V]
 
   17.2.1 Wide I/O — [V]
-      Conceitos
-      Objetivos
-      Aplicações
+	  Conceitos
+   	  Objetivos
+ 	  Aplicações
 
   17.2.2 CAMM — [V]
-      Compression Attached Memory Module
-      Objetivos
-      Organização geral
-      Aplicações
+	  Compression Attached Memory Module
+  	  Objetivos
+	  Organização geral
+	  Aplicações
 
   17.2.3 Tendências Futuras — [V]
-      Evolução das DDR
-      Evolução da LPDDR
-      Evolução da HBM
-      Novas arquiteturas
-      Aumento da capacidade
-      Redução do consumo
+	  Evolução das DDR
+	  Evolução da LPDDR
+	  Evolução da HBM
+  	  Novas arquiteturas
+	  Aumento da capacidade
+	  Redução do consumo
 
 
 
