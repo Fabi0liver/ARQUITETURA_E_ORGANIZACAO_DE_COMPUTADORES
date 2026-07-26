@@ -2216,63 +2216,65 @@ PARTE 8 — REVISÃO GERAL E CONCLUSÃO
  44.1 Revisão dos Conceitos Fundamentais — [I]
 
   44.1.1 Fundamentos — [I]
-      Conceito de Memória Principal
-      Finalidade
-      Importância
-      Papel na Arquitetura de Computadores
-      Papel na Organização de Computadores
-      Papel na Hierarquia de Memória
-      Fluxo geral das informações
+	  Conceito de Memória Principal
+	  Finalidade
+	  Importância
+	  Papel na Arquitetura de Computadores
+	  Papel na Organização de Computadores
+	  Papel na Hierarquia de Memória
+	  Fluxo geral das informações
 
   44.1.2 Organização da Memória — [I]
-      Estrutura física
-      Estrutura lógica
-      Organização matricial
-      Células
-      Matrizes
-      Bancos
-      Subarrays
-      Row Buffers
-      Sense Amplifiers
+	  Estrutura física
+	  Estrutura lógica
+	  Organização matricial
+	  Células
+	  Matrizes
+	  Bancos
+	  Subarrays
+	  Row Buffers
+	  Sense Amplifiers
 
   44.1.3 Tecnologias — [I]
-      SRAM
-      DRAM
-      SDRAM
-      DDR SDRAM
-      LPDDR
-      HBM
-      Tecnologias modernas
+	  SRAM
+	  DRAM
+	  SDRAM
+	  DDR SDRAM
+	  LPDDR
+	  HBM
+ 	  Tecnologias modernas
+
 
 
  44.2 Revisão do Funcionamento — [P]
 
   44.2.1 Operações Fundamentais — [P]
-      Activate
-      Read
-      Write
-      Precharge
-      Refresh
-      Burst
-      Ciclo completo de acesso
+	  Activate
+	  Read
+	  Write
+	  Precharge
+	  Refresh
+	  Burst
+	  Ciclo completo de acesso
 
   44.2.2 Organização dos Acessos — [P]
-      Endereçamento
-      Seleção de canais
-      Seleção de ranks
-      Seleção de bancos
-      Seleção de linhas
-      Seleção de colunas
-      Fluxo dos dados
+	  Endereçamento
+  	  Seleção de canais
+  	  Seleção de ranks
+	  Seleção de bancos
+   	  Seleção de linhas
+	  Seleção de colunas
+	  Fluxo dos dados
 
   44.2.3 Desempenho — [P]
-      Latência
-      Throughput
-      Largura de banda
-      Paralelismo
-      Timings
-      Row Buffer Hits
-      Eficiência geral
+	  Latência
+	  Throughput
+	  Largura de banda
+	  Paralelismo
+	  Timings
+	  Row Buffer Hits
+	  Eficiência geral
+
 
 
 45. Integração Geral da Memória Principal — [I]
@@ -2280,40 +2282,40 @@ PARTE 8 — REVISÃO GERAL E CONCLUSÃO
  45.1 Integração dos Componentes — [I]
 
   45.1.1 Estrutura Integrada — [I]
-      Células
-      Matrizes
-      Subarrays
-      Bancos
-      Chips
-      Ranks
-      Canais
-      Módulos DIMM
-      Controlador de Memória
+	  Células
+  	  Matrizes
+	  Subarrays
+	  Bancos
+  	  Chips
+	  Ranks
+  	  Canais
+	  Módulos DIMM
+	  Controlador de Memória
 
   45.1.2 Fluxo Completo da Informação — [P]
-      Requisição da CPU
-      Controlador de Memória
-      Decodificação do endereço
-      Seleção do canal
-      Seleção do rank
-      Seleção do banco
-      Activate
-      Row Buffer
-      Read ou Write
-      Burst
-      Transferência
-      Finalização da operação
+  	  Requisição da CPU
+	  Controlador de Memória
+	  Decodificação do endereço
+  	  Seleção do canal
+	  Seleção do rank
+	  Seleção do banco
+	  Activate
+	  Row Buffer
+	  Read ou Write
+	  Burst
+  	  Transferência
+	  Finalização da operação
 
   45.1.3 Visão Integrada — [I]
-      Organização física
-      Organização lógica
-      Funcionamento interno
-      Temporização
-      Paralelismo
-      Desempenho
-      Confiabilidade
-      Escalabilidade
-      Tecnologias modernas
+  	  Organização física
+	  Organização lógica
+	  Funcionamento interno
+	  Temporização
+	  Paralelismo
+	  Desempenho
+	  Confiabilidade
+  	  Escalabilidade
+	  Tecnologias modernas
 
 
 46. Conclusão — [V]
@@ -2321,29 +2323,29 @@ PARTE 8 — REVISÃO GERAL E CONCLUSÃO
  46.1 Síntese Final — [V]
 
   46.1.1 Conceitos Essenciais — [V]
-      Papel da Memória Principal
-      Organização geral
-      Estrutura física
-      Estrutura lógica
-      Funcionamento interno
-      Tecnologias utilizadas
+	  Papel da Memória Principal
+	  Organização geral
+  	  Estrutura física
+  	  Estrutura lógica
+	  Funcionamento interno
+ 	  Tecnologias utilizadas
 
   46.1.2 Competências Esperadas — [V]
-      Compreender a organização da DRAM
-      Entender o funcionamento do controlador de memória
-      Interpretar os ciclos de acesso
-      Compreender os timings
-      Avaliar desempenho
-      Identificar gargalos
-      Comparar tecnologias
-      Relacionar arquitetura e implementação
+	  Compreender a organização da DRAM
+	  Entender o funcionamento do controlador de memória
+	  Interpretar os ciclos de acesso
+	  Compreender os timings
+	  Avaliar desempenho
+	  Identificar gargalos
+	  Comparar tecnologias
+	  Relacionar arquitetura e implementação
 
   46.1.3 Integração com Arquitetura de Computadores — [V]
-      Relação com a CPU
-      Relação com a Cache
-      Relação com o Barramento
-      Relação com a Memória Virtual
-      Relação com a Hierarquia de Memória
-      Papel da Memória Principal no desempenho global do computador
-      Importância para arquiteturas modernas
-      Base para o estudo dos demais componentes da Arquitetura e Organização de Computadores
+  	  Relação com a CPU
+	  Relação com a Cache
+	  Relação com o Barramento
+	  Relação com a Memória Virtual
+	  Relação com a Hierarquia de Memória
+	  Papel da Memória Principal no desempenho global do computador
+	  Importância para arquiteturas modernas
+  	  Base para o estudo dos demais componentes da Arquitetura e Organização de Computadores
