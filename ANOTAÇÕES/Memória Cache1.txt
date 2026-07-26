@@ -1,0 +1,2540 @@
+                                           Memória Cache 
+
+
+A classificação abaixo indica a profundidade recomendada para cada grande tópico da lista.
+
+[P] Profundidade — estudar mecanismos, estruturas, funcionamento interno e relações entre componentes.
+[I] Intermediário — compreender bem o funcionamento e as relações principais, sem precisar dominar todos os 
+   detalhes de implementação.
+[V] Visão geral — saber o que é, para que serve e como se relaciona com os registradores.
+
+
+
+PARTE 1 — FUNDAMENTOS DA MEMÓRIA CACHE NA  ARQUITETURA E ORGANIZAÇÃO DE COMPUTADORES:
+
+
+1. Introdução à Memória Cache — [P]
+
+ 1.1 Conceitos Fundamentais — [P]
+
+  1.1.1 Definição da Memória Cache — [P]
+	  Conceito de memória cache
+	  Finalidade da memória cache
+	  Características gerais
+	  Papel na Organização de Computadores
+	  Papel na Arquitetura de Computadores
+
+  1.1.2 Objetivos da Memória Cache — [P]
+	  Redução da latência
+	  Aumento do desempenho
+	  Redução do gargalo entre CPU e memória principal
+	  Aproveitamento da localidade
+	  Balanceamento entre custo e velocidade
+	  Escalabilidade dos sistemas computacionais
+	  Suporte ao paralelismo
+
+  1.1.3 Importância da Memória Cache — [P]
+	  Evolução do desempenho dos processadores
+	  Desigualdade entre CPU e memória principal
+	  Memory Wall
+	  Necessidade da memória cache
+	  Impacto no desempenho dos sistemas
+	  Papel nas arquiteturas e organizações modernas
+
+
+ 1.2 Evolução Histórica — [I]
+
+  1.2.1 Surgimento da Memória Cache — [V]
+	  Primeiras implementações
+	  Motivações para sua criação
+	  Evolução histórica
+
+  1.2.2 Evolução das Arquiteturas de Cache — [I]
+	  Cache de nível único
+	  Cache multinível
+	  Cache em sistemas multiprocessados
+	  Cache em sistemas multinúcleo
+	  Evolução até arquiteturas atuais
+
+  1.2.3 Tendências da Evolução — [V]
+	  Crescimento da capacidade
+	  Redução da latência
+	  Otimizações arquiteturais
+	  Eficiência energética
+	  Novas tecnologias
+
+
+ 1.3 Papel da Cache na Arquitetura do Computador — [P]
+
+  1.3.1 Relação com a CPU — [P]
+	  Busca de instruções
+	  Busca de dados
+	  Comunicação com o processador
+	  Redução do tempo de espera
+
+  1.3.2 Relação com a Memória Principal — [P]
+	  Transferência de blocos
+	  Atualização dos dados
+	  Comunicação com a RAM
+	  Hierarquia de acesso
+
+  1.3.3 Relação com a Hierarquia de Memória — [P]
+	  Registradores
+	  Cache
+	  Memória principal
+	  Memória secundária
+	  Memória virtual
+
+  1.3.4 Papel na Arquitetura Moderna — [I]
+	  Cache como elemento arquitetural
+	  Cache em processadores multicore
+	  Cache em multiprocessadores
+	  Cache em sistemas heterogêneos
+	  Influência na escalabilidade
+	  Influência na eficiência energética
+
+
+
+2. Hierarquia de Memória e Princípio da Localidade — [P]
+
+ 2.1 Hierarquia de Memória — [P]
+
+  2.1.1 Organização da Hierarquia:
+	  Registradores
+	  Cache
+	  Memória principal
+	  Memória secundária
+	  Memória terciária
+
+  2.1.2 Características da Hierarquia — [P]
+	  Capacidade
+	  Velocidade
+	  Latência
+	  Largura de banda
+	  Custo por bit
+	  Frequência de acesso
+
+  2.1.3 Fluxo dos Dados — [P]
+	  CPU → Cache
+	  Cache → Memória principal
+	  Memória principal → Armazenamento
+	  Fluxo completo de acesso
+
+
+ 2.2 Tecnologias de Memória — [P]
+	
+  2.2.1 SRAM — [P]
+	  Conceito
+	  Estrutura
+	  Funcionamento
+	  Aplicações na cache
+
+  2.2.2 DRAM — [I]
+	  Conceito
+	  Estrutura
+	  Funcionamento
+	  Aplicações na memória principal
+
+  2.2.3 Comparação entre SRAM e DRAM — [P]
+	  Velocidade
+	  Latência
+	  Largura de banda
+	  Capacidade
+	  Custo
+	  Consumo de energia
+	  Área ocupada
+
+
+ 2.3 Princípio da Localidade — [P]
+
+  2.3.1 Localidade de Referência — [P]
+	  Conceito
+	  Funcionamento
+	  Importância para a cache
+
+  2.3.2 Localidade Temporal — [P]
+	  Reutilização de dados
+	  Frequência de acesso
+	  Persistência das informações
+
+  2.3.3 Localidade Espacial — [P]
+	  Dados adjacentes
+	  Blocos contíguos
+	  Transferência em bloco
+
+  2.3.4 Localidade Sequencial — [I]
+	  Execução sequencial de instruções
+	  Fluxo de programas
+	  Aproveitamento pela cache
+
+  2.3.5 Working Set — [P]
+	  Conceito
+	  Conjunto de trabalho
+	  Região ativa da memória
+	  Influência sobre o desempenho
+
+  2.3.6 Padrões de Acesso à Memória — [P]
+	  Acesso sequencial
+	  Acesso aleatório
+	  Strided Access
+	  Streaming Access
+	  Influência na eficiência da cache
+
+
+
+3. Organização Geral da Memória Cache — [P]
+
+ 3.1 Estrutura Física — [P]
+
+  3.1.1 Organização Física — [P]
+	  Chips de memória cache
+	  Bancos
+	  Matrizes
+	  Organização física interna
+
+  3.1.2 Organização Hierárquica — [P]
+	  Cache L1
+	  Cache L2
+	  Cache L3
+	  Last Level Cache (LLC)
+	  Cache L4
+
+  3.1.3 Organização por Processadores — [I]
+	  Cache privada
+	  Cache compartilhada
+	  Organização híbrida
+
+  3.1.4 Organização Física em Arquiteturas Modernas — [I]
+	  Cache on-chip
+	  Cache off-chip
+	  Shared Last Level Cache
+	  Organização em chiplets
+
+
+ 3.2 Estrutura Lógica — [P]
+
+  3.2.1 Organização em Blocos — [P]
+	  Blocos de memória
+	  Blocos da cache
+	  Tamanho do bloco
+	  Transferência em blocos
+
+  3.2.2 Organização em Linhas — [P]
+	  Linha de cache
+	  Relação entre bloco e linha
+	  Granularidade
+
+  3.2.3 Organização em Conjuntos — [P]
+	  Conjuntos
+	  Associatividade
+	  Distribuição das linhas
+	  Organização lógica
+
+
+ 3.3 Componentes Básicos — [P]
+
+  3.3.1 Dados — [P]
+	  Dados armazenados
+	  Instruções armazenadas
+	  Organização das informações
+
+  3.3.2 Informações de Controle — [P]
+	  Tag
+	  Bits de controle
+	  Estado da linha
+	  Metadados
+
+  3.3.3 Organização Geral — [P]
+	  Estrutura da cache
+	  Fluxo de acesso
+	  Localização das informações
+
+  3.3.4 Componentes Microarquiteturais — [P]
+	  Data Array
+	  Tag Array
+	  Comparadores
+	  Decodificadores
+	  Multiplexadores
+
+
+
+4. Estrutura Interna da Linha de Cache — [P]
+
+ 4.1 Linha de Cache (Cache Line) — [P]
+
+  4.1.1 Conceitos — [P]
+	  Definição de linha de cache
+	  Organização da linha
+	  Função da linha
+	  Relação com os blocos
+
+  4.1.2 Cache Line Size — [P]
+	  Conceito
+	  Tamanho da linha
+	  Influência no desempenho
+	  Critérios para escolha do tamanho
+
+  4.1.3 Organização dos Dados — [P]
+	  Dados armazenados
+	  Organização interna
+	  Alinhamento
+	  Granularidade
+
+
+ 4.2 Campos de Endereçamento — [P]
+
+  4.2.1 Tag — [P]
+	  Conceito
+	  Função
+	  Comparação
+	  Identificação do bloco
+
+  4.2.2 Índice (Index) — [P]
+	  Conceito
+	  Seleção da linha
+	  Organização
+	  Relação com os conjuntos
+
+  4.2.3 Offset — [P]
+	  Conceito
+	  Seleção do byte
+	  Endereçamento interno
+	  Organização
+
+
+ 4.3 Bits de Controle — [P]
+
+  4.3.1 Valid Bit — [P]
+	  Conceito
+	  Inicialização
+	  Validação da linha
+
+  4.3.2 Dirty Bit — [P]
+	  Conceito
+	  Atualização
+	  Relação com Write Back
+
+  4.3.3 Replacement Bits — [P]
+	  Controle de substituição
+	  Informações de uso
+	  Políticas de substituição
+
+  4.3.4 Coherence Bits — [P]
+	  Estados da linha
+	  Controle de coerência
+	  Compartilhamento
+
+  4.3.5 ECC (Error Correcting Code) — [I]
+	  Conceito
+	  Detecção de erros
+	  Correção de erros
+	  Aplicações na cache
+
+  4.3.6 Outros Bits de Controle — [I]
+	  Bits de paridade
+	  Bits de prioridade
+	  Bits de prefetch
+	  Bits específicos da arquitetura
+
+
+
+5. Cache Controller — [P]
+
+ 5.1 Conceitos Fundamentais — [P]
+
+  5.1.1 Definição — [P]
+	  Conceito de Cache Controller
+	  Papel na memória cache
+	  Responsabilidades
+
+  5.1.2 Funções — [P]
+	  Controle das operações
+	  Gerenciamento da cache
+	  Coordenação dos acessos
+	  Comunicação entre componentes
+
+  5.1.3 Organização Interna — [P]
+	  Estrutura lógica
+	  Blocos funcionais
+	  Fluxo de controle
+
+
+ 5.2 Operações Controladas — [P]
+
+  5.2.1 Leitura — [P]
+	  Recepção da requisição
+	  Busca dos dados
+	  Retorno para a CPU
+
+  5.2.2 Escrita — [P]
+	  Atualização da cache
+	  Atualização da memória principal
+	  Controle das políticas de escrita
+
+  5.2.3 Substituição — [P]
+	  Seleção da linha
+	  Remoção
+	  Inserção
+	  Atualização dos estados
+
+
+ 5.3 Comunicação — [P]
+
+  5.3.1 Comunicação com a CPU — [P]
+	  Recepção das requisições
+	  Envio dos dados
+	  Controle do fluxo
+
+  5.3.2 Comunicação com a Memória Principal — [P]
+	  Transferência de blocos
+	  Escrita
+	  Atualização
+	  Sincronização
+
+  5.3.3 Comunicação com Outros Níveis da Cache — [P]
+	  Transferência entre níveis
+	  Coordenação
+	  Hierarquia
+
+
+ 5.4 Componentes Internos do Controlador — [P]
+
+  5.4.1 Máquinas de Estado — [P]
+	  Controle das operações
+	  Sequenciamento
+
+  5.4.2 Buffers Internos — [P]
+	  Buffers de leitura
+	  Buffers de escrita
+	  Filas de requisições
+
+  5.4.3 Comunicação Interna — [P]
+	  Controle dos arrays
+	  Comunicação com os níveis da cache
+	  Controle de coerência
+
+
+
+6. Organização dos Níveis da Cache — [P]
+
+ 6.1 Cache L1 — [P]
+
+  6.1.1 Características — [P]
+	  Organização
+	  Capacidade
+	  Latência
+	  Velocidade
+
+  6.1.2 Funcionamento — [P]
+	  Primeira consulta
+	  Armazenamento de dados
+	  Armazenamento de instruções
+
+
+ 6.2 Cache L2 — [P]
+
+  6.2.1 Características — [P]
+	  Organização
+	  Capacidade
+	  Compartilhamento
+	  Desempenho
+
+  6.2.2 Funcionamento — [P]
+	  Segunda consulta
+	  Integração com L1
+	  Atualização
+
+
+ 6.3 Cache L3 — [P]
+
+  6.3.1 Características — [P]
+	  Organização
+	  Compartilhamento
+	  Capacidade
+	  Latência
+
+  6.3.2 Funcionamento — [P]
+	  Último nível de cache
+	  Comunicação com a RAM
+	  Compartilhamento entre núcleos
+
+
+ 6.4 Last Level Cache (LLC) — [I]
+
+  6.4.1 Conceitos — [I]
+	  Definição
+	  Objetivos
+	  Papel na hierarquia
+
+  6.4.2 Organização — [I]
+	  Cache compartilhada
+	  Escalabilidade
+	  Eficiência
+
+
+ 6.5 Cache L4 — [V]
+
+  6.5.1 Conceitos — [V]
+	  Definição
+	  Utilização
+	  Características
+
+  6.5.2 Aplicações — [V]
+	  Processadores específicos
+	  Sistemas de alto desempenho
+	  Memória embarcada
+
+
+ 6.6 Organização em Arquiteturas Modernas — [I]
+
+  6.6.1 Sistemas Multicore — [I]
+	  Cache privada
+	  Cache compartilhada
+	  Organização híbrida
+
+  6.6.2 Sistemas Multiprocessados — [I]
+	  Compartilhamento
+	  Escalabilidade
+
+  6.6.3 Sistemas Heterogêneos — [I]
+	  CPU + GPU
+	  Aceleradores
+	  Organização especializada
+
+
+
+7. Organizações da Memória Cache — [P]
+
+ 7.1 Cache Unificada — [P]
+
+  7.1.1 Conceitos — [P]
+ 	  Definição
+	  Objetivos
+	  Organização
+
+  7.1.2 Funcionamento — [P]
+	  Compartilhamento entre dados e instruções
+	  Gerenciamento do espaço
+	  Fluxo de acesso
+
+
+ 7.2 Cache Separada — [P]
+
+  7.2.1 Cache de Instruções (I-Cache) — [P]
+	  Conceito
+	  Organização
+	  Busca de instruções
+
+  7.2.2 Cache de Dados (D-Cache) — [P]
+	  Conceito
+	  Organização
+	  Armazenamento dos dados
+
+  7.2.3 Comparação entre I-Cache e D-Cache — [I]
+	  Vantagens
+	  Limitações
+	  Aplicações
+
+
+ 7.3 Organização Inspirada nas Arquiteturas — [I]
+
+  7.3.1 Arquitetura Harvard — [I]
+	  Separação entre instruções e dados
+	  Organização da cache
+	  Aplicações
+
+  7.3.2 Arquitetura Von Neumann — [I]
+	  Memória unificada
+	  Organização da cache
+	  Características
+
+  7.3.3 Exemplos de Arquiteturas Reais — [V]
+	  Intel x86 (visão geral)
+	  ARM (visão geral)
+	  Comparação geral das abordagens
+
+
+ 7.4 Organizações Arquiteturais Modernas — [I]
+
+  7.4.1 Cache Privada — [I]
+	  Conceito
+	  Organização
+	  Aplicações
+
+  7.4.2 Cache Compartilhada — [I]
+	  Conceito
+	  Organização
+	  Benefícios
+	  Limitações
+
+  7.4.3 Organização Híbrida — [I]
+	  Combinação de caches privadas e compartilhadas
+	  Aplicações em processadores modernos
+
+  7.4.4 Organização para Sistemas Heterogêneos — [V]
+	  CPU + GPU
+	  Aceleradores
+	  Cache compartilhada entre dispositivos
+
+
+
+PARTE 2 — FUNCIONAMENTO, MAPEAMENTO E ORGANIZAÇÃO DA MEMÓRIA CACHE:
+
+
+8. Funcionamento Geral da Memória Cache — [P]
+
+ 8.1 Fluxo de Acesso à Memória — [P]
+
+  8.1.1 Processo Geral — [P]
+	  Solicitação da CPU
+	  Geração do endereço de memória
+	  Consulta à cache
+	  Decisão entre Hit e Miss
+	  Acesso à memória principal
+	  Retorno dos dados ao processador
+
+  8.1.2 Ciclo de Leitura — [P]
+	  Recepção da requisição
+	  Verificação da cache
+	  Comparação das Tags
+	  Recuperação dos dados
+	  Atualização dos estados da linha
+
+  8.1.3 Ciclo de Escrita — [P]
+	  Recepção da escrita
+	  Atualização da linha
+	  Atualização da memória principal
+	  Controle das políticas de escrita
+
+
+ 8.2 Operações Básicas — [P]
+
+  8.2.1 Operação de Leitura — [P]
+	  Consulta da linha
+	  Comparação das informações
+	  Recuperação do bloco
+	  Tempo de resposta
+
+  8.2.2 Operação de Escrita — [P]
+	  Escrita na cache
+	  Escrita na memória
+	  Atualização dos bits de controle
+
+  8.2.3 Atualização da Cache — [P]
+	  Inserção de blocos
+	  Atualização dos estados
+	  Atualização das estatísticas
+	  Liberação de linhas
+
+
+ 8.3 Fluxo entre os Níveis da Cache — [P]
+
+  8.3.1 Comunicação entre L1 e L2 — [P]
+	  Transferência de blocos
+	  Atualização
+	  Hierarquia
+
+  8.3.2 Comunicação entre L2 e L3 — [P]
+	  Consulta
+	  Transferência
+	  Compartilhamento
+
+  8.3.3 Comunicação com a Memória Principal — [P]
+	  Busca de blocos
+	  Escrita
+	  Atualização
+	  Sincronização
+
+  8.3.4 Pipeline de Acesso à Cache — [P]
+	  Estágios do acesso
+	  Busca paralela
+	  Comparação das Tags
+	  Seleção da linha
+	  Retorno dos dados
+  
+  8.3.5 Paralelismo no Acesso — [P]
+	  Acessos simultâneos
+	  Banking
+	  Multiport Cache
+	  Paralelismo interno
+
+
+
+9. Mapeamento da Memória Cache — [P]
+
+ 9.1 Conceitos Fundamentais — [P]
+
+  9.1.1 Objetivos do Mapeamento — [P]
+	  Localização dos blocos
+	  Organização das linhas
+	  Eficiência da busca
+	  Redução dos conflitos
+
+  9.1.2 Organização do Endereçamento — [P]
+	  Tag
+	  Índice
+	  Offset
+	  Conversão do endereço
+
+  9.1.3 Critérios de Escolha — [P]
+	  Velocidade
+	  Complexidade
+	  Custo
+	  Desempenho
+
+
+ 9.2 Mapeamento Direto — [P]
+
+  9.2.1 Conceitos — [P]
+	  Organização
+	  Correspondência fixa
+	  Estrutura
+
+  9.2.2 Funcionamento — [P]
+	  Cálculo da linha
+	  Comparação da Tag
+	  Recuperação dos dados
+
+  9.2.3 Características — [P]
+	  Simplicidade
+	  Baixo custo
+	  Alta velocidade
+	  Limitações
+
+
+ 9.3 Mapeamento Totalmente Associativo — [P]
+
+  9.3.1 Conceitos — [P]
+	  Organização
+	  Correspondência livre
+	  Busca paralela
+
+  9.3.2 Funcionamento — [P]
+	  Comparação das Tags
+	  Seleção da linha
+	  Recuperação do bloco
+
+  9.3.3 Características — [I]
+	  Flexibilidade
+	  Complexidade
+	  Desempenho
+	  Custo
+
+
+ 9.4 Mapeamento Associativo por Conjunto — [P]
+
+  9.4.1 Conceitos — [P]
+	  Organização em conjuntos
+	  Associatividade
+	  Vias
+
+  9.4.2 Funcionamento — [P]
+	  Seleção do conjunto
+	  Comparação das Tags
+	  Escolha da via
+
+  9.4.3 Características — [P]
+	  Flexibilidade
+	  Desempenho
+	  Escalabilidade
+
+
+ 9.5 Grau de Associatividade — [P]
+
+  9.5.1 Associatividade — [P]
+	  Conceito
+	  Objetivos
+	  Influência no desempenho
+
+  9.5.2 Tipos de Associatividade — [P]
+	  Direct-Mapped (1-Way)
+	  2-Way Set Associative
+	  4-Way Set Associative
+	  8-Way Set Associative
+	  16-Way Set Associative
+	  Alta associatividade
+
+  9.5.3 Comparação entre os Métodos — [P]
+	  Facilidade de implementação
+	  Taxa de acertos
+	  Taxa de conflitos
+	  Complexidade do hardware
+
+
+ 9.6 Organização Arquitetural do Endereçamento — [P]
+
+  9.6.1 Cache Fisicamente Indexada — [P]
+	  PIPT (Physically Indexed Physically Tagged)
+	  Funcionamento
+	  Características
+
+  9.6.2 Cache Virtualmente Indexada — [P]
+	  VIPT (Virtually Indexed Physically Tagged)
+	  Funcionamento
+	  Benefícios
+
+  9.6.3 Cache Virtualmente Endereçada — [I]
+	  VIVT (Virtually Indexed Virtually Tagged)
+	  Funcionamento
+	  Problemas
+	  Aplicações
+
+
+
+10. Cache Hit e Cache Miss — [P]
+
+ 10.1 Cache Hit — [P]
+
+  10.1.1 Conceitos — [P]
+	  Definição
+	  Identificação
+	  Importância
+
+  10.1.2 Funcionamento — [P]
+	  Comparação da Tag
+	  Linha válida
+	  Recuperação dos dados
+
+  10.1.3 Consequências — [P]
+	  Baixa latência
+	  Alto desempenho
+	  Continuidade da execução
+
+
+ 10.2 Cache Miss — [P]
+
+  10.2.1 Conceitos — [P]
+	  Definição
+	  Identificação
+	  Necessidade de acesso à RAM
+
+  10.2.2 Funcionamento — [P]
+	  Busca na memória principal
+	  Transferência do bloco
+	  Atualização da cache
+
+  10.2.3 Consequências — [P]
+	  Aumento da latência
+	  Penalidade de acesso
+	  Atualização das estatísticas
+
+
+ 10.3 Métricas de Desempenho — [P]
+
+  10.3.1 Hit Rate — [P]
+	  Conceito
+	  Cálculo
+	  Interpretação
+
+  10.3.2 Miss Rate — [P]
+	  Conceito
+	  Relação com Hit Rate
+	  Interpretação
+
+  10.3.3 Miss Penalty — [P]
+	  Conceito
+	  Tempo adicional
+	  Influência no desempenho
+
+
+ 10.4 Average Memory Access Time (AMAT) — [P]
+
+  10.4.1 Conceitos — [P]
+	  Definição
+	  Objetivos
+	  Importância
+
+  10.4.2 Componentes — [P]
+	  Hit Time
+	  Miss Rate
+	  Miss Penalty
+
+  10.4.3 Utilização — [P]
+	  Comparação de arquiteturas
+	  Avaliação do desempenho
+	  Otimização da cache
+
+
+ 10.5 Métricas Arquiteturais — [I]
+
+  10.5.1 IPC — [I]
+	  Relação com a cache
+	  Gargalos
+
+  10.5.2 MPKI — [I]
+	  Misses por mil instruções
+	  Interpretação
+
+  10.5.3 Stall Cycles — [I]
+	  Ciclos de espera
+	  Impacto dos misses
+
+  10.5.4 Memory Level Parallelism (MLP) — [P]
+	  Paralelismo de acessos
+	  Aproveitamento da cache
+
+
+
+11. Tipos de Cache Miss — [P]
+
+ 11.1 Miss Compulsório — [P]
+
+  11.1.1 Conceitos — [P]
+	  Primeiro acesso
+	  Bloco inexistente
+	  Inicialização da cache
+
+  11.1.2 Características — [I]
+	  Ocorrência inevitável
+	  Relação com o programa
+
+  11.1.3 Técnicas de Redução — [I]
+	  Prefetch
+	  Inicialização antecipada
+
+
+ 11.2 Miss por Capacidade — [P]
+
+  11.2.1 Conceitos — [P]
+	  Limitação da capacidade
+	  Working Set
+
+  11.2.2 Características — [P]
+	  Saturação
+	  Substituições constantes
+
+  11.2.3 Soluções — [I]
+	  Maior capacidade
+	  Melhor organização
+
+
+ 11.3 Miss por Conflito — [P]
+
+  11.3.1 Conceitos — [P]
+	  Colisão entre blocos
+	  Disputa por linhas
+
+  11.3.2 Características — [P]
+	  Dependência do mapeamento
+	  Influência da associatividade
+
+  11.3.3 Soluções — [P]
+	  Associatividade
+	  Melhor algoritmo de substituição
+
+
+ 11.4 Miss por Coerência — [P]
+
+  11.4.1 Conceitos — [P]
+	  Atualizações em múltiplos núcleos
+	  Compartilhamento
+
+  11.4.2 Características — [P]
+	  Invalidação
+	  Sincronização
+
+  11.4.3 Consequências — [P]
+	  Penalidade de acesso
+	  Impacto no desempenho
+
+
+ 11.5 Misses Arquiteturais — [I]
+
+  11.5.1 Miss por Compartilhamento — [I]
+	  Compartilhamento excessivo
+	  Comunicação entre núcleos
+
+  11.5.2 Miss por Migração — [V]
+	  Migração de processos
+	  Mudança de núcleo
+
+  11.5.3 Misses em Virtualização — [V]
+	  Mudança de contexto
+	  Máquinas virtuais
+
+
+
+12. Políticas de Substituição — [P]
+
+ 12.1 Fundamentos — [P]
+
+  12.1.1 Objetivos — [P]
+	  Seleção da linha
+	  Aproveitamento da cache
+	  Redução dos misses
+
+  12.1.2 Critérios — [P]
+	  Frequência de uso
+	  Tempo de uso
+	  Complexidade
+
+  12.1.3 Processo Geral — [P]
+	  Escolha
+	  Remoção
+	  Inserção
+
+
+ 12.2 Algoritmos Clássicos — [P]
+
+  12.2.1 FIFO — [I]
+	  Conceito
+	  Funcionamento
+ 	  Aplicações
+
+  12.2.2 LRU — [P]
+	  Conceito
+	  Funcionamento
+	  Aplicações
+
+  12.2.3 LFU — [I]
+	  Conceito
+	  Funcionamento
+	  Aplicações
+
+  12.2.4 Random — [I]
+	  Conceito
+	  Funcionamento
+	  Aplicações
+
+
+ 12.3 Algoritmos Modernos — [P]
+
+  12.3.1 Pseudo-LRU (PLRU) — [P]
+	  Conceito
+	  Funcionamento
+	  Aplicações
+
+  12.3.2 Re-Reference Interval Prediction (RRIP) — [P]
+	  Conceito
+	  Funcionamento
+	  Objetivos
+
+  12.3.3 Dynamic Insertion Policy (DIP) — [P]
+	  Conceito
+	  Funcionamento
+	  Benefícios
+
+  12.3.4 Bimodal Insertion Policy (BIP) — [P]
+	  Conceito
+	  Funcionamento
+	 Aplicações
+
+
+ 12.4 Comparação entre Algoritmos — [I]
+
+  12.4.1 Critérios — [I]
+ 	  Complexidade
+	  Hardware
+	  Eficiência
+	  Desempenho
+
+  12.4.2 Vantagens — [I]
+	  Algoritmos clássicos
+	  Algoritmos modernos
+
+  12.4.3 Limitações — [I]
+	  Sobrecarga
+	  Escalabilidade
+	  Custos
+
+
+ 12.5 Políticas Arquiteturais Modernas — [I]
+
+  12.5.1 Adaptive Replacement — [I]
+	  Ajuste dinâmico
+	  Adaptação ao workload
+
+  12.5.2 Machine Learning Replacement — [V]
+	  Predição baseada em histórico
+	  Tendências atuais
+
+  12.5.3 QoS-Aware Replacement — [I]
+	  Compartilhamento
+	  Priorização
+
+
+
+13. Políticas de Escrita — [P]
+
+ 13.1 Fundamentos — [P]
+
+  13.1.1 Objetivos — [P]
+	  Atualização dos dados
+	  Consistência
+	  Desempenho
+
+  13.1.2 Processo Geral — [P]
+	  Escrita na cache
+	  Escrita na RAM
+	  Controle do Dirty Bit
+
+  13.1.3 Critérios de Escolha — [P]
+	  Desempenho
+	  Consistência
+	  Tráfego do barramento
+
+
+ 13.2 Principais Políticas — [P]
+
+  13.2.1 Write Through — [P]
+	  Conceito
+	  Funcionamento
+	  Vantagens
+	  Limitações
+
+  13.2.2 Write Back — [P]
+	  Conceito
+	  Funcionamento
+	  Dirty Bit
+	  Vantagens
+	  Limitações
+
+ 
+ 13.3 Políticas de Alocação — [P]
+
+  13.3.1 Write Allocate — [P]
+	  Conceito
+	  Funcionamento
+	  Aplicações
+
+  13.3.2 No Write Allocate — [P]
+	  Conceito
+	  Funcionamento
+	  Aplicações
+
+  13.3.3 Combinações das Políticas — [P]
+	  Write Through + No Write Allocate
+	  Write Through + Write Allocate
+	  Write Back + Write Allocate
+	  Comparação das combinações
+
+
+ 13.4 Write Combining — [I]
+
+  13.4.1 Conceitos — [I]
+	  Definição
+	  Objetivos
+	  Funcionamento
+
+  13.4.2 Benefícios — [I]
+	  Redução do tráfego
+	  Melhor aproveitamento do barramento
+	  Desempenho
+
+  13.4.3 Limitações — [I]
+	  Complexidade
+	  Dependência da arquitetura
+	  Aplicações
+
+
+ 13.5 Buffers de Escrita — [P]
+
+  13.5.1 Write Buffer — [P]
+	  Conceito
+	  Organização
+	  Funcionamento
+
+  13.5.2 Store Buffer — [P]
+	  Conceito
+	  Escritas pendentes
+	  Integração com a cache
+
+  13.5.3 Write Queue — [I]
+	  Organização
+	  Fluxo de escrita
+
+
+ 13.6 Ordenação das Escritas — [P]
+
+  13.6.1 Memory Ordering — [P]
+	  Ordem das escritas
+	  Dependências
+
+  13.6.2 Memory Fence — [P]
+	  Conceito
+	  Funcionamento
+
+  13.6.3 Relação com a Cache — [P]
+	  Sincronização
+	  Visibilidade dos dados
+
+
+
+14. Organização entre os Níveis da Cache — [P]
+
+ 14.1 Cache Inclusiva — [P]
+
+  14.1.1 Conceitos — [P]
+	  Definição
+	  Funcionamento
+	  Objetivos
+
+  14.1.2 Princípio da Inclusão — [P]
+	  Relação entre L1, L2 e L3
+	  Propagação dos blocos
+	  Consistência
+
+  14.1.3 Vantagens e Limitações — [I]
+	  Benefícios
+	  Desvantagens
+	  Aplicações
+
+
+ 14.2 Cache Exclusiva — [P]
+
+  14.2.1 Conceitos — [P]
+	  Definição
+	  Organização
+	  Funcionamento
+
+  14.2.2 Características — [P]
+	  Aproveitamento da capacidade
+	  Transferência entre níveis
+	  Desempenho
+
+  14.2.3 Comparação — [P]
+	  Inclusiva × Exclusiva
+	  Eficiência
+	  Complexidade
+
+
+ 14.3 Non-Inclusive Non-Exclusive (NINE) — [P]
+
+  14.3.1 Conceitos — [P]
+	  Definição
+	  Organização
+	  Objetivos
+
+  14.3.2 Funcionamento — [P]
+	  Compartilhamento entre níveis
+	  Gerenciamento dos blocos
+	  Flexibilidade
+
+  14.3.3 Comparação Geral — [P]
+	  Inclusiva
+	  Exclusiva
+	  NINE
+	  Critérios de utilização
+
+
+ 14.4 Compartilhamento entre Níveis — [P]
+
+  14.4.1 Transferência de Blocos — [P]
+	  Promoção
+	  Demoção
+	  Migração
+
+  14.4.2 Duplicação de Dados — [I]
+	  Réplicas
+	  Consumo de capacidade
+
+  14.4.3 Eficiência — [P]
+	  Latência
+	  Tráfego interno
+
+ 
+ 14.5 Organização em Arquiteturas Modernas — [I]
+
+  14.5.1 Last Level Cache — [I]
+	  Compartilhamento
+	  Escalabilidade
+
+  14.5.2 NUCA — [P]
+	  Non-Uniform Cache Access
+	  Latência variável
+
+  14.5.3 Chiplets — [I]
+	  Organização distribuída
+	  Cache compartilhada
+
+
+
+15. Problemas da Memória Cache — [P]
+
+ 15.1 Thrashing (Cache Thrashing) — [P]
+
+  15.1.1 Conceitos — [P]
+	  Definição
+	  Causas
+	  Relação com o mapeamento direto
+
+  15.1.2 Funcionamento — [P]
+	  Expulsões repetitivas
+	  Disputa pela mesma linha
+	  Queda de desempenho
+
+  15.1.3 Técnicas de Redução — [P]
+	  Maior associatividade
+	  Melhor política de substituição
+	  Reorganização dos dados
+
+
+ 15.2 Cache Pollution — [P]
+
+  15.2.1 Conceitos — [P]
+	  Definição
+	  Inserção de dados pouco úteis
+	  Redução da eficiência
+
+  15.2.2 Causas — [P]
+	  Acessos sequenciais extensos
+	  Prefetch inadequado
+	  Políticas de substituição
+
+  15.2.3 Mitigações — [P]
+	  Melhor gerenciamento
+	  Algoritmos adaptativos
+	  Ajuste das políticas
+
+ 
+ 15.3 False Sharing e Ping-Pong Effect — [P]
+
+  15.3.1 False Sharing — [P]
+	  Conceito
+	  Causas
+	  Consequências
+
+  15.3.2 Ping-Pong Effect — [P]
+	  Conceito
+	  Atualizações constantes
+	  Compartilhamento excessivo
+
+  15.3.3 Impacto no Desempenho — [P]
+	  Aumento do tráfego
+	  Redução da escalabilidade
+	  Penalidades de sincronização
+
+
+ 15.4 Gargalos Arquiteturais — [I]
+
+  15.4.1 Hot Spots — [I]
+	  Regiões muito acessadas
+	  Saturação
+
+  15.4.2 Congestionamento — [I]
+	  Tráfego entre níveis
+	  Contenção
+	 
+  15.4.3 Balanceamento — [I]
+	  Distribuição de acessos
+	  Otimização
+
+
+ 15.5 Problemas em Arquiteturas Multicore — [P]
+
+  15.5.1 Contenção — [P]
+	  Disputa pela LLC
+	  Compartilhamento
+
+  15.5.2 Interferência entre Aplicações — [P]
+	  Cache Interference
+	  QoS
+
+  15.5.3 Escalabilidade — [P]
+	  Crescimento do número de núcleos
+	  Limitações arquiteturais
+
+
+
+PARTE 3 — OTIMIZAÇÕES, COERÊNCIA E INTEGRAÇÃO DA MEMÓRIA CACHE:
+
+
+16. Técnicas de Busca Antecipada (Prefetching) — [P]
+
+ 16.1 Fundamentos do Prefetching — [P]
+
+  16.1.1 Conceitos — [P]
+	  Definição de Prefetching
+	  Objetivos
+	  Funcionamento geral
+	  Relação com o princípio da localidade
+
+  16.1.2 Benefícios — [I]
+	  Redução de Cache Miss
+	  Redução da latência
+	  Aumento do desempenho
+	  Melhor aproveitamento da memória
+
+  16.1.3 Limitações — [I]
+	  Consumo de largura de banda
+	  Cache Pollution
+	  Consumo de energia
+	  Eficiência dependente da carga de trabalho
+
+
+ 16.2 Tipos de Prefetching — [P]
+
+  16.2.1 Hardware Prefetch — [P]
+	  Conceito
+	  Funcionamento
+	  Vantagens
+	  Aplicações
+
+  16.2.2 Software Prefetch — [P]
+	  Conceito
+	  Instruções de prefetch
+	  Funcionamento
+	  Aplicações
+
+  16.2.3 Instruction Prefetch — [P]
+	  Busca antecipada de instruções
+	  Pipeline
+	  Fluxo de execução
+	  Desempenho
+
+  16.2.4 Data Prefetch — [P]
+ 	  Busca antecipada de dados
+	  Localidade espacial
+	  Localidade temporal
+	  Eficiência
+
+
+ 16.3 Prefetch Adaptativo — [P]
+
+  16.3.1 Prefetch Adaptativo — [P]
+	  Ajuste dinâmico
+	  Dependência da carga de trabalho
+	  Eficiência
+
+  16.3.2 Predição de Acessos — [P]
+	  Padrões de acesso
+	  Localidade
+	  Preditores
+
+  16.3.3 Limitações — [P]
+	  Cache Pollution
+	  Consumo de energia
+	  Tráfego adicional
+
+
+
+17. Técnicas Clássicas de Otimização — [P]
+
+ 17.1 Critical Word First — [P]
+
+  17.1.1 Conceitos — [P]
+	  Definição
+	  Objetivos
+	  Funcionamento
+
+  17.1.2 Processo — [P]
+ 	  Palavra crítica
+	  Transferência parcial
+	  Continuação da execução
+
+  17.1.3 Benefícios — [I]
+	  Redução da latência
+	  Melhor resposta ao processador
+	  Aplicações
+
+
+ 17.2 Early Restart — [P]
+
+  17.2.1 Conceitos — [P]
+	  Definição
+	  Objetivos
+	  Funcionamento
+
+  17.2.2 Processo — [P]
+	  Recepção parcial do bloco
+	  Reinício antecipado da execução
+	  Transferência restante
+
+  17.2.3 Comparação — [P]
+	  Early Restart
+	  Critical Word First
+	  Semelhanças
+	  Diferenças
+
+
+ 17.3 Buffers Auxiliares — [P]
+
+  17.3.1 Victim Cache — [P]
+	  Conceito
+	  Funcionamento
+	  Redução de misses por conflito
+
+  17.3.2 Write Buffer — [P]
+	  Conceito
+	  Funcionamento
+	  Redução da latência de escrita
+
+  17.3.3 Stream Buffer — [P]
+	  Conceito
+	  Funcionamento
+	  Relação com Prefetching
+
+
+ 17.4 Otimizações de Latência — [P]
+
+  17.4.1 Miss Under Miss — [P]
+	  Conceito
+	  Funcionamento
+
+  17.4.2 Hit Under Miss — [P]
+	 Conceito
+	 Funcionamento
+
+  17.4.3 MSHR (Miss Status Holding Register) — [P]
+	  Conceito
+	  Organização
+	  Controle de múltiplos misses
+
+
+
+18. Técnicas Modernas de Otimização — [P]
+
+ 18.1 Otimizações Arquiteturais — [P]
+
+  18.1.1 Way Prediction — [P]
+	  Conceito
+	  Funcionamento
+	  Benefícios
+	  Limitações
+
+  18.1.2 Cache Locking — [I]
+	  Conceito
+	  Funcionamento
+	  Aplicações em sistemas embarcados
+	  Benefícios
+
+  18.1.3 Cache Compression — [I]
+	  Conceito
+	  Funcionamento
+	  Vantagens
+	  Limitações
+
+ 
+ 18.2 Organizações Especiais — [P]
+
+  18.2.1 Sectored Cache — [I]
+	  Conceito
+	  Organização
+	  Benefícios
+	  Aplicações
+
+  18.2.2 Trace Cache — [I]
+	  Conceito
+	  Organização
+	  Execução de instruções
+	  Aplicações
+
+  18.2.3 Cache Banking — [P]
+	  Conceito
+	  Organização
+	  Paralelismo
+	  Desempenho
+
+
+ 18.3 Técnicas Avançadas — [P]
+
+  18.3.1 Cache Não Bloqueante (Non-Blocking Cache) — [P]
+	  Conceito
+	  Funcionamento
+	  Múltiplos acessos simultâneos
+	  Benefícios
+
+  18.3.2 Last Level Cache (LLC) — [I]
+	  Organização
+	  Compartilhamento
+	  Escalabilidade
+	  Otimizações
+
+  18.3.3 Non-Uniform Cache Architecture (NUCA) — [P]
+	  Conceito
+	  Organização
+	  Latência variável
+	  Aplicações
+
+
+ 18.4 Técnicas Adaptativas — [I]
+
+  18.4.1 Dynamic Cache Reconfiguration — [I]
+	  Ajuste dinâmico
+	  Reconfiguração
+
+  18.4.2 Way Shutdown — [I]
+	  Desligamento de vias
+	  Economia de energia
+
+  18.4.3 Drowsy Cache — [I]
+	  Redução de consumo
+	  Modos de baixo consumo
+
+
+ 18.5 Cache para Workloads Específicos — [V]
+
+  18.5.1 Aplicações Científicas — [V]
+	  HPC
+	  Grandes matrizes
+	  Localidade
+
+  18.5.2 Bancos de Dados — [V]
+	  Acessos intensivos
+	  Organização
+
+  18.5.3 Inteligência Artificial — [I]
+	  Inferência
+	  Treinamento
+	  Grandes modelos
+
+
+
+19. Coerência da Memória Cache — [P]
+
+ 19.1 Fundamentos — [P]
+
+  19.1.1 Conceitos — [P]
+	  Definição de coerência
+	  Compartilhamento de dados
+	  Consistência
+	  Sincronização
+
+  19.1.2 Problemas de Coerência — [P]
+	  Atualizações concorrentes
+	  Dados inconsistentes
+	  Compartilhamento entre núcleos
+
+  19.1.3 Objetivos — [I]
+	  Integridade dos dados
+	  Consistência
+	  Desempenho
+	  Escalabilidade
+
+
+ 19.2 Coerência em Sistemas Multinúcleo — [P]
+
+  19.2.1 Compartilhamento — [P]
+	  Compartilhamento entre núcleos
+	  Cache privada
+	  Cache compartilhada
+	  Comunicação
+
+  19.2.2 Sincronização — [P]
+	  Atualização das linhas
+	  Invalidação
+	  Propagação das modificações
+
+  19.2.3 Problemas — [P]
+	  False Sharing
+	  Ping-Pong Effect
+	  Escritas concorrentes
+	  Impacto no desempenho
+
+
+ 19.3 Protocolos de Coerência — [P]
+
+  19.3.1 MSI — [P]
+	  Estados
+	  Funcionamento
+	  Aplicações
+
+  19.3.2 MESI — [P]
+	  Modified
+	  Exclusive
+	  Shared
+	  Invalid
+
+  19.3.3 MOESI — [P]
+	  Estados
+	  Funcionamento
+	  Compartilhamento
+	  Benefícios
+
+  19.3.4 Outros Protocolos — [I]
+	  MESIF
+	  Dragon
+	  Visão geral das aplicações
+
+ 
+ 19.4 Métodos de Implementação — [P]
+
+  19.4.1 Snooping — [P]
+	  Conceito
+	  Monitoramento do barramento
+	  Funcionamento
+	  Escalabilidade
+
+  19.4.2 Directory-Based — [P]
+	  Conceito
+	  Diretórios
+	  Controle
+	  Escalabilidade
+
+  19.4.3 Comparação — [P]
+	  Vantagens
+	  Limitações
+	  Aplicações
+ 	  Desempenho
+
+
+ 19.5 Modelos de Consistência de Memória — [P]
+
+  19.5.1 Conceitos — [P]
+	  Diferença entre coerência e consistência
+	  Ordem das operações
+	  Visibilidade das escritas
+
+  19.5.2 Principais Modelos — [P]
+	  Sequential Consistency
+	  Total Store Order (TSO)
+	  Weak Consistency
+	  Release Consistency
+	  Relaxed Memory Models
+
+  19.5.3 Sincronização — [P]
+	  Memory Barrier
+	  Memory Fence
+	  Ordem das escritas
+	  Relação com a cache
+
+
+ 19.6 Escalabilidade da Coerência — [P]
+
+  19.6.1 Sistemas Many-Core — [P]
+	  Limitações
+	  Escalabilidade
+
+  19.6.2 Snoop Filters — [P]
+	  Conceito
+	  Funcionamento
+
+  19.6.3 Diretórios Hierárquicos — [P]
+	  Organização
+	  Escalabilidade
+
+
+
+20. Cache e Memória Virtual — [P]
+
+ 20.1 Integração entre Cache e Memória Virtual — [P]
+
+  20.1.1 Conceitos — [P]
+	  Endereços virtuais
+	  Endereços físicos
+	  Tradução
+	  Fluxo de acesso
+
+  20.1.2 Componentes — [P]
+	  MMU
+	  TLB
+	  Cache
+	  Memória principal
+
+  20.1.3 Objetivos — [I]
+	  Transparência
+	  Eficiência
+	  Desempenho
+	  Organização
+
+
+ 20.2 Translation Lookaside Buffer (TLB) — [P]
+
+  20.2.1 Conceitos — [P]
+	  Definição
+	  Organização
+	  Objetivos
+	  Papel na memória virtual
+
+  20.2.2 Funcionamento — [P]
+	  TLB Hit
+	  TLB Miss
+	  Tradução de endereços
+	  Atualização
+
+  20.2.3 Relação entre TLB e Cache — [P]
+	  Ordem de acesso
+	  Integração
+	  Impacto no desempenho
+
+
+ 20.3 Organização da Cache quanto ao Endereçamento — [P]
+
+  20.3.1 VIPT (Virtually Indexed Physically Tagged) — [P]
+	  Conceito
+	  Funcionamento
+	  Vantagens
+	  Aplicações
+
+  20.3.2 PIPT (Physically Indexed Physically Tagged) — [P]
+	  Conceito
+	  Funcionamento
+	  Benefícios
+	  Aplicações
+
+  20.3.3 VIVT (Virtually Indexed Virtually Tagged) — [I]
+	  Conceito
+	  Funcionamento
+	  Benefícios
+	  Limitações
+
+
+ 20.4 Problemas Relacionados ao Endereçamento — [P]
+
+  20.4.1 Cache Alias — [P]
+	  Conceito
+	  Causas
+	  Consequências
+
+  20.4.2 Synonyms — [P]
+	  Conceito
+	  Funcionamento
+	  Impacto
+
+  20.4.3 False Aliasing — [I]
+	  Conceito
+	  Causas
+	  Soluções
+
+  20.4.4 Cache Coloring — [P]
+	  Conceito
+	  Objetivos
+	  Funcionamento
+	  Benefícios
+
+
+ 20.5 Virtualização e Cache — [I]
+
+  20.5.1 Virtualização — [I]
+	  Hypervisor
+	  Máquinas Virtuais
+	  Compartilhamento
+
+  20.5.2 ASID e PCID — [P]
+	  Conceitos
+	  Funcionamento
+	  Benefícios
+
+  20.5.3 Nested Paging — [I]
+	  Tradução
+	  Impacto na cache
+
+ 
+ 20.6 Cache e Sistemas Operacionais — [P]
+
+  20.6.1 Context Switch — [P]
+	  Troca de contexto
+	  Flush
+
+  20.6.2 Afinidade — [I]
+	  CPU Affinity
+	  Localidade
+
+  20.6.3 Gerenciamento — [P]
+	  Migração de páginas
+	  Page Coloring
+	  TLB Shootdown
+
+
+
+21. Segurança da Memória Cache — [I]
+
+ 21.1 Fundamentos — [I]
+
+  21.1.1 Conceitos — [I]
+	  Segurança da cache
+	  Compartilhamento de recursos
+	  Canais laterais
+
+  21.1.2 Vulnerabilidades — [I]
+	  Vazamento de informações
+	  Tempo de acesso
+	  Compartilhamento da cache
+
+  21.1.3 Objetivos — [V]
+	  Confidencialidade
+	  Integridade
+	  Confiabilidade
+
+
+ 21.2 Ataques Baseados em Cache — [I]
+
+  21.2.1 Cache Timing — [I]
+	  Conceito
+	  Funcionamento
+	  Exploração
+
+  21.2.2 Side Channel Attacks — [I]
+	  Conceito
+	  Tipos
+	  Mitigações
+
+  21.2.3 Vulnerabilidades Arquiteturais — [P]
+	  Spectre
+	  Meltdown
+	  Relação com a memória cache
+
+
+ 21.3 Técnicas de Proteção — [I]
+
+  21.3.1 Soluções por Hardware — [I]
+	  Isolamento
+	  Alterações arquiteturais
+	  Proteções
+
+  21.3.2 Soluções por Software — [I]
+	  Atualizações
+	  Sistemas operacionais
+	  Compiladores
+ 
+  21.3.3 Boas Práticas — [V]
+	  Monitoramento
+	  Atualizações
+	  Gerenciamento da segurança
+
+
+ 21.4 Cache e Execução Especulativa — [P]
+
+  21.4.1 Execução Especulativa — [P]
+	  Conceito
+	  Predição
+	  Rollback
+
+  21.4.2 Relação com a Cache — [P]
+	  Speculative Loads
+	  Speculative Stores
+	  Atualização temporária
+
+  21.4.3 Relação com Spectre — [P]
+	  Estado microarquitetural
+	  Vazamento
+	  Mitigações
+
+
+ 21.5 Cache e Execução Fora de Ordem — [P]
+
+  21.5.1 Out-of-Order Execution — [P]
+	  Conceitos
+	  Paralelismo
+
+  21.5.2 Estruturas Relacionadas — [P]
+	  Load Queue
+	  Store Queue
+	  Store Buffer
+
+  21.5.3 Relação com a Cache — [P]
+	  Dependências
+	  Encaminhamento
+	  Ordenação
+
+
+
+PARTE 4 — APLICAÇÕES, PROJETO E CONSOLIDAÇÃO DA MEMÓRIA CACHE:
+
+
+22. Memória Cache em Arquiteturas Reais  — [I]
+
+ 22.1 Implementações Comerciais — [I]
+
+  22.1.1 Arquiteturas Intel x86 — [I]
+	  Organização geral da cache
+	  Hierarquia L1, L2 e L3
+	  Cache privada e compartilhada
+	  Características gerais
+
+  22.1.2 Arquiteturas AMD — [I]
+	  Organização da cache
+	  Hierarquia multinível
+	  Compartilhamento entre núcleos
+	  Características gerais
+
+  22.1.3 Arquiteturas ARM — [I]
+	  Cache para dispositivos móveis
+	  Organização da I-Cache e D-Cache
+	  Eficiência energética
+	  Características gerais
+
+
+ 22.2 Outras Arquiteturas — [V]
+	
+  22.2.1 RISC-V — [I]
+	  Organização geral
+	  Hierarquia
+	  Flexibilidade de implementação
+	  Aplicações
+
+  22.2.2 GPUs — [I]
+	  Organização da cache
+	  Cache para processamento paralelo
+	  Particularidades
+	  Aplicações
+
+  22.2.3 Apple Silicon — [I]
+	  Organização da cache
+	  Eficiência energética
+	  Unified Memory
+	  Compartilhamento
+
+  22.2.4 IBM POWER — [V]
+	  Organização da cache
+	  Grandes servidores
+	  HPC
+
+  22.2.5 Sistemas Clássicos — [V]
+	  Organização da memória
+	  Cache em arquiteturas simples
+	  Comparação com arquiteturas modernas
+
+
+ 22.3 Comparação entre Arquiteturas — [I]
+
+  22.3.1 Organização — [I]
+	  Intel
+	  AMD
+	  ARM
+	  RISC-V
+  	  Apple Silicon
+	  IBM POWER
+
+  22.3.2 Estratégias — [I]
+	  Hierarquia
+	  Compartilhamento
+	  Eficiência energética
+	  Desempenho
+
+  22.3.3 Tendências — [V]
+	  Evolução das arquiteturas
+	  Novas tecnologias
+	  Escalabilidade
+	  Integração
+
+  22.3.4 Comparação Arquitetural — [I]
+  	  Intel × AMD
+	  ARM × RISC-V
+	  POWER
+	  Apple Silicon
+	  Estratégias de projeto da cache
+
+
+
+23. Cache em Arquiteturas Modernas — [I]
+
+ 23.1 Arquiteturas Heterogêneas — [I]
+
+  23.1.1 CPU + GPU — [I]
+	  Compartilhamento da cache
+	  Memória unificada
+	  Comunicação
+
+  23.1.2 NPUs — [I]
+	  Organização da cache
+	  IA
+
+  23.1.3 TPUs — [I]
+	  Cache especializada
+	  Processamento matricial
+
+
+ 23.2 Sistemas Many-Core — [P]
+
+  23.2.1 Escalabilidade — [P]
+	  Grande número de núcleos
+	  Compartilhamento
+
+  23.2.2 Cache Distribuída — [P]
+	  Organização
+	  Comunicação
+
+  23.2.3 NoC (Network-on-Chip) — [P]
+	  Comunicação
+	  Escalabilidade
+
+ 
+ 23.3 Novas Interconexões — [P]
+
+  23.3.1 Ring Bus — [I]
+	  Organização
+	  Comunicação
+
+  23.3.2 Mesh — [P]
+	  Organização
+	  Latência
+
+  23.3.3 Chiplets — [P]
+	  Cache distribuída
+	  Comunicação
+	  Escalabilidade
+
+
+ 23.4 Cache e Dispositivos de Entrada/Saída — [P]
+
+  23.4.1 DMA — [P]
+	  Conceito
+	  Funcionamento
+	  Relação com a cache
+
+  23.4.2 Cache Coherent DMA — [P]
+	  Coerência
+	  Compartilhamento
+
+  23.4.3 I/O Coherency — [P]
+	  CPU
+	  GPU
+	  Dispositivos
+
+  23.4.4 CXL.cache — [P]
+	  Conceito
+	  Aplicações
+	  Compartilhamento de memória
+
+
+
+24. Cache em Sistemas Especiais — [I]
+
+ 24.1 Computação de Alto Desempenho — [I]
+
+  24.1.1 HPC (High Performance Computing) — [I]
+	  Hierarquias complexas
+	  Paralelismo
+	  Grande volume de dados
+	  Desempenho
+
+  24.1.2 NUMA (Non-Uniform Memory Access) — [P]
+	  Conceito
+	  Organização
+	  Relação com a cache
+	  Impacto no desempenho
+
+  24.1.3 Servidores — [I]
+	  Grandes caches compartilhadas
+	  Escalabilidade
+	  Alto desempenho
+	  Aplicações
+
+  24.1.4 Supercomputadores — [I]
+	  Hierarquias complexas
+	  Cache distribuída
+	  Escalabilidade
+
+
+ 24.2 Sistemas Embarcados — [I]
+
+  24.2.1 Microcontroladores — [V]
+	  Organização da cache
+	  Limitações
+	  Aplicações
+
+  24.2.2 Sistemas de Tempo Real — [P]
+	  Determinismo
+	  Cache Locking
+	  Previsibilidade
+	  Desempenho
+
+  24.2.3 Dispositivos Móveis — [I]
+ 	  Eficiência energética
+	  Arquiteturas ARM
+ 	  Organização da cache
+	  Otimizações
+
+  24.2.4 Sistemas Automotivos — [I]
+	  Tempo real
+	  Cache determinística
+
+
+ 24.3 Inteligência Artificial e Processamento Gráfico — [I]
+
+  24.3.1 Inteligência Artificial — [I]
+	  Aceleração de inferência
+	  Processamento matricial
+	  Reutilização de dados
+	  Desempenho
+
+  24.3.2 GPUs — [I]
+	  Hierarquia de memória
+	  Cache especializada
+	  Processamento paralelo
+	  Eficiência
+
+  24.3.3 Computação Científica — [V]
+	  Simulações
+	  Modelagem
+	  Processamento intensivo
+	  HPC
+
+  24.3.4 Grandes Modelos de IA — [I]
+	  Inferência
+	  Reutilização
+	  Localidade
+	  Eficiência
+
+
+
+25. Projeto da Memória Cache — [P]
+
+ 25.1 Critérios de Projeto — [P]
+
+  24.1.1 Capacidade — [P]
+	  Dimensionamento
+	  Custo
+	  Desempenho
+	  Limitações
+
+  25.1.2 Latência — [P]
+	  Tempo de acesso
+	  Influência no desempenho
+	  Balanceamento
+
+  25.1.3 Consumo de Energia — [I]
+	  Eficiência energética
+	  Dissipação térmica
+	  Custos
+	  Vida útil
+
+
+ 25.2 Decisões Arquiteturais — [P]
+
+  25.2.1 Tamanho da Linha (Cache Line Size) — [P]
+	  Critérios de escolha
+	  Impacto na localidade
+	  Relação com Miss Rate
+
+  25.2.2 Grau de Associatividade — [P]
+	  Escolha da associatividade
+	  Impacto no desempenho
+	  Complexidade do hardware
+
+  25.2.3 Capacidade dos Níveis — [P]
+	  L1
+	  L2
+	  L3
+	  LLC
+	  Balanceamento
+
+
+ 25.3 Componentes do Projeto — [P]
+
+  25.3.1 Algoritmos — [P]
+	  Mapeamento
+	  Substituição
+	  Escrita
+	  Coerência
+
+  25.3.2 Organização Física — [P]
+	  Estrutura
+	  Controladores
+	  Comunicação
+	  Barramentos
+
+  25.3.3 Objetivos — [I]
+	  Alto desempenho
+	  Baixa latência
+	  Escalabilidade
+	  Eficiência energética
+
+
+ 25.4 Metodologias de Projeto — [I]
+
+  25.4.1 Modelagem — [I]
+	  Simulação
+	  Estimativas
+
+  25.4.2 Avaliação — [I]
+	  Benchmarks
+	  Workloads
+
+  25.4.3 Ferramentas — [V]
+	  Simuladores
+	  Medições
+
+
+
+26. Trade-offs Arquiteturais — [P]
+
+ 26.1 Compromissos de Projeto — [P]
+
+  26.1.1 Velocidade × Capacidade — [P]
+	  Maior capacidade
+	  Maior latência
+	  Balanceamento
+
+  26.1.2 Desempenho × Custo — [P]
+	  Área de silício
+	  Complexidade
+	  Custo-benefício
+
+  26.1.3 Energia × Desempenho — [P]
+	  Consumo
+	  Eficiência
+	  Dissipação térmica
+
+
+ 26.2 Trade-offs da Organização — [P]
+
+  26.2.1 Associatividade — [P]
+	  Associatividade elevada
+	  Custo adicional
+	  Redução de conflitos
+
+  26.2.2 Cache Line Size — [P]
+	  Linhas pequenas
+	  Linhas grandes
+	  Impacto no desempenho
+
+  26.2.3 Hierarquia — [P]
+	  Mais níveis
+	  Menor latência
+	  Complexidade
+	  Escalabilidade
+
+
+ 26.3 Trade-offs Modernos — [I]
+
+  26.3.1 Energia × Segurança — [I]
+	  Mitigações
+	 Custos
+
+  26.3.2 Escalabilidade × Latência — [P]
+	  Sistemas many-core
+	  LLC
+
+  26.3.3 Complexidade × Desempenho — [P]
+	  Algoritmos modernos
+	  Hardware
+
+
+
+27. Tendências da Memória Cache — [V]
+
+ 27.1 Evolução Tecnológica — [V]
+
+  27.1.1 Novas Tecnologias — [V]
+	  Evolução da SRAM
+	  Novos materiais
+	  Otimizações
+
+  27.1.2 Novas Técnicas — [I]
+	  Políticas adaptativas
+	  Otimizações modernas
+	  Inteligência aplicada ao gerenciamento
+
+  27.1.3 Escalabilidade — [I]
+	  Processadores multinúcleo
+	  Many-Core
+	  Grandes servidores
+	  HPC
+
+
+ 27.2 Tendências Arquiteturais — [V]
+
+  27.2.1 Inteligência Artificial — [V]
+	  Gerenciamento inteligente
+	  Otimização automática
+	  Predição de acessos
+
+  27.2.2 Novas Arquiteturas — [I]
+	  Computação heterogênea
+	  Sistemas aceleradores
+	  Integração CPU-GPU
+
+  27.2.3 Pesquisas Atuais — [V]
+	  Novos algoritmos
+	  Eficiência energética
+	  Escalabilidade
+	  Futuras arquiteturas
+
+
+ 27.3 Pesquisas Emergentes — [V]
+
+  27.3.1 Inteligência Artificial — [V]
+	  Gerenciamento automático
+	  Predição
+
+  27.3.2 Novas Memórias — [V]
+	  eDRAM
+	  MRAM
+	  ReRAM
+	  STT-MRAM
+
+  27.3.3 Cache Desagregada — [V]
+	  Data Centers
+	  Cloud
+  
+  27.3.4 Memória Empilhada — [I]
+	  HBM
+	  3D Cache
+	  Integração vertical
+
+
+
+28. Integração da Memória Cache na Arquitetura e  Organização de Computadores — [P]
+
+ 28.1 Relação com os Componentes do Computador — [P]
+
+  28.1.1 Processador — [P]
+  	  Unidade de Controle
+	  ULA
+	  Registradores
+	  Pipeline
+
+  28.1.2 Sistema de Memória — [P]
+	  Hierarquia
+	  Memória principal
+	  Memória virtual
+	  Armazenamento secundário
+
+  28.1.3 Sistema de Barramentos — [P]
+	  Barramento de dados
+	  Barramento de endereços
+	  Barramento de controle
+	  Comunicação
+
+
+ 28.2 Fluxo Completo da Informação — [P]
+
+  28.2.1 Execução de Instruções — [P]
+	  Busca
+	  Decodificação
+	  Execução
+	  Acesso à memória
+
+  28.2.2 Fluxo dos Dados — [P]
+	  CPU
+	  Cache
+	  RAM
+	  Armazenamento
+
+  28.2.3 Papel da Cache — [P]
+	  Redução da latência
+	  Otimização
+	  Coordenação
+	  Desempenho global
+
+ 28.3 Papel na Arquitetura Moderna — [I]
+
+  28.3.1 Computadores Pessoais — [I]
+	  Organização
+	  Desempenho
+	  Eficiência
+
+  28.3.2 Servidores — [I]
+	  Grandes caches
+	  Compartilhamento
+	  Escalabilidade
+
+  28.3.3 Sistemas Especializados — [I]
+	  Embarcados
+	  HPC
+	  Inteligência Artificial
+	  GPUs
+
+
+
+29. Revisão Geral da Memória Cache — [I]
+
+ 29.1 Fundamentos — [I]
+
+  29.1.1 Conceitos Fundamentais — [I]
+	  Finalidade da cache
+	  Hierarquia de memória
+	  Localidade
+	  SRAM
+
+  29.1.2 Organização — [I]
+	  Linhas
+	  Blocos
+	  Conjuntos
+	  Tags
+	  Cache Controller
+
+  29.1.3 Funcionamento — [I]
+	  Leitura
+	  Escrita
+	  Hit
+	  Miss
+	  Fluxo de acesso
+
+
+ 29.2 Organização e Desempenho — [I]
+
+  29.2.1 Estruturas — [I]
+	  Níveis
+	  Mapeamentos
+	  Associatividade
+	  Organização entre níveis
+
+  29.2.2 Políticas — [I]
+	  Substituição
+	  Escrita
+	  Coerência
+	  Prefetching
+
+  29.2.3 Otimizações — [I]
+	  Buffers
+	  Técnicas clássicas
+	  Técnicas modernas
+	  Segurança
+
+
+ 29.3 Arquiteturas Modernas — [I]
+
+  29.3.1 Cache e Coerência — [I]
+	  Coerência de cache
+	  Protocolos MSI, MESI, MOESI e derivados
+	  Compartilhamento entre núcleos
+	  Escalabilidade da coerência
+  
+  29.3.2 Cache e Virtualização — [I]
+	  Integração entre Cache, MMU e TLB
+	  VIPT, PIPT e VIVT
+	  Problemas de aliasing e synonyms
+	  Cache Coloring
+	  Virtualização (ASID, PCID e Hypervisor)
+  
+  29.3.3 Cache e Segurança — [I]
+	  Ataques por canais laterais
+	  Cache Timing Attacks
+	  Spectre e Meltdown
+	  Técnicas de mitigação por hardware e software
+
+  29.3.4 Cache em Arquiteturas Contemporâneas — [I]
+	  CPU multicore e many-core
+	  GPUs e aceleradores (NPUs/TPUs)
+	  Arquiteturas heterogêneas
+	  Chiplets
+	  Network-on-Chip (NoC)
+	  Cache Coherent DMA
+	  CXL.cache
+	  Tendências tecnológicas (3D Cache, HBM, IA aplicada ao gerenciamento da 
+                                    cache)
+
+
+
+30. Conclusão — [V]
+
+30.1 Síntese Geral — [V]
+
+  30.1.1 Papel da Memória Cache — [V]
+	  Redução da latência
+	  Aumento do desempenho
+	  Otimização da hierarquia de memória
+	  Coordenação entre CPU e memória principal
+
+  30.1.2 Integração na Arquitetura do Computador — [V]
+	  Processador
+	  Hierarquia de memória
+	  Barramentos
+	  Memória virtual
+
+  30.1.3 Evolução e Perspectivas — [V]
+	  Evolução das arquiteturas
+	  Novas tecnologias
+	  Tendências futuras
+	  Importância da memória cache na Organização de Computadores
+
+
+ 30.2 Perspectivas Futuras — [V]
+
+  30.2.1 Novas Arquiteturas — [V]
+	  Chiplets
+	  Many-Core
+	  Heterogeneidade
+
+  30.2.2 Novas Tecnologias — [V]
+	  3D Cache
+	  HBM
+	  CXL
+
+  30.2.3 Pesquisas Futuras — [V]
+	  IA aplicada ao gerenciamento
+	  Cache adaptativa
+	  Eficiência energética
