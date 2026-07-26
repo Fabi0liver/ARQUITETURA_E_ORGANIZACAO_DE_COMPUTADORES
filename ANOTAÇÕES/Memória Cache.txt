@@ -121,9 +121,9 @@ PARTE 1 — FUNDAMENTOS DA MEMÓRIA CACHE NA  ARQUITETURA E ORGANIZAÇÃO DE COM
 	  Fluxo completo de acesso
 
 
- 2.2 Tecnologias de Memória — [P]
+ 2.2 Tecnologias de Memória — [I]
 	
-  2.2.1 SRAM — [P]
+  2.2.1 SRAM — [I]
 	  Conceito
 	  Estrutura
 	  Funcionamento
@@ -135,7 +135,7 @@ PARTE 1 — FUNDAMENTOS DA MEMÓRIA CACHE NA  ARQUITETURA E ORGANIZAÇÃO DE COM
 	  Funcionamento
 	  Aplicações na memória principal
 
-  2.2.3 Comparação entre SRAM e DRAM — [P]
+  2.2.3 Comparação entre SRAM e DRAM — [I]
 	  Velocidade
 	  Latência
 	  Largura de banda
@@ -192,7 +192,7 @@ PARTE 1 — FUNDAMENTOS DA MEMÓRIA CACHE NA  ARQUITETURA E ORGANIZAÇÃO DE COM
 	  Matrizes
 	  Organização física interna
 
-  3.1.2 Organização Hierárquica — [P]
+  3.1.2 Organização Hierárquica — [I]
 	  Cache L1
 	  Cache L2
 	  Cache L3
@@ -714,7 +714,7 @@ PARTE 2 — FUNCIONAMENTO, MAPEAMENTO E ORGANIZAÇÃO DA MEMÓRIA CACHE:
 	  Seleção da linha
 	  Recuperação do bloco
 
-  9.3.3 Características — [I]
+  9.3.3 Características — [P]
 	  Flexibilidade
 	  Complexidade
 	  Desempenho
@@ -884,7 +884,7 @@ PARTE 2 — FUNCIONAMENTO, MAPEAMENTO E ORGANIZAÇÃO DA MEMÓRIA CACHE:
 	  Bloco inexistente
 	  Inicialização da cache
 
-  11.1.2 Características — [I]
+  11.1.2 Características — [P]
 	  Ocorrência inevitável
 	  Relação com o programa
 
@@ -918,7 +918,7 @@ PARTE 2 — FUNCIONAMENTO, MAPEAMENTO E ORGANIZAÇÃO DA MEMÓRIA CACHE:
 	  Dependência do mapeamento
 	  Influência da associatividade
 
-  11.3.3 Soluções — [P]
+  11.3.3 Soluções — [I]
 	  Associatividade
 	  Melhor algoritmo de substituição
 
@@ -1233,9 +1233,9 @@ PARTE 2 — FUNCIONAMENTO, MAPEAMENTO E ORGANIZAÇÃO DA MEMÓRIA CACHE:
 	  Tráfego interno
 
  
- 14.5 Organização em Arquiteturas Modernas — [V]
+ 14.5 Organização em Arquiteturas Modernas — [I]
 
-  14.5.1 Last Level Cache — [V]
+  14.5.1 Last Level Cache — [I]
 	  Compartilhamento
 	  Escalabilidade
 
@@ -1482,7 +1482,7 @@ PARTE 3 — OTIMIZAÇÕES, COERÊNCIA E INTEGRAÇÃO DA MEMÓRIA CACHE:
 
 
 
-18. Técnicas Modernas de Otimização — [V]
+18. Técnicas Modernas de Otimização — [I]
 
  18.1 Otimizações Arquiteturais — [V]
 
@@ -2025,17 +2025,17 @@ PARTE 4 — APLICAÇÕES, PROJETO E CONSOLIDAÇÃO DA MEMÓRIA CACHE:
 	  Processamento matricial
 
 
- 23.2 Sistemas Many-Core — [I]
+ 23.2 Sistemas Many-Core — [V]
 
-  23.2.1 Escalabilidade — [I]
+  23.2.1 Escalabilidade — [V]
 	  Grande número de núcleos
 	  Compartilhamento
 
-  23.2.2 Cache Distribuída — [I]
+  23.2.2 Cache Distribuída — [V]
 	  Organização
 	  Comunicação
 
-  23.2.3 NoC (Network-on-Chip) — [I]
+  23.2.3 NoC (Network-on-Chip) — [V]
 	  Comunicação
 	  Escalabilidade
 
@@ -2163,7 +2163,7 @@ PARTE 4 — APLICAÇÕES, PROJETO E CONSOLIDAÇÃO DA MEMÓRIA CACHE:
 
  25.1 Critérios de Projeto — [I]
 
-  24.1.1 Capacidade — [I]
+  25.1.1 Capacidade — [I]
 	  Dimensionamento
 	  Custo
 	  Desempenho
@@ -2302,12 +2302,12 @@ PARTE 4 — APLICAÇÕES, PROJETO E CONSOLIDAÇÃO DA MEMÓRIA CACHE:
 	  Novos materiais
 	  Otimizações
 
-  27.1.2 Novas Técnicas — [I]
+  27.1.2 Novas Técnicas — [V]
 	  Políticas adaptativas
 	  Otimizações modernas
 	  Inteligência aplicada ao gerenciamento
 
-  27.1.3 Escalabilidade — [I]
+  27.1.3 Escalabilidade — [V]
 	  Processadores multinúcleo
 	  Many-Core
 	  Grandes servidores
@@ -2321,7 +2321,7 @@ PARTE 4 — APLICAÇÕES, PROJETO E CONSOLIDAÇÃO DA MEMÓRIA CACHE:
 	  Otimização automática
 	  Predição de acessos
 
-  27.2.2 Novas Arquiteturas — [I]
+  27.2.2 Novas Arquiteturas — [V]
 	  Computação heterogênea
 	  Sistemas aceleradores
 	  Integração CPU-GPU
@@ -2349,7 +2349,7 @@ PARTE 4 — APLICAÇÕES, PROJETO E CONSOLIDAÇÃO DA MEMÓRIA CACHE:
 	  Data Centers
 	  Cloud
   
-  27.3.4 Memória Empilhada — [I]
+  27.3.4 Memória Empilhada — [V]
 	  HBM
 	  3D Cache
 	  Integração vertical
