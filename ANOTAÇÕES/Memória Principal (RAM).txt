@@ -980,64 +980,64 @@ PARTE 4 — FUNCIONAMENTO INTERNO DA DRAM
  18.1 Ciclo Básico de Funcionamento — [P]
 
   18.1.1 Visão Geral — [P]
-      Organização do ciclo de acesso
-      Sequência das operações
-      Estado inicial da memória
-      Fluxo interno das operações
-      Relação entre hardware e controlador
-      Ciclo completo de acesso
+ 	  Organização do ciclo de acesso
+	  Sequência das operações
+	  Estado inicial da memória
+	  Fluxo interno das operações
+  	  Relação entre hardware e controlador
+	  Ciclo completo de acesso
 
   18.1.2 Estados Operacionais — [P]
-      Banco ocioso (Idle)
-      Banco ativo (Active)
-      Linha aberta
-      Linha fechada
-      Banco em Precharge
-      Banco em Refresh
-      Power Down (visão geral)
-      Self Refresh (visão geral)
-      Transições de estado
+	  Banco ocioso (Idle)
+	  Banco ativo (Active)
+	  Linha aberta
+	  Linha fechada
+	  Banco em Precharge
+	  Banco em Refresh
+	  Power Down (visão geral)
+	  Self Refresh (visão geral)
+	  Transições de estado
 
   18.1.3 Sequência Geral — [P]
-      Recepção da requisição
-      Seleção do banco
-      Ativação da linha
-      Acesso à coluna
-      Transferência dos dados
-      Encerramento da operação
-      Preparação para novo acesso
+	  Recepção da requisição
+	  Seleção do banco
+	  Ativação da linha
+	  Acesso à coluna
+	  Transferência dos dados
+	  Encerramento da operação
+	  Preparação para novo acesso
 
 
  18.2 Operações Fundamentais — [P]
 
   18.2.1 Activate (ACT) — [P]
-      Definição
-      Objetivos
-      Seleção da linha
-      Ativação da Word Line
-      Leitura da linha completa
-      Ativação dos Sense Amplifiers
-      Carregamento do Row Buffer
-      Linha ativa
+	  Definição
+	  Objetivos
+	  Seleção da linha
+  	  Ativação da Word Line
+	  Leitura da linha completa
+	  Ativação dos Sense Amplifiers
+	  Carregamento do Row Buffer
+	  Linha ativa
 
   18.2.2 Read (RD) — [P]
-      Definição
-      Objetivos
-      Seleção da coluna
-      Transferência para o barramento interno
-      Transferência para a interface externa
-      Burst Read
-      Encerramento da leitura
+	  Definição
+	  Objetivos
+	  Seleção da coluna
+	  Transferência para o barramento interno
+	  Transferência para a interface externa
+	  Burst Read
+	  Encerramento da leitura
 
   18.2.3 Write (WR) — [P]
-      Definição
-      Objetivos
-      Recepção dos dados
-      Escrita no Row Buffer
-      Atualização da linha ativa
-      Escrita nas células
-      Burst Write
-      Finalização da escrita
+	  Definição
+	  Objetivos
+	  Recepção dos dados
+	  Escrita no Row Buffer
+	  Atualização da linha ativa
+	  Escrita nas células
+	  Burst Write
+	  Finalização da escrita
 
 
 19. Operações Complementares da DRAM — [P]
@@ -1045,72 +1045,74 @@ PARTE 4 — FUNCIONAMENTO INTERNO DA DRAM
  19.1 Precharge — [P]
 
   19.1.1 Conceitos — [P]
-      Definição
-      Objetivos
-      Necessidade do Precharge
-      Estado elétrico das Bit Lines
-      Preparação para novo acesso
+	  Definição
+ 	  Objetivos
+	  Necessidade do Precharge
+	  Estado elétrico das Bit Lines
+	  Preparação para novo acesso
 
   19.1.2 Funcionamento — [P]
-      Fechamento da linha ativa
-      Desativação da Word Line
-      Equalização das Bit Lines
-      Liberação do banco
-      Retorno ao estado Idle
+	  Fechamento da linha ativa
+	  Desativação da Word Line
+	  Equalização das Bit Lines
+	  Liberação do banco
+  	  Retorno ao estado Idle
 
   19.1.3 Tipos de Precharge — [I]
-      Precharge individual
-      Precharge All
-      Auto Precharge
-      Manual Precharge
-      Critérios de utilização
+	  Precharge individual
+	  Precharge All
+	  Auto Precharge
+	  Manual Precharge
+	  Critérios de utilização
+
 
 
  19.2 Refresh — [P]
 
   19.2.1 Fundamentos — [P]
-      Definição
-      Objetivos
-      Vazamento da carga elétrica
-      Necessidade do Refresh
-      Periodicidade
+	  Definição
+	  Objetivos
+	  Vazamento da carga elétrica
+ 	  Necessidade do Refresh
+	  Periodicidade
 
   19.2.2 Funcionamento — [P]
-      Seleção das linhas
-      Leitura da carga
-      Regeneração dos dados
-      Reescrita da linha
-      Preservação das informações
+  	  Seleção das linhas
+	  Leitura da carga
+	  Regeneração dos dados
+	  Reescrita da linha
+	  Preservação das informações
 
   19.2.3 Tipos de Refresh — [I]
-      Auto Refresh
-      Self Refresh
-      Distributed Refresh
-      Burst Refresh
-      Fine Granularity Refresh (Visão Geral)
+	  Auto Refresh
+	  Self Refresh
+	  Distributed Refresh
+	  Burst Refresh
+	  Fine Granularity Refresh (Visão Geral)
 
 
  19.3 Outros Comandos da DRAM — [V]
 
   19.3.1 Comandos Fundamentais — [V]
-      ACT
-      PRE
-      PREA
-      RD
-      WR
-      REF
+	  ACT
+	  PRE
+ 	  PREA
+	  RD
+	  WR
+	  REF
 
   19.3.2 Comandos Auxiliares — [V]
-      MRS (Mode Register Set)
-      ZQ Calibration
-      NOP
-      DES (Device Deselect)
+	  MRS (Mode Register Set)
+	  ZQ Calibration
+	  NOP
+ 	  DES (Device Deselect)
 
   19.3.3 Papel dos Comandos — [V]
-      Inicialização
-      Configuração
-      Operação normal
-      Manutenção
+	  Inicialização
+	  Configuração
+	  Operação normal
+	  Manutenção
+
 
 
 20. Funcionamento Interno do Row Buffer — [P]
@@ -1118,47 +1120,48 @@ PARTE 4 — FUNCIONAMENTO INTERNO DA DRAM
  20.1 Organização — [P]
 
   20.1.1 Estrutura — [P]
-      Organização do Row Buffer
-      Associação aos bancos
-      Relação com os Sense Amplifiers
-      Capacidade
-      Papel durante o acesso
+	  Organização do Row Buffer
+	  Associação aos bancos
+	  Relação com os Sense Amplifiers
+	  Capacidade
+	  Papel durante o acesso
 
   20.1.2 Carregamento — [P]
-      Activate
-      Leitura da linha completa
-      Amplificação dos sinais
-      Armazenamento temporário
-      Disponibilização da linha
+	  Activate
+	  Leitura da linha completa
+  	  Amplificação dos sinais
+	  Armazenamento temporário
+	  Disponibilização da linha
 
   20.1.3 Atualização — [P]
-      Escrita no Row Buffer
-      Atualização durante Write
-      Sincronização com as células
-      Persistência da linha ativa
+	  Escrita no Row Buffer
+	  Atualização durante Write
+	  Sincronização com as células
+	  Persistência da linha ativa
 
 
  20.2 Estados do Row Buffer — [P]
 
   20.2.1 Row Buffer Hit — [P]
-      Definição
-      Funcionamento
-      Reutilização da linha ativa
-      Redução da latência
-      Benefícios
+	  Definição
+  	  Funcionamento
+	  Reutilização da linha ativa
+	  Redução da latência
+	  Benefícios
 
   20.2.2 Row Buffer Miss — [P]
-      Definição
-      Necessidade de Activate
-      Carregamento de nova linha
-      Impacto no desempenho
+	  Definição
+	  Necessidade de Activate
+	  Carregamento de nova linha
+	  Impacto no desempenho
 
   20.2.3 Row Buffer Conflict — [P]
-      Definição
-      Linha diferente no mesmo banco
-      Necessidade de Precharge
-      Novo Activate
-      Aumento da latência
+	  Definição
+	  Linha diferente no mesmo banco
+	  Necessidade de Precharge
+	  Novo Activate
+	  Aumento da latência
+
 
 
 21. Burst e Transferência de Dados — [I]
@@ -1166,46 +1169,47 @@ PARTE 4 — FUNCIONAMENTO INTERNO DA DRAM
  21.1 Burst Access — [P]
 
   21.1.1 Conceitos — [P]
-      Definição
-      Objetivos
-      Transferência sequencial
-      Eficiência
-      Aproveitamento do barramento
+	  Definição
+	  Objetivos
+	  Transferência sequencial
+	  Eficiência
+	  Aproveitamento do barramento
 
   21.1.2 Burst Read — [I]
-      Funcionamento
-      Sequência das transferências
-      Comprimento do Burst
-      Encerramento
+ 	  Funcionamento
+	  Sequência das transferências
+  	  Comprimento do Burst
+	  Encerramento
 
   21.1.3 Burst Write — [I]
-      Funcionamento
-      Escrita sequencial
-      Atualização dos dados
-      Encerramento
+	  Funcionamento
+	  Escrita sequencial
+	  Atualização dos dados
+	  Encerramento
 
 
  21.2 Comprimento do Burst — [I]
 
   21.2.1 Burst Length — [I]
-      BL2
-      BL4
-      BL8
-      BL16 (Visão Geral)
-      Configuração
-      Aplicações
+	  BL2
+	  BL4
+	  BL8
+	  BL16 (Visão Geral)
+	  Configuração
+	  Aplicações
 
   21.2.2 Organização das Transferências — [I]
-      Ordem das transferências
-      Sequência dos dados
-      Incremento dos endereços
-      Eficiência do Burst
+  	  Ordem das transferências
+  	  Sequência dos dados
+	  Incremento dos endereços
+	  Eficiência do Burst
 
   21.2.3 Impacto Arquitetural — [I]
-      Largura de banda
-      Latência efetiva
-      Eficiência do barramento
-      Aproveitamento do controlador
+	  Largura de banda
+	  Latência efetiva
+	  Eficiência do barramento
+	  Aproveitamento do controlador
+
 
 
 22. Modos de Acesso à DRAM — [P]
@@ -1213,47 +1217,48 @@ PARTE 4 — FUNCIONAMENTO INTERNO DA DRAM
  22.1 Políticas de Linha — [P]
 
   22.1.1 Open Page Policy — [P]
-      Definição
-      Funcionamento
-      Linha permanece aberta
-      Benefícios
-      Limitações
-      Aplicações
+	  Definição
+	  Funcionamento
+	  Linha permanece aberta
+  	  Benefícios
+	  Limitações
+	  Aplicações
 
   22.1.2 Closed Page Policy — [P]
-      Definição
-      Funcionamento
-      Fechamento imediato
-      Benefícios
-      Limitações
-      Aplicações
+	  Definição
+	  Funcionamento
+	  Fechamento imediato
+	  Benefícios
+	  Limitações
+	  Aplicações
 
   22.1.3 Adaptive Page Policy — [I]
-      Conceitos
-      Funcionamento
-      Critérios de decisão
-      Benefícios
+	  Conceitos
+	  Funcionamento
+	  Critérios de decisão
+	  Benefícios
 
 
  22.2 Padrões de Acesso — [I]
 
   22.2.1 Localidade Espacial — [I]
-      Conceitos
-      Funcionamento
-      Influência sobre o Row Buffer
-      Aproveitamento dos acessos
+	  Conceitos
+	  Funcionamento
+	  Influência sobre o Row Buffer
+	  Aproveitamento dos acessos
 
   22.2.2 Localidade Temporal — [I]
-      Conceitos
-      Reutilização dos dados
-      Reutilização das linhas
-      Impacto no desempenho
+	  Conceitos
+	  Reutilização dos dados
+  	  Reutilização das linhas
+ 	  Impacto no desempenho
 
   22.2.3 Aleatoriedade dos Acessos — [I]
-      Acessos sequenciais
-      Acessos aleatórios
-      Mudanças frequentes de linha
-      Impacto na eficiência
+	  Acessos sequenciais
+	  Acessos aleatórios
+	  Mudanças frequentes de linha
+	  Impacto na eficiência
+
 
 
 23. Temporização das Operações da DRAM — [P]
@@ -1261,48 +1266,48 @@ PARTE 4 — FUNCIONAMENTO INTERNO DA DRAM
  23.1 Conceitos Fundamentais — [P]
 
   23.1.1 Clock da Memória — [I]
-      Clock interno
-      Clock externo
-      Ciclos de memória
-      Sincronização
-      Relação com DDR
+	  Clock interno
+	  Clock externo
+	  Ciclos de memória
+	  Sincronização
+	  Relação com DDR
 
   23.1.2 Latência — [P]
-      Definição
-      Componentes da latência
-      Latência de Activate
-      Latência de Read
-      Latência de Write
-      Latência total
+	  Definição
+	  Componentes da latência
+	  Latência de Activate
+	  Latência de Read
+	  Latência de Write
+	  Latência total
 
   23.1.3 Throughput — [I]
-      Definição
-      Taxa de transferência
-      Eficiência das operações
-      Fatores de influência
+	  Definição
+	  Taxa de transferência
+	  Eficiência das operações
+  	  Fatores de influência
 
 
  23.2 Principais Timings da DRAM — [P]
 
   23.2.1 Timings Fundamentais — [P]
-      CAS Latency (CL)
-      RAS to CAS Delay (tRCD)
-      Row Precharge Time (tRP)
-      Active to Precharge Delay (tRAS)
+	  CAS Latency (CL)
+	  RAS to CAS Delay (tRCD)
+	  Row Precharge Time (tRP)
+	  Active to Precharge Delay (tRAS)
 
   23.2.2 Timings Complementares — [I]
-      Row Cycle Time (tRC)
-      Refresh Cycle Time (tRFC)
-      Four Activate Window (tFAW)
-      Row to Row Delay (tRRD)
-      CAS Write Latency (CWL)
+	  Row Cycle Time (tRC)
+	  Refresh Cycle Time (tRFC)
+	  Four Activate Window (tFAW)
+	  Row to Row Delay (tRRD)
+	  CAS Write Latency (CWL)
 
   23.2.3 Relações entre Timings — [P]
-      Dependências
-      Restrições
-      Sequenciamento
-      Influência no desempenho
-      Balanceamento dos parâmetros
+	  Dependências
+	  Restrições
+	  Sequenciamento
+	  Influência no desempenho
+	  Balanceamento dos parâmetros
 
 
 
