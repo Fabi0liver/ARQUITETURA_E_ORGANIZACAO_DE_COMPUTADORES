@@ -1658,57 +1658,58 @@ PARTE 6 — DESEMPENHO, CONFIABILIDADE E OTIMIZAÇÕES DA MEMÓRIA PRINCIPAL
  30.1 Fundamentos do Desempenho — [P]
 
   30.1.1 Conceitos Gerais — [P]
-      Definição
-      Objetivos
-      Importância do desempenho
-      Gargalos da memória
-      Relação entre desempenho da CPU e da memória
-      Eficiência do subsistema de memória
+  	  Definição
+	  Objetivos
+	  Importância do desempenho
+	  Gargalos da memória
+  	  Relação entre desempenho da CPU e da memória
+	  Eficiência do subsistema de memória
 
   30.1.2 Métricas Fundamentais — [P]
-      Latência
-      Throughput
-      Largura de banda
-      Tempo de resposta
-      Tempo de acesso
-      Tempo de ciclo
-      Utilização
-      Eficiência
+	  Latência
+	  Throughput
+	  Largura de banda
+	  Tempo de resposta
+	  Tempo de acesso
+	  Tempo de ciclo
+	  Utilização
+	  Eficiência
 
   30.1.3 Fatores de Influência — [P]
-      Frequência
-      Timings
-      Organização da DRAM
-      Paralelismo
-      Controlador de memória
-      Quantidade de canais
-      Quantidade de ranks
-      Padrão de acesso
+	  Frequência
+	  Timings
+	  Organização da DRAM
+	  Paralelismo
+	  Controlador de memória
+	  Quantidade de canais
+	  Quantidade de ranks
+	  Padrão de acesso
 
 
  30.2 Avaliação do Desempenho — [P]
 
   30.2.1 Latência — [P]
-      Latência inicial
-      Latência efetiva
-      Componentes da latência
-      Latência média
-      Impacto dos Row Buffer Hits
-      Impacto dos conflitos
+	  Latência inicial
+	  Latência efetiva
+	  Componentes da latência
+	  Latência média
+	  Impacto dos Row Buffer Hits
+	  Impacto dos conflitos
 
   30.2.2 Largura de Banda — [P]
-      Banda teórica
-      Banda efetiva
-      Saturação
-      Utilização
-      Eficiência da transferência
+	  Banda teórica
+	  Banda efetiva
+	  Saturação
+	  Utilização
+	  Eficiência da transferência
 
   30.2.3 Eficiência Geral — [P]
-      Aproveitamento dos bancos
-      Aproveitamento dos canais
-      Aproveitamento do barramento
-      Eficiência das operações
-      Balanceamento do sistema
+	  Aproveitamento dos bancos
+	  Aproveitamento dos canais
+	  Aproveitamento do barramento
+	  Eficiência das operações
+	  Balanceamento do sistema
+
 
 
 31. Temporização Avançada da DRAM — [I]
@@ -1716,48 +1717,49 @@ PARTE 6 — DESEMPENHO, CONFIABILIDADE E OTIMIZAÇÕES DA MEMÓRIA PRINCIPAL
  31.1 Timings da Memória — [I]
 
   31.1.1 Timings Primários — [P]
-      CAS Latency (CL)
-      RAS to CAS Delay (tRCD)
-      Row Precharge Time (tRP)
-      Active to Precharge Delay (tRAS)
-      Row Cycle Time (tRC)
+	  CAS Latency (CL)
+  	  RAS to CAS Delay (tRCD)
+	  Row Precharge Time (tRP)
+	  Active to Precharge Delay (tRAS)
+  	  Row Cycle Time (tRC)
 
   31.1.2 Timings Secundários — [I]
-      tRRD
-      tRFC
-      tWR
-      tWTR
-      tRTP
-      tCCD
-      tCWL
+	  tRRD
+	  tRFC
+  	  tWR
+	  tWTR
+	  tRTP
+	  tCCD
+  	  tCWL
 
   31.1.3 Timings Terciários — [V]
-      Organização geral
-      Ajustes finos
-      Dependências
-      Aplicações
-      Impacto no desempenho
+	  Organização geral
+	  Ajustes finos
+	  Dependências
+	  Aplicações
+	  Impacto no desempenho
 
 
  31.2 Relações Temporais — [I]
 
   31.2.1 Dependências — [I]
-      Dependência entre comandos
-      Restrições elétricas
-      Restrições físicas
-      Sequenciamento obrigatório
+ 	  Dependência entre comandos
+	  Restrições elétricas
+	  Restrições físicas
+	  Sequenciamento obrigatório
 
   31.2.2 Balanceamento — [I]
-      Frequência versus latência
-      Timings versus estabilidade
-      Desempenho versus consumo
-      Otimização geral
+	  Frequência versus latência
+	  Timings versus estabilidade
+	  Desempenho versus consumo
+   	  Otimização geral
 
   31.2.3 Eficiência Temporal — [I]
-      Aproveitamento dos ciclos
-      Redução de tempos ociosos
-      Paralelismo temporal
-      Coordenação dos comandos
+	  Aproveitamento dos ciclos
+	  Redução de tempos ociosos
+	  Paralelismo temporal
+	  Coordenação dos comandos
+
 
 
 32. Integridade, Confiabilidade e Disponibilidade — [I]
@@ -1765,53 +1767,54 @@ PARTE 6 — DESEMPENHO, CONFIABILIDADE E OTIMIZAÇÕES DA MEMÓRIA PRINCIPAL
  32.1 Integridade dos Dados — [I]
 
   32.1.1 Erros em Memória — [I]
-      Soft Errors
-      Hard Errors
-      Bit Flip
-      Corrupção de dados
-      Perda de informações
-      Fontes dos erros
+	  Soft Errors
+	  Hard Errors
+	  Bit Flip
+	  Corrupção de dados
+	  Perda de informações
+	  Fontes dos erros
 
   32.1.2 Causas dos Erros — [I]
-      Radiação
-      Interferências elétricas
-      Ruído eletrônico
-      Defeitos físicos
-      Envelhecimento
-      Temperatura
+	  Radiação
+  	  Interferências elétricas
+	  Ruído eletrônico
+	  Defeitos físicos
+	  Envelhecimento
+	  Temperatura
 
   32.1.3 Consequências — [I]
-      Dados incorretos
-      Travamentos
-      Corrupção de programas
-      Falhas do sistema
-      Perda de confiabilidade
+	  Dados incorretos
+	  Travamentos
+	  Corrupção de programas
+  	  Falhas do sistema
+	  Perda de confiabilidade
 
 
  32.2 ECC (Error Correcting Code) — [P]
 
   32.2.1 Fundamentos — [P]
-      Definição
-      Objetivos
-      Funcionamento geral
-      Importância
-      Aplicações
+	  Definição
+  	  Objetivos
+	  Funcionamento geral
+	  Importância
+	  Aplicações
 
   32.2.2 Técnicas de Correção — [P]
-      Detecção de erros
-      Correção de erro simples
-      Detecção de erro duplo
-      SEC
-      SECDED
-      Síndrome de erro
+	  Detecção de erros
+	  Correção de erro simples
+	  Detecção de erro duplo
+	  SEC
+  	  SECDED
+	  Síndrome de erro
 
   32.2.3 Memórias ECC — [I]
-      Organização
-      Bits adicionais
-      Funcionamento
-      Benefícios
-      Limitações
-      Impacto no desempenho
+	  Organização
+	  Bits adicionais
+	  Funcionamento
+	  Benefícios
+	  Limitações
+	  Impacto no desempenho
+
 
 
 33. Disponibilidade e Recursos RAS — [V]
@@ -1819,44 +1822,45 @@ PARTE 6 — DESEMPENHO, CONFIABILIDADE E OTIMIZAÇÕES DA MEMÓRIA PRINCIPAL
  33.1 Conceitos de RAS — [V]
 
   33.1.1 Fundamentos — [V]
-      Reliability
-      Availability
-      Serviceability
-      Objetivos
-      Aplicações
+	  Reliability
+	  Availability
+	  Serviceability
+	  Objetivos
+	  Aplicações
 
   33.1.2 Recursos de Confiabilidade — [V]
-      Memory Scrubbing
-      Patrol Scrubbing
-      Demand Scrubbing
-      Sparing
-      Mirroring (Visão Geral)
+	  Memory Scrubbing
+	  Patrol Scrubbing
+	  Demand Scrubbing
+	  Sparing
+	  Mirroring (Visão Geral)
 
   33.1.3 Monitoramento — [V]
-      Registro de erros
-      Contadores
-      Diagnóstico
-      Manutenção preventiva
+	  Registro de erros
+	  Contadores
+	  Diagnóstico
+	  Manutenção preventiva
 
 
  33.2 Recuperação de Falhas — [V]
 
   33.2.1 Detecção — [V]
-      Monitoramento contínuo
-      Identificação dos erros
-      Classificação
+	  Monitoramento contínuo
+	  Identificação dos erros
+	  Classificação
 
   33.2.2 Correção — [V]
-      ECC
-      Reescrita
-      Isolamento
-      Recuperação automática
+	  ECC
+	  Reescrita
+	  Isolamento
+  	  Recuperação automática
 
   33.2.3 Continuidade do Sistema — [V]
-      Disponibilidade
-      Tolerância a falhas
-      Robustez
-      Confiabilidade operacional
+	  Disponibilidade
+	  Tolerância a falhas
+	  Robustez
+	  Confiabilidade operacional
+
 
 
 34. Otimizações da Memória Principal — [I]
@@ -1864,46 +1868,47 @@ PARTE 6 — DESEMPENHO, CONFIABILIDADE E OTIMIZAÇÕES DA MEMÓRIA PRINCIPAL
  34.1 Técnicas de Otimização — [I]
 
   34.1.1 Paralelismo — [I]
-      Paralelismo entre canais
-      Paralelismo entre ranks
-      Paralelismo entre bancos
-      Paralelismo interno
-      Sobreposição de operações
+	  Paralelismo entre canais
+	  Paralelismo entre ranks
+	  Paralelismo entre bancos
+  	  Paralelismo interno
+	  Sobreposição de operações
 
   34.1.2 Organização dos Acessos — [I]
-      Maximização de Row Buffer Hits
-      Redução de conflitos
-      Balanceamento entre bancos
-      Balanceamento entre canais
-      Sequenciamento eficiente
+	  Maximização de Row Buffer Hits
+	  Redução de conflitos
+	  Balanceamento entre bancos
+	  Balanceamento entre canais
+  	  Sequenciamento eficiente
 
   34.1.3 Otimizações do Controlador — [I]
-      Reordenação de comandos
-      Escalonamento inteligente
-      Controle do Refresh
-      Otimização da largura de banda
+	  Reordenação de comandos
+	  Escalonamento inteligente
+  	  Controle do Refresh
+	  Otimização da largura de banda
 
 
  34.2 Configuração e Ajustes — [V]
 
   34.2.1 Frequência da Memória — [V]
-      Clock
-      Data Rate
-      Impacto no desempenho
-      Limitações
+	  Clock
+	  Data Rate
+	  Impacto no desempenho
+	  Limitações
 
   34.2.2 Ajuste dos Timings — [V]
-      Ajustes manuais
-      Redução da latência
-      Estabilidade
-      Compromissos
+	  Ajustes manuais
+	  Redução da latência
+	  Estabilidade
+	  Compromissos
 
   34.2.3 Perfis de Configuração — [V]
-      SPD
-      XMP
-      EXPO
-      Configuração automática
-      Configuração manual
+	  SPD
+	  XMP
+	  EXPO
+	  Configuração automática
+	  Configuração manual
+
 
 
 35. Eficiência Energética e Aspectos Térmicos — [V]
@@ -1911,44 +1916,44 @@ PARTE 6 — DESEMPENHO, CONFIABILIDADE E OTIMIZAÇÕES DA MEMÓRIA PRINCIPAL
  35.1 Consumo de Energia — [V]
 
   35.1.1 Fundamentos — [V]
-      Consumo estático
-      Consumo dinâmico
-      Eficiência energética
-      Importância
+	  Consumo estático
+	  Consumo dinâmico
+  	  Eficiência energética
+	  Importância
 
   35.1.2 Fatores de Consumo — [V]
-      Frequência
-      Tensão
-      Quantidade de acessos
-      Refresh
-      Temperatura
+	  Frequência
+	  Tensão
+	  Quantidade de acessos
+	  Refresh
+	  Temperatura
 
   35.1.3 Técnicas de Economia — [V]
-      Power Down
-      Self Refresh
-      Clock Gating (Visão Geral)
-      Modos de baixo consumo
+	  Power Down
+	  Self Refresh
+	  Clock Gating (Visão Geral)
+	  Modos de baixo consumo
 
 
  35.2 Aspectos Térmicos — [V]
 
   35.2.1 Dissipação de Calor — [V]
-      Fontes de aquecimento
-      Transferência térmica
-      Dissipação
+	  Fontes de aquecimento
+   	  Transferência térmica
+    	  Dissipação
 
   35.2.2 Controle Térmico — [V]
-      Sensores
-      Monitoramento
-      Limites operacionais
-      Proteção térmica
+	  Sensores
+	  Monitoramento
+	  Limites operacionais
+	  Proteção térmica
 
   35.2.3 Influência da Temperatura — [V]
-      Estabilidade
-      Desempenho
-      Vida útil
-      Confiabilidade
-      Necessidade de Refresh
+	  Estabilidade
+	  Desempenho
+	  Vida útil
+	  Confiabilidade
+	  Necessidade de Refresh
 
 
 
