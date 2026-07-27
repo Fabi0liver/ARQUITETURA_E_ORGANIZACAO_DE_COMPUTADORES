@@ -1314,43 +1314,70 @@ PARTE 4 — ARQUITETURAS, TECNOLOGIAS E PADRÕES DE BARRAMENTOS
 
 
 
-21. Interconexões Modernas de Alto Desempenho — [P]
+21. Comunicação em Sistemas Multicore — [P]
 
- 21.1 Tecnologias Emergentes — [P]
+ 21.1 Comunicação entre Núcleos — [P]
 
-  21.1.1 Compute Express Link (CXL) — [P]
+  20A.1.1 Conceitos
+      Comunicação Core-Core
+      Compartilhamento de Dados
+      Compartilhamento de Cache
+      Comunicação entre Threads
+
+ 21.2 Interconexões Internas — [P]
+
+  21.2.1 Estruturas
+      Ring Bus
+      Mesh
+      Crossbar
+      Network-on-Chip
+
+ 21.3 Comunicação Coerente — [P]
+
+  21.3.1 Fundamentos
+      Comunicação Coerente
+      Compartilhamento de Memória
+      Sincronização entre Núcleos
+
+
+
+22. Interconexões Modernas de Alto Desempenho — [P]
+
+ 22.1 Tecnologias Emergentes — [P]
+
+  22.1.1 Compute Express Link (CXL) — [P]
       Objetivos
       Arquitetura
       CXL.io
       CXL.cache
       CXL.memory
 
-  21.1.2 Universal Chiplet Interconnect Express (UCIe) — [P]
+  22.1.2 Universal Chiplet Interconnect Express (UCIe) — [P]
       Comunicação Die-to-Die
       Chiplets
       Encapsulamento avançado
 
-  21.1.3 Outras Tecnologias — [I]
+  22.1.3 Outras Tecnologias — [I]
       NVLink
       CCIX
       Gen-Z
       OpenCAPI
 
 
- 21.2 Aplicações Arquiteturais — [I]
+ 22.2 Aplicações Arquiteturais — [I]
 
-  21.2.1 Computação Heterogênea — [I]
+  22.2.1 Computação Heterogênea — [I]
       CPU + GPU
       CPU + FPGA
       CPU + NPU
       CPU + TPU
 
-  21.2.2 Data Centers — [I]
+  22.2.2 Data Centers — [I]
       Expansão de memória
       Aceleradores
       Comunicação de alta velocidade
 
-  21.2.3 Tendências Arquiteturais — [V]
+  22.2.3 Tendências Arquiteturais — [V]
       Chiplets
       Memória desagregada
       Computação desagregada
@@ -1361,18 +1388,18 @@ PARTE 4 — ARQUITETURAS, TECNOLOGIAS E PADRÕES DE BARRAMENTOS
 PARTE 5 — DESEMPENHO, CONFIABILIDADE E TENDÊNCIAS DOS BARRAMENTOS
 
 
-22. Desempenho dos Barramentos — [P]
+23. Desempenho dos Barramentos — [P]
 
- 22.1 Fundamentos do Desempenho — [P]
+ 23.1 Fundamentos do Desempenho — [P]
 
-  22.1.1 Conceitos Fundamentais — [P]
+  23.1.1 Conceitos Fundamentais — [P]
       Desempenho do barramento
       Eficiência da comunicação
       Utilização do barramento
       Gargalos de comunicação
       Impacto no desempenho do sistema
 
-  22.1.2 Métricas de Avaliação — [P]
+  23.1.2 Métricas de Avaliação — [P]
       Largura de banda (Bandwidth)
       Taxa de transferência (Transfer Rate)
       Throughput
@@ -1380,7 +1407,7 @@ PARTE 5 — DESEMPENHO, CONFIABILIDADE E TENDÊNCIAS DOS BARRAMENTOS
       Tempo de resposta
       Eficiência
 
-  22.1.3 Fatores que Influenciam o Desempenho — [P]
+  23.1.3 Fatores que Influenciam o Desempenho — [P]
       Frequência de operação
       Largura do barramento
       Número de dispositivos
@@ -1389,22 +1416,22 @@ PARTE 5 — DESEMPENHO, CONFIABILIDADE E TENDÊNCIAS DOS BARRAMENTOS
       Organização arquitetural
 
 
- 22.2 Gargalos dos Barramentos — [P]
+ 23.2 Gargalos dos Barramentos — [P]
 
-  22.2.1 Fontes de Gargalos — [P]
+  23.2.1 Fontes de Gargalos — [P]
       Contenção do barramento
       Excesso de dispositivos
       Baixa largura de banda
       Latência elevada
       Espera por arbitragem
 
-  22.2.2 Impactos no Sistema — [P]
+  23.2.2 Impactos no Sistema — [P]
       Redução do desempenho
       Aumento do tempo de resposta
       Subutilização dos componentes
       Saturação do barramento
 
-  22.2.3 Técnicas para Redução de Gargalos — [P]
+  23.2.3 Técnicas para Redução de Gargalos — [P]
       Barramentos dedicados
       Comunicação ponto a ponto
       Transferências Burst
@@ -1413,21 +1440,21 @@ PARTE 5 — DESEMPENHO, CONFIABILIDADE E TENDÊNCIAS DOS BARRAMENTOS
       Interconexões modernas
 
 
- 22.3 Avaliação Arquitetural — [P]
+ 23.3 Avaliação Arquitetural — [P]
 
-  22.3.1 Escalabilidade — [P]
+  23.3.1 Escalabilidade — [P]
       Crescimento do sistema
       Expansão de dispositivos
       Limitações arquiteturais
       Escalabilidade horizontal
 
-  22.3.2 Balanceamento — [P]
+  23.3.2 Balanceamento — [P]
       Balanceamento entre CPU e memória
       Balanceamento entre dispositivos
       Balanceamento do tráfego
       Distribuição de carga
 
-  22.3.3 Critérios de Projeto — [I]
+  23.3.3 Critérios de Projeto — [I]
       Custo
       Complexidade
       Desempenho
@@ -1436,17 +1463,17 @@ PARTE 5 — DESEMPENHO, CONFIABILIDADE E TENDÊNCIAS DOS BARRAMENTOS
 
 
 
-23. Integridade, Confiabilidade e Correção de Erros — [P]
+24. Integridade, Confiabilidade e Correção de Erros — [P]
 
- 23.1 Integridade dos Sinais — [P]
+ 24.1 Integridade dos Sinais — [P]
 
-  23.1.1 Fundamentos — [P]
+  24.1.1 Fundamentos — [P]
       Integridade de sinal
       Qualidade elétrica
       Transmissão confiável
       Comunicação estável
 
-  23.1.2 Problemas Elétricos — [P]
+  24.1.2 Problemas Elétricos — [P]
       Ruído
       Atenuação
       Reflexão
@@ -1454,7 +1481,7 @@ PARTE 5 — DESEMPENHO, CONFIABILIDADE E TENDÊNCIAS DOS BARRAMENTOS
       Jitter
       EMI
 
-  23.1.3 Técnicas de Mitigação — [P]
+  24.1.3 Técnicas de Mitigação — [P]
       Blindagem
       Terminação
       Equalização
@@ -1462,35 +1489,35 @@ PARTE 5 — DESEMPENHO, CONFIABILIDADE E TENDÊNCIAS DOS BARRAMENTOS
       Projeto do PCB
 
 
- 23.2 Detecção e Correção de Erros — [P]
+ 24.2 Detecção e Correção de Erros — [P]
 
-  23.2.1 Conceitos Fundamentais — [P]
+  24.2.1 Conceitos Fundamentais — [P]
       Confiabilidade
       Integridade dos dados
       Erros de transmissão
       Recuperação
 
-  23.2.2 Métodos de Detecção — [P]
+  24.2.2 Métodos de Detecção — [P]
       Paridade
       Checksum
       CRC
       ECC (Visão Geral)
 
-  23.2.3 Recuperação de Erros — [P]
+  24.2.3 Recuperação de Erros — [P]
       Retransmissão
       Repetição da operação
       Correção automática
       Tratamento de exceções
 
 
- 23.3 Confiabilidade dos Barramentos — [I]
+ 24.3 Confiabilidade dos Barramentos — [I]
 
-  23.3.1 Disponibilidade — [I]
+  24.3.1 Disponibilidade — [I]
       Operação contínua
       Tolerância a falhas
       Robustez
 
-  23.3.2 Manutenção da Comunicação — [I]
+  24.3.2 Manutenção da Comunicação — [I]
       Diagnóstico
       Monitoramento
       Recuperação
@@ -1498,37 +1525,37 @@ PARTE 5 — DESEMPENHO, CONFIABILIDADE E TENDÊNCIAS DOS BARRAMENTOS
 
 
 
-24. Segurança dos Barramentos — [I]
+25. Segurança dos Barramentos — [I]
 
- 24.1 Fundamentos — [I]
+ 25.1 Fundamentos — [I]
 
-  24.1.1 Conceitos — [I]
+  25.1.1 Conceitos — [I]
       Segurança da comunicação
       Proteção dos dados
       Integridade
       Confiabilidade
 
-  24.1.2 Objetivos — [I]
+  25.1.2 Objetivos — [I]
       Evitar acessos indevidos
       Garantir comunicação segura
       Preservar a integridade dos dados
 
 
- 24.2 Mecanismos de Proteção — [I]
+ 25.2 Mecanismos de Proteção — [I]
 
-  24.2.1 Controle de Acesso — [I]
+  25.2.1 Controle de Acesso — [I]
       Permissões
       Isolamento
       Controle por hardware
       Proteção entre dispositivos
 
-  24.2.2 Segurança em Barramentos Modernos — [I]
+  25.2.2 Segurança em Barramentos Modernos — [I]
       IOMMU (Visão Geral)
       Isolamento de DMA
       Virtualização de dispositivos
       Proteção contra acessos ilegais
 
-  24.2.3 Ameaças — [V]
+  25.2.3 Ameaças — [V]
       DMA malicioso
       Interceptação de dados
       Corrupção da comunicação
@@ -1536,36 +1563,36 @@ PARTE 5 — DESEMPENHO, CONFIABILIDADE E TENDÊNCIAS DOS BARRAMENTOS
 
 
 
-25. Aplicações dos Barramentos — [I]
+26. Aplicações dos Barramentos — [I]
 
- 25.1 Computadores Pessoais — [I]
+ 26.1 Computadores Pessoais — [I]
 
-  25.1.1 Comunicação Interna — [I]
+  26.1.1 Comunicação Interna — [I]
       CPU
       Memória
       GPU
       SSD
       Interfaces de expansão
 
-  25.1.2 Comunicação Externa — [V]
+  26.1.2 Comunicação Externa — [V]
       Dispositivos de entrada
       Dispositivos de saída
       Interfaces de expansão
 
 
- 25.2 Sistemas Especializados — [I]
+ 26.2 Sistemas Especializados — [I]
 
-  25.2.1 Servidores — [I]
+  26.2.1 Servidores — [I]
       Alto desempenho
       Grande largura de banda
       Múltiplos dispositivos
 
-  25.2.2 Sistemas Embarcados — [I]
+  26.2.2 Sistemas Embarcados — [I]
       Baixo consumo
       Comunicação integrada
       SoCs
 
-  25.2.3 Computação de Alto Desempenho — [I]
+  26.2.3 Computação de Alto Desempenho — [I]
       HPC
       Clusters
       Supercomputadores
@@ -1573,43 +1600,43 @@ PARTE 5 — DESEMPENHO, CONFIABILIDADE E TENDÊNCIAS DOS BARRAMENTOS
 
 
 
-26. Tendências e Tecnologias Futuras — [V]
+27. Tendências e Tecnologias Futuras — [V]
 
- 26.1 Evolução das Interconexões — [V]
+ 27.1 Evolução das Interconexões — [V]
 
-  26.1.1 Tendências Tecnológicas — [V]
+  27.1.1 Tendências Tecnológicas — [V]
       Maior largura de banda
       Menor latência
       Comunicação coerente
       Escalabilidade
 
-  26.1.2 Novas Arquiteturas — [V]
+  27.1.2 Novas Arquiteturas — [V]
       Chiplets
       Interconexões ópticas
       Comunicação 3D
       Memória compartilhada
 
-  26.1.3 Novos Padrões — [V]
+  27.1.3 Novos Padrões — [V]
       Evolução do PCI Express
       Evolução do CXL
       Evolução do UCIe
       Próximas gerações de interconexões
 
 
- 26.2 Perspectivas Futuras — [V]
+ 27.2 Perspectivas Futuras — [V]
 
-  26.2.1 Integração dos Componentes — [V]
+  27.2.1 Integração dos Componentes — [V]
       Sistemas heterogêneos
       Computação desagregada
       Infraestruturas componíveis
 
-  26.2.2 Desafios — [V]
+  27.2.2 Desafios — [V]
       Escalabilidade
       Consumo energético
       Complexidade
       Segurança
 
-  26.2.3 Futuro dos Barramentos — [V]
+  27.2.3 Futuro dos Barramentos — [V]
       Redução dos barramentos compartilhados
       Crescimento das redes internas
       Comunicação inteligente
@@ -1617,18 +1644,18 @@ PARTE 5 — DESEMPENHO, CONFIABILIDADE E TENDÊNCIAS DOS BARRAMENTOS
 
 
 
-27. Integração Geral dos Barramentos — [I]
+28. Integração Geral dos Barramentos — [I]
 
- 27.1 Integração Arquitetural — [I]
+ 28.1 Integração Arquitetural — [I]
 
-  27.1.1 Integração dos Componentes — [I]
+  28.1.1 Integração dos Componentes — [I]
       Comunicação entre CPU, memória e dispositivos
       Interligação dos subsistemas
       Fluxo de informações
       Coordenação das operações
       Organização hierárquica dos barramentos
 
-  27.1.2 Integração dos Mecanismos — [I]
+  28.1.2 Integração dos Mecanismos — [I]
       Barramentos de dados
       Barramentos de endereços
       Barramentos de controle
@@ -1636,7 +1663,7 @@ PARTE 5 — DESEMPENHO, CONFIABILIDADE E TENDÊNCIAS DOS BARRAMENTOS
       Protocolos de comunicação
       Temporização
 
-  27.1.3 Integração das Tecnologias — [I]
+  28.1.3 Integração das Tecnologias — [I]
       PCI Express
       AMBA
       QPI
@@ -1646,21 +1673,21 @@ PARTE 5 — DESEMPENHO, CONFIABILIDADE E TENDÊNCIAS DOS BARRAMENTOS
       CXL
       UCIe
 
- 27.2 Visão Integrada da Arquitetura — [I]
+ 28.2 Visão Integrada da Arquitetura — [I]
 
-  27.2.1 Comunicação do Sistema — [I]
+  28.2.1 Comunicação do Sistema — [I]
       Comunicação interna
       Comunicação externa
       Interconexão entre componentes
       Compartilhamento de recursos
 
-  27.2.2 Papel dos Barramentos na Arquitetura — [I]
+  28.2.2 Papel dos Barramentos na Arquitetura — [I]
       Base da comunicação do computador
       Integração dos componentes
       Influência no desempenho
       Escalabilidade da arquitetura
 
-  27.2.3 Relação entre os Conceitos Estudados — [I]
+  28.2.3 Relação entre os Conceitos Estudados — [I]
       Estrutura
       Funcionamento
       Tecnologias
@@ -1669,24 +1696,24 @@ PARTE 5 — DESEMPENHO, CONFIABILIDADE E TENDÊNCIAS DOS BARRAMENTOS
 
 
 
-28. Resumo Geral dos Barramentos — [I]
+29. Resumo Geral dos Barramentos — [I]
 
- 28.1 Revisão dos Conceitos Fundamentais — [I]
+ 29.1 Revisão dos Conceitos Fundamentais — [I]
 
-  28.1.1 Fundamentos — [I]
+  29.1.1 Fundamentos — [I]
       Conceitos básicos
       Objetivos
       Classificações
       Organização geral
 
-  28.1.2 Estrutura e Funcionamento — [I]
+  29.1.2 Estrutura e Funcionamento — [I]
       Estrutura física
       Estrutura lógica
       Linhas do barramento
       Operações fundamentais
       Ciclos de barramento
 
-  28.1.3 Controle da Comunicação — [I]
+  29.1.3 Controle da Comunicação — [I]
       Arbitragem
       Bus Mastering
       DMA
@@ -1694,14 +1721,14 @@ PARTE 5 — DESEMPENHO, CONFIABILIDADE E TENDÊNCIAS DOS BARRAMENTOS
       Temporização
 
 
- 28.2 Revisão das Arquiteturas e Tecnologias — [I]
+ 29.2 Revisão das Arquiteturas e Tecnologias — [I]
 
-  28.2.1 Arquiteturas Tradicionais — [I]
+  29.2.1 Arquiteturas Tradicionais — [I]
       Barramentos do sistema
       Barramentos de expansão
       PCI
 
-  28.2.2 Arquiteturas Modernas — [I]
+  29.2.2 Arquiteturas Modernas — [I]
       PCI Express
       AMBA
       QPI
@@ -1709,50 +1736,50 @@ PARTE 5 — DESEMPENHO, CONFIABILIDADE E TENDÊNCIAS DOS BARRAMENTOS
       HyperTransport
       Infinity Fabric
 
-  28.2.3 Tecnologias Emergentes — [I]
+  29.2.3 Tecnologias Emergentes — [I]
       CXL
       UCIe
       Interconexões para Chiplets
       Network-on-Chip
 
 
- 28.3 Competências Esperadas — [I]
+ 29.3 Competências Esperadas — [I]
 
-  28.3.1 Conhecimentos Fundamentais — [I]
+  29.3.1 Conhecimentos Fundamentais — [I]
       Compreender o funcionamento dos barramentos
       Entender a comunicação entre componentes
       Conhecer os principais tipos
 
-  28.3.2 Conhecimentos Intermediários — [I]
+  29.3.2 Conhecimentos Intermediários — [I]
       Analisar protocolos
       Avaliar desempenho
       Identificar gargalos
       Comparar arquiteturas
 
-  28.3.3 Conhecimentos Avançados — [V]
+  29.3.3 Conhecimentos Avançados — [V]
       Entender interconexões modernas
       Compreender tendências futuras
       Relacionar barramentos com arquiteturas contemporâneas
 
 
 
-29. Conclusão — [V]
+30. Conclusão — [V]
 
- 29.1 Síntese Final — [V]
+ 30.1 Síntese Final — [V]
 
-  29.1.1 Papel dos Barramentos — [V]
+  30.1.1 Papel dos Barramentos — [V]
       Base da comunicação entre componentes
       Integração dos subsistemas
       Coordenação das transferências
       Fundamentais para a Arquitetura e Organização de Computadores
 
-  29.1.2 Evolução dos Barramentos — [V]
+  30.1.2 Evolução dos Barramentos — [V]
       Dos barramentos compartilhados às interconexões ponto a ponto
       Crescimento da largura de banda
       Redução da latência
       Maior escalabilidade
 
-  29.1.3 Importância Atual — [V]
+  30.1.3 Importância Atual — [V]
       Sistemas multicore
       Computação heterogênea
       Servidores
@@ -1760,21 +1787,21 @@ PARTE 5 — DESEMPENHO, CONFIABILIDADE E TENDÊNCIAS DOS BARRAMENTOS
       Inteligência Artificial
 
 
- 29.2 Continuidade dos Estudos — [V]
+ 30.2 Continuidade dos Estudos — [V]
 
-  29.2.1 Assuntos Relacionados — [V]
+  30.2.1 Assuntos Relacionados — [V]
       Memória Principal
       Cache
       Processadores
       Entrada e Saída
       Sistemas Multiprocessados
 
-  29.2.2 Visão Geral — [V]
+  30.2.2 Visão Geral — [V]
       Como os barramentos se integram aos demais componentes
       Limites do escopo deste estudo
       Relação com os demais tópicos da Arquitetura e Organização de Computadores
 
-  29.2.3 Encerramento — [V]
+  30.2.3 Encerramento — [V]
       Revisão dos principais conceitos
       Consolidação do conhecimento
       Preparação para estudos mais avançados
