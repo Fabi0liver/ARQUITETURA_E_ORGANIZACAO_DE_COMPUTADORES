@@ -368,3 +368,666 @@ PARTE 1 — FUNDAMENTOS DOS BARRAMENTOS
       Infinity Fabric
       CXL
       UCIe
+
+
+
+PARTE 2 — ESTRUTURA E FUNCIONAMENTO DOS BARRAMENTOS
+
+
+6. Estrutura Física e Lógica dos Barramentos — [P]
+
+ 6.1 Estrutura Física — [P]
+
+  6.1.1 Componentes Físicos — [I]
+      Trilhas (Bus Lines)
+      Linhas de sinal
+      Condutores
+      Barramentos compartilhados
+      Barramentos dedicados
+      Conectores
+      Slots
+      Backplane
+      PCB (Placa de Circuito Impresso)
+
+  6.1.2 Organização Física — [I]
+      Distribuição das linhas
+      Agrupamento dos sinais
+      Topologia física
+      Comprimento das linhas
+      Layout do barramento
+      Organização modular
+
+  6.1.3 Características Elétricas — [P]
+      Níveis de tensão
+      Corrente elétrica
+      Impedância
+      Capacitância
+      Resistência
+      Integridade elétrica
+
+
+ 6.2 Estrutura Lógica — [P]
+
+  6.2.1 Organização dos Sinais — [P]
+      Linhas de dados
+      Linhas de endereços
+      Linhas de controle
+      Linhas de clock
+      Linhas de arbitragem
+      Linhas de interrupção
+
+  6.2.2 Interfaces de Comunicação — [P]
+      Interface do mestre
+      Interface do escravo
+      Controladores
+      Adaptadores
+      Controladores de barramento
+
+  6.2.3 Organização Hierárquica — [I]
+      Barramentos locais
+      Barramentos do sistema
+      Barramentos de expansão
+      Hierarquia das interconexões
+      Segmentação do barramento
+
+
+ 6.3 Arquitetura da Comunicação — [P]
+
+  6.3.1 Modelos de Comunicação — [P]
+      Mestre-escravo
+      Comunicação ponto a ponto
+      Comunicação compartilhada
+      Comunicação distribuída
+
+  6.3.2 Organização Arquitetural — [P]
+      Comunicação centralizada
+      Comunicação descentralizada
+      Interconexão hierárquica
+      Interconexão modular
+
+  6.3.3 Componentes Arquiteturais Envolvidos — [I]
+      Processador
+      Controlador de memória
+      Controladores de I/O
+      Dispositivos
+      Aceleradores
+
+
+
+7. Sinais e Linhas dos Barramentos — [P]
+
+ 7.1 Barramento de Dados — [P]
+
+  7.1.1 Fundamentos — [P]
+      Conceito
+      Objetivos
+      Transporte de dados
+      Comunicação bidirecional
+
+  7.1.2 Organização — [P]
+      Largura em bits
+      Palavra da máquina
+      Transferência paralela
+      Transferência serial
+
+  7.1.3 Operação — [P]
+      Leitura
+      Escrita
+      Transferência simples
+      Transferência em bloco
+
+
+ 7.2 Barramento de Endereços — [P]
+
+  7.2.1 Fundamentos — [P]
+      Conceito
+      Objetivos
+      Seleção de dispositivos
+      Endereçamento
+
+  7.2.2 Organização — [P]
+      Espaço de endereçamento
+      Capacidade de endereçamento
+      Endereçamento físico
+      Seleção de memória
+      Seleção de dispositivos
+
+  7.2.3 Operação — [P]
+      Emissão do endereço
+      Decodificação
+      Seleção do destino
+      Início da comunicação
+
+
+ 7.3 Barramento de Controle — [P]
+
+  7.3.1 Fundamentos — [P]
+      Conceito
+      Coordenação das operações
+      Controle das transferências
+
+  7.3.2 Principais Sinais — [P]
+      Read
+      Write
+      Memory Read
+      Memory Write
+      I/O Read
+      I/O Write
+      Reset
+      Clock
+      Ready
+      Wait
+      Chip Select
+      Byte Enable
+
+  7.3.3 Controle da Comunicação — [P]
+      Início da operação
+      Confirmação
+      Finalização
+      Sincronização
+      Controle temporal
+
+
+
+8. Operações Fundamentais dos Barramentos — [P]
+
+ 8.1 Operações Básicas — [P]
+
+  8.1.1 Leitura — [P]
+      Solicitação
+      Seleção do endereço
+      Resposta do dispositivo
+      Transferência dos dados
+
+  8.1.2 Escrita — [P]
+      Solicitação
+      Seleção do endereço
+      Envio dos dados
+      Confirmação
+
+  8.1.3 Transferências Fundamentais — [P]
+      Palavra única
+      Múltiplas palavras
+      Transferência sequencial
+      Transferência aleatória
+
+
+ 8.2 Operações Avançadas — [P]
+
+  8.2.1 Transferências em Bloco — [P]
+      Block Transfer
+      Burst Transfer
+      Burst Length
+      Eficiência
+
+  8.2.2 Operações Especiais — [I]
+      Broadcast
+      Multicast
+      Operações atômicas
+      Read-Modify-Write
+
+  8.2.3 Operações Não Bloqueantes — [I]
+      Operações concorrentes
+      Paralelismo
+      Reordenação
+      Otimização da comunicação
+
+
+ 8.3 Fluxo Completo de uma Transferência — [P]
+
+  8.3.1 Etapas da Comunicação — [P]
+      Solicitação
+      Arbitragem
+      Concessão
+      Endereçamento
+      Transferência
+      Confirmação
+      Liberação
+
+  8.3.2 Estados do Barramento — [P]
+      Idle
+      Busy
+      Wait
+      Transfer
+      Completion
+
+
+
+9. Temporização e Sincronização — [P]
+
+ 9.1 Fundamentos da Temporização — [P]
+
+  9.1.1 Conceitos — [P]
+      Clock
+      Ciclo de barramento
+      Ciclo de comunicação
+      Tempo de propagação
+      Tempo de resposta
+      Tempo de acesso
+
+  9.1.2 Parâmetros Temporais — [P]
+      Frequência
+      Período
+      Latência
+      Throughput
+      Overhead
+
+  9.1.3 Relações Temporais — [P]
+      Sincronização entre dispositivos
+      Sequenciamento
+      Dependência temporal
+
+
+ 9.2 Barramentos Síncronos — [P]
+
+  9.2.1 Funcionamento — [P]
+      Clock compartilhado
+      Ciclos sincronizados
+      Coordenação temporal
+
+  9.2.2 Características — [P]
+      Vantagens
+      Limitações
+      Aplicações
+      Escalabilidade
+
+
+ 9.3 Barramentos Assíncronos — [P]
+
+  9.3.1 Funcionamento — [P]
+      Handshake
+      Request
+      Acknowledge
+      Ready
+
+  9.3.2 Características — [P]
+      Vantagens
+      Desvantagens
+      Flexibilidade
+      Compatibilidade
+
+
+ 9.4 Técnicas de Temporização — [P]
+
+  9.4.1 Controle Temporal — [P]
+      Wait States
+      Clock Stretching
+      Timeout
+
+  9.4.2 Técnicas de Transferência — [P]
+      Pipeline
+      Burst
+      Sobreposição de operações
+      Otimização temporal
+
+
+
+10. Protocolos de Comunicação dos Barramentos — [P]
+
+ 10.1 Fundamentos dos Protocolos — [P]
+
+  10.1.1 Conceitos — [P]
+      Protocolo de comunicação
+      Sequência de operações
+      Regras de comunicação
+      Controle da transferência
+
+  10.1.2 Objetivos — [P]
+      Comunicação confiável
+      Coordenação
+      Compatibilidade
+      Integridade das operações
+
+
+ 10.2 Protocolos de Controle — [P]
+
+  10.2.1 Handshake — [P]
+      Request
+      Grant
+      Acknowledge
+      Ready
+      Busy
+
+  10.2.2 Controle Operacional — [P]
+      Timeout
+      Retry
+      Error Signal
+      Finalização
+      Reinício da operação
+
+
+ 10.3 Integridade da Comunicação — [P]
+
+  10.3.1 Controle da Transferência — [P]
+      Confirmação
+      Sincronização
+      Sequenciamento
+      Consistência da comunicação
+
+  10.3.2 Tratamento de Erros — [I]
+      Detecção de falhas
+      Retransmissão
+      Recuperação
+      Continuidade da operação
+
+
+
+PARTE 3 — ARBITRAGEM, CONTROLE E COMUNICAÇÃO ENTRE COMPONENTES
+
+
+11. Arbitragem de Barramentos — [P]
+
+ 11.1 Fundamentos da Arbitragem — [P]
+
+  11.1.1 Conceitos Fundamentais — [P]
+      Conceito de arbitragem
+      Necessidade da arbitragem
+      Compartilhamento do barramento
+      Contenção do barramento
+      Conflitos de acesso
+      Exclusividade de utilização
+
+  11.1.2 Objetivos da Arbitragem — [P]
+      Coordenação do acesso
+      Evitar conflitos
+      Garantir consistência
+      Maximizar eficiência
+      Balancear desempenho
+      Garantir justiça (Fairness)
+
+  11.1.3 Situações que Exigem Arbitragem — [P]
+      Múltiplos mestres
+      DMA concorrente
+      Controladores simultâneos
+      Comunicação paralela
+      Acesso concorrente à memória
+
+
+ 11.2 Componentes da Arbitragem — [P]
+
+  11.2.1 Elementos Envolvidos — [P]
+      Bus Master
+      Bus Slave
+      Arbiter
+      Bus Request
+      Bus Grant
+      Bus Busy
+
+  11.2.2 Processo de Arbitragem — [P]
+      Solicitação
+      Análise das requisições
+      Seleção do vencedor
+      Concessão
+      Utilização
+      Liberação
+
+  11.2.3 Critérios de Decisão — [P]
+      Prioridade
+      Tempo de espera
+      Justiça
+      Eficiência
+      Escalabilidade
+
+
+ 11.3 Métodos de Arbitragem — [P]
+
+  11.3.1 Arbitragem Centralizada — [P]
+      Funcionamento
+      Controlador central
+      Vantagens
+      Limitações
+
+  11.3.2 Arbitragem Distribuída — [P]
+      Funcionamento
+      Decisão cooperativa
+      Vantagens
+      Limitações
+
+  11.3.3 Algoritmos de Arbitragem — [P]
+      Daisy Chain
+      Prioridade fixa
+      Prioridade dinâmica
+      Round Robin
+      Token Passing
+      Lottery Arbitration (Visão Geral)
+
+
+
+12. Bus Mastering — [P]
+
+ 12.1 Fundamentos — [P]
+
+  12.1.1 Conceitos — [P]
+      Definição
+      Objetivos
+      Controle direto do barramento
+      Múltiplos mestres
+
+  12.1.2 Funcionamento Geral — [P]
+      Requisição
+      Arbitragem
+      Concessão
+      Controle da transferência
+      Liberação
+
+  12.1.3 Requisitos Arquiteturais — [P]
+      Dispositivos capazes de iniciar comunicação
+      Arbitragem
+      Controle independente da CPU
+      Coordenação do sistema
+
+
+ 12.2 Operação do Bus Mastering — [P]
+
+  12.2.1 Controle das Transferências — [P]
+      Inicialização
+      Comunicação direta
+      Encerramento
+      Sincronização
+
+  12.2.2 Compartilhamento do Barramento — [P]
+      Concorrência
+      Prioridades
+      Alternância entre mestres
+      Coordenação
+
+  12.2.3 Aplicações — [I]
+      GPUs
+      Controladores de armazenamento
+      Interfaces de rede
+      Controladores PCI Express
+      Aceleradores computacionais
+
+
+
+13. DMA (Direct Memory Access) — [P]
+
+ 13.1 Fundamentos — [P]
+
+  13.1.1 Conceitos Fundamentais — [P]
+      Definição
+      Objetivos
+      Comunicação direta
+      Redução da carga da CPU
+
+  13.1.2 Motivação — [P]
+      Transferências em grande volume
+      Redução de interrupções
+      Maior desempenho
+      Melhor aproveitamento da CPU
+
+  13.1.3 Relação com o Barramento — [P]
+      Utilização do barramento
+      Arbitragem
+      Bus Mastering
+      Comunicação direta com memória
+
+
+ 13.2 Controlador DMA — [P]
+
+  13.2.1 Estrutura — [P]
+      Registradores de controle
+      Registradores de endereço
+      Registradores de contagem
+      Canais DMA
+
+  13.2.2 Funcionamento — [P]
+      Inicialização
+      Transferência
+      Finalização
+      Interrupção de término
+
+  13.2.3 Controle da Comunicação — [P]
+      Solicitação do barramento
+      Concessão
+      Controle da transferência
+      Liberação
+
+
+ 13.3 Modos de Operação do DMA — [P]
+
+  13.3.1 Modos Clássicos — [P]
+      Burst Mode
+      Cycle Stealing
+      Transparent DMA
+      Demand Transfer
+
+  13.3.2 Avaliação dos Modos — [P]
+      Desempenho
+      Latência
+      Utilização do barramento
+      Impacto na CPU
+
+  13.3.3 Aplicações — [I]
+      SSDs
+      Placas de rede
+      Controladores USB
+      Controladores gráficos
+
+
+
+14. Comunicação entre Componentes do Sistema — [P]
+
+ 14.1 Comunicação entre CPU e Memória — [P]
+
+  14.1.1 Operações de Leitura — [P]
+      Solicitação
+      Endereçamento
+      Transferência
+      Confirmação
+
+  14.1.2 Operações de Escrita — [P]
+      Seleção do endereço
+      Envio dos dados
+      Controle
+      Finalização
+
+  14.1.3 Ciclo de Memória — [P]
+      Início
+      Acesso
+      Transferência
+      Encerramento
+
+
+ 14.2 Comunicação entre CPU e Dispositivos de Entrada e Saída — [P]
+
+  14.2.1 Comunicação Programada — [I]
+      Polling
+      Características
+      Aplicações
+
+  14.2.2 Comunicação por Interrupções — [P]
+      Solicitação
+      Atendimento
+      Retorno
+      Coordenação pelo barramento
+
+  14.2.3 Comunicação por DMA — [P]
+      Inicialização
+      Transferência direta
+      Finalização
+
+
+ 14.3 Comunicação entre Dispositivos — [P]
+
+  14.3.1 Transferência Direta — [P]
+      Dispositivo para dispositivo
+      Coordenação
+      Fluxo de dados
+
+  14.3.2 Comunicação através de Controladores — [P]
+      Intermediação
+      Coordenação
+      Compartilhamento do barramento
+
+  14.3.3 Comunicação em Sistemas Modernos — [I]
+      Peer-to-Peer
+      Comunicação direta
+      Compartilhamento eficiente
+
+
+
+15. Ciclos de Barramento — [P]
+
+ 15.1 Conceitos Fundamentais — [P]
+
+  15.1.1 Definição — [P]
+      Conceito de ciclo de barramento
+      Objetivos
+      Sequência operacional
+
+  15.1.2 Componentes do Ciclo — [P]
+      Endereçamento
+      Controle
+      Transferência
+      Finalização
+
+  15.1.3 Estados do Ciclo — [P]
+      Idle
+      Request
+      Grant
+      Address
+      Data
+      Completion
+
+
+ 15.2 Ciclos de Comunicação — [P]
+
+  15.2.1 Ciclo de Leitura — [P]
+      Emissão do endereço
+      Seleção do dispositivo
+      Disponibilização dos dados
+      Encerramento
+
+  15.2.2 Ciclo de Escrita — [P]
+      Seleção
+      Envio dos dados
+      Confirmação
+      Finalização
+
+  15.2.3 Ciclos Especiais — [P]
+      Burst
+      Read-Modify-Write
+      Operações atômicas
+      Broadcast
+
+
+ 15.3 Otimização dos Ciclos — [P]
+
+  15.3.1 Técnicas de Otimização — [P]
+      Pipeline
+      Burst Transfer
+      Prefetch (Visão Geral)
+      Sobreposição de operações
+
+  15.3.2 Eficiência dos Ciclos — [P]
+      Redução da latência
+      Aumento do throughput
+      Redução do overhead
+      Melhor utilização do barramento
+
+  15.3.3 Gargalos Operacionais — [P]
+      Espera por arbitragem
+      Contenção
+      Saturação
+      Impacto no desempenho geral
