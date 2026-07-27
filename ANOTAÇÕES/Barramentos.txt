@@ -710,6 +710,12 @@ PARTE 2 — ESTRUTURA E FUNCIONAMENTO DOS BARRAMENTOS
       Recuperação
       Continuidade da operação
 
+  10.3.3 Ordenação de Memória — [I]
+      Strong Ordering
+      Weak Ordering
+      Relaxed Ordering
+      Barreiras de Memória (Visão Geral)
+
 
 
 PARTE 3 — ARBITRAGEM, CONTROLE E COMUNICAÇÃO ENTRE COMPONENTES
@@ -1188,8 +1194,10 @@ PARTE 4 — ARQUITETURAS, TECNOLOGIAS E PADRÕES DE BARRAMENTOS
       Treinamento do link
 
   18.3.2 Data Link Layer — [P]
-      DLLP
+      DLLP	
+      Flow Control
       CRC
+      ACK/NAK
       Retransmissão
       Controle de fluxo
 
@@ -1226,6 +1234,11 @@ PARTE 4 — ARQUITETURAS, TECNOLOGIAS E PADRÕES DE BARRAMENTOS
       Gen6
       Gen7
 
+  18.4.4 Virtualização Avançada — [I]
+      PASID
+      PRI
+      Shared Virtual Memory
+      Comunicação com IOMMU
 
 
 19. Barramentos Internos dos Processadores — [P]
@@ -1291,6 +1304,15 @@ PARTE 4 — ARQUITETURAS, TECNOLOGIAS E PADRÕES DE BARRAMENTOS
       CHI
       Comunicação coerente
 
+  20.1.4 Protocolos de Coerência — [I]
+      Conceito de Coerência
+      Snooping
+      Directory-Based
+      MESI (Visão Geral)
+      MOESI (Visão Geral)
+      Relação com ACE
+      Relação com CHI
+
 
  20.2 Comunicação em SoCs — [P]
 
@@ -1312,17 +1334,26 @@ PARTE 4 — ARQUITETURAS, TECNOLOGIAS E PADRÕES DE BARRAMENTOS
       Comunicação paralela
       Compartilhamento eficiente
 
+  20.2.4 Topologias de Interconexão — [P]
+      Barramento
+      Crossbar
+      Ring
+      Mesh
+      Torus
+      Fat Tree (Visão Geral)
+
 
 
 21. Comunicação em Sistemas Multicore — [P]
 
  21.1 Comunicação entre Núcleos — [P]
 
-  20A.1.1 Conceitos
+  201.1.1 Conceitos
       Comunicação Core-Core
       Compartilhamento de Dados
       Compartilhamento de Cache
       Comunicação entre Threads
+
 
  21.2 Interconexões Internas — [P]
 
@@ -1331,6 +1362,10 @@ PARTE 4 — ARQUITETURAS, TECNOLOGIAS E PADRÕES DE BARRAMENTOS
       Mesh
       Crossbar
       Network-on-Chip
+      Latência de Comunicação
+      Escalabilidade
+      Balanceamento de Tráfego
+
 
  21.3 Comunicação Coerente — [P]
 
@@ -1438,6 +1473,12 @@ PARTE 5 — DESEMPENHO, CONFIABILIDADE E TENDÊNCIAS DOS BARRAMENTOS
       Pipeline
       Hierarquia de barramentos
       Interconexões modernas
+
+  23.2.4 Qualidade de Serviço (QoS) — [I]
+      Priorização
+      Garantia de Banda
+      Controle de Latência
+      Classes de Serviço
 
 
  23.3 Avaliação Arquitetural — [P]
@@ -1621,6 +1662,13 @@ PARTE 5 — DESEMPENHO, CONFIABILIDADE E TENDÊNCIAS DOS BARRAMENTOS
       Evolução do CXL
       Evolução do UCIe
       Próximas gerações de interconexões
+
+  27.1.4 Transição dos Barramentos para Interconexões
+      Substituição dos barramentos compartilhados
+      Comunicação ponto a ponto
+      Network-on-Chip
+      Interconnect Fabrics
+      Arquiteturas Baseadas em Links
 
 
  27.2 Perspectivas Futuras — [V]
