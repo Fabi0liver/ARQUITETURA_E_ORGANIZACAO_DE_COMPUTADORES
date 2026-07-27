@@ -925,6 +925,7 @@ PARTE 3 — ARBITRAGEM, CONTROLE E COMUNICAÇÃO ENTRE COMPONENTES
   14.1.2 Operações de Escrita — [P]
       Seleção do endereço
       Envio dos dados
+      Coerência durante Escrita (Visão Geral)
       Controle
       Finalização
 
@@ -1310,6 +1311,8 @@ PARTE 4 — ARQUITETURAS, TECNOLOGIAS E PADRÕES DE BARRAMENTOS
       Directory-Based
       MESI (Visão Geral)
       MOESI (Visão Geral)
+      Estados dos Protocolos
+      Transições de Estado
       Relação com ACE
       Relação com CHI
 
@@ -1348,7 +1351,7 @@ PARTE 4 — ARQUITETURAS, TECNOLOGIAS E PADRÕES DE BARRAMENTOS
 
  21.1 Comunicação entre Núcleos — [P]
 
-  201.1.1 Conceitos
+  21.1.1 Conceitos
       Comunicação Core-Core
       Compartilhamento de Dados
       Compartilhamento de Cache
@@ -1372,6 +1375,7 @@ PARTE 4 — ARQUITETURAS, TECNOLOGIAS E PADRÕES DE BARRAMENTOS
   21.3.1 Fundamentos
       Comunicação Coerente
       Compartilhamento de Memória
+      Consistência de Memória (Visão Geral)
       Sincronização entre Núcleos
 
 
@@ -1386,6 +1390,7 @@ PARTE 4 — ARQUITETURAS, TECNOLOGIAS E PADRÕES DE BARRAMENTOS
       CXL.io
       CXL.cache
       CXL.memory
+      Tipos de Dispositivos CXL
 
   22.1.2 Universal Chiplet Interconnect Express (UCIe) — [P]
       Comunicação Die-to-Die
@@ -1476,6 +1481,7 @@ PARTE 5 — DESEMPENHO, CONFIABILIDADE E TENDÊNCIAS DOS BARRAMENTOS
 
   23.2.4 Qualidade de Serviço (QoS) — [I]
       Priorização
+      Arbitragem baseada em prioridade
       Garantia de Banda
       Controle de Latência
       Classes de Serviço
@@ -1595,6 +1601,7 @@ PARTE 5 — DESEMPENHO, CONFIABILIDADE E TENDÊNCIAS DOS BARRAMENTOS
       Isolamento de DMA
       Virtualização de dispositivos
       Proteção contra acessos ilegais
+      Boot Seguro (Secure Boot)
 
   25.2.3 Ameaças — [V]
       DMA malicioso
