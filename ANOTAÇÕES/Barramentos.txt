@@ -1031,3 +1031,327 @@ PARTE 3 — ARBITRAGEM, CONTROLE E COMUNICAÇÃO ENTRE COMPONENTES
       Contenção
       Saturação
       Impacto no desempenho geral
+
+
+
+PARTE 4 — ARQUITETURAS, TECNOLOGIAS E PADRÕES DE BARRAMENTOS
+
+
+16. Barramentos do Sistema — [P]
+
+ 16.1 Arquitetura dos Barramentos do Sistema — [P]
+
+  16.1.1 Organização Geral — [P]
+      Barramento do sistema
+      Comunicação entre CPU, memória e I/O
+      Organização hierárquica
+      Compartilhamento do barramento
+      Estrutura modular
+
+  16.1.2 Componentes Envolvidos — [P]
+      Processador
+      Controlador de memória
+      Controladores de I/O
+      Chipset
+      Dispositivos de expansão
+
+  16.1.3 Organização Arquitetural — [P]
+      Barramento único
+      Múltiplos barramentos
+      Barramentos hierárquicos
+      Comunicação ponto a ponto
+      Arquiteturas híbridas
+
+
+ 16.2 Barramentos Internos e Externos — [I]
+
+  16.2.1 Barramentos Internos — [P]
+      Comunicação interna da CPU
+      Comunicação entre unidades funcionais
+      Barramentos internos de dados
+      Barramentos internos de controle
+      Barramentos internos de endereços
+
+  16.2.2 Barramentos Externos — [I]
+      Comunicação com memória
+      Comunicação com periféricos
+      Comunicação entre controladores
+      Expansão do sistema
+
+  16.2.3 Comparação — [I]
+      Funções
+      Características
+      Desempenho
+      Aplicações
+
+
+
+17. Barramentos de Expansão — [P]
+
+ 17.1 Fundamentos — [I]
+
+  17.1.1 Conceitos — [I]
+      Objetivos
+      Expansibilidade
+      Modularidade
+      Compatibilidade
+      Evolução tecnológica
+
+  17.1.2 Recursos — [I]
+      Plug and Play
+      Hot Plug
+      Configuração automática
+      Compartilhamento de recursos
+
+  17.1.3 Critérios Arquiteturais — [I]
+      Desempenho
+      Escalabilidade
+      Compatibilidade
+      Flexibilidade
+
+
+ 17.2 Evolução Histórica — [V]
+
+  17.2.1 Primeiras Gerações — [V]
+      ISA
+      EISA
+      MCA
+
+  17.2.2 Segunda Geração — [V]
+      VESA Local Bus
+      PCI
+      AGP
+
+  17.2.3 Gerações Modernas — [V]
+      PCI-X
+      PCI Express
+      Evolução das interconexões
+
+
+
+18. PCI e PCI Express (PCIe) — [P]
+
+ 18.1 PCI (Peripheral Component Interconnect) — [I]
+
+  18.1.1 Fundamentos — [I]
+      Objetivos
+      Organização
+      Funcionamento
+      Compartilhamento do barramento
+
+  18.1.2 Recursos — [I]
+      Plug and Play
+      Bus Mastering
+      Configuração automática
+      Interrupções
+
+  18.1.3 Limitações — [I]
+      Barramento paralelo
+      Compartilhamento
+      Gargalos
+      Escalabilidade
+
+
+ 18.2 PCI Express — [P]
+
+  18.2.1 Fundamentos — [P]
+      Conceito
+      Evolução do PCI
+      Comunicação serial
+      Comunicação ponto a ponto
+      Arquitetura baseada em links
+
+  18.2.2 Estrutura Física — [P]
+      Lane
+      x1
+      x2
+      x4
+      x8
+      x16
+      x32
+      Link PCIe
+
+  18.2.3 Organização Arquitetural — [P]
+      Root Complex
+      Endpoint
+      Switch PCIe
+      Bridge
+      Topologia da rede PCIe
+
+
+ 18.3 Camadas do PCI Express — [P]
+
+  18.3.1 Physical Layer — [P]
+      Codificação
+      Sinalização
+      Link físico
+      Treinamento do link
+
+  18.3.2 Data Link Layer — [P]
+      DLLP
+      CRC
+      Retransmissão
+      Controle de fluxo
+
+  18.3.3 Transaction Layer — [P]
+      TLP
+      Endereçamento
+      Tipos de transação
+      Roteamento
+
+
+ 18.4 Recursos Arquiteturais do PCI Express — [P]
+
+  18.4.1 Recursos Fundamentais — [P]
+      Full Duplex
+      Hot Plug
+      Hot Swap
+      QoS
+      Bus Mastering
+
+  18.4.2 Recursos Avançados — [P]
+      MSI
+      MSI-X
+      SR-IOV
+      ATS
+      Peer-to-Peer PCIe
+      ASPM
+
+  18.4.3 Evolução do PCIe — [I]
+      Gen1
+      Gen2
+      Gen3
+      Gen4
+      Gen5
+      Gen6
+      Gen7
+
+
+
+19. Barramentos Internos dos Processadores — [P]
+
+ 19.1 Comunicação Interna da CPU — [P]
+
+  19.1.1 Organização — [P]
+      Comunicação entre registradores
+      Comunicação com ALU
+      Comunicação com unidades funcionais
+      Comunicação com cache
+
+  19.1.2 Barramentos Internos — [P]
+      Barramento interno de dados
+      Barramento interno de endereços
+      Barramento interno de controle
+      Barramentos dedicados
+
+  19.1.3 Comunicação Arquitetural — [P]
+      Datapath
+      Control Path
+      Fluxo interno de informações
+
+
+ 19.2 Evolução das Interconexões — [P]
+
+  19.2.1 Front Side Bus (FSB) — [I]
+      Arquitetura
+      Funcionamento
+      Limitações
+
+  19.2.2 Interconexões Modernas — [P]
+      QPI
+      UPI
+      HyperTransport
+      Infinity Fabric
+
+  19.2.3 Integração do Controlador de Memória — [P]
+      Controlador integrado
+      Comunicação direta
+      Redução da latência
+      Impacto arquitetural
+
+
+
+20. Barramentos para SoCs e Sistemas Modernos — [P]
+
+ 20.1 Arquitetura AMBA — [P]
+
+  20.1.1 Fundamentos — [P]
+      Objetivos
+      Organização
+      Arquitetura
+      Escalabilidade
+
+  20.1.2 Principais Barramentos — [P]
+      AHB
+      APB
+      AXI
+
+  20.1.3 Protocolos Avançados — [P]
+      ACE
+      CHI
+      Comunicação coerente
+
+
+ 20.2 Comunicação em SoCs — [P]
+
+  20.2.1 Organização Geral — [P]
+      CPU
+      GPU
+      Controladores
+      Memória
+      Aceleradores
+
+  20.2.2 Interconexões Internas — [P]
+      Crossbar
+      Interconnect
+      Network-on-Chip (NoC)
+      Barramentos hierárquicos
+
+  20.2.3 Escalabilidade — [I]
+      Múltiplos núcleos
+      Comunicação paralela
+      Compartilhamento eficiente
+
+
+
+21. Interconexões Modernas de Alto Desempenho — [P]
+
+ 21.1 Tecnologias Emergentes — [P]
+
+  21.1.1 Compute Express Link (CXL) — [P]
+      Objetivos
+      Arquitetura
+      CXL.io
+      CXL.cache
+      CXL.memory
+
+  21.1.2 Universal Chiplet Interconnect Express (UCIe) — [P]
+      Comunicação Die-to-Die
+      Chiplets
+      Encapsulamento avançado
+
+  21.1.3 Outras Tecnologias — [I]
+      NVLink
+      CCIX
+      Gen-Z
+      OpenCAPI
+
+
+ 21.2 Aplicações Arquiteturais — [I]
+
+  21.2.1 Computação Heterogênea — [I]
+      CPU + GPU
+      CPU + FPGA
+      CPU + NPU
+      CPU + TPU
+
+  21.2.2 Data Centers — [I]
+      Expansão de memória
+      Aceleradores
+      Comunicação de alta velocidade
+
+  21.2.3 Tendências Arquiteturais — [V]
+      Chiplets
+      Memória desagregada
+      Computação desagregada
+      Interconexões coerentes
