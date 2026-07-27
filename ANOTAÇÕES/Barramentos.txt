@@ -10,7 +10,7 @@ A classificação abaixo indica a profundidade recomendada para cada grande tóp
 
 
 
-PARTE 1 — FUNDAMENTOS DOS BARRAMENTOS
+Parte 1 — FUNDAMENTOS DOS BARRAMENTOS
 
 
 1. Introdução aos Barramentos — [I]
@@ -18,245 +18,245 @@ PARTE 1 — FUNDAMENTOS DOS BARRAMENTOS
  1.1 Visão Geral — [I]
 
   1.1.1 Conceitos Fundamentais — [I]
-      Conceito de barramento
-      Objetivos dos barramentos
-      Papel dos barramentos na Arquitetura e Organização de Computadores
-      Comunicação entre componentes
-      Compartilhamento de recursos
-      Barramentos como sistema de interconexão
+	  Conceito de barramento
+	  Objetivos dos barramentos
+	  Papel dos barramentos na Arquitetura e Organização de Computadores
+	  Comunicação entre componentes
+	  Compartilhamento de recursos
+	  Barramentos como sistema de interconexão
 
   1.1.2 Importância dos Barramentos — [I]
-      Comunicação entre CPU, memória e dispositivos de entrada e saída
-      Integração entre os componentes do computador
-      Coordenação das transferências de informações
-      Influência no desempenho global do sistema
-      Escalabilidade do hardware
-      Modularidade da arquitetura
+	  Comunicação entre CPU, memória e dispositivos de entrada e saída
+	  Integração entre os componentes do computador
+	  Coordenação das transferências de informações
+	  Influência no desempenho global do sistema
+	  Escalabilidade do hardware
+	  Modularidade da arquitetura
 
   1.1.3 Barramentos na Arquitetura e Organização de Computadores — [I]
-      Papel na Organização de Computadores
-      Papel na Arquitetura de Computadores
-      Interface entre componentes arquiteturais
-      Comunicação entre elementos do sistema
-      Relação com o datapath
-      Evolução das interconexões computacionais
+	  Papel na Organização de Computadores
+	  Papel na Arquitetura de Computadores
+	  Interface entre componentes arquiteturais
+	  Comunicação entre elementos do sistema
+	  Relação com o datapath
+	  Evolução das interconexões computacionais
 
 
  1.2 Características Gerais — [I]
 
   1.2.1 Características Funcionais — [I]
-      Meio de comunicação compartilhado
-      Transferência de dados
-      Transferência de endereços
-      Transferência de sinais de controle
-      Coordenação entre dispositivos
-      Comunicação síncrona e assíncrona
+	  Meio de comunicação compartilhado
+	  Transferência de dados
+	  Transferência de endereços
+	  Transferência de sinais de controle
+	  Coordenação entre dispositivos
+	  Comunicação síncrona e assíncrona
 
   1.2.2 Características Estruturais — [I]
-      Linhas do barramento
-      Organização em canais de comunicação
-      Largura do barramento
-      Sentido da comunicação
-      Barramentos dedicados
-      Barramentos compartilhados
+	  Linhas do barramento
+	  Organização em canais de comunicação
+	  Largura do barramento
+	  Sentido da comunicação
+	  Barramentos dedicados
+	  Barramentos compartilhados
 
   1.2.3 Características Operacionais — [I]
-      Leitura
-      Escrita
-      Solicitação de acesso
-      Concessão de acesso
-      Transferência de informações
-      Finalização da operação
+	  Leitura
+	  Escrita
+	  Solicitação de acesso
+	  Concessão de acesso
+	  Transferência de informações
+	  Finalização da operação
 
 
  1.3 Papel dos Barramentos no Sistema Computacional — [P]
 
   1.3.1 Comunicação entre Componentes — [P]
-      CPU ↔ Memória
-      CPU ↔ Entrada e Saída
-      Memória ↔ Dispositivos
-      Comunicação entre controladores
-      Comunicação entre aceleradores
-      Compartilhamento de recursos
+	  CPU ↔ Memória
+	  CPU ↔ Entrada e Saída
+	  Memória ↔ Dispositivos
+	  Comunicação entre controladores
+	  Comunicação entre aceleradores
+	  Compartilhamento de recursos
 
   1.3.2 Participação no Ciclo de Instrução — [P]
-      Busca da instrução
-      Busca de operandos
-      Escrita de resultados
-      Comunicação durante interrupções
-      Comunicação durante DMA
+	  Busca da instrução
+	  Busca de operandos
+	  Escrita de resultados
+	  Comunicação durante interrupções
+	  Comunicação durante DMA
 
   1.3.3 Fluxo Geral das Informações — [I]
-      Origem dos dados
-      Caminho percorrido
-      Controle da transferência
-      Destino dos dados
-      Atualização dos componentes
+	  Origem dos dados
+	  Caminho percorrido
+	  Controle da transferência
+	  Destino dos dados
+	  Atualização dos componentes
 
   1.3.4 Barramentos como Base da Interconexão do Computador — [P]
-      Comunicação interna
-      Comunicação externa
-      Compartilhamento do meio físico
-      Coordenação das operações
-      Interligação dos subsistemas
+	  Comunicação interna
+	  Comunicação externa
+	  Compartilhamento do meio físico
+	  Coordenação das operações
+	  Interligação dos subsistemas
 
 
 
-2. Fundamentos dos Barramentos — [P]
+2. Fundamentos dos Barramentos — [I]
 
- 2.1 Princípios da Comunicação Digital — [P]
+ 2.1 Princípios da Comunicação Digital — [I]
 
   2.1.1 Conceitos Fundamentais — [I]
-      Comunicação digital
-      Transmissão de informações
-      Origem e destino da comunicação
-      Canal de comunicação
-      Fluxo de sinais
+	  Comunicação digital
+	  Transmissão de informações
+	  Origem e destino da comunicação
+	  Canal de comunicação
+	  Fluxo de sinais
 
   2.1.2 Unidade de Transferência — [I]
-      Bit
-      Byte
-      Palavra
-      Palavra da máquina
-      Bloco de dados
-      Pacote de dados
+	  Bit
+	  Byte
+	  Palavra
+	  Palavra da máquina
+	  Bloco de dados
+	  Pacote de dados
 
   2.1.3 Representação das Informações — [I]
-      Dados
-      Endereços
-      Comandos
-      Sinais de controle
-      Estados do sistema
+	  Dados
+	  Endereços
+	  Comandos
+	  Sinais de controle
+	  Estados do sistema
 
-  2.1.4 Comunicação entre Componentes — [P]
-      Emissor
-      Receptor
-      Canal
-      Controle da comunicação
-      Sincronização
+  2.1.4 Comunicação entre Componentes — [I]
+	  Emissor
+	  Receptor
+	  Canal
+	  Controle da comunicação
+	  Sincronização
 
 
- 2.2 Estrutura Geral dos Barramentos — [P]
+ 2.2 Estrutura Geral dos Barramentos — [I]
 
-  2.2.1 Componentes Básicos — [P]
-      Linhas de dados
-      Linhas de endereços
-      Linhas de controle
-      Interfaces
-      Controladores
+  2.2.1 Componentes Básicos — [I]
+	  Linhas de dados
+	  Linhas de endereços
+	  Linhas de controle
+	  Interfaces
+	  Controladores
 
   2.2.2 Organização Física — [I]
-      Trilhas
-      Conectores
-      Backplane
-      Slots
-      Interligações
+	  Trilhas
+	  Conectores
+	  Backplane
+	  Slots
+	  Interligações
 
-  2.2.3 Organização Lógica — [P]
-      Barramento compartilhado
-      Barramento dedicado
-      Comunicação ponto a ponto
-      Hierarquia de barramentos
-      Domínios de comunicação
+  2.2.3 Organização Lógica — [I]
+	  Barramento compartilhado
+	  Barramento dedicado
+	  Comunicação ponto a ponto
+	  Hierarquia de barramentos
+	  Domínios de comunicação
 
 
- 2.3 Funcionamento Geral — [P]
+ 2.3 Funcionamento Geral — [I]
 
-  2.3.1 Processo de Transferência — [P]
-      Solicitação
-      Arbitragem
-      Concessão
-      Transferência
-      Confirmação
-      Liberação do barramento
+  2.3.1 Processo de Transferência — [I]
+	  Solicitação
+	  Arbitragem
+	  Concessão
+	  Transferência
+	  Confirmação
+	  Liberação do barramento
 
-  2.3.2 Elementos Envolvidos — [P]
-      Mestre do barramento
-      Escravo do barramento
-      Controlador
-      Dispositivo requisitante
-      Dispositivo atendido
+  2.3.2 Elementos Envolvidos — [I]
+	  Mestre do barramento
+	  Escravo do barramento
+	  Controlador
+	  Dispositivo requisitante
+	  Dispositivo atendido
 
   2.3.3 Estados Operacionais — [I]
-      Barramento livre
-      Barramento ocupado
-      Espera
-      Transferência
-      Encerramento da operação
+	  Barramento livre
+	  Barramento ocupado
+	  Espera
+	  Transferência
+	  Encerramento da operação
 
 
 
-3. Organização Geral dos Barramentos — [P]
+3. Organização Geral dos Barramentos — [I]
 
- 3.1 Organização Funcional — [P]
+ 3.1 Organização Funcional — [I]
 
-  3.1.1 Organização por Finalidade — [P]
-      Comunicação de dados
-      Comunicação de endereços
-      Comunicação de controle
-      Comunicação entre dispositivos
-      Comunicação entre subsistemas
+  3.1.1 Organização por Finalidade — [I]
+	  Comunicação de dados
+	  Comunicação de endereços
+	  Comunicação de controle
+	  Comunicação entre dispositivos
+	  Comunicação entre subsistemas
 
   3.1.2 Organização por Localização — [I]
-      Barramentos internos
-      Barramentos externos
-      Barramentos locais
-      Barramentos do sistema
-      Barramentos de expansão
+	  Barramentos internos
+	  Barramentos externos
+	  Barramentos locais
+	  Barramentos do sistema
+	  Barramentos de expansão
 
-  3.1.3 Organização por Arquitetura — [P]
-      Barramentos compartilhados
-      Barramentos dedicados
-      Interconexões ponto a ponto
-      Redes internas de comunicação
-      Arquiteturas híbridas
+  3.1.3 Organização por Arquitetura — [I]
+	  Barramentos compartilhados
+	  Barramentos dedicados
+	  Interconexões ponto a ponto
+	  Redes internas de comunicação
+	  Arquiteturas híbridas
 
 
- 3.2 Organização das Transferências — [P]
+ 3.2 Organização das Transferências — [I]
 
-  3.2.1 Fluxo das Informações — [P]
-      Origem
-      Destino
-      Caminho dos dados
-      Controle da comunicação
-      Sequenciamento
+  3.2.1 Fluxo das Informações — [I]
+	  Origem
+	  Destino
+	  Caminho dos dados
+	  Controle da comunicação
+	  Sequenciamento
 
   3.2.2 Direção da Comunicação — [I]
-      Unidirecional
-      Bidirecional
-      Half-Duplex
-      Full-Duplex
+	  Unidirecional
+	  Bidirecional
+	  Half-Duplex
+	  Full-Duplex
 
-  3.2.3 Coordenação das Operações — [P]
-      Sincronização
-      Controle temporal
-      Compartilhamento
-      Sequenciamento
-      Cooperação entre dispositivos
+  3.2.3 Coordenação das Operações — [I]
+	  Sincronização
+	  Controle temporal
+	  Compartilhamento
+	  Sequenciamento
+	  Cooperação entre dispositivos
 
 
  3.3 Critérios de Projeto — [I]
 
   3.3.1 Critérios Arquiteturais — [I]
-      Desempenho
-      Escalabilidade
-      Compatibilidade
-      Modularidade
-      Flexibilidade
+	  Desempenho
+	  Escalabilidade
+	  Compatibilidade
+	  Modularidade
+	  Flexibilidade
 
   3.3.2 Critérios Organizacionais — [I]
-      Complexidade
-      Custo
-      Consumo de energia
-      Número de dispositivos
-      Facilidade de expansão
+	  Complexidade
+	  Custo
+	  Consumo de energia
+	  Número de dispositivos
+	  Facilidade de expansão
 
   3.3.3 Critérios Operacionais — [I]
-      Eficiência
-      Latência
-      Throughput
-      Confiabilidade
-      Disponibilidade
+	  Eficiência
+	  Latência
+	  Throughput
+	  Confiabilidade
+	  Disponibilidade
 
 
 
@@ -265,62 +265,62 @@ PARTE 1 — FUNDAMENTOS DOS BARRAMENTOS
  4.1 Classificação Quanto à Função — [P]
 
   4.1.1 Barramento de Dados — [P]
-      Transporte de dados
-      Comunicação bidirecional
-      Relação com a largura da palavra
+	  Transporte de dados
+	  Comunicação bidirecional
+	  Relação com a largura da palavra
 
   4.1.2 Barramento de Endereços — [P]
-      Transporte de endereços
-      Espaço de endereçamento
-      Seleção de dispositivos
+	  Transporte de endereços
+	  Espaço de endereçamento
+	  Seleção de dispositivos
 
   4.1.3 Barramento de Controle — [P]
-      Coordenação das operações
-      Sinais de controle
-      Sincronização
-      Controle das transferências
+	  Coordenação das operações
+	  Sinais de controle
+	  Sincronização
+	  Controle das transferências
 
 
  4.2 Classificação Quanto à Comunicação — [I]
 
   4.2.1 Barramentos Paralelos — [I]
-      Organização
-      Funcionamento
-      Características
-      Limitações
+	  Organização
+	  Funcionamento
+	  Características
+	  Limitações
 
   4.2.2 Barramentos Seriais — [I]
-      Organização
-      Funcionamento
-      Características
-      Aplicações
+	  Organização
+	  Funcionamento
+	  Características
+	  Aplicações
 
   4.2.3 Comparação entre Comunicação Paralela e Serial — [I]
-      Largura de banda
-      Frequência
-      Escalabilidade
-      Integridade do sinal
+	  Largura de banda
+	  Frequência
+	  Escalabilidade
+	  Integridade do sinal
 
 
  4.3 Classificação Quanto ao Método de Operação — [I]
 
-  4.3.1 Barramentos Síncronos — [P]
-      Clock compartilhado
-      Funcionamento
-      Vantagens
-      Limitações
+  4.3.1 Barramentos Síncronos — [I]
+	  Clock compartilhado
+	  Funcionamento
+	  Vantagens
+	  Limitações
 
-  4.3.2 Barramentos Assíncronos — [P]
-      Handshake
-      Comunicação independente de clock
-      Vantagens
-      Limitações
+  4.3.2 Barramentos Assíncronos — [I]
+	  Handshake
+	  Comunicação independente de clock
+	  Vantagens
+	  Limitações
 
   4.3.3 Classificação Quanto ao Compartilhamento — [I]
-      Barramentos compartilhados
-      Barramentos dedicados
-      Comunicação ponto a ponto
-      Sistemas híbridos
+	  Barramentos compartilhados
+	  Barramentos dedicados
+	  Comunicação ponto a ponto
+	  Sistemas híbridos
 
 
 
@@ -329,49 +329,49 @@ PARTE 1 — FUNDAMENTOS DOS BARRAMENTOS
  5.1 Evolução dos Barramentos — [V]
 
   5.1.1 Primeiras Arquiteturas — [V]
-      Barramento único
-      Comunicação centralizada
-      Primeiros computadores
+	  Barramento único
+	  Comunicação centralizada
+	  Primeiros computadores
 
   5.1.2 Evolução Arquitetural — [V]
-      Múltiplos barramentos
-      Barramentos especializados
-      Comunicação ponto a ponto
-      Integração crescente
+	  Múltiplos barramentos
+	  Barramentos especializados
+	  Comunicação ponto a ponto
+	  Integração crescente
 
   5.1.3 Tendências Gerais — [V]
-      Aumento da largura de banda
-      Redução da latência
-      Maior paralelismo
-      Escalabilidade
+	  Aumento da largura de banda
+	  Redução da latência
+	  Maior paralelismo
+	  Escalabilidade
 
 
  5.2 Mudanças Arquiteturais — [V]
 
   5.2.1 Da Comunicação Compartilhada para Interconexões Modernas — [V]
-      Limitações dos barramentos tradicionais
-      Crescimento do paralelismo
-      Comunicação dedicada
-      Escalabilidade
+	  Limitações dos barramentos tradicionais
+	  Crescimento do paralelismo
+	  Comunicação dedicada
+	  Escalabilidade
 
   5.2.2 Papel dos Barramentos nas Arquiteturas Atuais — [V]
-      Computadores pessoais
-      Servidores
-      Sistemas embarcados
-      Sistemas multicore
-      Computação heterogênea
+	  Computadores pessoais
+	  Servidores
+	  Sistemas embarcados
+	  Sistemas multicore
+	  Computação heterogênea
 
   5.2.3 Visão Geral das Tecnologias Modernas — [V]
-      PCI Express
-      AMBA
-      HyperTransport
-      Infinity Fabric
-      CXL
-      UCIe
+	  PCI Express
+	  AMBA
+	  HyperTransport
+	  Infinity Fabric
+	  CXL
+	  UCIe
 
 
 
-PARTE 2 — ESTRUTURA E FUNCIONAMENTO DOS BARRAMENTOS
+Parte 2 — ESTRUTURA E FUNCIONAMENTO DOS BARRAMENTOS
 
 
 6. Estrutura Física e Lógica dos Barramentos — [P]
@@ -379,78 +379,78 @@ PARTE 2 — ESTRUTURA E FUNCIONAMENTO DOS BARRAMENTOS
  6.1 Estrutura Física — [P]
 
   6.1.1 Componentes Físicos — [I]
-      Trilhas (Bus Lines)
-      Linhas de sinal
-      Condutores
-      Barramentos compartilhados
-      Barramentos dedicados
-      Conectores
-      Slots
-      Backplane
-      PCB (Placa de Circuito Impresso)
+	  Trilhas (Bus Lines)
+	  Linhas de sinal
+	  Condutores
+	  Barramentos compartilhados
+	  Barramentos dedicados
+	  Conectores
+	  Slots
+	  Backplane
+	  PCB (Placa de Circuito Impresso)
 
   6.1.2 Organização Física — [I]
-      Distribuição das linhas
-      Agrupamento dos sinais
-      Topologia física
-      Comprimento das linhas
-      Layout do barramento
-      Organização modular
+	  Distribuição das linhas
+	  Agrupamento dos sinais
+	  Topologia física
+	  Comprimento das linhas
+	  Layout do barramento
+	  Organização modular
 
-  6.1.3 Características Elétricas — [P]
-      Níveis de tensão
-      Corrente elétrica
-      Impedância
-      Capacitância
-      Resistência
-      Integridade elétrica
+  6.1.3 Características Elétricas — [I]
+	  Níveis de tensão
+	  Corrente elétrica
+	  Impedância
+	  Capacitância
+	  Resistência
+	  Integridade elétrica
 
 
  6.2 Estrutura Lógica — [P]
 
   6.2.1 Organização dos Sinais — [P]
-      Linhas de dados
-      Linhas de endereços
-      Linhas de controle
-      Linhas de clock
-      Linhas de arbitragem
-      Linhas de interrupção
+	  Linhas de dados
+	  Linhas de endereços
+	  Linhas de controle
+	  Linhas de clock
+	  Linhas de arbitragem
+	  Linhas de interrupção
 
   6.2.2 Interfaces de Comunicação — [P]
-      Interface do mestre
-      Interface do escravo
-      Controladores
-      Adaptadores
-      Controladores de barramento
+	  Interface do mestre
+	  Interface do escravo
+	  Controladores
+	  Adaptadores
+	  Controladores de barramento
 
   6.2.3 Organização Hierárquica — [I]
-      Barramentos locais
-      Barramentos do sistema
-      Barramentos de expansão
-      Hierarquia das interconexões
-      Segmentação do barramento
+	  Barramentos locais
+	  Barramentos do sistema
+	  Barramentos de expansão
+	  Hierarquia das interconexões
+	  Segmentação do barramento
 
 
  6.3 Arquitetura da Comunicação — [P]
 
   6.3.1 Modelos de Comunicação — [P]
-      Mestre-escravo
-      Comunicação ponto a ponto
-      Comunicação compartilhada
-      Comunicação distribuída
+	  Mestre-escravo
+	  Comunicação ponto a ponto
+	  Comunicação compartilhada
+	  Comunicação distribuída
 
   6.3.2 Organização Arquitetural — [P]
-      Comunicação centralizada
-      Comunicação descentralizada
-      Interconexão hierárquica
-      Interconexão modular
+	  Comunicação centralizada
+	  Comunicação descentralizada
+	  Interconexão hierárquica
+	  Interconexão modular
 
   6.3.3 Componentes Arquiteturais Envolvidos — [I]
-      Processador
-      Controlador de memória
-      Controladores de I/O
-      Dispositivos
-      Aceleradores
+	  Processador
+	  Controlador de memória
+	  Controladores de I/O
+	  Dispositivos
+	  Aceleradores
 
 
 
@@ -459,73 +459,73 @@ PARTE 2 — ESTRUTURA E FUNCIONAMENTO DOS BARRAMENTOS
  7.1 Barramento de Dados — [P]
 
   7.1.1 Fundamentos — [P]
-      Conceito
-      Objetivos
-      Transporte de dados
-      Comunicação bidirecional
+	  Conceito
+	  Objetivos
+	  Transporte de dados
+	  Comunicação bidirecional
 
   7.1.2 Organização — [P]
-      Largura em bits
-      Palavra da máquina
-      Transferência paralela
-      Transferência serial
+	  Largura em bits
+	  Palavra da máquina
+	  Transferência paralela
+	  Transferência serial
 
   7.1.3 Operação — [P]
-      Leitura
-      Escrita
-      Transferência simples
-      Transferência em bloco
+	  Leitura
+	  Escrita
+	  Transferência simples
+	  Transferência em bloco
 
 
  7.2 Barramento de Endereços — [P]
 
   7.2.1 Fundamentos — [P]
-      Conceito
-      Objetivos
-      Seleção de dispositivos
-      Endereçamento
+	  Conceito
+	  Objetivos
+	  Seleção de dispositivos
+	  Endereçamento
 
   7.2.2 Organização — [P]
-      Espaço de endereçamento
-      Capacidade de endereçamento
-      Endereçamento físico
-      Seleção de memória
-      Seleção de dispositivos
+	  Espaço de endereçamento
+	  Capacidade de endereçamento
+	  Endereçamento físico
+	  Seleção de memória
+	  Seleção de dispositivos
 
   7.2.3 Operação — [P]
-      Emissão do endereço
-      Decodificação
-      Seleção do destino
-      Início da comunicação
+	  Emissão do endereço
+	  Decodificação
+	  Seleção do destino
+	  Início da comunicação
 
 
  7.3 Barramento de Controle — [P]
 
   7.3.1 Fundamentos — [P]
-      Conceito
-      Coordenação das operações
-      Controle das transferências
+	  Conceito
+	  Coordenação das operações
+	  Controle das transferências
 
   7.3.2 Principais Sinais — [P]
-      Read
-      Write
-      Memory Read
-      Memory Write
-      I/O Read
-      I/O Write
-      Reset
-      Clock
-      Ready
-      Wait
-      Chip Select
-      Byte Enable
+	  Read
+	  Write
+	  Memory Read
+	  Memory Write
+	  I/O Read
+	  I/O Write
+	  Reset
+	  Clock
+	  Ready
+	  Wait
+	  Chip Select
+	  Byte Enable
 
   7.3.3 Controle da Comunicação — [P]
-      Início da operação
-      Confirmação
-      Finalização
-      Sincronização
-      Controle temporal
+	  Início da operação
+	  Confirmação
+	  Finalização
+	  Sincronização
+	  Controle temporal
 
 
 
@@ -534,62 +534,62 @@ PARTE 2 — ESTRUTURA E FUNCIONAMENTO DOS BARRAMENTOS
  8.1 Operações Básicas — [P]
 
   8.1.1 Leitura — [P]
-      Solicitação
-      Seleção do endereço
-      Resposta do dispositivo
-      Transferência dos dados
+	  Solicitação
+	  Seleção do endereço
+	  Resposta do dispositivo
+	  Transferência dos dados
 
   8.1.2 Escrita — [P]
-      Solicitação
-      Seleção do endereço
-      Envio dos dados
-      Confirmação
+	  Solicitação
+	  Seleção do endereço
+	  Envio dos dados
+	  Confirmação
 
   8.1.3 Transferências Fundamentais — [P]
-      Palavra única
-      Múltiplas palavras
-      Transferência sequencial
-      Transferência aleatória
+	  Palavra única
+	  Múltiplas palavras
+	  Transferência sequencial
+	  Transferência aleatória
 
 
  8.2 Operações Avançadas — [P]
 
   8.2.1 Transferências em Bloco — [P]
-      Block Transfer
-      Burst Transfer
-      Burst Length
-      Eficiência
+	  Block Transfer
+	  Burst Transfer
+	  Burst Length
+	  Eficiência
 
   8.2.2 Operações Especiais — [I]
-      Broadcast
-      Multicast
-      Operações atômicas
-      Read-Modify-Write
+	  Broadcast
+	  Multicast
+	  Operações atômicas
+	  Read-Modify-Write
 
   8.2.3 Operações Não Bloqueantes — [I]
-      Operações concorrentes
-      Paralelismo
-      Reordenação
-      Otimização da comunicação
+	  Operações concorrentes
+	  Paralelismo
+	  Reordenação
+	  Otimização da comunicação
 
 
  8.3 Fluxo Completo de uma Transferência — [P]
 
   8.3.1 Etapas da Comunicação — [P]
-      Solicitação
-      Arbitragem
-      Concessão
-      Endereçamento
-      Transferência
-      Confirmação
-      Liberação
+	  Solicitação
+	  Arbitragem
+	  Concessão
+	  Endereçamento
+	  Transferência
+	  Confirmação
+	  Liberação
 
   8.3.2 Estados do Barramento — [P]
-      Idle
-      Busy
-      Wait
-      Transfer
-      Completion
+	  Idle
+	  Busy
+	  Wait
+	  Transfer
+	  Completion
 
 
 
@@ -598,127 +598,127 @@ PARTE 2 — ESTRUTURA E FUNCIONAMENTO DOS BARRAMENTOS
  9.1 Fundamentos da Temporização — [P]
 
   9.1.1 Conceitos — [P]
-      Clock
-      Ciclo de barramento
-      Ciclo de comunicação
-      Tempo de propagação
-      Tempo de resposta
-      Tempo de acesso
+	  Clock
+	  Ciclo de barramento
+	  Ciclo de comunicação
+	  Tempo de propagação
+	  Tempo de resposta
+	  Tempo de acesso
 
   9.1.2 Parâmetros Temporais — [P]
-      Frequência
-      Período
-      Latência
-      Throughput
-      Overhead
+	  Frequência
+	  Período
+	  Latência
+	  Throughput
+	  Overhead
 
   9.1.3 Relações Temporais — [P]
-      Sincronização entre dispositivos
-      Sequenciamento
-      Dependência temporal
+	  Sincronização entre dispositivos
+	  Sequenciamento
+	  Dependência temporal
 
 
  9.2 Barramentos Síncronos — [P]
 
   9.2.1 Funcionamento — [P]
-      Clock compartilhado
-      Ciclos sincronizados
-      Coordenação temporal
+	  Clock compartilhado
+	  Ciclos sincronizados
+	  Coordenação temporal
 
   9.2.2 Características — [P]
-      Vantagens
-      Limitações
-      Aplicações
-      Escalabilidade
+	  Vantagens
+	  Limitações
+	  Aplicações
+	  Escalabilidade
 
 
  9.3 Barramentos Assíncronos — [P]
 
   9.3.1 Funcionamento — [P]
-      Handshake
-      Request
-      Acknowledge
-      Ready
+	  Handshake
+	  Request
+	  Acknowledge
+	  Ready
 
   9.3.2 Características — [P]
-      Vantagens
-      Desvantagens
-      Flexibilidade
-      Compatibilidade
+	  Vantagens
+	  Desvantagens
+	  Flexibilidade
+	  Compatibilidade
 
 
  9.4 Técnicas de Temporização — [P]
 
   9.4.1 Controle Temporal — [P]
-      Wait States
-      Clock Stretching
-      Timeout
+	  Wait States
+	  Clock Stretching
+	  Timeout
 
   9.4.2 Técnicas de Transferência — [P]
-      Pipeline
-      Burst
-      Sobreposição de operações
-      Otimização temporal
+	  Pipeline
+	  Burst
+	  Sobreposição de operações
+	  Otimização temporal
 
 
 
-10. Protocolos de Comunicação dos Barramentos — [P]
+10. Protocolos de Comunicação dos Barramentos — [I]
 
- 10.1 Fundamentos dos Protocolos — [P]
+ 10.1 Fundamentos dos Protocolos — [I]
 
-  10.1.1 Conceitos — [P]
-      Protocolo de comunicação
-      Sequência de operações
-      Regras de comunicação
-      Controle da transferência
+  10.1.1 Conceitos — [I]
+	  Protocolo de comunicação
+	  Sequência de operações
+	  Regras de comunicação
+	  Controle da transferência
 
-  10.1.2 Objetivos — [P]
-      Comunicação confiável
-      Coordenação
-      Compatibilidade
-      Integridade das operações
-
-
- 10.2 Protocolos de Controle — [P]
-
-  10.2.1 Handshake — [P]
-      Request
-      Grant
-      Acknowledge
-      Ready
-      Busy
-
-  10.2.2 Controle Operacional — [P]
-      Timeout
-      Retry
-      Error Signal
-      Finalização
-      Reinício da operação
+  10.1.2 Objetivos — [I]
+	  Comunicação confiável
+	  Coordenação
+	  Compatibilidade
+	  Integridade das operações
 
 
- 10.3 Integridade da Comunicação — [P]
+ 10.2 Protocolos de Controle — [I]
 
-  10.3.1 Controle da Transferência — [P]
-      Confirmação
-      Sincronização
-      Sequenciamento
-      Consistência da comunicação
+  10.2.1 Handshake — [I]
+	  Request
+	  Grant
+	  Acknowledge
+	  Ready
+	  Busy
+
+  10.2.2 Controle Operacional — [I]
+	  Timeout
+	  Retry
+	  Error Signal
+	  Finalização
+	  Reinício da operação
+
+
+ 10.3 Integridade da Comunicação — [I]
+
+  10.3.1 Controle da Transferência — [I]
+	  Confirmação
+	  Sincronização
+	  Sequenciamento
+	  Consistência da comunicação
 
   10.3.2 Tratamento de Erros — [I]
-      Detecção de falhas
-      Retransmissão
-      Recuperação
-      Continuidade da operação
+	  Detecção de falhas
+	  Retransmissão
+	  Recuperação
+	  Continuidade da operação
 
   10.3.3 Ordenação de Memória — [I]
-      Strong Ordering
-      Weak Ordering
-      Relaxed Ordering
-      Barreiras de Memória (Visão Geral)
+	  Strong Ordering
+	  Weak Ordering
+	  Relaxed Ordering
+	  Barreiras de Memória (Visão Geral)
 
 
 
-PARTE 3 — ARBITRAGEM, CONTROLE E COMUNICAÇÃO ENTRE COMPONENTES
+Parte 3 — ARBITRAGEM, CONTROLE E COMUNICAÇÃO ENTRE COMPONENTES
 
 
 11. Arbitragem de Barramentos — [P]
@@ -726,76 +726,76 @@ PARTE 3 — ARBITRAGEM, CONTROLE E COMUNICAÇÃO ENTRE COMPONENTES
  11.1 Fundamentos da Arbitragem — [P]
 
   11.1.1 Conceitos Fundamentais — [P]
-      Conceito de arbitragem
-      Necessidade da arbitragem
-      Compartilhamento do barramento
-      Contenção do barramento
-      Conflitos de acesso
-      Exclusividade de utilização
+	  Conceito de arbitragem
+	  Necessidade da arbitragem
+	  Compartilhamento do barramento
+	  Contenção do barramento
+	  Conflitos de acesso
+	  Exclusividade de utilização
 
   11.1.2 Objetivos da Arbitragem — [P]
-      Coordenação do acesso
-      Evitar conflitos
-      Garantir consistência
-      Maximizar eficiência
-      Balancear desempenho
-      Garantir justiça (Fairness)
+	  Coordenação do acesso
+	  Evitar conflitos
+	  Garantir consistência
+	  Maximizar eficiência
+	  Balancear desempenho
+	  Garantir justiça (Fairness)
 
   11.1.3 Situações que Exigem Arbitragem — [P]
-      Múltiplos mestres
-      DMA concorrente
-      Controladores simultâneos
-      Comunicação paralela
-      Acesso concorrente à memória
+	  Múltiplos mestres
+	  DMA concorrente
+	  Controladores simultâneos
+	  Comunicação paralela
+	  Acesso concorrente à memória
 
 
  11.2 Componentes da Arbitragem — [P]
 
   11.2.1 Elementos Envolvidos — [P]
-      Bus Master
-      Bus Slave
-      Arbiter
-      Bus Request
-      Bus Grant
-      Bus Busy
+	  Bus Master
+	  Bus Slave
+	  Arbiter
+	  Bus Request
+	  Bus Grant
+	  Bus Busy
 
   11.2.2 Processo de Arbitragem — [P]
-      Solicitação
-      Análise das requisições
-      Seleção do vencedor
-      Concessão
-      Utilização
-      Liberação
+	  Solicitação
+	  Análise das requisições
+	  Seleção do vencedor
+	  Concessão
+	  Utilização
+	  Liberação
 
   11.2.3 Critérios de Decisão — [P]
-      Prioridade
-      Tempo de espera
-      Justiça
-      Eficiência
-      Escalabilidade
+	  Prioridade
+	  Tempo de espera
+	  Justiça
+	  Eficiência
+	  Escalabilidade
 
 
  11.3 Métodos de Arbitragem — [P]
 
   11.3.1 Arbitragem Centralizada — [P]
-      Funcionamento
-      Controlador central
-      Vantagens
-      Limitações
+	  Funcionamento
+	  Controlador central
+	  Vantagens
+	  Limitações
 
   11.3.2 Arbitragem Distribuída — [P]
-      Funcionamento
-      Decisão cooperativa
-      Vantagens
-      Limitações
+	  Funcionamento
+	  Decisão cooperativa
+	  Vantagens
+	  Limitações
 
   11.3.3 Algoritmos de Arbitragem — [P]
-      Daisy Chain
-      Prioridade fixa
-      Prioridade dinâmica
-      Round Robin
-      Token Passing
-      Lottery Arbitration (Visão Geral)
+	  Daisy Chain
+	  Prioridade fixa
+	  Prioridade dinâmica
+	  Round Robin
+	  Token Passing
+	  Lottery Arbitration (Visão Geral)
 
 
 
@@ -804,45 +804,45 @@ PARTE 3 — ARBITRAGEM, CONTROLE E COMUNICAÇÃO ENTRE COMPONENTES
  12.1 Fundamentos — [P]
 
   12.1.1 Conceitos — [P]
-      Definição
-      Objetivos
-      Controle direto do barramento
-      Múltiplos mestres
+	  Definição
+	  Objetivos
+	  Controle direto do barramento
+	  Múltiplos mestres
 
   12.1.2 Funcionamento Geral — [P]
-      Requisição
-      Arbitragem
-      Concessão
-      Controle da transferência
-      Liberação
+	  Requisição
+	  Arbitragem
+	  Concessão
+	  Controle da transferência
+	  Liberação
 
   12.1.3 Requisitos Arquiteturais — [P]
-      Dispositivos capazes de iniciar comunicação
-      Arbitragem
-      Controle independente da CPU
-      Coordenação do sistema
+	  Dispositivos capazes de iniciar comunicação
+	  Arbitragem
+	  Controle independente da CPU
+	  Coordenação do sistema
 
 
  12.2 Operação do Bus Mastering — [P]
 
   12.2.1 Controle das Transferências — [P]
-      Inicialização
-      Comunicação direta
-      Encerramento
-      Sincronização
+	  Inicialização
+	  Comunicação direta
+	  Encerramento
+	  Sincronização
 
   12.2.2 Compartilhamento do Barramento — [P]
-      Concorrência
-      Prioridades
-      Alternância entre mestres
-      Coordenação
+	  Concorrência
+	  Prioridades
+	  Alternância entre mestres
+	  Coordenação
 
   12.2.3 Aplicações — [I]
-      GPUs
-      Controladores de armazenamento
-      Interfaces de rede
-      Controladores PCI Express
-      Aceleradores computacionais
+	  GPUs
+	  Controladores de armazenamento
+	  Interfaces de rede
+	  Controladores PCI Express
+	  Aceleradores computacionais
 
 
 
@@ -851,126 +851,126 @@ PARTE 3 — ARBITRAGEM, CONTROLE E COMUNICAÇÃO ENTRE COMPONENTES
  13.1 Fundamentos — [P]
 
   13.1.1 Conceitos Fundamentais — [P]
-      Definição
-      Objetivos
-      Comunicação direta
-      Redução da carga da CPU
+	  Definição
+	  Objetivos
+	  Comunicação direta
+	  Redução da carga da CPU
 
   13.1.2 Motivação — [P]
-      Transferências em grande volume
-      Redução de interrupções
-      Maior desempenho
-      Melhor aproveitamento da CPU
+	  Transferências em grande volume
+	  Redução de interrupções
+	  Maior desempenho
+	  Melhor aproveitamento da CPU
 
   13.1.3 Relação com o Barramento — [P]
-      Utilização do barramento
-      Arbitragem
-      Bus Mastering
-      Comunicação direta com memória
+	  Utilização do barramento
+	  Arbitragem
+	  Bus Mastering
+	  Comunicação direta com memória
 
 
  13.2 Controlador DMA — [P]
 
   13.2.1 Estrutura — [P]
-      Registradores de controle
-      Registradores de endereço
-      Registradores de contagem
-      Canais DMA
+	  Registradores de controle
+	  Registradores de endereço
+	  Registradores de contagem
+	  Canais DMA
 
   13.2.2 Funcionamento — [P]
-      Inicialização
-      Transferência
-      Finalização
-      Interrupção de término
+	  Inicialização
+	  Transferência
+	  Finalização
+	  Interrupção de término
 
   13.2.3 Controle da Comunicação — [P]
-      Solicitação do barramento
-      Concessão
-      Controle da transferência
-      Liberação
+	  Solicitação do barramento
+	  Concessão
+	  Controle da transferência
+	  Liberação
 
 
  13.3 Modos de Operação do DMA — [P]
 
   13.3.1 Modos Clássicos — [P]
-      Burst Mode
-      Cycle Stealing
-      Transparent DMA
-      Demand Transfer
+	  Burst Mode
+	  Cycle Stealing
+	  Transparent DMA
+	  Demand Transfer
 
   13.3.2 Avaliação dos Modos — [P]
-      Desempenho
-      Latência
-      Utilização do barramento
-      Impacto na CPU
+	  Desempenho
+	  Latência
+	  Utilização do barramento
+	  Impacto na CPU
 
   13.3.3 Aplicações — [I]
-      SSDs
-      Placas de rede
-      Controladores USB
-      Controladores gráficos
+	  SSDs
+	  Placas de rede
+	  Controladores USB
+	  Controladores gráficos
 
 
 
-14. Comunicação entre Componentes do Sistema — [P]
+14. Comunicação entre Componentes do Sistema — [I]
 
- 14.1 Comunicação entre CPU e Memória — [P]
+ 14.1 Comunicação entre CPU e Memória — [I]
 
-  14.1.1 Operações de Leitura — [P]
-      Solicitação
-      Endereçamento
-      Transferência
-      Confirmação
+  14.1.1 Operações de Leitura — [I]
+	  Solicitação
+	  Endereçamento
+	  Transferência
+	  Confirmação
 
-  14.1.2 Operações de Escrita — [P]
-      Seleção do endereço
-      Envio dos dados
-      Coerência durante Escrita (Visão Geral)
-      Controle
-      Finalização
+  14.1.2 Operações de Escrita — [I]
+	  Seleção do endereço
+	  Envio dos dados
+	  Coerência durante Escrita (Visão Geral)
+	  Controle
+	  Finalização
 
-  14.1.3 Ciclo de Memória — [P]
-      Início
-      Acesso
-      Transferência
-      Encerramento
+  14.1.3 Ciclo de Memória — [I]
+	  Início
+	  Acesso
+	  Transferência
+	  Encerramento
 
 
- 14.2 Comunicação entre CPU e Dispositivos de Entrada e Saída — [P]
+ 14.2 Comunicação entre CPU e Dispositivos de Entrada e Saída — [I]
 
   14.2.1 Comunicação Programada — [I]
-      Polling
-      Características
-      Aplicações
+	  Polling
+	  Características
+	  Aplicações
 
-  14.2.2 Comunicação por Interrupções — [P]
-      Solicitação
-      Atendimento
-      Retorno
-      Coordenação pelo barramento
+  14.2.2 Comunicação por Interrupções — [I]
+	  Solicitação
+	  Atendimento
+	  Retorno
+	  Coordenação pelo barramento
 
-  14.2.3 Comunicação por DMA — [P]
-      Inicialização
-      Transferência direta
-      Finalização
+  14.2.3 Comunicação por DMA — [I]
+	  Inicialização
+	  Transferência direta
+	  Finalização
 
 
- 14.3 Comunicação entre Dispositivos — [P]
+ 14.3 Comunicação entre Dispositivos — [I]
 
-  14.3.1 Transferência Direta — [P]
-      Dispositivo para dispositivo
-      Coordenação
-      Fluxo de dados
+  14.3.1 Transferência Direta — [I]
+	  Dispositivo para dispositivo
+	  Coordenação
+	  Fluxo de dados
 
-  14.3.2 Comunicação através de Controladores — [P]
-      Intermediação
-      Coordenação
-      Compartilhamento do barramento
+  14.3.2 Comunicação através de Controladores — [I]
+	  Intermediação
+	  Coordenação
+	  Compartilhamento do barramento
 
   14.3.3 Comunicação em Sistemas Modernos — [I]
-      Peer-to-Peer
-      Comunicação direta
-      Compartilhamento eficiente
+	  Peer-to-Peer
+	  Comunicação direta
+	  Compartilhamento eficiente
 
 
 
@@ -979,160 +979,160 @@ PARTE 3 — ARBITRAGEM, CONTROLE E COMUNICAÇÃO ENTRE COMPONENTES
  15.1 Conceitos Fundamentais — [P]
 
   15.1.1 Definição — [P]
-      Conceito de ciclo de barramento
-      Objetivos
-      Sequência operacional
+	  Conceito de ciclo de barramento
+	  Objetivos
+	  Sequência operacional
 
   15.1.2 Componentes do Ciclo — [P]
-      Endereçamento
-      Controle
-      Transferência
-      Finalização
+	  Endereçamento
+	  Controle
+	  Transferência
+	  Finalização
 
   15.1.3 Estados do Ciclo — [P]
-      Idle
-      Request
-      Grant
-      Address
-      Data
-      Completion
+	  Idle
+	  Request
+	  Grant
+	  Address
+	  Data
+	  Completion
 
 
  15.2 Ciclos de Comunicação — [P]
 
   15.2.1 Ciclo de Leitura — [P]
-      Emissão do endereço
-      Seleção do dispositivo
-      Disponibilização dos dados
-      Encerramento
+	  Emissão do endereço
+	  Seleção do dispositivo
+	  Disponibilização dos dados
+	  Encerramento
 
   15.2.2 Ciclo de Escrita — [P]
-      Seleção
-      Envio dos dados
-      Confirmação
-      Finalização
+	  Seleção
+	  Envio dos dados
+	  Confirmação
+	  Finalização
 
   15.2.3 Ciclos Especiais — [P]
-      Burst
-      Read-Modify-Write
-      Operações atômicas
-      Broadcast
+	  Burst
+	  Read-Modify-Write
+	  Operações atômicas
+	  Broadcast
 
 
  15.3 Otimização dos Ciclos — [P]
 
   15.3.1 Técnicas de Otimização — [P]
-      Pipeline
-      Burst Transfer
-      Prefetch (Visão Geral)
-      Sobreposição de operações
+	  Pipeline
+	  Burst Transfer
+	  Prefetch (Visão Geral)
+	  Sobreposição de operações
 
   15.3.2 Eficiência dos Ciclos — [P]
-      Redução da latência
-      Aumento do throughput
-      Redução do overhead
-      Melhor utilização do barramento
+	  Redução da latência
+	  Aumento do throughput
+	  Redução do overhead
+	  Melhor utilização do barramento
 
   15.3.3 Gargalos Operacionais — [P]
-      Espera por arbitragem
-      Contenção
-      Saturação
-      Impacto no desempenho geral
+	  Espera por arbitragem
+	  Contenção
+	  Saturação
+	  Impacto no desempenho geral
 
 
 
-PARTE 4 — ARQUITETURAS, TECNOLOGIAS E PADRÕES DE BARRAMENTOS
+Parte 4 — ARQUITETURAS, TECNOLOGIAS E PADRÕES DE BARRAMENTOS
 
 
-16. Barramentos do Sistema — [P]
+16. Barramentos do Sistema — [I]
 
- 16.1 Arquitetura dos Barramentos do Sistema — [P]
+ 16.1 Arquitetura dos Barramentos do Sistema — [I]
 
-  16.1.1 Organização Geral — [P]
-      Barramento do sistema
-      Comunicação entre CPU, memória e I/O
-      Organização hierárquica
-      Compartilhamento do barramento
-      Estrutura modular
+  16.1.1 Organização Geral — [I]
+	  Barramento do sistema
+	  Comunicação entre CPU, memória e I/O
+	  Organização hierárquica
+	  Compartilhamento do barramento
+	  Estrutura modular
 
-  16.1.2 Componentes Envolvidos — [P]
-      Processador
-      Controlador de memória
-      Controladores de I/O
-      Chipset
-      Dispositivos de expansão
+  16.1.2 Componentes Envolvidos — [I]
+	  Processador
+	  Controlador de memória
+	  Controladores de I/O
+	  Chipset
+	  Dispositivos de expansão
 
-  16.1.3 Organização Arquitetural — [P]
-      Barramento único
-      Múltiplos barramentos
-      Barramentos hierárquicos
-      Comunicação ponto a ponto
-      Arquiteturas híbridas
+  16.1.3 Organização Arquitetural — [I]
+	  Barramento único
+	  Múltiplos barramentos
+	  Barramentos hierárquicos
+	  Comunicação ponto a ponto
+	  Arquiteturas híbridas
 
 
  16.2 Barramentos Internos e Externos — [I]
 
-  16.2.1 Barramentos Internos — [P]
-      Comunicação interna da CPU
-      Comunicação entre unidades funcionais
-      Barramentos internos de dados
-      Barramentos internos de controle
-      Barramentos internos de endereços
+  16.2.1 Barramentos Internos — [I]
+	  Comunicação interna da CPU
+	  Comunicação entre unidades funcionais
+	  Barramentos internos de dados
+	  Barramentos internos de controle
+	  Barramentos internos de endereços
 
   16.2.2 Barramentos Externos — [I]
-      Comunicação com memória
-      Comunicação com periféricos
-      Comunicação entre controladores
-      Expansão do sistema
+	  Comunicação com memória
+	  Comunicação com periféricos
+	  Comunicação entre controladores
+	  Expansão do sistema
 
   16.2.3 Comparação — [I]
-      Funções
-      Características
-      Desempenho
-      Aplicações
+	  Funções
+	  Características
+	  Desempenho
+	  Aplicações
 
 
 
-17. Barramentos de Expansão — [P]
+17. Barramentos de Expansão — [I]
 
  17.1 Fundamentos — [I]
 
   17.1.1 Conceitos — [I]
-      Objetivos
-      Expansibilidade
-      Modularidade
-      Compatibilidade
-      Evolução tecnológica
+	  Objetivos
+	  Expansibilidade
+	  Modularidade
+	  Compatibilidade
+	  Evolução tecnológica
 
   17.1.2 Recursos — [I]
-      Plug and Play
-      Hot Plug
-      Configuração automática
-      Compartilhamento de recursos
+	  Plug and Play
+	  Hot Plug
+	  Configuração automática
+	  Compartilhamento de recursos
 
   17.1.3 Critérios Arquiteturais — [I]
-      Desempenho
-      Escalabilidade
-      Compatibilidade
-      Flexibilidade
+	  Desempenho
+	  Escalabilidade
+	  Compatibilidade
+	  Flexibilidade
 
 
  17.2 Evolução Histórica — [V]
 
   17.2.1 Primeiras Gerações — [V]
-      ISA
-      EISA
-      MCA
+	  ISA
+	  EISA
+	  MCA
 
   17.2.2 Segunda Geração — [V]
-      VESA Local Bus
-      PCI
-      AGP
+	  VESA Local Bus
+	  PCI
+	  AGP
 
   17.2.3 Gerações Modernas — [V]
-      PCI-X
-      PCI Express
-      Evolução das interconexões
+	  PCI-X
+	  PCI Express
+	  Evolução das interconexões
 
 
 
@@ -1141,291 +1141,291 @@ PARTE 4 — ARQUITETURAS, TECNOLOGIAS E PADRÕES DE BARRAMENTOS
  18.1 PCI (Peripheral Component Interconnect) — [I]
 
   18.1.1 Fundamentos — [I]
-      Objetivos
-      Organização
-      Funcionamento
-      Compartilhamento do barramento
+	  Objetivos
+	  Organização
+	  Funcionamento
+	  Compartilhamento do barramento
 
   18.1.2 Recursos — [I]
-      Plug and Play
-      Bus Mastering
-      Configuração automática
-      Interrupções
+	  Plug and Play
+	  Bus Mastering
+	  Configuração automática
+	  Interrupções
 
   18.1.3 Limitações — [I]
-      Barramento paralelo
-      Compartilhamento
-      Gargalos
-      Escalabilidade
+	  Barramento paralelo
+	  Compartilhamento
+	  Gargalos
+	  Escalabilidade
 
 
  18.2 PCI Express — [P]
 
   18.2.1 Fundamentos — [P]
-      Conceito
-      Evolução do PCI
-      Comunicação serial
-      Comunicação ponto a ponto
-      Arquitetura baseada em links
+	  Conceito
+	  Evolução do PCI
+	  Comunicação serial
+	  Comunicação ponto a ponto
+	  Arquitetura baseada em links
 
   18.2.2 Estrutura Física — [P]
-      Lane
-      x1
-      x2
-      x4
-      x8
-      x16
-      x32
-      Link PCIe
+	  Lane
+	  x1
+	  x2
+	  x4
+	  x8
+	  x16
+	  x32
+	  Link PCIe
 
   18.2.3 Organização Arquitetural — [P]
-      Root Complex
-      Endpoint
-      Switch PCIe
-      Bridge
-      Topologia da rede PCIe
+	  Root Complex
+	  Endpoint
+	  Switch PCIe
+	  Bridge
+	  Topologia da rede PCIe
 
 
  18.3 Camadas do PCI Express — [P]
 
   18.3.1 Physical Layer — [P]
-      Codificação
-      Sinalização
-      Link físico
-      Treinamento do link
+	  Codificação
+	  Sinalização
+	  Link físico
+	  Treinamento do link
 
   18.3.2 Data Link Layer — [P]
-      DLLP	
-      Flow Control
-      CRC
-      ACK/NAK
-      Retransmissão
-      Controle de fluxo
+	  DLLP	
+	  Flow Control
+	  CRC
+	  ACK/NAK
+	  Retransmissão
+	  Controle de fluxo
 
   18.3.3 Transaction Layer — [P]
-      TLP
-      Endereçamento
-      Tipos de transação
-      Roteamento
+	  TLP
+	  Endereçamento
+	  Tipos de transação
+	  Roteamento
 
 
  18.4 Recursos Arquiteturais do PCI Express — [P]
 
   18.4.1 Recursos Fundamentais — [P]
-      Full Duplex
-      Hot Plug
-      Hot Swap
-      QoS
-      Bus Mastering
+	  Full Duplex
+	  Hot Plug
+	  Hot Swap
+	  QoS
+	  Bus Mastering
 
   18.4.2 Recursos Avançados — [P]
-      MSI
-      MSI-X
-      SR-IOV
-      ATS
-      Peer-to-Peer PCIe
-      ASPM
+	  MSI
+	  MSI-X
+	  SR-IOV
+	  ATS
+	  Peer-to-Peer PCIe
+	  ASPM
 
   18.4.3 Evolução do PCIe — [I]
-      Gen1
-      Gen2
-      Gen3
-      Gen4
-      Gen5
-      Gen6
-      Gen7
+	  Gen1
+	  Gen2
+	  Gen3
+	  Gen4
+	  Gen5
+	  Gen6
+	  Gen7
 
   18.4.4 Virtualização Avançada — [I]
-      PASID
-      PRI
-      Shared Virtual Memory
-      Comunicação com IOMMU
+	  PASID
+	  PRI
+	  Shared Virtual Memory
+	  Comunicação com IOMMU
 
 
-19. Barramentos Internos dos Processadores — [P]
+19. Barramentos Internos dos Processadores — [I]
 
- 19.1 Comunicação Interna da CPU — [P]
+ 19.1 Comunicação Interna da CPU — [I]
 
-  19.1.1 Organização — [P]
-      Comunicação entre registradores
-      Comunicação com ALU
-      Comunicação com unidades funcionais
-      Comunicação com cache
+  19.1.1 Organização — [I]
+	  Comunicação entre registradores
+	  Comunicação com ALU
+	  Comunicação com unidades funcionais
+	  Comunicação com cache
 
-  19.1.2 Barramentos Internos — [P]
-      Barramento interno de dados
-      Barramento interno de endereços
-      Barramento interno de controle
-      Barramentos dedicados
+  19.1.2 Barramentos Internos — [I]
+	  Barramento interno de dados
+	  Barramento interno de endereços
+	  Barramento interno de controle
+	  Barramentos dedicados
 
-  19.1.3 Comunicação Arquitetural — [P]
-      Datapath
-      Control Path
-      Fluxo interno de informações
+  19.1.3 Comunicação Arquitetural — [I]
+	  Datapath
+	  Control Path
+	  Fluxo interno de informações
 
 
- 19.2 Evolução das Interconexões — [P]
+ 19.2 Evolução das Interconexões — [I]
 
   19.2.1 Front Side Bus (FSB) — [I]
-      Arquitetura
-      Funcionamento
-      Limitações
+	  Arquitetura
+	  Funcionamento
+	  Limitações
 
-  19.2.2 Interconexões Modernas — [P]
-      QPI
-      UPI
-      HyperTransport
-      Infinity Fabric
+  19.2.2 Interconexões Modernas — [I]
+	  QPI
+	  UPI
+	  HyperTransport
+	  Infinity Fabric
 
-  19.2.3 Integração do Controlador de Memória — [P]
-      Controlador integrado
-      Comunicação direta
-      Redução da latência
-      Impacto arquitetural
+  19.2.3 Integração do Controlador de Memória — [I]
+	  Controlador integrado
+	  Comunicação direta
+	  Redução da latência
+	  Impacto arquitetural
 
 
 
-20. Barramentos para SoCs e Sistemas Modernos — [P]
+20. Barramentos para SoCs e Sistemas Modernos — [I]
 
- 20.1 Arquitetura AMBA — [P]
+ 20.1 Arquitetura AMBA — [I]
 
-  20.1.1 Fundamentos — [P]
-      Objetivos
-      Organização
-      Arquitetura
-      Escalabilidade
+  20.1.1 Fundamentos — [I]
+	  Objetivos
+	  Organização
+	  Arquitetura
+	  Escalabilidade
 
-  20.1.2 Principais Barramentos — [P]
-      AHB
-      APB
-      AXI
+  20.1.2 Principais Barramentos — [I]
+	  AHB
+	  APB
+	  AXI
 
-  20.1.3 Protocolos Avançados — [P]
-      ACE
-      CHI
-      Comunicação coerente
+  20.1.3 Protocolos Avançados — [I]
+	  ACE
+	  CHI
+	  Comunicação coerente
 
   20.1.4 Protocolos de Coerência — [I]
-      Conceito de Coerência
-      Snooping
-      Directory-Based
-      MESI (Visão Geral)
-      MOESI (Visão Geral)
-      Estados dos Protocolos
-      Transições de Estado
-      Relação com ACE
-      Relação com CHI
+	  Conceito de Coerência
+	  Snooping
+	  Directory-Based
+	  MESI (Visão Geral)
+	  MOESI (Visão Geral)
+	  Estados dos Protocolos
+	  Transições de Estado
+	  Relação com ACE
+	  Relação com CHI
 
 
- 20.2 Comunicação em SoCs — [P]
+ 20.2 Comunicação em SoCs — [I]
 
-  20.2.1 Organização Geral — [P]
-      CPU
-      GPU
-      Controladores
-      Memória
-      Aceleradores
+  20.2.1 Organização Geral — [I]
+	  CPU
+	  GPU
+	  Controladores
+	  Memória
+	  Aceleradores
 
-  20.2.2 Interconexões Internas — [P]
-      Crossbar
-      Interconnect
-      Network-on-Chip (NoC)
-      Barramentos hierárquicos
+  20.2.2 Interconexões Internas — [I]
+	  Crossbar
+	  Interconnect
+	  Network-on-Chip (NoC)
+	  Barramentos hierárquicos
 
   20.2.3 Escalabilidade — [I]
-      Múltiplos núcleos
-      Comunicação paralela
-      Compartilhamento eficiente
+	  Múltiplos núcleos
+	  Comunicação paralela
+	  Compartilhamento eficiente
 
-  20.2.4 Topologias de Interconexão — [P]
-      Barramento
-      Crossbar
-      Ring
-      Mesh
-      Torus
-      Fat Tree (Visão Geral)
+  20.2.4 Topologias de Interconexão — [I]
+	  Barramento
+	  Crossbar
+	  Ring
+	  Mesh
+	  Torus
+	  Fat Tree (Visão Geral)
 
 
 
-21. Comunicação em Sistemas Multicore — [P]
+21. Comunicação em Sistemas Multicore — [I]
 
- 21.1 Comunicação entre Núcleos — [P]
+ 21.1 Comunicação entre Núcleos — [I]
 
   21.1.1 Conceitos
-      Comunicação Core-Core
-      Compartilhamento de Dados
-      Compartilhamento de Cache
-      Comunicação entre Threads
+	  Comunicação Core-Core
+	  Compartilhamento de Dados
+	  Compartilhamento de Cache
+	  Comunicação entre Threads
 
 
- 21.2 Interconexões Internas — [P]
+ 21.2 Interconexões Internas — [I]
 
   21.2.1 Estruturas
-      Ring Bus
-      Mesh
-      Crossbar
-      Network-on-Chip
-      Latência de Comunicação
-      Escalabilidade
-      Balanceamento de Tráfego
+	  Ring Bus
+	  Mesh
+	  Crossbar
+	  Network-on-Chip
+	  Latência de Comunicação
+	  Escalabilidade
+	  Balanceamento de Tráfego
 
 
- 21.3 Comunicação Coerente — [P]
+ 21.3 Comunicação Coerente — [I]
 
   21.3.1 Fundamentos
-      Comunicação Coerente
-      Compartilhamento de Memória
-      Consistência de Memória (Visão Geral)
-      Sincronização entre Núcleos
+	  Comunicação Coerente
+	  Compartilhamento de Memória
+	  Consistência de Memória (Visão Geral)
+	  Sincronização entre Núcleos
 
 
 
-22. Interconexões Modernas de Alto Desempenho — [P]
+22. Interconexões Modernas de Alto Desempenho — [I]
 
- 22.1 Tecnologias Emergentes — [P]
+ 22.1 Tecnologias Emergentes — [I]
 
-  22.1.1 Compute Express Link (CXL) — [P]
-      Objetivos
-      Arquitetura
-      CXL.io
-      CXL.cache
-      CXL.memory
-      Tipos de Dispositivos CXL
+  22.1.1 Compute Express Link (CXL) — [I]
+	  Objetivos
+	  Arquitetura
+	  CXL.io
+	  CXL.cache
+	  CXL.memory
+	  Tipos de Dispositivos CXL
 
-  22.1.2 Universal Chiplet Interconnect Express (UCIe) — [P]
-      Comunicação Die-to-Die
-      Chiplets
-      Encapsulamento avançado
+  22.1.2 Universal Chiplet Interconnect Express (UCIe) — [I]
+	  Comunicação Die-to-Die
+	  Chiplets
+	  Encapsulamento avançado
 
   22.1.3 Outras Tecnologias — [I]
-      NVLink
-      CCIX
-      Gen-Z
-      OpenCAPI
+	  NVLink
+	  CCIX
+	  Gen-Z
+	  OpenCAPI
 
 
  22.2 Aplicações Arquiteturais — [I]
 
   22.2.1 Computação Heterogênea — [I]
-      CPU + GPU
-      CPU + FPGA
-      CPU + NPU
-      CPU + TPU
+	  CPU + GPU
+	  CPU + FPGA
+	  CPU + NPU
+	  CPU + TPU
 
   22.2.2 Data Centers — [I]
-      Expansão de memória
-      Aceleradores
-      Comunicação de alta velocidade
+	  Expansão de memória
+	  Aceleradores
+	  Comunicação de alta velocidade
 
   22.2.3 Tendências Arquiteturais — [V]
-      Chiplets
-      Memória desagregada
-      Computação desagregada
-      Interconexões coerentes
+	  Chiplets
+	  Memória desagregada
+	  Computação desagregada
+	  Interconexões coerentes
 
 
 
-PARTE 5 — DESEMPENHO, CONFIABILIDADE E TENDÊNCIAS DOS BARRAMENTOS
+Parte 5 — DESEMPENHO, CONFIABILIDADE E TENDÊNCIAS DOS BARRAMENTOS
 
 
 23. Desempenho dos Barramentos — [P]
@@ -1433,142 +1433,142 @@ PARTE 5 — DESEMPENHO, CONFIABILIDADE E TENDÊNCIAS DOS BARRAMENTOS
  23.1 Fundamentos do Desempenho — [P]
 
   23.1.1 Conceitos Fundamentais — [P]
-      Desempenho do barramento
-      Eficiência da comunicação
-      Utilização do barramento
-      Gargalos de comunicação
-      Impacto no desempenho do sistema
+	  Desempenho do barramento
+	  Eficiência da comunicação
+	  Utilização do barramento
+	  Gargalos de comunicação
+	  Impacto no desempenho do sistema
 
   23.1.2 Métricas de Avaliação — [P]
-      Largura de banda (Bandwidth)
-      Taxa de transferência (Transfer Rate)
-      Throughput
-      Latência
-      Tempo de resposta
-      Eficiência
+	  Largura de banda (Bandwidth)
+	  Taxa de transferência (Transfer Rate)
+	  Throughput
+	  Latência
+	  Tempo de resposta
+	  Eficiência
 
   23.1.3 Fatores que Influenciam o Desempenho — [P]
-      Frequência de operação
-      Largura do barramento
-      Número de dispositivos
-      Método de arbitragem
-      Tipo de transferência
-      Organização arquitetural
+	  Frequência de operação
+	  Largura do barramento
+	  Número de dispositivos
+	  Método de arbitragem
+	  Tipo de transferência
+	  Organização arquitetural
 
 
  23.2 Gargalos dos Barramentos — [P]
 
   23.2.1 Fontes de Gargalos — [P]
-      Contenção do barramento
-      Excesso de dispositivos
-      Baixa largura de banda
-      Latência elevada
-      Espera por arbitragem
+	  Contenção do barramento
+	  Excesso de dispositivos
+	  Baixa largura de banda
+	  Latência elevada
+	  Espera por arbitragem
 
   23.2.2 Impactos no Sistema — [P]
-      Redução do desempenho
-      Aumento do tempo de resposta
-      Subutilização dos componentes
-      Saturação do barramento
+	  Redução do desempenho
+	  Aumento do tempo de resposta
+	  Subutilização dos componentes
+	  Saturação do barramento
 
   23.2.3 Técnicas para Redução de Gargalos — [P]
-      Barramentos dedicados
-      Comunicação ponto a ponto
-      Transferências Burst
-      Pipeline
-      Hierarquia de barramentos
-      Interconexões modernas
+	  Barramentos dedicados
+	  Comunicação ponto a ponto
+	  Transferências Burst
+	  Pipeline
+	  Hierarquia de barramentos
+	  Interconexões modernas
 
   23.2.4 Qualidade de Serviço (QoS) — [I]
-      Priorização
-      Arbitragem baseada em prioridade
-      Garantia de Banda
-      Controle de Latência
-      Classes de Serviço
+	  Priorização
+	  Arbitragem baseada em prioridade
+	  Garantia de Banda
+	  Controle de Latência
+	  Classes de Serviço
 
 
  23.3 Avaliação Arquitetural — [P]
 
   23.3.1 Escalabilidade — [P]
-      Crescimento do sistema
-      Expansão de dispositivos
-      Limitações arquiteturais
-      Escalabilidade horizontal
+	  Crescimento do sistema
+	  Expansão de dispositivos
+	  Limitações arquiteturais
+	  Escalabilidade horizontal
 
   23.3.2 Balanceamento — [P]
-      Balanceamento entre CPU e memória
-      Balanceamento entre dispositivos
-      Balanceamento do tráfego
-      Distribuição de carga
+	  Balanceamento entre CPU e memória
+	  Balanceamento entre dispositivos
+	  Balanceamento do tráfego
+	  Distribuição de carga
 
   23.3.3 Critérios de Projeto — [I]
-      Custo
-      Complexidade
-      Desempenho
-      Consumo energético
-      Flexibilidade
+	  Custo
+	  Complexidade
+	  Desempenho
+	  Consumo energético
+	  Flexibilidade
 
 
 
-24. Integridade, Confiabilidade e Correção de Erros — [P]
+24. Integridade, Confiabilidade e Correção de Erros — [I]
 
- 24.1 Integridade dos Sinais — [P]
+ 24.1 Integridade dos Sinais — [I]
 
-  24.1.1 Fundamentos — [P]
-      Integridade de sinal
-      Qualidade elétrica
-      Transmissão confiável
-      Comunicação estável
+  24.1.1 Fundamentos — [I]
+	  Integridade de sinal
+	  Qualidade elétrica
+	  Transmissão confiável
+	  Comunicação estável
 
-  24.1.2 Problemas Elétricos — [P]
-      Ruído
-      Atenuação
-      Reflexão
-      Crosstalk
-      Jitter
-      EMI
+  24.1.2 Problemas Elétricos — [I]
+	  Ruído
+	  Atenuação
+	  Reflexão
+	  Crosstalk
+	  Jitter
+	  EMI
 
-  24.1.3 Técnicas de Mitigação — [P]
-      Blindagem
-      Terminação
-      Equalização
-      Controle de impedância
-      Projeto do PCB
+  24.1.3 Técnicas de Mitigação — [I]
+	  Blindagem
+	  Terminação
+	  Equalização
+	  Controle de impedância
+	  Projeto do PCB
 
 
- 24.2 Detecção e Correção de Erros — [P]
+ 24.2 Detecção e Correção de Erros — [I]
 
-  24.2.1 Conceitos Fundamentais — [P]
-      Confiabilidade
-      Integridade dos dados
-      Erros de transmissão
-      Recuperação
+  24.2.1 Conceitos Fundamentais — [I]
+	  Confiabilidade
+	  Integridade dos dados
+	  Erros de transmissão
+	  Recuperação
 
-  24.2.2 Métodos de Detecção — [P]
-      Paridade
-      Checksum
-      CRC
-      ECC (Visão Geral)
+  24.2.2 Métodos de Detecção — [I]
+	  Paridade
+	  Checksum
+	  CRC
+	  ECC (Visão Geral)
 
-  24.2.3 Recuperação de Erros — [P]
-      Retransmissão
-      Repetição da operação
-      Correção automática
-      Tratamento de exceções
+  24.2.3 Recuperação de Erros — [I]
+	  Retransmissão
+	  Repetição da operação
+	  Correção automática
+	  Tratamento de exceções
 
 
  24.3 Confiabilidade dos Barramentos — [I]
 
   24.3.1 Disponibilidade — [I]
-      Operação contínua
-      Tolerância a falhas
-      Robustez
+	  Operação contínua
+	  Tolerância a falhas
+	  Robustez
 
   24.3.2 Manutenção da Comunicação — [I]
-      Diagnóstico
-      Monitoramento
-      Recuperação
-      Continuidade do serviço
+	  Diagnóstico
+	  Monitoramento
+	  Recuperação
+	  Continuidade do serviço
 
 
 
@@ -1577,37 +1577,37 @@ PARTE 5 — DESEMPENHO, CONFIABILIDADE E TENDÊNCIAS DOS BARRAMENTOS
  25.1 Fundamentos — [I]
 
   25.1.1 Conceitos — [I]
-      Segurança da comunicação
-      Proteção dos dados
-      Integridade
-      Confiabilidade
+	  Segurança da comunicação
+	  Proteção dos dados
+	  Integridade
+	  Confiabilidade
 
   25.1.2 Objetivos — [I]
-      Evitar acessos indevidos
-      Garantir comunicação segura
-      Preservar a integridade dos dados
+	  Evitar acessos indevidos
+	  Garantir comunicação segura
+	  Preservar a integridade dos dados
 
 
  25.2 Mecanismos de Proteção — [I]
 
   25.2.1 Controle de Acesso — [I]
-      Permissões
-      Isolamento
-      Controle por hardware
-      Proteção entre dispositivos
+	  Permissões
+	  Isolamento
+	  Controle por hardware
+	  Proteção entre dispositivos
 
   25.2.2 Segurança em Barramentos Modernos — [I]
-      IOMMU (Visão Geral)
-      Isolamento de DMA
-      Virtualização de dispositivos
-      Proteção contra acessos ilegais
-      Boot Seguro (Secure Boot)
+	  IOMMU (Visão Geral)
+	  Isolamento de DMA
+	  Virtualização de dispositivos
+	  Proteção contra acessos ilegais
+	  Boot Seguro (Secure Boot)
 
   25.2.3 Ameaças — [V]
-      DMA malicioso
-      Interceptação de dados
-      Corrupção da comunicação
-      Ataques físicos
+	  DMA malicioso
+	  Interceptação de dados
+	  Corrupção da comunicação
+	  Ataques físicos
 
 
 
@@ -1616,35 +1616,35 @@ PARTE 5 — DESEMPENHO, CONFIABILIDADE E TENDÊNCIAS DOS BARRAMENTOS
  26.1 Computadores Pessoais — [I]
 
   26.1.1 Comunicação Interna — [I]
-      CPU
-      Memória
-      GPU
-      SSD
-      Interfaces de expansão
+	  CPU
+	  Memória
+	  GPU
+	  SSD
+	  Interfaces de expansão
 
   26.1.2 Comunicação Externa — [V]
-      Dispositivos de entrada
-      Dispositivos de saída
-      Interfaces de expansão
+	  Dispositivos de entrada
+	  Dispositivos de saída
+	  Interfaces de expansão
 
 
  26.2 Sistemas Especializados — [I]
 
   26.2.1 Servidores — [I]
-      Alto desempenho
-      Grande largura de banda
-      Múltiplos dispositivos
+	  Alto desempenho
+	  Grande largura de banda
+	  Múltiplos dispositivos
 
   26.2.2 Sistemas Embarcados — [I]
-      Baixo consumo
-      Comunicação integrada
-      SoCs
+	  Baixo consumo
+	  Comunicação integrada
+	  SoCs
 
   26.2.3 Computação de Alto Desempenho — [I]
-      HPC
-      Clusters
-      Supercomputadores
-      Inteligência Artificial
+	  HPC
+	  Clusters
+	  Supercomputadores
+	  Inteligência Artificial
 
 
 
@@ -1653,49 +1653,49 @@ PARTE 5 — DESEMPENHO, CONFIABILIDADE E TENDÊNCIAS DOS BARRAMENTOS
  27.1 Evolução das Interconexões — [V]
 
   27.1.1 Tendências Tecnológicas — [V]
-      Maior largura de banda
-      Menor latência
-      Comunicação coerente
-      Escalabilidade
+	  Maior largura de banda
+	  Menor latência
+	  Comunicação coerente
+	  Escalabilidade
 
   27.1.2 Novas Arquiteturas — [V]
-      Chiplets
-      Interconexões ópticas
-      Comunicação 3D
-      Memória compartilhada
+	  Chiplets
+	  Interconexões ópticas
+	  Comunicação 3D
+	  Memória compartilhada
 
   27.1.3 Novos Padrões — [V]
-      Evolução do PCI Express
-      Evolução do CXL
-      Evolução do UCIe
-      Próximas gerações de interconexões
+	  Evolução do PCI Express
+	  Evolução do CXL
+	  Evolução do UCIe
+	  Próximas gerações de interconexões
 
   27.1.4 Transição dos Barramentos para Interconexões
-      Substituição dos barramentos compartilhados
-      Comunicação ponto a ponto
-      Network-on-Chip
-      Interconnect Fabrics
-      Arquiteturas Baseadas em Links
+	  Substituição dos barramentos compartilhados
+	  Comunicação ponto a ponto
+	  Network-on-Chip
+	  Interconnect Fabrics
+	  Arquiteturas Baseadas em Links
 
 
  27.2 Perspectivas Futuras — [V]
 
   27.2.1 Integração dos Componentes — [V]
-      Sistemas heterogêneos
-      Computação desagregada
-      Infraestruturas componíveis
+	  Sistemas heterogêneos
+	  Computação desagregada
+	  Infraestruturas componíveis
 
   27.2.2 Desafios — [V]
-      Escalabilidade
-      Consumo energético
-      Complexidade
-      Segurança
+	  Escalabilidade
+	  Consumo energético
+	  Complexidade
+	  Segurança
 
   27.2.3 Futuro dos Barramentos — [V]
-      Redução dos barramentos compartilhados
-      Crescimento das redes internas
-      Comunicação inteligente
-      Interconexões de próxima geração
+	  Redução dos barramentos compartilhados
+	  Crescimento das redes internas
+	  Comunicação inteligente
+	  Interconexões de próxima geração
 
 
 
@@ -1704,50 +1704,50 @@ PARTE 5 — DESEMPENHO, CONFIABILIDADE E TENDÊNCIAS DOS BARRAMENTOS
  28.1 Integração Arquitetural — [I]
 
   28.1.1 Integração dos Componentes — [I]
-      Comunicação entre CPU, memória e dispositivos
-      Interligação dos subsistemas
-      Fluxo de informações
-      Coordenação das operações
-      Organização hierárquica dos barramentos
+	  Comunicação entre CPU, memória e dispositivos
+	  Interligação dos subsistemas
+	  Fluxo de informações
+	  Coordenação das operações
+	  Organização hierárquica dos barramentos
 
   28.1.2 Integração dos Mecanismos — [I]
-      Barramentos de dados
-      Barramentos de endereços
-      Barramentos de controle
-      Arbitragem
-      Protocolos de comunicação
-      Temporização
+	  Barramentos de dados
+	  Barramentos de endereços
+	  Barramentos de controle
+	  Arbitragem
+	  Protocolos de comunicação
+	  Temporização
 
   28.1.3 Integração das Tecnologias — [I]
-      PCI Express
-      AMBA
-      QPI
-      UPI
-      HyperTransport
-      Infinity Fabric
-      CXL
-      UCIe
+	  PCI Express
+	  AMBA
+	  QPI
+	  UPI
+	  HyperTransport
+	  Infinity Fabric
+	  CXL
+	  UCIe
 
  28.2 Visão Integrada da Arquitetura — [I]
 
   28.2.1 Comunicação do Sistema — [I]
-      Comunicação interna
-      Comunicação externa
-      Interconexão entre componentes
-      Compartilhamento de recursos
+	  Comunicação interna
+	  Comunicação externa
+	  Interconexão entre componentes
+	  Compartilhamento de recursos
 
   28.2.2 Papel dos Barramentos na Arquitetura — [I]
-      Base da comunicação do computador
-      Integração dos componentes
-      Influência no desempenho
-      Escalabilidade da arquitetura
+	  Base da comunicação do computador
+	  Integração dos componentes
+	  Influência no desempenho
+	  Escalabilidade da arquitetura
 
   28.2.3 Relação entre os Conceitos Estudados — [I]
-      Estrutura
-      Funcionamento
-      Tecnologias
-      Desempenho
-      Evolução
+	  Estrutura
+	  Funcionamento
+	  Tecnologias
+	  Desempenho
+	  Evolução
 
 
 
@@ -1756,65 +1756,65 @@ PARTE 5 — DESEMPENHO, CONFIABILIDADE E TENDÊNCIAS DOS BARRAMENTOS
  29.1 Revisão dos Conceitos Fundamentais — [I]
 
   29.1.1 Fundamentos — [I]
-      Conceitos básicos
-      Objetivos
-      Classificações
-      Organização geral
+	  Conceitos básicos
+	  Objetivos
+	  Classificações
+	  Organização geral
 
   29.1.2 Estrutura e Funcionamento — [I]
-      Estrutura física
-      Estrutura lógica
-      Linhas do barramento
-      Operações fundamentais
-      Ciclos de barramento
+	  Estrutura física
+	  Estrutura lógica
+	  Linhas do barramento
+	  Operações fundamentais
+	  Ciclos de barramento
 
   29.1.3 Controle da Comunicação — [I]
-      Arbitragem
-      Bus Mastering
-      DMA
-      Protocolos
-      Temporização
+	  Arbitragem
+	  Bus Mastering
+	  DMA
+	  Protocolos
+	  Temporização
 
 
  29.2 Revisão das Arquiteturas e Tecnologias — [I]
 
   29.2.1 Arquiteturas Tradicionais — [I]
-      Barramentos do sistema
-      Barramentos de expansão
-      PCI
+	  Barramentos do sistema
+	  Barramentos de expansão
+	  PCI
 
   29.2.2 Arquiteturas Modernas — [I]
-      PCI Express
-      AMBA
-      QPI
-      UPI
-      HyperTransport
-      Infinity Fabric
+	  PCI Express
+	  AMBA
+	  QPI
+	  UPI
+	  HyperTransport
+	  Infinity Fabric
 
   29.2.3 Tecnologias Emergentes — [I]
-      CXL
-      UCIe
-      Interconexões para Chiplets
-      Network-on-Chip
+	  CXL
+	  UCIe
+	  Interconexões para Chiplets
+	  Network-on-Chip
 
 
  29.3 Competências Esperadas — [I]
 
   29.3.1 Conhecimentos Fundamentais — [I]
-      Compreender o funcionamento dos barramentos
-      Entender a comunicação entre componentes
-      Conhecer os principais tipos
+	  Compreender o funcionamento dos barramentos
+	  Entender a comunicação entre componentes
+	  Conhecer os principais tipos
 
   29.3.2 Conhecimentos Intermediários — [I]
-      Analisar protocolos
-      Avaliar desempenho
-      Identificar gargalos
-      Comparar arquiteturas
+	  Analisar protocolos
+	  Avaliar desempenho
+	  Identificar gargalos
+	  Comparar arquiteturas
 
   29.3.3 Conhecimentos Avançados — [V]
-      Entender interconexões modernas
-      Compreender tendências futuras
-      Relacionar barramentos com arquiteturas contemporâneas
+	  Entender interconexões modernas
+	  Compreender tendências futuras
+	  Relacionar barramentos com arquiteturas contemporâneas
 
 
 
@@ -1823,40 +1823,40 @@ PARTE 5 — DESEMPENHO, CONFIABILIDADE E TENDÊNCIAS DOS BARRAMENTOS
  30.1 Síntese Final — [V]
 
   30.1.1 Papel dos Barramentos — [V]
-      Base da comunicação entre componentes
-      Integração dos subsistemas
-      Coordenação das transferências
-      Fundamentais para a Arquitetura e Organização de Computadores
+	  Base da comunicação entre componentes
+	  Integração dos subsistemas
+	  Coordenação das transferências
+	  Fundamentais para a Arquitetura e Organização de Computadores
 
   30.1.2 Evolução dos Barramentos — [V]
-      Dos barramentos compartilhados às interconexões ponto a ponto
-      Crescimento da largura de banda
-      Redução da latência
-      Maior escalabilidade
+	  Dos barramentos compartilhados às interconexões ponto a ponto
+	  Crescimento da largura de banda
+	  Redução da latência
+	  Maior escalabilidade
 
   30.1.3 Importância Atual — [V]
-      Sistemas multicore
-      Computação heterogênea
-      Servidores
-      Data Centers
-      Inteligência Artificial
+	  Sistemas multicore
+	  Computação heterogênea
+	  Servidores
+	  Data Centers
+	  Inteligência Artificial
 
 
  30.2 Continuidade dos Estudos — [V]
 
   30.2.1 Assuntos Relacionados — [V]
-      Memória Principal
-      Cache
-      Processadores
-      Entrada e Saída
-      Sistemas Multiprocessados
+	  Memória Principal
+	  Cache
+	  Processadores
+	  Entrada e Saída
+	  Sistemas Multiprocessados
 
   30.2.2 Visão Geral — [V]
-      Como os barramentos se integram aos demais componentes
-      Limites do escopo deste estudo
-      Relação com os demais tópicos da Arquitetura e Organização de Computadores
+	  Como os barramentos se integram aos demais componentes
+	  Limites do escopo deste estudo
+	  Relação com os demais tópicos da Arquitetura e Organização de Computadores
 
   30.2.3 Encerramento — [V]
-      Revisão dos principais conceitos
-      Consolidação do conhecimento
-      Preparação para estudos mais avançados
+	  Revisão dos principais conceitos
+	  Consolidação do conhecimento
+	  Preparação para estudos mais avançados
