@@ -16,7 +16,7 @@ A classificação abaixo indica a profundidade recomendada para cada grande tóp
 PARTE 1 — INTRODUÇÃO E FUNDAMENTOS DA DISCIPLINA
 
 
-1. Introdução à Computação [V]
+1. Introdução à Computação
 
  1.1 O Computador:
 
@@ -53,7 +53,7 @@ PARTE 1 — INTRODUÇÃO E FUNDAMENTOS DA DISCIPLINA
 
 
 
-2. Modelos Fundamentais de Computação [P]
+2. Modelos Fundamentais de Computação
 
  2.1 Modelos Arquiteturais:
 
@@ -80,7 +80,7 @@ PARTE 1 — INTRODUÇÃO E FUNDAMENTOS DA DISCIPLINA
 
 
 
-3. Níveis de Abstração dos Sistemas Computacionais [P]
+3. Níveis de Abstração dos Sistemas Computacionais
 
  3.1 Organização em Camadas:
 
@@ -105,7 +105,7 @@ PARTE 1 — INTRODUÇÃO E FUNDAMENTOS DA DISCIPLINA
 
 
 
-4. Representação da Informação [P]
+4. Representação da Informação
 
  4.1 Sistemas de Numeração:
 
@@ -145,7 +145,7 @@ PARTE 1 — INTRODUÇÃO E FUNDAMENTOS DA DISCIPLINA
 
 
 
-5. Fundamentos da Lógica Digital [P]
+5. Fundamentos da Lógica Digital
 
  5.1 Álgebra Booleana:
 
@@ -193,7 +193,7 @@ PARTE 1 — INTRODUÇÃO E FUNDAMENTOS DA DISCIPLINA
 
 
 
-6. Visão Geral da Estrutura de um Computador [P]
+6. Visão Geral da Estrutura de um Computador
 
  6.1 Organização Geral:
 
@@ -229,7 +229,7 @@ PARTE 1 — INTRODUÇÃO E FUNDAMENTOS DA DISCIPLINA
 PARTE 2 — ORGANIZAÇÃO DE COMPUTADORES
 
 
-7. Organização Geral do Computador [P]
+7. Organização Geral do Computador
 
  7.1 Estrutura Organizacional:
 
@@ -262,7 +262,7 @@ PARTE 2 — ORGANIZAÇÃO DE COMPUTADORES
 
 
 
-8. Processador (CPU) [P]
+8. Processador (CPU)
 
  8.1 Visão Geral:
 
@@ -298,7 +298,7 @@ PARTE 2 — ORGANIZAÇÃO DE COMPUTADORES
 
 
 
-9. Organização da Memória [P]
+9. Organização da Memória
 
  9.1 Hierarquia de Memória:
 
@@ -351,7 +351,7 @@ PARTE 2 — ORGANIZAÇÃO DE COMPUTADORES
 
 
 
-10. Barramentos e Interconexão [P]
+10. Barramentos e Interconexão
 
  10.1 Conceitos Gerais:
 
@@ -383,7 +383,7 @@ PARTE 2 — ORGANIZAÇÃO DE COMPUTADORES
 
 
 
-11. Entrada e Saída (E/S) [P]
+11. Entrada e Saída (E/S)
 
  11.1 Fundamentos:
 
@@ -414,7 +414,7 @@ PARTE 2 — ORGANIZAÇÃO DE COMPUTADORES
 
 
 
-12. Armazenamento de Dados [I]
+12. Armazenamento de Dados
 
  12.1 Tecnologias de Armazenamento:
 
@@ -446,7 +446,7 @@ PARTE 2 — ORGANIZAÇÃO DE COMPUTADORES
 PARTE 3 — ARQUITETURA DE COMPUTADORES
 
 
-13. Arquitetura do Conjunto de Instruções (ISA) [P]
+13. Arquitetura do Conjunto de Instruções (ISA)
 
  13.1 Fundamentos da ISA:
 
@@ -486,7 +486,7 @@ PARTE 3 — ARQUITETURA DE COMPUTADORES
 
 
 
-14. Linguagem Assembly [I]
+14. Linguagem Assembly
 
  14.1 Fundamentos:
 
@@ -549,7 +549,7 @@ PARTE 3 — ARQUITETURA DE COMPUTADORES
 
 
 
-16. Pipeline de Instruções [I]
+16. Pipeline de Instruções
 
  16.1 Fundamentos:
 
@@ -589,7 +589,7 @@ PARTE 3 — ARQUITETURA DE COMPUTADORES
 
 
 
-17. Arquiteturas com Paralelismo em Nível de Instrução [I]
+17. Arquiteturas com Paralelismo em Nível de Instrução
 
  17.1 Arquiteturas Superescalares:
 
@@ -618,7 +618,7 @@ PARTE 3 — ARQUITETURA DE COMPUTADORES
 
 
 
-18. Visão Geral das Arquiteturas de Processadores [V]
+18. Visão Geral das Arquiteturas de Processadores
 
  18.1 Famílias de Arquiteturas:
 
@@ -643,7 +643,7 @@ PARTE 3 — ARQUITETURA DE COMPUTADORES
 PARTE 4 — PROCESSAMENTO PARALELO E ARQUITETURAS MODERNAS
 
 
-19. Fundamentos do Processamento Paralelo [I]
+19. Fundamentos do Processamento Paralelo
 
  19.1 Conceitos Fundamentais:
 
@@ -684,7 +684,7 @@ PARTE 4 — PROCESSAMENTO PARALELO E ARQUITETURAS MODERNAS
 
 
 
-20. Arquiteturas Paralelas [I]
+20. Arquiteturas Paralelas
 
  20.1 Processadores Multinúcleo:
 
@@ -713,7 +713,7 @@ PARTE 4 — PROCESSAMENTO PARALELO E ARQUITETURAS MODERNAS
 
 
 
-21. Processadores Gráficos (GPU) [I]
+21. Processadores Gráficos (GPU)
 
  21.1 Fundamentos:
 
@@ -750,7 +750,7 @@ PARTE 4 — PROCESSAMENTO PARALELO E ARQUITETURAS MODERNAS
 
 
 
-22. Sistemas Distribuídos e Computação de Alto Desempenho [V]
+22. Sistemas Distribuídos e Computação de Alto Desempenho
 
  22.1 Sistemas Distribuídos:
 
@@ -778,7 +778,7 @@ PARTE 4 — PROCESSAMENTO PARALELO E ARQUITETURAS MODERNAS
 
 
 
-23. Interconexão entre Processadores [I]
+23. Interconexão entre Processadores
 
  23.1 Redes de Interconexão:
 
