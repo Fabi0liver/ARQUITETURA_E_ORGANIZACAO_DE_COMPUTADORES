@@ -19,210 +19,159 @@ PARTE 1 — INTRODUÇÃO E FUNDAMENTOS DA DISCIPLINA
 1. Introdução à Computação — [V]
 
  1.1 O Computador — [V]
-
-  1.1.1 Conceitos — [V]
-	  O que é um computador
-	  Objetivos de um computador
-	  Características gerais
-	  Componentes básicos
-	  Funcionamento geral
-	  Arquitetura de sistemas computacionais (visão geral)
-	  Classificação dos computadores
+	O que é um computador
+	Objetivos de um computador
+	Características gerais
+	Componentes básicos
+	Funcionamento geral
+	Arquitetura de sistemas computacionais (visão geral)
+	Classificação dos computadores
 
  1.2 História da Computação — [V]
-
-  1.2.1 Evolução Histórica — [V]
-	  Marcos da computação
-	  Gerações dos computadores
-	  Evolução dos processadores
-	  Evolução das memórias
-	  Evolução das arquiteturas
-	  Tendências históricas
+	Evolução Histórica
+	Marcos da computação
+	Gerações dos computadores
+	Evolução dos processadores
+	Evolução das memórias
+	Evolução das arquiteturas
+	Tendências históricas
 
  1.3 Fundamentos da Disciplina — [V]
-
-  1.3.1 Arquitetura e Organização — [V]
-
-	  O que é Arquitetura de Computadores
-	  O que é Organização de Computadores
-	  Diferenças entre Arquitetura e Organização
-	  Relação entre Hardware e Software
-	  Importância da disciplina
-	  Objetivos da Arquitetura e Organização
-	  Visão geral da disciplina
+	O que é Arquitetura de Computadores
+	O que é Organização de Computadores
+	Diferenças entre Arquitetura e Organização
+	Relação entre Hardware e Software
+	Importância da disciplina
+	Objetivos da Arquitetura e Organização
+	Visão geral da disciplina
 
 
 
 2. Modelos Fundamentais de Computação — [I]
 
  2.1 Modelos Arquiteturais — [I]
-
-  2.1.1 Modelos Clássicos — [I]
-
-	  Conceito de modelo computacional
-	  Modelo de Programa Armazenado
-	  Arquitetura de Von Neumann
-	  Gargalo de Von Neumann
-	  Arquitetura Harvard
-	  Arquitetura Harvard Modificada
-	  Arquiteturas híbridas
-	  Comparação entre modelos
+	Conceito de modelo computacional
+	Modelo de Programa Armazenado
+	Arquitetura de Von Neumann
+	Gargalo de Von Neumann
+	Arquitetura Harvard
+	Arquitetura Harvard Modificada
+	Arquiteturas híbridas
+	Comparação entre modelos
 
  2.2 Organização Funcional — [I]
-
-  2.2.1 Componentes Gerais — [I]
-
-	  Processador
-	  Memória
-	  Entrada e Saída
-	  Interconexão dos componentes
-	  Fluxo geral de informações
+	Processador
+	Memória
+	Entrada e Saída
+	Interconexão dos componentes
+	Fluxo geral de informações
 
 
 
 3. Níveis de Abstração dos Sistemas Computacionais — [I]
 
  3.1 Organização em Camadas — [I]
-
-  3.1.1 Níveis de Abstração — [I]
-
-	  Nível físico
-	  Nível digital
-	  Microarquitetura
-	  Arquitetura do Conjunto de Instruções (ISA)
-	  Sistema Operacional
-	  Linguagens de Programação
-	  Aplicações
+	Nível físico
+	Nível digital
+	Microarquitetura
+	Arquitetura do Conjunto de Instruções (ISA)
+	Sistema Operacional
+	Linguagens de Programação
+	Aplicações
 
  3.2 Relações entre os Níveis — [I]
-
-  3.2.1 Integração — [I]
-
-	  Dependências entre níveis
-	  Comunicação entre camadas
-	  Papel de cada nível
-	  Visão integrada do sistema
+	Dependências entre níveis
+	Comunicação entre camadas
+	Papel de cada nível
+	Visão integrada do sistema
 
 
 
 4. Representação da Informação — [I]
 
  4.1 Sistemas de Numeração — [I]
-
-  4.1.1 Bases Numéricas — [I]
-
-	  Decimal
-	  Binário
-	  Octal
-	  Hexadecimal
+	Decimal
+	Binário
+	Octal
+	Hexadecimal
 
  4.2 Conversões Numéricas — [I]
-
-  4.2.1 Operações — [I]
-
-	  Conversões entre bases
-	  Aritmética binária
+	Conversões entre bases
+	Aritmética binária
 
  4.3 Representação dos Dados — [I]
-
-  4.3.1 Dados Numéricos — [I]
-
-	  Inteiros
-	  Números com sinal
-	  Complemento de dois
-	  Ponto fixo
-	  Ponto flutuante
+	Inteiros
+	Números com sinal
+	Complemento de dois
+	Ponto fixo
+	Ponto flutuante
 
  4.4 Representação Digital — [I]
-
-  4.4.1 Tipos de Informação — [I]
-
-	  Caracteres (ASCII e Unicode)
-	  Instruções
-	  Imagens
-	  Áudio
-	  Vídeo
+	Caracteres (ASCII e Unicode)
+	Instruções
+	Imagens
+	Áudio
+	Vídeo
 
 
 
 5. Fundamentos da Lógica Digital — [I]
 
  5.1 Álgebra Booleana — [I]
-
-  5.1.1 Conceitos Fundamentais — [I]
-
-	  Variáveis booleanas
-	  Operadores lógicos
-	  Tabelas verdade
-	  Leis da Álgebra Booleana
-	  Simplificação lógica
-	  Mapas de Karnaugh
+	Variáveis booleanas
+	Operadores lógicos
+	Tabelas verdade
+	Leis da Álgebra Booleana
+	Simplificação lógica
+	Mapas de Karnaugh
 
  5.2 Circuitos Digitais — [I]
-
-  5.2.1 Circuitos Combinacionais — [I]
-
-	  Portas lógicas
-	  Codificadores
-	  Decodificadores
-	  Multiplexadores
-	  Demultiplexadores
-	  Comparadores
-	  Somadores
-	  Subtratores
-	  Unidade Lógica e Aritmética (visão geral)
+	Portas lógicas
+	Codificadores
+	Decodificadores
+	Multiplexadores
+	Demultiplexadores
+	Comparadores
+	Subtratores
+	Unidade Lógica e Aritmética (visão geral)
 
  5.3 Circuitos Sequenciais — [I]
-
-  5.3.1 Estruturas Sequenciais — [I]
-
-	  Latches
-	  Flip-Flops
-	  Registradores
-	  Contadores
-	  Máquinas de Estados Finitos (FSM)
+	Latches
+	Flip-Flops
+	Registradores
+	Contadores
+	Máquinas de Estados Finitos (FSM)
 
  5.4 Memórias Digitais — [I]
-
-  5.4.1 Conceitos Básicos — [I]
-
-	  Armazenamento de bits
-	  Células de memória
-	  Organização básica
-	  Relação com os circuitos sequenciais
+	Armazenamento de bits
+	Células de memória
+	Organização básica
+	Relação com os circuitos sequenciais
 
 
 
 6. Visão Geral da Estrutura de um Computador — [I]
 
  6.1 Organização Geral — [I]
-
-  6.1.1 Estrutura Básica — [I]
-
-	  Unidade Central de Processamento (CPU)
-	  Sistema de Memória
-	  Sistema de Entrada e Saída
-	  Barramentos
-	  Dispositivos de armazenamento
+	Unidade Central de Processamento (CPU)
+	Sistema de Memória
+	Sistema de Entrada e Saída
+	Barramentos
+	Dispositivos de armazenamento
 
  6.2 Funcionamento Geral — [I]
-
-  6.2.1 Execução de Programas — [I]
-
-	  Busca de instruções
-	  Decodificação
-	  Execução
-	  Escrita dos resultados
-	  Ciclo de instruções
+	Execução de Programas
+	Busca de instruções
+	Decodificação
+	Execução
+	Escrita dos resultados
+	Ciclo de instruções
 
  6.3 Integração dos Componentes — [I]
-
-  6.3.1 Comunicação — [I]
-
-	  Fluxo de dados
-	  Fluxo de controle
-	  Espaço de endereçamento
-	  Comunicação entre hardware e software
+	Fluxo de dados
+	Fluxo de controle
+	Espaço de endereçamento
+	Comunicação entre hardware e software
 
 
 
@@ -232,214 +181,158 @@ PARTE 2 — ORGANIZAÇÃO DE COMPUTADORES
 7. Organização Geral do Computador — [I]
 
  7.1 Estrutura Organizacional — [I]
-
-  7.1.1 Organização Básica — [I]
-
-	  Organização geral do computador
-	  Componentes principais
-	  Interligação dos componentes
-	  Fluxo geral de dados
-	  Fluxo de controle
+	Organização geral do computador
+	Componentes principais
+	Interligação dos componentes
+	Fluxo geral de dados
+	Fluxo de controle
 
  7.2 Execução de Programas — [I]
-
-  7.2.1 Funcionamento Geral — [I]
-
-	  Ciclo de instruções
-	  Busca de instruções
-	  Decodificação
-	  Execução
-	  Escrita de resultados
+	Ciclo de instruções
+	Busca de instruções
+	Decodificação
+	Execução
+	Escrita de resultados
 
  7.3 Comunicação Interna — [I]
-
-  7.3.1 Integração — [I]
-
-	  Comunicação entre CPU e memória
-	  Comunicação entre CPU e dispositivos
-	  Comunicação através dos barramentos
-	  Coordenação entre os componentes
+	Comunicação entre CPU e memória
+	Comunicação entre CPU e dispositivos
+	Comunicação através dos barramentos
+	Coordenação entre os componentes
 
 
 
 8. Processador (CPU) — [P]
 
  8.1 Visão Geral — [P]
-
-  8.1.1 Conceitos — [P]
-
-	  O que é a CPU
-	  Objetivos da CPU
-	  Organização interna
-	  Papel da CPU no sistema
+	O que é a CPU
+	Objetivos da CPU
+	Organização interna
+	Papel da CPU no sistema
 
  8.2 Componentes da CPU — [P]
-
-  8.2.1 Estruturas Principais — [P]
-
-	  Unidade de Controle
-	  Unidade Lógica e Aritmética (ULA)
-	  Banco de Registradores
-	  Clock
-	  Datapath
-	  Unidade de Controle Cabeada
-	  Unidade de Controle Microprogramada
+	Unidade de Controle
+	Unidade Lógica e Aritmética (ULA)
+	Banco de Registradores
+	Clock
+	Datapath
+	Unidade de Controle Cabeada
+	Unidade de Controle Microprogramada
 
  8.3 Funcionamento Geral — [P]
-
-  8.3.1 Operação — [P]
-
-	  Busca de instruções
-	  Decodificação
-	  Execução
-	  Atualização dos registradores
-	  Comunicação com memória
-	  Comunicação com Entrada e Saída
+	Operação
+	Busca de instruções
+	Decodificação
+	Execução
+	Atualização dos registradores
+	Comunicação com memória
+	Comunicação com Entrada e Saída
 
 
 
 9. Organização da Memória — [P]
 
  9.1 Hierarquia de Memória — [P]
-
-  9.1.1 Estrutura Hierárquica — [P]
-
-	  Registradores
-	  Cache
-	  Memória Principal
-	  Memória Secundária
-	  Memória Terciária
+	Registradores
+	Cache
+	Memória Principal
+	Memória Secundária
+	Memória Terciária
 
  9.2 Memória Cache — [P]
-
-  9.2.1 Conceitos Básicos — [P]
-
-	  Finalidade
-	  Funcionamento geral
-	  Mapeamentos
-	  Políticas de substituição
-	  Políticas de escrita
-	  Coerência de cache
+	Finalidade
+	Funcionamento geral
+	Mapeamentos
+	Políticas de substituição
+	Políticas de escrita
+	Coerência de cache
 
  9.3 Memória Principal — [P]
-
-  9.3.1 Estrutura — [P]
-
-	  RAM
-	  ROM
-	  DRAM
-	  SRAM
+	RAM
+	ROM
+	DRAM
+	SRAM
 
  9.4 Memória Virtual — [P]
-
-  9.4.1 Conceitos — [P]
-
-	  Finalidade
-	  Paginação
-	  Segmentação
-	  TLB
-	  Tradução de endereços
+	Conceitos
+	Finalidade
+	Paginação
+	Segmentação
+	TLB
+	Tradução de endereços
 
  9.5 Espaço de Endereçamento — [P]
-
-  9.5.1 Organização — [P]
-
-	  Endereços físicos
-	  Endereços virtuais
-	  Espaço de memória
-	  Organização dos endereços
+	Endereços físicos
+	Endereços virtuais
+	Espaço de memória
+	Organização dos endereços
 
 
 
 10. Barramentos e Interconexão — [I]
 
  10.1 Conceitos Gerais — [I]
-
-  10.1.1 Fundamentos — [I]
-
-	  O que é um barramento
-	  Objetivos dos barramentos
-	  Comunicação entre componentes
-	  Interconexão do sistema
+	O que é um barramento
+	Objetivos dos barramentos
+	Comunicação entre componentes
+	Interconexão do sistema
 
  10.2 Tipos de Barramentos — [I]
-
-  10.2.1 Classificação — [I]
-
-	  Barramento de dados
-	  Barramento de endereços
-	  Barramento de controle
-	  Barramentos internos
-	  Barramentos externos
+	Barramento de dados
+	Barramento de endereços
+	Barramento de controle
+	Barramentos internos
+	Barramentos externos
 
  10.3 Funcionamento — [I]
-
-  10.3.1 Comunicação — [I]
-
-	  Transferência de dados
-	  Arbitragem
-	  Largura do barramento
-	  Sincronização
+	Comunicação — [I]
+	Transferência de dados
+	Arbitragem
+	Largura do barramento
+	Sincronização
 
 
 
 11. Entrada e Saída (E/S) — [I]
 
  11.1 Fundamentos — [I]
-
-  11.1.1 Conceitos — [I]
-
-	  Objetivos da Entrada e Saída
-	  Dispositivos de Entrada
-	  Dispositivos de Saída
-	  Interfaces
-	  Controladores
+	Objetivos da Entrada e Saída
+	Dispositivos de Entrada
+	Dispositivos de Saída
+	Interfaces
+	Controladores
 
  11.2 Comunicação — [I]
-
-  11.2.1 Mecanismos — [I]
-
-	  Comunicação com periféricos
-	  Portas de Entrada e Saída
-	  E/S mapeada em memória
-	  E/S isolada
+	Comunicação com periféricos
+	Portas de Entrada e Saída
+	E/S mapeada em memória
+	E/S isolada
 
  11.3 Técnicas de Transferência — [I]
-
-  11.3.1 Métodos — [I]
-
-	  Polling
-	  Interrupções
-	  DMA
+	Métodos — [I]
+	Polling
+	Interrupções
+	DMA
 
 
 
 12. Armazenamento de Dados — [V]
 
  12.1 Tecnologias de Armazenamento — [V]
-
-  12.1.1 Dispositivos — [V]
-
-	  HDD
-	  SSD
-	  NVMe
-	  Memória Flash
+	HDD
+	SSD
+	NVMe
+	Memória Flash
 
  12.2 Organização — [V]
-
-  12.2.1 Sistemas — [V]
-
-	  Sistemas de armazenamento
-	  Organização dos dados
-	  Hierarquia de armazenamento
+	Sistemas de armazenamento
+	Organização dos dados
+	Hierarquia de armazenamento
 
  12.3 Papel no Computador — [V]
-
-  12.3.1 Integração — [V]
-
-	  Relação com a memória principal
-	  Relação com a CPU
-	  Persistência dos dados
+	Relação com a memória principal
+	Relação com a CPU
+	Persistência dos dados
 
 
 
