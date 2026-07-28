@@ -594,82 +594,56 @@ PARTE 4 — PROCESSAMENTO PARALELO E ARQUITETURAS MODERNAS
 24. Sistemas Reconfiguráveis — [V]
 
  24.1 Lógica Reconfigurável — [V]
-
-  24.1.1 Tecnologias — [V]
-
-	  FPGA
-	  CPLD
-	  SoC FPGA
+	Tecnologias
+	FPGA
+	CPLD
+	SoC FPGA
 
  24.2 Configuração — [V]
-
-  24.2.1 Funcionamento — [V]
-
-	  Fluxo de configuração
-	  Reconfiguração
-	  Aplicações
+	Fluxo de configuração
+	Reconfiguração
+	Aplicações
 
  24.3 Arquiteturas Específicas — [V]
-
-  24.3.1 Soluções — [V]
-
-	  ASIC
-	  Aceleradores dedicados
+	ASIC
+	Aceleradores dedicados
 
 
 
 25. Computação Heterogênea — [V]
 
  25.1 Arquiteturas Heterogêneas — [V]
-
-  25.1.1 Integração — [V]
-
-	  CPU + GPU
-	  CPU + FPGA
-	  Sistemas heterogêneos
+	CPU + GPU
+	CPU + FPGA
+	Sistemas heterogêneos
 
  25.2 Objetivos — [V]
-
-  25.2.1 Benefícios — [V]
-
-	  Eficiência energética
-	  Especialização do processamento
-	  Aumento de desempenho
+	Eficiência energética
+	Especialização do processamento
+	Aumento de desempenho
 
 
 
 26. Arquiteturas Emergentes — [V]
 
  26.1 Arquiteturas Baseadas em Dados — [V]
-
-  26.1.1 Conceitos — [V]
-
-	  Fluxo de dados
-	  Arquiteturas orientadas a dados
+	Fluxo de dados
+	Arquiteturas orientadas a dados
 
  26.2 Computação Inspirada no Cérebro — [V]
-
-  26.2.1 Tecnologias — [V]
-
-	  Computação neuromórfica
-	  Processadores neuromórficos
+	Computação neuromórfica
+	Processadores neuromórficos
 
  26.3 Computação Quântica — [V]
-
-  26.3.1 Introdução — [V]
-
-	  Conceitos básicos
-	  Qubits
-	  Computação quântica
+	Conceitos básicos
+	Qubits
+	Computação quântica
 
  26.4 Outras Arquiteturas — [V]
-
-  26.4.1 Tendências — [V]
-
-	  Computação óptica
-	  Computação aproximada
-	  Computação probabilística
-	  Computação bioinspirada
+	Computação óptica
+	Computação aproximada
+	Computação probabilística
+	Computação bioinspirada
 
 
 
@@ -679,217 +653,150 @@ PARTE 5 — VIRTUALIZAÇÃO, SEGURANÇA, DESEMPENHO E SOFTWARES RELACIONADOS
 27. Virtualização — [I]
 
  27.1 Fundamentos da Virtualização — [I]
-
-  27.1.1 Conceitos — [I]
-
-	  O que é virtualização
-	  Objetivos da virtualização
-	  Tipos de virtualização
-	  Benefícios da virtualização
+	O que é virtualização
+	Objetivos da virtualização
+	Tipos de virtualização
+	Benefícios da virtualização
 
  27.2 Máquinas Virtuais — [I]
-
-  27.2.1 Componentes — [I]
-
-	  Máquina virtual
-	  Hipervisor
-	  Hospedeiro (Host)
-	  Convidado (Guest)
+	Máquina virtual
+	Hipervisor
+	Hospedeiro (Host)
+	Convidado (Guest)
 
  27.3 Técnicas de Virtualização — [I]
-
-  27.3.1 Métodos — [I]
-
-	  Virtualização completa
-	  Paravirtualização
-	  Virtualização assistida por hardware
+	Virtualização completa
+	Paravirtualização
+	Virtualização assistida por hardware
 
  27.4 Recursos Virtualizados — [I]
-
-  27.4.1 Componentes — [I]
-
-	  Virtualização de processadores
-	  Virtualização de memória
-	  Virtualização de Entrada e Saída
-	  Virtualização de armazenamento
-	  Virtualização de redes
+	Virtualização de processadores
+	Virtualização de memória
+	Virtualização de Entrada e Saída
+	Virtualização de armazenamento
+	Virtualização de redes
 
  27.5 Tecnologias Modernas — [I]
-
-  27.5.1 Soluções — [I]
-
-	  Containers (visão geral)
-	  Orquestração (visão geral)
-	  Computação em nuvem
+	Containers (visão geral)
+	Orquestração (visão geral)
+	Computação em nuvem
 
 
 
 28. Segurança em Arquitetura de Computadores — [I]
 
  28.1 Fundamentos — [I]
-
-  28.1.1 Conceitos — [I]
-
-	  Segurança de hardware
-	  Objetivos da segurança
-	  Ameaças ao hardware
-	  Cadeia de confiança (Chain of Trust)
+	Segurança de hardware
+	Objetivos da segurança
+	Ameaças ao hardware
+	Cadeia de confiança (Chain of Trust)
 
  28.2 Mecanismos de Proteção — [I]
-
-  28.2.1 Recursos — [I]
-
-	  Modos usuário e kernel
-	  Privilégios de execução
-	  MMU
-	  NX Bit
-	  Secure Boot
-	  TPM
-	  Trusted Execution
+	Modos usuário e kernel
+	Privilégios de execução
+	MMU
+	NX Bit
+	Secure Boot
+	TPM
+	Trusted Execution
 
  28.3 Segurança Criptográfica — [I]
-
-  28.3.1 Recursos — [I]
-
-	  Criptografia por hardware
-	  Geradores de números aleatórios
-	  Armazenamento seguro de chaves
+	Criptografia por hardware
+	Geradores de números aleatórios
+	Armazenamento seguro de chaves
 
  28.4 Vulnerabilidades — [I]
-
-  28.4.1 Introdução — [I]
-
-	  Side Channels
-	  Spectre (visão geral)
-	  Meltdown (visão geral)
+	Side Channels
+	Spectre (visão geral)
+	Meltdown (visão geral)
 
 
 
 29. Desempenho de Computadores — [I]
 
  29.1 Fundamentos — [I]
-
-  29.1.1 Conceitos — [I]
-
-	  O que é desempenho
-	  Objetivos da avaliação
-	  Fatores que influenciam o desempenho
+	O que é desempenho
+	Objetivos da avaliação
+	Fatores que influenciam o desempenho
 
  29.2 Métricas — [I]
-
-  29.2.1 Indicadores — [I]
-
-	  Tempo de execução
-	  Throughput
-	  Latência
-	  Clock
-	  IPC
-	  CPI
+	Tempo de execução
+	Throughput
+	Latência
+	Clock
+	IPC
+	CPI
 
  29.3 Avaliação — [I]
-
-  29.3.1 Técnicas — [I]
-
-	  Benchmarks
-	  Análise de gargalos
-	  Perfil de execução
-	  Comparação de arquiteturas
+	Benchmarks
+	Análise de gargalos
+	Perfil de execução
+	Comparação de arquiteturas
 
  29.4 Leis Fundamentais — [I]
-
-  29.4.1 Modelos — [I]
-
-	  Lei de Amdahl
-	  Lei de Gustafson
+	Lei de Amdahl
+	Lei de Gustafson
 
  29.5 Balanceamento do Sistema — [I]
-
-  29.5.1 Integração — [I]
-
-	  Balanceamento entre CPU e memória
-	  Balanceamento entre CPU e Entrada e Saída
-	  Balanceamento geral do sistema
+	Balanceamento entre CPU e memória
+	Balanceamento entre CPU e Entrada e Saída
+	Balanceamento geral do sistema
 
 
 
 30. Softwares Relacionados à Arquitetura — [I]
 
  30.1 Firmware — [I]
-
-  30.1.1 Inicialização — [I]
-
-	  Firmware
-	  BIOS
-	  UEFI
-	  Processo de inicialização (Boot)
+	Firmware
+	BIOS
+	UEFI
+	Processo de inicialização (Boot)
 
  30.2 Sistemas Operacionais — [I]
-
-  30.2.1 Integração — [I]
-
-	  Gerenciamento de processos
-	  Gerenciamento de memória
-	  Sistema de arquivos
-	  Escalonamento
-	  Comunicação com hardware
+	Gerenciamento de processos
+	Gerenciamento de memória
+	Sistema de arquivos
+	Comunicação com hardware
 
  30.3 Compiladores — [I]
-
-  30.3.1 Funções — [I]
-
-	  Processo de compilação
-	  Geração de código
-	  Otimizações
-	  Relação entre compilador e ISA
+	Processo de compilação
+	Geração de código
+	Otimizações
+	Relação entre compilador e ISA
 
  30.4 Drivers — [I]
-
-  30.4.1 Dispositivos — [I]
-
-	  Função dos drivers
-	  Comunicação com dispositivos
-	  Controle de hardware
+	Função dos drivers
+	Comunicação com dispositivos
+	Controle de hardware
 
  30.5 Ferramentas — [I]
-
-  30.5.1 Desenvolvimento — [I]
-
-	  Simuladores
-	  Emuladores
-	  Debuggers
-	  Profilers
-	  Ferramentas de análise de desempenho
+	Simuladores
+	Emuladores
+	Debuggers
+	Profilers
+	Ferramentas de análise de desempenho
 
 
 
 31. Integração entre Hardware e Software — [P]
 
  31.1 Interface Hardware-Software — [P]
-
-  31.1.1 Comunicação — [P]
-
-	  ISA como interface
-	  Sistema Operacional
-	  Compiladores
-	  Firmware
-	  Drivers
+	ISA como interface
+	Sistema Operacional
+	Compiladores
+	Firmware
+	Drivers
 
  31.2 Fluxo de Execução — [P]
-
-  31.2.1 Funcionamento — [P]
-
-	  Inicialização do computador
-	  Carregamento do sistema operacional
-	  Execução de aplicações
-	  Interação entre hardware e software
+	Inicialização do computador
+	Carregamento do sistema operacional
+	Execução de aplicações
+	Interação entre hardware e software
 
  31.3 Visão Integrada — [P]
-
-  31.3.1 Relações — [P]
-
-	  Cooperação entre componentes
-	  Dependências entre camadas
-	  Funcionamento do sistema computacional
+	Cooperação entre componentes
+	Dependências entre camadas
+	Funcionamento do sistema computacional
 
 
 
@@ -901,208 +808,148 @@ PARTE 6 — APLICAÇÕES, TENDÊNCIAS E CONCLUSÃO
 32. Aplicações da Arquitetura e Organização de Computadores — [V]
 
  32.1 Computação de Uso Geral — [V]
-
-  32.1.1 Sistemas — [V]
-
-	  Computadores pessoais
-	  Workstations
-	  Servidores
-	  Data Centers
+	Computadores pessoais
+	Workstations
+	Servidores
+	Data Centers
 
  32.2 Computação Móvel e Embarcada — [V]
-
-  32.2.1 Plataformas — [V]
-
-	  Smartphones
-	  Tablets
-	  Sistemas embarcados
-	  Internet das Coisas (IoT)
+	Smartphones
+	Tablets
+	Sistemas embarcados
+	Internet das Coisas (IoT)
 
  32.3 Computação de Alto Desempenho — [V]
-
-  32.3.1 Aplicações — [V]
-
-	  Supercomputadores
-	  Computação Científica
-	  Simulações
-	  Computação Paralela
+	Supercomputadores
+	Computação Científica
+	Simulações
+	Computação Paralela
 
  32.4 Inteligência Artificial — [V]
-
-  32.4.1 Aplicações — [V]
-
-	  Aprendizado de Máquina
-	  Redes Neurais
-	  Processamento de Grandes Volumes de Dados
-	  Aceleradores para IA
+	Aprendizado de Máquina
+	Redes Neurais
+	Processamento de Grandes Volumes de Dados
+	Aceleradores para IA
 
  32.5 Aplicações Especializadas — [V]
-
-  32.5.1 Áreas — [V]
-
-	  Consoles de jogos
-	  Robótica
-	  Automação Industrial
-	  Veículos Autônomos
-	  Sistemas críticos
-	  Computação em Borda (Edge Computing)
+	Consoles de jogos
+	Robótica
+	Automação Industrial
+	Veículos Autônomos
+	Sistemas críticos
+	Computação em Borda (Edge Computing)
 
 
 
 33. Tendências da Arquitetura de Computadores — [V]
 
  33.1 Evolução dos Processadores — [V]
-
-  33.1.1 Tecnologias — [V]
-
-	  Chiplets
-	  Empilhamento 3D
-	  Integração heterogênea
-	  Eficiência energética
+	Chiplets
+	Empilhamento 3D
+	Integração heterogênea
+	Eficiência energética
 
  33.2 Novas Arquiteturas — [V]
-
-  33.2.1 Tendências — [V]
-
-	  RISC-V
-	  Arquiteturas abertas
-	  Domínio específico (DSA)
-	  Arquiteturas heterogêneas
+	RISC-V
+	Arquiteturas abertas
+	Domínio específico (DSA)
+	Arquiteturas heterogêneas
 
  33.3 Evolução das Memórias — [V]
-
-  33.3.1 Tecnologias — [V]
-
-	  Memórias de nova geração
-	  HBM
-	  Memória Persistente
-	  CXL (Compute Express Link)
+	Memórias de nova geração
+	HBM
+	Memória Persistente
+	CXL (Compute Express Link)
 
  33.4 Computação Inteligente — [V]
-
-  33.4.1 Tecnologias — [V]
-
-	  Chips para Inteligência Artificial
-	  Computação Neuromórfica
-	  Computação Quântica
+	Chips para Inteligência Artificial
+	Computação Neuromórfica
+	Computação Quântica
 
  33.5 Sustentabilidade — [V]
-
-  33.5.1 Objetivos — [V]
-
-	  Computação Verde
-	  Eficiência energética
-	  Otimização de consumo
-	  Sustentabilidade em Data Centers
+	Computação Verde
+	Eficiência energética
+	Otimização de consumo
+	Sustentabilidade em Data Centers
 
 
 
 34. Integração dos Conceitos da Disciplina — [I]
 
  34.1 Componentes Fundamentais — [I]
-
-  34.1.1 Integração — [I]
-
-	  Processador
-	  Memória
-	  Barramentos
-	  Entrada e Saída
-	  Armazenamento
+	Processador
+	Memória
+	Barramentos
+	Entrada e Saída
+	Armazenamento
 
  34.2 Arquitetura e Organização — [I]
-
-  34.2.1 Relações — [I]
-
-	  Relação entre Arquitetura e Organização
-	  Relação entre Hardware e Software
-	  Relação entre ISA e Microarquitetura
-	  Relação entre desempenho e arquitetura
+	Relação entre Arquitetura e Organização
+	Relação entre Hardware e Software
+	Relação entre ISA e Microarquitetura
+	Relação entre desempenho e arquitetura
 
  34.3 Funcionamento do Computador — [I]
-
-  34.3.1 Fluxo Geral — [I]
-
-	  Execução de programas
-	  Comunicação entre componentes
-	  Fluxo de informações
-	  Controle do sistema
+	Execução de programas
+	Comunicação entre componentes
+	Fluxo de informações
+	Controle do sistema
 
  34.4 Projeto de Sistemas — [I]
-
-  34.4.1 Compromissos — [I]
-
-	  Desempenho
-	  Custo
-	  Consumo de energia
-	  Escalabilidade
-	  Confiabilidade
+	Desempenho
+	Custo
+	Consumo de energia
+	Escalabilidade
+	Confiabilidade
 
 
 
 35. Revisão Geral da Disciplina — [I]
 
  35.1 Fundamentos — [I]
-
-  35.1.1 Revisão — [I]
-
-	  História da computação
-	  Modelos computacionais
-	  Níveis de abstração
-	  Representação da informação
-	  Lógica digital
+	História da computação
+	Modelos computacionais
+	Níveis de abstração
+	Representação da informação
+	Lógica digital
 
  35.2 Organização de Computadores — [I]
-
-  35.2.1 Revisão — [I]
-
-	  CPU
-	  Memória
-	  Barramentos
-	  Entrada e Saída
-	  Armazenamento
+	CPU
+	Memória
+	Barramentos
+	Entrada e Saída
+	Armazenamento
 
  35.3 Arquitetura de Computadores — [I]
-
-  35.3.1 Revisão — [I]
-
-	  ISA
-	  Assembly
-	  Microarquitetura
-	  Pipeline
-	  Arquiteturas superescalares
+	ISA
+	Assembly
+	Microarquitetura
+	Pipeline
+	Arquiteturas superescalares
 
  35.4 Arquiteturas Modernas — [I]
-
-  35.4.1 Revisão — [I]
-
-	  Processamento paralelo
-	  GPUs
-	  Sistemas distribuídos
-	  FPGA
-	  Computação heterogênea
-	  Arquiteturas emergentes
+	Processamento paralelo
+	GPUs
+	Sistemas distribuídos
+	FPGA
+	Computação heterogênea
+	Arquiteturas emergentes
 
  35.5 Tecnologias Complementares — [I]
-
-  35.5.1 Revisão — [I]
-
-	  Virtualização
-	  Segurança
-	  Desempenho
-	  Softwares relacionados
+	Virtualização
+	Segurança
+	Desempenho
+	Softwares relacionados
 
 
 
 36. Conclusão — [V]
 
  36.1 Visão Integrada da Disciplina — [V]
-
-  36.1.1 Integração dos Conceitos — [V]
-
-	  Relação entre Arquitetura e Organização
-	  Integração entre hardware e software
-	  Funcionamento integrado de um computador
-	  Importância da disciplina para a Computação
+	Relação entre Arquitetura e Organização
+	Integração entre hardware e software
+	Funcionamento integrado de um computador
+	Importância da disciplina para a Computação
 
  36.2 Continuidade dos Estudos — [V]
 
@@ -1147,13 +994,10 @@ PARTE 6 — APLICAÇÕES, TENDÊNCIAS E CONCLUSÃO
 	  Inteligência Artificial
 
  36.3 Encerramento — [V]
-
-  36.3.1 Objetivos Alcançados — [V]
-
-	  Compreensão da estrutura geral de um computador
-	  Compreensão dos principais componentes computacionais
-	  Visão geral das arquiteturas clássicas e modernas
-	  Base para o estudo aprofundado da disciplina
+	Compreensão da estrutura geral de um computador
+	Compreensão dos principais componentes computacionais
+	Visão geral das arquiteturas clássicas e modernas
+	Base para o estudo aprofundado da disciplina
 
 
 
