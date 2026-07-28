@@ -342,194 +342,137 @@ PARTE 3 — ARQUITETURA DE COMPUTADORES
 13. Arquitetura do Conjunto de Instruções (ISA) — [P]
 
  13.1 Fundamentos da ISA — [P]
-
-  13.1.1 Conceitos — [P]
-
-	  O que é uma ISA
-	  Objetivos da ISA
-	  Papel da ISA
-	  Interface entre Hardware e Software
+	O que é uma ISA
+	Objetivos da ISA
+	Papel da ISA
+	Interface entre Hardware e Software
 
  13.2 Componentes da ISA — [P]
-
-  13.2.1 Elementos — [P]
-
-	  Conjunto de instruções
-	  Formatos de instruções
-	  Tipos de instruções
-	  Modos de endereçamento
-	  Tipos de operandos
-	  Conjunto de registradores
+	Conjunto de instruções
+	Formatos de instruções
+	Tipos de instruções
+	Modos de endereçamento
+	Tipos de operandos
+	Conjunto de registradores
 
  13.3 Classificação das ISAs — [P]
-
-  13.3.1 Arquiteturas — [P]
-
-	  RISC
-	  CISC
-	  Comparação entre RISC e CISC
+	RISC
+	CISC
+	Comparação entre RISC e CISC
 
  13.4 Papel da ISA — [P]
-
-  13.4.1 Integração — [P]
-
-	  Compatibilidade de software
-	  Portabilidade
-	  Relação com a microarquitetura
+	Compatibilidade de software
+	Portabilidade
+	Relação com a microarquitetura
 
 
 
 14. Linguagem Assembly — [I]
 
  14.1 Fundamentos — [I]
-
-  14.1.1 Conceitos — [I]
-
-	  O que é Assembly
-	  Assembler
-	  Relação entre ISA e Assembly
+	O que é Assembly
+	Assembler
+	Relação entre ISA e Assembly
 
  14.2 Estrutura de Programas — [I]
-
-  14.2.1 Organização — [I]
-
-	  Instruções
-	  Diretivas
-	  Rótulos
-	  Dados
-	  Código
+	Instruções
+	Diretivas
+	Rótulos
+	Dados
+	Código
 
  14.3 Programação em Assembly — [I]
-
-  14.3.1 Operações — [I]
-
-	  Manipulação de registradores
-	  Manipulação de memória
-	  Chamadas de procedimentos
-	  Controle de fluxo
+	Manipulação de registradores
+	Manipulação de memória
+	Chamadas de procedimentos
+	Controle de fluxo
 
 
 
 15. Microarquitetura — [P]
 
  15.1 Organização Interna — [P]
-
-  15.1.1 Estruturas — [P]
-
-	  Datapath
-	  Unidade de Controle
-	  Banco de Registradores
-	  Caminhos de dados
-	  Sinais de controle
+	Datapath
+	Unidade de Controle
+	Banco de Registradores
+	Caminhos de dados
+	Sinais de controle
 
  15.2 Execução das Instruções — [P]
-
-  15.2.1 Funcionamento — [P]
-
-	  Busca
-	  Decodificação
-	  Execução
-	  Acesso à memória
-	  Escrita do resultado
+	Busca
+	Decodificação
+	Execução
+	Acesso à memória
+	Escrita do resultado
 
  15.3 Implementação da ISA — [P]
-
-  15.3.1 Relações — [P]
-
-	  Como a ISA é implementada
-	  Relação entre ISA e microarquitetura
-	  Diferentes implementações da mesma ISA
+	Como a ISA é implementada
+	Relação entre ISA e microarquitetura
+	Diferentes implementações da mesma ISA
 
 
 
 16. Pipeline de Instruções — [P]
 
  16.1 Fundamentos — [P]
-
-  16.1.1 Conceitos — [P]
-
-	  Objetivos do Pipeline
-	  Conceito de Pipeline
-	  Funcionamento geral
-	  Ganhos de desempenho
+	Objetivos do Pipeline
+	Conceito de Pipeline
+	Funcionamento geral
+	Ganhos de desempenho
 
  16.2 Estágios — [P]
-
-  16.2.1 Organização — [P]
-
-	  Busca
-	  Decodificação
-	  Execução
-	  Memória
-	  Escrita
+	Busca
+	Decodificação
+	Execução
+	Memória
+	Escrita
 
  16.3 Hazards — [P]
-
-  16.3.1 Tipos — [P]
-
-	  Hazards estruturais
-	  Hazards de dados
-	  Hazards de controle
+	Hazards estruturais
+	Hazards de dados
+	Hazards de controle
 
  16.4 Técnicas de Melhoria — [P]
-
-  16.4.1 Soluções — [P]
-
-	  Forwarding
-	  Stall
-	  Predição de desvios
-	  Execução especulativa
+	Forwarding
+	Stall
+	Predição de desvios
+	Execução especulativa
 
 
 
 17. Arquiteturas com Paralelismo em Nível de Instrução — [I]
 
  17.1 Arquiteturas Superescalares — [I]
-
-  17.1.1 Conceitos — [I]
-
-	  Arquiteturas superescalares
-	  Emissão múltipla
-	  Paralelismo em nível de instrução (ILP)
+	Arquiteturas superescalares
+	Emissão múltipla
+	Paralelismo em nível de instrução (ILP)
 
  17.2 Técnicas Modernas — [I]
-
-  17.2.1 Mecanismos — [I]
-
-	  Execução fora de ordem
-	  Renomeação de registradores
-	  Buffer de reordenação
-	  Escalonamento dinâmico
+	Execução fora de ordem
+	Renomeação de registradores
+	Buffer de reordenação
+	Escalonamento dinâmico
 
  17.3 Objetivos — [I]
-
-  17.3.1 Desempenho — [I]
-
-	  Aumento do desempenho
-	  Melhor aproveitamento do pipeline
-	  Redução de dependências
+	Aumento do desempenho
+	Melhor aproveitamento do pipeline
+	Redução de dependências
 
 
 
 18. Visão Geral das Arquiteturas de Processadores — [V]
 
  18.1 Famílias de Arquiteturas — [V]
-
-  18.1.1 Exemplos — [V]
-
-	  x86
-	  ARM
-	  RISC-V
-	  POWER
+	x86
+	ARM
+	RISC-V
+	POWER
 
  18.2 Características Gerais — [V]
-
-  18.2.1 Comparações — [V]
-
-	  Compatibilidade
-	  Desempenho
-	  Eficiência energética
-	  Áreas de aplicação
+	Compatibilidade
+	Desempenho
+	Eficiência energética
+	Áreas de aplicação
 
 
 
@@ -539,159 +482,112 @@ PARTE 4 — PROCESSAMENTO PARALELO E ARQUITETURAS MODERNAS
 19. Fundamentos do Processamento Paralelo — [I]
 
  19.1 Conceitos Fundamentais — [I]
-
-  19.1.1 Introdução — [I]
-
-	  O que é processamento paralelo
-	  Objetivos do paralelismo
-	  Concorrência
-	  Paralelismo
-	  Escalabilidade
+	O que é processamento paralelo
+	Objetivos do paralelismo
+	Concorrência
+	Paralelismo
+	Escalabilidade
 
  19.2 Níveis de Paralelismo — [I]
-
-  19.2.1 Classificação — [I]
-
-	  Paralelismo em nível de bits
-	  Paralelismo em nível de instruções (ILP)
-	  Paralelismo em nível de dados (DLP)
-	  Paralelismo em nível de tarefas (TLP)
+	Paralelismo em nível de bits
+	Paralelismo em nível de instruções (ILP)
+	Paralelismo em nível de dados (DLP)
+	Paralelismo em nível de tarefas (TLP)
 
  19.3 Taxonomia de Flynn — [I]
-
-  19.3.1 Classificação — [I]
-
-	  SISD
-	  SIMD
-	  MISD
-	  MIMD
+	SISD
+	SIMD
+	MISD
+	MIMD
 
  19.4 Benefícios e Limitações — [I]
-
-  19.4.1 Aspectos Gerais — [I]
-
-	  Ganho de desempenho
-	  Escalabilidade
-	  Sincronização
-	  Comunicação entre processadores
+	Ganho de desempenho
+	Escalabilidade
+	Sincronização
+	Comunicação entre processadores
 
 
 
 20. Arquiteturas Paralelas — [I]
 
  20.1 Processadores Multinúcleo — [I]
-
-  20.1.1 Organização — [I]
-
-	  Multicore
-	  Manycore
-	  Compartilhamento de recursos
-	  Comunicação entre núcleos
+	Multicore
+	Manycore
+	Compartilhamento de recursos
+	Comunicação entre núcleos
 
  20.2 Multiprocessadores — [I]
-
-  20.2.1 Estruturas — [I]
-
-	  SMP
-	  NUMA
-	  Multiprocessadores
+	SMP
+	NUMA
+	Multiprocessadores
 
  20.3 Comunicação — [I]
-
-  20.3.1 Integração — [I]
-
-	  Compartilhamento de memória
-	  Troca de dados
-	  Sincronização
+	Compartilhamento de memória
+	Troca de dados
+	Sincronização
 
 
 
 21. Processadores Gráficos (GPU) — [I]
 
  21.1 Fundamentos — [I]
-
-  21.1.1 Conceitos — [I]
-
-	  O que é uma GPU
-	  Diferenças entre CPU e GPU
-	  Objetivos das GPUs
+	O que é uma GPU
+	Diferenças entre CPU e GPU
+	Objetivos das GPUs
 
  21.2 Organização — [I]
-
-  21.2.1 Estrutura — [I]
-
-	  Arquitetura da GPU
-	  Processamento massivamente paralelo
-	  Unidades de processamento
+	Arquitetura da GPU
+	Processamento massivamente paralelo
+	Unidades de processamento
 
  21.3 Computação de Propósito Geral — [I]
-
-  21.3.1 GPGPU — [I]
-
-	  Conceito
-	  CUDA (introdução)
-	  OpenCL (introdução)
+	Conceito
+	CUDA (introdução)
+	OpenCL (introdução)
 
  21.4 Aplicações — [I]
-
-  21.4.1 Utilização — [I]
-
-	  Computação científica
-	  Inteligência Artificial
-	  Processamento gráfico
-	  Simulações
+	Computação científica
+	Inteligência Artificial
+	Processamento gráfico
+	Simulações
 
 
 
 22. Sistemas Distribuídos e Computação de Alto Desempenho — [V]
 
  22.1 Sistemas Distribuídos — [V]
-
-  22.1.1 Conceitos — [V]
-
-	  Cluster
-	  Grid
-	  Computação em Nuvem
+	Cluster
+	Grid
+	Computação em Nuvem
 
  22.2 Computação de Alto Desempenho — [V]
-
-  22.2.1 HPC — [V]
-
-	  Supercomputadores
-	  Computação Paralela
-	  Aplicações científicas
+	HPC
+	Supercomputadores
+	Computação Paralela
+	Aplicações científicas
 
  22.3 Integração — [V]
-
-  22.3.1 Comunicação — [V]
-
-	  Distribuição de tarefas
-	  Compartilhamento de recursos
-	  Escalabilidade
+	Distribuição de tarefas
+	Compartilhamento de recursos
+	Escalabilidade
 
 
 
 23. Interconexão entre Processadores — [V]
 
  23.1 Redes de Interconexão — [V]
-
-  23.1.1 Estruturas — [V]
-
-	  Barramentos
-	  Crossbar
-	  Mesh
-	  Torus
-	  Árvores
-	  Network-on-Chip (NoC)
+	Barramentos
+	Crossbar
+	Mesh
+	Torus
+	Árvores
+	Network-on-Chip (NoC)
 
  23.2 Comunicação — [V]
-
-  23.2.1 Funcionamento — [V]
-
-	  Transferência de dados
-	  Roteamento
-	  Latência
-	  Largura de banda
+	Transferência de dados
+	Roteamento
+	Latência
+	Largura de banda
 
 
 
