@@ -1,0 +1,1372 @@
+                            Arquitetura e Organização de Computadores
+
+
+Objetivo: Estudar Arquitetura e Organização de Computadores de forma progressiva, compreendendo os conceitos fundamentais da disciplina, sua organização geral, seus principais componentes, arquiteturas existentes, tecnologias modernas e aplicações, servindo como base para o estudo aprofundado de cada tópico em listas específicas.
+
+
+A classificação abaixo indica a profundidade recomendada para cada grande tópico da lista.
+
+[P] Profundidade — estudar mecanismos, estruturas, funcionamento interno e relações entre componentes.
+[I] Intermediário — compreender bem o funcionamento e as relações principais, sem precisar dominar todos os
+   detalhes de implementação.
+[V] Visão geral — saber o que é, para que serve e como se relaciona com os registradores.
+
+
+
+PARTE 1 — INTRODUÇÃO E FUNDAMENTOS DA DISCIPLINA
+
+
+1. Introdução à Computação [V]
+
+ 1.1 O Computador:
+
+  1.1.1 Conceitos:
+      O que é um computador
+      Objetivos de um computador
+      Características gerais
+      Componentes básicos
+      Funcionamento geral
+      Arquitetura de sistemas computacionais (visão geral)
+      Classificação dos computadores
+
+ 1.2 História da Computação:
+
+  1.2.1 Evolução Histórica:
+      Marcos da computação
+      Gerações dos computadores
+      Evolução dos processadores
+      Evolução das memórias
+      Evolução das arquiteturas
+      Tendências históricas
+
+ 1.3 Fundamentos da Disciplina:
+
+  1.3.1 Arquitetura e Organização:
+
+      O que é Arquitetura de Computadores
+      O que é Organização de Computadores
+      Diferenças entre Arquitetura e Organização
+      Relação entre Hardware e Software
+      Importância da disciplina
+      Objetivos da Arquitetura e Organização
+      Visão geral da disciplina
+
+
+
+2. Modelos Fundamentais de Computação [P]
+
+ 2.1 Modelos Arquiteturais:
+
+  2.1.1 Modelos Clássicos:
+
+      Conceito de modelo computacional
+      Modelo de Programa Armazenado
+      Arquitetura de Von Neumann
+      Gargalo de Von Neumann
+      Arquitetura Harvard
+      Arquitetura Harvard Modificada
+      Arquiteturas híbridas
+      Comparação entre modelos
+
+ 2.2 Organização Funcional:
+
+  2.2.1 Componentes Gerais:
+
+      Processador
+      Memória
+      Entrada e Saída
+      Interconexão dos componentes
+      Fluxo geral de informações
+
+
+
+3. Níveis de Abstração dos Sistemas Computacionais [P]
+
+ 3.1 Organização em Camadas:
+
+  3.1.1 Níveis de Abstração:
+
+      Nível físico
+      Nível digital
+      Microarquitetura
+      Arquitetura do Conjunto de Instruções (ISA)
+      Sistema Operacional
+      Linguagens de Programação
+      Aplicações
+
+ 3.2 Relações entre os Níveis:
+
+  3.2.1 Integração:
+
+      Dependências entre níveis
+      Comunicação entre camadas
+      Papel de cada nível
+      Visão integrada do sistema
+
+
+
+4. Representação da Informação [P]
+
+ 4.1 Sistemas de Numeração:
+
+  4.1.1 Bases Numéricas:
+
+      Decimal
+      Binário
+      Octal
+      Hexadecimal
+
+ 4.2 Conversões Numéricas:
+
+  4.2.1 Operações:
+
+      Conversões entre bases
+      Aritmética binária
+
+ 4.3 Representação dos Dados:
+
+  4.3.1 Dados Numéricos:
+
+      Inteiros
+      Números com sinal
+      Complemento de dois
+      Ponto fixo
+      Ponto flutuante
+
+ 4.4 Representação Digital:
+
+  4.4.1 Tipos de Informação:
+
+      Caracteres (ASCII e Unicode)
+      Instruções
+      Imagens
+      Áudio
+      Vídeo
+
+
+
+5. Fundamentos da Lógica Digital [P]
+
+ 5.1 Álgebra Booleana:
+
+  5.1.1 Conceitos Fundamentais:
+
+      Variáveis booleanas
+      Operadores lógicos
+      Tabelas verdade
+      Leis da Álgebra Booleana
+      Simplificação lógica
+      Mapas de Karnaugh
+
+ 5.2 Circuitos Digitais:
+
+  5.2.1 Circuitos Combinacionais:
+
+      Portas lógicas
+      Codificadores
+      Decodificadores
+      Multiplexadores
+      Demultiplexadores
+      Comparadores
+      Somadores
+      Subtratores
+      Unidade Lógica e Aritmética (visão geral)
+
+ 5.3 Circuitos Sequenciais:
+
+  5.3.1 Estruturas Sequenciais:
+
+      Latches
+      Flip-Flops
+      Registradores
+      Contadores
+      Máquinas de Estados Finitos (FSM)
+
+ 5.4 Memórias Digitais:
+
+  5.4.1 Conceitos Básicos:
+
+      Armazenamento de bits
+      Células de memória
+      Organização básica
+      Relação com os circuitos sequenciais
+
+
+
+6. Visão Geral da Estrutura de um Computador [P]
+
+ 6.1 Organização Geral:
+
+  6.1.1 Estrutura Básica:
+
+      Unidade Central de Processamento (CPU)
+      Sistema de Memória
+      Sistema de Entrada e Saída
+      Barramentos
+      Dispositivos de armazenamento
+
+ 6.2 Funcionamento Geral:
+
+  6.2.1 Execução de Programas:
+
+      Busca de instruções
+      Decodificação
+      Execução
+      Escrita dos resultados
+      Ciclo de instruções
+
+ 6.3 Integração dos Componentes:
+
+  6.3.1 Comunicação:
+
+      Fluxo de dados
+      Fluxo de controle
+      Espaço de endereçamento
+      Comunicação entre hardware e software
+
+
+
+PARTE 2 — ORGANIZAÇÃO DE COMPUTADORES
+
+
+7. Organização Geral do Computador [P]
+
+ 7.1 Estrutura Organizacional:
+
+  7.1.1 Organização Básica:
+
+      Organização geral do computador
+      Componentes principais
+      Interligação dos componentes
+      Fluxo geral de dados
+      Fluxo de controle
+
+ 7.2 Execução de Programas:
+
+  7.2.1 Funcionamento Geral:
+
+      Ciclo de instruções
+      Busca de instruções
+      Decodificação
+      Execução
+      Escrita de resultados
+
+ 7.3 Comunicação Interna:
+
+  7.3.1 Integração:
+
+      Comunicação entre CPU e memória
+      Comunicação entre CPU e dispositivos
+      Comunicação através dos barramentos
+      Coordenação entre os componentes
+
+
+
+8. Processador (CPU) [P]
+
+ 8.1 Visão Geral:
+
+  8.1.1 Conceitos:
+
+      O que é a CPU
+      Objetivos da CPU
+      Organização interna
+      Papel da CPU no sistema
+
+ 8.2 Componentes da CPU:
+
+  8.2.1 Estruturas Principais:
+
+      Unidade de Controle
+      Unidade Lógica e Aritmética (ULA)
+      Banco de Registradores
+      Clock
+      Datapath
+      Unidade de Controle Cabeada
+      Unidade de Controle Microprogramada
+
+ 8.3 Funcionamento Geral:
+
+  8.3.1 Operação:
+
+      Busca de instruções
+      Decodificação
+      Execução
+      Atualização dos registradores
+      Comunicação com memória
+      Comunicação com Entrada e Saída
+
+
+
+9. Organização da Memória [P]
+
+ 9.1 Hierarquia de Memória:
+
+  9.1.1 Estrutura Hierárquica:
+
+      Registradores
+      Cache
+      Memória Principal
+      Memória Secundária
+      Memória Terciária
+
+ 9.2 Memória Cache:
+
+  9.2.1 Conceitos Básicos:
+
+      Finalidade
+      Funcionamento geral
+      Mapeamentos
+      Políticas de substituição
+      Políticas de escrita
+      Coerência de cache
+
+ 9.3 Memória Principal:
+
+  9.3.1 Estrutura:
+
+      RAM
+      ROM
+      DRAM
+      SRAM
+
+ 9.4 Memória Virtual:
+
+  9.4.1 Conceitos:
+
+      Finalidade
+      Paginação
+      Segmentação
+      TLB
+      Tradução de endereços
+
+ 9.5 Espaço de Endereçamento:
+
+  9.5.1 Organização:
+
+      Endereços físicos
+      Endereços virtuais
+      Espaço de memória
+      Organização dos endereços
+
+
+
+10. Barramentos e Interconexão [P]
+
+ 10.1 Conceitos Gerais:
+
+  10.1.1 Fundamentos:
+
+      O que é um barramento
+      Objetivos dos barramentos
+      Comunicação entre componentes
+      Interconexão do sistema
+
+ 10.2 Tipos de Barramentos:
+
+  10.2.1 Classificação:
+
+      Barramento de dados
+      Barramento de endereços
+      Barramento de controle
+      Barramentos internos
+      Barramentos externos
+
+ 10.3 Funcionamento:
+
+  10.3.1 Comunicação:
+
+      Transferência de dados
+      Arbitragem
+      Largura do barramento
+      Sincronização
+
+
+
+11. Entrada e Saída (E/S) [P]
+
+ 11.1 Fundamentos:
+
+  11.1.1 Conceitos:
+
+      Objetivos da Entrada e Saída
+      Dispositivos de Entrada
+      Dispositivos de Saída
+      Interfaces
+      Controladores
+
+ 11.2 Comunicação:
+
+  11.2.1 Mecanismos:
+
+      Comunicação com periféricos
+      Portas de Entrada e Saída
+      E/S mapeada em memória
+      E/S isolada
+
+ 11.3 Técnicas de Transferência:
+
+  11.3.1 Métodos:
+
+      Polling
+      Interrupções
+      DMA
+
+
+
+12. Armazenamento de Dados [I]
+
+ 12.1 Tecnologias de Armazenamento:
+
+  12.1.1 Dispositivos:
+
+      HDD
+      SSD
+      NVMe
+      Memória Flash
+
+ 12.2 Organização:
+
+  12.2.1 Sistemas:
+
+      Sistemas de armazenamento
+      Organização dos dados
+      Hierarquia de armazenamento
+
+ 12.3 Papel no Computador:
+
+  12.3.1 Integração:
+
+      Relação com a memória principal
+      Relação com a CPU
+      Persistência dos dados
+
+
+
+PARTE 3 — ARQUITETURA DE COMPUTADORES
+
+
+13. Arquitetura do Conjunto de Instruções (ISA) [P]
+
+ 13.1 Fundamentos da ISA:
+
+  13.1.1 Conceitos:
+
+      O que é uma ISA
+      Objetivos da ISA
+      Papel da ISA
+      Interface entre Hardware e Software
+
+ 13.2 Componentes da ISA:
+
+  13.2.1 Elementos:
+
+      Conjunto de instruções
+      Formatos de instruções
+      Tipos de instruções
+      Modos de endereçamento
+      Tipos de operandos
+      Conjunto de registradores
+
+ 13.3 Classificação das ISAs:
+
+  13.3.1 Arquiteturas:
+
+      RISC
+      CISC
+      Comparação entre RISC e CISC
+
+ 13.4 Papel da ISA:
+
+  13.4.1 Integração:
+
+      Compatibilidade de software
+      Portabilidade
+      Relação com a microarquitetura
+
+
+
+14. Linguagem Assembly [I]
+
+ 14.1 Fundamentos:
+
+  14.1.1 Conceitos:
+
+      O que é Assembly
+      Assembler
+      Relação entre ISA e Assembly
+
+ 14.2 Estrutura de Programas:
+
+  14.2.1 Organização:
+
+      Instruções
+      Diretivas
+      Rótulos
+      Dados
+      Código
+
+ 14.3 Programação em Assembly:
+
+  14.3.1 Operações:
+
+      Manipulação de registradores
+      Manipulação de memória
+      Chamadas de procedimentos
+      Controle de fluxo
+
+
+
+15. Microarquitetura [P]
+
+ 15.1 Organização Interna:
+
+  15.1.1 Estruturas:
+
+      Datapath
+      Unidade de Controle
+      Banco de Registradores
+      Caminhos de dados
+      Sinais de controle
+
+ 15.2 Execução das Instruções:
+
+  15.2.1 Funcionamento:
+
+      Busca
+      Decodificação
+      Execução
+      Acesso à memória
+      Escrita do resultado
+
+ 15.3 Implementação da ISA:
+
+  15.3.1 Relações:
+
+      Como a ISA é implementada
+      Relação entre ISA e microarquitetura
+      Diferentes implementações da mesma ISA
+
+
+
+16. Pipeline de Instruções [I]
+
+ 16.1 Fundamentos:
+
+  16.1.1 Conceitos:
+
+      Objetivos do Pipeline
+      Conceito de Pipeline
+      Funcionamento geral
+      Ganhos de desempenho
+
+ 16.2 Estágios:
+
+  16.2.1 Organização:
+
+      Busca
+      Decodificação
+      Execução
+      Memória
+      Escrita
+
+ 16.3 Hazards:
+
+  16.3.1 Tipos:
+
+      Hazards estruturais
+      Hazards de dados
+      Hazards de controle
+
+ 16.4 Técnicas de Melhoria:
+
+  16.4.1 Soluções:
+
+      Forwarding
+      Stall
+      Predição de desvios
+      Execução especulativa
+
+
+
+17. Arquiteturas com Paralelismo em Nível de Instrução [I]
+
+ 17.1 Arquiteturas Superescalares:
+
+  17.1.1 Conceitos:
+
+      Arquiteturas superescalares
+      Emissão múltipla
+      Paralelismo em nível de instrução (ILP)
+
+ 17.2 Técnicas Modernas:
+
+  17.2.1 Mecanismos:
+
+      Execução fora de ordem
+      Renomeação de registradores
+      Buffer de reordenação
+      Escalonamento dinâmico
+
+ 17.3 Objetivos:
+
+  17.3.1 Desempenho:
+
+      Aumento do desempenho
+      Melhor aproveitamento do pipeline
+      Redução de dependências
+
+
+
+18. Visão Geral das Arquiteturas de Processadores [V]
+
+ 18.1 Famílias de Arquiteturas:
+
+  18.1.1 Exemplos:
+
+      x86
+      ARM
+      RISC-V
+      POWER
+
+ 18.2 Características Gerais:
+
+  18.2.1 Comparações:
+
+      Compatibilidade
+      Desempenho
+      Eficiência energética
+      Áreas de aplicação
+
+
+
+PARTE 4 — PROCESSAMENTO PARALELO E ARQUITETURAS MODERNAS
+
+
+19. Fundamentos do Processamento Paralelo [I]
+
+ 19.1 Conceitos Fundamentais:
+
+  19.1.1 Introdução:
+
+      O que é processamento paralelo
+      Objetivos do paralelismo
+      Concorrência
+      Paralelismo
+      Escalabilidade
+
+ 19.2 Níveis de Paralelismo:
+
+  19.2.1 Classificação:
+
+      Paralelismo em nível de bits
+      Paralelismo em nível de instruções (ILP)
+      Paralelismo em nível de dados (DLP)
+      Paralelismo em nível de tarefas (TLP)
+
+ 19.3 Taxonomia de Flynn:
+
+  19.3.1 Classificação:
+
+      SISD
+      SIMD
+      MISD
+      MIMD
+
+ 19.4 Benefícios e Limitações:
+
+  19.4.1 Aspectos Gerais:
+
+      Ganho de desempenho
+      Escalabilidade
+      Sincronização
+      Comunicação entre processadores
+
+
+
+20. Arquiteturas Paralelas [I]
+
+ 20.1 Processadores Multinúcleo:
+
+  20.1.1 Organização:
+
+      Multicore
+      Manycore
+      Compartilhamento de recursos
+      Comunicação entre núcleos
+
+ 20.2 Multiprocessadores:
+
+  20.2.1 Estruturas:
+
+      SMP
+      NUMA
+      Multiprocessadores
+
+ 20.3 Comunicação:
+
+  20.3.1 Integração:
+
+      Compartilhamento de memória
+      Troca de dados
+      Sincronização
+
+
+
+21. Processadores Gráficos (GPU) [I]
+
+ 21.1 Fundamentos:
+
+  21.1.1 Conceitos:
+
+      O que é uma GPU
+      Diferenças entre CPU e GPU
+      Objetivos das GPUs
+
+ 21.2 Organização:
+
+  21.2.1 Estrutura:
+
+      Arquitetura da GPU
+      Processamento massivamente paralelo
+      Unidades de processamento
+
+ 21.3 Computação de Propósito Geral:
+
+  21.3.1 GPGPU:
+
+      Conceito
+      CUDA (introdução)
+      OpenCL (introdução)
+
+ 21.4 Aplicações:
+
+  21.4.1 Utilização:
+
+      Computação científica
+      Inteligência Artificial
+      Processamento gráfico
+      Simulações
+
+
+
+22. Sistemas Distribuídos e Computação de Alto Desempenho [V]
+
+ 22.1 Sistemas Distribuídos:
+
+  22.1.1 Conceitos:
+
+      Cluster
+      Grid
+      Computação em Nuvem
+
+ 22.2 Computação de Alto Desempenho:
+
+  22.2.1 HPC:
+
+      Supercomputadores
+      Computação Paralela
+      Aplicações científicas
+
+ 22.3 Integração:
+
+  22.3.1 Comunicação:
+
+      Distribuição de tarefas
+      Compartilhamento de recursos
+      Escalabilidade
+
+
+
+23. Interconexão entre Processadores [I]
+
+ 23.1 Redes de Interconexão:
+
+  23.1.1 Estruturas:
+
+      Barramentos
+      Crossbar
+      Mesh
+      Torus
+      Árvores
+      Network-on-Chip (NoC)
+
+ 23.2 Comunicação:
+
+  23.2.1 Funcionamento:
+
+      Transferência de dados
+      Roteamento
+      Latência
+      Largura de banda
+
+
+
+24. Sistemas Reconfiguráveis
+
+ 24.1 Lógica Reconfigurável:
+
+  24.1.1 Tecnologias:
+
+      FPGA
+      CPLD
+      SoC FPGA
+
+ 24.2 Configuração:
+
+  24.2.1 Funcionamento:
+
+      Fluxo de configuração
+      Reconfiguração
+      Aplicações
+
+ 24.3 Arquiteturas Específicas:
+
+  24.3.1 Soluções:
+
+      ASIC
+      Aceleradores dedicados
+
+
+
+25. Computação Heterogênea [V]
+
+ 25.1 Arquiteturas Heterogêneas:
+
+  25.1.1 Integração:
+
+      CPU + GPU
+      CPU + FPGA
+      Sistemas heterogêneos
+
+ 25.2 Objetivos:
+
+  25.2.1 Benefícios:
+
+      Eficiência energética
+      Especialização do processamento
+      Aumento de desempenho
+
+
+
+26. Arquiteturas Emergentes [V]
+
+ 26.1 Arquiteturas Baseadas em Dados:
+
+  26.1.1 Conceitos:
+
+      Fluxo de dados
+      Arquiteturas orientadas a dados
+
+ 26.2 Computação Inspirada no Cérebro:
+
+  26.2.1 Tecnologias:
+
+      Computação neuromórfica
+      Processadores neuromórficos
+
+ 26.3 Computação Quântica:
+
+  26.3.1 Introdução:
+
+      Conceitos básicos
+      Qubits
+      Computação quântica
+
+ 26.4 Outras Arquiteturas:
+
+  26.4.1 Tendências:
+
+      Computação óptica
+      Computação aproximada
+      Computação probabilística
+      Computação bioinspirada
+
+
+
+PARTE 5 — VIRTUALIZAÇÃO, SEGURANÇA, DESEMPENHO E SOFTWARES RELACIONADOS
+
+
+27. Virtualização
+
+ 27.1 Fundamentos da Virtualização:
+
+  27.1.1 Conceitos:
+
+      O que é virtualização
+      Objetivos da virtualização
+      Tipos de virtualização
+      Benefícios da virtualização
+
+ 27.2 Máquinas Virtuais:
+
+  27.2.1 Componentes:
+
+      Máquina virtual
+      Hipervisor
+      Hospedeiro (Host)
+      Convidado (Guest)
+
+ 27.3 Técnicas de Virtualização:
+
+  27.3.1 Métodos:
+
+      Virtualização completa
+      Paravirtualização
+      Virtualização assistida por hardware
+
+ 27.4 Recursos Virtualizados:
+
+  27.4.1 Componentes:
+
+      Virtualização de processadores
+      Virtualização de memória
+      Virtualização de Entrada e Saída
+      Virtualização de armazenamento
+      Virtualização de redes
+
+ 27.5 Tecnologias Modernas:
+
+  27.5.1 Soluções:
+
+      Containers (visão geral)
+      Orquestração (visão geral)
+      Computação em nuvem
+
+
+
+28. Segurança em Arquitetura de Computadores
+
+ 28.1 Fundamentos:
+
+  28.1.1 Conceitos:
+
+      Segurança de hardware
+      Objetivos da segurança
+      Ameaças ao hardware
+      Cadeia de confiança (Chain of Trust)
+
+ 28.2 Mecanismos de Proteção:
+
+  28.2.1 Recursos:
+
+      Modos usuário e kernel
+      Privilégios de execução
+      MMU
+      NX Bit
+      Secure Boot
+      TPM
+      Trusted Execution
+
+ 28.3 Segurança Criptográfica:
+
+  28.3.1 Recursos:
+
+      Criptografia por hardware
+      Geradores de números aleatórios
+      Armazenamento seguro de chaves
+
+ 28.4 Vulnerabilidades:
+
+  28.4.1 Introdução:
+
+      Side Channels
+      Spectre (visão geral)
+      Meltdown (visão geral)
+
+
+
+29. Desempenho de Computadores
+
+ 29.1 Fundamentos:
+
+  29.1.1 Conceitos:
+
+      O que é desempenho
+      Objetivos da avaliação
+      Fatores que influenciam o desempenho
+
+ 29.2 Métricas:
+
+  29.2.1 Indicadores:
+
+      Tempo de execução
+      Throughput
+      Latência
+      Clock
+      IPC
+      CPI
+
+ 29.3 Avaliação:
+
+  29.3.1 Técnicas:
+
+      Benchmarks
+      Análise de gargalos
+      Perfil de execução
+      Comparação de arquiteturas
+
+ 29.4 Leis Fundamentais:
+
+  29.4.1 Modelos:
+
+      Lei de Amdahl
+      Lei de Gustafson
+
+ 29.5 Balanceamento do Sistema:
+
+  29.5.1 Integração:
+
+      Balanceamento entre CPU e memória
+      Balanceamento entre CPU e Entrada e Saída
+      Balanceamento geral do sistema
+
+
+
+30. Softwares Relacionados à Arquitetura [I]
+
+ 30.1 Firmware:
+
+  30.1.1 Inicialização:
+
+      Firmware
+      BIOS
+      UEFI
+      Processo de inicialização (Boot)
+
+ 30.2 Sistemas Operacionais:
+
+  30.2.1 Integração:
+
+      Gerenciamento de processos
+      Gerenciamento de memória
+      Sistema de arquivos
+      Escalonamento
+      Comunicação com hardware
+
+ 30.3 Compiladores:
+
+  30.3.1 Funções:
+
+      Processo de compilação
+      Geração de código
+      Otimizações
+      Relação entre compilador e ISA
+
+ 30.4 Drivers:
+
+  30.4.1 Dispositivos:
+
+      Função dos drivers
+      Comunicação com dispositivos
+      Controle de hardware
+
+ 30.5 Ferramentas:
+
+  30.5.1 Desenvolvimento:
+
+      Simuladores
+      Emuladores
+      Debuggers
+      Profilers
+      Ferramentas de análise de desempenho
+
+
+
+31. Integração entre Hardware e Software [P]
+
+ 31.1 Interface Hardware-Software:
+
+  31.1.1 Comunicação:
+
+      ISA como interface
+      Sistema Operacional
+      Compiladores
+      Firmware
+      Drivers
+
+ 31.2 Fluxo de Execução:
+
+  31.2.1 Funcionamento:
+
+      Inicialização do computador
+      Carregamento do sistema operacional
+      Execução de aplicações
+      Interação entre hardware e software
+
+ 31.3 Visão Integrada:
+
+  31.3.1 Relações:
+
+      Cooperação entre componentes
+      Dependências entre camadas
+      Funcionamento do sistema computacional
+
+
+
+
+PARTE 6 — APLICAÇÕES, TENDÊNCIAS E CONCLUSÃO
+
+
+
+32. Aplicações da Arquitetura e Organização de Computadores
+
+ 32.1 Computação de Uso Geral:
+
+  32.1.1 Sistemas:
+
+      Computadores pessoais
+      Workstations
+      Servidores
+      Data Centers
+
+ 32.2 Computação Móvel e Embarcada:
+
+  32.2.1 Plataformas:
+
+      Smartphones
+      Tablets
+      Sistemas embarcados
+      Internet das Coisas (IoT)
+
+ 32.3 Computação de Alto Desempenho:
+
+  32.3.1 Aplicações:
+
+      Supercomputadores
+      Computação Científica
+      Simulações
+      Computação Paralela
+
+ 32.4 Inteligência Artificial:
+
+  32.4.1 Aplicações:
+
+      Aprendizado de Máquina
+      Redes Neurais
+      Processamento de Grandes Volumes de Dados
+      Aceleradores para IA
+
+ 32.5 Aplicações Especializadas:
+
+  32.5.1 Áreas:
+
+      Consoles de jogos
+      Robótica
+      Automação Industrial
+      Veículos Autônomos
+      Sistemas críticos
+      Computação em Borda (Edge Computing)
+
+
+
+33. Tendências da Arquitetura de Computadores
+
+ 33.1 Evolução dos Processadores:
+
+  33.1.1 Tecnologias:
+
+      Chiplets
+      Empilhamento 3D
+      Integração heterogênea
+      Eficiência energética
+
+ 33.2 Novas Arquiteturas:
+
+  33.2.1 Tendências:
+
+      RISC-V
+      Arquiteturas abertas
+      Domínio específico (DSA)
+      Arquiteturas heterogêneas
+
+ 33.3 Evolução das Memórias:
+
+  33.3.1 Tecnologias:
+
+      Memórias de nova geração
+      HBM
+      Memória Persistente
+      CXL (Compute Express Link)
+
+ 33.4 Computação Inteligente:
+
+  33.4.1 Tecnologias:
+
+      Chips para Inteligência Artificial
+      Computação Neuromórfica
+      Computação Quântica
+
+ 33.5 Sustentabilidade:
+
+  33.5.1 Objetivos:
+
+      Computação Verde
+      Eficiência energética
+      Otimização de consumo
+      Sustentabilidade em Data Centers
+
+
+
+34. Integração dos Conceitos da Disciplina
+
+ 34.1 Componentes Fundamentais:
+
+  34.1.1 Integração:
+
+      Processador
+      Memória
+      Barramentos
+      Entrada e Saída
+      Armazenamento
+
+ 34.2 Arquitetura e Organização:
+
+  34.2.1 Relações:
+
+      Relação entre Arquitetura e Organização
+      Relação entre Hardware e Software
+      Relação entre ISA e Microarquitetura
+      Relação entre desempenho e arquitetura
+
+ 34.3 Funcionamento do Computador:
+
+  34.3.1 Fluxo Geral:
+
+      Execução de programas
+      Comunicação entre componentes
+      Fluxo de informações
+      Controle do sistema
+
+ 34.4 Projeto de Sistemas:
+
+  34.4.1 Compromissos:
+
+      Desempenho
+      Custo
+      Consumo de energia
+      Escalabilidade
+      Confiabilidade
+
+
+
+35. Revisão Geral da Disciplina
+
+ 35.1 Fundamentos:
+
+  35.1.1 Revisão:
+
+      História da computação
+      Modelos computacionais
+      Níveis de abstração
+      Representação da informação
+      Lógica digital
+
+ 35.2 Organização de Computadores:
+
+  35.2.1 Revisão:
+
+      CPU
+      Memória
+      Barramentos
+      Entrada e Saída
+      Armazenamento
+
+ 35.3 Arquitetura de Computadores:
+
+  35.3.1 Revisão:
+
+      ISA
+      Assembly
+      Microarquitetura
+      Pipeline
+      Arquiteturas superescalares
+
+ 35.4 Arquiteturas Modernas:
+
+  35.4.1 Revisão:
+
+      Processamento paralelo
+      GPUs
+      Sistemas distribuídos
+      FPGA
+      Computação heterogênea
+      Arquiteturas emergentes
+
+ 35.5 Tecnologias Complementares:
+
+  35.5.1 Revisão:
+
+      Virtualização
+      Segurança
+      Desempenho
+      Softwares relacionados
+
+
+
+36. Conclusão
+
+ 36.1 Visão Integrada da Disciplina:
+
+  36.1.1 Integração dos Conceitos:
+
+      Relação entre Arquitetura e Organização
+      Integração entre hardware e software
+      Funcionamento integrado de um computador
+      Importância da disciplina para a Computação
+
+ 36.2 Continuidade dos Estudos:
+
+  36.2.1 Organização de Computadores:
+
+      Processadores
+      Registradores
+      Barramentos
+      Entrada e Saída
+      Memória Principal
+      Memória Cache
+      Memória Virtual
+      Memória Secundária
+
+  36.2.2 Arquitetura de Computadores:
+
+      Arquitetura do Conjunto de Instruções (ISA)
+      Linguagem Assembly
+      Microarquitetura
+      Pipeline
+      Arquiteturas Superescalares
+      Execução Fora de Ordem
+      Predição de Desvios
+
+  36.2.3 Arquiteturas Modernas:
+
+      Processamento Paralelo
+      Computação Heterogênea
+      GPUs
+      FPGA
+      Sistemas Distribuídos
+      Virtualização
+      Segurança em Hardware
+
+  36.2.4 Áreas Relacionadas:
+
+      Sistemas Operacionais
+      Compiladores
+      Redes de Computadores
+      Sistemas Embarcados
+      Computação de Alto Desempenho
+      Inteligência Artificial
+
+ 36.3 Encerramento:
+
+  36.3.1 Objetivos Alcançados:
+
+      Compreensão da estrutura geral de um computador
+      Compreensão dos principais componentes computacionais
+      Visão geral das arquiteturas clássicas e modernas
+      Base para o estudo aprofundado da disciplina
+
+
+
+Ao concluir esta introdução, o estudante terá uma visão global da disciplina de Arquitetura e Organização de Computadores, compreendendo seus principais conceitos, componentes e áreas de estudo. Os tópicos apresentados constituem a base para o aprofundamento em listas específicas dedicadas a cada assunto, permitindo uma progressão estruturada do conhecimento, desde os fundamentos até arquiteturas modernas e tecnologias emergentes.
+
