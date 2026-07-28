@@ -359,6 +359,12 @@ PARTE 1 — FUNDAMENTOS DA ENTRADA E SAÍDA
       Tempo de resposta
       Capacidade de transferência
 
+  4.3.5 Classificação quanto ao Método de Acesso — [I]
+      Dispositivos de caractere (Character Devices)
+      Dispositivos de bloco (Block Devices)
+      Diferenças
+      Aplicações
+
 
 
 PARTE 2 — ARQUITETURA E ORGANIZAÇÃO DO SUBSISTEMA DE ENTRADA E SAÍDA
@@ -507,6 +513,13 @@ PARTE 2 — ARQUITETURA E ORGANIZAÇÃO DO SUBSISTEMA DE ENTRADA E SAÍDA
       Atualização do estado
       Geração de eventos
       Notificação de conclusão
+
+  6.3.4 Controladores Inteligentes — [P]
+      Firmware interno
+      Microcontroladores embarcados
+      Offloading
+      Processamento local
+      Autonomia do controlador
 
 
 
@@ -753,6 +766,10 @@ PARTE 3 — MÉTODOS DE TRANSFERÊNCIA E CONTROLE DAS OPERAÇÕES DE ENTRADA E S
       Controle direto pela CPU
       Consulta periódica do dispositivo
       Espera ativa (Busy Waiting)
+      Programmed I/O (PIO)
+      Polling
+      Busy Waiting
+      Diferença entre PIO e Polling
 
   10.1.2 Funcionamento Geral — [P]
       Solicitação da operação
@@ -881,6 +898,11 @@ PARTE 3 — MÉTODOS DE TRANSFERÊNCIA E CONTROLE DAS OPERAÇÕES DE ENTRADA E S
       APIC
       MSI
       MSI-X
+      Comparação IRQ × MSI
+      Comparação MSI × MSI-X
+      Vantagens
+      Limitações
+      Quando utilizar
 
 
  11.4 Desempenho das Interrupções — [I]
@@ -968,12 +990,23 @@ PARTE 3 — MÉTODOS DE TRANSFERÊNCIA E CONTROLE DAS OPERAÇÕES DE ENTRADA E S
       Bus Master DMA
       Encadeamento de descritores
       Transferências múltiplas
+      Estrutura dos descritores
+      Listas encadeadas
+      Buffers não contíguos
+      Scatter Lists
 
   12.3.3 Controle da Transferência — [P]
       Inicialização
       Monitoramento
       Encerramento
       Notificação de conclusão
+
+  12.3.4 Bus Mastering — [I]
+      Conceito
+      Mestre do barramento
+      Controle independente
+      Controle das transferências
+      Exemplos
 
 
  12.4 Arbitragem do Barramento — [P]
@@ -1173,6 +1206,13 @@ PARTE 4 — ARQUITETURAS, BARRAMENTOS, PROTOCOLOS E INTERFACES DE COMUNICAÇÃO
       Compartilhamento
       Liberação do barramento
 
+  14.4.4 Protocolos de Handshake — [P]
+      Handshake de dois sinais
+      Handshake de quatro sinais
+      Ready/Busy
+      Ready/Valid
+      Wait States
+
 
 
 15. Comunicação de Dados — [P]
@@ -1357,6 +1397,10 @@ PARTE 4 — ARQUITETURAS, BARRAMENTOS, PROTOCOLOS E INTERFACES DE COMUNICAÇÃO
       Filas de comandos
       Paralelismo
       Baixa latência
+      Submission Queue
+      Completion Queue
+      Queue Pair
+      Doorbells
       Alta escalabilidade
 
 
@@ -1462,6 +1506,10 @@ PARTE 5 — DESEMPENHO, ARQUITETURAS MODERNAS E OTIMIZAÇÕES DA ENTRADA E SAÍD
       Tempo de acesso
       Tempo de transmissão
       Tempo de processamento
+      Tempo de serviço
+      Tempo em fila
+      Tempo total de resposta
+      Latência fim a fim
 
   17.2.4 Overhead — [P]
       Sobrecarga de hardware
@@ -1669,67 +1717,112 @@ PARTE 5 — DESEMPENHO, ARQUITETURAS MODERNAS E OTIMIZAÇÕES DA ENTRADA E SAÍD
 
 
 
-20. Comunicação entre Dispositivos e Memória — [P]
+20. Recursos Arquiteturais Modernos da Entrada e Saída — [P]
 
- 20.1 Comunicação com a Memória Principal — [P]
+  20.1 Tecnologias Modernas
+      IOMMU
+      ATS
+      PRI
+      PASID
+      SR-IOV
+      MR-IOV
 
-  20.1.1 Organização — [P]
+ 20.2 Comunicação Moderna
+      MSI
+      MSI-X
+      Bus Mastering
+      DMA Coherency
+      Cache Coherency
+
+ 20.3 Integração
+      Virtualização
+      Compartilhamento seguro
+      Proteção de memória
+
+
+
+21. Comunicação entre Dispositivos e Memória — [P]
+
+ 21.1 Comunicação com a Memória Principal — [P]
+
+  21.1.1 Organização — [P]
       Leitura
       Escrita
       Transferência direta
       Compartilhamento
 
-  20.1.2 Sincronização — [P]
+  21.1.2 Sincronização — [P]
       Coordenação
       Controle de acesso
       Ordem das operações
       Consistência
 
-  20.1.3 Eficiência — [I]
+  21.1.3 Eficiência — [I]
       Redução de acessos
       Aproveitamento da largura de banda
       Minimização da latência
 
 
- 20.2 Coerência e Consistência — [P]
+ 21.2 Coerência e Consistência — [P]
 
-  20.2.1 Coerência envolvendo Dispositivos — [P]
+  21.2.1 Coerência envolvendo Dispositivos — [P]
       Conceito
       Atualização dos dados
       Compartilhamento
       Problemas de coerência
+      DMA Coherent
+      DMA Non-Coherent
+      Cache Snooping
+      Coherent Interconnect
 
-  20.2.2 Consistência das Operações — [P]
+  21.2.2 Consistência das Operações — [P]
       Ordem das operações
       Visibilidade das escritas
       Sincronização
       Barreiras de memória (Memory Barriers)
+      Read Ordering
+      Write Ordering
+      Relaxed Ordering
+      Strong Ordering
 
-  20.2.3 Comunicação com Cache — [P]
+  21.2.3 Comunicação com Cache — [P]
       Cache e MMIO
       Dispositivos e cache
       Regiões não cacheáveis
       Sincronização da memória
+      Escritas não cacheáveis
+      Write Combining
+      Memory Fences
+      Cache Flush
+      Cache Invalidate
 
 
- 20.3 Arquiteturas Modernas de Comunicação — [P]
+ 21.3 Arquiteturas Modernas de Comunicação — [P]
 
-  20.3.1 Comunicação de Alta Eficiência — [P]
+  21.3.1 Comunicação de Alta Eficiência — [P]
       Zero-Copy
       DMA moderno
       Scatter-Gather
       Bus Mastering
+      Offloading
 
-  20.3.2 Comunicação com Aceleradores — [I]
+  21.3.2 Comunicação com Aceleradores — [I]
       GPUs
       FPGAs
       NICs inteligentes
       Coprocessadores
+      DPU
+      NPU
+      TPU (visão geral)
 
-  20.3.3 Tendências Futuras — [V]
+  21.3.3 Tendências Futuras — [V]
       SmartNICs
       DPUs
       CXL I/O
+      NUMA e Entrada/Saída
+      Afinidade de dispositivos
+      Localidade de memória
+      Latência NUMA
       Integração entre memória e dispositivos
 
 
@@ -1737,25 +1830,25 @@ PARTE 5 — DESEMPENHO, ARQUITETURAS MODERNAS E OTIMIZAÇÕES DA ENTRADA E SAÍD
 PARTE 6 — INTEGRAÇÃO DOS CONCEITOS, CONFIABILIDADE, SEGURANÇA E CONCLUSÃO
 
 
-21. Confiabilidade e Segurança da Entrada e Saída — [P]
+22. Confiabilidade e Segurança da Entrada e Saída — [P]
 
- 21.1 Confiabilidade das Operações de E/S — [P]
+ 22.1 Confiabilidade das Operações de E/S — [P]
 
-  21.1.1 Fundamentos — [P]
+  22.1.1 Fundamentos — [P]
       Conceito
       Objetivos
       Integridade das transferências
       Disponibilidade
       Continuidade das operações
 
-  21.1.2 Fontes de Erros — [P]
+  22.1.2 Fontes de Erros — [P]
       Falhas de hardware
       Falhas de comunicação
       Erros de sincronização
       Ruídos elétricos
       Falhas dos dispositivos
 
-  21.1.3 Mecanismos de Detecção — [P]
+  22.1.3 Mecanismos de Detecção — [P]
       Verificação de integridade
       Códigos de detecção
       Time-out
@@ -1763,42 +1856,42 @@ PARTE 6 — INTEGRAÇÃO DOS CONCEITOS, CONFIABILIDADE, SEGURANÇA E CONCLUSÃO
       Diagnóstico
 
 
- 21.2 Tratamento de Erros — [P]
+ 22.2 Tratamento de Erros — [P]
 
-  21.2.1 Identificação dos Erros — [P]
+  22.2.1 Identificação dos Erros — [P]
       Erros temporários
       Erros permanentes
       Falhas de comunicação
       Falhas dos controladores
 
-  21.2.2 Recuperação — [P]
+  22.2.2 Recuperação — [P]
       Repetição da operação
       Reinicialização do dispositivo
       Recuperação automática
       Recuperação assistida
 
-  21.2.3 Tolerância a Falhas — [I]
+  22.2.3 Tolerância a Falhas — [I]
       Redundância
       Reconfiguração
       Continuidade do serviço
       Alta disponibilidade
 
 
- 21.3 Segurança da Entrada e Saída — [P]
+ 22.3 Segurança da Entrada e Saída — [P]
 
-  21.3.1 Controle de Acesso — [P]
+  22.3.1 Controle de Acesso — [P]
       Permissões
       Privilégios
       Isolamento
       Proteção dos dispositivos
 
-  21.3.2 Proteção da Comunicação — [P]
+  22.3.2 Proteção da Comunicação — [P]
       Integridade dos dados
       Confidencialidade
       Autenticação
       Validação das operações
 
-  21.3.3 Recursos Arquiteturais Modernos — [P]
+  22.3.3 Recursos Arquiteturais Modernos — [P]
       IOMMU
       Proteção contra DMA indevido
       Isolamento de dispositivos
@@ -1806,44 +1899,44 @@ PARTE 6 — INTEGRAÇÃO DOS CONCEITOS, CONFIABILIDADE, SEGURANÇA E CONCLUSÃO
 
 
 
-22. Sistemas Operacionais e Entrada e Saída (Visão Arquitetural) — [I]
+23. Sistemas Operacionais e Entrada e Saída (Visão Arquitetural) — [I]
 
- 22.1 Interface entre Hardware e Software — [I]
+ 23.1 Interface entre Hardware e Software — [I]
 
-  22.1.1 Papel do Sistema Operacional — [I]
+  23.1.1 Papel do Sistema Operacional — [I]
       Gerenciamento da Entrada e Saída
       Abstração dos dispositivos
       Compartilhamento dos recursos
       Coordenação das operações
 
-  22.1.2 Drivers de Dispositivos — [I]
+  23.1.2 Drivers de Dispositivos — [I]
       Conceito
       Função
       Comunicação com o hardware
       Interface com o sistema operacional
 
-  22.1.3 Chamadas de Sistema — [V]
+  23.1.3 Chamadas de Sistema — [V]
       Operações de leitura
       Operações de escrita
       Controle dos dispositivos
       Comunicação entre aplicações e hardware
 
 
- 22.2 Gerenciamento das Operações — [I]
+ 23.2 Gerenciamento das Operações — [I]
 
-  22.2.1 Escalonamento de E/S — [I]
+  23.2.1 Escalonamento de E/S — [I]
       Organização das requisições
       Prioridades
       Otimização das operações
       Balanceamento
 
-  22.2.2 Gerenciamento dos Dispositivos — [I]
+  23.2.2 Gerenciamento dos Dispositivos — [I]
       Inicialização
       Configuração
       Compartilhamento
       Liberação
 
-  22.2.3 Comunicação com o Hardware — [I]
+  23.2.3 Comunicação com o Hardware — [I]
       Registradores de E/S
       Interrupções
       DMA
@@ -1851,11 +1944,11 @@ PARTE 6 — INTEGRAÇÃO DOS CONCEITOS, CONFIABILIDADE, SEGURANÇA E CONCLUSÃO
 
 
 
-23. Integração Geral dos Conceitos de Entrada e Saída — [P]
+24. Integração Geral dos Conceitos de Entrada e Saída — [P]
 
- 23.1 Integração Arquitetural — [P]
+ 24.1 Integração Arquitetural — [P]
 
-  23.1.1 Componentes Envolvidos — [P]
+  24.1.1 Componentes Envolvidos — [P]
       Processador
       Memória principal
       Controladores de E/S
@@ -1863,7 +1956,7 @@ PARTE 6 — INTEGRAÇÃO DOS CONCEITOS, CONFIABILIDADE, SEGURANÇA E CONCLUSÃO
       Barramentos
       Periféricos
 
-  23.1.2 Fluxo Completo de uma Operação de E/S — [P]
+  24.1.2 Fluxo Completo de uma Operação de E/S — [P]
       Solicitação da operação
       Decodificação
       Seleção do dispositivo
@@ -1872,28 +1965,28 @@ PARTE 6 — INTEGRAÇÃO DOS CONCEITOS, CONFIABILIDADE, SEGURANÇA E CONCLUSÃO
       Atualização dos estados
       Finalização da operação
 
-  23.1.3 Coordenação entre os Componentes — [P]
+  24.1.3 Coordenação entre os Componentes — [P]
       Sincronização
       Compartilhamento
       Arbitragem
       Comunicação integrada
 
 
- 23.2 Integração dos Métodos de Transferência — [P]
+ 24.2 Integração dos Métodos de Transferência — [P]
 
-  23.2.1 Comparação Geral — [P]
+  24.2.1 Comparação Geral — [P]
       Entrada e Saída Programada
       Entrada e Saída por Interrupções
       DMA
 
-  23.2.2 Critérios de Escolha — [P]
+  24.2.2 Critérios de Escolha — [P]
       Complexidade
       Desempenho
       Custo
       Tipo de dispositivo
       Volume de dados
 
-  23.2.3 Cenários de Aplicação — [I]
+  24.2.3 Cenários de Aplicação — [I]
       Sistemas embarcados
       Computadores pessoais
       Servidores
@@ -1901,22 +1994,22 @@ PARTE 6 — INTEGRAÇÃO DOS CONCEITOS, CONFIABILIDADE, SEGURANÇA E CONCLUSÃO
       Sistemas em tempo real
 
 
- 23.3 Integração das Tecnologias Modernas — [P]
+ 24.3 Integração das Tecnologias Modernas — [P]
 
-  23.3.1 Interfaces Modernas — [I]
+  24.3.1 Interfaces Modernas — [I]
       PCI Express
       USB
       NVMe
       Thunderbolt
 
-  23.3.2 Recursos Arquiteturais — [P]
+  24.3.2 Recursos Arquiteturais — [P]
       MMIO
       MSI/MSI-X
       IOMMU
       SR-IOV
       Bus Mastering
 
-  23.3.3 Tendências da Arquitetura de E/S — [I]
+  24.3.3 Tendências da Arquitetura de E/S — [I]
       Comunicação de baixa latência
       Alta largura de banda
       Virtualização
@@ -1925,37 +2018,37 @@ PARTE 6 — INTEGRAÇÃO DOS CONCEITOS, CONFIABILIDADE, SEGURANÇA E CONCLUSÃO
 
 
 
-24. Resumo Geral da Entrada e Saída na Arquitetura e Organização de Computadores — [I]
+25. Resumo Geral da Entrada e Saída na Arquitetura e Organização de Computadores — [I]
 
- 24.1 Fundamentos Essenciais — [I]
+ 25.1 Fundamentos Essenciais — [I]
 
-  24.1.1 Conceitos Fundamentais — [I]
+  25.1.1 Conceitos Fundamentais — [I]
       Objetivos da Entrada e Saída
       Organização do subsistema
       Papel dos controladores
       Interfaces
       Dispositivos
 
- 24.2 Arquitetura e Organização — [P]
+ 25.2 Arquitetura e Organização — [P]
 
-  24.2.1 Estrutura Geral — [P]
+  25.2.1 Estrutura Geral — [P]
       Comunicação CPU–Memória–E/S
       MMIO e PMIO
       Controladores
       Registradores de E/S
       Barramentos
 
- 24.3 Métodos de Transferência — [P]
+ 25.3 Métodos de Transferência — [P]
 
-  24.3.1 Comparação Geral — [P]
+  25.3.1 Comparação Geral — [P]
       Polling
       Interrupções
       DMA
       Aplicações de cada método
 
- 24.4 Comunicação e Interfaces — [I]
+ 25.4 Comunicação e Interfaces — [I]
 
-  24.4.1 Principais Tecnologias — [I]
+  25.4.1 Principais Tecnologias — [I]
       PCI Express
       USB
       SATA
@@ -1964,9 +2057,9 @@ PARTE 6 — INTEGRAÇÃO DOS CONCEITOS, CONFIABILIDADE, SEGURANÇA E CONCLUSÃO
       SPI
       UART
 
- 24.5 Desempenho e Otimizações — [P]
+ 25.5 Desempenho e Otimizações — [P]
 
-  24.5.1 Conceitos Principais — [P]
+  25.5.1 Conceitos Principais — [P]
       Latência
       Throughput
       Largura de banda
@@ -1974,9 +2067,9 @@ PARTE 6 — INTEGRAÇÃO DOS CONCEITOS, CONFIABILIDADE, SEGURANÇA E CONCLUSÃO
       Filas
       Paralelismo
 
- 24.6 Recursos Arquiteturais Modernos — [P]
+ 25.6 Recursos Arquiteturais Modernos — [P]
 
-  24.6.1 Tecnologias — [P]
+  25.6.1 Tecnologias — [P]
       MSI/MSI-X
       IOMMU
       SR-IOV
@@ -1986,23 +2079,23 @@ PARTE 6 — INTEGRAÇÃO DOS CONCEITOS, CONFIABILIDADE, SEGURANÇA E CONCLUSÃO
 
 
 
-25. Conclusão — [V]
+26. Conclusão — [V]
 
- 25.1 Síntese Final — [V]
+ 26.1 Síntese Final — [V]
 
-  25.1.1 Evolução da Entrada e Saída — [V]
+  26.1.1 Evolução da Entrada e Saída — [V]
       Evolução histórica
       Evolução arquitetural
       Tendências atuais
       Perspectivas futuras
 
-  25.1.2 Relação com a Arquitetura de Computadores — [V]
+  26.1.2 Relação com a Arquitetura de Computadores — [V]
       Papel na arquitetura moderna
       Integração com os demais subsistemas
       Impacto no desempenho global
       Importância para a escalabilidade
 
-  25.1.3 Competências Esperadas — [V]
+  26.1.3 Competências Esperadas — [V]
       Compreender a organização do subsistema de E/S
       Entender a arquitetura das interfaces
       Conhecer os métodos de transferência
