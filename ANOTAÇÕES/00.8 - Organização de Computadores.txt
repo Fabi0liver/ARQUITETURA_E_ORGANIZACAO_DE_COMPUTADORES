@@ -1,0 +1,610 @@
+                                       Organização de Computadores
+
+
+Foco principal: A Organização de Computadores estuda como um computador é construído e implementado fisicamente, 
+               analisando seus componentes internos. Ela explica como processador, memória, dispositivos e 
+               barramentos funcionam e se comunicam. Seu foco é entender como essa estrutura influencia o  
+               desempenho e o funcionamento real do sistema computacional.
+
+
+
+Introdução à Organização de Computadores:
+
+ Visão Geral de um Sistema Computacional:
+  Conceito de computador
+  Componentes fundamentais de um computador
+  Processamento, armazenamento e comunicação de dados
+  Funcionamento geral de um sistema computacional
+
+ O que é Organização de Computadores:
+  Definição de Organização de Computadores
+  Objetivos da organização
+  Relação entre hardware e software
+  Implementação física de sistemas computacionais
+  Papel da organização no desempenho
+
+ Arquitetura x Organização de Computadores:
+  Arquitetura de Computadores:
+   Interface hardware-software
+   Conjunto de instruções (ISA)
+   Tipos de dados
+   Modos de endereçamento
+   Modelo de programação
+  Organização de Computadores:
+   Estrutura interna do computador
+   Implementação da CPU
+   Caminho dos dados
+   Controle interno
+   Memórias
+   Barramentos
+   Entrada e saída
+
+ Modelos Fundamentais de Computadores:
+  Modelo de Von Neumann:
+   Unidade de processamento
+   Memória única
+   Entrada e saída
+   Barramentos
+   Gargalo de Von Neumann
+  Modelo Harvard:
+   Memória de instruções
+   Memória de dados
+   Separação de barramentos
+  Harvard Modificado:
+   Memórias separadas com compartilhamento
+   Uso em processadores modernos
+
+ Níveis de Abstração do Computador:
+  Nível de aplicação
+  Linguagens de programação
+  Sistema operacional
+  Linguagem de máquina
+  ISA
+  Microarquitetura
+  Circuitos digitais
+  Transistores
+
+
+
+Fundamentos Necessários Antes da Organização:
+
+ Sistemas de Numeração:
+  Sistema decimal
+  Sistema binário
+  Sistema hexadecimal
+  Sistema octal
+  Conversão entre bases
+
+ Representação de Dados:
+  Dados inteiros
+  Representação sem sinal
+  Representação com sinal
+  Sinal-magnitude
+  Complemento de 1
+  Complemento de 2
+  Overflow
+
+ Dados reais:
+  Ponto fixo
+  Ponto flutuante
+  IEEE 754
+
+ Dados de texto:
+  ASCII
+  Unicode
+
+ Lógica Digital Aplicada:
+  Álgebra Booleana:
+   Operações booleanas
+   Leis booleanas
+   Simplificação lógica
+   Mapas de Karnaugh
+  Portas Lógicas:
+   AND
+   OR
+   NOT
+   NAND
+   NOR
+   XOR
+   XNOR
+  Circuitos Combinacionais:
+   Somadores
+   Meio somador (Half Adder)
+   Somador completo (Full Adder)
+   Subtratores
+   Comparadores
+   Multiplexadores
+   Demultiplexadores
+   Codificadores
+   Decodificadores
+  Circuitos Sequenciais:
+   Conceito de memória digital
+   Latches
+   Flip-flops
+   Elementos Sequenciais:
+    Registradores
+    Contadores
+    Máquinas de estados finitos (FSM)
+
+
+
+Estrutura Básica do Computador:
+
+ Componentes Principais:
+  Processador (CPU)
+  Memória principal
+  Armazenamento secundário
+  Entrada e saída
+  Barramentos
+
+ CPU — Unidade Central de Processamento:
+  Organização geral da CPU
+  Unidade de Controle
+  Unidade Lógica e Aritmética
+  Registradores
+  Barramentos internos
+
+
+
+Caminho de Dados e Controle do Processador:
+
+ Datapath (Caminho de Dados):
+  Conceito de caminho de dados
+  Fluxo interno dos dados
+  Registradores internos
+  ULA
+  Multiplexadores
+  Barramentos internos
+
+ Caminho de Controle:
+  Sinais de controle
+  Unidade de controle
+  Coordenação dos componentes
+  Sincronização
+
+ Organização Interna da CPU:
+  Unidade de execução
+  Unidade de busca
+  Unidade de decodificação
+  Unidade de controle
+  Unidade de armazenamento interno
+
+
+
+Unidade Lógica e Aritmética (ULA):
+
+ Estrutura da ULA:
+  Entradas da ULA
+  Saídas da ULA
+  Seleção de operação
+
+ Operações Aritméticas:
+  Soma
+  Subtração
+  Incremento
+  Decremento
+  Multiplicação
+  Divisão
+
+ Operações Lógicas:
+  AND
+  OR
+  NOT
+  XOR
+  Comparação
+
+ Operações de Deslocamento:
+  Shift lógico
+  Shift aritmético
+  Rotação
+
+ Flags e Sinais:
+  Zero
+  Carry
+  Overflow
+  Sinal
+  Paridade
+
+
+
+Registradores:
+
+ Conceito de Registradores:
+  Armazenamento temporário
+  Velocidade
+  Comunicação interna da CPU
+
+ Tipos de Registradores:
+  Propósito geral:
+   Registradores de dados
+   Registradores temporários
+  Específicos:
+   PC (Program Counter)
+   IR (Instruction Register)
+   MAR
+   MDR
+   ACC
+   SP
+   FLAGS / PSW
+
+ Banco de Registradores:
+  Organização
+  Portas de leitura
+  Porta de escrita
+  Acesso paralelo
+
+
+
+Ciclo de Instrução:
+
+ Funcionamento da Execução:
+  Busca da instrução
+  Decodificação
+  Execução
+  Acesso à memória
+  Escrita do resultado
+
+ Estados do Processador:
+  Estado Fetch
+  Estado Decode
+  Estado Execute
+  Estado Memory
+  Estado Write Back
+
+ Controle do Ciclo:
+  FSM do processador
+  Microoperações
+  Sinais de controle
+
+
+
+Unidade de Controle:
+
+ Função da Unidade de Controle:
+  Geração de sinais
+  Coordenação da CPU
+
+ Tipos de Controle:
+  Controle cabeado:
+   Circuitos lógicos fixos
+   Alta velocidade
+  Controle microprogramado:
+   Microinstruções
+   Memória de controle
+   Microcódigo
+
+
+
+Instruções e Organização da CPU:
+
+ ISA: Interface Hardware Software:
+  Conceito de ISA
+  Relação com organização
+
+ Formato das Instruções:
+  Opcode
+  Operandos
+  Campos de instrução
+
+ Tipos de Formatos:
+  R
+  I
+  J
+
+ Modos de Endereçamento:
+  Imediato
+  Direto
+  Indireto
+  Registrador
+  Indexado
+  Base + deslocamento
+  Pilha
+
+
+
+Organização da Memória:
+
+ Conceitos de Memória:
+  Capacidade
+  Endereço
+  Palavra
+  Byte
+  Acesso
+
+ Tipos de Memória:
+  RAM
+  ROM
+  SRAM
+  DRAM
+  Flash
+
+ Organização Física:
+  Células de memória
+  Linhas e colunas
+  Decodificação de endereço
+  Bancos de memória
+
+
+
+Hierarquia de Memória:
+
+ Conceito:
+  Velocidade
+  Capacidade
+  Custo
+
+ Níveis:
+  Registradores
+  Cache
+  RAM
+  Armazenamento secundário
+
+
+
+Memória Cache:
+
+ Fundamentos:
+  Localidade temporal
+  Localidade espacial
+
+ Organização da Cache:
+  Linha de cache
+  Bloco
+  Tag
+  Índice
+  Offset
+
+ Mapeamento:
+  Mapeamento direto
+  Associativo
+  Conjunto associativo
+
+ Políticas de Cache:
+  Substituição
+  Escrita
+  Métodos:
+   FIFO
+   LRU
+   Write-through
+   Write-back
+
+
+
+Memória Virtual:
+
+ Fundamentos:
+  Endereço virtual
+  Endereço físico
+
+ Paginação:
+  Página
+  Quadro
+  Tabela de páginas
+
+ Segmentação:
+  Segmentos
+  Proteção
+
+ Tradução de Endereços:
+  MMU
+  TLB
+  Page fault
+
+
+
+Entrada e Saída (I/O):
+
+ Organização de Entrada e Saída:
+  Dispositivos periféricos
+  Controladores
+
+ Métodos de Comunicação:
+  E/S programada
+  Interrupções
+  DMA
+
+ Interrupções:
+  Hardware
+  Software
+  Vetor de interrupção
+  Tratamento
+
+
+
+Barramentos e Interconexões:
+
+ Barramentos:
+  Barramento de dados
+  Barramento de endereço
+  Barramento de controle
+
+ Características:
+  Largura
+  Frequência
+  Banda
+  Latência
+
+ Comunicação:
+  Síncrona
+  Assíncrona
+
+ Arbitragem:
+  Controle de acesso
+  Prioridade
+
+
+
+Temporização e Clock:
+
+ Clock:
+  Frequência
+  Período
+  Ciclo
+
+ Temporização Digital:
+  Setup time
+  Hold time
+  Delay de propagação
+
+ Problemas:
+  Clock skew
+  Jitter
+  Sincronização
+
+
+
+Pipeline:
+
+ Conceito:
+  Execução sobreposta
+  Estágios
+
+ Pipeline Clássico:
+  IF
+  ID
+  EX
+  MEM
+  WB
+
+ Problemas:
+  Hazard estrutural
+  Hazard de dados
+  Hazard de controle
+
+ Soluções:
+  Forwarding
+  Stall
+  Flush
+  Branch prediction
+
+
+
+Paralelismo de Processadores:
+
+ Conceitos:
+  Paralelismo de instruções
+  Paralelismo de dados
+  Paralelismo de tarefas
+
+ Técnicas:
+  Pipeline
+  Superescalar
+  Execução fora de ordem
+
+
+
+Multiprocessadores:
+
+ Arquiteturas:
+  Multicore
+  SMP
+  NUMA
+  Cluster
+
+ Comunicação:
+  Memória compartilhada
+  Mensagens
+
+ Interconexões:
+  Barramento
+  Anel
+  Malha
+  Torus
+  Crossbar
+  NoC
+
+
+
+Avaliação de Desempenho:
+
+ Métricas:
+  Clock
+  CPI
+  IPC
+  Latência
+  Throughput
+
+ Fatores de Desempenho:
+  Cache miss
+  Pipeline
+  Branch prediction
+  Gargalos
+ 
+ Avaliação:
+  Benchmarks
+  Simulação
+  Profiling
+
+
+
+Consumo Energético e Organização Física:
+
+ Potência:
+  Potência dinâmica
+  Potência estática
+
+ Controle Energético:
+  Clock gating
+  Power gating
+  DVFS
+
+ Controle Térmico:
+  Dissipação
+  Temperatura
+  Thermal throttling
+
+
+
+Aplicações da Organização de Computadores:
+
+ Sistemas Embarcados:
+  Microcontroladores
+  Sistemas de tempo real
+
+ Computação de Alto Desempenho:
+  Supercomputadores
+  Clusters
+
+ Processadores Modernos:
+  SoC
+  GPUs
+  Aceleradores de IA
+
+ Tecnologias Emergentes:
+  Chiplets
+  Computação 3D
+  FPGA
+  NoC
+  PIM
+  Memórias avançadas
+  Computação neuromórfica
+  Computação quântica
+
+
+
+Conclusão e Resumo:
+
+ Núcleo Principal da Organização:
+  Estrutura da CPU
+  Datapath e Control Path
+  Ciclo de instrução
+  ULA
+  Unidade de Controle
+  Registradores
+  Memória e hierarquia
+  Cache
+  Memória virtual
+  Barramentos
+  I/O e interrupções
+  Pipeline
+  Paralelismo
+  Desempenho
+
+ Ao concluir o estudo, você deve compreender:
+  Como um computador é construído internamente
+  Como a CPU executa instruções fisicamente
+  Como dados circulam entre componentes
+  Como memória é organizada e otimizada
+  Como dispositivos comunicam com o processador
+  Como desempenho é obtido por organização física
+  Como processadores modernos aumentam eficiência
