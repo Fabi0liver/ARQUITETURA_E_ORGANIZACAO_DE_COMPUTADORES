@@ -1,0 +1,837 @@
+                                                Computador
+
+
+Objetivo: Estudar o computador de forma introdutória, compreendendo seus conceitos fundamentais, sua evolução, sua organização geral, seus principais componentes e áreas relacionadas, formando uma base para o estudo aprofundado da Arquitetura e Organização de Computadores.
+
+
+A classificação abaixo indica a profundidade recomendada para cada grande tópico da lista.
+
+[P] Profundidade — estudar mecanismos, estruturas, funcionamento interno e relações entre componentes.
+[I] Intermediário — compreender bem o funcionamento e as relações principais, sem precisar dominar todos os
+   detalhes de implementação.
+[V] Visão geral — saber o que é, para que serve e como se relaciona com os registradores.
+
+
+
+PARTE 1 — INTRODUÇÃO E FUNDAMENTOS DO COMPUTADOR
+
+
+1. Introdução ao Computador — [V]
+
+ 1.1 Conceitos Fundamentais — [V]
+	O que é um computador
+	Finalidade dos computadores
+	Objetivos de um sistema computacional
+	Características dos computadores
+	Máquina de propósito geral
+	Conceito de sistema computacional
+	Importância dos computadores na sociedade
+
+ 1.2 Informação e Computação — [V]
+	Dado
+	Informação
+	Conhecimento
+	Processamento da informação
+	Representação da informação (visão geral)
+	Ciclo da informação
+
+ 1.3 Visão Geral do Computador — [V]
+	Componentes básicos
+	Funcionamento geral
+	Entrada
+	Processamento
+	Saída
+	Armazenamento
+	Integração entre os componentes
+
+
+
+2. Fundamentos para o Estudo dos Computadores — [V]
+
+ 2.1 Bases Matemáticas e Lógicas — [V]
+	Matemática básica
+	Lógica básica
+	Pensamento lógico
+	Resolução de problemas
+	Organização da informação
+
+ 2.2 Fundamentos Tecnológicos — [V]
+	Noções de eletricidade
+	Sinais analógicos
+	Sinais digitais
+	Representação digital (visão geral)
+
+ 2.3 Fundamentos de Programação — [V]
+	Conceitos básicos de programação
+	Algoritmos (visão geral)
+	Programas
+	Instruções
+	Execução de programas (visão geral)
+
+
+
+3. História da Computação — [V]
+
+ 3.1 Evolução da Computação — [V]
+	Evolução do conceito de computação
+	Primeiros dispositivos de cálculo
+	Computadores mecânicos
+	Computadores eletromecânicos
+	Computadores eletrônicos
+
+ 3.2 Gerações dos Computadores — [V]
+	Primeira geração
+	Segunda geração
+	Terceira geração
+	Quarta geração
+	Quinta geração
+	Evolução das tecnologias computacionais
+
+ 3.3 Evolução dos Processadores e Sistemas Computacionais — [V]
+	Evolução dos microprocessadores
+	Evolução das memórias (visão geral)
+	Miniaturização dos computadores
+	Aumento do desempenho
+	Tendências da evolução computacional
+
+
+
+4. Classificação dos Computadores — [V]
+
+ 4.1 Computadores de Uso Geral — [V]
+	Computadores pessoais (Desktop)
+	Notebooks
+	Workstations
+	Servidores
+	Mainframes
+	Supercomputadores
+
+ 4.2 Computadores Especializados — [V]
+	Computadores embarcados
+	Computadores automotivos
+	Sistemas industriais
+	Computadores de placa única (Single Board Computers)
+
+ 4.3 Dispositivos Computacionais Modernos — [V]
+	Smartphones
+	Tablets
+	Wearables
+	Computadores quânticos (visão geral)
+
+ 4.4 Comparação entre os Tipos de Computadores — [V]
+	Capacidade de processamento
+	Escalabilidade
+	Mobilidade
+	Áreas de aplicação
+
+
+
+5. Pensamento Computacional — [V]
+
+ 5.1 Fundamentos — [V]
+	Conceito
+	Importância
+	Resolução de problemas
+
+ 5.2 Etapas do Pensamento Computacional — [V]
+	Coleta de dados
+	Organização de dados
+	Análise de dados
+	Representação de dados
+	Reconhecimento de padrões
+	Decomposição de problemas
+	Abstração
+	Algoritmos
+
+ 5.3 Relação com a Ciência da Computação — [V]
+	Pensamento computacional e programação
+	Pensamento computacional e sistemas computacionais
+	Base para o estudo das demais disciplinas
+
+
+
+PARTE 2 — ESTRUTURA E FUNCIONAMENTO GERAL DO COMPUTADOR
+
+
+6. Funcionamento Geral do Computador — [I]
+
+ 6.1 Fundamentos do Funcionamento — [I]
+	Ciclo da informação
+	Processamento da informação
+	Fluxo de dados
+	Fluxo de instruções
+	Programa armazenado
+
+ 6.2 Modelo IPO — [I]
+	Entrada
+	Processamento
+	Saída
+	Armazenamento
+	Integração entre as etapas
+
+ 6.3 Execução de Programas — [I]
+	Ciclo Busca-Decodificação-Execução (Fetch-Decode-Execute)
+	Ciclo de execução de programas
+	Comunicação entre hardware e software (visão geral)
+	Controle da execução
+	Resultado do processamento
+
+
+
+7. Estrutura Geral do Computador — [I]
+
+ 7.1 Organização Funcional — [I]
+	Estrutura funcional
+	Unidade de entrada
+	Unidade de processamento
+	Unidade de memória
+	Unidade de saída
+
+ 7.2 Componentes Fundamentais — [I]
+	Unidade de Controle
+	Unidade Lógica e Aritmética (ULA)
+	Registradores (visão geral)
+	Memória principal (visão geral)
+	Dispositivos de Entrada e Saída
+	Clock do sistema
+
+ 7.3 Integração dos Componentes — [I]
+	Comunicação entre componentes
+	Interconexão entre componentes
+	Fluxo de informações
+	Coordenação entre as unidades funcionais
+
+
+
+8. Modelos Fundamentais de Computadores — [I]
+
+ 8.1 Conceitos Básicos — [I]
+	Conceito de modelo computacional
+	Programa armazenado
+	Importância dos modelos computacionais
+
+ 8.2 Modelos Arquiteturais — [I]
+	Modelo de Von Neumann
+	Modelo Harvard
+	Modelo Harvard Modificado
+
+ 8.3 Comparação entre os Modelos — [I]
+	Organização da memória
+	Fluxo de instruções
+	Fluxo de dados
+	Vantagens e limitações (visão geral)
+	Áreas de aplicação (visão geral)
+
+
+
+9. Arquitetura e Organização de Computadores — [V]
+
+ 9.1 Conceitos Fundamentais — [V]
+	Conceito de Arquitetura
+	Conceito de Organização
+	Diferenças entre Arquitetura e Organização
+	Relação entre Arquitetura e Organização
+
+ 9.2 Visão Geral da Disciplina — [V]
+	Objetivos da Arquitetura e Organização de Computadores
+	Visão geral da estrutura interna do computador
+	Relação entre hardware e software
+	Importância da disciplina na Ciência da Computação
+
+ 9.3 Preparação para os Estudos Posteriores — [V]
+	Processadores
+	Memórias
+	Barramentos
+	Entrada e Saída
+	Arquitetura do Conjunto de Instruções (ISA)
+	Microarquitetura
+
+
+
+PARTE 3 — COMPONENTES DO COMPUTADOR
+
+
+10. Hardware e Software — [V]
+
+ 10.1 Hardware — [V]
+	Conceito
+	Classificação
+	Componentes físicos
+	Função do hardware
+	Importância no sistema computacional
+
+ 10.2 Software — [V]
+	Conceito
+	Classificação
+	Função do software
+	Importância no sistema computacional
+
+ 10.3 Relação entre Hardware e Software — [V]
+	Interação entre hardware e software
+	Dependência entre hardware e software
+	Execução de programas
+	Visão geral da interface entre os dois
+
+
+
+11. Placa-mãe e Infraestrutura do Computador — [V]
+
+ 11.1 Placa-mãe — [V]
+	Conceito
+	Função da placa-mãe
+	Organização geral
+
+ 11.2 Componentes da Placa-mãe — [V]
+	Chipset
+	Soquete
+	Slots
+	Conectores
+	Barramentos internos
+
+ 11.3 Firmware da Placa-mãe — [V]
+	BIOS
+	UEFI
+	Processo de inicialização (visão geral)
+
+
+
+12. Unidade Central de Processamento (CPU) — [V]
+
+ 12.1 Conceitos Fundamentais — [V]
+	Conceito
+	Função da CPU
+	Importância da CPU
+	Visão geral da organização interna
+
+ 12.2 Componentes da CPU — [V]
+	Unidade de Controle
+	Unidade Lógica e Aritmética (ULA)
+	Registradores
+	Cache
+
+ 12.3 Características Gerais — [V]
+	Núcleos
+	Threads
+	Clock
+	ISA (visão geral)
+	Pipeline (visão geral)
+	Execução de instruções (visão geral)
+
+
+
+13. Sistema de Memória e Armazenamento — [V]
+
+ 13.1 Sistema de Memória — [V]
+	Conceito
+	Registradores
+	Cache
+	RAM
+	ROM
+	Memória Virtual
+
+ 13.2 Armazenamento Permanente — [V]
+	HD (HDD)
+	SSD SATA
+	SSD NVMe
+	Pen Drive
+	Cartão de memória
+	Unidade óptica
+	Armazenamento em nuvem
+
+ 13.3 Tecnologias de Armazenamento — [V]
+	HDD x SSD
+	Interfaces SATA
+	Interfaces NVMe
+	RAID (visão geral)
+
+ 13.4 Papel da Memória e do Armazenamento — [V]
+	Armazenamento temporário
+	Armazenamento permanente
+	Relação entre memória e armazenamento
+	Hierarquia de armazenamento (visão geral)
+
+
+
+14. Comunicação entre os Componentes — [V]
+
+ 14.1 Barramentos — [V]
+	Conceito
+	Barramento de dados
+	Barramento de endereço
+	Barramento de controle
+
+ 14.2 Dispositivos de Entrada — [V]
+	Conceito
+	Teclado
+	Mouse
+	Scanner
+	Webcam
+	Microfone
+	Leitor biométrico
+	Sensores
+
+ 14.3 Dispositivos de Saída — [V]
+	Conceito
+	Monitor
+	Impressora
+	Alto-falantes
+	Projetor
+
+ 14.4 Dispositivos de Entrada e Saída — [V]
+	Conceito
+	Tela sensível ao toque
+	Impressora multifuncional
+	Headset
+	Interfaces USB
+
+
+
+15. Componentes Complementares do Computador — [V]
+
+ 15.1 Processamento Gráfico — [V]
+	GPU
+	GPU integrada
+	GPU dedicada
+
+ 15.2 Alimentação Elétrica — [V]
+	Fonte de alimentação
+	Potência
+	Eficiência
+
+ 15.3 Refrigeração — [V]
+	Sistema de refrigeração
+	Dissipadores
+	Ventoinhas
+	Water Cooler
+
+ 15.4 Estrutura Física — [V]
+	Gabinete
+	Organização interna
+	Fluxo de ar (visão geral)
+
+
+
+PARTE 4 — SOFTWARE, REPRESENTAÇÃO DA INFORMAÇÃO E FUNDAMENTOS DIGITAIS
+
+
+16. Softwares do Computador — [V]
+
+ 16.1 Conceitos Fundamentais — [V]
+	Conceito de software
+	Função do software
+	Classificação dos softwares
+	Relação entre software e hardware
+
+ 16.2 Softwares de Sistema — [V]
+	Software de Sistema
+	Sistema Operacional
+	Drivers
+	Firmware
+	Middleware
+
+ 16.3 Softwares para o Usuário — [V]
+	Software Utilitário
+	Software de Aplicação
+	Software de Programação
+	Software Embarcado
+	Software como Serviço (SaaS)
+
+ 16.4 Organização do Ecossistema de Software — [V]
+	Interação entre os tipos de software
+	Execução de programas
+	Comunicação com o hardware
+	Importância para o funcionamento do computador
+
+
+
+17. Representação da Informação — [I]
+
+ 17.1 Sistemas de Numeração — [I]
+	Decimal
+	Binário
+	Octal
+	Hexadecimal
+
+ 17.2 Informação Digital — [I]
+	Bit
+	Byte
+	Palavra (Word)
+	Unidades de medida da informação
+
+ 17.3 Representação dos Dados — [I]
+	Números inteiros
+	Números reais
+	Caracteres
+	Texto
+	Imagens
+	Áudio
+	Vídeo
+
+ 17.4 Codificação da Informação — [I]
+	ASCII
+	Unicode
+	UTF
+
+ 17.5 Integridade e Compressão dos Dados — [V]
+	Compressão com perdas
+	Compressão sem perdas
+	Detecção de erros
+	Correção de erros
+
+
+
+18. Fundamentos da Lógica e da Eletrônica Digital — [V]
+
+ 18.1 Conceitos Fundamentais — [V]
+	Conceitos de eletrônica digital
+	Sinais digitais
+	Importância da lógica digital
+
+ 18.2 Álgebra Booleana — [V]
+	Álgebra Booleana
+	Tabelas-Verdade
+	Simplificação de expressões booleanas
+	Mapas de Karnaugh (visão geral)
+
+ 18.3 Circuitos Digitais — [V]
+	Portas Lógicas
+	Circuitos combinacionais
+	Circuitos sequenciais
+
+ 18.4 Componentes Lógicos Fundamentais — [V]
+	Somadores
+	Subtratores
+	Comparadores
+	Multiplexadores
+	Demultiplexadores
+	Codificadores
+	Decodificadores
+	Unidade Lógica e Aritmética (ULA) (visão geral)
+
+ 18.5 Elementos de Memória Digital — [V]
+	Latches
+	Flip-Flops
+	Registradores
+	Contadores
+
+
+
+19. Linguagens de Programação — [V]
+
+ 19.1 Fundamentos da Programação — [V]
+	Algoritmos
+	Lógica de programação
+	Programas
+	Instruções
+
+ 19.2 Linguagens de Programação — [V]
+	Linguagem de máquina
+	Assembly
+	Assembler
+	Linguagens de alto nível
+	Paradigmas de programação (visão geral)
+
+ 19.3 Desenvolvimento de Software — [V]
+	Bibliotecas
+	APIs
+	Compiladores
+	Interpretadores
+	Processo de compilação
+	Processo de execução
+	Máquina Virtual
+
+ 19.4 Relação com a Arquitetura do Computador — [V]
+	Software e hardware
+	Execução de programas
+	Conversão do código-fonte para linguagem de máquina
+	Importância das linguagens para o funcionamento do computador
+
+
+
+PARTE 5 — COMUNICAÇÃO, SISTEMAS, REDES E TECNOLOGIAS MODERNAS
+
+
+20. Sistemas Operacionais — [V]
+
+ 20.1 Conceitos Fundamentais — [V]
+	Conceito
+	Funções
+	Importância do sistema operacional
+	Interface entre usuário e hardware
+
+ 20.2 Principais Componentes — [V]
+	Kernel
+	Interface do usuário
+	Processos
+	Threads
+	Chamadas de sistema
+
+ 20.3 Gerenciamento de Recursos — [V]
+	Escalonamento de processos (visão geral)
+	Sistema de interrupções (visão geral)
+	Gerenciamento de memória
+	Memória virtual (visão geral)
+	Sistema de arquivos
+	Gerenciamento de dispositivos
+	Drivers de dispositivos
+
+ 20.4 Inicialização do Computador — [V]
+	Inicialização (Boot)
+	Carregamento do sistema operacional
+	Preparação do ambiente de execução
+
+
+
+21. Redes de Computadores — [V]
+
+ 21.1 Fundamentos das Redes — [V]
+	Conceitos básicos
+	Comunicação entre computadores
+	Internet
+	Intranet
+
+ 21.2 Tipos de Redes — [V]
+	LAN
+	WAN
+	WLAN
+
+ 21.3 Tecnologias de Comunicação — [V]
+	Ethernet
+	Wi-Fi
+	Bluetooth
+
+ 21.4 Comunicação em Rede — [V]
+	Modelo Cliente-Servidor
+	Modelo P2P
+	Protocolos TCP/IP
+	DNS
+	HTTP
+	HTTPS
+	Endereçamento IP
+
+
+
+22. Segurança da Informação — [V]
+
+ 22.1 Fundamentos da Segurança — [V]
+	Cibersegurança
+	Confidencialidade
+	Integridade
+	Disponibilidade
+
+ 22.2 Proteção dos Sistemas Computacionais — [V]
+	Malware
+	Antivírus
+	Firewall
+	Backup
+
+ 22.3 Controle e Proteção de Dados — [V]
+	Autenticação
+	Controle de acesso
+	Criptografia
+	Atualizações de segurança
+
+ 22.4 Segurança no Uso dos Computadores — [V]
+	Engenharia social
+	Boas práticas de segurança
+	Proteção das informações
+
+
+
+23. Computadores no Mundo Real — [V]
+
+ 23.1 Computação Pessoal e Corporativa — [V]
+	Computadores pessoais
+	Servidores
+	Smartphones
+	Tablets
+
+ 23.2 Sistemas Especializados — [V]
+	Sistemas embarcados
+	Automação residencial
+	Automação industrial
+	Robótica
+
+ 23.3 Infraestrutura Computacional — [V]
+	Data Centers
+	Computação em Nuvem
+
+ 23.4 Áreas de Aplicação — [V]
+	Computação científica
+	Big Data
+	Machine Learning
+	Educação
+	Saúde
+	Engenharia
+	Jogos
+	Entretenimento
+	Realidade Virtual
+	Realidade Aumentada
+
+
+
+24. Tecnologias Emergentes — [V]
+
+ 24.1 Novos Paradigmas Computacionais — [V]
+	Internet das Coisas (IoT)
+	Inteligência Artificial
+	Computação em Nuvem
+	Edge Computing
+
+ 24.2 Arquiteturas Modernas — [V]
+	Computação Distribuída
+	Computação Paralela
+	Computação Heterogênea
+	Computação Ubíqua
+
+ 24.3 Tecnologias Avançadas — [V]
+	Computação Quântica
+	Computação Neuromórfica
+	Sistemas Reconfiguráveis (FPGA)
+
+ 24.4 Sustentabilidade e Evolução — [V]
+	Computação Verde (Green Computing)
+	Tendências da computação
+	Evolução das tecnologias computacionais
+
+
+
+PARTE 6 — APLICAÇÕES, INTEGRAÇÃO E CONCLUSÃO
+
+
+25. Aplicações dos Computadores — [V]
+
+ 25.1 Uso Pessoal e Profissional — [V]
+	Computação pessoal
+	Educação
+	Empresas
+	Bancos
+	Hospitais
+
+ 25.2 Aplicações Industriais e Científicas — [V]
+	Indústria
+	Agricultura
+	Transporte
+	Telecomunicações
+	Pesquisa científica
+	Defesa
+
+ 25.3 Tecnologias Computacionais Modernas — [V]
+	Inteligência Artificial
+	Robótica
+	Automação
+	Internet
+	Computação em Nuvem
+	Jogos
+	Desenvolvimento de Software
+	Multimídia
+	Internet das Coisas (IoT)
+
+
+
+26. Integração dos Conceitos Fundamentais — [I]
+
+ 26.1 Estrutura Geral do Computador — [I]
+	Hardware
+	Software
+	Processador
+	Memória
+	Armazenamento
+	Dispositivos de Entrada e Saída
+
+ 26.2 Funcionamento Integrado — [I]
+	Fluxo da informação
+	Execução de programas
+	Comunicação entre componentes
+	Interação entre hardware e software
+
+ 26.3 O Computador como Sistema — [I]
+	Integração entre os componentes
+	Organização funcional
+	Visão geral do funcionamento
+	Relação com outras áreas da Computação
+
+
+
+27. Revisão Geral — [I]
+
+ 27.1 Fundamentos — [I]
+	Conceitos fundamentais
+	História da computação
+	Classificação dos computadores
+	Pensamento computacional
+
+ 27.2 Estrutura do Computador — [I]
+	Modelos computacionais
+	Estrutura geral
+	Componentes principais
+	Funcionamento geral
+
+ 27.3 Tecnologias Relacionadas — [I]
+	Software
+	Representação da informação
+	Lógica digital
+	Linguagens de programação
+	Sistemas Operacionais
+	Redes de Computadores
+	Segurança da Informação
+
+ 27.4 Aplicações e Tendências — [I]
+	Áreas de aplicação
+	Tecnologias emergentes
+	Papel do computador na sociedade
+	Evolução da computação
+
+
+
+28. Conclusão — [V]
+
+ 28.1 Visão Integrada do Computador — [V]
+	O computador como sistema
+	Integração entre hardware e software
+	Funcionamento geral
+	Importância para a Ciência da Computação
+
+ 28.2 Preparação para os Próximos Estudos — [V]
+
+  28.2.1 Arquitetura e Organização de Computadores — [V]
+
+	Processadores
+	Registradores
+	Memórias
+	Barramentos
+	Entrada e Saída
+	Arquitetura do Conjunto de Instruções (ISA)
+	Microarquitetura
+
+  28.2.2 Software de Sistema — [V]
+
+	Sistemas Operacionais
+	Compiladores
+	Linguagem Assembly
+	Drivers
+	Firmware
+
+  28.2.3 Infraestrutura Computacional — [V]
+
+	Redes de Computadores
+	Segurança da Informação
+	Computação em Nuvem
+	Virtualização
+	Sistemas Distribuídos
+
+  28.2.4 Outras Áreas da Computação — [V]
+
+	Programação
+	Estruturas de Dados
+	Banco de Dados
+	Engenharia de Software
+	Inteligência Artificial
+	Ciência de Dados
+	Sistemas Embarcados
+
+ 28.3 Encerramento — [V]
+	Compreensão da estrutura geral de um computador
+	Compreensão dos principais componentes computacionais
+	Visão geral das tecnologias computacionais
+	Base para o estudo aprofundado da Ciência da Computação
