@@ -1,0 +1,1342 @@
+                                        História dos Computadores
+
+
+A classificação abaixo indica a profundidade recomendada para cada grande tópico da lista.
+
+[P] Profundidade — estudar mecanismos, estruturas, funcionamento interno e relações entre componentes.
+[I] Intermediário — compreender bem o funcionamento e as relações principais, sem precisar dominar todos os
+   detalhes de implementação.
+[V] Visão geral — saber o que é, para que serve e como se relaciona com os registradores.
+
+
+
+PARTE 1 — FUNDAMENTOS E CONTEXTO HISTÓRICO DA COMPUTAÇÃO
+
+
+1. Introdução à História dos Computadores — [I]
+
+ 1.1 Conceitos Fundamentais — [I]
+
+  1.1.1 História dos Computadores — [I]
+	O que é História dos Computadores
+	Objetivos do estudo da História dos Computadores
+	Importância da História da Computação
+	Papel da História dos Computadores na Ciência da Computação
+	Relação com Arquitetura e Organização de Computadores
+
+  1.1.2 Computação — [I]
+	O que é Computação
+	Diferença entre cálculo, computação e informática
+	Evolução do conceito de computação
+	Computação como ciência
+
+  1.1.3 Evolução Tecnológica — [V]
+	Evolução tecnológica ao longo da história
+	Como a evolução tecnológica influencia a sociedade
+	Transformações científicas e industriais
+	Linha do tempo geral da computação
+
+
+ 1.2 Objetivos do Estudo Histórico — [I]
+
+  1.2.1 Compreensão da Evolução Tecnológica — [V]
+	Origem das tecnologias atuais
+	Evolução das ideias computacionais
+	Continuidade do desenvolvimento tecnológico
+
+  1.2.2 Relação com as Demais Áreas da Computação — [I]
+	Arquitetura de Computadores
+	Organização de Computadores
+	Engenharia da Computação
+	Ciência da Computação
+	Desenvolvimento de Software
+	Redes de Computadores
+	Inteligência Artificial
+
+
+ 1.3 Importância da História da Computação — [I]
+
+  1.3.1 Importância Acadêmica — [I]
+	Compreensão da evolução dos conceitos
+	Entendimento das decisões arquiteturais
+	Contextualização das tecnologias modernas
+
+  1.3.2 Importância Tecnológica — [V]
+	Evolução do hardware
+	Evolução do software
+	Evolução das redes
+	Evolução dos sistemas computacionais
+
+  1.3.3 Impacto na Sociedade — [V]
+	Transformação econômica
+	Transformação científica
+	Transformação industrial
+	Transformação social
+	Transformação cultural
+
+
+
+2. Fundamentos Necessários para Compreender a Evolução dos Computadores — [I]
+
+ 2.1 Matemática e Lógica — [I]
+
+  2.1.1 Conceitos Fundamentais — [I]
+	Conceito de algoritmo
+	Noções básicas de lógica
+	Sistemas de numeração
+	Sistema decimal
+	Sistema binário
+	Representação da informação
+
+  2.1.2 Papel da Matemática na Computação — [V]
+	Base para algoritmos
+	Base para circuitos digitais
+	Base para modelos computacionais
+
+
+ 2.2 Eletrônica Básica — [V]
+
+  2.2.1 Conceitos Fundamentais — [V]
+	Conceito de eletricidade
+	Componentes eletrônicos básicos
+	Funcionamento geral dos circuitos
+
+  2.2.2 Evolução dos Sistemas Físicos — [V]
+	Sistemas mecânicos
+	Sistemas eletromecânicos
+	Sistemas eletrônicos
+	Comparação entre as tecnologias
+
+
+ 2.3 Conceitos Básicos da Computação — [I]
+
+  2.3.1 Componentes Fundamentais — [I]
+	Hardware
+	Software
+	Dados
+	Informação
+
+  2.3.2 Operações Fundamentais — [I]
+	Processamento
+	Armazenamento
+	Entrada de dados
+	Saída de dados
+
+  2.3.3 Modelo Geral de Funcionamento — [V]
+	Entrada
+	Processamento
+	Armazenamento
+	Saída
+	Fluxo básico de informações
+
+
+
+3. Contexto Histórico da Evolução da Computação — [I]
+
+ 3.1 Necessidades Humanas — [V]
+
+  3.1.1 Problemas que Motivaram a Computação — [V]
+	Contagem
+	Comércio
+	Navegação
+	Engenharia
+	Astronomia
+	Ciência
+	Administração
+
+  3.1.2 Crescimento da Complexidade dos Problemas — [V]
+	Aumento do volume de cálculos
+	Organização da informação
+	Automação de tarefas
+
+
+ 3.2 Grandes Eventos Históricos — [V]
+
+  3.2.1 Revoluções Científicas e Industriais — [V]
+	Revolução Científica
+	Revolução Industrial
+	Influência sobre a mecanização
+
+  3.2.2 Grandes Conflitos e Avanços Tecnológicos — [V]
+	Segunda Guerra Mundial
+	Guerra Fria
+	Corrida Espacial
+
+  3.2.3 Transformação Digital — [V]
+	Revolução Digital
+	Era da Informação
+	Sociedade da Informação
+
+
+ 3.3 Influência dos Eventos Históricos na Computação — [I]
+
+  3.3.1 Segunda Guerra Mundial — [I]
+	Criptografia
+	Radar
+	ENIAC
+	Desenvolvimento acelerado da computação
+
+  3.3.2 Guerra Fria — [V]
+	Corrida tecnológica
+	Pesquisa militar
+	Pesquisa espacial
+	Desenvolvimento científico
+
+  3.3.3 Revolução Industrial — [V]
+	Automação
+	Produção em larga escala
+	Máquinas mecânicas
+
+  3.3.4 Economia Pós-Guerra — [V]
+	Automação empresarial
+	Crescimento dos computadores comerciais
+	Processamento de dados
+
+
+
+4. Panorama Geral da Evolução da Computação — [V]
+
+ 4.1 Grandes Períodos da Evolução — [V]
+
+  4.1.1 Computação Pré-Eletrônica — [V]
+	Instrumentos de cálculo
+	Máquinas mecânicas
+	Primeiros métodos de automação
+
+  4.1.2 Computação Eletromecânica — [V]
+	Relés
+	Máquinas programáveis
+	Primeiros computadores
+
+  4.1.3 Computação Eletrônica — [V]
+	Válvulas
+	Transistores
+	Circuitos integrados
+	Microprocessadores
+
+  4.1.4 Computação Moderna — [V]
+	Computadores pessoais
+	Internet
+	Computação móvel
+	Computação em nuvem
+	Inteligência Artificial
+	Computação Quântica
+
+
+ 4.2 Visão Geral da Evolução Tecnológica — [V]
+
+  4.2.1 Evolução do Hardware — [V]
+	Processadores
+	Memórias
+	Armazenamento
+	Barramentos
+
+  4.2.2 Evolução do Software — [V]
+	Linguagens de programação
+	Sistemas operacionais
+	Aplicações
+
+  4.2.3 Evolução das Redes — [V]
+	Redes locais
+	Internet
+	Computação distribuída
+
+  4.2.4 Tendências Futuras — [V]
+	Inteligência Artificial
+	Computação Quântica
+	Computação Ubíqua
+	Novos paradigmas computacionais
+
+
+
+PARTE 2 — ORIGENS DA COMPUTAÇÃO E FUNDAMENTOS DA COMPUTAÇÃO MODERNA
+
+
+5. Origens da Computação — [I]
+
+ 5.1 Primeiros Métodos de Cálculo — [I]
+
+  5.1.1 Necessidade do Cálculo — [V]
+	Surgimento da contagem
+	Registro de informações
+	Resolução de problemas matemáticos
+
+  5.1.2 Métodos Primitivos de Contagem — [V]
+	Contagem com objetos
+	Pedras de cálculo
+	Tábuas de contagem
+	Nós e cordas de contagem (Quipu)
+	Marcas em ossos e madeira
+
+  5.1.3 Ábaco — [I]
+	Origem
+	Funcionamento
+	Evolução
+	Importância histórica
+	Influência sobre os dispositivos posteriores
+
+
+ 5.2 Instrumentos Matemáticos — [V]
+
+  5.2.1 Ferramentas de Auxílio ao Cálculo — [V]
+	Ossos de Napier
+	Régua de cálculo
+
+  5.2.2 Primeiras Calculadoras Mecânicas — [V]
+	Calculadora de Schickard
+	Pascalina
+	Calculadora de Leibniz
+
+  5.2.3 Evolução das Ferramentas de Cálculo — [V]
+	Da operação manual à automação
+	Crescente complexidade dos cálculos
+	Preparação para as máquinas programáveis
+
+
+
+6. Computação Mecânica — [I]
+
+ 6.1 Máquinas Mecânicas Programáveis — [I]
+
+  6.1.1 Tear de Jacquard — [I]
+	Funcionamento
+	Cartões perfurados
+	Automação da produção
+	Influência na computação
+
+  6.1.2 Cartões Perfurados — [I]
+	Conceito
+	Armazenamento de instruções
+	Armazenamento de dados
+	Evolução da tecnologia
+
+
+ 6.2 Máquinas Idealizadas por Charles Babbage — [I]
+
+  6.2.1 Máquina Diferencial — [V]
+	Objetivos
+	Funcionamento geral
+	Importância histórica
+
+  6.2.2 Máquina Analítica — [I]
+	Arquitetura proposta
+	Unidade de processamento
+	Memória
+	Entrada e saída
+	Programabilidade
+	Influência nos computadores modernos
+
+
+ 6.3 Processamento Automatizado de Dados — [V]
+
+  6.3.1 Máquina de Tabulação de Hollerith — [V]
+	Funcionamento
+	Utilização no censo norte-americano
+	Cartões perfurados
+	Influência na indústria da computação
+
+  6.3.2 Transição para a Computação Moderna — [V]
+	Crescimento da automação
+	Processamento de grandes volumes de dados
+	Origem da indústria de computadores
+
+  6.3.3 Surgimento da Indústria da Computação — [V]
+	Fundação da IBM
+	Consolidação das empresas de computação
+	Evolução da indústria de hardware
+	Crescimento do mercado computacional
+
+
+
+7. Pioneiros da Computação — [V]
+
+ 7.1 Matemáticos e Inventores — [V]
+
+  7.1.1 Primeiros Contribuintes — [V]
+	Blaise Pascal
+	Gottfried Wilhelm Leibniz
+	Joseph-Marie Jacquard
+	Charles Babbage
+	Ada Lovelace
+	George Boole
+	Herman Hollerith
+
+
+ 7.2 Pais da Computação Moderna — [V]
+
+  7.2.1 Fundadores da Computação Moderna — [V]
+	Alan Turing
+	Claude Shannon
+	Konrad Zuse
+	John von Neumann
+
+  7.2.2 Pioneiros do Software — [V]
+	Grace Hopper
+	John Backus
+	Dennis Ritchie
+	Donald Knuth
+	Margaret Hamilton
+
+  7.2.3 Pioneiros das Redes e da Internet — [V]
+	Vint Cerf
+	Bob Kahn
+	Tim Berners-Lee
+
+
+ 7.3 Contribuições Históricas — [V]
+
+  7.3.1 Principais Áreas de Contribuição — [V]
+	Matemática
+	Lógica
+	Arquitetura de computadores
+	Linguagens de programação
+	Engenharia de software
+	Redes de computadores
+	Internet
+
+
+
+8. Fundamentos Teóricos da Computação — [I]
+
+ 8.1 Bases Matemáticas da Computação — [I]
+
+  8.1.1 Álgebra Booleana — [I]
+	Conceitos fundamentais
+	Operações lógicas
+	Importância para os computadores
+
+  8.1.2 Algoritmos — [I]
+	Conceito
+	Sequência lógica
+	Resolução de problemas
+
+
+ 8.2 Computação Teórica — [I]
+
+  8.2.1 Máquina de Turing — [I]
+	Conceito
+	Modelo computacional
+	Importância histórica
+
+  8.2.2 Computabilidade — [I]
+	Problemas computáveis
+	Limites da computação
+
+  8.2.3 Teoria da Informação — [V]
+	Conceitos fundamentais
+	Claude Shannon
+	Informação digital
+
+
+ 8.3 Influência na Computação Moderna — [I]
+
+  8.3.1 Bases da Arquitetura dos Computadores — [I]
+	Representação da informação
+	Programabilidade
+	Processamento automático
+
+  8.3.2 Bases da Ciência da Computação — [V]
+	Algoritmos
+	Modelos computacionais
+	Desenvolvimento das tecnologias futuras
+
+
+
+9. Transição para os Computadores Modernos — [V]
+
+ 9.1 Limitações das Máquinas Mecânicas — [V]
+
+  9.1.1 Principais Limitações — [V]
+	Baixa velocidade
+	Complexidade mecânica
+	Escalabilidade limitada
+	Elevado desgaste físico
+
+
+ 9.2 Caminho para a Computação Eletrônica — [V]
+
+  9.2.1 Evolução Tecnológica — [V]
+	Relés eletromecânicos
+	Válvulas eletrônicas
+	Primeiros computadores eletromecânicos
+
+  9.2.2 Mudança de Paradigma — [V]
+	Da mecânica para a eletrônica
+	Da automação física para a automação digital
+	Início da computação moderna
+
+
+
+PARTE 3 — EVOLUÇÃO DOS COMPUTADORES: DAS PRIMEIRAS MÁQUINAS À COMPUTAÇÃO MODERNA
+
+
+10. Computadores Eletromecânicos — [V]
+
+ 10.1 Primeiros Computadores Programáveis — [V]
+
+  10.1.1 Computadores de Konrad Zuse — [V]
+	Z1
+	Z2
+	Z3
+	Características gerais
+	Importância histórica
+
+  10.1.2 Harvard Mark I — [V]
+	Funcionamento geral
+	Arquitetura eletromecânica
+	Aplicações
+	Importância histórica
+
+  10.1.3 Colossus — [V]
+	Objetivos
+	Uso durante a Segunda Guerra Mundial
+	Criptografia
+	Importância para a computação moderna
+
+
+ 10.2 Características dos Computadores Eletromecânicos — [V]
+
+  10.2.1 Componentes Utilizados — [V]
+	Relés
+	Sistemas mecânicos
+	Cartões perfurados
+	Fitas perfuradas
+
+  10.2.2 Limitações — [V]
+	Baixa velocidade
+	Grande porte
+	Alto consumo de energia
+	Elevado custo de manutenção
+
+  10.2.3 Legado Tecnológico — [V]
+	Automação programável
+	Evolução para computadores eletrônicos
+	Influência sobre os projetos futuros
+
+
+
+11. As Origens dos Computadores Eletrônicos — [I]
+
+ 11.1 Primeiros Computadores Eletrônicos — [V]
+
+  11.1.1 ENIAC — [V]
+	Objetivos
+	Características gerais
+	Aplicações militares
+	Importância histórica
+
+  11.1.2 UNIVAC I — [V]
+	Primeiro computador comercial
+	Aplicações governamentais
+	Processamento de dados
+
+  11.1.3 IBM 701 — [V]
+	Primeira linha científica da IBM
+	Consolidação da indústria
+	Evolução dos computadores comerciais
+
+
+ 11.2 Arquitetura de von Neumann — [I]
+
+  11.2.1 Conceitos Fundamentais — [I]
+	Programa armazenado
+	Memória única para dados e instruções
+	Unidade de processamento
+	Unidade de controle
+	Entrada e saída
+
+  11.2.2 Importância Histórica — [I]
+	Padronização da arquitetura
+	Influência sobre os computadores atuais
+	Permanência do modelo até os dias atuais
+
+
+
+12. Evolução das Gerações dos Computadores — [I]
+
+ 12.1 Primeira Geração (1940–1956) — [I]
+
+  12.1.1 Características Gerais — [I]
+	Computadores a válvulas
+	Linguagem de máquina
+	Alto consumo de energia
+	Grande geração de calor
+
+  12.1.2 Principais Marcos — [V]
+	Máquina de Turing
+	Z3
+	Plankalkül
+	Colossus
+	ENIAC
+	UNIVAC I
+	IBM 701
+
+
+ 12.2 Segunda Geração (1956–1964) — [I]
+
+  12.2.1 Características Gerais — [I]
+	Transistores
+	Redução do tamanho
+	Maior confiabilidade
+	Linguagens de alto nível
+
+  12.2.2 Principais Marcos — [V]
+	Introdução dos transistores
+	FORTRAN
+	COBOL
+	IBM 1401
+
+
+ 12.3 Terceira Geração (1964–1971) — [I]
+
+  12.3.1 Características Gerais — [I]
+	Circuitos integrados
+	Miniaturização
+	Sistemas operacionais
+	Multiprogramação
+
+  12.3.2 Principais Marcos — [V]
+	Circuitos integrados
+	IBM System/360
+	Tempo compartilhado
+	UNIX
+	Memória DRAM
+
+
+ 12.4 Quarta Geração (1971–Presente) — [I]
+
+  12.4.1 Características Gerais — [I]
+	Microprocessadores
+	Computadores pessoais
+	Redes de computadores
+	Popularização da computação
+
+  12.4.2 Principais Marcos — [V]
+	Fundação da Intel
+	Intel 4004
+	Linguagem C
+	Ethernet
+	Altair 8800
+	Apple I
+	IBM PC
+	TCP/IP
+	Macintosh
+	Windows
+	Linux
+	Navegadores Web
+	Google
+	Facebook
+	iPhone
+
+
+ 12.5 Quinta Geração e Perspectivas Futuras — [V]
+
+  12.5.1 Características Gerais — [V]
+	Inteligência Artificial
+	Computação Quântica
+	Computação em Nuvem
+	Sistemas Inteligentes
+
+  12.5.2 Principais Marcos — [V]
+	IBM Watson
+	Google TPU
+	Supremacia Quântica do Google
+	Evolução da IA
+	Computação Quântica
+	Computação em Nuvem
+
+
+
+13. Linha do Tempo da Evolução dos Computadores — [V]
+
+ 13.1 Marcos Históricos — [V]
+
+  13.1.1 Era Mecânica — [V]
+	Ábaco
+	Calculadoras mecânicas
+	Máquina Analítica
+
+  13.1.2 Era Eletromecânica — [V]
+	Z3
+	Harvard Mark I
+	Colossus
+
+  13.1.3 Era Eletrônica — [V]
+	ENIAC
+	UNIVAC
+	IBM 701
+
+  13.1.4 Era dos Microprocessadores — [V]
+	Intel 4004
+	IBM PC
+	Apple
+	Popularização dos computadores pessoais
+
+  13.1.5 Era da Internet e da Mobilidade — [V]
+	Internet
+	Smartphones
+	Computação em nuvem
+	Inteligência Artificial
+
+
+ 13.2 Tendências da Evolução — [V]
+
+  13.2.1 Miniaturização — [V]
+	Redução do tamanho
+	Aumento do desempenho
+	Maior eficiência energética
+
+  13.2.2 Integração Tecnológica — [V]
+	Hardware
+	Software
+	Redes
+	Inteligência Artificial
+
+  13.2.3 Computação do Futuro — [V]
+	Computação quântica
+	Computação ubíqua
+	Sistemas autônomos
+	Novos paradigmas computacionais
+
+
+
+PARTE 4 — EVOLUÇÃO DAS TECNOLOGIAS DA COMPUTAÇÃO
+
+
+14. Evolução do Hardware — [I]
+
+ 14.1 Evolução dos Processadores e do Processamento — [I]
+
+  14.1.1 Primeiras Formas de Processamento — [V]
+	Processamento manual
+	Processamento mecânico
+	Processamento eletromecânico
+
+  14.1.2 Evolução dos Dispositivos de Processamento — [I]
+	Válvulas termiônicas
+	Transistores
+	Circuitos integrados
+	Microprocessadores
+	Materiais semicondutores
+	Invenção do transistor
+	Substituição das válvulas
+	Miniaturização dos componentes
+
+  14.1.3 Processadores Modernos — [V]
+	Processadores de múltiplos núcleos
+	Arquiteturas paralelas
+	GPUs
+	Processadores neuromórficos
+	Processadores quânticos (em desenvolvimento)
+
+  14.1.4 Evolução da Fabricação dos Circuitos Integrados — [V]
+	Fotolitografia
+	Lei de Moore
+	LSI
+	VLSI
+	ULSI
+	Redução da escala de fabricação (micrômetros → nanômetros)
+
+
+ 14.2 Evolução do Armazenamento — [V]
+
+  14.2.1 Primeiras Tecnologias de Armazenamento — [V]
+	Fichas perfuradas
+	Cilindros perfurados
+	Cartões perfurados
+
+  14.2.2 Armazenamento Magnético — [V]
+	Fitas magnéticas
+	Tambores magnéticos
+	Memória de núcleo magnético
+	Discos rígidos
+	Disquetes
+	ZIP Drives
+	Jaz Drives
+
+  14.2.3 Armazenamento Óptico e em Estado Sólido — [V]
+	CDs
+	DVDs
+	Blu-ray
+	Cartões de memória
+	Pendrives
+	SSDs
+
+  14.2.4 Tecnologias Atuais e Futuras — [V]
+	Memórias de semicondutores (SRAM, DRAM e DDR)
+	Armazenamento em nuvem
+	Armazenamento holográfico
+	Armazenamento óptico 5D
+
+
+ 14.3 Evolução dos Barramentos — [V]
+
+  14.3.1 Primeiras Tecnologias — [V]
+	Barramentos dedicados
+	Barramentos proprietários
+	Barramento S-100
+
+  14.3.2 Padronização dos Barramentos — [V]
+	ISA
+	EISA
+	VLB
+	PCI
+	AGP
+
+  14.3.3 Barramentos Modernos — [V]
+	PCI Express (PCIe)
+	USB
+	SATA
+	NVMe
+	Thunderbolt
+
+  14.3.4 Tendências Atuais — [V]
+	Integração em SoCs
+	Comunicação interna de alta velocidade
+
+
+
+15. Evolução do Software — [I]
+
+ 15.1 Evolução das Linguagens de Programação — [I]
+
+  15.1.1 Primeiras Linguagens — [I]
+	Linguagem de máquina
+	Assembly
+	Primeiras linguagens de alto nível
+
+  15.1.2 Consolidação das Linguagens Modernas — [V]
+	FORTRAN
+	LISP
+	COBOL
+	ALGOL
+	Pascal
+	C
+
+  15.1.3 Programação Moderna — [V]
+	Smalltalk
+	C++
+	Java
+	JavaScript
+	PHP
+	HTML/CSS
+
+  15.1.4 Linguagens Contemporâneas — [V]
+	Python
+	Ruby
+	Go
+	Rust
+	Kotlin
+	R
+	MATLAB
+	Julia
+	SQL
+
+  15.1.5 Tendências Futuras — [V]
+	Linguagens visuais
+	Linguagens declarativas
+	Programação assistida por IA
+	No-code
+	Low-code
+
+  15.1.6 Evolução dos Paradigmas de Programação — [V]
+	Programação em linguagem de máquina
+	Programação Assembly
+	Linguagens de alto nível
+	Programação estruturada
+	Programação orientada a objetos
+	Programação paralela
+	Programação assistida por IA
+
+
+ 15.2 Evolução dos Sistemas Operacionais — [I]
+
+  15.2.1 Primeiros Sistemas — [I]
+	Programação direta
+	Controle manual
+	Sistemas em lote
+
+  15.2.2 Evolução dos Sistemas Operacionais — [I]
+	Tempo compartilhado
+	UNIX
+	MS-DOS
+	Interfaces gráficas
+
+  15.2.3 Sistemas Operacionais Modernos — [V]
+	Linux
+	Sistemas para servidores
+	Sistemas móveis
+	Sistemas embarcados
+	Sistemas em tempo real
+	Virtualização
+	Sistemas operacionais em nuvem
+
+  15.2.4 Tendências Futuras — [V]
+	Sistemas adaptativos
+	Sistemas especializados
+	Integração com inteligência artificial
+
+
+
+16. Evolução da Interface Homem-Máquina (IHM) — [V]
+
+ 16.1 Evolução das Interfaces — [V]
+
+  16.1.1 Primeiras Interfaces — [V]
+	Cartões perfurados
+	Painéis de controle
+	Chaves e interruptores
+
+  16.1.2 Interfaces Baseadas em Texto — [V]
+	Terminais
+	Linha de comando
+	UNIX
+	MS-DOS
+
+  16.1.3 Interfaces Gráficas — [V]
+	GUI
+	Janelas
+	Ícones
+	Menus
+	Mouse
+
+
+ 16.2 Evolução dos Dispositivos de Interação — [V]
+
+  16.2.1 Dispositivos Apontadores — [V]
+	Mouse
+	Trackball
+	Touchpad
+	Trackpad
+	Caneta digital
+	Joystick
+
+  16.2.2 Interfaces Sensíveis ao Toque — [V]
+	Touchscreen
+	Multitoque
+
+
+ 16.3 Interfaces Modernas e Futuras — [V]
+
+  16.3.1 Interfaces Inteligentes — [V]
+	Comandos de voz
+	Assistentes virtuais
+	Visão computacional
+	Reconhecimento de gestos
+
+  16.3.2 Novos Paradigmas de Interação — [V]
+	Interfaces cérebro-computador (BCI)
+	Realidade Virtual (VR)
+	Realidade Aumentada (AR)
+	Interfaces naturais
+	Interfaces invisíveis
+
+
+
+17. Integração da Evolução Tecnológica — [V]
+
+ 17.1 Evolução Integrada da Computação — [V]
+
+  17.1.1 Evolução Conjunta do Hardware e Software — [V]
+	Crescimento do desempenho
+	Miniaturização
+	Padronização
+	Compatibilidade
+
+  17.1.2 Evolução da Experiência do Usuário — [V]
+	Facilidade de uso
+	Popularização da computação
+	Democratização do acesso
+
+  17.1.3 Padronização Tecnológica — [V]
+	Padronização do hardware
+	Padronização do software
+	Compatibilidade entre sistemas
+	Normas industriais
+
+
+ 17.2 Impacto na Arquitetura dos Computadores — [V]
+
+  17.2.1 Influência sobre os Computadores Modernos — [V]
+	Integração dos componentes
+	Aumento da eficiência
+	Escalabilidade
+	Novas arquiteturas
+	Base para as tecnologias atuais
+
+
+
+PARTE 5 — EVOLUÇÃO DAS REDES, DA INTERNET E DA COMPUTAÇÃO CONTEMPORÂNEA
+
+
+18. Evolução das Redes de Computadores — [V]
+
+ 18.1 Origem das Redes — [V]
+
+  18.1.1 Necessidade da Comunicação entre Computadores — [V]
+	Compartilhamento de recursos
+	Compartilhamento de informações
+	Comunicação entre sistemas
+	Trabalho colaborativo
+
+  18.1.2 Primeiras Redes — [V]
+	Redes proprietárias
+	Primeiras conexões entre computadores
+	Evolução das tecnologias de comunicação
+
+
+ 18.2 Desenvolvimento da Internet — [V]
+
+  18.2.1 ARPANET — [V]
+	Origem
+	Objetivos
+	Primeiras conexões
+	Importância histórica
+
+  18.2.2 Evolução da Internet — [V]
+	TCP/IP
+	Expansão mundial
+	Internet comercial
+	Popularização da Internet
+
+  18.2.3 World Wide Web (WWW) — [V]
+	Conceito
+	Tim Berners-Lee
+	HTML
+	HTTP
+	Navegadores Web
+
+
+ 18.3 Redes Modernas — [V]
+
+  18.3.1 Evolução das Redes — [V]
+	Redes locais (LAN)
+	Redes metropolitanas (MAN)
+	Redes de longa distância (WAN)
+	Redes sem fio (Wi-Fi)
+	Internet móvel
+	Internet das Coisas (IoT)
+
+  18.3.2 Tendências Atuais — [V]
+	Redes definidas por software (SDN)
+	Computação de borda (Edge Computing)
+	Redes 5G e 6G
+	Comunicação entre dispositivos inteligentes
+
+
+
+19. Popularização da Computação — [V]
+
+ 19.1 Computadores Pessoais — [V]
+
+  19.1.1 Surgimento dos PCs — [V]
+	Altair 8800
+	Apple I
+	Apple II
+	IBM PC
+
+  19.1.2 Popularização dos Computadores — [V]
+	Computadores domésticos
+	Computadores corporativos
+	Expansão do mercado consumidor
+
+
+ 19.2 Computação Móvel — [V]
+
+  19.2.1 Dispositivos Portáteis — [V]
+	Notebooks
+	PDAs
+	Smartphones
+	Tablets
+
+  19.2.2 Mobilidade Digital — [V]
+	Internet móvel
+	Aplicativos móveis
+	Computação em qualquer lugar
+
+
+ 19.3 Computação para Todos — [V]
+
+  19.3.1 Democratização da Tecnologia — [V]
+	Redução dos custos
+	Inclusão digital
+	Educação tecnológica
+	Acesso global à informação
+
+
+
+20. Computação Atual — [V]
+
+ 20.1 Novos Paradigmas Computacionais — [V]
+
+  20.1.1 Computação em Nuvem — [V]
+	Conceito
+	Infraestrutura em nuvem
+	Serviços em nuvem
+
+  20.1.2 Computação Distribuída — [V]
+	Conceito
+	Cluster
+	Grid Computing
+
+  20.1.3 Computação Paralela — [V]
+	Processamento paralelo
+	Multiprocessamento
+	Computação de alto desempenho
+
+  20.1.4 Evolução dos Paradigmas Computacionais — [V]
+	Mainframes
+	Minicomputadores
+	Computadores pessoais
+	Cliente-servidor
+	Computação distribuída
+	Computação em nuvem
+	Edge Computing
+
+
+ 20.2 Inteligência Artificial — [V]
+
+  20.2.1 Evolução da IA — [V]
+	Primeiras pesquisas
+	Sistemas especialistas
+	Aprendizado de máquina
+	Aprendizado profundo
+	IA Generativa
+
+  20.2.2 Aplicações Modernas — [V]
+	Assistentes virtuais
+	Veículos autônomos
+	Visão computacional
+	Processamento de linguagem natural
+
+
+ 20.3 Novas Tecnologias — [V]
+
+  20.3.1 Computação Quântica — [V]
+	Conceito geral
+	Computadores quânticos
+	Aplicações futuras
+
+  20.3.2 Computação Neuromórfica — [V]
+	Inspiração biológica
+	Novas arquiteturas computacionais
+
+  20.3.3 Computação Ubíqua — [V]
+	Computação invisível
+	Ambientes inteligentes
+	Dispositivos conectados
+
+
+
+21. Impactos da Evolução dos Computadores — [V]
+
+ 21.1 Impactos Científicos — [V]
+
+  21.1.1 Pesquisa Científica — [V]
+	Simulações computacionais
+	Big Data
+	Ciência de dados
+	Descobertas científicas
+
+
+ 21.2 Impactos Econômicos — [V]
+
+  21.2.1 Transformação da Economia — [V]
+	Automação industrial
+	Comércio eletrônico
+	Economia digital
+	Novos modelos de negócio
+
+
+ 21.3 Impactos Sociais — [V]
+
+  21.3.1 Sociedade Digital — [V]
+	Comunicação global
+	Redes sociais
+	Educação
+	Entretenimento
+	Trabalho remoto
+
+
+ 21.4 Desafios Contemporâneos — [V]
+
+  21.4.1 Questões Atuais — [V]
+	Segurança da informação
+	Privacidade
+	Ética na Inteligência Artificial
+	Sustentabilidade
+	Inclusão digital
+
+
+
+PARTE 6 — CONCLUSÃO, REVISÃO GERAL E PRÓXIMOS PASSOS NO ESTUDO DA COMPUTAÇÃO
+
+
+22. Linha do Tempo Geral da História dos Computadores — [V]
+
+ 22.1 Evolução Cronológica — [V]
+
+  22.1.1 Principais Períodos Históricos — [V]
+	Métodos primitivos de contagem
+	Instrumentos de cálculo
+	Máquinas mecânicas
+	Computadores eletromecânicos
+	Computadores eletrônicos
+	Microprocessadores
+	Computadores pessoais
+	Internet
+	Computação móvel
+	Computação em nuvem
+	Inteligência Artificial
+	Computação Quântica
+
+
+ 22.2 Evolução das Tecnologias Fundamentais — [V]
+
+  22.2.1 Evolução do Hardware — [V]
+	Processadores
+	Memórias
+	Armazenamento
+	Barramentos
+	Dispositivos de entrada e saída
+
+  22.2.2 Evolução do Software — [V]
+	Linguagens de programação
+	Sistemas operacionais
+	Interfaces gráficas
+	Aplicações
+
+  22.2.3 Evolução da Comunicação — [V]
+	Redes locais
+	Internet
+	Computação distribuída
+	Computação em nuvem
+
+
+
+23. Relação da História dos Computadores com Arquitetura e Organização de Computadores — [I]
+
+ 23.1 Evolução da Arquitetura dos Computadores — [I]
+
+  23.1.1 Evolução da Organização Interna — [I]
+	Unidade Central de Processamento (CPU)
+	Memória
+	Entrada e Saída
+	Barramentos
+	Armazenamento
+
+  23.1.2 Evolução das Arquiteturas — [I]
+	Arquitetura de von Neumann
+	Arquitetura Harvard
+	Arquiteturas RISC
+	Arquiteturas CISC
+	Microprocessadores modernos
+	Sistemas multicore
+
+
+ 23.2 Relação com os Demais Assuntos da Disciplina — [I]
+
+  23.2.1 Principais Assuntos Relacionados — [I]
+	Computador
+	Processadores
+	Registradores
+	Barramentos
+	Memória Cache
+	Memória Principal
+	Memória Secundária
+	Entrada e Saída
+	Conjunto de Instruções (ISA)
+	Pipeline
+	Paralelismo
+
+
+ 23.3 Importância para o Estudo da Disciplina — [I]
+
+  23.3.1 Compreensão da Evolução Tecnológica — [I]
+	Origem das soluções arquiteturais
+	Evolução dos componentes
+	Contextualização histórica
+	Base para os estudos seguintes
+
+
+
+24. Resumo Geral da História dos Computadores — [V]
+
+ 24.1 Evolução Histórica — [V]
+
+  24.1.1 Principais Etapas — [V]
+	Evolução dos métodos de cálculo
+	Evolução das máquinas mecânicas
+	Evolução da computação eletrônica
+	Evolução dos computadores pessoais
+	Evolução da Internet
+	Evolução da computação moderna
+
+
+ 24.2 Principais Tecnologias Estudadas — [V]
+
+  24.2.1 Tecnologias Fundamentais — [V]
+	Processadores
+	Memórias
+	Armazenamento
+	Sistemas operacionais
+	Linguagens de programação
+	Redes
+	Inteligência Artificial
+
+
+ 24.3 Principais Personagens Históricos — [V]
+
+  24.3.1 Pioneiros da Computação — [V]
+	Charles Babbage
+	Ada Lovelace
+	George Boole
+	Herman Hollerith
+	Alan Turing
+	Claude Shannon
+	Konrad Zuse
+	John von Neumann
+	Grace Hopper
+	Dennis Ritchie
+	Tim Berners-Lee
+
+
+
+25. Conclusão — [V]
+
+ 25.1 Síntese Final — [V]
+
+  25.1.1 O que a História dos Computadores Ensina — [V]
+	A computação evoluiu continuamente ao longo dos séculos
+	Os avanços tecnológicos ocorreram de forma incremental
+	Hardware e software evoluíram de maneira conjunta
+	A computação transformou praticamente todas as áreas da sociedade
+	A evolução tecnológica continua em constante desenvolvimento
+
+
+ 25.2 Preparação para os Próximos Estudos — [V]
+
+  25.2.1 Assuntos que serão aprofundados em listas próprias — [V]
+	Computador
+	Arquitetura e Organização de Computadores
+	Processadores
+	Registradores
+	Barramentos
+	Memória Cache
+	Memória Principal
+	Memória Secundária
+	Entrada e Saída
+	Pipeline
+	Conjunto de Instruções (ISA)
+	Paralelismo
+	Sistemas Operacionais
+	Redes de Computadores
+
+
+ 25.3 Considerações Finais — [V]
+
+  25.3.1 Papel da História da Computação — [V]
+	Compreender a origem das tecnologias atuais
+	Facilitar o entendimento dos conceitos modernos
+	Servir como base introdutória para o estudo da Arquitetura e Organização de Computadores
+	Integrar a História da Computação ao contexto da Ciência da Computação
