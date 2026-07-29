@@ -330,7 +330,7 @@ PARTE 2 — ORIGENS DA COMPUTAÇÃO E FUNDAMENTOS DA COMPUTAÇÃO MODERNA
       Processamento de grandes volumes de dados
       Origem da indústria de computadores
 
-  6.4.1 Consolidação da Indústria — [V]
+  6.4.1 Surgimento da Indústria da Computação — [V]
         Fundação da IBM
         Consolidação das empresas de computação
         Evolução da indústria de hardware
@@ -592,6 +592,7 @@ PARTE 3 — EVOLUÇÃO DOS COMPUTADORES: DAS PRIMEIRAS MÁQUINAS À COMPUTAÇÃO
       Popularização da computação
 
   12.4.2 Principais Marcos — [V]
+      Fundação da Intel
       Intel 4004
       Linguagem C
       Ethernet
