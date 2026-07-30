@@ -493,7 +493,7 @@ PARTE 4 — INTEGRAÇÃO ENTRE AS CAMADAS DE ABSTRAÇÃO
 	Código executável
 	Instruções de máquina
 	Sinais eletrônicos
-	Exemplo prático de transformação entre níveis
+	Exemplo: Código-fonte → Compilador → Assembly → ISA → Microarquitetura → Circuitos → Transistores
 
  18.3 Fluxo entre Hardware e Software — [P]
 	Chamadas ao sistema operacional
@@ -756,9 +756,11 @@ PARTE 6 — INTEGRAÇÃO DOS CONCEITOS, REVISÃO E CONCLUSÃO
 	Objetivos da abstração
 	Princípios da abstração
 	Níveis de abstração
+	Modelos de máquina abstrata
 
  29.2 Camadas Computacionais — [I]
 	Hardware eletrônico
+	Firmware
 	Processador
 	Microprogramação
 	Arquitetura da máquina
