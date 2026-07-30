@@ -159,9 +159,9 @@ PARTE 1 — INTRODUÇÃO E FUNDAMENTOS DA ABSTRAÇÃO NOS COMPUTADORES
 PARTE 2 — NÍVEIS DE ABSTRAÇÃO DO HARDWARE
 
 
-6. Nível Físico (Hardware Eletrônico) — [P]
+6. Nível Físico (Hardware Eletrônico) — [I]
 
- 6.1 Fundamentos do Nível Físico — [P]
+ 6.1 Fundamentos do Nível Físico — [I]
 	Eletrônica digital
 	Tensão elétrica
 	Corrente elétrica
@@ -171,7 +171,7 @@ PARTE 2 — NÍVEIS DE ABSTRAÇÃO DO HARDWARE
 	Temporização
 	Sincronização
 
- 6.2 Componentes Fundamentais — [P]
+ 6.2 Componentes Fundamentais — [I]
 	Transistores
 	Portas lógicas
 	Álgebra Booleana
@@ -181,7 +181,7 @@ PARTE 2 — NÍVEIS DE ABSTRAÇÃO DO HARDWARE
 	Registradores
 	Máquinas de Estados Finitos (FSM)
 
- 6.3 Blocos Funcionais Básicos — [I]
+ 6.3 Blocos Funcionais Básicos — [V]
 	Somadores
 	Comparadores
 	Multiplexadores
@@ -192,9 +192,9 @@ PARTE 2 — NÍVEIS DE ABSTRAÇÃO DO HARDWARE
 
 
 
-7. Nível Lógico (Organização do Processador) — [P]
+7. Nível Lógico (Organização do Processador) — [I]
 
- 7.1 Organização Interna — [P]
+ 7.1 Organização Interna — [I]
 	Caminho de dados (Datapath)
 	Unidade Lógica e Aritmética (ULA)
 	Unidade de Controle
@@ -202,7 +202,7 @@ PARTE 2 — NÍVEIS DE ABSTRAÇÃO DO HARDWARE
 	Barramentos internos
 	Sinais de controle
 
- 7.2 Funcionamento Geral — [P]
+ 7.2 Funcionamento Geral — [I]
 	Ciclo de instrução
 	Busca (Fetch)
 	Decodificação (Decode)
@@ -210,7 +210,7 @@ PARTE 2 — NÍVEIS DE ABSTRAÇÃO DO HARDWARE
 	Escrita de resultados (Write Back)
 	Ciclo de máquina
 
- 7.3 Papel da Organização Lógica — [I]
+ 7.3 Papel da Organização Lógica — [V]
 	Processamento das instruções
 	Coordenação dos componentes
 	Fluxo interno de dados
@@ -240,14 +240,14 @@ PARTE 2 — NÍVEIS DE ABSTRAÇÃO DO HARDWARE
 
 
 
-9. Nível da Arquitetura da Máquina (ISA) — [P]
+9. Nível da Arquitetura da Máquina (ISA) — [I]
 
- 9.1 Modelos Arquiteturais — [P]
+ 9.1 Modelos Arquiteturais — [I]
 	Modelo de Von Neumann
 	Modelo Harvard
 	Modelo Harvard Modificado
 
- 9.2 Arquitetura do Conjunto de Instruções (ISA) — [P]
+ 9.2 Arquitetura do Conjunto de Instruções (ISA) — [I]
 	Conceito de ISA
 	Conjunto de instruções
 	RISC
@@ -256,7 +256,7 @@ PARTE 2 — NÍVEIS DE ABSTRAÇÃO DO HARDWARE
 	Tipos de instruções
 	Modos de endereçamento
 
- 9.3 Recursos Visíveis ao Programador — [I]
+ 9.3 Recursos Visíveis ao Programador — [V]
 	Registradores da ISA
 	Organização da memória
 	Pilha
@@ -291,16 +291,16 @@ PARTE 2 — NÍVEIS DE ABSTRAÇÃO DO HARDWARE
 PARTE 3 — NÍVEIS DE ABSTRAÇÃO DO SOFTWARE
 
 
-11. Nível do Sistema Operacional — [P]
+11. Nível do Sistema Operacional — [I]
 
- 11.1 Abstrações do Sistema Operacional — [P]
+ 11.1 Abstrações do Sistema Operacional — [I]
 	Abstração da CPU
 	Abstração da memória
 	Abstração dos dispositivos
 	Abstração do armazenamento
 	Abstração dos recursos do sistema
 
- 11.2 Gerenciamento dos Recursos — [P]
+ 11.2 Gerenciamento dos Recursos — [I]
 	Processos
 	Threads
 	Escalonamento
@@ -312,7 +312,7 @@ PARTE 3 — NÍVEIS DE ABSTRAÇÃO DO SOFTWARE
 	Drivers
 	Gerenciamento de recursos
 
- 11.3 Serviços do Sistema Operacional — [I]
+ 11.3 Serviços do Sistema Operacional — [V]
 	Chamadas de sistema
 	Proteção
 	Isolamento de processos
@@ -321,21 +321,21 @@ PARTE 3 — NÍVEIS DE ABSTRAÇÃO DO SOFTWARE
 
 
 
-12. Nível das Linguagens de Programação — [P]
+12. Nível das Linguagens de Programação — [I]
 
- 12.1 Classificação das Linguagens — [P]
+ 12.1 Classificação das Linguagens — [I]
 	Linguagens de baixo nível
 	Linguagens de médio nível
 	Linguagens de alto nível
 
- 12.2 Tradução dos Programas — [P]
+ 12.2 Tradução dos Programas — [I]
 	Compilação
 	Interpretação
 	Compilação Just-in-Time (JIT)
 	Bytecode
 	Máquina virtual
 
- 12.3 Construções Fundamentais das Linguagens — [I]
+ 12.3 Construções Fundamentais das Linguagens — [V]
 	Tipos de dados
 	Variáveis
 	Estruturas de controle
