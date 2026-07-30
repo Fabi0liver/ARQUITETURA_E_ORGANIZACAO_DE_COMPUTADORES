@@ -57,6 +57,9 @@ PARTE 1 — INTRODUÇÃO E FUNDAMENTOS DA ABSTRAÇÃO NOS COMPUTADORES
 	Aumento da complexidade dos computadores
 	Separação entre hardware e software
 	Evolução da computação moderna
+	Modelos clássicos de organização em camadas
+	Modelo em camadas de Tanenbaum
+	Influência na Arquitetura de Computadores
 
  2.3 Papel da Abstração na Evolução dos Computadores — [V]
 	Facilidade de projeto
@@ -106,6 +109,9 @@ PARTE 1 — INTRODUÇÃO E FUNDAMENTOS DA ABSTRAÇÃO NOS COMPUTADORES
 	Reutilização
 	Generalização
 	Especialização
+	Refinamento sucessivo
+	Decomposição de problemas
+	Construção em níveis
 
  4.3 Qualidade Estrutural — [I]
 	Baixo acoplamento
@@ -127,19 +133,28 @@ PARTE 1 — INTRODUÇÃO E FUNDAMENTOS DA ABSTRAÇÃO NOS COMPUTADORES
 	Modelagem em camadas
 	Visão hierárquica dos sistemas
 
- 5.2 Comunicação entre Camadas — [P]
+5.2 Modelos de Máquina Abstrata — [P]
+	O conceito de máquina abstrata
+	Máquina física
+	Máquina ISA
+	Máquina do Sistema Operacional
+	Máquina da Linguagem
+	Máquina Virtual
+	Relação entre os modelos
+
+ 5.3 Comunicação entre Camadas — [P]
 	Interfaces entre níveis
 	Fluxo de informação
 	Fluxo de controle
 	Tradução entre níveis
 
- 5.3 Relação entre os Níveis — [P]
+ 5.4 Relação entre os Níveis — [P]
 	Dependência entre camadas
 	Independência relativa
 	Integração entre hardware e software
 	Implementação das abstrações
 
-
+ 
 
 PARTE 2 — NÍVEIS DE ABSTRAÇÃO DO HARDWARE
 
@@ -437,8 +452,12 @@ PARTE 4 — INTEGRAÇÃO ENTRE AS CAMADAS DE ABSTRAÇÃO
  17.1 Conceitos Fundamentais — [P]
 	O que é uma interface
 	Contrato entre camadas
+	Contrato de abstração
+	Garantias oferecidas pela interface
+	Ocultação da implementação
 	Pontos de comunicação
 	Padronização das interfaces
+	Responsabilidades entre camadas
 
  17.2 Principais Interfaces — [I]
 	Hardware ↔ Firmware
@@ -446,7 +465,13 @@ PARTE 4 — INTEGRAÇÃO ENTRE AS CAMADAS DE ABSTRAÇÃO
 	Sistema Operacional ↔ Aplicações
 	Aplicações ↔ Usuário
 
- 17.3 Importância das Interfaces — [I]
+ 17.3 Papel do Firmware — [V]
+	BIOS
+	UEFI
+	Inicialização do hardware
+	Interface entre hardware e software
+
+ 17.4 Importância das Interfaces — [I]
 	Independência entre componentes
 	Compatibilidade
 	Interoperabilidade
@@ -468,6 +493,7 @@ PARTE 4 — INTEGRAÇÃO ENTRE AS CAMADAS DE ABSTRAÇÃO
 	Código executável
 	Instruções de máquina
 	Sinais eletrônicos
+	Exemplo prático de transformação entre níveis
 
  18.3 Fluxo entre Hardware e Software — [P]
 	Chamadas ao sistema operacional
@@ -484,6 +510,9 @@ PARTE 4 — INTEGRAÇÃO ENTRE AS CAMADAS DE ABSTRAÇÃO
 	Reutilização de componentes
 	Organização dos projetos
 	Facilidade de manutenção
+	Transparência para o usuário
+	Ocultação da implementação
+	Uso sem conhecimento interno
 
  19.2 Projeto de Hardware e Software — [I]
 	Separação de responsabilidades
@@ -496,6 +525,14 @@ PARTE 4 — INTEGRAÇÃO ENTRE AS CAMADAS DE ABSTRAÇÃO
 	Facilidade de inovação
 	Integração de novas tecnologias
 	Longevidade dos sistemas
+
+ 19.4 Limitações da Abstração — [I]
+	Sobrecarga das camadas
+	Perda de desempenho
+	Perda de controle direto
+	Complexidade acumulada
+	Camadas excessivas
+	Trade-off entre simplicidade e eficiência
 
 
 
