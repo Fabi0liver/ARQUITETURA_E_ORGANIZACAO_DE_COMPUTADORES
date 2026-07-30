@@ -279,29 +279,29 @@ PARTE 2 — MODELOS ARQUITETURAIS DA COMPUTAÇÃO
 PARTE 3 — PRINCIPAIS MODELOS ARQUITETURAIS
 
 
-11. Modelo Harvard — [P]
+11. Modelo Harvard — [I]
 
- 11.1 Fundamentos — [P]
+ 11.1 Fundamentos — [I]
 	Conceito
 	Origem
 	Objetivos
 	Separação entre instruções e dados
 
- 11.2 Organização do Modelo — [P]
+ 11.2 Organização do Modelo — [I]
 	Memória de instruções
 	Memória de dados
 	Barramentos independentes
 	Processador
 	Dispositivos de Entrada e Saída
 
- 11.3 Funcionamento Geral — [P]
+ 11.3 Funcionamento Geral — [I]
 	Busca de instruções
 	Acesso aos dados
 	Execução paralela de acessos
 	Fluxo de instruções
 	Fluxo de dados
 
- 11.4 Características Gerais — [P]
+ 11.4 Características Gerais — [I]
 	Vantagens
 	Limitações
 	Aplicações
@@ -309,27 +309,27 @@ PARTE 3 — PRINCIPAIS MODELOS ARQUITETURAIS
 
 
 
-12. Modelo Harvard Modificado — [I]
+12. Modelo Harvard Modificado — [V]
 
- 12.1 Fundamentos — [I]
+ 12.1 Fundamentos — [V]
 	Conceito
 	Objetivos
 	Motivação
 	Evolução do modelo Harvard
 
- 12.2 Organização do Modelo — [I]
+ 12.2 Organização do Modelo — [V]
 	Separação lógica entre instruções e dados
 	Compartilhamento controlado de memória
 	Organização híbrida
 	Acesso às memórias
 
- 12.3 Funcionamento Geral — [I]
+ 12.3 Funcionamento Geral — [V]
 	Execução das instruções
 	Comunicação entre memórias
 	Fluxo de dados
 	Fluxo de instruções
 
- 12.4 Características Gerais — [I]
+ 12.4 Características Gerais — [V]
 	Vantagens
 	Limitações
 	Aplicações
@@ -337,9 +337,9 @@ PARTE 3 — PRINCIPAIS MODELOS ARQUITETURAIS
 
 
 
-13. Comparação entre os Modelos Arquiteturais Clássicos — [P]
+13. Comparação entre os Modelos Arquiteturais Clássicos — [I]
 
- 13.1 Von Neumann × Harvard — [P]
+ 13.1 Von Neumann × Harvard — [I]
 	Organização da memória
 	Fluxo de instruções
 	Fluxo de dados
@@ -411,16 +411,16 @@ PARTE 4 — MODELOS TEÓRICOS DA COMPUTAÇÃO
 
 
 
-16. Introdução aos Modelos Teóricos — [P]
+16. Introdução aos Modelos Teóricos — [I]
 
- 16.1 Conceitos Fundamentais — [P]
+ 16.1 Conceitos Fundamentais — [I]
 	O que são modelos teóricos
 	Objetivos dos modelos teóricos
 	Abstração matemática
 	Computação como processo formal
 	Importância para a Ciência da Computação
 
- 16.2 Características Gerais — [P]
+ 16.2 Características Gerais — [I]
 	Representação formal da computação
 	Independência da implementação física
 	Descrição de algoritmos
@@ -435,22 +435,22 @@ PARTE 4 — MODELOS TEÓRICOS DA COMPUTAÇÃO
 
 
 
-17. Máquina de Turing — [P]
+17. Máquina de Turing — [I]
 
- 17.1 Fundamentos — [P]
+ 17.1 Fundamentos — [I]
 	Conceito
 	Origem
 	Objetivos
 	Importância histórica
 
- 17.2 Componentes da Máquina — [P]
+ 17.2 Componentes da Máquina — [I]
 	Fita
 	Cabeça de leitura e escrita
 	Conjunto de estados
 	Alfabeto
 	Função de transição
 
- 17.3 Funcionamento Geral — [P]
+ 17.3 Funcionamento Geral — [I]
 	Leitura
 	Escrita
 	Movimentação da fita
@@ -465,16 +465,16 @@ PARTE 4 — MODELOS TEÓRICOS DA COMPUTAÇÃO
 
 
 
-18. Modelos Baseados em Registradores e Pilhas — [I]
+18. Modelos Baseados em Registradores e Pilhas — [V]
 
- 18.1 Máquina de Registro — [I]
+ 18.1 Máquina de Registro — [V]
 	Conceito
 	Modelo RAM
 	Modelo RASP
 	Funcionamento
 	Aplicações
 
- 18.2 Máquina de Pilha — [I]
+ 18.2 Máquina de Pilha — [V]
 	Conceito
 	Estrutura baseada em pilha
 	Funcionamento
@@ -488,16 +488,16 @@ PARTE 4 — MODELOS TEÓRICOS DA COMPUTAÇÃO
 
 
 
-19. Modelos Baseados em Funções e Estados — [I]
+19. Modelos Baseados em Funções e Estados — [V]
 
- 19.1 λ-Cálculo (Lambda Cálculo) — [I]
+ 19.1 λ-Cálculo (Lambda Cálculo) — [V]
 	Conceito
 	Funções
 	Avaliação de expressões
 	Aplicações
 	Relação com programação funcional
 
- 19.2 Autômatos Finitos — [I]
+ 19.2 Autômatos Finitos — [V]
 	Conceito
 	Estados
 	Transições
@@ -533,19 +533,19 @@ PARTE 4 — MODELOS TEÓRICOS DA COMPUTAÇÃO
 
 
 
-21. Relação entre os Modelos Teóricos — [P]
+21. Relação entre os Modelos Teóricos — [I]
 
- 21.1 Equivalência Computacional — [P]
+ 21.1 Equivalência Computacional — [I]
 	Conceito
 	Equivalência entre modelos
 	Simulação entre modelos
 
- 21.2 Poder Computacional — [P]
+ 21.2 Poder Computacional — [I]
 	Capacidade de computação
 	Limites dos modelos
 	Universalidade
 
- 21.3 Tese de Church-Turing — [P]
+ 21.3 Tese de Church-Turing — [I]
 	Conceito
 	Importância
 	Consequências para a computação moderna
@@ -561,22 +561,22 @@ PARTE 4 — MODELOS TEÓRICOS DA COMPUTAÇÃO
 PARTE 5 — COMPUTABILIDADE, LIMITES E NOVOS PARADIGMAS
 
 
-22. Computabilidade — [P]
+22. Computabilidade — [I]
 
- 22.1 Fundamentos da Computabilidade — [P]
+ 22.1 Fundamentos da Computabilidade — [I]
 	Conceito
 	Problemas computáveis
 	Problemas não computáveis
 	Algoritmos
 	Procedimentos efetivos
 
- 22.2 Decidibilidade — [P]
+ 22.2 Decidibilidade — [I]
 	Problemas decidíveis
 	Problemas indecidíveis
 	Reconhecimento de linguagens
 	Decisão computacional
 
- 22.3 Limites da Computação — [P]
+ 22.3 Limites da Computação — [I]
 	Limites dos modelos computacionais
 	Limites dos algoritmos
 	Limites da computação efetiva
@@ -584,9 +584,9 @@ PARTE 5 — COMPUTABILIDADE, LIMITES E NOVOS PARADIGMAS
 
 
 
-23. Complexidade Computacional — [I]
+23. Complexidade Computacional — [V]
 
- 23.1 Fundamentos — [I]
+ 23.1 Fundamentos — [V]
 	Conceito
 	Tempo de execução
 	Espaço de memória
@@ -598,7 +598,7 @@ PARTE 5 — COMPUTABILIDADE, LIMITES E NOVOS PARADIGMAS
 	NP-Completo
 	NP-Difícil
 
- 23.3 Importância da Complexidade — [I]
+ 23.3 Importância da Complexidade — [V]
 	Análise de algoritmos
 	Comparação entre soluções
 	Escalabilidade
