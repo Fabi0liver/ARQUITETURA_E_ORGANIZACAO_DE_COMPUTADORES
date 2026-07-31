@@ -108,7 +108,7 @@ PARTE 1 — FUNDAMENTOS DA REPRESENTAÇÃO DA INFORMAÇÃO
     Interpretação dos padrões binários
     Representação de valores
 
- 4.2 Manipulação Binária Básica — [P]
+ 4.2 Manipulação Binária Básica — [I]
     Bits individuais
     Máscaras de bits
     Operações de deslocamento
@@ -143,7 +143,7 @@ PARTE 1 — FUNDAMENTOS DA REPRESENTAÇÃO DA INFORMAÇÃO
     Representação de valores
     Faixa de representação
 
- 5.3 Importância para a Computação — [P]
+ 5.3 Importância para a Computação — [I]
     Representação interna dos computadores
     Base do sistema binário
     Conversão entre representações
@@ -206,7 +206,7 @@ PARTE 2 — SISTEMAS DE NUMERAÇÃO E REPRESENTAÇÃO NUMÉRICA
 
 
 
-8. Sistemas Octal e Hexadecimal — [P]
+8. Sistemas Octal e Hexadecimal — [I]
 
  8.1 Sistema Octal — [I]
     Base oito
@@ -215,7 +215,7 @@ PARTE 2 — SISTEMAS DE NUMERAÇÃO E REPRESENTAÇÃO NUMÉRICA
     Conversão com binário
     Aplicações históricas
 
- 8.2 Sistema Hexadecimal — [P]
+ 8.2 Sistema Hexadecimal — [I]
     Base dezesseis
     Dígitos hexadecimais
     Valor posicional
@@ -232,9 +232,9 @@ PARTE 2 — SISTEMAS DE NUMERAÇÃO E REPRESENTAÇÃO NUMÉRICA
 
 
 
-9. Conversões entre Sistemas de Numeração — [P]
+9. Conversões entre Sistemas de Numeração — [I]
 
- 9.1 Conversões envolvendo o Sistema Decimal — [P]
+ 9.1 Conversões envolvendo o Sistema Decimal — [I]
     Decimal → Binário
     Binário → Decimal
     Decimal → Octal
@@ -242,7 +242,7 @@ PARTE 2 — SISTEMAS DE NUMERAÇÃO E REPRESENTAÇÃO NUMÉRICA
     Decimal → Hexadecimal
     Hexadecimal → Decimal
 
- 9.2 Conversões entre Bases Binárias — [P]
+ 9.2 Conversões entre Bases Binárias — [I]
     Binário → Octal
     Octal → Binário
     Binário → Hexadecimal
@@ -269,7 +269,7 @@ PARTE 2 — SISTEMAS DE NUMERAÇÃO E REPRESENTAÇÃO NUMÉRICA
     Empréstimo (Borrow)
     Transporte (Carry)
 
- 10.2 Códigos Numéricos — [P]
+ 10.2 Códigos Numéricos — [I]
     Código BCD (Binary Coded Decimal)
     Código Decimal Empacotado (Packed BCD)
     Código Decimal Desempacotado (Unpacked BCD)
@@ -436,7 +436,7 @@ PARTE 4 — REPRESENTAÇÃO DOS DIFERENTES TIPOS DE DADOS
 
 16. Representação de Números em Ponto Fixo e Ponto Flutuante — [P]
 
- 16.1 Representação em Ponto Fixo — [P]
+ 16.1 Representação em Ponto Fixo — [I]
     Conceito
     Estrutura da representação
     Parte inteira
@@ -452,7 +452,7 @@ PARTE 4 — REPRESENTAÇÃO DOS DIFERENTES TIPOS DE DADOS
     Precisão
     Faixa de representação
 
- 16.3 Comparação entre Ponto Fixo e Ponto Flutuante — [P]
+ 16.3 Comparação entre Ponto Fixo e Ponto Flutuante — [I]
     Precisão
     Desempenho
     Complexidade
@@ -487,7 +487,7 @@ PARTE 4 — REPRESENTAÇÃO DOS DIFERENTES TIPOS DE DADOS
     Extended Precision
     Quad Precision
 
- 17.4 Valores Especiais e Limitações — [P]
+ 17.4 Valores Especiais e Limitações — [I]
     Zero positivo
     Zero negativo
     Infinito positivo
@@ -499,7 +499,7 @@ PARTE 4 — REPRESENTAÇÃO DOS DIFERENTES TIPOS DE DADOS
     Erros de representação
     Cancelamento numérico
 
- 17.5 Operações Aritméticas em Ponto Flutuante — [P]
+ 17.5 Operações Aritméticas em Ponto Flutuante — [I]
     Adição
     Subtração
     Multiplicação
@@ -516,7 +516,7 @@ PARTE 4 — REPRESENTAÇÃO DOS DIFERENTES TIPOS DE DADOS
     Round Toward −∞
     Impacto do arredondamento
 
- 17.6 Precisão Numérica e Erros de Representação — [P]
+ 17.6 Precisão Numérica e Erros de Representação — [V]
     Erro absoluto
     Erro relativo
     Perda de significância
@@ -526,9 +526,9 @@ PARTE 4 — REPRESENTAÇÃO DOS DIFERENTES TIPOS DE DADOS
 
 
 
-18. Representação de Caracteres e Textos — [P]
+18. Representação de Caracteres e Textos — [I]
 
- 18.1 Fundamentos da Representação Textual — [P]
+ 18.1 Fundamentos da Representação Textual — [I]
     Caractere
     Símbolo
     Glifo
@@ -543,14 +543,14 @@ PARTE 4 — REPRESENTAÇÃO DOS DIFERENTES TIPOS DE DADOS
     ISO-8859
     Unicode
 
- 18.3 Formatos Unicode — [P]
+ 18.3 Formatos Unicode — [I]
     UTF-8
     UTF-16
     UTF-32
     Compatibilidade
     Vantagens de cada formato
 
- 18.4 Representação de Textos — [I]
+ 18.4 Representação de Textos — [V]
     Strings
     Diferença entre caractere e string
     Caracteres de controle
@@ -571,7 +571,7 @@ PARTE 4 — REPRESENTAÇÃO DOS DIFERENTES TIPOS DE DADOS
     Estados binários
     Operações lógicas básicas
 
- 19.2 Representação de Instruções — [I]
+ 19.2 Representação de Instruções — [P]
     Conceito de instrução
     Código de operação (Opcode)
     Operandos
@@ -683,9 +683,9 @@ PARTE 5 — REPRESENTAÇÃO DOS DADOS NA ARQUITETURA DE COMPUTADORES
 
 
 
-23. Manipulação e Conversão de Dados — [P]
+23. Manipulação e Conversão de Dados — [I]
 
- 23.1 Conversões de Tipos — [P]
+ 23.1 Conversões de Tipos — [I]
     Conversão implícita
     Conversão explícita
     Casting
@@ -702,7 +702,7 @@ PARTE 5 — REPRESENTAÇÃO DOS DADOS NA ARQUITETURA DE COMPUTADORES
     Conversões sem perda
     Conversões com perda
 
- 23.3 Limitações das Conversões — [P]
+ 23.3 Limitações das Conversões — [I]
     Truncamento
     Arredondamento
     Overflow
@@ -721,7 +721,7 @@ PARTE 5 — REPRESENTAÇÃO DOS DADOS NA ARQUITETURA DE COMPUTADORES
     Eficiência da representação
     Compatibilidade entre sistemas
 
- 24.2 Detecção de Erros — [P]
+ 24.2 Detecção de Erros — [I]
     Bit de paridade
     Verificação de redundância
     Conceito de checksum
@@ -813,7 +813,7 @@ PARTE 6 — INTEGRAÇÃO DOS CONCEITOS, REVISÃO E CONCLUSÃO
 
 27. Limitações da Representação dos Dados — [I]
 
- 27.1 Limitações Numéricas — [P]
+ 27.1 Limitações Numéricas — [I]
     Precisão finita
     Overflow
     Underflow
@@ -878,7 +878,7 @@ PARTE 6 — INTEGRAÇÃO DOS CONCEITOS, REVISÃO E CONCLUSÃO
     Representação e conjuntos de instruções
     Representação e organização dos computadores
 
- 29.3 Papel da Representação de Dados — [P]
+ 29.3 Papel da Representação de Dados — [I]
     Base do processamento digital
     Base da comunicação entre componentes
     Base do armazenamento
