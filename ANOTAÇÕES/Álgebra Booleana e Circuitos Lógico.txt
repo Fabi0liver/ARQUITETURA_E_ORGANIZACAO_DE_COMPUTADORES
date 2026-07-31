@@ -387,23 +387,23 @@ PARTE 3 — PORTAS LÓGICAS E IMPLEMENTAÇÃO DOS CIRCUITOS DIGITAIS
 
 
 
-14. Características Elétricas da Lógica Digital — [P]
+14. Características Elétricas da Lógica Digital — [I]
 
- 14.1 Níveis Lógicos — [P]
+ 14.1 Níveis Lógicos — [I]
 	Nível lógico alto
 	Nível lógico baixo
 	Lógica positiva
 	Lógica negativa
 	Interpretação dos níveis de tensão
 
- 14.2 Características de Entrada e Saída — [P]
+ 14.2 Características de Entrada e Saída — [V]
 	Fan-in
 	Fan-out
 	Capacidade de acionamento
 	Compatibilidade entre dispositivos
 	Interligação de portas
 
- 14.3 Temporização dos Circuitos Lógicos — [P]
+ 14.3 Temporização dos Circuitos Lógicos — [I]
 	Tempo de propagação
 	Atraso de propagação
 	Tempo de subida
@@ -411,7 +411,7 @@ PARTE 3 — PORTAS LÓGICAS E IMPLEMENTAÇÃO DOS CIRCUITOS DIGITAIS
 	Tempo de estabilização
 	Acumulação de atrasos
 
- 14.4 Confiabilidade Elétrica — [I]
+ 14.4 Confiabilidade Elétrica — [V]
 	Margem de ruído
 	Imunidade ao ruído
 	Consumo de potência
@@ -420,22 +420,22 @@ PARTE 3 — PORTAS LÓGICAS E IMPLEMENTAÇÃO DOS CIRCUITOS DIGITAIS
 
 
 
-15. Famílias Lógicas — [I]
+15. Famílias Lógicas — [V]
 
- 15.1 Conceitos Fundamentais — [I]
+ 15.1 Conceitos Fundamentais — [V]
 	O que são famílias lógicas
 	Evolução tecnológica
 	Características gerais
 	Compatibilidade entre famílias
 
- 15.2 Família TTL — [I]
+ 15.2 Família TTL — [V]
 	Princípios de funcionamento
 	Características elétricas
 	Vantagens
 	Limitações
 	Aplicações
 
- 15.3 Família CMOS — [P]
+ 15.3 Família CMOS — [I]
 	Princípios de funcionamento
 	Características elétricas
 	Consumo de energia
@@ -443,7 +443,7 @@ PARTE 3 — PORTAS LÓGICAS E IMPLEMENTAÇÃO DOS CIRCUITOS DIGITAIS
 	Limitações
 	Aplicações
 
- 15.4 Comparação entre TTL e CMOS — [I]
+ 15.4 Comparação entre TTL e CMOS — [V]
 	Velocidade
 	Consumo de potência
 	Margem de ruído
@@ -452,22 +452,22 @@ PARTE 3 — PORTAS LÓGICAS E IMPLEMENTAÇÃO DOS CIRCUITOS DIGITAIS
 
 
 
-16. Circuitos Integrados Digitais — [I]
+16. Circuitos Integrados Digitais — [V]
 
- 16.1 Conceitos Fundamentais — [I]
+ 16.1 Conceitos Fundamentais — [V]
 	Circuito Integrado (CI)
 	Integração de portas lógicas
 	Encapsulamento
 	Padronização
 
- 16.2 Escalas de Integração — [I]
+ 16.2 Escalas de Integração — [V]
 	SSI (Small Scale Integration)
 	MSI (Medium Scale Integration)
 	LSI (Large Scale Integration)
 	VLSI (Very Large Scale Integration)
 	ULSI (Ultra Large Scale Integration)
 
- 16.3 Organização dos Circuitos Integrados Digitais — [I]
+ 16.3 Organização dos Circuitos Integrados Digitais — [V]
 	Portas discretas
 	Blocos funcionais
 	Circuitos dedicados
@@ -629,15 +629,15 @@ PARTE 4 — CIRCUITOS COMBINACIONAIS E PROJETO LÓGICO
 
 
 
-23. Verificação e Otimização dos Circuitos Combinacionais — [P]
+23. Verificação e Otimização dos Circuitos Combinacionais — [I]
 
- 23.1 Verificação Funcional — [P]
+ 23.1 Verificação Funcional — [I]
 	Comparação com a especificação
 	Validação por tabela-verdade
 	Testes funcionais
 	Correção lógica
 
- 23.2 Otimização Estrutural — [P]
+ 23.2 Otimização Estrutural — [I]
 	Redução da quantidade de portas
 	Redução dos níveis lógicos
 	Compartilhamento de sinais
@@ -682,9 +682,9 @@ PARTE 5 — CIRCUITOS SEQUENCIAIS E SISTEMAS LÓGICOS COM MEMÓRIA
 
 
 
-25. Temporização em Sistemas Digitais — [P]
+25. Temporização em Sistemas Digitais — [I]
 
- 25.1 Clock — [P]
+ 25.1 Clock — [I]
 	Conceito de Clock
 	Sinal de Clock
 	Clock Global
@@ -695,14 +695,14 @@ PARTE 5 — CIRCUITOS SEQUENCIAIS E SISTEMAS LÓGICOS COM MEMÓRIA
 	Ciclo de Clock
 	Duty Cycle
 
- 25.2 Bordas e Sincronização — [P]
+ 25.2 Bordas e Sincronização — [I]
 	Borda de Subida
 	Borda de Descida
 	Dispositivos sensíveis à borda
 	Dispositivos sensíveis ao nível
 	Sincronização dos circuitos
 
- 25.3 Parâmetros Temporais — [P]
+ 25.3 Parâmetros Temporais — [V]
 	Setup Time
 	Hold Time
 	Clock-to-Q
@@ -767,7 +767,7 @@ PARTE 5 — CIRCUITOS SEQUENCIAIS E SISTEMAS LÓGICOS COM MEMÓRIA
 	Contadores Bidirecionais
 	Contadores Módulo-N
 
- 27.3 Contadores Especiais — [I]
+ 27.3 Contadores Especiais — [V]
 	Ring Counter
 	Johnson Counter
 	Contadores Gray
@@ -830,23 +830,23 @@ PARTE 5 — CIRCUITOS SEQUENCIAIS E SISTEMAS LÓGICOS COM MEMÓRIA
 PARTE 6 — LÓGICA PROGRAMÁVEL, APLICAÇÕES E INTEGRAÇÃO DOS CONCEITOS
 
 
-30. Lógica Programável — [I]
+30. Lógica Programável — [V]
 
- 30.1 Fundamentos da Lógica Programável — [I]
+ 30.1 Fundamentos da Lógica Programável — [V]
 	O que é Lógica Programável
 	Evolução da lógica fixa para a lógica programável
 	Vantagens da lógica programável
 	Limitações
 	Áreas de aplicação
 
- 30.2 Dispositivos Lógicos Programáveis — [I]
+ 30.2 Dispositivos Lógicos Programáveis — [V]
 	PLA (Programmable Logic Array)
 	PAL (Programmable Array Logic)
 	GAL (Generic Array Logic)
 	CPLD (Complex Programmable Logic Device)
 	FPGA (Field Programmable Gate Array)
 
- 30.3 Arquitetura Geral dos Dispositivos Programáveis — [I]
+ 30.3 Arquitetura Geral dos Dispositivos Programáveis — [V]
 	Blocos lógicos
 	Interconexões programáveis
 	Blocos de Entrada e Saída (I/O)
@@ -862,9 +862,9 @@ PARTE 6 — LÓGICA PROGRAMÁVEL, APLICAÇÕES E INTEGRAÇÃO DOS CONCEITOS
 
 
 
-31. Projeto Digital e Ferramentas de Desenvolvimento — [I]
+31. Projeto Digital e Ferramentas de Desenvolvimento — [V]
 
- 31.1 Fluxo de Projeto Digital — [I]
+ 31.1 Fluxo de Projeto Digital — [V]
 	Especificação
 	Modelagem
 	Descrição do circuito
@@ -874,7 +874,7 @@ PARTE 6 — LÓGICA PROGRAMÁVEL, APLICAÇÕES E INTEGRAÇÃO DOS CONCEITOS
 	Validação
 	Testes
 
- 31.2 Linguagens de Descrição de Hardware — [I]
+ 31.2 Linguagens de Descrição de Hardware — [V]
 	Conceito de HDL
 	VHDL
 	Verilog
@@ -889,7 +889,7 @@ PARTE 6 — LÓGICA PROGRAMÁVEL, APLICAÇÕES E INTEGRAÇÃO DOS CONCEITOS
 	Multisim
 	Simuladores digitais
 
- 31.4 Verificação e Depuração — [I]
+ 31.4 Verificação e Depuração — [V]
 	Simulação funcional
 	Simulação temporal
 	Análise de formas de onda
