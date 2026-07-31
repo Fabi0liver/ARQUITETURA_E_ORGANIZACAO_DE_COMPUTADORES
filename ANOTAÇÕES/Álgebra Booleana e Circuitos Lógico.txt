@@ -140,3 +140,176 @@ PARTE 1 — FUNDAMENTOS DA ÁLGEBRA BOOLEANA E DA LÓGICA DIGITAL
 	Implementação em hardware
 	Representação por portas lógicas
 	Modelagem de circuitos digitais
+
+
+
+PARTE 2 — OPERAÇÕES BOOLEANAS, PROPRIEDADES E SIMPLIFICAÇÃO LÓGICA
+
+
+6. Operadores Booleanos — [P]
+
+ 6.1 Operadores Fundamentais — [P]
+	AND (Conjunção)
+	OR (Disjunção)
+	NOT (Negação)
+	Representação simbólica
+	Representação algébrica
+	Representação por tabela-verdade
+
+ 6.2 Operadores Derivados — [P]
+	NAND
+	NOR
+	XOR (OU Exclusivo)
+	XNOR (Equivalência)
+	Complementação lógica
+	Combinação de operadores
+
+ 6.3 Operadores Universais — [P]
+	NAND como porta universal
+	NOR como porta universal
+	Construção de funções utilizando NAND
+	Construção de funções utilizando NOR
+	Equivalência funcional entre portas
+	Universalidade funcional
+
+
+
+7. Leis e Propriedades da Álgebra Booleana — [P]
+
+ 7.1 Leis Fundamentais — [P]
+	Lei da Identidade
+	Lei da Dominação (Anulação)
+	Lei da Idempotência
+	Lei do Complemento
+	Lei da Involução
+	Lei da Dupla Negação
+
+ 7.2 Leis Operacionais — [P]
+	Lei Comutativa
+	Lei Associativa
+	Lei Distributiva
+	Lei da Absorção
+	Lei do Consenso
+	Princípio da Dualidade
+
+ 7.3 Leis de De Morgan — [P]
+	Primeira Lei de De Morgan
+	Segunda Lei de De Morgan
+	Aplicação em expressões booleanas
+	Aplicação em circuitos digitais
+	Conversão entre funções equivalentes
+
+
+
+8. Funções Booleanas — [P]
+
+ 8.1 Conceitos Fundamentais — [P]
+	Função booleana
+	Variáveis de entrada
+	Saídas lógicas
+	Domínio booleano
+	Imagem da função
+	Representação funcional
+
+ 8.2 Representações das Funções Booleanas — [P]
+	Expressão booleana
+	Tabela-verdade
+	Diagrama lógico
+	Implementação por portas
+	Forma algébrica
+
+ 8.3 Classificação das Funções Booleanas — [I]
+	Funções constantes
+	Funções identidade
+	Funções complementares
+	Funções combinacionais
+	Funções equivalentes
+
+
+
+9. Formas Canônicas e Formas Padrão — [P]
+
+ 9.1 Mintermos e Maxtermos — [P]
+	Mintermos
+	Maxtermos
+	Representação binária
+	Construção das expressões
+	Correspondência com tabelas-verdade
+
+ 9.2 Soma de Produtos (SOP) — [P]
+	Forma canônica SOP
+	Forma padrão SOP
+	Construção da expressão
+	Interpretação lógica
+
+ 9.3 Produto de Somas (POS) — [P]
+	Forma canônica POS
+	Forma padrão POS
+	Construção da expressão
+	Interpretação lógica
+
+ 9.4 Conversões entre Representações — [I]
+	Conversão entre SOP e POS
+	Conversão entre tabela-verdade e expressão
+	Conversão entre expressão e circuito
+	Equivalência entre representações
+
+
+
+10. Simplificação de Expressões Booleanas — [P]
+
+ 10.1 Simplificação Algébrica — [P]
+	Aplicação das leis booleanas
+	Eliminação de redundâncias
+	Fatoração booleana
+	Redução de expressões
+	Expressões equivalentes
+
+ 10.2 Objetivos da Simplificação — [P]
+	Redução do número de portas
+	Redução da complexidade lógica
+	Redução do atraso de propagação
+	Redução do consumo de energia
+	Otimização de circuitos
+
+ 10.3 Validação das Expressões Simplificadas — [I]
+	Equivalência lógica
+	Comparação por tabela-verdade
+	Verificação funcional
+	Consistência algébrica
+
+
+
+11. Métodos de Minimização Lógica — [P]
+
+ 11.1 Método Algébrico — [P]
+	Simplificação por propriedades
+	Aplicação das leis booleanas
+	Fatoração
+	Obtenção da expressão mínima
+
+ 11.2 Mapas de Karnaugh — [P]
+	Objetivos
+	Mapas de duas variáveis
+	Mapas de três variáveis
+	Mapas de quatro variáveis
+	Mapas de cinco variáveis (visão geral)
+	Adjacência
+	Agrupamentos
+	Don't Care Conditions
+	Obtenção da expressão mínima
+
+ 11.3 Método de Quine-McCluskey — [I]
+	Objetivos
+	Implicantes
+	Implicantes primos
+	Implicantes essenciais
+	Tabela de cobertura
+	Minimização sistemática
+
+ 11.4 Comparação entre os Métodos de Minimização — [I]
+	Método algébrico × Karnaugh
+	Karnaugh × Quine-McCluskey
+	Vantagens
+	Limitações
+	Contextos de utilização
