@@ -1,457 +1,962 @@
-                          Representação de Dados e Sistema de Numeração
-
-
-
-Introdução:
-
- Introdução à Representação de Dados e Sistemas de Numeração
- Importância da representação de dados na Computação
- Relação entre representação de dados, hardware e software
- Visão geral dos tipos de dados digitais
-
-
-
-Fundamentos Necessários:
-
- Dados e Informação:
-  O que são dados
-  O que é informação
-  Diferença entre dado, informação e conhecimento
-  Como os computadores representam dados
-  Dados analógicos e dados digitais
-
- Unidades de Informação:
-  Bit
-  Nibble
-  Byte
-  Palavra (Word)
-  Tamanho de palavra (Word Size)
-  Kilobyte (KB) e Kibibyte (KiB)
-  Megabyte (MB) e Mebibyte (MiB)
-  Gigabyte (GB) e Gibibyte (GiB)
-  Terabyte (TB)
-  Petabyte (PB)
-  Exabyte (EB)
-  Zettabyte (ZB)
-  Yottabyte (YB)
-
-
-
-Sistemas de Numeração:
-
- Conceitos Fundamentais:
-  O que é um sistema de numeração
-  Base ou radix
-  Dígitos de uma base
-  Valor posicional
-  Peso posicional
-  Sistemas posicionais
-  Sistemas não posicionais
-
- Principais Sistemas de Numeração:
-  Sistema Decimal (Base 10)
-  Sistema Binário (Base 2)
-  Sistema Octal (Base 8)
-  Sistema Hexadecimal (Base 16)
-  
- Operações nos Sistemas de Numeração:
-  Conversões entre bases:
-   Decimal ↔ Binário
-   Decimal ↔ Octal
-   Decimal ↔ Hexadecimal
-   Binário ↔ Octal
-   Binário ↔ Hexadecimal
-   Octal ↔ Hexadecimal
-  Operações aritméticas em binário:
-   Soma
-   Subtração
-   Multiplicação
-   Divisão
-
-
-
-Representação de Números Inteiros:
-
- Conceitos Fundamentais:
-  Representação binária de números
-  Interpretação de padrões de bits
-  Valor lógico e valor interpretado
-  Importância da quantidade de bits
-  Intervalo de valores representáveis
-
- Representações de Inteiros:
-  Inteiros sem sinal (Unsigned)
-  Inteiros com sinal (Signed)
-
- Métodos de Representação:
-  Magnitude e sinal
-  Complemento de 1
-  Complemento de 2
-
- Operações e Limitações:
-  Overflow
-  Underflow
-  Carry
-  Borrow
-  Sign Extension
-  Zero Extension
-  Truncamento
-  Perda de dados
-  Saturação (Saturating Arithmetic)
-
- Organização na Memória:
-  Endianness:
-   Little-endian
-   Big-endian
-  Alinhamento de palavras
-  Organização em memória
-  Representação em registradores
-  Interpretação pela ULA
-
-
-
-Representação de Números Reais:
-
- Conceitos Fundamentais:
-  Números de ponto fixo
-  Números de ponto flutuante
-  Comparação entre ponto fixo e ponto flutuante
-
- IEEE 754
- 
- Formatos:
-  Half Precision (16 bits)
-  Float (32 bits)
-  Double (64 bits)
-  Extended Precision
-  Quad Precision
-
- Estrutura:
-  Bit de sinal
-  Expoente
-  Bias
-  Mantissa (Fração)
-  Normalização
-  Números subnormais (Denormalizados)
- 
- Precisão:
-  Precisão
-  Arredondamentos
-  Erros de representação
-  Erros de truncamento
-  Cancelamento numérico
-
- Valores Especiais:
-  Zero positivo
-  Zero negativo
-  Infinito positivo
-  Infinito negativo
-  NaN
-
- Limitações:
-  Intervalo de representação
-  Propagação de erros
-  Associatividade
-  Distributividade
-  Precisão numérica
-
- Alternativas:
-  Decimal Floating Point
-  Precisão arbitrária
-  Outras representações
-
-
-
-Representação de Caracteres e Textos:
-
- Conceitos Fundamentais:
-  Caractere
-  Símbolo
-  Glifo
-  Ponto de código
-
- Evolução Histórica:
-  Primeiras codificações
-  Limitações das codificações antigas
-  Surgimento do Unicode
-
- Tabelas de Codificação:
-  ASCII
-  Extended ASCII
-  ISO-8859
-  Unicode
-
- Formatos Unicode:
-  UTF-8
-  UTF-16
-  UTF-32
-  
- Caracteres:
-  Letras
-  Dígitos
-  Símbolos
-  Emojis
-  Caracteres especiais
-  Caracteres de controle
-
- Representação Textual:
-  Strings
-  Relação entre texto e binário
-  Codificação e decodificação
-
-
-
-Representação de Dados Multimídia:
-
- Conceitos Fundamentais:
-  Dados multimídia
-  Evolução histórica
-  Resolução
-  Qualidade
-  Bitrate
-
- Imagens:
-  Pixel
-  Resolução
-  Profundidade de cor
-  Modelos de cor:
-   RGB
-   CMYK
-   HSV
-   HSL
-  Raster (Bitmap)
-  Vetorial
-  Formatos:
-   BMP
-   PNG
-   JPEG
-   SVG
-   WebP
-  
- Áudio:
-  Amostragem
-  Quantização
-  Sample Rate
-  Bit Depth
-  PCM
-  MIDI
-  Formatos:
-   WAV
-   MP3
-   FLAC
-   OGG
-   AAC
-
- Vídeo:
-  Frames
-  Frame Rate
-  Resolução
-  Codecs
-  Compressão espacial
-  Compressão temporal
-  Formatos:
-   MP4
-   MKV
-   AVI
-   MOV
-   WebM
-
- Multimídia Interativa:
-  Animações
-  Botões
-  Links
-  Conteúdo interativo
-
- Dados Multimodais:
-  Contêineres multimídia
-  Esteganografia
-  Imagens RAW
-  Dados LiDAR
-  Imagens térmicas
-
-
-
-Representação de Dados em Hardware:
-
- Conceitos Fundamentais:
-  Representação elétrica dos bits
-  Estados lógicos
-  Níveis de tensão
-
- Componentes:
-  Portas lógicas
-  Flip-Flops
-  Registradores
-  Barramentos
-  Codificadores
-  Decodificadores
-  Multiplexadores
-  Demultiplexadores
-
-
-
-Representação de Dados em Linguagens de Programação:
-
- Tipos de Dados:
-  Booleanos
-  Inteiros
-  Reais
-  Caracteres
-  Strings
-
- Conversões:
-  Casting
-  Conversão implícita
-  Conversão explícita
-  Promoção de tipos
-  Truncamento
-
- Organização da Memória:
-  Alinhamento
-  Padding
-  Estruturas
-  Representação em memória
-
- Persistência:
-  Arquivos texto
-  Arquivos binários
-  Serialização
-  Desserialização
-
-
-
-Compactação e Codificação de Dados:
-
- Conceitos:
-  Codificação
-  Compressão
-  Eficiência de codificação
-
- Compressão:
-  Sem perda:
-   ZIP
-   PNG
-   FLAC
-  Com perda:
-   JPEG
-   MP3
-   AAC
-
- Fundamentos Teóricos:
-  Entropia
-  Teoria da Informação
-  Shannon
-
-
-
-Representação de Dados em Redes:
-
- Codificação:
-  NRZ
-  Manchester
-
- Protocolos e Formatos:
-  Base64
-  JSON
-  XML
-  BSON
-  MessagePack
-  Protobuf
-
- Transmissão:
-  Serialização para rede
-  Compactação
-  Representação independente de plataforma
-
-
-
-Aplicações Práticas e Avançadas:
-
- Arquitetura e Hardware:
-  Leitura e escrita em memória
-  Big-endian e Little-endian
-  Alinhamento de memória
-  Representações em diferentes arquiteturas
-  Representação vetorial
-  Processamento paralelo
-
- Armazenamento:
-  Formatos de banco de dados
-  Avro
-  Parquet
-  ORC
-  Compactação avançada
-
- Integridade dos Dados:
-  Bit de paridade
-  Código de Hamming
-  CRC
-  ECC
-
- Segurança:
-  Codificação para segurança
-  Hashes
-  Representação criptográfica
-
- Inteligência Artificial:
-  Quantização
-  Encoding
-  Embeddings
-  Representação de tensores
-
- Representações Específicas:
-  Dados científicos
-  Dados geográficos
-  Dados financeiros
-  Dados biomédicos
-
-
-
-O Futuro da Representação de Dados:
-
- Novos formatos numéricos
- Computação quântica
- Representações para IA
- Armazenamento de alta densidade
- Novos padrões de codificação
- Tendências futuras
-
-
-
-Conclusão Geral e Resumo:
-
- Revisão dos Conceitos Fundamentais:
-  Dados, informação e representação digital
-  Sistemas de numeração e suas bases
-  Conversões entre sistemas numéricos
-  Representação de números inteiros e reais
-  Representação de caracteres, textos e multimídia
-  Representação física dos dados no hardware
-  Representação de dados em linguagens de programação
-  Codificação, compressão e transmissão de dados
-
- Integração dos Conceitos:
-  Relação entre sistemas de numeração e representação de dados
-  Relação entre hardware, software e representação da informação
-  Importância dos padrões de representação para interoperabilidade
-  Papel da representação de dados no processamento computacional
-
- Competências Desenvolvidas:
-  Compreensão da representação interna das informações
-  Interpretação de diferentes formatos de dados
-  Conversão entre sistemas de numeração
-  Identificação das limitações e características de cada forma de representação
-  Entendimento dos padrões utilizados pela computação moderna
-
- Preparação para os Próximos Estudos:
-  Álgebra Booleana
-  Circuitos Lógicos
-  Organização de Computadores
-  Arquitetura de Computadores
-  Sistemas Operacionais
-  Estruturas de Dados
-  Redes de Computadores
-  Compiladores
-  Banco de Dados
-  Computação Gráfica
-  Inteligência Artificial
+                        Representação de Dados e Sistemas de Numeração
+
+
+Objetivo: Estudar os fundamentos da representação de dados e dos sistemas de numeração utilizados na computação, compreendendo como informações são representadas, armazenadas, processadas e interpretadas pelos computadores, formando a base necessária para o estudo da Arquitetura e Organização de Computadores.
+
+
+A classificação abaixo indica a profundidade recomendada para cada grande tópico da lista.
+
+[P] Profundidade — estudar mecanismos, estruturas, funcionamento interno e relações entre componentes.
+[I] Intermediário — compreender bem o funcionamento e as relações principais, sem precisar dominar todos os
+   detalhes de implementação.
+[V] Visão geral — saber o que é, para que serve e como se relaciona com os registradores.
+
+
+
+PARTE 1 — FUNDAMENTOS DA REPRESENTAÇÃO DA INFORMAÇÃO
+
+
+1. Introdução à Representação de Dados e Sistemas de Numeração — [P]
+
+ 1.1 Conceitos Fundamentais — [P]
+    O que é representação de dados
+    O que é informação digital
+    Representação da informação na computação
+    Importância da representação dos dados
+    Papel dos sistemas de numeração
+    Relação entre dados e processamento
+
+ 1.2 Objetivos da Representação de Dados — [P]
+    Permitir o armazenamento de informações
+    Permitir o processamento computacional
+    Padronização da representação
+    Comunicação entre hardware e software
+    Interoperabilidade entre sistemas
+    Eficiência na manipulação dos dados
+
+ 1.3 Papel na Arquitetura e Organização de Computadores — [I]
+    Base para o funcionamento dos computadores
+    Relação com processadores
+    Relação com memórias
+    Relação com barramentos
+    Relação com conjuntos de instruções
+    Importância para os demais tópicos da arquitetura
+
+
+
+2. Fundamentos da Informação Digital — [P]
+
+ 2.1 Dados e Informação — [P]
+    Dado
+    Informação
+    Conhecimento
+    Representação simbólica
+    Interpretação dos dados
+
+ 2.2 Natureza dos Dados — [P]
+    Dados analógicos
+    Dados digitais
+    Conversão entre representações
+    Precisão da representação
+    Limitações da digitalização
+
+ 2.3 Tipos Gerais de Dados — [I]
+    Dados numéricos
+    Dados textuais
+    Dados lógicos
+    Dados multimídia
+    Dados estruturados
+    Dados binários
+
+
+
+3. Unidade Fundamental da Informação — [P]
+
+ 3.1 Bit e Estados Binários — [P]
+    Conceito de bit
+    Estados lógicos
+    Representação binária
+    Valor lógico
+    Valor físico
+    Importância do bit
+
+ 3.2 Agrupamentos de Bits — [P]
+    Nibble
+    Byte
+    Palavra (Word)
+    Double Word
+    Quad Word
+    Blocos de dados
+
+ 3.3 Medidas de Informação — [I]
+    Bit versus Byte
+    KB e KiB
+    MB e MiB
+    GB e GiB
+    TB e TiB
+    PB e PiB
+    Relação entre unidades
+
+
+
+4. Estrutura da Representação Binária — [P]
+
+ 4.1 Organização dos Bits — [P]
+    Sequências de bits
+    Campos de bits
+    Significado dos bits
+    Interpretação dos padrões binários
+    Representação de valores
+
+ 4.2 Manipulação Binária Básica — [I]
+    Bits individuais
+    Máscaras de bits
+    Operações de deslocamento
+    Operações de rotação
+    Extração de campos
+    Combinação de bits
+
+ 4.3 Representação Física da Informação — [I]
+    Estados elétricos
+    Níveis de tensão
+    Representação lógica
+    Armazenamento físico dos bits
+    Leitura e escrita de bits
+
+
+
+5. Sistemas de Numeração — Fundamentos — [P]
+
+ 5.1 Conceitos Fundamentais — [P]
+    Sistema de numeração
+    Base (Radix)
+    Dígitos
+    Valor posicional
+    Peso posicional
+    Sistemas posicionais
+    Sistemas não posicionais
+
+ 5.2 Características Gerais dos Sistemas Posicionais — [P]
+    Formação dos números
+    Potências da base
+    Expansão posicional
+    Representação de valores
+    Faixa de representação
+
+ 5.3 Importância para a Computação — [I]
+    Representação interna dos computadores
+    Base do sistema binário
+    Conversão entre representações
+    Comunicação entre hardware e software
+    Base para operações aritméticas
+    Fundamentação para os próximos estudos
+
+
+
+PARTE 2 — SISTEMAS DE NUMERAÇÃO E REPRESENTAÇÃO NUMÉRICA
+
+
+6. Sistema Decimal — [I]
+
+ 6.1 Fundamentos do Sistema Decimal — [I]
+    Origem histórica
+    Base decimal
+    Dígitos utilizados
+    Valor posicional
+    Pesos posicionais
+
+ 6.2 Representação de Valores — [I]
+    Parte inteira
+    Parte fracionária
+    Expansão decimal
+    Potências positivas
+    Potências negativas
+
+ 6.3 Papel do Sistema Decimal na Computação — [V]
+    Sistema utilizado pelos usuários
+    Interface homem-computador
+    Conversão para representação binária
+    Limitações para implementação em hardware
+
+
+
+7. Sistema Binário — [P]
+
+ 7.1 Fundamentos do Sistema Binário — [P]
+    Base dois
+    Dígitos binários
+    Valor posicional
+    Potências de dois
+    Formação dos números binários
+
+ 7.2 Representação Binária — [P]
+    Representação de números inteiros
+    Representação de valores fracionários
+    Expansão binária
+    Precisão da representação
+    Limites da representação
+
+ 7.3 Importância para a Arquitetura de Computadores — [P]
+    Base do funcionamento digital
+    Representação em memória
+    Representação em registradores
+    Operações da ULA
+    Comunicação pelos barramentos
+    Execução das instruções
+
+
+
+8. Sistemas Octal e Hexadecimal — [I]
+
+ 8.1 Sistema Octal — [I]
+    Base oito
+    Dígitos octais
+    Valor posicional
+    Conversão com binário
+    Aplicações históricas
+
+ 8.2 Sistema Hexadecimal — [I]
+    Base dezesseis
+    Dígitos hexadecimais
+    Valor posicional
+    Conversão com binário
+    Representação compacta
+
+ 8.3 Comparação entre os Sistemas Numéricos — [I]
+    Decimal × Binário
+    Binário × Octal
+    Binário × Hexadecimal
+    Octal × Hexadecimal
+    Critérios de utilização
+    Vantagens e limitações
+
+
+
+9. Conversões entre Sistemas de Numeração — [I]
+
+ 9.1 Conversões envolvendo o Sistema Decimal — [I]
+    Decimal → Binário
+    Binário → Decimal
+    Decimal → Octal
+    Octal → Decimal
+    Decimal → Hexadecimal
+    Hexadecimal → Decimal
+
+ 9.2 Conversões entre Bases Binárias — [I]
+    Binário → Octal
+    Octal → Binário
+    Binário → Hexadecimal
+    Hexadecimal → Binário
+    Octal → Hexadecimal
+    Hexadecimal → Octal
+
+ 9.3 Conversões de Valores Fracionários — [I]
+    Conversão decimal fracionária
+    Conversão binária fracionária
+    Precisão das conversões
+    Aproximações
+    Limitações práticas
+
+
+
+10. Operações Numéricas e Códigos Binários — [P]
+
+ 10.1 Operações Aritméticas em Binário — [P]
+    Soma binária
+    Subtração binária
+    Multiplicação binária
+    Divisão binária
+    Empréstimo (Borrow)
+    Transporte (Carry)
+
+ 10.2 Códigos Numéricos — [I]
+    Código BCD (Binary Coded Decimal)
+    Código Decimal Empacotado (Packed BCD)
+    Código Decimal Desempacotado (Unpacked BCD)
+    Código Gray
+    Código Excess-3
+    Códigos ponderados
+    Códigos não ponderados
+    Aplicações dos códigos binários
+
+ 10.3 Comparação entre os Códigos Numéricos — [I]
+    Características
+    Vantagens
+    Limitações
+    Aplicações na computação
+    Utilização em hardware digital
+    Relação com a representação de dados
+
+
+
+PARTE 3 — REPRESENTAÇÃO BINÁRIA DOS DADOS
+
+
+11. Representação de Números Inteiros — [P]
+
+ 11.1 Fundamentos da Representação Inteira — [P]
+    Representação binária de inteiros
+    Quantidade de bits
+    Intervalo de representação
+    Valores representáveis
+    Precisão da representação
+    Interpretação dos padrões binários
+
+ 11.2 Representação sem Sinal (Unsigned) — [P]
+    Conceito
+    Intervalo de valores
+    Aplicações
+    Vantagens
+    Limitações
+
+ 11.3 Representação com Sinal (Signed) — [P]
+    Conceito
+    Bit de sinal
+    Intervalo de representação
+    Comparação com unsigned
+    Aplicações
+
+
+
+12. Métodos de Representação de Inteiros com Sinal — [P]
+
+ 12.1 Sinal e Magnitude — [I]
+    Estrutura da representação
+    Funcionamento
+    Representação do zero
+    Vantagens
+    Limitações
+
+ 12.2 Complemento de Um (Complemento de 1) — [I]
+    Conceito
+    Formação do complemento
+    Representação dos valores negativos
+    Representação do zero
+    Limitações
+
+ 12.3 Complemento de Dois (Complemento de 2) — [P]
+    Conceito
+    Formação do complemento
+    Representação dos números negativos
+    Faixa de representação
+    Intervalo assimétrico
+    Overflow em complemento de dois
+    Vantagens
+    Predominância nas arquiteturas modernas
+
+
+
+13. Operações sobre Números Inteiros — [P]
+
+ 13.1 Operações Aritméticas — [P]
+    Soma
+    Subtração
+    Incremento
+    Decremento
+    Multiplicação (visão geral)
+    Divisão (visão geral)
+
+ 13.2 Operações Lógicas e de Bits — [P]
+    AND
+    OR
+    XOR
+    NOT
+    Deslocamento lógico
+    Deslocamento aritmético
+    Rotação de bits
+    Aplicações práticas das operações bit a bit
+    Flags
+    Manipulação de registradores
+    Máscaras de controle
+
+ 13.3 Manipulação de Campos de Bits — [P]
+    Máscaras de bits
+    Extração de campos
+    Inserção de campos
+    Limpeza de bits
+    Configuração de bits
+    Teste de bits
+
+
+
+14. Limitações da Representação Inteira — [P]
+
+ 14.1 Limitações Numéricas — [P]
+    Overflow
+    Underflow
+    Carry
+    Borrow
+    Faixa de representação
+    Perda de precisão
+
+ 14.2 Extensão e Conversão de Valores — [P]
+    Sign Extension
+    Zero Extension
+    Conversão entre tamanhos de palavra
+    Truncamento
+    Saturação (Saturating Arithmetic)
+
+ 14.3 Boas Práticas de Representação — [I]
+    Escolha da quantidade de bits
+    Escolha entre signed e unsigned
+    Evitando perdas de informação
+    Compatibilidade entre representações
+    Portabilidade dos dados
+
+
+
+15. Organização dos Dados Binários na Arquitetura — [P]
+
+ 15.1 Organização em Memória — [P]
+    Byte
+    Palavra (Word)
+    Endereço
+    Organização sequencial
+    Agrupamento de bytes
+
+ 15.2 Ordem dos Bytes (Endianness) — [P]
+    Little-endian
+    Big-endian
+    Conversão entre formatos
+    Compatibilidade entre arquiteturas
+    Aplicações práticas
+
+ 15.3 Representação dos Dados no Hardware — [I]
+    Registradores (visão geral)
+    Memória principal (visão geral)
+    Barramentos (visão geral)
+    Unidade Lógica e Aritmética (visão geral)
+    Fluxo dos dados durante o processamento
+    Interpretação dos padrões binários
+
+
+
+PARTE 4 — REPRESENTAÇÃO DOS DIFERENTES TIPOS DE DADOS
+
+
+16. Representação de Números em Ponto Fixo e Ponto Flutuante — [P]
+
+ 16.1 Representação em Ponto Fixo — [I]
+    Conceito
+    Estrutura da representação
+    Parte inteira
+    Parte fracionária
+    Escala fixa
+    Aplicações
+
+ 16.2 Representação em Ponto Flutuante — [P]
+    Conceito
+    Motivação
+    Vantagens
+    Limitações
+    Precisão
+    Faixa de representação
+
+ 16.3 Comparação entre Ponto Fixo e Ponto Flutuante — [I]
+    Precisão
+    Desempenho
+    Complexidade
+    Consumo de hardware
+    Aplicações típicas
+    Critérios de escolha
+
+
+
+17. Padrão IEEE 754 — [P]
+
+ 17.1 Fundamentos do IEEE 754 — [P]
+    Objetivos do padrão
+    Evolução histórica
+    Padronização da representação
+    Importância para a computação
+    Compatibilidade entre arquiteturas
+
+ 17.2 Estrutura do Número em Ponto Flutuante — [P]
+    Bit de sinal
+    Expoente
+    Bias
+    Mantissa (Fração)
+    Normalização
+    Números subnormais
+    Bit implícito (Hidden Bit)
+
+ 17.3 Formatos Definidos pelo IEEE 754 — [I]
+    Half Precision (16 bits)
+    Single Precision (32 bits)
+    Double Precision (64 bits)
+    Extended Precision
+    Quad Precision
+
+ 17.4 Valores Especiais e Limitações — [I]
+    Zero positivo
+    Zero negativo
+    Infinito positivo
+    Infinito negativo
+    NaN (Not a Number)
+    Overflow
+    Underflow
+    Arredondamento
+    Erros de representação
+    Cancelamento numérico
+
+ 17.5 Operações Aritméticas em Ponto Flutuante — [I]
+    Adição
+    Subtração
+    Multiplicação
+    Divisão
+    Normalização do resultado
+    Arredondamento
+    Propagação de NaN
+    Exceções em operações
+
+ 17.6 Modos de Arredondamento — [I]
+    Round to Nearest
+    Round Toward Zero
+    Round Toward +∞
+    Round Toward −∞
+    Impacto do arredondamento
+
+ 17.6 Precisão Numérica e Erros de Representação — [V]
+    Erro absoluto
+    Erro relativo
+    Perda de significância
+    Cancelamento catastrófico
+    Acúmulo de erros
+    Boas práticas em cálculos numéricos
+
+
+
+18. Representação de Caracteres e Textos — [I]
+
+ 18.1 Fundamentos da Representação Textual — [I]
+    Caractere
+    Símbolo
+    Glifo
+    Ponto de código
+    Conjunto de caracteres
+    Codificação de caracteres
+
+ 18.2 Evolução das Codificações — [I]
+    Primeiras codificações
+    ASCII
+    Extended ASCII
+    ISO-8859
+    Unicode
+
+ 18.3 Formatos Unicode — [I]
+    UTF-8
+    UTF-16
+    UTF-32
+    Compatibilidade
+    Vantagens de cada formato
+
+ 18.4 Representação de Textos — [V]
+    Strings
+    Diferença entre caractere e string
+    Caracteres de controle
+    Caracteres especiais
+    Emojis
+    Conversão entre codificações
+    Armazenamento de textos
+    Ordenação lexicográfica
+
+
+
+19. Representação de Dados Lógicos e Instruções — [P]
+
+ 19.1 Representação de Valores Lógicos — [P]
+    Verdadeiro e falso
+    Representação booleana
+    Bit lógico
+    Estados binários
+    Operações lógicas básicas
+
+ 19.2 Representação de Instruções — [P]
+    Conceito de instrução
+    Código de operação (Opcode)
+    Operandos
+    Campos da instrução
+    Formatos básicos de instruções
+    Representação binária das instruções
+
+ 19.3 Relação entre Dados e Instruções — [P]
+    Dados versus instruções
+    Programa armazenado
+    Interpretação pela CPU
+    Fluxo de execução
+    Importância para a Arquitetura de Computadores
+
+
+
+20. Representação de Dados Complexos — [I]
+
+ 20.1 Representação de Imagens — [I]
+    Pixel
+    Resolução
+    Profundidade de cor
+    Modelos RGB
+    Representação matricial
+    Formatos de imagem (visão geral)
+
+ 20.2 Representação de Áudio e Vídeo — [V]
+    Amostragem
+    Quantização
+    Resolução temporal
+    Compressão (visão geral)
+    Formatos multimídia (visão geral)
+
+ 20.3 Representação de Estruturas de Dados — [I]
+    Vetores
+    Matrizes
+    Registros
+    Estruturas compostas
+    Organização em memória
+    Alinhamento e Padding (visão geral)
+    Influência do alinhamento no desempenho
+
+ 20.4 Visão Geral de Outros Tipos de Dados — [V]
+    Dados científicos
+    Dados gráficos
+    Dados multimídia
+    Dados binários arbitrários
+    Evolução dos formatos de representação
+
+
+
+PARTE 5 — REPRESENTAÇÃO DOS DADOS NA ARQUITETURA DE COMPUTADORES
+
+
+21. Representação dos Dados no Hardware — [P]
+
+ 21.1 Representação Física dos Bits — [P]
+    Estados elétricos
+    Níveis de tensão
+    Estados lógicos
+    Sinais digitais
+    Representação física da informação
+    Confiabilidade da representação
+
+ 21.2 Armazenamento da Informação — [P]
+    Células de memória
+    Registradores (visão geral)
+    Armazenamento temporário
+    Armazenamento permanente (visão geral)
+    Persistência dos dados
+    Organização física dos bits
+
+ 21.3 Transferência da Informação — [P]
+    Fluxo de bits
+    Fluxo de bytes
+    Comunicação entre componentes
+    Representação durante a transmissão
+    Sincronização dos dados
+    Integridade da informação
+
+
+
+22. Representação de Dados na Memória e nos Processadores — [P]
+
+ 22.1 Organização dos Dados na Memória — [P]
+    Endereçamento
+    Organização por bytes
+    Organização por palavras
+    Alinhamento de dados
+    Alinhamento natural
+    Padding
+    Fragmentação (visão geral)
+
+ 22.2 Representação Interna no Processador — [P]
+    Registradores de propósito geral
+    Registradores especializados (visão geral)
+    Operandos
+    Resultados das operações
+    Representação durante a execução
+    Tamanho da palavra do processador
+
+ 22.3 Influência da Arquitetura — [I]
+    Arquiteturas de 8 bits
+    Arquiteturas de 16 bits
+    Arquiteturas de 32 bits
+    Arquiteturas de 64 bits
+    Influência do tamanho da palavra
+    Compatibilidade entre arquiteturas
+
+
+
+23. Manipulação e Conversão de Dados — [I]
+
+ 23.1 Conversões de Tipos — [I]
+    Conversão implícita
+    Conversão explícita
+    Casting
+    Promoção de tipos
+    Rebaixamento de tipos
+    Conversões entre representações
+
+ 23.2 Conversões Numéricas — [P]
+    Inteiro para ponto flutuante
+    Ponto flutuante para inteiro
+    Conversão entre tamanhos de inteiros
+    Conversão entre representações com e sem sinal
+    Precisão das conversões
+    Conversões sem perda
+    Conversões com perda
+
+ 23.3 Limitações das Conversões — [I]
+    Truncamento
+    Arredondamento
+    Overflow
+    Underflow
+    Perda de precisão
+    Perda de informação
+
+
+
+24. Codificação, Integridade e Confiabilidade dos Dados — [I]
+
+ 24.1 Fundamentos da Codificação — [I]
+    Conceito de codificação
+    Objetivos da codificação
+    Representação padronizada
+    Eficiência da representação
+    Compatibilidade entre sistemas
+
+ 24.2 Detecção de Erros — [I]
+    Bit de paridade
+    Verificação de redundância
+    Conceito de checksum
+    CRC (visão geral)
+    Aplicações práticas
+
+ 24.3 Correção de Erros — [I]
+    Código de Hamming
+    ECC (Error Correcting Code)
+    SEC
+    SECDED
+    Conceitos de redundância
+    Correção automática
+    Aplicações em memórias
+
+ 24.4 Compressão e Codificação de Dados — [V]
+    Compressão sem perda
+    Compressão com perda
+    Codificação eficiente
+    Relação entre compressão e representação
+    Visão geral das aplicações
+
+
+
+25. Representação dos Dados em Software — [I]
+
+ 25.1 Tipos Fundamentais de Dados — [I]
+    Booleanos
+    Inteiros
+    Reais
+    Caracteres
+    Strings
+    Tipos compostos
+
+ 25.2 Organização em Memória — [I]
+    Layout de memória
+    Estruturas
+    Uniões
+    Arrays
+    Organização dos bytes
+    Compatibilidade entre compiladores
+    Representação dependente da linguagem
+
+ 25.3 Persistência dos Dados — [V]
+    Arquivos texto
+    Arquivos binários
+    Serialização
+    Desserialização
+    Portabilidade dos dados
+
+ 25.4 Representação Independente de Plataforma — [V]
+    Padrões de representação
+    Compatibilidade entre sistemas
+    Conversão de formatos
+    Interoperabilidade
+    Troca de informações
+
+
+
+PARTE 6 — INTEGRAÇÃO DOS CONCEITOS, REVISÃO E CONCLUSÃO
+
+
+26. Comparação entre as Formas de Representação de Dados — [I]
+
+ 26.1 Representações Numéricas — [I]
+    Inteiros × Ponto Fixo
+    Inteiros × Ponto Flutuante
+    Ponto Fixo × Ponto Flutuante
+    Representações com e sem sinal
+    Critérios de escolha
+
+ 26.2 Representações Não Numéricas — [I]
+    Caracteres
+    Textos
+    Dados lógicos
+    Dados multimídia
+    Estruturas de dados
+    Comparação entre formatos
+
+ 26.3 Critérios para Escolha da Representação — [I]
+    Precisão
+    Faixa de valores
+    Consumo de memória
+    Desempenho
+    Compatibilidade
+    Aplicações
+
+
+
+27. Limitações da Representação dos Dados — [I]
+
+ 27.1 Limitações Numéricas — [I]
+    Precisão finita
+    Overflow
+    Underflow
+    Erros de arredondamento
+    Erros de truncamento
+    Perda de informação
+
+ 27.2 Limitações da Representação Digital — [I]
+    Quantização
+    Capacidade de armazenamento
+    Restrições do tamanho da palavra
+    Limitações dos padrões
+    Compatibilidade entre arquiteturas
+
+ 27.3 Impacto na Arquitetura de Computadores — [I]
+    Desempenho
+    Consumo de memória
+    Complexidade do hardware
+    Compatibilidade de software
+    Portabilidade dos programas
+
+
+
+28. Tendências na Representação de Dados — [V]
+
+ 28.1 Evolução das Representações Numéricas — [V]
+    Novos formatos numéricos
+    Precisão reduzida
+    Precisão estendida
+    Formatos especializados
+    Evolução dos padrões
+
+ 28.2 Novas Demandas Computacionais — [V]
+    Computação científica
+    Inteligência Artificial (visão geral)
+    Computação gráfica
+    Sistemas embarcados
+    Computação de alto desempenho
+
+ 28.3 Evolução da Representação da Informação — [V]
+    Novos padrões
+    Maior interoperabilidade
+    Eficiência de armazenamento
+    Eficiência de processamento
+    Perspectivas futuras
+
+
+
+29. Integração dos Conceitos Fundamentais — [P]
+
+ 29.1 Representação da Informação na Computação — [P]
+    Dados e informação
+    Sistemas de numeração
+    Representação binária
+    Representação dos diferentes tipos de dados
+    Organização da informação
+
+ 29.2 Relação com a Arquitetura de Computadores — [P]
+    Representação e processadores
+    Representação e memórias
+    Representação e barramentos
+    Representação e conjuntos de instruções
+    Representação e organização dos computadores
+
+ 29.3 Papel da Representação de Dados — [I]
+    Base do processamento digital
+    Base da comunicação entre componentes
+    Base do armazenamento
+    Base da execução de programas
+    Fundamentação para os estudos posteriores
+
+
+
+30. Revisão Geral — [I]
+
+ 30.1 Fundamentos — [I]
+    Representação da informação
+    Dados digitais
+    Bit e Byte
+    Organização binária
+    Sistemas de numeração
+
+ 30.2 Representação Numérica — [I]
+    Sistema decimal
+    Sistema binário
+    Sistema octal
+    Sistema hexadecimal
+    Conversões entre bases
+    Operações binárias
+
+ 30.3 Representação dos Dados — [I]
+    Números inteiros
+    Ponto fixo
+    Ponto flutuante
+    IEEE 754
+    Caracteres
+    Dados lógicos
+    Dados complexos
+
+ 30.4 Representação na Arquitetura — [I]
+    Organização em memória
+    Endianness
+    Representação no processador
+    Conversões de dados
+    Integridade das informações
+
+
+
+31. Conclusão — [V]
+
+ 31.1 Visão Integrada da Representação dos Dados — [V]
+    Importância da representação digital
+    Relação entre hardware e software
+    Papel dos sistemas de numeração
+    Fundamentação da computação moderna
+    Integração dos conceitos estudados
+
+ 31.2 Preparação para os Próximos Estudos — [V]
+
+  31.2.1 Matemática Aplicada à Computação — [V]
+    Álgebra Booleana
+    Lógica Digital
+    Sistemas Lógicos
+
+  31.2.2 Arquitetura e Organização de Computadores — [V]
+    Circuitos Lógicos
+    Registradores
+    Barramentos
+    Memórias
+    Processadores
+    Unidade Lógica e Aritmética (ULA)
+    Arquitetura do Conjunto de Instruções (ISA)
+
+  31.2.3 Desenvolvimento de Software — [V]
+    Linguagens de Programação
+    Estruturas de Dados
+    Sistemas Operacionais
+    Compiladores
+    Banco de Dados
+
+ 31.3 Encerramento — [V]
+    Compreensão dos fundamentos da representação da informação
+    Compreensão dos sistemas de numeração utilizados pelos computadores
+    Capacidade de interpretar diferentes formas de representação de dados
+    Base para o estudo aprofundado da Arquitetura e Organização de Computadores
+    Fundamentação para os demais tópicos da Ciência da Computação
