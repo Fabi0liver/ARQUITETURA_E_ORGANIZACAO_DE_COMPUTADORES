@@ -1,0 +1,1024 @@
+                          Álgebra Booleana e Circuitos Lógicos
+
+
+Objetivo: Estudar os fundamentos da Álgebra Booleana e dos Circuitos Lógicos aplicados à Arquitetura e Organização de Computadores, compreendendo os princípios da lógica digital, a representação de funções booleanas, os métodos de simplificação, os blocos fundamentais da eletrônica digital, os circuitos combinacionais e sequenciais, suas técnicas de projeto e suas aplicações como base para o estudo aprofundado de processadores, memórias, barramentos, sistemas digitais e demais componentes da Arquitetura de Computadores.
+
+
+A classificação abaixo indica a profundidade recomendada para cada grande tópico da lista.
+
+[P] Profundidade — estudar mecanismos, estruturas, funcionamento interno e relações entre componentes.
+[I] Intermediário — compreender bem o funcionamento e as relações principais, sem precisar dominar todos os
+   detalhes de implementação.
+[V] Visão geral — saber o que é, para que serve e como se relaciona com os registradores.
+
+
+
+PARTE 1 — FUNDAMENTOS DA ÁLGEBRA BOOLEANA E DA LÓGICA DIGITAL
+
+
+1. Introdução à Álgebra Booleana e aos Circuitos Lógicos — [P]
+
+ 1.1 Conceitos Fundamentais — [P]
+	O que é Álgebra Booleana
+	O que são Circuitos Lógicos
+	O que é Lógica Digital
+	Sistema Digital
+	Processamento Digital da Informação
+	Representação lógica da informação
+	Importância da lógica digital na computação
+
+ 1.2 Objetivos da Álgebra Booleana — [P]
+	Representação de problemas lógicos
+	Modelagem matemática da lógica
+	Base para o projeto de circuitos digitais
+	Base para a implementação de hardware
+	Base para a Arquitetura e Organização de Computadores
+
+ 1.3 Papel dos Circuitos Lógicos — [I]
+	Implementação física da lógica
+	Base para os sistemas digitais
+	Base para processadores
+	Base para memórias digitais
+	Base para sistemas embarcados
+	Integração entre lógica e hardware
+
+
+
+2. Evolução da Lógica Digital — [V]
+
+ 2.1 Origem da Álgebra Booleana — [V]
+	George Boole
+	Lógica matemática
+	Álgebra das proposições
+	Evolução da lógica simbólica
+
+ 2.2 Evolução da Eletrônica Digital — [V]
+	Relés eletromecânicos
+	Válvulas eletrônicas
+	Transistores
+	Circuitos Integrados
+	Integração em larga escala
+
+ 2.3 Aplicação da Álgebra Booleana aos Computadores — [V]
+	Claude Shannon
+	Álgebra Booleana aplicada aos circuitos
+	Nascimento da lógica digital
+	Evolução dos computadores digitais
+
+
+
+3. Fundamentos da Representação Digital — [P]
+
+ 3.1 Informação Digital — [P]
+	Sinais analógicos e digitais
+	Representação binária
+	Estados lógicos
+	Níveis lógicos
+	Representação física dos bits
+
+ 3.2 Sistemas de Numeração (Visão Geral) — [I]
+	Sistema Binário
+	Sistema Decimal
+	Sistema Octal
+	Sistema Hexadecimal
+	Conversões entre bases
+	Relação entre bases numéricas e lógica digital
+
+ 3.3 Representação Binária dos Dados — [I]
+	Bits
+	Nibbles
+	Bytes
+	Palavras (Word)
+	Representação de números inteiros
+	Representação de caracteres (visão geral)
+
+
+
+4. Fundamentos da Lógica Matemática — [P]
+
+ 4.1 Conceitos Fundamentais — [P]
+	Lógica proposicional
+	Proposição
+	Valor lógico
+	Variáveis booleanas
+	Constantes booleanas
+
+ 4.2 Operadores Lógicos Fundamentais — [P]
+	Conjunção
+	Disjunção
+	Negação
+	Precedência dos operadores
+	Avaliação de expressões
+
+ 4.3 Representação das Expressões Lógicas — [P]
+	Expressões booleanas
+	Tabelas-verdade
+	Interpretação das funções booleanas
+	Equivalência lógica
+	Funções de múltiplas variáveis
+
+
+
+5. Estrutura da Álgebra Booleana — [P]
+
+ 5.1 Elementos Fundamentais — [P]
+	Sistema Booleano
+	Domínio Booleano
+	Operações Booleanas
+	Princípio da dualidade
+	Funções booleanas
+
+ 5.2 Axiomas e Postulados — [P]
+	Axiomas da Álgebra Booleana
+	Postulados de Huntington
+	Consistência algébrica
+	Universalidade da álgebra
+
+ 5.3 Relação entre Álgebra Booleana e Circuitos Lógicos — [P]
+	Expressões booleanas
+	Funções lógicas
+	Implementação em hardware
+	Representação por portas lógicas
+	Modelagem de circuitos digitais
+
+
+
+PARTE 2 — OPERAÇÕES BOOLEANAS, PROPRIEDADES E SIMPLIFICAÇÃO LÓGICA
+
+
+6. Operadores Booleanos — [P]
+
+ 6.1 Operadores Fundamentais — [P]
+	AND (Conjunção)
+	OR (Disjunção)
+	NOT (Negação)
+	Representação simbólica
+	Representação algébrica
+	Representação por tabela-verdade
+
+ 6.2 Operadores Derivados — [P]
+	NAND
+	NOR
+	XOR (OU Exclusivo)
+	XNOR (Equivalência)
+	Complementação lógica
+	Combinação de operadores
+
+ 6.3 Operadores Universais — [P]
+	NAND como porta universal
+	NOR como porta universal
+	Construção de funções utilizando NAND
+	Construção de funções utilizando NOR
+	Equivalência funcional entre portas
+	Universalidade funcional
+
+
+
+7. Leis e Propriedades da Álgebra Booleana — [P]
+
+ 7.1 Leis Fundamentais — [P]
+	Lei da Identidade
+	Lei da Dominação (Anulação)
+	Lei da Idempotência
+	Lei do Complemento
+	Lei da Involução
+	Lei da Dupla Negação
+
+ 7.2 Leis Operacionais — [P]
+	Lei Comutativa
+	Lei Associativa
+	Lei Distributiva
+	Lei da Absorção
+	Lei do Consenso
+	Princípio da Dualidade
+
+ 7.3 Leis de De Morgan — [P]
+	Primeira Lei de De Morgan
+	Segunda Lei de De Morgan
+	Aplicação em expressões booleanas
+	Aplicação em circuitos digitais
+	Conversão entre funções equivalentes
+
+
+
+8. Funções Booleanas — [P]
+
+ 8.1 Conceitos Fundamentais — [P]
+	Função booleana
+	Variáveis de entrada
+	Saídas lógicas
+	Domínio booleano
+	Imagem da função
+	Representação funcional
+
+ 8.2 Representações das Funções Booleanas — [P]
+	Expressão booleana
+	Tabela-verdade
+	Diagrama lógico
+	Implementação por portas
+	Forma algébrica
+
+ 8.3 Classificação das Funções Booleanas — [I]
+	Funções constantes
+	Funções identidade
+	Funções complementares
+	Funções combinacionais
+	Funções equivalentes
+
+
+
+9. Formas Canônicas e Formas Padrão — [P]
+
+ 9.1 Mintermos e Maxtermos — [P]
+	Mintermos
+	Maxtermos
+	Representação binária
+	Construção das expressões
+	Correspondência com tabelas-verdade
+
+ 9.2 Soma de Produtos (SOP) — [P]
+	Forma canônica SOP
+	Forma padrão SOP
+	Construção da expressão
+	Interpretação lógica
+
+ 9.3 Produto de Somas (POS) — [P]
+	Forma canônica POS
+	Forma padrão POS
+	Construção da expressão
+	Interpretação lógica
+
+ 9.4 Conversões entre Representações — [I]
+	Conversão entre SOP e POS
+	Conversão entre tabela-verdade e expressão
+	Conversão entre expressão e circuito
+	Equivalência entre representações
+
+
+
+10. Simplificação de Expressões Booleanas — [P]
+
+ 10.1 Simplificação Algébrica — [P]
+	Aplicação das leis booleanas
+	Eliminação de redundâncias
+	Fatoração booleana
+	Redução de expressões
+	Expressões equivalentes
+
+ 10.2 Objetivos da Simplificação — [P]
+	Redução do número de portas
+	Redução da complexidade lógica
+	Redução do atraso de propagação
+	Redução do consumo de energia
+	Otimização de circuitos
+
+ 10.3 Validação das Expressões Simplificadas — [I]
+	Equivalência lógica
+	Comparação por tabela-verdade
+	Verificação funcional
+	Consistência algébrica
+
+
+
+11. Métodos de Minimização Lógica — [P]
+
+ 11.1 Método Algébrico — [P]
+	Simplificação por propriedades
+	Aplicação das leis booleanas
+	Fatoração
+	Obtenção da expressão mínima
+
+ 11.2 Mapas de Karnaugh — [P]
+	Objetivos
+	Mapas de duas variáveis
+	Mapas de três variáveis
+	Mapas de quatro variáveis
+	Mapas de cinco variáveis (visão geral)
+	Adjacência
+	Agrupamentos
+	Don't Care Conditions
+	Obtenção da expressão mínima
+
+ 11.3 Método de Quine-McCluskey — [I]
+	Objetivos
+	Implicantes
+	Implicantes primos
+	Implicantes essenciais
+	Tabela de cobertura
+	Minimização sistemática
+
+ 11.4 Comparação entre os Métodos de Minimização — [I]
+	Método algébrico × Karnaugh
+	Karnaugh × Quine-McCluskey
+	Vantagens
+	Limitações
+	Contextos de utilização
+
+
+
+PARTE 3 — PORTAS LÓGICAS E IMPLEMENTAÇÃO DOS CIRCUITOS DIGITAIS
+
+
+12. Portas Lógicas — [P]
+
+ 12.1 Fundamentos das Portas Lógicas — [P]
+	O que são Portas Lógicas
+	Função das Portas Lógicas
+	Implementação física da lógica
+	Representação simbólica
+	Representação por expressão booleana
+	Representação por tabela-verdade
+	Relação entre Álgebra Booleana e Portas Lógicas
+
+ 12.2 Portas Lógicas Fundamentais — [P]
+	Porta AND
+	Porta OR
+	Porta NOT
+	Características funcionais
+	Representação gráfica
+	Implementação das funções básicas
+
+ 12.3 Portas Lógicas Derivadas — [P]
+	Porta NAND
+	Porta NOR
+	Porta XOR
+	Porta XNOR
+	Características funcionais
+	Representação gráfica
+
+ 12.4 Representação das Portas Lógicas — [I]
+	Símbolos ANSI
+	Símbolos IEC
+	Diagramas lógicos
+	Padronização da representação
+	Leitura de esquemas digitais
+
+
+
+13. Implementação de Funções Lógicas — [P]
+
+ 13.1 Síntese de Circuitos Lógicos — [P]
+	Implementação a partir da expressão booleana
+	Implementação a partir da tabela-verdade
+	Implementação a partir da forma SOP
+	Implementação a partir da forma POS
+	Construção de diagramas lógicos
+
+ 13.2 Implementação com Portas Fundamentais — [P]
+	Utilização de AND
+	Utilização de OR
+	Utilização de NOT
+	Composição de circuitos
+	Interligação entre portas
+
+ 13.3 Implementação com Portas Universais — [P]
+	Implementação utilizando apenas NAND
+	Implementação utilizando apenas NOR
+	Conversão entre diferentes implementações
+	Equivalência funcional
+	Otimização da implementação
+
+ 13.4 Lógica em Múltiplos Níveis — [I]
+	Circuitos de um nível
+	Circuitos multinível
+	Compartilhamento de expressões
+	Redução da complexidade
+	Impacto no desempenho
+
+
+
+14. Características Elétricas da Lógica Digital — [P]
+
+ 14.1 Níveis Lógicos — [P]
+	Nível lógico alto
+	Nível lógico baixo
+	Lógica positiva
+	Lógica negativa
+	Interpretação dos níveis de tensão
+
+ 14.2 Características de Entrada e Saída — [P]
+	Fan-in
+	Fan-out
+	Capacidade de acionamento
+	Compatibilidade entre dispositivos
+	Interligação de portas
+
+ 14.3 Temporização dos Circuitos Lógicos — [P]
+	Tempo de propagação
+	Atraso de propagação
+	Tempo de subida
+	Tempo de descida
+	Tempo de estabilização
+	Acumulação de atrasos
+
+ 14.4 Confiabilidade Elétrica — [I]
+	Margem de ruído
+	Imunidade ao ruído
+	Consumo de potência
+	Dissipação térmica
+	Compromisso entre velocidade e consumo
+
+
+
+15. Famílias Lógicas — [I]
+
+ 15.1 Conceitos Fundamentais — [I]
+	O que são famílias lógicas
+	Evolução tecnológica
+	Características gerais
+	Compatibilidade entre famílias
+
+ 15.2 Família TTL — [I]
+	Princípios de funcionamento
+	Características elétricas
+	Vantagens
+	Limitações
+	Aplicações
+
+ 15.3 Família CMOS — [P]
+	Princípios de funcionamento
+	Características elétricas
+	Consumo de energia
+	Vantagens
+	Limitações
+	Aplicações
+
+ 15.4 Comparação entre TTL e CMOS — [I]
+	Velocidade
+	Consumo de potência
+	Margem de ruído
+	Densidade de integração
+	Aplicações típicas
+
+
+
+16. Circuitos Integrados Digitais — [I]
+
+ 16.1 Conceitos Fundamentais — [I]
+	Circuito Integrado (CI)
+	Integração de portas lógicas
+	Encapsulamento
+	Padronização
+
+ 16.2 Escalas de Integração — [I]
+	SSI (Small Scale Integration)
+	MSI (Medium Scale Integration)
+	LSI (Large Scale Integration)
+	VLSI (Very Large Scale Integration)
+	ULSI (Ultra Large Scale Integration)
+
+ 16.3 Organização dos Circuitos Integrados Digitais — [I]
+	Portas discretas
+	Blocos funcionais
+	Circuitos dedicados
+	Circuitos programáveis (visão geral)
+
+ 16.4 Importância para a Arquitetura de Computadores — [V]
+	Construção de processadores
+	Construção de memórias
+	Construção de controladores
+	Base dos sistemas digitais modernos
+
+
+
+PARTE 4 — CIRCUITOS COMBINACIONAIS E PROJETO LÓGICO
+
+
+17. Fundamentos dos Circuitos Combinacionais — [P]
+
+ 17.1 Conceitos Fundamentais — [P]
+	O que são Circuitos Combinacionais
+	Características dos Circuitos Combinacionais
+	Ausência de memória
+	Dependência exclusiva das entradas
+	Modelo de funcionamento
+
+ 17.2 Representação dos Circuitos Combinacionais — [P]
+	Tabela-verdade
+	Expressões booleanas
+	Diagramas lógicos
+	Diagramas em blocos
+	Especificação funcional
+
+ 17.3 Fluxo de Projeto — [P]
+	Especificação do problema
+	Modelagem lógica
+	Obtenção das funções booleanas
+	Simplificação
+	Implementação
+	Validação funcional
+
+
+
+18. Análise e Síntese de Circuitos Combinacionais — [P]
+
+ 18.1 Análise de Circuitos — [P]
+	Leitura do circuito
+	Identificação das portas
+	Determinação das funções
+	Construção da tabela-verdade
+	Verificação do funcionamento
+
+ 18.2 Síntese de Circuitos — [P]
+	Construção a partir da tabela-verdade
+	Construção a partir das expressões booleanas
+	Construção utilizando SOP
+	Construção utilizando POS
+	Conversão para diagramas lógicos
+
+ 18.3 Otimização do Projeto — [P]
+	Redução do número de portas
+	Redução do número de níveis lógicos
+	Compartilhamento de expressões
+	Redução do atraso de propagação
+	Balanceamento do circuito
+
+
+
+19. Blocos Combinacionais Fundamentais — [P]
+
+ 19.1 Codificadores — [P]
+	Codificador Binário
+	Codificador Decimal
+	Codificador Prioritário
+	Princípio de funcionamento
+	Aplicações
+
+ 19.2 Decodificadores — [P]
+	Decodificador Binário
+	Decodificador BCD
+	Decodificador para Displays
+	Princípio de funcionamento
+	Aplicações
+
+ 19.3 Multiplexadores e Demultiplexadores — [P]
+	Multiplexador (MUX)
+	Demultiplexador (DEMUX)
+	Linhas de seleção
+	Expansão de entradas
+	Aplicações em sistemas digitais
+
+
+
+20. Circuitos de Comparação e Conversão — [P]
+
+ 20.1 Comparadores Digitais — [P]
+	Comparador de igualdade
+	Comparador de magnitude
+	Comparação entre palavras binárias
+	Saídas de comparação
+	Aplicações
+
+ 20.2 Conversores de Código — [I]
+	Conversão Binário ↔ Gray
+	Conversão Binário ↔ BCD
+	Conversores de códigos digitais
+	Aplicações
+
+ 20.3 Geração e Manipulação de Dados Digitais — [I]
+	Geração de sinais lógicos
+	Seleção de dados
+	Roteamento de informações
+	Transformação de códigos
+
+
+
+21. Circuitos Aritméticos Combinacionais — [P]
+
+ 21.1 Somadores Binários — [P]
+	Half Adder
+	Full Adder
+	Somadores Paralelos
+	Ripple Carry Adder
+	Carry Lookahead Adder (Introdução)
+
+ 21.2 Subtratores Binários — [P]
+	Half Subtractor
+	Full Subtractor
+	Subtração utilizando complemento de dois
+	Implementação lógica
+
+ 21.3 Outros Circuitos Aritméticos — [I]
+	Incrementadores
+	Decrementadores
+	Multiplicadores Binários (Introdução)
+	Divisores Binários (Visão Geral)
+
+
+
+22. Memórias Combinacionais e Implementações Lógicas — [I]
+
+ 22.1 ROM como Circuito Combinacional — [I]
+	ROM
+	PROM
+	EPROM
+	EEPROM
+	Flash ROM (visão geral)
+
+ 22.2 Implementação de Funções Lógicas em ROM — [I]
+	Tabelas de consulta (Lookup Tables)
+	Implementação direta de funções
+	Vantagens
+	Limitações
+
+ 22.3 Lógica Cabeada e Lógica Programável — [I]
+	Lógica fixa
+	Lógica programável
+	Comparação geral
+	Aplicações
+
+
+
+23. Verificação e Otimização dos Circuitos Combinacionais — [P]
+
+ 23.1 Verificação Funcional — [P]
+	Comparação com a especificação
+	Validação por tabela-verdade
+	Testes funcionais
+	Correção lógica
+
+ 23.2 Otimização Estrutural — [P]
+	Redução da quantidade de portas
+	Redução dos níveis lógicos
+	Compartilhamento de sinais
+	Minimização dos atrasos
+
+ 23.3 Limitações dos Circuitos Combinacionais — [I]
+	Ausência de armazenamento
+	Dependência instantânea das entradas
+	Escalabilidade
+	Complexidade crescente
+	Necessidade dos circuitos sequenciais
+
+
+
+PARTE 5 — CIRCUITOS SEQUENCIAIS E SISTEMAS LÓGICOS COM MEMÓRIA
+
+
+24. Fundamentos dos Circuitos Sequenciais — [P]
+
+ 24.1 Conceitos Fundamentais — [P]
+	O que são Circuitos Sequenciais
+	Diferença entre Circuitos Combinacionais e Sequenciais
+	Dependência do estado interno
+	Memória do circuito
+	Realimentação (Feedback)
+	Modelo de funcionamento
+
+ 24.2 Classificação dos Circuitos Sequenciais — [P]
+	Circuitos Síncronos
+	Circuitos Assíncronos
+	Circuitos Sequenciais Simples
+	Circuitos Sequenciais Complexos
+	Características gerais
+
+ 24.3 Elementos Fundamentais — [P]
+	Entradas
+	Saídas
+	Estado
+	Transições de estado
+	Memória
+	Controle temporal
+
+
+
+25. Temporização em Sistemas Digitais — [P]
+
+ 25.1 Clock — [P]
+	Conceito de Clock
+	Sinal de Clock
+	Clock Global
+	Clock Local
+	Clock Enable
+	Frequência de Clock
+	Período de Clock
+	Ciclo de Clock
+	Duty Cycle
+
+ 25.2 Bordas e Sincronização — [P]
+	Borda de Subida
+	Borda de Descida
+	Dispositivos sensíveis à borda
+	Dispositivos sensíveis ao nível
+	Sincronização dos circuitos
+
+ 25.3 Parâmetros Temporais — [P]
+	Setup Time
+	Hold Time
+	Clock-to-Q
+	Tempo de Propagação
+	Atraso de Propagação
+	Skew de Clock (Introdução)
+	Jitter de Clock (Visão Geral)
+
+ 25.4 Problemas de Temporização — [I]
+	Metastabilidade
+	Condições de corrida (Race Conditions)
+	Problemas de sincronização
+	Falhas temporais
+	Boas práticas de temporização
+
+
+
+26. Elementos de Memória — [P]
+
+ 26.1 Latches — [P]
+	Latch SR
+	Latch D
+	Funcionamento
+	Tabela de funcionamento
+	Aplicações
+
+ 26.2 Flip-Flops — [P]
+	Flip-Flop SR
+	Flip-Flop JK
+	Flip-Flop D
+	Flip-Flop T
+	Master-Slave
+	Funcionamento
+	Tabelas características
+
+ 26.3 Comparação entre Latches e Flip-Flops — [P]
+	Sensibilidade ao nível
+	Sensibilidade à borda
+	Velocidade
+	Aplicações
+	Vantagens
+	Limitações
+
+
+
+27. Registradores e Contadores — [P]
+
+ 27.1 Registradores — [P]
+	Conceito
+	Registradores Paralelos
+	Registradores Seriais
+	Registradores de Deslocamento
+	Shift Registers
+	Registradores Universais
+	Aplicações
+
+ 27.2 Contadores Digitais — [P]
+	Contadores Assíncronos
+	Contadores Síncronos
+	Contadores Crescentes
+	Contadores Decrescentes
+	Contadores Bidirecionais
+	Contadores Módulo-N
+
+ 27.3 Contadores Especiais — [I]
+	Ring Counter
+	Johnson Counter
+	Contadores Gray
+	Aplicações
+	Comparação entre arquiteturas
+
+
+
+28. Máquinas de Estados Finitos (FSM) — [P]
+
+ 28.1 Conceitos Fundamentais — [P]
+	Estado
+	Evento
+	Transição
+	Estado Inicial
+	Estado Final
+	Sequência de estados
+
+ 28.2 Modelos de FSM — [P]
+	Máquina de Moore
+	Máquina de Mealy
+	Diferenças entre Moore e Mealy
+	Vantagens
+	Aplicações
+
+ 28.3 Projeto de FSM — [P]
+	Diagrama de Estados
+	Tabela de Estados
+	Codificação Binária
+	Codificação Gray
+	Codificação One-Hot
+	Implementação utilizando Flip-Flops
+
+
+
+29. Confiabilidade dos Circuitos Sequenciais — [I]
+
+ 29.1 Hazards — [I]
+	Hazards Estáticos
+	Hazards Dinâmicos
+	Hazards Funcionais
+	Causas
+	Correção
+
+ 29.2 Glitches — [I]
+	Origem dos Glitches
+	Efeitos dos Glitches
+	Detecção
+	Redução dos Glitches
+
+ 29.3 Confiabilidade Temporal — [I]
+	Sincronização correta
+	Robustez do circuito
+	Tolerância a falhas temporais
+	Boas práticas de projeto
+	Validação funcional
+
+
+
+PARTE 6 — LÓGICA PROGRAMÁVEL, APLICAÇÕES E INTEGRAÇÃO DOS CONCEITOS
+
+
+30. Lógica Programável — [I]
+
+ 30.1 Fundamentos da Lógica Programável — [I]
+	O que é Lógica Programável
+	Evolução da lógica fixa para a lógica programável
+	Vantagens da lógica programável
+	Limitações
+	Áreas de aplicação
+
+ 30.2 Dispositivos Lógicos Programáveis — [I]
+	PLA (Programmable Logic Array)
+	PAL (Programmable Array Logic)
+	GAL (Generic Array Logic)
+	CPLD (Complex Programmable Logic Device)
+	FPGA (Field Programmable Gate Array)
+
+ 30.3 Arquitetura Geral dos Dispositivos Programáveis — [I]
+	Blocos lógicos
+	Interconexões programáveis
+	Blocos de Entrada e Saída (I/O)
+	Recursos internos
+	Configuração dos dispositivos
+
+ 30.4 Aplicações na Arquitetura de Computadores — [V]
+	Prototipagem de hardware
+	Desenvolvimento de processadores
+	Controladores digitais
+	Sistemas embarcados
+	Aceleração de hardware
+
+
+
+31. Projeto Digital e Ferramentas de Desenvolvimento — [I]
+
+ 31.1 Fluxo de Projeto Digital — [I]
+	Especificação
+	Modelagem
+	Descrição do circuito
+	Simulação
+	Síntese lógica
+	Implementação
+	Validação
+	Testes
+
+ 31.2 Linguagens de Descrição de Hardware — [I]
+	Conceito de HDL
+	VHDL
+	Verilog
+	SystemVerilog (Visão Geral)
+	Relação entre HDL e Circuitos Lógicos
+
+ 31.3 Ferramentas de Desenvolvimento — [V]
+	Logisim
+	Logisim Evolution
+	Quartus Prime
+	Vivado
+	Multisim
+	Simuladores digitais
+
+ 31.4 Verificação e Depuração — [I]
+	Simulação funcional
+	Simulação temporal
+	Análise de formas de onda
+	Testes em hardware
+	Depuração de circuitos
+
+
+
+32. Aplicações da Álgebra Booleana e dos Circuitos Lógicos — [I]
+
+ 32.1 Aplicações na Arquitetura e Organização de Computadores — [I]
+	Projeto de Processadores
+	Projeto da Unidade Lógica e Aritmética (ULA)
+	Projeto da Unidade de Controle
+	Projeto de Registradores
+	Projeto de Memórias Digitais
+	Projeto de Barramentos
+	Projeto de Interfaces Digitais
+
+ 32.2 Aplicações em Sistemas Digitais — [I]
+	Microcontroladores
+	Sistemas Embarcados
+	Computadores
+	Controladores Digitais
+	Dispositivos Programáveis
+
+ 32.3 Outras Aplicações — [V]
+	Telecomunicações
+	Automação Industrial
+	Robótica
+	Internet das Coisas (IoT)
+	Eletrônica de Consumo
+	Equipamentos Médicos
+	Sistemas Automotivos
+
+
+
+33. Integração dos Conceitos Fundamentais — [P]
+
+ 33.1 Integração da Álgebra Booleana com os Circuitos Lógicos — [P]
+	Expressões Booleanas
+	Funções Lógicas
+	Portas Lógicas
+	Circuitos Combinacionais
+	Circuitos Sequenciais
+	Projeto Digital
+
+ 33.2 Fluxo Completo do Projeto Lógico — [P]
+	Especificação do problema
+	Modelagem lógica
+	Simplificação
+	Implementação
+	Verificação
+	Otimização
+	Validação
+
+ 33.3 Papel da Lógica Digital na Arquitetura de Computadores — [P]
+	Base do hardware digital
+	Base do processamento digital
+	Base para componentes arquiteturais
+	Integração entre hardware e software
+	Base para estudos avançados
+
+
+
+34. Revisão Geral — [I]
+
+ 34.1 Fundamentos — [I]
+	Álgebra Booleana
+	Lógica Matemática
+	Representação Digital
+	Funções Booleanas
+
+ 34.2 Implementação da Lógica — [I]
+	Portas Lógicas
+	Famílias Lógicas
+	Circuitos Integrados
+	Implementação de funções
+
+ 34.3 Circuitos Digitais — [I]
+	Circuitos Combinacionais
+	Circuitos Sequenciais
+	Elementos de Memória
+	Máquinas de Estados
+
+ 34.4 Projeto Digital — [I]
+	Simplificação
+	Minimização
+	Lógica Programável
+	Ferramentas de Desenvolvimento
+	Aplicações
+
+
+
+35. Conclusão — [V]
+
+ 35.1 Visão Integrada da Álgebra Booleana e dos Circuitos Lógicos — [V]
+	Integração entre lógica matemática e hardware
+	Importância da representação booleana
+	Importância dos circuitos digitais
+	Visão geral dos conceitos estudados
+
+ 35.2 Preparação para os Próximos Estudos — [V]
+
+  35.2.1 Arquitetura e Organização de Computadores — [V]
+	Processadores
+	Unidade Lógica e Aritmética (ULA)
+	Unidade de Controle
+	Registradores
+	Memórias
+	Barramentos
+	Entrada e Saída
+
+  35.2.2 Eletrônica Digital — [V]
+	Projeto Digital
+	Circuitos Integrados
+	Lógica Programável
+	Sistemas Digitais
+	Hardware Reconfigurável
+
+  35.2.3 Desenvolvimento de Hardware — [V]
+	VHDL
+	Verilog
+	FPGA
+	CPLD
+	Prototipagem Digital
+
+ 35.3 Encerramento — [V]
+	Compreensão dos fundamentos da Álgebra Booleana
+	Compreensão dos Circuitos Lógicos
+	Base para o estudo da Arquitetura e Organização de Computadores
+	Base para disciplinas de Eletrônica Digital, Microarquitetura e Projeto de Hardware
