@@ -1,0 +1,142 @@
+                          Álgebra Booleana e Circuitos Lógicos
+
+
+Objetivo: Estudar os fundamentos da Álgebra Booleana e dos Circuitos Lógicos aplicados à Arquitetura e Organização de Computadores, compreendendo os princípios da lógica digital, a representação de funções booleanas, os métodos de simplificação, os blocos fundamentais da eletrônica digital, os circuitos combinacionais e sequenciais, suas técnicas de projeto e suas aplicações como base para o estudo aprofundado de processadores, memórias, barramentos, sistemas digitais e demais componentes da Arquitetura de Computadores.
+
+
+A classificação abaixo indica a profundidade recomendada para cada grande tópico da lista.
+
+[P] Profundidade — estudar mecanismos, estruturas, funcionamento interno e relações entre componentes.
+[I] Intermediário — compreender bem o funcionamento e as relações principais, sem precisar dominar todos os
+   detalhes de implementação.
+[V] Visão geral — saber o que é, para que serve e como se relaciona com os registradores.
+
+
+
+PARTE 1 — FUNDAMENTOS DA ÁLGEBRA BOOLEANA E DA LÓGICA DIGITAL
+
+
+1. Introdução à Álgebra Booleana e aos Circuitos Lógicos — [P]
+
+ 1.1 Conceitos Fundamentais — [P]
+	O que é Álgebra Booleana
+	O que são Circuitos Lógicos
+	O que é Lógica Digital
+	Sistema Digital
+	Processamento Digital da Informação
+	Representação lógica da informação
+	Importância da lógica digital na computação
+
+ 1.2 Objetivos da Álgebra Booleana — [P]
+	Representação de problemas lógicos
+	Modelagem matemática da lógica
+	Base para o projeto de circuitos digitais
+	Base para a implementação de hardware
+	Base para a Arquitetura e Organização de Computadores
+
+ 1.3 Papel dos Circuitos Lógicos — [I]
+	Implementação física da lógica
+	Base para os sistemas digitais
+	Base para processadores
+	Base para memórias digitais
+	Base para sistemas embarcados
+	Integração entre lógica e hardware
+
+
+
+2. Evolução da Lógica Digital — [V]
+
+ 2.1 Origem da Álgebra Booleana — [V]
+	George Boole
+	Lógica matemática
+	Álgebra das proposições
+	Evolução da lógica simbólica
+
+ 2.2 Evolução da Eletrônica Digital — [V]
+	Relés eletromecânicos
+	Válvulas eletrônicas
+	Transistores
+	Circuitos Integrados
+	Integração em larga escala
+
+ 2.3 Aplicação da Álgebra Booleana aos Computadores — [V]
+	Claude Shannon
+	Álgebra Booleana aplicada aos circuitos
+	Nascimento da lógica digital
+	Evolução dos computadores digitais
+
+
+
+3. Fundamentos da Representação Digital — [P]
+
+ 3.1 Informação Digital — [P]
+	Sinais analógicos e digitais
+	Representação binária
+	Estados lógicos
+	Níveis lógicos
+	Representação física dos bits
+
+ 3.2 Sistemas de Numeração (Visão Geral) — [I]
+	Sistema Binário
+	Sistema Decimal
+	Sistema Octal
+	Sistema Hexadecimal
+	Conversões entre bases
+	Relação entre bases numéricas e lógica digital
+
+ 3.3 Representação Binária dos Dados — [I]
+	Bits
+	Nibbles
+	Bytes
+	Palavras (Word)
+	Representação de números inteiros
+	Representação de caracteres (visão geral)
+
+
+
+4. Fundamentos da Lógica Matemática — [P]
+
+ 4.1 Conceitos Fundamentais — [P]
+	Lógica proposicional
+	Proposição
+	Valor lógico
+	Variáveis booleanas
+	Constantes booleanas
+
+ 4.2 Operadores Lógicos Fundamentais — [P]
+	Conjunção
+	Disjunção
+	Negação
+	Precedência dos operadores
+	Avaliação de expressões
+
+ 4.3 Representação das Expressões Lógicas — [P]
+	Expressões booleanas
+	Tabelas-verdade
+	Interpretação das funções booleanas
+	Equivalência lógica
+	Funções de múltiplas variáveis
+
+
+
+5. Estrutura da Álgebra Booleana — [P]
+
+ 5.1 Elementos Fundamentais — [P]
+	Sistema Booleano
+	Domínio Booleano
+	Operações Booleanas
+	Princípio da dualidade
+	Funções booleanas
+
+ 5.2 Axiomas e Postulados — [P]
+	Axiomas da Álgebra Booleana
+	Postulados de Huntington
+	Consistência algébrica
+	Universalidade da álgebra
+
+ 5.3 Relação entre Álgebra Booleana e Circuitos Lógicos — [P]
+	Expressões booleanas
+	Funções lógicas
+	Implementação em hardware
+	Representação por portas lógicas
+	Modelagem de circuitos digitais
