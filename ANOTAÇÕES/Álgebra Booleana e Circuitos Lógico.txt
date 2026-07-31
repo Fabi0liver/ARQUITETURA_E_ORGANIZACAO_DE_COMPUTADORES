@@ -481,4 +481,544 @@ PARTE 3 — PORTAS LÓGICAS E IMPLEMENTAÇÃO DOS CIRCUITOS DIGITAIS
 
 
 
+PARTE 4 — CIRCUITOS COMBINACIONAIS E PROJETO LÓGICO
 
+
+17. Fundamentos dos Circuitos Combinacionais — [P]
+
+ 17.1 Conceitos Fundamentais — [P]
+	O que são Circuitos Combinacionais
+	Características dos Circuitos Combinacionais
+	Ausência de memória
+	Dependência exclusiva das entradas
+	Modelo de funcionamento
+
+ 17.2 Representação dos Circuitos Combinacionais — [P]
+	Tabela-verdade
+	Expressões booleanas
+	Diagramas lógicos
+	Diagramas em blocos
+	Especificação funcional
+
+ 17.3 Fluxo de Projeto — [P]
+	Especificação do problema
+	Modelagem lógica
+	Obtenção das funções booleanas
+	Simplificação
+	Implementação
+	Validação funcional
+
+
+
+18. Análise e Síntese de Circuitos Combinacionais — [P]
+
+ 18.1 Análise de Circuitos — [P]
+	Leitura do circuito
+	Identificação das portas
+	Determinação das funções
+	Construção da tabela-verdade
+	Verificação do funcionamento
+
+ 18.2 Síntese de Circuitos — [P]
+	Construção a partir da tabela-verdade
+	Construção a partir das expressões booleanas
+	Construção utilizando SOP
+	Construção utilizando POS
+	Conversão para diagramas lógicos
+
+ 18.3 Otimização do Projeto — [P]
+	Redução do número de portas
+	Redução do número de níveis lógicos
+	Compartilhamento de expressões
+	Redução do atraso de propagação
+	Balanceamento do circuito
+
+
+
+19. Blocos Combinacionais Fundamentais — [P]
+
+ 19.1 Codificadores — [P]
+	Codificador Binário
+	Codificador Decimal
+	Codificador Prioritário
+	Princípio de funcionamento
+	Aplicações
+
+ 19.2 Decodificadores — [P]
+	Decodificador Binário
+	Decodificador BCD
+	Decodificador para Displays
+	Princípio de funcionamento
+	Aplicações
+
+ 19.3 Multiplexadores e Demultiplexadores — [P]
+	Multiplexador (MUX)
+	Demultiplexador (DEMUX)
+	Linhas de seleção
+	Expansão de entradas
+	Aplicações em sistemas digitais
+
+
+
+20. Circuitos de Comparação e Conversão — [P]
+
+ 20.1 Comparadores Digitais — [P]
+	Comparador de igualdade
+	Comparador de magnitude
+	Comparação entre palavras binárias
+	Saídas de comparação
+	Aplicações
+
+ 20.2 Conversores de Código — [I]
+	Conversão Binário ↔ Gray
+	Conversão Binário ↔ BCD
+	Conversores de códigos digitais
+	Aplicações
+
+ 20.3 Geração e Manipulação de Dados Digitais — [I]
+	Geração de sinais lógicos
+	Seleção de dados
+	Roteamento de informações
+	Transformação de códigos
+
+
+
+21. Circuitos Aritméticos Combinacionais — [P]
+
+ 21.1 Somadores Binários — [P]
+	Half Adder
+	Full Adder
+	Somadores Paralelos
+	Ripple Carry Adder
+	Carry Lookahead Adder (Introdução)
+
+ 21.2 Subtratores Binários — [P]
+	Half Subtractor
+	Full Subtractor
+	Subtração utilizando complemento de dois
+	Implementação lógica
+
+ 21.3 Outros Circuitos Aritméticos — [I]
+	Incrementadores
+	Decrementadores
+	Multiplicadores Binários (Introdução)
+	Divisores Binários (Visão Geral)
+
+
+
+22. Memórias Combinacionais e Implementações Lógicas — [I]
+
+ 22.1 ROM como Circuito Combinacional — [I]
+	ROM
+	PROM
+	EPROM
+	EEPROM
+	Flash ROM (visão geral)
+
+ 22.2 Implementação de Funções Lógicas em ROM — [I]
+	Tabelas de consulta (Lookup Tables)
+	Implementação direta de funções
+	Vantagens
+	Limitações
+
+ 22.3 Lógica Cabeada e Lógica Programável — [I]
+	Lógica fixa
+	Lógica programável
+	Comparação geral
+	Aplicações
+
+
+
+23. Verificação e Otimização dos Circuitos Combinacionais — [P]
+
+ 23.1 Verificação Funcional — [P]
+	Comparação com a especificação
+	Validação por tabela-verdade
+	Testes funcionais
+	Correção lógica
+
+ 23.2 Otimização Estrutural — [P]
+	Redução da quantidade de portas
+	Redução dos níveis lógicos
+	Compartilhamento de sinais
+	Minimização dos atrasos
+
+ 23.3 Limitações dos Circuitos Combinacionais — [I]
+	Ausência de armazenamento
+	Dependência instantânea das entradas
+	Escalabilidade
+	Complexidade crescente
+	Necessidade dos circuitos sequenciais
+
+
+
+PARTE 5 — CIRCUITOS SEQUENCIAIS E SISTEMAS LÓGICOS COM MEMÓRIA
+
+
+24. Fundamentos dos Circuitos Sequenciais — [P]
+
+ 24.1 Conceitos Fundamentais — [P]
+	O que são Circuitos Sequenciais
+	Diferença entre Circuitos Combinacionais e Sequenciais
+	Dependência do estado interno
+	Memória do circuito
+	Realimentação (Feedback)
+	Modelo de funcionamento
+
+ 24.2 Classificação dos Circuitos Sequenciais — [P]
+	Circuitos Síncronos
+	Circuitos Assíncronos
+	Circuitos Sequenciais Simples
+	Circuitos Sequenciais Complexos
+	Características gerais
+
+ 24.3 Elementos Fundamentais — [P]
+	Entradas
+	Saídas
+	Estado
+	Transições de estado
+	Memória
+	Controle temporal
+
+
+
+25. Temporização em Sistemas Digitais — [P]
+
+ 25.1 Clock — [P]
+	Conceito de Clock
+	Sinal de Clock
+	Clock Global
+	Clock Local
+	Clock Enable
+	Frequência de Clock
+	Período de Clock
+	Ciclo de Clock
+	Duty Cycle
+
+ 25.2 Bordas e Sincronização — [P]
+	Borda de Subida
+	Borda de Descida
+	Dispositivos sensíveis à borda
+	Dispositivos sensíveis ao nível
+	Sincronização dos circuitos
+
+ 25.3 Parâmetros Temporais — [P]
+	Setup Time
+	Hold Time
+	Clock-to-Q
+	Tempo de Propagação
+	Atraso de Propagação
+	Skew de Clock (Introdução)
+	Jitter de Clock (Visão Geral)
+
+ 25.4 Problemas de Temporização — [I]
+	Metastabilidade
+	Condições de corrida (Race Conditions)
+	Problemas de sincronização
+	Falhas temporais
+	Boas práticas de temporização
+
+
+
+26. Elementos de Memória — [P]
+
+ 26.1 Latches — [P]
+	Latch SR
+	Latch D
+	Funcionamento
+	Tabela de funcionamento
+	Aplicações
+
+ 26.2 Flip-Flops — [P]
+	Flip-Flop SR
+	Flip-Flop JK
+	Flip-Flop D
+	Flip-Flop T
+	Master-Slave
+	Funcionamento
+	Tabelas características
+
+ 26.3 Comparação entre Latches e Flip-Flops — [P]
+	Sensibilidade ao nível
+	Sensibilidade à borda
+	Velocidade
+	Aplicações
+	Vantagens
+	Limitações
+
+
+
+27. Registradores e Contadores — [P]
+
+ 27.1 Registradores — [P]
+	Conceito
+	Registradores Paralelos
+	Registradores Seriais
+	Registradores de Deslocamento
+	Shift Registers
+	Registradores Universais
+	Aplicações
+
+ 27.2 Contadores Digitais — [P]
+	Contadores Assíncronos
+	Contadores Síncronos
+	Contadores Crescentes
+	Contadores Decrescentes
+	Contadores Bidirecionais
+	Contadores Módulo-N
+
+ 27.3 Contadores Especiais — [I]
+	Ring Counter
+	Johnson Counter
+	Contadores Gray
+	Aplicações
+	Comparação entre arquiteturas
+
+
+
+28. Máquinas de Estados Finitos (FSM) — [P]
+
+ 28.1 Conceitos Fundamentais — [P]
+	Estado
+	Evento
+	Transição
+	Estado Inicial
+	Estado Final
+	Sequência de estados
+
+ 28.2 Modelos de FSM — [P]
+	Máquina de Moore
+	Máquina de Mealy
+	Diferenças entre Moore e Mealy
+	Vantagens
+	Aplicações
+
+ 28.3 Projeto de FSM — [P]
+	Diagrama de Estados
+	Tabela de Estados
+	Codificação Binária
+	Codificação Gray
+	Codificação One-Hot
+	Implementação utilizando Flip-Flops
+
+
+
+29. Confiabilidade dos Circuitos Sequenciais — [I]
+
+ 29.1 Hazards — [I]
+	Hazards Estáticos
+	Hazards Dinâmicos
+	Hazards Funcionais
+	Causas
+	Correção
+
+ 29.2 Glitches — [I]
+	Origem dos Glitches
+	Efeitos dos Glitches
+	Detecção
+	Redução dos Glitches
+
+ 29.3 Confiabilidade Temporal — [I]
+	Sincronização correta
+	Robustez do circuito
+	Tolerância a falhas temporais
+	Boas práticas de projeto
+	Validação funcional
+
+
+
+PARTE 6 — LÓGICA PROGRAMÁVEL, APLICAÇÕES E INTEGRAÇÃO DOS CONCEITOS
+
+
+30. Lógica Programável — [I]
+
+ 30.1 Fundamentos da Lógica Programável — [I]
+	O que é Lógica Programável
+	Evolução da lógica fixa para a lógica programável
+	Vantagens da lógica programável
+	Limitações
+	Áreas de aplicação
+
+ 30.2 Dispositivos Lógicos Programáveis — [I]
+	PLA (Programmable Logic Array)
+	PAL (Programmable Array Logic)
+	GAL (Generic Array Logic)
+	CPLD (Complex Programmable Logic Device)
+	FPGA (Field Programmable Gate Array)
+
+ 30.3 Arquitetura Geral dos Dispositivos Programáveis — [I]
+	Blocos lógicos
+	Interconexões programáveis
+	Blocos de Entrada e Saída (I/O)
+	Recursos internos
+	Configuração dos dispositivos
+
+ 30.4 Aplicações na Arquitetura de Computadores — [V]
+	Prototipagem de hardware
+	Desenvolvimento de processadores
+	Controladores digitais
+	Sistemas embarcados
+	Aceleração de hardware
+
+
+
+31. Projeto Digital e Ferramentas de Desenvolvimento — [I]
+
+ 31.1 Fluxo de Projeto Digital — [I]
+	Especificação
+	Modelagem
+	Descrição do circuito
+	Simulação
+	Síntese lógica
+	Implementação
+	Validação
+	Testes
+
+ 31.2 Linguagens de Descrição de Hardware — [I]
+	Conceito de HDL
+	VHDL
+	Verilog
+	SystemVerilog (Visão Geral)
+	Relação entre HDL e Circuitos Lógicos
+
+ 31.3 Ferramentas de Desenvolvimento — [V]
+	Logisim
+	Logisim Evolution
+	Quartus Prime
+	Vivado
+	Multisim
+	Simuladores digitais
+
+ 31.4 Verificação e Depuração — [I]
+	Simulação funcional
+	Simulação temporal
+	Análise de formas de onda
+	Testes em hardware
+	Depuração de circuitos
+
+
+
+32. Aplicações da Álgebra Booleana e dos Circuitos Lógicos — [I]
+
+ 32.1 Aplicações na Arquitetura e Organização de Computadores — [I]
+	Projeto de Processadores
+	Projeto da Unidade Lógica e Aritmética (ULA)
+	Projeto da Unidade de Controle
+	Projeto de Registradores
+	Projeto de Memórias Digitais
+	Projeto de Barramentos
+	Projeto de Interfaces Digitais
+
+ 32.2 Aplicações em Sistemas Digitais — [I]
+	Microcontroladores
+	Sistemas Embarcados
+	Computadores
+	Controladores Digitais
+	Dispositivos Programáveis
+
+ 32.3 Outras Aplicações — [V]
+	Telecomunicações
+	Automação Industrial
+	Robótica
+	Internet das Coisas (IoT)
+	Eletrônica de Consumo
+	Equipamentos Médicos
+	Sistemas Automotivos
+
+
+
+33. Integração dos Conceitos Fundamentais — [P]
+
+ 33.1 Integração da Álgebra Booleana com os Circuitos Lógicos — [P]
+	Expressões Booleanas
+	Funções Lógicas
+	Portas Lógicas
+	Circuitos Combinacionais
+	Circuitos Sequenciais
+	Projeto Digital
+
+ 33.2 Fluxo Completo do Projeto Lógico — [P]
+	Especificação do problema
+	Modelagem lógica
+	Simplificação
+	Implementação
+	Verificação
+	Otimização
+	Validação
+
+ 33.3 Papel da Lógica Digital na Arquitetura de Computadores — [P]
+	Base do hardware digital
+	Base do processamento digital
+	Base para componentes arquiteturais
+	Integração entre hardware e software
+	Base para estudos avançados
+
+
+
+34. Revisão Geral — [I]
+
+ 34.1 Fundamentos — [I]
+	Álgebra Booleana
+	Lógica Matemática
+	Representação Digital
+	Funções Booleanas
+
+ 34.2 Implementação da Lógica — [I]
+	Portas Lógicas
+	Famílias Lógicas
+	Circuitos Integrados
+	Implementação de funções
+
+ 34.3 Circuitos Digitais — [I]
+	Circuitos Combinacionais
+	Circuitos Sequenciais
+	Elementos de Memória
+	Máquinas de Estados
+
+ 34.4 Projeto Digital — [I]
+	Simplificação
+	Minimização
+	Lógica Programável
+	Ferramentas de Desenvolvimento
+	Aplicações
+
+
+
+35. Conclusão — [V]
+
+ 35.1 Visão Integrada da Álgebra Booleana e dos Circuitos Lógicos — [V]
+	Integração entre lógica matemática e hardware
+	Importância da representação booleana
+	Importância dos circuitos digitais
+	Visão geral dos conceitos estudados
+
+ 35.2 Preparação para os Próximos Estudos — [V]
+
+  35.2.1 Arquitetura e Organização de Computadores — [V]
+	Processadores
+	Unidade Lógica e Aritmética (ULA)
+	Unidade de Controle
+	Registradores
+	Memórias
+	Barramentos
+	Entrada e Saída
+
+  35.2.2 Eletrônica Digital — [V]
+	Projeto Digital
+	Circuitos Integrados
+	Lógica Programável
+	Sistemas Digitais
+	Hardware Reconfigurável
+
+  35.2.3 Desenvolvimento de Hardware — [V]
+	VHDL
+	Verilog
+	FPGA
+	CPLD
+	Prototipagem Digital
+
+ 35.3 Encerramento — [V]
+	Compreensão dos fundamentos da Álgebra Booleana
+	Compreensão dos Circuitos Lógicos
+	Base para o estudo da Arquitetura e Organização de Computadores
+	Base para disciplinas de Eletrônica Digital, Microarquitetura e Projeto de Hardware
