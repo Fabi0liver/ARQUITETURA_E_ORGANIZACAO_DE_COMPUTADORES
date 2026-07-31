@@ -271,6 +271,8 @@ PARTE 2 — SISTEMAS DE NUMERAÇÃO E REPRESENTAÇÃO NUMÉRICA
 
  10.2 Códigos Numéricos — [P]
     Código BCD (Binary Coded Decimal)
+    Código Decimal Empacotado (Packed BCD)
+    Código Decimal Desempacotado (Unpacked BCD)
     Código Gray
     Código Excess-3
     Códigos ponderados
@@ -337,6 +339,8 @@ PARTE 3 — REPRESENTAÇÃO BINÁRIA DOS DADOS
     Formação do complemento
     Representação dos números negativos
     Faixa de representação
+    Intervalo assimétrico
+    Overflow em complemento de dois
     Vantagens
     Predominância nas arquiteturas modernas
 
@@ -360,6 +364,10 @@ PARTE 3 — REPRESENTAÇÃO BINÁRIA DOS DADOS
     Deslocamento lógico
     Deslocamento aritmético
     Rotação de bits
+    Aplicações práticas das operações bit a bit
+    Flags
+    Manipulação de registradores
+    Máscaras de controle
 
  13.3 Manipulação de Campos de Bits — [P]
     Máscaras de bits
@@ -470,6 +478,7 @@ PARTE 4 — REPRESENTAÇÃO DOS DIFERENTES TIPOS DE DADOS
     Mantissa (Fração)
     Normalização
     Números subnormais
+    Bit implícito (Hidden Bit)
 
  17.3 Formatos Definidos pelo IEEE 754 — [I]
     Half Precision (16 bits)
@@ -489,6 +498,31 @@ PARTE 4 — REPRESENTAÇÃO DOS DIFERENTES TIPOS DE DADOS
     Arredondamento
     Erros de representação
     Cancelamento numérico
+
+ 17.5 Operações Aritméticas em Ponto Flutuante — [P]
+    Adição
+    Subtração
+    Multiplicação
+    Divisão
+    Normalização do resultado
+    Arredondamento
+    Propagação de NaN
+    Exceções em operações
+
+ 17.6 Modos de Arredondamento — [I]
+    Round to Nearest
+    Round Toward Zero
+    Round Toward +∞
+    Round Toward −∞
+    Impacto do arredondamento
+
+ 17.6 Precisão Numérica e Erros de Representação — [P]
+    Erro absoluto
+    Erro relativo
+    Perda de significância
+    Cancelamento catastrófico
+    Acúmulo de erros
+    Boas práticas em cálculos numéricos
 
 
 
@@ -518,11 +552,13 @@ PARTE 4 — REPRESENTAÇÃO DOS DIFERENTES TIPOS DE DADOS
 
  18.4 Representação de Textos — [I]
     Strings
+    Diferença entre caractere e string
     Caracteres de controle
     Caracteres especiais
     Emojis
     Conversão entre codificações
     Armazenamento de textos
+    Ordenação lexicográfica
 
 
 
@@ -576,6 +612,7 @@ PARTE 4 — REPRESENTAÇÃO DOS DIFERENTES TIPOS DE DADOS
     Estruturas compostas
     Organização em memória
     Alinhamento e Padding (visão geral)
+    Influência do alinhamento no desempenho
 
  20.4 Visão Geral de Outros Tipos de Dados — [V]
     Dados científicos
@@ -624,6 +661,7 @@ PARTE 5 — REPRESENTAÇÃO DOS DADOS NA ARQUITETURA DE COMPUTADORES
     Organização por bytes
     Organização por palavras
     Alinhamento de dados
+    Alinhamento natural
     Padding
     Fragmentação (visão geral)
 
@@ -661,6 +699,8 @@ PARTE 5 — REPRESENTAÇÃO DOS DADOS NA ARQUITETURA DE COMPUTADORES
     Conversão entre tamanhos de inteiros
     Conversão entre representações com e sem sinal
     Precisão das conversões
+    Conversões sem perda
+    Conversões com perda
 
  23.3 Limitações das Conversões — [P]
     Truncamento
@@ -691,6 +731,8 @@ PARTE 5 — REPRESENTAÇÃO DOS DADOS NA ARQUITETURA DE COMPUTADORES
  24.3 Correção de Erros — [I]
     Código de Hamming
     ECC (Error Correcting Code)
+    SEC
+    SECDED
     Conceitos de redundância
     Correção automática
     Aplicações em memórias
@@ -721,6 +763,7 @@ PARTE 5 — REPRESENTAÇÃO DOS DADOS NA ARQUITETURA DE COMPUTADORES
     Arrays
     Organização dos bytes
     Compatibilidade entre compiladores
+    Representação dependente da linguagem
 
  25.3 Persistência dos Dados — [V]
     Arquivos texto
