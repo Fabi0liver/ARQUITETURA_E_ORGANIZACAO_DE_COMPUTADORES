@@ -313,3 +313,172 @@ PARTE 2 — OPERAÇÕES BOOLEANAS, PROPRIEDADES E SIMPLIFICAÇÃO LÓGICA
 	Vantagens
 	Limitações
 	Contextos de utilização
+
+
+
+PARTE 3 — PORTAS LÓGICAS E IMPLEMENTAÇÃO DOS CIRCUITOS DIGITAIS
+
+
+12. Portas Lógicas — [P]
+
+ 12.1 Fundamentos das Portas Lógicas — [P]
+	O que são Portas Lógicas
+	Função das Portas Lógicas
+	Implementação física da lógica
+	Representação simbólica
+	Representação por expressão booleana
+	Representação por tabela-verdade
+	Relação entre Álgebra Booleana e Portas Lógicas
+
+ 12.2 Portas Lógicas Fundamentais — [P]
+	Porta AND
+	Porta OR
+	Porta NOT
+	Características funcionais
+	Representação gráfica
+	Implementação das funções básicas
+
+ 12.3 Portas Lógicas Derivadas — [P]
+	Porta NAND
+	Porta NOR
+	Porta XOR
+	Porta XNOR
+	Características funcionais
+	Representação gráfica
+
+ 12.4 Representação das Portas Lógicas — [I]
+	Símbolos ANSI
+	Símbolos IEC
+	Diagramas lógicos
+	Padronização da representação
+	Leitura de esquemas digitais
+
+
+
+13. Implementação de Funções Lógicas — [P]
+
+ 13.1 Síntese de Circuitos Lógicos — [P]
+	Implementação a partir da expressão booleana
+	Implementação a partir da tabela-verdade
+	Implementação a partir da forma SOP
+	Implementação a partir da forma POS
+	Construção de diagramas lógicos
+
+ 13.2 Implementação com Portas Fundamentais — [P]
+	Utilização de AND
+	Utilização de OR
+	Utilização de NOT
+	Composição de circuitos
+	Interligação entre portas
+
+ 13.3 Implementação com Portas Universais — [P]
+	Implementação utilizando apenas NAND
+	Implementação utilizando apenas NOR
+	Conversão entre diferentes implementações
+	Equivalência funcional
+	Otimização da implementação
+
+ 13.4 Lógica em Múltiplos Níveis — [I]
+	Circuitos de um nível
+	Circuitos multinível
+	Compartilhamento de expressões
+	Redução da complexidade
+	Impacto no desempenho
+
+
+
+14. Características Elétricas da Lógica Digital — [P]
+
+ 14.1 Níveis Lógicos — [P]
+	Nível lógico alto
+	Nível lógico baixo
+	Lógica positiva
+	Lógica negativa
+	Interpretação dos níveis de tensão
+
+ 14.2 Características de Entrada e Saída — [P]
+	Fan-in
+	Fan-out
+	Capacidade de acionamento
+	Compatibilidade entre dispositivos
+	Interligação de portas
+
+ 14.3 Temporização dos Circuitos Lógicos — [P]
+	Tempo de propagação
+	Atraso de propagação
+	Tempo de subida
+	Tempo de descida
+	Tempo de estabilização
+	Acumulação de atrasos
+
+ 14.4 Confiabilidade Elétrica — [I]
+	Margem de ruído
+	Imunidade ao ruído
+	Consumo de potência
+	Dissipação térmica
+	Compromisso entre velocidade e consumo
+
+
+
+15. Famílias Lógicas — [I]
+
+ 15.1 Conceitos Fundamentais — [I]
+	O que são famílias lógicas
+	Evolução tecnológica
+	Características gerais
+	Compatibilidade entre famílias
+
+ 15.2 Família TTL — [I]
+	Princípios de funcionamento
+	Características elétricas
+	Vantagens
+	Limitações
+	Aplicações
+
+ 15.3 Família CMOS — [P]
+	Princípios de funcionamento
+	Características elétricas
+	Consumo de energia
+	Vantagens
+	Limitações
+	Aplicações
+
+ 15.4 Comparação entre TTL e CMOS — [I]
+	Velocidade
+	Consumo de potência
+	Margem de ruído
+	Densidade de integração
+	Aplicações típicas
+
+
+
+16. Circuitos Integrados Digitais — [I]
+
+ 16.1 Conceitos Fundamentais — [I]
+	Circuito Integrado (CI)
+	Integração de portas lógicas
+	Encapsulamento
+	Padronização
+
+ 16.2 Escalas de Integração — [I]
+	SSI (Small Scale Integration)
+	MSI (Medium Scale Integration)
+	LSI (Large Scale Integration)
+	VLSI (Very Large Scale Integration)
+	ULSI (Ultra Large Scale Integration)
+
+ 16.3 Organização dos Circuitos Integrados Digitais — [I]
+	Portas discretas
+	Blocos funcionais
+	Circuitos dedicados
+	Circuitos programáveis (visão geral)
+
+ 16.4 Importância para a Arquitetura de Computadores — [V]
+	Construção de processadores
+	Construção de memórias
+	Construção de controladores
+	Base dos sistemas digitais modernos
+
+
+
+
