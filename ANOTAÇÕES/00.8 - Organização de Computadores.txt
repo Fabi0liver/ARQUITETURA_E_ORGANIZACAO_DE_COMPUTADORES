@@ -1,610 +1,1847 @@
-                                       Organização de Computadores
-
-
-Foco principal: A Organização de Computadores estuda como um computador é construído e implementado fisicamente, 
-               analisando seus componentes internos. Ela explica como processador, memória, dispositivos e 
-               barramentos funcionam e se comunicam. Seu foco é entender como essa estrutura influencia o  
-               desempenho e o funcionamento real do sistema computacional.
-
-
-
-Introdução à Organização de Computadores:
-
- Visão Geral de um Sistema Computacional:
-  Conceito de computador
-  Componentes fundamentais de um computador
-  Processamento, armazenamento e comunicação de dados
-  Funcionamento geral de um sistema computacional
-
- O que é Organização de Computadores:
-  Definição de Organização de Computadores
-  Objetivos da organização
-  Relação entre hardware e software
-  Implementação física de sistemas computacionais
-  Papel da organização no desempenho
-
- Arquitetura x Organização de Computadores:
-  Arquitetura de Computadores:
-   Interface hardware-software
-   Conjunto de instruções (ISA)
-   Tipos de dados
-   Modos de endereçamento
-   Modelo de programação
-  Organização de Computadores:
-   Estrutura interna do computador
-   Implementação da CPU
-   Caminho dos dados
-   Controle interno
-   Memórias
-   Barramentos
-   Entrada e saída
-
- Modelos Fundamentais de Computadores:
-  Modelo de Von Neumann:
-   Unidade de processamento
-   Memória única
-   Entrada e saída
-   Barramentos
-   Gargalo de Von Neumann
-  Modelo Harvard:
-   Memória de instruções
-   Memória de dados
-   Separação de barramentos
-  Harvard Modificado:
-   Memórias separadas com compartilhamento
-   Uso em processadores modernos
-
- Níveis de Abstração do Computador:
-  Nível de aplicação
-  Linguagens de programação
-  Sistema operacional
-  Linguagem de máquina
-  ISA
-  Microarquitetura
-  Circuitos digitais
-  Transistores
-
-
-
-Fundamentos Necessários Antes da Organização:
-
- Sistemas de Numeração:
-  Sistema decimal
-  Sistema binário
-  Sistema hexadecimal
-  Sistema octal
-  Conversão entre bases
-
- Representação de Dados:
-  Dados inteiros
-  Representação sem sinal
-  Representação com sinal
-  Sinal-magnitude
-  Complemento de 1
-  Complemento de 2
-  Overflow
-
- Dados reais:
-  Ponto fixo
-  Ponto flutuante
-  IEEE 754
-
- Dados de texto:
-  ASCII
-  Unicode
-
- Lógica Digital Aplicada:
-  Álgebra Booleana:
-   Operações booleanas
-   Leis booleanas
-   Simplificação lógica
-   Mapas de Karnaugh
-  Portas Lógicas:
-   AND
-   OR
-   NOT
-   NAND
-   NOR
-   XOR
-   XNOR
-  Circuitos Combinacionais:
-   Somadores
-   Meio somador (Half Adder)
-   Somador completo (Full Adder)
-   Subtratores
-   Comparadores
-   Multiplexadores
-   Demultiplexadores
-   Codificadores
-   Decodificadores
-  Circuitos Sequenciais:
-   Conceito de memória digital
-   Latches
-   Flip-flops
-   Elementos Sequenciais:
-    Registradores
-    Contadores
-    Máquinas de estados finitos (FSM)
-
-
-
-Estrutura Básica do Computador:
-
- Componentes Principais:
-  Processador (CPU)
-  Memória principal
-  Armazenamento secundário
-  Entrada e saída
-  Barramentos
-
- CPU — Unidade Central de Processamento:
-  Organização geral da CPU
-  Unidade de Controle
-  Unidade Lógica e Aritmética
-  Registradores
-  Barramentos internos
-
-
-
-Caminho de Dados e Controle do Processador:
-
- Datapath (Caminho de Dados):
-  Conceito de caminho de dados
-  Fluxo interno dos dados
-  Registradores internos
-  ULA
-  Multiplexadores
-  Barramentos internos
-
- Caminho de Controle:
-  Sinais de controle
-  Unidade de controle
-  Coordenação dos componentes
-  Sincronização
-
- Organização Interna da CPU:
-  Unidade de execução
-  Unidade de busca
-  Unidade de decodificação
-  Unidade de controle
-  Unidade de armazenamento interno
-
-
-
-Unidade Lógica e Aritmética (ULA):
-
- Estrutura da ULA:
-  Entradas da ULA
-  Saídas da ULA
-  Seleção de operação
-
- Operações Aritméticas:
-  Soma
-  Subtração
-  Incremento
-  Decremento
-  Multiplicação
-  Divisão
-
- Operações Lógicas:
-  AND
-  OR
-  NOT
-  XOR
-  Comparação
-
- Operações de Deslocamento:
-  Shift lógico
-  Shift aritmético
-  Rotação
-
- Flags e Sinais:
-  Zero
-  Carry
-  Overflow
-  Sinal
-  Paridade
-
-
-
-Registradores:
-
- Conceito de Registradores:
-  Armazenamento temporário
-  Velocidade
-  Comunicação interna da CPU
-
- Tipos de Registradores:
-  Propósito geral:
-   Registradores de dados
-   Registradores temporários
-  Específicos:
-   PC (Program Counter)
-   IR (Instruction Register)
-   MAR
-   MDR
-   ACC
-   SP
-   FLAGS / PSW
-
- Banco de Registradores:
-  Organização
-  Portas de leitura
-  Porta de escrita
-  Acesso paralelo
-
-
-
-Ciclo de Instrução:
-
- Funcionamento da Execução:
-  Busca da instrução
-  Decodificação
-  Execução
-  Acesso à memória
-  Escrita do resultado
-
- Estados do Processador:
-  Estado Fetch
-  Estado Decode
-  Estado Execute
-  Estado Memory
-  Estado Write Back
-
- Controle do Ciclo:
-  FSM do processador
-  Microoperações
-  Sinais de controle
-
-
-
-Unidade de Controle:
-
- Função da Unidade de Controle:
-  Geração de sinais
-  Coordenação da CPU
-
- Tipos de Controle:
-  Controle cabeado:
-   Circuitos lógicos fixos
-   Alta velocidade
-  Controle microprogramado:
-   Microinstruções
-   Memória de controle
-   Microcódigo
-
-
-
-Instruções e Organização da CPU:
-
- ISA: Interface Hardware Software:
-  Conceito de ISA
-  Relação com organização
-
- Formato das Instruções:
-  Opcode
-  Operandos
-  Campos de instrução
-
- Tipos de Formatos:
-  R
-  I
-  J
-
- Modos de Endereçamento:
-  Imediato
-  Direto
-  Indireto
-  Registrador
-  Indexado
-  Base + deslocamento
-  Pilha
-
-
-
-Organização da Memória:
-
- Conceitos de Memória:
-  Capacidade
-  Endereço
-  Palavra
-  Byte
-  Acesso
-
- Tipos de Memória:
-  RAM
-  ROM
-  SRAM
-  DRAM
-  Flash
-
- Organização Física:
-  Células de memória
-  Linhas e colunas
-  Decodificação de endereço
-  Bancos de memória
-
-
-
-Hierarquia de Memória:
-
- Conceito:
-  Velocidade
-  Capacidade
-  Custo
-
- Níveis:
-  Registradores
-  Cache
-  RAM
-  Armazenamento secundário
+                                      Organização de Computadores
 
-
-
-Memória Cache:
 
- Fundamentos:
-  Localidade temporal
-  Localidade espacial
+A classificação abaixo indica a profundidade recomendada para cada grande tópico da lista.
 
- Organização da Cache:
-  Linha de cache
-  Bloco
-  Tag
-  Índice
-  Offset
+[P] Profundidade — estudar mecanismos, estruturas, funcionamento interno e relações entre componentes.
+[I] Intermediário — compreender bem o funcionamento e as relações principais, sem precisar dominar todos os
+   detalhes de implementação.
+[V] Visão geral — saber o que é, para que serve e como se relaciona com os registradores.
 
- Mapeamento:
-  Mapeamento direto
-  Associativo
-  Conjunto associativo
 
- Políticas de Cache:
-  Substituição
-  Escrita
-  Métodos:
-   FIFO
-   LRU
-   Write-through
-   Write-back
 
+PARTE 1 — FUNDAMENTOS DA ORGANIZAÇÃO DE COMPUTADORES
 
 
-Memória Virtual:
+1. Introdução à Organização de Computadores — [I]
 
- Fundamentos:
-  Endereço virtual
-  Endereço físico
-
- Paginação:
-  Página
-  Quadro
-  Tabela de páginas
+ 1.1 Conceitos Fundamentais — [I]
 
- Segmentação:
-  Segmentos
-  Proteção
+  1.1.1 Organização de Computadores — [I]
+      O que é Organização de Computadores
+      Objetivos da Organização de Computadores
+      Importância da Organização de Computadores
+      Papel da Organização de Computadores
+      Organização de Computadores como área da Ciência da Computação
 
- Tradução de Endereços:
-  MMU
-  TLB
-  Page fault
+  1.1.2 Finalidade do Estudo da Organização — [I]
+      Compreensão da implementação dos computadores
+      Entendimento da interação entre os componentes
+      Base para o estudo do hardware
+      Base para otimização dos sistemas computacionais
 
+  1.1.3 Escopo da Organização de Computadores — [I]
+      Estrutura interna dos computadores
+      Funcionamento dos componentes
+      Comunicação entre subsistemas
+      Implementação física da arquitetura
 
 
-Entrada e Saída (I/O):
+ 1.2 Objetivos do Estudo — [I]
 
- Organização de Entrada e Saída:
-  Dispositivos periféricos
-  Controladores
+  1.2.1 Formação da Base Teórica — [I]
+      Compreensão do funcionamento interno
+      Entendimento da implementação dos sistemas
+      Base para estudos avançados
 
- Métodos de Comunicação:
-  E/S programada
-  Interrupções
-  DMA
+  1.2.2 Relação com as Demais Áreas da Computação — [V]
+      Arquitetura de Computadores
+      Sistemas Digitais
+      Sistemas Operacionais
+      Engenharia da Computação
+      Sistemas Embarcados
+      Computação de Alto Desempenho
 
- Interrupções:
-  Hardware
-  Software
-  Vetor de interrupção
-  Tratamento
 
+ 1.3 Importância da Organização de Computadores — [I]
 
+  1.3.1 Importância Acadêmica — [I]
+      Base da Arquitetura de Computadores
+      Base para Processadores
+      Base para Memórias
+      Base para Barramentos
+      Base para Entrada e Saída
 
-Barramentos e Interconexões:
+  1.3.2 Importância Tecnológica — [V]
+      Projeto de computadores
+      Desenvolvimento de hardware
+      Evolução dos sistemas computacionais
+      Otimização de desempenho
 
- Barramentos:
-  Barramento de dados
-  Barramento de endereço
-  Barramento de controle
+  1.3.3 Aplicações da Organização de Computadores — [V]
+      Computadores pessoais
+      Servidores
+      Sistemas embarcados
+      Dispositivos móveis
+      Computação de alto desempenho
 
- Características:
-  Largura
-  Frequência
-  Banda
-  Latência
 
- Comunicação:
-  Síncrona
-  Assíncrona
 
- Arbitragem:
-  Controle de acesso
-  Prioridade
+2. Arquitetura e Organização de Computadores — [I]
 
+ 2.1 Conceitos Fundamentais — [I]
 
+  2.1.1 Arquitetura de Computadores — [I]
+      O que é Arquitetura de Computadores
+      Interface entre hardware e software
+      Conjunto de instruções (ISA)
+      Visão do programador
 
-Temporização e Clock:
+  2.1.2 Organização de Computadores — [I]
+      Implementação da arquitetura
+      Organização física dos componentes
+      Estrutura funcional
+      Funcionamento interno
 
- Clock:
-  Frequência
-  Período
-  Ciclo
+  2.1.3 Diferenças entre Arquitetura e Organização — [I]
+      O que pertence à Arquitetura
+      O que pertence à Organização
+      Complementaridade entre ambas
+      Dependência entre Arquitetura e Organização
 
- Temporização Digital:
-  Setup time
-  Hold time
-  Delay de propagação
 
- Problemas:
-  Clock skew
-  Jitter
-  Sincronização
+ 2.2 Relação entre Arquitetura e Organização — [I]
 
+  2.2.1 Implementação da Arquitetura — [I]
+      Materialização da ISA
+      Implementação do hardware
+      Execução das instruções
 
+  2.2.2 Influência da Organização na Arquitetura — [I]
+      Desempenho
+      Eficiência
+      Escalabilidade
+      Consumo energético
 
-Pipeline:
+  2.2.3 Limites entre Arquitetura e Organização — [I]
+      Interface arquitetural
+      Implementação física
+      Compatibilidade
+      Evolução tecnológica
 
- Conceito:
-  Execução sobreposta
-  Estágios
 
- Pipeline Clássico:
-  IF
-  ID
-  EX
-  MEM
-  WB
 
- Problemas:
-  Hazard estrutural
-  Hazard de dados
-  Hazard de controle
+3. Modelos Fundamentais da Organização dos Computadores — [P]
 
- Soluções:
-  Forwarding
-  Stall
-  Flush
-  Branch prediction
+ 3.1 Modelos Clássicos — [P]
 
+  3.1.1 Modelo de Von Neumann — [P]
+      Programa armazenado
+      Memória única
+      Unidade Central de Processamento
+      Entrada e Saída
+      Barramentos
+      Gargalo de Von Neumann
 
+  3.1.2 Modelo Harvard — [I]
+      Memória de instruções
+      Memória de dados
+      Barramentos independentes
+      Organização geral
 
-Paralelismo de Processadores:
+  3.1.3 Modelo Harvard Modificado — [I]
+      Organização híbrida
+      Compartilhamento de recursos
+      Aplicações modernas
 
- Conceitos:
-  Paralelismo de instruções
-  Paralelismo de dados
-  Paralelismo de tarefas
 
- Técnicas:
-  Pipeline
-  Superescalar
-  Execução fora de ordem
+ 3.2 Evolução dos Modelos Organizacionais — [V]
 
+  3.2.1 Evolução da Organização dos Computadores — [V]
+      Dos primeiros computadores aos sistemas modernos
+      Integração dos componentes
+      Aumento da complexidade
 
+  3.2.2 Modelos Utilizados Atualmente — [V]
+      Computadores pessoais
+      Servidores
+      Sistemas embarcados
+      Dispositivos móveis
 
-Multiprocessadores:
 
- Arquiteturas:
-  Multicore
-  SMP
-  NUMA
-  Cluster
 
- Comunicação:
-  Memória compartilhada
-  Mensagens
+4. Níveis de Organização dos Computadores — [I]
 
- Interconexões:
-  Barramento
-  Anel
-  Malha
-  Torus
-  Crossbar
-  NoC
+ 4.1 Camadas do Sistema Computacional — [I]
 
+  4.1.1 Níveis de Abstração — [I]
+      Aplicações
+      Linguagens de programação
+      Sistemas Operacionais
+      Linguagem de Máquina
+      Arquitetura
+      Organização
+      Circuitos Digitais
+      Dispositivos Eletrônicos
 
+  4.1.2 Relação entre os Níveis — [I]
+      Fluxo entre as camadas
+      Dependência entre níveis
+      Papel da Organização de Computadores
 
-Avaliação de Desempenho:
+  4.1.3 Organização como Camada de Implementação — [I]
+      Implementação da Arquitetura
+      Integração com o hardware
+      Interface com os circuitos digitais
 
- Métricas:
-  Clock
-  CPI
-  IPC
-  Latência
-  Throughput
 
- Fatores de Desempenho:
-  Cache miss
-  Pipeline
-  Branch prediction
-  Gargalos
- 
- Avaliação:
-  Benchmarks
-  Simulação
-  Profiling
+ 4.2 Organização Funcional do Computador — [I]
 
+  4.2.1 Organização em Subsistemas — [I]
+      Processamento
+      Memória
+      Comunicação
+      Entrada e Saída
 
+  4.2.2 Organização Hierárquica — [V]
+      Estrutura modular
+      Cooperação entre subsistemas
+      Organização em níveis
 
-Consumo Energético e Organização Física:
 
- Potência:
-  Potência dinâmica
-  Potência estática
 
- Controle Energético:
-  Clock gating
-  Power gating
-  DVFS
+5. Fundamentos Necessários para a Organização de Computadores — [I]
 
- Controle Térmico:
-  Dissipação
-  Temperatura
-  Thermal throttling
+ 5.1 Fundamentos Matemáticos e Digitais — [I]
 
+  5.1.1 Sistemas de Numeração — [V]
+      Sistema Binário
+      Sistema Decimal
+      Sistema Octal
+      Sistema Hexadecimal
 
+  5.1.2 Representação Digital da Informação — [I]
+      Bits
+      Bytes
+      Palavras
+      Dados
+      Endereços
 
-Aplicações da Organização de Computadores:
+  5.1.3 Álgebra Booleana e Lógica Digital — [P]
+      Álgebra Booleana
+      Portas Lógicas
+      Circuitos Combinacionais
+      Circuitos Sequenciais
 
- Sistemas Embarcados:
-  Microcontroladores
-  Sistemas de tempo real
 
- Computação de Alto Desempenho:
-  Supercomputadores
-  Clusters
+ 5.2 Conceitos Fundamentais do Funcionamento Computacional — [I]
 
- Processadores Modernos:
-  SoC
-  GPUs
-  Aceleradores de IA
+  5.2.1 Processamento Digital — [I]
+      Entrada
+      Processamento
+      Armazenamento
+      Saída
 
- Tecnologias Emergentes:
-  Chiplets
-  Computação 3D
-  FPGA
-  NoC
-  PIM
-  Memórias avançadas
-  Computação neuromórfica
-  Computação quântica
+  5.2.2 Comunicação entre Componentes — [I]
+      Transferência de dados
+      Sinais de controle
+      Sincronização
+      Interconexão
 
+  5.2.3 Recursos Fundamentais do Computador — [I]
+      Recursos de processamento
+      Recursos de memória
+      Recursos de comunicação
+      Recursos de entrada e saída
 
 
-Conclusão e Resumo:
+ 5.3 Preparação para os Próximos Estudos — [V]
 
- Núcleo Principal da Organização:
-  Estrutura da CPU
-  Datapath e Control Path
-  Ciclo de instrução
-  ULA
-  Unidade de Controle
-  Registradores
-  Memória e hierarquia
-  Cache
-  Memória virtual
-  Barramentos
-  I/O e interrupções
-  Pipeline
-  Paralelismo
-  Desempenho
+  5.3.1 Principais Subsistemas da Organização — [V]
+      Organização da CPU
+      Organização da Memória
+      Organização dos Barramentos
+      Organização da Entrada e Saída
+      Organização do Armazenamento
 
- Ao concluir o estudo, você deve compreender:
-  Como um computador é construído internamente
-  Como a CPU executa instruções fisicamente
-  Como dados circulam entre componentes
-  Como memória é organizada e otimizada
-  Como dispositivos comunicam com o processador
-  Como desempenho é obtido por organização física
-  Como processadores modernos aumentam eficiência
+  5.3.2 Sequência Geral dos Estudos — [V]
+      Estrutura do Computador
+      Organização da CPU
+      Organização da Memória
+      Comunicação
+      Desempenho
+      Tecnologias Modernas
+
+
+
+PARTE 2 — ESTRUTURA BÁSICA DO COMPUTADOR
+
+
+6. Estrutura Geral do Sistema Computacional — [I]
+
+ 6.1 Organização Geral do Computador — [I]
+
+  6.1.1 Estrutura do Sistema Computacional — [I]
+      Organização geral do computador
+      Visão sistêmica
+      Componentes principais
+      Funcionamento integrado
+
+  6.1.2 Objetivos da Organização Estrutural — [I]
+      Modularidade
+      Organização funcional
+      Integração entre componentes
+      Eficiência operacional
+
+  6.1.3 Visão Geral do Funcionamento — [I]
+      Entrada
+      Processamento
+      Armazenamento
+      Saída
+      Fluxo geral das informações
+
+
+ 6.2 Estrutura Física e Estrutura Funcional — [I]
+
+  6.2.1 Estrutura Física — [V]
+      Organização dos componentes físicos
+      Placa-mãe
+      Processador
+      Memórias
+      Dispositivos de entrada e saída
+
+  6.2.2 Organização da Placa-mãe — [V]
+      Chipset
+      Slots
+      Soquetes
+      Conectores
+      Barramentos internos
+
+  6.2.3 Estrutura Funcional — [I]
+      Organização lógica
+      Funções dos componentes
+      Cooperação entre os subsistemas
+
+  6.2.4 Organização Modular — [I]
+      Divisão em subsistemas
+      Independência funcional
+      Integração dos módulos
+
+
+
+7. Componentes Fundamentais do Computador — [I]
+
+ 7.1 Componentes Básicos — [I]
+
+  7.1.1 Unidade Central de Processamento (CPU) — [I]
+      Função geral
+      Papel no sistema
+      Controle do processamento
+
+  7.1.2 Sistema de Memória — [I]
+      Memória principal
+      Memória secundária
+      Hierarquia de memória
+      Papel da memória no computador
+
+  7.1.3 Sistema de Entrada e Saída — [I]
+      Entrada de dados
+      Saída de informações
+      Comunicação com dispositivos externos
+
+  7.1.4 Sistema de Interconexão — [I]
+      Barramentos
+      Comunicação entre componentes
+      Transferência de informações
+
+
+ 7.2 Papel dos Componentes no Sistema — [I]
+
+  7.2.1 Processamento — [I]
+      Execução das instruções
+      Controle das operações
+      Coordenação geral
+
+  7.2.2 Armazenamento — [I]
+      Dados
+      Programas
+      Informações temporárias
+      Informações permanentes
+
+  7.2.3 Comunicação — [I]
+      Interligação dos componentes
+      Fluxo de dados
+      Fluxo de controle
+
+
+
+8. Organização dos Subsistemas Computacionais — [I]
+
+ 8.1 Subsistema de Processamento — [I]
+
+  8.1.1 Organização Geral — [I]
+      Processador
+      Controle
+      Execução das instruções
+
+  8.1.2 Funções Principais — [I]
+      Processamento
+      Coordenação
+      Comunicação com os demais subsistemas
+
+
+ 8.2 Subsistema de Memória — [I]
+
+  8.2.1 Organização Geral — [I]
+      Armazenamento de dados
+      Armazenamento de programas
+      Comunicação com a CPU
+
+  8.2.2 Funções Principais — [I]
+      Fornecimento de dados
+      Armazenamento temporário
+      Armazenamento permanente
+
+
+ 8.3 Subsistema de Entrada e Saída — [I]
+
+  8.3.1 Organização Geral — [I]
+      Dispositivos periféricos
+      Interfaces
+      Comunicação externa
+
+  8.3.2 Funções Principais — [I]
+      Recepção de dados
+      Apresentação dos resultados
+      Comunicação com o ambiente externo
+
+
+ 8.4 Subsistema de Interconexão — [I]
+
+  8.4.1 Organização Geral — [I]
+      Barramentos
+      Linhas de comunicação
+      Interligação dos componentes
+
+  8.4.2 Funções Principais — [I]
+      Transporte de dados
+      Transporte de endereços
+      Transporte de sinais de controle
+
+
+
+9. Fluxo Geral da Informação no Computador — [I]
+
+ 9.1 Fluxo Operacional — [I]
+
+  9.1.1 Entrada das Informações — [I]
+      Recepção dos dados
+      Conversão para formato digital
+      Disponibilização para processamento
+
+  9.1.2 Processamento das Informações — [I]
+      Execução das operações
+      Manipulação dos dados
+      Controle do processamento
+
+  9.1.3 Armazenamento das Informações — [I]
+      Armazenamento temporário
+      Armazenamento permanente
+      Recuperação das informações
+
+  9.1.4 Saída das Informações — [I]
+      Geração dos resultados
+      Comunicação com dispositivos externos
+      Apresentação das informações
+
+
+ 9.2 Fluxo entre os Componentes — [I]
+
+  9.2.1 Comunicação Interna — [I]
+      CPU e memória
+      CPU e entrada/saída
+      Memória e dispositivos
+      Interconexão geral
+
+  9.2.2 Fluxo de Dados e Controle — [I]
+      Fluxo de dados
+      Fluxo de endereços
+      Fluxo de sinais de controle
+
+  9.2.3 Coordenação das Operações — [I]
+      Sequenciamento
+      Sincronização
+      Cooperação entre os componentes
+
+
+
+10. Organização Física e Funcional do Computador — [I]
+
+ 10.1 Organização Física — [I]
+
+  10.1.1 Componentes Físicos — [I]
+      Placa-mãe
+      Processador
+      Memórias
+      Interfaces
+      Dispositivos de entrada e saída
+
+  10.1.2 Distribuição dos Componentes — [I]
+      Integração física
+      Interligação
+      Organização do hardware
+
+  10.1.3 Evolução da Organização Física — [V]
+      Miniaturização
+      Integração em chips
+      Modularidade
+
+  10.1.4 Firmware e Inicialização — [I]
+      BIOS
+      UEFI
+      Papel do Firmware
+      Comunicação inicial com o hardware
+
+  10.1.5 Processo de Inicialização do Computador — [I]
+      Reset
+      POST
+      Inicialização do Firmware
+      Bootloader
+      Carregamento do Sistema Operacional
+
+  10.1.6 Alimentação dos Componentes — [V]
+      Fonte
+      Distribuição de energia
+      Reguladores
+
+
+ 10.2 Organização Funcional — [I]
+
+  10.2.1 Cooperação entre os Componentes — [I]
+      Processamento
+      Armazenamento
+      Comunicação
+      Controle
+
+  10.2.2 Organização dos Recursos Computacionais — [I]
+      Recursos de processamento
+      Recursos de memória
+      Recursos de comunicação
+      Recursos de entrada e saída
+
+  10.2.3 Visão Integrada da Estrutura do Computador — [I]
+      Integração dos subsistemas
+      Funcionamento coordenado
+      Base para a organização da CPU
+      Base para a organização da memória
+
+
+
+PARTE 3 — ORGANIZAÇÃO DA CPU
+
+
+11. Organização da Unidade Central de Processamento (CPU) — [P]
+
+ 11.1 Fundamentos da CPU — [P]
+
+  11.1.1 Unidade Central de Processamento — [I]
+      O que é a CPU
+      Objetivos da CPU
+      Papel da CPU no computador
+      Importância para a organização do sistema
+
+  11.1.2 Estrutura Geral da CPU — [P]
+      Componentes internos
+      Organização funcional
+      Comunicação interna
+      Funcionamento integrado
+
+  11.1.3 Organização da CPU no Sistema Computacional — [I]
+      Comunicação com a memória
+      Comunicação com a entrada e saída
+      Comunicação por barramentos
+      Coordenação do sistema
+
+
+ 11.2 Funcionamento Geral da CPU — [P]
+
+  11.2.1 Processamento de Instruções — [P]
+      Execução dos programas
+      Processamento de dados
+      Controle das operações
+
+  11.2.2 Coordenação dos Componentes Internos — [P]
+      Controle interno
+      Fluxo de dados
+      Fluxo de controle
+
+  11.2.3 Organização do Processamento — [I]
+      Sequenciamento das operações
+      Coordenação entre unidades
+      Funcionamento contínuo
+
+
+
+12. Organização do Caminho de Dados (Datapath) — [P]
+
+ 12.1 Fundamentos do Datapath — [P]
+
+  12.1.1 Conceitos Fundamentais — [P]
+      O que é o Datapath
+      Função do Datapath
+      Papel na CPU
+      Importância para o processamento
+
+  12.1.2 Componentes do Datapath — [P]
+      Registradores
+      Unidade Lógica e Aritmética
+      Multiplexadores
+      Barramentos internos
+      Barramentos internos da CPU
+      Interconexão entre unidades funcionais
+
+  12.1.3 Fluxo Interno dos Dados — [P]
+      Transferência entre registradores
+      Caminhos dos dados
+      Operações internas
+
+
+ 12.2 Organização do Datapath — [P]
+
+  12.2.1 Estrutura Funcional — [P]
+      Entradas
+      Saídas
+      Caminhos internos
+      Organização das operações
+
+  12.2.2 Comunicação com os Demais Componentes — [P]
+      Unidade de Controle
+      Registradores
+      ULA
+
+  12.2.3 Papel do Datapath na CPU — [P]
+      Execução das operações
+      Processamento dos dados
+      Integração do processamento
+
+
+
+13. Organização da Unidade de Controle — [P]
+
+ 13.1 Fundamentos da Unidade de Controle — [P]
+
+  13.1.1 Conceitos Fundamentais — [P]
+      O que é a Unidade de Controle
+      Objetivos
+      Coordenação das operações
+      Controle da CPU
+
+  13.1.2 Estrutura Geral — [P]
+      Sequenciamento
+      Decodificação
+      Geração dos sinais de controle
+
+  13.1.3 Comunicação com os Componentes — [P]
+      Datapath
+      ULA
+      Registradores
+      Memória
+
+
+ 13.2 Organização do Controle — [I]
+
+  13.2.1 Controle Cabeado — [I]
+      Funcionamento geral
+      Características
+      Aplicações
+
+  13.2.2 Controle Microprogramado — [I]
+      Microprogramação
+      Microcódigo
+      Memória de controle
+
+  13.2.3 Comparação entre os Métodos — [I]
+      Flexibilidade
+      Desempenho
+      Complexidade
+
+
+
+14. Organização da Unidade Lógica e Aritmética (ULA) — [P]
+
+ 14.1 Fundamentos da ULA — [P]
+
+  14.1.1 Conceitos Fundamentais — [P]
+      O que é a ULA
+      Objetivos
+      Papel na CPU
+      Comunicação com os demais componentes
+
+  14.1.2 Estrutura Geral — [P]
+      Entradas
+      Saídas
+      Seleção das operações
+      Organização funcional
+
+  14.1.3 Funcionamento Geral — [P]
+      Processamento dos operandos
+      Execução das operações
+      Produção dos resultados
+
+
+ 14.2 Operações da ULA — [P]
+
+  14.2.1 Operações Aritméticas — [P]
+      Soma
+      Subtração
+      Multiplicação
+      Divisão
+      Incremento
+      Decremento
+
+  14.2.2 Operações Lógicas — [P]
+      AND
+      OR
+      XOR
+      NOT
+      Comparações
+
+  14.2.3 Operações sobre Bits — [I]
+      Deslocamentos
+      Rotações
+      Máscaras
+
+  14.2.4 Flags e Códigos de Condição — [I]
+      Zero
+      Carry
+      Overflow
+      Sinal
+      Paridade
+
+
+
+15. Organização dos Registradores — [P]
+
+ 15.1 Fundamentos dos Registradores — [P]
+
+  15.1.1 Conceitos Fundamentais — [P]
+      O que são registradores
+      Função
+      Armazenamento temporário
+      Papel na CPU
+
+  15.1.2 Banco de Registradores — [P]
+      Organização
+      Portas de leitura
+      Porta de escrita
+      Comunicação interna
+
+  15.1.3 Comunicação entre Registradores — [P]
+      Transferência de dados
+      Operações internas
+      Integração com o Datapath
+
+
+ 15.2 Classificação Geral — [I]
+
+  15.2.1 Registradores de Propósito Geral — [I]
+      Armazenamento de operandos
+      Dados temporários
+      Resultados
+
+  15.2.2 Registradores Especiais — [I]
+      PC
+      IR
+      MAR
+      MDR
+      ACC
+      SP
+      FLAGS
+
+  15.2.3 Papel dos Registradores na Organização da CPU — [P]
+      Comunicação interna
+      Execução das instruções
+      Armazenamento temporário
+      Coordenação das operações
+
+
+
+16. Organização do Ciclo de Instrução — [P]
+
+ 16.1 Fundamentos do Ciclo de Instrução — [P]
+
+  16.1.1 Conceitos Fundamentais — [P]
+      O que é o ciclo de instrução
+      Objetivos
+      Papel na execução dos programas
+
+  16.1.2 Etapas do Ciclo — [P]
+      Busca (Fetch)
+      Decodificação (Decode)
+      Execução (Execute)
+      Acesso à memória (Memory Access)
+      Escrita do resultado (Write Back)
+
+  16.1.3 Organização Temporal da Execução — [P]
+      Sequenciamento
+      Sincronização
+      Coordenação das etapas
+
+
+ 16.2 Microoperações — [P]
+
+  16.2.1 Organização das Microoperações — [P]
+      Transferência entre registradores
+      Operações internas
+      Sequenciamento
+
+  16.2.2 Fluxo de Execução — [P]
+      Controle das operações
+      Fluxo de dados
+      Fluxo de controle
+
+  16.2.3 Coordenação Geral — [P]
+      Unidade de Controle
+      Datapath
+      Registradores
+      ULA
+
+
+
+17. Organização das Instruções — [I]
+
+ 17.1 Estrutura das Instruções — [I]
+
+  17.1.1 Conceitos Fundamentais — [I]
+      Instrução
+      Operação
+      Operandos
+      Opcode
+
+  17.1.2 Formatos das Instruções — [I]
+      Campos
+      Operandos
+      Organização dos formatos
+      Codificação das instruções
+      Representação binária
+      Comprimento das instruções
+
+  17.1.3 Classificação Geral das Instruções — [I]
+      Transferência de dados
+      Aritméticas
+      Lógicas
+      Controle
+      Entrada e saída
+
+
+ 17.2 Organização da Execução das Instruções — [I]
+
+  17.2.1 Modos de Endereçamento — [I]
+      Imediato
+      Direto
+      Indireto
+      Registrador
+      Indexado
+      Base + deslocamento
+      Pilha
+
+  17.2.2 Relação entre Instruções e Organização da CPU — [I]
+      Unidade de Controle
+      Datapath
+      Registradores
+      Memória
+
+  17.2.3 Organização Geral da Execução — [P]
+      Busca da instrução
+      Decodificação
+      Processamento
+      Finalização da execução
+
+
+
+PARTE 4 — ORGANIZAÇÃO DA MEMÓRIA
+
+
+18. Organização da Memória Principal — [P]
+
+ 18.1 Fundamentos da Memória Principal — [P]
+
+  18.1.1 Conceitos Fundamentais — [P]
+      O que é a memória principal
+      Função da memória principal
+      Papel no sistema computacional
+      Importância para o processamento
+
+  18.1.2 Organização Geral da Memória — [P]
+      Armazenamento de dados
+      Armazenamento de instruções
+      Endereçamento
+      Comunicação com a CPU
+
+  18.1.3 Organização do Espaço de Endereçamento — [P]
+      Espaço de endereçamento
+      Mapa de memória
+      Regiões de memória
+      Memória mapeada em E/S (Memory-Mapped I/O)
+
+  18.1.4 Estrutura Física da Memória — [P]
+      Células de memória
+      Linhas
+      Colunas
+      Bancos
+      Módulos de memória
+
+
+ 18.2 Funcionamento da Memória Principal — [P]
+
+  18.2.1 Operações Fundamentais — [P]
+      Leitura
+      Escrita
+      Atualização dos dados
+      Recuperação das informações
+
+  18.2.2 Características Operacionais — [I]
+      Tempo de acesso
+      Tempo de ciclo
+      Latência
+      Largura de banda
+
+  18.2.3 Organização da Comunicação com a CPU — [P]
+      Barramento de dados
+      Barramento de endereços
+      Barramento de controle
+      Fluxo de informações
+
+
+
+19. Organização da Hierarquia de Memória — [P]
+
+ 19.1 Fundamentos da Hierarquia — [P]
+
+  19.1.1 Conceitos Fundamentais — [P]
+      Hierarquia de memória
+      Objetivos
+      Organização em níveis
+      Papel na organização do computador
+
+  19.1.2 Níveis da Hierarquia — [P]
+      Registradores
+      Memória Cache
+      Memória Principal
+      Memória Secundária
+
+  19.1.3 Características dos Níveis — [I]
+      Capacidade
+      Velocidade
+      Custo
+      Persistência
+
+
+ 19.2 Princípios da Hierarquia — [P]
+
+  19.2.1 Localidade de Referência — [P]
+      Localidade temporal
+      Localidade espacial
+      Localidade sequencial
+
+  19.2.2 Fluxo dos Dados na Hierarquia — [P]
+      Transferência entre níveis
+      Busca dos dados
+      Atualização das informações
+
+  19.2.3 Objetivos da Hierarquia — [I]
+      Redução da latência
+      Aumento do desempenho
+      Equilíbrio entre custo e capacidade
+
+
+
+20. Organização da Memória Cache — [P]
+
+ 20.1 Fundamentos da Cache — [P]
+
+  20.1.1 Conceitos Fundamentais — [P]
+      O que é memória cache
+      Função
+      Importância
+      Relação com a memória principal
+
+  20.1.2 Organização Geral da Cache — [P]
+      Linhas
+      Blocos
+      Tags
+      Índices
+      Offsets
+
+  20.1.3 Níveis de Cache — [I]
+      Cache L1
+      Cache L2
+      Cache L3
+      Cache compartilhada
+
+
+ 20.2 Organização do Funcionamento — [P]
+
+  20.2.1 Organização do Mapeamento — [P]
+      Mapeamento direto
+      Totalmente associativo
+      Associativo por conjuntos
+
+  20.2.2 Políticas Gerais — [I]
+      Substituição
+      Escrita
+      Atualização
+
+  20.2.3 Objetivos da Cache — [V]
+      Redução do tempo de acesso
+      Aumento da eficiência
+      Melhor aproveitamento da hierarquia
+
+
+
+21. Organização da Memória Virtual — [I]
+
+ 21.1 Fundamentos da Memória Virtual — [I]
+
+  21.1.1 Conceitos Fundamentais — [I]
+      Memória virtual
+      Espaço de endereçamento
+      Endereço virtual
+      Endereço físico
+
+  21.1.2 Objetivos da Memória Virtual — [I]
+      Expansão lógica da memória
+      Isolamento dos processos
+      Melhor utilização da memória
+
+  21.1.3 Componentes Principais — [I]
+      MMU
+      TLB
+      Tabela de páginas
+
+
+ 21.2 Organização da Tradução de Endereços — [I]
+
+  21.2.1 Paginação — [I]
+      Páginas
+      Quadros
+      Tradução de endereços
+
+  21.2.2 Segmentação — [V]
+      Segmentos
+      Organização lógica
+      Endereçamento
+
+  21.2.3 Gerenciamento Geral — [I]
+      Page Fault
+      Troca de páginas
+      Comunicação com a memória principal
+
+
+
+22. Organização da Memória Secundária — [I]
+
+ 22.1 Fundamentos da Memória Secundária — [I]
+
+  22.1.1 Conceitos Fundamentais — [I]
+      O que é memória secundária
+      Persistência dos dados
+      Armazenamento permanente
+      Papel no sistema computacional
+
+  22.1.2 Organização Geral — [I]
+      Armazenamento magnético
+      Armazenamento em estado sólido
+      Armazenamento óptico
+
+  22.1.3 Relação com a Hierarquia de Memória — [I]
+      Complementação da memória principal
+      Transferência de dados
+      Organização do armazenamento
+
+
+ 22.2 Dispositivos de Armazenamento — [V]
+
+  22.2.1 Discos Magnéticos — [V]
+      HDD
+      Trilhas
+      Setores
+      Cilindros
+
+  22.2.2 Armazenamento em Estado Sólido — [V]
+      SSD
+      Memória Flash
+      Organização geral
+
+  22.2.3 Outros Dispositivos — [V]
+      Pendrive
+      Cartões de memória
+      Discos ópticos
+      Fitas magnéticas
+
+
+
+23. Interfaces e Comunicação do Armazenamento — [I]
+
+ 23.1 Interfaces de Armazenamento — [I]
+
+  23.1.1 Interfaces Tradicionais — [V]
+      IDE
+      ATA
+      SCSI
+
+  23.1.2 Interfaces Modernas — [I]
+      SATA
+      SAS
+      NVMe
+      PCI Express
+
+  23.1.3 Comunicação entre Armazenamento e Sistema — [I]
+      Transferência de dados
+      Comunicação com a memória
+      Comunicação com a CPU
+
+
+ 23.2 Organização do Subsistema de Armazenamento — [I]
+
+  23.2.1 Organização Geral — [I]
+      Controladoras
+      Interfaces
+      Dispositivos
+      Fluxo de armazenamento
+
+  23.2.2 Fluxo das Informações — [I]
+      Leitura dos dados
+      Escrita dos dados
+      Transferência para a memória principal
+
+  23.2.3 Papel do Armazenamento na Organização dos Computadores — [I]
+      Persistência dos dados
+      Suporte à execução dos programas
+      Integração com a hierarquia de memória
+
+
+
+PARTE 5 — COMUNICAÇÃO E ENTRADA/SAÍDA
+
+
+24. Organização dos Barramentos — [P]
+
+ 24.1 Fundamentos dos Barramentos — [P]
+
+  24.1.1 Conceitos Fundamentais — [P]
+      O que é um barramento
+      Função dos barramentos
+      Comunicação entre componentes
+      Papel na organização do computador
+
+  24.1.2 Estrutura dos Barramentos — [P]
+      Barramento de dados
+      Barramento de endereços
+      Barramento de controle
+
+  24.1.3 Características dos Barramentos — [I]
+      Largura do barramento
+      Frequência
+      Taxa de transferência
+      Latência
+
+  24.1.4 Classificação dos Barramentos — [V]
+      Barramentos internos
+      Barramentos externos
+      Barramentos locais
+      Barramentos de expansão
+      Barramentos dedicados
+      Barramentos compartilhados
+
+
+ 24.2 Organização da Comunicação — [P]
+
+  24.2.1 Comunicação Síncrona e Assíncrona — [I]
+      Comunicação síncrona
+      Comunicação assíncrona
+      Handshaking
+
+  24.2.2 Arbitragem do Barramento — [I]
+      Compartilhamento do barramento
+      Prioridades
+      Mestre e escravo
+      Controle de acesso
+
+  24.2.3 Papel dos Barramentos na Organização — [P]
+      Integração dos componentes
+      Transporte de informações
+      Coordenação do sistema
+
+
+
+25. Organização das Interconexões — [P]
+
+ 25.1 Interligação dos Componentes — [P]
+
+  25.1.1 Conceitos Fundamentais — [P]
+      Interconexão de componentes
+      Comunicação interna
+      Fluxo de informações
+
+  25.1.2 Estruturas de Interconexão — [I]
+      Barramento compartilhado
+      Interconexão ponto a ponto
+      Chaves de interconexão
+
+  25.1.3 Organização da Comunicação Interna — [P]
+      CPU e memória
+      CPU e entrada/saída
+      Memória e dispositivos
+
+
+ 25.2 Comunicação entre Subsistemas — [I]
+
+  25.2.1 Fluxo das Informações — [I]
+      Fluxo de dados
+      Fluxo de endereços
+      Fluxo de controle
+
+  25.2.2 Coordenação da Comunicação — [I]
+      Sincronização
+      Controle das transferências
+      Compartilhamento dos recursos
+
+  25.2.3 Evolução das Interconexões — [V]
+      Interconexões modernas
+      Alta velocidade
+      Escalabilidade
+
+
+
+26. Organização do Subsistema de Entrada e Saída — [P]
+
+ 26.1 Fundamentos da Entrada e Saída — [P]
+
+  26.1.1 Conceitos Fundamentais — [P]
+      Entrada de dados
+      Saída de dados
+      Dispositivos periféricos
+      Papel da entrada e saída
+
+  26.1.2 Organização dos Dispositivos — [I]
+      Dispositivos de entrada
+      Dispositivos de saída
+      Dispositivos mistos
+      Controladoras
+
+  26.1.3 Interfaces de Entrada e Saída — [I]
+      Interfaces físicas
+      Interfaces lógicas
+      Comunicação com o sistema
+      Interfaces seriais
+      Interfaces paralelas
+
+
+ 26.2 Métodos de Transferência de Dados — [P]
+
+  26.2.1 Entrada e Saída Programada — [P]
+      Funcionamento geral
+      Controle pelo processador
+      Características
+
+  26.2.2 Entrada e Saída por Interrupções — [P]
+      Funcionamento
+      Atendimento das requisições
+      Eficiência operacional
+
+  26.2.3 Entrada e Saída por DMA — [P]
+      Funcionamento geral
+      Transferência direta
+      Participação do processador
+
+  26.2.4 Bufferização de Dados — [I]
+      Buffer
+      Bufferização
+      Sincronização
+      Fluxo de dados
+
+
+
+27. Organização das Interrupções e do DMA — [P]
+
+ 27.1 Organização das Interrupções — [P]
+
+  27.1.1 Conceitos Fundamentais — [P]
+      Interrupções
+      Eventos internos
+      Eventos externos
+
+  27.1.2 Classificação das Interrupções — [I]
+      Interrupções de hardware
+      Interrupções de software
+      Máscaráveis
+      Não mascaráveis
+
+  27.1.3 Tratamento das Interrupções — [P]
+      Vetor de interrupção
+      Rotina de serviço
+      Prioridades
+      Retorno da interrupção
+
+
+ 27.2 Acesso Direto à Memória (DMA) — [P]
+
+  27.2.1 Conceitos Fundamentais — [P]
+      O que é DMA
+      Objetivos
+      Papel na organização do computador
+
+  27.2.2 Organização do Controlador DMA — [P]
+      Controladora DMA
+      Comunicação com memória
+      Comunicação com dispositivos
+
+  27.2.3 Benefícios do DMA — [I]
+      Redução da carga da CPU
+      Maior eficiência
+      Transferências em alta velocidade
+
+
+
+28. Organização da Temporização e Sincronização — [P]
+
+ 28.1 Organização Temporal do Sistema — [P]
+
+  28.1.1 Clock e Reset do Sistema — [P]
+      Clock
+      Frequência
+      Período
+      Ciclo de clock
+      Reset
+      Inicialização sincronizada
+
+  28.1.2 Sincronização dos Componentes — [P]
+      Coordenação temporal
+      Sequenciamento
+      Controle das operações
+
+  28.1.3 Organização Temporal das Transferências — [I]
+      Temporização da comunicação
+      Temporização da memória
+      Temporização da entrada e saída
+
+
+ 28.2 Limitações Temporais — [I]
+
+  28.2.1 Atrasos de Propagação — [I]
+      Delay
+      Caminho crítico
+      Impacto no desempenho
+
+  28.2.2 Restrições Temporais — [I]
+      Setup Time
+      Hold Time
+      Margens temporais
+
+  28.2.3 Problemas de Sincronização — [I]
+      Clock Skew
+      Jitter
+      Metastabilidade
+
+
+
+29. Integração dos Subsistemas Computacionais — [I]
+
+ 29.1 Comunicação entre os Subsistemas — [I]
+
+  29.1.1 Integração entre CPU e Memória — [I]
+      Comunicação
+      Transferência de dados
+      Controle das operações
+
+  29.1.2 Integração com Entrada e Saída — [I]
+      Fluxo de informações
+      Compartilhamento dos recursos
+      Coordenação do sistema
+
+  29.1.3 Integração por Barramentos e Interconexões — [I]
+      Comunicação global
+      Cooperação entre subsistemas
+      Organização do computador
+
+
+ 29.2 Funcionamento Integrado do Computador — [I]
+
+  29.2.1 Fluxo Completo da Informação — [I]
+      Entrada
+      Processamento
+      Armazenamento
+      Saída
+
+  29.2.2 Coordenação dos Componentes — [I]
+      Processador
+      Memória
+      Barramentos
+      Entrada e saída
+
+  29.2.3 Base para Otimização da Organização — [V]
+      Comunicação eficiente
+      Balanceamento dos recursos
+      Integração dos subsistemas
+
+
+
+PARTE 6 — DESEMPENHO, PARALELISMO E TECNOLOGIAS MODERNAS
+
+
+30. Organização do Desempenho dos Computadores — [P]
+
+ 30.1 Fundamentos do Desempenho — [P]
+
+  30.1.1 Conceitos Fundamentais — [P]
+      Desempenho computacional
+      Eficiência
+      Produtividade do sistema
+      Objetivos da otimização
+
+  30.1.2 Métricas de Desempenho — [I]
+      Tempo de execução
+      Latência
+      Throughput
+      Tempo de resposta
+
+  30.1.3 Fatores que Influenciam o Desempenho — [P]
+      Processador
+      Memória
+      Barramentos
+      Entrada e saída
+      Organização do sistema
+
+
+ 30.2 Avaliação do Desempenho — [I]
+
+  30.2.1 Medidas de Avaliação — [I]
+      Benchmarks
+      Cargas de trabalho
+      Comparação entre sistemas
+
+  30.2.2 Gargalos do Sistema — [P]
+      Gargalo do processador
+      Gargalo da memória
+      Gargalo dos barramentos
+      Gargalo de entrada e saída
+
+  30.2.3 Balanceamento do Sistema — [I]
+      Equilíbrio entre subsistemas
+      Escalabilidade
+      Utilização eficiente dos recursos
+
+
+
+31. Organização do Pipeline — [P]
+
+ 31.1 Fundamentos do Pipeline — [P]
+
+  31.1.1 Conceitos Fundamentais — [P]
+      O que é Pipeline
+      Objetivos
+      Sobreposição de operações
+      Organização da execução
+
+  31.1.2 Estágios do Pipeline — [P]
+      Busca
+      Decodificação
+      Execução
+      Acesso à memória
+      Escrita dos resultados
+
+  31.1.3 Benefícios do Pipeline — [I]
+      Aumento do desempenho
+      Melhor utilização do hardware
+      Maior produtividade
+
+
+ 31.2 Problemas do Pipeline — [I]
+
+  31.2.1 Hazards Estruturais — [I]
+      Conflitos de recursos
+      Compartilhamento de hardware
+
+  31.2.2 Hazards de Dados — [I]
+      Dependências
+      Forwarding
+      Stalls
+
+  31.2.3 Hazards de Controle — [I]
+      Desvios
+      Predição de desvios
+      Limpeza do pipeline
+
+
+
+32. Organização do Paralelismo — [I]
+
+ 32.1 Paralelismo Computacional — [I]
+
+  32.1.1 Conceitos Fundamentais — [I]
+      Paralelismo
+      Concorrência
+      Execução simultânea
+
+  32.1.2 Níveis de Paralelismo — [I]
+      Paralelismo em nível de instruções
+      Paralelismo em nível de dados
+      Paralelismo em nível de tarefas
+
+  32.1.3 Benefícios do Paralelismo — [I]
+      Desempenho
+      Escalabilidade
+      Melhor utilização do hardware
+
+
+ 32.2 Organização dos Sistemas Paralelos — [I]
+
+  32.2.1 Processadores Multicore — [I]
+      Organização dos núcleos
+      Compartilhamento de cache
+      Comunicação entre núcleos
+
+  32.2.2 Multiprocessadores — [I]
+      Organização multiprocessada
+      Compartilhamento de memória
+      Comunicação entre processadores
+
+  32.2.3 Sistemas Many-Core — [V]
+      Grande quantidade de núcleos
+      Processamento massivamente paralelo
+      Aplicações gerais
+
+
+
+33. Organização dos Computadores Modernos — [I]
+
+ 33.1 Integração dos Componentes — [I]
+
+  33.1.1 Sistemas em Chip (SoC) — [I]
+      Conceitos fundamentais
+      Integração dos componentes
+      Organização interna
+
+  33.1.2 Chiplets — [I]
+      Organização modular
+      Comunicação entre chiplets
+      Escalabilidade
+
+  33.1.3 Integração Heterogênea — [V]
+      Componentes especializados
+      Organização híbrida
+      Cooperação entre dispositivos
+
+
+ 33.2 Tecnologias Modernas — [V]
+
+  33.2.1 Interconexões Modernas — [V]
+      PCI Express
+      NVMe
+      Compute Express Link (CXL)
+
+  33.2.2 Memórias Modernas — [V]
+      DDR modernas
+      HBM
+      Memórias empilhadas
+
+  33.2.3 Aceleradores Especializados — [V]
+      GPU
+      TPU
+      Aceleradores dedicados
+
+
+
+34. Organização Voltada para Eficiência e Confiabilidade — [I]
+
+ 34.1 Eficiência do Sistema — [I]
+
+  34.1.1 Eficiência Energética — [I]
+      Consumo de energia
+      Economia de energia
+      Desempenho por watt
+
+  34.1.2 Eficiência Térmica — [I]
+      Dissipação de calor
+      Refrigeração
+      Limitações térmicas
+
+  34.1.3 Otimização da Organização — [I]
+      Balanceamento dos recursos
+      Aproveitamento do hardware
+      Redução de desperdícios
+
+
+ 34.2 Confiabilidade dos Sistemas — [I]
+
+  34.2.1 Confiabilidade — [I]
+      Disponibilidade
+      Robustez
+      Continuidade operacional
+
+  34.2.2 Detecção de Falhas — [V]
+      Monitoramento
+      Diagnóstico
+      Detecção de erros
+
+  34.2.3 Tolerância a Falhas — [V]
+      Redundância
+      Recuperação
+      Continuidade dos serviços
+
+
+
+35. Tendências da Organização dos Computadores — [V]
+
+ 35.1 Evolução da Organização — [V]
+
+  35.1.1 Evolução Tecnológica — [V]
+      Miniaturização
+      Integração crescente
+      Modularização
+
+  35.1.2 Novos Paradigmas Organizacionais — [V]
+      Computação heterogênea
+      Processamento próximo à memória
+      Arquiteturas desagregadas
+
+  35.1.3 Tendências da Organização Moderna — [V]
+      Escalabilidade
+      Sustentabilidade
+      Especialização do hardware
+
+
+ 35.2 Perspectivas Futuras — [V]
+
+  35.2.1 Evolução dos Processadores — [V]
+      Maior paralelismo
+      Novas organizações internas
+      Integração de aceleradores
+
+  35.2.2 Evolução da Memória e Comunicação — [V]
+      Novas tecnologias de memória
+      Interconexões de alta velocidade
+      Integração entre subsistemas
+
+  35.2.3 Futuro da Organização dos Computadores — [V]
+      Computação de alto desempenho
+      Inteligência Artificial
+      Computação em nuvem
+      Novos modelos organizacionais
+
+
+
+PARTE 7 — INTEGRAÇÃO DOS CONCEITOS, RESUMO E CONCLUSÃO
+
+
+36. Integração da Organização dos Computadores — [I]
+
+ 36.1 Integração dos Subsistemas — [I]
+
+  36.1.1 Integração entre Processador, Memória e Entrada/Saída — [I]
+      Comunicação entre CPU, memória e dispositivos
+      Cooperação entre os subsistemas
+      Fluxo global das informações
+      Coordenação do funcionamento do computador
+
+  36.1.2 Organização Sistêmica do Computador — [I]
+      Visão integrada do hardware
+      Organização modular
+      Dependência entre os componentes
+      Funcionamento coordenado
+
+  36.1.3 Equilíbrio entre os Subsistemas — [I]
+      Balanceamento do processamento
+      Balanceamento da memória
+      Balanceamento da comunicação
+      Balanceamento da entrada e saída
+
+
+ 36.2 Organização como Base da Computação Moderna — [I]
+
+  36.2.1 Organização dos Recursos Computacionais — [I]
+      Recursos de processamento
+      Recursos de memória
+      Recursos de comunicação
+      Recursos de armazenamento
+
+  36.2.2 Organização voltada ao Desempenho — [I]
+      Eficiência global
+      Escalabilidade
+      Otimização dos recursos
+
+  36.2.3 Organização voltada à Evolução Tecnológica — [V]
+      Modularidade
+      Expansibilidade
+      Adaptação às novas tecnologias
+
+
+
+37. Organização dos Computadores nas Diferentes Plataformas — [I]
+
+ 37.1 Plataformas Computacionais — [I]
+
+  37.1.1 Computadores Pessoais — [V]
+      Organização geral
+      Componentes principais
+      Aplicações
+
+  37.1.2 Servidores — [V]
+      Organização voltada ao desempenho
+      Alta disponibilidade
+      Escalabilidade
+
+  37.1.3 Dispositivos Móveis — [V]
+      Organização integrada
+      Eficiência energética
+      Sistemas em Chip (SoC)
+
+  37.1.4 Sistemas Embarcados — [V]
+      Organização dedicada
+      Controle específico
+      Baixo consumo energético
+
+
+ 37.2 Plataformas Especializadas — [V]
+
+  37.2.1 Computação de Alto Desempenho — [V]
+      Supercomputadores
+      Clusters
+      Paralelismo
+
+  37.2.2 Computação em Nuvem — [V]
+      Infraestrutura distribuída
+      Virtualização
+      Escalabilidade
+
+  37.2.3 Sistemas Especializados — [V]
+      Inteligência Artificial
+      Tempo real
+      Internet das Coisas (IoT)
+
+
+
+38. Relação da Organização com Outras Áreas da Computação — [I]
+
+ 38.1 Integração Acadêmica — [I]
+
+  38.1.1 Organização e Arquitetura de Computadores — [I]
+      Relação entre as áreas
+      Diferenças
+      Complementaridade
+
+  38.1.2 Organização e Sistemas Operacionais — [I]
+      Gerenciamento dos recursos
+      Comunicação com o hardware
+      Controle dos dispositivos
+
+  38.1.3 Organização e Sistemas Digitais — [I]
+      Circuitos digitais
+      Implementação física
+      Base eletrônica
+
+
+ 38.2 Continuação dos Estudos — [V]
+
+  38.2.1 Principais Assuntos para Aprofundamento — [V]
+      CPU
+      Memória
+      Barramentos
+      Entrada e Saída
+      Desempenho
+
+  38.2.2 Sequência Recomendada de Estudo — [V]
+      Organização da CPU
+      Organização da Memória
+      Comunicação
+      Entrada e Saída
+      Tecnologias Modernas
+
+
+
+39. Panorama Geral da Organização dos Computadores — [V]
+
+ 39.1 Visão Geral da Área — [V]
+
+  39.1.1 Estrutura Geral da Organização — [V]
+      Componentes fundamentais
+      Organização dos subsistemas
+      Comunicação entre componentes
+
+  39.1.2 Objetivos da Organização dos Computadores — [V]
+      Eficiência
+      Integração
+      Desempenho
+      Confiabilidade
+
+  39.1.3 Evolução da Organização — [V]
+      Dos computadores clássicos aos sistemas modernos
+      Integração crescente
+      Novas tecnologias
+
+
+
+40. Resumo Geral da Disciplina — [V]
+
+ 40.1 Síntese dos Conteúdos Estudados — [V]
+
+  40.1.1 Fundamentos da Organização — [V]
+      Conceitos básicos
+      Arquitetura × Organização
+      Modelos fundamentais
+      Níveis de organização
+
+  40.1.2 Estrutura do Computador — [V]
+      Componentes fundamentais
+      Organização da CPU
+      Organização da memória
+      Comunicação interna
+
+  40.1.3 Organização Moderna — [V]
+      Desempenho
+      Paralelismo
+      Tecnologias atuais
+      Tendências
+
+
+
+41. Sequência Recomendada para Continuação dos Estudos — [V]
+
+ 41.1 Ordem Recomendada de Aprofundamento — [V]
+
+  41.1.1 Organização da CPU — [V]
+      Datapath
+      Unidade de Controle
+      ULA
+      Registradores
+
+  41.1.2 Organização da Memória — [V]
+      Memória principal
+      Cache
+      Memória virtual
+      Memória secundária
+
+  41.1.3 Comunicação do Sistema — [V]
+      Barramentos
+      Entrada e saída
+      DMA
+      Interrupções
+
+  41.1.4 Organização Avançada — [V]
+      Pipeline
+      Paralelismo
+      Multiprocessadores
+      Tecnologias modernas
+
+
+
+42. Conclusão — [V]
+
+ 42.1 Competências Desenvolvidas — [V]
+      Compreensão da estrutura do computador
+      Entendimento da organização dos componentes
+      Visão integrada do funcionamento do sistema
+
+ 42.2 Importância para as Próximas Listas de Estudo — [V]
+      Base para Organização da CPU
+      Base para Organização da Memória
+      Base para Barramentos
+      Base para Entrada e Saída
+      Base para Desempenho dos Computadores
+
+ 42.3 Objetivo Final da Disciplina — [V]
+      Compreender como os computadores são organizados internamente
+      Entender a cooperação entre os componentes do hardware
+      Construir a base necessária para o estudo aprofundado da Organização e, posteriormente, da Arquitetura de  
+     Computadores
