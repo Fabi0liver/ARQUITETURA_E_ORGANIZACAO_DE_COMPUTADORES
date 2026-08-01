@@ -13,11 +13,11 @@ A classificação abaixo indica a profundidade recomendada para cada grande tóp
 PARTE 1 — FUNDAMENTOS DA ORGANIZAÇÃO DE COMPUTADORES
 
 
-1. Introdução à Organização de Computadores — [P]
+1. Introdução à Organização de Computadores — [I]
 
- 1.1 Conceitos Fundamentais — [P]
+ 1.1 Conceitos Fundamentais — [I]
 
-  1.1.1 Organização de Computadores — [P]
+  1.1.1 Organização de Computadores — [I]
       O que é Organização de Computadores
       Objetivos da Organização de Computadores
       Importância da Organização de Computadores
@@ -77,9 +77,9 @@ PARTE 1 — FUNDAMENTOS DA ORGANIZAÇÃO DE COMPUTADORES
 
 
 
-2. Arquitetura e Organização de Computadores — [P]
+2. Arquitetura e Organização de Computadores — [I]
 
- 2.1 Conceitos Fundamentais — [P]
+ 2.1 Conceitos Fundamentais — [I]
 
   2.1.1 Arquitetura de Computadores — [I]
       O que é Arquitetura de Computadores
@@ -87,13 +87,13 @@ PARTE 1 — FUNDAMENTOS DA ORGANIZAÇÃO DE COMPUTADORES
       Conjunto de instruções (ISA)
       Visão do programador
 
-  2.1.2 Organização de Computadores — [P]
+  2.1.2 Organização de Computadores — [I]
       Implementação da arquitetura
       Organização física dos componentes
       Estrutura funcional
       Funcionamento interno
 
-  2.1.3 Diferenças entre Arquitetura e Organização — [P]
+  2.1.3 Diferenças entre Arquitetura e Organização — [I]
       O que pertence à Arquitetura
       O que pertence à Organização
       Complementaridade entre ambas
@@ -217,7 +217,7 @@ PARTE 1 — FUNDAMENTOS DA ORGANIZAÇÃO DE COMPUTADORES
       Dados
       Endereços
 
-  5.1.3 Álgebra Booleana e Lógica Digital — [I]
+  5.1.3 Álgebra Booleana e Lógica Digital — [P]
       Álgebra Booleana
       Portas Lógicas
       Circuitos Combinacionais
@@ -267,11 +267,11 @@ PARTE 1 — FUNDAMENTOS DA ORGANIZAÇÃO DE COMPUTADORES
 PARTE 2 — ESTRUTURA BÁSICA DO COMPUTADOR
 
 
-6. Estrutura Geral do Sistema Computacional — [P]
+6. Estrutura Geral do Sistema Computacional — [I]
 
- 6.1 Organização Geral do Computador — [P]
+ 6.1 Organização Geral do Computador — [I]
 
-  6.1.1 Estrutura do Sistema Computacional — [P]
+  6.1.1 Estrutura do Sistema Computacional — [I]
       Organização geral do computador
       Visão sistêmica
       Componentes principais
@@ -293,14 +293,14 @@ PARTE 2 — ESTRUTURA BÁSICA DO COMPUTADOR
 
  6.2 Estrutura Física e Estrutura Funcional — [I]
 
-  6.2.1 Estrutura Física — [I]
+  6.2.1 Estrutura Física — [V]
       Organização dos componentes físicos
       Placa-mãe
       Processador
       Memórias
       Dispositivos de entrada e saída
 
-  6.2.2 Organização da Placa-mãe — [I]
+  6.2.2 Organização da Placa-mãe — [V]
       Chipset
       Slots
       Soquetes
@@ -319,9 +319,9 @@ PARTE 2 — ESTRUTURA BÁSICA DO COMPUTADOR
 
 
 
-7. Componentes Fundamentais do Computador — [P]
+7. Componentes Fundamentais do Computador — [I]
 
- 7.1 Componentes Básicos — [P]
+ 7.1 Componentes Básicos — [I]
 
   7.1.1 Unidade Central de Processamento (CPU) — [I]
       Função geral
@@ -365,7 +365,7 @@ PARTE 2 — ESTRUTURA BÁSICA DO COMPUTADOR
 
 
 
-8. Organização dos Subsistemas Computacionais — [P]
+8. Organização dos Subsistemas Computacionais — [I]
 
  8.1 Subsistema de Processamento — [I]
 
@@ -420,9 +420,9 @@ PARTE 2 — ESTRUTURA BÁSICA DO COMPUTADOR
 
 
 
-9. Fluxo Geral da Informação no Computador — [P]
+9. Fluxo Geral da Informação no Computador — [I]
 
- 9.1 Fluxo Operacional — [P]
+ 9.1 Fluxo Operacional — [I]
 
   9.1.1 Entrada das Informações — [I]
       Recepção dos dados
@@ -445,15 +445,15 @@ PARTE 2 — ESTRUTURA BÁSICA DO COMPUTADOR
       Apresentação das informações
 
 
- 9.2 Fluxo entre os Componentes — [P]
+ 9.2 Fluxo entre os Componentes — [I]
 
-  9.2.1 Comunicação Interna — [P]
+  9.2.1 Comunicação Interna — [I]
       CPU e memória
       CPU e entrada/saída
       Memória e dispositivos
       Interconexão geral
 
-  9.2.2 Fluxo de Dados e Controle — [P]
+  9.2.2 Fluxo de Dados e Controle — [I]
       Fluxo de dados
       Fluxo de endereços
       Fluxo de sinais de controle
@@ -465,7 +465,7 @@ PARTE 2 — ESTRUTURA BÁSICA DO COMPUTADOR
 
 
 
-10. Organização Física e Funcional do Computador — [P]
+10. Organização Física e Funcional do Computador — [I]
 
  10.1 Organização Física — [I]
 
@@ -499,15 +499,15 @@ PARTE 2 — ESTRUTURA BÁSICA DO COMPUTADOR
       Bootloader
       Carregamento do Sistema Operacional
 
-  10.1.6 Alimentação dos Componentes
+  10.1.6 Alimentação dos Componentes — [V]
       Fonte
       Distribuição de energia
       Reguladores
 
 
- 10.2 Organização Funcional — [P]
+ 10.2 Organização Funcional — [I]
 
-  10.2.1 Cooperação entre os Componentes — [P]
+  10.2.1 Cooperação entre os Componentes — [I]
       Processamento
       Armazenamento
       Comunicação
@@ -519,7 +519,7 @@ PARTE 2 — ESTRUTURA BÁSICA DO COMPUTADOR
       Recursos de comunicação
       Recursos de entrada e saída
 
-  10.2.3 Visão Integrada da Estrutura do Computador — [P]
+  10.2.3 Visão Integrada da Estrutura do Computador — [I]
       Integração dos subsistemas
       Funcionamento coordenado
       Base para a organização da CPU
@@ -534,7 +534,7 @@ PARTE 3 — ORGANIZAÇÃO DA CPU
 
  11.1 Fundamentos da CPU — [P]
 
-  11.1.1 Unidade Central de Processamento — [P]
+  11.1.1 Unidade Central de Processamento — [I]
       O que é a CPU
       Objetivos da CPU
       Papel da CPU no computador
@@ -970,9 +970,9 @@ PARTE 4 — ORGANIZAÇÃO DA MEMÓRIA
       Cache compartilhada
 
 
- 20.2 Organização do Funcionamento — [I]
+ 20.2 Organização do Funcionamento — [P]
 
-  20.2.1 Organização do Mapeamento — [I]
+  20.2.1 Organização do Mapeamento — [P]
       Mapeamento direto
       Totalmente associativo
       Associativo por conjuntos
@@ -982,7 +982,7 @@ PARTE 4 — ORGANIZAÇÃO DA MEMÓRIA
       Escrita
       Atualização
 
-  20.2.3 Objetivos da Cache — [I]
+  20.2.3 Objetivos da Cache — [V]
       Redução do tempo de acesso
       Aumento da eficiência
       Melhor aproveitamento da hierarquia
@@ -1245,7 +1245,7 @@ PARTE 5 — COMUNICAÇÃO E ENTRADA/SAÍDA
       Transferência direta
       Participação do processador
 
-  26.2.4 Bufferização de Dados
+  26.2.4 Bufferização de Dados — [I]
       Buffer
       Bufferização
       Sincronização
@@ -1336,41 +1336,41 @@ PARTE 5 — COMUNICAÇÃO E ENTRADA/SAÍDA
 
 
 
-29. Integração dos Subsistemas Computacionais — [P]
+29. Integração dos Subsistemas Computacionais — [I]
 
- 29.1 Comunicação entre os Subsistemas — [P]
+ 29.1 Comunicação entre os Subsistemas — [I]
 
-  29.1.1 Integração entre CPU e Memória — [P]
+  29.1.1 Integração entre CPU e Memória — [I]
       Comunicação
       Transferência de dados
       Controle das operações
 
-  29.1.2 Integração com Entrada e Saída — [P]
+  29.1.2 Integração com Entrada e Saída — [I]
       Fluxo de informações
       Compartilhamento dos recursos
       Coordenação do sistema
 
-  29.1.3 Integração por Barramentos e Interconexões — [P]
+  29.1.3 Integração por Barramentos e Interconexões — [I]
       Comunicação global
       Cooperação entre subsistemas
       Organização do computador
 
 
- 29.2 Funcionamento Integrado do Computador — [P]
+ 29.2 Funcionamento Integrado do Computador — [I]
 
-  29.2.1 Fluxo Completo da Informação — [P]
+  29.2.1 Fluxo Completo da Informação — [I]
       Entrada
       Processamento
       Armazenamento
       Saída
 
-  29.2.2 Coordenação dos Componentes — [P]
+  29.2.2 Coordenação dos Componentes — [I]
       Processador
       Memória
       Barramentos
       Entrada e saída
 
-  29.2.3 Base para Otimização da Organização — [I]
+  29.2.3 Base para Otimização da Organização — [V]
       Comunicação eficiente
       Balanceamento dos recursos
       Integração dos subsistemas
@@ -1625,17 +1625,17 @@ PARTE 6 — DESEMPENHO, PARALELISMO E TECNOLOGIAS MODERNAS
 PARTE 7 — INTEGRAÇÃO DOS CONCEITOS, RESUMO E CONCLUSÃO
 
 
-36. Integração da Organização dos Computadores — [P]
+36. Integração da Organização dos Computadores — [I]
 
- 36.1 Integração dos Subsistemas — [P]
+ 36.1 Integração dos Subsistemas — [I]
 
-  36.1.1 Integração entre Processador, Memória e Entrada/Saída — [P]
+  36.1.1 Integração entre Processador, Memória e Entrada/Saída — [I]
       Comunicação entre CPU, memória e dispositivos
       Cooperação entre os subsistemas
       Fluxo global das informações
       Coordenação do funcionamento do computador
 
-  36.1.2 Organização Sistêmica do Computador — [P]
+  36.1.2 Organização Sistêmica do Computador — [I]
       Visão integrada do hardware
       Organização modular
       Dependência entre os componentes
