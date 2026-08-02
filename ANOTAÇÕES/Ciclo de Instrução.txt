@@ -13,88 +13,88 @@ A classificação abaixo indica a profundidade recomendada para cada grande tóp
 PARTE 1 — FUNDAMENTOS DO CICLO DE INSTRUÇÃO
 
 
-1. Introdução ao Ciclo de Instrução — [P]
+1. Introdução ao Ciclo de Instrução — [I]
 
- 1.1 Conceitos Fundamentais — [P]
+ 1.1 Conceitos Fundamentais — [I]
 
-  1.1.1 O que é o Ciclo de Instrução — [P]
-      Conceito de ciclo de instrução
-      Definição formal
-      Objetivos do ciclo de instrução
-      Papel na CPU
-      Papel na execução de programas
-      Unidade fundamental de execução
-      Relação entre hardware e software
-      Importância para o funcionamento do computador
+  1.1.1 O que é o Ciclo de Instrução — [I]
+	  Conceito de ciclo de instrução
+	  Definição formal
+	  Objetivos do ciclo de instrução
+	  Papel na CPU
+	  Papel na execução de programas
+	  Unidade fundamental de execução
+	  Relação entre hardware e software
+	  Importância para o funcionamento do computador
 
-  1.1.2 Finalidade do Ciclo de Instrução — [P]
-      Execução das instruções
-      Coordenação das operações internas
-      Processamento dos dados
-      Atualização do estado do processador
-      Controle da sequência de execução
-      Comunicação entre os componentes
-      Base para toda execução computacional
+  1.1.2 Finalidade do Ciclo de Instrução — [I]
+	  Execução das instruções
+	  Coordenação das operações internas
+	  Processamento dos dados
+	  Atualização do estado do processador
+	  Controle da sequência de execução
+	  Comunicação entre os componentes
+	  Base para toda execução computacional
 
-  1.1.3 Características Gerais — [P]
-      Processo repetitivo
-      Processo sequencial
-      Processo sincronizado
-      Processo controlado pela Unidade de Controle
-      Execução baseada em instruções
-      Dependência do clock
-      Atualização contínua do estado da CPU
+  1.1.3 Características Gerais — [I]
+	  Processo repetitivo
+	  Processo sequencial
+	  Processo sincronizado
+	  Processo controlado pela Unidade de Controle
+	  Execução baseada em instruções
+	  Dependência do clock
+	  Atualização contínua do estado da CPU
 
 
- 1.2 Importância do Ciclo de Instrução — [P]
+ 1.2 Importância do Ciclo de Instrução — [I]
 
   1.2.1 Papel na Arquitetura de Computadores — [I]
-      Interface entre ISA e hardware
-      Materialização da execução das instruções
-      Modelo arquitetural de execução
-      Relação com o conjunto de instruções
-      Relação com os registradores arquiteturais
+	  Interface entre ISA e hardware
+	  Materialização da execução das instruções
+	  Modelo arquitetural de execução
+	  Relação com o conjunto de instruções
+	  Relação com os registradores arquiteturais
 
-  1.2.2 Papel na Organização de Computadores — [P]
-      Implementação física da execução
-      Coordenação dos componentes internos
-      Fluxo de dados
-      Fluxo de controle
-      Sequenciamento das operações
-      Integração entre unidades funcionais
+  1.2.2 Papel na Organização de Computadores — [I]
+	  Implementação física da execução
+	  Coordenação dos componentes internos
+	  Fluxo de dados
+	  Fluxo de controle
+	  Sequenciamento das operações
+	  Integração entre unidades funcionais
 
   1.2.3 Importância para o Desempenho — [I]
-      Tempo de execução
-      Eficiência do processador
-      Aproveitamento dos recursos internos
-      Base para otimizações
-      Influência na arquitetura moderna
+	  Tempo de execução
+	  Eficiência do processador
+	  Aproveitamento dos recursos internos
+	  Base para otimizações
+	  Influência na arquitetura moderna
 
 
  1.3 O Ciclo de Instrução no Sistema Computacional — [I]
 
   1.3.1 Relação com Programas — [I]
-      Execução de programas
-      Sequência de instruções
-      Fluxo de execução
-      Estado do programa
-      Ordem das instruções
+	  Execução de programas
+	  Sequência de instruções
+	  Fluxo de execução
+	  Estado do programa
+	  Ordem das instruções
 
   1.3.2 Relação com o Sistema Computacional — [I]
-      Comunicação com a memória
-      Comunicação com os registradores
-      Comunicação com barramentos
-      Comunicação com dispositivos de entrada e saída
-      Coordenação do processamento
+	  Comunicação com a memória
+	  Comunicação com os registradores
+	  Comunicação com barramentos
+	  Comunicação com dispositivos de entrada e saída
+	  Coordenação do processamento
 
-  1.3.3 Relação com a CPU — [P]
-      Unidade de Controle
-      Caminho de Dados (Datapath)
-      Registradores
-      ALU
-      FPU
-      Unidades funcionais
-      Estado interno do processador
+  1.3.3 Relação com a CPU — [I]
+	  Unidade de Controle
+	  Caminho de Dados (Datapath)
+	  Registradores
+	  ALU
+	  FPU
+	  Unidades funcionais
+	  Estado interno do processador
 
 
 
@@ -103,50 +103,50 @@ PARTE 1 — FUNDAMENTOS DO CICLO DE INSTRUÇÃO
  2.1 Conceitos Básicos — [P]
 
   2.1.1 Instrução de Máquina — [P]
-      Conceito
-      Operação
-      Operandos
-      Formato da instrução
-      Código de operação (Opcode)
-      Campos da instrução
+	  Conceito
+	  Operação
+	  Operandos
+	  Formato da instrução
+	  Código de operação (Opcode)
+	  Campos da instrução
 
-  2.1.2 Programa como Sequência de Instruções — [P]
-      Fluxo sequencial
-      Ordem de execução
-      Dependência entre instruções
-      Estado do programa
-      Continuidade da execução
+  2.1.2 Programa como Sequência de Instruções — [I]
+	  Fluxo sequencial
+	  Ordem de execução
+	  Dependência entre instruções
+	  Estado do programa
+	  Continuidade da execução
 
   2.1.3 Execução das Instruções — [P]
-      Busca
-      Interpretação
-      Processamento
-      Produção dos resultados
-      Atualização do estado
+	  Busca
+	  Interpretação
+	  Processamento
+	  Produção dos resultados
+	  Atualização do estado
 
 
  2.2 Estados da Execução — [P]
 
   2.2.1 Estado da CPU — [P]
-      Conteúdo dos registradores
-      Program Counter (PC)
-      Instruction Register (IR)
-      Registrador de Status
-      Flags
-      Estado interno
+	  Conteúdo dos registradores
+	  Program Counter (PC)
+	  Instruction Register (IR)
+	  Registrador de Status
+	  Flags
+	  Estado interno
 
-  2.2.2 Estado do Programa — [P]
-      Posição atual da execução
-      Fluxo das instruções
-      Dados ativos
-      Contexto da execução
+  2.2.2 Estado do Programa — [I]
+	  Posição atual da execução
+	  Fluxo das instruções
+	  Dados ativos
+	  Contexto da execução
 
   2.2.3 Mudanças de Estado — [P]
-      Atualização dos registradores
-      Atualização das flags
-      Atualização do PC
-      Atualização da memória
-      Transição entre instruções
+	  Atualização dos registradores
+	  Atualização das flags
+	  Atualização do PC
+	  Atualização da memória
+	  Transição entre instruções
 
 
 
@@ -155,68 +155,68 @@ PARTE 1 — FUNDAMENTOS DO CICLO DE INSTRUÇÃO
  3.1 Componentes Internos da CPU — [P]
 
   3.1.1 Unidade de Controle (UC) — [P]
-      Coordenação do ciclo
-      Sequenciamento
-      Geração dos sinais de controle
-      Sincronização das etapas
+	  Coordenação do ciclo
+	  Sequenciamento
+	  Geração dos sinais de controle
+	  Sincronização das etapas
 
   3.1.2 Unidade Lógica e Aritmética (ALU) — [P]
-      Execução das operações
-      Processamento aritmético
-      Processamento lógico
-      Atualização das flags
+	  Execução das operações
+	  Processamento aritmético
+	  Processamento lógico
+	  Atualização das flags
 
   3.1.3 Banco de Registradores — [P]
-      Armazenamento temporário
-      Leitura dos operandos
-      Escrita dos resultados
-      Comunicação com a ALU
+	  Armazenamento temporário
+	  Leitura dos operandos
+	  Escrita dos resultados
+	  Comunicação com a ALU
 
 
  3.2 Registradores Fundamentais do Ciclo de Instrução — [P]
 
   3.2.1 Registradores de Controle — [P]
-      Program Counter (PC)
-      Instruction Register (IR)
-      Memory Address Register (MAR)
-      Memory Buffer/Data Register (MBR/MDR)
-      Status Register
-      Instruction Pointer (quando aplicável)
+	  Program Counter (PC)
+	  Instruction Register (IR)
+	  Memory Address Register (MAR)
+	  Memory Buffer/Data Register (MBR/MDR)
+	  Status Register
+	  Instruction Pointer (quando aplicável)
 
   3.2.2 Registradores de Dados — [P]
-      Registradores de uso geral
-      Acumulador (ACC)
-      Registradores temporários
-      Registradores de operandos
-      Registradores de resultados
+	  Registradores de uso geral
+	  Acumulador (ACC)
+	  Registradores temporários
+	  Registradores de operandos
+	  Registradores de resultados
 
   3.2.3 Papel dos Registradores Durante o Ciclo — [P]
-      Busca da instrução
-      Transferência de dados
-      Armazenamento temporário
-      Atualização do estado
-      Preparação da próxima instrução
+	  Busca da instrução
+	  Transferência de dados
+	  Armazenamento temporário
+	  Atualização do estado
+	  Preparação da próxima instrução
 
 
  3.3 Recursos Externos Utilizados — [I]
 
   3.3.1 Memória Principal — [I]
-      Armazenamento das instruções
-      Armazenamento dos dados
-      Leitura
-      Escrita
+	  Armazenamento das instruções
+	  Armazenamento dos dados
+	  Leitura
+	  Escrita
 
   3.3.2 Barramentos — [I]
-      Barramento de dados
-      Barramento de endereço
-      Barramento de controle
-      Transferência das informações
+	  Barramento de dados
+	  Barramento de endereço
+	  Barramento de controle
+	  Transferência das informações
 
   3.3.3 Clock do Processador — [P]
-      Sincronização
-      Temporização
-      Ciclos de clock
-      Sequenciamento temporal
+	  Sincronização
+	  Temporização
+	  Ciclos de clock
+	  Sequenciamento temporal
 
 
 
@@ -225,103 +225,103 @@ PARTE 1 — FUNDAMENTOS DO CICLO DE INSTRUÇÃO
  4.1 Modelo Clássico de Execução — [P]
 
   4.1.1 Visão Geral das Etapas — [P]
-      Busca (Fetch)
-      Decodificação (Decode)
-      Busca dos operandos (Operand Fetch)
-      Execução (Execute)
-      Acesso à memória (Memory Access)
-      Escrita dos resultados (Write Back)
-      Atualização do Program Counter
+	  Busca (Fetch)
+	  Decodificação (Decode)
+	  Busca dos operandos (Operand Fetch)
+	  Execução (Execute)
+	  Acesso à memória (Memory Access)
+	  Escrita dos resultados (Write Back)
+	  Atualização do Program Counter
 
   4.1.2 Objetivos de Cada Etapa — [P]
-      Obter a instrução
-      Interpretar a instrução
-      Obter os operandos
-      Executar a operação
-      Armazenar os resultados
-      Preparar a próxima execução
+	  Obter a instrução
+	  Interpretar a instrução
+	  Obter os operandos
+	  Executar a operação
+	  Armazenar os resultados
+	  Preparar a próxima execução
 
   4.1.3 Fluxo Geral da Execução — [P]
-      Sequência das etapas
-      Fluxo de dados
-      Fluxo de controle
-      Atualização contínua do estado
+	  Sequência das etapas
+	  Fluxo de dados
+	  Fluxo de controle
+	  Atualização contínua do estado
 
 
  4.2 Natureza Cíclica da Execução — [P]
 
   4.2.1 Repetição Contínua — [P]
-      Início do ciclo
-      Finalização
-      Reinício automático
-      Continuidade da execução
+	  Início do ciclo
+	  Finalização
+	  Reinício automático
+	  Continuidade da execução
 
   4.2.2 Sequenciamento das Instruções — [P]
-      Ordem natural
-      Dependências
-      Continuidade
-      Fluxo sequencial
+	  Ordem natural
+	  Dependências
+	  Continuidade
+	  Fluxo sequencial
 
   4.2.3 Controle da Sequência — [P]
-      Program Counter
-      Unidade de Controle
-      Clock
-      Estado da CPU
+	  Program Counter
+	  Unidade de Controle
+	  Clock
+	  Estado da CPU
 
 
  4.3 Ciclo Indireto (Indirect Cycle) — [P]
 
-  4.3.1 Conceito de ciclo indireto
-      Endereçamento indireto
-      Endereço efetivo
-      Diferença entre endereço da instrução e endereço do operando
+  4.3.1 Conceito de ciclo indireto — [P]
+	  Endereçamento indireto
+	  Endereço efetivo
+	  Diferença entre endereço da instrução e endereço do operando
 
-  4.3.2 Funcionamento
-      Obtenção do endereço indireto
-      Acesso à memória
-      Atualização do endereço efetivo
-      Continuação da execução
+  4.3.2 Funcionamento — [P]
+	  Obtenção do endereço indireto
+	  Acesso à memória
+	  Atualização do endereço efetivo
+	  Continuação da execução
 
-  4.3.3 Relação com o ciclo de instrução
-      Fetch → Decode → Indirect → Execute
-      Quando o ciclo indireto é necessário
-      Quando ele não é necessário
+  4.3.3 Relação com o ciclo de instrução — [P]
+	  Fetch → Decode → Indirect → Execute
+	  Quando o ciclo indireto é necessário
+	  Quando ele não é necessário
 
 
  4.4 Verificação de Interrupções — [P]
 
-  4.4.1 Conceitos Fundamentais
-      Momento da verificação
-      Papel no ciclo de instrução
-      Eventos síncronos
-      Eventos assíncronos
+  4.4.1 Conceitos Fundamentais — [P]
+	  Momento da verificação
+	  Papel no ciclo de instrução
+	  Eventos síncronos
+	  Eventos assíncronos
 
-  4.4.2 Detecção da Interrupção
-      Identificação da interrupção
-      Solicitação pendente
-      Prioridade
-      Máscara de interrupções
+  4.4.2 Detecção da Interrupção — [P]
+	  Identificação da interrupção
+	  Solicitação pendente
+	  Prioridade
+	  Máscara de interrupções
 
-  4.4.3 Aceitação da Interrupção
-      Decisão da Unidade de Controle
-      Finalização da instrução atual
-      Início do ciclo de interrupção
+  4.4.3 Aceitação da Interrupção — [P]
+	  Decisão da Unidade de Controle
+	  Finalização da instrução atual
+	  Início do ciclo de interrupção
 
-  4.4.4 Salvamento do Estado
-      Program Counter
-      Registradores
-      Status Register
-      Contexto mínimo
+  4.4.4 Salvamento do Estado — [P]
+	  Program Counter
+	  Registradores
+	  Status Register
+	  Contexto mínimo
 
-  4.4.5 Transferência de Controle
-      Vetor de interrupções
-      Rotina de tratamento
-      Alteração do fluxo
+  4.4.5 Transferência de Controle — [P]
+	  Vetor de interrupções
+	  Rotina de tratamento
+	  Alteração do fluxo
 
-  4.4.6 Retorno da Interrupção
-      Restauração do contexto
-      Retorno ao programa
-      Continuação da execução
+  4.4.6 Retorno da Interrupção — [P]
+	  Restauração do contexto
+	  Retorno ao programa
+	  Continuação da execução
 
 
 
@@ -330,42 +330,42 @@ PARTE 1 — FUNDAMENTOS DO CICLO DE INSTRUÇÃO
  5.1 Modelos de Execução — [I]
 
   5.1.1 Ciclo Clássico — [I]
-      Modelo Fetch–Decode–Execute
-      Organização tradicional
-      Funcionamento geral
+	  Modelo Fetch–Decode–Execute
+	  Organização tradicional
+	  Funcionamento geral
 
-  5.1.2 Ciclo Expandido — [P]
-      Separação da busca dos operandos
-      Separação do acesso à memória
-      Separação da escrita dos resultados
-      Atualização explícita do PC
+  5.1.2 Ciclo Expandido — [I]
+	  Separação da busca dos operandos
+	  Separação do acesso à memória
+	  Separação da escrita dos resultados
+	  Atualização explícita do PC
 
   5.1.3 Modelos Modernos — [I]
-      Organização em pipeline
-      Execução baseada em micro-operações
-      Visão geral da execução moderna
+	  Organização em pipeline
+	  Execução baseada em micro-operações
+	  Visão geral da execução moderna
 
 
  5.2 Variações do Ciclo de Instrução — [I]
 
   5.2.1 Conforme o Tipo de Instrução — [I]
-      Instruções aritméticas
-      Instruções lógicas
-      Instruções de transferência
-      Instruções de controle
-      Instruções de acesso à memória
+	  Instruções aritméticas
+	  Instruções lógicas
+	  Instruções de transferência
+	  Instruções de controle
+	  Instruções de acesso à memória
 
   5.2.2 Conforme a Arquitetura — [I]
-      CISC
-      RISC
-      Diferenças gerais na execução
-      Impacto no ciclo de instrução
+	  CISC
+	  RISC
+	  Diferenças gerais na execução
+	  Impacto no ciclo de instrução
 
   5.2.3 Conforme a Organização do Processador — [I]
-      Processadores monociclo
-      Processadores multiciclo
-      Introdução ao pipeline
-      Visão geral da execução moderna
+	  Processadores monociclo
+	  Processadores multiciclo
+	  Introdução ao pipeline
+	  Visão geral da execução moderna
 
 
 
@@ -377,70 +377,70 @@ PARTE 2 — ESTRUTURA E FUNCIONAMENTO DO CICLO DE INSTRUÇÃO
  6.1 Fundamentos da Busca — [P]
 
   6.1.1 Conceitos Fundamentais — [P]
-      Conceito de Fetch
-      Objetivos da busca
-      Primeira etapa do ciclo
-      Papel na execução das instruções
-      Relação com a memória principal
-      Relação com a próxima instrução
+	  Conceito de Fetch
+	  Objetivos da busca
+	  Primeira etapa do ciclo
+	  Papel na execução das instruções
+	  Relação com a memória principal
+	  Relação com a próxima instrução
 
   6.1.2 Organização da Busca — [P]
-      Sequência da busca
-      Início do ciclo
-      Fluxo de informações
-      Sincronização da operação
-      Participação da Unidade de Controle
+	  Sequência da busca
+	  Início do ciclo
+	  Fluxo de informações
+	  Sincronização da operação
+	  Participação da Unidade de Controle
 
   6.1.3 Recursos Utilizados — [P]
-      Program Counter (PC)
-      Memory Address Register (MAR)
-      Memory Buffer Register (MBR/MDR)
-      Instruction Register (IR)
-      Barramentos
-      Memória principal
+	  Program Counter (PC)
+	  Memory Address Register (MAR)
+	  Memory Buffer Register (MBR/MDR)
+	  Instruction Register (IR)
+	  Barramentos
+	  Memória principal
 
 
  6.2 Funcionamento da Busca — [P]
 
   6.2.1 Localização da Instrução — [P]
-      Endereço da instrução
-      Papel do Program Counter
-      Endereçamento da memória
-      Seleção da posição de memória
+	  Endereço da instrução
+	  Papel do Program Counter
+	  Endereçamento da memória
+	  Seleção da posição de memória
 
   6.2.2 Transferência da Instrução — [P]
-      Leitura da memória
-      Transferência pelos barramentos
-      Carregamento no MBR
-      Transferência para o IR
+	  Leitura da memória
+	  Transferência pelos barramentos
+	  Carregamento no MBR
+	  Transferência para o IR
 
   6.2.3 Finalização da Busca — [P]
-      Disponibilização da instrução
-      Preparação para decodificação
-      Atualização do estado interno
-      Encerramento da etapa
+	  Disponibilização da instrução
+	  Preparação para decodificação
+	  Atualização do estado interno
+	  Encerramento da etapa
 
 
  6.3 Atualização do Program Counter — [P]
 
   6.3.1 Incremento Sequencial — [P]
-      Incremento automático
-      Próxima instrução
-      Fluxo linear
-      Sequência normal
+	  Incremento automático
+	  Próxima instrução
+	  Fluxo linear
+	  Sequência normal
 
   6.3.2 Alterações do Fluxo — [P]
-      Saltos
-      Chamadas de sub-rotinas
-      Retornos
-      Desvios condicionais
-      Desvios incondicionais
+	  Saltos
+	  Chamadas de sub-rotinas
+	  Retornos
+	  Desvios condicionais
+	  Desvios incondicionais
 
   6.3.3 Dependências da Atualização — [P]
-      Tipo da instrução
-      Resultado da execução
-      Flags
-      Unidade de Controle
+	  Tipo da instrução
+	  Resultado da execução
+	  Flags
+	  Unidade de Controle
 
 
 
@@ -449,60 +449,60 @@ PARTE 2 — ESTRUTURA E FUNCIONAMENTO DO CICLO DE INSTRUÇÃO
  7.1 Fundamentos da Decodificação — [P]
 
   7.1.1 Conceitos Fundamentais — [P]
-      Conceito de Decode
-      Objetivos da decodificação
-      Interpretação da instrução
-      Tradução para operações internas
+	  Conceito de Decode
+	  Objetivos da decodificação
+	  Interpretação da instrução
+	  Tradução para operações internas
 
   7.1.2 Papel da Unidade de Controle — [P]
-      Interpretação da instrução
-      Geração dos sinais de controle
-      Seleção das unidades funcionais
-      Coordenação das operações
+	  Interpretação da instrução
+	  Geração dos sinais de controle
+	  Seleção das unidades funcionais
+	  Coordenação das operações
 
   7.1.3 Estrutura da Instrução — [P]
-      Opcode
-      Campos da instrução
-      Operandos
-      Registradores
-      Modos de endereçamento
+	  Opcode
+	  Campos da instrução
+	  Operandos
+	  Registradores
+	  Modos de endereçamento
 
 
  7.2 Processo de Decodificação — [P]
 
   7.2.1 Identificação da Operação — [P]
-      Reconhecimento do opcode
-      Tipo da instrução
-      Classe da operação
-      Operação solicitada
+	  Reconhecimento do opcode
+	  Tipo da instrução
+	  Classe da operação
+	  Operação solicitada
 
   7.2.2 Identificação dos Operandos — [P]
-      Registradores envolvidos
-      Operandos imediatos
-      Operandos na memória
-      Operandos implícitos
+	  Registradores envolvidos
+	  Operandos imediatos
+	  Operandos na memória
+	  Operandos implícitos
 
   7.2.3 Preparação da Execução — [P]
-      Seleção da ALU
-      Seleção da FPU
-      Seleção da AGU
-      Seleção da LSU
-      Preparação das unidades funcionais
+	  Seleção da ALU
+	  Seleção da FPU
+	  Seleção da AGU
+	  Seleção da LSU
+	  Preparação das unidades funcionais
 
 
  7.3 Resultado da Decodificação — [P]
 
   7.3.1 Informações Geradas — [P]
-      Operação identificada
-      Operandos identificados
-      Destino dos resultados
-      Recursos necessários
+	  Operação identificada
+	  Operandos identificados
+	  Destino dos resultados
+	  Recursos necessários
 
   7.3.2 Controle da Execução — [P]
-      Sequenciamento
-      Sinais de controle
-      Ordem das operações
-      Preparação do fluxo interno
+	  Sequenciamento
+	  Sinais de controle
+	  Ordem das operações
+	  Preparação do fluxo interno
 
 
 
@@ -511,96 +511,102 @@ PARTE 2 — ESTRUTURA E FUNCIONAMENTO DO CICLO DE INSTRUÇÃO
  8.1 Fundamentos — [P]
 
   8.1.1 Conceitos Fundamentais — [P]
-      Conceito de Operand Fetch
-      Objetivos
-      Necessidade da etapa
-      Relação com a execução
+	  Conceito de Operand Fetch
+	  Objetivos
+	  Necessidade da etapa
+	  Relação com a execução
 
   8.1.2 Fontes dos Operandos — [P]
-      Registradores
-      Memória principal
-      Valores imediatos
-      Constantes embutidas
-      Operandos implícitos
+	  Registradores
+	  Memória principal
+	  Valores imediatos
+	  Constantes embutidas
+	  Operandos implícitos
 
   8.1.3 Organização Geral — [P]
-      Localização
-      Leitura
-      Transferência
-      Disponibilização para execução
+	  Localização
+	  Leitura
+	  Transferência
+	  Disponibilização para execução
 
 
  8.2 Obtenção dos Operandos — [P]
 
   8.2.1 Operandos em Registradores — [P]
-      Leitura do banco de registradores
-      Portas de leitura
-      Transferência interna
+	  Leitura do banco de registradores
+	  Portas de leitura
+	  Transferência interna
 
   8.2.2 Operandos na Memória — [P]
-      Endereçamento
-      Leitura da memória
-      Transferência dos dados
-      Comunicação pelos barramentos
+	  Endereçamento
+	  Leitura da memória
+	  Transferência dos dados
+	  Comunicação pelos barramentos
 
   8.2.3 Operandos Imediatos — [P]
-      Valores embutidos
-      Extração da instrução
-      Disponibilização direta
+	  Valores embutidos
+	  Extração da instrução
+	  Disponibilização direta
 
 
  8.3 Preparação para Execução — [P]
 
   8.3.1 Disponibilização dos Dados — [P]
-      Entrada da ALU
-      Entrada da FPU
-      Entrada das unidades funcionais
+	  Entrada da ALU
+	  Entrada da FPU
+	  Entrada das unidades funcionais
 
   8.3.2 Sincronização — [P]
-      Coordenação temporal
-      Controle da Unidade de Controle
-      Dependências de dados
+	  Coordenação temporal
+	  Controle da Unidade de Controle
+	  Dependências de dados
 
 
  8.4 Cálculo do Endereço Efetivo — [P]
 
-  8.4.1 Conceitos Fundamentais
-      Conceito de endereço efetivo
-      Objetivos
-      Diferença entre endereço lógico da instrução e endereço efetivo
+  8.4.1 Conceitos Fundamentais — [P]
+	  Conceito de endereço efetivo
+	  Objetivos
+	  Diferença entre endereço lógico da instrução e endereço efetivo
 
-  8.4.2 Informações Utilizadas
-      Campos da instrução
-      Registradores
-      Deslocamentos
-      Constantes
-      Program Counter
+  8.4.2 Informações Utilizadas — [P]
+	  Campos da instrução
+	  Registradores
+	  Deslocamentos
+	  Constantes
+	  Program Counter
 
-  8.4.3 Operações Envolvidas
-      Soma
-      Deslocamento
-      Indexação
-      Escalonamento
-      Seleção do endereço
+  8.4.3 Operações Envolvidas — [P]
+	  Soma
+	  Deslocamento
+	  Indexação
+	  Escalonamento
+	  Seleção do endereço
 
-  8.4.4 Papel da AGU (Address Generation Unit)
-      Geração do endereço
-      Cálculo paralelo
-      Comunicação com a memória
-      Integração com o pipeline
+  8.4.4 Unidade de Geração de Endereços (Address Generation Unit – AGU) — [P]
+	  Função
+	  Operação paralela
+	  Papel no Pipeline
+	  Relação com Load e Store
 
-  8.4.5 Relação com os Modos de Endereçamento
-      Endereço direto
-      Endereço indireto
-      Base + deslocamento
-      Base + índice
-      Base + índice + deslocamento
-      Endereçamento relativo ao PC
+  8.4.5 Relação com os Modos de Endereçamento — [P]
+	  Endereço direto
+	  Endereço indireto
+	  Base + deslocamento
+	  Base + índice
+	  Base + índice + deslocamento
+	  Endereçamento relativo ao PC
 
-  8.4.6 Disponibilização do Endereço
-      Envio ao MAR
-      Preparação para Memory Access
-      Continuidade da execução
+  8.4.6 Disponibilização do Endereço — [P]
+	  Envio ao MAR
+	  Preparação para Memory Access
+	  Continuidade da execução
+
+  8.4.7 Disponibilização do Endereço Efetivo — [P]
+	  Envio ao MAR
+	  Comunicação com a Unidade de Memória
+	  Preparação para Memory Access
+	  Continuidade do Ciclo de Instrução
 
 
 
@@ -609,66 +615,66 @@ PARTE 2 — ESTRUTURA E FUNCIONAMENTO DO CICLO DE INSTRUÇÃO
  9.1 Fundamentos da Execução — [P]
 
   9.1.1 Conceitos Fundamentais — [P]
-      Conceito de Execute
-      Objetivos
-      Papel da execução
-      Transformação dos dados
+	  Conceito de Execute
+	  Objetivos
+	  Papel da execução
+	  Transformação dos dados
 
   9.1.2 Recursos Utilizados — [P]
-      ALU
-      FPU
-      AGU
-      LSU
-      Unidades especializadas
+	  ALU
+	  FPU
+	  AGU
+	  LSU
+	  Unidades especializadas
 
   9.1.3 Organização da Execução — [P]
-      Recepção dos operandos
-      Processamento
-      Produção dos resultados
-      Atualização das flags
+	  Recepção dos operandos
+	  Processamento
+	  Produção dos resultados
+	  Atualização das flags
 
 
  9.2 Tipos de Execução — [P]
 
   9.2.1 Operações Aritméticas — [P]
-      Soma
-      Subtração
-      Multiplicação
-      Divisão
-      Incremento
-      Decremento
+	  Soma
+	  Subtração
+	  Multiplicação
+	  Divisão
+	  Incremento
+	  Decremento
 
   9.2.2 Operações Lógicas — [P]
-      AND
-      OR
-      XOR
-      NOT
-      Comparações
+	  AND
+	  OR
+	  XOR
+	  NOT
+	  Comparações
 
   9.2.3 Operações de Controle — [P]
-      Desvios
-      Saltos
-      Chamadas
-      Retornos
+	  Desvios
+	  Saltos
+	  Chamadas
+	  Retornos
 
   9.2.4 Operações de Transferência — [P]
-      Movimentação entre registradores
-      Transferência para memória
-      Transferência da memória
+	  Movimentação entre registradores
+	  Transferência para memória
+	  Transferência da memória
 
 
  9.3 Resultados da Execução — [P]
 
   9.3.1 Resultado Computacional — [P]
-      Resultado da operação
-      Resultado intermediário
-      Resultado final
+	  Resultado da operação
+	  Resultado intermediário
+	  Resultado final
 
   9.3.2 Atualização do Estado — [P]
-      Flags
-      Registradores
-      Estado interno da CPU
-      Informações de controle
+	  Flags
+	  Registradores
+	  Estado interno da CPU
+	  Informações de controle
 
 
 
@@ -677,54 +683,54 @@ PARTE 2 — ESTRUTURA E FUNCIONAMENTO DO CICLO DE INSTRUÇÃO
  10.1 Fundamentos — [P]
 
   10.1.1 Conceitos Fundamentais — [P]
-      Conceito de Memory Access
-      Objetivos
-      Relação com Load
-      Relação com Store
+	  Conceito de Memory Access
+	  Objetivos
+	  Relação com Load
+	  Relação com Store
 
   10.1.2 Quando Ocorre — [P]
-      Instruções de leitura
-      Instruções de escrita
-      Operações dependentes da memória
+	  Instruções de leitura
+	  Instruções de escrita
+	  Operações dependentes da memória
 
   10.1.3 Recursos Envolvidos — [P]
-      MAR
-      MDR/MBR
-      Memória principal
-      Barramentos
+	  MAR
+	  MDR/MBR
+	  Memória principal
+	  Barramentos
 
 
  10.2 Operações de Leitura — [P]
 
   10.2.1 Leitura da Memória — [P]
-      Seleção do endereço
-      Acesso ao dado
-      Transferência para CPU
+	  Seleção do endereço
+	  Acesso ao dado
+	  Transferência para CPU
 
   10.2.2 Disponibilização dos Dados — [P]
-      Carregamento no registrador
-      Preparação para execução
-      Continuidade do ciclo
+	  Carregamento no registrador
+	  Preparação para execução
+	  Continuidade do ciclo
 
   10.2.3 Esperas por Memória (Wait States) — [P]
-      Conceito
-      Origem das esperas
-      Memórias lentas
-      Stall por memória
-      Sincronização
+	  Conceito
+	  Origem das esperas
+	  Memórias lentas
+	  Stall por memória
+	  Sincronização
 
 
  10.3 Operações de Escrita — [P]
 
   10.3.1 Escrita na Memória — [P]
-      Seleção do endereço
-      Transferência do dado
-      Atualização da memória
+	  Seleção do endereço
+	  Transferência do dado
+	  Atualização da memória
 
   10.3.2 Finalização da Operação — [P]
-      Confirmação da escrita
-      Atualização do estado
-      Continuação da execução
+	  Confirmação da escrita
+	  Atualização do estado
+	  Continuação da execução
 
 
 
@@ -733,48 +739,48 @@ PARTE 2 — ESTRUTURA E FUNCIONAMENTO DO CICLO DE INSTRUÇÃO
  11.1 Fundamentos — [P]
 
   11.1.1 Conceitos Fundamentais — [P]
-      Conceito de Write Back
-      Objetivos
-      Papel na conclusão da instrução
+	  Conceito de Write Back
+	  Objetivos
+	  Papel na conclusão da instrução
 
   11.1.2 Destino dos Resultados — [P]
-      Registradores
-      Memória
-      Registradores especiais
-      Estado do processador
+	  Registradores
+	  Memória
+	  Registradores especiais
+	  Estado do processador
 
 
  11.2 Processo de Escrita — [P]
 
   11.2.1 Escrita em Registradores — [P]
-      Banco de registradores
-      Registrador de destino
-      Atualização dos valores
+	  Banco de registradores
+	  Registrador de destino
+	  Atualização dos valores
 
   11.2.2 Escrita na Memória — [P]
-      Operações Store
-      Atualização da memória
-      Transferência dos resultados
+	  Operações Store
+	  Atualização da memória
+	  Transferência dos resultados
 
   11.2.3 Atualização das Flags — [P]
-      Zero Flag
-      Carry Flag
-      Overflow Flag
-      Sign Flag
-      Status Register
+	  Zero Flag
+	  Carry Flag
+	  Overflow Flag
+	  Sign Flag
+	  Status Register
 
 
  11.3 Encerramento da Instrução — [P]
 
   11.3.1 Finalização da Execução — [P]
-      Estado consistente
-      Disponibilização dos resultados
-      Liberação dos recursos
+	  Estado consistente
+	  Disponibilização dos resultados
+	  Liberação dos recursos
 
   11.3.2 Preparação do Próximo Ciclo — [P]
-      Próxima instrução
-      Reinício do ciclo
-      Continuidade da execução
+	  Próxima instrução
+	  Reinício do ciclo
+	  Continuidade da execução
 
 
 
@@ -786,121 +792,121 @@ PARTE 3 — MICROOPERAÇÕES, CONTROLE E FLUXO INTERNO
  12.1 Fundamentos das Microoperações — [P]
 
   12.1.1 Conceitos Fundamentais — [P]
-      Conceito de microoperação
-      Diferença entre instrução e microoperação
-      Papel das microoperações
-      Granularidade da execução
-      Relação com o ciclo de instrução
+	  Conceito de microoperação
+	  Diferença entre instrução e microoperação
+	  Papel das microoperações
+	  Granularidade da execução
+	  Relação com o ciclo de instrução
 
   12.1.2 Objetivos das Microoperações — [P]
-      Implementação da instrução
-      Controle interno
-      Movimentação de dados
-      Coordenação das unidades funcionais
-      Atualização do estado da CPU
+	  Implementação da instrução
+	  Controle interno
+	  Movimentação de dados
+	  Coordenação das unidades funcionais
+	  Atualização do estado da CPU
 
   12.1.3 Organização Geral — [P]
-      Sequenciamento
-      Dependência entre microoperações
-      Ordem de execução
-      Fluxo interno
+	  Sequenciamento
+	  Dependência entre microoperações
+	  Ordem de execução
+	  Fluxo interno
 
 
  12.2 Classificação das Microoperações — [P]
 
   12.2.1 Microoperações de Transferência — [P]
-      Transferência entre registradores
-      Transferência para memória
-      Transferência da memória
-      Transferência para unidades funcionais
+	  Transferência entre registradores
+	  Transferência para memória
+	  Transferência da memória
+	  Transferência para unidades funcionais
 
   12.2.2 Microoperações Aritméticas — [P]
-      Soma
-      Subtração
-      Incremento
-      Decremento
-      Comparações
+	  Soma
+	  Subtração
+	  Incremento
+	  Decremento
+	  Comparações
 
   12.2.3 Microoperações Lógicas — [P]
-      AND
-      OR
-      XOR
-      NOT
-      Operações booleanas
+	  AND
+	  OR
+	  XOR
+	  NOT
+	  Operações booleanas
 
   12.2.4 Microoperações de Deslocamento — [P]
-      Shift lógico
-      Shift aritmético
-      Rotações
-      Deslocamentos condicionais
+	  Shift lógico
+	  Shift aritmético
+	  Rotações
+	  Deslocamentos condicionais
 
   12.2.5 Microoperações de Controle — [P]
-      Geração de sinais
-      Atualização do PC
-      Atualização das Flags
-      Sequenciamento interno
-      Controle das unidades funcionais
+	  Geração de sinais
+	  Atualização do PC
+	  Atualização das Flags
+	  Sequenciamento interno
+	  Controle das unidades funcionais
 
 
  12.3 Fluxo das Microoperações — [P]
 
   12.3.1 Geração das Microoperações — [P]
-      A partir da decodificação
-      Conversão da instrução
-      Sequência de execução
+	  A partir da decodificação
+	  Conversão da instrução
+	  Sequência de execução
 
   12.3.2 Execução das Microoperações — [P]
-      Emissão
-      Execução
-      Sincronização
-      Finalização
+	  Emissão
+	  Execução
+	  Sincronização
+	  Finalização
 
   12.3.3 Conclusão das Microoperações — [P]
-      Atualização do estado
-      Encerramento da instrução
-      Preparação da próxima etapa
+	  Atualização do estado
+	  Encerramento da instrução
+	  Preparação da próxima etapa
 
 
  12.4 Representação RTL das Microoperações — [P]
 
   12.4.1 Conceitos Fundamentais — [P]
-      Register Transfer Level (RTL)
-      Linguagem RTL
-      Objetivos
-      Representação das transferências
+	  Register Transfer Level (RTL)
+	  Linguagem RTL
+	  Objetivos
+	  Representação das transferências
 
   12.4.2 Representação das Microoperações — [P]
-      Transferência entre registradores
-      Operações da ALU
-      Operações de memória
-      Atualização do PC
+	  Transferência entre registradores
+	  Operações da ALU
+	  Operações de memória
+	  Atualização do PC
 
   12.4.3 Exemplos de Sequências RTL — [P]
-      Fetch
-      Decode
-      Execute
-      Load
-      Store
-      Branch
+	  Fetch
+	  Decode
+	  Execute
+	  Load
+	  Store
+	  Branch
 
 
  12.5 Sequências de Microoperações por Tipo de Instrução — [P]
 
-  12.5.1 Instruções de Processamento
-      ADD
-      SUB
-      AND
-      OR
+  12.5.1 Instruções de Processamento — [P]
+	  ADD
+	  SUB
+	  AND
+	  OR
 
-  12.5.2 Instruções de Memória
-      LOAD
-      STORE
+  12.5.2 Instruções de Memória — [P]
+	  LOAD
+	  STORE
 
-  12.5.3 Instruções de Controle
-      JUMP
-      BRANCH
-      CALL
-      RETURN
+  12.5.3 Instruções de Controle — [P]
+	  JUMP
+	  BRANCH
+	  CALL
+	  RETURN
 
 
 
@@ -909,74 +915,74 @@ PARTE 3 — MICROOPERAÇÕES, CONTROLE E FLUXO INTERNO
  13.1 Papel da Unidade de Controle — [P]
 
   13.1.1 Responsabilidades Gerais — [P]
-      Coordenação do ciclo
-      Controle temporal
-      Controle das unidades funcionais
-      Organização da execução
+	  Coordenação do ciclo
+	  Controle temporal
+	  Controle das unidades funcionais
+	  Organização da execução
 
   13.1.2 Controle do Fluxo Interno — [P]
-      Sequenciamento
-      Coordenação das etapas
-      Sincronização
-      Atualização do estado
+	  Sequenciamento
+	  Coordenação das etapas
+	  Sincronização
+	  Atualização do estado
 
   13.1.3 Controle das Operações — [P]
-      Leitura
-      Escrita
-      Processamento
-      Transferência
-      Controle dos registradores
+	  Leitura
+	  Escrita
+	  Processamento
+	  Transferência
+	  Controle dos registradores
 
 
  13.2 Geração dos Sinais de Controle — [P]
 
   13.2.1 Conceitos Fundamentais — [P]
-      Sinais de controle
-      Objetivos
-      Coordenação das operações
-      Comunicação interna
+	  Sinais de controle
+	  Objetivos
+	  Coordenação das operações
+	  Comunicação interna
 
   13.2.2 Tipos de Sinais — [P]
-      Sinais de leitura
-      Sinais de escrita
-      Seleção de registradores
-      Seleção da ALU
-      Seleção da memória
-      Controle dos barramentos
+	  Sinais de leitura
+	  Sinais de escrita
+	  Seleção de registradores
+	  Seleção da ALU
+	  Seleção da memória
+	  Controle dos barramentos
 
   13.2.3 Distribuição dos Sinais — [P]
-      Datapath
-      Banco de registradores
-      Memória
-      ALU
-      Demais unidades funcionais
+	  Datapath
+	  Banco de registradores
+	  Memória
+	  ALU
+	  Demais unidades funcionais
 
   13.2.4 Implementação da Unidade de Controle — [P]
-      Controle cabeado (Hardwired Control)
-      Controle microprogramado (Microprogrammed Control)
-      Microinstruções
-      Memória de controle (Control Store)
-      Sequenciamento de microinstruções
-      Relação entre microprogramação e ciclo de instrução
+	  Controle cabeado (Hardwired Control)
+	  Controle microprogramado (Microprogrammed Control)
+	  Microinstruções
+	  Memória de controle (Control Store)
+	  Sequenciamento de microinstruções
+	  Relação entre microprogramação e ciclo de instrução
 
 
  13.3 Sequenciamento da Execução — [P]
 
   13.3.1 Sequenciamento Temporal — [P]
-      Ordem das etapas
-      Ordem das microoperações
-      Dependências temporais
+	  Ordem das etapas
+	  Ordem das microoperações
+	  Dependências temporais
 
   13.3.2 Sequenciamento Funcional — [P]
-      Fluxo de dados
-      Fluxo de controle
-      Coordenação das operações
+	  Fluxo de dados
+	  Fluxo de controle
+	  Coordenação das operações
 
   13.3.3 Controle do Ciclo — [P]
-      Início
-      Continuação
-      Encerramento
-      Reinício do ciclo
+	  Início
+	  Continuação
+	  Encerramento
+	  Reinício do ciclo
 
 
 
@@ -985,53 +991,53 @@ PARTE 3 — MICROOPERAÇÕES, CONTROLE E FLUXO INTERNO
  14.1 Fundamentos — [P]
 
   14.1.1 Conceitos Fundamentais — [P]
-      Caminho de dados
-      Objetivos
-      Papel no ciclo de instrução
-      Relação com o controle
+	  Caminho de dados
+	  Objetivos
+	  Papel no ciclo de instrução
+	  Relação com o controle
 
   14.1.2 Organização Geral — [P]
-      Entradas
-      Saídas
-      Interligações
-      Componentes participantes
+	  Entradas
+	  Saídas
+	  Interligações
+	  Componentes participantes
 
   14.1.3 Fluxo Geral — [P]
-      Entrada dos operandos
-      Processamento
-      Produção dos resultados
-      Escrita dos resultados
+	  Entrada dos operandos
+	  Processamento
+	  Produção dos resultados
+	  Escrita dos resultados
 
 
  14.2 Transferência Interna de Dados — [P]
 
   14.2.1 Entre Registradores — [P]
-      Leitura
-      Escrita
-      Comunicação interna
+	  Leitura
+	  Escrita
+	  Comunicação interna
 
   14.2.2 Entre Registradores e ALU — [P]
-      Entrada da ALU
-      Saída da ALU
-      Resultado das operações
+	  Entrada da ALU
+	  Saída da ALU
+	  Resultado das operações
 
   14.2.3 Entre CPU e Memória — [P]
-      Leitura
-      Escrita
-      Fluxo pelos barramentos
+	  Leitura
+	  Escrita
+	  Fluxo pelos barramentos
 
 
  14.3 Coordenação do Datapath — [P]
 
   14.3.1 Sincronização — [P]
-      Clock
-      Unidade de Controle
-      Temporização
+	  Clock
+	  Unidade de Controle
+	  Temporização
 
   14.3.2 Controle das Transferências — [P]
-      Seleção das origens
-      Seleção dos destinos
-      Prioridade das operações
+	  Seleção das origens
+	  Seleção dos destinos
+	  Prioridade das operações
 
 
 
@@ -1040,41 +1046,41 @@ PARTE 3 — MICROOPERAÇÕES, CONTROLE E FLUXO INTERNO
  15.1 Fundamentos — [P]
 
   15.1.1 Conceitos Fundamentais — [P]
-      Caminho de controle
-      Objetivos
-      Papel no ciclo de instrução
-      Relação com o Datapath
+	  Caminho de controle
+	  Objetivos
+	  Papel no ciclo de instrução
+	  Relação com o Datapath
 
   15.1.2 Organização Geral — [P]
-      Unidade de Controle
-      Decodificador
-      Lógica de controle
-      Sinais internos
+	  Unidade de Controle
+	  Decodificador
+	  Lógica de controle
+	  Sinais internos
 
   15.1.3 Comunicação Interna — [P]
-      Controle das unidades funcionais
-      Coordenação das operações
-      Atualização do estado
+	  Controle das unidades funcionais
+	  Coordenação das operações
+	  Atualização do estado
 
 
  15.2 Fluxo dos Sinais de Controle — [P]
 
   15.2.1 Emissão dos Sinais — [P]
-      Decodificação
-      Sequenciamento
-      Ativação das unidades
+	  Decodificação
+	  Sequenciamento
+	  Ativação das unidades
 
   15.2.2 Distribuição — [P]
-      Banco de registradores
-      ALU
-      Memória
-      Barramentos
-      Demais unidades
+	  Banco de registradores
+	  ALU
+	  Memória
+	  Barramentos
+	  Demais unidades
 
   15.2.3 Sincronização — [P]
-      Clock
-      Ciclos internos
-      Coordenação temporal
+	  Clock
+	  Ciclos internos
+	  Coordenação temporal
 
 
 
@@ -1083,379 +1089,379 @@ PARTE 3 — MICROOPERAÇÕES, CONTROLE E FLUXO INTERNO
  16.1 Clock e Temporização — [P]
 
   16.1.1 Papel do Clock — [P]
-      Sincronização das operações
-      Frequência
-      Período
-      Ciclo de clock
+	  Sincronização das operações
+	  Frequência
+	  Período
+	  Ciclo de clock
 
   16.1.2 Organização Temporal — [P]
-      Sequência das etapas
-      Duração das operações
-      Ordem das microoperações
+	  Sequência das etapas
+	  Duração das operações
+	  Ordem das microoperações
 
   16.1.3 Estados Temporais — [P]
-      Estados internos
-      Mudanças de estado
-      Controle temporal
+	  Estados internos
+	  Mudanças de estado
+	  Controle temporal
 
   16.1.4 Estados do Ciclo de Instrução — [P]
-      Fetch State
-      Decode State
-      Execute State
-      Memory State
-      Write Back State
-      Interrupt State
-      Wait State
+	  Fetch State
+	  Decode State
+	  Execute State
+	  Memory State
+	  Write Back State
+	  Interrupt State
+	  Wait State
 
   16.1.5 Máquina de Estados do Ciclo de Instrução — [P]
-      Conceito
-      Transições entre estados
-      Sequenciamento
-      Controle da execução
+	  Conceito
+	  Transições entre estados
+	  Sequenciamento
+	  Controle da execução
 
 
  16.2 Ciclos de Clock — [P]
 
   16.2.1 Relação entre Clock e Instrução — [P]
-      Instruções monociclo
-      Instruções multiciclo
-      Duração da execução
+	  Instruções monociclo
+	  Instruções multiciclo
+	  Duração da execução
 
   16.2.2 Distribuição Temporal — [P]
-      Busca
-      Decodificação
-      Execução
-      Escrita dos resultados
+	  Busca
+	  Decodificação
+	  Execução
+	  Escrita dos resultados
 
   16.2.3 Eficiência Temporal — [I]
-      Aproveitamento dos ciclos
-      Operações simultâneas
-      Introdução ao pipeline
+	  Aproveitamento dos ciclos
+	  Operações simultâneas
+	  Introdução ao pipeline
 
 
 
-17. Dependências Internas Durante a Execução — [P]
+17. Dependências Internas Durante a Execução — [I]
 
- 17.1 Dependências de Dados — [P]
+ 17.1 Dependências de Dados — [I]
 
-  17.1.1 Conceitos Fundamentais — [P]
-      Dependência verdadeira
-      Dependência de leitura
-      Dependência de escrita
+  17.1.1 Conceitos Fundamentais — [I]
+	  Dependência verdadeira
+	  Dependência de leitura
+	  Dependência de escrita
 
-  17.1.2 Impacto na Execução — [P]
-      Ordem das operações
-      Disponibilidade dos operandos
-      Atualização dos resultados
-
-
- 17.2 Dependências de Controle — [P]
-
-  17.2.1 Alterações do Fluxo — [P]
-      Saltos
-      Desvios
-      Chamadas
-      Retornos
-
-  17.2.2 Controle da Sequência — [P]
-      Atualização do PC
-      Mudança do fluxo
-      Continuidade da execução
+  17.1.2 Impacto na Execução — [I]
+	  Ordem das operações
+	  Disponibilidade dos operandos
+	  Atualização dos resultados
 
 
- 17.3 Dependências Estruturais — [P]
+ 17.2 Dependências de Controle — [I]
 
-  17.3.1 Compartilhamento de Recursos — [P]
-      Registradores
-      ALU
-      Barramentos
-      Memória
+  17.2.1 Alterações do Fluxo — [I]
+	  Saltos
+	  Desvios
+	  Chamadas
+	  Retornos
 
-  17.3.2 Coordenação dos Recursos — [P]
-      Prioridade de acesso
-      Organização da utilização
-      Evitação de conflitos
+  17.2.2 Controle da Sequência — [I]
+	  Atualização do PC
+	  Mudança do fluxo
+	  Continuidade da execução
+
+
+ 17.3 Dependências Estruturais — [I]
+
+  17.3.1 Compartilhamento de Recursos — [I]
+	  Registradores
+	  ALU
+	  Barramentos
+	  Memória
+
+  17.3.2 Coordenação dos Recursos — [I]
+	  Prioridade de acesso
+	  Organização da utilização
+	  Evitação de conflitos
 
 
 
 PARTE 4 — EXECUÇÃO DAS INSTRUÇÕES NAS ARQUITETURAS MODERNAS
 
 
-18. Organização Moderna do Ciclo de Instrução — [P]
+18. Organização Moderna do Ciclo de Instrução — [I]
 
  18.1 Evolução da Execução das Instruções — [I]
 
   18.1.1 Da Execução Clássica à Moderna — [I]
-      Modelo sequencial
-      Limitações do modelo clássico
-      Necessidade de paralelismo
-      Evolução da microarquitetura
+	  Modelo sequencial
+	  Limitações do modelo clássico
+	  Necessidade de paralelismo
+	  Evolução da microarquitetura
 
   18.1.2 Objetivos da Execução Moderna — [I]
-      Aumento do desempenho
-      Melhor aproveitamento do hardware
-      Redução do tempo de execução
-      Maior taxa de instruções
+	  Aumento do desempenho
+	  Melhor aproveitamento do hardware
+	  Redução do tempo de execução
+	  Maior taxa de instruções
 
-  18.1.3 Transformação do Ciclo de Instrução — [P]
-      Divisão das etapas
-      Paralelização
-      Execução simultânea
-      Coordenação das unidades funcionais
+  18.1.3 Transformação do Ciclo de Instrução — [I]
+	  Divisão das etapas
+	  Paralelização
+	  Execução simultânea
+	  Coordenação das unidades funcionais
 
 
- 18.2 Organização Geral da Execução Moderna — [P]
+ 18.2 Organização Geral da Execução Moderna — [I]
 
-  18.2.1 Separação das Etapas — [P]
-      Busca
-      Decodificação
-      Emissão
-      Execução
-      Escrita dos resultados
-      Commit (visão geral)
+  18.2.1 Separação das Etapas — [I]
+	  Busca
+	  Decodificação
+	  Emissão
+	  Execução
+	  Escrita dos resultados
+	  Commit (visão geral)
 
-  18.2.2 Fluxo Interno das Instruções — [P]
-      Entrada
-      Processamento
-      Execução
-      Finalização
+  18.2.2 Fluxo Interno das Instruções — [I]
+	  Entrada
+	  Processamento
+	  Execução
+	  Finalização
 
   18.2.3 Relação entre ISA e Microarquitetura — [I]
-      Instrução arquitetural
-      Implementação interna
-      Micro-operações
-      Transparência para o software
+	  Instrução arquitetural
+	  Implementação interna
+	  Micro-operações
+	  Transparência para o software
 
 
 
-19. Pipeline de Instruções — [P]
+19. Pipeline de Instruções — [I]
 
- 19.1 Fundamentos do Pipeline — [P]
+ 19.1 Fundamentos do Pipeline — [I]
 
-  19.1.1 Conceitos Fundamentais — [P]
-      Conceito de pipeline
-      Objetivos
-      Funcionamento geral
-      Paralelismo em nível de instruções
+  19.1.1 Conceitos Fundamentais — [I]
+	  Conceito de pipeline
+	  Objetivos
+	  Funcionamento geral
+	  Paralelismo em nível de instruções
 
-  19.1.2 Estrutura do Pipeline — [P]
-      Estágios
-      Fluxo das instruções
-      Sobreposição das etapas
-      Organização interna
+  19.1.2 Estrutura do Pipeline — [I]
+	  Estágios
+	  Fluxo das instruções
+	  Sobreposição das etapas
+	  Organização interna
 
   19.1.3 Benefícios do Pipeline — [I]
-      Aumento do throughput
-      Melhor utilização da CPU
-      Maior eficiência
-      Escalabilidade
+	  Aumento do throughput
+	  Melhor utilização da CPU
+	  Maior eficiência
+	  Escalabilidade
 
 
- 19.2 Estágios do Pipeline — [P]
+ 19.2 Estágios do Pipeline — [I]
 
-  19.2.1 Instruction Fetch (IF) — [P]
-      Busca
-      Atualização do PC
-      Leitura da memória
+  19.2.1 Instruction Fetch (IF) — [I]
+	  Busca
+	  Atualização do PC
+	  Leitura da memória
 
-  19.2.2 Instruction Decode (ID) — [P]
-      Decodificação
-      Identificação dos operandos
-      Geração do controle
+  19.2.2 Instruction Decode (ID) — [I]
+	  Decodificação
+	  Identificação dos operandos
+	  Geração do controle
 
-  19.2.3 Execute (EX) — [P]
-      Operações aritméticas
-      Operações lógicas
-      Cálculo de endereços
+  19.2.3 Execute (EX) — [I]
+	  Operações aritméticas
+	  Operações lógicas
+	  Cálculo de endereços
 
-  19.2.4 Memory Access (MEM) — [P]
-      Load
-      Store
-      Comunicação com a memória
+  19.2.4 Memory Access (MEM) — [I]
+	  Load
+	  Store
+	  Comunicação com a memória
 
-  19.2.5 Write Back (WB) — [P]
-      Escrita dos resultados
-      Atualização dos registradores
-      Encerramento da instrução
+  19.2.5 Write Back (WB) — [I]
+	  Escrita dos resultados
+	  Atualização dos registradores
+	  Encerramento da instrução
 
 
- 19.3 Funcionamento do Pipeline — [P]
+ 19.3 Funcionamento do Pipeline — [I]
 
-  19.3.1 Sobreposição das Instruções — [P]
-      Execução concorrente
-      Compartilhamento dos estágios
-      Fluxo contínuo
+  19.3.1 Sobreposição das Instruções — [I]
+	  Execução concorrente
+	  Compartilhamento dos estágios
+	  Fluxo contínuo
 
-  19.3.2 Latência e Throughput — [P]
-      Conceitos
-      Diferenças
-      Impacto no desempenho
+  19.3.2 Latência e Throughput — [I]
+	  Conceitos
+	  Diferenças
+	  Impacto no desempenho
 
   19.3.3 Balanceamento do Pipeline — [I]
-      Distribuição das etapas
-      Gargalos
-      Eficiência geral
+	  Distribuição das etapas
+	  Gargalos
+	  Eficiência geral
 
 
 
-20. Hazards no Ciclo de Instrução — [P]
+20. Hazards no Ciclo de Instrução — [I]
 
- 20.1 Fundamentos — [P]
+ 20.1 Fundamentos — [I]
 
-  20.1.1 Conceitos Fundamentais — [P]
-      Hazard
-      Origem dos hazards
-      Consequências
-      Impacto na execução
+  20.1.1 Conceitos Fundamentais — [I]
+	  Hazard
+	  Origem dos hazards
+	  Consequências
+	  Impacto na execução
 
-  20.1.2 Classificação Geral — [P]
-      Hazards estruturais
-      Hazards de dados
-      Hazards de controle
+  20.1.2 Classificação Geral — [I]
+	  Hazards estruturais
+	  Hazards de dados
+	  Hazards de controle
 
 
- 20.2 Hazards Estruturais — [P]
+ 20.2 Hazards Estruturais — [I]
 
-  20.2.1 Compartilhamento de Recursos — [P]
-      Conflitos de hardware
-      Recursos insuficientes
-      Disputa por unidades funcionais
+  20.2.1 Compartilhamento de Recursos — [I]
+	  Conflitos de hardware
+	  Recursos insuficientes
+	  Disputa por unidades funcionais
 
   20.2.2 Resolução — [I]
-      Duplicação de recursos
-      Organização do pipeline
-      Escalonamento
+	  Duplicação de recursos
+	  Organização do pipeline
+	  Escalonamento
 
 
- 20.3 Hazards de Dados — [P]
+ 20.3 Hazards de Dados — [I]
 
-  20.3.1 RAW (Read After Write) — [P]
-      Conceito
-      Ocorrência
-      Impacto
+  20.3.1 RAW (Read After Write) — [I]
+	  Conceito
+	  Ocorrência
+	  Impacto
 
-  20.3.2 WAR (Write After Read) — [P]
-      Conceito
-      Ocorrência
-      Características
+  20.3.2 WAR (Write After Read) — [I]
+	  Conceito
+	  Ocorrência
+	  Características
 
-  20.3.3 WAW (Write After Write) — [P]
-      Conceito
-      Ocorrência
-      Consequências
-
-
- 20.4 Hazards de Controle — [P]
-
-  20.4.1 Desvios e Saltos — [P]
-      Alteração do fluxo
-      Branch
-      Jump
-      Call
-      Return
-
-  20.4.2 Consequências — [P]
-      Interrupção do pipeline
-      Necessidade de correção
-      Penalidades
+  20.3.3 WAW (Write After Write) — [I]
+	  Conceito
+	  Ocorrência
+	  Consequências
 
 
+ 20.4 Hazards de Controle — [I]
 
-21. Técnicas de Redução de Hazards — [P]
+  20.4.1 Desvios e Saltos — [I]
+	  Alteração do fluxo
+	  Branch
+	  Jump
+	  Call
+	  Return
 
- 21.1 Soluções para Dependências — [P]
-
-  21.1.1 Data Forwarding (Bypassing) — [P]
-      Conceito
-      Funcionamento
-      Benefícios
-      Limitações
-
-  21.1.2 Pipeline Stall — [P]
-      Inserção de bolhas
-      Espera controlada
-      Penalidade
-
-  21.1.3 Interlocks — [P]
-      Detecção automática
-      Controle do pipeline
-      Coordenação das dependências
+  20.4.2 Consequências — [I]
+	  Interrupção do pipeline
+	  Necessidade de correção
+	  Penalidades
 
 
- 21.2 Controle de Desvios — [P]
+
+21. Técnicas de Redução de Hazards — [I]
+
+ 21.1 Soluções para Dependências — [I]
+
+  21.1.1 Data Forwarding (Bypassing) — [I]
+	  Conceito
+	  Funcionamento
+	  Benefícios
+	  Limitações
+
+  21.1.2 Pipeline Stall — [I]
+	  Inserção de bolhas
+	  Espera controlada
+	  Penalidade
+
+  21.1.3 Interlocks — [I]
+	  Detecção automática
+	  Controle do pipeline
+	  Coordenação das dependências
+
+
+ 21.2 Controle de Desvios — [I]
 
   21.2.1 Branch Prediction (Visão Geral) — [I]
-      Objetivos
-      Funcionamento geral
-      Importância
+	  Objetivos
+	  Funcionamento geral
+	  Importância
 
   21.2.2 Branch Delay Slot (Visão Geral) — [I]
-      Conceito
-      Aplicações
-      Limitações
+	  Conceito
+	  Aplicações
+	  Limitações
 
-  21.2.3 Flush do Pipeline — [P]
-      Limpeza do pipeline
-      Reinício da execução
-      Recuperação do fluxo
+  21.2.3 Flush do Pipeline — [I]
+	  Limpeza do pipeline
+	  Reinício da execução
+	  Recuperação do fluxo
 
 
 
-22. Execução Avançada das Instruções — [P]
+22. Execução Avançada das Instruções — [I]
 
  22.1 Execução Fora de Ordem (Out-of-Order) — [I]
 
   22.1.1 Conceitos Fundamentais — [I]
-      Execução dinâmica
-      Reordenação
-      Aproveitamento das unidades funcionais
+	  Execução dinâmica
+	  Reordenação
+	  Aproveitamento das unidades funcionais
 
   22.1.2 Objetivos — [I]
-      Redução de esperas
-      Aumento do paralelismo
-      Melhor utilização do hardware
+	  Redução de esperas
+	  Aumento do paralelismo
+	  Melhor utilização do hardware
 
   22.1.3 Visão Geral do Funcionamento — [I]
-      Emissão
-      Execução
-      Conclusão
-      Commit
+	  Emissão
+	  Execução
+	  Conclusão
+	  Commit
 
 
  22.2 Execução Superescalar — [I]
 
   22.2.1 Conceitos Fundamentais — [I]
-      Emissão múltipla
-      Paralelismo
-      Execução simultânea
+	  Emissão múltipla
+	  Paralelismo
+	  Execução simultânea
 
   22.2.2 Recursos Necessários — [I]
-      Múltiplas unidades funcionais
-      Banco de registradores
-      Caminhos de dados
+	  Múltiplas unidades funcionais
+	  Banco de registradores
+	  Caminhos de dados
 
   22.2.3 Limitações — [I]
-      Dependências
-      Hazards
-      Complexidade
+	  Dependências
+	  Hazards
+	  Complexidade
 
 
  22.3 Micro-operações — [P]
 
   22.3.1 Conversão das Instruções — [P]
-      Decodificação interna
-      Quebra da instrução
-      Sequenciamento
+	  Decodificação interna
+	  Quebra da instrução
+	  Sequenciamento
 
   22.3.2 Execução das Micro-operações — [P]
-      Escalonamento
-      Execução
-      Finalização
+	  Escalonamento
+	  Execução
+	  Finalização
 
   22.3.3 Relação com o Ciclo de Instrução — [P]
-      Transparência arquitetural
-      Implementação microarquitetural
-      Compatibilidade com a ISA
+	  Transparência arquitetural
+	  Implementação microarquitetural
+	  Compatibilidade com a ISA
 
 
 
@@ -1467,48 +1473,48 @@ PARTE 5 — DESEMPENHO, EXCEÇÕES E ASPECTOS AVANÇADOS
  23.1 Fundamentos do Desempenho — [P]
 
   23.1.1 Conceitos Fundamentais — [P]
-      Desempenho computacional
-      Eficiência da execução
-      Tempo de execução
-      Produtividade do processador
-      Métricas de desempenho
+	  Desempenho computacional
+	  Eficiência da execução
+	  Tempo de execução
+	  Produtividade do processador
+	  Métricas de desempenho
 
   23.1.2 Fatores que Influenciam o Desempenho — [P]
-      Frequência do clock
-      CPI (Cycles Per Instruction)
-      IPC (Instructions Per Cycle)
-      Latência
-      Throughput
-      Paralelismo
+	  Frequência do clock
+	  CPI (Cycles Per Instruction)
+	  IPC (Instructions Per Cycle)
+	  Latência
+	  Throughput
+	  Paralelismo
 
   23.1.3 Relação entre Hardware e Desempenho — [P]
-      Organização interna
-      Microarquitetura
-      Caminho de dados
-      Unidade de Controle
-      Recursos do processador
+	  Organização interna
+	  Microarquitetura
+	  Caminho de dados
+	  Unidade de Controle
+	  Recursos do processador
 
 
  23.2 Medidas de Desempenho — [P]
 
   23.2.1 Tempo de Execução — [P]
-      Tempo de CPU
-      Tempo de instrução
-      Tempo médio de execução
-      Tempo total de processamento
+	  Tempo de CPU
+	  Tempo de instrução
+	  Tempo médio de execução
+	  Tempo total de processamento
 
   23.2.2 Métricas Clássicas — [P]
-      CPI
-      IPC
-      MIPS (visão geral)
-      FLOPS (visão geral)
-      Taxa de execução
+	  CPI
+	  IPC
+	  MIPS (visão geral)
+	  FLOPS (visão geral)
+	  Taxa de execução
 
   23.2.3 Eficiência do Ciclo de Instrução — [P]
-      Aproveitamento dos ciclos
-      Utilização das unidades funcionais
-      Eficiência do pipeline
-      Eficiência geral da CPU
+	  Aproveitamento dos ciclos
+	  Utilização das unidades funcionais
+	  Eficiência do pipeline
+	  Eficiência geral da CPU
 
 
 
@@ -1517,107 +1523,107 @@ PARTE 5 — DESEMPENHO, EXCEÇÕES E ASPECTOS AVANÇADOS
  24.1 Fundamentos — [P]
 
   24.1.1 Conceitos Fundamentais — [P]
-      Interrupção
-      Exceção
-      Trap
-      Fault
-      Abort
-      Evento síncrono
-      Evento assíncrono
+	  Interrupção
+	  Exceção
+	  Trap
+	  Fault
+	  Abort
+	  Evento síncrono
+	  Evento assíncrono
 
   24.1.2 Importância no Ciclo de Instrução — [P]
-      Alteração da sequência normal
-      Suspensão temporária da execução
-      Preservação do estado
-      Continuidade do processamento
+	  Alteração da sequência normal
+	  Suspensão temporária da execução
+	  Preservação do estado
+	  Continuidade do processamento
 
   24.1.3 Classificação Geral — [P]
-      Interrupções externas
-      Interrupções internas
-      Exceções
-      Eventos de software
+	  Interrupções externas
+	  Interrupções internas
+	  Exceções
+	  Eventos de software
 
 
  24.2 Tratamento Durante o Ciclo de Instrução — [P]
 
   24.2.1 Detecção do Evento — [P]
-      Momento da detecção
-      Identificação da origem
-      Priorização
+	  Momento da detecção
+	  Identificação da origem
+	  Priorização
 
   24.2.2 Interrupção do Fluxo Normal — [P]
-      Suspensão da instrução
-      Salvamento do contexto
-      Transferência de controle
+	  Suspensão da instrução
+	  Salvamento do contexto
+	  Transferência de controle
 
   24.2.3 Retorno da Execução — [P]
-      Restauração do contexto
-      Recuperação do estado
-      Continuação da execução
+	  Restauração do contexto
+	  Recuperação do estado
+	  Continuação da execução
 
 
  24.3 Impacto na Execução — [P]
 
   24.3.1 Alterações do Pipeline — [P]
-      Flush
-      Reinício
-      Penalidades
+	  Flush
+	  Reinício
+	  Penalidades
 
   24.3.2 Alterações do Estado da CPU — [P]
-      Registradores
-      Program Counter
-      Registrador de Status
+	  Registradores
+	  Program Counter
+	  Registrador de Status
 
   24.3.3 Continuidade do Programa — [P]
-      Retomada da execução
-      Consistência do processamento
-      Integridade do estado
+	  Retomada da execução
+	  Consistência do processamento
+	  Integridade do estado
 
 
  24.4 Precisão das Exceções — [I]
-      Estado Preciso
-      Estado Impreciso
-      Relação com o Commit
-      Consistência Arquitetural
+	  Estado Preciso
+	  Estado Impreciso
+	  Relação com o Commit
+	  Consistência Arquitetural
 
 
 
-25. Dependências e Ordem de Execução — [P]
+25. Dependências e Ordem de Execução — [I]
 
- 25.1 Dependências entre Instruções — [P]
+ 25.1 Dependências entre Instruções — [I]
 
-  25.1.1 Dependências de Dados — [P]
-      Produção de resultados
-      Consumo de operandos
-      Relações entre instruções
+  25.1.1 Dependências de Dados — [I]
+	  Produção de resultados
+	  Consumo de operandos
+	  Relações entre instruções
 
-  25.1.2 Dependências de Controle — [P]
-      Desvios
-      Saltos
-      Mudança do fluxo
+  25.1.2 Dependências de Controle — [I]
+	  Desvios
+	  Saltos
+	  Mudança do fluxo
 
-  25.1.3 Dependências Estruturais — [P]
-      Compartilhamento de recursos
-      Disputa por hardware
-      Coordenação das operações
+  25.1.3 Dependências Estruturais — [I]
+	  Compartilhamento de recursos
+	  Disputa por hardware
+	  Coordenação das operações
 
 
- 25.2 Ordem de Execução — [P]
+ 25.2 Ordem de Execução — [I]
 
-  25.2.1 Ordem Arquitetural — [P]
-      Ordem visível ao programador
-      Sequência lógica
-      Estado arquitetural
+  25.2.1 Ordem Arquitetural — [I]
+	  Ordem visível ao programador
+	  Sequência lógica
+	  Estado arquitetural
 
-  25.2.2 Ordem Física — [P]
-      Ordem interna
-      Execução dinâmica
-      Organização microarquitetural
+  25.2.2 Ordem Física — [I]
+	  Ordem interna
+	  Execução dinâmica
+	  Organização microarquitetural
 
-  25.2.3 Consistência da Execução — [P]
-      Correção dos resultados
-      Sincronização
-      Integridade do processamento
+  25.2.3 Consistência da Execução — [I]
+	  Correção dos resultados
+	  Sincronização
+	  Integridade do processamento
 
 
 
@@ -1626,40 +1632,40 @@ PARTE 5 — DESEMPENHO, EXCEÇÕES E ASPECTOS AVANÇADOS
  26.1 Estado da CPU — [P]
 
   26.1.1 Estado Arquitetural — [P]
-      Registradores
-      Flags
-      Program Counter
-      Memória visível
-      Estado observável
+	  Registradores
+	  Flags
+	  Program Counter
+	  Memória visível
+	  Estado observável
 
   26.1.2 Estado Microarquitetural — [P]
-      Buffers internos
-      Filas
-      Registradores temporários
-      Estruturas internas
+	  Buffers internos
+	  Filas
+	  Registradores temporários
+	  Estruturas internas
 
   26.1.3 Diferenças entre os Estados — [P]
-      Visão do software
-      Implementação interna
-      Transparência da microarquitetura
+	  Visão do software
+	  Implementação interna
+	  Transparência da microarquitetura
 
 
  26.2 Atualização do Estado — [P]
 
   26.2.1 Durante a Execução — [P]
-      Alteração dos registradores
-      Alteração das flags
-      Atualização da memória
+	  Alteração dos registradores
+	  Alteração das flags
+	  Atualização da memória
 
   26.2.2 Finalização da Instrução — [P]
-      Escrita definitiva
-      Estado consistente
-      Encerramento da execução
+	  Escrita definitiva
+	  Estado consistente
+	  Encerramento da execução
 
   26.2.3 Recuperação Após Eventos — [P]
-      Exceções
-      Interrupções
-      Reinicialização do fluxo
+	  Exceções
+	  Interrupções
+	  Reinicialização do fluxo
 
 
 
@@ -1668,38 +1674,38 @@ PARTE 5 — DESEMPENHO, EXCEÇÕES E ASPECTOS AVANÇADOS
  27.1 Otimizações Arquiteturais — [I]
 
   27.1.1 Objetivos — [I]
-      Redução da latência
-      Aumento do throughput
-      Melhor utilização do hardware
+	  Redução da latência
+	  Aumento do throughput
+	  Melhor utilização do hardware
 
   27.1.2 Técnicas Gerais — [I]
-      Pipeline
-      Paralelismo
-      Execução dinâmica
-      Execução especulativa (visão geral)
+	  Pipeline
+	  Paralelismo
+	  Execução dinâmica
+	  Execução especulativa (visão geral)
 
   27.1.3 Benefícios — [I]
-      Ganho de desempenho
-      Redução de gargalos
-      Escalabilidade
+	  Ganho de desempenho
+	  Redução de gargalos
+	  Escalabilidade
 
 
  27.2 Otimizações Microarquiteturais — [I]
 
   27.2.1 Melhorias Internas — [I]
-      Organização das unidades funcionais
-      Balanceamento do pipeline
-      Redução de dependências
+	  Organização das unidades funcionais
+	  Balanceamento do pipeline
+	  Redução de dependências
 
   27.2.2 Aproveitamento dos Recursos — [I]
-      Paralelismo interno
-      Compartilhamento eficiente
-      Controle dinâmico
+	  Paralelismo interno
+	  Compartilhamento eficiente
+	  Controle dinâmico
 
   27.2.3 Limitações — [I]
-      Complexidade
-      Consumo de energia
-      Custos de implementação
+	  Complexidade
+	  Consumo de energia
+	  Custos de implementação
 
 
 
@@ -1708,37 +1714,37 @@ PARTE 5 — DESEMPENHO, EXCEÇÕES E ASPECTOS AVANÇADOS
  28.1 Limitações Arquiteturais — [I]
 
   28.1.1 Dependência Sequencial — [I]
-      Ordem das instruções
-      Dependências
-      Fluxo do programa
+	  Ordem das instruções
+	  Dependências
+	  Fluxo do programa
 
   28.1.2 Latência — [I]
-      Tempo de acesso
-      Tempo de execução
-      Tempo de resposta
+	  Tempo de acesso
+	  Tempo de execução
+	  Tempo de resposta
 
   28.1.3 Gargalos Arquiteturais — [I]
-      Memória
-      Barramentos
-      Recursos compartilhados
+	  Memória
+	  Barramentos
+	  Recursos compartilhados
 
 
  28.2 Limitações Microarquiteturais — [I]
 
   28.2.1 Hazards — [I]
-      Estruturais
-      Dados
-      Controle
+	  Estruturais
+	  Dados
+	  Controle
 
   28.2.2 Restrições do Hardware — [I]
-      Número de unidades funcionais
-      Número de portas
-      Recursos disponíveis
+	  Número de unidades funcionais
+	  Número de portas
+	  Recursos disponíveis
 
   28.2.3 Escalabilidade — [I]
-      Crescimento da complexidade
-      Limites físicos
-      Limites tecnológicos
+	  Crescimento da complexidade
+	  Limites físicos
+	  Limites tecnológicos
 
 
 
@@ -1747,37 +1753,37 @@ PARTE 5 — DESEMPENHO, EXCEÇÕES E ASPECTOS AVANÇADOS
  29.1 Execução Correta das Instruções — [P]
 
   29.1.1 Integridade da Execução — [P]
-      Execução correta
-      Preservação do estado
-      Consistência dos resultados
+	  Execução correta
+	  Preservação do estado
+	  Consistência dos resultados
 
   29.1.2 Precisão da Execução — [P]
-      Ordem correta
-      Resultados corretos
-      Atualização consistente
+	  Ordem correta
+	  Resultados corretos
+	  Atualização consistente
 
   29.1.3 Finalização Segura — [P]
-      Escrita correta
-      Encerramento da instrução
-      Preparação da próxima execução
+	  Escrita correta
+	  Encerramento da instrução
+	  Preparação da próxima execução
 
 
  29.2 Robustez do Ciclo de Instrução — [I]
 
   29.2.1 Tratamento de Situações Anormais — [I]
-      Erros internos
-      Exceções
-      Interrupções
+	  Erros internos
+	  Exceções
+	  Interrupções
 
   29.2.2 Continuidade do Processamento — [I]
-      Recuperação
-      Reinício controlado
-      Estabilidade
+	  Recuperação
+	  Reinício controlado
+	  Estabilidade
 
   29.2.3 Confiabilidade Geral — [I]
-      Execução previsível
-      Consistência arquitetural
-      Robustez do processamento
+	  Execução previsível
+	  Consistência arquitetural
+	  Robustez do processamento
 
 
 
@@ -1789,123 +1795,123 @@ PARTE 6 — INTEGRAÇÃO DO CICLO DE INSTRUÇÃO COM A ARQUITETURA DO COMPUTADOR
  30.1 O Ciclo de Instrução na Organização da CPU — [P]
 
   30.1.1 Papel Central do Ciclo de Instrução — [P]
-      Coordenação da execução
-      Fluxo interno de processamento
-      Organização da CPU
-      Relação entre hardware e instruções
+	  Coordenação da execução
+	  Fluxo interno de processamento
+	  Organização da CPU
+	  Relação entre hardware e instruções
 
   30.1.2 Comunicação entre as Unidades da CPU — [P]
-      Unidade de Controle
-      Datapath
-      ALU
-      Banco de registradores
-      Unidades funcionais
+	  Unidade de Controle
+	  Datapath
+	  ALU
+	  Banco de registradores
+	  Unidades funcionais
 
   30.1.3 Coordenação Geral da Execução — [P]
-      Sequenciamento das etapas
-      Controle das operações
-      Sincronização
-      Atualização do estado interno
+	  Sequenciamento das etapas
+	  Controle das operações
+	  Sincronização
+	  Atualização do estado interno
 
 
  30.2 Integração com os Registradores — [P]
 
   30.2.1 Registradores de Controle — [P]
-      Program Counter (PC)
-      Instruction Register (IR)
-      Status Register
-      MAR
-      MDR/MBR
+	  Program Counter (PC)
+	  Instruction Register (IR)
+	  Status Register
+	  MAR
+	  MDR/MBR
 
   30.2.2 Registradores de Dados — [P]
-      Banco de registradores
-      Registradores temporários
-      Acumulador
-      Registradores de propósito geral
+	  Banco de registradores
+	  Registradores temporários
+	  Acumulador
+	  Registradores de propósito geral
 
   30.2.3 Fluxo dos Registradores Durante o Ciclo — [P]
-      Leitura
-      Escrita
-      Atualização
-      Armazenamento temporário
+	  Leitura
+	  Escrita
+	  Atualização
+	  Armazenamento temporário
 
 
  30.3 Integração com as Unidades Funcionais — [P]
 
   30.3.1 Unidade Lógica e Aritmética (ALU) — [P]
-      Operações aritméticas
-      Operações lógicas
-      Comparações
-      Atualização das flags
+	  Operações aritméticas
+	  Operações lógicas
+	  Comparações
+	  Atualização das flags
 
   30.3.2 Unidade de Controle (UC) — [P]
-      Coordenação geral
-      Sequenciamento
-      Geração dos sinais de controle
+	  Coordenação geral
+	  Sequenciamento
+	  Geração dos sinais de controle
 
   30.3.3 Demais Unidades Funcionais — [I]
-      FPU
-      AGU
-      LSU
-      Unidades especializadas
-      Cooperação durante a execução
+	  FPU
+	  AGU
+	  LSU
+	  Unidades especializadas
+	  Cooperação durante a execução
 
 
 
-31. Integração com o Sistema de Memória — [P]
+31. Integração com o Sistema de Memória — [I]
 
  31.1 Memória Principal e o Ciclo de Instrução — [P]
 
   31.1.1 Busca das Instruções — [P]
-      Leitura da memória
-      Transferência da instrução
-      Atualização do IR
+	  Leitura da memória
+	  Transferência da instrução
+	  Atualização do IR
 
   31.1.2 Busca dos Operandos — [P]
-      Leitura dos dados
-      Transferência dos operandos
-      Disponibilização para execução
+	  Leitura dos dados
+	  Transferência dos operandos
+	  Disponibilização para execução
 
   31.1.3 Escrita dos Resultados — [P]
-      Operações Store
-      Atualização da memória
-      Finalização da instrução
+	  Operações Store
+	  Atualização da memória
+	  Finalização da instrução
 
 
  31.2 Hierarquia de Memória — [I]
 
   31.2.1 Papel da Hierarquia — [I]
-      Redução da latência
-      Melhoria do desempenho
-      Disponibilidade dos dados
+	  Redução da latência
+	  Melhoria do desempenho
+	  Disponibilidade dos dados
 
   31.2.2 Relação com o Ciclo de Instrução — [I]
-      Busca das instruções
-      Busca dos operandos
-      Escrita dos resultados
+	  Busca das instruções
+	  Busca dos operandos
+	  Escrita dos resultados
 
   31.2.3 Impacto na Execução — [I]
-      Tempo de acesso
-      Esperas
-      Eficiência geral
+	  Tempo de acesso
+	  Esperas
+	  Eficiência geral
 
 
- 31.3 Comunicação com a Memória — [P]
+ 31.3 Comunicação com a Memória — [I]
 
-  31.3.1 Operações de Leitura — [P]
-      Endereçamento
-      Acesso
-      Transferência
+  31.3.1 Operações de Leitura — [I]
+	  Endereçamento
+	  Acesso
+	  Transferência
 
-  31.3.2 Operações de Escrita — [P]
-      Seleção do endereço
-      Escrita dos dados
-      Atualização da memória
+  31.3.2 Operações de Escrita — [I]
+	  Seleção do endereço
+	  Escrita dos dados
+	  Atualização da memória
 
-  31.3.3 Controle das Operações — [P]
-      Sinais de leitura
-      Sinais de escrita
-      Sincronização
+  31.3.3 Controle das Operações — [I]
+	  Sinais de leitura
+	  Sinais de escrita
+	  Sincronização
 
 
 
@@ -1914,100 +1920,100 @@ PARTE 6 — INTEGRAÇÃO DO CICLO DE INSTRUÇÃO COM A ARQUITETURA DO COMPUTADOR
  32.1 Barramentos do Sistema — [I]
 
   32.1.1 Barramento de Dados — [I]
-      Transferência de informações
-      Comunicação entre componentes
+	  Transferência de informações
+	  Comunicação entre componentes
 
   32.1.2 Barramento de Endereços — [I]
-      Seleção dos endereços
-      Comunicação com a memória
+	  Seleção dos endereços
+	  Comunicação com a memória
 
   32.1.3 Barramento de Controle — [I]
-      Sinais de controle
-      Coordenação da execução
+	  Sinais de controle
+	  Coordenação da execução
 
 
- 32.2 Fluxo das Informações — [P]
+ 32.2 Fluxo das Informações — [I]
 
-  32.2.1 Fluxo das Instruções — [P]
-      Memória
-      CPU
-      Registradores
+  32.2.1 Fluxo das Instruções — [I]
+	  Memória
+	  CPU
+	  Registradores
 
-  32.2.2 Fluxo dos Dados — [P]
-      Operandos
-      Resultados
-      Transferências internas
+  32.2.2 Fluxo dos Dados — [I]
+	  Operandos
+	  Resultados
+	  Transferências internas
 
-  32.2.3 Fluxo dos Sinais de Controle — [P]
-      Unidade de Controle
-      Barramentos
-      Unidades funcionais
+  32.2.3 Fluxo dos Sinais de Controle — [I]
+	  Unidade de Controle
+	  Barramentos
+	  Unidades funcionais
 
 
  32.3 Ciclos de Barramento — [I]
-      Instruction Fetch Cycle
-      Memory Read Cycle
-      Memory Write Cycle
-      I/O Cycle (Visão Geral)
-      Relação entre o Bus Cycle e o Ciclo de Instrução
+	  Instruction Fetch Cycle
+	  Memory Read Cycle
+	  Memory Write Cycle
+	  I/O Cycle (Visão Geral)
+	  Relação entre o Bus Cycle e o Ciclo de Instrução
 
 
 
-33. Integração com o Conjunto de Instruções (ISA) — [P]
+33. Integração com o Conjunto de Instruções (ISA) — [I]
 
- 33.1 Relação entre ISA e Ciclo de Instrução — [P]
+ 33.1 Relação entre ISA e Ciclo de Instrução — [I]
 
-  33.1.1 Papel da ISA — [P]
-      Definição das instruções
-      Modelo arquitetural
-      Interface hardware-software
+  33.1.1 Papel da ISA — [I]
+	  Definição das instruções
+	  Modelo arquitetural
+	  Interface hardware-software
 
-  33.1.2 Execução das Instruções — [P]
-      Interpretação
-      Implementação
-      Resultado arquitetural
+  33.1.2 Execução das Instruções — [I]
+	  Interpretação
+	  Implementação
+	  Resultado arquitetural
 
   33.1.3 Compatibilidade Arquitetural — [I]
-      Execução consistente
-      Estado arquitetural
-      Transparência da implementação
+	  Execução consistente
+	  Estado arquitetural
+	  Transparência da implementação
 
 
- 33.2 Tipos de Instruções e o Ciclo de Execução — [P]
+ 33.2 Tipos de Instruções e o Ciclo de Execução — [I]
 
-  33.2.1 Instruções de Processamento — [P]
-      Aritméticas
-      Lógicas
-      Comparações
+  33.2.1 Instruções de Processamento — [I]
+	  Aritméticas
+	  Lógicas
+	  Comparações
 
-  33.2.2 Instruções de Transferência — [P]
-      Load
-      Store
-      Movimentação entre registradores
+  33.2.2 Instruções de Transferência — [I]
+	  Load
+	  Store
+	  Movimentação entre registradores
 
-  33.2.3 Instruções de Controle — [P]
-      Branch
-      Jump
-      Call
-      Return
+  33.2.3 Instruções de Controle — [I]
+	  Branch
+	  Jump
+	  Call
+	  Return
 
 
  33.3 Influência da ISA no Ciclo de Instrução — [I]
 
   33.3.1 Arquiteturas RISC — [I]
-      Execução simplificada
-      Uniformidade das instruções
-      Pipeline eficiente
+	  Execução simplificada
+	  Uniformidade das instruções
+	  Pipeline eficiente
 
   33.3.2 Arquiteturas CISC — [I]
-      Instruções complexas
-      Micro-operações
-      Execução interna
+	  Instruções complexas
+	  Micro-operações
+	  Execução interna
 
   33.3.3 Comparação Geral — [I]
-      Complexidade
-      Eficiência
-      Organização da execução
+	  Complexidade
+	  Eficiência
+	  Organização da execução
 
 
 
@@ -2016,37 +2022,37 @@ PARTE 6 — INTEGRAÇÃO DO CICLO DE INSTRUÇÃO COM A ARQUITETURA DO COMPUTADOR
  34.1 Comunicação com os Demais Subsistemas — [I]
 
   34.1.1 Entrada e Saída — [I]
-      Interação durante a execução
-      Operações de I/O
-      Coordenação com a CPU
+	  Interação durante a execução
+	  Operações de I/O
+	  Coordenação com a CPU
 
   34.1.2 Controladores — [I]
-      Comunicação
-      Coordenação
-      Transferência de dados
+	  Comunicação
+	  Coordenação
+	  Transferência de dados
 
   34.1.3 DMA (Visão Geral) — [I]
-      Conceito
-      Relação com o ciclo
-      Impacto na execução
+	  Conceito
+	  Relação com o ciclo
+	  Impacto na execução
 
 
  34.2 Papel do Sistema Operacional — [I]
 
   34.2.1 Gerenciamento da Execução — [I]
-      Controle dos processos
-      Escalonamento
-      Contexto de execução
+	  Controle dos processos
+	  Escalonamento
+	  Contexto de execução
 
   34.2.2 Troca de Contexto — [I]
-      Salvamento do estado
-      Restauração do estado
-      Continuidade da execução
+	  Salvamento do estado
+	  Restauração do estado
+	  Continuidade da execução
 
   34.2.3 Interação com Interrupções — [I]
-      Tratamento
-      Retorno
-      Continuação do programa
+	  Tratamento
+	  Retorno
+	  Continuação do programa
 
 
 
@@ -2055,47 +2061,47 @@ PARTE 6 — INTEGRAÇÃO DO CICLO DE INSTRUÇÃO COM A ARQUITETURA DO COMPUTADOR
  35.1 Integração dos Conceitos Fundamentais — [P]
 
   35.1.1 Relação entre os Componentes — [P]
-      CPU
-      Memória
-      Registradores
-      Barramentos
-      Unidade de Controle
-      ALU
+	  CPU
+	  Memória
+	  Registradores
+	  Barramentos
+	  Unidade de Controle
+	  ALU
 
   35.1.2 Fluxo Completo da Execução — [P]
-      Busca
-      Decodificação
-      Busca dos operandos
-      Execução
-      Acesso à memória
-      Escrita dos resultados
+	  Busca
+	  Decodificação
+	  Busca dos operandos
+	  Execução
+	  Acesso à memória
+	  Escrita dos resultados
 
   35.1.3 Visão Integrada do Processamento — [P]
-      Funcionamento completo
-      Cooperação entre os componentes
-      Coordenação da arquitetura
+	  Funcionamento completo
+	  Cooperação entre os componentes
+	  Coordenação da arquitetura
 
 
  35.2 Importância para o Estudo da Arquitetura e Organização de Computadores — [P]
 
   35.2.1 Base para os Demais Assuntos — [P]
-      Processadores
-      Pipeline
-      Memória
-      Barramentos
-      ISA
-      Microarquitetura
+	  Processadores
+	  Pipeline
+	  Memória
+	  Barramentos
+	  ISA
+	  Microarquitetura
 
   35.2.2 Relação com Assuntos Avançados — [I]
-      Execução fora de ordem
-      Processadores superescalares
-      Predição de desvios
-      Paralelismo
+	  Execução fora de ordem
+	  Processadores superescalares
+	  Predição de desvios
+	  Paralelismo
 
   35.2.3 Consolidação dos Conhecimentos — [P]
-      Integração dos conceitos
-      Visão sistêmica
-      Preparação para estudos avançados
+	  Integração dos conceitos
+	  Visão sistêmica
+	  Preparação para estudos avançados
 
 
 
@@ -2107,80 +2113,80 @@ PARTE 7 — EVOLUÇÃO, TENDÊNCIAS, RESUMO E CONCLUSÃO
  36.1 Primeiras Implementações — [I]
 
   36.1.1 Computadores Iniciais — [V]
-      Primeiras CPUs
-      Execução sequencial
-      Organização básica
-      Primeiros ciclos de instrução
+	  Primeiras CPUs
+	  Execução sequencial
+	  Organização básica
+	  Primeiros ciclos de instrução
 
   36.1.2 Evolução da Execução — [I]
-      Aumento da complexidade
-      Evolução dos processadores
-      Novas necessidades arquiteturais
+	  Aumento da complexidade
+	  Evolução dos processadores
+	  Novas necessidades arquiteturais
 
   36.1.3 Marcos Históricos — [I]
-      Processadores monociclo
-      Processadores multiciclo
-      Introdução do pipeline
-      Execução dinâmica
+	  Processadores monociclo
+	  Processadores multiciclo
+	  Introdução do pipeline
+	  Execução dinâmica
 
 
  36.2 Evolução da Organização Interna — [I]
 
   36.2.1 Aumento do Paralelismo — [I]
-      Paralelismo em nível de instruções
-      Execução simultânea
-      Melhor utilização dos recursos
+	  Paralelismo em nível de instruções
+	  Execução simultânea
+	  Melhor utilização dos recursos
 
   36.2.2 Evolução das Técnicas de Execução — [I]
-      Pipeline
-      Superescalar
-      Execução fora de ordem
-      Execução especulativa
+	  Pipeline
+	  Superescalar
+	  Execução fora de ordem
+	  Execução especulativa
 
   36.2.3 Crescimento da Complexidade — [I]
-      Novas unidades funcionais
-      Controle mais sofisticado
-      Microarquiteturas modernas
+	  Novas unidades funcionais
+	  Controle mais sofisticado
+	  Microarquiteturas modernas
 
 
 
-37. Tendências Modernas do Ciclo de Instrução — [I]
+37. Tendências Modernas do Ciclo de Instrução — [V]
 
- 37.1 Tendências Arquiteturais — [I]
+ 37.1 Tendências Arquiteturais — [V]
 
-  37.1.1 Processadores Modernos — [I]
-      Alto paralelismo
-      Múltiplas unidades funcionais
-      Alto desempenho
-      Escalabilidade
+  37.1.1 Processadores Modernos — [V]
+	  Alto paralelismo
+	  Múltiplas unidades funcionais
+	  Alto desempenho
+	  Escalabilidade
 
-  37.1.2 Evolução da Execução — [I]
-      Maior número de instruções simultâneas
-      Melhor aproveitamento do pipeline
-      Redução das dependências
+  37.1.2 Evolução da Execução — [V]
+	  Maior número de instruções simultâneas
+	  Melhor aproveitamento do pipeline
+	  Redução das dependências
 
-  37.1.3 Otimizações Contínuas — [I]
-      Melhor eficiência
-      Redução da latência
-      Aumento do throughput
+  37.1.3 Otimizações Contínuas — [V]
+	  Melhor eficiência
+	  Redução da latência
+	  Aumento do throughput
 
 
- 37.2 Tendências Microarquiteturais — [I]
+ 37.2 Tendências Microarquiteturais — [V]
 
-  37.2.1 Execução Dinâmica — [I]
-      Escalonamento dinâmico
-      Reordenação
-      Execução especulativa
+  37.2.1 Execução Dinâmica — [V]
+	  Escalonamento dinâmico
+	  Reordenação
+	  Execução especulativa
 
-  37.2.2 Melhorias no Controle — [I]
-      Predição de desvios
-      Controle inteligente
-      Balanceamento interno
+  37.2.2 Melhorias no Controle — [V]
+	  Predição de desvios
+	  Controle inteligente
+	  Balanceamento interno
 
   37.2.3 Futuro da Execução das Instruções — [V]
-      Maior paralelismo
-      Eficiência energética
-      Novas organizações microarquiteturais
+	  Maior paralelismo
+	  Eficiência energética
+	  Novas organizações microarquiteturais
 
 
 
@@ -2189,133 +2195,133 @@ PARTE 7 — EVOLUÇÃO, TENDÊNCIAS, RESUMO E CONCLUSÃO
  38.1 Relação entre as Etapas do Ciclo — [P]
 
   38.1.1 Fluxo Completo da Execução — [P]
-      Fetch
-      Decode
-      Operand Fetch
-      Execute
-      Memory Access
-      Write Back
-      Atualização do PC
+	  Fetch
+	  Decode
+	  Operand Fetch
+	  Execute
+	  Memory Access
+	  Write Back
+	  Atualização do PC
 
   38.1.2 Dependência entre as Etapas — [P]
-      Sequenciamento
-      Fluxo de dados
-      Fluxo de controle
-      Continuidade da execução
+	  Sequenciamento
+	  Fluxo de dados
+	  Fluxo de controle
+	  Continuidade da execução
 
   38.1.3 Integração das Operações — [P]
-      Comunicação interna
-      Atualização do estado
-      Encadeamento das operações
+	  Comunicação interna
+	  Atualização do estado
+	  Encadeamento das operações
 
 
  38.2 Relação entre os Componentes — [P]
 
   38.2.1 Unidade de Controle — [P]
-      Coordenação
-      Sequenciamento
-      Controle das operações
+	  Coordenação
+	  Sequenciamento
+	  Controle das operações
 
   38.2.2 Datapath — [P]
-      Fluxo de dados
-      Processamento
-      Transferências
+	  Fluxo de dados
+	  Processamento
+	  Transferências
 
   38.2.3 Memória e Registradores — [P]
-      Armazenamento
-      Leitura
-      Escrita
-      Atualização
+	  Armazenamento
+	  Leitura
+	  Escrita
+	  Atualização
 
 
 
-39. Mapa Geral do Ciclo de Instrução — [P]
+39. Mapa Geral do Ciclo de Instrução — [I]
 
- 39.1 Fluxo Completo da Execução — [P]
+ 39.1 Fluxo Completo da Execução — [I]
 
-  39.1.1 Início da Execução — [P]
-      Program Counter
-      Busca da instrução
-      Leitura da memória
+  39.1.1 Início da Execução — [I]
+	  Program Counter
+	  Busca da instrução
+	  Leitura da memória
 
-  39.1.2 Processamento da Instrução — [P]
-      Decodificação
-      Busca dos operandos
-      Execução
-      Atualização das flags
+  39.1.2 Processamento da Instrução — [I]
+	  Decodificação
+	  Busca dos operandos
+	  Execução
+	  Atualização das flags
 
-  39.1.3 Finalização — [P]
-      Escrita dos resultados
-      Atualização do estado
-      Preparação da próxima instrução
-
-
- 39.2 Visão Integrada do Ciclo — [P]
-
-  39.2.1 Fluxo dos Dados — [P]
-      Memória
-      Registradores
-      ALU
-      Memória
-
-  39.2.2 Fluxo de Controle — [P]
-      Unidade de Controle
-      Sinais de controle
-      Sequenciamento
-
-  39.2.3 Fluxo Temporal — [P]
-      Clock
-      Ciclos
-      Estados
-      Sincronização
+  39.1.3 Finalização — [I]
+	  Escrita dos resultados
+	  Atualização do estado
+	  Preparação da próxima instrução
 
 
+ 39.2 Visão Integrada do Ciclo — [I]
 
-40. Resumo Geral do Ciclo de Instrução — [P]
+  39.2.1 Fluxo dos Dados — [I]
+	  Memória
+	  Registradores
+	  ALU
+	  Memória
 
- 40.1 Conceitos Fundamentais — [P]
+  39.2.2 Fluxo de Controle — [I]
+	  Unidade de Controle
+	  Sinais de controle
+	  Sequenciamento
 
-  40.1.1 O que Deve Ser Dominado — [P]
-      Conceito do ciclo de instrução
-      Objetivos
-      Organização geral
-      Funcionamento completo
-
-  40.1.2 Componentes Fundamentais — [P]
-      Unidade de Controle
-      ALU
-      Registradores
-      Memória
-      Barramentos
-      Datapath
-
-  40.1.3 Etapas Fundamentais — [P]
-      Busca
-      Decodificação
-      Busca dos operandos
-      Execução
-      Memory Access
-      Write Back
+  39.2.3 Fluxo Temporal — [I]
+	  Clock
+	  Ciclos
+	  Estados
+	  Sincronização
 
 
- 40.2 Aspectos Fundamentais da Execução — [P]
 
-  40.2.1 Controle da Execução — [P]
-      Sequenciamento
-      Microoperações
-      Controle interno
+40. Resumo Geral do Ciclo de Instrução — [V]
 
-  40.2.2 Organização Moderna — [P]
-      Pipeline
-      Hazards
-      Execução dinâmica
-      Paralelismo
+ 40.1 Conceitos Fundamentais — [V]
 
-  40.2.3 Integração Arquitetural — [P]
-      ISA
-      CPU
-      Memória
-      Sistema computacional
+  40.1.1 O que Deve Ser Dominado — [V]
+	  Conceito do ciclo de instrução
+	  Objetivos
+	  Organização geral
+	  Funcionamento completo
+
+  40.1.2 Componentes Fundamentais — [V]
+	  Unidade de Controle
+	  ALU
+	  Registradores
+	  Memória
+	  Barramentos
+	  Datapath
+
+  40.1.3 Etapas Fundamentais — [V]
+	  Busca
+	  Decodificação
+	  Busca dos operandos
+	  Execução
+	  Memory Access
+	  Write Back
+
+
+ 40.2 Aspectos Fundamentais da Execução — [V]
+
+  40.2.1 Controle da Execução — [V]
+	  Sequenciamento
+	  Microoperações
+	  Controle interno
+
+  40.2.2 Organização Moderna — [V]
+	  Pipeline
+	  Hazards
+	  Execução dinâmica
+	  Paralelismo
+
+  40.2.3 Integração Arquitetural — [V]
+	  ISA
+	  CPU
+	  Memória
+	  Sistema computacional
 
 
 
@@ -2324,49 +2330,49 @@ PARTE 7 — EVOLUÇÃO, TENDÊNCIAS, RESUMO E CONCLUSÃO
  41.1 Síntese do Ciclo de Instrução — [V]
 
   41.1.1 Importância para a Arquitetura de Computadores — [V]
-      Base da execução de programas
-      Funcionamento da CPU
-      Coordenação dos componentes
-      Modelo fundamental de processamento
+	  Base da execução de programas
+	  Funcionamento da CPU
+	  Coordenação dos componentes
+	  Modelo fundamental de processamento
 
   41.1.2 Importância para a Organização de Computadores — [V]
-      Implementação física da execução
-      Organização interna
-      Comunicação entre os componentes
-      Eficiência do processamento
+	  Implementação física da execução
+	  Organização interna
+	  Comunicação entre os componentes
+	  Eficiência do processamento
 
   41.1.3 Base para Estudos Posteriores — [V]
-      Processadores
-      ISA
-      Pipeline
-      Microarquitetura
-      Memória
-      Barramentos
-      Paralelismo
-      Sistemas multicore
-      Desempenho computacional
+	  Processadores
+	  ISA
+	  Pipeline
+	  Microarquitetura
+	  Memória
+	  Barramentos
+	  Paralelismo
+	  Sistemas multicore
+	  Desempenho computacional
 
 
  41.2 Consolidação do Conhecimento — [V]
 
   41.2.1 Competências Esperadas — [V]
-      Compreender todo o fluxo do ciclo de instrução
-      Identificar cada etapa da execução
-      Entender a função de cada componente
-      Relacionar o ciclo de instrução com a arquitetura da CPU
-      Compreender a implementação moderna da execução
+	  Compreender todo o fluxo do ciclo de instrução
+	  Identificar cada etapa da execução
+	  Entender a função de cada componente
+	  Relacionar o ciclo de instrução com a arquitetura da CPU
+	  Compreender a implementação moderna da execução
 
   41.2.2 Visão Sistêmica — [V]
-      Integração entre hardware e software
-      Relação entre arquitetura e organização
-      Funcionamento global da CPU
-      Papel do ciclo de instrução no sistema computacional
+	  Integração entre hardware e software
+	  Relação entre arquitetura e organização
+	  Funcionamento global da CPU
+	  Papel do ciclo de instrução no sistema computacional
 
   41.2.3 Preparação para Estudos Avançados — [V]
-      Microarquiteturas modernas
-      Processadores de alto desempenho
-      Otimizações arquiteturais
-      Paralelismo avançado
-      Execução especulativa
-      Arquiteturas multicore
-      Arquiteturas manycore
+	  Microarquiteturas modernas
+	  Processadores de alto desempenho
+	  Otimizações arquiteturais
+	  Paralelismo avançado
+	  Execução especulativa
+	  Arquiteturas multicore
+	  Arquiteturas manycore
