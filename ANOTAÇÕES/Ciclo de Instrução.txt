@@ -1008,3 +1008,599 @@ PARTE 3 — MICROOPERAÇÕES, CONTROLE E FLUXO INTERNO
       Prioridade de acesso
       Organização da utilização
       Evitação de conflitos
+
+
+
+PARTE 4 — EXECUÇÃO DAS INSTRUÇÕES NAS ARQUITETURAS MODERNAS
+
+
+18. Organização Moderna do Ciclo de Instrução — [P]
+
+ 18.1 Evolução da Execução das Instruções — [I]
+
+  18.1.1 Da Execução Clássica à Moderna — [I]
+      Modelo sequencial
+      Limitações do modelo clássico
+      Necessidade de paralelismo
+      Evolução da microarquitetura
+
+  18.1.2 Objetivos da Execução Moderna — [I]
+      Aumento do desempenho
+      Melhor aproveitamento do hardware
+      Redução do tempo de execução
+      Maior taxa de instruções
+
+  18.1.3 Transformação do Ciclo de Instrução — [P]
+      Divisão das etapas
+      Paralelização
+      Execução simultânea
+      Coordenação das unidades funcionais
+
+
+ 18.2 Organização Geral da Execução Moderna — [P]
+
+  18.2.1 Separação das Etapas — [P]
+      Busca
+      Decodificação
+      Emissão
+      Execução
+      Escrita dos resultados
+      Commit (visão geral)
+
+  18.2.2 Fluxo Interno das Instruções — [P]
+      Entrada
+      Processamento
+      Execução
+      Finalização
+
+  18.2.3 Relação entre ISA e Microarquitetura — [I]
+      Instrução arquitetural
+      Implementação interna
+      Micro-operações
+      Transparência para o software
+
+
+
+19. Pipeline de Instruções — [P]
+
+ 19.1 Fundamentos do Pipeline — [P]
+
+  19.1.1 Conceitos Fundamentais — [P]
+      Conceito de pipeline
+      Objetivos
+      Funcionamento geral
+      Paralelismo em nível de instruções
+
+  19.1.2 Estrutura do Pipeline — [P]
+      Estágios
+      Fluxo das instruções
+      Sobreposição das etapas
+      Organização interna
+
+  19.1.3 Benefícios do Pipeline — [I]
+      Aumento do throughput
+      Melhor utilização da CPU
+      Maior eficiência
+      Escalabilidade
+
+
+ 19.2 Estágios do Pipeline — [P]
+
+  19.2.1 Instruction Fetch (IF) — [P]
+      Busca
+      Atualização do PC
+      Leitura da memória
+
+  19.2.2 Instruction Decode (ID) — [P]
+      Decodificação
+      Identificação dos operandos
+      Geração do controle
+
+  19.2.3 Execute (EX) — [P]
+      Operações aritméticas
+      Operações lógicas
+      Cálculo de endereços
+
+  19.2.4 Memory Access (MEM) — [P]
+      Load
+      Store
+      Comunicação com a memória
+
+  19.2.5 Write Back (WB) — [P]
+      Escrita dos resultados
+      Atualização dos registradores
+      Encerramento da instrução
+
+
+ 19.3 Funcionamento do Pipeline — [P]
+
+  19.3.1 Sobreposição das Instruções — [P]
+      Execução concorrente
+      Compartilhamento dos estágios
+      Fluxo contínuo
+
+  19.3.2 Latência e Throughput — [P]
+      Conceitos
+      Diferenças
+      Impacto no desempenho
+
+  19.3.3 Balanceamento do Pipeline — [I]
+      Distribuição das etapas
+      Gargalos
+      Eficiência geral
+
+
+
+20. Hazards no Ciclo de Instrução — [P]
+
+ 20.1 Fundamentos — [P]
+
+  20.1.1 Conceitos Fundamentais — [P]
+      Hazard
+      Origem dos hazards
+      Consequências
+      Impacto na execução
+
+  20.1.2 Classificação Geral — [P]
+      Hazards estruturais
+      Hazards de dados
+      Hazards de controle
+
+
+ 20.2 Hazards Estruturais — [P]
+
+  20.2.1 Compartilhamento de Recursos — [P]
+      Conflitos de hardware
+      Recursos insuficientes
+      Disputa por unidades funcionais
+
+  20.2.2 Resolução — [I]
+      Duplicação de recursos
+      Organização do pipeline
+      Escalonamento
+
+
+ 20.3 Hazards de Dados — [P]
+
+  20.3.1 RAW (Read After Write) — [P]
+      Conceito
+      Ocorrência
+      Impacto
+
+  20.3.2 WAR (Write After Read) — [P]
+      Conceito
+      Ocorrência
+      Características
+
+  20.3.3 WAW (Write After Write) — [P]
+      Conceito
+      Ocorrência
+      Consequências
+
+
+ 20.4 Hazards de Controle — [P]
+
+  20.4.1 Desvios e Saltos — [P]
+      Alteração do fluxo
+      Branch
+      Jump
+      Call
+      Return
+
+  20.4.2 Consequências — [P]
+      Interrupção do pipeline
+      Necessidade de correção
+      Penalidades
+
+
+
+21. Técnicas de Redução de Hazards — [P]
+
+ 21.1 Soluções para Dependências — [P]
+
+  21.1.1 Data Forwarding (Bypassing) — [P]
+      Conceito
+      Funcionamento
+      Benefícios
+      Limitações
+
+  21.1.2 Pipeline Stall — [P]
+      Inserção de bolhas
+      Espera controlada
+      Penalidade
+
+  21.1.3 Interlocks — [P]
+      Detecção automática
+      Controle do pipeline
+      Coordenação das dependências
+
+
+ 21.2 Controle de Desvios — [P]
+
+  21.2.1 Branch Prediction (Visão Geral) — [I]
+      Objetivos
+      Funcionamento geral
+      Importância
+
+  21.2.2 Branch Delay Slot (Visão Geral) — [I]
+      Conceito
+      Aplicações
+      Limitações
+
+  21.2.3 Flush do Pipeline — [P]
+      Limpeza do pipeline
+      Reinício da execução
+      Recuperação do fluxo
+
+
+
+22. Execução Avançada das Instruções — [P]
+
+ 22.1 Execução Fora de Ordem (Out-of-Order) — [I]
+
+  22.1.1 Conceitos Fundamentais — [I]
+      Execução dinâmica
+      Reordenação
+      Aproveitamento das unidades funcionais
+
+  22.1.2 Objetivos — [I]
+      Redução de esperas
+      Aumento do paralelismo
+      Melhor utilização do hardware
+
+  22.1.3 Visão Geral do Funcionamento — [I]
+      Emissão
+      Execução
+      Conclusão
+      Commit
+
+
+ 22.2 Execução Superescalar — [I]
+
+  22.2.1 Conceitos Fundamentais — [I]
+      Emissão múltipla
+      Paralelismo
+      Execução simultânea
+
+  22.2.2 Recursos Necessários — [I]
+      Múltiplas unidades funcionais
+      Banco de registradores
+      Caminhos de dados
+
+  22.2.3 Limitações — [I]
+      Dependências
+      Hazards
+      Complexidade
+
+
+ 22.3 Micro-operações — [P]
+
+  22.3.1 Conversão das Instruções — [P]
+      Decodificação interna
+      Quebra da instrução
+      Sequenciamento
+
+  22.3.2 Execução das Micro-operações — [P]
+      Escalonamento
+      Execução
+      Finalização
+
+  22.3.3 Relação com o Ciclo de Instrução — [P]
+      Transparência arquitetural
+      Implementação microarquitetural
+      Compatibilidade com a ISA
+
+
+
+PARTE 5 — DESEMPENHO, EXCEÇÕES E ASPECTOS AVANÇADOS
+
+
+23. Desempenho do Ciclo de Instrução — [P]
+
+ 23.1 Fundamentos do Desempenho — [P]
+
+  23.1.1 Conceitos Fundamentais — [P]
+      Desempenho computacional
+      Eficiência da execução
+      Tempo de execução
+      Produtividade do processador
+      Métricas de desempenho
+
+  23.1.2 Fatores que Influenciam o Desempenho — [P]
+      Frequência do clock
+      CPI (Cycles Per Instruction)
+      IPC (Instructions Per Cycle)
+      Latência
+      Throughput
+      Paralelismo
+
+  23.1.3 Relação entre Hardware e Desempenho — [P]
+      Organização interna
+      Microarquitetura
+      Caminho de dados
+      Unidade de Controle
+      Recursos do processador
+
+
+ 23.2 Medidas de Desempenho — [P]
+
+  23.2.1 Tempo de Execução — [P]
+      Tempo de CPU
+      Tempo de instrução
+      Tempo médio de execução
+      Tempo total de processamento
+
+  23.2.2 Métricas Clássicas — [P]
+      CPI
+      IPC
+      MIPS (visão geral)
+      FLOPS (visão geral)
+      Taxa de execução
+
+  23.2.3 Eficiência do Ciclo de Instrução — [P]
+      Aproveitamento dos ciclos
+      Utilização das unidades funcionais
+      Eficiência do pipeline
+      Eficiência geral da CPU
+
+
+
+24. Interrupções, Exceções e Alterações do Fluxo — [P]
+
+ 24.1 Fundamentos — [P]
+
+  24.1.1 Conceitos Fundamentais — [P]
+      Interrupção
+      Exceção
+      Trap
+      Fault
+      Abort
+      Evento síncrono
+      Evento assíncrono
+
+  24.1.2 Importância no Ciclo de Instrução — [P]
+      Alteração da sequência normal
+      Suspensão temporária da execução
+      Preservação do estado
+      Continuidade do processamento
+
+  24.1.3 Classificação Geral — [P]
+      Interrupções externas
+      Interrupções internas
+      Exceções
+      Eventos de software
+
+
+ 24.2 Tratamento Durante o Ciclo de Instrução — [P]
+
+  24.2.1 Detecção do Evento — [P]
+      Momento da detecção
+      Identificação da origem
+      Priorização
+
+  24.2.2 Interrupção do Fluxo Normal — [P]
+      Suspensão da instrução
+      Salvamento do contexto
+      Transferência de controle
+
+  24.2.3 Retorno da Execução — [P]
+      Restauração do contexto
+      Recuperação do estado
+      Continuação da execução
+
+
+ 24.3 Impacto na Execução — [P]
+
+  24.3.1 Alterações do Pipeline — [P]
+      Flush
+      Reinício
+      Penalidades
+
+  24.3.2 Alterações do Estado da CPU — [P]
+      Registradores
+      Program Counter
+      Registrador de Status
+
+  24.3.3 Continuidade do Programa — [P]
+      Retomada da execução
+      Consistência do processamento
+      Integridade do estado
+
+
+
+25. Dependências e Ordem de Execução — [P]
+
+ 25.1 Dependências entre Instruções — [P]
+
+  25.1.1 Dependências de Dados — [P]
+      Produção de resultados
+      Consumo de operandos
+      Relações entre instruções
+
+  25.1.2 Dependências de Controle — [P]
+      Desvios
+      Saltos
+      Mudança do fluxo
+
+  25.1.3 Dependências Estruturais — [P]
+      Compartilhamento de recursos
+      Disputa por hardware
+      Coordenação das operações
+
+
+ 25.2 Ordem de Execução — [P]
+
+  25.2.1 Ordem Arquitetural — [P]
+      Ordem visível ao programador
+      Sequência lógica
+      Estado arquitetural
+
+  25.2.2 Ordem Física — [P]
+      Ordem interna
+      Execução dinâmica
+      Organização microarquitetural
+
+  25.2.3 Consistência da Execução — [P]
+      Correção dos resultados
+      Sincronização
+      Integridade do processamento
+
+
+
+26. Consistência do Estado Arquitetural — [P]
+
+ 26.1 Estado da CPU — [P]
+
+  26.1.1 Estado Arquitetural — [P]
+      Registradores
+      Flags
+      Program Counter
+      Memória visível
+      Estado observável
+
+  26.1.2 Estado Microarquitetural — [P]
+      Buffers internos
+      Filas
+      Registradores temporários
+      Estruturas internas
+
+  26.1.3 Diferenças entre os Estados — [P]
+      Visão do software
+      Implementação interna
+      Transparência da microarquitetura
+
+
+ 26.2 Atualização do Estado — [P]
+
+  26.2.1 Durante a Execução — [P]
+      Alteração dos registradores
+      Alteração das flags
+      Atualização da memória
+
+  26.2.2 Finalização da Instrução — [P]
+      Escrita definitiva
+      Estado consistente
+      Encerramento da execução
+
+  26.2.3 Recuperação Após Eventos — [P]
+      Exceções
+      Interrupções
+      Reinicialização do fluxo
+
+
+
+27. Otimizações Aplicadas ao Ciclo de Instrução — [I]
+
+ 27.1 Otimizações Arquiteturais — [I]
+
+  27.1.1 Objetivos — [I]
+      Redução da latência
+      Aumento do throughput
+      Melhor utilização do hardware
+
+  27.1.2 Técnicas Gerais — [I]
+      Pipeline
+      Paralelismo
+      Execução dinâmica
+      Execução especulativa (visão geral)
+
+  27.1.3 Benefícios — [I]
+      Ganho de desempenho
+      Redução de gargalos
+      Escalabilidade
+
+
+ 27.2 Otimizações Microarquiteturais — [I]
+
+  27.2.1 Melhorias Internas — [I]
+      Organização das unidades funcionais
+      Balanceamento do pipeline
+      Redução de dependências
+
+  27.2.2 Aproveitamento dos Recursos — [I]
+      Paralelismo interno
+      Compartilhamento eficiente
+      Controle dinâmico
+
+  27.2.3 Limitações — [I]
+      Complexidade
+      Consumo de energia
+      Custos de implementação
+
+
+
+28. Limitações do Ciclo de Instrução — [I]
+
+ 28.1 Limitações Arquiteturais — [I]
+
+  28.1.1 Dependência Sequencial — [I]
+      Ordem das instruções
+      Dependências
+      Fluxo do programa
+
+  28.1.2 Latência — [I]
+      Tempo de acesso
+      Tempo de execução
+      Tempo de resposta
+
+  28.1.3 Gargalos Arquiteturais — [I]
+      Memória
+      Barramentos
+      Recursos compartilhados
+
+
+ 28.2 Limitações Microarquiteturais — [I]
+
+  28.2.1 Hazards — [I]
+      Estruturais
+      Dados
+      Controle
+
+  28.2.2 Restrições do Hardware — [I]
+      Número de unidades funcionais
+      Número de portas
+      Recursos disponíveis
+
+  28.2.3 Escalabilidade — [I]
+      Crescimento da complexidade
+      Limites físicos
+      Limites tecnológicos
+
+
+
+29. Confiabilidade e Correção da Execução — [I]
+
+ 29.1 Execução Correta das Instruções — [P]
+
+  29.1.1 Integridade da Execução — [P]
+      Execução correta
+      Preservação do estado
+      Consistência dos resultados
+
+  29.1.2 Precisão da Execução — [P]
+      Ordem correta
+      Resultados corretos
+      Atualização consistente
+
+  29.1.3 Finalização Segura — [P]
+      Escrita correta
+      Encerramento da instrução
+      Preparação da próxima execução
+
+
+ 29.2 Robustez do Ciclo de Instrução — [I]
+
+  29.2.1 Tratamento de Situações Anormais — [I]
+      Erros internos
+      Exceções
+      Interrupções
+
+  29.2.2 Continuidade do Processamento — [I]
+      Recuperação
+      Reinício controlado
+      Estabilidade
+
+  29.2.3 Confiabilidade Geral — [I]
+      Execução previsível
+      Consistência arquitetural
+      Robustez do processamento
