@@ -1604,3 +1604,313 @@ PARTE 5 — DESEMPENHO, EXCEÇÕES E ASPECTOS AVANÇADOS
       Execução previsível
       Consistência arquitetural
       Robustez do processamento
+
+
+
+PARTE 6 — INTEGRAÇÃO DO CICLO DE INSTRUÇÃO COM A ARQUITETURA DO COMPUTADOR
+
+
+30. Integração do Ciclo de Instrução com a CPU — [P]
+
+ 30.1 O Ciclo de Instrução na Organização da CPU — [P]
+
+  30.1.1 Papel Central do Ciclo de Instrução — [P]
+      Coordenação da execução
+      Fluxo interno de processamento
+      Organização da CPU
+      Relação entre hardware e instruções
+
+  30.1.2 Comunicação entre as Unidades da CPU — [P]
+      Unidade de Controle
+      Datapath
+      ALU
+      Banco de registradores
+      Unidades funcionais
+
+  30.1.3 Coordenação Geral da Execução — [P]
+      Sequenciamento das etapas
+      Controle das operações
+      Sincronização
+      Atualização do estado interno
+
+
+ 30.2 Integração com os Registradores — [P]
+
+  30.2.1 Registradores de Controle — [P]
+      Program Counter (PC)
+      Instruction Register (IR)
+      Status Register
+      MAR
+      MDR/MBR
+
+  30.2.2 Registradores de Dados — [P]
+      Banco de registradores
+      Registradores temporários
+      Acumulador
+      Registradores de propósito geral
+
+  30.2.3 Fluxo dos Registradores Durante o Ciclo — [P]
+      Leitura
+      Escrita
+      Atualização
+      Armazenamento temporário
+
+
+ 30.3 Integração com as Unidades Funcionais — [P]
+
+  30.3.1 Unidade Lógica e Aritmética (ALU) — [P]
+      Operações aritméticas
+      Operações lógicas
+      Comparações
+      Atualização das flags
+
+  30.3.2 Unidade de Controle (UC) — [P]
+      Coordenação geral
+      Sequenciamento
+      Geração dos sinais de controle
+
+  30.3.3 Demais Unidades Funcionais — [I]
+      FPU
+      AGU
+      LSU
+      Unidades especializadas
+      Cooperação durante a execução
+
+
+
+31. Integração com o Sistema de Memória — [P]
+
+ 31.1 Memória Principal e o Ciclo de Instrução — [P]
+
+  31.1.1 Busca das Instruções — [P]
+      Leitura da memória
+      Transferência da instrução
+      Atualização do IR
+
+  31.1.2 Busca dos Operandos — [P]
+      Leitura dos dados
+      Transferência dos operandos
+      Disponibilização para execução
+
+  31.1.3 Escrita dos Resultados — [P]
+      Operações Store
+      Atualização da memória
+      Finalização da instrução
+
+
+ 31.2 Hierarquia de Memória — [I]
+
+  31.2.1 Papel da Hierarquia — [I]
+      Redução da latência
+      Melhoria do desempenho
+      Disponibilidade dos dados
+
+  31.2.2 Relação com o Ciclo de Instrução — [I]
+      Busca das instruções
+      Busca dos operandos
+      Escrita dos resultados
+
+  31.2.3 Impacto na Execução — [I]
+      Tempo de acesso
+      Esperas
+      Eficiência geral
+
+
+ 31.3 Comunicação com a Memória — [P]
+
+  31.3.1 Operações de Leitura — [P]
+      Endereçamento
+      Acesso
+      Transferência
+
+  31.3.2 Operações de Escrita — [P]
+      Seleção do endereço
+      Escrita dos dados
+      Atualização da memória
+
+  31.3.3 Controle das Operações — [P]
+      Sinais de leitura
+      Sinais de escrita
+      Sincronização
+
+
+
+32. Integração com os Barramentos e Interconexões — [I]
+
+ 32.1 Barramentos do Sistema — [I]
+
+  32.1.1 Barramento de Dados — [I]
+      Transferência de informações
+      Comunicação entre componentes
+
+  32.1.2 Barramento de Endereços — [I]
+      Seleção dos endereços
+      Comunicação com a memória
+
+  32.1.3 Barramento de Controle — [I]
+      Sinais de controle
+      Coordenação da execução
+
+
+ 32.2 Fluxo das Informações — [P]
+
+  32.2.1 Fluxo das Instruções — [P]
+      Memória
+      CPU
+      Registradores
+
+  32.2.2 Fluxo dos Dados — [P]
+      Operandos
+      Resultados
+      Transferências internas
+
+  32.2.3 Fluxo dos Sinais de Controle — [P]
+      Unidade de Controle
+      Barramentos
+      Unidades funcionais
+
+
+
+33. Integração com o Conjunto de Instruções (ISA) — [P]
+
+ 33.1 Relação entre ISA e Ciclo de Instrução — [P]
+
+  33.1.1 Papel da ISA — [P]
+      Definição das instruções
+      Modelo arquitetural
+      Interface hardware-software
+
+  33.1.2 Execução das Instruções — [P]
+      Interpretação
+      Implementação
+      Resultado arquitetural
+
+  33.1.3 Compatibilidade Arquitetural — [I]
+      Execução consistente
+      Estado arquitetural
+      Transparência da implementação
+
+
+ 33.2 Tipos de Instruções e o Ciclo de Execução — [P]
+
+  33.2.1 Instruções de Processamento — [P]
+      Aritméticas
+      Lógicas
+      Comparações
+
+  33.2.2 Instruções de Transferência — [P]
+      Load
+      Store
+      Movimentação entre registradores
+
+  33.2.3 Instruções de Controle — [P]
+      Branch
+      Jump
+      Call
+      Return
+
+
+ 33.3 Influência da ISA no Ciclo de Instrução — [I]
+
+  33.3.1 Arquiteturas RISC — [I]
+      Execução simplificada
+      Uniformidade das instruções
+      Pipeline eficiente
+
+  33.3.2 Arquiteturas CISC — [I]
+      Instruções complexas
+      Micro-operações
+      Execução interna
+
+  33.3.3 Comparação Geral — [I]
+      Complexidade
+      Eficiência
+      Organização da execução
+
+
+
+34. Integração com o Sistema Computacional — [I]
+
+ 34.1 Comunicação com os Demais Subsistemas — [I]
+
+  34.1.1 Entrada e Saída — [I]
+      Interação durante a execução
+      Operações de I/O
+      Coordenação com a CPU
+
+  34.1.2 Controladores — [I]
+      Comunicação
+      Coordenação
+      Transferência de dados
+
+  34.1.3 DMA (Visão Geral) — [I]
+      Conceito
+      Relação com o ciclo
+      Impacto na execução
+
+
+ 34.2 Papel do Sistema Operacional — [I]
+
+  34.2.1 Gerenciamento da Execução — [I]
+      Controle dos processos
+      Escalonamento
+      Contexto de execução
+
+  34.2.2 Troca de Contexto — [I]
+      Salvamento do estado
+      Restauração do estado
+      Continuidade da execução
+
+  34.2.3 Interação com Interrupções — [I]
+      Tratamento
+      Retorno
+      Continuação do programa
+
+
+
+35. O Ciclo de Instrução como Base da Arquitetura de Computadores — [P]
+
+ 35.1 Integração dos Conceitos Fundamentais — [P]
+
+  35.1.1 Relação entre os Componentes — [P]
+      CPU
+      Memória
+      Registradores
+      Barramentos
+      Unidade de Controle
+      ALU
+
+  35.1.2 Fluxo Completo da Execução — [P]
+      Busca
+      Decodificação
+      Busca dos operandos
+      Execução
+      Acesso à memória
+      Escrita dos resultados
+
+  35.1.3 Visão Integrada do Processamento — [P]
+      Funcionamento completo
+      Cooperação entre os componentes
+      Coordenação da arquitetura
+
+
+ 35.2 Importância para o Estudo da Arquitetura e Organização de Computadores — [P]
+
+  35.2.1 Base para os Demais Assuntos — [P]
+      Processadores
+      Pipeline
+      Memória
+      Barramentos
+      ISA
+      Microarquitetura
+
+  35.2.2 Relação com Assuntos Avançados — [I]
+      Execução fora de ordem
+      Processadores superescalares
+      Predição de desvios
+      Paralelismo
+
+  35.2.3 Consolidação dos Conhecimentos — [P]
+      Integração dos conceitos
+      Visão sistêmica
+      Preparação para estudos avançados
