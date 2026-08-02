@@ -1951,11 +1951,11 @@ PARTE 6 — INTEGRAÇÃO DO CICLO DE INSTRUÇÃO COM A ARQUITETURA DO COMPUTADOR
 
 
  32.3 Ciclos de Barramento — [I]
-	  Instruction Fetch Cycle
-	  Memory Read Cycle
-	  Memory Write Cycle
-	  I/O Cycle (Visão Geral)
-	  Relação entre o Bus Cycle e o Ciclo de Instrução
+	Instruction Fetch Cycle
+	Memory Read Cycle
+	Memory Write Cycle
+	I/O Cycle (Visão Geral)
+	Relação entre o Bus Cycle e o Ciclo de Instrução
 
 
 
