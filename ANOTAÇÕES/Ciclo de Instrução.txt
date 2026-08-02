@@ -1914,3 +1914,277 @@ PARTE 6 — INTEGRAÇÃO DO CICLO DE INSTRUÇÃO COM A ARQUITETURA DO COMPUTADOR
       Integração dos conceitos
       Visão sistêmica
       Preparação para estudos avançados
+
+
+
+PARTE 7 — EVOLUÇÃO, TENDÊNCIAS, RESUMO E CONCLUSÃO
+
+
+36. Evolução Histórica do Ciclo de Instrução — [I]
+
+ 36.1 Primeiras Implementações — [I]
+
+  36.1.1 Computadores Iniciais — [V]
+      Primeiras CPUs
+      Execução sequencial
+      Organização básica
+      Primeiros ciclos de instrução
+
+  36.1.2 Evolução da Execução — [I]
+      Aumento da complexidade
+      Evolução dos processadores
+      Novas necessidades arquiteturais
+
+  36.1.3 Marcos Históricos — [I]
+      Processadores monociclo
+      Processadores multiciclo
+      Introdução do pipeline
+      Execução dinâmica
+
+
+ 36.2 Evolução da Organização Interna — [I]
+
+  36.2.1 Aumento do Paralelismo — [I]
+      Paralelismo em nível de instruções
+      Execução simultânea
+      Melhor utilização dos recursos
+
+  36.2.2 Evolução das Técnicas de Execução — [I]
+      Pipeline
+      Superescalar
+      Execução fora de ordem
+      Execução especulativa
+
+  36.2.3 Crescimento da Complexidade — [I]
+      Novas unidades funcionais
+      Controle mais sofisticado
+      Microarquiteturas modernas
+
+
+
+37. Tendências Modernas do Ciclo de Instrução — [I]
+
+ 37.1 Tendências Arquiteturais — [I]
+
+  37.1.1 Processadores Modernos — [I]
+      Alto paralelismo
+      Múltiplas unidades funcionais
+      Alto desempenho
+      Escalabilidade
+
+  37.1.2 Evolução da Execução — [I]
+      Maior número de instruções simultâneas
+      Melhor aproveitamento do pipeline
+      Redução das dependências
+
+  37.1.3 Otimizações Contínuas — [I]
+      Melhor eficiência
+      Redução da latência
+      Aumento do throughput
+
+
+ 37.2 Tendências Microarquiteturais — [I]
+
+  37.2.1 Execução Dinâmica — [I]
+      Escalonamento dinâmico
+      Reordenação
+      Execução especulativa
+
+  37.2.2 Melhorias no Controle — [I]
+      Predição de desvios
+      Controle inteligente
+      Balanceamento interno
+
+  37.2.3 Futuro da Execução das Instruções — [V]
+      Maior paralelismo
+      Eficiência energética
+      Novas organizações microarquiteturais
+
+
+
+38. Relações entre os Principais Conceitos — [P]
+
+ 38.1 Relação entre as Etapas do Ciclo — [P]
+
+  38.1.1 Fluxo Completo da Execução — [P]
+      Fetch
+      Decode
+      Operand Fetch
+      Execute
+      Memory Access
+      Write Back
+      Atualização do PC
+
+  38.1.2 Dependência entre as Etapas — [P]
+      Sequenciamento
+      Fluxo de dados
+      Fluxo de controle
+      Continuidade da execução
+
+  38.1.3 Integração das Operações — [P]
+      Comunicação interna
+      Atualização do estado
+      Encadeamento das operações
+
+
+ 38.2 Relação entre os Componentes — [P]
+
+  38.2.1 Unidade de Controle — [P]
+      Coordenação
+      Sequenciamento
+      Controle das operações
+
+  38.2.2 Datapath — [P]
+      Fluxo de dados
+      Processamento
+      Transferências
+
+  38.2.3 Memória e Registradores — [P]
+      Armazenamento
+      Leitura
+      Escrita
+      Atualização
+
+
+
+39. Mapa Geral do Ciclo de Instrução — [P]
+
+ 39.1 Fluxo Completo da Execução — [P]
+
+  39.1.1 Início da Execução — [P]
+      Program Counter
+      Busca da instrução
+      Leitura da memória
+
+  39.1.2 Processamento da Instrução — [P]
+      Decodificação
+      Busca dos operandos
+      Execução
+      Atualização das flags
+
+  39.1.3 Finalização — [P]
+      Escrita dos resultados
+      Atualização do estado
+      Preparação da próxima instrução
+
+
+ 39.2 Visão Integrada do Ciclo — [P]
+
+  39.2.1 Fluxo dos Dados — [P]
+      Memória
+      Registradores
+      ALU
+      Memória
+
+  39.2.2 Fluxo de Controle — [P]
+      Unidade de Controle
+      Sinais de controle
+      Sequenciamento
+
+  39.2.3 Fluxo Temporal — [P]
+      Clock
+      Ciclos
+      Estados
+      Sincronização
+
+
+
+40. Resumo Geral do Ciclo de Instrução — [P]
+
+ 40.1 Conceitos Fundamentais — [P]
+
+  40.1.1 O que Deve Ser Dominado — [P]
+      Conceito do ciclo de instrução
+      Objetivos
+      Organização geral
+      Funcionamento completo
+
+  40.1.2 Componentes Fundamentais — [P]
+      Unidade de Controle
+      ALU
+      Registradores
+      Memória
+      Barramentos
+      Datapath
+
+  40.1.3 Etapas Fundamentais — [P]
+      Busca
+      Decodificação
+      Busca dos operandos
+      Execução
+      Memory Access
+      Write Back
+
+
+ 40.2 Aspectos Fundamentais da Execução — [P]
+
+  40.2.1 Controle da Execução — [P]
+      Sequenciamento
+      Microoperações
+      Controle interno
+
+  40.2.2 Organização Moderna — [P]
+      Pipeline
+      Hazards
+      Execução dinâmica
+      Paralelismo
+
+  40.2.3 Integração Arquitetural — [P]
+      ISA
+      CPU
+      Memória
+      Sistema computacional
+
+
+
+41. Conclusão — [V]
+
+ 41.1 Síntese do Ciclo de Instrução — [V]
+
+  41.1.1 Importância para a Arquitetura de Computadores — [V]
+      Base da execução de programas
+      Funcionamento da CPU
+      Coordenação dos componentes
+      Modelo fundamental de processamento
+
+  41.1.2 Importância para a Organização de Computadores — [V]
+      Implementação física da execução
+      Organização interna
+      Comunicação entre os componentes
+      Eficiência do processamento
+
+  41.1.3 Base para Estudos Posteriores — [V]
+      Processadores
+      ISA
+      Pipeline
+      Microarquitetura
+      Memória
+      Barramentos
+      Paralelismo
+      Sistemas multicore
+      Desempenho computacional
+
+
+ 41.2 Consolidação do Conhecimento — [V]
+
+  41.2.1 Competências Esperadas — [V]
+      Compreender todo o fluxo do ciclo de instrução
+      Identificar cada etapa da execução
+      Entender a função de cada componente
+      Relacionar o ciclo de instrução com a arquitetura da CPU
+      Compreender a implementação moderna da execução
+
+  41.2.2 Visão Sistêmica — [V]
+      Integração entre hardware e software
+      Relação entre arquitetura e organização
+      Funcionamento global da CPU
+      Papel do ciclo de instrução no sistema computacional
+
+  41.2.3 Preparação para Estudos Avançados — [V]
+      Microarquiteturas modernas
+      Processadores de alto desempenho
+      Otimizações arquiteturais
+      Paralelismo avançado
+      Execução especulativa
+      Arquiteturas multicore
+      Arquiteturas manycore
