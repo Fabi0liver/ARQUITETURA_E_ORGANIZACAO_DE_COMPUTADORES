@@ -673,3 +673,338 @@ PARTE 2 — ESTRUTURA E FUNCIONAMENTO DO CICLO DE INSTRUÇÃO
       Próxima instrução
       Reinício do ciclo
       Continuidade da execução
+
+
+
+PARTE 3 — MICROOPERAÇÕES, CONTROLE E FLUXO INTERNO
+
+
+12. Microoperações no Ciclo de Instrução — [P]
+
+ 12.1 Fundamentos das Microoperações — [P]
+
+  12.1.1 Conceitos Fundamentais — [P]
+      Conceito de microoperação
+      Diferença entre instrução e microoperação
+      Papel das microoperações
+      Granularidade da execução
+      Relação com o ciclo de instrução
+
+  12.1.2 Objetivos das Microoperações — [P]
+      Implementação da instrução
+      Controle interno
+      Movimentação de dados
+      Coordenação das unidades funcionais
+      Atualização do estado da CPU
+
+  12.1.3 Organização Geral — [P]
+      Sequenciamento
+      Dependência entre microoperações
+      Ordem de execução
+      Fluxo interno
+
+
+ 12.2 Classificação das Microoperações — [P]
+
+  12.2.1 Microoperações de Transferência — [P]
+      Transferência entre registradores
+      Transferência para memória
+      Transferência da memória
+      Transferência para unidades funcionais
+
+  12.2.2 Microoperações Aritméticas — [P]
+      Soma
+      Subtração
+      Incremento
+      Decremento
+      Comparações
+
+  12.2.3 Microoperações Lógicas — [P]
+      AND
+      OR
+      XOR
+      NOT
+      Operações booleanas
+
+  12.2.4 Microoperações de Deslocamento — [P]
+      Shift lógico
+      Shift aritmético
+      Rotações
+      Deslocamentos condicionais
+
+  12.2.5 Microoperações de Controle — [P]
+      Geração de sinais
+      Atualização do PC
+      Atualização das Flags
+      Sequenciamento interno
+      Controle das unidades funcionais
+
+
+ 12.3 Fluxo das Microoperações — [P]
+
+  12.3.1 Geração das Microoperações — [P]
+      A partir da decodificação
+      Conversão da instrução
+      Sequência de execução
+
+  12.3.2 Execução das Microoperações — [P]
+      Emissão
+      Execução
+      Sincronização
+      Finalização
+
+  12.3.3 Conclusão das Microoperações — [P]
+      Atualização do estado
+      Encerramento da instrução
+      Preparação da próxima etapa
+
+
+
+13. Unidade de Controle e Sequenciamento — [P]
+
+ 13.1 Papel da Unidade de Controle — [P]
+
+  13.1.1 Responsabilidades Gerais — [P]
+      Coordenação do ciclo
+      Controle temporal
+      Controle das unidades funcionais
+      Organização da execução
+
+  13.1.2 Controle do Fluxo Interno — [P]
+      Sequenciamento
+      Coordenação das etapas
+      Sincronização
+      Atualização do estado
+
+  13.1.3 Controle das Operações — [P]
+      Leitura
+      Escrita
+      Processamento
+      Transferência
+      Controle dos registradores
+
+
+ 13.2 Geração dos Sinais de Controle — [P]
+
+  13.2.1 Conceitos Fundamentais — [P]
+      Sinais de controle
+      Objetivos
+      Coordenação das operações
+      Comunicação interna
+
+  13.2.2 Tipos de Sinais — [P]
+      Sinais de leitura
+      Sinais de escrita
+      Seleção de registradores
+      Seleção da ALU
+      Seleção da memória
+      Controle dos barramentos
+
+  13.2.3 Distribuição dos Sinais — [P]
+      Datapath
+      Banco de registradores
+      Memória
+      ALU
+      Demais unidades funcionais
+
+
+ 13.3 Sequenciamento da Execução — [P]
+
+  13.3.1 Sequenciamento Temporal — [P]
+      Ordem das etapas
+      Ordem das microoperações
+      Dependências temporais
+
+  13.3.2 Sequenciamento Funcional — [P]
+      Fluxo de dados
+      Fluxo de controle
+      Coordenação das operações
+
+  13.3.3 Controle do Ciclo — [P]
+      Início
+      Continuação
+      Encerramento
+      Reinício do ciclo
+
+
+
+14. Fluxo Interno de Dados (Datapath) — [P]
+
+ 14.1 Fundamentos — [P]
+
+  14.1.1 Conceitos Fundamentais — [P]
+      Caminho de dados
+      Objetivos
+      Papel no ciclo de instrução
+      Relação com o controle
+
+  14.1.2 Organização Geral — [P]
+      Entradas
+      Saídas
+      Interligações
+      Componentes participantes
+
+  14.1.3 Fluxo Geral — [P]
+      Entrada dos operandos
+      Processamento
+      Produção dos resultados
+      Escrita dos resultados
+
+
+ 14.2 Transferência Interna de Dados — [P]
+
+  14.2.1 Entre Registradores — [P]
+      Leitura
+      Escrita
+      Comunicação interna
+
+  14.2.2 Entre Registradores e ALU — [P]
+      Entrada da ALU
+      Saída da ALU
+      Resultado das operações
+
+  14.2.3 Entre CPU e Memória — [P]
+      Leitura
+      Escrita
+      Fluxo pelos barramentos
+
+
+ 14.3 Coordenação do Datapath — [P]
+
+  14.3.1 Sincronização — [P]
+      Clock
+      Unidade de Controle
+      Temporização
+
+  14.3.2 Controle das Transferências — [P]
+      Seleção das origens
+      Seleção dos destinos
+      Prioridade das operações
+
+
+
+15. Fluxo Interno de Controle (Control Path) — [P]
+
+ 15.1 Fundamentos — [P]
+
+  15.1.1 Conceitos Fundamentais — [P]
+      Caminho de controle
+      Objetivos
+      Papel no ciclo de instrução
+      Relação com o Datapath
+
+  15.1.2 Organização Geral — [P]
+      Unidade de Controle
+      Decodificador
+      Lógica de controle
+      Sinais internos
+
+  15.1.3 Comunicação Interna — [P]
+      Controle das unidades funcionais
+      Coordenação das operações
+      Atualização do estado
+
+
+ 15.2 Fluxo dos Sinais de Controle — [P]
+
+  15.2.1 Emissão dos Sinais — [P]
+      Decodificação
+      Sequenciamento
+      Ativação das unidades
+
+  15.2.2 Distribuição — [P]
+      Banco de registradores
+      ALU
+      Memória
+      Barramentos
+      Demais unidades
+
+  15.2.3 Sincronização — [P]
+      Clock
+      Ciclos internos
+      Coordenação temporal
+
+
+
+16. Temporização e Sincronização do Ciclo de Instrução — [P]
+
+ 16.1 Clock e Temporização — [P]
+
+  16.1.1 Papel do Clock — [P]
+      Sincronização das operações
+      Frequência
+      Período
+      Ciclo de clock
+
+  16.1.2 Organização Temporal — [P]
+      Sequência das etapas
+      Duração das operações
+      Ordem das microoperações
+
+  16.1.3 Estados Temporais — [P]
+      Estados internos
+      Mudanças de estado
+      Controle temporal
+
+
+ 16.2 Ciclos de Clock — [P]
+
+  16.2.1 Relação entre Clock e Instrução — [P]
+      Instruções monociclo
+      Instruções multiciclo
+      Duração da execução
+
+  16.2.2 Distribuição Temporal — [P]
+      Busca
+      Decodificação
+      Execução
+      Escrita dos resultados
+
+  16.2.3 Eficiência Temporal — [I]
+      Aproveitamento dos ciclos
+      Operações simultâneas
+      Introdução ao pipeline
+
+
+
+17. Dependências Internas Durante a Execução — [P]
+
+ 17.1 Dependências de Dados — [P]
+
+  17.1.1 Conceitos Fundamentais — [P]
+      Dependência verdadeira
+      Dependência de leitura
+      Dependência de escrita
+
+  17.1.2 Impacto na Execução — [P]
+      Ordem das operações
+      Disponibilidade dos operandos
+      Atualização dos resultados
+
+
+ 17.2 Dependências de Controle — [P]
+
+  17.2.1 Alterações do Fluxo — [P]
+      Saltos
+      Desvios
+      Chamadas
+      Retornos
+
+  17.2.2 Controle da Sequência — [P]
+      Atualização do PC
+      Mudança do fluxo
+      Continuidade da execução
+
+
+ 17.3 Dependências Estruturais — [P]
+
+  17.3.1 Compartilhamento de Recursos — [P]
+      Registradores
+      ALU
+      Barramentos
+      Memória
+
+  17.3.2 Coordenação dos Recursos — [P]
+      Prioridade de acesso
+      Organização da utilização
+      Evitação de conflitos
