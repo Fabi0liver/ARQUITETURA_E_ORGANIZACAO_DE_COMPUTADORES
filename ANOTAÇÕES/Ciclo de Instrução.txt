@@ -1,0 +1,314 @@
+                                             Ciclo de Instrução
+
+
+A classificação abaixo indica a profundidade recomendada para cada grande tópico da lista.
+
+[P] Profundidade — estudar mecanismos, estruturas, funcionamento interno e relações entre componentes.
+[I] Intermediário — compreender bem o funcionamento e as relações principais, sem precisar dominar todos os
+   detalhes de implementação.
+[V] Visão geral — saber o que é, para que serve e como se relaciona com os registradores.
+
+
+
+PARTE 1 — FUNDAMENTOS DO CICLO DE INSTRUÇÃO
+
+
+
+1. Introdução ao Ciclo de Instrução — [P]
+
+ 1.1 Conceitos Fundamentais — [P]
+
+  1.1.1 O que é o Ciclo de Instrução — [P]
+      Conceito de ciclo de instrução
+      Definição formal
+      Objetivos do ciclo de instrução
+      Papel na CPU
+      Papel na execução de programas
+      Unidade fundamental de execução
+      Relação entre hardware e software
+      Importância para o funcionamento do computador
+
+  1.1.2 Finalidade do Ciclo de Instrução — [P]
+      Execução das instruções
+      Coordenação das operações internas
+      Processamento dos dados
+      Atualização do estado do processador
+      Controle da sequência de execução
+      Comunicação entre os componentes
+      Base para toda execução computacional
+
+  1.1.3 Características Gerais — [P]
+      Processo repetitivo
+      Processo sequencial
+      Processo sincronizado
+      Processo controlado pela Unidade de Controle
+      Execução baseada em instruções
+      Dependência do clock
+      Atualização contínua do estado da CPU
+
+
+ 1.2 Importância do Ciclo de Instrução — [P]
+
+  1.2.1 Papel na Arquitetura de Computadores — [I]
+      Interface entre ISA e hardware
+      Materialização da execução das instruções
+      Modelo arquitetural de execução
+      Relação com o conjunto de instruções
+      Relação com os registradores arquiteturais
+
+  1.2.2 Papel na Organização de Computadores — [P]
+      Implementação física da execução
+      Coordenação dos componentes internos
+      Fluxo de dados
+      Fluxo de controle
+      Sequenciamento das operações
+      Integração entre unidades funcionais
+
+  1.2.3 Importância para o Desempenho — [I]
+      Tempo de execução
+      Eficiência do processador
+      Aproveitamento dos recursos internos
+      Base para otimizações
+      Influência na arquitetura moderna
+
+
+ 1.3 O Ciclo de Instrução no Sistema Computacional — [I]
+
+  1.3.1 Relação com Programas — [I]
+      Execução de programas
+      Sequência de instruções
+      Fluxo de execução
+      Estado do programa
+      Ordem das instruções
+
+  1.3.2 Relação com o Sistema Computacional — [I]
+      Comunicação com a memória
+      Comunicação com os registradores
+      Comunicação com barramentos
+      Comunicação com dispositivos de entrada e saída
+      Coordenação do processamento
+
+  1.3.3 Relação com a CPU — [P]
+      Unidade de Controle
+      Caminho de Dados (Datapath)
+      Registradores
+      ALU
+      FPU
+      Unidades funcionais
+      Estado interno do processador
+
+
+
+2. Fundamentos da Execução de Instruções — [P]
+
+ 2.1 Conceitos Básicos — [P]
+
+  2.1.1 Instrução de Máquina — [P]
+      Conceito
+      Operação
+      Operandos
+      Formato da instrução
+      Código de operação (Opcode)
+      Campos da instrução
+
+  2.1.2 Programa como Sequência de Instruções — [P]
+      Fluxo sequencial
+      Ordem de execução
+      Dependência entre instruções
+      Estado do programa
+      Continuidade da execução
+
+  2.1.3 Execução das Instruções — [P]
+      Busca
+      Interpretação
+      Processamento
+      Produção dos resultados
+      Atualização do estado
+
+
+ 2.2 Estados da Execução — [P]
+
+  2.2.1 Estado da CPU — [P]
+      Conteúdo dos registradores
+      Program Counter (PC)
+      Instruction Register (IR)
+      Registrador de Status
+      Flags
+      Estado interno
+
+  2.2.2 Estado do Programa — [P]
+      Posição atual da execução
+      Fluxo das instruções
+      Dados ativos
+      Contexto da execução
+
+  2.2.3 Mudanças de Estado — [P]
+      Atualização dos registradores
+      Atualização das flags
+      Atualização do PC
+      Atualização da memória
+      Transição entre instruções
+
+
+
+3. Componentes Fundamentais Envolvidos no Ciclo de Instrução — [P]
+
+ 3.1 Componentes Internos da CPU — [P]
+
+  3.1.1 Unidade de Controle (UC) — [P]
+      Coordenação do ciclo
+      Sequenciamento
+      Geração dos sinais de controle
+      Sincronização das etapas
+
+  3.1.2 Unidade Lógica e Aritmética (ALU) — [P]
+      Execução das operações
+      Processamento aritmético
+      Processamento lógico
+      Atualização das flags
+
+  3.1.3 Banco de Registradores — [P]
+      Armazenamento temporário
+      Leitura dos operandos
+      Escrita dos resultados
+      Comunicação com a ALU
+
+
+ 3.2 Registradores Fundamentais do Ciclo de Instrução — [P]
+
+  3.2.1 Registradores de Controle — [P]
+      Program Counter (PC)
+      Instruction Register (IR)
+      Memory Address Register (MAR)
+      Memory Buffer/Data Register (MBR/MDR)
+      Status Register
+      Instruction Pointer (quando aplicável)
+
+  3.2.2 Registradores de Dados — [P]
+      Registradores de uso geral
+      Acumulador (ACC)
+      Registradores temporários
+      Registradores de operandos
+      Registradores de resultados
+
+  3.2.3 Papel dos Registradores Durante o Ciclo — [P]
+      Busca da instrução
+      Transferência de dados
+      Armazenamento temporário
+      Atualização do estado
+      Preparação da próxima instrução
+
+
+ 3.3 Recursos Externos Utilizados — [I]
+
+  3.3.1 Memória Principal — [I]
+      Armazenamento das instruções
+      Armazenamento dos dados
+      Leitura
+      Escrita
+
+  3.3.2 Barramentos — [I]
+      Barramento de dados
+      Barramento de endereço
+      Barramento de controle
+      Transferência das informações
+
+  3.3.3 Clock do Processador — [P]
+      Sincronização
+      Temporização
+      Ciclos de clock
+      Sequenciamento temporal
+
+
+
+4. Organização Geral do Ciclo de Instrução — [P]
+
+ 4.1 Modelo Clássico de Execução — [P]
+
+  4.1.1 Visão Geral das Etapas — [P]
+      Busca (Fetch)
+      Decodificação (Decode)
+      Busca dos operandos (Operand Fetch)
+      Execução (Execute)
+      Acesso à memória (Memory Access)
+      Escrita dos resultados (Write Back)
+      Atualização do Program Counter
+
+  4.1.2 Objetivos de Cada Etapa — [P]
+      Obter a instrução
+      Interpretar a instrução
+      Obter os operandos
+      Executar a operação
+      Armazenar os resultados
+      Preparar a próxima execução
+
+  4.1.3 Fluxo Geral da Execução — [P]
+      Sequência das etapas
+      Fluxo de dados
+      Fluxo de controle
+      Atualização contínua do estado
+
+
+ 4.2 Natureza Cíclica da Execução — [P]
+
+  4.2.1 Repetição Contínua — [P]
+      Início do ciclo
+      Finalização
+      Reinício automático
+      Continuidade da execução
+
+  4.2.2 Sequenciamento das Instruções — [P]
+      Ordem natural
+      Dependências
+      Continuidade
+      Fluxo sequencial
+
+  4.2.3 Controle da Sequência — [P]
+      Program Counter
+      Unidade de Controle
+      Clock
+      Estado da CPU
+
+
+
+5. Classificações e Modelos de Ciclo de Instrução — [I]
+
+ 5.1 Modelos de Execução — [I]
+
+  5.1.1 Ciclo Clássico — [I]
+      Modelo Fetch–Decode–Execute
+      Organização tradicional
+      Funcionamento geral
+
+  5.1.2 Ciclo Expandido — [P]
+      Separação da busca dos operandos
+      Separação do acesso à memória
+      Separação da escrita dos resultados
+      Atualização explícita do PC
+
+  5.1.3 Modelos Modernos — [I]
+      Organização em pipeline
+      Execução baseada em micro-operações
+      Visão geral da execução moderna
+
+
+ 5.2 Variações do Ciclo de Instrução — [I]
+
+  5.2.1 Conforme o Tipo de Instrução — [I]
+      Instruções aritméticas
+      Instruções lógicas
+      Instruções de transferência
+      Instruções de controle
+      Instruções de acesso à memória
+
+  5.2.2 Conforme a Arquitetura — [I]
+      CISC
+      RISC
+      Diferenças gerais na execução
+      Impacto no ciclo de instrução
+
+  5.2.3 Conforme a Organização do Processador — [I]
+      Processadores monociclo
+      Processadores multiciclo
+      Introdução ao pipeline
+      Visão geral da execução moderna
