@@ -13,7 +13,6 @@ A classificação abaixo indica a profundidade recomendada para cada grande tóp
 PARTE 1 — FUNDAMENTOS DO CICLO DE INSTRUÇÃO
 
 
-
 1. Introdução ao Ciclo de Instrução — [P]
 
  1.1 Conceitos Fundamentais — [P]
@@ -270,6 +269,40 @@ PARTE 1 — FUNDAMENTOS DO CICLO DE INSTRUÇÃO
       Estado da CPU
 
 
+ 4.3 Ciclo Indireto (Indirect Cycle) — [P]
+
+  4.3.1 Conceito de ciclo indireto
+      Endereçamento indireto
+      Endereço efetivo
+      Diferença entre endereço da instrução e endereço do operando
+
+  4.3.2 Funcionamento
+      Obtenção do endereço indireto
+      Acesso à memória
+      Atualização do endereço efetivo
+      Continuação da execução
+
+  4.3.3 Relação com o ciclo de instrução
+      Fetch → Decode → Indirect → Execute
+      Quando o ciclo indireto é necessário
+      Quando ele não é necessário
+
+
+ 4.4 Verificação de Interrupções — [P]
+
+  4.4.1 Verificação ao final da instrução
+
+  4.4.2 Identificação de interrupção pendente
+
+  4.4.3 Verificação de máscara/prioridade
+
+  4.4.4 Salvamento do estado
+
+  4.4.5 Transferência para rotina de tratamento
+
+  4.4.6 Retorno à execução normal
+
+
 
 5. Classificações e Modelos de Ciclo de Instrução — [I]
 
@@ -506,6 +539,19 @@ PARTE 2 — ESTRUTURA E FUNCIONAMENTO DO CICLO DE INSTRUÇÃO
       Coordenação temporal
       Controle da Unidade de Controle
       Dependências de dados
+
+
+ 8.4 Cálculo do Endereço Efetivo — [P]
+
+  8.4.1 Conceito de endereço efetivo
+  8.4.2 Endereço direto
+  8.4.3 Endereço indireto
+  8.4.4 Endereço baseado em registrador
+  8.4.5 Endereço indexado
+  8.4.6 Base + deslocamento
+  8.4.7 Base + índice + deslocamento
+  8.4.8 Cálculo pela AGU
+  8.4.9 Relação entre endereço efetivo e acesso à memória
 
 
 
