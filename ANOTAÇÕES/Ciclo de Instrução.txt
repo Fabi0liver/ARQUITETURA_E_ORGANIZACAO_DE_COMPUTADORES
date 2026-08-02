@@ -312,3 +312,364 @@ PARTE 1 — FUNDAMENTOS DO CICLO DE INSTRUÇÃO
       Processadores multiciclo
       Introdução ao pipeline
       Visão geral da execução moderna
+
+
+
+PARTE 2 — ESTRUTURA E FUNCIONAMENTO DO CICLO DE INSTRUÇÃO
+
+
+6. Busca da Instrução (Instruction Fetch) — [P]
+
+ 6.1 Fundamentos da Busca — [P]
+
+  6.1.1 Conceitos Fundamentais — [P]
+      Conceito de Fetch
+      Objetivos da busca
+      Primeira etapa do ciclo
+      Papel na execução das instruções
+      Relação com a memória principal
+      Relação com a próxima instrução
+
+  6.1.2 Organização da Busca — [P]
+      Sequência da busca
+      Início do ciclo
+      Fluxo de informações
+      Sincronização da operação
+      Participação da Unidade de Controle
+
+  6.1.3 Recursos Utilizados — [P]
+      Program Counter (PC)
+      Memory Address Register (MAR)
+      Memory Buffer Register (MBR/MDR)
+      Instruction Register (IR)
+      Barramentos
+      Memória principal
+
+
+ 6.2 Funcionamento da Busca — [P]
+
+  6.2.1 Localização da Instrução — [P]
+      Endereço da instrução
+      Papel do Program Counter
+      Endereçamento da memória
+      Seleção da posição de memória
+
+  6.2.2 Transferência da Instrução — [P]
+      Leitura da memória
+      Transferência pelos barramentos
+      Carregamento no MBR
+      Transferência para o IR
+
+  6.2.3 Finalização da Busca — [P]
+      Disponibilização da instrução
+      Preparação para decodificação
+      Atualização do estado interno
+      Encerramento da etapa
+
+
+ 6.3 Atualização do Program Counter — [P]
+
+  6.3.1 Incremento Sequencial — [P]
+      Incremento automático
+      Próxima instrução
+      Fluxo linear
+      Sequência normal
+
+  6.3.2 Alterações do Fluxo — [P]
+      Saltos
+      Chamadas de sub-rotinas
+      Retornos
+      Desvios condicionais
+      Desvios incondicionais
+
+  6.3.3 Dependências da Atualização — [P]
+      Tipo da instrução
+      Resultado da execução
+      Flags
+      Unidade de Controle
+
+
+
+7. Decodificação da Instrução (Instruction Decode) — [P]
+
+ 7.1 Fundamentos da Decodificação — [P]
+
+  7.1.1 Conceitos Fundamentais — [P]
+      Conceito de Decode
+      Objetivos da decodificação
+      Interpretação da instrução
+      Tradução para operações internas
+
+  7.1.2 Papel da Unidade de Controle — [P]
+      Interpretação da instrução
+      Geração dos sinais de controle
+      Seleção das unidades funcionais
+      Coordenação das operações
+
+  7.1.3 Estrutura da Instrução — [P]
+      Opcode
+      Campos da instrução
+      Operandos
+      Registradores
+      Modos de endereçamento
+
+
+ 7.2 Processo de Decodificação — [P]
+
+  7.2.1 Identificação da Operação — [P]
+      Reconhecimento do opcode
+      Tipo da instrução
+      Classe da operação
+      Operação solicitada
+
+  7.2.2 Identificação dos Operandos — [P]
+      Registradores envolvidos
+      Operandos imediatos
+      Operandos na memória
+      Operandos implícitos
+
+  7.2.3 Preparação da Execução — [P]
+      Seleção da ALU
+      Seleção da FPU
+      Seleção da AGU
+      Seleção da LSU
+      Preparação das unidades funcionais
+
+
+ 7.3 Resultado da Decodificação — [P]
+
+  7.3.1 Informações Geradas — [P]
+      Operação identificada
+      Operandos identificados
+      Destino dos resultados
+      Recursos necessários
+
+  7.3.2 Controle da Execução — [P]
+      Sequenciamento
+      Sinais de controle
+      Ordem das operações
+      Preparação do fluxo interno
+
+
+
+8. Busca dos Operandos (Operand Fetch) — [P]
+
+ 8.1 Fundamentos — [P]
+
+  8.1.1 Conceitos Fundamentais — [P]
+      Conceito de Operand Fetch
+      Objetivos
+      Necessidade da etapa
+      Relação com a execução
+
+  8.1.2 Fontes dos Operandos — [P]
+      Registradores
+      Memória principal
+      Valores imediatos
+      Constantes embutidas
+      Operandos implícitos
+
+  8.1.3 Organização Geral — [P]
+      Localização
+      Leitura
+      Transferência
+      Disponibilização para execução
+
+
+ 8.2 Obtenção dos Operandos — [P]
+
+  8.2.1 Operandos em Registradores — [P]
+      Leitura do banco de registradores
+      Portas de leitura
+      Transferência interna
+
+  8.2.2 Operandos na Memória — [P]
+      Endereçamento
+      Leitura da memória
+      Transferência dos dados
+      Comunicação pelos barramentos
+
+  8.2.3 Operandos Imediatos — [P]
+      Valores embutidos
+      Extração da instrução
+      Disponibilização direta
+
+
+ 8.3 Preparação para Execução — [P]
+
+  8.3.1 Disponibilização dos Dados — [P]
+      Entrada da ALU
+      Entrada da FPU
+      Entrada das unidades funcionais
+
+  8.3.2 Sincronização — [P]
+      Coordenação temporal
+      Controle da Unidade de Controle
+      Dependências de dados
+
+
+
+9. Execução da Instrução (Execute) — [P]
+
+ 9.1 Fundamentos da Execução — [P]
+
+  9.1.1 Conceitos Fundamentais — [P]
+      Conceito de Execute
+      Objetivos
+      Papel da execução
+      Transformação dos dados
+
+  9.1.2 Recursos Utilizados — [P]
+      ALU
+      FPU
+      AGU
+      LSU
+      Unidades especializadas
+
+  9.1.3 Organização da Execução — [P]
+      Recepção dos operandos
+      Processamento
+      Produção dos resultados
+      Atualização das flags
+
+
+ 9.2 Tipos de Execução — [P]
+
+  9.2.1 Operações Aritméticas — [P]
+      Soma
+      Subtração
+      Multiplicação
+      Divisão
+      Incremento
+      Decremento
+
+  9.2.2 Operações Lógicas — [P]
+      AND
+      OR
+      XOR
+      NOT
+      Comparações
+
+  9.2.3 Operações de Controle — [P]
+      Desvios
+      Saltos
+      Chamadas
+      Retornos
+
+  9.2.4 Operações de Transferência — [P]
+      Movimentação entre registradores
+      Transferência para memória
+      Transferência da memória
+
+
+ 9.3 Resultados da Execução — [P]
+
+  9.3.1 Resultado Computacional — [P]
+      Resultado da operação
+      Resultado intermediário
+      Resultado final
+
+  9.3.2 Atualização do Estado — [P]
+      Flags
+      Registradores
+      Estado interno da CPU
+      Informações de controle
+
+
+
+10. Acesso à Memória (Memory Access) — [P]
+
+ 10.1 Fundamentos — [P]
+
+  10.1.1 Conceitos Fundamentais — [P]
+      Conceito de Memory Access
+      Objetivos
+      Relação com Load
+      Relação com Store
+
+  10.1.2 Quando Ocorre — [P]
+      Instruções de leitura
+      Instruções de escrita
+      Operações dependentes da memória
+
+  10.1.3 Recursos Envolvidos — [P]
+      MAR
+      MDR/MBR
+      Memória principal
+      Barramentos
+
+
+ 10.2 Operações de Leitura — [P]
+
+  10.2.1 Leitura da Memória — [P]
+      Seleção do endereço
+      Acesso ao dado
+      Transferência para CPU
+
+  10.2.2 Disponibilização dos Dados — [P]
+      Carregamento no registrador
+      Preparação para execução
+      Continuidade do ciclo
+
+
+ 10.3 Operações de Escrita — [P]
+
+  10.3.1 Escrita na Memória — [P]
+      Seleção do endereço
+      Transferência do dado
+      Atualização da memória
+
+  10.3.2 Finalização da Operação — [P]
+      Confirmação da escrita
+      Atualização do estado
+      Continuação da execução
+
+
+
+11. Escrita dos Resultados (Write Back) — [P]
+
+ 11.1 Fundamentos — [P]
+
+  11.1.1 Conceitos Fundamentais — [P]
+      Conceito de Write Back
+      Objetivos
+      Papel na conclusão da instrução
+
+  11.1.2 Destino dos Resultados — [P]
+      Registradores
+      Memória
+      Registradores especiais
+      Estado do processador
+
+
+ 11.2 Processo de Escrita — [P]
+
+  11.2.1 Escrita em Registradores — [P]
+      Banco de registradores
+      Registrador de destino
+      Atualização dos valores
+
+  11.2.2 Escrita na Memória — [P]
+      Operações Store
+      Atualização da memória
+      Transferência dos resultados
+
+  11.2.3 Atualização das Flags — [P]
+      Zero Flag
+      Carry Flag
+      Overflow Flag
+      Sign Flag
+      Status Register
+
+
+ 11.3 Encerramento da Instrução — [P]
+
+  11.3.1 Finalização da Execução — [P]
+      Estado consistente
+      Disponibilização dos resultados
+      Liberação dos recursos
+
+  11.3.2 Preparação do Próximo Ciclo — [P]
+      Próxima instrução
+      Reinício do ciclo
+      Continuidade da execução
