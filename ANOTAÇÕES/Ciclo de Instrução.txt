@@ -290,17 +290,38 @@ PARTE 1 — FUNDAMENTOS DO CICLO DE INSTRUÇÃO
 
  4.4 Verificação de Interrupções — [P]
 
-  4.4.1 Verificação ao final da instrução
+  4.4.1 Conceitos Fundamentais
+      Momento da verificação
+      Papel no ciclo de instrução
+      Eventos síncronos
+      Eventos assíncronos
 
-  4.4.2 Identificação de interrupção pendente
+  4.4.2 Detecção da Interrupção
+      Identificação da interrupção
+      Solicitação pendente
+      Prioridade
+      Máscara de interrupções
 
-  4.4.3 Verificação de máscara/prioridade
+  4.4.3 Aceitação da Interrupção
+      Decisão da Unidade de Controle
+      Finalização da instrução atual
+      Início do ciclo de interrupção
 
-  4.4.4 Salvamento do estado
+  4.4.4 Salvamento do Estado
+      Program Counter
+      Registradores
+      Status Register
+      Contexto mínimo
 
-  4.4.5 Transferência para rotina de tratamento
+  4.4.5 Transferência de Controle
+      Vetor de interrupções
+      Rotina de tratamento
+      Alteração do fluxo
 
-  4.4.6 Retorno à execução normal
+  4.4.6 Retorno da Interrupção
+      Restauração do contexto
+      Retorno ao programa
+      Continuação da execução
 
 
 
@@ -543,15 +564,43 @@ PARTE 2 — ESTRUTURA E FUNCIONAMENTO DO CICLO DE INSTRUÇÃO
 
  8.4 Cálculo do Endereço Efetivo — [P]
 
-  8.4.1 Conceito de endereço efetivo
-  8.4.2 Endereço direto
-  8.4.3 Endereço indireto
-  8.4.4 Endereço baseado em registrador
-  8.4.5 Endereço indexado
-  8.4.6 Base + deslocamento
-  8.4.7 Base + índice + deslocamento
-  8.4.8 Cálculo pela AGU
-  8.4.9 Relação entre endereço efetivo e acesso à memória
+  8.4.1 Conceitos Fundamentais
+      Conceito de endereço efetivo
+      Objetivos
+      Diferença entre endereço lógico da instrução e endereço efetivo
+
+  8.4.2 Informações Utilizadas
+      Campos da instrução
+      Registradores
+      Deslocamentos
+      Constantes
+      Program Counter
+
+  8.4.3 Operações Envolvidas
+      Soma
+      Deslocamento
+      Indexação
+      Escalonamento
+      Seleção do endereço
+
+  8.4.4 Papel da AGU (Address Generation Unit)
+      Geração do endereço
+      Cálculo paralelo
+      Comunicação com a memória
+      Integração com o pipeline
+
+  8.4.5 Relação com os Modos de Endereçamento
+      Endereço direto
+      Endereço indireto
+      Base + deslocamento
+      Base + índice
+      Base + índice + deslocamento
+      Endereçamento relativo ao PC
+
+  8.4.6 Disponibilização do Endereço
+      Envio ao MAR
+      Preparação para Memory Access
+      Continuidade da execução
 
 
 
@@ -656,6 +705,13 @@ PARTE 2 — ESTRUTURA E FUNCIONAMENTO DO CICLO DE INSTRUÇÃO
       Carregamento no registrador
       Preparação para execução
       Continuidade do ciclo
+
+  10.2.3 Esperas por Memória (Wait States) — [P]
+      Conceito
+      Origem das esperas
+      Memórias lentas
+      Stall por memória
+      Sincronização
 
 
  10.3 Operações de Escrita — [P]
@@ -805,6 +861,48 @@ PARTE 3 — MICROOPERAÇÕES, CONTROLE E FLUXO INTERNO
       Preparação da próxima etapa
 
 
+ 12.4 Representação RTL das Microoperações — [P]
+
+  12.4.1 Conceitos Fundamentais — [P]
+      Register Transfer Level (RTL)
+      Linguagem RTL
+      Objetivos
+      Representação das transferências
+
+  12.4.2 Representação das Microoperações — [P]
+      Transferência entre registradores
+      Operações da ALU
+      Operações de memória
+      Atualização do PC
+
+  12.4.3 Exemplos de Sequências RTL — [P]
+      Fetch
+      Decode
+      Execute
+      Load
+      Store
+      Branch
+
+
+ 12.5 Sequências de Microoperações por Tipo de Instrução — [P]
+
+  12.5.1 Instruções de Processamento
+      ADD
+      SUB
+      AND
+      OR
+
+  12.5.2 Instruções de Memória
+      LOAD
+      STORE
+
+  12.5.3 Instruções de Controle
+      JUMP
+      BRANCH
+      CALL
+      RETURN
+
+
 
 13. Unidade de Controle e Sequenciamento — [P]
 
@@ -852,6 +950,14 @@ PARTE 3 — MICROOPERAÇÕES, CONTROLE E FLUXO INTERNO
       Memória
       ALU
       Demais unidades funcionais
+
+  13.2.4 Implementação da Unidade de Controle — [P]
+      Controle cabeado (Hardwired Control)
+      Controle microprogramado (Microprogrammed Control)
+      Microinstruções
+      Memória de controle (Control Store)
+      Sequenciamento de microinstruções
+      Relação entre microprogramação e ciclo de instrução
 
 
  13.3 Sequenciamento da Execução — [P]
@@ -991,6 +1097,21 @@ PARTE 3 — MICROOPERAÇÕES, CONTROLE E FLUXO INTERNO
       Estados internos
       Mudanças de estado
       Controle temporal
+
+  16.1.4 Estados do Ciclo de Instrução — [P]
+      Fetch State
+      Decode State
+      Execute State
+      Memory State
+      Write Back State
+      Interrupt State
+      Wait State
+
+  16.1.5 Máquina de Estados do Ciclo de Instrução — [P]
+      Conceito
+      Transições entre estados
+      Sequenciamento
+      Controle da execução
 
 
  16.2 Ciclos de Clock — [P]
@@ -1453,6 +1574,13 @@ PARTE 5 — DESEMPENHO, EXCEÇÕES E ASPECTOS AVANÇADOS
       Integridade do estado
 
 
+ 24.4 Precisão das Exceções — [I]
+      Estado Preciso
+      Estado Impreciso
+      Relação com o Commit
+      Consistência Arquitetural
+
+
 
 25. Dependências e Ordem de Execução — [P]
 
@@ -1814,6 +1942,14 @@ PARTE 6 — INTEGRAÇÃO DO CICLO DE INSTRUÇÃO COM A ARQUITETURA DO COMPUTADOR
       Unidade de Controle
       Barramentos
       Unidades funcionais
+
+
+ 32.3 Ciclos de Barramento — [I]
+      Instruction Fetch Cycle
+      Memory Read Cycle
+      Memory Write Cycle
+      I/O Cycle (Visão Geral)
+      Relação entre o Bus Cycle e o Ciclo de Instrução
 
 
 
