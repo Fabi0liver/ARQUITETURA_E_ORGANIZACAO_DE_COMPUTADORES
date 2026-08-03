@@ -1089,3 +1089,489 @@ PARTE 3 — FATORES QUE INFLUENCIAM O DESEMPENHO
       Limites práticos
 
 
+
+PARTE 4 — ENERGIA, MODELAGEM E LIMITAÇÕES DO DESEMPENHO
+
+
+20. Consumo de Energia em Computadores — [P]
+
+ 20.1 Fundamentos do Consumo de Energia — [P]
+
+  20.1.1 Conceitos Fundamentais — [P]
+      Energia
+      Potência
+      Consumo energético
+      Eficiência energética
+      Relação entre energia e desempenho
+      Importância do consumo de energia
+
+  20.1.2 Evolução do Consumo Energético — [P]
+      Crescimento da integração
+      Evolução dos processadores
+      Aumento da densidade de transistores
+      Mudanças nas restrições energéticas
+      Limitações modernas
+
+ 20.2 Componentes do Consumo de Energia — [P]
+
+  20.2.1 Potência Dinâmica — [P]
+      Conceito
+      Comutação dos transistores
+      Capacitância
+      Frequência
+      Tensão
+      Equação da potência dinâmica
+
+  20.2.2 Potência Estática — [P]
+      Corrente de fuga
+      Leakage
+      Potência em repouso
+      Consumo em idle
+      Evolução tecnológica
+
+ 20.3 Fatores que Influenciam o Consumo — [P]
+
+  20.3.1 Fatores Arquiteturais — [P]
+      Frequência de clock
+      Tensão de alimentação
+      Número de núcleos
+      Pipeline
+      Paralelismo
+      Complexidade do hardware
+
+  20.3.2 Fatores Operacionais — [P]
+      Carga de trabalho
+      Utilização da CPU
+      Atividade dos circuitos
+      Estado ocioso
+      Gerenciamento de energia
+
+ 20.4 Relação entre Energia e Desempenho — [P]
+
+  20.4.1 Compromissos Fundamentais — [P]
+      Energia versus desempenho
+      Potência versus frequência
+      Eficiência computacional
+      Limitações físicas
+      Otimização energética
+
+  20.4.2 Impacto na Arquitetura — [P]
+      Projeto dos processadores
+      Projeto dos sistemas
+      Limites de desempenho
+      Evolução das arquiteturas
+
+
+
+21. Power Wall — [P]
+
+ 21.1 Fundamentos — [P]
+
+  21.1.1 Conceitos Fundamentais — [P]
+      Definição
+      Origem do Power Wall
+      Evolução histórica
+      Relação com a Lei de Moore
+      Relação com o fim do escalonamento de Dennard
+
+  21.1.2 Formação do Power Wall — [P]
+      Crescimento da potência
+      Aumento da frequência
+      Aumento da densidade de transistores
+      Dissipação de calor
+      Limites físicos
+
+ 21.2 Consequências — [P]
+
+  21.2.1 Impacto na Arquitetura — [P]
+      Limitação da frequência
+      Mudança para multicore
+      Redução do ganho por clock
+      Aumento da eficiência energética
+
+  21.2.2 Impacto no Projeto dos Sistemas — [P]
+      Limitações de potência
+      Custos de refrigeração
+      Consumo energético
+      Complexidade do projeto
+
+ 21.3 Estratégias para Mitigação — [P]
+
+  21.3.1 Soluções Arquiteturais — [P]
+      Multicore
+      Paralelismo
+      Especialização
+      Computação heterogênea
+      Redução da tensão
+
+  21.3.2 Soluções de Gerenciamento — [P]
+      DVFS
+      Clock gating
+      Power gating
+      Gerenciamento dinâmico
+      Modos de baixo consumo
+
+
+
+22. Thermal Wall — [I]
+
+ 22.1 Fundamentos — [I]
+
+  22.1.1 Conceitos — [I]
+      Definição
+      Dissipação térmica
+      Temperatura operacional
+      Aquecimento dos circuitos
+
+  22.1.2 Origem — [I]
+      Consumo de potência
+      Densidade térmica
+      Miniaturização
+      Limitações físicas
+
+ 22.2 Impactos no Desempenho — [I]
+
+  22.2.1 Limitações Operacionais — [I]
+      Thermal throttling
+      Redução da frequência
+      Estabilidade
+      Confiabilidade
+
+  22.2.2 Influência na Arquitetura — [I]
+      Projeto térmico
+      Distribuição de potência
+      Organização dos núcleos
+      Eficiência energética
+
+ 22.3 Controle Térmico — [I]
+
+  22.3.1 Técnicas de Controle — [I]
+      Dissipadores
+      Sistemas de refrigeração
+      Controle automático
+      Monitoramento térmico
+
+  22.3.2 Gerenciamento Dinâmico — [I]
+      Redução da frequência
+      Redução da tensão
+      Controle de potência
+      Balanceamento térmico
+
+
+
+23. Eficiência Energética — [P]
+
+ 23.1 Fundamentos — [P]
+
+  23.1.1 Conceitos Fundamentais — [P]
+      Eficiência energética
+      Desempenho por Watt
+      Energia por operação
+      Sustentabilidade computacional
+
+  23.1.2 Objetivos — [P]
+      Redução do consumo
+      Maximização do desempenho
+      Otimização energética
+      Eficiência global
+
+ 23.2 Métricas Energéticas — [P]
+
+  23.2.1 Performance por Watt — [P]
+      Conceito
+      Interpretação
+      Aplicações
+      Comparação entre sistemas
+
+  23.2.2 Energy-Delay Product (EDP) — [P]
+      Conceito
+      Relação entre energia e tempo
+      Avaliação quantitativa
+      Aplicações
+
+ 23.3 Técnicas de Eficiência — [P]
+
+  23.3.1 Técnicas Arquiteturais — [P]
+      DVFS
+      Clock gating
+      Power gating
+      Núcleos eficientes
+      Especialização
+
+  23.3.2 Técnicas Organizacionais — [P]
+      Gerenciamento de energia
+      Escalonamento eficiente
+      Consolidação de cargas
+      Aproveitamento dos recursos
+
+
+
+24. Speedup — [P]
+
+ 24.1 Fundamentos — [P]
+
+  24.1.1 Conceitos — [P]
+      Definição
+      Ganho de desempenho
+      Sistema de referência
+      Sistema otimizado
+
+  24.1.2 Interpretação Matemática — [P]
+      Razão entre tempos
+      Razão entre desempenhos
+      Comparações quantitativas
+      Aplicações
+
+ 24.2 Tipos de Speedup — [P]
+
+  24.2.1 Speedup Absoluto — [P]
+      Conceito
+      Medição
+      Interpretação
+
+  24.2.2 Speedup Relativo — [P]
+      Comparação entre arquiteturas
+      Comparação entre implementações
+      Avaliação de melhorias
+
+ 24.3 Limitações do Speedup — [P]
+
+  24.3.1 Limitações Práticas — [P]
+      Partes sequenciais
+      Gargalos
+      Overhead
+      Comunicação
+
+  24.3.2 Interpretação Correta — [P]
+      Ganhos reais
+      Ganhos teóricos
+      Limites físicos
+      Cuidados na avaliação
+
+
+
+25. Lei de Amdahl — [P]
+
+ 25.1 Fundamentos — [P]
+
+  25.1.1 Conceitos Fundamentais — [P]
+      Definição
+      Motivação
+      Modelo matemático
+      Objetivos
+
+  25.1.2 Formulação — [P]
+      Fração paralelizável
+      Fração sequencial
+      Speedup máximo
+      Interpretação da equação
+
+ 25.2 Aplicações — [P]
+
+  25.2.1 Avaliação de Melhorias — [P]
+      Melhorias parciais
+      Melhorias totais
+      Ganhos limitados
+      Planejamento de otimizações
+
+  25.2.2 Exemplos de Aplicação — [P]
+      Paralelismo
+      Cache
+      CPU
+      Memória
+      Entrada e saída
+
+ 25.3 Limitações — [P]
+
+  25.3.1 Restrições do Modelo — [P]
+      Carga fixa
+      Hipóteses simplificadoras
+      Escalabilidade limitada
+
+  25.3.2 Interpretação — [P]
+      Importância da parte sequencial
+      Limites do desempenho
+      Aplicabilidade prática
+
+
+
+26. Lei de Gustafson — [P]
+
+ 26.1 Fundamentos — [P]
+
+  26.1.1 Conceitos Fundamentais — [P]
+      Definição
+      Motivação
+      Comparação com Amdahl
+      Hipótese de carga escalável
+
+  26.1.2 Formulação — [P]
+      Escalabilidade
+      Crescimento da carga
+      Speedup escalável
+      Interpretação
+
+ 26.2 Aplicações — [P]
+
+  26.2.1 Computação Paralela — [P]
+      Supercomputadores
+      Clusters
+      Sistemas multicore
+      HPC
+
+  26.2.2 Escalabilidade — [P]
+      Crescimento do problema
+      Aproveitamento dos recursos
+      Ganhos de desempenho
+
+ 26.3 Comparação com Amdahl — [P]
+
+  26.3.1 Diferenças Fundamentais — [P]
+      Carga fixa
+      Carga variável
+      Limites do speedup
+      Escalabilidade
+
+  26.3.2 Aplicabilidade — [P]
+      Quando utilizar cada modelo
+      Interpretação correta
+      Limitações
+
+
+
+27. Escalabilidade — [P]
+
+ 27.1 Fundamentos — [P]
+
+  27.1.1 Conceitos — [P]
+      Escalabilidade
+      Crescimento do sistema
+      Expansão dos recursos
+      Capacidade de adaptação
+
+  27.1.2 Objetivos — [P]
+      Crescimento do desempenho
+      Aproveitamento do hardware
+      Sustentação da eficiência
+
+ 27.2 Tipos de Escalabilidade — [P]
+
+  27.2.1 Escalabilidade Vertical — [P]
+      Aumento dos recursos
+      Expansão do hardware
+      Limitações
+
+  27.2.2 Escalabilidade Horizontal — [P]
+      Adição de componentes
+      Paralelismo
+      Distribuição da carga
+
+ 27.3 Avaliação — [P]
+
+  27.3.1 Métricas — [P]
+      Speedup
+      Eficiência
+      Utilização
+      Balanceamento
+
+  27.3.2 Limitações — [P]
+      Comunicação
+      Sincronização
+      Gargalos
+      Custos
+
+
+
+28. Balanceamento de Sistema — [P]
+
+ 28.1 Fundamentos — [P]
+
+  28.1.1 Conceitos — [P]
+      Balanceamento
+      Equilíbrio dos recursos
+      Utilização eficiente
+      Distribuição das cargas
+
+  28.1.2 Objetivos — [P]
+      Eliminação de gargalos
+      Aproveitamento do hardware
+      Maximização do desempenho
+
+ 28.2 Balanceamento dos Componentes — [P]
+
+  28.2.1 CPU, Memória e I/O — [P]
+      Balanceamento entre subsistemas
+      Comunicação
+      Compartilhamento
+      Utilização
+
+  28.2.2 Balanceamento em Sistemas Paralelos — [P]
+      Distribuição da carga
+      Escalonamento
+      Sincronização
+      Eficiência
+
+ 28.3 Avaliação — [P]
+
+  28.3.1 Identificação de Desequilíbrios — [P]
+      Saturação
+      Recursos ociosos
+      Gargalos
+      Ineficiências
+
+  28.3.2 Estratégias de Balanceamento — [P]
+      Redistribuição
+      Escalonamento
+      Paralelização
+      Otimização
+
+
+
+29. Gargalos de Desempenho — [P]
+
+ 29.1 Fundamentos — [P]
+
+  29.1.1 Conceitos Fundamentais — [P]
+      Definição
+      Origem dos gargalos
+      Recursos limitantes
+      Impacto no desempenho
+
+  29.1.2 Classificação dos Gargalos — [P]
+      Gargalos de hardware
+      Gargalos de software
+      Gargalos de comunicação
+      Gargalos de energia
+
+ 29.2 Principais Tipos — [P]
+
+  29.2.1 Gargalos Computacionais — [P]
+      CPU-bound
+      Memory-bound
+      I/O-bound
+      Bandwidth-bound
+      Latency-bound
+
+  29.2.2 Gargalos Arquiteturais — [P]
+      Cache
+      Memória
+      Barramentos
+      Pipeline
+      Paralelismo
+
+ 29.3 Análise dos Gargalos — [P]
+
+  29.3.1 Identificação — [P]
+      Medição
+      Monitoramento
+      Perfil de execução
+      Comparação
+
+  29.3.2 Mitigação — [P]
+      Otimização do software
+      Melhorias arquiteturais
+      Balanceamento
+      Paralelização
+      Gerenciamento dos recursos
+
+
