@@ -350,3 +350,354 @@ PARTE 1 — FUNDAMENTOS DO DESEMPENHO
       Limitações das métricas
       Generalização dos resultados
       Cuidados na interpretação
+
+
+
+PARTE 2 — DESEMPENHO DA CPU E DOS COMPONENTES
+
+
+6. Métricas de Desempenho dos Componentes — [I]
+
+ 6.1 Desempenho do Processador — [I]
+
+  6.1.1 Papel da CPU no Desempenho — [I]
+      Processamento das instruções
+      Execução dos programas
+      Coordenação das operações
+      Influência da arquitetura
+      Influência da organização
+      Relação com o desempenho global
+
+  6.1.2 Capacidade de Processamento — [I]
+      Poder computacional
+      Taxa de processamento
+      Execução de instruções
+      Operações por unidade de tempo
+      Eficiência da CPU
+
+ 6.2 Desempenho da Hierarquia de Memória — [I]
+
+  6.2.1 Memória Cache — [I]
+      Tempo de acesso
+      Taxa de acertos (Hit Rate)
+      Taxa de falhas (Miss Rate)
+      Penalidade de Miss
+      Influência no tempo de execução
+
+  6.2.2 Memória Principal — [I]
+      Latência
+      Largura de banda
+      Tempo de acesso
+      Gargalos de memória
+      Influência na CPU
+
+  6.2.3 Memória Secundária — [I]
+      Tempo de acesso
+      Latência
+      Taxa de transferência
+      Impacto no desempenho do sistema
+
+ 6.3 Desempenho da Comunicação — [I]
+
+  6.3.1 Barramentos — [I]
+      Largura do barramento
+      Frequência
+      Taxa de transferência
+      Latência
+      Gargalos
+
+  6.3.2 Entrada e Saída — [I]
+      Latência de I/O
+      Throughput
+      Dispositivos de armazenamento
+      Interfaces de comunicação
+      Impacto no desempenho
+
+ 6.4 Desempenho Integrado do Sistema — [I]
+
+  6.4.1 Equilíbrio entre Componentes — [I]
+      Balanceamento
+      Componentes limitantes
+      Compartilhamento de recursos
+      Gargalos
+      Eficiência global
+
+  6.4.2 Avaliação Global — [I]
+      Desempenho da CPU
+      Desempenho da memória
+      Desempenho da comunicação
+      Desempenho do armazenamento
+      Desempenho do sistema computacional
+
+
+
+7. Equação Fundamental de Desempenho da CPU — [P]
+
+ 7.1 Fundamentos da Equação — [P]
+
+  7.1.1 Conceitos Fundamentais — [P]
+      Tempo de CPU
+      Tempo de execução
+      Desempenho da CPU
+      Relação entre tempo e desempenho
+      Modelo quantitativo
+
+  7.1.2 Equação Fundamental — [P]
+      Tempo de CPU
+      Contagem de instruções (Instruction Count)
+      Ciclos por instrução (CPI)
+      Tempo de ciclo
+      Frequência de clock
+      Relações matemáticas fundamentais
+
+ 7.2 Componentes da Equação — [P]
+
+  7.2.1 Contagem de Instruções — [P]
+      Quantidade de instruções
+      Dependência do programa
+      Dependência do compilador
+      Dependência da ISA
+
+  7.2.2 Ciclos por Instrução (CPI) — [P]
+      Conceito
+      Influência da arquitetura
+      Influência da microarquitetura
+      Média de ciclos
+
+  7.2.3 Clock do Processador — [P]
+      Frequência
+      Período
+      Tempo de ciclo
+      Relação com a execução
+
+ 7.3 Interpretação da Equação — [P]
+
+  7.3.1 Relação entre os Fatores — [P]
+      Influência do IC
+      Influência do CPI
+      Influência da frequência
+      Dependência entre fatores
+      Trade-offs
+
+  7.3.2 Aplicações da Equação — [P]
+      Comparação entre processadores
+      Avaliação de melhorias
+      Estimativa de desempenho
+      Estudos de otimização
+      Análise quantitativa
+
+
+
+8. Contagem de Instruções (Instruction Count) — [P]
+
+ 8.1 Fundamentos — [P]
+
+  8.1.1 Conceitos — [P]
+      Definição
+      Número de instruções executadas
+      Trabalho computacional
+      Relação com o programa
+
+  8.1.2 Características Gerais — [P]
+      Dependência da aplicação
+      Dependência do algoritmo
+      Dependência da arquitetura
+      Dependência do compilador
+
+ 8.2 Fatores que Influenciam o IC — [P]
+
+  8.2.1 Algoritmos — [P]
+      Complexidade algorítmica
+      Eficiência
+      Escolha do algoritmo
+      Estruturas de dados
+
+  8.2.2 Linguagens e Compiladores — [P]
+      Linguagem de programação
+      Código gerado
+      Otimizações
+      Geração de instruções
+
+  8.2.3 Arquitetura do Conjunto de Instruções (ISA) — [P]
+      Complexidade das instruções
+      Formato das instruções
+      Modos de endereçamento
+      Organização da ISA
+
+ 8.3 Avaliação do IC — [P]
+
+  8.3.1 Medição — [P]
+      Contagem dinâmica
+      Contagem estática
+      Ferramentas
+      Análise quantitativa
+
+  8.3.2 Impacto no Desempenho — [P]
+      Relação com o tempo de CPU
+      Relação com o CPI
+      Relação com a frequência
+      Otimização do IC
+
+
+
+9. Clock do Processador — [P]
+
+ 9.1 Fundamentos — [P]
+
+  9.1.1 Conceitos — [P]
+      Clock
+      Frequência
+      Período
+      Ciclo de clock
+      Sincronização
+
+  9.1.2 Função do Clock — [P]
+      Coordenação das operações
+      Sincronização interna
+      Controle temporal
+      Execução das instruções
+
+ 9.2 Frequência e Temporização — [P]
+
+  9.2.1 Frequência de Clock — [P]
+      Hertz
+      MHz
+      GHz
+      Clock base
+      Clock efetivo
+
+  9.2.2 Período do Clock — [P]
+      Tempo de ciclo
+      Relação frequência × período
+      Tempo de execução
+      Impacto no desempenho
+
+ 9.3 Tecnologias Relacionadas ao Clock — [P]
+
+  9.3.1 Controle Dinâmico da Frequência — [P]
+      Clock variável
+      Turbo Boost
+      Precision Boost
+      Dynamic Frequency Scaling
+      DVFS
+
+  9.3.2 Limitações do Clock — [P]
+      Consumo de energia
+      Dissipação térmica
+      Limitações físicas
+      Power Wall
+      Thermal Wall
+
+
+
+10. Ciclos por Instrução (CPI) — [P]
+
+ 10.1 Fundamentos — [P]
+
+  10.1.1 Conceitos — [P]
+      Definição
+      Média de ciclos
+      Relação com a execução
+      Relação com o desempenho
+
+  10.1.2 Tipos de CPI — [P]
+      CPI ideal
+      CPI real
+      CPI médio
+      CPI efetivo
+
+ 10.2 Fatores que Influenciam o CPI — [P]
+
+  10.2.1 Organização do Processador — [P]
+      Pipeline
+      Dependências
+      Hazards
+      Execução fora de ordem
+      Predição de desvios
+
+  10.2.2 Hierarquia de Memória — [P]
+      Cache hit
+      Cache miss
+      Latência
+      Stall de memória
+      Acesso aos dados
+
+ 10.3 Avaliação do CPI — [P]
+
+  10.3.1 Cálculo do CPI Médio — [P]
+      Classes de instruções
+      Frequência das instruções
+      Média ponderada
+      Interpretação
+
+  10.3.2 Stall Cycles — [P]
+      Conceito
+      Ciclos desperdiçados
+      Origem dos stalls
+      Impacto no desempenho
+      Redução dos stalls
+
+
+
+11. IPC e Paralelismo em Nível de Instrução (ILP) — [P]
+
+ 11.1 IPC (Instructions Per Cycle) — [P]
+
+  11.1.1 Conceitos Fundamentais — [P]
+      Definição
+      Relação entre IPC e CPI
+      Eficiência do processador
+      Interpretação do IPC
+
+  11.1.2 Avaliação do IPC — [P]
+      IPC teórico
+      IPC real
+      Limitações práticas
+      Fatores que influenciam o IPC
+
+ 11.2 Paralelismo em Nível de Instrução (ILP) — [P]
+
+  11.2.1 Conceitos — [P]
+      Definição
+      Paralelismo implícito
+      Execução simultânea
+      Objetivos do ILP
+
+  11.2.2 Fontes de Paralelismo — [P]
+      Independência entre instruções
+      Paralelismo natural
+      Dependências de dados
+      Dependências de controle
+      Dependências de recursos
+
+ 11.3 Técnicas para Exploração do ILP — [P]
+
+  11.3.1 Técnicas Arquiteturais — [P]
+      Pipeline
+      Processadores superescalares
+      Execução fora de ordem
+      Renomeação de registradores
+      Predição de desvios
+
+  11.3.2 Limitações do ILP — [P]
+      ILP Wall
+      Dependências
+      Hazards
+      Latência da memória
+      Limitações físicas
+      Complexidade do hardware
+
+ 11.4 Relação entre IPC, ILP e Desempenho — [P]
+
+  11.4.1 Influência no Tempo de CPU — [P]
+      Redução do CPI
+      Aumento do IPC
+      Eficiência da execução
+      Ganho de desempenho
+
+  11.4.2 Trade-offs Arquiteturais — [P]
+      Complexidade
+      Consumo de energia
+      Área do chip
+      Escalabilidade
+      Limitações práticas
