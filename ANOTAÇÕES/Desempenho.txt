@@ -1575,3 +1575,1048 @@ PARTE 4 — ENERGIA, MODELAGEM E LIMITAÇÕES DO DESEMPENHO
       Gerenciamento dos recursos
 
 
+
+PARTE 5 — MEDIÇÃO E AVALIAÇÃO DO DESEMPENHO
+
+
+30. Benchmarks — [P]
+
+ 30.1 Fundamentos dos Benchmarks — [P]
+
+  30.1.1 Conceitos Fundamentais — [P]
+      Definição
+      Objetivos
+      Importância da padronização
+      Representatividade
+      Comparabilidade
+      Reprodutibilidade
+
+  30.1.2 Finalidades dos Benchmarks — [P]
+      Comparação entre arquiteturas
+      Comparação entre processadores
+      Avaliação de otimizações
+      Validação de projetos
+      Seleção de sistemas
+      Estudos científicos
+
+ 30.2 Classificação dos Benchmarks — [P]
+
+  30.2.1 Benchmarks Sintéticos — [P]
+      Conceito
+      Características
+      Vantagens
+      Limitações
+      Aplicações
+
+  30.2.2 Benchmarks Reais — [P]
+      Aplicações reais
+      Cargas representativas
+      Cenários de utilização
+      Precisão da avaliação
+
+ 30.3 Qualidade dos Benchmarks — [P]
+
+  30.3.1 Critérios de Qualidade — [P]
+      Representatividade
+      Repetibilidade
+      Escalabilidade
+      Portabilidade
+      Imparcialidade
+
+  30.3.2 Limitações dos Benchmarks — [P]
+      Dependência da carga
+      Dependência da arquitetura
+      Interpretação inadequada
+      Generalização incorreta
+
+
+
+31. SPEC CPU — [P]
+
+ 31.1 Fundamentos — [P]
+
+  31.1.1 SPEC — [P]
+      Standard Performance Evaluation Corporation
+      Objetivos
+      Evolução histórica
+      Importância na indústria
+
+  31.1.2 SPEC CPU — [P]
+      Finalidade
+      Organização da suíte
+      Aplicações avaliadas
+      Padronização
+
+ 31.2 Estrutura da Suíte — [P]
+
+  31.2.1 Benchmarks Inteiros — [P]
+      SPECint
+      Aplicações representativas
+      Interpretação dos resultados
+
+  31.2.2 Benchmarks de Ponto Flutuante — [P]
+      SPECfp
+      Aplicações científicas
+      Processamento numérico
+      Interpretação
+
+ 31.3 Avaliação dos Resultados — [P]
+
+  31.3.1 Execução dos Testes — [P]
+      Configuração
+      Regras de execução
+      Reprodutibilidade
+      Validação
+
+  31.3.2 Interpretação dos Resultados — [P]
+      Métricas
+      Comparações
+      Limitações
+      Cuidados na análise
+
+
+
+32. SPECpower — [I]
+
+ 32.1 Fundamentos — [I]
+
+  32.1.1 Conceitos — [I]
+      Objetivos
+      Avaliação energética
+      Eficiência energética
+      Performance por Watt
+
+  32.1.2 Importância — [I]
+      Data centers
+      Servidores
+      Computação sustentável
+      Eficiência operacional
+
+ 32.2 Funcionamento — [I]
+
+  32.2.1 Processo de Avaliação — [I]
+      Medição do desempenho
+      Medição do consumo
+      Diferentes níveis de carga
+      Consolidação dos resultados
+
+  32.2.2 Métricas Obtidas — [I]
+      Desempenho
+      Potência
+      Eficiência
+      Comparação entre sistemas
+
+
+
+33. Microbenchmarks — [I]
+
+ 33.1 Fundamentos — [I]
+
+  33.1.1 Conceitos — [I]
+      Definição
+      Objetivos
+      Avaliação isolada
+      Características
+
+  33.1.2 Aplicações — [I]
+      Avaliação de instruções
+      Avaliação da memória
+      Avaliação da cache
+      Avaliação de operações específicas
+
+ 33.2 Características — [I]
+
+  33.2.1 Vantagens — [I]
+      Precisão
+      Simplicidade
+      Controle experimental
+      Repetibilidade
+
+  33.2.2 Limitações — [I]
+      Pouca representatividade
+      Visão parcial
+      Generalização limitada
+      Dependência do ambiente
+
+
+
+34. Benchmarks de Aplicações Reais — [I]
+
+ 34.1 Fundamentos — [I]
+
+  34.1.1 Conceitos — [I]
+      Aplicações reais
+      Workloads reais
+      Cenários de produção
+      Avaliação prática
+
+  34.1.2 Objetivos — [I]
+      Medição em situações reais
+      Comparação de sistemas
+      Avaliação da experiência do usuário
+
+ 34.2 Tipos de Aplicações — [I]
+
+  34.2.1 Aplicações Científicas — [I]
+      Simulações
+      Modelagem
+      Computação numérica
+      HPC
+
+  34.2.2 Aplicações Comerciais — [I]
+      Bancos de dados
+      Servidores
+      Virtualização
+      Aplicações corporativas
+
+  34.2.3 Aplicações Multimídia — [I]
+      Renderização
+      Codificação de vídeo
+      Jogos
+      Inteligência Artificial
+
+
+
+35. Profiling — [P]
+
+ 35.1 Fundamentos — [P]
+
+  35.1.1 Conceitos Fundamentais — [P]
+      Definição
+      Objetivos
+      Perfil de execução
+      Análise quantitativa
+
+  35.1.2 Importância — [P]
+      Localização de gargalos
+      Otimização
+      Desenvolvimento de software
+      Avaliação arquitetural
+
+ 35.2 Tipos de Profiling — [P]
+
+  35.2.1 Profiling de CPU — [P]
+      Tempo de CPU
+      Hotspots
+      Utilização da CPU
+      Ciclos consumidos
+
+  35.2.2 Profiling de Memória — [P]
+      Alocações
+      Consumo de memória
+      Localidade
+      Cache misses
+
+  35.2.3 Profiling de Entrada e Saída — [P]
+      Operações de I/O
+      Latência
+      Throughput
+      Esperas
+
+ 35.3 Resultados do Profiling — [P]
+
+  35.3.1 Interpretação — [P]
+      Hotspots
+      Gargalos
+      Tempo acumulado
+      Tempo exclusivo
+      Chamadas de funções
+
+  35.3.2 Aplicações — [P]
+      Otimização
+      Comparação
+      Validação
+      Melhoria de desempenho
+
+
+
+36. Instrumentação e Coleta de Dados — [I]
+
+ 36.1 Instrumentação — [I]
+
+  36.1.1 Conceitos — [I]
+      Instrumentação
+      Monitoramento
+      Registro de eventos
+      Coleta de informações
+
+  36.1.2 Métodos — [I]
+      Instrumentação manual
+      Instrumentação automática
+      Inserção de eventos
+      Monitoramento contínuo
+
+ 36.2 Coleta de Dados — [I]
+
+  36.2.1 Tipos de Dados — [I]
+      Tempo
+      Eventos
+      Utilização
+      Contadores
+      Estatísticas
+
+  36.2.2 Qualidade dos Dados — [I]
+      Precisão
+      Exatidão
+      Consistência
+      Repetibilidade
+
+ 36.3 Overhead da Instrumentação — [I]
+
+  36.3.1 Impactos — [I]
+      Alteração do comportamento
+      Sobrecarga
+      Precisão das medições
+      Minimização do overhead
+
+
+
+37. Contadores de Desempenho de Hardware (PMU) — [P]
+
+ 37.1 Fundamentos — [P]
+
+  37.1.1 PMU — [P]
+      Performance Monitoring Unit
+      Objetivos
+      Funcionamento
+      Eventos monitorados
+
+  37.1.2 Eventos de Hardware — [P]
+      Ciclos de clock
+      Instruções executadas
+      Cache hits
+      Cache misses
+      Branches
+      Branch mispredictions
+
+ 37.2 Monitoramento da CPU — [P]
+
+  37.2.1 Eventos Arquiteturais — [P]
+      IPC
+      CPI
+      Utilização da CPU
+      Pipeline stalls
+      Execução de instruções
+
+  37.2.2 Eventos da Memória — [P]
+      Acessos à cache
+      Faltas de cache
+      Latência
+      Banda de memória
+      Prefetch
+
+ 37.3 Aplicações da PMU — [P]
+
+  37.3.1 Análise de Desempenho — [P]
+      Localização de gargalos
+      Otimização
+      Comparação
+      Validação
+
+  37.3.2 Ferramentas Compatíveis — [P]
+      Perf
+      PAPI
+      Intel VTune
+      AMD uProf
+      Linux Performance Tools
+
+
+
+38. Ferramentas de Medição e Análise — [I]
+
+ 38.1 Ferramentas de Software — [I]
+
+  38.1.1 Ferramentas de Profiling — [I]
+      Perf
+      Gprof
+      Intel VTune
+      AMD uProf
+      Valgrind
+      perfetto
+
+  38.1.2 Ferramentas de Monitoramento — [I]
+      Top
+      Htop
+      vmstat
+      iostat
+      sar
+      DTrace
+
+ 38.2 Ferramentas para Benchmarks — [I]
+
+  38.2.1 Execução de Benchmarks — [I]
+      SPEC CPU
+      SPECpower
+      Phoronix Test Suite
+      LINPACK
+      STREAM
+
+  38.2.2 Ferramentas Estatísticas — [I]
+      Consolidação dos resultados
+      Comparação
+      Visualização
+      Relatórios
+
+ 38.3 Boas Práticas de Medição — [I]
+
+  38.3.1 Planejamento Experimental — [I]
+      Definição do objetivo
+      Controle das variáveis
+      Escolha da carga de trabalho
+      Repetição dos testes
+
+  38.3.2 Interpretação dos Resultados — [I]
+      Análise estatística
+      Intervalo de confiança
+      Variabilidade
+      Reprodutibilidade
+      Validação dos resultados
+
+
+
+PARTE 6 — OTIMIZAÇÃO, ARMADILHAS E TENDÊNCIAS
+
+
+39. Identificação de Gargalos — [P]
+
+ 39.1 Fundamentos da Identificação de Gargalos — [P]
+
+  39.1.1 Conceitos Fundamentais — [P]
+      Definição de gargalo
+      Recursos limitantes
+      Componentes críticos
+      Saturação de recursos
+      Impacto no desempenho global
+
+  39.1.2 Características dos Gargalos — [P]
+      Gargalos temporários
+      Gargalos permanentes
+      Gargalos dinâmicos
+      Gargalos dependentes da carga
+      Gargalos ocultos
+
+ 39.2 Classificação dos Gargalos — [P]
+
+  39.2.1 Gargalos de Hardware — [P]
+      CPU
+      Cache
+      Memória principal
+      Barramentos
+      Entrada e saída
+      Armazenamento
+
+  39.2.2 Gargalos de Software — [P]
+      Algoritmos
+      Compilador
+      Sistema operacional
+      Sincronização
+      Comunicação
+      Estruturas de dados
+
+ 39.3 Processo de Identificação — [P]
+
+  39.3.1 Coleta de Informações — [P]
+      Benchmarks
+      Profiling
+      PMU
+      Monitoramento
+      Estatísticas
+
+  39.3.2 Análise dos Resultados — [P]
+      Hotspots
+      Recursos saturados
+      Tempo de espera
+      Pipeline stalls
+      Cache misses
+      Interpretação dos dados
+
+
+
+40. Técnicas de Otimização de Desempenho — [P]
+
+ 40.1 Otimizações de Software — [P]
+
+  40.1.1 Otimização Algorítmica — [P]
+      Escolha de algoritmos
+      Redução da complexidade
+      Estruturas de dados eficientes
+      Eliminação de redundâncias
+
+  40.1.2 Otimização do Código — [P]
+      Localidade de memória
+      Redução de acessos à memória
+      Vetorização
+      Paralelização
+      Inlining
+      Loop unrolling
+
+ 40.2 Otimizações Arquiteturais — [P]
+
+  40.2.1 Processador — [P]
+      Pipeline
+      Execução superescalar
+      Execução fora de ordem
+      Predição de desvios
+      Renomeação de registradores
+
+  40.2.2 Hierarquia de Memória — [P]
+      Aproveitamento da cache
+      Prefetch
+      Organização dos dados
+      Redução de cache misses
+      Balanceamento da memória
+
+ 40.3 Otimizações do Sistema — [P]
+
+  40.3.1 Sistema Operacional — [P]
+      Escalonamento
+      Afinidade de CPU
+      Balanceamento de carga
+      Gerenciamento de memória
+
+  40.3.2 Otimização Global — [P]
+      Balanceamento dos recursos
+      Eliminação de gargalos
+      Otimização orientada por métricas
+      Avaliação contínua
+
+
+
+41. Trade-offs de Projeto — [P]
+
+ 41.1 Fundamentos — [P]
+
+  41.1.1 Conceitos Fundamentais — [P]
+      Trade-off
+      Compromissos de projeto
+      Otimização multidimensional
+      Decisões arquiteturais
+
+  41.1.2 Objetivos — [P]
+      Maximização do desempenho
+      Redução do consumo
+      Redução do custo
+      Balanceamento dos recursos
+
+ 41.2 Principais Trade-offs — [P]
+
+  41.2.1 Desempenho × Energia — [P]
+      Performance por Watt
+      Consumo energético
+      Frequência
+      Tensão
+      Eficiência
+
+  41.2.2 Desempenho × Área — [P]
+      Complexidade do hardware
+      Número de transistores
+      Custo de fabricação
+      Integração
+
+  41.2.3 Desempenho × Custo — [P]
+      Investimento
+      Escalabilidade
+      Relação custo-benefício
+      Retorno do desempenho
+
+ 41.3 Avaliação dos Trade-offs — [P]
+
+  41.3.1 Critérios de Projeto — [P]
+      Objetivos da aplicação
+      Tipo de workload
+      Restrições do sistema
+      Critérios econômicos
+
+  41.3.2 Processo de Decisão — [P]
+      Comparação de alternativas
+      Avaliação quantitativa
+      Análise de impacto
+      Escolha da solução
+
+
+
+42. Falácias sobre Desempenho — [P]
+
+ 42.1 Conceitos Fundamentais — [P]
+
+  42.1.1 O que são Falácias — [P]
+      Definição
+      Origem
+      Consequências
+      Importância da análise crítica
+
+ 42.2 Principais Falácias — [P]
+
+  42.2.1 Falácias Relacionadas às Métricas — [P]
+      Maior frequência significa maior desempenho
+      Mais MIPS significa computador mais rápido
+      IPC elevado garante melhor desempenho
+      Throughput e latência são equivalentes
+
+  42.2.2 Falácias Relacionadas ao Hardware — [P]
+      Mais núcleos sempre aumentam o desempenho
+      Cache maior sempre é melhor
+      Mais memória sempre melhora o desempenho
+      Hardware resolve todos os problemas
+
+  42.2.3 Falácias Relacionadas à Energia — [P]
+      Processadores ociosos não consomem energia
+      Redução da frequência elimina o consumo
+      Eficiência energética é igual a baixo consumo
+
+ 42.3 Falácias Clássicas da Arquitetura de Computadores — [P]
+
+  42.3.1 Melhorias Parciais — [P]
+      Interpretação incorreta da Lei de Amdahl
+      Ganhos locais versus desempenho global
+      Otimização de componentes isolados
+
+  42.3.2 Avaliação Incorreta — [P]
+      Generalização de resultados
+      Comparações inadequadas
+      Escolha incorreta de métricas
+
+
+
+43. Erros na Interpretação de Benchmarks — [P]
+
+ 43.1 Erros Comuns — [P]
+
+  43.1.1 Erros Metodológicos — [P]
+      Benchmarks inadequados
+      Poucas execuções
+      Ambiente não controlado
+      Comparações injustas
+
+  43.1.2 Erros Estatísticos — [P]
+      Média inadequada
+      Ausência de variabilidade
+      Ignorar intervalo de confiança
+      Outliers
+
+ 43.2 Interpretação Incorreta dos Resultados — [P]
+
+  43.2.1 Comparações Incorretas — [P]
+      Hardware diferente
+      Workloads diferentes
+      Configurações distintas
+      Ambientes distintos
+
+  43.2.2 Generalizações — [P]
+      Extrapolação indevida
+      Conclusões equivocadas
+      Representatividade insuficiente
+
+ 43.3 Boas Práticas — [P]
+
+  43.3.1 Execução Correta — [P]
+      Controle experimental
+      Repetição
+      Documentação
+      Validação
+
+  43.3.2 Interpretação Correta — [P]
+      Contextualização
+      Escolha adequada das métricas
+      Comparações equivalentes
+      Análise estatística
+
+
+
+44. Limitações das Métricas de Desempenho — [I]
+
+ 44.1 Limitações Gerais — [I]
+
+  44.1.1 Dependência da Aplicação — [I]
+      Workloads distintos
+      Objetivos diferentes
+      Aplicações específicas
+      Cenários variados
+
+  44.1.2 Dependência da Arquitetura — [I]
+      ISA
+      Microarquitetura
+      Hierarquia de memória
+      Organização do sistema
+
+ 44.2 Limitações das Principais Métricas — [I]
+
+  44.2.1 MIPS — [I]
+      Limitações
+      Comparações incorretas
+      Diferenças entre ISAs
+
+  44.2.2 IPC e CPI — [I]
+      Dependência da arquitetura
+      Dependência do workload
+      Limitações comparativas
+
+  44.2.3 Benchmarks — [I]
+      Representatividade
+      Generalização
+      Dependência da carga
+      Dependência da configuração
+
+ 44.3 Avaliação Multidimensional — [I]
+
+  44.3.1 Uso Conjunto das Métricas — [I]
+      Tempo
+      Throughput
+      Energia
+      Eficiência
+      Escalabilidade
+
+  44.3.2 Critérios de Avaliação — [I]
+      Objetivos da análise
+      Tipo de sistema
+      Tipo de aplicação
+      Contexto de utilização
+
+
+
+45. Arquiteturas Heterogêneas e Desempenho — [I]
+
+ 45.1 Fundamentos — [I]
+
+  45.1.1 Conceitos Fundamentais — [I]
+      Computação heterogênea
+      Especialização
+      Diversidade de processadores
+      Cooperação entre dispositivos
+
+  45.1.2 Motivação — [I]
+      Eficiência energética
+      Alto desempenho
+      Escalabilidade
+      Especialização das cargas
+
+ 45.2 Componentes Heterogêneos — [I]
+
+  45.2.1 Processadores Especializados — [I]
+      CPU
+      GPU
+      DSP
+      FPGA
+      ASIC
+
+  45.2.2 Comunicação — [I]
+      Compartilhamento de memória
+      Interconexões
+      Transferência de dados
+      Sincronização
+
+ 45.3 Impacto no Desempenho — [I]
+
+  45.3.1 Benefícios — [I]
+      Speedup
+      Eficiência energética
+      Paralelismo
+      Especialização
+
+  45.3.2 Desafios — [I]
+      Programação
+      Balanceamento
+      Comunicação
+      Portabilidade
+
+
+
+46. Inteligência Artificial e Aceleradores — [V]
+
+ 46.1 Evolução dos Aceleradores — [V]
+
+  46.1.1 Motivação — [V]
+      Crescimento da IA
+      Limitações da CPU
+      Processamento massivamente paralelo
+
+  46.1.2 Principais Aceleradores — [V]
+      GPU
+      TPU
+      NPU
+      ASIC
+      FPGA
+
+ 46.2 Desempenho em IA — [V]
+
+  46.2.1 Características — [V]
+      Alto paralelismo
+      Matrizes
+      Tensores
+      Inferência
+      Treinamento
+
+  46.2.2 Eficiência — [V]
+      Performance por Watt
+      Throughput
+      Escalabilidade
+      Especialização
+
+
+
+47. Tendências Futuras do Desempenho — [V]
+
+ 47.1 Evolução da Arquitetura — [V]
+
+  47.1.1 Novos Paradigmas — [V]
+      Computação heterogênea
+      Arquiteturas especializadas
+      Computação baseada em domínio
+      Chiplets
+
+  47.1.2 Evolução Tecnológica — [V]
+      Novos processos de fabricação
+      Empilhamento 3D
+      Integração avançada
+      Interconexões de alta velocidade
+
+ 47.2 Tendências de Desempenho — [V]
+
+  47.2.1 Eficiência Energética — [V]
+      Computação verde
+      Sustentabilidade
+      Redução do consumo
+      Otimização energética
+
+  47.2.2 Novas Tecnologias — [V]
+      Computação quântica
+      Computação neuromórfica
+      Memórias emergentes
+      Computação fotônica
+
+ 47.3 Perspectivas Futuras — [V]
+
+  47.3.1 Desafios — [V]
+      Limites físicos
+      Crescimento da demanda computacional
+      Complexidade crescente
+      Segurança
+
+  47.3.2 Direções de Pesquisa — [V]
+      Novos modelos computacionais
+      Novas arquiteturas
+      Novas métricas de desempenho
+      Otimização integrada
+      Co-projeto hardware-software
+
+
+
+PARTE 7 — INTEGRAÇÃO DOS CONCEITOS
+
+
+48. Integração dos Conceitos de Desempenho — [P]
+
+ 48.1 Visão Integrada do Desempenho — [P]
+
+  48.1.1 O Desempenho como Propriedade Sistêmica — [P]
+      Desempenho como característica global
+      Interdependência entre hardware e software
+      Visão holística do sistema computacional
+      Objetivos da otimização
+      Limites do desempenho
+
+  48.1.2 Relações entre os Componentes — [P]
+      CPU
+      Memória
+      Barramentos
+      Entrada e saída
+      Sistema operacional
+      Aplicações
+
+ 48.2 Integração das Métricas — [P]
+
+  48.2.1 Relação entre as Principais Métricas — [P]
+      Tempo de execução
+      Throughput
+      Latência
+      CPI
+      IPC
+      Frequência
+      Speedup
+      Eficiência energética
+
+  48.2.2 Relação entre as Equações Fundamentais — [P]
+      Equação do desempenho da CPU
+      Equação da potência dinâmica
+      Performance por Watt
+      Lei de Amdahl
+      Lei de Gustafson
+      Modelos de escalabilidade
+
+ 48.3 Integração dos Fatores de Desempenho — [P]
+
+  48.3.1 Fatores Arquiteturais — [P]
+      Organização da CPU
+      ISA
+      Pipeline
+      Paralelismo
+      Hierarquia de memória
+      Comunicação
+
+  48.3.2 Fatores Externos — [P]
+      Algoritmos
+      Compiladores
+      Sistema operacional
+      Workloads
+      Configuração do sistema
+      Ambiente de execução
+
+ 48.4 Fluxo Completo da Avaliação de Desempenho — [P]
+
+  48.4.1 Processo de Avaliação — [P]
+      Definição dos objetivos
+      Escolha das métricas
+      Seleção dos benchmarks
+      Coleta dos dados
+      Análise dos resultados
+
+  48.4.2 Processo de Otimização — [P]
+      Identificação dos gargalos
+      Definição das prioridades
+      Aplicação das otimizações
+      Validação das melhorias
+      Reavaliação do desempenho
+
+ 48.5 Integração com a Arquitetura e Organização de Computadores — [P]
+
+  48.5.1 Relação com os Demais Assuntos — [P]
+      Processadores
+      Memórias
+      Barramentos
+      Entrada e saída
+      Paralelismo
+      Sistemas multicore
+      Computação heterogênea
+
+  48.5.2 Papel do Desempenho na Arquitetura — [P]
+      Critério de projeto
+      Avaliação de arquiteturas
+      Evolução tecnológica
+      Desenvolvimento de sistemas
+
+
+
+49. Resumo Geral do Desempenho de Computadores — [P]
+
+ 49.1 Fundamentos Essenciais — [P]
+
+  49.1.1 Conceitos Fundamentais — [P]
+      Definição de desempenho
+      Objetivos da avaliação
+      Importância das métricas
+      Natureza multidimensional
+
+  49.1.2 Evolução Histórica — [P]
+      Evolução dos processadores
+      Lei de Moore
+      Power Wall
+      Multicore
+      Arquiteturas modernas
+
+ 49.2 Síntese dos Modelos Matemáticos — [P]
+
+  49.2.1 Modelos Fundamentais — [P]
+      Equação do desempenho da CPU
+      Speedup
+      Lei de Amdahl
+      Lei de Gustafson
+      Performance por Watt
+
+  49.2.2 Métricas Fundamentais — [P]
+      Tempo de execução
+      Throughput
+      Latência
+      CPI
+      IPC
+      Clock
+      Eficiência energética
+
+ 49.3 Síntese dos Fatores que Influenciam o Desempenho — [P]
+
+  49.3.1 Hardware — [P]
+      CPU
+      Memória
+      Cache
+      Barramentos
+      Entrada e saída
+
+  49.3.2 Software — [P]
+      Algoritmos
+      Compiladores
+      Sistema operacional
+      Paralelismo
+      Aplicações
+
+ 49.4 Síntese da Avaliação e Otimização — [P]
+
+  49.4.1 Avaliação — [P]
+      Benchmarks
+      Profiling
+      PMU
+      Ferramentas de análise
+      Interpretação dos resultados
+
+  49.4.2 Otimização — [P]
+      Identificação de gargalos
+      Otimização arquitetural
+      Otimização de software
+      Balanceamento do sistema
+      Eficiência energética
+
+ 49.5 Mapa Geral dos Conceitos — [P]
+
+  49.5.1 Fluxo do Estudo — [P]
+      Fundamentos
+      Modelagem
+      Influências
+      Avaliação
+      Otimização
+      Tendências
+
+  49.5.2 Competências Esperadas — [P]
+      Interpretar métricas
+      Comparar arquiteturas
+      Avaliar desempenho
+      Identificar gargalos
+      Selecionar otimizações
+      Analisar resultados
+
+
+
+50. Conclusão — [V]
+
+ 50.1 Síntese Final — [V]
+
+  50.1.1 O Papel do Desempenho na Computação — [V]
+      Importância para a Arquitetura de Computadores
+      Importância para a Organização de Computadores
+      Impacto no desenvolvimento tecnológico
+      Base para projetos computacionais
+
+  50.1.2 Evolução Contínua — [V]
+      Mudanças nas arquiteturas
+      Novos desafios
+      Novas métricas
+      Novos modelos computacionais
+
+ 50.2 Encerramento da Lista — [V]
+
+  50.2.1 Conhecimentos Consolidados — [V]
+      Fundamentos
+      Métricas
+      Modelagem
+      Avaliação
+      Otimização
+      Tendências
+
+  50.2.2 Preparação para Estudos Avançados — [V]
+      Processadores
+      Microarquitetura
+      Pipeline
+      Memória Cache
+      Memória Principal
+      Barramentos
+      Entrada e Saída
+      Paralelismo
+      Computação de Alto Desempenho
+      Arquiteturas Modernas
