@@ -701,3 +701,391 @@ PARTE 2 — DESEMPENHO DA CPU E DOS COMPONENTES
       Área do chip
       Escalabilidade
       Limitações práticas
+
+
+
+PARTE 3 — FATORES QUE INFLUENCIAM O DESEMPENHO
+
+
+12. Algoritmos e Software — [I]
+
+ 12.1 Influência dos Algoritmos no Desempenho — [I]
+
+  12.1.1 Conceitos Fundamentais — [I]
+      Algoritmo
+      Eficiência algorítmica
+      Trabalho computacional
+      Tempo de execução
+      Consumo de recursos
+      Relação entre algoritmo e desempenho
+
+  12.1.2 Complexidade Computacional — [I]
+      Complexidade temporal
+      Complexidade espacial
+      Crescimento assintótico
+      Notação Big-O
+      Escalabilidade do algoritmo
+
+ 12.2 Estruturas de Dados e Desempenho — [I]
+
+  12.2.1 Organização dos Dados — [I]
+      Vetores
+      Listas
+      Árvores
+      Tabelas hash
+      Estruturas hierárquicas
+      Organização da memória
+
+  12.2.2 Localidade de Referência — [I]
+      Localidade temporal
+      Localidade espacial
+      Padrões de acesso
+      Aproveitamento da cache
+      Impacto no desempenho
+
+ 12.3 Software e Execução — [I]
+
+  12.3.1 Características do Software — [I]
+      Código executável
+      Organização do programa
+      Chamadas de funções
+      Bibliotecas
+      Modularização
+
+  12.3.2 Influência da Implementação — [I]
+      Estruturas de controle
+      Organização dos dados
+      Acesso à memória
+      Operações redundantes
+      Eficiência do código
+
+
+
+13. Compiladores e Otimizações — [I]
+
+ 13.1 Papel do Compilador — [I]
+
+  13.1.1 Conceitos Fundamentais — [I]
+      Compilação
+      Tradução do código
+      Geração de instruções
+      Código objeto
+      Relação entre compilador e desempenho
+
+  13.1.2 Processo de Compilação — [I]
+      Análise léxica
+      Análise sintática
+      Análise semântica
+      Geração de código
+      Otimização
+
+ 13.2 Otimizações de Código — [I]
+
+  13.2.1 Otimizações Locais — [I]
+      Eliminação de código morto
+      Propagação de constantes
+      Simplificação de expressões
+      Redução de operações
+
+  13.2.2 Otimizações Globais — [I]
+      Inlining
+      Loop unrolling
+      Loop fusion
+      Loop interchange
+      Software pipelining
+
+ 13.3 Otimizações Dependentes da Arquitetura — [I]
+
+  13.3.1 Geração de Código Eficiente — [I]
+      Seleção de instruções
+      Escalonamento de instruções
+      Alocação de registradores
+      Uso da hierarquia de memória
+
+  13.3.2 Relação entre Compilador e Hardware — [I]
+      Dependência da ISA
+      Dependência da microarquitetura
+      Aproveitamento do pipeline
+      Aproveitamento do paralelismo
+
+
+
+14. ISA e Organização da CPU — [P]
+
+ 14.1 Influência da ISA — [P]
+
+  14.1.1 Arquitetura do Conjunto de Instruções — [P]
+      Complexidade da ISA
+      Formato das instruções
+      Modos de endereçamento
+      Tipos de instruções
+      Impacto no desempenho
+
+  14.1.2 Características Arquiteturais — [P]
+      CISC
+      RISC
+      Densidade de código
+      Número de instruções
+      Eficiência de execução
+
+ 14.2 Organização da CPU — [P]
+
+  14.2.1 Organização Interna — [P]
+      Datapath
+      Unidade de controle
+      Registradores
+      Unidades funcionais
+      Fluxo de dados
+
+  14.2.2 Recursos Arquiteturais — [P]
+      Pipeline
+      Execução superescalar
+      Execução fora de ordem
+      Predição de desvios
+      Renomeação de registradores
+
+ 14.3 Relação entre ISA e Organização — [P]
+
+  14.3.1 Impacto no Desempenho — [P]
+      Número de instruções
+      CPI
+      IPC
+      Complexidade do hardware
+      Eficiência global
+
+
+
+15. Hierarquia de Memória e Desempenho — [P]
+
+ 15.1 Papel da Hierarquia de Memória — [P]
+
+  15.1.1 Conceitos Fundamentais — [P]
+      Hierarquia de memória
+      Velocidade
+      Capacidade
+      Custo
+      Organização hierárquica
+
+  15.1.2 Objetivos — [P]
+      Redução da latência
+      Aumento do throughput
+      Aproveitamento da localidade
+      Balanceamento entre níveis
+
+ 15.2 Influência das Memórias — [P]
+
+  15.2.1 Memória Cache — [P]
+      Tempo de acesso
+      Hit Rate
+      Miss Rate
+      Miss Penalty
+      AMAT
+
+  15.2.2 Memória Principal — [P]
+      Latência
+      Largura de banda
+      Tempo de acesso
+      Gargalos
+      Comunicação com a CPU
+
+  15.2.3 Memória Secundária — [P]
+      Tempo de acesso
+      Transferência de dados
+      Latência
+      Influência nas aplicações
+
+ 15.3 Gargalos Relacionados à Memória — [P]
+
+  15.3.1 Memory Wall — [P]
+      Conceito
+      Origem
+      Evolução histórica
+      Impacto no desempenho
+      Estratégias de mitigação
+
+  15.3.2 Localidade e Eficiência — [P]
+      Localidade temporal
+      Localidade espacial
+      Padrões de acesso
+      Otimização da memória
+
+
+
+16. Barramentos e Comunicação — [I]
+
+ 16.1 Comunicação entre Componentes — [I]
+
+  16.1.1 Barramentos — [I]
+      Barramento de dados
+      Barramento de endereços
+      Barramento de controle
+      Comunicação entre dispositivos
+
+  16.1.2 Interconexões — [I]
+      Links de comunicação
+      Redes internas
+      Comunicação entre núcleos
+      Compartilhamento de recursos
+
+ 16.2 Características de Desempenho — [I]
+
+  16.2.1 Largura de Banda — [I]
+      Taxa de transferência
+      Volume de dados
+      Capacidade do barramento
+
+  16.2.2 Latência — [I]
+      Tempo de comunicação
+      Espera
+      Contenção
+      Overhead
+
+ 16.3 Limitações da Comunicação — [I]
+
+  16.3.1 Gargalos — [I]
+      Saturação
+      Contenção
+      Compartilhamento
+      Impacto no desempenho
+
+
+
+17. Entrada e Saída (I/O) — [I]
+
+ 17.1 Fundamentos — [I]
+
+  17.1.1 Sistemas de Entrada e Saída — [I]
+      Conceitos
+      Comunicação com periféricos
+      Fluxo de dados
+      Papel do subsistema de I/O
+
+  17.1.2 Características Gerais — [I]
+      Latência
+      Throughput
+      Tempo de resposta
+      Eficiência
+
+ 17.2 Influência no Desempenho — [I]
+
+  17.2.1 Dispositivos de Armazenamento — [I]
+      HDD
+      SSD
+      NVMe
+      Taxa de transferência
+      Tempo de acesso
+
+  17.2.2 Comunicação com Periféricos — [I]
+      Interfaces
+      Controladores
+      DMA
+      Interrupções
+      Overhead
+
+ 17.3 Gargalos de Entrada e Saída — [I]
+
+  17.3.1 Limitações — [I]
+      Espera por dispositivos
+      Congestionamento
+      Latência
+      Saturação
+      Influência no desempenho global
+
+
+
+18. Sistema Operacional e Gerenciamento de Recursos — [I]
+
+ 18.1 Papel do Sistema Operacional — [I]
+
+  18.1.1 Gerenciamento de Recursos — [I]
+      CPU
+      Memória
+      Entrada e saída
+      Armazenamento
+      Compartilhamento
+
+  18.1.2 Escalonamento — [I]
+      Escalonamento de processos
+      Escalonamento de threads
+      Prioridades
+      Balanceamento
+
+ 18.2 Influência no Desempenho — [I]
+
+  18.2.1 Gerenciamento da CPU — [I]
+      Troca de contexto
+      Interrupções
+      Overhead
+      Tempo de execução
+
+  18.2.2 Gerenciamento da Memória — [I]
+      Memória virtual
+      Paginação
+      Troca de páginas
+      Alocação de memória
+
+ 18.3 Gerenciamento do Sistema — [I]
+
+  18.3.1 Utilização dos Recursos — [I]
+      Compartilhamento
+      Concorrência
+      Sincronização
+      Eficiência
+      Utilização do hardware
+
+
+
+19. Paralelismo e Computação Paralela — [P]
+
+ 19.1 Fundamentos do Paralelismo — [P]
+
+  19.1.1 Conceitos Fundamentais — [P]
+      Paralelismo
+      Concorrência
+      Execução simultânea
+      Objetivos
+      Benefícios
+
+  19.1.2 Formas de Paralelismo — [P]
+      Paralelismo em nível de instrução (ILP)
+      Paralelismo em nível de dados (DLP)
+      Paralelismo em nível de tarefas (TLP)
+      Paralelismo em nível de processos
+
+ 19.2 Arquiteturas Paralelas — [P]
+
+  19.2.1 Processadores Multicore — [P]
+      Núcleos
+      Compartilhamento de recursos
+      Escalabilidade
+      Balanceamento de carga
+
+  19.2.2 Multiprocessadores — [P]
+      SMP
+      NUMA
+      Comunicação
+      Compartilhamento de memória
+
+  19.2.3 Computação Heterogênea — [P]
+      CPU
+      GPU
+      Aceleradores
+      Especialização do processamento
+
+ 19.3 Desafios do Paralelismo — [P]
+
+  19.3.1 Limitações — [P]
+      Dependências
+      Sincronização
+      Comunicação
+      Balanceamento
+      Overhead
+
+  19.3.2 Impacto no Desempenho — [P]
+      Speedup
+      Escalabilidade
+      Eficiência paralela
+      Utilização dos recursos
+      Limites práticos
+
+
