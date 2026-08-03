@@ -1,0 +1,352 @@
+                                              Desempenho 
+
+
+A classificação abaixo indica a profundidade recomendada para cada grande tópico da lista.
+
+[P] Profundidade — estudar mecanismos, estruturas, funcionamento interno e relações entre componentes.
+[I] Intermediário — compreender bem o funcionamento e as relações principais, sem precisar dominar todos os 
+   detalhes de implementação.
+[V] Visão geral — saber o que é, para que serve e como se relaciona com as Memórias.
+
+
+
+PARTE 1 — FUNDAMENTOS DO DESEMPENHO
+
+
+1. Introdução ao Desempenho de Computadores — [I]
+
+ 1.1 Conceitos Fundamentais — [I]
+
+  1.1.1 Desempenho em Computadores — [I]
+      Conceito de desempenho
+      Conceito de performance computacional
+      Objetivos do desempenho
+      Importância do desempenho
+      Papel do desempenho na computação
+      Papel na Arquitetura de Computadores
+      Papel na Organização de Computadores
+      Relação entre hardware e software
+      Relação entre desempenho e qualidade do sistema
+      Relação entre desempenho e experiência do usuário
+
+  1.1.2 Importância do Estudo do Desempenho — [I]
+      Avaliação de sistemas computacionais
+      Comparação entre computadores
+      Projeto de arquiteturas
+      Otimização de hardware
+      Otimização de software
+      Identificação de limitações
+      Apoio à tomada de decisões
+      Desenvolvimento de sistemas eficientes
+
+  1.1.3 Objetivos da Análise de Desempenho — [I]
+      Medição do desempenho
+      Avaliação quantitativa
+      Comparação entre soluções
+      Identificação de gargalos
+      Avaliação de melhorias
+      Validação de projetos
+      Otimização de recursos
+      Balanceamento do sistema
+
+ 1.2 O Desempenho no Sistema Computacional — [I]
+
+  1.2.1 Relação com os Componentes do Computador — [I]
+      Processador
+      Memória principal
+      Memória cache
+      Barramentos
+      Entrada e saída
+      Armazenamento
+      Sistema operacional
+      Aplicações
+      Comunicação entre componentes
+
+  1.2.2 Fatores Gerais que Influenciam o Desempenho — [I]
+      Hardware
+      Software
+      Algoritmos
+      Organização do sistema
+      Arquitetura do processador
+      Hierarquia de memória
+      Comunicação interna
+      Carga de trabalho
+
+  1.2.3 Perspectivas de Avaliação — [I]
+      Perspectiva do usuário
+      Perspectiva do projetista
+      Perspectiva do desenvolvedor
+      Perspectiva do administrador de sistemas
+      Perspectiva científica
+      Perspectiva comercial
+
+ 1.3 Conceitos Gerais Relacionados ao Desempenho — [I]
+
+  1.3.1 Eficiência e Performance — [I]
+      Conceito de eficiência
+      Conceito de performance
+      Eficiência computacional
+      Eficiência de utilização de recursos
+      Relação entre eficiência e desempenho
+      Diferenças entre desempenho e eficiência
+
+  1.3.2 Capacidade e Produtividade do Sistema — [I]
+      Capacidade computacional
+      Capacidade de processamento
+      Produtividade
+      Utilização dos recursos
+      Escalabilidade básica
+      Crescimento da demanda
+
+  1.3.3 Carga de Trabalho (Workload) — [I]
+      Conceito de workload
+      Tipos de carga de trabalho
+      Cargas CPU-bound
+      Cargas Memory-bound
+      Cargas I/O-bound
+      Características das aplicações
+      Representatividade das cargas
+      Influência da carga de trabalho na avaliação
+
+
+
+2. Evolução Histórica do Desempenho — [I]
+
+ 2.1 Evolução do Desempenho Computacional — [I]
+
+  2.1.1 Primeiras Estratégias para Aumento de Desempenho — [I]
+      Evolução do hardware
+      Evolução dos processadores
+      Aumento da frequência
+      Redução do tempo de execução
+      Aumento da integração
+      Otimizações arquiteturais
+
+  2.1.2 Evolução das Tecnologias — [I]
+      Miniaturização dos transistores
+      Evolução dos processos de fabricação
+      Aumento da densidade de integração
+      Evolução das memórias
+      Evolução das interconexões
+      Crescimento da capacidade computacional
+
+ 2.2 Leis e Tendências Históricas — [I]
+
+  2.2.1 Lei de Moore — [I]
+      Origem
+      Conceito
+      Evolução histórica
+      Impacto na computação
+      Limitações atuais
+      Situação contemporânea
+
+  2.2.2 Escalonamento de Dennard — [I]
+      Conceito
+      Relação entre tensão e frequência
+      Escalonamento tecnológico
+      Benefícios históricos
+      Limitações
+      Fim do escalonamento
+
+ 2.3 Mudanças na Evolução do Desempenho — [I]
+
+  2.3.1 Fim do Escalonamento por Frequência — [I]
+      Limitações da frequência
+      Crescimento do consumo
+      Dissipação térmica
+      Limitações físicas
+      Mudança de paradigma
+
+  2.3.2 Transição para o Paralelismo — [I]
+      Processadores multicore
+      Multiprocessadores
+      Paralelismo de hardware
+      Necessidade de software paralelo
+      Evolução das arquiteturas modernas
+
+  2.3.3 Principais Barreiras do Desempenho Moderno — [I]
+      Power Wall
+      Memory Wall
+      ILP Wall
+      Thermal Wall
+      Impacto das limitações físicas
+      Novas estratégias de evolução
+
+
+
+3. Conceitos Fundamentais de Desempenho — [P]
+
+ 3.1 Fundamentos do Desempenho — [P]
+
+  3.1.1 Conceitos Básicos — [P]
+      Desempenho
+      Performance
+      Eficiência
+      Velocidade
+      Capacidade
+      Produtividade
+      Responsividade
+      Escalabilidade
+
+  3.1.2 Características do Desempenho — [P]
+      Natureza quantitativa
+      Natureza relativa
+      Dependência da carga de trabalho
+      Dependência do ambiente
+      Dependência das métricas
+      Comparabilidade
+
+ 3.2 Elementos Fundamentais do Desempenho — [P]
+
+  3.2.1 Tempo — [P]
+      Tempo como métrica fundamental
+      Tempo de execução
+      Tempo de resposta
+      Tempo total
+      Tempo observado pelo usuário
+
+  3.2.2 Trabalho Computacional — [P]
+      Quantidade de trabalho
+      Processamento
+      Execução de instruções
+      Volume de operações
+      Volume de dados
+      Trabalho útil
+
+  3.2.3 Recursos Computacionais — [P]
+      CPU
+      Memória
+      Barramentos
+      Armazenamento
+      Entrada e saída
+      Energia
+
+ 3.3 Relações Fundamentais — [P]
+
+  3.3.1 Desempenho e Tempo — [P]
+      Performance como inverso do tempo
+      Relações matemáticas básicas
+      Comparação entre sistemas
+      Razão de desempenho
+      Speedup básico
+
+  3.3.2 Desempenho e Recursos — [P]
+      Utilização dos recursos
+      Eficiência de utilização
+      Gargalos
+      Balanceamento
+      Limitações dos recursos
+
+  3.3.3 Desempenho e Arquitetura — [P]
+      Influência da arquitetura
+      Influência da organização
+      Decisões arquiteturais
+      Decisões organizacionais
+      Relação entre projeto e desempenho
+
+
+
+4. Métricas Fundamentais de Desempenho — [P]
+
+ 4.1 Métricas Baseadas em Tempo — [P]
+
+  4.1.1 Tempo de Execução — [P]
+      Tempo de execução total
+      Tempo de CPU
+      Tempo do usuário
+      Tempo do sistema
+      Wall Clock Time
+
+  4.1.2 Tempo de Resposta — [P]
+      Conceito
+      Latência
+      Tempo percebido pelo usuário
+      Influência da carga de trabalho
+      Aplicações
+
+ 4.2 Métricas Baseadas em Produção — [P]
+
+  4.2.1 Throughput (Vazão) — [P]
+      Conceito
+      Quantidade de trabalho
+      Produção por unidade de tempo
+      Aplicações
+      Comparações
+
+  4.2.2 Capacidade de Processamento — [P]
+      Volume de processamento
+      Capacidade do sistema
+      Escalabilidade inicial
+      Limites práticos
+
+ 4.3 Relação entre as Métricas — [P]
+
+  4.3.1 Latência × Throughput — [P]
+      Diferenças
+      Relações
+      Aplicações
+      Exemplos
+      Trade-offs
+
+  4.3.2 Tempo × Desempenho — [P]
+      Performance = 1/Tempo
+      Comparação entre máquinas
+      Razão de desempenho
+      Interpretação das métricas
+
+
+
+5. Métricas Derivadas e Avaliação de Desempenho — [P]
+
+ 5.1 Métricas Derivadas — [P]
+
+  5.1.1 Speedup — [P]
+      Conceito
+      Ganho de desempenho
+      Speedup absoluto
+      Speedup relativo
+      Interpretação
+
+  5.1.2 Eficiência — [P]
+      Eficiência computacional
+      Eficiência dos recursos
+      Eficiência do processamento
+      Aproveitamento do hardware
+
+  5.1.3 Utilização — [P]
+      Utilização da CPU
+      Utilização da memória
+      Utilização dos dispositivos
+      Saturação dos recursos
+
+ 5.2 Avaliação Quantitativa — [P]
+
+  5.2.1 Comparação entre Sistemas — [P]
+      Comparação direta
+      Comparação relativa
+      Critérios de avaliação
+      Interpretação dos resultados
+
+  5.2.2 Avaliação Baseada em Métricas — [P]
+      Escolha das métricas
+      Validade das métricas
+      Representatividade
+      Precisão das medições
+      Reprodutibilidade
+
+ 5.3 Fundamentos da Análise de Desempenho — [P]
+
+  5.3.1 Processo de Avaliação — [P]
+      Definição dos objetivos
+      Escolha da carga de trabalho
+      Seleção das métricas
+      Coleta dos resultados
+      Interpretação dos dados
+      Comparação dos resultados
+
+  5.3.2 Limitações das Avaliações — [P]
+      Dependência da carga de trabalho
+      Dependência do ambiente
+      Limitações das métricas
+      Generalização dos resultados
+      Cuidados na interpretação
