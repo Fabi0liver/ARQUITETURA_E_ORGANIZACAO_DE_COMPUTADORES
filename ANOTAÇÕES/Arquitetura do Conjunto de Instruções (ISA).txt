@@ -1217,3 +1217,313 @@ PARTE 4 — EXECUÇÃO, CONTROLE E INTERAÇÃO DA ISA
       Mecanismos de proteção
       Compatibilidade
       Suporte ao sistema operacional
+
+
+
+PARTE 5 — ARQUITETURAS DE ISA E COMPARAÇÕES
+
+
+21. Filosofias de Projeto das ISAs — [P]
+
+ 21.1 Fundamentos — [P]
+
+  21.1.1 Filosofia de Projeto — [P]
+      Objetivos do projeto de uma ISA
+      Critérios arquiteturais
+      Simplicidade
+      Complexidade
+      Eficiência
+      Compatibilidade
+      Evolução arquitetural
+
+  21.1.2 Decisões Arquiteturais — [P]
+      Definição do conjunto de instruções
+      Organização dos formatos
+      Organização dos operandos
+      Modelo de registradores
+      Modelo de memória
+      Escalabilidade
+
+  21.1.3 Impacto das Decisões de Projeto — [P]
+      Facilidade de implementação
+      Compatibilidade de software
+      Eficiência da programação
+      Evolução da arquitetura
+      Longevidade da ISA
+
+
+
+ 21.2 Critérios de Avaliação — [P]
+
+  21.2.1 Simplicidade Arquitetural — [P]
+      Regularidade
+      Uniformidade
+      Padronização
+      Facilidade de aprendizado
+      Facilidade de implementação
+
+  21.2.2 Flexibilidade Arquitetural — [P]
+      Extensibilidade
+      Adaptação
+      Evolução
+      Modularidade
+      Compatibilidade futura
+
+  21.2.3 Eficiência Arquitetural — [P]
+      Densidade do código
+      Expressividade das instruções
+      Aproveitamento dos recursos
+      Equilíbrio entre simplicidade e funcionalidade
+
+
+
+22. Arquiteturas CISC — [P]
+
+ 22.1 Fundamentos — [P]
+
+  22.1.1 Conceitos — [P]
+      Definição de CISC
+      Origem histórica
+      Filosofia de projeto
+      Objetivos
+      Características gerais
+
+  22.1.2 Características Arquiteturais — [P]
+      Grande conjunto de instruções
+      Instruções complexas
+      Múltiplos formatos
+      Diversos modos de endereçamento
+      Alta densidade funcional
+
+  22.1.3 Organização Geral — [P]
+      Estrutura da ISA
+      Complexidade da codificação
+      Organização das instruções
+      Compatibilidade entre gerações
+
+
+
+ 22.2 Vantagens e Limitações — [P]
+
+  22.2.1 Vantagens — [P]
+      Alta expressividade
+      Redução do número de instruções
+      Compatibilidade histórica
+      Flexibilidade
+
+  22.2.2 Limitações — [P]
+      Complexidade arquitetural
+      Decodificação mais complexa
+      Evolução da ISA
+      Complexidade de implementação
+
+  22.2.3 Exemplos de ISAs CISC — [I]
+      x86
+      VAX
+      Motorola 68000
+      Outras arquiteturas clássicas
+
+
+
+23. Arquiteturas RISC — [P]
+
+ 23.1 Fundamentos — [P]
+
+  23.1.1 Conceitos — [P]
+      Definição de RISC
+      Origem histórica
+      Filosofia de projeto
+      Objetivos
+      Características gerais
+
+  23.1.2 Características Arquiteturais — [P]
+      Instruções simples
+      Formatos regulares
+      Poucos modos de endereçamento
+      Organização uniforme
+      Conjunto reduzido de instruções
+
+  23.1.3 Organização Geral — [P]
+      Estrutura simplificada
+      Regularidade
+      Padronização
+      Modularidade
+      Facilidade de expansão
+
+
+
+ 23.2 Vantagens e Limitações — [P]
+
+  23.2.1 Vantagens — [P]
+      Simplicidade
+      Regularidade
+      Facilidade de implementação
+      Facilidade de evolução
+      Escalabilidade
+
+  23.2.2 Limitações — [P]
+      Maior quantidade de instruções
+      Dependência de otimizações
+      Maior tamanho potencial do código
+      Menor expressividade por instrução
+
+  23.2.3 Exemplos de ISAs RISC — [I]
+      ARM
+      MIPS
+      SPARC
+      PowerPC
+      RISC-V
+
+
+
+24. Comparação entre Arquiteturas de ISA — [P]
+
+ 24.1 Comparação Conceitual — [P]
+
+  24.1.1 Organização das Instruções — [P]
+      Complexidade
+      Regularidade
+      Formatos
+      Operandos
+      Codificação
+
+  24.1.2 Organização Arquitetural — [P]
+      Modelo de registradores
+      Modelo de memória
+      Modos de endereçamento
+      Controle do fluxo
+      Recursos arquiteturais
+
+  24.1.3 Filosofia de Projeto — [P]
+      Simplicidade versus complexidade
+      Eficiência
+      Compatibilidade
+      Evolução
+      Escalabilidade
+
+
+
+ 24.2 Comparação Funcional — [P]
+
+  24.2.1 Densidade do Código — [P]
+      Quantidade de instruções
+      Tamanho do código
+      Organização da codificação
+      Eficiência da representação
+
+  24.2.2 Complexidade Arquitetural — [P]
+      Projeto da ISA
+      Organização lógica
+      Complexidade da especificação
+      Evolução arquitetural
+
+  24.2.3 Aplicações Típicas — [I]
+      Sistemas embarcados
+      Computadores pessoais
+      Servidores
+      Dispositivos móveis
+      Computação de alto desempenho
+
+
+
+25. Principais Famílias de ISA — [I]
+
+ 25.1 Arquiteturas Consolidadas — [I]
+
+  25.1.1 x86 — [I]
+      Origem
+      Evolução
+      Compatibilidade
+      Características gerais
+
+  25.1.2 ARM — [I]
+      Origem
+      Evolução
+      Características gerais
+      Aplicações
+
+  25.1.3 MIPS — [I]
+      Filosofia RISC
+      Características
+      Aplicações acadêmicas
+      Evolução
+
+  25.1.4 PowerPC — [V]
+      Origem
+      Características
+      Aplicações
+
+  25.1.5 SPARC — [V]
+      Origem
+      Características
+      Aplicações
+
+
+
+ 25.2 ISA Aberta — [P]
+
+  25.2.1 Conceitos — [P]
+      Arquitetura aberta
+      Especificação pública
+      Liberdade de implementação
+      Ecossistema aberto
+
+  25.2.2 RISC-V — [P]
+      Organização modular
+      ISA base
+      Extensões padronizadas
+      Filosofia aberta
+      Evolução do ecossistema
+
+  25.2.3 Impacto das ISAs Abertas — [P]
+      Pesquisa
+      Ensino
+      Indústria
+      Personalização
+      Inovação arquitetural
+
+
+
+26. Compatibilidade e Evolução das ISAs — [P]
+
+ 26.1 Compatibilidade Arquitetural — [P]
+
+  26.1.1 Compatibilidade Binária — [P]
+      Conceito
+      Execução de programas
+      Portabilidade
+      Continuidade de software
+
+  26.1.2 Retrocompatibilidade — [P]
+      Preservação do software legado
+      Evolução sem ruptura
+      Ampliação da ISA
+      Continuidade arquitetural
+
+  26.1.3 Compatibilidade entre Implementações — [P]
+      Diferentes fabricantes
+      Diferentes microarquiteturas
+      Mesmo comportamento arquitetural
+      Conformidade com a especificação
+
+
+
+ 26.2 Evolução das ISAs — [P]
+
+  26.2.1 Expansão do Conjunto de Instruções — [P]
+      Inclusão de novas instruções
+      Inclusão de novos recursos
+      Preservação da compatibilidade
+      Evolução incremental
+
+  26.2.2 Revisões da Arquitetura — [P]
+      Atualizações da especificação
+      Padronização
+      Novas versões
+      Evolução controlada
+
+  26.2.3 Desafios da Evolução — [P]
+      Compatibilidade
+      Complexidade crescente
+      Balanceamento entre inovação e legado
+      Sustentabilidade da arquitetura
