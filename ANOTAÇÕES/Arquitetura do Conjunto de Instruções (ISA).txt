@@ -1183,7 +1183,6 @@ PARTE 4 — EXECUÇÃO, CONTROLE E INTERAÇÃO DA ISA
       Separação de responsabilidades
 
 
-
  19.2 Organização dos Modos de Execução — [P]
 
   19.2.1 Modo Usuário — [P]
@@ -1204,6 +1203,11 @@ PARTE 4 — EXECUÇÃO, CONTROLE E INTERAÇÃO DA ISA
       Exceções
       Interrupções
       Retorno ao modo anterior
+
+  19.2.4 ISA Privilegiada e ISA Não Privilegiada
+      Recursos disponíveis em cada modo
+      Instruções privilegiadas
+      Organização da especificação
 
 
 
