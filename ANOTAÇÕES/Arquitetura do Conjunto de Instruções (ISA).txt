@@ -1,0 +1,620 @@
+                                   Arquitetura do Conjunto de Instruções (ISA)
+
+
+A classificação abaixo indica a profundidade recomendada para cada grande tópico da lista.
+
+[P] Profundidade — estudar mecanismos, estruturas, funcionamento interno e relações entre componentes.
+[I] Intermediário — compreender bem o funcionamento e as relações principais, sem precisar dominar todos os 
+   detalhes de implementação.
+[V] Visão geral — saber o que é, para que serve e como se relaciona com as Memórias.
+
+
+
+PARTE 1 — FUNDAMENTOS DA ARQUITETURA DO CONJUNTO DE INSTRUÇÕES (ISA)
+
+
+1. Introdução à Arquitetura do Conjunto de Instruções (ISA) — [I]
+
+ 1.1 Conceitos Fundamentais — [I]
+
+  1.1.1 O que é uma ISA — [I]
+      Conceito de Instruction Set Architecture
+      Definição de Arquitetura do Conjunto de Instruções
+      Interface entre hardware e software
+      Papel da ISA no computador
+      Objetivos da ISA
+      Função da ISA na computação
+      ISA como especificação arquitetural
+
+  1.1.2 Importância da ISA — [I]
+      Papel da ISA na Arquitetura de Computadores
+      Papel da ISA na Organização de Computadores
+      Comunicação entre software e hardware
+      Base para execução de programas
+      Padronização arquitetural
+      Compatibilidade entre sistemas
+      Independência entre arquitetura e implementação
+
+  1.1.3 Características Gerais da ISA — [I]
+      Conjunto de instruções
+      Modelo arquitetural
+      Recursos visíveis ao programador
+      Interface padronizada
+      Independência da implementação física
+      Definição do comportamento das instruções
+      Definição do estado arquitetural
+
+
+
+ 1.2 A ISA no Sistema Computacional — [I]
+
+  1.2.1 Papel da ISA na Arquitetura de Computadores — [I]
+      Camada de abstração
+      Comunicação entre software e hardware
+      Modelo de programação
+      Controle da execução
+      Interface arquitetural
+      Padronização da CPU
+
+  1.2.2 Relação com os Demais Componentes — [I]
+      Relação com o processador
+      Relação com os registradores
+      Relação com a memória
+      Relação com barramentos
+      Relação com dispositivos de entrada e saída
+      Relação com o sistema operacional
+      Relação com compiladores
+
+  1.2.3 Fluxo Geral de Funcionamento — [I]
+      Programa em linguagem de alto nível
+      Tradução para linguagem de máquina
+      Representação em instruções
+      Interpretação pela CPU
+      Execução das operações
+      Atualização do estado arquitetural
+
+
+
+ 1.3 Arquitetura, Organização e Microarquitetura — [I]
+
+  1.3.1 Arquitetura de Computadores — [I]
+      Conceito de arquitetura
+      Recursos visíveis ao programador
+      Especificação funcional
+      Modelo arquitetural
+      Interface de programação
+      Papel da ISA
+
+  1.3.2 Organização de Computadores — [I]
+      Implementação da arquitetura
+      Organização interna do hardware
+      Componentes físicos
+      Fluxo interno de dados
+      Implementação da ISA
+
+  1.3.3 Microarquitetura — [I]
+      Conceito de microarquitetura
+      Implementação da ISA
+      Organização interna da CPU
+      Execução das instruções
+      Exemplos de diferentes implementações
+      Independência entre ISA e microarquitetura
+
+  1.3.4 Arquitetura × Organização × Microarquitetura — [I]
+      Diferenças fundamentais
+      Relações entre os conceitos
+      Níveis de abstração
+      Separação de responsabilidades
+      Exemplos comparativos
+      Importância para o estudo da computação
+
+
+
+2. Evolução das Arquiteturas de Conjunto de Instruções — [I]
+
+ 2.1 Evolução Histórica — [I]
+
+  2.1.1 Primeiras ISAs — [I]
+      Primeiros computadores
+      Linguagem de máquina
+      Instruções elementares
+      Evolução dos conjuntos de instruções
+      Primeiras arquiteturas comerciais
+
+  2.1.2 Evolução das Necessidades Computacionais — [I]
+      Crescimento da complexidade dos programas
+      Evolução dos compiladores
+      Aumento do desempenho
+      Expansão das aplicações
+      Evolução dos recursos arquiteturais
+
+  2.1.3 Evolução do Projeto das ISAs — [I]
+      Simplificação das instruções
+      Expansão das funcionalidades
+      Compatibilidade entre gerações
+      Novas extensões
+      Evolução contínua das arquiteturas
+
+
+
+ 2.2 Evolução dos Modelos de ISA — [I]
+
+  2.2.1 Primeiras Arquiteturas Comerciais — [V]
+      Primeiros conjuntos de instruções
+      Primeiras CPUs comerciais
+      Evolução dos modelos arquiteturais
+
+  2.2.2 Consolidação das Grandes Famílias — [I]
+      x86
+      ARM
+      MIPS
+      PowerPC
+      SPARC
+      RISC-V
+      Outras arquiteturas relevantes
+
+  2.2.3 Tendências da Evolução — [I]
+      Modularização das ISAs
+      Extensões arquiteturais
+      Arquiteturas abertas
+      Especialização
+      Eficiência energética
+      Escalabilidade
+      Evolução contínua
+
+
+
+3. Fundamentos da Interface Hardware–Software — [P]
+
+ 3.1 Conceitos Fundamentais — [P]
+
+  3.1.1 Interface Arquitetural — [P]
+      Definição
+      Objetivos
+      Responsabilidades
+      Comunicação entre software e hardware
+      Abstração arquitetural
+      Estado arquitetural
+
+  3.1.2 Modelo de Programação da ISA — [P]
+      Recursos disponíveis ao programador
+      Estado visível da máquina
+      Operações permitidas
+      Modelo de execução
+      Portabilidade de programas
+
+  3.1.3 Níveis de Abstração — [P]
+      Linguagem de alto nível
+      Linguagem Assembly
+      Linguagem de máquina
+      ISA como nível intermediário
+      Relação entre os níveis
+
+
+
+ 3.2 Linguagens e ISA — [P]
+
+  3.2.1 Linguagem de Máquina — [P]
+      Conceito
+      Código binário
+      Representação das instruções
+      Execução direta pela CPU
+      Dependência da ISA
+
+  3.2.2 Linguagem Assembly — [P]
+      Conceito
+      Mnemônicos
+      Relação direta com a ISA
+      Tradução para código de máquina
+      Legibilidade
+
+  3.2.3 Linguagens de Alto Nível — [I]
+      Papel dos compiladores
+      Tradução para Assembly
+      Geração de código
+      Dependência da arquitetura
+      Portabilidade
+
+
+
+ 3.3 Compatibilidade Arquitetural — [P]
+
+  3.3.1 Compatibilidade Binária — [P]
+      Conceito
+      Execução do mesmo código
+      Portabilidade binária
+      Compatibilidade entre processadores
+      Requisitos arquiteturais
+
+  3.3.2 Compatibilidade entre Gerações — [P]
+      Retrocompatibilidade
+      Evolução das ISAs
+      Preservação de software legado
+      Inclusão de novas instruções
+      Compatibilidade arquitetural
+
+  3.3.3 ISA como Padrão Arquitetural — [P]
+      Padronização
+      Ecossistemas de software
+      Independência da implementação
+      Evolução controlada
+      Importância para a indústria
+
+
+
+4. Organização Geral de uma ISA — [P]
+
+ 4.1 Estrutura Conceitual — [P]
+
+  4.1.1 Componentes Fundamentais — [P]
+      Conjunto de instruções
+      Formatos de instrução
+      Tipos de dados
+      Modos de endereçamento
+      Modelo de registradores
+      Modelo de memória
+      Exceções e interrupções
+      Estado arquitetural
+
+  4.1.2 Objetivos do Projeto de uma ISA — [P]
+      Simplicidade
+      Eficiência
+      Flexibilidade
+      Compatibilidade
+      Escalabilidade
+      Facilidade de implementação
+      Suporte ao software
+
+  4.1.3 Limites de Responsabilidade da ISA — [P]
+      O que pertence à ISA
+      O que pertence à microarquitetura
+      O que pertence ao sistema operacional
+      O que pertence ao compilador
+      Separação entre especificação e implementação
+
+
+
+ 4.2 Características Gerais das ISAs Modernas — [P]
+
+  4.2.1 Modularidade — [P]
+      Núcleo da ISA
+      Extensões
+      Funcionalidades opcionais
+      Organização modular
+
+  4.2.2 Extensibilidade — [P]
+      Inclusão de novas instruções
+      Compatibilidade futura
+      Evolução arquitetural
+      Escalabilidade
+
+  4.2.3 Padronização Arquitetural — [P]
+      Especificações formais
+      Documentação
+      Conformidade
+      Implementações compatíveis
+      Certificação arquitetural
+
+
+
+PARTE 2 — ESTRUTURA E ORGANIZAÇÃO DAS INSTRUÇÕES
+
+
+5. Estrutura das Instruções — [P]
+
+ 5.1 Fundamentos da Estrutura das Instruções — [P]
+
+  5.1.1 Conceitos Fundamentais — [P]
+      Conceito de instrução de máquina
+      Estrutura lógica da instrução
+      Objetivos da estrutura da instrução
+      Relação entre instrução e ISA
+      Papel da instrução na execução dos programas
+      Instrução como unidade fundamental de processamento
+
+  5.1.2 Organização Geral de uma Instrução — [P]
+      Campos da instrução
+      Organização dos bits
+      Informações codificadas
+      Separação entre operação e operandos
+      Organização arquitetural da instrução
+
+  5.1.3 Representação das Instruções — [P]
+      Representação binária
+      Representação em hexadecimal
+      Representação em Assembly
+      Relação entre Assembly e código de máquina
+      Correspondência entre instrução e codificação
+
+
+
+ 5.2 Componentes Fundamentais da Instrução — [P]
+
+  5.2.1 Opcode (Código de Operação) — [P]
+      Conceito
+      Função do opcode
+      Codificação da operação
+      Quantidade de operações suportadas
+      Organização dos opcodes
+      Decodificação do opcode
+
+  5.2.2 Operandos — [P]
+      Conceito
+      Fontes dos operandos
+      Operandos explícitos
+      Operandos implícitos
+      Operandos imediatos
+      Operandos em memória
+      Operandos em registradores
+
+  5.2.3 Campos Auxiliares — [P]
+      Campos de controle
+      Campos de condição
+      Campos de deslocamento
+      Campos de extensão
+      Campos reservados
+      Informações adicionais da instrução
+
+
+
+ 5.3 Organização dos Campos — [P]
+
+  5.3.1 Distribuição dos Bits — [P]
+      Organização dos campos
+      Tamanho dos campos
+      Posicionamento dos bits
+      Eficiência da codificação
+      Balanceamento entre flexibilidade e simplicidade
+
+  5.3.2 Codificação das Operações — [P]
+      Codificação direta
+      Codificação expandida
+      Espaço de codificação
+      Limitações da codificação
+      Organização das instruções
+
+  5.3.3 Eficiência da Representação — [P]
+      Economia de bits
+      Densidade do código
+      Complexidade da codificação
+      Facilidade de decodificação
+      Impacto arquitetural
+
+
+
+6. Formatos das Instruções — [P]
+
+ 6.1 Conceitos Fundamentais — [P]
+
+  6.1.1 Formato de Instrução — [P]
+      Definição
+      Objetivos
+      Organização dos campos
+      Estrutura lógica
+      Padronização da ISA
+
+  6.1.2 Importância do Formato — [P]
+      Organização da codificação
+      Facilidade de decodificação
+      Eficiência arquitetural
+      Compatibilidade
+      Influência no projeto da ISA
+
+  6.1.3 Critérios de Projeto — [P]
+      Simplicidade
+      Regularidade
+      Flexibilidade
+      Escalabilidade
+      Eficiência
+
+
+
+ 6.2 Classificação dos Formatos — [P]
+
+  6.2.1 Formatos Fixos — [P]
+      Conceito
+      Organização uniforme
+      Vantagens
+      Limitações
+      Aplicações
+
+  6.2.2 Formatos Variáveis — [P]
+      Conceito
+      Organização flexível
+      Vantagens
+      Limitações
+      Complexidade de implementação
+
+  6.2.3 Formatos Mistos — [I]
+      Conceito
+      Organização híbrida
+      Flexibilidade
+      Aplicações modernas
+
+
+
+ 6.3 Organização Arquitetural dos Formatos — [P]
+
+  6.3.1 Formatos Segundo o Tipo de Operação — [P]
+      Operações aritméticas
+      Operações lógicas
+      Operações de transferência
+      Operações de controle
+      Operações especiais
+
+  6.3.2 Formatos Segundo os Operandos — [P]
+      Campos para operandos
+      Campos de endereço
+      Campos imediatos
+      Campos de controle
+      Campos opcionais
+
+  6.3.3 Padronização dos Formatos — [P]
+      Uniformidade
+      Consistência
+      Compatibilidade
+      Organização da ISA
+      Evolução dos formatos
+
+
+
+7. Tamanho das Instruções — [P]
+
+ 7.1 Fundamentos — [P]
+
+  7.1.1 Conceitos — [P]
+      Tamanho da instrução
+      Número de bits
+      Relação com o formato
+      Organização da codificação
+      Influência no projeto da ISA
+
+  7.1.2 Critérios de Definição — [P]
+      Complexidade das operações
+      Espaço de codificação
+      Quantidade de operandos
+      Flexibilidade
+      Eficiência arquitetural
+
+  7.1.3 Consequências Arquiteturais — [P]
+      Densidade do código
+      Facilidade de decodificação
+      Complexidade da ISA
+      Compatibilidade
+      Evolução da arquitetura
+
+
+
+ 7.2 Modelos de Tamanho — [P]
+
+  7.2.1 Instruções de Tamanho Fixo — [P]
+      Conceito
+      Organização
+      Vantagens
+      Limitações
+      Exemplos arquiteturais
+
+  7.2.2 Instruções de Tamanho Variável — [P]
+      Conceito
+      Organização
+      Vantagens
+      Limitações
+      Exemplos arquiteturais
+
+  7.2.3 Comparação entre os Modelos — [P]
+      Simplicidade
+      Flexibilidade
+      Eficiência
+      Complexidade
+      Aplicações
+
+
+
+8. Operandos e Organização dos Dados — [P]
+
+ 8.1 Conceitos Fundamentais — [P]
+
+  8.1.1 Operandos na ISA — [P]
+      Conceito
+      Papel dos operandos
+      Origem dos dados
+      Destino dos resultados
+      Relação com as operações
+
+  8.1.2 Classificação dos Operandos — [P]
+      Operandos imediatos
+      Operandos em registradores
+      Operandos em memória
+      Operandos implícitos
+      Operandos explícitos
+
+  8.1.3 Organização dos Dados — [P]
+      Dados de entrada
+      Dados de saída
+      Fluxo dos operandos
+      Atualização do estado arquitetural
+
+
+
+ 8.2 Número de Operandos — [P]
+
+  8.2.1 Arquiteturas de Zero Operando — [P]
+      Conceito
+      Organização baseada em pilha
+      Características
+      Aplicações
+      Limitações
+
+  8.2.2 Arquiteturas de Um Operando — [P]
+      Organização
+      Características
+      Aplicações
+      Vantagens
+      Limitações
+
+  8.2.3 Arquiteturas de Dois Operandos — [P]
+      Organização
+      Características
+      Atualização dos operandos
+      Aplicações
+      Eficiência
+
+  8.2.4 Arquiteturas de Três ou Mais Operandos — [P]
+      Organização
+      Flexibilidade
+      Eficiência
+      Complexidade
+      Aplicações
+
+
+
+9. Tipos de Dados Arquiteturais — [P]
+
+ 9.1 Fundamentos — [P]
+
+  9.1.1 Conceitos — [P]
+      Definição de tipo de dado
+      Papel na ISA
+      Representação arquitetural
+      Compatibilidade
+      Operações suportadas
+
+  9.1.2 Organização dos Tipos de Dados — [P]
+      Classificação
+      Manipulação
+      Representação
+      Restrições arquiteturais
+      Compatibilidade
+
+
+
+ 9.2 Categorias de Dados — [P]
+
+  9.2.1 Dados Inteiros — [P]
+      Inteiros com sinal
+      Inteiros sem sinal
+      Operações inteiras
+      Representação arquitetural
+
+  9.2.2 Dados em Ponto Flutuante — [I]
+      Representação
+      Operações
+      Precisão
+      Suporte arquitetural
+
+  9.2.3 Dados Lógicos — [P]
+      Valores booleanos
+      Máscaras
+      Operações lógicas
+      Manipulação de bits
+
+  9.2.4 Caracteres e Cadeias de Caracteres — [I]
+      Representação
+      Manipulação
+      Operações específicas
+
+  9.2.5 Endereços — [P]
+      Representação dos endereços
+      Operações sobre endereços
+      Papel na ISA
+      Relação com o espaço de endereçamento
