@@ -9,6 +9,7 @@ A classificação abaixo indica a profundidade recomendada para cada grande tóp
 [V] Visão geral — saber o que é, para que serve e como se relaciona com os registradores.
 
 
+
 PARTE 1 — FUNDAMENTOS DA MEMÓRIA PRINCIPAL
 
 
