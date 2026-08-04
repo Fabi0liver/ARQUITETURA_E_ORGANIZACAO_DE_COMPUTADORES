@@ -373,7 +373,13 @@ PARTE 2 — ESTRUTURA E ORGANIZAÇÃO DAS INSTRUÇÕES
       Limitações da codificação
       Organização das instruções
 
-  5.3.3 Eficiência da Representação — [P]
+  5.3.3 Espaço de Codificação — [P]
+      Espaço disponível
+      Codificações reservadas
+      Codificações inválidas
+      Espaço para futuras extensões
+
+  5.3.4 Eficiência da Representação — [P]
       Economia de bits
       Densidade do código
       Complexidade da codificação
@@ -668,6 +674,9 @@ PARTE 3 — MODELO ARQUITETURAL E RECURSOS VISÍVEIS AO PROGRAMADOR
       Registrador de status
       Memória visível
       Estado das instruções
+      Estado arquitetural observável
+      Estado arquitetural comprometido (Committed Architectural State)
+      Estado interno × estado arquitetural
 
   10.2.3 Alterações do Estado — [P]
       Atualização após execução
@@ -675,6 +684,8 @@ PARTE 3 — MODELO ARQUITETURAL E RECURSOS VISÍVEIS AO PROGRAMADOR
       Alteração do fluxo
       Atualização dos indicadores
       Exceções arquiteturais
+      Comprometimento do estado arquitetural
+      Consistência do estado arquitetural
 
 
 
@@ -942,6 +953,12 @@ PARTE 4 — EXECUÇÃO, CONTROLE E INTERAÇÃO DA ISA
       Modelo abstrato de execução
       Compatibilidade entre implementações
 
+  15.1.4 Semântica das Instruções — [P]
+      Comportamento arquitetural
+      Pré-condições
+      Pós-condições
+      Alterações do estado arquitetural
+      Efeitos observáveis
 
 
  15.2 Fluxo Arquitetural das Instruções — [P]
@@ -1128,6 +1145,10 @@ PARTE 4 — EXECUÇÃO, CONTROLE E INTERAÇÃO DA ISA
       Identificação
       Tratamento
       Retorno à execução
+      Exceções precisas
+      Exceções imprecisas
+      Importância para a consistência arquitetural
+      Modelo arquitetural de exceções
 
   18.2.2 Interrupções — [P]
       Reconhecimento
@@ -1217,6 +1238,26 @@ PARTE 4 — EXECUÇÃO, CONTROLE E INTERAÇÃO DA ISA
       Mecanismos de proteção
       Compatibilidade
       Suporte ao sistema operacional
+
+
+ 20.3 Relação entre ISA e ABI — [I]
+
+  20.3.1 Conceito de ABI — [I]
+      Interface Binária de Aplicação
+      Papel da ABI
+      Compatibilidade binária
+
+  20.3.2 Relação entre ISA e ABI — [I]
+      O que pertence à ISA
+      O que pertence à ABI
+      Convenções de chamada
+      Convenções de registradores
+
+  20.3.3 Papel da ABI no Ecossistema — [I]
+      Compiladores
+      Sistemas Operacionais
+      Linkers
+      Bibliotecas
 
 
 
