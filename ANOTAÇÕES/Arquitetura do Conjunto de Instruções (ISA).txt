@@ -618,3 +618,296 @@ PARTE 2 — ESTRUTURA E ORGANIZAÇÃO DAS INSTRUÇÕES
       Operações sobre endereços
       Papel na ISA
       Relação com o espaço de endereçamento
+
+
+
+PARTE 3 — MODELO ARQUITETURAL E RECURSOS VISÍVEIS AO PROGRAMADOR
+
+
+10. Modelo Arquitetural da ISA — [P]
+
+ 10.1 Fundamentos do Modelo Arquitetural — [P]
+
+  10.1.1 Conceitos Fundamentais — [P]
+      Conceito de modelo arquitetural
+      Estado arquitetural
+      Interface visível ao programador
+      Abstração da ISA
+      Especificação arquitetural
+      Objetivos do modelo arquitetural
+
+  10.1.2 Componentes do Modelo Arquitetural — [P]
+      Conjunto de instruções
+      Recursos arquiteturais
+      Estado da máquina
+      Tipos de dados
+      Modelo de memória
+      Modelo de execução
+
+  10.1.3 Responsabilidades da ISA — [P]
+      Definição do comportamento das instruções
+      Definição dos recursos visíveis
+      Padronização da interface
+      Garantia de compatibilidade
+      Independência da implementação
+
+
+
+ 10.2 Estado Arquitetural — [P]
+
+  10.2.1 Conceitos — [P]
+      Estado da máquina
+      Estado observável
+      Atualização do estado
+      Persistência do estado
+      Coerência arquitetural
+
+  10.2.2 Elementos do Estado Arquitetural — [P]
+      Registradores arquiteturais
+      Contador de programa
+      Registrador de status
+      Memória visível
+      Estado das instruções
+
+  10.2.3 Alterações do Estado — [P]
+      Atualização após execução
+      Escrita de resultados
+      Alteração do fluxo
+      Atualização dos indicadores
+      Exceções arquiteturais
+
+
+
+11. Recursos Arquiteturais Visíveis ao Programador — [P]
+
+ 11.1 Recursos Fundamentais — [P]
+
+  11.1.1 Conceitos — [P]
+      Recursos arquiteturais
+      Interface de programação
+      Recursos definidos pela ISA
+      Recursos acessíveis ao software
+      Organização lógica
+
+  11.1.2 Recursos Disponíveis — [P]
+      Registradores
+      Espaço de memória
+      Instruções
+      Tipos de dados
+      Modos de endereçamento
+      Flags arquiteturais
+
+  11.1.3 Organização dos Recursos — [P]
+      Organização lógica
+      Padronização
+      Disponibilidade
+      Restrições
+      Compatibilidade
+
+
+
+ 11.2 Registradores Arquiteturais — [P]
+
+  11.2.1 Conceitos Gerais — [P]
+      Definição
+      Papel arquitetural
+      Recursos definidos pela ISA
+      Interface para o software
+      Estado arquitetural
+
+  11.2.2 Classificação Geral — [P]
+      Registradores de propósito geral
+      Registradores de propósito específico
+      Registradores de controle
+      Registradores de status
+      Registradores definidos pela arquitetura
+
+  11.2.3 Organização Arquitetural — [P]
+      Quantidade de registradores
+      Largura dos registradores
+      Organização lógica
+      Convenções arquiteturais
+      Acesso definido pela ISA
+
+
+
+12. Modelo de Memória da ISA — [P]
+
+ 12.1 Fundamentos — [P]
+
+  12.1.1 Conceitos — [P]
+      Modelo de memória
+      Visão arquitetural da memória
+      Espaço de endereçamento
+      Organização lógica
+      Papel da memória na ISA
+
+  12.1.2 Organização do Espaço de Endereçamento — [P]
+      Endereços
+      Dados
+      Instruções
+      Organização linear
+      Organização segmentada
+      Organização definida pela ISA
+
+  12.1.3 Acesso Arquitetural à Memória — [P]
+      Leitura
+      Escrita
+      Transferência de dados
+      Restrições arquiteturais
+      Operações suportadas
+
+
+
+ 12.2 Organização Arquitetural da Memória — [P]
+
+  12.2.1 Modelo Linear — [P]
+      Conceito
+      Organização
+      Características
+      Aplicações
+
+  12.2.2 Modelo Segmentado — [I]
+      Conceito
+      Organização
+      Segmentos
+      Características
+      Aplicações
+
+  12.2.3 Modelo Baseado em Espaços de Endereçamento — [I]
+      Espaços independentes
+      Organização lógica
+      Aplicações
+      Isolamento arquitetural
+
+
+
+13. Modos de Endereçamento — [P]
+
+ 13.1 Fundamentos — [P]
+
+  13.1.1 Conceitos Fundamentais — [P]
+      Definição
+      Objetivos
+      Papel na ISA
+      Localização dos operandos
+      Flexibilidade arquitetural
+
+  13.1.2 Importância dos Modos de Endereçamento — [P]
+      Eficiência da programação
+      Flexibilidade
+      Expressividade da ISA
+      Facilidade de acesso aos dados
+      Organização das instruções
+
+  13.1.3 Classificação Geral — [P]
+      Endereçamento imediato
+      Endereçamento por registrador
+      Endereçamento por memória
+      Endereçamento implícito
+      Endereçamento relativo
+
+
+
+ 13.2 Principais Modos de Endereçamento — [P]
+
+  13.2.1 Endereçamento Imediato — [P]
+      Conceito
+      Funcionamento
+      Vantagens
+      Limitações
+      Aplicações
+
+  13.2.2 Endereçamento por Registrador — [P]
+      Conceito
+      Funcionamento
+      Vantagens
+      Aplicações
+      Limitações
+
+  13.2.3 Endereçamento Direto — [P]
+      Conceito
+      Funcionamento
+      Características
+      Aplicações
+
+  13.2.4 Endereçamento Indireto — [P]
+      Conceito
+      Funcionamento
+      Ponteiros
+      Aplicações
+      Limitações
+
+  13.2.5 Endereçamento Indexado — [P]
+      Conceito
+      Índices
+      Deslocamentos
+      Aplicações
+
+  13.2.6 Endereçamento Base + Deslocamento — [P]
+      Conceito
+      Funcionamento
+      Organização
+      Aplicações
+
+  13.2.7 Endereçamento Relativo — [P]
+      Conceito
+      Deslocamento relativo
+      Relação com o contador de programa
+      Aplicações
+
+  13.2.8 Outros Modos de Endereçamento — [I]
+      Auto incremento
+      Auto decremento
+      Escalonado
+      Modos compostos
+      Modos específicos de determinadas ISAs
+
+
+
+14. Modelo de Programação da ISA — [P]
+
+ 14.1 Fundamentos — [P]
+
+  14.1.1 Conceitos — [P]
+      Modelo de programação
+      Máquina abstrata
+      Interface para o software
+      Recursos disponíveis
+      Modelo operacional
+
+  14.1.2 Organização do Modelo — [P]
+      Recursos arquiteturais
+      Estado da máquina
+      Operações permitidas
+      Limitações
+      Responsabilidades da ISA
+
+  14.1.3 Objetivos do Modelo de Programação — [P]
+      Portabilidade
+      Padronização
+      Compatibilidade
+      Facilidade de desenvolvimento
+      Independência da implementação
+
+
+
+ 14.2 Interação entre Software e ISA — [P]
+
+  14.2.1 Linguagem Assembly — [P]
+      Mnemônicos
+      Relação com a ISA
+      Organização das instruções
+      Interface direta
+
+  14.2.2 Compiladores — [I]
+      Tradução para a ISA
+      Seleção de instruções
+      Geração de código
+      Dependência da arquitetura
+
+  14.2.3 Sistemas Operacionais — [I]
+      Uso da interface arquitetural
+      Controle dos recursos
+      Serviços dependentes da ISA
+      Interação com o hardware
