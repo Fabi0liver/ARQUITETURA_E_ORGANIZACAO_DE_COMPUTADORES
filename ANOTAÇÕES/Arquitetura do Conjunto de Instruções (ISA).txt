@@ -1204,7 +1204,7 @@ PARTE 4 — EXECUÇÃO, CONTROLE E INTERAÇÃO DA ISA
       Interrupções
       Retorno ao modo anterior
 
-  19.2.4 ISA Privilegiada e ISA Não Privilegiada
+  19.2.4 ISA Privilegiada e ISA Não Privilegiada — [P]
       Recursos disponíveis em cada modo
       Instruções privilegiadas
       Organização da especificação
@@ -1493,34 +1493,34 @@ PARTE 5 — ARQUITETURAS DE ISA E COMPARAÇÕES
       Aplicações acadêmicas
       Evolução
 
-  25.1.4 PowerPC — [V]
+  25.1.4 PowerPC — [I]
       Origem
       Características
       Aplicações
 
-  25.1.5 SPARC — [V]
+  25.1.5 SPARC — [I]
       Origem
       Características
       Aplicações
 
 
 
- 25.2 ISA Aberta — [P]
+ 25.2 ISA Aberta — [I]
 
-  25.2.1 Conceitos — [P]
+  25.2.1 Conceitos — [I]
       Arquitetura aberta
       Especificação pública
       Liberdade de implementação
       Ecossistema aberto
 
-  25.2.2 RISC-V — [P]
+  25.2.2 RISC-V — [I]
       Organização modular
       ISA base
       Extensões padronizadas
       Filosofia aberta
       Evolução do ecossistema
 
-  25.2.3 Impacto das ISAs Abertas — [P]
+  25.2.3 Impacto das ISAs Abertas — [I]
       Pesquisa
       Ensino
       Indústria
@@ -1529,23 +1529,23 @@ PARTE 5 — ARQUITETURAS DE ISA E COMPARAÇÕES
 
 
 
-26. Compatibilidade e Evolução das ISAs — [P]
+26. Compatibilidade e Evolução das ISAs — [I]
 
- 26.1 Compatibilidade Arquitetural — [P]
+ 26.1 Compatibilidade Arquitetural — [I]
 
-  26.1.1 Compatibilidade Binária — [P]
+  26.1.1 Compatibilidade Binária — [I]
       Conceito
       Execução de programas
       Portabilidade
       Continuidade de software
 
-  26.1.2 Retrocompatibilidade — [P]
+  26.1.2 Retrocompatibilidade — [I]
       Preservação do software legado
       Evolução sem ruptura
       Ampliação da ISA
       Continuidade arquitetural
 
-  26.1.3 Compatibilidade entre Implementações — [P]
+  26.1.3 Compatibilidade entre Implementações — [I]
       Diferentes fabricantes
       Diferentes microarquiteturas
       Mesmo comportamento arquitetural
@@ -1553,21 +1553,21 @@ PARTE 5 — ARQUITETURAS DE ISA E COMPARAÇÕES
 
 
 
- 26.2 Evolução das ISAs — [P]
+ 26.2 Evolução das ISAs — [I]
 
-  26.2.1 Expansão do Conjunto de Instruções — [P]
+  26.2.1 Expansão do Conjunto de Instruções — [I]
       Inclusão de novas instruções
       Inclusão de novos recursos
       Preservação da compatibilidade
       Evolução incremental
 
-  26.2.2 Revisões da Arquitetura — [P]
+  26.2.2 Revisões da Arquitetura — [I]
       Atualizações da especificação
       Padronização
       Novas versões
       Evolução controlada
 
-  26.2.3 Desafios da Evolução — [P]
+  26.2.3 Desafios da Evolução — [I]
       Compatibilidade
       Complexidade crescente
       Balanceamento entre inovação e legado
@@ -1578,11 +1578,11 @@ PARTE 5 — ARQUITETURAS DE ISA E COMPARAÇÕES
 PARTE 6 — EXTENSÕES, TECNOLOGIAS MODERNAS E TENDÊNCIAS
 
 
-27. Extensões da ISA — [P]
+27. Extensões da ISA — [I]
 
- 27.1 Fundamentos das Extensões — [P]
+ 27.1 Fundamentos das Extensões — [I]
 
-  27.1.1 Conceitos Fundamentais — [P]
+  27.1.1 Conceitos Fundamentais — [I]
       Conceito de extensão da ISA
       Objetivos das extensões
       Expansão das funcionalidades
@@ -1590,14 +1590,14 @@ PARTE 6 — EXTENSÕES, TECNOLOGIAS MODERNAS E TENDÊNCIAS
       Evolução arquitetural
       Modularidade da arquitetura
 
-  27.1.2 Organização das Extensões — [P]
+  27.1.2 Organização das Extensões — [I]
       ISA base
       Extensões opcionais
       Extensões obrigatórias
       Organização modular
       Compatibilidade entre implementações
 
-  27.1.3 Benefícios das Extensões — [P]
+  27.1.3 Benefícios das Extensões — [I]
       Novas funcionalidades
       Maior flexibilidade
       Melhor adaptação às aplicações
@@ -1606,21 +1606,21 @@ PARTE 6 — EXTENSÕES, TECNOLOGIAS MODERNAS E TENDÊNCIAS
 
 
 
- 27.2 Classificação das Extensões — [P]
+ 27.2 Classificação das Extensões — [I]
 
-  27.2.1 Extensões de Processamento Numérico — [P]
+  27.2.1 Extensões de Processamento Numérico — [I]
       Operações inteiras avançadas
       Operações em ponto flutuante
       Processamento vetorial
       Operações matriciais
 
-  27.2.2 Extensões de Manipulação de Dados — [P]
+  27.2.2 Extensões de Manipulação de Dados — [I]
       Operações sobre bits
       Manipulação de bytes
       Manipulação de palavras
       Conversão entre formatos
 
-  27.2.3 Extensões Especializadas — [P]
+  27.2.3 Extensões Especializadas — [I]
       Criptografia
       Inteligência Artificial
       Processamento multimídia
@@ -1629,18 +1629,18 @@ PARTE 6 — EXTENSÕES, TECNOLOGIAS MODERNAS E TENDÊNCIAS
 
 
 
-28. SIMD, Vetorização e Paralelismo Arquitetural — [P]
+28. SIMD, Vetorização e Paralelismo Arquitetural — [I]
 
- 28.1 Fundamentos — [P]
+ 28.1 Fundamentos — [I]
 
-  28.1.1 Conceitos Gerais — [P]
+  28.1.1 Conceitos Gerais — [I]
       SIMD (Single Instruction Multiple Data)
       Vetorização
       Paralelismo de dados
       Papel da ISA
       Objetivos arquiteturais
 
-  28.1.2 Organização Arquitetural — [P]
+  28.1.2 Organização Arquitetural — [I]
       Instruções vetoriais
       Operações paralelas
       Dados vetoriais
@@ -1681,24 +1681,24 @@ PARTE 6 — EXTENSÕES, TECNOLOGIAS MODERNAS E TENDÊNCIAS
 
 
 
-29. Virtualização na ISA — [P]
+29. Virtualização na ISA — [I]
 
- 29.1 Fundamentos — [P]
+ 29.1 Fundamentos — [I]
 
-  29.1.1 Conceitos — [P]
+  29.1.1 Conceitos — [I]
       Virtualização
       Máquina virtual
       Suporte arquitetural
       Papel da ISA
       Objetivos
 
-  29.1.2 Recursos Arquiteturais — [P]
+  29.1.2 Recursos Arquiteturais — [I]
       Instruções de virtualização
       Níveis de privilégio
       Controle de execução
       Gerenciamento do ambiente virtual
 
-  29.1.3 Benefícios — [P]
+  29.1.3 Benefícios — [I]
       Isolamento
       Segurança
       Consolidação
@@ -1726,25 +1726,25 @@ PARTE 6 — EXTENSÕES, TECNOLOGIAS MODERNAS E TENDÊNCIAS
 
 
 
-30. Segurança Arquitetural da ISA — [P]
+30. Segurança Arquitetural da ISA — [I]
 
- 30.1 Fundamentos — [P]
+ 30.1 Fundamentos — [I]
 
-  30.1.1 Conceitos Fundamentais — [P]
+  30.1.1 Conceitos Fundamentais — [I]
       Segurança arquitetural
       Proteção oferecida pela ISA
       Controle de acesso
       Integridade
       Confiabilidade
 
-  30.1.2 Recursos de Segurança — [P]
+  30.1.2 Recursos de Segurança — [I]
       Modos privilegiados
       Controle de execução
       Proteção do sistema
       Isolamento
       Controle arquitetural
 
-  30.1.3 Evolução da Segurança — [P]
+  30.1.3 Evolução da Segurança — [I]
       Novas ameaças
       Expansão dos mecanismos
       Segurança em hardware
@@ -1752,43 +1752,43 @@ PARTE 6 — EXTENSÕES, TECNOLOGIAS MODERNAS E TENDÊNCIAS
 
 
 
- 30.2 Extensões de Segurança — [I]
+ 30.2 Extensões de Segurança — [V]
 
-  30.2.1 Criptografia — [I]
+  30.2.1 Criptografia — [V]
       AES
       SHA
       Operações criptográficas
       Aceleração por instruções
 
-  30.2.2 Integridade e Proteção — [I]
+  30.2.2 Integridade e Proteção — [V]
       Controle de integridade
       Proteção contra execução indevida
       Recursos arquiteturais modernos
 
-  30.2.3 Tendências em Segurança — [I]
+  30.2.3 Tendências em Segurança — [V]
       Computação confiável
       Isolamento arquitetural
       Novos mecanismos de proteção
 
 
 
-31. Tendências das Arquiteturas de Conjunto de Instruções — [I]
+31. Tendências das Arquiteturas de Conjunto de Instruções — [V]
 
- 31.1 Evolução das ISAs — [I]
+ 31.1 Evolução das ISAs — [V]
 
-  31.1.1 Modularização — [I]
+  31.1.1 Modularização — [V]
       ISA base
       Extensões independentes
       Arquiteturas modulares
       Escalabilidade
 
-  31.1.2 Especialização — [I]
+  31.1.2 Especialização — [V]
       ISAs para IA
       ISAs embarcadas
       ISAs para HPC
       Arquiteturas específicas por domínio
 
-  31.1.3 Arquiteturas Abertas — [I]
+  31.1.3 Arquiteturas Abertas — [V]
       Expansão do RISC-V
       Ecossistemas abertos
       Desenvolvimento colaborativo
@@ -1796,15 +1796,15 @@ PARTE 6 — EXTENSÕES, TECNOLOGIAS MODERNAS E TENDÊNCIAS
 
 
 
- 31.2 Futuro das ISAs — [I]
+ 31.2 Futuro das ISAs — [V]
 
-  31.2.1 Personalização Arquitetural — [I]
+  31.2.1 Personalização Arquitetural — [V]
       Extensões customizadas
       Coprocessadores
       Aceleradores especializados
       Integração arquitetural
 
-  31.2.2 Integração com Novas Tecnologias — [I]
+  31.2.2 Integração com Novas Tecnologias — [V]
       Inteligência Artificial
       Computação heterogênea
       Computação em nuvem
@@ -1880,23 +1880,23 @@ PARTE 7 — INTEGRAÇÃO DOS CONCEITOS, COMPATIBILIDADE E CONCLUSÃO
 
 
 
-33. Compatibilidade, Portabilidade e Ecossistema — [P]
+33. Compatibilidade, Portabilidade e Ecossistema — [I]
 
- 33.1 Compatibilidade Arquitetural — [P]
+ 33.1 Compatibilidade Arquitetural — [I]
 
-  33.1.1 Compatibilidade de Software — [P]
+  33.1.1 Compatibilidade de Software — [I]
       Compatibilidade binária
       Compatibilidade de aplicações
       Execução em diferentes processadores
       Conformidade com a especificação
 
-  33.1.2 Portabilidade — [P]
+  33.1.2 Portabilidade — [I]
       Portabilidade de programas
       Portabilidade entre implementações
       Dependência da ISA
       Independência da microarquitetura
 
-  33.1.3 Ecossistema da Arquitetura — [P]
+  33.1.3 Ecossistema da Arquitetura — [I]
       Compiladores
       Assemblers
       Sistemas operacionais
@@ -1905,21 +1905,21 @@ PARTE 7 — INTEGRAÇÃO DOS CONCEITOS, COMPATIBILIDADE E CONCLUSÃO
 
 
 
- 33.2 Padronização das ISAs — [P]
+ 33.2 Padronização das ISAs — [I]
 
-  33.2.1 Especificações Arquiteturais — [P]
+  33.2.1 Especificações Arquiteturais — [I]
       Documentação oficial
       Padronização
       Conformidade
       Evolução controlada
 
-  33.2.2 Fabricantes e Implementações — [P]
+  33.2.2 Fabricantes e Implementações — [I]
       Múltiplos fabricantes
       Implementações compatíveis
       Ecossistemas comerciais
       Interoperabilidade
 
-  33.2.3 Importância da Padronização — [P]
+  33.2.3 Importância da Padronização — [I]
       Continuidade tecnológica
       Compatibilidade
       Evolução sustentável
