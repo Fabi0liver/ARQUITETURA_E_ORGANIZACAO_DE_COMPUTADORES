@@ -1527,3 +1527,246 @@ PARTE 5 — ARQUITETURAS DE ISA E COMPARAÇÕES
       Complexidade crescente
       Balanceamento entre inovação e legado
       Sustentabilidade da arquitetura
+
+
+
+PARTE 6 — EXTENSÕES, TECNOLOGIAS MODERNAS E TENDÊNCIAS
+
+
+27. Extensões da ISA — [P]
+
+ 27.1 Fundamentos das Extensões — [P]
+
+  27.1.1 Conceitos Fundamentais — [P]
+      Conceito de extensão da ISA
+      Objetivos das extensões
+      Expansão das funcionalidades
+      Compatibilidade com a ISA base
+      Evolução arquitetural
+      Modularidade da arquitetura
+
+  27.1.2 Organização das Extensões — [P]
+      ISA base
+      Extensões opcionais
+      Extensões obrigatórias
+      Organização modular
+      Compatibilidade entre implementações
+
+  27.1.3 Benefícios das Extensões — [P]
+      Novas funcionalidades
+      Maior flexibilidade
+      Melhor adaptação às aplicações
+      Evolução gradual
+      Longevidade da arquitetura
+
+
+
+ 27.2 Classificação das Extensões — [P]
+
+  27.2.1 Extensões de Processamento Numérico — [P]
+      Operações inteiras avançadas
+      Operações em ponto flutuante
+      Processamento vetorial
+      Operações matriciais
+
+  27.2.2 Extensões de Manipulação de Dados — [P]
+      Operações sobre bits
+      Manipulação de bytes
+      Manipulação de palavras
+      Conversão entre formatos
+
+  27.2.3 Extensões Especializadas — [P]
+      Criptografia
+      Inteligência Artificial
+      Processamento multimídia
+      Virtualização
+      Segurança
+
+
+
+28. SIMD, Vetorização e Paralelismo Arquitetural — [P]
+
+ 28.1 Fundamentos — [P]
+
+  28.1.1 Conceitos Gerais — [P]
+      SIMD (Single Instruction Multiple Data)
+      Vetorização
+      Paralelismo de dados
+      Papel da ISA
+      Objetivos arquiteturais
+
+  28.1.2 Organização Arquitetural — [P]
+      Instruções vetoriais
+      Operações paralelas
+      Dados vetoriais
+      Organização lógica
+      Recursos arquiteturais
+
+  28.1.3 Aplicações — [I]
+      Computação científica
+      Processamento de imagens
+      Áudio e vídeo
+      Inteligência Artificial
+      Computação de alto desempenho
+
+
+
+ 28.2 Principais Extensões SIMD — [I]
+
+  28.2.1 Extensões x86 — [I]
+      MMX
+      SSE
+      SSE2
+      SSE3
+      SSSE3
+      SSE4
+      AVX
+      AVX2
+      AVX-512
+
+  28.2.2 Extensões ARM — [I]
+      NEON
+      SVE
+      SVE2
+
+  28.2.3 Outras Extensões Vetoriais — [I]
+      RISC-V Vector Extension (RVV)
+      Extensões vetoriais PowerPC
+      Outras arquiteturas modernas
+
+
+
+29. Virtualização na ISA — [P]
+
+ 29.1 Fundamentos — [P]
+
+  29.1.1 Conceitos — [P]
+      Virtualização
+      Máquina virtual
+      Suporte arquitetural
+      Papel da ISA
+      Objetivos
+
+  29.1.2 Recursos Arquiteturais — [P]
+      Instruções de virtualização
+      Níveis de privilégio
+      Controle de execução
+      Gerenciamento do ambiente virtual
+
+  29.1.3 Benefícios — [P]
+      Isolamento
+      Segurança
+      Consolidação
+      Compartilhamento de recursos
+      Eficiência
+
+
+
+ 29.2 Extensões de Virtualização — [I]
+
+  29.2.1 Virtualização em x86 — [I]
+      Intel VT-x
+      AMD-V
+      Recursos arquiteturais
+
+  29.2.2 Virtualização em ARM — [I]
+      ARM Virtualization Extensions
+      Hypervisor Mode
+      Recursos arquiteturais
+
+  29.2.3 Virtualização em RISC-V — [I]
+      Hypervisor Extension
+      Organização
+      Evolução
+
+
+
+30. Segurança Arquitetural da ISA — [P]
+
+ 30.1 Fundamentos — [P]
+
+  30.1.1 Conceitos Fundamentais — [P]
+      Segurança arquitetural
+      Proteção oferecida pela ISA
+      Controle de acesso
+      Integridade
+      Confiabilidade
+
+  30.1.2 Recursos de Segurança — [P]
+      Modos privilegiados
+      Controle de execução
+      Proteção do sistema
+      Isolamento
+      Controle arquitetural
+
+  30.1.3 Evolução da Segurança — [P]
+      Novas ameaças
+      Expansão dos mecanismos
+      Segurança em hardware
+      Segurança por projeto
+
+
+
+ 30.2 Extensões de Segurança — [I]
+
+  30.2.1 Criptografia — [I]
+      AES
+      SHA
+      Operações criptográficas
+      Aceleração por instruções
+
+  30.2.2 Integridade e Proteção — [I]
+      Controle de integridade
+      Proteção contra execução indevida
+      Recursos arquiteturais modernos
+
+  30.2.3 Tendências em Segurança — [I]
+      Computação confiável
+      Isolamento arquitetural
+      Novos mecanismos de proteção
+
+
+
+31. Tendências das Arquiteturas de Conjunto de Instruções — [I]
+
+ 31.1 Evolução das ISAs — [I]
+
+  31.1.1 Modularização — [I]
+      ISA base
+      Extensões independentes
+      Arquiteturas modulares
+      Escalabilidade
+
+  31.1.2 Especialização — [I]
+      ISAs para IA
+      ISAs embarcadas
+      ISAs para HPC
+      Arquiteturas específicas por domínio
+
+  31.1.3 Arquiteturas Abertas — [I]
+      Expansão do RISC-V
+      Ecossistemas abertos
+      Desenvolvimento colaborativo
+      Personalização
+
+
+
+ 31.2 Futuro das ISAs — [I]
+
+  31.2.1 Personalização Arquitetural — [I]
+      Extensões customizadas
+      Coprocessadores
+      Aceleradores especializados
+      Integração arquitetural
+
+  31.2.2 Integração com Novas Tecnologias — [I]
+      Inteligência Artificial
+      Computação heterogênea
+      Computação em nuvem
+      Edge Computing
+
+  31.2.3 Perspectivas Futuras — [V]
+      Evolução contínua das arquiteturas
+      Novos paradigmas computacionais
+      Sustentabilidade arquitetural
+      Desafios futuros das ISAs
