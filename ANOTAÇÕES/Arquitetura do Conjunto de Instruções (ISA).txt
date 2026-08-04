@@ -911,3 +911,309 @@ PARTE 3 — MODELO ARQUITETURAL E RECURSOS VISÍVEIS AO PROGRAMADOR
       Controle dos recursos
       Serviços dependentes da ISA
       Interação com o hardware
+
+
+
+PARTE 4 — EXECUÇÃO, CONTROLE E INTERAÇÃO DA ISA
+
+
+15. Modelo de Execução das Instruções — [P]
+
+ 15.1 Fundamentos da Execução — [P]
+
+  15.1.1 Conceitos Fundamentais — [P]
+      Conceito de execução de instruções
+      Modelo de execução da ISA
+      Fluxo de execução
+      Estado arquitetural durante a execução
+      Papel da ISA na execução dos programas
+
+  15.1.2 Ciclo Geral de Execução — [P]
+      Busca da instrução (visão arquitetural)
+      Decodificação da instrução
+      Identificação da operação
+      Execução da operação
+      Atualização do estado arquitetural
+
+  15.1.3 Relação entre ISA e Execução — [P]
+      Comportamento definido pela ISA
+      Independência da implementação
+      Especificação arquitetural
+      Modelo abstrato de execução
+      Compatibilidade entre implementações
+
+
+
+ 15.2 Fluxo Arquitetural das Instruções — [P]
+
+  15.2.1 Sequência das Operações — [P]
+      Ordem de execução
+      Sequenciamento arquitetural
+      Dependência entre instruções
+      Atualização do estado
+      Finalização da instrução
+
+  15.2.2 Operações Arquiteturais — [P]
+      Operações aritméticas
+      Operações lógicas
+      Operações de movimentação de dados
+      Operações de controle
+      Operações especiais
+
+  15.2.3 Resultado Arquitetural — [P]
+      Alteração dos registradores
+      Atualização da memória
+      Atualização dos flags
+      Atualização do contador de programa
+      Preservação da consistência arquitetural
+
+
+
+16. Controle do Fluxo de Execução — [P]
+
+ 16.1 Fundamentos — [P]
+
+  16.1.1 Conceitos — [P]
+      Controle do fluxo
+      Sequenciamento das instruções
+      Alteração da ordem de execução
+      Papel da ISA
+      Organização lógica do fluxo
+
+  16.1.2 Objetivos — [P]
+      Controle da execução
+      Tomada de decisões
+      Estruturas de programação
+      Repetições
+      Desvios
+
+  16.1.3 Classificação Geral — [P]
+      Fluxo sequencial
+      Fluxo condicional
+      Fluxo incondicional
+      Chamadas de procedimentos
+      Retornos
+
+
+
+ 16.2 Instruções de Controle — [P]
+
+  16.2.1 Saltos (Jump) — [P]
+      Conceito
+      Salto absoluto
+      Salto relativo
+      Alteração do fluxo
+      Aplicações
+
+  16.2.2 Desvios Condicionais (Branch) — [P]
+      Conceito
+      Avaliação de condições
+      Comparações
+      Execução condicional
+      Aplicações
+
+  16.2.3 Chamadas de Procedimentos — [P]
+      Conceito
+      Chamada de função
+      Transferência de controle
+      Preservação do fluxo
+      Organização arquitetural
+
+  16.2.4 Retorno de Procedimentos — [P]
+      Conceito
+      Recuperação do fluxo
+      Continuação da execução
+      Organização lógica
+
+  16.2.5 Controle por Exceções — [I]
+      Alteração excepcional do fluxo
+      Tratamento arquitetural
+      Continuidade da execução
+      Papel da ISA
+
+
+
+17. Categorias de Instruções da ISA — [P]
+
+ 17.1 Classificação Funcional — [P]
+
+  17.1.1 Instruções de Transferência de Dados — [P]
+      Movimentação entre registradores
+      Movimentação entre memória e registradores
+      Carregamento de dados
+      Armazenamento de dados
+
+  17.1.2 Instruções Aritméticas — [P]
+      Soma
+      Subtração
+      Multiplicação
+      Divisão
+      Incremento
+      Decremento
+
+  17.1.3 Instruções Lógicas — [P]
+      AND
+      OR
+      XOR
+      NOT
+      Testes lógicos
+
+  17.1.4 Instruções de Comparação — [P]
+      Comparações
+      Avaliação de igualdade
+      Relações de ordem
+      Atualização das condições
+
+  17.1.5 Instruções de Manipulação de Bits — [P]
+      Deslocamentos
+      Rotações
+      Máscaras
+      Teste de bits
+      Modificação de bits
+
+
+
+ 17.2 Categorias Especializadas — [P]
+
+  17.2.1 Instruções de Controle — [P]
+      Saltos
+      Branches
+      Chamadas
+      Retornos
+
+  17.2.2 Instruções de Sistema — [I]
+      Chamadas privilegiadas
+      Operações administrativas
+      Controle arquitetural
+      Serviços do sistema
+
+  17.2.3 Instruções Especiais — [I]
+      Sincronização
+      Controle do processador
+      Operações específicas da arquitetura
+      Instruções reservadas
+
+
+
+18. Exceções, Interrupções e Eventos Arquiteturais — [P]
+
+ 18.1 Fundamentos — [P]
+
+  18.1.1 Conceitos Gerais — [P]
+      Conceito de exceção
+      Conceito de interrupção
+      Eventos arquiteturais
+      Alterações do fluxo normal
+      Papel da ISA
+
+  18.1.2 Objetivos — [P]
+      Tratamento de erros
+      Tratamento de eventos
+      Continuidade da execução
+      Segurança arquitetural
+
+  18.1.3 Classificação Geral — [P]
+      Exceções síncronas
+      Interrupções assíncronas
+      Falhas
+      Armadilhas (Traps)
+      Abortos
+
+
+
+ 18.2 Tratamento Arquitetural — [P]
+
+  18.2.1 Exceções — [P]
+      Detecção
+      Identificação
+      Tratamento
+      Retorno à execução
+
+  18.2.2 Interrupções — [P]
+      Reconhecimento
+      Atendimento
+      Continuação da execução
+      Organização arquitetural
+
+  18.2.3 Estado Arquitetural durante Eventos — [P]
+      Preservação do contexto
+      Atualização do estado
+      Retorno ao programa
+      Consistência arquitetural
+
+
+
+19. Níveis de Privilégio e Modos de Execução — [P]
+
+ 19.1 Fundamentos — [P]
+
+  19.1.1 Conceitos — [P]
+      Modos de execução
+      Níveis de privilégio
+      Proteção arquitetural
+      Controle de acesso
+      Segurança da ISA
+
+  19.1.2 Objetivos — [P]
+      Isolamento
+      Segurança
+      Estabilidade
+      Controle do sistema
+      Separação de responsabilidades
+
+
+
+ 19.2 Organização dos Modos de Execução — [P]
+
+  19.2.1 Modo Usuário — [P]
+      Características
+      Restrições
+      Recursos disponíveis
+      Aplicações
+
+  19.2.2 Modo Privilegiado — [P]
+      Características
+      Recursos exclusivos
+      Operações administrativas
+      Controle arquitetural
+
+  19.2.3 Transições entre Modos — [P]
+      Mudanças de privilégio
+      Chamadas de sistema
+      Exceções
+      Interrupções
+      Retorno ao modo anterior
+
+
+
+20. Interação da ISA com Software de Sistema — [I]
+
+ 20.1 Relação com Compiladores — [I]
+
+  20.1.1 Geração de Código — [I]
+      Tradução para a ISA
+      Seleção de instruções
+      Uso dos recursos arquiteturais
+      Compatibilidade
+
+  20.1.2 Otimizações Dependentes da ISA — [I]
+      Escolha de instruções
+      Organização do código
+      Aproveitamento das extensões
+      Eficiência do código
+
+
+
+ 20.2 Relação com Sistemas Operacionais — [I]
+
+  20.2.1 Interface Arquitetural — [I]
+      Chamadas de sistema
+      Recursos privilegiados
+      Controle do hardware
+      Serviços arquiteturais
+
+  20.2.2 Responsabilidades da ISA — [I]
+      Recursos disponíveis
+      Mecanismos de proteção
+      Compatibilidade
+      Suporte ao sistema operacional
