@@ -1,0 +1,419 @@
+                                                  ASSEMBLY
+
+
+A classificação abaixo indica a profundidade recomendada para cada grande tópico da lista.
+
+[P] Profundidade — estudar mecanismos, estruturas, funcionamento interno e relações entre componentes.
+[I] Intermediário — compreender bem o funcionamento e as relações principais, sem precisar dominar todos os
+   detalhes de implementação.
+[V] Visão geral — saber o que é, para que serve e como se relaciona com as Memórias.
+
+
+
+PARTE 1 — FUNDAMENTOS DA LINGUAGEM ASSEMBLY
+
+
+1. Introdução à Linguagem Assembly — [I]
+
+ 1.1 Conceitos Fundamentais — [I]
+
+  1.1.1 O que é a Linguagem Assembly — [I]
+        Conceito de Assembly
+        Linguagem de baixo nível
+        Representação simbólica da linguagem de máquina
+        Interface entre programador e processador
+        Relação com a ISA
+        Papel na programação de sistemas
+
+  1.1.2 Objetivos da Linguagem Assembly — [I]
+        Controle direto do hardware
+        Programação próxima ao processador
+        Redução das abstrações
+        Eficiência da execução
+        Precisão no controle do código
+        Compreensão da arquitetura
+
+  1.1.3 Importância da Linguagem Assembly — [I]
+        Base para Arquitetura de Computadores
+        Base para Organização de Computadores
+        Importância acadêmica
+        Importância profissional
+        Compreensão do funcionamento interno do computador
+        Relação com outras linguagens
+
+
+ 1.2 Papel da Assembly na Computação — [I]
+
+  1.2.1 Assembly como Interface Hardware–Software — [I]
+        Comunicação entre software e hardware
+        Interface entre linguagem de máquina e programação
+        Modelo de programação
+        Execução das instruções
+        Controle do processador
+
+  1.2.2 Assembly dentro da Arquitetura de Computadores — [I]
+        Relação com a ISA
+        Relação com o processador
+        Relação com memória
+        Relação com entrada e saída
+        Visão arquitetural
+        Limites da linguagem
+
+  1.2.3 Assembly na Organização de Computadores — [I]
+        Organização lógica do sistema
+        Controle dos recursos
+        Execução das instruções
+        Fluxo de dados
+        Modelo operacional
+
+
+
+2. História e Evolução da Linguagem Assembly — [I]
+
+ 2.1 Origem Histórica — [I]
+
+  2.1.1 Primeiros Computadores — [I]
+        Programação em linguagem de máquina
+        Primeiras instruções
+        Programação manual
+        Limitações iniciais
+        Evolução da programação
+
+  2.1.2 Surgimento da Linguagem Assembly — [I]
+        Necessidade de representação simbólica
+        Criação dos mnemônicos
+        Evolução dos montadores
+        Primeiros sistemas Assembly
+        Simplificação da programação
+
+
+ 2.2 Evolução Tecnológica — [I]
+
+  2.2.1 Evolução dos Assemblers — [I]
+        Primeiros assemblers
+        Assemblers de uma passagem
+        Assemblers de múltiplas passagens
+        Evolução das funcionalidades
+        Expansão das diretivas
+
+  2.2.2 Evolução das Linguagens Assembly — [I]
+        Crescimento das ISAs
+        Evolução das arquiteturas
+        Novas instruções
+        Compatibilidade
+        Modernização das linguagens
+
+
+ 2.3 Assembly na Computação Moderna — [V]
+
+  2.3.1 Permanência da Linguagem — [V]
+        Compatibilidade histórica
+        Legado tecnológico
+        Continuidade das arquiteturas
+        Evolução contínua
+
+  2.3.2 Papel Atual — [V]
+        Sistemas embarcados
+        Sistemas operacionais
+        Firmware
+        Engenharia reversa
+        Segurança computacional
+        Desenvolvimento de baixo nível
+
+
+
+3. Assembly e Linguagem de Máquina — [P]
+
+ 3.1 Conceitos Fundamentais — [P]
+
+  3.1.1 Linguagem de Máquina — [P]
+        Conceito
+        Código binário
+        Instruções executáveis
+        Relação com o hardware
+        Dependência da ISA
+
+  3.1.2 Relação entre Assembly e Linguagem de Máquina — [P]
+        Representação simbólica
+        Correspondência entre instruções
+        Tradução para código de máquina
+        Nível de abstração
+        Diferenças fundamentais
+
+
+ 3.2 Representação das Instruções — [P]
+
+  3.2.1 Mnemônicos — [P]
+        Conceito
+        Finalidade
+        Legibilidade
+        Padronização
+        Dependência da arquitetura
+
+  3.2.2 Operandos — [P]
+        Conceito
+        Tipos de operandos
+        Operandos imediatos
+        Operandos em registradores
+        Operandos em memória
+
+
+ 3.3 Dependência Arquitetural — [P]
+
+  3.3.1 Dependência da ISA — [P]
+        Instruções específicas
+        Compatibilidade
+        Diferenças entre arquiteturas
+        Limitações da portabilidade
+
+  3.3.2 Assembly como Representação da ISA — [P]
+        Correspondência entre instruções
+        Recursos arquiteturais visíveis
+        Modelo de programação
+        Interface com o hardware
+
+
+
+4. Papel da Linguagem Assembly na Arquitetura e Organização de Computadores — [P]
+
+ 4.1 Papel Arquitetural — [P]
+
+  4.1.1 Interface da ISA — [P]
+        Comunicação com o processador
+        Modelo arquitetural
+        Recursos disponíveis ao programador
+        Controle da execução
+
+  4.1.2 Modelo de Programação — [P]
+        Estado arquitetural
+        Fluxo de execução
+        Controle das instruções
+        Organização do programa
+
+
+ 4.2 Papel na Organização do Computador — [P]
+
+  4.2.1 Controle dos Recursos — [P]
+        Utilização dos recursos do sistema
+        Comunicação com dispositivos
+        Controle da execução
+        Organização operacional
+
+  4.2.2 Compreensão do Funcionamento Interno — [P]
+        Execução das instruções
+        Organização lógica
+        Relação entre hardware e software
+        Visão integrada do sistema
+
+
+ 4.3 Importância para o Estudo da Computação — [I]
+
+  4.3.1 Base para Estudos Posteriores — [I]
+        Sistemas Operacionais
+        Compiladores
+        Microarquitetura
+        Sistemas Embarcados
+        Segurança Computacional
+
+  4.3.2 Limites do Escopo — [V]
+        O que pertence à Assembly
+        O que pertence à ISA
+        O que pertence à Organização
+        Relação entre os domínios
+
+
+
+5. Montador (Assembler), Linker e Loader — [P]
+
+ 5.1 O Montador (Assembler) — [P]
+
+  5.1.1 Conceitos Fundamentais — [P]
+        Definição
+        Objetivos
+        Tradução do código Assembly
+        Geração do código objeto
+        Papel no desenvolvimento
+
+  5.1.2 Funcionamento Geral — [P]
+        Leitura do código-fonte
+        Processamento dos símbolos
+        Tradução das instruções
+        Geração do arquivo objeto
+
+
+ 5.2 Linker (Ligador) — [I]
+
+  5.2.1 Conceitos Fundamentais — [I]
+        Definição
+        Objetivos
+        Ligação entre módulos
+        Resolução de símbolos
+
+  5.2.2 Papel no Processo de Compilação — [I]
+        Integração de arquivos objeto
+        Bibliotecas
+        Geração do executável
+        Organização do programa
+
+
+ 5.3 Loader (Carregador) — [I]
+
+  5.3.1 Conceitos Fundamentais — [I]
+        Definição
+        Objetivos
+        Carregamento do programa
+        Preparação da execução
+
+  5.3.2 Papel na Execução — [I]
+        Inicialização
+        Organização do espaço de memória
+        Transferência do controle ao programa
+        Início da execução
+
+
+
+6. Fluxo de Tradução e Execução de um Programa Assembly — [P]
+
+ 6.1 Etapas do Desenvolvimento — [P]
+
+  6.1.1 Código-Fonte — [P]
+        Escrita do programa
+        Organização do código
+        Arquivo-fonte
+        Sintaxe Assembly
+
+  6.1.2 Tradução — [P]
+        Processamento pelo assembler
+        Arquivo objeto
+        Resolução de símbolos
+        Preparação para ligação
+
+
+ 6.2 Construção do Executável — [P]
+
+  6.2.1 Ligação — [P]
+        Papel do linker
+        Integração dos módulos
+        Bibliotecas
+        Executável final
+
+  6.2.2 Carregamento — [P]
+        Papel do loader
+        Inicialização
+        Preparação do ambiente
+        Execução do programa
+
+
+ 6.3 Fluxo Geral da Execução — [P]
+
+  6.3.1 Caminho da Instrução — [P]
+        Código Assembly
+        Código objeto
+        Executável
+        Código de máquina
+        Execução pelo processador
+
+  6.3.2 Visão Geral do Processo — [I]
+        Desenvolvimento
+        Tradução
+        Ligação
+        Carregamento
+        Execução
+
+
+
+7. Características Gerais da Linguagem Assembly — [P]
+
+ 7.1 Características Fundamentais — [P]
+
+  7.1.1 Linguagem de Baixo Nível — [P]
+        Proximidade do hardware
+        Controle detalhado
+        Pouca abstração
+        Dependência da arquitetura
+
+  7.1.2 Correspondência com a ISA — [P]
+        Instruções arquiteturais
+        Representação simbólica
+        Dependência do processador
+        Compatibilidade
+
+
+ 7.2 Propriedades da Linguagem — [P]
+
+  7.2.1 Precisão e Controle — [P]
+        Controle explícito
+        Execução previsível
+        Organização detalhada
+        Eficiência operacional
+
+  7.2.2 Complexidade da Programação — [P]
+        Maior responsabilidade do programador
+        Código menos portável
+        Maior detalhamento
+        Menor abstração
+
+
+ 7.3 Natureza da Linguagem — [I]
+
+  7.3.1 Vantagens Gerais — [I]
+        Controle do hardware
+        Alto desempenho
+        Código eficiente
+        Baixa sobrecarga
+
+  7.3.2 Limitações Gerais — [I]
+        Dependência da ISA
+        Baixa portabilidade
+        Desenvolvimento mais complexo
+        Manutenção mais difícil
+
+
+
+8. Aplicações da Linguagem Assembly — [I]
+
+ 8.1 Áreas de Utilização — [I]
+
+  8.1.1 Desenvolvimento de Sistemas — [I]
+        Sistemas operacionais
+        Firmware
+        Bootloaders
+        Drivers
+        Sistemas embarcados
+
+  8.1.2 Desenvolvimento de Software Especializado — [I]
+        Bibliotecas críticas
+        Rotinas de alto desempenho
+        Software de baixo nível
+        Otimizações específicas
+
+
+ 8.2 Aplicações Técnicas — [I]
+
+  8.2.1 Engenharia e Pesquisa — [I]
+        Arquitetura de Computadores
+        Organização de Computadores
+        Desenvolvimento de processadores
+        Pesquisa acadêmica
+
+  8.2.2 Segurança Computacional — [I]
+        Engenharia reversa
+        Análise de malware
+        Auditoria de software
+        Exploração de vulnerabilidades
+        Análise binária
+
+
+ 8.3 Importância Atual — [V]
+
+  8.3.1 Cenários Modernos — [V]
+        Computação embarcada
+        Computação crítica
+        Sistemas de tempo real
+        Desenvolvimento de firmware
+
+  8.3.2 Papel no Estudo da Computação — [V]
+        Compreensão da ISA
+        Compreensão da execução
+        Base para estudos avançados
+        Integração entre hardware e software
