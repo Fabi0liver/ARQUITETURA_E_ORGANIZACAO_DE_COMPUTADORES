@@ -530,118 +530,124 @@ PARTE 2 — ARQUITETURA CISC
 
 10. Características Arquiteturais do CISC — [P]
 
-10.1 Características Gerais — [P]
+ 10.1 Características Gerais — [P]
 
- 10.1.1 Organização da ISA — [P]
-      Grande conjunto de instruções
-      Instruções de tamanho variável
-      Grande número de modos de endereçamento
-      Operações complexas
-      Compatibilidade arquitetural
+  10.1.1 Organização da ISA — [P]
+	  Grande conjunto de instruções
+	  Instruções de tamanho variável
+	  Grande número de modos de endereçamento
+	  Operações complexas
+	  Compatibilidade arquitetural
 
- 10.1.2 Organização da Execução — [P]
-      Execução de instruções complexas
-      Controle microprogramado
-      Flexibilidade operacional
-      Organização da ISA
+  10.1.2 Organização da Execução — [P]
+	  Execução de instruções complexas
+ 	  Controle microprogramado
+	  Flexibilidade operacional
+	  Organização da ISA
 
-10.2 Características Arquiteturais Fundamentais — [P]
 
- 10.2.1 Complexidade Arquitetural — [P]
-      Complexidade da codificação
-      Complexidade da decodificação
-      Complexidade funcional
-      Escalabilidade
+ 10.2 Características Arquiteturais Fundamentais — [P]
 
- 10.2.2 Flexibilidade Arquitetural — [P]
-      Ampla funcionalidade
-      Diversidade de instruções
-      Compatibilidade entre gerações
-      Evolução incremental
+  10.2.1 Complexidade Arquitetural — [P]
+	  Complexidade da codificação
+	  Complexidade da decodificação
+	  Complexidade funcional
+	  Escalabilidade
 
-10.3 Relação entre Hardware e Software — [P]
+  10.2.2 Flexibilidade Arquitetural — [P]
+	  Ampla funcionalidade
+	  Diversidade de instruções
+	  Compatibilidade entre gerações
+	  Evolução incremental
 
- 10.3.1 Distribuição das Responsabilidades — [P]
-      Papel do hardware
-      Papel do software
-      Papel da ISA
-      Balanceamento arquitetural
 
- 10.3.2 Compatibilidade Arquitetural — [P]
-      Compatibilidade binária
-      Continuidade da ISA
-      Evolução das extensões
-      Longevidade da arquitetura
+ 10.3 Relação entre Hardware e Software — [P]
+
+  10.3.1 Distribuição das Responsabilidades — [P]
+	  Papel do hardware
+	  Papel do software
+ 	  Papel da ISA
+	  Balanceamento arquitetural
+
+  10.3.2 Compatibilidade Arquitetural — [P]
+	  Compatibilidade binária
+	  Continuidade da ISA
+	  Evolução das extensões
+	  Longevidade da arquitetura
 
 
 
 11. Vantagens, Limitações e Aplicações do CISC — [I]
 
-11.1 Vantagens da Arquitetura CISC — [I]
+ 11.1 Vantagens da Arquitetura CISC — [I]
 
- 11.1.1 Benefícios Arquiteturais — [I]
-      Código mais compacto
-      Menor número de instruções
-      Grande expressividade da ISA
-      Compatibilidade
-      Flexibilidade
+  11.1.1 Benefícios Arquiteturais — [I]
+	  Código mais compacto
+	  Menor número de instruções
+	  Grande expressividade da ISA
+	  Compatibilidade
+	  Flexibilidade
 
-11.2 Limitações da Arquitetura CISC — [I]
 
- 11.2.1 Desafios Arquiteturais — [I]
-      Complexidade da ISA
-      Complexidade da implementação
-      Complexidade da decodificação
-      Evolução mais difícil
+ 11.2 Limitações da Arquitetura CISC — [I]
 
-11.3 Aplicações da Arquitetura CISC — [I]
+  11.2.1 Desafios Arquiteturais — [I]
+	  Complexidade da ISA
+	  Complexidade da implementação
+	  Complexidade da decodificação
+	  Evolução mais difícil
 
- 11.3.1 Principais Áreas de Utilização — [I]
-      Computadores pessoais
-      Estações de trabalho
-      Servidores
-      Mainframes
-      Sistemas legados
 
- 11.3.2 Adequação da Arquitetura — [I]
-      Compatibilidade de software
-      Ecossistemas consolidados
-      Longo ciclo de vida
-      Continuidade tecnológica
+ 11.3 Aplicações da Arquitetura CISC — [I]
+
+  11.3.1 Principais Áreas de Utilização — [I]
+	  Computadores pessoais
+	  Estações de trabalho
+	  Servidores
+	  Mainframes
+	  Sistemas legados
+
+  11.3.2 Adequação da Arquitetura — [I]
+	  Compatibilidade de software
+	  Ecossistemas consolidados
+	  Longo ciclo de vida
+	  Continuidade tecnológica
 
 
 
 12. Principais Arquiteturas e Famílias CISC — [I]
 
-12.1 Arquiteturas Históricas — [I]
+ 12.1 Arquiteturas Históricas — [I]
 
- 12.1.1 Primeiras Famílias Comerciais — [I]
-      IBM System/360
-      DEC VAX
-      Motorola 68000
-      Intel 8086
+  12.1.1 Primeiras Famílias Comerciais — [I]
+	  IBM System/360
+	  DEC VAX
+	  Motorola 68000
+	  Intel 8086
 
-12.2 Arquiteturas Modernas — [I]
 
- 12.2.1 Família x86 — [I]
-      Evolução histórica
-      Compatibilidade
-      Expansão da ISA
-      Continuidade arquitetural
+ 12.2 Arquiteturas Modernas — [I]
 
- 12.2.2 x86-64 (AMD64) — [I]
-      Extensão para 64 bits
-      Compatibilidade retroativa
-      Evolução da arquitetura
-      Consolidação no mercado
+  12.2.1 Família x86 — [I]
+	  Evolução histórica
+	  Compatibilidade
+	  Expansão da ISA
+	  Continuidade arquitetural
 
-12.3 Importância Histórica — [V]
+  12.2.2 x86-64 (AMD64) — [I]
+	  Extensão para 64 bits
+	  Compatibilidade retroativa
+	  Evolução da arquitetura
+	  Consolidação no mercado
 
- 12.3.1 Legado da Arquitetura CISC — [V]
-      Influência sobre a computação
-      Evolução das ISAs
-      Compatibilidade de longo prazo
-      Influência sobre arquiteturas modernas
+
+ 12.3 Importância Histórica — [V]
+
+  12.3.1 Legado da Arquitetura CISC — [V]
+	  Influência sobre a computação
+	  Evolução das ISAs
+	  Compatibilidade de longo prazo
+	  Influência sobre arquiteturas modernas
 
 
 
