@@ -1323,46 +1323,48 @@ PARTE 5 — EVOLUÇÃO DAS ARQUITETURAS MODERNAS
  28.1 Evolução das Filosofias Arquiteturais — [P]
 
   28.1.1 Da Separação à Convergência — [P]
-      Evolução histórica das ISAs
-      Mudanças nas filosofias de projeto
-      Influência das limitações tecnológicas
-      Influência do avanço do hardware
-      Redução das diferenças arquiteturais
+	  Evolução histórica das ISAs
+	  Mudanças nas filosofias de projeto
+	  Influência das limitações tecnológicas
+	  Influência do avanço do hardware
+	  Redução das diferenças arquiteturais
 
   28.1.2 Evolução dos Objetivos das ISAs — [P]
-      Compatibilidade
-      Desempenho
-      Escalabilidade
-      Eficiência energética
-      Flexibilidade arquitetural
+	  Compatibilidade
+	  Desempenho
+	  Escalabilidade
+	  Eficiência energética
+	  Flexibilidade arquitetural
+
 
  28.2 Evolução das Arquiteturas CISC — [P]
 
   28.2.1 Modernização da ISA CISC — [P]
-      Expansão do conjunto de instruções
-      Compatibilidade retroativa
-      Novas extensões
-      Evolução contínua da ISA
+	  Expansão do conjunto de instruções
+	  Compatibilidade retroativa
+	  Novas extensões
+	  Evolução contínua da ISA
 
   28.2.2 Adaptação às Novas Tecnologias — [P]
-      Melhorias arquiteturais
-      Novos recursos
-      Escalabilidade
-      Continuidade da arquitetura
+	  Melhorias arquiteturais
+	  Novos recursos
+	  Escalabilidade
+	  Continuidade da arquitetura
+
 
  28.3 Evolução das Arquiteturas RISC — [P]
 
   28.3.1 Expansão da ISA RISC — [P]
-      Crescimento das funcionalidades
-      Novas extensões
-      Modularidade
-      Evolução das implementações
+	  Crescimento das funcionalidades
+	  Novas extensões
+	  Modularidade
+	  Evolução das implementações
 
   28.3.2 Consolidação Comercial — [P]
-      Expansão para novos mercados
-      Diversificação das aplicações
-      Crescimento do ecossistema
-      Continuidade arquitetural
+	  Expansão para novos mercados
+	  Diversificação das aplicações
+	  Crescimento do ecossistema
+	  Continuidade arquitetural
 
 
 
@@ -1371,45 +1373,47 @@ PARTE 5 — EVOLUÇÃO DAS ARQUITETURAS MODERNAS
  29.1 Conceitos Fundamentais — [P]
 
   29.1.1 O Conceito de Convergência — [P]
-      Definição
-      Motivações
-      Evolução histórica
-      Objetivos
-      Impactos na Arquitetura de Computadores
+	  Definição
+	  Motivações
+	  Evolução histórica
+	  Objetivos
+	  Impactos na Arquitetura de Computadores
 
   29.1.2 Fatores que Favoreceram a Convergência — [P]
-      Evolução tecnológica
-      Aumento da capacidade de integração
-      Avanço dos compiladores
-      Novas demandas computacionais
+	  Evolução tecnológica
+	  Aumento da capacidade de integração
+	  Avanço dos compiladores
+	  Novas demandas computacionais
+
 
  29.2 Influências Mútuas — [P]
 
   29.2.1 Características do RISC Incorporadas ao CISC — [P]
-      Simplificação da execução
-      Organização uniforme
-      Melhor eficiência
-      Regularidade arquitetural
+	  Simplificação da execução
+	  Organização uniforme
+	  Melhor eficiência
+	  Regularidade arquitetural
 
   29.2.2 Características do CISC Incorporadas ao RISC — [P]
-      Ampliação do conjunto de instruções
-      Novas funcionalidades
-      Extensões especializadas
-      Maior flexibilidade
+	  Ampliação do conjunto de instruções
+	  Novas funcionalidades
+	  Extensões especializadas
+	  Maior flexibilidade
+
 
  29.3 Arquiteturas Contemporâneas — [P]
 
   29.3.1 Diferenças Atuais — [P]
-      Diferenças preservadas
-      Diferenças reduzidas
-      Características comuns
-      Tendências futuras
+	  Diferenças preservadas
+ 	  Diferenças reduzidas
+	  Características comuns
+	  Tendências futuras
 
   29.3.2 Impactos da Convergência — [P]
-      Evolução das ISAs
-      Compatibilidade
-      Flexibilidade
-      Eficiência arquitetural
+	  Evolução das ISAs
+	  Compatibilidade
+	  Flexibilidade
+	  Eficiência arquitetural
 
 
 
@@ -1418,44 +1422,46 @@ PARTE 5 — EVOLUÇÃO DAS ARQUITETURAS MODERNAS
  30.1 Conceitos Fundamentais — [P]
 
   30.1.1 Micro-Operações (Micro-Ops) — [P]
-      Conceito
-      Objetivos
-      Papel nas arquiteturas modernas
-      Relação com a ISA
+	  Conceito
+	  Objetivos
+	  Papel nas arquiteturas modernas
+	  Relação com a ISA
 
   30.1.2 Tradução Interna — [P]
-      Decodificação
-      Conversão de instruções
-      Organização interna
-      Execução das micro-operações
+	  Decodificação
+	  Conversão de instruções
+	  Organização interna
+	  Execução das micro-operações
+
 
  30.2 Relação com a Arquitetura CISC — [P]
 
   30.2.1 Execução Moderna de Instruções Complexas — [P]
-      Conversão para micro-operações
-      Simplificação interna
-      Compatibilidade arquitetural
-      Transparência para o software
+	  Conversão para micro-operações
+	  Simplificação interna
+	  Compatibilidade arquitetural
+	  Transparência para o software
 
   30.2.2 Benefícios da Tradução Interna — [P]
-      Melhor organização
-      Flexibilidade
-      Eficiência
-      Evolução da implementação
+	  Melhor organização
+	  Flexibilidade
+	  Eficiência
+	  Evolução da implementação
+
 
  30.3 Relação entre ISA e Implementação — [P]
 
   30.3.1 Abstração Arquitetural — [P]
-      ISA como interface
-      Independência da implementação
-      Organização interna
-      Evolução tecnológica
+	  ISA como interface
+	  Independência da implementação
+	  Organização interna
+	  Evolução tecnológica
 
   30.3.2 Limites da ISA — [P]
-      O que pertence à arquitetura
-      O que pertence à implementação
-      Separação conceitual
-      Compatibilidade
+	  O que pertence à arquitetura
+	  O que pertence à implementação
+	  Separação conceitual
+	  Compatibilidade
 
 
 
@@ -1464,38 +1470,40 @@ PARTE 5 — EVOLUÇÃO DAS ARQUITETURAS MODERNAS
  31.1 Diferenças Fundamentais — [P]
 
   31.1.1 ISA — [P]
-      Interface hardware-software
-      Modelo de programação
-      Instruções visíveis
-      Compatibilidade
+	  Interface hardware-software
+	  Modelo de programação
+	  Instruções visíveis
+	  Compatibilidade
 
   31.1.2 Microarquitetura — [P]
-      Implementação da ISA
-      Organização interna
-      Liberdade de implementação
-      Evolução independente
+	  Implementação da ISA
+	  Organização interna
+	  Liberdade de implementação
+	  Evolução independente
+
 
  31.2 Relação entre ISA e Microarquitetura — [P]
 
   31.2.1 Independência entre os Conceitos — [P]
-      Mesma ISA
-      Diferentes implementações
-      Compatibilidade binária
-      Evolução tecnológica
+	  Mesma ISA
+	  Diferentes implementações
+	  Compatibilidade binária
+	  Evolução tecnológica
 
   31.2.2 Papel da ISA nas Arquiteturas Modernas — [P]
-      Estabilidade
-      Continuidade
-      Compatibilidade
-      Evolução das extensões
+	  Estabilidade
+	  Continuidade
+	  Compatibilidade
+	  Evolução das extensões
+
 
  31.3 Importância da Separação Conceitual — [P]
 
   31.3.1 Benefícios Arquiteturais — [P]
-      Portabilidade
-      Longevidade
-      Escalabilidade
-      Flexibilidade de implementação
+	  Portabilidade
+	  Longevidade
+	  Escalabilidade
+	  Flexibilidade de implementação
 
 
 
@@ -1504,44 +1512,46 @@ PARTE 5 — EVOLUÇÃO DAS ARQUITETURAS MODERNAS
  32.1 Arquiteturas Híbridas — [I]
 
   32.1.1 Conceitos Fundamentais — [I]
-      Definição
-      Objetivos
-      Características gerais
-      Evolução arquitetural
+	  Definição
+	  Objetivos
+	  Características gerais
+	  Evolução arquitetural
 
   32.1.2 Combinação de Características — [I]
-      Elementos inspirados em RISC
-      Elementos inspirados em CISC
-      Balanceamento arquitetural
-      Flexibilidade
+	  Elementos inspirados em RISC
+	  Elementos inspirados em CISC
+	  Balanceamento arquitetural
+	  Flexibilidade
+
 
  32.2 Tendências das ISAs Modernas — [I]
 
   32.2.1 Modularidade — [I]
-      Extensões opcionais
-      Evolução incremental
-      Organização modular
-      Escalabilidade
+	  Extensões opcionais
+	  Evolução incremental
+	  Organização modular
+	  Escalabilidade
 
   32.2.2 Arquiteturas Abertas — [I]
-      ISAs abertas
-      Personalização
-      Expansão do ecossistema
-      Inovação arquitetural
+	  ISAs abertas
+	  Personalização
+	  Expansão do ecossistema
+	  Inovação arquitetural
+
 
  32.3 Perspectivas Futuras — [I]
 
   32.3.1 Evolução das Arquiteturas — [I]
-      Maior eficiência
-      Maior compatibilidade
-      Novas extensões
-      Continuidade das ISAs
+	  Maior eficiência
+	  Maior compatibilidade
+	  Novas extensões
+	  Continuidade das ISAs
 
   32.3.2 Tendências Tecnológicas — [V]
-      Evolução contínua
-      Novos domínios de aplicação
-      Adaptação às demandas futuras
-      Consolidação das arquiteturas modernas
+	  Evolução contínua
+	  Novos domínios de aplicação
+	  Adaptação às demandas futuras
+	  Consolidação das arquiteturas modernas
 
 
 
@@ -1553,45 +1563,47 @@ PARTE 6 — PRINCIPAIS IMPLEMENTAÇÕES
  33.1 Visão Geral da Arquitetura x86 — [I]
 
   33.1.1 Origem e Evolução — [I]
-      Surgimento da arquitetura
-      Evolução histórica
-      Compatibilidade entre gerações
-      Consolidação no mercado
-      Expansão da ISA
+	  Surgimento da arquitetura
+	  Evolução histórica
+	  Compatibilidade entre gerações
+	  Consolidação no mercado
+	  Expansão da ISA
 
   33.1.2 Filosofia Arquitetural — [I]
-      Base CISC
-      Evolução da arquitetura
-      Compatibilidade retroativa
-      Extensões da ISA
+	  Base CISC
+	  Evolução da arquitetura
+	  Compatibilidade retroativa
+	  Extensões da ISA
+
 
  33.2 Características da ISA x86 — [I]
 
   33.2.1 Organização do Conjunto de Instruções — [I]
-      Grande número de instruções
-      Comprimento variável
-      Diversidade de modos de endereçamento
-      Evolução contínua da ISA
+	  Grande número de instruções
+	  Comprimento variável
+	  Diversidade de modos de endereçamento
+	  Evolução contínua da ISA
 
   33.2.2 Evolução Arquitetural — [I]
-      x86 de 16 bits
-      x86 de 32 bits
-      x86-64 (AMD64)
-      Continuidade da compatibilidade
+	  x86 de 16 bits
+	  x86 de 32 bits
+	  x86-64 (AMD64)
+	  Continuidade da compatibilidade
+
 
  33.3 Importância da Arquitetura x86 — [I]
 
   33.3.1 Principais Aplicações — [I]
-      Computadores pessoais
-      Workstations
-      Servidores
-      Computação de alto desempenho
+	  Computadores pessoais
+	  Workstations
+	  Servidores
+	  Computação de alto desempenho
 
   33.3.2 Relevância Atual — [I]
-      Ecossistema consolidado
-      Compatibilidade histórica
-      Evolução contínua
-      Permanência no mercado
+	  Ecossistema consolidado
+	  Compatibilidade histórica
+	  Evolução contínua
+	  Permanência no mercado
 
 
 
@@ -1600,46 +1612,48 @@ PARTE 6 — PRINCIPAIS IMPLEMENTAÇÕES
  34.1 Visão Geral da Arquitetura ARM — [I]
 
   34.1.1 Origem e Evolução — [I]
-      Desenvolvimento da arquitetura
-      Evolução histórica
-      Expansão comercial
-      Consolidação mundial
+	  Desenvolvimento da arquitetura
+	  Evolução histórica
+	  Expansão comercial
+	  Consolidação mundial
 
   34.1.2 Filosofia Arquitetural — [I]
-      Base RISC
-      Simplicidade da ISA
-      Eficiência energética
-      Escalabilidade
+	  Base RISC
+	  Simplicidade da ISA
+	  Eficiência energética
+	  Escalabilidade
+
 
  34.2 Características da ISA ARM — [I]
 
   34.2.1 Organização do Conjunto de Instruções — [I]
-      Instruções simplificadas
-      Organização uniforme
-      Evolução das extensões
-      Modularidade
+	  Instruções simplificadas
+	  Organização uniforme
+	  Evolução das extensões
+	  Modularidade
 
   34.2.2 Evolução da Arquitetura — [I]
-      ARM clássico
-      Thumb
-      Thumb-2
-      AArch32
-      AArch64
+	  ARM clássico
+	  Thumb
+	  Thumb-2
+	  AArch32
+	  AArch64
+
 
  34.3 Importância da Arquitetura ARM — [I]
 
   34.3.1 Principais Aplicações — [I]
-      Smartphones
-      Tablets
-      Sistemas embarcados
-      Servidores
-      Computadores pessoais
+	  Smartphones
+	  Tablets
+	  Sistemas embarcados
+	  Servidores
+	  Computadores pessoais
 
   34.3.2 Relevância Atual — [I]
-      Eficiência energética
-      Grande ecossistema
-      Crescimento contínuo
-      Expansão para novos mercados
+	  Eficiência energética
+	  Grande ecossistema
+	  Crescimento contínuo
+	  Expansão para novos mercados
 
 
 
