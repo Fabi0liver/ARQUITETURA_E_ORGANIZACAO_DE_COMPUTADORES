@@ -18,60 +18,61 @@ PARTE 1 — FUNDAMENTOS DAS ARQUITETURAS RISC E CISC
  1.1 Conceitos Fundamentais — [I]
 
   1.1.1 Arquitetura de Conjunto de Instruções (ISA) — [I]
-      Conceito de ISA
-      Interface entre hardware e software
-      Papel da ISA na Arquitetura de Computadores
-      Recursos visíveis ao programador
-      Modelo de programação
-      Modelo de execução
-      Compatibilidade de software
-      Independência entre ISA e implementação
+	  Conceito de ISA
+	  Interface entre hardware e software
+	  Papel da ISA na Arquitetura de Computadores
+	  Recursos visíveis ao programador
+	  Modelo de programação
+	  Modelo de execução
+	  Compatibilidade de software
+	  Independência entre ISA e implementação
 
   1.1.2 Arquiteturas RISC e CISC — [I]
-      Conceito de RISC
-      Conceito de CISC
-      Filosofias de projeto
-      Objetivos gerais
-      Importância histórica
-      Papel na evolução dos processadores
-      Influência sobre a computação moderna
+	  Conceito de RISC
+	  Conceito de CISC
+	  Filosofias de projeto
+	  Objetivos gerais
+	  Importância histórica
+	  Papel na evolução dos processadores
+	  Influência sobre a computação moderna
 
   1.1.3 Importância das Arquiteturas de Instruções — [I]
-      Relação entre software e hardware
-      Definição das operações executáveis
-      Padronização da programação
-      Compatibilidade entre gerações
-      Influência sobre desempenho
-      Influência sobre consumo de energia
-      Influência sobre custo de implementação
+	  Relação entre software e hardware
+	  Definição das operações executáveis
+	  Padronização da programação
+	  Compatibilidade entre gerações
+	  Influência sobre desempenho
+	  Influência sobre consumo de energia
+	  Influência sobre custo de implementação
+
 
  1.2 A ISA na Arquitetura de Computadores — [I]
 
   1.2.1 Papel da ISA no Sistema Computacional — [I]
-      Interface de programação
-      Comunicação entre compiladores e hardware
-      Execução de programas
-      Definição das instruções
-      Organização lógica do processador
-      Abstração do hardware
+	  Interface de programação
+	  Comunicação entre compiladores e hardware
+	  Execução de programas
+	  Definição das instruções
+	  Organização lógica do processador
+	  Abstração do hardware
 
   1.2.2 Arquitetura × Organização × Implementação — [I]
-      Conceito de Arquitetura
-      Conceito de Organização
-      Conceito de Implementação
-      Relação entre os conceitos
-      O que pertence à ISA
-      O que não pertence à ISA
-      Exemplos comparativos
+	  Conceito de Arquitetura
+	  Conceito de Organização
+	  Conceito de Implementação
+	  Relação entre os conceitos
+	  O que pertence à ISA
+	  O que não pertence à ISA
+	  Exemplos comparativos
 
   1.2.3 Filosofias de Projeto da ISA — [I]
-      Simplicidade versus complexidade
-      Eficiência versus flexibilidade
-      Facilidade de implementação
-      Facilidade de programação
-      Compatibilidade
-      Escalabilidade
-      Evolução arquitetural
+	  Simplicidade versus complexidade
+	  Eficiência versus flexibilidade
+	  Facilidade de implementação
+	  Facilidade de programação
+	  Compatibilidade
+	  Escalabilidade
+	  Evolução arquitetural
 
 
 
