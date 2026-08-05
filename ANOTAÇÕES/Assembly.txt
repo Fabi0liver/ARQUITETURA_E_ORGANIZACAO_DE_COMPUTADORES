@@ -417,3 +417,973 @@ PARTE 1 — FUNDAMENTOS DA LINGUAGEM ASSEMBLY
         Compreensão da execução
         Base para estudos avançados
         Integração entre hardware e software
+
+
+
+PARTE 2 — ESTRUTURA E ARQUITETURA DA LINGUAGEM ASSEMBLY
+
+
+9. Estrutura de um Programa Assembly — [P]
+
+ 9.1 Organização Geral de um Programa — [P]
+
+  9.1.1 Estrutura Básica — [P]
+        Organização geral do código
+        Arquivo-fonte
+        Organização lógica
+        Fluxo do programa
+        Separação entre dados e instruções
+
+  9.1.2 Componentes Fundamentais — [P]
+        Diretivas
+        Declarações
+        Rótulos
+        Instruções
+        Comentários
+        Símbolos
+
+
+ 9.2 Organização Interna — [P]
+
+  9.2.1 Organização Modular — [P]
+        Blocos de código
+        Organização por funções
+        Separação lógica
+        Reutilização do código
+
+  9.2.2 Estrutura de Execução — [P]
+        Ponto de entrada
+        Sequência das instruções
+        Fluxo principal
+        Encerramento do programa
+
+
+ 9.3 Organização Arquitetural — [I]
+
+  9.3.1 Dependência do Assembler — [I]
+        Convenções sintáticas
+        Organização do arquivo
+        Diferenças entre assemblers
+        Compatibilidade
+
+  9.3.2 Organização entre Arquiteturas — [I]
+        Estruturas comuns
+        Particularidades arquiteturais
+        Padronizações
+        Diferenças gerais
+
+
+
+10. Sintaxe e Formato das Instruções — [P]
+
+ 10.1 Sintaxe da Linguagem Assembly — [P]
+
+  10.1.1 Estrutura de uma Instrução — [P]
+        Mnemônico
+        Operandos
+        Separadores
+        Comentários
+        Formatação
+
+  10.1.2 Regras Sintáticas — [P]
+        Ordem dos operandos
+        Sensibilidade a maiúsculas e minúsculas
+        Espaçamento
+        Convenções do assembler
+        Escrita das instruções
+
+
+ 10.2 Componentes das Instruções — [P]
+
+  10.2.1 Mnemônicos — [P]
+        Representação simbólica
+        Operações básicas
+        Organização por categorias
+        Dependência da ISA
+
+  10.2.2 Operandos — [P]
+        Operandos imediatos
+        Operandos em registradores
+        Operandos em memória
+        Número de operandos
+        Restrições arquiteturais
+
+
+ 10.3 Formatos das Instruções — [P]
+
+  10.3.1 Estrutura Arquitetural — [P]
+        Campos da instrução
+        Codificação
+        Representação interna
+        Relação com a ISA
+
+  10.3.2 Organização dos Formatos — [P]
+        Formatos simples
+        Formatos complexos
+        Formatos dependentes da arquitetura
+        Influência da ISA
+
+
+
+11. Diretivas do Assembler — [P]
+
+ 11.1 Conceitos Fundamentais — [P]
+
+  11.1.1 O que são Diretivas — [P]
+        Conceito
+        Finalidade
+        Diferença entre diretivas e instruções
+        Papel durante a montagem
+
+  11.1.2 Funcionamento Geral — [P]
+        Processamento pelo assembler
+        Organização do código
+        Configuração do programa
+        Controle da montagem
+
+
+ 11.2 Categorias de Diretivas — [P]
+
+  11.2.1 Diretivas de Organização — [P]
+        Definição de seções
+        Organização dos dados
+        Organização do código
+        Controle estrutural
+
+  11.2.2 Diretivas de Definição — [P]
+        Definição de constantes
+        Definição de símbolos
+        Reserva de espaço
+        Inicialização de dados
+
+
+ 11.3 Recursos Oferecidos pelas Diretivas — [I]
+
+  11.3.1 Organização do Programa — [I]
+        Estruturação
+        Modularização
+        Controle do código
+        Legibilidade
+
+  11.3.2 Dependência do Assembler — [I]
+        Diretivas específicas
+        Compatibilidade
+        Diferenças entre implementações
+        Portabilidade
+
+
+
+12. Seções de um Programa Assembly — [P]
+
+ 12.1 Organização em Seções — [P]
+
+  12.1.1 Conceitos Fundamentais — [P]
+        Finalidade das seções
+        Organização lógica
+        Separação funcional
+        Estrutura do programa
+
+  12.1.2 Papel das Seções — [P]
+        Organização do código
+        Organização dos dados
+        Inicialização
+        Execução
+
+
+ 12.2 Principais Seções — [P]
+
+  12.2.1 Seção de Código (.text) — [P]
+        Instruções executáveis
+        Organização do fluxo
+        Ponto de entrada
+        Rotinas
+
+  12.2.2 Seção de Dados Inicializados (.data) — [P]
+        Variáveis inicializadas
+        Constantes
+        Dados permanentes
+        Organização
+
+  12.2.3 Seção de Dados Não Inicializados (.bss) — [P]
+        Reserva de memória
+        Variáveis não inicializadas
+        Organização lógica
+        Papel durante a execução
+
+  12.2.4 Outras Seções — [I]
+        Seções específicas
+        Seções dependentes do assembler
+        Organização adicional
+        Casos particulares
+
+
+ 12.3 Organização Geral — [I]
+
+  12.3.1 Relação entre as Seções — [I]
+        Independência lógica
+        Cooperação entre seções
+        Organização do programa
+        Fluxo geral
+
+  12.3.2 Diferenças entre Assemblers — [V]
+        Convenções
+        Sintaxe
+        Organização
+        Compatibilidade
+
+
+
+13. Rótulos (Labels) — [P]
+
+ 13.1 Conceitos Fundamentais — [P]
+
+  13.1.1 Definição de Labels — [P]
+        Conceito
+        Identificação simbólica
+        Associação a endereços
+        Organização do código
+
+  13.1.2 Finalidade — [P]
+        Controle do fluxo
+        Organização do programa
+        Referenciamento
+        Legibilidade
+
+
+ 13.2 Utilização dos Labels — [P]
+
+  13.2.1 Labels de Código — [P]
+        Entrada de rotinas
+        Destino de saltos
+        Organização da execução
+        Modularização
+
+  13.2.2 Labels de Dados — [P]
+        Identificação de variáveis
+        Identificação de constantes
+        Referência simbólica
+        Organização
+
+
+ 13.3 Boas Práticas — [I]
+
+  13.3.1 Organização dos Labels — [I]
+        Padronização
+        Nomenclatura
+        Clareza
+        Reutilização
+
+  13.3.2 Limitações — [I]
+        Escopo
+        Dependência do assembler
+        Restrições sintáticas
+        Organização
+
+
+
+14. Símbolos, Constantes e Expressões — [P]
+
+ 14.1 Símbolos — [P]
+
+  14.1.1 Conceitos Fundamentais — [P]
+        Identificadores
+        Definição simbólica
+        Associação a endereços
+        Organização
+
+  14.1.2 Tabela de Símbolos — [P]
+        Construção
+        Consulta
+        Resolução
+        Papel durante a montagem
+
+
+ 14.2 Constantes — [P]
+
+  14.2.1 Representação dos Valores — [P]
+        Constantes numéricas
+        Constantes simbólicas
+        Bases numéricas
+        Caracteres
+        Cadeias de caracteres
+
+  14.2.2 Declaração de Constantes — [P]
+        Definição
+        Inicialização
+        Utilização
+        Organização
+
+
+ 14.3 Expressões Assembly — [P]
+
+  14.3.1 Expressões Constantes — [P]
+        Avaliação
+        Operadores
+        Cálculos
+        Simplificação
+
+  14.3.2 Expressões Simbólicas — [P]
+        Referências
+        Combinação de símbolos
+        Avaliação pelo assembler
+        Geração dos endereços
+
+
+
+15. Modos de Endereçamento — [P]
+
+ 15.1 Conceitos Fundamentais — [P]
+
+  15.1.1 Definição — [P]
+        Conceito
+        Finalidade
+        Papel na Assembly
+        Relação com a ISA
+
+  15.1.2 Importância — [P]
+        Flexibilidade
+        Eficiência
+        Organização do acesso
+        Expressividade da linguagem
+
+
+ 15.2 Principais Modos de Endereçamento — [P]
+
+  15.2.1 Endereçamento Imediato — [P]
+        Valor imediato
+        Características
+        Utilização
+        Limitações
+
+  15.2.2 Endereçamento por Registrador — [P]
+        Operandos em registradores
+        Características
+        Aplicações
+        Eficiência
+
+  15.2.3 Endereçamento Direto — [P]
+        Endereço explícito
+        Organização
+        Utilização
+        Características
+
+  15.2.4 Endereçamento Indireto — [P]
+        Referência indireta
+        Ponteiros
+        Organização
+        Flexibilidade
+
+  15.2.5 Endereçamento Indexado — [P]
+        Índices
+        Deslocamentos
+        Estruturas de dados
+        Aplicações
+
+  15.2.6 Endereçamento Baseado em Deslocamento — [P]
+        Base
+        Offset
+        Organização
+        Utilização
+
+  15.2.7 Endereçamento Relativo — [P]
+        Endereço relativo
+        Fluxo de execução
+        Saltos
+        Organização
+
+
+ 15.3 Comparação Geral — [I]
+
+  15.3.1 Critérios de Comparação — [I]
+        Flexibilidade
+        Eficiência
+        Complexidade
+        Dependência arquitetural
+
+  15.3.2 Influência da ISA — [I]
+        Disponibilidade dos modos
+        Limitações
+        Diferenças entre arquiteturas
+        Compatibilidade
+
+
+
+16. Relação entre Assembly, ISA e Arquitetura do Processador — [P]
+
+ 16.1 Assembly e ISA — [P]
+
+  16.1.1 Interface de Programação — [P]
+        Correspondência entre Assembly e ISA
+        Recursos arquiteturais
+        Modelo de programação
+        Visão do programador
+
+  16.1.2 Dependência Arquitetural — [P]
+        Instruções específicas
+        Sintaxe dependente
+        Compatibilidade
+        Portabilidade
+
+
+ 16.2 Relação com a Arquitetura do Processador — [P]
+
+  16.2.1 Recursos Visíveis ao Programador — [P]
+        Conjunto de instruções
+        Registradores (visão geral)
+        Flags (visão geral)
+        Modos de endereçamento
+        Modelo de execução
+
+  16.2.2 Limites da Linguagem Assembly — [P]
+        O que pertence à Assembly
+        O que pertence à microarquitetura
+        O que pertence ao sistema operacional
+        Separação de responsabilidades
+
+
+ 16.3 Papel na Arquitetura e Organização de Computadores — [I]
+
+  16.3.1 Importância Arquitetural — [I]
+        Compreensão da ISA
+        Base para programação de baixo nível
+        Interface entre software e hardware
+        Modelo de execução
+
+  16.3.2 Preparação para os Próximos Estudos — [I]
+        Organização das instruções
+        Programação Assembly
+        Interação com o hardware
+        Arquiteturas Assembly
+
+
+
+PARTE 3 — ORGANIZAÇÃO DAS INSTRUÇÕES E PROGRAMAÇÃO
+
+
+17. Organização do Conjunto de Instruções Assembly — [P]
+
+ 17.1 Fundamentos do Conjunto de Instruções — [P]
+
+  17.1.1 Conceitos Fundamentais — [P]
+        Definição de conjunto de instruções
+        Organização funcional
+        Relação com a ISA
+        Categorias de instruções
+        Modelo de programação
+
+  17.1.2 Estrutura Geral — [P]
+        Instruções elementares
+        Operações disponíveis
+        Organização por finalidade
+        Dependência arquitetural
+
+
+ 17.2 Classificação das Instruções — [P]
+
+  17.2.1 Categorias Funcionais — [P]
+        Transferência de dados
+        Operações aritméticas
+        Operações lógicas
+        Controle de fluxo
+        Manipulação de bits
+
+  17.2.2 Organização Operacional — [P]
+        Operações sobre registradores
+        Operações sobre memória
+        Operações imediatas
+        Operações de controle
+
+
+ 17.3 Características Arquiteturais — [I]
+
+  17.3.1 Dependência da ISA — [I]
+        Disponibilidade das instruções
+        Diferenças entre arquiteturas
+        Compatibilidade
+        Extensões da ISA
+
+  17.3.2 Organização Geral — [I]
+        Regularidade
+        Especialização
+        Complexidade
+        Eficiência
+
+
+
+18. Instruções de Transferência de Dados — [P]
+
+ 18.1 Conceitos Fundamentais — [P]
+
+  18.1.1 Objetivos — [P]
+        Movimentação de dados
+        Cópia de valores
+        Inicialização
+        Preparação para processamento
+
+  18.1.2 Natureza das Operações — [P]
+        Transferência entre registradores
+        Transferência entre memória e registradores
+        Valores imediatos
+        Atualização dos operandos
+
+
+ 18.2 Categorias de Transferência — [P]
+
+  18.2.1 Transferências Simples — [P]
+        Cópia de dados
+        Leitura
+        Escrita
+        Inicialização
+
+  18.2.2 Transferências Especiais — [P]
+        Troca de valores
+        Transferências múltiplas
+        Extensão de dados
+        Conversões básicas
+
+
+ 18.3 Aplicações — [I]
+
+  18.3.1 Organização dos Dados — [I]
+        Preparação de operações
+        Comunicação entre rotinas
+        Inicialização de variáveis
+        Organização do programa
+
+  18.3.2 Relação com Outras Operações — [I]
+        Operações aritméticas
+        Controle de fluxo
+        Procedimentos
+        Manipulação da pilha
+
+
+
+19. Operações Aritméticas — [P]
+
+ 19.1 Fundamentos — [P]
+
+  19.1.1 Operações Básicas — [P]
+        Adição
+        Subtração
+        Incremento
+        Decremento
+
+  19.1.2 Operações Estendidas — [P]
+        Multiplicação
+        Divisão
+        Negação
+        Ajustes aritméticos
+
+
+ 19.2 Organização das Operações — [P]
+
+  19.2.1 Operações Inteiras — [P]
+        Inteiros com sinal
+        Inteiros sem sinal
+        Faixas de valores
+        Tratamento geral
+
+  19.2.2 Atualização do Estado — [P]
+        Resultado
+        Flags (visão geral)
+        Overflow (visão geral)
+        Carry (visão geral)
+
+
+ 19.3 Aplicações — [I]
+
+  19.3.1 Cálculos Gerais — [I]
+        Contadores
+        Índices
+        Endereços
+        Processamento numérico
+
+  19.3.2 Limitações — [I]
+        Dependência da arquitetura
+        Tamanho dos operandos
+        Precisão
+        Restrições da ISA
+
+
+
+20. Operações Lógicas e Manipulação de Bits — [P]
+
+ 20.1 Operações Lógicas — [P]
+
+  20.1.1 Operações Fundamentais — [P]
+        AND
+        OR
+        XOR
+        NOT
+
+  20.1.2 Aplicações — [P]
+        Máscaras
+        Limpeza de bits
+        Ativação de bits
+        Testes lógicos
+
+
+ 20.2 Manipulação de Bits — [P]
+
+  20.2.1 Operações Individuais — [P]
+        Teste de bits
+        Configuração
+        Limpeza
+        Complementação
+
+  20.2.2 Organização Binária — [P]
+        Campos de bits
+        Máscaras
+        Combinações
+        Representações
+
+
+ 20.3 Aplicações Gerais — [I]
+
+  20.3.1 Processamento de Dados — [I]
+        Controle lógico
+        Manipulação de estados
+        Compactação
+        Extração de informações
+
+  20.3.2 Utilização Prática — [I]
+        Controle de dispositivos
+        Processamento binário
+        Otimizações
+        Programação de baixo nível
+
+
+
+21. Deslocamentos e Rotações — [P]
+
+ 21.1 Conceitos Fundamentais — [P]
+
+  21.1.1 Deslocamentos — [P]
+        Deslocamento à esquerda
+        Deslocamento à direita
+        Lógico
+        Aritmético
+
+  21.1.2 Rotações — [P]
+        Rotação à esquerda
+        Rotação à direita
+        Rotação através das flags (visão geral)
+        Organização
+
+
+ 21.2 Funcionamento — [P]
+
+  21.2.1 Manipulação dos Bits — [P]
+        Movimentação
+        Preenchimento
+        Preservação
+        Atualização
+
+  21.2.2 Relação com Operações Aritméticas — [P]
+        Multiplicação por potências de dois
+        Divisão por potências de dois
+        Eficiência
+        Limitações
+
+
+ 21.3 Aplicações — [I]
+
+  21.3.1 Processamento Binário — [I]
+        Máscaras
+        Codificações
+        Conversões
+        Otimizações
+
+  21.3.2 Uso Geral — [I]
+        Algoritmos
+        Criptografia (visão geral)
+        Processamento de dados
+        Controle lógico
+
+
+
+22. Comparações e Testes — [P]
+
+ 22.1 Comparações — [P]
+
+  22.1.1 Conceitos Fundamentais — [P]
+        Comparação entre operandos
+        Igualdade
+        Diferença
+        Ordem
+
+  22.1.2 Organização Geral — [P]
+        Comparações numéricas
+        Comparações lógicas
+        Atualização das flags
+        Preparação para desvios
+
+
+ 22.2 Testes — [P]
+
+  22.2.1 Testes Lógicos — [P]
+        Teste de bits
+        Testes condicionais
+        Operações sem alteração dos operandos
+        Avaliação de condições
+
+  22.2.2 Relação com o Fluxo — [P]
+        Decisões
+        Estruturas condicionais
+        Saltos
+        Controle da execução
+
+
+ 22.3 Aplicações — [I]
+
+  22.3.1 Controle do Programa — [I]
+        Seleção
+        Validação
+        Repetições
+        Comparações sucessivas
+
+  22.3.2 Organização Lógica — [I]
+        Estruturas condicionais
+        Fluxo lógico
+        Controle
+        Algoritmos
+
+
+
+23. Controle de Fluxo e Saltos — [P]
+
+ 23.1 Conceitos Fundamentais — [P]
+
+  23.1.1 Fluxo de Execução — [P]
+        Sequência das instruções
+        Alteração do fluxo
+        Controle do programa
+        Organização
+
+  23.1.2 Papel dos Saltos — [P]
+        Decisões
+        Repetições
+        Chamadas
+        Organização do código
+
+
+ 23.2 Tipos de Saltos — [P]
+
+  23.2.1 Saltos Incondicionais — [P]
+        Desvio direto
+        Transferência do fluxo
+        Organização
+        Aplicações
+
+  23.2.2 Saltos Condicionais — [P]
+        Dependência das flags
+        Avaliação de condições
+        Comparações
+        Controle lógico
+
+
+ 23.3 Estruturas Baseadas em Saltos — [P]
+
+  23.3.1 Estruturas Condicionais — [P]
+        IF
+        IF-ELSE
+        Seleção múltipla
+        Decisões
+
+  23.3.2 Estruturas de Repetição — [P]
+        LOOP
+        WHILE
+        DO-WHILE
+        Iterações
+
+
+
+24. Procedimentos, Sub-rotinas e Funções — [P]
+
+ 24.1 Conceitos Fundamentais — [P]
+
+  24.1.1 Procedimentos — [P]
+        Definição
+        Organização
+        Modularização
+        Reutilização
+
+  24.1.2 Sub-rotinas e Funções — [P]
+        Conceitos
+        Estrutura
+        Chamada
+        Retorno
+
+
+ 24.2 Organização das Chamadas — [P]
+
+  24.2.1 Entrada da Rotina — [P]
+        Chamada
+        Transferência do controle
+        Preparação
+        Execução
+
+  24.2.2 Retorno — [P]
+        Finalização
+        Retorno ao chamador
+        Continuidade da execução
+        Organização
+
+
+ 24.3 Modularização — [I]
+
+  24.3.1 Organização do Código — [I]
+        Divisão em módulos
+        Clareza
+        Manutenção
+        Reutilização
+
+  24.3.2 Benefícios — [I]
+        Organização
+        Escalabilidade
+        Testabilidade
+        Legibilidade
+
+
+
+25. Manipulação da Pilha — [P]
+
+ 25.1 Conceitos Fundamentais — [P]
+
+  25.1.1 Estrutura LIFO — [P]
+        Conceito
+        Funcionamento
+        Organização
+        Utilização
+
+  25.1.2 Papel da Pilha — [P]
+        Armazenamento temporário
+        Chamadas de procedimentos
+        Retornos
+        Preservação de dados
+
+
+ 25.2 Operações Fundamentais — [P]
+
+  25.2.1 Inserção e Remoção — [P]
+        PUSH
+        POP
+        Ordem das operações
+        Organização
+
+  25.2.2 Utilização durante a Execução — [P]
+        Salvamento temporário
+        Recuperação
+        Organização da execução
+        Controle
+
+
+ 25.3 Aplicações — [I]
+
+  25.3.1 Procedimentos — [I]
+        Chamadas
+        Retornos
+        Organização local
+        Modularização
+
+  25.3.2 Limitações Gerais — [I]
+        Crescimento da pilha
+        Organização correta
+        Balanceamento
+        Cuidados na programação
+
+
+
+26. Estruturas de Programação em Assembly — [P]
+
+ 26.1 Estruturas Sequenciais — [P]
+
+  26.1.1 Execução Sequencial — [P]
+        Ordem das instruções
+        Organização lógica
+        Fluxo contínuo
+        Controle
+
+  26.1.2 Organização do Código — [P]
+        Blocos
+        Modularização
+        Clareza
+        Legibilidade
+
+
+ 26.2 Estruturas Condicionais — [P]
+
+  26.2.1 Decisão — [P]
+        IF
+        ELSE
+        Comparações
+        Saltos
+
+  26.2.2 Seleção — [P]
+        Múltiplas alternativas
+        Organização
+        Controle lógico
+        Fluxo
+
+
+ 26.3 Estruturas Iterativas — [P]
+
+  26.3.1 Repetições — [P]
+        WHILE
+        DO-WHILE
+        FOR
+        LOOP
+
+  26.3.2 Organização dos Algoritmos — [P]
+        Contadores
+        Condições
+        Encerramento
+        Eficiência
+
+
+
+27. Convenções de Chamada — [I]
+
+ 27.1 Conceitos Fundamentais — [I]
+
+  27.1.1 O que são Convenções de Chamada — [I]
+        Definição
+        Objetivos
+        Padronização
+        Compatibilidade
+
+  27.1.2 Papel nas Chamadas de Funções — [I]
+        Comunicação entre rotinas
+        Organização
+        Interoperabilidade
+        Execução
+
+
+ 27.2 Componentes Gerais — [I]
+
+  27.2.1 Passagem de Parâmetros — [I]
+        Formas gerais
+        Ordem
+        Organização
+        Compatibilidade
+
+  27.2.2 Retorno de Valores — [I]
+        Organização
+        Convenções
+        Continuidade da execução
+        Padronização
+
+
+ 27.3 Relação com a Arquitetura — [V]
+
+  27.3.1 Dependência da ABI — [V]
+        Convenções específicas
+        Compatibilidade
+        Diferenças entre plataformas
+        Portabilidade
+
+  27.3.2 Importância Geral — [V]
+        Integração entre módulos
+        Integração com outras linguagens
+        Organização dos programas
+        Desenvolvimento de software
