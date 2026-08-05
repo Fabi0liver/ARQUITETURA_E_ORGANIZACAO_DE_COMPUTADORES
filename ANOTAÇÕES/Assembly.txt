@@ -1387,3 +1387,746 @@ PARTE 3 — ORGANIZAÇÃO DAS INSTRUÇÕES E PROGRAMAÇÃO
         Integração com outras linguagens
         Organização dos programas
         Desenvolvimento de software
+
+
+
+PARTE 4 — PROGRAMAÇÃO EM ASSEMBLY E INTERAÇÃO COM O HARDWARE
+
+
+28. Manipulação de Memória em Assembly — [P]
+
+ 28.1 Conceitos Fundamentais — [P]
+
+  28.1.1 Acesso à Memória — [P]
+        Leitura de dados
+        Escrita de dados
+        Endereçamento de operandos
+        Manipulação de endereços
+        Organização dos acessos
+
+  28.1.2 Tipos de Dados — [P]
+        Bytes
+        Palavras (Words)
+        Double Words
+        Quad Words
+        Tamanhos dependentes da arquitetura
+
+
+ 28.2 Organização dos Dados — [P]
+
+  28.2.1 Variáveis — [P]
+        Declaração
+        Inicialização
+        Atualização
+        Organização
+
+  28.2.2 Estruturas de Dados Simples — [P]
+        Vetores
+        Matrizes
+        Strings
+        Estruturas lineares
+
+
+ 28.3 Operações de Manipulação — [P]
+
+  28.3.1 Leitura e Escrita — [P]
+        Acesso direto
+        Acesso indireto
+        Atualização de dados
+        Cópia de memória
+
+  28.3.2 Organização dos Endereços — [P]
+        Ponteiros
+        Offsets
+        Endereços efetivos
+        Referências simbólicas
+
+
+
+29. Entrada e Saída em Assembly — [P]
+
+ 29.1 Conceitos Fundamentais — [P]
+
+  29.1.1 Entrada e Saída — [P]
+        Conceito
+        Objetivos
+        Comunicação com o ambiente
+        Fluxo de dados
+
+  29.1.2 Modelos Gerais — [P]
+        Entrada de dados
+        Saída de dados
+        Comunicação com dispositivos
+        Dependência do sistema operacional
+
+
+ 29.2 Operações de Entrada e Saída — [P]
+
+  29.2.1 Entrada — [P]
+        Leitura de caracteres
+        Leitura de números
+        Entrada de strings
+        Entrada por dispositivos
+
+  29.2.2 Saída — [P]
+        Escrita de caracteres
+        Escrita de números
+        Impressão de strings
+        Saída para dispositivos
+
+
+ 29.3 Organização Geral — [I]
+
+  29.3.1 Papel da Assembly — [I]
+        Preparação dos parâmetros
+        Chamadas aos serviços
+        Controle das operações
+        Organização da comunicação
+
+  29.3.2 Dependência da Plataforma — [I]
+        Sistemas operacionais
+        ABI
+        Convenções
+        Compatibilidade
+
+
+
+30. Interrupções e Exceções (Visão Geral) — [I]
+
+ 30.1 Conceitos Fundamentais — [I]
+
+  30.1.1 Interrupções — [I]
+        Conceito
+        Eventos externos
+        Transferência de controle
+        Papel na Assembly
+
+  30.1.2 Exceções — [I]
+        Conceito
+        Eventos internos
+        Tratamento
+        Continuidade da execução
+
+
+ 30.2 Relação com a Programação Assembly — [I]
+
+  30.2.1 Utilização das Interrupções — [I]
+        Serviços do sistema
+        Comunicação com hardware
+        Controle de execução
+        Sistemas legados
+
+  30.2.2 Organização Geral — [I]
+        Vetores de interrupção
+        Rotinas de tratamento
+        Retorno
+        Continuidade
+
+
+ 30.3 Limites do Estudo — [V]
+
+  30.3.1 Relação com Outras Áreas — [V]
+        Sistema operacional
+        Arquitetura do processador
+        Controladores
+        Hardware
+
+  30.3.2 Papel na Assembly — [V]
+        Interface de programação
+        Utilização dos serviços
+        Controle de eventos
+        Programação de baixo nível
+
+
+
+31. Chamadas de Sistema (System Calls) — [P]
+
+ 31.1 Conceitos Fundamentais — [P]
+
+  31.1.1 O que são System Calls — [P]
+        Definição
+        Interface com o sistema operacional
+        Objetivos
+        Papel na Assembly
+
+  31.1.2 Funcionamento Geral — [P]
+        Solicitação de serviços
+        Passagem de parâmetros
+        Execução
+        Retorno
+
+
+ 31.2 Categorias de Serviços — [P]
+
+  31.2.1 Manipulação de Arquivos — [P]
+        Abertura
+        Leitura
+        Escrita
+        Fechamento
+
+  31.2.2 Controle de Processos — [P]
+        Criação
+        Encerramento
+        Comunicação
+        Sincronização
+
+  31.2.3 Serviços Gerais — [P]
+        Entrada e saída
+        Memória
+        Tempo
+        Recursos do sistema
+
+
+ 31.3 Dependência da Plataforma — [I]
+
+  31.3.1 Diferenças entre Sistemas — [I]
+        Linux
+        Windows
+        Sistemas embarcados
+        Compatibilidade
+
+  31.3.2 Relação com a ABI — [I]
+        Convenções
+        Interface
+        Organização
+        Portabilidade
+
+
+
+32. Comunicação com Dispositivos — [I]
+
+ 32.1 Conceitos Fundamentais — [I]
+
+  32.1.1 Comunicação de Baixo Nível — [I]
+        Conceito
+        Objetivos
+        Controle dos dispositivos
+        Interface de hardware
+
+  32.1.2 Papel da Assembly — [I]
+        Controle direto
+        Configuração
+        Inicialização
+        Comunicação
+
+
+ 32.2 Métodos Gerais — [I]
+
+  32.2.1 Entrada e Saída Mapeada — [I]
+        Conceito
+        Organização
+        Endereçamento
+        Acesso
+
+  32.2.2 Entrada e Saída por Portas — [I]
+        Conceito
+        Operações básicas
+        Organização
+        Compatibilidade
+
+
+ 32.3 Aplicações — [V]
+
+  32.3.1 Controle de Hardware — [V]
+        Dispositivos simples
+        Controladores
+        Sistemas embarcados
+        Firmware
+
+  32.3.2 Limitações — [V]
+        Dependência da plataforma
+        Dependência da ISA
+        Dependência do sistema
+        Portabilidade
+
+
+
+33. Programação de Baixo Nível — [P]
+
+ 33.1 Conceitos Fundamentais — [P]
+
+  33.1.1 Definição — [P]
+        Programação próxima ao hardware
+        Controle detalhado
+        Eficiência
+        Precisão
+
+  33.1.2 Características — [P]
+        Pouca abstração
+        Controle explícito
+        Dependência da arquitetura
+        Organização detalhada
+
+
+ 33.2 Técnicas Gerais — [P]
+
+  33.2.1 Controle dos Recursos — [P]
+        Manipulação de dados
+        Controle da execução
+        Comunicação com hardware
+        Otimização
+
+  33.2.2 Organização do Código — [P]
+        Modularização
+        Clareza
+        Eficiência
+        Reutilização
+
+
+ 33.3 Aplicações — [I]
+
+  33.3.1 Desenvolvimento Especializado — [I]
+        Sistemas operacionais
+        Firmware
+        Drivers
+        Bootloaders
+
+  33.3.2 Benefícios e Limitações — [I]
+        Desempenho
+        Controle
+        Complexidade
+        Portabilidade
+
+
+
+34. Interface entre Assembly e Linguagens de Alto Nível — [P]
+
+ 34.1 Conceitos Fundamentais — [P]
+
+  34.1.1 Integração entre Linguagens — [P]
+        Objetivos
+        Comunicação
+        Compartilhamento de código
+        Interoperabilidade
+
+  34.1.2 Papel da Assembly — [P]
+        Rotinas críticas
+        Otimizações
+        Bibliotecas
+        Interface com compiladores
+
+
+ 34.2 Mecanismos Gerais — [P]
+
+  34.2.1 Chamada de Funções — [P]
+        Convenções de chamada
+        Passagem de parâmetros
+        Retorno
+        Compatibilidade
+
+  34.2.2 Organização dos Módulos — [P]
+        Arquivos objeto
+        Ligação
+        Bibliotecas
+        Executáveis
+
+
+ 34.3 Recursos Modernos — [I]
+
+  34.3.1 Inline Assembly — [I]
+        Conceito
+        Objetivos
+        Utilização
+        Limitações
+
+  34.3.2 Integração com Compiladores — [I]
+        GCC
+        Clang
+        MSVC
+        Compatibilidade
+
+
+
+35. Assembly em Sistemas Embarcados — [I]
+
+ 35.1 Conceitos Fundamentais — [I]
+
+  35.1.1 Características Gerais — [I]
+        Recursos limitados
+        Controle direto
+        Eficiência
+        Baixa sobrecarga
+
+  35.1.2 Papel da Assembly — [I]
+        Inicialização
+        Firmware
+        Rotinas críticas
+        Controle de dispositivos
+
+
+ 35.2 Aplicações — [I]
+
+  35.2.1 Programação Embarcada — [I]
+        Microcontroladores
+        Sistemas dedicados
+        Tempo real
+        Controle de periféricos
+
+  35.2.2 Otimização — [I]
+        Uso eficiente dos recursos
+        Redução do código
+        Consumo de energia
+        Desempenho
+
+
+ 35.3 Relação com Outras Áreas — [V]
+
+  35.3.1 Integração com Hardware — [V]
+        Firmware
+        Bootloaders
+        Sistemas operacionais embarcados
+        Periféricos
+
+  35.3.2 Importância da Assembly — [V]
+        Controle preciso
+        Eficiência
+        Confiabilidade
+        Aplicações críticas
+
+
+
+PARTE 5 — ASSEMBLY E AS ARQUITETURAS DE PROCESSADORES
+
+
+36. Assembly nas Principais Arquiteturas de Processadores — [P]
+
+ 36.1 Conceitos Fundamentais — [P]
+
+  36.1.1 Dependência da Arquitetura — [P]
+        Assembly específica para cada ISA
+        Compatibilidade
+        Conjunto de instruções
+        Modelo de programação
+        Recursos disponíveis
+
+  36.1.2 Objetivos da Comparação — [I]
+        Compreensão das diferenças
+        Organização das linguagens
+        Portabilidade
+        Relação entre arquiteturas
+
+
+ 36.2 Características Gerais — [P]
+
+  36.2.1 Elementos Comuns — [P]
+        Mnemônicos
+        Operandos
+        Diretivas
+        Labels
+        Organização do código
+
+  36.2.2 Diferenças Gerais — [P]
+        Sintaxe
+        Convenções
+        Formato das instruções
+        Modos de endereçamento
+        Recursos arquiteturais
+
+
+
+37. Assembly na Arquitetura x86 — [P]
+
+ 37.1 Características Gerais — [P]
+
+  37.1.1 Organização da Linguagem — [P]
+        Sintaxe
+        Estrutura das instruções
+        Convenções gerais
+        Organização do programa
+
+  37.1.2 Recursos Visíveis — [P]
+        Conjunto de instruções
+        Modos de endereçamento
+        Operações disponíveis
+        Modelo de programação
+
+
+ 37.2 Programação em x86 — [P]
+
+  37.2.1 Características da Programação — [P]
+        Manipulação de dados
+        Controle de fluxo
+        Procedimentos
+        Organização do código
+
+  37.2.2 Particularidades — [I]
+        Complexidade da ISA
+        Grande quantidade de instruções
+        Compatibilidade histórica
+        Evolução da arquitetura
+
+
+
+38. Assembly na Arquitetura x86-64 — [P]
+
+ 38.1 Evolução da Linguagem — [P]
+
+  38.1.1 Transição para 64 Bits — [P]
+        Evolução da arquitetura
+        Compatibilidade
+        Expansão da ISA
+        Novo modelo de programação
+
+  38.1.2 Características Gerais — [P]
+        Sintaxe
+        Estrutura
+        Convenções
+        Organização
+
+
+ 38.2 Programação em x86-64 — [P]
+
+  38.2.1 Recursos Disponíveis — [P]
+        Operações de 64 bits
+        Novas instruções
+        Organização do código
+        Compatibilidade
+
+  38.2.2 Diferenças em Relação ao x86 — [P]
+        Organização da linguagem
+        Convenções de chamada
+        Recursos adicionais
+        Evolução da ISA
+
+
+
+39. Assembly na Arquitetura ARM — [P]
+
+ 39.1 Características Gerais — [P]
+
+  39.1.1 Organização da Linguagem — [P]
+        Sintaxe
+        Estrutura das instruções
+        Organização geral
+        Modelo de programação
+
+  39.1.2 Filosofia da Arquitetura — [P]
+        Organização RISC
+        Regularidade das instruções
+        Simplicidade
+        Eficiência
+
+
+ 39.2 Programação em ARM — [P]
+
+  39.2.1 Características da Programação — [P]
+        Operações disponíveis
+        Controle de fluxo
+        Organização do código
+        Eficiência
+
+  39.2.2 Evolução da Arquitetura — [I]
+        ARM clássico
+        Thumb
+        AArch32
+        AArch64
+
+
+
+40. Assembly na Arquitetura RISC-V — [P]
+
+ 40.1 Características Gerais — [P]
+
+  40.1.1 Organização da Linguagem — [P]
+        Estrutura das instruções
+        Sintaxe
+        Organização
+        Modelo de programação
+
+  40.1.2 Filosofia do Projeto — [P]
+        ISA aberta
+        Modularidade
+        Simplicidade
+        Extensibilidade
+
+
+ 40.2 Programação em RISC-V — [P]
+
+  40.2.1 Recursos Gerais — [P]
+        Instruções básicas
+        Extensões
+        Organização
+        Compatibilidade
+
+  40.2.2 Aplicações — [I]
+        Ensino
+        Pesquisa
+        Sistemas embarcados
+        Desenvolvimento moderno
+
+
+
+41. Assembly na Arquitetura MIPS — [P]
+
+ 41.1 Características Gerais — [P]
+
+  41.1.1 Organização da Linguagem — [P]
+        Sintaxe
+        Estrutura
+        Modelo de programação
+        Organização geral
+
+  41.1.2 Filosofia RISC — [P]
+        Simplicidade
+        Regularidade
+        Eficiência
+        Clareza estrutural
+
+
+ 41.2 Programação em MIPS — [P]
+
+  41.2.1 Organização do Código — [P]
+        Operações básicas
+        Controle de fluxo
+        Procedimentos
+        Organização
+
+  41.2.2 Utilização Acadêmica — [I]
+        Ensino da arquitetura
+        Simuladores
+        Estudos de Assembly
+        Formação básica
+
+
+
+42. Comparação entre as Arquiteturas Assembly — [P]
+
+ 42.1 Aspectos Estruturais — [P]
+
+  42.1.1 Sintaxe — [P]
+        Diferenças sintáticas
+        Convenções
+        Organização
+        Padronização
+
+  42.1.2 Estrutura das Instruções — [P]
+        Quantidade de operandos
+        Formatos
+        Codificação
+        Organização
+
+
+ 42.2 Recursos da Linguagem — [P]
+
+  42.2.1 Conjunto de Instruções — [P]
+        Complexidade
+        Especialização
+        Regularidade
+        Extensões
+
+  42.2.2 Modos de Endereçamento — [P]
+        Variedade
+        Complexidade
+        Flexibilidade
+        Eficiência
+
+
+ 42.3 Critérios Gerais — [I]
+
+  42.3.1 Facilidade de Programação — [I]
+        Clareza
+        Organização
+        Curva de aprendizado
+        Legibilidade
+
+  42.3.2 Portabilidade — [I]
+        Dependência da ISA
+        Compatibilidade
+        Reutilização
+        Adaptação
+
+
+
+43. Assembly sob a Perspectiva RISC e CISC — [P]
+
+ 43.1 Conceitos Fundamentais — [P]
+
+  43.1.1 Assembly em Arquiteturas RISC — [P]
+        Simplicidade das instruções
+        Regularidade
+        Organização uniforme
+        Programação
+
+  43.1.2 Assembly em Arquiteturas CISC — [P]
+        Complexidade das instruções
+        Grande variedade
+        Especialização
+        Programação
+
+
+ 43.2 Comparação Geral — [P]
+
+  43.2.1 Organização da Linguagem — [P]
+        Sintaxe
+        Instruções
+        Operandos
+        Estrutura geral
+
+  43.2.2 Impacto na Programação — [P]
+        Escrita do código
+        Organização dos algoritmos
+        Reutilização
+        Manutenção
+
+
+ 43.3 Reflexos para o Programador — [I]
+
+  43.3.1 Vantagens Relativas — [I]
+        Simplicidade
+        Expressividade
+        Controle
+        Eficiência
+
+  43.3.2 Limitações Relativas — [I]
+        Dependência arquitetural
+        Complexidade
+        Portabilidade
+        Compatibilidade
+
+
+
+44. Portabilidade e Dependência de ISA — [P]
+
+ 44.1 Dependência da ISA — [P]
+
+  44.1.1 Características Gerais — [P]
+        Assembly específica para cada arquitetura
+        Compatibilidade
+        Conjunto de instruções
+        Recursos disponíveis
+
+  44.1.2 Impacto no Desenvolvimento — [P]
+        Reescrita de código
+        Adaptação
+        Manutenção
+        Compatibilidade
+
+
+ 44.2 Portabilidade — [I]
+
+  44.2.1 Limitações da Portabilidade — [I]
+        Diferenças sintáticas
+        Diferenças semânticas
+        Recursos específicos
+        Dependência do assembler
+
+  44.2.2 Estratégias Gerais — [I]
+        Modularização
+        Abstração
+        Organização do código
+        Separação por arquitetura
+
+
+ 44.3 Tendências Modernas — [V]
+
+  44.3.1 Evolução da Programação Assembly — [V]
+        Novas arquiteturas
+        Novas ISAs
+        Expansão das ferramentas
+        Compatibilidade
+
+  44.3.2 Papel Atual da Portabilidade — [V]
+        Desenvolvimento multiplataforma
+        Sistemas embarcados
+        Software especializado
+        Aplicações modernas
