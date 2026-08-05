@@ -790,44 +790,46 @@ PARTE 3 — ARQUITETURA RISC
  15.1 Fundamentos — [P]
 
   15.1.1 Conceito do Modelo Load/Store — [P]
-      Definição
-      Objetivos
-      Papel na arquitetura RISC
-      Separação entre processamento e memória
+	  Definição
+	  Objetivos
+	  Papel na arquitetura RISC
+	  Separação entre processamento e memória
 
   15.1.2 Filosofia do Modelo — [P]
-      Operações exclusivamente em registradores
-      Instruções Load
-      Instruções Store
-      Organização da execução
+	  Operações exclusivamente em registradores
+	  Instruções Load
+	  Instruções Store
+	  Organização da execução
+
 
  15.2 Organização das Operações — [P]
 
   15.2.1 Operações de Transferência — [P]
-      Leitura da memória
-      Escrita na memória
-      Transferência de dados
-      Atualização dos operandos
+	  Leitura da memória
+	  Escrita na memória
+	  Transferência de dados
+	  Atualização dos operandos
 
   15.2.2 Operações de Processamento — [P]
-      Processamento entre registradores
-      Operações aritméticas
-      Operações lógicas
-      Comparações
+	  Processamento entre registradores
+	  Operações aritméticas
+	  Operações lógicas
+	  Comparações
+
 
  15.3 Benefícios Arquiteturais — [P]
 
   15.3.1 Simplificação da ISA — [P]
-      Organização uniforme
-      Regularidade
-      Eficiência
-      Facilidade de implementação
+	  Organização uniforme
+	  Regularidade
+	  Eficiência
+	  Facilidade de implementação
 
   15.3.2 Impactos na Arquitetura — [P]
-      Organização do conjunto de instruções
-      Facilidade de evolução
-      Escalabilidade
-      Consistência arquitetural
+	  Organização do conjunto de instruções
+	  Facilidade de evolução
+	  Escalabilidade
+	  Consistência arquitetural
 
 
 
@@ -836,45 +838,47 @@ PARTE 3 — ARQUITETURA RISC
  16.1 Características Gerais — [P]
 
   16.1.1 Organização da ISA — [P]
-      Instruções simples
-      Tamanho fixo
-      Pequeno número de formatos
-      Poucos modos de endereçamento
-      Regularidade estrutural
+	  Instruções simples
+	  Tamanho fixo
+	  Pequeno número de formatos
+	  Poucos modos de endereçamento
+	  Regularidade estrutural
 
   16.1.2 Organização da Execução — [P]
-      Execução uniforme
-      Baixa complexidade
-      Decodificação simplificada
-      Fluxo previsível
+	  Execução uniforme
+	  Baixa complexidade
+	  Decodificação simplificada
+	  Fluxo previsível
+
 
  16.2 Características Fundamentais — [P]
 
   16.2.1 Simplicidade Arquitetural — [P]
-      Redução da complexidade
-      Organização consistente
-      Modularidade
-      Escalabilidade
+	  Redução da complexidade
+	  Organização consistente
+	  Modularidade
+	  Escalabilidade
 
   16.2.2 Eficiência Arquitetural — [P]
-      Facilidade de implementação
-      Facilidade de expansão
-      Organização uniforme
-      Compatibilidade evolutiva
+	  Facilidade de implementação
+	  Facilidade de expansão
+	  Organização uniforme
+	  Compatibilidade evolutiva
+
 
  16.3 Relação entre Hardware e Software — [P]
 
   16.3.1 Distribuição das Responsabilidades — [P]
-      Papel do hardware
-      Papel do software
-      Papel da ISA
-      Participação do compilador
+	  Papel do hardware
+	  Papel do software
+	  Papel da ISA
+	  Participação do compilador
 
   16.3.2 Organização Arquitetural — [P]
-      Interface hardware-software
-      Independência da implementação
-      Evolução da ISA
-      Continuidade arquitetural
+	  Interface hardware-software
+	  Independência da implementação
+	  Evolução da ISA
+	  Continuidade arquitetural
 
 
 
@@ -883,38 +887,39 @@ PARTE 3 — ARQUITETURA RISC
  17.1 Relação entre RISC e Pipeline — [P]
 
   17.1.1 Motivação Arquitetural — [P]
-      Simplicidade das instruções
-      Uniformidade dos formatos
-      Regularidade da execução
-      Organização previsível
+	  Simplicidade das instruções
+	  Uniformidade dos formatos
+	  Regularidade da execução
+	  Organização previsível
 
   17.1.2 ISA Voltada ao Pipeline — [P]
-      Decodificação simplificada
-      Instruções regulares
-      Tempo de execução semelhante
-      Facilidade de organização
+	  Decodificação simplificada
+	  Instruções regulares
+	  Tempo de execução semelhante
+	  Facilidade de organização
+
 
  17.2 Influência da ISA no Pipeline — [P]
 
   17.2.1 Características Favoráveis — [P]
-      Formato fixo das instruções
-      Poucos modos de endereçamento
-      Simplicidade da decodificação
-      Operações uniformes
+	  Formato fixo das instruções
+	  Poucos modos de endereçamento
+	  Simplicidade da decodificação
+	  Operações uniformes
 
   17.2.2 Objetivos Arquiteturais — [P]
-      Eficiência da execução
-      Organização consistente
-      Escalabilidade
-      Melhor aproveitamento da arquitetura
+	  Eficiência da execução
+	  Organização consistente
+	  Escalabilidade
+	  Melhor aproveitamento da arquitetura
 
  17.3 Limitações e Considerações — [I]
 
   17.3.1 Dependência da Implementação — [I]
-      ISA e microarquitetura
-      Limites da arquitetura
-      Papel da implementação
-      Evolução tecnológica
+	  ISA e microarquitetura
+	  Limites da arquitetura
+	  Papel da implementação
+	  Evolução tecnológica
 
 
 
@@ -923,30 +928,31 @@ PARTE 3 — ARQUITETURA RISC
  18.1 Papel dos Compiladores — [I]
 
   18.1.1 Relação entre ISA e Compilador — [I]
-      Geração de código
-      Aproveitamento da ISA
-      Organização das instruções
-      Eficiência do programa
+	  Geração de código
+	  Aproveitamento da ISA
+	  Organização das instruções
+	  Eficiência do programa
 
   18.1.2 Responsabilidades do Compilador — [I]
-      Seleção de instruções
-      Organização do código
-      Otimização da sequência de instruções
-      Uso eficiente da arquitetura
+	  Seleção de instruções
+	  Organização do código
+	  Otimização da sequência de instruções
+	  Uso eficiente da arquitetura
+
 
  18.2 Otimizações Arquiteturais — [I]
 
   18.2.1 Otimizações Fundamentais — [I]
-      Simplificação do código
-      Melhor utilização da ISA
-      Redução de redundâncias
-      Eficiência geral
+	  Simplificação do código
+	  Melhor utilização da ISA
+	  Redução de redundâncias
+	  Eficiência geral
 
   18.2.2 Limites das Otimizações — [I]
-      Dependência da ISA
-      Dependência da implementação
-      Compatibilidade
-      Portabilidade
+	  Dependência da ISA
+	  Dependência da implementação
+	  Compatibilidade
+	  Portabilidade
 
 
 
@@ -955,34 +961,36 @@ PARTE 3 — ARQUITETURA RISC
  19.1 Vantagens da Arquitetura RISC — [I]
 
   19.1.1 Benefícios Arquiteturais — [I]
-      Simplicidade da ISA
-      Regularidade
-      Facilidade de implementação
-      Escalabilidade
-      Eficiência arquitetural
+	  Simplicidade da ISA
+	  Regularidade
+	  Facilidade de implementação
+	  Escalabilidade
+	  Eficiência arquitetural
+
 
  19.2 Limitações da Arquitetura RISC — [I]
 
   19.2.1 Desafios Arquiteturais — [I]
-      Maior dependência do compilador
-      Maior número de instruções
-      Código potencialmente maior
-      Evolução das extensões
+	  Maior dependência do compilador
+	  Maior número de instruções
+	  Código potencialmente maior
+	  Evolução das extensões
+
 
  19.3 Aplicações da Arquitetura RISC — [I]
 
   19.3.1 Principais Áreas de Utilização — [I]
-      Sistemas embarcados
-      Dispositivos móveis
-      Computadores pessoais
-      Servidores
-      Sistemas de alto desempenho
+	  Sistemas embarcados
+	  Dispositivos móveis
+	  Computadores pessoais
+	  Servidores
+	  Sistemas de alto desempenho
 
   19.3.2 Adequação da Arquitetura — [I]
-      Eficiência energética
-      Escalabilidade
-      Flexibilidade
-      Evolução tecnológica
+	  Eficiência energética
+	  Escalabilidade
+	  Flexibilidade
+	  Evolução tecnológica
 
 
 
@@ -991,44 +999,46 @@ PARTE 3 — ARQUITETURA RISC
  20.1 Arquiteturas Históricas — [I]
 
   20.1.1 Primeiras Implementações — [I]
-      IBM 801
-      Berkeley RISC
-      Stanford MIPS
-      SPARC
+	  IBM 801
+	  Berkeley RISC
+	  Stanford MIPS
+	  SPARC
+
 
  20.2 Arquiteturas Comerciais — [I]
 
   20.2.1 ARM — [I]
-      Evolução histórica
-      Expansão comercial
-      Compatibilidade
-      Ecossistema
+	  Evolução histórica
+	  Expansão comercial
+	  Compatibilidade
+	  Ecossistema
 
   20.2.2 MIPS — [I]
-      Evolução
-      Aplicações
-      Importância acadêmica
-      Continuidade histórica
+	  Evolução
+	  Aplicações
+	  Importância acadêmica
+	  Continuidade histórica
 
   20.2.3 PowerPC — [I]
-      Origem
-      Evolução
-      Principais aplicações
-      Legado
+	  Origem
+	  Evolução
+	  Principais aplicações
+	  Legado
 
   20.2.4 RISC-V — [I]
-      Arquitetura aberta
-      Modularidade
-      Extensões
-      Expansão acadêmica e industrial
+	  Arquitetura aberta
+	  Modularidade
+	  Extensões
+	  Expansão acadêmica e industrial
 
-20.3 Importância Histórica — [V]
 
- 20.3.1 Legado da Arquitetura RISC — [V]
-      Influência sobre arquiteturas modernas
-      Evolução das ISAs
-      Importância para a pesquisa
-      Tendências futuras
+ 20.3 Importância Histórica — [V]
+
+  20.3.1 Legado da Arquitetura RISC — [V]
+	  Influência sobre arquiteturas modernas
+	  Evolução das ISAs
+	  Importância para a pesquisa
+	  Tendências futuras
 
 
 
