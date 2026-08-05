@@ -2130,3 +2130,254 @@ PARTE 5 — ASSEMBLY E AS ARQUITETURAS DE PROCESSADORES
         Sistemas embarcados
         Software especializado
         Aplicações modernas
+
+
+
+PARTE 6 — FERRAMENTAS, DESENVOLVIMENTO, DEPURAÇÃO E OTIMIZAÇÃO
+
+
+45. Ferramentas para Desenvolvimento em Assembly — [P]
+
+ 45.1 Assemblers — [P]
+
+  45.1.1 Conceitos Fundamentais — [P]
+        Definição
+        Objetivos
+        Processo de montagem
+        Geração de código objeto
+        Papel no desenvolvimento
+
+  45.1.2 Principais Assemblers — [I]
+        NASM
+        MASM
+        GAS (GNU Assembler)
+        FASM
+        YASM
+        Outros assemblers
+
+ 45.2 Linkers e Loaders — [I]
+
+  45.2.1 Linkers — [I]
+        Ligação de módulos
+        Resolução de símbolos
+        Bibliotecas
+        Geração de executáveis
+
+  45.2.2 Loaders — [I]
+        Carregamento do executável
+        Preparação do ambiente
+        Inicialização do programa
+        Início da execução
+
+ 45.3 Ferramentas Auxiliares — [I]
+
+  45.3.1 IDEs e Editores — [I]
+        Ambientes de desenvolvimento
+        Editores especializados
+        Destaque de sintaxe
+        Integração com assemblers
+
+  45.3.2 Sistemas de Build — [I]
+        Automação da montagem
+        Scripts de compilação
+        Organização de projetos
+        Integração com ferramentas
+
+
+
+46. Formatos de Arquivos, Bibliotecas e Executáveis — [P]
+
+ 46.1 Arquivos Gerados — [P]
+
+  46.1.1 Arquivos-Fonte — [P]
+        Código Assembly
+        Organização
+        Estrutura
+        Modularização
+
+  46.1.2 Arquivos Objeto — [P]
+        Conceito
+        Estrutura geral
+        Símbolos
+        Relocações
+
+ 46.2 Executáveis — [I]
+
+  46.2.1 Formatos de Executáveis — [I]
+        ELF
+        PE
+        Mach-O
+        Diferenças gerais
+
+  46.2.2 Bibliotecas — [I]
+        Bibliotecas estáticas
+        Bibliotecas dinâmicas
+        Ligação
+        Reutilização
+
+ 46.3 Organização Geral — [V]
+
+  46.3.1 Fluxo dos Arquivos — [V]
+        Código-fonte
+        Arquivo objeto
+        Executável
+        Execução
+
+  46.3.2 Compatibilidade — [V]
+        Dependência do sistema
+        Dependência da arquitetura
+        Portabilidade
+        Organização
+
+
+
+47. Depuração e Análise de Programas Assembly — [P]
+
+ 47.1 Conceitos Fundamentais — [P]
+
+  47.1.1 Depuração — [P]
+        Objetivos
+        Identificação de erros
+        Correção
+        Validação
+
+  47.1.2 Análise do Programa — [P]
+        Fluxo de execução
+        Estado do programa
+        Inspeção
+        Diagnóstico
+
+ 47.2 Ferramentas de Depuração — [P]
+
+  47.2.1 Debuggers — [P]
+        GDB
+        WinDbg
+        LLDB
+        x64dbg
+        Outros
+
+  47.2.2 Desassembladores — [I]
+        Conceito
+        Visualização do código
+        Análise de binários
+        Ferramentas especializadas
+
+ 47.3 Técnicas de Depuração — [P]
+
+  47.3.1 Execução Controlada — [P]
+        Breakpoints
+        Execução passo a passo
+        Continuação
+        Inspeção
+
+  47.3.2 Inspeção do Programa — [P]
+        Registradores (visão geral)
+        Memória (visão geral)
+        Pilha (visão geral)
+        Flags (visão geral)
+
+
+
+48. Simuladores e Emuladores — [I]
+
+ 48.1 Conceitos Fundamentais — [I]
+
+  48.1.1 Simuladores — [I]
+        Definição
+        Objetivos
+        Ambiente didático
+        Estudo da Assembly
+
+  48.1.2 Emuladores — [I]
+        Definição
+        Execução de código
+        Compatibilidade
+        Desenvolvimento
+
+ 48.2 Aplicações — [I]
+
+  48.2.1 Ensino — [I]
+        Aprendizagem
+        Experimentação
+        Testes
+        Exercícios
+
+  48.2.2 Desenvolvimento — [I]
+        Validação
+        Testes
+        Compatibilidade
+        Análise
+
+ 48.3 Limitações — [V]
+
+  48.3.1 Diferenças para Hardware Real — [V]
+        Precisão
+        Recursos
+        Desempenho
+        Compatibilidade
+
+  48.3.2 Utilização Recomendada — [V]
+        Ensino
+        Desenvolvimento
+        Testes iniciais
+        Estudos
+
+
+
+49. Testes, Otimização e Boas Práticas — [P]
+
+ 49.1 Testes de Programas Assembly — [I]
+
+  49.1.1 Estratégias de Teste — [I]
+        Testes unitários
+        Testes funcionais
+        Casos de teste
+        Validação
+
+  49.1.2 Verificação — [I]
+        Correção
+        Robustez
+        Confiabilidade
+        Consistência
+
+ 49.2 Otimização de Código — [P]
+
+  49.2.1 Objetivos — [P]
+        Redução do número de instruções
+        Eficiência
+        Melhor utilização da ISA
+        Organização do código
+
+  49.2.2 Técnicas Gerais — [P]
+        Escolha adequada das instruções
+        Eliminação de redundâncias
+        Organização do fluxo
+        Simplificação dos algoritmos
+
+ 49.3 Análise de Desempenho — [I]
+
+  49.3.1 Avaliação Geral — [I]
+        Tempo de execução
+        Eficiência
+        Uso dos recursos
+        Comparação entre implementações
+
+  49.3.2 Ferramentas de Medição — [I]
+        Profilers (visão geral)
+        Contadores de desempenho (visão geral)
+        Benchmarks
+        Avaliação dos resultados
+
+ 49.4 Boas Práticas de Programação — [I]
+
+  49.4.1 Organização do Código — [I]
+        Modularização
+        Padronização
+        Legibilidade
+        Comentários
+
+  49.4.2 Desenvolvimento Sustentável — [I]
+        Manutenção
+        Reutilização
+        Documentação
+        Portabilidade quando possível
