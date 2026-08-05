@@ -659,60 +659,62 @@ PARTE 3 — ARQUITETURA RISC
  13.1 Conceitos Fundamentais — [P]
 
   13.1.1 Conceito de RISC (Reduced Instruction Set Computer) — [P]
-      Definição de RISC
-      Filosofia de projeto
-      Objetivos da arquitetura
-      Conjunto reduzido de instruções
-      Evolução do conceito
-      Papel na Arquitetura de Computadores
+	  Definição de RISC
+	  Filosofia de projeto
+	  Objetivos da arquitetura
+	  Conjunto reduzido de instruções
+	  Evolução do conceito
+	  Papel na Arquitetura de Computadores
 
   13.1.2 Objetivos da Arquitetura RISC — [P]
-      Simplificação da ISA
-      Execução eficiente
-      Regularidade arquitetural
-      Facilidade de implementação
-      Alto desempenho
-      Escalabilidade da arquitetura
+	  Simplificação da ISA
+	  Execução eficiente
+	  Regularidade arquitetural
+	  Facilidade de implementação
+	  Alto desempenho
+	  Escalabilidade da arquitetura
 
   13.1.3 Princípios Fundamentais — [P]
-      Instruções simples
-      Execução uniforme
-      Operações elementares
-      Formatos padronizados
-      Pequena complexidade das instruções
-      Organização consistente da ISA
+	  Instruções simples
+	  Execução uniforme
+	  Operações elementares
+	  Formatos padronizados
+	  Pequena complexidade das instruções
+	  Organização consistente da ISA
+
 
  13.2 Filosofia de Projeto — [P]
 
   13.2.1 Organização Geral da ISA RISC — [P]
-      Ênfase na simplicidade
-      Organização uniforme
-      Regularidade da codificação
-      Execução previsível
-      Balanceamento entre hardware e software
+	  Ênfase na simplicidade
+	  Organização uniforme
+	  Regularidade da codificação
+	  Execução previsível
+	  Balanceamento entre hardware e software
 
   13.2.2 Modelo Arquitetural — [P]
-      Instruções elementares
-      Operações independentes
-      Execução organizada
-      Modelo Load/Store
-      Separação entre processamento e acesso à memória
+	  Instruções elementares
+	  Operações independentes
+	  Execução organizada
+	  Modelo Load/Store
+	  Separação entre processamento e acesso à memória
+
 
  13.3 Evolução da Arquitetura RISC — [I]
 
   13.3.1 Desenvolvimento Histórico — [I]
-      Origem acadêmica
-      Primeiros projetos experimentais
-      Consolidação comercial
-      Evolução das ISAs RISC
-      Expansão para diferentes mercados
+	  Origem acadêmica
+	  Primeiros projetos experimentais
+	  Consolidação comercial
+	  Evolução das ISAs RISC
+	  Expansão para diferentes mercados
 
   13.3.2 Consolidação da Arquitetura — [I]
-      Crescimento das implementações
-      Evolução contínua
-      Compatibilidade arquitetural
-      Expansão das extensões
-      Adaptação às novas aplicações
+	  Crescimento das implementações
+	  Evolução contínua
+	  Compatibilidade arquitetural
+	  Expansão das extensões
+	  Adaptação às novas aplicações
 
 
 
@@ -721,62 +723,65 @@ PARTE 3 — ARQUITETURA RISC
  14.1 Estrutura Geral das Instruções — [P]
 
   14.1.1 Organização do Instruction Set — [P]
-      Conjunto reduzido de instruções
-      Organização uniforme
-      Operações simples
-      Regularidade funcional
-      Facilidade de decodificação
+	  Conjunto reduzido de instruções
+	  Organização uniforme
+	  Operações simples
+	  Regularidade funcional
+	  Facilidade de decodificação
 
   14.1.2 Simplicidade das Instruções — [P]
-      Uma operação principal por instrução
-      Instruções elementares
-      Baixa complexidade
-      Organização padronizada
-      Eficiência arquitetural
+	  Uma operação principal por instrução
+	  Instruções elementares
+	  Baixa complexidade
+	  Organização padronizada
+	  Eficiência arquitetural
+
 
  14.2 Formato das Instruções — [P]
 
   14.2.1 Organização dos Formatos — [P]
-      Tamanho fixo
-      Codificação uniforme
-      Campos padronizados
-      Organização consistente
+	  Tamanho fixo
+	  Codificação uniforme
+	  Campos padronizados
+	  Organização consistente
 
   14.2.2 Organização dos Operandos — [P]
-      Número reduzido de formatos
-      Operandos em registradores
-      Operandos imediatos
-      Campos bem definidos
-      Uniformidade estrutural
+	  Número reduzido de formatos
+	  Operandos em registradores
+	  Operandos imediatos
+	  Campos bem definidos
+	  Uniformidade estrutural
+
 
  14.3 Categorias de Instruções — [P]
 
   14.3.1 Organização Funcional — [P]
-      Transferência de dados
-      Operações aritméticas
-      Operações lógicas
-      Controle de fluxo
-      Comparações
+	  Transferência de dados
+	  Operações aritméticas
+	  Operações lógicas
+	  Controle de fluxo
+	  Comparações
 
   14.3.2 Especialização das Operações — [P]
-      Instruções simples
-      Operações independentes
-      Baixa complexidade
-      Execução uniforme
+	  Instruções simples
+	  Operações independentes
+	  Baixa complexidade
+	  Execução uniforme
+
 
  14.4 Modos de Endereçamento — [P]
 
   14.4.1 Organização Geral — [P]
-      Pequena quantidade de modos
-      Simplicidade da codificação
-      Uniformidade
-      Eficiência arquitetural
+	  Pequena quantidade de modos
+	  Simplicidade da codificação
+	  Uniformidade
+	  Eficiência arquitetural
 
   14.4.2 Papel dos Modos de Endereçamento — [P]
-      Simplificação da ISA
-      Facilidade de implementação
-      Redução da complexidade
-      Organização consistente
+	  Simplificação da ISA
+	  Facilidade de implementação
+	  Redução da complexidade
+	  Organização consistente
 
 
 
