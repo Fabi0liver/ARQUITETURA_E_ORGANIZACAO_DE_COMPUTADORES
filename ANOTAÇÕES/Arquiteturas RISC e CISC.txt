@@ -1849,30 +1849,31 @@ PARTE 7 — INTEGRAÇÃO DOS CONCEITOS
  40.1 Equívocos Históricos — [I]
 
   40.1.1 Generalizações Incorretas — [I]
-      RISC é sempre mais rápido
-      CISC é sempre mais lento
-      RISC possui poucas instruções
-      CISC possui apenas instruções complexas
+	  RISC é sempre mais rápido
+	  CISC é sempre mais lento
+	  RISC possui poucas instruções
+	  CISC possui apenas instruções complexas
 
   40.1.2 Interpretações Equivocadas — [I]
-      ISA e desempenho são equivalentes
-      Complexidade implica menor eficiência
-      Simplicidade implica maior desempenho
-      Arquiteturas modernas permanecem puramente RISC ou CISC
+	  ISA e desempenho são equivalentes
+	  Complexidade implica menor eficiência
+	  Simplicidade implica maior desempenho
+	  Arquiteturas modernas permanecem puramente RISC ou CISC
+
 
  40.2 Esclarecimentos Conceituais — [I]
 
   40.2.1 O Papel da ISA — [I]
-      Interface entre hardware e software
-      Independência da implementação
-      Compatibilidade arquitetural
-      Evolução das arquiteturas
+	  Interface entre hardware e software
+	  Independência da implementação
+	  Compatibilidade arquitetural
+	  Evolução das arquiteturas
 
   40.2.2 Visão Atual — [I]
-      Convergência das filosofias
-      Influência da microarquitetura
-      Evolução contínua
-      Limitações das classificações tradicionais
+	  Convergência das filosofias
+	  Influência da microarquitetura
+	  Evolução contínua
+	  Limitações das classificações tradicionais
 
 
 
@@ -1881,34 +1882,35 @@ PARTE 7 — INTEGRAÇÃO DOS CONCEITOS
  41.1 Relações Fundamentais — [I]
 
   41.1.1 Relação com a ISA — [I]
-      Organização do conjunto de instruções
-      Modelo de programação
-      Compatibilidade
-      Interface hardware-software
+	  Organização do conjunto de instruções
+	  Modelo de programação
+	  Compatibilidade
+	  Interface hardware-software
 
   41.1.2 Relação com Outros Assuntos da Arquitetura — [I]
-      Processadores
-      Pipeline
-      Registradores
-      Memória
-      Barramentos
-      Compiladores
-      Sistemas Operacionais
+	  Processadores
+	  Pipeline
+	  Registradores
+	  Memória
+	  Barramentos
+	  Compiladores
+	  Sistemas Operacionais
+
 
  41.2 Papel na Formação da Arquitetura de Computadores — [I]
 
   41.2.1 Base para Estudos Posteriores — [I]
-      Organização dos processadores
-      Microarquitetura
-      Paralelismo
-      Desempenho
-      Arquiteturas modernas
+	  Organização dos processadores
+	  Microarquitetura
+	  Paralelismo
+   	  Desempenho
+	  Arquiteturas modernas
 
   41.2.2 Integração do Conhecimento — [I]
-      Relação entre os conceitos
-      Evolução arquitetural
-      Visão sistêmica
-      Organização geral da disciplina
+	  Relação entre os conceitos
+	  Evolução arquitetural
+	  Visão sistêmica
+	  Organização geral da disciplina
 
 
 
@@ -1917,30 +1919,31 @@ PARTE 7 — INTEGRAÇÃO DOS CONCEITOS
  42.1 Revisão dos Conceitos Fundamentais — [I]
 
   42.1.1 Arquitetura CISC — [I]
-      Filosofia
-      Características
-      Objetivos
-      Aplicações
+	  Filosofia
+	  Características
+	  Objetivos
+	  Aplicações
 
   42.1.2 Arquitetura RISC — [I]
-      Filosofia
-      Características
-      Objetivos
-      Aplicações
+	  Filosofia
+	  Características
+	  Objetivos
+	  Aplicações
+
 
  42.2 Comparação Consolidada — [I]
 
   42.2.1 Diferenças Fundamentais — [I]
-      Organização da ISA
-      Complexidade
-      Modelo de execução
-      Evolução
+	  Organização da ISA
+	  Complexidade
+	  Modelo de execução
+	  Evolução
 
   42.2.2 Pontos em Comum — [I]
-      Objetivos gerais
-      Compatibilidade
-      Evolução tecnológica
-      Papel na computação moderna
+	  Objetivos gerais
+	  Compatibilidade
+	  Evolução tecnológica
+	  Papel na computação moderna
 
 
 
@@ -1949,33 +1952,34 @@ PARTE 7 — INTEGRAÇÃO DOS CONCEITOS
  43.1 Organização Geral dos Conceitos — [I]
 
   43.1.1 Sequência Lógica de Estudo — [I]
-      ISA
-      Filosofias arquiteturais
-      CISC
-      RISC
-      Comparações
-      Arquiteturas modernas
+	  ISA
+	  Filosofias arquiteturais
+	  CISC
+	  RISC
+	  Comparações
+	  Arquiteturas modernas
 
   43.1.2 Relações Conceituais — [I]
-      ISA e software
-      ISA e hardware
-      Compatibilidade
-      Evolução arquitetural
+	  ISA e software
+	  ISA e hardware
+	  Compatibilidade
+	  Evolução arquitetural
+
 
  43.2 Integração dos Conteúdos — [I]
 
   43.2.1 Relações entre os Capítulos — [I]
-      Fundamentos
-      Arquiteturas
-      Comparações
-      Implementações
-      Evolução moderna
+	  Fundamentos
+	  Arquiteturas
+	  Comparações
+	  Implementações
+	  Evolução moderna
 
   43.2.2 Estrutura Global do Conhecimento — [I]
-      Conceitos essenciais
-      Organização lógica
-      Hierarquia dos assuntos
-      Visão integrada
+	  Conceitos essenciais
+	  Organização lógica
+	  Hierarquia dos assuntos
+	  Visão integrada
 
 
 
@@ -1984,57 +1988,53 @@ PARTE 7 — INTEGRAÇÃO DOS CONCEITOS
  44.1 Evolução Histórica — [V]
 
   44.1.1 Marcos Históricos — [V]
-      Primeiras ISAs
-      Surgimento do CISC
-      Surgimento do RISC
-      Expansão comercial
-      Convergência moderna
+	  Primeiras ISAs
+	  Surgimento do CISC
+	  Surgimento do RISC
+	  Expansão comercial
+	  Convergência moderna
+
 
  44.2 Evolução Tecnológica — [V]
 
   44.2.1 Principais Transformações — [V]
-      Crescimento da capacidade computacional
-      Evolução das ISAs
-      Arquiteturas híbridas
-      Arquiteturas abertas
+	  Crescimento da capacidade computacional
+	  Evolução das ISAs
+	  Arquiteturas híbridas
+	  Arquiteturas abertas
 
   44.2.2 Tendências Futuras — [V]
-      Continuidade da evolução
-      Modularidade
-      Maior integração
-      Novos domínios de aplicação
+	  Continuidade da evolução
+	  Modularidade
+	  Maior integração
+	  Novos domínios de aplicação
 
 
 
 45. Conclusão Geral — [V]
 
  45.1 Síntese Final — [V]
+	Compreensão da ISA
+	Filosofias RISC e CISC
+	Evolução arquitetural
+	Implementações modernas
+	Importância histórica
 
-  45.1.1 Principais Aprendizados — [V]
-      Compreensão da ISA
-      Filosofias RISC e CISC
-      Evolução arquitetural
-      Implementações modernas
-      Importância histórica
 
  45.2 Competências Desenvolvidas — [V]
-
-  45.2.1 Ao Final Desta Lista o Estudante Deve Ser Capaz de — [V]
-      Compreender a filosofia das arquiteturas RISC e CISC
-      Identificar suas principais características
-      Comparar diferentes ISAs
-      Entender a evolução histórica das arquiteturas
-      Reconhecer a convergência entre RISC e CISC
-      Relacionar as ISAs modernas com suas aplicações
-      Utilizar essa base para aprofundar os demais temas da Arquitetura e Organização de Computadores
+	Compreender a filosofia das arquiteturas RISC e CISC
+	Identificar suas principais características
+	Comparar diferentes ISAs
+	Entender a evolução histórica das arquiteturas
+	Reconhecer a convergência entre RISC e CISC
+	Relacionar as ISAs modernas com suas aplicações
+	Utilizar essa base para aprofundar os demais temas da Arquitetura e Organização de Computadores
 
  45.3 Encerramento — [V]
-
-  45.3.1 Continuidade dos Estudos — [V]
-      Arquitetura de Processadores
-      Pipeline
-      Organização do Processador
-      Desempenho
-      Memórias
-      Paralelismo
-      Microarquitetura
+	Arquitetura de Processadores
+	Pipeline
+	Organização do Processador
+	Desempenho
+	Memórias
+	Paralelismo
+	Microarquitetura
