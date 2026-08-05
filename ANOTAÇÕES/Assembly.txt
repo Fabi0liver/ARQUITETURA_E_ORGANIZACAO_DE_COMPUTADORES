@@ -253,7 +253,14 @@ PARTE 1 — FUNDAMENTOS DA LINGUAGEM ASSEMBLY
         Integração de arquivos objeto
         Bibliotecas
         Geração do executável
-        Organização do programa
+	Organização do programa
+
+  5.2.3 Relocação de Código — [P]
+	Endereços relocáveis
+	Relocação absoluta
+	Relocação relativa
+	Ajuste de endereços
+	Papel do linker
 
 
  5.3 Loader (Carregador) — [I]
@@ -296,6 +303,7 @@ PARTE 1 — FUNDAMENTOS DA LINGUAGEM ASSEMBLY
         Integração dos módulos
         Bibliotecas
         Executável final
+	Relocação dos módulos
 
   6.2.2 Carregamento — [P]
         Papel do loader
@@ -465,6 +473,7 @@ PARTE 2 — ESTRUTURA E ARQUITETURA DA LINGUAGEM ASSEMBLY
         Organização do arquivo
         Diferenças entre assemblers
         Compatibilidade
+	Sintaxes Intel e AT&T
 
   9.3.2 Organização entre Arquiteturas — [I]
         Estruturas comuns
@@ -491,6 +500,12 @@ PARTE 2 — ESTRUTURA E ARQUITETURA DA LINGUAGEM ASSEMBLY
         Espaçamento
         Convenções do assembler
         Escrita das instruções
+	Sintaxe Intel
+	Sintaxe AT&T
+	Ordem dos operandos
+	Prefixos de registradores
+	Prefixos de operandos imediatos
+	Diferenças entre assemblers
 
 
  10.2 Componentes das Instruções — [P]
@@ -556,6 +571,14 @@ PARTE 2 — ESTRUTURA E ARQUITETURA DA LINGUAGEM ASSEMBLY
         Reserva de espaço
         Inicialização de dados
 
+  11.2.3 Macros — [P]
+        Conceito de macro
+        Expansão de macros
+        Parâmetros
+        Reutilização de código
+        Diferença entre macro e procedimento
+        Dependência do assembler
+
 
  11.3 Recursos Oferecidos pelas Diretivas — [I]
 
@@ -570,6 +593,13 @@ PARTE 2 — ESTRUTURA E ARQUITETURA DA LINGUAGEM ASSEMBLY
         Compatibilidade
         Diferenças entre implementações
         Portabilidade
+
+  11.1.3 Pseudo-instruções — [P]
+	Conceito
+	Diferença entre pseudo-instrução e instrução real
+	Expansão pelo assembler
+	Dependência da arquitetura
+	Dependência do assembler
 
 
 
@@ -672,6 +702,11 @@ PARTE 2 — ESTRUTURA E ARQUITETURA DA LINGUAGEM ASSEMBLY
         Nomenclatura
         Clareza
         Reutilização
+	Convenções de nomenclatura
+	Prefixos
+	Padronização de nomes
+	Escopo dos identificadores
+	Organização entre módulos
 
   13.3.2 Limitações — [I]
         Escopo
@@ -696,6 +731,9 @@ PARTE 2 — ESTRUTURA E ARQUITETURA DA LINGUAGEM ASSEMBLY
         Consulta
         Resolução
         Papel durante a montagem
+	Símbolos locais
+	Símbolos globais
+	Exportação de símbolos
 
 
  14.2 Constantes — [P]
@@ -892,6 +930,12 @@ PARTE 3 — ORGANIZAÇÃO DAS INSTRUÇÕES E PROGRAMAÇÃO
         Operações sobre memória
         Operações imediatas
         Operações de controle
+
+  17.2.3 Instruções quanto ao Nível de Privilégio — [I]
+	Instruções privilegiadas
+	Instruções não privilegiadas
+	Dependência do modo de execução
+	Relação com o sistema operacional (visão geral)
 
 
  17.3 Características Arquiteturais — [I]
@@ -2200,6 +2244,10 @@ PARTE 6 — FERRAMENTAS, DESENVOLVIMENTO, DEPURAÇÃO E OTIMIZAÇÃO
         Estrutura geral
         Símbolos
         Relocações
+	Entradas de relocação
+	Tabela de símbolos
+	Informações para o linker
+
 
  46.2 Executáveis — [I]
 
@@ -2214,6 +2262,7 @@ PARTE 6 — FERRAMENTAS, DESENVOLVIMENTO, DEPURAÇÃO E OTIMIZAÇÃO
         Bibliotecas dinâmicas
         Ligação
         Reutilização
+
 
  46.3 Organização Geral — [V]
 
@@ -2247,6 +2296,7 @@ PARTE 6 — FERRAMENTAS, DESENVOLVIMENTO, DEPURAÇÃO E OTIMIZAÇÃO
         Inspeção
         Diagnóstico
 
+
  47.2 Ferramentas de Depuração — [P]
 
   47.2.1 Debuggers — [P]
@@ -2261,6 +2311,7 @@ PARTE 6 — FERRAMENTAS, DESENVOLVIMENTO, DEPURAÇÃO E OTIMIZAÇÃO
         Visualização do código
         Análise de binários
         Ferramentas especializadas
+
 
  47.3 Técnicas de Depuração — [P]
 
