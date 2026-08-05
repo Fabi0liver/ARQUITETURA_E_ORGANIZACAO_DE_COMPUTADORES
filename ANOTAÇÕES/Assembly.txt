@@ -2381,3 +2381,226 @@ PARTE 6 — FERRAMENTAS, DESENVOLVIMENTO, DEPURAÇÃO E OTIMIZAÇÃO
         Reutilização
         Documentação
         Portabilidade quando possível
+
+
+
+PARTE 7 — TÉCNICAS AVANÇADAS, APLICAÇÕES E INTEGRAÇÃO DOS CONCEITOS
+
+
+50. Técnicas Avançadas e Aplicações da Linguagem Assembly — [P]
+
+ 50.1 Programação de Sistemas — [P]
+
+  50.1.1 Sistemas Operacionais — [P]
+        Inicialização do sistema
+        Rotinas de baixo nível
+        Interface com o kernel
+        Controle privilegiado
+        Serviços fundamentais
+
+  50.1.2 Bootloaders — [I]
+        Conceito
+        Processo de inicialização
+        Carregamento do sistema operacional
+        Papel da Assembly
+        Organização geral
+
+  50.1.3 Firmware — [I]
+        Conceito
+        BIOS
+        UEFI
+        Inicialização do hardware
+        Controle de dispositivos
+
+
+ 50.2 Engenharia Reversa e Segurança — [P]
+
+  50.2.1 Engenharia Reversa — [P]
+        Conceito
+        Desmontagem (Disassembly)
+        Análise de executáveis
+        Reconstrução da lógica
+        Ferramentas de análise
+
+  50.2.2 Segurança Computacional — [I]
+        Auditoria de software
+        Análise de vulnerabilidades
+        Exploração de falhas (visão geral)
+        Mitigações
+        Pesquisa em segurança
+
+  50.2.3 Shellcode — [V]
+        Conceito
+        Estrutura geral
+        Funcionamento básico
+        Aplicações acadêmicas
+        Relação com exploração de vulnerabilidades
+
+
+ 50.3 Técnicas Modernas — [I]
+
+  50.3.1 Criptografia em Assembly — [V]
+        Implementações otimizadas
+        Operações sobre bits
+        Algoritmos criptográficos (visão geral)
+        Aplicações
+
+  50.3.2 SIMD e Extensões Vetoriais — [I]
+        Conceito
+        Paralelismo de dados
+        Extensões vetoriais
+        Aplicações
+        Limitações
+
+  50.3.3 Instruções Especializadas — [V]
+        Extensões da ISA
+        Instruções multimídia
+        Instruções criptográficas
+        Evolução das arquiteturas
+
+
+ 50.4 Aplicações Especializadas — [I]
+
+  50.4.1 Sistemas Embarcados — [I]
+        Firmware
+        Microcontroladores
+        Sistemas dedicados
+        Controle de dispositivos
+
+  50.4.2 Sistemas de Tempo Real — [I]
+        Determinismo
+        Baixa latência
+        Controle temporal
+        Aplicações críticas
+
+  50.4.3 Computação de Alto Desempenho — [V]
+        Rotinas críticas
+        Bibliotecas otimizadas
+        Processamento científico
+        Processamento multimídia
+
+
+
+51. Integração dos Conceitos da Linguagem Assembly — [I]
+
+ 51.1 Integração da Linguagem — [I]
+
+  51.1.1 Assembly como Interface Hardware–Software — [I]
+        Relação com a ISA
+        Linguagem de máquina
+        Modelo de programação
+        Controle da execução
+
+  51.1.2 Fluxo Completo de Desenvolvimento — [I]
+        Código-fonte
+        Assembler
+        Linker
+        Loader
+        Execução
+
+
+ 51.2 Integração dos Conhecimentos — [I]
+
+  51.2.1 Estrutura da Linguagem — [I]
+        Organização do programa
+        Sintaxe
+        Diretivas
+        Labels
+        Modos de endereçamento
+
+  51.2.2 Programação Assembly — [I]
+        Instruções
+        Controle de fluxo
+        Procedimentos
+        Pilha
+        System Calls
+
+  51.2.3 Ferramentas e Desenvolvimento — [I]
+        Assemblers
+        Debuggers
+        Simuladores
+        Otimização
+        Desenvolvimento moderno
+
+
+
+52. Resumo Geral da Linguagem Assembly — [V]
+
+ 52.1 Fundamentos Essenciais — [V]
+
+  52.1.1 Conceitos Fundamentais — [V]
+        Linguagem Assembly
+        Linguagem de máquina
+        ISA
+        Assembler
+        Fluxo de tradução
+
+  52.1.2 Estrutura da Linguagem — [V]
+        Sintaxe
+        Diretivas
+        Seções
+        Labels
+        Operandos
+
+
+ 52.2 Programação Assembly — [V]
+
+  52.2.1 Principais Recursos — [V]
+        Transferência de dados
+        Operações aritméticas
+        Operações lógicas
+        Controle de fluxo
+        Procedimentos
+
+  52.2.2 Interação com o Hardware — [V]
+        Memória
+        Entrada e saída
+        Interrupções
+        Chamadas de sistema
+        Dispositivos
+
+
+ 52.3 Aplicações Modernas — [V]
+
+  52.3.1 Áreas de Aplicação — [V]
+        Sistemas Operacionais
+        Firmware
+        Engenharia reversa
+        Segurança
+        Sistemas embarcados
+
+
+
+53. Conclusão — [V]
+
+ 53.1 Síntese Final — [V]
+
+  53.1.1 Papel da Linguagem Assembly — [V]
+        Base da programação de baixo nível
+        Interface entre software e hardware
+        Representação da ISA
+        Importância para Arquitetura de Computadores
+
+  53.1.2 Competências Desenvolvidas — [V]
+        Leitura de código Assembly
+        Escrita de programas
+        Compreensão da execução das instruções
+        Entendimento da ISA
+        Base para estudos avançados
+
+
+ 53.2 Continuidade dos Estudos — [V]
+
+  53.2.1 Assuntos Relacionados — [V]
+        Arquitetura de Processadores
+        Microarquitetura
+        Sistemas Operacionais
+        Compiladores
+        Sistemas Embarcados
+        Segurança Computacional
+
+  53.2.2 Objetivos da Lista — [V]
+        Consolidar os fundamentos da Assembly
+        Preparar para tópicos mais avançados
+        Facilitar o estudo da Arquitetura e Organização de Computadores
+        Servir como referência para consultas futuras
