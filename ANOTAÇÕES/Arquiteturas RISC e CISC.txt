@@ -251,47 +251,49 @@ PARTE 1 — FUNDAMENTOS DAS ARQUITETURAS RISC E CISC
  5.1 Características Gerais — [P]
 
   5.1.1 Estrutura das Instruções — [P]
-      Complexidade
-      Tamanho
-      Formato
-      Uniformidade
-      Organização dos operandos
+	  Complexidade
+	  Tamanho
+	  Formato
+	  Uniformidade
+	  Organização dos operandos
 
   5.1.2 Modelo de Execução — [P]
-      Execução das instruções
-      Sequência de operações
-      Papel da ISA
-      Modelo arquitetural
+	  Execução das instruções
+	  Sequência de operações
+	  Papel da ISA
+	  Modelo arquitetural
+
 
  5.2 Aspectos Arquiteturais Comparativos — [P]
 
   5.2.1 Organização do Conjunto de Instruções — [P]
-      Número de instruções
-      Especialização
-      Generalização
-      Flexibilidade
-      Regularidade
+	  Número de instruções
+	  Especialização
+	  Generalização
+	  Flexibilidade
+	  Regularidade
 
   5.2.2 Relação entre Hardware e Software — [P]
-      Responsabilidades da ISA
-      Papel do compilador
-      Papel do processador
-      Abstração arquitetural
+	  Responsabilidades da ISA
+	  Papel do compilador
+	  Papel do processador
+	  Abstração arquitetural
+
 
  5.3 Critérios Gerais de Comparação — [P]
 
   5.3.1 Critérios Arquiteturais — [P]
-      Complexidade
-      Eficiência
-      Escalabilidade
-      Compatibilidade
-      Evolução
+	  Complexidade
+	  Eficiência
+	  Escalabilidade
+	  Compatibilidade
+	  Evolução
 
   5.3.2 Impactos Gerais — [P]
-      Impacto no desenvolvimento de software
-      Impacto no projeto do hardware
-      Impacto na evolução das arquiteturas
-      Impacto na computação moderna
+	  Impacto no desenvolvimento de software
+	  Impacto no projeto do hardware
+	  Impacto na evolução das arquiteturas
+	  Impacto na computação moderna
 
 
 
@@ -303,59 +305,61 @@ PARTE 2 — ARQUITETURA CISC
  6.1 Conceitos Fundamentais — [P]
 
   6.1.1 Conceito de CISC (Complex Instruction Set Computer) — [P]
-      Definição de CISC
-      Filosofia de projeto
-      Objetivos da arquitetura
-      Conjunto complexo de instruções
-      Evolução do conceito
-      Papel na Arquitetura de Computadores
+	  Definição de CISC
+	  Filosofia de projeto
+	  Objetivos da arquitetura
+	  Conjunto complexo de instruções
+	  Evolução do conceito
+	  Papel na Arquitetura de Computadores
 
   6.1.2 Objetivos da Arquitetura CISC — [P]
-      Redução do número de instruções
-      Código compacto
-      Maior funcionalidade por instrução
-      Facilidade de programação
-      Compatibilidade entre gerações
-      Aproveitamento da memória
+	  Redução do número de instruções
+	  Código compacto
+	  Maior funcionalidade por instrução
+	  Facilidade de programação
+	  Compatibilidade entre gerações
+	  Aproveitamento da memória
 
   6.1.3 Princípios Fundamentais — [P]
-      Instruções complexas
-      Operações multifuncionais
-      Diversidade de instruções
-      Grande quantidade de modos de endereçamento
-      Flexibilidade da ISA
-      Compatibilidade histórica
+	  Instruções complexas
+	  Operações multifuncionais
+	  Diversidade de instruções
+	  Grande quantidade de modos de endereçamento
+	  Flexibilidade da ISA
+	  Compatibilidade histórica
+
 
  6.2 Filosofia de Projeto — [P]
 
   6.2.1 Organização Geral da ISA CISC — [P]
-      Ênfase no hardware
-      Complexidade da ISA
-      Redução da complexidade do software
-      Instruções de alta funcionalidade
-      Compatibilidade arquitetural
+	  Ênfase no hardware
+	  Complexidade da ISA
+	  Redução da complexidade do software
+	  Instruções de alta funcionalidade
+	  Compatibilidade arquitetural
 
   6.2.2 Modelo Arquitetural — [P]
-      Execução orientada por instruções complexas
-      Múltiplas operações por instrução
-      Operações diretamente sobre memória
-      Flexibilidade operacional
-      Organização geral da execução
+	  Execução orientada por instruções complexas
+	  Múltiplas operações por instrução
+	  Operações diretamente sobre memória
+	  Flexibilidade operacional
+	  Organização geral da execução
+
 
  6.3 Evolução da Arquitetura CISC — [I]
 
   6.3.1 Desenvolvimento Histórico — [I]
-      Origem da arquitetura
-      Primeiras implementações
-      Consolidação comercial
-      Evolução da ISA
-      Continuidade da arquitetura
+	  Origem da arquitetura
+	  Primeiras implementações
+	  Consolidação comercial
+	  Evolução da ISA
+	  Continuidade da arquitetura
 
   6.3.2 Permanência da Arquitetura — [I]
-      Compatibilidade retroativa
-      Evolução incremental
-      Ampliação das instruções
-      Adaptação às novas tecnologias
+	  Compatibilidade retroativa
+	  Evolução incremental
+	  Ampliação das instruções
+	  Adaptação às novas tecnologias
 
 
 
@@ -364,62 +368,65 @@ PARTE 2 — ARQUITETURA CISC
  7.1 Estrutura Geral das Instruções — [P]
 
   7.1.1 Organização do Instruction Set — [P]
-      Grande quantidade de instruções
-      Diversidade funcional
-      Instruções especializadas
-      Organização da ISA
-      Flexibilidade arquitetural
+	  Grande quantidade de instruções
+	  Diversidade funcional
+	  Instruções especializadas
+	  Organização da ISA
+	  Flexibilidade arquitetural
 
   7.1.2 Complexidade das Instruções — [P]
-      Operações compostas
-      Múltiplas ações por instrução
-      Instruções de alta complexidade
-      Redução do número de instruções do programa
+	  Operações compostas
+	  Múltiplas ações por instrução
+	  Instruções de alta complexidade
+	  Redução do número de instruções do programa
+
 
  7.2 Formato das Instruções — [P]
 
   7.2.1 Tamanho das Instruções — [P]
-      Comprimento variável
-      Formatos variados
-      Codificação variável
-      Flexibilidade da codificação
+	  Comprimento variável
+	  Formatos variados
+	  Codificação variável
+	  Flexibilidade da codificação
 
   7.2.2 Organização dos Operandos — [P]
-      Número variável de operandos
-      Operandos em memória
-      Operandos imediatos
-      Operandos em registradores
-      Combinações permitidas
+	  Número variável de operandos
+	  Operandos em memória
+	  Operandos imediatos
+	  Operandos em registradores
+	  Combinações permitidas
+
 
  7.3 Modos de Endereçamento — [P]
 
   7.3.1 Diversidade de Modos — [P]
-      Grande variedade de modos
-      Flexibilidade de acesso
-      Eficiência da programação
-      Influência sobre a ISA
+	  Grande variedade de modos
+	  Flexibilidade de acesso
+	  Eficiência da programação
+	  Influência sobre a ISA
 
   7.3.2 Papel dos Modos de Endereçamento — [P]
-      Simplificação do software
-      Redução de instruções
-      Flexibilidade operacional
-      Expressividade da arquitetura
+	  Simplificação do software
+	  Redução de instruções
+	  Flexibilidade operacional
+	  Expressividade da arquitetura
+
 
  7.4 Categorias de Instruções — [P]
 
   7.4.1 Organização Funcional — [P]
-      Transferência de dados
-      Operações aritméticas
-      Operações lógicas
-      Controle de fluxo
-      Manipulação de memória
-      Instruções especializadas
+	  Transferência de dados
+	  Operações aritméticas
+	  Operações lógicas
+	  Controle de fluxo
+	  Manipulação de memória
+	  Instruções especializadas
 
   7.4.2 Especialização das Instruções — [P]
-      Instruções simples
-      Instruções complexas
-      Instruções compostas
-      Operações dedicadas
+	  Instruções simples
+	  Instruções complexas
+	  Instruções compostas
+	  Operações dedicadas
 
 
 
@@ -428,46 +435,47 @@ PARTE 2 — ARQUITETURA CISC
  8.1 Modelo Geral de Execução — [P]
 
   8.1.1 Execução das Instruções — [P]
-      Decodificação
-      Interpretação
-      Sequenciamento interno
-      Execução das operações
-      Atualização do estado arquitetural
+	  Decodificação
+	  Interpretação
+	  Sequenciamento interno
+	  Execução das operações
+	  Atualização do estado arquitetural
 
   8.1.2 Execução de Operações Complexas — [P]
-      Múltiplas operações
-      Sequenciamento interno
-      Operações compostas
-      Controle da execução
+	  Múltiplas operações
+	  Sequenciamento interno
+	  Operações compostas
+	  Controle da execução
+
 
  8.2 Complexidade da Execução — [P]
 
   8.2.1 Natureza das Instruções Complexas — [P]
-      Operações multifuncionais
-      Dependência da codificação
-      Complexidade operacional
-      Flexibilidade da execução
+	  Operações multifuncionais
+	  Dependência da codificação
+	  Complexidade operacional
+	  Flexibilidade da execução
 
   8.2.2 Impactos Arquiteturais — [P]
-      Complexidade da decodificação
-      Complexidade da implementação
-      Compatibilidade
-      Evolução da arquitetura
+	  Complexidade da decodificação
+	  Complexidade da implementação
+	  Compatibilidade
+	  Evolução da arquitetura
 
  8.3 Organização da Execução — [P]
 
   8.3.1 Fluxo Arquitetural — [P]
-      Recepção da instrução
-      Interpretação
-      Sequenciamento
-      Execução
-      Finalização
+	  Recepção da instrução
+	  Interpretação
+	  Sequenciamento
+	  Execução
+	  Finalização
 
   8.3.2 Papel da ISA na Execução — [P]
-      Definição das operações
-      Organização da execução
-      Modelo arquitetural
-      Relação entre instruções e execução
+	  Definição das operações
+	  Organização da execução
+	  Modelo arquitetural
+	  Relação entre instruções e execução
 
 
 
@@ -476,45 +484,47 @@ PARTE 2 — ARQUITETURA CISC
  9.1 Fundamentos da Microprogramação — [P]
 
   9.1.1 Conceitos Fundamentais — [P]
-      Definição de microprogramação
-      Objetivos
-      Papel na arquitetura CISC
-      Relação com a ISA
+	  Definição de microprogramação
+	  Objetivos
+	  Papel na arquitetura CISC
+	  Relação com a ISA
 
   9.1.2 Microinstruções — [P]
-      Conceito
-      Organização
-      Sequenciamento
-      Execução
-      Controle interno
+	  Conceito
+	  Organização
+	  Sequenciamento
+	  Execução
+	  Controle interno
+
 
  9.2 Controle Microprogramado — [P]
 
   9.2.1 Organização Geral — [P]
-      Unidade de controle microprogramada
-      Memória de controle
-      Sequenciador
-      Fluxo das microinstruções
+	  Unidade de controle microprogramada
+	  Memória de controle
+	  Sequenciador
+	  Fluxo das microinstruções
 
   9.2.2 Funcionamento — [P]
-      Interpretação da instrução
-      Geração das microinstruções
-      Sequenciamento interno
-      Finalização da execução
+	  Interpretação da instrução
+	  Geração das microinstruções
+	  Sequenciamento interno
+	  Finalização da execução
+
 
  9.3 Papel da Microprogramação na Arquitetura CISC — [P]
 
   9.3.1 Benefícios — [P]
-      Flexibilidade
-      Compatibilidade
-      Facilidade de expansão
-      Evolução da ISA
+	  Flexibilidade
+	  Compatibilidade
+	  Facilidade de expansão
+	  Evolução da ISA
 
   9.3.2 Limitações — [P]
-      Complexidade
-      Custo de implementação
-      Impacto na execução
-      Dependência da unidade de controle
+	  Complexidade
+	  Custo de implementação
+	  Impacto na execução
+	  Dependência da unidade de controle
 
 
 
