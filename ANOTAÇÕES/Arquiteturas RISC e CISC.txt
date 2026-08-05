@@ -1050,47 +1050,48 @@ PARTE 4 — COMPARAÇÃO ENTRE RISC E CISC
  21.1 Filosofias Arquiteturais — [P]
 
   21.1.1 Objetivos de Projeto — [P]
-      Filosofia RISC
-      Filosofia CISC
-      Simplicidade versus complexidade
-      Eficiência versus flexibilidade
-      Diferentes abordagens arquiteturais
+	  Filosofia RISC
+	  Filosofia CISC
+	  Simplicidade versus complexidade
+	  Eficiência versus flexibilidade
+	  Diferentes abordagens arquiteturais
 
   21.1.2 Evolução das Filosofias — [P]
-      Contexto histórico
-      Motivações de cada arquitetura
-      Evolução das propostas
-      Influências mútuas
-      Convergência moderna
+	  Contexto histórico
+	  Motivações de cada arquitetura
+	  Evolução das propostas
+	  Influências mútuas
+	  Convergência moderna
+
 
  21.2 Organização Geral da ISA — [P]
 
   21.2.1 Estrutura da Arquitetura RISC — [P]
-      Organização simplificada
-      Regularidade estrutural
-      Uniformidade das instruções
-      Modelo Load/Store
+	  Organização simplificada
+	  Regularidade estrutural
+	  Uniformidade das instruções
+	  Modelo Load/Store
 
   21.2.2 Estrutura da Arquitetura CISC — [P]
-      Organização complexa
-      Grande diversidade de instruções
-      Operações compostas
-      Flexibilidade arquitetural
+	  Organização complexa
+	  Grande diversidade de instruções
+	  Operações compostas
+	  Flexibilidade arquitetural
 
  21.3 Visão Comparativa — [P]
 
   21.3.1 Diferenças Fundamentais — [P]
-      Filosofia de projeto
-      Organização da ISA
-      Complexidade
-      Regularidade
-      Evolução arquitetural
+	  Filosofia de projeto
+	  Organização da ISA
+	  Complexidade
+	  Regularidade
+	  Evolução arquitetural
 
   21.3.2 Semelhanças Fundamentais — [P]
-      Objetivo de executar programas
-      Compatibilidade de software
-      Interface hardware-software
-      Evolução contínua das ISAs
+	  Objetivo de executar programas
+	  Compatibilidade de software
+	  Interface hardware-software
+	  Evolução contínua das ISAs
 
 
 
@@ -1099,44 +1100,46 @@ PARTE 4 — COMPARAÇÃO ENTRE RISC E CISC
  22.1 Organização das Instruções — [P]
 
   22.1.1 Quantidade de Instruções — [P]
-      Conjunto reduzido
-      Conjunto amplo
-      Especialização
-      Generalização
+	  Conjunto reduzido
+	  Conjunto amplo
+	  Especialização
+	  Generalização
 
   22.1.2 Complexidade das Instruções — [P]
-      Operações simples
-      Operações complexas
-      Funcionalidade por instrução
-      Organização da execução
+	  Operações simples
+	  Operações complexas
+	  Funcionalidade por instrução
+	  Organização da execução
+
 
  22.2 Formato das Instruções — [P]
 
   22.2.1 Estrutura dos Formatos — [P]
-      Tamanho fixo
-      Tamanho variável
-      Regularidade
-      Flexibilidade
+	  Tamanho fixo
+	  Tamanho variável
+	  Regularidade
+	  Flexibilidade
 
   22.2.2 Codificação — [P]
-      Uniformidade
-      Complexidade da codificação
-      Facilidade de interpretação
-      Organização da ISA
+	  Uniformidade
+	  Complexidade da codificação
+	  Facilidade de interpretação
+	  Organização da ISA
+
 
  22.3 Modos de Endereçamento — [P]
 
   22.3.1 Comparação Arquitetural — [P]
-      Quantidade de modos
-      Complexidade
-      Flexibilidade
-      Organização dos operandos
+	  Quantidade de modos
+	  Complexidade
+	  Flexibilidade
+	  Organização dos operandos
 
   22.3.2 Impactos da Organização — [P]
-      Simplicidade da ISA
-      Expressividade
-      Evolução arquitetural
-      Facilidade de implementação
+	  Simplicidade da ISA
+	  Expressividade
+	  Evolução arquitetural
+	  Facilidade de implementação
 
 
 
@@ -1145,38 +1148,40 @@ PARTE 4 — COMPARAÇÃO ENTRE RISC E CISC
  23.1 Organização da Execução — [P]
 
   23.1.1 Modelo de Execução — [P]
-      Execução de instruções simples
-      Execução de instruções complexas
-      Organização das operações
-      Fluxo arquitetural
+	  Execução de instruções simples
+	  Execução de instruções complexas
+	  Organização das operações
+	  Fluxo arquitetural
 
   23.1.2 Organização da Decodificação — [P]
-      Regularidade
-      Complexidade
-      Uniformidade
-      Influência da ISA
+	  Regularidade
+	  Complexidade
+	  Uniformidade
+	  Influência da ISA
+
 
  23.2 Organização Arquitetural — [P]
 
   23.2.1 Distribuição das Responsabilidades — [P]
-      Papel da ISA
-      Papel do hardware
-      Papel do software
-      Papel do compilador
+	  Papel da ISA
+	  Papel do hardware
+	  Papel do software
+ 	  Papel do compilador
 
   23.2.2 Complexidade Arquitetural — [P]
-      Complexidade da implementação
-      Complexidade da ISA
-      Escalabilidade
-      Evolução da arquitetura
+	  Complexidade da implementação
+	  Complexidade da ISA
+	  Escalabilidade
+	  Evolução da arquitetura
+
 
  23.3 Flexibilidade da Arquitetura — [P]
 
   23.3.1 Comparação Geral — [P]
-      Capacidade de expansão
-      Compatibilidade
-      Modularidade
-      Continuidade arquitetural
+	  Capacidade de expansão
+	  Compatibilidade
+	  Modularidade
+	  Continuidade arquitetural
 
 
 
@@ -1185,38 +1190,40 @@ PARTE 4 — COMPARAÇÃO ENTRE RISC E CISC
  24.1 Aspectos Arquiteturais do Desempenho — [P]
 
   24.1.1 Eficiência da ISA — [P]
-      Número de instruções
-      Complexidade das instruções
-      Eficiência da codificação
-      Organização das operações
+	  Número de instruções
+	  Complexidade das instruções
+	  Eficiência da codificação
+	  Organização das operações
 
   24.1.2 Eficiência da Execução — [P]
-      Facilidade de decodificação
-      Regularidade
-      Organização da execução
-      Tempo de processamento
+	  Facilidade de decodificação
+	  Regularidade
+	  Organização da execução
+	  Tempo de processamento
+
 
  24.2 Fatores Arquiteturais — [P]
 
   24.2.1 Influência da Organização da ISA — [P]
-      Formato das instruções
-      Modos de endereçamento
-      Complexidade arquitetural
-      Organização das operações
+	  Formato das instruções
+	  Modos de endereçamento
+	  Complexidade arquitetural
+	  Organização das operações
 
   24.2.2 Limites da Comparação — [P]
-      Dependência da implementação
-      Dependência da microarquitetura
-      Evolução tecnológica
-      Contexto de utilização
+	  Dependência da implementação
+	  Dependência da microarquitetura
+	  Evolução tecnológica
+	  Contexto de utilização
+
 
  24.3 Considerações Modernas — [P]
 
   24.3.1 Arquiteturas Atuais — [P]
-      Redução das diferenças
-      Otimizações modernas
-      Influência da implementação
-      Convergência arquitetural
+	  Redução das diferenças
+	  Otimizações modernas
+	  Influência da implementação
+	  Convergência arquitetural
 
 
 
@@ -1225,24 +1232,25 @@ PARTE 4 — COMPARAÇÃO ENTRE RISC E CISC
  25.1 Aspectos Gerais — [I]
 
   25.1.1 Relação entre ISA e Consumo de Energia — [I]
-      Eficiência arquitetural
-      Complexidade da execução
-      Influência da ISA
-      Organização das instruções
+	  Eficiência arquitetural
+	  Complexidade da execução
+	  Influência da ISA
+	  Organização das instruções
+
 
  25.2 Comparação Geral — [I]
 
   25.2.1 Tendências Arquiteturais — [I]
-      Eficiência energética
-      Simplicidade
-      Complexidade
-      Evolução tecnológica
+	  Eficiência energética
+	  Simplicidade
+	  Complexidade
+	  Evolução tecnológica
 
   25.2.2 Limitações da Comparação — [I]
-      Dependência da implementação
-      Dependência da tecnologia
-      Influência da microarquitetura
-      Generalizações incorretas
+	  Dependência da implementação
+	  Dependência da tecnologia
+	  Influência da microarquitetura
+	  Generalizações incorretas
 
 
 
@@ -1251,24 +1259,25 @@ PARTE 4 — COMPARAÇÃO ENTRE RISC E CISC
  26.1 Relação com os Compiladores — [I]
 
   26.1.1 Papel do Compilador — [I]
-      Geração de código
-      Seleção de instruções
-      Organização do programa
-      Aproveitamento da ISA
+	  Geração de código
+	  Seleção de instruções
+	  Organização do programa
+	  Aproveitamento da ISA
+
 
  26.2 Desenvolvimento de Programas — [I]
 
   26.2.1 Organização do Código — [I]
-      Tamanho do programa
-      Legibilidade
-      Compatibilidade
-      Portabilidade
+	  Tamanho do programa
+	  Legibilidade
+	  Compatibilidade
+	  Portabilidade
 
   26.2.2 Desenvolvimento para Diferentes ISAs — [I]
-      Adaptação do software
-      Dependência da arquitetura
-      Ferramentas de desenvolvimento
-      Ecossistema
+	  Adaptação do software
+	  Dependência da arquitetura
+	  Ferramentas de desenvolvimento
+	  Ecossistema
 
 
 
@@ -1277,31 +1286,32 @@ PARTE 4 — COMPARAÇÃO ENTRE RISC E CISC
  27.1 Áreas de Aplicação — [I]
 
   27.1.1 Aplicações Tradicionais — [I]
-      Computadores pessoais
-      Servidores
-      Sistemas embarcados
-      Dispositivos móveis
+	  Computadores pessoais
+	  Servidores
+	  Sistemas embarcados
+	  Dispositivos móveis
 
   27.1.2 Aplicações Modernas — [I]
-      Computação em nuvem
-      Inteligência Artificial
-      Internet das Coisas (IoT)
-      Computação de alto desempenho
+	  Computação em nuvem
+	  Inteligência Artificial
+	  Internet das Coisas (IoT)
+	  Computação de alto desempenho
+
 
  27.2 Critérios de Escolha — [I]
 
   27.2.1 Critérios Arquiteturais — [I]
-      Compatibilidade
-      Desempenho
-      Eficiência energética
-      Escalabilidade
-      Ecossistema
+	  Compatibilidade
+	  Desempenho
+	  Eficiência energética
+	  Escalabilidade
+	  Ecossistema
 
   27.2.2 Cenários de Utilização — [I]
-      Quando utilizar RISC
-      Quando utilizar CISC
-      Critérios técnicos
-      Tendências atuais
+	  Quando utilizar RISC
+	  Quando utilizar CISC
+	  Critérios técnicos
+	  Tendências atuais
 
 
 
