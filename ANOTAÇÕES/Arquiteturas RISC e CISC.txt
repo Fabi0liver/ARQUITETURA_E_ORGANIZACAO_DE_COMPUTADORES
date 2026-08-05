@@ -1662,29 +1662,30 @@ PARTE 6 — PRINCIPAIS IMPLEMENTAÇÕES
  35.1 Fundamentos da Arquitetura MIPS — [V]
 
   35.1.1 Origem — [V]
-      Projeto acadêmico
-      Filosofia RISC
-      Evolução histórica
-      Importância educacional
+	  Projeto acadêmico
+	  Filosofia RISC
+	  Evolução histórica
+	  Importância educacional
 
   35.1.2 Características Gerais — [V]
-      ISA simples
-      Organização regular
-      Modelo Load/Store
-      Uniformidade das instruções
+	  ISA simples
+	  Organização regular
+	  Modelo Load/Store
+	  Uniformidade das instruções
+
 
  35.2 Aplicações da Arquitetura MIPS — [V]
 
   35.2.1 Principais Utilizações — [V]
-      Ensino
-      Pesquisa
-      Sistemas embarcados
-      Equipamentos eletrônicos
+	  Ensino
+	  Pesquisa
+	  Sistemas embarcados
+	  Equipamentos eletrônicos
 
   35.2.2 Importância Histórica — [V]
-      Influência nas arquiteturas RISC
-      Base para estudos
-      Evolução das ISAs
+	  Influência nas arquiteturas RISC
+	  Base para estudos
+	  Evolução das ISAs
 
 
 
@@ -1693,29 +1694,30 @@ PARTE 6 — PRINCIPAIS IMPLEMENTAÇÕES
  36.1 Visão Geral — [V]
 
   36.1.1 Origem — [V]
-      Desenvolvimento conjunto
-      Filosofia RISC
-      Evolução histórica
-      Consolidação comercial
+	  Desenvolvimento conjunto
+	  Filosofia RISC
+	  Evolução histórica
+	  Consolidação comercial
 
   36.1.2 Características Gerais — [V]
-      Organização da ISA
-      Eficiência
-      Escalabilidade
-      Compatibilidade
+	  Organização da ISA
+	  Eficiência
+	  Escalabilidade
+	  Compatibilidade
+
 
  36.2 Aplicações — [V]
 
   36.2.1 Principais Utilizações — [V]
-      Computadores
-      Servidores
-      Consoles de videogame
-      Sistemas embarcados
+	  Computadores
+	  Servidores
+	  Consoles de videogame
+	  Sistemas embarcados
 
   36.2.2 Legado Arquitetural — [V]
-      Influência nas arquiteturas modernas
-      Evolução tecnológica
-      Importância histórica
+	  Influência nas arquiteturas modernas
+	  Evolução tecnológica
+	  Importância histórica
 
 
 
@@ -1724,44 +1726,46 @@ PARTE 6 — PRINCIPAIS IMPLEMENTAÇÕES
  37.1 Fundamentos do RISC-V — [I]
 
   37.1.1 Origem da Arquitetura — [I]
-      Desenvolvimento acadêmico
-      ISA aberta
-      Objetivos
-      Filosofia de projeto
+	  Desenvolvimento acadêmico
+	  ISA aberta
+	  Objetivos
+	  Filosofia de projeto
 
   37.1.2 Características Gerais — [I]
-      Modularidade
-      Extensibilidade
-      Simplicidade
-      Padronização
+	  Modularidade
+	  Extensibilidade
+	  Simplicidade
+	  Padronização
+
 
  37.2 Organização da ISA — [I]
 
   37.2.1 Estrutura Modular — [I]
-      Conjunto base
-      Extensões padronizadas
-      Organização da arquitetura
-      Flexibilidade
+	  Conjunto base
+	  Extensões padronizadas
+	  Organização da arquitetura
+	  Flexibilidade
 
   37.2.2 Evolução da Arquitetura — [I]
-      Novas extensões
-      Crescimento do ecossistema
-      Expansão industrial
-      Evolução contínua
+	  Novas extensões
+	  Crescimento do ecossistema
+	  Expansão industrial
+	  Evolução contínua
+
 
  37.3 Arquiteturas Abertas — [I]
 
   37.3.1 Conceitos Fundamentais — [I]
-      ISA aberta
-      Licenciamento
-      Personalização
-      Colaboração
+	  ISA aberta
+	  Licenciamento
+	  Personalização
+	  Colaboração
 
   37.3.2 Importância Atual — [I]
-      Pesquisa
-      Ensino
-      Indústria
-      Inovação tecnológica
+	  Pesquisa
+	  Ensino
+	  Indústria
+	  Inovação tecnológica
 
 
 
@@ -1770,32 +1774,34 @@ PARTE 6 — PRINCIPAIS IMPLEMENTAÇÕES
  38.1 Arquiteturas Históricas — [V]
 
   38.1.1 Outras ISAs Importantes — [V]
-      SPARC
-      PA-RISC
-      Alpha
-      SuperH
+	  SPARC
+	  PA-RISC
+	  Alpha
+	  SuperH
+
 
  38.2 Arquiteturas Especializadas — [V]
 
   38.2.1 Arquiteturas Voltadas para Aplicações Específicas — [V]
-      DSPs
-      Microcontroladores
-      Processadores dedicados
-      Aceleradores especializados
+	  DSPs
+	  Microcontroladores
+	  Processadores dedicados
+	  Aceleradores especializados
+
 
  38.3 Panorama Atual das ISAs — [V]
 
   38.3.1 Cenário Contemporâneo — [V]
-      Principais arquiteturas em uso
-      Tendências do mercado
-      Continuidade das ISAs
-      Evolução futura
+	  Principais arquiteturas em uso
+	  Tendências do mercado
+	  Continuidade das ISAs
+	  Evolução futura
 
   38.3.2 Importância para a Arquitetura de Computadores — [V]
-      Diversidade de aplicações
-      Evolução tecnológica
-      Competição entre arquiteturas
-      Influência na computação moderna
+	  Diversidade de aplicações
+	  Evolução tecnológica
+	  Competição entre arquiteturas
+	  Influência na computação moderna
 
 
 
@@ -1807,33 +1813,34 @@ PARTE 7 — INTEGRAÇÃO DOS CONCEITOS
  39.1 Critérios Arquiteturais — [I]
 
   39.1.1 Avaliação da ISA — [I]
-      Complexidade do conjunto de instruções
-      Compatibilidade
-      Escalabilidade
-      Facilidade de evolução
-      Flexibilidade arquitetural
+	  Complexidade do conjunto de instruções
+	  Compatibilidade
+	  Escalabilidade
+	  Facilidade de evolução
+	  Flexibilidade arquitetural
 
   39.1.2 Critérios Técnicos — [I]
-      Requisitos da aplicação
-      Ecossistema de software
-      Disponibilidade de ferramentas
-      Longevidade da arquitetura
-      Continuidade da ISA
+	  Requisitos da aplicação
+	  Ecossistema de software
+	  Disponibilidade de ferramentas
+	  Longevidade da arquitetura
+	  Continuidade da ISA
+
 
  39.2 Critérios de Aplicação — [I]
 
   39.2.1 Ambientes de Uso — [I]
-      Computadores pessoais
-      Dispositivos móveis
-      Sistemas embarcados
-      Servidores
-      Computação de alto desempenho
+	  Computadores pessoais
+	  Dispositivos móveis
+	  Sistemas embarcados
+	  Servidores
+	  Computação de alto desempenho
 
   39.2.2 Tendências de Escolha — [I]
-      Compatibilidade histórica
-      Eficiência energética
-      Escalabilidade
-      Necessidades do mercado
+	  Compatibilidade histórica
+	  Eficiência energética
+	  Escalabilidade
+	  Necessidades do mercado
 
 
 
