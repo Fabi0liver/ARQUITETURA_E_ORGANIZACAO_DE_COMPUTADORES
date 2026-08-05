@@ -81,63 +81,66 @@ PARTE 1 — FUNDAMENTOS DAS ARQUITETURAS RISC E CISC
  2.1 Origem das Arquiteturas de Instruções — [I]
 
   2.1.1 Primeiras Arquiteturas — [I]
-      Primeiros computadores
-      Linguagem de máquina
-      Primeiros conjuntos de instruções
-      Evolução inicial das ISAs
+	  Primeiros computadores
+	  Linguagem de máquina
+	  Primeiros conjuntos de instruções
+	  Evolução inicial das ISAs
 
   2.1.2 Contexto Tecnológico da Época — [I]
-      Limitações do hardware
-      Custos de memória
-      Desenvolvimento de compiladores
-      Necessidades dos programadores
-      Evolução dos semicondutores
+	  Limitações do hardware
+	  Custos de memória
+	  Desenvolvimento de compiladores
+	  Necessidades dos programadores
+	  Evolução dos semicondutores
+
 
  2.2 Surgimento da Filosofia CISC — [I]
 
   2.2.1 Motivação — [I]
-      Redução do número de instruções
-      Código mais compacto
-      Simplificação da programação
-      Aproveitamento da memória
-      Hardware orientado a instruções complexas
+	  Redução do número de instruções
+	  Código mais compacto
+	  Simplificação da programação
+	  Aproveitamento da memória
+	  Hardware orientado a instruções complexas
 
   2.2.2 Consolidação da Arquitetura CISC — [I]
-      Popularização dos computadores
-      Mainframes
-      Minicomputadores
-      Primeiros microprocessadores
-      Consolidação do x86
+	  Popularização dos computadores
+	  Mainframes
+	  Minicomputadores
+	  Primeiros microprocessadores
+	  Consolidação do x86
+
 
  2.3 Surgimento da Filosofia RISC — [I]
 
   2.3.1 Motivação — [I]
-      Simplificação da ISA
-      Melhor aproveitamento do hardware
-      Execução eficiente
-      Redução da complexidade
-      Ênfase na velocidade
+	  Simplificação da ISA
+	  Melhor aproveitamento do hardware
+	  Execução eficiente
+	  Redução da complexidade
+	  Ênfase na velocidade
 
   2.3.2 Consolidação da Arquitetura RISC — [I]
-      Projetos acadêmicos
-      Berkeley RISC
-      IBM 801
-      Stanford MIPS
-      Expansão para sistemas comerciais
+	  Projetos acadêmicos
+	  Berkeley RISC
+	  IBM 801
+	  Stanford MIPS
+	  Expansão para sistemas comerciais
+
 
  2.4 Evolução Histórica das Filosofias Arquiteturais — [I]
 
   2.4.1 Competição entre RISC e CISC — [I]
-      Diferentes abordagens
-      Evolução paralela
-      Influência na indústria
-      Mudanças ao longo do tempo
+	  Diferentes abordagens
+	  Evolução paralela
+	  Influência na indústria
+	  Mudanças ao longo do tempo
 
   2.4.2 Convergência Inicial — [I]
-      Evolução das ISAs
-      Influências mútuas
-      Redução das diferenças
-      Caminho para arquiteturas modernas
+	  Evolução das ISAs
+	  Influências mútuas
+	  Redução das diferenças
+	  Caminho para arquiteturas modernas
 
 
 
@@ -146,43 +149,45 @@ PARTE 1 — FUNDAMENTOS DAS ARQUITETURAS RISC E CISC
  3.1 Evolução das ISAs — [I]
 
   3.1.1 Primeiras Gerações — [I]
-      Instruções básicas
-      Operações elementares
-      Evolução funcional
-      Crescimento dos conjuntos de instruções
+	  Instruções básicas
+	  Operações elementares
+	  Evolução funcional
+	  Crescimento dos conjuntos de instruções
 
   3.1.2 Evolução das Funcionalidades — [I]
-      Novos tipos de instruções
-      Ampliação dos recursos
-      Compatibilidade
-      Extensões da ISA
+	  Novos tipos de instruções
+	  Ampliação dos recursos
+	  Compatibilidade
+	  Extensões da ISA
+
 
  3.2 Evolução dos Paradigmas Arquiteturais — [I]
 
   3.2.1 Arquiteturas Complexas — [I]
-      Crescimento das instruções
-      Maior capacidade funcional
-      Complexidade crescente
+	  Crescimento das instruções
+	  Maior capacidade funcional
+	  Complexidade crescente
 
   3.2.2 Arquiteturas Simplificadas — [I]
-      Redução da complexidade
-      Simplificação do conjunto de instruções
-      Organização mais uniforme
+	  Redução da complexidade
+	  Simplificação do conjunto de instruções
+	  Organização mais uniforme
+
 
  3.3 Evolução para Arquiteturas Modernas — [I]
 
   3.3.1 Continuidade das ISAs — [I]
-      Compatibilidade
-      Evolução incremental
-      Novas extensões
-      Modernização das arquiteturas
+	  Compatibilidade
+	  Evolução incremental
+	  Novas extensões
+	  Modernização das arquiteturas
 
   3.3.2 Tendências Gerais — [V]
-      Maior eficiência
-      Melhor desempenho
-      Eficiência energética
-      Flexibilidade
-      Longevidade das arquiteturas
+	  Maior eficiência
+	  Melhor desempenho
+	  Eficiência energética
+	  Flexibilidade
+	  Longevidade das arquiteturas
 
 
 
@@ -191,51 +196,53 @@ PARTE 1 — FUNDAMENTOS DAS ARQUITETURAS RISC E CISC
  4.1 Princípios Fundamentais de Projeto — [P]
 
   4.1.1 Filosofia CISC — [P]
-      Complexidade das instruções
-      Redução do número de instruções
-      Operações multifuncionais
-      Ênfase no software
-      Código compacto
+	  Complexidade das instruções
+	  Redução do número de instruções
+	  Operações multifuncionais
+	  Ênfase no software
+	  Código compacto
 
   4.1.2 Filosofia RISC — [P]
-      Simplicidade das instruções
-      Operações elementares
-      Regularidade
-      Uniformidade
-      Eficiência de execução
+	  Simplicidade das instruções
+	  Operações elementares
+	  Regularidade
+	  Uniformidade
+	  Eficiência de execução
+
 
  4.2 Critérios de Projeto da ISA — [P]
 
   4.2.1 Simplicidade Arquitetural — [P]
-      Número de instruções
-      Complexidade das instruções
-      Formato das instruções
-      Organização da ISA
+	  Número de instruções
+	  Complexidade das instruções
+	  Formato das instruções
+	  Organização da ISA
 
   4.2.2 Eficiência Arquitetural — [P]
-      Facilidade de decodificação
-      Eficiência da execução
-      Escalabilidade
-      Balanceamento entre hardware e software
+	  Facilidade de decodificação
+	  Eficiência da execução
+	  Escalabilidade
+	  Balanceamento entre hardware e software
+
 
  4.3 Compromissos de Projeto (Trade-offs) — [P]
 
   4.3.1 Simplicidade × Complexidade — [P]
-      Benefícios
-      Limitações
-      Impactos arquiteturais
+	  Benefícios
+	  Limitações
+	  Impactos arquiteturais
 
   4.3.2 Hardware × Software — [P]
-      Distribuição das responsabilidades
-      Papel do hardware
-      Papel do software
-      Equilíbrio arquitetural
+	  Distribuição das responsabilidades
+	  Papel do hardware
+	  Papel do software
+	  Equilíbrio arquitetural
 
   4.3.3 Desempenho × Compatibilidade — [P]
-      Evolução da arquitetura
-      Compatibilidade entre gerações
-      Custos de evolução
-      Manutenção da ISA
+	  Evolução da arquitetura
+	  Compatibilidade entre gerações
+	  Custos de evolução
+	  Manutenção da ISA
 
 
 
