@@ -309,3 +309,409 @@ PARTE 1 — FUNDAMENTOS DO PARALELISMO
       Mecanismos de execução
       Desempenho
       Aplicações modernas
+
+
+
+PARTE 2 — MODELOS E TIPOS DE PARALELISMO
+
+
+8. Modelos Fundamentais de Paralelismo — [I]
+
+ 8.1 Conceitos Gerais — [I]
+
+  8.1.1 Modelos de Paralelismo — [I]
+      Definição de modelo de paralelismo
+      Organização da execução paralela
+      Diferentes formas de exploração do paralelismo
+      Critérios de classificação
+      Relação entre modelos
+
+  8.1.2 Objetivos dos Modelos de Paralelismo — [I]
+      Melhor aproveitamento dos recursos
+      Redução do tempo de execução
+      Organização do processamento
+      Aumento da eficiência
+      Escalabilidade computacional
+
+  8.1.3 Critérios para Escolha do Modelo — [I]
+      Natureza do problema
+      Tipo de dados
+      Dependência entre operações
+      Grau de paralelização
+      Complexidade da implementação
+
+
+ 8.2 Organização dos Modelos — [I]
+
+  8.2.1 Classificação por Nível de Paralelismo — [I]
+      Paralelismo em nível de bits
+      Paralelismo em nível de instruções
+      Paralelismo em nível de dados
+      Paralelismo em nível de tarefas
+      Paralelismo em nível de processos
+
+  8.2.2 Relação entre os Modelos — [I]
+      Complementaridade
+      Sobreposição entre modelos
+      Combinação de abordagens
+      Hierarquia dos níveis
+      Exemplos conceituais
+
+
+
+9. Paralelismo em Nível de Bits (Bit-Level Parallelism - BLP) — [I]
+
+ 9.1 Fundamentos — [I]
+
+  9.1.1 Conceito de Paralelismo em Nível de Bits — [I]
+      Definição
+      Operações sobre múltiplos bits
+      Largura da palavra
+      Execução simultânea de bits
+      Objetivo do modelo
+
+  9.1.2 Evolução Histórica — [V]
+      Palavras menores
+      Aumento da largura das palavras
+      Evolução arquitetural
+      Impacto no desempenho
+
+
+ 9.2 Funcionamento Geral — [I]
+
+  9.2.1 Organização das Operações — [I]
+      Processamento paralelo de bits
+      Operações aritméticas
+      Operações lógicas
+      Comparações
+      Manipulação de dados
+
+  9.2.2 Benefícios e Limitações — [I]
+      Ganho de desempenho
+      Redução do número de operações
+      Limitações físicas
+      Custos de implementação
+
+
+
+10. Paralelismo em Nível de Instruções (Instruction-Level Parallelism - ILP) — [P]
+
+ 10.1 Fundamentos — [P]
+
+  10.1.1 Conceito de ILP — [P]
+      Definição
+      Execução simultânea de instruções
+      Independência entre instruções
+      Objetivo do ILP
+      Importância arquitetural
+
+  10.1.2 Características Gerais — [P]
+      Paralelismo implícito
+      Exploração automática
+      Dependências entre instruções
+      Limites naturais
+      Ganhos de desempenho
+
+
+ 10.2 Organização do ILP — [P]
+
+  10.2.1 Dependências entre Instruções — [P]
+      Dependências verdadeiras
+      Dependências de nome
+      Dependências de controle
+      Influência na paralelização
+
+  10.2.2 Exploração do ILP — [P]
+      Descoberta de instruções independentes
+      Reordenação lógica
+      Emissão simultânea
+      Execução concorrente
+
+
+ 10.3 Considerações Gerais — [I]
+
+  10.3.1 Benefícios do ILP — [I]
+      Melhor utilização do hardware
+      Redução do tempo de execução
+      Aumento do throughput
+      Melhor desempenho geral
+
+  10.3.2 Limitações do ILP — [I]
+      Dependências
+      Controle do fluxo
+      Complexidade arquitetural
+      Limites físicos
+
+
+
+11. Paralelismo em Nível de Dados (Data-Level Parallelism - DLP) — [P]
+
+ 11.1 Fundamentos — [P]
+
+  11.1.1 Conceito de DLP — [P]
+      Definição
+      Execução da mesma operação
+      Grandes conjuntos de dados
+      Processamento simultâneo
+      Objetivos do modelo
+
+  11.1.2 Características Gerais — [P]
+      Dados independentes
+      Operações homogêneas
+      Repetição de cálculos
+      Alta escalabilidade
+
+
+ 11.2 Organização do DLP — [P]
+
+  11.2.1 Distribuição dos Dados — [P]
+      Divisão dos conjuntos
+      Independência dos elementos
+      Balanceamento da carga
+      Organização da execução
+
+  11.2.2 Aplicação das Operações — [P]
+      Mesma instrução
+      Múltiplos dados
+      Execução paralela
+      Produção dos resultados
+
+
+ 11.3 Aplicabilidade — [I]
+
+  11.3.1 Situações Adequadas — [I]
+      Processamento matricial
+      Processamento vetorial
+      Processamento de imagens
+      Simulações numéricas
+
+  11.3.2 Limitações — [I]
+      Dependência entre dados
+      Distribuição desigual
+      Comunicação entre elementos
+      Sobrecarga operacional
+
+
+
+12. Paralelismo em Nível de Tarefas (Task-Level Parallelism - TLP) — [P]
+
+ 12.1 Fundamentos — [P]
+
+  12.1.1 Conceito de TLP — [P]
+      Definição
+      Divisão em tarefas
+      Execução simultânea
+      Independência funcional
+      Organização geral
+
+  12.1.2 Estrutura das Tarefas — [P]
+      Identificação das tarefas
+      Decomposição funcional
+      Coordenação
+      Integração dos resultados
+
+
+ 12.2 Organização do TLP — [P]
+
+  12.2.1 Distribuição das Tarefas — [P]
+      Separação funcional
+      Paralelização
+      Coordenação
+      Balanceamento
+
+  12.2.2 Relações entre Tarefas — [P]
+      Tarefas independentes
+      Tarefas dependentes
+      Comunicação
+      Sincronização (visão geral)
+
+
+ 12.3 Características Gerais — [I]
+
+  12.3.1 Benefícios — [I]
+      Melhor aproveitamento dos recursos
+      Modularidade
+      Escalabilidade
+      Flexibilidade
+
+  12.3.2 Limitações — [I]
+      Dependências
+      Comunicação
+      Balanceamento inadequado
+      Overhead
+
+
+
+13. Paralelismo em Nível de Processos — [I]
+
+ 13.1 Fundamentos — [I]
+
+  13.1.1 Conceito — [I]
+      Definição
+      Execução paralela de processos
+      Independência dos processos
+      Organização geral
+
+  13.1.2 Características — [I]
+      Isolamento
+      Cooperação
+      Compartilhamento de recursos
+      Coordenação
+
+
+ 13.2 Organização Geral — [I]
+
+  13.2.1 Distribuição dos Processos — [I]
+      Divisão das atividades
+      Execução simultânea
+      Coordenação
+      Comunicação básica
+
+  13.2.2 Aplicações Gerais — [V]
+      Sistemas multitarefa
+      Servidores
+      Computação científica
+      Sistemas distribuídos
+
+
+
+14. Paralelismo de Memória — [I]
+
+ 14.1 Conceitos Fundamentais — [I]
+
+  14.1.1 Conceito de Paralelismo de Memória — [I]
+      Definição
+      Acessos paralelos
+      Organização do acesso
+      Objetivos
+
+  14.1.2 Importância — [I]
+      Alimentação das unidades de execução
+      Redução de gargalos
+      Suporte ao processamento paralelo
+      Eficiência geral
+
+
+ 14.2 Organização Geral — [I]
+
+  14.2.1 Formas Gerais de Exploração — [I]
+      Acessos simultâneos
+      Múltiplos canais
+      Bancos independentes
+      Organização lógica
+
+  14.2.2 Limitações — [I]
+      Contenção
+      Conflitos de acesso
+      Sincronização
+      Custos de implementação
+
+
+
+15. Paralelismo de Pipeline — [I]
+
+ 15.1 Fundamentos — [I]
+
+  15.1.1 Conceito de Paralelismo de Pipeline — [I]
+      Definição
+      Sobreposição de operações
+      Execução em estágios
+      Objetivo do modelo
+
+  15.1.2 Relação com o Paralelismo — [I]
+      Forma de paralelização
+      Execução sobreposta
+      Throughput
+      Eficiência
+
+
+ 15.2 Características Gerais — [I]
+
+  15.2.1 Benefícios — [I]
+      Maior produtividade
+      Melhor utilização dos recursos
+      Execução contínua
+      Aumento do desempenho
+
+  15.2.2 Limitações — [I]
+      Dependências
+      Interrupções da execução
+      Desequilíbrio entre estágios
+      Restrições gerais
+
+      Observação: o funcionamento interno de Pipeline pertence à lista específica
+      sobre Pipeline e é apresentado aqui apenas como modelo de paralelismo.
+
+
+
+16. Paralelismo Funcional — [I]
+
+ 16.1 Fundamentos — [I]
+
+  16.1.1 Conceito de Paralelismo Funcional — [I]
+      Definição
+      Execução de funções distintas
+      Especialização das atividades
+      Organização funcional
+
+  16.1.2 Características — [I]
+      Funções independentes
+      Cooperação funcional
+      Distribuição do trabalho
+      Modularidade
+
+
+ 16.2 Organização Geral — [I]
+
+  16.2.1 Divisão Funcional — [I]
+      Separação das responsabilidades
+      Execução paralela
+      Coordenação
+      Integração dos resultados
+
+  16.2.2 Aplicações Gerais — [V]
+      Sistemas complexos
+      Processamento multimídia
+      Computação científica
+      Aplicações heterogêneas
+
+
+
+17. Comparação entre os Modelos de Paralelismo — [I]
+
+ 17.1 Critérios de Comparação — [I]
+
+  17.1.1 Diferenças Fundamentais — [I]
+      Unidade paralelizada
+      Granularidade
+      Organização da execução
+      Dependências
+      Escalabilidade
+
+  17.1.2 Relações entre os Modelos — [I]
+      Complementação entre técnicas
+      Utilização simultânea
+      Sobreposição de modelos
+      Combinação em sistemas modernos
+
+
+ 17.2 Visão Integrada — [I]
+
+  17.2.1 Escolha do Modelo Adequado — [I]
+      Tipo do problema
+      Volume de dados
+      Dependências existentes
+      Recursos disponíveis
+      Objetivos de desempenho
+
+  17.2.2 Preparação para Arquiteturas Paralelas — [V]
+      Relação com a Taxonomia de Flynn
+      Relação com arquiteturas multicore
+      Relação com arquiteturas manycore
+      Base para os próximos capítulos
+
+
+
+
+
+
