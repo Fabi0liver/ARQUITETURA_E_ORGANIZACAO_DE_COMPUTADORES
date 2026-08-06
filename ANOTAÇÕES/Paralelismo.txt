@@ -712,6 +712,782 @@ PARTE 2 — MODELOS E TIPOS DE PARALELISMO
 
 
 
+PARTE 3 — ARQUITETURAS PARALELAS
 
+
+18. Arquiteturas Paralelas — [I]
+
+ 18.1 Conceitos Fundamentais — [I]
+
+  18.1.1 Conceito de Arquitetura Paralela — [I]
+      Definição de arquitetura paralela
+      Organização do processamento paralelo
+      Cooperação entre unidades de processamento
+      Objetivos das arquiteturas paralelas
+      Importância para a computação moderna
+
+  18.1.2 Características Gerais — [I]
+      Execução simultânea
+      Distribuição do trabalho
+      Coordenação entre componentes
+      Compartilhamento de recursos
+      Escalabilidade
+
+  18.1.3 Classificação das Arquiteturas Paralelas — [I]
+      Critérios de classificação
+      Organização dos fluxos
+      Organização dos recursos
+      Modelos arquiteturais
+      Relação entre as arquiteturas
+
+
+ 18.2 Organização Geral — [I]
+
+  18.2.1 Estrutura das Arquiteturas Paralelas — [I]
+      Organização lógica
+      Componentes principais
+      Comunicação entre unidades
+      Coordenação da execução
+      Fluxo das operações
+
+  18.2.2 Evolução das Arquiteturas Paralelas — [V]
+      Primeiras arquiteturas
+      Evolução tecnológica
+      Crescimento da escalabilidade
+      Tendências modernas
+
+
+
+19. Taxonomia de Flynn — [P]
+
+ 19.1 Fundamentos — [P]
+
+  19.1.1 Conceito da Taxonomia de Flynn — [P]
+      Definição
+      Objetivos da classificação
+      Fluxo de instruções
+      Fluxo de dados
+      Importância arquitetural
+
+  19.1.2 Critérios da Classificação — [P]
+      Fluxo de instruções
+      Fluxo de dados
+      Organização da execução
+      Classificação das arquiteturas
+
+
+ 19.2 Estrutura da Taxonomia — [P]
+
+  19.2.1 Categorias Fundamentais — [P]
+      SISD
+      SIMD
+      MISD
+      MIMD
+
+  19.2.2 Comparação entre as Categorias — [P]
+      Organização da execução
+      Grau de paralelismo
+      Aplicações típicas
+      Limitações
+      Relações entre os modelos
+
+
+ 19.3 Importância da Taxonomia — [I]
+
+  19.3.1 Aplicações da Classificação — [I]
+      Estudo das arquiteturas
+      Comparação entre sistemas
+      Evolução do paralelismo
+      Base para arquiteturas modernas
+
+
+
+20. Arquitetura SISD (Single Instruction, Single Data) — [I]
+
+ 20.1 Fundamentos — [I]
+
+  20.1.1 Conceito de SISD — [I]
+      Definição
+      Fluxo único de instruções
+      Fluxo único de dados
+      Execução sequencial
+      Organização geral
+
+  20.1.2 Características — [I]
+      Simplicidade
+      Baixo paralelismo
+      Controle centralizado
+      Modelo clássico
+
+
+ 20.2 Papel no Estudo do Paralelismo — [I]
+
+  20.2.1 Importância Conceitual — [I]
+      Modelo de referência
+      Comparação com arquiteturas paralelas
+      Limitações
+      Evolução para arquiteturas paralelas
+
+
+
+21. Arquitetura SIMD (Single Instruction, Multiple Data) — [P]
+
+ 21.1 Fundamentos — [P]
+
+  21.1.1 Conceito de SIMD — [P]
+      Definição
+      Uma instrução
+      Múltiplos dados
+      Execução simultânea
+      Objetivos
+
+  21.1.2 Características Gerais — [P]
+      Controle centralizado
+      Operações homogêneas
+      Alto paralelismo de dados
+      Organização eficiente
+
+
+ 21.2 Organização da Execução — [P]
+
+  21.2.1 Funcionamento Geral — [P]
+      Distribuição dos dados
+      Execução sincronizada
+      Produção dos resultados
+      Coordenação das unidades
+
+  21.2.2 Aplicações — [I]
+      Processamento vetorial
+      Processamento de imagens
+      Computação científica
+      Inteligência artificial
+
+
+ 21.3 Benefícios e Limitações — [I]
+
+  21.3.1 Benefícios — [I]
+      Alto desempenho
+      Eficiência energética
+      Excelente processamento de dados
+      Escalabilidade
+
+  21.3.2 Limitações — [I]
+      Dependência da uniformidade dos dados
+      Divergência de execução
+      Flexibilidade reduzida
+      Aplicações específicas
+
+
+
+22. Arquitetura MISD (Multiple Instruction, Single Data) — [V]
+
+ 22.1 Fundamentos — [V]
+
+  22.1.1 Conceito de MISD — [V]
+      Definição
+      Múltiplas instruções
+      Mesmo fluxo de dados
+      Organização conceitual
+
+  22.1.2 Características Gerais — [V]
+      Pouca utilização prática
+      Redundância computacional
+      Confiabilidade
+      Tolerância a falhas
+
+
+ 22.2 Aplicações — [V]
+
+  22.2.1 Utilizações Especiais — [V]
+      Sistemas críticos
+      Sistemas embarcados críticos
+      Aplicações aeroespaciais
+      Sistemas de alta confiabilidade
+
+
+
+23. Arquitetura MIMD (Multiple Instruction, Multiple Data) — [P]
+
+ 23.1 Fundamentos — [P]
+
+  23.1.1 Conceito de MIMD — [P]
+      Definição
+      Múltiplas instruções
+      Múltiplos dados
+      Execução independente
+      Organização geral
+
+  23.1.2 Características Gerais — [P]
+      Flexibilidade
+      Independência das unidades
+      Alto grau de paralelismo
+      Grande escalabilidade
+
+
+ 23.2 Organização da Execução — [P]
+
+  23.2.1 Funcionamento Geral — [P]
+      Execução independente
+      Coordenação das tarefas
+      Compartilhamento de recursos
+      Comunicação entre unidades
+
+  23.2.2 Aplicações — [I]
+      Computação científica
+      Servidores
+      Computação distribuída
+      Sistemas modernos
+
+
+ 23.3 Benefícios e Limitações — [I]
+
+  23.3.1 Benefícios — [I]
+      Alta flexibilidade
+      Escalabilidade
+      Grande capacidade computacional
+      Diversidade de aplicações
+
+  23.3.2 Limitações — [I]
+      Comunicação
+      Sincronização
+      Balanceamento
+      Complexidade de gerenciamento
+
+
+
+24. Arquiteturas Multicore — [I]
+
+ 24.1 Fundamentos — [I]
+
+  24.1.1 Conceito de Multicore — [I]
+      Definição
+      Múltiplos núcleos
+      Execução paralela
+      Compartilhamento de recursos
+      Objetivos
+
+  24.1.2 Organização Geral — [I]
+      Núcleos de processamento
+      Comunicação interna
+      Coordenação da execução
+      Escalabilidade
+
+
+ 24.2 Características — [I]
+
+  24.2.1 Benefícios — [I]
+      Maior desempenho
+      Eficiência energética
+      Melhor aproveitamento do hardware
+      Paralelismo em aplicações
+
+  24.2.2 Limitações — [I]
+      Comunicação entre núcleos
+      Compartilhamento de recursos
+      Dependências
+      Escalabilidade limitada
+
+
+
+25. Arquiteturas Manycore — [I]
+
+ 25.1 Fundamentos — [I]
+
+  25.1.1 Conceito de Manycore — [I]
+      Definição
+      Grande quantidade de núcleos
+      Paralelismo massivo
+      Objetivos
+
+  25.1.2 Características Gerais — [I]
+      Alta escalabilidade
+      Processamento massivamente paralelo
+      Organização distribuída
+      Alto desempenho
+
+
+ 25.2 Aplicações — [I]
+
+  25.2.1 Principais Aplicações — [I]
+      Computação científica
+      IA
+      HPC
+      Processamento gráfico
+
+
+
+26. Multiprocessadores Simétricos (SMP) — [I]
+
+ 26.1 Fundamentos — [I]
+
+  26.1.1 Conceito de SMP — [I]
+      Definição
+      Processadores equivalentes
+      Compartilhamento de recursos
+      Organização geral
+
+  26.1.2 Características — [I]
+      Simetria
+      Escalabilidade
+      Coordenação
+      Cooperação
+
+
+ 26.2 Organização Geral — [I]
+
+  26.2.1 Funcionamento — [I]
+      Distribuição do processamento
+      Compartilhamento
+      Comunicação
+      Balanceamento
+
+
+
+27. Arquiteturas NUMA (Non-Uniform Memory Access) — [I]
+
+ 27.1 Fundamentos — [I]
+
+  27.1.1 Conceito de NUMA — [I]
+      Definição
+      Organização da memória
+      Acesso não uniforme
+      Objetivos
+
+  27.1.2 Características Gerais — [I]
+      Memória distribuída
+      Localidade
+      Escalabilidade
+      Comunicação
+
+
+ 27.2 Impacto no Paralelismo — [I]
+
+  27.2.1 Influência Arquitetural — [I]
+      Distribuição das tarefas
+      Localidade dos dados
+      Desempenho paralelo
+      Escalabilidade
+
+
+
+28. Sistemas Paralelos Heterogêneos — [I]
+
+ 28.1 Fundamentos — [I]
+
+  28.1.1 Conceito de Arquitetura Heterogênea — [I]
+      Definição
+      Diferentes tipos de unidades
+      Cooperação entre recursos
+      Objetivos
+
+  28.1.2 Características Gerais — [I]
+      Especialização funcional
+      Melhor desempenho
+      Eficiência energética
+      Flexibilidade
+
+
+ 28.2 Organização Geral — [I]
+
+  28.2.1 Distribuição do Trabalho — [I]
+      Escolha da unidade adequada
+      Balanceamento
+      Coordenação
+      Comunicação
+
+  28.2.2 Aplicações — [I]
+      Inteligência artificial
+      Computação científica
+      Processamento gráfico
+      Sistemas modernos
+
+
+
+29. Comparação entre Arquiteturas Paralelas — [I]
+
+ 29.1 Critérios de Comparação — [I]
+
+  29.1.1 Aspectos Arquiteturais — [I]
+      Organização do processamento
+      Fluxo de instruções
+      Fluxo de dados
+      Escalabilidade
+      Complexidade
+
+  29.1.2 Comparação dos Modelos — [I]
+      SISD × SIMD
+      SIMD × MIMD
+      Multicore × Manycore
+      SMP × NUMA
+      Sistemas homogêneos × heterogêneos
+
+
+ 29.2 Integração dos Conceitos — [V]
+
+  29.2.1 Relação com os Próximos Capítulos — [V]
+      Arquiteturas e mecanismos de execução
+      Arquiteturas e sincronização
+      Arquiteturas e comunicação
+      Arquiteturas e desempenho
+      Preparação para os mecanismos de execução paralela
+
+
+
+PARTE 4 — MECANISMOS DE EXECUÇÃO PARALELA
+
+
+30. Mecanismos de Execução Paralela — [I]
+
+ 30.1 Conceitos Fundamentais — [I]
+
+  30.1.1 Conceito de Mecanismos de Execução Paralela — [I]
+      Definição
+      Organização da execução paralela
+      Coordenação das atividades
+      Compartilhamento dos recursos
+      Objetivos da execução paralela
+
+  30.1.2 Componentes da Execução Paralela — [I]
+      Unidades de execução
+      Fluxo de controle
+      Fluxo de dados
+      Comunicação
+      Coordenação
+
+  30.1.3 Organização Geral da Execução — [I]
+      Inicialização das tarefas
+      Distribuição do trabalho
+      Execução paralela
+      Coordenação dos resultados
+      Finalização da execução
+
+
+ 30.2 Relação entre os Mecanismos — [I]
+
+  30.2.1 Integração dos Componentes — [I]
+      Cooperação entre mecanismos
+      Dependência entre recursos
+      Organização da execução
+      Eficiência do processamento
+
+  30.2.2 Objetivos Arquiteturais — [I]
+      Melhor utilização dos recursos
+      Escalabilidade
+      Desempenho
+      Flexibilidade
+
+
+
+31. Threads e Processos — [P]
+
+ 31.1 Fundamentos — [P]
+
+  31.1.1 Conceito de Processo — [P]
+      Definição
+      Unidade de execução
+      Espaço de execução
+      Independência
+      Organização geral
+
+  31.1.2 Conceito de Thread — [P]
+      Definição
+      Fluxo de execução
+      Compartilhamento de recursos
+      Paralelismo em nível de software
+      Objetivos
+
+
+ 31.2 Organização da Execução — [P]
+
+  31.2.1 Execução Baseada em Processos — [P]
+      Isolamento
+      Comunicação básica
+      Coordenação
+      Aplicações
+
+  31.2.2 Execução Baseada em Threads — [P]
+      Compartilhamento de recursos
+      Cooperação
+      Comunicação
+      Eficiência
+
+
+ 31.3 Comparação Geral — [I]
+
+  31.3.1 Processos × Threads — [I]
+      Isolamento
+      Compartilhamento
+      Comunicação
+      Desempenho
+      Escalabilidade
+
+
+
+32. Sincronização — [P]
+
+ 32.1 Fundamentos — [P]
+
+  32.1.1 Conceito de Sincronização — [P]
+      Definição
+      Coordenação temporal
+      Ordem de execução
+      Consistência
+      Objetivos
+
+  32.1.2 Necessidade da Sincronização — [P]
+      Compartilhamento de recursos
+      Dependências
+      Integridade dos resultados
+      Cooperação
+
+
+ 32.2 Mecanismos Gerais — [P]
+
+  32.2.1 Coordenação da Execução — [P]
+      Espera
+      Liberação
+      Sinalização
+      Coordenação entre tarefas
+
+  32.2.2 Problemas Relacionados — [P]
+      Corridas (Race Conditions)
+      Espera indefinida
+      Deadlock (visão geral)
+      Starvation (visão geral)
+
+
+ 32.3 Objetivos da Sincronização — [I]
+
+  32.3.1 Benefícios — [I]
+      Correção da execução
+      Organização
+      Segurança
+      Eficiência
+
+
+
+33. Exclusão Mútua — [P]
+
+ 33.1 Fundamentos — [P]
+
+  33.1.1 Conceito de Exclusão Mútua — [P]
+      Definição
+      Recursos compartilhados
+      Região crítica
+      Objetivos
+
+  33.1.2 Região Crítica — [P]
+      Definição
+      Controle de acesso
+      Execução exclusiva
+      Integridade dos dados
+
+
+ 33.2 Controle de Acesso — [P]
+
+  33.2.1 Estratégias Gerais — [P]
+      Controle de entrada
+      Controle de saída
+      Coordenação
+      Liberação dos recursos
+
+  33.2.2 Problemas Relacionados — [P]
+      Concorrência incorreta
+      Espera excessiva
+      Bloqueios
+      Ineficiência
+
+
+
+34. Comunicação entre Unidades Paralelas — [P]
+
+ 34.1 Fundamentos — [P]
+
+  34.1.1 Conceito de Comunicação — [P]
+      Definição
+      Troca de informações
+      Coordenação das tarefas
+      Compartilhamento de dados
+
+  34.1.2 Objetivos da Comunicação — [P]
+      Cooperação
+      Sincronização
+      Compartilhamento
+      Organização da execução
+
+
+ 34.2 Modelos Gerais — [P]
+
+  34.2.1 Comunicação por Memória Compartilhada — [P]
+      Conceito
+      Compartilhamento de dados
+      Coordenação
+      Aplicações gerais
+
+  34.2.2 Comunicação por Passagem de Mensagens — [P]
+      Conceito
+      Envio de mensagens
+      Recepção
+      Coordenação
+
+
+ 34.3 Características Gerais — [I]
+
+  34.3.1 Comparação dos Modelos — [I]
+      Vantagens
+      Limitações
+      Escalabilidade
+      Complexidade
+
+
+
+35. Balanceamento de Carga — [P]
+
+ 35.1 Fundamentos — [P]
+
+  35.1.1 Conceito de Balanceamento — [P]
+      Definição
+      Distribuição do trabalho
+      Utilização dos recursos
+      Objetivos
+
+  35.1.2 Importância — [P]
+      Melhor desempenho
+      Redução de ociosidade
+      Maior eficiência
+      Escalabilidade
+
+
+ 35.2 Estratégias Gerais — [P]
+
+  35.2.1 Distribuição da Carga — [P]
+      Distribuição uniforme
+      Distribuição dinâmica
+      Redistribuição
+      Ajuste da carga
+
+  35.2.2 Problemas Comuns — [I]
+      Sobrecarga
+      Ociosidade
+      Desequilíbrio
+      Impactos no desempenho
+
+
+
+36. Escalonamento — [P]
+
+ 36.1 Fundamentos — [P]
+
+  36.1.1 Conceito de Escalonamento — [P]
+      Definição
+      Organização da execução
+      Seleção das tarefas
+      Objetivos
+
+  36.1.2 Critérios Gerais — [P]
+      Prioridade
+      Disponibilidade
+      Dependências
+      Eficiência
+
+
+ 36.2 Estratégias Gerais — [P]
+
+  36.2.1 Organização da Execução — [P]
+      Escalonamento estático
+      Escalonamento dinâmico
+      Distribuição das tarefas
+      Balanceamento
+
+  36.2.2 Impactos do Escalonamento — [I]
+      Throughput
+      Tempo de resposta
+      Utilização dos recursos
+      Escalabilidade
+
+
+
+37. Dependências e Granularidade — [P]
+
+ 37.1 Dependências — [P]
+
+  37.1.1 Conceito de Dependência — [P]
+      Definição
+      Relação entre tarefas
+      Restrições da execução
+      Ordem das operações
+
+  37.1.2 Tipos Gerais de Dependência — [P]
+      Dependências de dados
+      Dependências de controle
+      Dependências de recursos
+      Influência na paralelização
+
+
+ 37.2 Granularidade — [P]
+
+  37.2.1 Conceito de Granularidade — [P]
+      Definição
+      Tamanho das tarefas
+      Divisão do trabalho
+      Objetivos
+
+  37.2.2 Classificações Gerais — [P]
+      Granularidade fina
+      Granularidade média
+      Granularidade grossa
+      Impacto na comunicação
+
+
+ 37.3 Relação entre Dependências e Granularidade — [I]
+
+  37.3.1 Influência no Paralelismo — [I]
+      Eficiência
+      Escalabilidade
+      Comunicação
+      Balanceamento
+
+
+
+38. Escalabilidade da Execução Paralela — [P]
+
+ 38.1 Fundamentos — [P]
+
+  38.1.1 Conceito de Escalabilidade — [P]
+      Definição
+      Crescimento do desempenho
+      Ampliação dos recursos
+      Objetivos
+
+  38.1.2 Características Gerais — [P]
+      Crescimento linear
+      Crescimento limitado
+      Eficiência
+      Sustentabilidade
+
+
+ 38.2 Fatores que Influenciam a Escalabilidade — [P]
+
+  38.2.1 Aspectos Positivos — [P]
+      Balanceamento adequado
+      Comunicação eficiente
+      Boa distribuição das tarefas
+      Baixa sincronização
+
+  38.2.2 Aspectos Limitantes — [P]
+      Dependências
+      Comunicação excessiva
+      Sobrecarga
+      Contenção
+
+
+ 38.3 Preparação para Avaliação de Desempenho — [I]
+
+  38.3.1 Relação com as Métricas — [I]
+      Speedup
+      Eficiência
+      Overhead
+      Gargalos
+      Avaliação do desempenho paralelo
 
 
