@@ -18,53 +18,53 @@ PARTE 1 — FUNDAMENTOS DA LINGUAGEM ASSEMBLY
  1.1 Conceitos Fundamentais — [I]
 
   1.1.1 O que é a Linguagem Assembly — [I]
-        Conceito de Assembly
-        Linguagem de baixo nível
-        Representação simbólica da linguagem de máquina
-        Interface entre programador e processador
-        Relação com a ISA
-        Papel na programação de sistemas
+          Conceito de Assembly
+          Linguagem de baixo nível
+          Representação simbólica da linguagem de máquina
+          Interface entre programador e processador
+          Relação com a ISA
+          Papel na programação de sistemas
 
   1.1.2 Objetivos da Linguagem Assembly — [I]
-        Controle direto do hardware
-        Programação próxima ao processador
-        Redução das abstrações
-        Eficiência da execução
-        Precisão no controle do código
-        Compreensão da arquitetura
+          Controle direto do hardware
+          Programação próxima ao processador
+          Redução das abstrações
+          Eficiência da execução
+          Precisão no controle do código
+          Compreensão da arquitetura
 
   1.1.3 Importância da Linguagem Assembly — [I]
-        Base para Arquitetura de Computadores
-        Base para Organização de Computadores
-        Importância acadêmica
-        Importância profissional
-        Compreensão do funcionamento interno do computador
-        Relação com outras linguagens
+          Base para Arquitetura de Computadores
+          Base para Organização de Computadores
+          Importância acadêmica
+          Importância profissional
+          Compreensão do funcionamento interno do computador
+          Relação com outras linguagens
 
 
  1.2 Papel da Assembly na Computação — [I]
 
   1.2.1 Assembly como Interface Hardware–Software — [I]
-        Comunicação entre software e hardware
-        Interface entre linguagem de máquina e programação
-        Modelo de programação
-        Execução das instruções
-        Controle do processador
+          Comunicação entre software e hardware
+          Interface entre linguagem de máquina e programação
+          Modelo de programação
+          Execução das instruções
+          Controle do processador
 
   1.2.2 Assembly dentro da Arquitetura de Computadores — [I]
-        Relação com a ISA
-        Relação com o processador
-        Relação com memória
-        Relação com entrada e saída
-        Visão arquitetural
-        Limites da linguagem
+          Relação com a ISA
+          Relação com o processador
+          Relação com memória
+          Relação com entrada e saída
+          Visão arquitetural
+          Limites da linguagem
 
   1.2.3 Assembly na Organização de Computadores — [I]
-        Organização lógica do sistema
-        Controle dos recursos
-        Execução das instruções
-        Fluxo de dados
-        Modelo operacional
+          Organização lógica do sistema
+          Controle dos recursos
+          Execução das instruções
+          Fluxo de dados
+          Modelo operacional
 
 
 
@@ -73,52 +73,52 @@ PARTE 1 — FUNDAMENTOS DA LINGUAGEM ASSEMBLY
  2.1 Origem Histórica — [V]
 
   2.1.1 Primeiros Computadores — [V]
-        Programação em linguagem de máquina
-        Primeiras instruções
-        Programação manual
-        Limitações iniciais
-        Evolução da programação
+          Programação em linguagem de máquina
+          Primeiras instruções
+          Programação manual
+          Limitações iniciais
+          Evolução da programação
 
   2.1.2 Surgimento da Linguagem Assembly — [V]
-        Necessidade de representação simbólica
-        Criação dos mnemônicos
-        Evolução dos montadores
-        Primeiros sistemas Assembly
-        Simplificação da programação
+          Necessidade de representação simbólica
+          Criação dos mnemônicos
+          Evolução dos montadores
+          Primeiros sistemas Assembly
+          Simplificação da programação
 
 
  2.2 Evolução Tecnológica — [V]
 
   2.2.1 Evolução dos Assemblers — [V]
-        Primeiros assemblers
-        Assemblers de uma passagem
-        Assemblers de múltiplas passagens
-        Evolução das funcionalidades
-        Expansão das diretivas
+          Primeiros assemblers
+          Assemblers de uma passagem
+          Assemblers de múltiplas passagens
+          Evolução das funcionalidades
+          Expansão das diretivas
 
   2.2.2 Evolução das Linguagens Assembly — [V]
-        Crescimento das ISAs
-        Evolução das arquiteturas
-        Novas instruções
-        Compatibilidade
-        Modernização das linguagens
+          Crescimento das ISAs
+          Evolução das arquiteturas
+          Novas instruções
+          Compatibilidade
+          Modernização das linguagens
 
 
  2.3 Assembly na Computação Moderna — [V]
 
   2.3.1 Permanência da Linguagem — [V]
-        Compatibilidade histórica
-        Legado tecnológico
-        Continuidade das arquiteturas
-        Evolução contínua
+          Compatibilidade histórica
+          Legado tecnológico
+          Continuidade das arquiteturas
+          Evolução contínua
 
   2.3.2 Papel Atual — [V]
-        Sistemas embarcados
-        Sistemas operacionais
-        Firmware
-        Engenharia reversa
-        Segurança computacional
-        Desenvolvimento de baixo nível
+          Sistemas embarcados
+          Sistemas operacionais
+          Firmware
+          Engenharia reversa
+          Segurança computacional
+          Desenvolvimento de baixo nível
 
 
 
@@ -127,50 +127,50 @@ PARTE 1 — FUNDAMENTOS DA LINGUAGEM ASSEMBLY
  3.1 Conceitos Fundamentais — [I]
 
   3.1.1 Linguagem de Máquina — [I]
-        Conceito
-        Código binário
-        Instruções executáveis
-        Relação com o hardware
-        Dependência da ISA
+          Conceito
+          Código binário
+          Instruções executáveis
+          Relação com o hardware
+          Dependência da ISA
 
   3.1.2 Relação entre Assembly e Linguagem de Máquina — [I]
-        Representação simbólica
-        Correspondência entre instruções
-        Tradução para código de máquina
-        Nível de abstração
-        Diferenças fundamentais
+          Representação simbólica
+          Correspondência entre instruções
+          Tradução para código de máquina
+          Nível de abstração
+          Diferenças fundamentais
 
 
  3.2 Representação das Instruções — [I]
 
   3.2.1 Mnemônicos — [I]
-        Conceito
-        Finalidade
-        Legibilidade
-        Padronização
-        Dependência da arquitetura
+          Conceito
+          Finalidade
+          Legibilidade
+          Padronização
+          Dependência da arquitetura
 
   3.2.2 Operandos — [I]
-        Conceito
-        Tipos de operandos
-        Operandos imediatos
-        Operandos em registradores
-        Operandos em memória
+          Conceito
+          Tipos de operandos
+          Operandos imediatos
+          Operandos em registradores
+          Operandos em memória
 
 
  3.3 Dependência Arquitetural — [I]
 
   3.3.1 Dependência da ISA — [I]
-        Instruções específicas
-        Compatibilidade
-        Diferenças entre arquiteturas
-        Limitações da portabilidade
+          Instruções específicas
+          Compatibilidade
+          Diferenças entre arquiteturas
+          Limitações da portabilidade
 
   3.3.2 Assembly como Representação da ISA — [I]
-        Correspondência entre instruções
-        Recursos arquiteturais visíveis
-        Modelo de programação
-        Interface com o hardware
+          Correspondência entre instruções
+          Recursos arquiteturais visíveis
+          Modelo de programação
+          Interface com o hardware
 
 
 
@@ -179,47 +179,47 @@ PARTE 1 — FUNDAMENTOS DA LINGUAGEM ASSEMBLY
  4.1 Papel Arquitetural — [I]
 
   4.1.1 Interface da ISA — [I]
-        Comunicação com o processador
-        Modelo arquitetural
-        Recursos disponíveis ao programador
-        Controle da execução
+          Comunicação com o processador
+          Modelo arquitetural
+          Recursos disponíveis ao programador
+          Controle da execução
 
   4.1.2 Modelo de Programação — [I]
-        Estado arquitetural
-        Fluxo de execução
-        Controle das instruções
-        Organização do programa
+          Estado arquitetural
+          Fluxo de execução
+          Controle das instruções
+          Organização do programa
 
 
  4.2 Papel na Organização do Computador — [I]
 
   4.2.1 Controle dos Recursos — [I]
-        Utilização dos recursos do sistema
-        Comunicação com dispositivos
-        Controle da execução
-        Organização operacional
+          Utilização dos recursos do sistema
+          Comunicação com dispositivos
+          Controle da execução
+          Organização operacional
 
   4.2.2 Compreensão do Funcionamento Interno — [I]
-        Execução das instruções
-        Organização lógica
-        Relação entre hardware e software
-        Visão integrada do sistema
+          Execução das instruções
+          Organização lógica
+          Relação entre hardware e software
+          Visão integrada do sistema
 
 
  4.3 Importância para o Estudo da Computação — [I]
 
   4.3.1 Base para Estudos Posteriores — [I]
-        Sistemas Operacionais
-        Compiladores
-        Microarquitetura
-        Sistemas Embarcados
-        Segurança Computacional
+          Sistemas Operacionais
+          Compiladores
+          Microarquitetura
+          Sistemas Embarcados
+          Segurança Computacional
 
   4.3.2 Limites do Escopo — [I]
-        O que pertence à Assembly
-        O que pertence à ISA
-        O que pertence à Organização
-        Relação entre os domínios
+          O que pertence à Assembly
+          O que pertence à ISA
+          O que pertence à Organização
+          Relação entre os domínios
 
 
 
@@ -228,54 +228,54 @@ PARTE 1 — FUNDAMENTOS DA LINGUAGEM ASSEMBLY
  5.1 O Montador (Assembler) — [I]
 
   5.1.1 Conceitos Fundamentais — [I]
-        Definição
-        Objetivos
-        Tradução do código Assembly
-        Geração do código objeto
-        Papel no desenvolvimento
+          Definição
+          Objetivos
+          Tradução do código Assembly
+          Geração do código objeto
+          Papel no desenvolvimento
 
   5.1.2 Funcionamento Geral — [I]
-        Leitura do código-fonte
-        Processamento dos símbolos
-        Tradução das instruções
-        Geração do arquivo objeto
+          Leitura do código-fonte
+          Processamento dos símbolos
+          Tradução das instruções
+          Geração do arquivo objeto
 
 
  5.2 Linker (Ligador) — [I]
 
   5.2.1 Conceitos Fundamentais — [I]
-        Definição
-        Objetivos
-        Ligação entre módulos
-        Resolução de símbolos
+          Definição
+          Objetivos
+          Ligação entre módulos
+          Resolução de símbolos
 
   5.2.2 Papel no Processo de Compilação — [I]
-        Integração de arquivos objeto
-        Bibliotecas
-        Geração do executável
-	Organização do programa
+          Integração de arquivos objeto
+          Bibliotecas
+          Geração do executável
+	  Organização do programa
 
   5.2.3 Relocação de Código — [I]
-	Endereços relocáveis
-	Relocação absoluta
-	Relocação relativa
-	Ajuste de endereços
-	Papel do linker
+	  Endereços relocáveis
+	  Relocação absoluta
+	  Relocação relativa
+	  Ajuste de endereços
+	  Papel do linker
 
 
  5.3 Loader (Carregador) — [I]
 
   5.3.1 Conceitos Fundamentais — [I]
-        Definição
-        Objetivos
-        Carregamento do programa
-        Preparação da execução
+          Definição
+          Objetivos
+          Carregamento do programa
+          Preparação da execução
 
   5.3.2 Papel na Execução — [I]
-        Inicialização
-        Organização do espaço de memória
-        Transferência do controle ao programa
-        Início da execução
+          Inicialização
+          Organização do espaço de memória
+          Transferência do controle ao programa
+          Início da execução
 
 
 
@@ -284,49 +284,49 @@ PARTE 1 — FUNDAMENTOS DA LINGUAGEM ASSEMBLY
  6.1 Etapas do Desenvolvimento — [I]
 
   6.1.1 Código-Fonte — [I]
-        Escrita do programa
-        Organização do código
-        Arquivo-fonte
-        Sintaxe Assembly
+          Escrita do programa
+          Organização do código
+          Arquivo-fonte
+          Sintaxe Assembly
 
   6.1.2 Tradução — [I]
-        Processamento pelo assembler
-        Arquivo objeto
-        Resolução de símbolos
-        Preparação para ligação
+          Processamento pelo assembler
+          Arquivo objeto
+          Resolução de símbolos
+          Preparação para ligação
 
 
  6.2 Construção do Executável — [I]
 
   6.2.1 Ligação — [I]
-        Papel do linker
-        Integração dos módulos
-        Bibliotecas
-        Executável final
-	Relocação dos módulos
+          Papel do linker
+          Integração dos módulos
+          Bibliotecas
+          Executável final
+	  Relocação dos módulos
 
   6.2.2 Carregamento — [I]
-        Papel do loader
-        Inicialização
-        Preparação do ambiente
-        Execução do programa
+          Papel do loader
+          Inicialização
+          Preparação do ambiente
+          Execução do programa
 
 
  6.3 Fluxo Geral da Execução — [I]
 
   6.3.1 Caminho da Instrução — [I]
-        Código Assembly
-        Código objeto
-        Executável
-        Código de máquina
-        Execução pelo processador
+          Código Assembly
+          Código objeto
+          Executável
+          Código de máquina
+          Execução pelo processador
 
   6.3.2 Visão Geral do Processo — [I]
-        Desenvolvimento
-        Tradução
-        Ligação
-        Carregamento
-        Execução
+          Desenvolvimento
+          Tradução
+          Ligação
+          Carregamento
+          Execução
 
 
 
@@ -335,46 +335,46 @@ PARTE 1 — FUNDAMENTOS DA LINGUAGEM ASSEMBLY
  7.1 Características Fundamentais — [V]
 
   7.1.1 Linguagem de Baixo Nível — [V]
-        Proximidade do hardware
-        Controle detalhado
-        Pouca abstração
-        Dependência da arquitetura
+          Proximidade do hardware
+          Controle detalhado
+          Pouca abstração
+          Dependência da arquitetura
 
   7.1.2 Correspondência com a ISA — [V]
-        Instruções arquiteturais
-        Representação simbólica
-        Dependência do processador
-        Compatibilidade
+          Instruções arquiteturais
+          Representação simbólica
+          Dependência do processador
+          Compatibilidade
 
 
  7.2 Propriedades da Linguagem — [V]
 
   7.2.1 Precisão e Controle — [V]
-        Controle explícito
-        Execução previsível
-        Organização detalhada
-        Eficiência operacional
+          Controle explícito
+          Execução previsível
+          Organização detalhada
+          Eficiência operacional
 
   7.2.2 Complexidade da Programação — [V]
-        Maior responsabilidade do programador
-        Código menos portável
-        Maior detalhamento
-        Menor abstração
+          Maior responsabilidade do programador
+          Código menos portável
+          Maior detalhamento
+          Menor abstração
 
 
  7.3 Natureza da Linguagem — [V]
 
   7.3.1 Vantagens Gerais — [V]
-        Controle do hardware
-        Alto desempenho
-        Código eficiente
-        Baixa sobrecarga
+          Controle do hardware
+          Alto desempenho
+          Código eficiente
+          Baixa sobrecarga
 
   7.3.2 Limitações Gerais — [V]
-        Dependência da ISA
-        Baixa portabilidade
-        Desenvolvimento mais complexo
-        Manutenção mais difícil
+          Dependência da ISA
+          Baixa portabilidade
+          Desenvolvimento mais complexo
+          Manutenção mais difícil
 
 
 
@@ -383,48 +383,48 @@ PARTE 1 — FUNDAMENTOS DA LINGUAGEM ASSEMBLY
  8.1 Áreas de Utilização — [V]
 
   8.1.1 Desenvolvimento de Sistemas — [V]
-        Sistemas operacionais
-        Firmware
-        Bootloaders
-        Drivers
-        Sistemas embarcados
+          Sistemas operacionais
+          Firmware
+          Bootloaders
+          Drivers
+          Sistemas embarcados
 
   8.1.2 Desenvolvimento de Software Especializado — [V]
-        Bibliotecas críticas
-        Rotinas de alto desempenho
-        Software de baixo nível
-        Otimizações específicas
+          Bibliotecas críticas
+          Rotinas de alto desempenho
+          Software de baixo nível
+          Otimizações específicas
 
 
  8.2 Aplicações Técnicas — [V]
 
   8.2.1 Engenharia e Pesquisa — [V]
-        Arquitetura de Computadores
-        Organização de Computadores
-        Desenvolvimento de processadores
-        Pesquisa acadêmica
+          Arquitetura de Computadores
+          Organização de Computadores
+          Desenvolvimento de processadores
+          Pesquisa acadêmica
 
   8.2.2 Segurança Computacional — [V]
-        Engenharia reversa
-        Análise de malware
-        Auditoria de software
-        Exploração de vulnerabilidades
-        Análise binária
+          Engenharia reversa
+          Análise de malware
+          Auditoria de software
+          Exploração de vulnerabilidades
+          Análise binária
 
 
  8.3 Importância Atual — [V]
 
   8.3.1 Cenários Modernos — [V]
-        Computação embarcada
-        Computação crítica
-        Sistemas de tempo real
-        Desenvolvimento de firmware
+          Computação embarcada
+          Computação crítica
+          Sistemas de tempo real
+          Desenvolvimento de firmware
 
   8.3.2 Papel no Estudo da Computação — [V]
-        Compreensão da ISA
-        Compreensão da execução
-        Base para estudos avançados
-        Integração entre hardware e software
+          Compreensão da ISA
+          Compreensão da execução
+	  Base para estudos avançados
+          Integração entre hardware e software
 
 
 
@@ -436,50 +436,50 @@ PARTE 2 — ESTRUTURA E ARQUITETURA DA LINGUAGEM ASSEMBLY
  9.1 Organização Geral de um Programa — [I]
 
   9.1.1 Estrutura Básica — [I]
-        Organização geral do código
-        Arquivo-fonte
-        Organização lógica
-        Fluxo do programa
-        Separação entre dados e instruções
+          Organização geral do código
+          Arquivo-fonte
+          Organização lógica
+          Fluxo do programa
+          Separação entre dados e instruções
 
   9.1.2 Componentes Fundamentais — [I]
-        Diretivas
-        Declarações
-        Rótulos
-        Instruções
-        Comentários
-        Símbolos
+          Diretivas
+          Declarações
+          Rótulos
+          Instruções
+          Comentários
+          Símbolos
 
 
  9.2 Organização Interna — [I]
 
   9.2.1 Organização Modular — [I]
-        Blocos de código
-        Organização por funções
-        Separação lógica
-        Reutilização do código
+          Blocos de código
+          Organização por funções
+          Separação lógica
+          Reutilização do código
 
   9.2.2 Estrutura de Execução — [I]
-        Ponto de entrada
-        Sequência das instruções
-        Fluxo principal
-        Encerramento do programa
+          Ponto de entrada
+          Sequência das instruções
+          Fluxo principal
+          Encerramento do programa
 
 
  9.3 Organização Arquitetural — [I]
 
   9.3.1 Dependência do Assembler — [I]
-        Convenções sintáticas
-        Organização do arquivo
-        Diferenças entre assemblers
-        Compatibilidade
-	Sintaxes Intel e AT&T
+          Convenções sintáticas
+          Organização do arquivo
+          Diferenças entre assemblers
+          Compatibilidade
+	  Sintaxes Intel e AT&T
 
   9.3.2 Organização entre Arquiteturas — [I]
-        Estruturas comuns
-        Particularidades arquiteturais
-        Padronizações
-        Diferenças gerais
+          Estruturas comuns
+          Particularidades arquiteturais
+          Padronizações
+          Diferenças gerais
 
 
 
@@ -488,55 +488,55 @@ PARTE 2 — ESTRUTURA E ARQUITETURA DA LINGUAGEM ASSEMBLY
  10.1 Sintaxe da Linguagem Assembly — [P]
 
   10.1.1 Estrutura de uma Instrução — [P]
-        Mnemônico
-        Operandos
-        Separadores
-        Comentários
-        Formatação
+          Mnemônico
+          Operandos
+          Separadores
+          Comentários
+          Formatação
 
   10.1.2 Regras Sintáticas — [P]
-        Ordem dos operandos
-        Sensibilidade a maiúsculas e minúsculas
-        Espaçamento
-        Convenções do assembler
-        Escrita das instruções
-	Sintaxe Intel
-	Sintaxe AT&T
-	Ordem dos operandos
-	Prefixos de registradores
-	Prefixos de operandos imediatos
-	Diferenças entre assemblers
+          Ordem dos operandos
+          Sensibilidade a maiúsculas e minúsculas
+          Espaçamento
+          Convenções do assembler
+          Escrita das instruções
+	  Sintaxe Intel
+	  Sintaxe AT&T
+	  Ordem dos operandos
+	  Prefixos de registradores
+	  Prefixos de operandos imediatos
+	  Diferenças entre assemblers
 
 
  10.2 Componentes das Instruções — [P]
 
   10.2.1 Mnemônicos — [P]
-        Representação simbólica
-        Operações básicas
-        Organização por categorias
-        Dependência da ISA
+          Representação simbólica
+          Operações básicas
+          Organização por categorias
+          Dependência da ISA
 
   10.2.2 Operandos — [P]
-        Operandos imediatos
-        Operandos em registradores
-        Operandos em memória
-        Número de operandos
-        Restrições arquiteturais
+          Operandos imediatos
+          Operandos em registradores
+          Operandos em memória
+          Número de operandos
+          Restrições arquiteturais
 
 
  10.3 Formatos das Instruções — [P]
 
   10.3.1 Estrutura Arquitetural — [P]
-        Campos da instrução
-        Codificação
-        Representação interna
-        Relação com a ISA
+          Campos da instrução
+          Codificação
+          Representação interna
+          Relação com a ISA
 
   10.3.2 Organização dos Formatos — [P]
-        Formatos simples
-        Formatos complexos
-        Formatos dependentes da arquitetura
-        Influência da ISA
+          Formatos simples
+          Formatos complexos
+          Formatos dependentes da arquitetura
+          Influência da ISA
 
 
 
@@ -545,61 +545,61 @@ PARTE 2 — ESTRUTURA E ARQUITETURA DA LINGUAGEM ASSEMBLY
  11.1 Conceitos Fundamentais — [V]
 
   11.1.1 O que são Diretivas — [V]
-        Conceito
-        Finalidade
-        Diferença entre diretivas e instruções
-        Papel durante a montagem
+          Conceito
+          Finalidade
+          Diferença entre diretivas e instruções
+          Papel durante a montagem
 
   11.1.2 Funcionamento Geral — [V]
-        Processamento pelo assembler
-        Organização do código
-        Configuração do programa
-        Controle da montagem
+          Processamento pelo assembler
+          Organização do código
+          Configuração do programa
+          Controle da montagem
 
 
  11.2 Categorias de Diretivas — [V]
 
   11.2.1 Diretivas de Organização — [V]
-        Definição de seções
-        Organização dos dados
-        Organização do código
-        Controle estrutural
+          Definição de seções
+          Organização dos dados
+          Organização do código
+          Controle estrutural
 
   11.2.2 Diretivas de Definição — [V]
-        Definição de constantes
-        Definição de símbolos
-        Reserva de espaço
-        Inicialização de dados
+          Definição de constantes
+          Definição de símbolos
+          Reserva de espaço
+          Inicialização de dados
 
   11.2.3 Macros — [V]
-        Conceito de macro
-        Expansão de macros
-        Parâmetros
-        Reutilização de código
-        Diferença entre macro e procedimento
-        Dependência do assembler
+          Conceito de macro
+          Expansão de macros
+          Parâmetros
+          Reutilização de código
+          Diferença entre macro e procedimento
+          Dependência do assembler
 
 
  11.3 Recursos Oferecidos pelas Diretivas — [V]
 
   11.3.1 Organização do Programa — [V]
-        Estruturação
-        Modularização
-        Controle do código
-        Legibilidade
+          Estruturação
+          Modularização
+          Controle do código
+          Legibilidade
 
   11.3.2 Dependência do Assembler — [V]
-        Diretivas específicas
-        Compatibilidade
-        Diferenças entre implementações
-        Portabilidade
+          Diretivas específicas
+          Compatibilidade
+          Diferenças entre implementações
+          Portabilidade
 
   11.1.3 Pseudo-instruções — [V]
-	Conceito
-	Diferença entre pseudo-instrução e instrução real
-	Expansão pelo assembler
-	Dependência da arquitetura
-	Dependência do assembler
+	  Conceito
+	  Diferença entre pseudo-instrução e instrução real
+	  Expansão pelo assembler
+	  Dependência da arquitetura
+	  Dependência do assembler
 
 
 
@@ -608,58 +608,58 @@ PARTE 2 — ESTRUTURA E ARQUITETURA DA LINGUAGEM ASSEMBLY
  12.1 Organização em Seções — [I]
 
   12.1.1 Conceitos Fundamentais — [I]
-        Finalidade das seções
-        Organização lógica
-        Separação funcional
-        Estrutura do programa
+          Finalidade das seções
+          Organização lógica
+          Separação funcional
+          Estrutura do programa
 
   12.1.2 Papel das Seções — [I]
-        Organização do código
-        Organização dos dados
-        Inicialização
-        Execução
+          Organização do código
+          Organização dos dados
+          Inicialização
+          Execução
 
 
  12.2 Principais Seções — [I]
 
   12.2.1 Seção de Código (.text) — [I]
-        Instruções executáveis
-        Organização do fluxo
-        Ponto de entrada
-        Rotinas
+          Instruções executáveis
+          Organização do fluxo
+          Ponto de entrada
+          Rotinas
 
   12.2.2 Seção de Dados Inicializados (.data) — [I]
-        Variáveis inicializadas
-        Constantes
-        Dados permanentes
-        Organização
+          Variáveis inicializadas
+          Constantes
+          Dados permanentes
+          Organização
 
   12.2.3 Seção de Dados Não Inicializados (.bss) — [I]
-        Reserva de memória
-        Variáveis não inicializadas
-        Organização lógica
-        Papel durante a execução
+          Reserva de memória
+          Variáveis não inicializadas
+          Organização lógica
+          Papel durante a execução
 
   12.2.4 Outras Seções — [I]
-        Seções específicas
-        Seções dependentes do assembler
-        Organização adicional
-        Casos particulares
+          Seções específicas
+          Seções dependentes do assembler
+          Organização adicional
+          Casos particulares
 
 
  12.3 Organização Geral — [I]
 
   12.3.1 Relação entre as Seções — [I]
-        Independência lógica
-        Cooperação entre seções
-        Organização do programa
-        Fluxo geral
+          Independência lógica
+          Cooperação entre seções
+          Organização do programa
+          Fluxo geral
 
   12.3.2 Diferenças entre Assemblers — [I]
-        Convenções
-        Sintaxe
-        Organização
-        Compatibilidade
+          Convenções
+          Sintaxe
+          Organização
+          Compatibilidade
 
 
 
@@ -668,51 +668,51 @@ PARTE 2 — ESTRUTURA E ARQUITETURA DA LINGUAGEM ASSEMBLY
  13.1 Conceitos Fundamentais — [V]
 
   13.1.1 Definição de Labels — [V]
-        Conceito
-        Identificação simbólica
-        Associação a endereços
-        Organização do código
+          Conceito
+          Identificação simbólica
+          Associação a endereços
+          Organização do código
 
   13.1.2 Finalidade — [V]
-        Controle do fluxo
-        Organização do programa
-        Referenciamento
-        Legibilidade
+          Controle do fluxo
+          Organização do programa
+          Referenciamento
+          Legibilidade
 
 
  13.2 Utilização dos Labels — [V]
 
   13.2.1 Labels de Código — [V]
-        Entrada de rotinas
-        Destino de saltos
-        Organização da execução
-        Modularização
+          Entrada de rotinas
+          Destino de saltos
+          Organização da execução
+          Modularização
 
   13.2.2 Labels de Dados — [V]
-        Identificação de variáveis
-        Identificação de constantes
-        Referência simbólica
-        Organização
+          Identificação de variáveis
+          Identificação de constantes
+          Referência simbólica
+          Organização
 
 
  13.3 Boas Práticas — [V]
 
   13.3.1 Organização dos Labels — [V]
-        Padronização
-        Nomenclatura
-        Clareza
-        Reutilização
-	Convenções de nomenclatura
-	Prefixos
-	Padronização de nomes
-	Escopo dos identificadores
-	Organização entre módulos
+          Padronização
+          Nomenclatura
+          Clareza
+          Reutilização
+	  Convenções de nomenclatura
+	  Prefixos
+	  Padronização de nomes
+	  Escopo dos identificadores
+	  Organização entre módulos
 
   13.3.2 Limitações — [V]
-        Escopo
-        Dependência do assembler
-        Restrições sintáticas
-        Organização
+          Escopo
+          Dependência do assembler
+          Restrições sintáticas
+	  Organização
 
 
 
@@ -721,50 +721,50 @@ PARTE 2 — ESTRUTURA E ARQUITETURA DA LINGUAGEM ASSEMBLY
  14.1 Símbolos — [V]
 
   14.1.1 Conceitos Fundamentais — [V]
-        Identificadores
-        Definição simbólica
-        Associação a endereços
-        Organização
+	  Identificadores
+	  Definição simbólica
+	  Associação a endereços
+	  Organização
 
   14.1.2 Tabela de Símbolos — [V]
-        Construção
-        Consulta
-        Resolução
-        Papel durante a montagem
-	Símbolos locais
-	Símbolos globais
-	Exportação de símbolos
+	  Construção
+	  Consulta
+	  Resolução
+	  Papel durante a montagem
+	  Símbolos locais
+	  Símbolos globais
+	  Exportação de símbolos
 
 
  14.2 Constantes — [V]
 
   14.2.1 Representação dos Valores — [V]
-        Constantes numéricas
-        Constantes simbólicas
-        Bases numéricas
-        Caracteres
-        Cadeias de caracteres
+	  Constantes numéricas
+	  Constantes simbólicas
+	  Bases numéricas
+	  Caracteres
+	  Cadeias de caracteres
 
   14.2.2 Declaração de Constantes — [V]
-        Definição
-        Inicialização
-        Utilização
-        Organização
+	  Definição
+	  Inicialização
+	  Utilização
+	  Organização
 
 
  14.3 Expressões Assembly — [V]
 
   14.3.1 Expressões Constantes — [V]
-        Avaliação
-        Operadores
-        Cálculos
-        Simplificação
+	  Avaliação
+	  Operadores
+	  Cálculos
+	  Simplificação
 
   14.3.2 Expressões Simbólicas — [V]
-        Referências
-        Combinação de símbolos
-        Avaliação pelo assembler
-        Geração dos endereços
+	  Referências
+	  Combinação de símbolos
+	  Avaliação pelo assembler
+	  Geração dos endereços
 
 
 
@@ -773,76 +773,76 @@ PARTE 2 — ESTRUTURA E ARQUITETURA DA LINGUAGEM ASSEMBLY
  15.1 Conceitos Fundamentais — [P]
 
   15.1.1 Definição — [P]
-        Conceito
-        Finalidade
-        Papel na Assembly
-        Relação com a ISA
+	  Conceito
+	  Finalidade
+	  Papel na Assembly
+	  Relação com a ISA
 
   15.1.2 Importância — [P]
-        Flexibilidade
-        Eficiência
-        Organização do acesso
-        Expressividade da linguagem
+	  Flexibilidade
+	  Eficiência
+	  Organização do acesso
+	  Expressividade da linguagem
 
 
  15.2 Principais Modos de Endereçamento — [P]
 
   15.2.1 Endereçamento Imediato — [P]
-        Valor imediato
-        Características
-        Utilização
-        Limitações
+	  Valor imediato
+	  Características
+	  Utilização
+	  Limitações
 
   15.2.2 Endereçamento por Registrador — [P]
-        Operandos em registradores
-        Características
-        Aplicações
-        Eficiência
+	  Operandos em registradores
+	  Características
+	  Aplicações
+	  Eficiência
 
   15.2.3 Endereçamento Direto — [P]
-        Endereço explícito
-        Organização
-        Utilização
-        Características
+	  Endereço explícito
+	  Organização
+	  Utilização
+	  Características
 
   15.2.4 Endereçamento Indireto — [P]
-        Referência indireta
-        Ponteiros
-        Organização
-        Flexibilidade
+	  Referência indireta
+	  Ponteiros
+	  Organização
+	  Flexibilidade
 
   15.2.5 Endereçamento Indexado — [P]
-        Índices
-        Deslocamentos
-        Estruturas de dados
-        Aplicações
+	  Índices
+	  Deslocamentos
+	  Estruturas de dados
+	  Aplicações
 
   15.2.6 Endereçamento Baseado em Deslocamento — [P]
-        Base
-        Offset
-        Organização
-        Utilização
+	  Base
+	  Offset
+	  Organização
+	  Utilização
 
   15.2.7 Endereçamento Relativo — [P]
-        Endereço relativo
-        Fluxo de execução
-        Saltos
-        Organização
+	  Endereço relativo
+	  Fluxo de execução
+	  Saltos
+	  Organização
 
 
  15.3 Comparação Geral — [P]
 
   15.3.1 Critérios de Comparação — [P]
-        Flexibilidade
-        Eficiência
-        Complexidade
-        Dependência arquitetural
+	  Flexibilidade
+	  Eficiência
+	  Complexidade
+	  Dependência arquitetural
 
   15.3.2 Influência da ISA — [P]
-        Disponibilidade dos modos
-        Limitações
-        Diferenças entre arquiteturas
-        Compatibilidade
+	  Disponibilidade dos modos
+	  Limitações
+	  Diferenças entre arquiteturas
+	  Compatibilidade
 
 
 
@@ -851,47 +851,47 @@ PARTE 2 — ESTRUTURA E ARQUITETURA DA LINGUAGEM ASSEMBLY
  16.1 Assembly e ISA — [P]
 
   16.1.1 Interface de Programação — [P]
-        Correspondência entre Assembly e ISA
-        Recursos arquiteturais
-        Modelo de programação
-        Visão do programador
+	  Correspondência entre Assembly e ISA
+	  Recursos arquiteturais
+	  Modelo de programação
+	  Visão do programador
 
   16.1.2 Dependência Arquitetural — [P]
-        Instruções específicas
-        Sintaxe dependente
-        Compatibilidade
-        Portabilidade
+	  Instruções específicas
+	  Sintaxe dependente
+	  Compatibilidade
+	  Portabilidade
 
 
  16.2 Relação com a Arquitetura do Processador — [P]
 
   16.2.1 Recursos Visíveis ao Programador — [P]
-        Conjunto de instruções
-        Registradores (visão geral)
-        Flags (visão geral)
-        Modos de endereçamento
-        Modelo de execução
+	  Conjunto de instruções
+	  Registradores (visão geral)
+	  Flags (visão geral)
+	  Modos de endereçamento
+	  Modelo de execução
 
   16.2.2 Limites da Linguagem Assembly — [P]
-        O que pertence à Assembly
-        O que pertence à microarquitetura
-        O que pertence ao sistema operacional
-        Separação de responsabilidades
+	  O que pertence à Assembly
+	  O que pertence à microarquitetura
+	  O que pertence ao sistema operacional
+	  Separação de responsabilidades
 
 
  16.3 Papel na Arquitetura e Organização de Computadores — [P]
 
   16.3.1 Importância Arquitetural — [P]
-        Compreensão da ISA
-        Base para programação de baixo nível
-        Interface entre software e hardware
-        Modelo de execução
+	  Compreensão da ISA
+	  Base para programação de baixo nível
+	  Interface entre software e hardware
+	  Modelo de execução
 
   16.3.2 Preparação para os Próximos Estudos — [P]
-        Organização das instruções
-        Programação Assembly
-        Interação com o hardware
-        Arquiteturas Assembly
+	  Organização das instruções
+	  Programação Assembly
+	  Interação com o hardware
+	  Arquiteturas Assembly
 
 
 
@@ -903,54 +903,54 @@ PARTE 3 — ORGANIZAÇÃO DAS INSTRUÇÕES E PROGRAMAÇÃO
  17.1 Fundamentos do Conjunto de Instruções — [P]
 
   17.1.1 Conceitos Fundamentais — [P]
-        Definição de conjunto de instruções
-        Organização funcional
-        Relação com a ISA
-        Categorias de instruções
-        Modelo de programação
+	  Definição de conjunto de instruções
+	  Organização funcional
+	  Relação com a ISA
+	  Categorias de instruções
+	  Modelo de programação
 
   17.1.2 Estrutura Geral — [P]
-        Instruções elementares
-        Operações disponíveis
-        Organização por finalidade
-        Dependência arquitetural
+	  Instruções elementares
+	  Operações disponíveis
+	  Organização por finalidade
+	  Dependência arquitetural
 
 
  17.2 Classificação das Instruções — [P]
 
   17.2.1 Categorias Funcionais — [P]
-        Transferência de dados
-        Operações aritméticas
-        Operações lógicas
-        Controle de fluxo
-        Manipulação de bits
+	  Transferência de dados
+	  Operações aritméticas
+	  Operações lógicas
+	  Controle de fluxo
+	  Manipulação de bits
 
   17.2.2 Organização Operacional — [P]
-        Operações sobre registradores
-        Operações sobre memória
-        Operações imediatas
-        Operações de controle
+	  Operações sobre registradores
+	  Operações sobre memória
+	  Operações imediatas
+	  Operações de controle
 
   17.2.3 Instruções quanto ao Nível de Privilégio — [P]
-	Instruções privilegiadas
-	Instruções não privilegiadas
-	Dependência do modo de execução
-	Relação com o sistema operacional (visão geral)
+	  Instruções privilegiadas
+	  Instruções não privilegiadas
+	  Dependência do modo de execução
+	  Relação com o sistema operacional (visão geral)
 
 
  17.3 Características Arquiteturais — [P]
 
   17.3.1 Dependência da ISA — [P]
-        Disponibilidade das instruções
-        Diferenças entre arquiteturas
-        Compatibilidade
-        Extensões da ISA
+	  Disponibilidade das instruções
+	  Diferenças entre arquiteturas
+	  Compatibilidade
+	  Extensões da ISA
 
   17.3.2 Organização Geral — [P]
-        Regularidade
-        Especialização
-        Complexidade
-        Eficiência
+	  Regularidade
+	  Especialização
+	  Complexidade
+	  Eficiência
 
 
 
@@ -959,46 +959,46 @@ PARTE 3 — ORGANIZAÇÃO DAS INSTRUÇÕES E PROGRAMAÇÃO
  18.1 Conceitos Fundamentais — [I]
 
   18.1.1 Objetivos — [I]
-        Movimentação de dados
-        Cópia de valores
-        Inicialização
-        Preparação para processamento
+	  Movimentação de dados
+	  Cópia de valores
+	  Inicialização
+	  Preparação para processamento
 
   18.1.2 Natureza das Operações — [I]
-        Transferência entre registradores
-        Transferência entre memória e registradores
-        Valores imediatos
-        Atualização dos operandos
+	  Transferência entre registradores
+	  Transferência entre memória e registradores
+	  Valores imediatos
+	  Atualização dos operandos
 
 
  18.2 Categorias de Transferência — [I]
 
   18.2.1 Transferências Simples — [I]
-        Cópia de dados
-        Leitura
-        Escrita
-        Inicialização
+	  Cópia de dados
+	  Leitura
+	  Escrita
+	  Inicialização
 
   18.2.2 Transferências Especiais — [I]
-        Troca de valores
-        Transferências múltiplas
-        Extensão de dados
-        Conversões básicas
+	  Troca de valores
+	  Transferências múltiplas
+	  Extensão de dados
+	  Conversões básicas
 
 
  18.3 Aplicações — [I]
 
   18.3.1 Organização dos Dados — [I]
-        Preparação de operações
-        Comunicação entre rotinas
-        Inicialização de variáveis
-        Organização do programa
+	  Preparação de operações
+	  Comunicação entre rotinas
+	  Inicialização de variáveis
+	  Organização do programa
 
   18.3.2 Relação com Outras Operações — [I]
-        Operações aritméticas
-        Controle de fluxo
-        Procedimentos
-        Manipulação da pilha
+	  Operações aritméticas
+	  Controle de fluxo
+	  Procedimentos
+	  Manipulação da pilha
 
 
 
@@ -1007,46 +1007,46 @@ PARTE 3 — ORGANIZAÇÃO DAS INSTRUÇÕES E PROGRAMAÇÃO
  19.1 Fundamentos — [I]
 
   19.1.1 Operações Básicas — [I]
-        Adição
-        Subtração
-        Incremento
-        Decremento
+	  Adição
+	  Subtração
+	  Incremento
+	  Decremento
 
   19.1.2 Operações Estendidas — [I]
-        Multiplicação
-        Divisão
-        Negação
-        Ajustes aritméticos
+	  Multiplicação
+	  Divisão
+	  Negação
+	  Ajustes aritméticos
 
 
  19.2 Organização das Operações — [I]
 
   19.2.1 Operações Inteiras — [I]
-        Inteiros com sinal
-        Inteiros sem sinal
-        Faixas de valores
-        Tratamento geral
+	  Inteiros com sinal
+	  Inteiros sem sinal
+	  Faixas de valores
+	  Tratamento geral
 
   19.2.2 Atualização do Estado — [I]
-        Resultado
-        Flags (visão geral)
-        Overflow (visão geral)
-        Carry (visão geral)
+	  Resultado
+	  Flags (visão geral)
+	  Overflow (visão geral)
+	  Carry (visão geral)
 
 
  19.3 Aplicações — [I]
 
   19.3.1 Cálculos Gerais — [I]
-        Contadores
-        Índices
-        Endereços
-        Processamento numérico
+	  Contadores
+	  Índices
+	  Endereços
+	  Processamento numérico
 
   19.3.2 Limitações — [I]
-        Dependência da arquitetura
-        Tamanho dos operandos
-        Precisão
-        Restrições da ISA
+	  Dependência da arquitetura
+	  Tamanho dos operandos
+	  Precisão
+	  Restrições da ISA
 
 
 
@@ -1055,46 +1055,46 @@ PARTE 3 — ORGANIZAÇÃO DAS INSTRUÇÕES E PROGRAMAÇÃO
  20.1 Operações Lógicas — [I]
 
   20.1.1 Operações Fundamentais — [I]
-        AND
-        OR
-        XOR
-        NOT
+	  AND
+	  OR
+	  XOR
+	  NOT
 
   20.1.2 Aplicações — [I]
-        Máscaras
-        Limpeza de bits
-        Ativação de bits
-        Testes lógicos
+	  Máscaras
+	  Limpeza de bits
+	  Ativação de bits
+	  Testes lógicos
 
 
  20.2 Manipulação de Bits — [I]
 
   20.2.1 Operações Individuais — [I]
-        Teste de bits
-        Configuração
-        Limpeza
-        Complementação
+	  Teste de bits
+	  Configuração
+	  Limpeza
+	  Complementação
 
   20.2.2 Organização Binária — [I]
-        Campos de bits
-        Máscaras
-        Combinações
-        Representações
+	  Campos de bits
+	  Máscaras
+	  Combinações
+	  Representações
 
 
  20.3 Aplicações Gerais — [I]
 
   20.3.1 Processamento de Dados — [I]
-        Controle lógico
-        Manipulação de estados
-        Compactação
-        Extração de informações
+	  Controle lógico
+	  Manipulação de estados
+	  Compactação
+	  Extração de informações
 
   20.3.2 Utilização Prática — [I]
-        Controle de dispositivos
-        Processamento binário
-        Otimizações
-        Programação de baixo nível
+	  Controle de dispositivos
+	  Processamento binário
+ 	  Otimizações
+	  Programação de baixo nível
 
 
 
