@@ -1491,3 +1491,722 @@ PARTE 4 — MECANISMOS DE EXECUÇÃO PARALELA
       Avaliação do desempenho paralelo
 
 
+
+PARTE 5 — DESEMPENHO DO PARALELISMO
+
+
+39. Avaliação de Desempenho no Paralelismo — [P]
+
+ 39.1 Conceitos Fundamentais — [P]
+
+  39.1.1 Conceito de Desempenho Paralelo — [P]
+      Definição
+      Objetivos da avaliação
+      Comparação entre execução sequencial e paralela
+      Indicadores de desempenho
+      Importância da análise
+
+  39.1.2 Objetivos da Avaliação — [P]
+      Medir ganhos obtidos
+      Identificar limitações
+      Comparar arquiteturas
+      Avaliar eficiência
+      Otimizar aplicações
+
+  39.1.3 Critérios Gerais de Avaliação — [P]
+      Tempo de execução
+      Utilização dos recursos
+      Escalabilidade
+      Eficiência
+      Custo computacional
+
+
+ 39.2 Fatores que Influenciam o Desempenho — [P]
+
+  39.2.1 Aspectos Positivos — [P]
+      Paralelização eficiente
+      Boa distribuição das tarefas
+      Comunicação reduzida
+      Balanceamento adequado
+      Escalabilidade
+
+  39.2.2 Aspectos Limitantes — [P]
+      Dependências
+      Sincronização
+      Comunicação excessiva
+      Overhead
+      Gargalos
+
+
+
+40. Speedup e Eficiência — [P]
+
+ 40.1 Speedup — [P]
+
+  40.1.1 Conceito de Speedup — [P]
+      Definição
+      Ganho de desempenho
+      Comparação entre execução sequencial e paralela
+      Interpretação do Speedup
+      Objetivos
+
+  40.1.2 Tipos de Speedup — [P]
+      Speedup ideal
+      Speedup linear
+      Speedup sublinear
+      Speedup superlinear
+      Limitações práticas
+
+
+ 40.2 Eficiência Paralela — [P]
+
+  40.2.1 Conceito de Eficiência — [P]
+      Definição
+      Aproveitamento dos recursos
+      Relação com o Speedup
+      Utilização das unidades de processamento
+
+  40.2.2 Interpretação da Eficiência — [P]
+      Alta eficiência
+      Baixa eficiência
+      Eficiência ideal
+      Influência da escalabilidade
+
+
+ 40.3 Relação entre Speedup e Eficiência — [P]
+
+  40.3.1 Comparação Geral — [P]
+      Ganho absoluto
+      Ganho relativo
+      Aproveitamento dos recursos
+      Limites de crescimento
+
+
+
+41. Escalabilidade — [P]
+
+ 41.1 Fundamentos — [P]
+
+  41.1.1 Conceito de Escalabilidade — [P]
+      Definição
+      Crescimento do sistema
+      Aumento dos recursos
+      Evolução do desempenho
+
+  41.1.2 Objetivos da Escalabilidade — [P]
+      Crescimento sustentável
+      Melhor aproveitamento do hardware
+      Expansão da capacidade
+      Eficiência contínua
+
+
+ 41.2 Tipos de Escalabilidade — [P]
+
+  41.2.1 Classificações Gerais — [P]
+      Escalabilidade forte
+      Escalabilidade fraca
+      Escalabilidade horizontal
+      Escalabilidade vertical
+
+  41.2.2 Limites da Escalabilidade — [P]
+      Comunicação
+      Sincronização
+      Dependências
+      Overhead
+      Saturação dos recursos
+
+
+ 41.3 Avaliação da Escalabilidade — [I]
+
+  41.3.1 Critérios de Avaliação — [I]
+      Crescimento do desempenho
+      Crescimento dos recursos
+      Eficiência
+      Sustentabilidade
+
+
+
+42. Leis Fundamentais do Paralelismo — [P]
+
+ 42.1 Lei de Amdahl — [P]
+
+  42.1.1 Conceitos Fundamentais — [P]
+      Objetivo da Lei de Amdahl
+      Parte paralelizável
+      Parte sequencial
+      Limites teóricos do Speedup
+      Importância da lei
+
+  42.1.2 Interpretação — [P]
+      Limitação do desempenho
+      Influência da parte sequencial
+      Crescimento limitado
+      Aplicações práticas
+
+
+ 42.2 Lei de Gustafson — [P]
+
+  42.2.1 Conceitos Fundamentais — [P]
+      Objetivo da Lei de Gustafson
+      Crescimento proporcional do problema
+      Escalabilidade
+      Expansão da carga de trabalho
+
+  42.2.2 Interpretação — [P]
+      Crescimento do desempenho
+      Aplicações escaláveis
+      Comparação com Amdahl
+      Aplicações modernas
+
+
+ 42.3 Comparação das Leis — [P]
+
+  42.3.1 Diferenças Fundamentais — [P]
+      Hipóteses adotadas
+      Objetivos
+      Limitações
+      Aplicações
+      Complementaridade
+
+
+
+43. Overhead e Gargalos — [P]
+
+ 43.1 Overhead — [P]
+
+  43.1.1 Conceito de Overhead — [P]
+      Definição
+      Custos adicionais
+      Comunicação
+      Sincronização
+      Administração da execução
+
+  43.1.2 Fontes de Overhead — [P]
+      Comunicação
+      Sincronização
+      Escalonamento
+      Balanceamento
+      Gerenciamento
+
+
+ 43.2 Gargalos — [P]
+
+  43.2.1 Conceito de Gargalo — [P]
+      Definição
+      Restrição ao desempenho
+      Recursos limitantes
+      Impacto no paralelismo
+
+  43.2.2 Principais Gargalos — [P]
+      Comunicação
+      Dependências
+      Sincronização
+      Balanceamento inadequado
+      Recursos compartilhados
+
+
+ 43.3 Minimização dos Custos — [I]
+
+  43.3.1 Estratégias Gerais — [I]
+      Redução da comunicação
+      Melhor distribuição das tarefas
+      Redução da sincronização
+      Otimização da execução
+
+
+
+44. Limitações Práticas do Paralelismo — [P]
+
+ 44.1 Limitações Arquiteturais — [P]
+
+  44.1.1 Limitações Naturais — [P]
+      Dependências
+      Recursos compartilhados
+      Comunicação
+      Coordenação
+
+  44.1.2 Limitações de Escalabilidade — [P]
+      Crescimento não linear
+      Saturação dos recursos
+      Overhead crescente
+      Eficiência decrescente
+
+
+ 44.2 Limitações das Aplicações — [I]
+
+  44.2.1 Restrições dos Algoritmos — [I]
+      Partes sequenciais
+      Dependências de dados
+      Dependências de controle
+      Granularidade inadequada
+
+  44.2.2 Impacto Geral — [I]
+      Redução do Speedup
+      Baixa eficiência
+      Escalabilidade limitada
+      Complexidade crescente
+
+
+
+45. Otimização do Desempenho Paralelo — [P]
+
+ 45.1 Estratégias Gerais — [P]
+
+  45.1.1 Organização da Execução — [P]
+      Melhor distribuição das tarefas
+      Balanceamento da carga
+      Redução da comunicação
+      Redução da sincronização
+
+  45.1.2 Melhor Aproveitamento dos Recursos — [P]
+      Utilização eficiente das unidades
+      Redução da ociosidade
+      Coordenação eficiente
+      Escalabilidade
+
+
+ 45.2 Avaliação Contínua — [I]
+
+  45.2.1 Monitoramento do Desempenho — [I]
+      Medição dos resultados
+      Comparação das estratégias
+      Identificação de gargalos
+      Ajustes da execução
+
+  45.2.2 Preparação para Aplicações Modernas — [V]
+      Relação entre desempenho e arquiteturas modernas
+      Relação com HPC
+      Relação com computação distribuída
+      Base para os próximos capítulos
+
+
+
+PARTE 6 — APLICAÇÕES E TECNOLOGIAS MODERNAS DO PARALELISMO
+
+
+46. Paralelismo em Arquiteturas Modernas — [I]
+
+ 46.1 Evolução do Paralelismo Moderno — [I]
+
+  46.1.1 O Papel do Paralelismo na Computação Atual — [I]
+      Crescimento da demanda computacional
+      Limitações do aumento da frequência
+      Paralelismo como principal estratégia de desempenho
+      Evolução das arquiteturas modernas
+      Tendências da computação paralela
+
+  46.1.2 Integração de Múltiplas Formas de Paralelismo — [I]
+      Combinação de ILP, DLP e TLP
+      Arquiteturas híbridas
+      Cooperação entre diferentes níveis
+      Paralelismo em sistemas modernos
+
+ 46.2 Características Gerais — [I]
+
+  46.2.1 Requisitos das Aplicações Modernas — [I]
+      Alto desempenho
+      Escalabilidade
+      Eficiência energética
+      Grande volume de processamento
+      Processamento em tempo real
+
+  46.2.2 Principais Áreas de Aplicação — [V]
+      Computação científica
+      Inteligência Artificial
+      Big Data
+      Computação gráfica
+      Computação distribuída
+
+
+
+47. GPUs e GPGPU — [P]
+
+ 47.1 GPUs como Arquiteturas Paralelas — [P]
+
+  47.1.1 Conceito de GPU — [P]
+      Definição
+      Paralelismo massivo
+      Grande quantidade de unidades de execução
+      Organização geral
+      Importância para o paralelismo
+
+  47.1.2 Características Arquiteturais — [P]
+      Elevado paralelismo de dados
+      Alta taxa de processamento
+      Organização SIMD/SIMT (visão geral)
+      Escalabilidade
+      Eficiência computacional
+
+ 47.2 Computação de Propósito Geral em GPU (GPGPU) — [P]
+
+  47.2.1 Conceito de GPGPU — [P]
+      Definição
+      Uso das GPUs além dos gráficos
+      Processamento paralelo massivo
+      Aplicações gerais
+
+  47.2.2 Aplicações do GPGPU — [I]
+      Inteligência Artificial
+      Computação científica
+      Simulações
+      Processamento de imagens
+      Big Data
+
+ 47.3 Benefícios e Limitações — [I]
+
+  47.3.1 Benefícios — [I]
+      Alto desempenho
+      Excelente paralelismo de dados
+      Grande escalabilidade
+      Boa eficiência energética
+
+  47.3.2 Limitações — [I]
+      Dependência do algoritmo
+      Comunicação CPU-GPU
+      Granularidade inadequada
+      Custos de sincronização
+
+
+
+48. Vetorização e Computação de Alto Desempenho (HPC) — [P]
+
+ 48.1 Vetorização — [P]
+
+  48.1.1 Conceito de Vetorização — [P]
+      Definição
+      Operações vetoriais
+      Paralelismo de dados
+      Execução simultânea
+      Objetivos
+
+  48.1.2 Relação entre Vetorização e DLP — [P]
+      Processamento vetorial
+      Dados independentes
+      Operações repetitivas
+      Ganhos de desempenho
+
+ 48.2 High Performance Computing (HPC) — [I]
+
+  48.2.1 Conceito de HPC — [I]
+      Definição
+      Computação de alto desempenho
+      Uso intensivo do paralelismo
+      Objetivos
+
+  48.2.2 Aplicações do HPC — [I]
+      Simulações científicas
+      Engenharia
+      Meteorologia
+      Bioinformática
+      Pesquisa científica
+
+ 48.3 Relação entre HPC e Paralelismo — [I]
+
+  48.3.1 Integração dos Conceitos — [I]
+      Arquiteturas paralelas
+      Computação distribuída
+      Processamento massivo
+      Escalabilidade
+
+
+
+49. Computação Distribuída, Clusters e Supercomputadores — [P]
+
+ 49.1 Computação Distribuída — [P]
+
+  49.1.1 Conceito — [P]
+      Definição
+      Execução distribuída
+      Cooperação entre computadores
+      Compartilhamento de tarefas
+      Objetivos
+
+  49.1.2 Características Gerais — [P]
+      Distribuição do processamento
+      Comunicação
+      Escalabilidade
+      Balanceamento
+
+ 49.2 Clusters — [P]
+
+  49.2.1 Conceito de Cluster — [P]
+      Definição
+      Agrupamento de computadores
+      Processamento cooperativo
+      Organização geral
+
+  49.2.2 Aplicações dos Clusters — [I]
+      HPC
+      Pesquisa científica
+      Serviços de alto desempenho
+      Computação distribuída
+
+ 49.3 Supercomputadores — [I]
+
+  49.3.1 Conceito de Supercomputador — [I]
+      Definição
+      Processamento massivamente paralelo
+      Grande capacidade computacional
+      Escalabilidade extrema
+
+  49.3.2 Principais Aplicações — [I]
+      Simulações físicas
+      Clima
+      Inteligência Artificial
+      Pesquisa científica
+      Engenharia
+
+
+
+50. Paralelismo nas Aplicações Emergentes e Tendências Futuras — [I]
+
+ 50.1 Paralelismo nas Tecnologias Emergentes — [I]
+
+  50.1.1 Inteligência Artificial e Aprendizado de Máquina — [I]
+      Treinamento paralelo
+      Inferência paralela
+      Processamento massivo
+      Escalabilidade
+
+  50.1.2 Big Data e Análise de Dados — [I]
+      Processamento distribuído
+      Grandes volumes de dados
+      Paralelização das análises
+      Escalabilidade
+
+ 50.2 Tendências Futuras do Paralelismo — [I]
+
+  50.2.1 Evolução das Arquiteturas Paralelas — [I]
+      Crescimento do paralelismo
+      Arquiteturas heterogêneas
+      Aumento da integração
+      Eficiência energética
+      Escalabilidade
+
+  50.2.2 Novos Desafios — [I]
+      Consumo energético
+      Complexidade da programação
+      Coordenação entre recursos
+      Escalabilidade em larga escala
+
+ 50.3 Preparação para a Integração dos Conceitos — [V]
+
+  50.3.1 Síntese das Aplicações Modernas — [V]
+      Relação entre arquiteturas e aplicações
+      Integração dos tipos de paralelismo
+      Papel do paralelismo na computação moderna
+      Base para o resumo e conclusão da lista
+
+
+
+PARTE 7 — INTEGRAÇÃO DOS CONCEITOS, RESUMO E CONCLUSÃO
+
+
+51. Integração dos Conceitos do Paralelismo — [I]
+
+ 51.1 Relação entre os Modelos de Paralelismo — [I]
+
+  51.1.1 Integração dos Níveis de Paralelismo — [I]
+      Relação entre BLP, ILP, DLP e TLP
+      Complementação entre os modelos
+      Hierarquia dos níveis de paralelismo
+      Exploração simultânea dos modelos
+      Paralelismo em arquiteturas modernas
+
+  51.1.2 Integração das Arquiteturas Paralelas — [I]
+      Relação entre SISD, SIMD, MISD e MIMD
+      Arquiteturas multicore e manycore
+      Sistemas homogêneos e heterogêneos
+      Organização dos recursos
+      Cooperação entre arquiteturas
+
+ 51.2 Relação entre Execução e Desempenho — [I]
+
+  51.2.1 Mecanismos de Execução — [I]
+      Threads
+      Processos
+      Comunicação
+      Sincronização
+      Balanceamento
+
+  51.2.2 Influência no Desempenho — [I]
+      Speedup
+      Eficiência
+      Escalabilidade
+      Gargalos
+      Overhead
+
+ 51.3 Visão Integrada do Paralelismo — [I]
+
+  51.3.1 Fluxo Geral dos Conceitos — [I]
+      Modelos
+      Arquiteturas
+      Execução
+      Avaliação
+      Aplicações modernas
+
+
+
+52. Comparação Geral das Técnicas de Paralelismo — [I]
+
+ 52.1 Comparação dos Modelos — [I]
+
+  52.1.1 Comparação dos Tipos de Paralelismo — [I]
+      BLP × ILP
+      ILP × DLP
+      DLP × TLP
+      Processos × Threads
+      Paralelismo funcional
+
+  52.1.2 Comparação das Arquiteturas — [I]
+      SISD × SIMD
+      SIMD × MIMD
+      Multicore × Manycore
+      SMP × NUMA
+      Arquiteturas homogêneas × heterogêneas
+
+ 52.2 Comparação dos Mecanismos de Execução — [I]
+
+  52.2.1 Aspectos Comparativos — [I]
+      Comunicação
+      Sincronização
+      Balanceamento
+      Escalonamento
+      Granularidade
+
+  52.2.2 Critérios de Escolha — [I]
+      Natureza da aplicação
+      Volume de dados
+      Dependências
+      Escalabilidade
+      Recursos disponíveis
+
+
+
+53. Escolha da Estratégia de Paralelização — [I]
+
+ 53.1 Critérios Gerais — [I]
+
+  53.1.1 Escolha do Modelo Adequado — [I]
+      Tipo do problema
+      Tipo de paralelismo
+      Dependências existentes
+      Granularidade
+      Complexidade da implementação
+
+  53.1.2 Escolha da Arquitetura — [I]
+      Natureza da aplicação
+      Escalabilidade desejada
+      Volume de processamento
+      Eficiência energética
+      Recursos computacionais
+
+ 53.2 Boas Práticas Gerais — [I]
+
+  53.2.1 Organização da Paralelização — [I]
+      Divisão adequada das tarefas
+      Balanceamento da carga
+      Redução da comunicação
+      Redução da sincronização
+      Melhor utilização dos recursos
+
+
+
+54. Mapa Conceitual do Paralelismo — [V]
+
+ 54.1 Organização dos Conceitos — [V]
+
+  54.1.1 Fundamentos — [V]
+      Conceitos básicos
+      Evolução histórica
+      Objetivos
+      Importância
+      Classificações
+
+  54.1.2 Estrutura do Conhecimento — [V]
+      Modelos de paralelismo
+      Arquiteturas paralelas
+      Execução paralela
+      Avaliação de desempenho
+      Aplicações modernas
+
+ 54.2 Relação entre os Capítulos — [V]
+
+  54.2.1 Sequência do Estudo — [V]
+      Fundamentos
+      Modelos
+      Arquiteturas
+      Execução
+      Desempenho
+      Tecnologias modernas
+
+  54.2.2 Integração Geral — [V]
+      Visão completa do paralelismo
+      Relação entre os conceitos
+      Organização do conhecimento
+      Base para estudos avançados
+
+
+
+55. Resumo Geral do Paralelismo — [V]
+
+ 55.1 Síntese dos Conceitos Fundamentais — [V]
+
+  55.1.1 O que é Paralelismo — [V]
+      Conceito geral
+      Objetivos
+      Importância
+      Evolução
+      Papel na Arquitetura de Computadores
+
+  55.1.2 Principais Áreas Estudadas — [V]
+      Modelos de paralelismo
+      Arquiteturas paralelas
+      Execução paralela
+      Avaliação de desempenho
+      Aplicações modernas
+
+ 55.2 Síntese das Relações — [V]
+
+  55.2.1 Como os Conceitos se Conectam — [V]
+      Relação entre modelos
+      Relação entre arquiteturas
+      Relação entre mecanismos
+      Relação entre desempenho e aplicações
+
+  55.2.2 Principais Ideias para Revisão — [V]
+      Organização hierárquica
+      Conceitos essenciais
+      Comparações importantes
+      Bases para aprofundamento
+
+
+
+56. Conclusão — [V]
+
+ 56.1 Consolidação do Conhecimento — [V]
+
+  56.1.1 Competências Esperadas — [V]
+      Compreender o conceito de paralelismo
+      Identificar os principais modelos
+      Diferenciar as arquiteturas paralelas
+      Entender os mecanismos de execução
+      Interpretar métricas de desempenho
+
+  56.1.2 Preparação para Estudos Avançados — [V]
+      Paralelismo em Processadores
+      Paralelismo em Pipeline
+      Paralelismo em Memória
+      Computação Paralela
+      Programação Paralela
+      Sistemas Distribuídos
+      Computação de Alto Desempenho (HPC)
+
+ 56.2 Encerramento da Lista — [V]
+
+  56.2.1 Visão Final — [V]
+      O paralelismo como fundamento da computação moderna
+      Integração entre Arquitetura e Organização de Computadores
+      Importância para o desempenho computacional
+      Base para tecnologias atuais e futuras
+      Encerramento do estudo introdutório do Paralelismo
