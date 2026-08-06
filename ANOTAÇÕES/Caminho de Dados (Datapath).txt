@@ -65,6 +65,7 @@ PARTE 1 — FUNDAMENTOS DO CAMINHO DE DADOS (DATAPATH)
 	  Abstração funcional
 
 
+
 2. Evolução Histórica do Caminho de Dados — [V]
 
  2.1 Origem dos Caminhos de Dados — [V]
@@ -104,6 +105,7 @@ PARTE 1 — FUNDAMENTOS DO CAMINHO DE DADOS (DATAPATH)
 	  Eficiência energética
 	  Escalabilidade
 	  Base para arquiteturas modernas
+
 
 
 3. Fundamentos do Fluxo de Dados — [I]
@@ -150,6 +152,7 @@ PARTE 1 — FUNDAMENTOS DO CAMINHO DE DADOS (DATAPATH)
 	  Consistência
 
 
+
 4. Organização Geral do Caminho de Dados — [I]
 
  4.1 Estrutura Funcional — [I]
@@ -189,6 +192,7 @@ PARTE 1 — FUNDAMENTOS DO CAMINHO DE DADOS (DATAPATH)
 	  Fluxo lógico
 	  Dependências operacionais
 	  Modularidade
+
 
 
 5. Relação do Datapath com a Execução das Instruções — [I]
@@ -231,6 +235,7 @@ PARTE 1 — FUNDAMENTOS DO CAMINHO DE DADOS (DATAPATH)
 	  Transferência
 	  Armazenamento dos resultados
 	  Preparação para novas operações
+
 
 
 6. Princípios de Projeto do Caminho de Dados — [I]
@@ -328,6 +333,7 @@ PARTE 2 — COMPONENTES DO CAMINHO DE DADOS (DATAPATH)
 	  Integração funcional
 
 
+
 8. Banco de Registradores no Datapath — [P]
 
  8.1 Fundamentos — [P]
@@ -369,6 +375,7 @@ PARTE 2 — COMPONENTES DO CAMINHO DE DADOS (DATAPATH)
 	  Recepção de resultados
 	  Fluxo interno
 	  Coordenação operacional
+
 
 
 9. Unidade Lógica e Aritmética (ULA) no Datapath — [P]
@@ -418,6 +425,7 @@ PARTE 2 — COMPONENTES DO CAMINHO DE DADOS (DATAPATH)
 	  Encaminhamento dos resultados
 
 
+
 10. Multiplexadores (MUX) no Datapath — [I]
 
  10.1 Fundamentos — [I]
@@ -457,6 +465,7 @@ PARTE 2 — COMPONENTES DO CAMINHO DE DADOS (DATAPATH)
 	  Modularidade
 
 
+
 11. Barramentos e Interconexões Internas — [I]
 
  11.1 Fundamentos — [I]
@@ -494,6 +503,7 @@ PARTE 2 — COMPONENTES DO CAMINHO DE DADOS (DATAPATH)
 	  Comunicação paralela
 	  Comunicação interna
 	  Modularidade
+
 
 
 12. Componentes Auxiliares do Datapath — [V]
@@ -539,6 +549,7 @@ PARTE 2 — COMPONENTES DO CAMINHO DE DADOS (DATAPATH)
 	  Eficiência operacional
 
 
+
 13. Componentes de Interface do Datapath — [V]
 
  13.1 Interfaces de Entrada e Saída dos Dados — [V]
@@ -574,6 +585,7 @@ PARTE 2 — COMPONENTES DO CAMINHO DE DADOS (DATAPATH)
 	  Processamento
 	  Transferência
 	  Saída
+
 
 
 14. Integração dos Componentes do Datapath — [I]
@@ -662,6 +674,7 @@ PARTE 3 — FUNCIONAMENTO DO CAMINHO DE DADOS (DATAPATH)
 	  Eficiência operacional
 
 
+
 16. Fluxo de Dados no Datapath — [P]
 
  16.1 Entrada dos Dados — [P]
@@ -704,6 +717,7 @@ PARTE 3 — FUNCIONAMENTO DO CAMINHO DE DADOS (DATAPATH)
 	  Continuidade da execução
 
 
+
 17. Transferência Interna de Dados — [I]
 
  17.1 Movimentação das Informações — [I]
@@ -742,6 +756,7 @@ PARTE 3 — FUNCIONAMENTO DO CAMINHO DE DADOS (DATAPATH)
 	  Minimização de atrasos
 
 
+
 18. Seleção e Encaminhamento dos Dados — [I]
 
  18.1 Seleção das Fontes — [I]
@@ -776,6 +791,7 @@ PARTE 3 — FUNCIONAMENTO DO CAMINHO DE DADOS (DATAPATH)
 	  Escolha dos caminhos
 	  Coordenação das transferências
 	  Organização lógica
+
 
 
 19. Coordenação entre Datapath e Unidade de Controle — [P]
@@ -814,6 +830,7 @@ PARTE 3 — FUNCIONAMENTO DO CAMINHO DE DADOS (DATAPATH)
 	  Controle externo ao Datapath
 	  Execução coordenada
 	  Integração entre unidades
+
 
 
 20. Estados Operacionais do Datapath — [I]
@@ -855,6 +872,7 @@ PARTE 3 — FUNCIONAMENTO DO CAMINHO DE DADOS (DATAPATH)
 	  Repetição das operações
 	  Renovação do fluxo
 	  Execução sucessiva
+
 
 
 21. Características Operacionais do Datapath — [I]
@@ -934,6 +952,7 @@ PARTE 4 — ORGANIZAÇÕES E TIPOS DE CAMINHO DE DADOS (DATAPATH)
 	  Maior flexibilidade
 
 
+
 23. Datapath Monociclo — [P]
 
  23.1 Fundamentos — [P]
@@ -982,6 +1001,7 @@ PARTE 4 — ORGANIZAÇÕES E TIPOS DE CAMINHO DE DADOS (DATAPATH)
 	  Projetos simples
 
 
+
 24. Datapath Multiciclo — [P]
 
  24.1 Fundamentos — [P]
@@ -1026,6 +1046,7 @@ PARTE 4 — ORGANIZAÇÕES E TIPOS DE CAMINHO DE DADOS (DATAPATH)
 	  Projetos intermediários
 	  Arquiteturas didáticas
 	  Microarquiteturas clássicas
+
 
 
 25. Datapath Pipeline — [P]
@@ -1073,6 +1094,7 @@ PARTE 4 — ORGANIZAÇÕES E TIPOS DE CAMINHO DE DADOS (DATAPATH)
 	  Evolução da organização interna
 
 
+
 26. Datapath Paralelo — [I]
 
  26.1 Fundamentos — [I]
@@ -1112,6 +1134,7 @@ PARTE 4 — ORGANIZAÇÕES E TIPOS DE CAMINHO DE DADOS (DATAPATH)
 	  Complexidade
 	  Coordenação
 	  Balanceamento da carga
+
 
 
 27. Datapath Superescalar — [I]
@@ -1155,6 +1178,7 @@ PARTE 4 — ORGANIZAÇÕES E TIPOS DE CAMINHO DE DADOS (DATAPATH)
 	  Controle sofisticado
 
 
+
 28. Comparação entre os Tipos de Datapath — [I]
 
  28.1 Comparação Estrutural — [I]
@@ -1190,6 +1214,7 @@ PARTE 4 — ORGANIZAÇÕES E TIPOS DE CAMINHO DE DADOS (DATAPATH)
 	  Complexidade desejada
 	  Desempenho esperado
 	  Custos do projeto
+
 
 
 29. Tendências na Organização dos Datapaths — [V]
@@ -1283,6 +1308,7 @@ PARTE 5 — PROJETO, OTIMIZAÇÃO E INTEGRAÇÃO DO CAMINHO DE DADOS (DATAPATH)
 	  Possibilidades de melhoria
 
 
+
 31. Organização Estrutural do Datapath — [I]
 
  31.1 Organização Física e Lógica — [I]
@@ -1317,6 +1343,7 @@ PARTE 5 — PROJETO, OTIMIZAÇÃO E INTEGRAÇÃO DO CAMINHO DE DADOS (DATAPATH)
 	  Inclusão de componentes
 	  Crescimento estrutural
 	  Reutilização do projeto
+
 
 
 32. Otimização do Caminho de Dados — [I]
@@ -1365,6 +1392,7 @@ PARTE 5 — PROJETO, OTIMIZAÇÃO E INTEGRAÇÃO DO CAMINHO DE DADOS (DATAPATH)
 	  Compromissos do projeto
 
 
+
 33. Integração do Datapath com a Microarquitetura — [I]
 
  33.1 Papel do Datapath — [I]
@@ -1399,6 +1427,7 @@ PARTE 5 — PROJETO, OTIMIZAÇÃO E INTEGRAÇÃO DO CAMINHO DE DADOS (DATAPATH)
 	  Estrutura integrada
 	  Cooperação entre componentes
 	  Funcionamento unificado
+
 
 
 34. Eficiência e Desempenho do Datapath — [I]
@@ -1440,6 +1469,7 @@ PARTE 5 — PROJETO, OTIMIZAÇÃO E INTEGRAÇÃO DO CAMINHO DE DADOS (DATAPATH)
 	  Aprimoramento contínuo
 	  Melhor utilização do hardware
 	  Expansibilidade
+
 
 
 35. Projeto de Datapaths para Diferentes Objetivos — [V]
@@ -1527,6 +1557,7 @@ PARTE 6 — DATAPATHS EM ARQUITETURAS MODERNAS
 	  Fluxo contínuo
 
 
+
 37. Datapaths em Processadores Modernos — [V]
 
  37.1 Organização Geral — [V]
@@ -1554,6 +1585,7 @@ PARTE 6 — DATAPATHS EM ARQUITETURAS MODERNAS
 	  Melhor utilização dos recursos
 	  Fluxo otimizado
 	  Organização moderna
+
 
 
 38. Paralelismo Aplicado ao Datapath — [I]
@@ -1597,6 +1629,7 @@ PARTE 6 — DATAPATHS EM ARQUITETURAS MODERNAS
 	  Maior custo de implementação
 
 
+
 39. Escalabilidade e Flexibilidade do Datapath — [V]
 
  39.1 Escalabilidade — [V]
@@ -1631,6 +1664,7 @@ PARTE 6 — DATAPATHS EM ARQUITETURAS MODERNAS
 	  Atualização dos projetos
 	  Novas organizações
 	  Adaptação tecnológica
+
 
 
 40. Tendências Futuras dos Datapaths — [V]
@@ -1715,6 +1749,7 @@ PARTE 7 — INTEGRAÇÃO DOS CONCEITOS, RESUMO GERAL E CONCLUSÃO
 	  Base da execução das operações
 
 
+
 42. Relações do Datapath com Outros Conceitos da Arquitetura — [I]
 
  42.1 Relações Fundamentais — [I]
@@ -1756,6 +1791,7 @@ PARTE 7 — INTEGRAÇÃO DOS CONCEITOS, RESUMO GERAL E CONCLUSÃO
 	  Base do processamento
 	  Integração dos componentes
 	  Execução eficiente das operações
+
 
 
 43. Resumo Geral do Caminho de Dados — [I]
@@ -1804,6 +1840,7 @@ PARTE 7 — INTEGRAÇÃO DOS CONCEITOS, RESUMO GERAL E CONCLUSÃO
 	  Modularidade
 	  Tendências atuais
 	  Evolução tecnológica
+
 
 
 44. Conclusão do Estudo do Caminho de Dados — [V]
