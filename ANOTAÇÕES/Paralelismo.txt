@@ -357,6 +357,12 @@ PARTE 2 — MODELOS E TIPOS DE PARALELISMO
       Hierarquia dos níveis
       Exemplos conceituais
 
+  8.2.3 Introdução à Granularidade — [V]
+      Conceito geral
+      Granularidade fina
+      Granularidade grossa
+      Relação com os modelos
+
 
 
 9. Paralelismo em Nível de Bits (Bit-Level Parallelism - BLP) — [I]
@@ -799,6 +805,15 @@ PARTE 3 — ARQUITETURAS PARALELAS
       Comparação entre sistemas
       Evolução do paralelismo
       Base para arquiteturas modernas
+
+
+ 19.4 Outras Taxonomias (Visão Geral) — [V]
+
+  19.4.1 Classificações Complementares — [V]
+      Taxonomia de Duncan
+      Outras propostas
+      Comparação com Flynn
+      Importância histórica
 
 
 
@@ -1339,6 +1354,21 @@ PARTE 4 — MECANISMOS DE EXECUÇÃO PARALELA
       Escalabilidade
       Complexidade
 
+  
+ 34.4 Comunicação versus Computação — [P]
+
+  34.4.1 Trade-off Comunicação × Computação — [P]
+      Tempo gasto computando
+      Tempo gasto comunicando
+      Custos da sincronização
+      Impacto no desempenho
+
+  34.4.2 Minimização da Comunicação — [I]
+      Redução das trocas de dados
+      Agrupamento das comunicações
+      Aproveitamento da localidade
+      Impacto na eficiência
+
 
 
 35. Balanceamento de Carga — [P]
@@ -1446,6 +1476,21 @@ PARTE 4 — MECANISMOS DE EXECUÇÃO PARALELA
       Escalabilidade
       Comunicação
       Balanceamento
+
+
+ 37.4 Localidade de Dados — [I]
+
+  37.4.1 Conceitos Gerais — [I]
+      Localidade espacial
+      Localidade temporal
+      Proximidade entre processamento e dados
+      Impacto no paralelismo
+
+  37.4.2 Influência no Desempenho — [I]
+      Redução da comunicação
+      Melhor utilização dos recursos
+      Eficiência da execução
+      Escalabilidade
 
 
 
@@ -1624,6 +1669,12 @@ PARTE 5 — DESEMPENHO DO PARALELISMO
       Eficiência
       Sustentabilidade
 
+  41.3.2 Escalabilidade Ideal e Escalabilidade Prática — [P]
+      Escalabilidade linear
+      Escalabilidade não linear
+      Limitações reais
+      Interpretação dos resultados
+
 
 
 42. Leis Fundamentais do Paralelismo — [P]
@@ -1687,6 +1738,13 @@ PARTE 5 — DESEMPENHO DO PARALELISMO
       Escalonamento
       Balanceamento
       Gerenciamento
+
+  43.1.3 Principais Fontes de Custo — [P]
+      Comunicação
+      Sincronização
+      Espera
+      Contenção
+      Coordenação
 
 
  43.2 Gargalos — [P]
