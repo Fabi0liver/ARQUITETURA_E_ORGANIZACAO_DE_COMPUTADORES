@@ -1769,3 +1769,1190 @@ PARTE 2 — FUNCIONAMENTO, TEMPORIZAÇÃO E DESEMPENHO DO PIPELINE
 	  Continuidade do estudo
 
 
+
+PARTE 3 — HAZARDS, DEPENDÊNCIAS E MECANISMOS DE CONTROLE
+
+
+24. Fundamentos dos Hazards no Pipeline — [P]
+
+ 24.1 Conceito de Hazard — [P]
+
+  24.1.1 Definição de Hazard — [P]
+	  Conceito de conflito no Pipeline
+	  Interação entre instruções sobrepostas
+	  Situações que impedem o avanço normal
+	  Risco de execução incorreta
+	  Impacto sobre o fluxo do Pipeline
+
+  24.1.2 Origem dos Hazards — [P]
+	  Sobreposição das instruções
+	  Dependências entre instruções
+	  Alterações no fluxo de controle
+	  Compartilhamento de recursos
+	  Limitações da organização do Pipeline
+
+  24.1.3 Consequências dos Hazards — [P]
+	  Atrasos na execução
+	  Stalls
+	  Bolhas no Pipeline
+	  Flush
+	  Redução do throughput
+	  Aumento do tempo de execução
+
+
+ 24.2 Hazards e Paralelismo em Nível de Instrução — [I]
+
+  24.2.1 Paralelismo e Conflitos — [I]
+	  Sobreposição das instruções
+	  Necessidade de independência
+	  Dependências que limitam o paralelismo
+	  Conflitos durante a execução simultânea
+
+  24.2.2 Paralelismo Potencial × Paralelismo Efetivo — [I]
+	  Instruções potencialmente sobreponíveis
+	  Instruções impedidas de avançar
+	  Perdas causadas por hazards
+	  Paralelismo efetivamente aproveitado
+
+  24.2.3 Hazards como Limitação de Desempenho — [I]
+	  Redução da utilização
+	  Redução do throughput
+	  Aumento do CPI
+	  Redução do IPC
+	  Impacto no speedup
+
+
+ 24.3 Classificação dos Hazards — [P]
+
+  24.3.1 Data Hazards — [P]
+	  Conflitos causados por dependências de dados
+	  Dependência entre instruções
+	  Disponibilidade dos dados
+	  Necessidade de sincronização
+
+  24.3.2 Control Hazards — [P]
+	  Conflitos causados por alterações no fluxo
+	  Branches
+	  Incerteza sobre a próxima instrução
+	  Instruções potencialmente inválidas
+
+  24.3.3 Structural Hazards — [P]
+	  Conflitos causados por recursos compartilhados
+	  Recursos insuficientes
+	  Acesso simultâneo ao mesmo recurso
+	  Necessidade de espera
+
+
+ 24.4 Identificação dos Hazards — [P]
+
+  24.4.1 Análise da Sequência de Instruções — [P]
+	  Ordem das instruções
+	  Estágios ocupados
+	  Operações realizadas
+	  Dados utilizados
+	  Recursos solicitados
+
+  24.4.2 Identificação dos Conflitos — [P]
+	  Dependências
+	  Alterações de fluxo
+	  Compartilhamento de recursos
+	  Estágios envolvidos
+	  Momento do conflito
+
+  24.4.3 Impacto no Fluxo do Pipeline — [P]
+	  Instrução impedida
+	  Estágios afetados
+	  Ciclos adicionais
+	  Bolhas
+	  Alteração do tempo de execução
+
+
+
+25. Dependências entre Instruções — [P]
+
+ 25.1 Conceitos Fundamentais de Dependência — [P]
+
+  25.1.1 Dependência entre Instruções — [P]
+	  Relação entre instruções
+	  Uso de resultados anteriores
+	  Ordem necessária das operações
+	  Dependência de dados
+	  Influência sobre a execução sobreposta
+
+  25.1.2 Dependência Verdadeira — [P]
+	  Resultado produzido por uma instrução
+	  Resultado consumido por outra instrução
+	  Necessidade de preservar o valor correto
+	  Relação produtor × consumidor
+
+  25.1.3 Dependências Falsas — [P]
+	  Dependências causadas pelo nome do destino
+	  Ausência de dependência real dos dados
+	  Conflitos de reutilização de nomes
+	  Relação com WAR e WAW
+
+
+ 25.2 Identificação das Dependências — [P]
+
+  25.2.1 Instrução Produtora — [P]
+	  Produção de um resultado
+	  Disponibilidade do resultado
+	  Estágio de produção
+	  Momento de disponibilização
+
+  25.2.2 Instrução Consumidora — [P]
+	  Leitura do resultado
+	  Necessidade do dado
+	  Estágio de consumo
+	  Momento necessário
+
+  25.2.3 Distância entre Instruções — [I]
+	  Instruções consecutivas
+	  Instruções separadas
+	  Distância entre produtor e consumidor
+	  Influência sobre a possibilidade de espera
+
+
+ 25.3 Dependências e Ordem das Operações — [P]
+
+  25.3.1 Ordem de Leitura — [P]
+	  Momento da leitura
+	  Dependência de valores anteriores
+	  Relação entre instruções
+
+  25.3.2 Ordem de Escrita — [P]
+	  Momento da gravação
+	  Ordem dos resultados
+	  Preservação do resultado correto
+
+  25.3.3 Preservação da Semântica da Execução — [I]
+	  Resultado correto
+	  Ordem necessária
+	  Dependências relevantes
+	  Correção da execução
+
+
+
+26. Data Hazards — [P]
+
+ 26.1 Conceito de Data Hazard — [P]
+
+  26.1.1 Origem dos Conflitos de Dados — [P]
+	  Resultado ainda não disponível
+	  Instrução dependente
+	  Sobreposição das operações
+	  Tentativa antecipada de leitura ou escrita
+
+  26.1.2 Efeito sobre o Pipeline — [P]
+	  Espera pelo resultado
+	  Bloqueio da instrução
+	  Stalls
+	  Bolhas
+	  Redução do desempenho
+
+  26.1.3 Identificação de Data Hazards — [P]
+	  Instrução produtora
+	  Instrução consumidora
+	  Operação de leitura
+	  Operação de escrita
+	  Estágios envolvidos
+
+
+ 26.2 RAW — Read After Write — [P]
+
+  26.2.1 Conceito de RAW — [P]
+	  Leitura depois de escrita
+	  Instrução consumidora antes da disponibilização do resultado
+	  Dependência verdadeira
+	  Relação produtor × consumidor
+
+  26.2.2 Ocorrência de RAW no Pipeline — [P]
+	  Instrução anterior produzindo o dado
+	  Instrução seguinte necessitando do dado
+	  Resultado ainda não disponível
+	  Conflito entre estágios
+
+  26.2.3 Consequências do RAW — [P]
+	  Espera da instrução consumidora
+	  Stall
+	  Bolha
+	  Aumento dos ciclos
+	  Redução do throughput
+
+  26.2.4 Resolução do RAW — [P]
+	  Forwarding
+	  Bypassing
+	  Stalling
+	  Combinação de mecanismos
+	  Espera até a disponibilidade do dado
+
+
+ 26.3 WAR — Write After Read — [P]
+
+  26.3.1 Conceito de WAR — [P]
+	  Escrita depois de leitura
+	  Instrução posterior tentando escrever antes da leitura anterior
+	  Dependência falsa
+	  Conflito de nome
+
+  26.3.2 Ocorrência de WAR — [I]
+	  Ordem das leituras
+	  Ordem das escritas
+	  Sobreposição das instruções
+	  Maior relevância em organizações mais complexas
+
+  26.3.3 Consequências do WAR — [I]
+	  Alteração indevida do valor
+	  Violação da ordem necessária
+	  Necessidade de controle
+	  Possíveis atrasos
+
+  26.3.4 Tratamento do WAR — [I]
+	  Preservação da ordem necessária
+	  Escalonamento da execução
+	  Renomeação como mecanismo de eliminação
+	  Controle da escrita
+
+
+ 26.4 WAW — Write After Write — [P]
+
+  26.4.1 Conceito de WAW — [P]
+	  Escrita depois de escrita
+	  Duas instruções produzindo resultados para o mesmo destino
+	  Dependência falsa
+	  Necessidade de preservar a ordem das escritas
+
+  26.4.2 Ocorrência de WAW — [I]
+	  Múltiplas instruções produtoras
+	  Conclusões em momentos diferentes
+	  Sobreposição das operações
+	  Maior relevância em organizações com execução mais complexa
+
+  26.4.3 Consequências do WAW — [I]
+	  Resultado final incorreto
+	  Sobrescrita indevida
+	  Violação da ordem arquitetural
+	  Necessidade de controle
+
+  26.4.4 Tratamento do WAW — [I]
+	  Controle da ordem de escrita
+	  Escalonamento
+	  Renomeação como mecanismo de eliminação
+	  Preservação do resultado correto
+
+
+
+27. Structural Hazards — [P]
+
+ 27.1 Conceito de Structural Hazard — [P]
+
+  27.1.1 Conflito de Recursos — [P]
+	  Dois ou mais usos simultâneos do mesmo recurso
+	  Recurso compartilhado
+	  Capacidade insuficiente
+	  Conflito entre instruções
+
+  27.1.2 Recursos Envolvidos — [P]
+	  Unidades de execução
+	  Unidades de acesso
+	  Memória ou caminho compartilhado
+	  Barramentos
+	  Outros recursos internos
+
+  27.1.3 Identificação do Conflito — [P]
+	  Recursos solicitados por cada instrução
+	  Mesmo recurso no mesmo ciclo
+	  Capacidade disponível
+	  Instrução que precisa esperar
+
+
+ 27.2 Causas dos Structural Hazards — [I]
+
+  27.2.1 Recursos Insuficientes — [I]
+	  Quantidade limitada de recursos
+	  Compartilhamento obrigatório
+	  Capacidade menor que a demanda
+
+  27.2.2 Acesso Simultâneo — [I]
+	  Duas instruções no mesmo ciclo
+	  Mesmo recurso solicitado
+	  Conflito temporal
+	  Necessidade de arbitragem
+
+  27.2.3 Organização do Pipeline — [I]
+	  Estágios que utilizam o mesmo recurso
+	  Conflitos estruturais
+	  Limitações do projeto
+	  Influência da organização interna
+
+
+ 27.3 Tratamento dos Structural Hazards — [P]
+
+  27.3.1 Stalling — [P]
+	  Espera de uma das instruções
+	  Inserção de ciclos
+	  Redução temporária da ocupação
+	  Preservação da execução correta
+
+  27.3.2 Compartilhamento Controlado — [I]
+	  Organização dos acessos
+	  Controle temporal
+	  Priorização
+	  Evitação de conflitos
+
+  27.3.3 Recursos Adicionais — [I]
+	  Aumento da capacidade
+	  Recursos duplicados
+	  Unidades adicionais
+	  Redução dos conflitos
+
+  27.3.4 Trade-off entre Recursos e Desempenho — [I]
+	  Mais recursos
+	  Menos conflitos
+	  Maior complexidade
+	  Maior custo de implementação
+	  Benefício de desempenho
+
+
+
+28. Control Hazards — [P]
+
+ 28.1 Conceito de Control Hazard — [P]
+
+  28.1.1 Alteração do Fluxo de Controle — [P]
+	  Mudança da sequência de instruções
+	  Branch
+	  Salto
+	  Nova instrução a ser buscada
+
+  28.1.2 Incerteza sobre a Próxima Instrução — [P]
+	  Condição ainda não resolvida
+	  Caminho desconhecido
+	  Instruções subsequentes potencialmente incorretas
+	  Continuidade do Fetch
+
+  28.1.3 Impacto sobre o Pipeline — [P]
+	  Instruções incorretamente carregadas
+	  Flush
+	  Ciclos desperdiçados
+	  Branch penalty
+	  Redução do throughput
+
+
+ 28.2 Tipos de Alteração do Fluxo — [I]
+
+  28.2.1 Desvios Condicionais — [I]
+	  Branch dependente de condição
+	  Avaliação da condição
+	  Escolha do caminho
+	  Incerteza temporária
+
+  28.2.2 Desvios Incondicionais — [I]
+	  Alteração direta do fluxo
+	  Novo endereço de execução
+	  Redirecionamento do Fetch
+
+  28.2.3 Outras Alterações do Fluxo — [I]
+	  Mudança do endereço de execução
+	  Transferência de controle
+	  Interrupção do fluxo sequencial
+	  Necessidade de reorganização
+
+
+ 28.3 Consequências dos Control Hazards — [P]
+
+  28.3.1 Instruções Incorretamente Carregadas — [P]
+	  Instruções especulativas ou antecipadas
+	  Caminho incorreto
+	  Instruções inválidas após a decisão
+
+  28.3.2 Flush do Pipeline — [P]
+	  Descarte das instruções incorretas
+	  Limpeza dos estágios afetados
+	  Reinício do fluxo correto
+	  Ciclos perdidos
+
+  28.3.3 Branch Penalty — [P]
+	  Custo temporal do desvio
+	  Ciclos perdidos
+	  Profundidade do Pipeline
+	  Impacto sobre o desempenho
+
+
+ 28.4 Tratamento Básico dos Control Hazards — [P]
+
+  28.4.1 Espera pela Resolução do Desvio — [P]
+	  Suspensão temporária
+	  Aguardo da condição
+	  Redução do paralelismo
+	  Preservação da correção
+
+  28.4.2 Flush e Redirecionamento — [P]
+	  Descarte do caminho incorreto
+	  Redirecionamento do Fetch
+	  Reinício da sequência correta
+	  Recuperação do fluxo
+
+  28.4.3 Predição como Solução — [I]
+	  Antecipação do caminho provável
+	  Redução das esperas
+	  Possibilidade de acerto ou erro
+	  Relação com Branch Prediction
+
+
+
+29. Stall, Bolhas e Interlocks — [P]
+
+ 29.1 Stall no Pipeline — [P]
+
+  29.1.1 Conceito de Stall — [P]
+	  Interrupção temporária do avanço
+	  Espera de uma instrução
+	  Ciclos adicionais
+	  Preservação da correção
+
+  29.1.2 Causas de Stall — [P]
+	  Data Hazards
+	  Structural Hazards
+	  Control Hazards
+	  Dados ainda indisponíveis
+	  Recursos ocupados
+
+  29.1.3 Efeito do Stall — [P]
+	  Aumento do tempo de execução
+	  Redução do throughput
+	  Aumento do CPI
+	  Redução do IPC
+	  Estágios parcialmente ociosos
+
+
+ 29.2 Bolhas no Pipeline — [P]
+
+  29.2.1 Conceito de Bolha — [P]
+	  Espaço vazio entre instruções
+	  Ciclo sem trabalho útil em determinado estágio
+	  Consequência de uma espera
+	  Redução da ocupação
+
+  29.2.2 Inserção de Bolhas — [P]
+	  Bloqueio do avanço
+	  Inserção de ciclo vazio
+	  Liberação posterior da dependência
+	  Continuidade segura do fluxo
+
+  29.2.3 Propagação da Bolha — [P]
+	  Movimento da bolha pelos estágios
+	  Estágios afetados
+	  Duração da espera
+	  Retorno ao fluxo normal
+
+
+ 29.3 Pipeline Interlock — [P]
+
+  29.3.1 Conceito de Interlock — [P]
+	  Mecanismo automático de detecção e espera
+	  Controle da progressão das instruções
+	  Prevenção de execução incorreta
+	  Coordenação dos estágios
+
+  29.3.2 Detecção do Conflito — [P]
+	  Comparação entre instruções
+	  Identificação da dependência
+	  Verificação da disponibilidade dos dados
+	  Identificação do recurso ocupado
+
+  29.3.3 Ação do Interlock — [P]
+	  Bloqueio temporário
+	  Inserção de bolhas
+	  Manutenção das instruções anteriores
+	  Liberação após resolução
+
+  29.3.4 Interlock × Desempenho — [I]
+	  Correção da execução
+	  Custo dos stalls
+	  Redução do desempenho
+	  Necessidade de minimizar esperas
+
+
+
+30. Hazard Detection e Resolução dos Conflitos — [P]
+
+ 30.1 Detecção de Hazards — [P]
+
+  30.1.1 Identificação das Dependências — [P]
+	  Instrução produtora
+	  Instrução consumidora
+	  Destinos
+	  Fontes
+	  Relações entre instruções
+
+  30.1.2 Comparação das Informações — [P]
+	  Identificação dos operandos
+	  Comparação entre destinos e fontes
+	  Verificação dos estágios
+	  Disponibilidade dos resultados
+
+  30.1.3 Decisão de Controle — [P]
+	  Continuar execução
+	  Inserir stall
+	  Inserir bolha
+	  Redirecionar fluxo
+	  Liberar após resolução
+
+
+ 30.2 Resolução dos Data Hazards — [P]
+
+  30.2.1 Resolução por Espera — [P]
+	  Stall
+	  Bolha
+	  Aguardo da disponibilidade
+	  Continuidade após a resolução
+
+  30.2.2 Resolução por Encaminhamento — [P]
+	  Forwarding
+	  Bypassing
+	  Transferência direta do resultado
+	  Redução da espera
+
+  30.2.3 Combinação de Técnicas — [P]
+	  Forwarding quando possível
+	  Stall quando necessário
+	  Identificação de casos não resolvidos
+	  Minimização dos ciclos perdidos
+
+
+ 30.3 Resolução dos Control Hazards — [P]
+
+  30.3.1 Espera pela Decisão — [P]
+	  Suspensão do fluxo
+	  Resolução do branch
+	  Continuação pelo caminho correto
+
+  30.3.2 Flush — [P]
+	  Descarte das instruções incorretas
+	  Limpeza dos estágios
+	  Redirecionamento
+	  Recuperação
+
+  30.3.3 Predição — [I]
+	  Escolha antecipada do caminho
+	  Redução da espera
+	  Possibilidade de erro
+	  Recuperação após erro
+
+
+ 30.4 Resolução dos Structural Hazards — [P]
+
+  30.4.1 Espera pelo Recurso — [P]
+	  Stall da instrução
+	  Liberação do recurso
+	  Retomada da execução
+
+  30.4.2 Reorganização do Uso dos Recursos — [I]
+	  Distribuição dos acessos
+	  Controle temporal
+	  Redução da simultaneidade conflitante
+
+  30.4.3 Aumento da Capacidade — [I]
+	  Recursos adicionais
+	  Redução da contenção
+	  Maior capacidade de execução
+	  Custo adicional
+
+
+
+31. Forwarding e Bypassing — [P]
+
+ 31.1 Conceito de Forwarding — [P]
+
+  31.1.1 Definição — [P]
+	  Redirecionamento de dados
+	  Resultado encaminhado diretamente
+	  Evitação da espera pela gravação final
+	  Redução de dependências temporais
+
+  31.1.2 Objetivo do Forwarding — [P]
+	  Disponibilizar o resultado antecipadamente
+	  Reduzir stalls
+	  Melhorar o fluxo
+	  Aumentar a utilização do Pipeline
+
+  31.1.3 Localização do Encaminhamento — [P]
+	  Saída de um estágio
+	  Entrada de outro estágio
+	  Caminhos de bypass
+	  Transferência direta
+
+
+ 31.2 Funcionamento do Bypassing — [P]
+
+  31.2.1 Resultado Produzido — [P]
+	  Geração do resultado
+	  Disponibilidade intermediária
+	  Resultado ainda não gravado no destino final
+
+  31.2.2 Redirecionamento do Resultado — [P]
+	  Seleção da origem
+	  Encaminhamento para o consumidor
+	  Evitação do caminho convencional
+	  Uso antecipado do dado
+
+  31.2.3 Consumo do Resultado — [P]
+	  Recepção pela instrução dependente
+	  Execução com menor espera
+	  Continuidade da sobreposição
+
+
+ 31.3 Forwarding × Stalling — [P]
+
+  31.3.1 Situações Resolvidas por Forwarding — [P]
+	  Resultado disponível antecipadamente
+	  Dependência de dados encaminhável
+	  Redução ou eliminação de bolhas
+
+  31.3.2 Situações que Exigem Stall — [P]
+	  Resultado ainda indisponível
+	  Dependência não encaminhável
+	  Necessidade de espera
+
+  31.3.3 Combinação Forwarding + Stall — [P]
+	  Encaminhamento quando possível
+	  Stall apenas quando necessário
+	  Redução dos ciclos perdidos
+	  Melhor aproveitamento do Pipeline
+
+
+ 31.4 Impacto do Forwarding no Desempenho — [I]
+
+  31.4.1 Redução de Stalls — [I]
+	  Menor quantidade de bolhas
+	  Menor tempo de espera
+	  Maior continuidade do fluxo
+
+  31.4.2 Melhoria do Throughput — [I]
+	  Maior taxa de conclusão
+	  Melhor ocupação dos estágios
+	  Menor perda de ciclos
+
+  31.4.3 Complexidade Adicional — [I]
+	  Caminhos adicionais
+	  Controle de seleção
+	  Maior complexidade do hardware
+	  Trade-off entre desempenho e complexidade
+
+
+
+32. Load-Use Hazard e Dependências de Dados Específicas — [P]
+
+ 32.1 Conceito de Load-Use Hazard — [P]
+
+  32.1.1 Dependência após uma Operação de Load — [P]
+	  Instrução de carregamento
+	  Resultado ainda indisponível
+	  Instrução seguinte dependente
+	  Dependência temporal
+
+  32.1.2 Origem do Conflito — [P]
+	  Resultado produzido em estágio posterior
+	  Consumidor necessitando do dado antecipadamente
+	  Limitação do encaminhamento
+	  Necessidade de espera
+
+  32.1.3 Consequências — [P]
+	  Stall
+	  Bolha
+	  Aumento dos ciclos
+	  Redução do throughput
+
+
+ 32.2 Tratamento do Load-Use Hazard — [P]
+
+  32.2.1 Detecção — [P]
+	  Identificação da instrução de Load
+	  Identificação da instrução dependente
+	  Comparação dos operandos
+	  Verificação da disponibilidade
+
+  32.2.2 Stall Necessário — [P]
+	  Inserção de espera
+	  Inserção de bolha
+	  Aguardo do resultado
+	  Continuação após disponibilidade
+
+  32.2.3 Forwarding após a Espera — [P]
+	  Encaminhamento do resultado
+	  Redução de esperas adicionais
+	  Continuidade da execução
+
+
+ 32.3 Análise do Load-Use Hazard — [I]
+
+  32.3.1 Diagrama Temporal — [I]
+	  Instrução produtora
+	  Instrução consumidora
+	  Ciclo do conflito
+	  Ciclo do stall
+	  Retomada do fluxo
+
+  32.3.2 Impacto no Desempenho — [I]
+	  Ciclos adicionais
+	  CPI
+	  Throughput
+	  Utilização do Pipeline
+
+  32.3.3 Comparação com Outras Dependências — [I]
+	  RAW comum
+	  Load-Use
+	  Diferenças temporais
+	  Necessidade de mecanismos específicos
+
+
+
+33. Flush e Recuperação do Pipeline — [P]
+
+ 33.1 Conceito de Flush — [P]
+
+  33.1.1 Definição de Flush — [P]
+	  Descarte das instruções em processamento
+	  Limpeza de instruções inválidas
+	  Interrupção do caminho incorreto
+	  Preparação para o fluxo correto
+
+  33.1.2 Causas de Flush — [P]
+	  Branch tomado
+	  Predição incorreta
+	  Alteração do fluxo
+	  Instruções inválidas
+	  Situações de recuperação
+
+  33.1.3 Efeito do Flush — [P]
+	  Perda de trabalho antecipado
+	  Ciclos desperdiçados
+	  Redução do throughput
+	  Branch penalty
+	  Reinício do fluxo
+
+
+ 33.2 Processo de Recuperação — [P]
+
+  33.2.1 Identificação do Caminho Incorreto — [P]
+	  Decisão de controle
+	  Detecção da instrução inválida
+	  Determinação do novo fluxo
+
+  33.2.2 Limpeza dos Estágios — [P]
+	  Descarte das instruções incorretas
+	  Remoção das informações inválidas
+	  Inserção do novo fluxo
+
+  33.2.3 Retomada da Execução — [P]
+	  Busca da instrução correta
+	  Preenchimento novamente do Pipeline
+	  Retorno à execução normal
+
+
+ 33.3 Flush × Stall — [I]
+
+  33.3.1 Diferença Conceitual — [I]
+	  Stall como espera
+	  Flush como descarte
+	  Causas diferentes
+	  Efeitos diferentes
+
+  33.3.2 Impacto no Fluxo — [I]
+	  Stall mantendo instruções
+	  Flush removendo instruções
+	  Ciclos perdidos
+	  Recuperação do Pipeline
+
+  33.3.3 Impacto no Desempenho — [I]
+	  Penalidade temporal
+	  Redução do throughput
+	  Aumento do tempo de execução
+	  Influência sobre o CPI
+
+
+
+34. Integração dos Mecanismos de Controle de Hazards — [I]
+
+ 34.1 Coordenação dos Mecanismos — [I]
+
+  34.1.1 Hazard Detection + Interlock — [I]
+	  Detecção automática
+	  Bloqueio da progressão
+	  Inserção de espera
+	  Liberação após resolução
+
+  34.1.2 Forwarding + Hazard Detection — [I]
+	  Identificação da dependência
+	  Verificação da possibilidade de encaminhamento
+	  Forwarding quando possível
+	  Stall quando necessário
+
+  34.1.3 Flush + Controle de Fluxo — [I]
+	  Identificação do caminho incorreto
+	  Descarte
+	  Redirecionamento
+	  Recuperação
+
+
+ 34.2 Fluxo de Resolução de um Hazard — [P]
+
+  34.2.1 Detecção — [P]
+	  Identificação do conflito
+	  Identificação das instruções envolvidas
+	  Identificação do recurso ou dependência
+
+  34.2.2 Decisão — [P]
+	  Continuar
+	  Encaminhar
+	  Esperar
+	  Inserir bolha
+	  Realizar flush
+
+  34.2.3 Recuperação — [P]
+	  Liberação da instrução
+	  Retomada do fluxo
+	  Continuidade do Pipeline
+	  Retorno à operação normal
+
+
+ 34.3 Efeito Conjunto dos Hazards — [I]
+
+  34.3.1 Data + Control Hazards — [I]
+	  Dependências de dados
+	  Alterações de fluxo
+	  Interação entre penalidades
+	  Impacto acumulado
+
+  34.3.2 Data + Structural Hazards — [I]
+	  Dependência e contenção de recursos
+	  Esperas combinadas
+	  Redução da utilização
+
+  34.3.3 Múltiplos Conflitos — [I]
+	  Mais de um hazard simultâneo
+	  Prioridade de resolução
+	  Coordenação dos mecanismos
+	  Impacto sobre o desempenho
+
+
+
+35. Análise de Hazards por Diagramas Temporais — [P]
+
+ 35.1 Identificação Visual dos Hazards — [P]
+
+  35.1.1 Dependência RAW no Diagrama — [P]
+	  Instrução produtora
+	  Instrução consumidora
+	  Estágios envolvidos
+	  Momento da dependência
+	  Necessidade de forwarding ou stall
+
+  35.1.2 Stall no Diagrama — [P]
+	  Ciclo de espera
+	  Bolha
+	  Estágios afetados
+	  Retomada do fluxo
+
+  35.1.3 Flush no Diagrama — [P]
+	  Instruções descartadas
+	  Ciclos perdidos
+	  Novo caminho
+	  Recuperação
+
+
+ 35.2 Análise de Data Hazards — [P]
+
+  35.2.1 RAW — [P]
+	  Identificação
+	  Causa
+	  Mecanismo de resolução
+	  Ciclos adicionais
+
+  35.2.2 WAR — [I]
+	  Identificação
+	  Conflito de ordem
+	  Necessidade de controle
+	  Relação com organizações avançadas
+
+  35.2.3 WAW — [I]
+	  Identificação
+	  Conflito de escrita
+	  Preservação da ordem
+	  Relação com organizações avançadas
+
+
+ 35.3 Análise de Control e Structural Hazards — [I]
+
+  35.3.1 Control Hazard — [I]
+	  Identificação do branch
+	  Instruções afetadas
+	  Flush
+	  Penalidade
+
+  35.3.2 Structural Hazard — [I]
+	  Recurso compartilhado
+	  Instruções concorrentes
+	  Stall
+	  Ciclos de espera
+
+  35.3.3 Comparação dos Hazards — [I]
+	  Causa
+	  Identificação
+	  Mecanismo de resolução
+	  Penalidade
+	  Impacto no desempenho
+
+
+
+36. Impacto dos Hazards no Desempenho — [I]
+
+ 36.1 Penalidade dos Hazards — [I]
+
+  36.1.1 Ciclos Perdidos — [I]
+	  Stalls
+	  Bolhas
+	  Flushes
+	  Ciclos improdutivos
+
+  36.1.2 Redução do Throughput — [I]
+	  Menor taxa de conclusão
+	  Menor aproveitamento
+	  Interrupções do fluxo
+
+  36.1.3 Aumento da Latência — [I]
+	  Esperas adicionais
+	  Recuperações
+	  Tempo maior de conclusão
+
+
+ 36.2 Hazards e Métricas de Desempenho — [I]
+
+  36.2.1 Hazards e CPI — [I]
+	  Ciclos adicionais
+	  Aumento do CPI
+	  Penalidade média
+
+  36.2.2 Hazards e IPC — [I]
+	  Menos instruções concluídas por ciclo
+	  Redução do IPC
+	  Perda de eficiência
+
+  36.2.3 Hazards e Speedup — [I]
+	  Redução do ganho
+	  Diferença entre Pipeline ideal e real
+	  Penalidade acumulada
+
+
+ 36.3 Redução do Impacto dos Hazards — [I]
+
+  36.3.1 Redução de Data Hazards — [I]
+	  Forwarding
+	  Bypassing
+	  Redução de stalls
+	  Organização adequada das dependências
+
+  36.3.2 Redução de Control Hazards — [I]
+	  Decisão mais rápida
+	  Predição
+	  Redução do flush
+	  Redução da penalidade
+
+  36.3.3 Redução de Structural Hazards — [I]
+	  Recursos adicionais
+	  Melhor distribuição
+	  Menor contenção
+	  Maior capacidade de processamento
+
+
+
+37. Comparação dos Tipos de Hazards — [I]
+
+ 37.1 Data × Control × Structural Hazards — [I]
+
+  37.1.1 Data Hazards — [I]
+	  Dependências entre dados
+	  RAW
+	  WAR
+	  WAW
+	  Forwarding
+	  Stalling
+
+  37.1.2 Control Hazards — [I]
+	  Alterações do fluxo
+	  Branches
+	  Flush
+	  Predição
+	  Branch penalty
+
+  37.1.3 Structural Hazards — [I]
+	  Conflitos de recursos
+	  Compartilhamento
+	  Stalling
+	  Recursos adicionais
+
+
+ 37.2 Comparação dos Mecanismos de Resolução — [I]
+
+  37.2.1 Stall — [I]
+	  Espera
+	  Bolha
+	  Correção
+	  Penalidade
+
+  37.2.2 Forwarding — [I]
+	  Encaminhamento
+	  Redução de espera
+	  Dependências de dados
+	  Complexidade adicional
+
+  37.2.3 Flush — [I]
+	  Descarte
+	  Recuperação
+	  Alteração de fluxo
+	  Penalidade temporal
+
+
+ 37.3 Critérios de Escolha do Mecanismo — [I]
+
+  37.3.1 Natureza do Conflito — [I]
+	  Dados
+	  Controle
+	  Recursos
+	  Tipo específico de hazard
+
+  37.3.2 Momento do Conflito — [I]
+	  Estágio de detecção
+	  Estágio de resolução
+	  Tempo de disponibilidade
+
+  37.3.3 Custo da Resolução — [I]
+	  Ciclos adicionais
+	  Complexidade
+	  Recursos necessários
+	  Impacto no desempenho
+
+
+
+38. Resumo Geral de Hazards, Dependências e Controle — [I]
+
+ 38.1 Revisão dos Hazards — [I]
+
+  38.1.1 Conceito Geral — [I]
+	  Conflitos no Pipeline
+	  Causas
+	  Consequências
+	  Relação com o paralelismo
+
+  38.1.2 Data Hazards — [I]
+	  Dependências
+	  RAW
+	  WAR
+	  WAW
+	  Resolução
+
+  38.1.3 Control e Structural Hazards — [I]
+	  Alterações do fluxo
+	  Conflitos de recursos
+	  Flush
+	  Stall
+
+
+ 38.2 Revisão dos Mecanismos — [I]
+
+  38.2.1 Stall e Bolha — [I]
+	  Espera
+	  Inserção de ciclos
+	  Impacto
+
+  38.2.2 Interlock e Hazard Detection — [I]
+	  Detecção
+	  Bloqueio
+	  Liberação
+
+  38.2.3 Forwarding e Bypassing — [I]
+	  Encaminhamento
+	  Redução de stalls
+	  Dependências resolvidas
+
+  38.2.4 Flush e Recuperação — [I]
+	  Descarte
+	  Redirecionamento
+	  Retomada
+
+
+ 38.3 Preparação para Técnicas Avançadas — [I]
+
+  38.3.1 Branch Prediction — [I]
+	  Predição do fluxo
+	  Redução de Control Hazards
+	  Relação com especulação
+
+  38.3.2 Execução Fora de Ordem — [I]
+	  Reorganização da execução
+	  Aproveitamento do paralelismo
+	  Relação com WAR e WAW
+
+  38.3.3 Renomeação de Registradores — [I]
+	  Redução de dependências falsas
+	  Tratamento de WAR
+	  Tratamento de WAW
+	  Preparação para execução dinâmica
+
+
+
+39. Conclusão do Estudo de Hazards, Dependências e Mecanismos de Controle — [V]
+
+ 39.1 Síntese Final — [V]
+
+  39.1.1 Hazards — [V]
+	  Conflitos de dados
+	  Conflitos de controle
+	  Conflitos estruturais
+	  Impacto sobre o Pipeline
+
+  39.1.2 Dependências — [V]
+	  Dependências verdadeiras
+	  Dependências falsas
+	  RAW
+	  WAR
+	  WAW
+
+  39.1.3 Mecanismos de Controle — [V]
+	  Stall
+	  Bolhas
+	  Interlock
+	  Hazard Detection
+	  Forwarding
+	  Bypassing
+	  Flush
+
+
+ 39.2 Competências Desenvolvidas — [V]
+
+  39.2.1 Conhecimentos Adquiridos — [V]
+	  Identificação dos Hazards
+	  Análise das dependências
+	  Interpretação de diagramas
+	  Escolha dos mecanismos de resolução
+	  Avaliação das penalidades
+
+  39.2.2 Preparação para Estudos Posteriores — [V]
+	  Branch Prediction
+	  Execução especulativa
+	  Execução fora de ordem
+	  Renomeação de registradores
+	  Pipeline Superescalar
+	  Técnicas avançadas de paralelismo
+
+
+ 39.3 Encerramento — [V]
+
+  39.3.1 Visão Geral Final — [V]
+	  Relação entre paralelismo e Hazards
+	  Importância do controle dos conflitos
+	  Preservação da execução correta
+	  Redução das penalidades
+	  Base para o estudo das técnicas avançadas de Pipeline
+
