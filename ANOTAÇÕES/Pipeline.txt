@@ -1,0 +1,614 @@
+                                                  PIPELINE 
+
+
+A classificação abaixo indica a profundidade recomendada para cada grande tópico da lista.
+
+[P] Profundidade — estudar mecanismos, estruturas, funcionamento interno e relações entre componentes.
+[I] Intermediário — compreender bem o funcionamento e as relações principais, sem precisar dominar todos os
+   detalhes de implementação.
+[V] Visão geral — saber o que é, para que serve e como se relaciona com as Memórias.
+
+
+
+PARTE 1 — FUNDAMENTOS, CONCEITOS E ORGANIZAÇÃO DO PIPELINE
+
+
+1. Introdução ao Pipeline — [I]
+
+ 1.1 Conceitos Fundamentais do Pipeline — [I]
+
+  1.1.1 Conceito de Pipeline — [I]
+	  Definição de Pipeline
+	  Conceito de segmentação
+	  Divisão da execução em etapas
+	  Processamento sobreposto
+	  Execução simultânea de diferentes etapas
+	  Pipeline como técnica de organização da execução
+
+  1.1.2 Objetivos do Pipeline — [I]
+	  Aumento do throughput
+	  Melhor aproveitamento dos ciclos de clock
+	  Sobreposição das etapas de execução
+	  Aumento da taxa de instruções concluídas
+	  Utilização mais eficiente dos recursos
+	  Exploração do paralelismo entre instruções
+
+  1.1.3 Importância do Pipeline — [I]
+	  Papel no desempenho dos processadores
+	  Papel no paralelismo em nível de instrução
+	  Redução do tempo total para múltiplas instruções
+	  Melhor aproveitamento dos recursos de execução
+	  Importância para microarquiteturas modernas
+
+
+ 1.2 Pipeline na Arquitetura e Organização de Computadores — [I]
+
+  1.2.1 Pipeline como Técnica de Paralelismo — [I]
+	  Paralelismo entre instruções
+	  Execução sobreposta
+	  Simultaneidade entre etapas
+	  Paralelismo em nível de instrução
+	  Aproveitamento da independência entre instruções
+
+  1.2.2 Arquitetura × Organização × Microarquitetura × Pipeline — [I]
+	  Papel da Arquitetura
+	  Papel da Organização
+	  Papel da Microarquitetura
+	  Localização do Pipeline
+	  Pipeline como característica de organização interna
+	  Relação entre arquitetura e implementação
+
+  1.2.3 Pipeline e Execução de Instruções — [I]
+	  Fluxo das instruções
+	  Divisão da execução
+	  Sequenciamento das etapas
+	  Sobreposição das instruções
+	  Progressão das instruções pelo Pipeline
+
+
+ 1.3 Execução Sequencial × Execução com Pipeline — [I]
+
+  1.3.1 Execução Sequencial — [I]
+	  Processamento de uma instrução por vez
+	  Conclusão de uma instrução antes da próxima
+	  Ausência de sobreposição
+	  Utilização sequencial das etapas
+	  Limitações do modelo sequencial
+
+  1.3.2 Execução com Pipeline — [I]
+	  Divisão das instruções em etapas
+	  Início de uma nova instrução antes da conclusão da anterior
+	  Sobreposição das etapas
+	  Processamento simultâneo em diferentes estágios
+	  Aproveitamento dos ciclos de clock
+
+  1.3.3 Diferenças Fundamentais — [I]
+	  Organização da execução
+	  Sobreposição de operações
+	  Utilização dos recursos
+	  Taxa de processamento
+	  Tempo total para múltiplas instruções
+	  Paralelismo explorado
+
+
+ 1.4 Terminologia Fundamental do Pipeline — [I]
+
+  1.4.1 Elementos Básicos — [I]
+	  Estágio
+	  Ciclo de Pipeline
+	  Instrução em trânsito
+	  Entrada do Pipeline
+	  Saída do Pipeline
+	  Preenchimento do Pipeline
+	  Esvaziamento do Pipeline
+
+  1.4.2 Conceitos Temporais Básicos — [I]
+	  Ciclo de clock
+	  Latência
+	  Throughput
+	  Tempo de execução
+	  Intervalo entre instruções
+	  Taxa de conclusão
+
+  1.4.3 Estado do Pipeline — [I]
+	  Pipeline vazio
+	  Pipeline em preenchimento
+	  Pipeline ocupado
+	  Pipeline cheio
+	  Pipeline em esvaziamento
+	  Fluxo contínuo de instruções
+
+
+
+2. Estrutura e Segmentação do Pipeline — [P]
+
+ 2.1 Segmentação da Execução — [P]
+
+  2.1.1 Divisão do Trabalho em Estágios — [P]
+	  Decomposição da execução
+	  Etapas funcionais
+	  Operações realizadas em cada etapa
+	  Separação das responsabilidades
+	  Encadeamento das etapas
+
+  2.1.2 Independência entre Estágios — [P]
+	  Operações parcialmente independentes
+	  Execução simultânea dos estágios
+	  Transferência entre etapas
+	  Dependências temporais
+	  Limites funcionais dos estágios
+
+  2.1.3 Fluxo de uma Instrução pelo Pipeline — [P]
+	  Entrada da instrução
+	  Processamento estágio a estágio
+	  Transferência entre estágios
+	  Avanço sincronizado
+	  Saída da instrução
+
+
+ 2.2 Estágios do Pipeline — [P]
+
+  2.2.1 Fetch — [P]
+	  Busca da instrução
+	  Localização da próxima instrução
+	  Entrada da instrução no Pipeline
+	  Transferência da instrução para o estágio seguinte
+	  Relação com o fluxo de instruções
+
+  2.2.2 Decode — [P]
+	  Decodificação da instrução
+	  Identificação da operação
+	  Identificação dos recursos necessários
+	  Geração e encaminhamento das informações de controle
+	  Preparação para as etapas seguintes
+
+  2.2.3 Operand Fetch — [P]
+	  Busca dos operandos
+	  Disponibilização dos dados para execução
+	  Operandos necessários à operação
+	  Preparação dos dados
+	  Relação com o fluxo de execução
+
+  2.2.4 Execute — [P]
+	  Execução da operação
+	  Processamento dos operandos
+	  Produção do resultado
+	  Operações aritméticas
+	  Operações lógicas
+	  Operações de comparação
+
+  2.2.5 Memory Access — [P]
+	  Acesso aos dados
+	  Leitura de dados
+	  Escrita de dados
+	  Passagem das instruções que não utilizam memória
+	  Relação com o fluxo do Pipeline
+
+  2.2.6 Write Back — [P]
+	  Escrita do resultado
+	  Finalização da instrução
+	  Disponibilização do resultado
+	  Atualização do estado arquitetural
+	  Saída da instrução do Pipeline
+
+
+ 2.3 Organização dos Estágios — [P]
+
+  2.3.1 Sequenciamento dos Estágios — [P]
+	  Ordem das etapas
+	  Encadeamento dos estágios
+	  Fluxo progressivo
+	  Passagem de uma etapa para outra
+	  Continuidade da execução
+
+  2.3.2 Divisão das Responsabilidades — [P]
+	  Função de cada estágio
+	  Distribuição das operações
+	  Separação funcional
+	  Redução da carga por estágio
+	  Cooperação entre estágios
+
+  2.3.3 Interação entre Estágios — [P]
+	  Transferência de informações
+	  Dados entre estágios
+	  Sinais de controle entre estágios
+	  Dependências de processamento
+	  Coordenação da execução
+
+
+ 2.4 Registradores de Pipeline — [P]
+
+  2.4.1 Função dos Registradores de Pipeline — [P]
+	  Separação entre estágios
+	  Armazenamento temporário das informações
+	  Retenção dos dados entre ciclos
+	  Retenção dos sinais de controle
+	  Transferência sincronizada
+
+  2.4.2 Informações Transportadas — [P]
+	  Dados intermediários
+	  Resultados parciais
+	  Identificação da instrução
+	  Sinais de controle
+	  Informações necessárias ao estágio seguinte
+
+  2.4.3 Sincronização entre Estágios — [P]
+	  Atualização por clock
+	  Transferência entre ciclos
+	  Estado dos registradores de Pipeline
+	  Coordenação temporal
+	  Consistência das informações
+
+
+
+3. Organização Temporal do Pipeline — [P]
+
+ 3.1 Funcionamento por Ciclos de Clock — [P]
+
+  3.1.1 Ciclo de Pipeline — [P]
+	  Unidade temporal da execução
+	  Avanço das instruções
+	  Atualização dos estágios
+	  Transferência entre ciclos
+	  Relação entre clock e Pipeline
+
+  3.1.2 Progressão das Instruções — [P]
+	  Entrada de novas instruções
+	  Avanço das instruções
+	  Sobreposição das etapas
+	  Conclusão das instruções
+	  Entrada contínua de novas instruções
+
+  3.1.3 Operação Simultânea dos Estágios — [P]
+	  Estágios ocupados simultaneamente
+	  Diferentes instruções em diferentes estágios
+	  Trabalho concorrente entre estágios
+	  Aproveitamento do ciclo
+	  Continuidade do processamento
+
+
+ 3.2 Preenchimento e Esvaziamento — [P]
+
+  3.2.1 Preenchimento do Pipeline — [P]
+	  Entrada inicial das instruções
+	  Ocupação progressiva dos estágios
+	  Estágios inicialmente vazios
+	  Crescimento da ocupação
+	  Formação do Pipeline cheio
+
+  3.2.2 Pipeline Cheio — [P]
+	  Ocupação simultânea dos estágios
+	  Fluxo contínuo
+	  Uma instrução em cada estágio
+	  Taxa de processamento estabilizada
+	  Condição ideal de ocupação
+
+  3.2.3 Esvaziamento do Pipeline — [P]
+	  Entrada da última instrução
+	  Conclusão das instruções restantes
+	  Redução progressiva da ocupação
+	  Estágios finais
+	  Encerramento do fluxo
+
+
+ 3.3 Diagrama Temporal do Pipeline — [P]
+
+  3.3.1 Representação Ciclo a Ciclo — [P]
+	  Linhas de tempo
+	  Estágios por ciclo
+	  Instruções por ciclo
+	  Sobreposição visual
+	  Identificação da ocupação dos estágios
+
+  3.3.2 Rastreamento de Instruções — [P]
+	  Acompanhamento de uma instrução
+	  Acompanhamento de múltiplas instruções
+	  Entrada e saída dos estágios
+	  Identificação do ciclo de conclusão
+	  Verificação do fluxo
+
+  3.3.3 Interpretação de Diagramas — [P]
+	  Estágios ocupados
+	  Estágios vazios
+	  Sobreposição
+	  Intervalos de espera
+	  Fluxo normal de execução
+
+
+
+4. Organização do Pipeline no Caminho de Execução — [P]
+
+ 4.1 Pipeline e Caminho de Dados — [I]
+
+  4.1.1 Relação entre Pipeline e Datapath — [I]
+	  Segmentação do caminho de execução
+	  Divisão das operações
+	  Fluxo de dados entre estágios
+	  Organização das etapas
+	  Pipeline como organização temporal do Datapath
+
+  4.1.2 Caminho de Dados Segmentado — [P]
+	  Divisão funcional do Datapath
+	  Estágios de processamento
+	  Caminhos entre estágios
+	  Transferência de informações
+	  Execução sobreposta
+
+  4.1.3 Pipeline e Componentes Funcionais — [I]
+	  Distribuição das operações
+	  Utilização das unidades funcionais
+	  Passagem das instruções
+	  Cooperação entre componentes
+	  Organização funcional do Pipeline
+
+
+ 4.2 Dados e Controle no Pipeline — [P]
+
+  4.2.1 Fluxo de Dados entre Estágios — [P]
+	  Dados de entrada
+	  Dados intermediários
+	  Resultados parciais
+	  Transferência dos dados
+	  Dados de saída
+
+  4.2.2 Fluxo de Controle entre Estágios — [P]
+	  Sinais de controle
+	  Propagação dos sinais
+	  Controle associado à instrução
+	  Sincronização do controle
+	  Atualização do controle por estágio
+
+  4.2.3 Coordenação entre Dados e Controle — [P]
+	  Correspondência entre dados e controle
+	  Associação dos sinais à instrução
+	  Consistência entre estágios
+	  Coordenação temporal
+	  Execução correta da instrução
+
+
+ 4.3 Organização do Fluxo de Instruções — [P]
+
+  4.3.1 Entrada de Instruções — [P]
+	  Inserção de novas instruções
+	  Intervalo entre entradas
+	  Ordem de entrada
+	  Continuidade do fluxo
+	  Capacidade de alimentação do Pipeline
+
+  4.3.2 Progressão das Instruções — [P]
+	  Avanço entre estágios
+	  Ordem de processamento
+	  Sobreposição
+	  Permanência nos estágios
+	  Continuidade do fluxo
+
+  4.3.3 Saída das Instruções — [P]
+	  Conclusão da execução
+	  Saída do último estágio
+	  Taxa de conclusão
+	  Ordem de saída
+	  Preparação para novas instruções
+
+
+
+5. Profundidade e Organização dos Estágios — [P]
+
+ 5.1 Número de Estágios — [P]
+
+  5.1.1 Pipelines de Diferentes Profundidades — [P]
+	  Pipeline de poucos estágios
+	  Pipeline de múltiplos estágios
+	  Pipeline de maior profundidade
+	  Variação do número de estágios
+	  Organização conforme a microarquitetura
+
+  5.1.2 Profundidade do Pipeline — [P]
+	  Conceito de profundidade
+	  Número de estágios
+	  Relação entre profundidade e segmentação
+	  Relação entre profundidade e ciclo
+	  Relação entre profundidade e desempenho
+
+  5.1.3 Escolha da Profundidade — [P]
+	  Objetivos de desempenho
+	  Complexidade de implementação
+	  Tempo dos estágios
+	  Frequência de clock
+	  Penalidades associadas à maior profundidade
+
+
+ 5.2 Balanceamento dos Estágios — [P]
+
+  5.2.1 Distribuição do Trabalho — [P]
+	  Divisão equilibrada das operações
+	  Carga de cada estágio
+	  Tempo de processamento por estágio
+	  Distribuição das operações
+	  Uniformidade temporal
+
+  5.2.2 Estágio Mais Lento — [P]
+	  Estágio crítico
+	  Maior tempo de processamento
+	  Limitação do ciclo de clock
+	  Gargalo temporal
+	  Influência sobre o Pipeline
+
+  5.2.3 Balanceamento e Desempenho — [P]
+	  Aproveitamento dos estágios
+	  Redução de tempo ocioso
+	  Redução de desequilíbrios
+	  Melhoria da taxa de processamento
+	  Relação entre balanceamento e throughput
+
+
+ 5.3 Granularidade da Segmentação — [P]
+
+  5.3.1 Segmentação Mais Grossa — [I]
+	  Menor número de estágios
+	  Maior quantidade de trabalho por estágio
+	  Menor profundidade
+	  Menor quantidade de fronteiras entre estágios
+	  Características gerais
+
+  5.3.2 Segmentação Mais Fina — [I]
+	  Maior número de estágios
+	  Menor quantidade de trabalho por estágio
+	  Maior profundidade
+	  Maior quantidade de fronteiras entre estágios
+	  Características gerais
+
+  5.3.3 Compromissos da Segmentação — [P]
+	  Profundidade × complexidade
+	  Profundidade × frequência
+	  Profundidade × latência
+	  Profundidade × controle
+	  Profundidade × desempenho
+
+
+
+6. Princípios Fundamentais de Organização do Pipeline — [P]
+
+ 6.1 Princípios de Funcionamento — [P]
+
+  6.1.1 Sobreposição das Etapas — [P]
+	  Execução simultânea de etapas
+	  Instruções em diferentes estágios
+	  Aproveitamento temporal
+	  Continuidade do processamento
+	  Paralelismo entre instruções
+
+  6.1.2 Separação entre Etapas — [P]
+	  Fronteiras entre estágios
+	  Isolamento funcional
+	  Transferência sincronizada
+	  Estado intermediário
+	  Organização modular
+
+  6.1.3 Continuidade do Fluxo — [P]
+	  Alimentação contínua
+	  Progressão contínua
+	  Ocupação dos estágios
+	  Saída contínua
+	  Manutenção do fluxo
+
+
+ 6.2 Condições para um Pipeline Eficiente — [P]
+
+  6.2.1 Independência das Operações — [P]
+	  Operações independentes
+	  Possibilidade de sobreposição
+	  Ausência de conflitos imediatos
+	  Fluxo simultâneo
+	  Condições para execução contínua
+
+  6.2.2 Regularidade dos Estágios — [P]
+	  Etapas bem definidas
+	  Trabalho distribuído
+	  Tempo compatível entre estágios
+	  Sincronização
+	  Organização previsível
+
+  6.2.3 Utilização dos Recursos — [P]
+	  Ocupação dos estágios
+	  Redução de ociosidade
+	  Aproveitamento dos ciclos
+	  Continuidade do processamento
+	  Eficiência estrutural
+
+
+ 6.3 Limitações Fundamentais do Modelo Ideal — [I]
+
+  6.3.1 Dependências entre Instruções — [I]
+	  Dependências de execução
+	  Restrição à sobreposição
+	  Necessidade de coordenação
+	  Interferência no fluxo
+
+  6.3.2 Conflitos de Recursos — [I]
+	  Compartilhamento de recursos
+	  Conflitos de utilização
+	  Restrição estrutural
+	  Impacto sobre a continuidade
+
+  6.3.3 Alterações no Fluxo de Instruções — [I]
+	  Mudanças no fluxo normal
+	  Interrupção da sequência
+	  Redução da sobreposição
+	  Impacto sobre o preenchimento
+	  Necessidade de controle
+
+
+
+7. Pipeline de Instruções e Contextualização de Outros Pipelines — [I]
+
+ 7.1 Pipeline de Instruções — [I]
+
+  7.1.1 Conceito de Pipeline de Instruções — [I]
+	  Segmentação da execução de instruções
+	  Sobreposição entre instruções
+	  Estágios de processamento
+	  Fluxo contínuo de instruções
+	  Paralelismo em nível de instrução
+
+  7.1.2 Características do Pipeline de Instruções — [I]
+	  Processamento sequenciado por estágios
+	  Execução sobreposta
+	  Sincronização por clock
+	  Fluxo ordenado
+	  Taxa de conclusão
+
+  7.1.3 Importância para o Paralelismo — [I]
+	  Exploração do paralelismo entre instruções
+	  Aumento do throughput
+	  Aproveitamento dos ciclos
+	  Base para técnicas avançadas de paralelismo
+
+
+ 7.2 Pipeline de Dados — [V]
+
+  7.2.1 Conceito Geral de Pipeline de Dados — [V]
+	  Processamento segmentado de dados
+	  Fluxo de dados por etapas
+	  Sobreposição de operações
+	  Processamento contínuo
+	  Diferença em relação ao Pipeline de Instruções
+
+  7.2.2 Relação com o Pipeline de Instruções — [V]
+	  Semelhanças conceituais
+	  Diferenças de aplicação
+	  Segmentação como princípio comum
+	  Contextualização
+	  Limites de escopo para o estudo de Pipeline
+
+  7.2.3 Papel na Compreensão do Pipeline — [V]
+	  Ampliação do conceito de segmentação
+	  Identificação de diferentes aplicações
+	  Separação entre contextos
+	  Relação com paralelismo
+	  Contextualização sem aprofundamento
+
+
+ 7.3 Pipeline como Base para o Estudo do Paralelismo em Nível de Instrução — [I]
+
+  7.3.1 Paralelismo em Nível de Instrução — [I]
+	  Conceito de ILP
+	  Instruções potencialmente simultâneas
+	  Sobreposição da execução
+	  Exploração das instruções independentes
+	  Limitações do paralelismo disponível
+
+  7.3.2 Relação entre Pipeline e ILP — [I]
+	  Pipeline como mecanismo de exploração de ILP
+	  Sobreposição temporal
+	  Aproveitamento da independência
+	  Limitações impostas pela organização
+	  Base para técnicas avançadas
+
+  7.3.3 Preparação para o Estudo dos Hazards — [I]
+	  Dependências entre instruções
+	  Conflitos de execução
+	  Necessidade de controle
+	  Impacto sobre a sobreposição
+	  Transição para os mecanismos de Pipeline
+
+
