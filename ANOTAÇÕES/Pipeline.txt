@@ -612,3 +612,1160 @@ PARTE 1 — FUNDAMENTOS, CONCEITOS E ORGANIZAÇÃO DO PIPELINE
 	  Transição para os mecanismos de Pipeline
 
 
+
+PARTE 2 — FUNCIONAMENTO, TEMPORIZAÇÃO E DESEMPENHO DO PIPELINE
+
+
+8. Funcionamento Ciclo a Ciclo do Pipeline — [P]
+
+ 8.1 Funcionamento Básico por Ciclos — [P]
+
+  8.1.1 Avanço das Instruções por Ciclo — [P]
+	  Entrada de uma nova instrução
+	  Avanço das instruções pelos estágios
+	  Atualização dos estágios a cada ciclo
+	  Sobreposição das instruções
+	  Conclusão das instruções
+
+  8.1.2 Operação Simultânea dos Estágios — [P]
+	  Fetch de uma instrução
+	  Decode de outra instrução
+	  Execute de outra instrução
+	  Memory Access de outra instrução
+	  Write Back de outra instrução
+	  Trabalho simultâneo dos estágios
+
+  8.1.3 Continuidade do Fluxo — [P]
+	  Entrada contínua de instruções
+	  Avanço contínuo
+	  Ocupação dos estágios
+	  Saída contínua
+	  Manutenção do fluxo
+
+
+ 8.2 Sequência Temporal das Instruções — [P]
+
+  8.2.1 Primeira Instrução — [P]
+	  Entrada no primeiro estágio
+	  Percurso pelos estágios
+	  Conclusão da instrução
+	  Número de ciclos envolvidos
+	  Formação inicial do fluxo
+
+  8.2.2 Instruções Subsequentes — [P]
+	  Entrada antes da conclusão da instrução anterior
+	  Sobreposição entre instruções
+	  Avanço sincronizado
+	  Intervalo entre entradas
+	  Aumento da taxa de conclusão
+
+  8.2.3 Fluxo Contínuo de Instruções — [P]
+	  Pipeline alimentado
+	  Estágios ocupados
+	  Processamento sobreposto
+	  Conclusões sucessivas
+	  Condição de operação sustentada
+
+
+ 8.3 Exemplo de Execução em Pipeline — [I]
+
+  8.3.1 Sequência de Instruções — [I]
+	  Instrução 1
+	  Instrução 2
+	  Instrução 3
+	  Instrução 4
+	  Instrução 5
+
+  8.3.2 Distribuição por Ciclos — [P]
+	  Ciclo 1
+	  Ciclo 2
+	  Ciclo 3
+	  Ciclos intermediários
+	  Ciclos de conclusão
+	  Sobreposição das etapas
+
+  8.3.3 Interpretação do Fluxo — [P]
+	  Instruções simultaneamente em processamento
+	  Estágios ocupados por instruções diferentes
+	  Ordem de avanço
+	  Ciclo de conclusão
+	  Taxa de saída
+
+
+ 8.4 Pipeline Ideal — [I]
+
+  8.4.1 Condições Ideais — [I]
+	  Ausência de stalls
+	  Ausência de conflitos
+	  Fluxo contínuo
+	  Estágios balanceados
+	  Entrada regular de instruções
+
+  8.4.2 Comportamento Ideal — [I]
+	  Uma nova instrução entrando por ciclo
+	  Estágios continuamente ocupados
+	  Conclusões regulares
+	  Máxima utilização
+	  Throughput ideal
+
+  8.4.3 Limitações do Modelo Ideal — [I]
+	  Dependências
+	  Conflitos estruturais
+	  Desvios
+	  Desequilíbrio entre estágios
+	  Interrupções do fluxo
+
+
+
+9. Preenchimento, Operação Plena e Esvaziamento — [P]
+
+ 9.1 Preenchimento do Pipeline — [P]
+
+  9.1.1 Entrada Inicial — [P]
+	  Pipeline inicialmente vazio
+	  Entrada da primeira instrução
+	  Ocupação do primeiro estágio
+	  Entrada das instruções seguintes
+	  Crescimento progressivo da ocupação
+
+  9.1.2 Formação do Pipeline — [P]
+	  Ocupação sucessiva dos estágios
+	  Sobreposição crescente
+	  Redução dos estágios vazios
+	  Aumento da utilização
+	  Aproximação ao estado pleno
+
+  9.1.3 Custo de Preenchimento — [I]
+	  Ciclos iniciais
+	  Tempo antes do regime sustentado
+	  Impacto sobre pequenas sequências
+	  Diferença entre início e regime pleno
+
+
+ 9.2 Pipeline Cheio — [P]
+
+  9.2.1 Estado de Ocupação Plena — [P]
+	  Todos os estágios ocupados
+	  Uma instrução em cada estágio
+	  Fluxo contínuo
+	  Utilização elevada
+	  Regime sustentado
+
+  9.2.2 Processamento em Regime — [P]
+	  Entrada regular
+	  Avanço regular
+	  Conclusões regulares
+	  Throughput sustentado
+	  Aproveitamento dos ciclos
+
+  9.2.3 Condições para Manutenção do Pipeline Cheio — [P]
+	  Instruções disponíveis
+	  Ausência de interrupções
+	  Ausência de stalls
+	  Ausência de conflitos que interrompam o fluxo
+	  Alimentação contínua
+
+
+ 9.3 Esvaziamento do Pipeline — [P]
+
+  9.3.1 Encerramento da Entrada — [P]
+	  Entrada da última instrução
+	  Ausência de novas instruções
+	  Redução progressiva da ocupação
+	  Permanência das instruções restantes
+
+  9.3.2 Conclusão das Instruções Restantes — [P]
+	  Avanço dos estágios ocupados
+	  Conclusão das instruções
+	  Redução dos estágios ativos
+	  Última instrução
+	  Finalização do Pipeline
+
+  9.3.3 Custo de Esvaziamento — [I]
+	  Ciclos finais
+	  Tempo após a última entrada
+	  Impacto sobre sequências curtas
+	  Influência sobre o tempo total
+
+
+
+10. Sobreposição das Instruções — [P]
+
+ 10.1 Conceito de Sobreposição — [P]
+
+  10.1.1 Execução Sobreposta — [P]
+	  Diferentes instruções em diferentes estágios
+	  Execução simultânea das etapas
+	  Compartilhamento temporal dos recursos
+	  Processamento concorrente
+	  Aproveitamento do Pipeline
+
+  10.1.2 Paralelismo Temporal — [P]
+	  Paralelismo entre etapas
+	  Paralelismo entre instruções
+	  Trabalho simultâneo
+	  Separação temporal das operações
+	  Aumento da taxa de processamento
+
+  10.1.3 Limites da Sobreposição — [P]
+	  Dependências entre instruções
+	  Conflitos de recursos
+	  Alterações no fluxo
+	  Stalls
+	  Redução da sobreposição
+
+
+ 10.2 Comparação entre Execução Sequencial e Sobreposta — [I]
+
+  10.2.1 Execução Sem Pipeline — [I]
+	  Uma instrução por vez
+	  Todas as etapas de uma instrução antes da próxima
+	  Ausência de sobreposição
+	  Menor aproveitamento simultâneo dos estágios
+	  Fluxo sequencial
+
+  10.2.2 Execução Com Pipeline — [I]
+	  Etapas distribuídas
+	  Múltiplas instruções em processamento
+	  Sobreposição
+	  Entrada sucessiva de instruções
+	  Maior taxa de conclusão
+
+  10.2.3 Diferenças de Desempenho — [I]
+	  Tempo total
+	  Taxa de processamento
+	  Aproveitamento dos recursos
+	  Ganho de throughput
+	  Influência da sobreposição
+
+
+ 10.3 Limites do Paralelismo Obtido — [I]
+
+  10.3.1 Paralelismo Disponível — [I]
+	  Quantidade de instruções independentes
+	  Possibilidade de sobreposição
+	  Regularidade do fluxo
+	  Dependências que limitam a simultaneidade
+
+  10.3.2 Paralelismo Efetivamente Explorado — [I]
+	  Instruções realmente sobrepostas
+	  Estágios ocupados
+	  Eficiência da execução
+	  Perdas por espera
+	  Aproveitamento do paralelismo
+
+  10.3.3 Fatores de Redução — [I]
+	  Stalls
+	  Dependências
+	  Conflitos
+	  Desvios
+	  Estágios desequilibrados
+
+
+
+11. Diagramas Temporais do Pipeline — [P]
+
+ 11.1 Representação Gráfica — [P]
+
+  11.1.1 Eixos do Diagrama — [P]
+	  Ciclos de clock
+	  Estágios do Pipeline
+	  Instruções
+	  Ordem temporal
+	  Relação entre ciclos e etapas
+
+  11.1.2 Representação das Instruções — [P]
+	  Instrução por linha
+	  Estágio por ciclo
+	  Entrada da instrução
+	  Avanço da instrução
+	  Conclusão da instrução
+
+  11.1.3 Visualização da Sobreposição — [P]
+	  Estágios simultaneamente ocupados
+	  Instruções diferentes em cada estágio
+	  Progressão diagonal
+	  Identificação do fluxo
+	  Estado do Pipeline
+
+
+ 11.2 Análise Ciclo a Ciclo — [P]
+
+  11.2.1 Identificação dos Estágios — [P]
+	  Fetch
+	  Decode
+	  Operand Fetch
+	  Execute
+	  Memory Access
+	  Write Back
+
+  11.2.2 Rastreamento das Instruções — [P]
+	  Ciclo de entrada
+	  Estágios percorridos
+	  Ciclo de conclusão
+	  Permanência em cada estágio
+	  Ordem das instruções
+
+  11.2.3 Identificação de Intervalos — [P]
+	  Estágios vazios
+	  Esperas
+	  Espaços entre instruções
+	  Interrupções do fluxo
+	  Regiões de baixa utilização
+
+
+ 11.3 Diagramas com Diferentes Quantidades de Estágios — [I]
+
+  11.3.1 Pipeline de Cinco Estágios — [I]
+	  Fetch
+	  Decode
+	  Execute
+	  Memory
+	  Write Back
+	  Organização temporal
+
+  11.3.2 Pipeline de Seis Estágios — [I]
+	  Fetch
+	  Decode
+	  Operand Fetch
+	  Execute
+	  Memory Access
+	  Write Back
+
+  11.3.3 Pipelines Mais Profundos — [I]
+	  Mais estágios
+	  Maior segmentação
+	  Maior quantidade de ciclos
+	  Maior complexidade temporal
+	  Comparação da organização
+
+
+
+12. Clock, Ciclo de Clock e Temporização — [P]
+
+ 12.1 Clock do Pipeline — [P]
+
+  12.1.1 Papel do Clock — [P]
+	  Referência temporal
+	  Sincronização dos estágios
+	  Atualização das informações
+	  Avanço das instruções
+	  Coordenação do Pipeline
+
+  12.1.2 Período do Clock — [P]
+	  Duração de um ciclo
+	  Tempo disponível por estágio
+	  Relação com o estágio mais lento
+	  Influência sobre a frequência
+
+  12.1.3 Frequência do Clock — [I]
+	  Número de ciclos por segundo
+	  Relação com o período
+	  Influência sobre a taxa de processamento
+	  Limitações da frequência
+
+
+ 12.2 Temporização entre Estágios — [P]
+
+  12.2.1 Janela Temporal de um Estágio — [P]
+	  Tempo disponível
+	  Processamento dentro do ciclo
+	  Propagação dos sinais
+	  Preparação para o próximo ciclo
+
+  12.2.2 Sincronização das Transferências — [P]
+	  Transferência nos limites de ciclo
+	  Atualização dos registradores de Pipeline
+	  Alinhamento temporal
+	  Consistência entre estágios
+
+  12.2.3 Restrições Temporais — [P]
+	  Tempo de processamento
+	  Atrasos de propagação
+	  Estágio crítico
+	  Margem temporal
+	  Limite do ciclo
+
+
+ 12.3 Relação entre Temporização e Desempenho — [I]
+
+  12.3.1 Ciclo Menor — [I]
+	  Maior frequência
+	  Mais ciclos por unidade de tempo
+	  Potencial de maior throughput
+	  Limitações práticas
+
+  12.3.2 Ciclo Maior — [I]
+	  Menor frequência
+	  Menor taxa potencial de processamento
+	  Maior tempo por ciclo
+	  Relação com estágios mais longos
+
+  12.3.3 Temporização Real — [I]
+	  Estágio crítico
+	  Desequilíbrio
+	  Atrasos
+	  Stalls
+	  Impacto sobre o desempenho
+
+
+
+13. Latência do Pipeline — [I]
+
+ 13.1 Conceito de Latência — [I]
+
+  13.1.1 Latência de uma Instrução — [I]
+	  Tempo entre entrada e conclusão
+	  Quantidade de ciclos
+	  Percurso pelos estágios
+	  Tempo de resposta de uma instrução
+
+  13.1.2 Latência em Ciclos — [I]
+	  Número de estágios
+	  Ciclos necessários
+	  Relação entre estágio e ciclo
+	  Latência nominal
+
+  13.1.3 Latência em Tempo — [I]
+	  Número de ciclos
+	  Período do clock
+	  Tempo total
+	  Conversão entre ciclos e tempo
+
+
+ 13.2 Latência × Throughput — [I]
+
+  13.2.1 Diferença entre Latência e Throughput — [I]
+	  Tempo de uma instrução
+	  Taxa de conclusão de instruções
+	  Métricas distintas
+	  Interpretação independente
+
+  13.2.2 Pipeline e Latência — [I]
+	  Latência de uma instrução
+	  Profundidade do Pipeline
+	  Tempo de percurso
+	  Efeito dos estágios
+
+  13.2.3 Pipeline e Throughput — [I]
+	  Taxa de instruções concluídas
+	  Entrada regular
+	  Regime sustentado
+	  Relação com sobreposição
+
+
+ 13.3 Fatores que Afetam a Latência — [I]
+
+  13.3.1 Profundidade — [I]
+	  Número de estágios
+	  Ciclos do percurso
+	  Segmentação
+	  Efeito sobre a latência
+
+  13.3.2 Stalls — [I]
+	  Ciclos adicionais
+	  Esperas
+	  Aumento do tempo total
+	  Impacto sobre instruções dependentes
+
+  13.3.3 Alterações no Fluxo — [I]
+	  Interrupções
+	  Desvios
+	  Reinício do fluxo
+	  Ciclos adicionais
+
+
+
+14. Throughput e Taxa de Processamento — [P]
+
+ 14.1 Conceito de Throughput — [P]
+
+  14.1.1 Definição de Throughput — [P]
+	  Quantidade de instruções processadas por unidade de tempo
+	  Taxa de conclusão
+	  Instruções por ciclo
+	  Instruções por segundo
+
+  14.1.2 Throughput em Regime Sustentado — [P]
+	  Pipeline cheio
+	  Conclusões sucessivas
+	  Entrada contínua
+	  Taxa estável
+	  Aproveitamento dos estágios
+
+  14.1.3 Throughput Ideal — [I]
+	  Uma conclusão por ciclo
+	  Condição sem interrupções
+	  Limite teórico do Pipeline escalar
+	  Relação com a organização do Pipeline
+
+
+ 14.2 Cálculo do Throughput — [P]
+
+  14.2.1 Throughput por Ciclo — [P]
+	  Número de instruções processadas
+	  Número de ciclos
+	  Relação instruções/ciclo
+	  Interpretação do resultado
+
+  14.2.2 Throughput por Unidade de Tempo — [I]
+	  Instruções por segundo
+	  Frequência do clock
+	  Conversão entre métricas
+	  Comparação de taxas
+
+  14.2.3 Análise de Exemplos — [P]
+	  Sequência de instruções
+	  Total de ciclos
+	  Total de instruções
+	  Cálculo
+	  Interpretação
+
+
+ 14.3 Fatores que Afetam o Throughput — [P]
+
+  14.3.1 Stalls — [P]
+	  Ciclos de espera
+	  Redução da taxa de conclusão
+	  Perda de utilização
+	  Throughput real
+
+  14.3.2 Balanceamento dos Estágios — [P]
+	  Estágio limitante
+	  Ciclo de clock
+	  Gargalo
+	  Taxa máxima
+
+  14.3.3 Fluxo de Instruções — [I]
+	  Disponibilidade de instruções
+	  Interrupções
+	  Desvios
+	  Continuidade do processamento
+
+
+
+15. Speedup e Ganho de Desempenho — [P]
+
+ 15.1 Conceito de Speedup — [P]
+
+  15.1.1 Definição de Speedup — [P]
+	  Comparação entre execuções
+	  Tempo sem Pipeline
+	  Tempo com Pipeline
+	  Razão de desempenho
+	  Ganho obtido
+
+  15.1.2 Interpretação do Speedup — [P]
+	  Valor maior que 1
+	  Ganho de desempenho
+	  Ausência de ganho
+	  Perdas de desempenho
+	  Limitações do ganho
+
+  15.1.3 Speedup e Paralelismo — [I]
+	  Sobreposição das instruções
+	  Aproveitamento dos estágios
+	  Aumento da taxa de processamento
+	  Relação com desempenho
+
+
+ 15.2 Speedup Teórico — [P]
+
+  15.2.1 Modelo Ideal — [P]
+	  Estágios uniformes
+	  Ausência de stalls
+	  Fluxo contínuo
+	  Pipeline cheio
+	  Ganho máximo teórico
+
+  15.2.2 Influência do Número de Estágios — [P]
+	  Quantidade de estágios
+	  Ganho potencial
+	  Relação com a sequência de instruções
+	  Limite do speedup
+
+  15.2.3 Limitações do Modelo — [I]
+	  Preenchimento
+	  Esvaziamento
+	  Desequilíbrio
+	  Conflitos
+	  Stalls
+
+
+ 15.3 Speedup Real — [P]
+
+  15.3.1 Ganho Real — [P]
+	  Tempo efetivo
+	  Ciclos adicionais
+	  Stalls
+	  Interrupções
+	  Comparação com o ganho teórico
+
+  15.3.2 Diferença entre Speedup Teórico e Real — [P]
+	  Condições ideais
+	  Condições reais
+	  Penalidades
+	  Eficiência da implementação
+
+  15.3.3 Análise de Cenários — [P]
+	  Poucas instruções
+	  Muitas instruções
+	  Pipeline bem utilizado
+	  Pipeline com stalls
+	  Comparação dos resultados
+
+
+
+16. Utilização e Eficiência do Pipeline — [I]
+
+ 16.1 Utilização do Pipeline — [I]
+
+  16.1.1 Conceito de Utilização — [I]
+	  Tempo de ocupação
+	  Tempo total disponível
+	  Estágios ativos
+	  Grau de aproveitamento
+
+  16.1.2 Utilização dos Estágios — [I]
+	  Ocupação por estágio
+	  Estágios ociosos
+	  Estágios ativos
+	  Distribuição da carga
+
+  16.1.3 Utilização Global — [I]
+	  Ocupação geral
+	  Intervalos ociosos
+	  Aproveitamento dos recursos
+	  Interpretação da utilização
+
+
+ 16.2 Eficiência do Pipeline — [I]
+
+  16.2.1 Conceito de Eficiência — [I]
+	  Relação entre desempenho obtido e potencial
+	  Aproveitamento do Pipeline
+	  Eficiência operacional
+	  Condições ideais e reais
+
+  16.2.2 Fatores que Reduzem a Eficiência — [I]
+	  Stalls
+	  Bolhas
+	  Desvios
+	  Conflitos
+	  Estágios ociosos
+
+  16.2.3 Melhoria da Eficiência — [I]
+	  Redução de esperas
+	  Melhor aproveitamento dos estágios
+	  Balanceamento
+	  Continuidade do fluxo
+
+
+ 16.3 Utilização × Throughput × Eficiência — [I]
+
+  16.3.1 Relação entre as Métricas — [I]
+	  Ocupação
+	  Taxa de processamento
+	  Aproveitamento
+	  Interpretação conjunta
+
+  16.3.2 Diferenças entre as Métricas — [I]
+	  O que cada métrica mede
+	  Unidade de medida
+	  Forma de interpretação
+	  Uso na análise
+
+  16.3.3 Análise Combinada — [I]
+	  Pipeline ocupado
+	  Throughput elevado
+	  Eficiência
+	  Identificação de perdas
+
+
+
+17. CPI, IPC e Stall Cycles — [P]
+
+ 17.1 CPI — Cycles Per Instruction — [P]
+
+  17.1.1 Conceito de CPI — [P]
+	  Ciclos por instrução
+	  Média de ciclos
+	  Relação entre ciclos e instruções
+	  Indicador de desempenho
+
+  17.1.2 Cálculo do CPI — [P]
+	  Número total de ciclos
+	  Número total de instruções
+	  Fórmula do CPI
+	  Interpretação do resultado
+
+  17.1.3 CPI Ideal e CPI Real — [P]
+	  CPI em condições ideais
+	  CPI com stalls
+	  Ciclos adicionais
+	  Impacto dos conflitos
+	  Diferença entre valores
+
+
+ 17.2 IPC — Instructions Per Cycle — [P]
+
+  17.2.1 Conceito de IPC — [P]
+	  Instruções por ciclo
+	  Taxa média de execução
+	  Relação entre instruções e ciclos
+	  Indicador de aproveitamento
+
+  17.2.2 Cálculo do IPC — [P]
+	  Número total de instruções
+	  Número total de ciclos
+	  Fórmula do IPC
+	  Interpretação do resultado
+
+  17.2.3 Relação entre CPI e IPC — [P]
+	  CPI como ciclos por instrução
+	  IPC como instruções por ciclo
+	  Relação inversa ideal
+	  Interpretação conjunta
+
+
+ 17.3 Stall Cycles — [P]
+
+  17.3.1 Conceito de Stall Cycle — [P]
+	  Ciclo de espera
+	  Interrupção temporária
+	  Instrução impedida de avançar
+	  Redução do fluxo
+
+  17.3.2 Causas dos Stalls — [P]
+	  Dependências
+	  Conflitos de recursos
+	  Alterações no fluxo
+	  Esperas de dados
+	  Condições de controle
+
+  17.3.3 Impacto dos Stalls — [P]
+	  Aumento do número de ciclos
+	  Aumento do CPI
+	  Redução do IPC
+	  Redução do throughput
+	  Aumento do tempo total
+
+
+ 17.4 Relação entre CPI, IPC e Stall Cycles — [P]
+
+  17.4.1 Stalls e CPI — [P]
+	  Ciclos adicionais
+	  Aumento do CPI
+	  Perda de eficiência
+	  Impacto no desempenho
+
+  17.4.2 Stalls e IPC — [P]
+	  Menos instruções por ciclo
+	  Redução do aproveitamento
+	  Redução da taxa de processamento
+
+  17.4.3 Análise Conjunta — [P]
+	  CPI
+	  IPC
+	  Stall cycles
+	  Throughput
+	  Desempenho efetivo
+
+
+
+18. Pipeline Ideal × Pipeline Real — [P]
+
+ 18.1 Modelo Ideal — [I]
+
+  18.1.1 Premissas do Modelo Ideal — [I]
+	  Estágios balanceados
+	  Nenhum stall
+	  Nenhum conflito
+	  Fluxo contínuo
+	  Clock determinado pelo estágio crítico
+
+  18.1.2 Desempenho Ideal — [I]
+	  Throughput máximo
+	  Utilização elevada
+	  CPI ideal
+	  IPC ideal
+	  Speedup máximo teórico
+
+  18.1.3 Limites do Modelo Ideal — [I]
+	  Preenchimento
+	  Esvaziamento
+	  Número finito de instruções
+	  Diferenças entre modelos
+
+
+ 18.2 Modelo Real — [P]
+
+  18.2.1 Condições Reais — [P]
+	  Stalls
+	  Dependências
+	  Conflitos
+	  Desvios
+	  Desequilíbrio entre estágios
+
+  18.2.2 Penalidades — [P]
+	  Ciclos adicionais
+	  Bolhas
+	  Flush
+	  Perdas de utilização
+	  Redução do throughput
+
+  18.2.3 Desempenho Efetivo — [P]
+	  Tempo real
+	  CPI real
+	  IPC real
+	  Throughput real
+	  Speedup real
+
+
+ 18.3 Comparação Ideal × Real — [P]
+
+  18.3.1 Diferenças Estruturais — [P]
+	  Condições de execução
+	  Fluxo de instruções
+	  Interrupções
+	  Ocupação dos estágios
+
+  18.3.2 Diferenças de Desempenho — [P]
+	  Throughput
+	  Latência
+	  CPI
+	  IPC
+	  Speedup
+
+  18.3.3 Análise das Perdas — [P]
+	  Stalls
+	  Bolhas
+	  Flushes
+	  Ociosidade
+	  Gargalos
+
+
+
+19. Gargalos e Limitações de Desempenho — [P]
+
+ 19.1 Gargalos Temporais — [P]
+
+  19.1.1 Estágio Crítico — [P]
+	  Estágio mais lento
+	  Limitação do período do clock
+	  Influência sobre a frequência
+	  Gargalo temporal
+
+  19.1.2 Desequilíbrio entre Estágios — [P]
+	  Diferença de tempos
+	  Estágios ociosos
+	  Aproveitamento desigual
+	  Redução da eficiência
+
+  19.1.3 Impacto sobre o Throughput — [P]
+	  Limite da taxa de processamento
+	  Redução do throughput
+	  Restrição do ciclo
+	  Necessidade de balanceamento
+
+
+ 19.2 Gargalos de Fluxo — [I]
+
+  19.2.1 Falta de Instruções Disponíveis — [I]
+	  Pipeline sem alimentação
+	  Estágios ociosos
+	  Redução do fluxo
+	  Perda de throughput
+
+  19.2.2 Interrupções do Fluxo — [I]
+	  Stalls
+	  Desvios
+	  Flushes
+	  Bolhas
+	  Redução da ocupação
+
+  19.2.3 Dependências — [I]
+	  Restrição à sobreposição
+	  Esperas
+	  Redução do paralelismo efetivo
+	  Impacto no desempenho
+
+
+ 19.3 Limitações Fundamentais — [I]
+
+  19.3.1 Limitações do Paralelismo — [I]
+	  Dependência entre instruções
+	  Fluxo não independente
+	  Limites da sobreposição
+	  Paralelismo disponível
+
+  19.3.2 Limitações da Segmentação — [I]
+	  Número de estágios
+	  Complexidade
+	  Balanceamento
+	  Penalidades
+
+  19.3.3 Limitações do Desempenho — [I]
+	  Throughput real
+	  Latência
+	  CPI
+	  IPC
+	  Speedup
+
+
+
+20. Análise Quantitativa do Desempenho do Pipeline — [P]
+
+ 20.1 Cálculo do Tempo de Execução — [P]
+
+  20.1.1 Tempo Total de Execução — [P]
+	  Número de ciclos
+	  Período do clock
+	  Tempo total
+	  Relação entre ciclos e tempo
+
+  20.1.2 Tempo com Pipeline — [P]
+	  Preenchimento
+	  Processamento sustentado
+	  Esvaziamento
+	  Stalls
+	  Tempo efetivo
+
+  20.1.3 Tempo sem Pipeline — [P]
+	  Execução sequencial
+	  Ciclos por instrução
+	  Número total de instruções
+	  Tempo total
+	  Comparação
+
+
+ 20.2 Cálculos de Desempenho — [P]
+
+  20.2.1 Cálculo de Throughput — [P]
+	  Instruções processadas
+	  Número de ciclos
+	  Instruções por ciclo
+	  Interpretação
+
+  20.2.2 Cálculo de Latência — [P]
+	  Ciclos por instrução
+	  Número de estágios
+	  Período do clock
+	  Tempo de conclusão
+
+  20.2.3 Cálculo de Speedup — [P]
+	  Tempo sem Pipeline
+	  Tempo com Pipeline
+	  Razão entre tempos
+	  Ganho obtido
+
+
+ 20.3 Análise de Cenários — [P]
+
+  20.3.1 Sequências Curtas — [P]
+	  Custo de preenchimento
+	  Custo de esvaziamento
+	  Baixo número de instruções
+	  Speedup reduzido
+
+  20.3.2 Sequências Longas — [P]
+	  Predomínio do regime sustentado
+	  Maior aproveitamento
+	  Throughput próximo do ideal
+	  Melhor exploração do Pipeline
+
+  20.3.3 Sequências com Stalls — [P]
+	  Ciclos adicionais
+	  Redução do throughput
+	  Aumento do CPI
+	  Redução do IPC
+	  Impacto no speedup
+
+
+
+21. Análise Integrada do Desempenho do Pipeline — [I]
+
+ 21.1 Relação entre as Principais Métricas — [I]
+
+  21.1.1 Latência × Throughput — [I]
+	  Tempo por instrução
+	  Taxa de conclusão
+	  Diferença conceitual
+	  Análise conjunta
+
+  21.1.2 CPI × IPC — [I]
+	  Ciclos por instrução
+	  Instruções por ciclo
+	  Relação entre as métricas
+	  Interpretação do desempenho
+
+  21.1.3 Speedup × Throughput — [I]
+	  Ganho relativo
+	  Taxa absoluta de processamento
+	  Comparação entre medidas
+	  Interpretação conjunta
+
+
+ 21.2 Impacto dos Stalls sobre o Desempenho — [P]
+
+  21.2.1 Stalls e Throughput — [P]
+	  Redução da taxa de conclusão
+	  Ciclos improdutivos
+	  Diminuição do aproveitamento
+
+  21.2.2 Stalls e Latência — [P]
+	  Ciclos adicionais
+	  Aumento do tempo de instrução
+	  Impacto sobre o tempo total
+
+  21.2.3 Stalls e Speedup — [P]
+	  Redução do ganho
+	  Diferença entre ideal e real
+	  Penalidade acumulada
+
+
+ 21.3 Avaliação Global do Pipeline — [I]
+
+  21.3.1 Eficiência Geral — [I]
+	  Utilização
+	  Throughput
+	  Latência
+	  CPI
+	  IPC
+
+  21.3.2 Desempenho Real — [I]
+	  Condições de execução
+	  Stalls
+	  Gargalos
+	  Fluxo de instruções
+	  Resultado efetivo
+
+  21.3.3 Interpretação dos Resultados — [I]
+	  Identificação dos pontos críticos
+	  Comparação com o modelo ideal
+	  Identificação das perdas
+	  Avaliação do aproveitamento
+
+
+
+22. Resumo Geral do Funcionamento, Temporização e Desempenho — [I]
+
+ 22.1 Revisão do Funcionamento — [I]
+
+  22.1.1 Funcionamento Ciclo a Ciclo — [I]
+	  Avanço das instruções
+	  Sobreposição
+	  Ocupação dos estágios
+	  Conclusão das instruções
+
+  22.1.2 Preenchimento e Esvaziamento — [I]
+	  Formação do Pipeline
+	  Pipeline cheio
+	  Esvaziamento
+	  Custos temporais
+
+  22.1.3 Diagramas Temporais — [I]
+	  Representação por ciclos
+	  Rastreamento das instruções
+	  Identificação da sobreposição
+	  Interpretação do fluxo
+
+
+ 22.2 Revisão das Métricas — [I]
+
+  22.2.1 Latência e Throughput — [I]
+	  Definições
+	  Diferenças
+	  Relações
+	  Interpretação
+
+  22.2.2 Speedup e Eficiência — [I]
+	  Ganho teórico
+	  Ganho real
+	  Eficiência
+	  Limitações
+
+  22.2.3 CPI, IPC e Stall Cycles — [I]
+	  Conceitos
+	  Cálculos
+	  Relações
+	  Impacto no desempenho
+
+
+ 22.3 Revisão do Desempenho — [I]
+
+  22.3.1 Pipeline Ideal — [I]
+	  Fluxo contínuo
+	  Ausência de stalls
+	  Throughput máximo
+	  Condições ideais
+
+  22.3.2 Pipeline Real — [I]
+	  Stalls
+	  Conflitos
+	  Desvios
+	  Gargalos
+	  Desempenho efetivo
+
+  22.3.3 Preparação para o Estudo de Hazards — [I]
+	  Dependências
+	  Conflitos
+	  Interrupções
+	  Impacto sobre o fluxo
+	  Necessidade de mecanismos de controle
+
+
+23. Conclusão do Estudo do Funcionamento, Temporização e Desempenho — [V]
+
+ 23.1 Síntese Final — [V]
+
+  23.1.1 Funcionamento do Pipeline — [V]
+	  Execução sobreposta
+	  Processamento por estágios
+	  Sincronização
+	  Fluxo contínuo
+
+  23.1.2 Temporização — [V]
+	  Ciclo de clock
+	  Preenchimento
+	  Operação plena
+	  Esvaziamento
+	  Latência
+
+  23.1.3 Desempenho — [V]
+	  Throughput
+	  Speedup
+	  Utilização
+	  Eficiência
+	  CPI
+	  IPC
+
+
+ 23.2 Competências Desenvolvidas — [V]
+
+  23.2.1 Conhecimentos Adquiridos — [V]
+	  Funcionamento ciclo a ciclo
+	  Diagramas temporais
+	  Análise de desempenho
+	  Interpretação das métricas
+	  Identificação de gargalos
+
+  23.2.2 Preparação para Estudos Posteriores — [V]
+	  Hazards
+	  Dependências
+	  Stalls
+	  Forwarding
+	  Branches
+	  Técnicas avançadas de Pipeline
+
+
+ 23.3 Encerramento — [V]
+
+  23.3.1 Visão Geral Final — [V]
+	  Funcionamento do Pipeline
+	  Organização temporal
+	  Métricas de desempenho
+	  Limitações práticas
+	  Continuidade do estudo
+
+
