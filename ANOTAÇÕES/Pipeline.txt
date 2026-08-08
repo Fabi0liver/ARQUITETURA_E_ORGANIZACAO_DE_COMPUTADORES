@@ -21,6 +21,7 @@ PARTE 1 — FUNDAMENTOS DO PIPELINE
 	  Definição de Pipeline
 	  Ideia de sobreposição de etapas
 	  Analogia com linha de montagem
+	  Processamento simultâneo de diferentes instruções
 	  Divisão do trabalho em estágios menores
 	  Importância na Organização de Computadores
 
