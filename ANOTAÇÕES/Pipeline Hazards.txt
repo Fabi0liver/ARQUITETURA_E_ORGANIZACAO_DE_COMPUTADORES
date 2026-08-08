@@ -1,0 +1,1163 @@
+                                        PIPELINE HAZARDS
+
+
+A classificação abaixo indica a profundidade recomendada para cada grande tópico da lista.
+
+[P] Profundidade — estudar mecanismos, estruturas, funcionamento interno e relações entre componentes.
+[I] Intermediário — compreender bem o funcionamento e as relações principais, sem precisar dominar todos os
+   detalhes de implementação.
+[V] Visão geral — saber o que é, para que serve e como se relaciona com o restante do Pipeline.
+
+
+
+PARTE 1 — FUNDAMENTOS DOS PIPELINE HAZARDS
+
+
+1. Introdução aos Pipeline Hazards — [I]
+
+ 1.1 Conceito Geral de Hazard — [I]
+
+  1.1.1 Definição de Pipeline Hazard — [I]
+	  Obstáculo no fluxo do pipeline
+	  Interrupção da execução contínua
+	  Conflito entre instruções concorrentes
+	  Origem do termo "hazard"
+
+  1.1.2 Papel dos Hazards na Arquitetura de Computadores — [I]
+	  Relação com o desempenho do processador
+	  Limitação do paralelismo entre instruções
+	  Motivação para técnicas de otimização
+	  Importância no projeto de processadores modernos
+
+  1.1.3 Natureza Inevitável dos Hazards — [V]
+	  Consequência do processamento paralelo em pipeline
+	  Trade-off entre paralelismo e complexidade
+	  Necessidade de gerenciamento contínuo
+
+
+ 1.2 Classificação Geral dos Hazards — [P]
+
+  1.2.1 As Três Categorias Fundamentais — [P]
+	  Data Hazards
+	  Structural Hazards
+	  Control Hazards
+
+  1.2.2 Critérios de Classificação — [I]
+	  Origem do conflito (dados, recursos ou fluxo de controle)
+	  Estágio do pipeline afetado
+	  Momento de detecção
+	  Necessidade de intervenção
+
+  1.2.3 Relação entre as Categorias — [I]
+	  Independência conceitual entre os tipos
+	  Possibilidade de ocorrência simultânea
+	  Impacto combinado no desempenho
+
+
+
+2. O Pipeline de Instruções como Contexto dos Hazards — [V]
+
+ 2.1 Conceitos Básicos de Pipeline (Pré-requisito) — [V]
+
+  2.1.1 Ideia de Processamento em Pipeline — [V]
+	  Divisão da execução em estágios
+	  Sobreposição temporal das instruções
+	  Analogia com linha de montagem
+
+  2.1.2 Objetivo do Pipeline — [V]
+	  Aumento do throughput de instruções
+	  Redução do tempo médio por instrução
+	  Melhor aproveitamento do hardware
+
+
+ 2.2 Estrutura de um Pipeline Clássico — [V]
+
+  2.2.1 Estágios Típicos do Pipeline — [V]
+	  Busca de instrução (IF)
+	  Leitura de registradores (REG.L)
+	  Execução na ULA (ALU)
+	  Acesso à memória de dados (DA)
+	  Escrita no registrador (REG.S)
+
+  2.2.2 Fluxo das Instruções entre Estágios — [V]
+	  Avanço sincronizado por ciclo de clock
+	  Sobreposição de instruções em estágios diferentes
+	  Dependência da ordem de chegada
+
+
+ 2.3 Onde os Hazards Surgem no Pipeline — [I]
+
+  2.3.1 Pontos de Conflito entre Estágios — [I]
+	  Estágios que compartilham recursos
+	  Estágios que dependem de resultados anteriores
+	  Estágios que dependem de decisões de desvio
+
+  2.3.2 Relação entre Sobreposição e Conflito — [I]
+	  Benefício da sobreposição
+	  Risco de conflito gerado pela sobreposição
+	  Necessidade de mecanismos de controle
+
+
+
+3. Consequências dos Hazards: Stalls e Bolhas — [P]
+
+ 3.1 Stalls no Pipeline — [P]
+
+  3.1.1 Conceito de Stall — [P]
+	  Pausa no avanço do pipeline
+	  Espera por uma condição necessária
+	  Ociosidade temporária de estágios
+
+  3.1.2 Causas dos Stalls — [P]
+	  Dependência de dados não resolvida
+	  Recurso indisponível
+	  Decisão de controle pendente
+
+  3.1.3 Efeitos dos Stalls — [I]
+	  Redução da taxa de execução
+	  Aumento do tempo total de processamento
+	  Ociosidade parcial do hardware
+
+
+ 3.2 Bolhas (Bubbles) no Pipeline — [P]
+
+  3.2.1 Conceito de Bolha — [P]
+	  Inserção intencional de inatividade
+	  Preenchimento do estágio sem trabalho útil
+	  Mecanismo para manter a sincronização
+
+  3.2.2 Origem das Bolhas — [P]
+	  Dependência de um dado ainda não disponível
+	  Necessidade de aguardar resultado de estágio anterior
+	  Substituição de instrução por operação nula (NOP)
+
+  3.2.3 Diferença entre Stall e Bolha — [I]
+	  Stall como pausa geral do pipeline
+	  Bolha como unidade específica de inatividade inserida
+	  Relação de causa e efeito entre os dois conceitos
+
+
+ 3.3 Custo das Interrupções no Pipeline — [I]
+
+  3.3.1 Ciclos Perdidos — [I]
+	  Ciclos de clock desperdiçados
+	  Acúmulo de atrasos ao longo da execução
+	  Relação com a frequência dos hazards
+
+  3.3.2 Impacto na Eficiência Geral — [I]
+	  Distância entre desempenho ideal e desempenho real
+	  Redução do proveito do paralelismo do pipeline
+
+
+
+4. Impacto dos Hazards no Desempenho do Processador — [P]
+
+ 4.1 Métricas de Desempenho Relacionadas — [P]
+
+  4.1.1 CPI Ideal versus CPI Real — [P]
+	  Conceito de CPI (Ciclos por Instrução)
+	  CPI teórico de um pipeline sem hazards
+	  Aumento do CPI causado pelos hazards
+
+  4.1.2 Penalidades de Ciclos — [P]
+	  Conceito de penalidade
+	  Penalidade por dependência de dados
+	  Penalidade por conflito estrutural
+	  Penalidade por desvio de controle
+
+  4.1.3 Throughput e Taxa de Conclusão — [I]
+	  Relação entre hazards e throughput
+	  Redução da taxa de instruções concluídas por ciclo
+
+
+ 4.2 Fatores que Agravam o Impacto dos Hazards — [I]
+
+  4.2.1 Frequência de Ocorrência — [I]
+	  Programas com muitas dependências
+	  Programas com muitos desvios condicionais
+	  Programas com uso intenso de memória
+
+  4.2.2 Profundidade do Pipeline — [I]
+	  Pipelines mais longos e maior penalidade
+	  Relação entre número de estágios e sensibilidade a hazards
+
+
+ 4.3 Importância do Estudo dos Hazards — [V]
+
+  4.3.1 Relevância para o Projeto de Processadores — [V]
+	  Base para decisões de microarquitetura
+	  Motivação para técnicas de otimização
+	  Relação com a evolução dos processadores modernos
+
+
+
+PARTE 2 — DATA HAZARDS (HAZARDS DE DADOS)
+
+
+5. Conceito de Data Hazards — [P]
+
+ 5.1 Definição e Origem — [P]
+
+  5.1.1 O que é um Data Hazard — [P]
+	  Conflito no uso de dados entre instruções
+	  Dependência não resolvida no momento necessário
+	  Risco de uso de valor incorreto ou desatualizado
+
+  5.1.2 Por que os Data Hazards Ocorrem — [P]
+	  Execução sobreposta de instruções no pipeline
+	  Diferença de tempo entre produção e uso de um dado
+	  Ausência de sincronização adequada entre estágios
+
+
+ 5.2 Impacto Geral dos Data Hazards — [I]
+
+  5.2.1 Consequências no Fluxo do Pipeline — [I]
+	  Geração de stalls e bolhas
+	  Atraso na execução das instruções dependentes
+	  Redução da eficiência do processamento paralelo
+
+  5.2.2 Contextos de Maior Ocorrência — [I]
+	  Aplicações com uso intensivo de cálculos
+	  Sequências de instruções fortemente dependentes
+
+
+
+6. Dependências de Dados entre Instruções — [P]
+
+ 6.1 Conceito de Dependência de Dados — [P]
+
+  6.1.1 Relação de Uso entre Instruções — [P]
+	  Instrução produtora de um valor
+	  Instrução consumidora do valor
+	  Ordem correta de leitura e escrita
+
+  6.1.2 Tipos Fundamentais de Dependência — [P]
+	  Dependência de leitura após escrita
+	  Dependência de escrita após leitura
+	  Dependência de escrita após escrita
+
+
+ 6.2 Dependências Reais versus Dependências de Nome — [I]
+
+  6.2.1 Dependência Verdadeira de Dados — [I]
+	  Necessidade real do valor produzido
+	  Impossibilidade de eliminação por reorganização simples
+
+  6.2.2 Dependências Falsas (de Nome) — [I]
+	  Conflito causado pelo reuso do mesmo registrador
+	  Ausência de dependência real de valor
+	  Possibilidade de eliminação por renomeação
+
+
+
+7. Dependência RAW (Read After Write) — [P]
+
+ 7.1 Conceito da Dependência RAW — [P]
+
+  7.1.1 Definição — [P]
+	  Leitura de um dado antes da escrita ser concluída
+	  Dependência verdadeira de dados
+	  Tipo mais comum de data hazard
+
+  7.1.2 Mecanismo do Conflito — [P]
+	  Instrução posterior depende do resultado da instrução anterior
+	  Risco de leitura de valor desatualizado
+	  Necessidade de sincronização entre estágios
+
+
+ 7.2 Exemplo e Análise da Dependência RAW — [P]
+
+  7.2.1 Cenário de Instruções — [P]
+	  Instrução produtora do valor
+	  Instrução consumidora do valor
+	  Sobreposição no pipeline
+
+  7.2.2 Consequência sem Tratamento — [P]
+	  Uso de valor incorreto
+	  Comprometimento do resultado final
+	  Necessidade de mecanismo de correção
+
+
+ 7.3 Relevância da Dependência RAW — [I]
+	  Dependência estruturalmente inevitável
+	  Base para técnicas de forwarding
+	  Impacto direto na organização do pipeline
+
+
+
+8. Dependência WAR (Write After Read) — [P]
+
+ 8.1 Conceito da Dependência WAR — [P]
+
+  8.1.1 Definição — [P]
+	  Escrita em um dado antes que a leitura anterior ocorra
+	  Dependência de nome (falsa dependência)
+	  Ocorrência associada à execução fora de ordem
+
+  8.1.2 Mecanismo do Conflito — [P]
+	  Instrução posterior tenta escrever antes da leitura anterior
+	  Risco de leitura de valor já alterado
+	  Sensibilidade à ordem de execução
+
+
+ 8.2 Exemplo e Análise da Dependência WAR — [I]
+
+  8.2.1 Cenário de Instruções — [I]
+	  Instrução leitora do dado original
+	  Instrução escritora do novo valor
+	  Sobreposição indevida entre leitura e escrita
+
+  8.2.2 Consequência sem Tratamento — [I]
+	  Leitura de valor incorreto
+	  Resultado final comprometido
+
+
+ 8.3 Contexto de Ocorrência da Dependência WAR — [I]
+	  Pipelines com execução fora de ordem
+	  Reordenação de instruções pelo hardware
+	  Menor frequência em pipelines simples e em ordem
+
+
+
+9. Dependência WAW (Write After Write) — [P]
+
+ 9.1 Conceito da Dependência WAW — [P]
+
+  9.1.1 Definição — [P]
+	  Duas escritas no mesmo destino em ordem incorreta
+	  Dependência de nome (falsa dependência)
+	  Risco de sobrescrita indevida do resultado final
+
+  9.1.2 Mecanismo do Conflito — [P]
+	  Instrução posterior grava antes da anterior
+	  Perda do valor correto no destino
+	  Necessidade de preservar a ordem de escrita
+
+
+ 9.2 Exemplo e Análise da Dependência WAW — [I]
+
+  9.2.1 Cenário de Instruções — [I]
+	  Duas instruções com o mesmo registrador de destino
+	  Ordem original de escrita
+	  Risco de inversão da ordem no pipeline
+
+  9.2.2 Consequência sem Tratamento — [I]
+	  Valor final incorreto no destino
+	  Perda de um resultado válido
+
+
+ 9.3 Contexto de Ocorrência da Dependência WAW — [I]
+	  Pipelines com múltiplos estágios de escrita
+	  Execução fora de ordem
+	  Processadores superescalares
+
+
+
+10. Comparação entre as Dependências de Dados — [I]
+
+ 10.1 Semelhanças entre RAW, WAR e WAW — [I]
+
+  10.1.1 Características Comuns — [I]
+	  Envolvem conflito no uso de um mesmo dado ou registrador
+	  Geram risco de resultado incorreto
+	  Exigem tratamento pelo hardware ou pelo compilador
+
+
+ 10.2 Diferenças entre RAW, WAR e WAW — [I]
+
+  10.2.1 Natureza da Dependência — [I]
+	  RAW como dependência verdadeira
+	  WAR e WAW como dependências de nome
+
+  10.2.2 Frequência e Criticidade — [I]
+	  RAW mais frequente em pipelines simples
+	  WAR e WAW mais associadas a execução fora de ordem
+
+  10.2.3 Estratégias de Resolução Associadas — [I]
+	  Forwarding relacionado a RAW
+	  Renomeação de registradores relacionada a WAR e WAW
+
+
+
+11. Detecção de Data Hazards no Pipeline — [P]
+
+ 11.1 Mecanismos de Detecção — [P]
+
+  11.1.1 Comparação de Registradores entre Instruções — [P]
+	  Verificação de registradores fonte e destino
+	  Identificação de coincidências entre instruções em estágios diferentes
+	  Sinalização do conflito para a unidade de controle
+
+  11.1.2 Momento da Detecção no Pipeline — [P]
+	  Detecção durante a decodificação
+	  Detecção antes do estágio de execução
+	  Antecipação do conflito para reduzir penalidade
+
+
+ 11.2 Unidade de Detecção de Hazards — [I]
+
+  11.2.1 Papel da Unidade de Controle de Hazards — [I]
+	  Monitoramento contínuo das dependências
+	  Decisão sobre necessidade de stall ou forwarding
+	  Coordenação com outros mecanismos do pipeline
+
+
+
+12. Impacto dos Data Hazards no Desempenho — [I]
+
+ 12.1 Custos Associados — [I]
+
+  12.1.1 Ciclos de Espera Gerados — [I]
+	  Stalls causados por dependências não resolvidas
+	  Bolhas inseridas até a disponibilidade do dado
+
+  12.1.2 Relação com a Frequência de Dependências — [I]
+	  Programas com muitas dependências sequenciais
+	  Impacto cumulativo ao longo da execução
+
+
+ 12.2 Importância do Tratamento Adequado — [V]
+	  Necessidade de técnicas específicas de mitigação
+	  Relação direta com a eficiência do pipeline
+	  Base para o estudo das soluções apresentadas na Parte 5
+
+
+
+PARTE 3 — STRUCTURAL HAZARDS (HAZARDS ESTRUTURAIS)
+
+
+13. Conceito de Structural Hazards — [P]
+
+ 13.1 Definição — [P]
+
+  13.1.1 O que é um Hazard Estrutural — [P]
+	  Conflito por disputa de um mesmo recurso físico
+	  Ausência de recurso suficiente para atender instruções simultâneas
+	  Diferença em relação aos hazards de dados
+
+  13.1.2 Natureza do Conflito — [P]
+	  Origem em limitação física do hardware
+	  Independência de dependências entre dados
+	  Relação direta com o projeto do processador
+
+
+ 13.2 Recursos Passíveis de Conflito — [P]
+
+  13.2.1 Tipos de Recursos Compartilhados — [P]
+	  Unidade de memória
+	  Unidades funcionais (como a ULA)
+	  Registradores
+	  Barramentos internos
+
+
+
+14. Causas dos Hazards Estruturais — [P]
+
+ 14.1 Origem do Conflito de Recursos — [P]
+
+  14.1.1 Disputa Simultânea pelo Mesmo Recurso — [P]
+	  Duas instruções em estágios diferentes exigindo o mesmo recurso
+	  Ausência de duplicidade do recurso no hardware
+	  Necessidade de espera até a liberação
+
+  14.1.2 Relação com a Simplicidade do Processador — [P]
+	  Processadores mais simples com menos recursos
+	  Maior probabilidade de conflito estrutural
+	  Trade-off entre custo de hardware e desempenho
+
+
+ 14.2 Situações Típicas de Conflito — [I]
+
+  14.2.1 Conflito de Acesso à Memória — [I]
+	  Busca de instrução e acesso a dados simultâneos
+	  Necessidade de uma única unidade de memória
+
+  14.2.2 Conflito de Unidades Funcionais — [I]
+	  Duas instruções exigindo a mesma unidade de execução
+	  Ausência de unidades duplicadas
+
+
+
+15. Recursos Críticos do Pipeline — [I]
+
+ 15.1 Memória como Recurso Crítico — [I]
+
+  15.1.1 Papel da Memória no Pipeline — [I]
+	  Acesso para busca de instrução
+	  Acesso para leitura e escrita de dados
+	  Ponto comum de disputa entre estágios
+
+
+ 15.2 Unidades Funcionais como Recurso Crítico — [I]
+
+  15.2.1 Papel das Unidades de Execução — [I]
+	  Unidade lógica e aritmética
+	  Unidade de ponto flutuante
+	  Limitação do número de unidades disponíveis
+
+
+ 15.3 Registradores e Barramentos como Recurso Crítico — [I]
+
+  15.3.1 Papel dos Registradores e Barramentos — [I]
+	  Portas limitadas de leitura e escrita
+	  Capacidade limitada de transferência simultânea
+
+
+
+16. Exemplo e Impacto dos Hazards Estruturais — [I]
+
+ 16.1 Análise de um Cenário de Conflito Estrutural — [I]
+
+  16.1.1 Disputa entre Busca de Instrução e Acesso a Dados — [I]
+	  Instrução em estágio de acesso à memória
+	  Nova instrução em estágio de busca
+	  Necessidade de priorização entre os estágios
+
+  16.1.2 Consequência da Disputa — [I]
+	  Atraso de um dos estágios envolvidos
+	  Geração de stall estrutural
+
+
+ 16.2 Impacto no Desempenho do Pipeline — [I]
+
+  16.2.1 Efeito sobre o Fluxo de Instruções — [I]
+	  Redução da taxa de conclusão
+	  Ociosidade de estágios aguardando o recurso
+
+  16.2.2 Estratégias Gerais de Mitigação — [V]
+	  Duplicação de recursos críticos
+	  Separação entre memória de instruções e de dados
+	  Melhor organização da arquitetura
+
+
+
+PARTE 4 — CONTROL HAZARDS (HAZARDS DE CONTROLE)
+
+
+17. Conceito de Control Hazards — [P]
+
+ 17.1 Definição — [P]
+
+  17.1.1 O que é um Hazard de Controle — [P]
+	  Incerteza sobre a próxima instrução a executar
+	  Conflito originado por alteração no fluxo do programa
+	  Diferença em relação aos hazards de dados e estruturais
+
+  17.1.2 Origem da Incerteza — [P]
+	  Dependência da avaliação de uma condição
+	  Necessidade de decisão sobre o caminho de execução
+
+
+ 17.2 Relação com o Fluxo de Execução — [I]
+
+  17.2.1 Fluxo Sequencial Normal — [I]
+	  Execução padrão em sequência
+	  Previsibilidade da próxima instrução
+
+  17.2.2 Alteração do Fluxo por Instruções de Controle — [I]
+	  Mudança do endereço da próxima instrução
+	  Quebra da previsibilidade sequencial
+
+
+
+18. Instruções de Desvio como Origem do Hazard — [P]
+
+ 18.1 Tipos de Instruções de Controle — [P]
+
+  18.1.1 Desvios Condicionais (Branch) — [P]
+	  Decisão baseada em uma condição
+	  Dois caminhos possíveis de execução
+
+  18.1.2 Saltos Incondicionais (Jump) — [I]
+	  Mudança direta e obrigatória do fluxo
+	  Ausência de avaliação de condição
+
+
+ 18.2 Efeito das Instruções de Controle no Pipeline — [P]
+
+  18.2.1 Interrupção da Busca Antecipada — [P]
+	  Impossibilidade de saber a próxima instrução com certeza
+	  Necessidade de aguardar ou prever o resultado
+
+
+
+19. Momento de Resolução do Desvio no Pipeline — [P]
+
+ 19.1 Estágio em que a Condição é Avaliada — [P]
+
+  19.1.1 Avaliação na Execução — [P]
+	  Resolução da condição em estágio avançado do pipeline
+	  Instruções seguintes já buscadas antes da resolução
+
+  19.1.2 Consequência do Atraso na Resolução — [P]
+	  Instruções buscadas incorretamente
+	  Necessidade de descarte ou espera
+
+
+ 19.2 Janela de Incerteza do Pipeline — [I]
+
+  19.2.1 Período entre Busca e Resolução — [I]
+	  Intervalo de ciclos sem confirmação do caminho correto
+	  Relação entre profundidade do pipeline e tamanho da janela
+
+
+
+20. Exemplo e Penalidade de Desvio (Branch Penalty) — [I]
+
+ 20.1 Análise de um Cenário de Hazard de Controle — [I]
+
+  20.1.1 Instrução de Desvio em Busca — [I]
+	  Estágio de busca sem decisão disponível
+	  Estado de espera representado no pipeline
+
+  20.1.2 Instruções Seguintes em Risco — [I]
+	  Possível busca de instruções do caminho errado
+	  Necessidade de descarte em caso de previsão incorreta
+
+
+ 20.2 Conceito de Penalidade de Desvio — [P]
+
+  20.2.1 Definição da Branch Penalty — [P]
+	  Número de ciclos perdidos por desvio
+	  Relação com o estágio de resolução da condição
+
+  20.2.2 Fatores que Influenciam a Penalidade — [I]
+	  Profundidade do pipeline
+	  Momento de resolução do desvio
+	  Frequência de desvios no programa
+
+
+
+21. Impacto dos Control Hazards no Desempenho — [I]
+
+ 21.1 Custos Gerais — [I]
+
+  21.1.1 Ciclos Perdidos por Desvio — [I]
+	  Acúmulo de penalidades ao longo da execução
+	  Relação com programas ricos em decisões condicionais
+
+  21.1.2 Sensibilidade de Programas com Muitos Desvios — [I]
+	  Estruturas de repetição
+	  Estruturas condicionais aninhadas
+
+
+ 21.2 Importância do Tratamento Adequado — [V]
+	  Necessidade de técnicas específicas de mitigação
+	  Relação direta com a eficiência do pipeline
+	  Base para o estudo das soluções apresentadas na Parte 5
+
+
+
+PARTE 5 — TÉCNICAS DE DETECÇÃO E TRATAMENTO DE HAZARDS
+
+
+22. Visão Geral das Técnicas de Tratamento — [I]
+
+ 22.1 Objetivo Comum das Técnicas — [I]
+
+  22.1.1 Manutenção do Fluxo do Pipeline — [I]
+	  Redução de ciclos ociosos
+	  Preservação da correção dos resultados
+	  Maximização do aproveitamento do paralelismo
+
+  22.1.2 Classificação Geral das Técnicas — [I]
+	  Técnicas voltadas a data hazards
+	  Técnicas voltadas a structural hazards
+	  Técnicas voltadas a control hazards
+	  Técnicas de propósito geral
+
+
+
+23. Stalling (Inserção de Bolhas) — [P]
+
+ 23.1 Conceito da Técnica — [P]
+
+  23.1.1 Funcionamento do Stalling — [P]
+	  Pausa controlada de estágios do pipeline
+	  Inserção de bolhas até a resolução do conflito
+	  Aplicação a diferentes tipos de hazard
+
+  23.1.2 Vantagens e Limitações — [I]
+	  Simplicidade de implementação
+	  Garantia de correção do resultado
+	  Perda de desempenho pela ociosidade gerada
+
+
+
+24. Forwarding / Bypassing — [P]
+
+ 24.1 Conceito da Técnica — [P]
+
+  24.1.1 Funcionamento do Forwarding — [P]
+	  Encaminhamento direto do dado entre estágios
+	  Eliminação da necessidade de gravação e leitura intermediária
+	  Aplicação principal a dependências RAW
+
+  24.1.2 Caminhos de Encaminhamento — [P]
+	  Encaminhamento entre estágios de execução
+	  Encaminhamento entre estágio de memória e execução
+	  Necessidade de hardware adicional de desvio de dados
+
+
+ 24.2 Limitações do Forwarding — [I]
+
+  24.2.1 Situações não Resolvidas pelo Forwarding — [I]
+	  Dependências que exigem dado ainda não calculado
+	  Necessidade de combinação com stalling em certos casos
+
+
+
+25. Reordenação de Instruções (Instruction Scheduling) — [I]
+
+ 25.1 Conceito da Técnica — [I]
+
+  25.1.1 Funcionamento da Reordenação — [I]
+	  Antecipação de instruções independentes
+	  Adiamento de instruções dependentes
+	  Preenchimento de ciclos que seriam ociosos
+
+  25.1.2 Origem da Reordenação — [I]
+	  Reordenação estática pelo compilador
+	  Reordenação dinâmica pelo hardware
+
+
+ 25.2 Benefícios e Restrições — [I]
+	  Redução de bolhas no pipeline
+	  Necessidade de preservar a corretude do programa
+	  Dependência da existência de instruções independentes disponíveis
+
+
+
+26. Renomeação de Registradores (Register Renaming) — [P]
+
+ 26.1 Conceito da Técnica — [P]
+
+  26.1.1 Funcionamento da Renomeação — [P]
+	  Uso de registradores temporários ou físicos adicionais
+	  Eliminação de dependências de nome
+	  Separação entre registradores arquiteturais e físicos
+
+  26.1.2 Aplicação às Dependências WAR e WAW — [P]
+	  Eliminação de falsas dependências
+	  Permissão de execução fora de ordem sem conflito de nome
+
+
+ 26.2 Estrutura de Suporte à Renomeação — [I]
+
+  26.2.1 Tabela de Renomeação de Registradores — [I]
+	  Mapeamento entre registradores lógicos e físicos
+	  Atualização dinâmica durante a execução
+
+
+
+27. Predição Estática de Desvio — [I]
+
+ 27.1 Conceito da Técnica — [I]
+
+  27.1.1 Funcionamento da Predição Estática — [I]
+	  Decisão fixa definida antes da execução
+	  Baseada em heurísticas simples ou no compilador
+
+  27.1.2 Estratégias Comuns — [I]
+	  Predizer sempre desvio não tomado
+	  Predizer sempre desvio tomado
+	  Predição baseada na direção do desvio (para trás ou para frente)
+
+
+ 27.2 Limitações da Predição Estática — [I]
+	  Ausência de adaptação ao comportamento real do programa
+	  Precisão limitada em programas complexos
+
+
+
+28. Predição Dinâmica de Desvio — [P]
+
+ 28.1 Conceito da Técnica — [P]
+
+  28.1.1 Funcionamento da Predição Dinâmica — [P]
+	  Uso do histórico de execução do desvio
+	  Adaptação contínua durante a execução do programa
+	  Objetivo de antecipar corretamente o caminho seguido
+
+  28.1.2 Estruturas de Apoio à Predição — [P]
+	  Histórico de desvios (branch history)
+	  Contadores de predição de dois bits
+	  Tabelas de predição indexadas pelo endereço da instrução
+
+
+ 28.2 Acerto e Erro de Predição — [P]
+
+  28.2.1 Predição Correta — [P]
+	  Continuidade do fluxo sem penalidade
+	  Ganho de desempenho em relação à espera
+
+  28.2.2 Predição Incorreta — [P]
+	  Descarte das instruções especulativas buscadas
+	  Reinício do pipeline a partir do caminho correto
+	  Penalidade equivalente ou maior que a espera simples
+
+
+
+29. Buffer de Alvo de Desvio (Branch Target Buffer) — [I]
+
+ 29.1 Conceito da Estrutura — [I]
+
+  29.1.1 Funcionamento do BTB — [I]
+	  Armazenamento do endereço de destino de desvios anteriores
+	  Consulta antecipada durante a busca de instrução
+	  Redução do atraso na determinação do próximo endereço
+
+  29.1.2 Relação com a Predição de Desvio — [I]
+	  Complementaridade entre previsão de direção e previsão de endereço
+	  Uso conjunto para reduzir a penalidade de desvio
+
+
+
+30. Desvio Retardado (Delayed Branch) — [I]
+
+ 30.1 Conceito da Técnica — [I]
+
+  30.1.1 Funcionamento do Delayed Branch — [I]
+	  Execução de uma ou mais instruções após o desvio antes da resolução
+	  Aproveitamento do "slot de atraso" (delay slot)
+	  Preenchimento com instrução útil ou NOP
+
+  30.1.2 Limitações da Técnica — [I]
+	  Dependência de instruções independentes disponíveis
+	  Menor aplicabilidade em pipelines mais profundos
+	  Redução de uso em arquiteturas modernas
+
+
+
+31. Execução Especulativa — [P]
+
+ 31.1 Conceito da Técnica — [P]
+
+  31.1.1 Funcionamento da Execução Especulativa — [P]
+	  Execução antecipada baseada em predição
+	  Continuidade do pipeline sem aguardar confirmação
+	  Uso combinado com predição de desvio
+
+  31.1.2 Tratamento do Resultado Especulativo — [P]
+	  Confirmação (commit) em caso de previsão correta
+	  Descarte (squash) em caso de previsão incorreta
+	  Necessidade de mecanismo de reversão de estado
+
+
+ 31.2 Riscos e Benefícios — [I]
+	  Ganho de desempenho quando a previsão é correta
+	  Custo de recuperação quando a previsão é incorreta
+	  Necessidade de hardware adicional de controle
+
+
+
+32. Execução Fora de Ordem (Out-of-Order Execution) — [P]
+
+ 32.1 Conceito da Técnica — [P]
+
+  32.1.1 Funcionamento da Execução Fora de Ordem — [P]
+	  Identificação de instruções independentes
+	  Execução antecipada de instruções sem dependências pendentes
+	  Preservação da ordem lógica na conclusão (commit)
+
+  32.1.2 Relação com os Hazards — [P]
+	  Redução do impacto de dependências RAW
+	  Necessidade de renomeação para tratar WAR e WAW
+	  Complexidade adicional de controle
+
+
+ 32.2 Estruturas de Apoio — [I]
+
+  32.2.1 Janela de Instruções — [I]
+	  Conjunto de instruções candidatas à execução
+	  Monitoramento contínuo da disponibilidade de operandos
+
+
+
+33. Buffer de Reordenação (Reorder Buffer) — [I]
+
+ 33.1 Conceito da Estrutura — [I]
+
+  33.1.1 Funcionamento do Reorder Buffer — [I]
+	  Registro da ordem original das instruções
+	  Retenção de resultados até a confirmação
+	  Garantia de conclusão (commit) na ordem correta
+
+  33.1.2 Relação com a Execução Fora de Ordem — [I]
+	  Suporte à execução especulativa
+	  Reversão segura em caso de previsão incorreta
+
+
+
+34. Pipeline Dinâmico e Clock Gating — [V]
+
+ 34.1 Pipeline Dinâmico — [V]
+
+  34.1.1 Conceito de Pipeline Dinâmico — [V]
+	  Ajuste do comportamento conforme a carga de trabalho
+	  Combinação de múltiplas técnicas de tratamento de hazards
+	  Adaptação a diferentes cenários de execução
+
+
+ 34.2 Clock Gating — [V]
+
+  34.2.1 Conceito de Clock Gating — [V]
+	  Desligamento temporário do sinal de clock em partes ociosas
+	  Redução do consumo de energia durante stalls
+	  Relação entre eficiência energética e hazards
+
+
+
+PARTE 6 — HAZARDS EM ARQUITETURAS AVANÇADAS
+
+
+35. Hazards em Processadores Superescalares — [I]
+
+ 35.1 Conceito de Processador Superescalar — [V]
+
+  35.1.1 Múltiplas Instruções por Ciclo — [V]
+	  Emissão simultânea de várias instruções
+	  Múltiplas unidades funcionais em paralelo
+
+
+ 35.2 Ampliação dos Hazards em Superescalares — [I]
+
+  35.2.1 Aumento das Dependências de Dados — [I]
+	  Maior número de instruções concorrentes
+	  Maior probabilidade de conflitos RAW, WAR e WAW
+
+  35.2.2 Aumento dos Conflitos Estruturais — [I]
+	  Disputa por múltiplas unidades funcionais
+	  Necessidade de lógica de escalonamento mais complexa
+
+  35.2.3 Impacto Ampliado dos Control Hazards — [I]
+	  Maior penalidade por desvio devido à emissão múltipla
+	  Maior importância da predição de desvio
+
+
+
+36. Hazards em Arquiteturas VLIW — [V]
+
+ 36.1 Conceito de Arquitetura VLIW — [V]
+
+  36.1.1 Instruções Longas com Múltiplas Operações — [V]
+	  Definição de operações paralelas em tempo de compilação
+	  Responsabilidade do compilador pelo escalonamento
+
+
+ 36.2 Tratamento de Hazards em VLIW — [V]
+
+  36.2.1 Resolução Estática de Dependências — [V]
+	  Escalonamento realizado antes da execução
+	  Redução da necessidade de detecção dinâmica de hazards
+
+
+
+37. Scoreboarding — [I]
+
+ 37.1 Conceito da Técnica — [I]
+
+  37.1.1 Funcionamento do Scoreboarding — [I]
+	  Controle centralizado do estado das instruções
+	  Monitoramento da disponibilidade de operandos e unidades
+	  Liberação da execução quando as condições são satisfeitas
+
+  37.1.2 Tratamento de Hazards pelo Scoreboarding — [I]
+	  Detecção de dependências antes da emissão
+	  Bloqueio de instruções conflitantes até a resolução
+
+
+
+38. Algoritmo de Tomasulo — [I]
+
+ 38.1 Conceito do Algoritmo — [I]
+
+  38.1.1 Funcionamento Geral — [I]
+	  Uso de estações de reserva
+	  Eliminação de dependências de nome via renomeação implícita
+	  Encaminhamento direto de resultados entre unidades
+
+  38.1.2 Relação com os Hazards — [I]
+	  Tratamento eficiente de dependências RAW
+	  Eliminação de WAR e WAW por meio da renomeação
+	  Base histórica para técnicas modernas de execução fora de ordem
+
+
+
+39. Trade-offs entre Técnicas de Tratamento de Hazards — [I]
+
+ 39.1 Custo versus Benefício — [I]
+
+  39.1.1 Complexidade de Hardware — [I]
+	  Aumento da área e do consumo de energia
+	  Maior complexidade de projeto e verificação
+
+  39.1.2 Ganho de Desempenho — [I]
+	  Redução de ciclos perdidos
+	  Melhoria do throughput de instruções
+
+
+ 39.2 Escolha das Técnicas conforme o Contexto — [I]
+	  Processadores simples e técnicas de baixo custo
+	  Processadores de alto desempenho e técnicas avançadas combinadas
+
+
+
+40. Hazards e Paralelismo em Nível de Instrução (ILP) — [V]
+
+ 40.1 Conceito de ILP — [V]
+
+  40.1.1 Definição de Paralelismo em Nível de Instrução — [V]
+	  Execução simultânea de instruções independentes
+	  Relação com o desempenho potencial do processador
+
+
+ 40.2 Hazards como Limitadores do ILP — [V]
+
+  40.2.1 Restrição Imposta pelas Dependências — [V]
+	  Redução das oportunidades de paralelismo
+	  Papel das técnicas de tratamento na ampliação do ILP explorável
+
+
+
+PARTE 7 — INTEGRAÇÃO DOS CONCEITOS, RESUMO GERAL E CONCLUSÃO
+
+
+41. Integração dos Conceitos sobre Pipeline Hazards — [I]
+
+ 41.1 Visão Integrada dos Tipos de Hazard — [I]
+
+  41.1.1 Relação entre Data, Structural e Control Hazards — [I]
+	  Origens distintas e efeitos semelhantes no pipeline
+	  Possibilidade de ocorrência simultânea
+	  Necessidade de tratamento coordenado
+
+  41.1.2 Integração entre Causas e Soluções — [I]
+	  Correspondência entre tipo de hazard e técnica adequada
+	  Combinação de técnicas em processadores modernos
+
+
+ 41.2 Visão Sistêmica do Tratamento de Hazards — [I]
+
+  41.2.1 Hazards como Parte do Projeto de Microarquitetura — [I]
+	  Influência sobre decisões de profundidade do pipeline
+	  Influência sobre a escolha de técnicas de execução
+
+
+
+42. Relação dos Hazards com Outros Tópicos da Arquitetura — [I]
+
+ 42.1 Relação com o Pipeline de Instruções — [I]
+
+  42.1.1 Hazards como Consequência Direta do Pipeline — [I]
+	  Origem estrutural nos estágios sobrepostos
+	  Base para o entendimento do funcionamento do pipeline
+
+
+ 42.2 Relação com o Caminho de Dados e a Unidade de Controle — [I]
+
+  42.2.1 Impacto sobre o Datapath — [I]
+	  Necessidade de caminhos adicionais de encaminhamento
+	  Alterações estruturais para suportar forwarding
+
+  42.2.2 Impacto sobre a Unidade de Controle — [I]
+	  Lógica adicional de detecção de hazards
+	  Sinais de controle para stalls e bolhas
+
+
+ 42.3 Relação com a Memória e os Registradores — [I]
+
+  42.3.1 Hazards Estruturais Envolvendo Memória e Registradores — [I]
+	  Base para o estudo de hierarquia de memória
+	  Relação com o número de portas de acesso
+
+
+ 42.4 Relação com Processadores Superescalares e Fora de Ordem — [I]
+
+  42.4.1 Hazards como Base para Técnicas Avançadas — [I]
+	  Justificativa para renomeação, especulação e reordenação
+	  Preparação para o estudo de microarquiteturas modernas
+
+
+
+43. Resumo Geral sobre Pipeline Hazards — [I]
+
+ 43.1 Revisão dos Tipos de Hazards — [I]
+
+  43.1.1 Data Hazards — [I]
+	  RAW, WAR e WAW
+	  Dependências verdadeiras e de nome
+
+  43.1.2 Structural Hazards — [I]
+	  Conflito por recursos compartilhados
+	  Limitação física do hardware
+
+  43.1.3 Control Hazards — [I]
+	  Incerteza gerada por desvios e saltos
+	  Penalidade de desvio
+
+
+ 43.2 Revisão das Consequências — [I]
+
+  43.2.1 Stalls e Bolhas — [I]
+	  Pausas e ciclos ociosos
+	  Impacto no CPI e no throughput
+
+
+ 43.3 Revisão das Técnicas de Tratamento — [I]
+
+  43.3.1 Técnicas Fundamentais — [I]
+	  Stalling
+	  Forwarding
+	  Reordenação de instruções
+
+  43.3.2 Técnicas Avançadas — [I]
+	  Renomeação de registradores
+	  Predição de desvio
+	  Execução especulativa e fora de ordem
+
+
+ 43.4 Revisão dos Contextos Avançados — [I]
+
+  43.4.1 Arquiteturas Modernas — [I]
+	  Processadores superescalares
+	  Arquiteturas VLIW
+	  Scoreboarding e algoritmo de Tomasulo
+
+
+
+44. Conclusão do Estudo sobre Pipeline Hazards — [V]
+
+ 44.1 Síntese Final — [V]
+
+  44.1.1 O Papel dos Hazards na Arquitetura de Computadores — [V]
+	  Desafio inerente ao processamento em pipeline
+	  Elemento central para o desempenho dos processadores
+	  Motivação para grande parte das técnicas de microarquitetura
+
+  44.1.2 Importância para a Organização de Computadores — [V]
+	  Base para compreender o funcionamento real dos processadores
+	  Fundamento para o estudo de pipeline, datapath e execução avançada
+
+
+ 44.2 Competências Desenvolvidas — [V]
+
+  44.2.1 Conhecimentos Adquiridos — [V]
+	  Identificação dos tipos de hazard
+	  Compreensão das causas e consequências
+	  Conhecimento das principais técnicas de tratamento
+
+  44.2.2 Preparação para Estudos Posteriores — [V]
+	  Pipeline de Instruções
+	  Caminho de Dados (Datapath)
+	  Unidade de Controle
+	  Processadores Superescalares e Execução Fora de Ordem
+	  Hierarquia de Memória
+
+
+ 44.3 Encerramento — [V]
+
+  44.3.1 Visão Geral Final — [V]
+	  Integração dos três tipos de hazard
+	  Importância do equilíbrio entre desempenho e complexidade
+	  Continuidade dos estudos em Arquitetura e Organização de Computadores
