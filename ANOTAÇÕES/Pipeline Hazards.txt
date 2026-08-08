@@ -136,6 +136,21 @@ PARTE 1 — FUNDAMENTOS DOS PIPELINE HAZARDS
 	  Bolha como unidade específica de inatividade inserida
 	  Relação de causa e efeito entre os dois conceitos
 
+  3.2.4 Inserção de Bolha por Controle — [P]
+	  Geração de uma bolha pelo hardware
+	  Transformação de uma operação em NOP
+	  Propagação da bolha pelos estágios
+	  Relação entre stall e inserção de bolha
+
+
+  3.2.5 Flush e Squash de Instruções — [P]
+	  Conceito de flush
+	  Conceito de squash
+	  Invalidação de instruções no pipeline
+	  Diferença entre stall, bubble, flush e squash
+	  Situações que exigem espera
+	  Situações que exigem descarte
+
 
  3.3 Custo das Interrupções no Pipeline — [I]
 
@@ -236,6 +251,15 @@ PARTE 2 — DATA HAZARDS (HAZARDS DE DADOS)
 	  Dependência de escrita após leitura
 	  Dependência de escrita após escrita
 
+  6.1.3 Dependências Envolvendo Memória — [P]
+	  Dependências entre operações load e store
+	  RAW envolvendo memória
+	  WAR envolvendo memória
+	  WAW envolvendo memória
+	  Dependência determinada pelos endereços acessados
+	  Dependências entre instruções que acessam a mesma posição de memória
+	  Diferença entre dependência de registrador e dependência de memória
+
 
  6.2 Dependências Reais versus Dependências de Nome — [I]
 
@@ -247,6 +271,12 @@ PARTE 2 — DATA HAZARDS (HAZARDS DE DADOS)
 	  Conflito causado pelo reuso do mesmo registrador
 	  Ausência de dependência real de valor
 	  Possibilidade de eliminação por renomeação
+
+  6.2.3 Dependências de Memória e Alias de Endereços — [I]
+	  Possibilidade de duas instruções acessarem a mesma posição de memória
+	  Memory aliasing
+	  Incerteza sobre a existência da dependência
+	  Necessidade de verificar endereços antes da execução fora de ordem
 
 
 
@@ -276,6 +306,15 @@ PARTE 2 — DATA HAZARDS (HAZARDS DE DADOS)
 	  Uso de valor incorreto
 	  Comprometimento do resultado final
 	  Necessidade de mecanismo de correção
+
+  7.2.3 Caso Especial: Load-Use Hazard — [P]
+	  Dependência RAW entre uma instrução de load e a instrução consumidora
+	  Disponibilidade tardia do dado carregado
+	  Situação em que o forwarding não é suficiente
+	  Necessidade de stall adicional
+	  Relação entre estágio de memória e estágio de execução
+	  Exemplo de sequência LOAD → ADD
+	  Número de ciclos de penalidade conforme a organização do pipeline
 
 
  7.3 Relevância da Dependência RAW — [I]
@@ -400,6 +439,10 @@ PARTE 2 — DATA HAZARDS (HAZARDS DE DADOS)
 	  Monitoramento contínuo das dependências
 	  Decisão sobre necessidade de stall ou forwarding
 	  Coordenação com outros mecanismos do pipeline
+	  Comparação entre registradores fonte e destino
+	  Identificação de dependências entre instruções em diferentes estágios
+	  Geração de sinais de controle
+	  Decisão entre avanço, espera ou inserção de bolha
 
   11.2.2 Entradas da Hazard Detection Unit — [I]
 	  Registradores fonte das instruções
@@ -417,6 +460,8 @@ PARTE 2 — DATA HAZARDS (HAZARDS DE DADOS)
 	  Congelamento do registrador IF/ID
 	  Inserção de bolha no estágio seguinte
 	  Alteração dos sinais de controle
+	  Transformação de uma instrução em operação NOP
+	  Coordenação entre unidade de detecção e unidade de controle
 
 
 
@@ -846,6 +891,15 @@ PARTE 5 — TÉCNICAS DE DETECÇÃO E TRATAMENTO DE HAZARDS
 	  Descarte das instruções especulativas buscadas
 	  Reinício do pipeline a partir do caminho correto
 	  Penalidade equivalente ou maior que a espera simples
+
+  28.2.3 Recuperação após Misprediction — [P]
+	  Detecção da previsão incorreta
+	  Identificação das instruções especulativas inválidas
+	  Flush/squash das instruções incorretas
+	  Redirecionamento do PC para o caminho correto
+	  Reinício do preenchimento do pipeline
+	  Número de ciclos perdidos na recuperação
+	  Relação entre profundidade do pipeline e custo da recuperação
 
 
  28.3 Recuperação após Misprediction — [P]
