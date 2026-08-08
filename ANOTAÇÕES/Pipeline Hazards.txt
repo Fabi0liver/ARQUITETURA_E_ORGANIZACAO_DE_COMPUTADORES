@@ -1148,6 +1148,11 @@ PARTE 6 — HAZARDS EM ARQUITETURAS AVANÇADAS
   37.1.2 Tratamento de Hazards pelo Scoreboarding — [I]
 	  Detecção de dependências antes da emissão
 	  Bloqueio de instruções conflitantes até a resolução
+	  Detecção de RAW
+	  Detecção de WAR
+	  Detecção de WAW
+	  Bloqueio conforme dependências
+	  Relação entre disponibilidade de operandos e unidades funcionais
 
 
 
@@ -1164,6 +1169,11 @@ PARTE 6 — HAZARDS EM ARQUITETURAS AVANÇADAS
 	  Tratamento eficiente de dependências RAW
 	  Eliminação de WAR e WAW por meio da renomeação
 	  Base histórica para técnicas modernas de execução fora de ordem
+	  Tratamento de RAW por forwarding/propagação de resultados
+	  Eliminação de WAR e WAW por renomeação
+	  Execução de instruções quando operandos estão disponíveis
+	  Redução de stalls causados por dependências
+	  Relação entre estações de reserva e disponibilidade dos operandos
 
 
 
