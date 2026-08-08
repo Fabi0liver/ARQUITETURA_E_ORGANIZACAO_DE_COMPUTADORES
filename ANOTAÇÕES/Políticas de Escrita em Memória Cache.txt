@@ -171,6 +171,14 @@ PARTE 1 — FUNDAMENTOS DA ESCRITA EM MEMÓRIA CACHE
 	  Políticas sem alocação de bloco
 	  Combinações típicas entre as duas classificações
 
+  5.2.3 Independência entre Política de Escrita e Política de Alocação — [P]
+	  Política de atualização × política de alocação
+	  Write Through × Write Back
+	  Write Allocate × No-Write Allocate
+	  Possibilidade de combinar as políticas
+	  Por que as quatro combinações existem
+	  Critérios para escolher cada combinação
+
 
 
 6. Fatores que Influenciam a Escolha da Política de Escrita — [I]
@@ -274,6 +282,15 @@ PARTE 2 — POLÍTICAS BÁSICAS DE ESCRITA
 	  Transferência gradual para a memória principal
 	  Continuidade da execução da CPU
 
+  9.1.3 Fluxo Completo de uma Escrita com Write Through e Write Buffer — [P]
+	  CPU gera a escrita
+	  Atualização da cache
+	  Inserção da escrita no Write Buffer
+	  Continuação da execução da CPU
+	  Transferência do buffer para o nível inferior
+	  Esvaziamento do buffer
+	  Situação de buffer cheio
+
 
  9.2 Limitações e Cuidados com o Write Buffer — [P]
 
@@ -281,6 +298,13 @@ PARTE 2 — POLÍTICAS BÁSICAS DE ESCRITA
 	  Saturação do buffer em rajadas de escrita
 	  Necessidade de esvaziamento (drain) do buffer
 	  Riscos de inconsistência temporária
+
+  9.2.2 Dependência entre Leitura e Escrita Pendente — [I]
+	  Leitura de endereço presente no buffer
+	  Necessidade de obter o valor mais recente
+	  Consulta ao buffer
+	  Encaminhamento do valor
+	  Impacto no tempo de acesso
 
 
 
@@ -624,6 +648,18 @@ PARTE 3 — TRATAMENTO DE WRITE HIT E WRITE MISS
   20.2.2 Write Back com No-Write Allocate — [I]
 	  Características da combinação
 	  Limitações práticas
+
+
+ 20.3 Matriz Geral das Políticas de Escrita e Alocação — [P]
+	  Write Through + No-Write Allocate
+	  Write Through + Write Allocate
+	  Write Back + Write Allocate
+	  Write Back + No-Write Allocate
+	  Comportamento no Write Hit
+	  Comportamento no Write Miss
+	  Momento da atualização do nível inferior
+	  Necessidade de dirty bit
+	  Necessidade de alocação
 
 
 
