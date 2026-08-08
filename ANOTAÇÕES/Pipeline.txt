@@ -122,6 +122,24 @@ PARTE 1 — FUNDAMENTOS DO PIPELINE
 	  Análise comparativa de desempenho
 
 
+ 3.4 Preenchimento e Esvaziamento do Pipeline — [I]
+
+  3.4.1 Preenchimento do Pipeline (Pipeline Fill) — [I]
+	  Entrada gradual das instruções nos estágios
+	  Ciclos iniciais de preenchimento
+	  Tempo necessário para atingir o funcionamento completo
+
+  3.4.2 Funcionamento em Regime — [I]
+	  Pipeline completamente ocupado
+	  Sobreposição contínua das instruções
+	  Relação com o throughput
+
+  3.4.3 Esvaziamento do Pipeline (Pipeline Drain) — [I]
+	  Saída gradual das instruções
+	  Ciclos finais de execução
+	  Impacto sobre o desempenho de sequências curtas
+
+
 
 4. Paralelismo em Nível de Instrução (ILP) — [I]
 
