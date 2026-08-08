@@ -184,6 +184,21 @@ PARTE 1 — FUNDAMENTOS DOS PIPELINE HAZARDS
 	  Relação entre hazards e throughput
 	  Redução da taxa de instruções concluídas por ciclo
 
+  4.1.4 Cálculo do CPI Real com Hazards — [P]
+	  CPI ideal
+	  CPI base
+	  Ciclos adicionais causados por hazards
+	  Stall cycles per instruction
+	  Cálculo do CPI efetivo
+	  Comparação entre pipeline ideal e pipeline real
+
+  4.1.5 Penalidade Média dos Hazards — [P]
+	  Frequência de ocorrência do hazard
+	  Penalidade por ocorrência
+	  Penalidade média por instrução
+	  Impacto combinado de diferentes hazards
+	  Cálculo do desempenho final
+
 
  4.2 Fatores que Agravam o Impacto dos Hazards — [I]
 
@@ -195,6 +210,12 @@ PARTE 1 — FUNDAMENTOS DOS PIPELINE HAZARDS
   4.2.2 Profundidade do Pipeline — [I]
 	  Pipelines mais longos e maior penalidade
 	  Relação entre número de estágios e sensibilidade a hazards
+
+  4.2.3 Taxa de Acerto e Erro das Técnicas de Tratamento — [I]
+	  Taxa de acerto da predição
+	  Taxa de misprediction
+	  Relação entre frequência e penalidade
+	  Impacto no CPI
 
 
  4.3 Importância do Estudo dos Hazards — [V]
@@ -776,6 +797,13 @@ PARTE 5 — TÉCNICAS DE DETECÇÃO E TRATAMENTO DE HAZARDS
 	  Encaminhamento entre estágio de memória e execução
 	  Necessidade de hardware adicional de desvio de dados
 
+  24.1.3 Store-to-Load Forwarding — [I]
+	  Encaminhamento de dados de uma operação store para uma operação load
+	  Situação em que o dado ainda não foi atualizado na memória
+	  Dependência entre operações de memória
+	  Necessidade de verificar endereços
+	  Relação com execução fora de ordem
+
 
  24.2 Limitações do Forwarding — [I]
 
@@ -970,6 +998,14 @@ PARTE 5 — TÉCNICAS DE DETECÇÃO E TRATAMENTO DE HAZARDS
 	  Confirmação (commit) em caso de previsão correta
 	  Descarte (squash) em caso de previsão incorreta
 	  Necessidade de mecanismo de reversão de estado
+ 
+  31.1.3 Squash de Instruções Especulativas — [P]
+	  Identificação das instruções especulativas
+	  Invalidação dos resultados incorretos
+	  Flush das instruções dependentes
+	  Recuperação do estado arquitetural
+	  Redirecionamento da execução
+	  Relação entre squash e branch misprediction
 
 
  31.2 Riscos e Benefícios — [I]
@@ -999,6 +1035,14 @@ PARTE 5 — TÉCNICAS DE DETECÇÃO E TRATAMENTO DE HAZARDS
   32.2.1 Janela de Instruções — [I]
 	  Conjunto de instruções candidatas à execução
 	  Monitoramento contínuo da disponibilidade de operandos
+
+  32.2.2 Load/Store Queue — [I]
+	  Rastreamento de operações de memória
+	  Ordenação entre loads e stores
+	  Detecção de dependências de memória
+	  Suporte à execução fora de ordem
+	  Store-to-load forwarding
+	  Garantia de corretude das operações de memória
 
 
 
@@ -1053,12 +1097,23 @@ PARTE 6 — HAZARDS EM ARQUITETURAS AVANÇADAS
   35.2.1 Aumento das Dependências de Dados — [I]
 	  Maior número de instruções concorrentes
 	  Maior probabilidade de conflitos RAW, WAR e WAW
+	  Dependências envolvendo operações de memória
+	  Store-to-load dependencies
+	  Necessidade de verificar dependências entre loads e stores
 
-  35.2.2 Aumento dos Conflitos Estruturais — [I]
+  35.2.2 Dependências de Memória e Memory Disambiguation — [I]
+	  Identificação de dependências entre loads e stores
+	  Verificação de possíveis conflitos de endereço
+	  Incerteza sobre aliasing
+	  Dependências reais versus aparentes
+	  Necessidade de preservar a corretude da execução
+	  Impacto sobre execução fora de ordem
+
+  35.2.3 Aumento dos Conflitos Estruturais — [I]
 	  Disputa por múltiplas unidades funcionais
 	  Necessidade de lógica de escalonamento mais complexa
 
-  35.2.3 Impacto Ampliado dos Control Hazards — [I]
+  35.2.4 Impacto Ampliado dos Control Hazards — [I]
 	  Maior penalidade por desvio devido à emissão múltipla
 	  Maior importância da predição de desvio
 
@@ -1185,10 +1240,22 @@ PARTE 7 — INTEGRAÇÃO DOS CONCEITOS, RESUMO GERAL E CONCLUSÃO
  42.2 Relação com o Caminho de Dados e a Unidade de Controle — [I]
 
   42.2.1 Impacto sobre o Datapath — [I]
+	  Caminhos de forwarding
+	  Multiplexadores adicionais
+	  Caminhos de bypass
+	  Conexão entre estágios
+	  Modificações necessárias para encaminhamento de dados
+	  Relação entre datapath e resolução de hazards
 	  Necessidade de caminhos adicionais de encaminhamento
 	  Alterações estruturais para suportar forwarding
 
   42.2.2 Impacto sobre a Unidade de Controle — [I]
+	  Hazard Detection Unit
+	  Forwarding Unit
+	  Sinais de stall
+	  Sinais de flush
+	  Sinais de controle para bolhas
+	  Coordenação entre detecção e tratamento
 	  Lógica adicional de detecção de hazards
 	  Sinais de controle para stalls e bolhas
 
