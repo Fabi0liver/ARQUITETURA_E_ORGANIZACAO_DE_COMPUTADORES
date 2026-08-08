@@ -651,6 +651,19 @@ PARTE 4 — TÉCNICAS DE RESOLUÇÃO E OTIMIZAÇÃO DE HAZARDS
 	  Necessidade de mecanismos de reversão
 
 
+ 21.3 Exceções e Recuperação do Pipeline — [I]
+
+  21.3.1 Exceções durante a Execução — [I]
+	  Detecção de exceções em diferentes estágios
+	  Interrupção do fluxo normal
+	  Preservação do estado arquitetural
+
+  21.3.2 Flush e Recuperação — [I]
+	  Descarte das instruções afetadas
+	  Retorno ao estado correto
+	  Reinício do fluxo de execução
+
+
 
 22. Delayed Branch (Retardo de Desvio) — [I]
 
@@ -689,6 +702,8 @@ PARTE 5 — TIPOS E ARQUITETURAS DE PIPELINE
   24.1.1 Uma Instrução por Estágio — [I]
 	  Processamento individual por ciclo
 	  Ausência de paralelismo entre instruções
+	  Sobreposição temporal de múltiplas instruções
+	  Emissão de uma instrução por ciclo
 
   24.1.2 Simplicidade e Limitações — [I]
 	  Baixo custo de hardware
@@ -738,6 +753,9 @@ PARTE 5 — TIPOS E ARQUITETURAS DE PIPELINE
   26.2.1 Uso em Arquiteturas Especializadas — [I]
 	  Processadores gráficos
 	  Sistemas embarcados de alto desempenho
+	  DSPs
+	  Processadores especializados
+	  Arquiteturas de propósito específico
 
 
 
@@ -955,6 +973,9 @@ PARTE 7 — PIPELINE EM ARQUITETURAS MODERNAS
   38.1.1 Múltiplos Pipelines Independentes — [V]
 	  Execução paralela entre núcleos
 	  Escalabilidade do processamento
+	  Pipeline presente em cada núcleo
+	  Paralelismo entre múltiplos núcleos
+	  Possibilidade de pipelines independentes por núcleo
 
 
 
