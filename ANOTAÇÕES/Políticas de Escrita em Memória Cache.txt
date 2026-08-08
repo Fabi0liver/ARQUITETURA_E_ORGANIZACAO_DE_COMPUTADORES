@@ -336,6 +336,25 @@ PARTE 2 — POLÍTICAS BÁSICAS DE ESCRITA
 	  Transição para bloco sujo
 	  Retorno ao estado limpo após escrita na memória
 
+  11.2.2 Dirty Eviction — [P]
+	  Conceito de eviction
+	  Remoção de um bloco da cache
+	  Eviction de bloco limpo
+	  Eviction de bloco sujo
+	  Verificação do dirty bit
+	  Necessidade de write-back
+	  Atualização da memória após a remoção
+	  Liberação da posição para o novo bloco
+
+  11.2.3 Fluxo de Substituição de um Bloco Sujo — [P]
+	  Seleção do bloco vítima
+	  Verificação do dirty bit
+	  Escrita do bloco sujo no nível inferior
+	  Atualização do estado
+	  Remoção do bloco
+	  Entrada do novo bloco
+	  Atualização dos metadados
+
 
 
 12. Comparação entre Write Through e Write Back — [P]
@@ -457,6 +476,15 @@ PARTE 3 — TRATAMENTO DE WRITE HIT E WRITE MISS
 	  Atualização adicional na memória (Write Through)
 	  Manutenção apenas na cache (Write Back)
 
+  16.1.3 Fluxo Completo de um Write Hit — [P]
+	  Localização do bloco na cache
+	  Verificação da tag e confirmação do hit
+	  Atualização do dado no bloco
+	  Atualização dos bits de estado
+	  Comportamento no Write Through
+	  Comportamento no Write Back
+	  Conclusão da operação de escrita
+
 
  16.2 Particularidades do Write Hit — [I]
 
@@ -480,6 +508,17 @@ PARTE 3 — TRATAMENTO DE WRITE HIT E WRITE MISS
 	  Necessidade de trazer o bloco (quando há alocação)
 	  Escrita direta na memória (quando não há alocação)
 
+  17.1.3 Fluxo Completo de um Write Miss — [P]
+	  Detecção do write miss
+	  Identificação da política de alocação
+	  Decisão entre Write Allocate e No-Write Allocate
+	  Verificação da necessidade de substituição
+	  Tratamento do bloco substituído
+	  Carregamento do novo bloco, quando aplicável
+	  Realização da escrita
+	  Atualização dos bits de estado
+	  Conclusão da operação
+
 
  17.2 Impacto do Write Miss no Sistema — [I]
 
@@ -487,6 +526,15 @@ PARTE 3 — TRATAMENTO DE WRITE HIT E WRITE MISS
 	  Tempo adicional de busca do bloco
 	  Tráfego extra gerado com a memória principal
 	  Possível substituição de outro bloco na cache
+
+  17.2.2 Sequência Completa de Eventos — [P]
+	  CPU → cache
+	  Verificação de hit/miss
+	  Decisão da política
+	  Cache → próximo nível
+	  Memória → cache, quando necessário
+	  Atualização do bloco
+	  Finalização da operação
 
 
 
