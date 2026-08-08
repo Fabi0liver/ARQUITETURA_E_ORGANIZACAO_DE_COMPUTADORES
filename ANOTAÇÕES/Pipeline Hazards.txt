@@ -700,6 +700,22 @@ PARTE 5 — TÉCNICAS DE DETECÇÃO E TRATAMENTO DE HAZARDS
 	  Perda de desempenho pela ociosidade gerada
 
 
+ 23.2 Implementação do Stall no Pipeline — [P]
+
+  23.2.1 Congelamento do PC — [P]
+	  Impedimento do avanço do contador de programa
+	  Manutenção da instrução que está aguardando
+
+  23.2.2 Congelamento do Registrador de Pipeline — [P]
+	  Manutenção das informações da instrução
+	  Impedimento do avanço indevido
+
+  23.2.3 Inserção de NOP — [P]
+	  Substituição dos sinais de controle
+	  Criação de uma bolha
+	  Avanço controlado das instruções independentes
+
+
 
 24. Forwarding / Bypassing — [P]
 
@@ -830,6 +846,29 @@ PARTE 5 — TÉCNICAS DE DETECÇÃO E TRATAMENTO DE HAZARDS
 	  Descarte das instruções especulativas buscadas
 	  Reinício do pipeline a partir do caminho correto
 	  Penalidade equivalente ou maior que a espera simples
+
+
+ 28.3 Recuperação após Misprediction — [P]
+
+  28.3.1 Identificação da Predição Incorreta — [P]
+	  Resolução real da condição do desvio
+	  Comparação entre caminho previsto e caminho correto
+	  Detecção do erro de previsão
+
+  28.3.2 Limpeza do Pipeline — [P]
+	  Flush das instruções incorretas
+	  Cancelamento das instruções especulativas
+	  Restauração do fluxo correto
+
+  28.3.3 Reinício da Execução — [P]
+	  Atualização do PC
+	  Busca da instrução correta
+	  Preenchimento novamente do pipeline
+
+  28.3.4 Custo da Recuperação — [I]
+	  Ciclos perdidos
+	  Relação com a profundidade do pipeline
+	  Relação com a branch penalty
 
 
 
