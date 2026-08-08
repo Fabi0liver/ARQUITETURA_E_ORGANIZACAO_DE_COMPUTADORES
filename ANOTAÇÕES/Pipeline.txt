@@ -494,6 +494,11 @@ PARTE 3 — DEPENDÊNCIAS E CONFLITOS (HAZARDS)
 	  Aumento do número médio de ciclos por instrução
 	  Necessidade de técnicas de mitigação
 
+  15.1.3 Penalidade do Pipeline (Pipeline Penalty) — [I]
+	  Custo dos ciclos perdidos
+	  Número de ciclos adicionais causados por hazards
+	  Relação entre penalidade e desempenho
+
 
 
 PARTE 4 — TÉCNICAS DE RESOLUÇÃO E OTIMIZAÇÃO DE HAZARDS
@@ -521,6 +526,24 @@ PARTE 4 — TÉCNICAS DE RESOLUÇÃO E OTIMIZAÇÃO DE HAZARDS
   16.2.2 Relação com Outras Técnicas — [P]
 	  Combinação com forwarding
 	  Minimização do número de stalls
+
+
+ 16.3 Intertravamento do Pipeline (Pipeline Interlock) — [P]
+
+  16.3.1 Detecção de Condições de Hazard — [P]
+	  Identificação automática de dependências
+	  Verificação da disponibilidade dos dados
+	  Detecção de situações que exigem espera
+
+  16.3.2 Bloqueio Controlado dos Estágios — [P]
+	  Impedimento temporário do avanço das instruções
+	  Geração automática de stalls
+	  Preservação da consistência da execução
+
+  16.3.3 Relação entre Interlock, Stall e Forwarding — [P]
+	  Interlock como mecanismo de controle
+	  Stall como consequência do bloqueio
+	  Forwarding como mecanismo complementar
 
 
 
@@ -793,6 +816,11 @@ PARTE 6 — DESEMPENHO E MÉTRICAS DO PIPELINE
 	  Tempo total para concluir uma instrução
 	  Relação com a capacidade de resposta do sistema
 
+  31.1.2 Latência × Throughput — [P]
+	  Diferença entre tempo de conclusão de uma instrução e taxa de conclusão
+	  Pipeline aumentando o throughput sem necessariamente reduzir a latência individual
+	  Relação entre latência, sobreposição e desempenho
+
 
  31.2 CPI (Ciclos por Instrução) — [P]
 
@@ -840,6 +868,20 @@ PARTE 6 — DESEMPENHO E MÉTRICAS DO PIPELINE
   33.2.1 Impacto dos Hazards e Stalls — [I]
 	  Redução do ganho teórico na prática
 	  Diferença entre desempenho ideal e real
+
+
+ 33.3 Speedup Real do Pipeline — [I]
+
+  33.3.1 Diferença entre Speedup Ideal e Real — [I]
+	  Condições do modelo ideal
+	  Perdas presentes em implementações reais
+	  Influência dos stalls e hazards
+
+  33.3.2 Fatores que Reduzem o Speedup — [I]
+	  Hazards
+	  Desbalanceamento dos estágios
+	  Penalidades de desvios
+	  Overhead dos registradores de pipeline
 
 
 
