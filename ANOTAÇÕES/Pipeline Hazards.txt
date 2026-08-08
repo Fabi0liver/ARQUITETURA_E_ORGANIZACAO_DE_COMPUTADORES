@@ -401,6 +401,23 @@ PARTE 2 — DATA HAZARDS (HAZARDS DE DADOS)
 	  Decisão sobre necessidade de stall ou forwarding
 	  Coordenação com outros mecanismos do pipeline
 
+  11.2.2 Entradas da Hazard Detection Unit — [I]
+	  Registradores fonte das instruções
+	  Registradores destino das instruções anteriores
+	  Informações dos estágios do pipeline
+	  Sinais de controle necessários para a detecção
+
+  11.2.3 Comparação entre Registradores — [I]
+	  Comparação entre registradores fonte e destino
+	  Identificação de dependências
+	  Geração da condição de hazard
+
+  11.2.4 Sinais de Controle Gerados — [I]
+	  Congelamento do PC
+	  Congelamento do registrador IF/ID
+	  Inserção de bolha no estágio seguinte
+	  Alteração dos sinais de controle
+
 
 
 12. Impacto dos Data Hazards no Desempenho — [I]
@@ -704,6 +721,24 @@ PARTE 5 — TÉCNICAS DE DETECÇÃO E TRATAMENTO DE HAZARDS
   24.2.1 Situações não Resolvidas pelo Forwarding — [I]
 	  Dependências que exigem dado ainda não calculado
 	  Necessidade de combinação com stalling em certos casos
+
+
+ 24.3 Unidade de Forwarding — [P]
+
+  24.3.1 Funcionamento da Forwarding Unit — [P]
+	  Identificação da origem correta do operando
+	  Comparação entre registradores fonte e destino
+	  Geração dos sinais de seleção
+
+  24.3.2 Multiplexadores e Caminhos de Forwarding — [P]
+	  Seleção entre valor do banco de registradores e valor encaminhado
+	  Caminhos EX/MEM → EX
+	  Caminhos MEM/WB → EX
+
+  24.3.3 Prioridade entre Caminhos de Forwarding — [I]
+	  Existência de múltiplas fontes possíveis
+	  Seleção do resultado mais recente
+	  Evitação do uso de valores desatualizados
 
 
 
