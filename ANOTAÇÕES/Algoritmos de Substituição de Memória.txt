@@ -79,6 +79,21 @@ PARTE 1 — FUNDAMENTOS DOS ALGORITMOS DE SUBSTITUIÇÃO DE MEMÓRIA
 	  Relação com a memória virtual
 
 
+ 2.3 Sequência de Referências à Memória — [P]
+
+  2.3.1 Conceito de Sequência de Referências — [P]
+	  Definição de reference string
+	  Representação da sequência de acessos
+	  Referências repetidas a blocos ou páginas
+	  Relação entre sequência de referências e comportamento do algoritmo
+
+  2.3.2 Padrões de Referência — [P]
+	  Padrões sequenciais
+	  Padrões repetitivos
+	  Padrões aleatórios
+	  Influência dos padrões sobre a escolha da vítima
+
+
 
 3. Conceitos de Acerto (Hit) e Falta (Miss) — [P]
 
@@ -221,6 +236,19 @@ PARTE 2 — PRINCIPAIS ALGORITMOS DE SUBSTITUIÇÃO
   7.2.2 Impossibilidade de Implementação Prática — [P]
 	  Necessidade de previsão do futuro
 	  Inviabilidade em sistemas reais
+
+
+ 7.3 Optimalidade do Algoritmo Ótimo — [P]
+
+  7.3.1 Fundamento da Optimalidade — [P]
+	  Escolha da vítima com próximo uso mais distante
+	  Relação entre previsão futura e minimização de faltas
+	  Comparação com políticas não ótimas
+
+  7.3.2 Limite Teórico de Faltas — [P]
+	  Menor número possível de faltas para uma sequência de referências
+	  OPT como limite inferior para comparação
+	  Distância entre uma política prática e o comportamento ótimo
 
 
 
