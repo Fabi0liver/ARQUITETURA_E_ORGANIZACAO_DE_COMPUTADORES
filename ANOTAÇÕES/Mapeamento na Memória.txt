@@ -169,6 +169,9 @@ PARTE 1 — FUNDAMENTOS DO MAPEAMENTO NA MEMÓRIA
   6.1.1 Tag, Index e Offset — [I]
 	  Definição resumida de cada componente
 	  Papel na decomposição do endereço
+	  Relação entre endereço de memória, número do bloco e campos Tag/Index/Offset
+	  Identificação de qual parte do endereço é utilizada para localizar o bloco e qual parte identifica o dado 
+         dentro do bloco
 
   6.1.2 Bit Valid e Bit Dirty — [I]
 	  Conceito de validade dos dados
@@ -180,6 +183,10 @@ PARTE 1 — FUNDAMENTOS DO MAPEAMENTO NA MEMÓRIA
   6.2.1 Palavra, Linha, Bloco e Conjunto — [I]
 	  Definição resumida de cada unidade
 	  Relação hierárquica entre elas
+	  Diferença entre bloco de memória e linha de cache
+	  Relação entre bloco da memória principal e linha da cache
+	  Relação entre linha e conjunto
+	  Relação entre palavra, bloco e linha
 
   6.2.2 Hit, Miss e Taxa de Acerto — [I]
 	  Conceito de acerto de cache
@@ -200,11 +207,19 @@ PARTE 2 — ESTRUTURA E ORGANIZAÇÃO DA MEMÓRIA
 	  Espaço de endereçamento
 	  Endereços físicos
 	  Organização byte-endereçável
+	  Endereço de byte × endereço de palavra
+	  Unidade de endereçamento
+	  Relação entre endereço, byte e palavra
 
   7.1.2 Divisão em Blocos — [P]
 	  Conceito de bloco de memória principal
 	  Relação com linhas de cache
 	  Tamanho do bloco e granularidade
+	  Número do bloco
+	  Identificação de um bloco a partir do endereço
+	  Relação entre endereço de memória e número do bloco
+	  Relação entre número do bloco e offset
+	  Divisão lógica da memória em blocos de tamanho fixo
 
 
  7.2 Papel da Memória Principal no Mapeamento — [I]
@@ -227,11 +242,17 @@ PARTE 2 — ESTRUTURA E ORGANIZAÇÃO DA MEMÓRIA
 	  Linhas de cache
 	  Campos de controle (Tag, Valid, Dirty)
 	  Área de dados
+	  Relação entre linha, tag e dados
+	  Organização dos bits de controle associados à linha
+	  Estrutura lógica de uma entrada de cache
 
   8.1.2 Capacidade e Organização — [P]
 	  Tamanho total da cache
 	  Número de linhas
 	  Relação entre capacidade e associatividade
+	  Relação entre capacidade da cache, tamanho do bloco e número de linhas
+	  Relação entre número de linhas, número de conjuntos e associatividade
+	  Capacidade de dados × capacidade total da cache (visão introdutória)
 
 
  8.2 Níveis de Cache e Mapeamento — [I]
@@ -254,10 +275,19 @@ PARTE 2 — ESTRUTURA E ORGANIZAÇÃO DA MEMÓRIA
 	  Menor unidade manipulada pela CPU
 	  Tamanhos comuns (8, 16, 32, 64 bits)
 	  Relação com a arquitetura do processador
+	  Palavra × byte
+	  Palavra × endereço
+	  Palavra × bloco
+	  Palavra × linha de cache
+	  Tamanho da palavra em bytes
 
   9.1.2 Palavra dentro da Linha de Cache — [P]
 	  Número de palavras por linha
 	  Papel do offset na seleção da palavra
+	  Número de palavras por bloco/linha
+	  Relação entre tamanho da palavra e tamanho do bloco
+	  Word offset
+	  Byte offset
 
 
  9.2 Impacto da Palavra no Mapeamento — [I]
@@ -265,6 +295,9 @@ PARTE 2 — ESTRUTURA E ORGANIZAÇÃO DA MEMÓRIA
   9.2.1 Granularidade de Acesso — [I]
 	  Precisão no acesso aos dados
 	  Redução de dados irrelevantes carregados
+	  Acesso por byte
+	  Acesso por palavra
+	  Relação entre granularidade do acesso e offset
 
   9.2.2 Relação com o Barramento de Dados — [V]
 	  Largura do barramento
@@ -280,11 +313,19 @@ PARTE 2 — ESTRUTURA E ORGANIZAÇÃO DA MEMÓRIA
 	  Menor unidade manipulada pela cache
 	  Tamanho típico (32, 64, 128 bytes)
 	  Composição da linha (dados e controle)
+	  Linha como posição de armazenamento de um bloco
+	  Relação entre linha e bloco
+	  Relação entre linha e conjunto
+	  Capacidade de dados armazenada por linha
 
   10.1.2 Funcionamento das Linhas — [P]
 	  Verificação de disponibilidade
 	  Ocorrência de cache miss
 	  Substituição de linhas
+	  Localização da linha a partir do endereço
+	  Verificação de Tag + Valid
+	  Identificação do bloco armazenado na linha
+	  Relação entre linha selecionada e tipo de mapeamento
 
 
  10.2 Linhas e Localidade de Dados — [I]
@@ -308,10 +349,20 @@ PARTE 2 — ESTRUTURA E ORGANIZAÇÃO DA MEMÓRIA
 	  Agrupamento de linhas
 	  Transferência contínua de dados
 	  Relação com a memória principal
+	  Número do bloco
+	  Endereço inicial do bloco
+	  Endereço final do bloco
+	  Relação entre bloco e endereço de memória
+	  Relação entre bloco e linha de cache
+	  Relação entre bloco e offset
 
   11.1.2 Tamanho do Bloco — [P]
 	  Impacto no aproveitamento da localidade espacial
 	  Relação entre tamanho do bloco e taxa de miss
+	  Tamanho do bloco em bytes
+	  Número de palavras por bloco
+	  Relação entre tamanho do bloco e número de bits do offset
+	  Byte offset × word offset
 
 
  11.2 Vantagens e Desafios dos Blocos — [I]
@@ -334,6 +385,9 @@ PARTE 2 — ESTRUTURA E ORGANIZAÇÃO DA MEMÓRIA
 	  Agrupamento de linhas de cache
 	  Relação com o grau de associatividade
 	  Papel no mapeamento associativo por conjunto
+	  Relação entre conjunto e linhas
+	  Número de linhas por conjunto = número de vias
+	  Relação entre conjunto e associatividade
 
   12.1.2 Cálculo do Número de Conjuntos — [P]
 	  Relação entre linhas totais e vias
@@ -345,6 +399,11 @@ PARTE 2 — ESTRUTURA E ORGANIZAÇÃO DA MEMÓRIA
   12.2.1 Distribuição dos Blocos nos Conjuntos — [P]
 	  Mapeamento do bloco a um conjunto específico
 	  Escolha da linha dentro do conjunto
+	  Número do bloco → conjunto
+	  Relação entre número do bloco e índice do conjunto
+	  Blocos diferentes podendo pertencer ao mesmo conjunto
+	  Conflito entre blocos dentro de um conjunto
+
 
   12.2.2 Relação entre Conjuntos e Desempenho — [I]
 	  Redução de conflitos de mapeamento
@@ -364,11 +423,21 @@ PARTE 3 — ENDEREÇAMENTO E MECANISMOS DE MAPEAMENTO
 	  Tag, Index e Offset
 	  Ordem dos bits no endereço
 	  Relação com a organização da cache
+	  Endereço como identificador de um byte/palavra
+	  Relação entre endereço e número do bloco
+	  Relação entre número do bloco e Tag/Index
+	  Offset como posição dentro do bloco
 
   13.1.2 Determinação do Tamanho dos Campos — [P]
 	  Cálculo do número de bits do offset
 	  Cálculo do número de bits do index
 	  Cálculo do número de bits da tag
+	  Cálculo dos bits de byte offset
+	  Cálculo dos bits de word offset
+	  Relação entre tamanho da palavra e número de palavras por bloco
+	  Relação entre tamanho do bloco e número de bits de offset
+	  Relação entre número de conjuntos e bits de index
+	  Relação entre espaço de endereçamento e bits de tag
 
 
  13.2 Exemplos de Decomposição — [P]
@@ -376,10 +445,19 @@ PARTE 3 — ENDEREÇAMENTO E MECANISMOS DE MAPEAMENTO
   13.2.1 Exemplo em Mapeamento Direto — [P]
 	  Endereço de memória de exemplo
 	  Separação dos campos Tag, Index e Offset
+	  Determinação do número do bloco
+	  Determinação do offset
+	  Determinação da linha
+	  Determinação da tag
+	  Reconstrução do endereço a partir dos campos
 
   13.2.2 Exemplo em Mapeamento Associativo por Conjunto — [P]
 	  Ajuste do campo Index para os conjuntos
 	  Ausência de Index no mapeamento totalmente associativo
+	  Determinação do número do bloco
+	  Determinação do conjunto
+	  Determinação da tag
+	  Identificação da via dentro do conjunto após comparação
 
 
 
@@ -391,6 +469,10 @@ PARTE 3 — ENDEREÇAMENTO E MECANISMOS DE MAPEAMENTO
 	  Identificador exclusivo do bloco
 	  Bits de alta ordem do endereço
 	  Comparação com a tag armazenada
+	  Tag como identificador do bloco de memória
+	  Relação entre Tag e número do bloco
+	  Tag não identifica isoladamente um byte/palavra
+	  Relação entre Tag e Index
 
   14.1.2 Funcionamento da Verificação da Tag — [P]
 	  Comparação na busca de dados
@@ -402,10 +484,14 @@ PARTE 3 — ENDEREÇAMENTO E MECANISMOS DE MAPEAMENTO
   14.2.1 Tag no Mapeamento Direto — [P]
 	  Tamanho da tag
 	  Relação com o número de linhas
+	  Relação entre Tag, número do bloco e linha
+	  Identificação completa de um bloco na cache
 
   14.2.2 Tag no Mapeamento Associativo — [P]
 	  Comparação simultânea de múltiplas tags
 	  Impacto no hardware necessário
+	  Comparação da Tag com as entradas candidatas
+	  Relação entre comparação da Tag e ocorrência de hit
 
 
 
