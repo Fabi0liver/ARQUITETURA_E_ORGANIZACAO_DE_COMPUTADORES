@@ -673,6 +673,21 @@ PARTE 3 — FUNCIONAMENTO, ESTRUTURAS E CRITÉRIOS DE ESCOLHA
 	  Requisitos de desempenho do sistema
 
 
+ 23.3 Estados e Transições Durante a Substituição — [P]
+
+  23.3.1 Estado dos Dados Antes da Substituição — [P]
+	  Dados residentes
+	  Dados candidatos à substituição
+	  Metadados associados à vítima
+	  Estado de referência e modificação
+
+  23.3.2 Estado Após a Substituição — [P]
+	  Remoção da vítima
+	  Atualização dos metadados
+	  Inserção do novo bloco ou página
+	  Atualização da estrutura utilizada pelo algoritmo
+
+
 
 PARTE 4 — DESEMPENHO, TAXA DE ACERTO E CUSTO DE SUBSTITUIÇÃO
 
@@ -727,6 +742,20 @@ PARTE 4 — DESEMPENHO, TAXA DE ACERTO E CUSTO DE SUBSTITUIÇÃO
 	  Propriedade de empilhamento (stack property)
 	  Exemplo do LRU
 
+  
+ 25.3 Propriedade de Inclusão (Stack Property) — [P]
+
+  25.3.1 Conceito de Propriedade de Inclusão — [P]
+	  Relação entre conjuntos de memória de diferentes capacidades
+	  Inclusão do conjunto de referências mantidas
+	  Comportamento de algoritmos com propriedade de empilhamento
+
+  25.3.2 Relação com a Anomalia de Belady — [P]
+	  Por que a propriedade impede a anomalia
+	  Algoritmos que possuem a propriedade
+	  LRU como exemplo de algoritmo com propriedade de empilhamento
+	  Algoritmos que não possuem a propriedade
+
 
 
 26. Custo Computacional dos Algoritmos de Substituição — [P]
@@ -740,6 +769,12 @@ PARTE 4 — DESEMPENHO, TAXA DE ACERTO E CUSTO DE SUBSTITUIÇÃO
   26.1.2 Custo de Atualização das Estruturas — [P]
 	  Atualização de listas e contadores a cada acesso
 	  Impacto no tempo de execução
+
+  26.1.3 Complexidade de Seleção da Vítima — [P]
+	  Custo de encontrar a vítima
+	  Custo de atualizar o estado após cada acesso
+	  Comparação da complexidade entre diferentes políticas
+	  Impacto da associatividade e do número de candidatos
 
 
  26.2 Custo de Espaço — [P]
@@ -850,6 +885,11 @@ PARTE 4 — DESEMPENHO, TAXA DE ACERTO E CUSTO DE SUBSTITUIÇÃO
   30.2.2 Adaptabilidade a Padrões de Acesso — [I]
 	  Capacidade de resposta a mudanças
 	  Robustez em cenários diversos
+
+  30.2.3 Overhead de Decisão — [I]
+	  Custo da coleta de informações sobre os acessos
+	  Custo da manutenção do histórico
+	  Relação entre precisão da política e overhead
 
 
 
