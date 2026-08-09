@@ -503,10 +503,15 @@ PARTE 3 — ENDEREÇAMENTO E MECANISMOS DE MAPEAMENTO
 	  Localização da linha ou conjunto
 	  Bits de ordem intermediária ou baixa
 	  Papel de "localizador rápido"
+	  Index como seletor de linha ou conjunto
+	  Relação entre Index e número de linhas/conjuntos
+	  Index não identifica sozinho o bloco
 
   15.1.2 Cálculo do Index — [P]
 	  Relação com o número de linhas
 	  Relação com o número de conjuntos
+	  Cálculo do index a partir do número do bloco
+	  Relação entre operação módulo e bits do endereço quando o número de linhas/conjuntos é potência de 2
 
 
  15.2 Index nos Diferentes Tipos de Mapeamento — [P]
@@ -528,10 +533,19 @@ PARTE 3 — ENDEREÇAMENTO E MECANISMOS DE MAPEAMENTO
 	  Localização do dado dentro da linha ou bloco
 	  Bits de menor ordem
 	  Papel de "localizador interno"
+	  Offset de byte
+	  Offset de palavra
+	  Relação entre offset e endereço do bloco
+	  Offset não participa da identificação do bloco
 
   16.1.2 Cálculo do Offset — [P]
 	  Relação com o tamanho do bloco
 	  Número de palavras por linha
+	  Número de bits para byte offset
+	  Número de bits para word offset
+	  Cálculo a partir do tamanho da palavra
+	  Cálculo a partir do número de palavras por bloco
+	  Relação entre tamanho do bloco e quantidade total de bits de offset
 
 
  16.2 Offset e Acesso a Dados — [I]
@@ -543,6 +557,9 @@ PARTE 3 — ENDEREÇAMENTO E MECANISMOS DE MAPEAMENTO
   16.2.2 Offset e a Palavra Selecionada — [I]
 	  Seleção da palavra exata
 	  Relação com a largura do barramento
+	  Seleção do byte dentro da palavra
+	  Seleção da palavra dentro da linha
+	  Combinação de byte offset + word offset
 
 
 
@@ -579,10 +596,14 @@ PARTE 3 — ENDEREÇAMENTO E MECANISMOS DE MAPEAMENTO
   18.1.1 Cálculo do Número de Linhas — [P]
 	  Relação com o tamanho total da cache
 	  Relação com o tamanho da linha
+	  Relação entre capacidade, tamanho do bloco e número de linhas
+	  Distinção entre capacidade de dados e tamanho da entrada de cache
 
   18.1.2 Cálculo do Número de Conjuntos — [P]
 	  Relação com o grau de associatividade
 	  Fórmula geral de cálculo
+	  Relação entre linhas, conjuntos e vias
+	  Casos de associatividade 1-way, 2-way, 4-way etc.
 
 
  18.2 Exercícios de Decomposição — [I]
@@ -663,6 +684,10 @@ PARTE 4 — MAPEAMENTO DE MEMÓRIA CACHE
 	  Associação fixa entre bloco e linha
 	  Fórmula de cálculo da linha (endereço mod número de linhas)
 	  Exemplo numérico simples
+	  Relação entre número do bloco e linha
+	  Blocos diferentes compartilhando a mesma linha
+	  Consequência da associação fixa
+	  Relação entre index e linha
 
   21.1.2 Características do Mapeamento Direto — [P]
 	  Simplicidade de implementação
@@ -680,6 +705,9 @@ PARTE 4 — MAPEAMENTO DE MEMÓRIA CACHE
   21.2.2 Limitações do Mapeamento Direto — [P]
 	  Conflitos de mapeamento
 	  Desempenho reduzido em acessos alternados
+	  Conflitos entre blocos com o mesmo index
+	  Efeito desses conflitos sobre a taxa de miss
+	  Relação entre padrão de acesso e conflitos
 
 
 
@@ -716,10 +744,16 @@ PARTE 4 — MAPEAMENTO DE MEMÓRIA CACHE
 	  Ausência de posição fixa para o bloco
 	  Armazenamento em qualquer linha disponível
 	  Necessidade de comparação de todas as tags
+	  Relação entre número do bloco e qualquer linha disponível
+	  Ausência de posição determinada pelo index
+	  Necessidade de pesquisar as linhas candidatas
 
   23.1.2 Características do Mapeamento Associativo — [P]
 	  Flexibilidade máxima de alocação
 	  Complexidade de hardware
+	  Comparação paralela das Tags
+	  Custo associado à comparação simultânea
+	  Necessidade de política de substituição quando todas as linhas estão ocupadas
 
 
  23.2 Vantagens e Limitações — [P]
@@ -767,10 +801,18 @@ PARTE 4 — MAPEAMENTO DE MEMÓRIA CACHE
 	  Combinação de mapeamento direto e associativo
 	  Divisão da cache em conjuntos
 	  Armazenamento em qualquer linha do conjunto
+	  Número do bloco → conjunto
+	  Index → conjunto
+	  Tag → identificação do bloco dentro do conjunto
+	  Linha/via → posição possível dentro do conjunto
 
   25.1.2 Grau de Associatividade — [P]
 	  Definição de vias (N-way)
 	  Exemplos de associatividade (2, 4, 8 vias)
+	  1-way = mapeamento direto
+	  N-way = N linhas por conjunto
+	  Fully associative como caso extremo
+	  Relação entre associatividade e número de conjuntos
 
 
  25.2 Vantagens e Limitações — [P]
@@ -817,6 +859,9 @@ PARTE 4 — MAPEAMENTO DE MEMÓRIA CACHE
   27.1.1 De Direto a Totalmente Associativo — [I]
 	  Mapeamento direto como caso de 1 via
 	  Mapeamento totalmente associativo como caso extremo
+	  Associatividade como espectro contínuo
+	  1-way, 2-way, 4-way, 8-way...
+	  Relação entre número de vias e número de conjuntos
 
   27.1.2 Associatividade Intermediária — [I]
 	  2 vias, 4 vias, 8 vias, 16 vias
@@ -828,6 +873,9 @@ PARTE 4 — MAPEAMENTO DE MEMÓRIA CACHE
   27.2.1 Impacto no Desempenho — [I]
 	  Redução da taxa de miss por conflito
 	  Retornos decrescentes com o aumento das vias
+	  Redução de miss de conflito
+	  Aumento do número de comparações
+	  Trade-off entre flexibilidade de posicionamento e custo de busca
 
   27.2.2 Impacto no Custo — [I]
 	  Aumento do número de comparadores
@@ -843,6 +891,10 @@ PARTE 4 — MAPEAMENTO DE MEMÓRIA CACHE
 	  Mapeamento direto
 	  Mapeamento totalmente associativo
 	  Mapeamento associativo por conjunto
+	  Relação entre taxa de acerto e conflitos
+	  Influência da associatividade
+	  Por que o mapeamento totalmente associativo tende a reduzir conflitos
+	  Por que o mapeamento direto pode apresentar mais conflitos
 
   28.1.2 Latência entre os Métodos — [I]
 	  Velocidade de acesso
@@ -858,6 +910,12 @@ PARTE 4 — MAPEAMENTO DE MEMÓRIA CACHE
   28.2.2 Critérios de Escolha do Mapeamento — [I]
 	  Padrão de acesso do sistema
 	  Orçamento e restrições de projeto
+	  Capacidade da cache
+	  Tamanho do bloco
+	  Grau de associatividade
+	  Padrão de acesso
+	  Custo de hardware
+	  Latência desejada
 
 
 
@@ -923,10 +981,15 @@ PARTE 5 — DESEMPENHO, CONFLITOS E MECANISMOS DE CONTROLE
   31.1.1 Conflitos no Mapeamento Direto — [P]
 	  Múltiplos blocos mapeados para a mesma linha
 	  Substituições constantes
+	  Blocos com diferentes números de bloco e mesmo índice
+	  Relação matemática entre esses blocos
+	  Exemplo de blocos alternados causando substituições repetitivas
 
   31.1.2 Conflitos no Mapeamento Associativo por Conjunto — [P]
 	  Conflitos limitados ao conjunto
 	  Influência do grau de associatividade
+	  Conflito quando o número de blocos concorrentes supera o número de vias
+	  Relação entre número de vias e capacidade de absorver conflitos
 
 
  31.2 Consequências dos Conflitos — [I]
@@ -948,6 +1011,9 @@ PARTE 5 — DESEMPENHO, CONFLITOS E MECANISMOS DE CONTROLE
   32.1.1 Quando a Substituição Ocorre — [P]
 	  Conjunto ou linha completamente ocupados
 	  Necessidade de liberar espaço
+	  Substituição em mapeamento totalmente associativo
+	  Substituição em mapeamento associativo por conjunto
+	  Ausência de escolha de substituição no mapeamento direto
 
   32.1.2 Objetivo das Políticas de Substituição — [P]
 	  Minimizar a taxa de miss futura
@@ -1034,6 +1100,10 @@ PARTE 5 — DESEMPENHO, CONFLITOS E MECANISMOS DE CONTROLE
   35.2.1 Influência do Tipo de Mapeamento — [I]
 	  Impacto da associatividade
 	  Impacto do tamanho da cache
+	  Miss compulsório × mapeamento
+	  Miss de capacidade × mapeamento
+	  Miss de conflito × mapeamento
+	  Relação entre associatividade e miss de conflito
 
   35.2.2 Tempo Médio de Acesso à Memória (AMAT) — [P]
 	  Fórmula do AMAT
@@ -1174,10 +1244,16 @@ PARTE 6 — TÉCNICAS AVANÇADAS E OTIMIZAÇÕES DE MAPEAMENTO
   41.1.1 Vantagens de Blocos Maiores — [I]
 	  Melhor aproveitamento da localidade espacial
 	  Redução de misses compulsórios
+	  Maior número de palavras por bloco
+	  Maior quantidade de bits de offset
+	  Relação com localidade espacial
 
   41.1.2 Desvantagens de Blocos Maiores — [I]
 	  Aumento da penalidade de miss
 	  Maior desperdício de espaço
+	  Menor número de linhas para uma capacidade fixa
+	  Possível aumento de conflitos
+	  Aumento da quantidade de dados transferidos em cada miss
 
 
  41.2 Blocos Menores — [I]
@@ -1199,10 +1275,16 @@ PARTE 6 — TÉCNICAS AVANÇADAS E OTIMIZAÇÕES DE MAPEAMENTO
   42.1.1 Benefícios do Aumento — [I]
 	  Redução dos conflitos de mapeamento
 	  Melhoria da taxa de acerto
+	  Maior quantidade de blocos que podem coexistir no mesmo conjunto
+	  Redução de conflitos
+	  Maior flexibilidade de posicionamento
 
   42.1.2 Custos do Aumento — [I]
 	  Maior complexidade de hardware
 	  Maior tempo de comparação
+	  Mais comparações de Tag por acesso
+	  Maior complexidade do hardware
+	  Maior consumo de energia
 
 
  42.2 Equilíbrio entre Associatividade e Desempenho — [I]
