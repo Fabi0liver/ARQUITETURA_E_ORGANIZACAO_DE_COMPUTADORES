@@ -1401,8 +1401,6 @@ PARTE 8 — REVISÃO GERAL E CONCLUSÃO
 
 
  50.3 Encerramento — [V]
-
-  50.3.1 Visão Geral Final — [V]
-	  Integração dos conceitos estudados
-	  Importância dos algoritmos de substituição
-	  Continuidade dos estudos em Arquitetura de Computadores
+	Integração dos conceitos estudados
+	Importância dos algoritmos de substituição
+	Continuidade dos estudos em Arquitetura de Computadores
