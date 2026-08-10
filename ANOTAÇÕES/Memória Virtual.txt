@@ -641,6 +641,15 @@ PARTE 3 — MMU, TABELAS DE PÁGINAS, TLB E TRADUÇÃO DE ENDEREÇOS
 	  Localidade
 	  Impacto sobre o desempenho
 
+  16.3.3 Atributos das Entradas da TLB — [P]
+	  Permissões
+	  Bit de validade
+	  Bit de acesso
+	  Bit de modificação
+	  Identificador de espaço de endereçamento
+	  Globalidade da entrada
+	  Tamanho da página
+
 
 
 17. TLB Avançada e Contexto de Execução — [P]
@@ -673,6 +682,14 @@ PARTE 3 — MMU, TABELAS DE PÁGINAS, TLB E TRADUÇÃO DE ENDEREÇOS
 	  Invalidação seletiva
 	  Instruções de invalidação
 	  Invalidação por contexto
+
+  17.2.3 TLB Shootdown — [P]
+    	  Conceito
+	  Necessidade em sistemas multicore
+	  Invalidação de TLBs remotas
+	  Coordenação entre núcleos
+	  Custo do shootdown
+	  Impacto no desempenho
 
 
  17.3 TLB em Processadores Modernos — [I]
@@ -1418,6 +1435,14 @@ PARTE 7 — DESEMPENHO, VIRTUALIZAÇÃO, OTIMIZAÇÕES E ARQUITETURAS MODERNAS
 	  Cache de tabelas
 	  TLB multinível
 	  Estruturas de tradução
+
+  39.1.3 TLB Reach — [I]
+	  Conceito
+	  Cobertura da TLB
+	  Capacidade da TLB
+	  Tamanho das páginas
+	  Relação com TLB misses
+	  Relação com Huge Pages
 
 
  39.2 Otimização do Espaço de Endereçamento — [I]
