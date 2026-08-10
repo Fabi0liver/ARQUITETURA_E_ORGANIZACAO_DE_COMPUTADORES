@@ -290,23 +290,21 @@ PARTE 2 — PAGINAÇÃO, SEGMENTAÇÃO E MAPEAMENTO DE ENDEREÇOS
 9. Funcionamento da Paginação — [P]
 
  9.1 Mapeamento de Páginas — [P]
-
-  9.1.1 Página Residente e Não Residente — [P]
-	  Página virtual para quadro físico
-	  Mapeamento direto
-	  Mapeamento indireto
-	  Página residente
-	  Página não residente
+	Página Residente e Não Residente
+	Página virtual para quadro físico
+	Mapeamento direto
+	Mapeamento indireto
+	Página residente
+	Página não residente
 
 
  9.2 Vantagens e Limitações — [I]
-
-  9.2.1 Avaliação da Paginação — [I]
-	  Flexibilidade
-	  Proteção
-	  Compartilhamento
-	  Fragmentação interna
-	  Custo de tradução
+	Avaliação da Paginação
+	Flexibilidade
+	Proteção
+	Compartilhamento
+	Fragmentação interna
+	Custo de tradução
 
 
 
@@ -343,12 +341,11 @@ PARTE 2 — PAGINAÇÃO, SEGMENTAÇÃO E MAPEAMENTO DE ENDEREÇOS
 
 
  10.3 Compromissos de Projeto — [I]
-
-  10.3.1 Páginas Pequenas × Grandes — [I]
-	  Fragmentação
-	  Tamanho das tabelas
-	  Desempenho
-	  Flexibilidade
+	Páginas Pequenas × Grandes
+	Fragmentação
+	Tamanho das tabelas
+	Desempenho
+	Flexibilidade
 
 
 
@@ -390,20 +387,18 @@ PARTE 2 — PAGINAÇÃO, SEGMENTAÇÃO E MAPEAMENTO DE ENDEREÇOS
 12. Segmentação × Paginação — [I]
 
  12.1 Comparação entre Mecanismos — [I]
-
-  12.1.1 Diferenças Fundamentais — [I]
-	  Unidade de alocação
-	  Fragmentação
-	  Tradução
-	  Proteção
+	Diferenças Fundamentais
+	Unidade de alocação
+	Fragmentação
+	Tradução
+	Proteção
 
 
  12.2 Combinação de Mecanismos — [I]
-
-  12.2.1 Segmentação Paginada — [I]
-	  Tradução em múltiplas etapas
-	  Modelos históricos
-	  Motivação da combinação
+	Segmentação Paginada
+	Tradução em múltiplas etapas
+	Modelos históricos
+	Motivação da combinação
 
 
 
@@ -926,45 +921,47 @@ PARTE 4 — PAGINAÇÃO SOB DEMANDA, FALTAS DE PÁGINA E GERENCIAMENTO DE PÁGIN
   22.1 Fundamentos do Swapping — [P]
 
    22.1.1 Conceito de Swapping — [P]
-       Definição
-       Página na memória física
-       Página no armazenamento
-       Transferência entre memória e armazenamento
+	  Definição
+	  Página na memória física
+	  Página no armazenamento
+	  Transferência entre memória e armazenamento
 
    22.1.2 Backing Store — [P]
-       Conceito
-       Função
-       Área de armazenamento
-       Relação com páginas não residentes
+	  Conceito
+	  Função
+	  Área de armazenamento
+	  Relação com páginas não residentes
+
 
   22.2 Operações de Swapping — [P]
 
    22.2.1 Swap-Out — [P]
-       Seleção da página
-       Remoção da memória física
-       Escrita no armazenamento
-       Atualização do mapeamento
+	  Seleção da página
+	  Remoção da memória física
+	  Escrita no armazenamento
+	  Atualização do mapeamento
 
    22.2.2 Swap-In — [P]
-       Localização da página
-       Leitura do armazenamento
-       Alocação de quadro
-       Atualização da tabela
-       Retomada do acesso
+	  Localização da página
+	  Leitura do armazenamento
+	  Alocação de quadro
+	  Atualização da tabela
+	  Retomada do acesso
+
 
   22.3 Swapping e Desempenho — [I]
 
    22.3.1 Custos do Swapping — [I]
-       Latência
-       Transferência de dados
-       Acesso ao armazenamento
-       Impacto no desempenho
+	  Latência
+	  Transferência de dados
+	  Acesso ao armazenamento
+	  Impacto no desempenho
 
    22.3.2 Swapping × Page Fault — [I]
-       Relação entre os mecanismos
-       Carregamento de páginas
-       Escrita de páginas modificadas
-       Custo da transferência
+	  Relação entre os mecanismos
+	  Carregamento de páginas
+	  Escrita de páginas modificadas
+	  Custo da transferência
 
 
 
