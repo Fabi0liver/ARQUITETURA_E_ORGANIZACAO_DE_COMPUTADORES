@@ -256,6 +256,15 @@ PARTE 2 — ESTRUTURA E FUNCIONAMENTO DOS MODOS DE ENDEREÇAMENTO
 	  Soma de índice e base
 	  Soma envolvendo o contador de programa
 
+  8.1.3 Forma Geral de Formação do Endereço Efetivo — [P]
+	  Componentes utilizados na formação do endereço
+	  Referência ou endereço base
+	  Índice
+	  Fator de escala
+	  Deslocamento
+	  Combinação dos componentes no cálculo do endereço efetivo
+	  Relação entre o modo de endereçamento e os componentes utilizados
+
 
  8.2 Fatores que Influenciam o Cálculo — [P]
 
@@ -1193,20 +1202,23 @@ PARTE 7 — CÁLCULO, APLICAÇÃO E ESCOLHA DO MODO DE ENDEREÇAMENTO
  41.1 Revisão dos Cálculos — [P]
 
   41.1.1 Modos sem Cálculo Adicional — [P]
-	  Endereçamento imediato
-	  Endereçamento por registrador
+	  Endereçamento imediato: operando = valor presente na instrução
+	  Endereçamento por registrador: operando = conteúdo do registrador especificado
 
   41.1.2 Modos com Cálculo Simples — [P]
-	  Endereçamento direto
-	  Endereçamento indireto
+	  Endereçamento direto: EA = endereço especificado na instrução
+	  Endereçamento indireto: EA = conteúdo do endereço especificado na instrução
 
 
  41.2 Modos com Cálculo Composto — [P]
 
   41.2.1 Modos Baseados em Deslocamento — [P]
-	  Endereçamento relativo
-	  Endereçamento por registrador base
-	  Endereçamento por indexação
+	  Endereçamento relativo: EA = PC + deslocamento
+	  Endereçamento por registrador base: EA = base + deslocamento
+	  Endereçamento por indexação: EA = base + índice
+	  Endereçamento por indexação com escala: EA = base + índice × escala
+	  Base + índice + deslocamento
+	  Base + índice × escala + deslocamento
 
   41.2.2 Modos com Indireção Adicional — [P]
 	  Endereçamento indireto por registrador
