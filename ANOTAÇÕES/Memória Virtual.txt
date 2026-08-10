@@ -515,6 +515,34 @@ PARTE 3 — MMU, TABELAS DE PÁGINAS, TLB E TRADUÇÃO DE ENDEREÇOS
 	  Papel da TLB
 
 
+14.4 Estruturas Alternativas de Tabelas de Páginas — [I]
+
+  14.4.1 Tabela de Páginas Invertida — [I]
+	  Conceito
+	  Uma entrada por quadro físico
+	  Redução do espaço ocupado
+	  Busca da tradução
+	  Vantagens
+	  Limitações
+
+  14.4.2 Tabelas de Páginas Hash — [I]
+	  Conceito
+	  Hash do endereço virtual
+	  Colisões
+	  Busca da entrada
+	  Vantagens
+	  Limitações
+
+  14.4.3 Comparação das Estruturas — [I]
+	  Tabela simples
+	  Tabela multinível
+	  Tabela invertida
+	  Tabela hash
+	  Espaço ocupado
+	  Complexidade
+	  Custo de tradução
+
+
 
 15. Unidade de Gerenciamento de Memória (MMU) — [P]
 
