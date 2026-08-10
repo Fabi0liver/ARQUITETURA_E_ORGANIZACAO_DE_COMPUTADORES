@@ -78,6 +78,14 @@ PARTE 1 — FUNDAMENTOS DOS MODOS DE ENDEREÇAMENTO
 	  Uso de deslocamentos
 	  Uso do contador de programa
 
+  2.2.3 Relação entre Endereço, Endereço Efetivo e Operando — [I]
+	  Endereço especificado pela instrução
+	  Endereço efetivo (EA)
+	  Endereço do operando
+	  Valor do operando
+	  Valor armazenado no endereço
+	  Relação entre endereço e indireção
+
 
 
 3. Papel dos Modos de Endereçamento na Execução de Instruções — [I]
@@ -1041,10 +1049,28 @@ PARTE 6 — ENDEREÇAMENTO RELATIVO, POR REGISTRADOR BASE, POR INDEXAÇÃO E DE 
   37.1.1 Auto Indexação — [P]
 	  Incremento ou decremento automático do índice
 	  Uso em iterações sequenciais
+	  Auto-incremento
+	  Auto-decremento
+	  Atualização automática do registrador de índice
 
   37.1.2 Pós Indexação — [P]
 	  Acesso ao dado antes do ajuste do índice
 	  Ajuste do deslocamento após o acesso
+	  Pós-incremento
+	  Pós-decremento
+	  Diferença entre atualização após o acesso e atualização antes do acesso
+
+  37.1.3 Pós-Incremento — [P]
+	  Acesso ao operando usando o endereço atual
+	  Incremento do registrador após o acesso
+	  Atualização do endereço para o próximo elemento
+	  Relação entre o endereço utilizado e o novo valor do registrador
+
+  37.1.4 Pós-Decremento — [P]
+	  Acesso ao operando usando o endereço atual
+	  Decremento do registrador após o acesso
+	  Atualização do endereço para o elemento anterior
+	  Relação entre o endereço utilizado e o novo valor do registrador
 
 
  37.2 Pré Indexação e Comparação — [P]
@@ -1052,8 +1078,28 @@ PARTE 6 — ENDEREÇAMENTO RELATIVO, POR REGISTRADOR BASE, POR INDEXAÇÃO E DE 
   37.2.1 Pré Indexação — [P]
 	  Ajuste do índice antes do acesso
 	  Cálculo antecipado do endereço
+	  Pré-incremento
+	  Pré-decremento
+	  Atualização do registrador antes do acesso
+	  Uso do endereço já atualizado
 
-  37.2.2 Comparação entre as Variações — [I]
+  37.2.2 Pré-Incremento — [P]
+	  Incremento do registrador antes do acesso
+	  Uso do endereço já atualizado
+	  Atualização do endereço para o próximo elemento
+	  Relação entre o novo valor do registrador e o endereço utilizado
+	  Pré-incremento versus pós-incremento
+	  Pré-decremento versus pós-decremento
+	  Incremento versus decremento
+	  Endereço utilizado antes e depois da atualização
+
+  37.2.3 Pré-Decremento — [P]
+	  Decremento do registrador antes do acesso
+	  Uso do endereço já atualizado
+	  Atualização do endereço para o elemento anterior
+	  Relação entre o novo valor do registrador e o endereço utilizado
+
+  37.2.4 Comparação entre as Variações — [I]
 	  Momento do ajuste do índice
 	  Impacto na eficiência da iteração
 
@@ -1247,13 +1293,20 @@ PARTE 7 — CÁLCULO, APLICAÇÃO E ESCOLHA DO MODO DE ENDEREÇAMENTO
 
  44.2 Instruções de Controle de Fluxo — [I]
 
-  44.2.1 Modos Comuns Utilizados — [I]
-	  Relativo
-	  Indireto
+  44.2.1 Endereçamento de Desvios — [I]
+	  Desvio relativo
+	  Desvio absoluto
+  	  Desvio indireto
 
-  44.2.2 Considerações de Projeto — [I]
-	  Realocação de código
-	  Alcance dos saltos
+  44.2.2 Endereçamento de Chamadas — [I]
+	  Chamada relativa
+	  Chamada absoluta
+	  Chamada indireta
+
+  44.2.3 Endereçamento de Retorno — [I]
+	  Endereço de retorno
+	  Uso do endereço armazenado
+	  Relação com o modo de pilha
 
 
 
