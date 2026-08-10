@@ -668,6 +668,13 @@ PARTE 3 — MMU, TABELAS DE PÁGINAS, TLB E TRADUÇÃO DE ENDEREÇOS
 	  Reutilização de entradas
 	  Troca de contexto
 
+  17.1.3 Identificadores Modernos de Espaço de Endereçamento — [I]
+	  ASID
+	  PCID
+	  Identificação de contexto
+	  Redução de flushes
+	  Reutilização de traduções
+
 
  17.2 Invalidação da TLB — [P]
 
@@ -846,6 +853,21 @@ PARTE 4 — PAGINAÇÃO SOB DEMANDA, FALTAS DE PÁGINA E GERENCIAMENTO DE PÁGIN
 	  Page fault
 	  Carregamento
 	  Retomada da execução
+
+
+ 20.3 Lazy Allocation e Zero Pages — [I]
+
+  20.3.1 Alocação Sob Demanda — [I]
+	  Reserva de espaço virtual
+	  Ausência de quadro físico
+	  Alocação no primeiro acesso
+	  Page fault
+
+  20.3.2 Zero Pages — [I]
+	  Conceito
+	  Página inicializada com zero
+	  Compartilhamento
+	  Copy-on-Write
 
 
 
@@ -1311,6 +1333,13 @@ PARTE 6 — PROTEÇÃO, COMPARTILHAMENTO E ISOLAMENTO DE PROCESSOS
 	  Permissões
 	  Compartilhamento controlado
 	  Restrições de acesso
+
+  36.2.3 Guard Pages — [I]
+	  Conceito
+	  Região de proteção
+	  Detecção de acesso
+	  Relação com crescimento da pilha
+	  Geração de falha
 
 
  36.3 Aspectos Avançados de Segurança — [V]
