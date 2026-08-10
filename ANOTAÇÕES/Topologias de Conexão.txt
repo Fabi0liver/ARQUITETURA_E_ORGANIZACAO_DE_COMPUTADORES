@@ -1,0 +1,1379 @@
+                                      TOPOLOGIAS DE CONEXÃO
+
+
+A classificação abaixo indica a profundidade recomendada para cada grande tópico da lista.
+
+[P] Profundidade — estudar mecanismos, estruturas, funcionamento interno e relações entre componentes.
+[I] Intermediário — compreender bem o funcionamento e as relações principais, sem precisar dominar todos os
+   detalhes de implementação.
+[V] Visão geral — saber o que é, para que serve e como se relaciona com as Topologias de Conexão.
+
+
+
+PARTE 1 — FUNDAMENTOS E CONCEITOS DAS TOPOLOGIAS DE CONEXÃO
+
+
+1. Introdução às Topologias de Conexão — [I]
+
+ 1.1 Conceitos Fundamentais — [I]
+
+  1.1.1 Conceito de Topologia de Conexão — [I]
+	  Definição de topologia de interconexão
+	  Conceito de rede de interconexão
+	  Nós, enlaces e canais
+	  Papel na arquitetura de computadores
+	  Diferença entre topologia física e lógica
+
+  1.1.2 Objetivos das Topologias de Conexão — [I]
+	  Comunicação entre componentes
+	  Transferência de dados e instruções
+	  Coordenação entre unidades funcionais
+	  Suporte à escalabilidade
+	  Redução de latência e contenção
+
+
+ 1.2 A Topologia de Conexão na Arquitetura de Computadores — [I]
+
+  1.2.1 Papel no Sistema Computacional — [I]
+	  Interligação entre processador, memória e periféricos
+	  Comunicação entre núcleos
+	  Comunicação em sistemas multiprocessados
+	  Organização estrutural do sistema
+
+  1.2.2 Arquitetura × Organização × Topologia de Conexão — [I]
+	  O que pertence à Arquitetura
+	  O que pertence à Organização
+	  Localização da Topologia de Conexão
+	  Relação entre os conceitos
+	  Exemplos comparativos
+
+
+
+2. Conceitos Fundamentais de Interconexão — [P]
+
+ 2.1 Elementos de uma Rede de Interconexão — [P]
+
+  2.1.1 Nós e Terminais — [P]
+	  Definição de nó
+	  Nós processadores
+	  Nós de memória
+	  Nós de comutação (switches)
+	  Terminais de rede
+
+  2.1.2 Enlaces e Canais de Comunicação — [P]
+	  Definição de enlace
+	  Canais unidirecionais
+	  Canais bidirecionais
+	  Largura do canal
+	  Capacidade de transmissão
+
+
+ 2.2 Comunicação entre Componentes — [P]
+
+  2.2.1 Formas de Comunicação — [P]
+	  Comunicação ponto a ponto
+	  Comunicação compartilhada
+	  Comunicação multiponto
+	  Difusão (broadcast)
+	  Multicast
+
+  2.2.2 Meios de Transmissão — [P]
+	  Barramentos elétricos
+	  Enlaces seriais
+	  Enlaces paralelos
+	  Interconexões ópticas
+	  Interconexões internas de alta velocidade
+
+
+
+3. Papel das Topologias na Arquitetura de Computadores — [I]
+
+ 3.1 Importância Estrutural — [I]
+
+  3.1.1 Influência no Desempenho — [I]
+	  Impacto na latência
+	  Impacto na largura de banda
+	  Impacto na escalabilidade
+	  Impacto no custo
+
+  3.1.2 Influência no Projeto do Sistema — [I]
+	  Escolha da topologia conforme a aplicação
+	  Relação com o número de processadores
+	  Relação com a hierarquia de memória
+	  Relação com o barramento do sistema
+
+
+ 3.2 Relação com Outros Componentes da Arquitetura — [I]
+
+  3.2.1 Relação com o Processador — [I]
+	  Comunicação entre núcleos
+	  Acesso a caches compartilhados
+	  Coordenação de múltiplas unidades
+
+  3.2.2 Relação com a Memória — [I]
+	  Acesso à memória compartilhada
+	  Comunicação com memória distribuída
+	  Coerência de cache entre nós
+
+
+
+4. Evolução Histórica das Topologias de Conexão — [V]
+
+ 4.1 Origens das Redes de Interconexão — [V]
+
+  4.1.1 Primeiras Formas de Interconexão — [V]
+	  Barramentos únicos
+	  Conexões ponto a ponto simples
+	  Sistemas com poucos processadores
+	  Limitações iniciais
+
+  4.1.2 Evolução para Sistemas Multiprocessados — [V]
+	  Necessidade de múltiplos caminhos
+	  Surgimento das redes multiestágio
+	  Crescimento da complexidade
+
+
+ 4.2 Evolução até as Arquiteturas Modernas — [V]
+
+  4.2.1 Redes em Supercomputadores — [V]
+	  Topologias de alto desempenho
+	  Redes de larga escala
+	  Crescimento da escalabilidade
+
+  4.2.2 Redes em Chip e Multicore — [V]
+	  Surgimento das NoCs
+	  Integração em um único chip
+	  Novas exigências de baixa latência
+
+
+
+PARTE 2 — ESTRUTURA, FUNCIONAMENTO E CLASSIFICAÇÃO DAS TOPOLOGIAS DE CONEXÃO
+
+
+5. Estrutura Geral de uma Topologia de Conexão — [P]
+
+ 5.1 Componentes Estruturais — [P]
+
+  5.1.1 Nós de Processamento e Comutação — [P]
+	  Nós terminais
+	  Nós intermediários
+	  Switches e roteadores
+	  Funções de cada tipo de nó
+
+  5.1.2 Enlaces e Interconexões — [P]
+	  Enlaces diretos
+	  Enlaces indiretos
+	  Organização espacial dos enlaces
+	  Padrões de conexão
+
+
+ 5.2 Organização Espacial — [P]
+
+  5.2.1 Disposição Física — [P]
+	  Organização linear
+	  Organização matricial
+	  Organização em grade
+	  Organização tridimensional
+
+  5.2.2 Disposição Lógica — [P]
+	  Topologia lógica versus física
+	  Mapeamento lógico-físico
+	  Independência da representação lógica
+
+
+
+6. Funcionamento das Redes de Interconexão — [P]
+
+ 6.1 Princípios de Funcionamento — [P]
+
+  6.1.1 Transferência de Dados na Rede — [P]
+	  Origem e destino dos dados
+	  Encaminhamento entre nós
+	  Armazenamento intermediário
+	  Sincronização das transferências
+
+  6.1.2 Controle do Fluxo de Informações — [P]
+	  Regulação da transmissão
+	  Evitação de congestionamento
+	  Sincronização entre nós
+
+
+ 6.2 Modos de Operação — [P]
+
+  6.2.1 Operação Síncrona — [P]
+	  Sincronização por relógio global
+	  Vantagens da operação síncrona
+	  Limitações da operação síncrona
+
+  6.2.2 Operação Assíncrona — [P]
+	  Comunicação sem relógio comum
+	  Uso de handshaking
+	  Vantagens da operação assíncrona
+	  Limitações da operação assíncrona
+
+
+
+7. Classificação das Topologias de Conexão — [P]
+
+ 7.1 Critérios de Classificação — [P]
+
+  7.1.1 Classificação quanto à Conexão — [P]
+	  Topologias diretas
+	  Topologias indiretas
+	  Topologias híbridas
+
+  7.1.2 Classificação quanto ao Comportamento — [P]
+	  Topologias estáticas
+	  Topologias dinâmicas
+	  Topologias reconfiguráveis
+
+
+ 7.2 Outras Formas de Classificação — [P]
+
+  7.2.1 Classificação quanto à Regularidade — [P]
+	  Topologias regulares
+	  Topologias irregulares
+
+  7.2.2 Classificação quanto à Escala — [P]
+	  Topologias de escala local (chip)
+	  Topologias de escala de sistema
+	  Topologias de escala distribuída
+
+
+
+8. Elementos Constituintes das Topologias — [P]
+
+ 8.1 Nós de Comutação — [P]
+
+  8.1.1 Switches e Roteadores — [P]
+	  Função do switch
+	  Função do roteador
+	  Portas de entrada e saída
+	  Buffers internos
+
+  8.1.2 Estrutura Interna dos Switches — [P]
+	  Estágios de comutação
+	  Matriz de comutação (crossbar)
+	  Filas internas
+
+
+ 8.2 Canais e Portas — [P]
+
+  8.2.1 Canais Físicos e Virtuais — [P]
+	  Canal físico
+	  Canal virtual
+	  Multiplexação de canais
+
+  8.2.2 Portas de Comunicação — [P]
+	  Portas de entrada
+	  Portas de saída
+	  Portas bidirecionais
+
+
+
+PARTE 3 — TOPOLOGIAS DE CONEXÃO BÁSICAS
+
+
+9. Topologia em Barramento (Bus) — [P]
+
+ 9.1 Fundamentos — [P]
+
+  9.1.1 Conceito de Barramento — [P]
+	  Definição
+	  Meio compartilhado
+	  Estrutura linear
+	  Conexão de múltiplos dispositivos
+
+  9.1.2 Funcionamento do Barramento — [P]
+	  Compartilhamento do meio
+	  Arbitragem de acesso
+	  Transmissão em broadcast
+
+
+ 9.2 Características do Barramento — [P]
+
+  9.2.1 Vantagens — [P]
+	  Simplicidade
+	  Baixo custo
+	  Facilidade de expansão
+
+  9.2.2 Limitações — [P]
+	  Contenção pelo meio compartilhado
+	  Baixa escalabilidade
+	  Gargalo de desempenho
+
+
+
+10. Topologia em Anel (Ring) — [P]
+
+ 10.1 Fundamentos — [P]
+
+  10.1.1 Conceito de Anel — [P]
+	  Definição
+	  Conexão circular entre nós
+	  Enlaces unidirecionais
+	  Enlaces bidirecionais
+
+  10.1.2 Funcionamento do Anel — [P]
+	  Transmissão sequencial
+	  Passagem de token
+	  Encaminhamento entre vizinhos
+
+
+ 10.2 Características do Anel — [P]
+
+  10.2.1 Vantagens — [P]
+	  Simplicidade estrutural
+	  Previsibilidade de latência
+	  Baixo custo de enlaces
+
+  10.2.2 Limitações — [P]
+	  Latência proporcional ao número de nós
+	  Sensibilidade a falhas
+	  Baixa largura de bisseção
+
+
+
+11. Topologia em Estrela (Star) — [P]
+
+ 11.1 Fundamentos — [P]
+
+  11.1.1 Conceito de Estrela — [P]
+	  Definição
+	  Nó central concentrador
+	  Conexões ponto a ponto com o centro
+
+  11.1.2 Funcionamento da Estrela — [P]
+	  Comutação centralizada
+	  Encaminhamento via nó central
+
+
+ 11.2 Características da Estrela — [P]
+
+  11.2.1 Vantagens — [P]
+	  Simplicidade de gerenciamento
+	  Isolamento de falhas nos enlaces
+	  Facilidade de diagnóstico
+
+  11.2.2 Limitações — [P]
+	  Ponto único de falha
+	  Gargalo no nó central
+	  Escalabilidade limitada
+
+
+
+12. Topologia em Malha Completa (Fully Connected) — [P]
+
+ 12.1 Fundamentos — [P]
+
+  12.1.1 Conceito de Malha Completa — [P]
+	  Definição
+	  Conexão direta entre todos os nós
+	  Crossbar como implementação
+
+  12.1.2 Funcionamento — [P]
+	  Comunicação direta sem intermediários
+	  Ausência de roteamento multi-hop
+
+
+ 12.2 Características — [P]
+
+  12.2.1 Vantagens — [P]
+	  Latência mínima
+	  Máxima largura de bisseção
+	  Alta tolerância a falhas
+
+  12.2.2 Limitações — [P]
+	  Custo crescente com o número de nós
+	  Complexidade de cabeamento
+	  Baixa escalabilidade física
+
+
+
+13. Topologia em Malha (Mesh) — [P]
+
+ 13.1 Fundamentos — [P]
+
+  13.1.1 Conceito de Malha — [P]
+	  Definição
+	  Organização em grade bidimensional
+	  Conexões entre vizinhos adjacentes
+
+  13.1.2 Variações da Malha — [P]
+	  Malha bidimensional
+	  Malha tridimensional
+	  Malha com bordas fechadas
+
+
+ 13.2 Características da Malha — [P]
+
+  13.2.1 Vantagens — [P]
+	  Boa escalabilidade
+	  Múltiplos caminhos entre nós
+	  Tolerância a falhas moderada
+
+  13.2.2 Limitações — [P]
+	  Maior diâmetro que topologias completas
+	  Latência variável conforme a posição do nó
+
+
+
+14. Topologia em Árvore (Tree) — [P]
+
+ 14.1 Fundamentos — [P]
+
+  14.1.1 Conceito de Árvore — [P]
+	  Definição
+	  Estrutura hierárquica
+	  Nó raiz e nós folha
+
+  14.1.2 Funcionamento — [P]
+	  Encaminhamento hierárquico
+	  Comunicação ascendente
+	  Comunicação descendente
+
+
+ 14.2 Características da Árvore — [P]
+
+  14.2.1 Vantagens — [P]
+	  Escalabilidade hierárquica
+	  Organização estruturada
+
+  14.2.2 Limitações — [P]
+	  Congestionamento próximo à raiz
+	  Ponto crítico nos nós superiores
+
+
+
+15. Topologias Híbridas Básicas — [I]
+
+ 15.1 Fundamentos — [I]
+
+  15.1.1 Conceito de Topologia Híbrida — [I]
+	  Combinação de topologias básicas
+	  Objetivo de equilibrar vantagens
+	  Exemplos de combinações
+
+
+ 15.2 Exemplos de Combinações — [I]
+
+  15.2.1 Estrela-Barramento — [I]
+	  Estrutura combinada
+	  Aplicações típicas
+
+  15.2.2 Anel-Estrela — [I]
+	  Estrutura combinada
+	  Aplicações típicas
+
+
+
+PARTE 4 — TOPOLOGIAS HIERÁRQUICAS, ESTRUTURADAS, DIRETAS E INDIRETAS
+
+
+16. Topologias Diretas — [P]
+
+ 16.1 Fundamentos — [P]
+
+  16.1.1 Conceito de Topologia Direta — [P]
+	  Definição
+	  Conexão direta entre nós processadores
+	  Ausência de switches dedicados centrais
+
+  16.1.2 Funcionamento — [P]
+	  Cada nó atua como roteador
+	  Encaminhamento distribuído
+
+
+ 16.2 Exemplos de Topologias Diretas — [P]
+
+  16.2.1 Malha e Torus como Diretas — [P]
+	  Estrutura direta da malha
+	  Estrutura direta do torus
+
+  16.2.2 Hipercubo como Direta — [P]
+	  Conexão direta entre vértices
+	  Encaminhamento distribuído
+
+
+
+17. Topologias Indiretas — [P]
+
+ 17.1 Fundamentos — [P]
+
+  17.1.1 Conceito de Topologia Indireta — [P]
+	  Definição
+	  Uso de switches intermediários
+	  Separação entre nós terminais e nós de comutação
+
+  17.1.2 Funcionamento — [P]
+	  Encaminhamento via switches dedicados
+	  Estágios de comutação
+
+
+ 17.2 Exemplos de Topologias Indiretas — [P]
+
+  17.2.1 Redes Multiestágio — [P]
+	  Estrutura em estágios
+	  Exemplos de redes multiestágio
+
+  17.2.2 Redes Fat-Tree e Clos — [P]
+	  Estrutura em estágios hierárquicos
+	  Uso em data centers
+
+
+
+18. Topologia Hipercubo (Hypercube) — [P]
+
+ 18.1 Fundamentos — [P]
+
+  18.1.1 Conceito de Hipercubo — [P]
+	  Definição
+	  Dimensão do hipercubo
+	  Vértices e arestas
+
+  18.1.2 Estrutura do Hipercubo — [P]
+	  Endereçamento binário dos nós
+	  Conexão entre nós vizinhos
+	  Crescimento exponencial
+
+
+ 18.2 Características do Hipercubo — [P]
+
+  18.2.1 Vantagens — [P]
+	  Baixo diâmetro
+	  Boa tolerância a falhas
+	  Múltiplos caminhos
+
+  18.2.2 Limitações — [P]
+	  Crescimento do grau do nó
+	  Complexidade de cabeamento em dimensões altas
+
+
+
+19. Topologia Torus (k-ary n-cube) — [P]
+
+ 19.1 Fundamentos — [P]
+
+  19.1.1 Conceito de Torus — [P]
+	  Definição
+	  Malha com bordas conectadas
+	  Generalização k-ary n-cube
+
+  19.1.2 Estrutura do Torus — [P]
+	  Conexões cíclicas
+	  Dimensões do torus
+	  Endereçamento dos nós
+
+
+ 19.2 Características do Torus — [P]
+
+  19.2.1 Vantagens — [P]
+	  Menor diâmetro que a malha simples
+	  Distribuição uniforme de carga
+
+  19.2.2 Limitações — [P]
+	  Maior complexidade de cabeamento
+	  Possibilidade de deadlock no roteamento
+
+
+
+20. Redes Fat-Tree — [P]
+
+ 20.1 Fundamentos — [P]
+
+  20.1.1 Conceito de Fat-Tree — [P]
+	  Definição
+	  Estrutura em árvore com enlaces mais largos próximos à raiz
+	  Origem do conceito
+
+  20.1.2 Estrutura da Fat-Tree — [P]
+	  Níveis hierárquicos
+	  Switches em cada nível
+	  Redundância de caminhos
+
+
+ 20.2 Características da Fat-Tree — [P]
+
+  20.2.1 Vantagens — [P]
+	  Alta largura de bisseção
+	  Boa escalabilidade
+	  Uso em data centers
+
+  20.2.2 Aplicações — [P]
+	  Supercomputadores
+	  Redes de data center
+
+
+
+21. Redes Clos e Redes Multiestágio — [P]
+
+ 21.1 Fundamentos — [P]
+
+  21.1.1 Conceito de Rede Clos — [P]
+	  Definição
+	  Estágios de entrada, intermediário e saída
+	  Rede não bloqueante versus bloqueante
+
+  21.1.2 Estrutura Multiestágio — [P]
+	  Organização em estágios de switches
+	  Caminhos entre estágios
+
+
+ 21.2 Características — [P]
+
+  21.2.1 Vantagens — [P]
+	  Redução do número de switches
+	  Boa escalabilidade
+
+  21.2.2 Limitações — [P]
+	  Complexidade de controle
+	  Possível bloqueio em certas configurações
+
+
+
+PARTE 5 — TOPOLOGIAS ESTÁTICAS, DINÂMICAS E MECANISMOS DE INTERCONEXÃO
+
+
+22. Topologias Estáticas — [I]
+
+ 22.1 Fundamentos — [I]
+
+  22.1.1 Conceito de Topologia Estática — [I]
+	  Definição
+	  Conexões fixas entre nós
+	  Ausência de reconfiguração
+
+  22.1.2 Exemplos de Topologias Estáticas — [I]
+	  Barramento
+	  Anel
+	  Malha
+	  Hipercubo
+
+
+ 22.2 Características — [I]
+
+  22.2.1 Vantagens e Limitações — [I]
+	  Simplicidade de controle
+	  Falta de flexibilidade
+
+
+
+23. Topologias Dinâmicas — [I]
+
+ 23.1 Fundamentos — [I]
+
+  23.1.1 Conceito de Topologia Dinâmica — [I]
+	  Definição
+	  Conexões estabelecidas por comutação
+	  Uso de switches reconfiguráveis
+
+  23.1.2 Exemplos de Topologias Dinâmicas — [I]
+	  Redes multiestágio
+	  Crossbar
+	  Redes baseadas em switches
+
+
+ 23.2 Características — [I]
+
+  23.2.1 Vantagens e Limitações — [I]
+	  Maior flexibilidade
+	  Maior complexidade de controle
+
+
+
+24. Redes de Comutação (Switching Networks) — [I]
+
+ 24.1 Fundamentos — [I]
+
+  24.1.1 Conceito de Rede de Comutação — [I]
+	  Definição
+	  Papel dos switches
+	  Estabelecimento de caminhos
+
+  24.1.2 Tipos de Redes de Comutação — [I]
+	  Comutação de circuito
+	  Comutação de pacotes
+
+
+ 24.2 Funcionamento — [I]
+
+  24.2.1 Estabelecimento de Caminhos — [I]
+	  Configuração do caminho
+	  Liberação do caminho
+
+
+
+25. Barramentos Compartilhados vs Redes Chaveadas — [I]
+
+ 25.1 Comparação Estrutural — [I]
+
+  25.1.1 Meio Compartilhado — [I]
+	  Características do barramento compartilhado
+	  Limitações de escalabilidade
+
+  25.1.2 Meio Chaveado — [I]
+	  Características das redes chaveadas
+	  Múltiplos caminhos simultâneos
+
+
+ 25.2 Critérios de Escolha — [I]
+
+  25.2.1 Fatores Determinantes — [I]
+	  Número de nós
+	  Exigência de desempenho
+	  Custo do sistema
+
+
+
+26. Redes em Malha de Chaveamento (Crossbar Switch) — [P]
+
+ 26.1 Fundamentos — [P]
+
+  26.1.1 Conceito de Crossbar — [P]
+	  Definição
+	  Matriz de pontos de cruzamento
+	  Conexão simultânea entre entradas e saídas
+
+  26.1.2 Funcionamento do Crossbar — [P]
+	  Configuração dos pontos de cruzamento
+	  Estabelecimento de conexões simultâneas
+
+
+ 26.2 Características do Crossbar — [P]
+
+  26.2.1 Vantagens — [P]
+	  Ausência de bloqueio interno
+	  Alta largura de banda
+
+  26.2.2 Limitações — [P]
+	  Custo quadrático com o número de portas
+	  Complexidade física
+
+
+
+27. Redes de Interconexão em Chip (Network-on-Chip — NoC) — [P]
+
+ 27.1 Fundamentos — [P]
+
+  27.1.1 Conceito de NoC — [P]
+	  Definição
+	  Motivação para substituir barramentos internos
+	  Aplicação em sistemas multicore
+
+  27.1.2 Estrutura de uma NoC — [P]
+	  Roteadores internos
+	  Enlaces entre núcleos
+	  Topologias comuns em NoC
+
+
+ 27.2 Características das NoCs — [P]
+
+  27.2.1 Vantagens — [P]
+	  Escalabilidade dentro do chip
+	  Comunicação paralela entre núcleos
+
+  27.2.2 Desafios — [P]
+	  Consumo de energia
+	  Área ocupada no chip
+	  Complexidade de projeto
+
+
+
+PARTE 6 — MÉTRICAS, PROPRIEDADES E CARACTERÍSTICAS DAS TOPOLOGIAS
+
+
+28. Métricas Estruturais das Topologias — [P]
+
+ 28.1 Grau do Nó — [P]
+
+  28.1.1 Conceito de Grau — [P]
+	  Definição
+	  Número de conexões por nó
+	  Relação com o custo
+
+  28.1.2 Impacto do Grau — [P]
+	  Relação com a escalabilidade
+	  Relação com a complexidade dos nós
+
+
+ 28.2 Número de Enlaces — [P]
+
+  28.2.1 Contagem de Enlaces — [P]
+	  Total de enlaces na topologia
+	  Relação com o custo de cabeamento
+
+
+
+29. Métricas de Desempenho das Topologias — [P]
+
+ 29.1 Largura de Bisseção — [P]
+
+  29.1.1 Conceito de Largura de Bisseção — [P]
+	  Definição
+	  Corte da rede ao meio
+	  Relação com a capacidade de comunicação
+
+  29.1.2 Importância da Largura de Bisseção — [P]
+	  Indicador de desempenho global
+	  Comparação entre topologias
+
+
+ 29.2 Custo e Eficiência — [P]
+
+  29.2.1 Relação Custo-Desempenho — [P]
+	  Número de enlaces versus desempenho
+	  Trade-offs de projeto
+
+
+
+30. Propriedades Topológicas — [I]
+
+ 30.1 Simetria e Regularidade — [I]
+
+  30.1.1 Simetria — [I]
+	  Definição
+	  Vantagens de topologias simétricas
+
+  30.1.2 Regularidade — [I]
+	  Definição
+	  Uniformidade dos nós
+
+
+ 30.2 Modularidade e Escalabilidade Estrutural — [I]
+
+  30.2.1 Modularidade — [I]
+	  Facilidade de expansão em blocos
+	  Reutilização de estrutura
+
+
+
+31. Conectividade e Grau de Conexão — [P]
+
+ 31.1 Conectividade da Rede — [P]
+
+  31.1.1 Conceito de Conectividade — [P]
+	  Definição
+	  Número de caminhos disjuntos entre nós
+	  Relação com a tolerância a falhas
+
+  31.1.2 Grau de Conexão — [P]
+	  Relação entre grau e conectividade
+	  Impacto na robustez
+
+
+ 31.2 Caminhos Alternativos — [P]
+
+  31.2.1 Redundância de Caminhos — [P]
+	  Múltiplos caminhos entre nós
+	  Benefícios para a confiabilidade
+
+
+
+32. Diâmetro, Distância e Caminhos — [P]
+
+ 32.1 Diâmetro da Rede — [P]
+
+  32.1.1 Conceito de Diâmetro — [P]
+	  Definição
+	  Maior distância entre dois nós
+	  Relação com a latência máxima
+
+  32.1.2 Distância Média — [P]
+	  Definição
+	  Relação com a latência típica
+
+
+ 32.2 Caminhos entre Nós — [P]
+
+  32.2.1 Número de Saltos (Hops) — [P]
+	  Definição
+	  Relação com o atraso de comunicação
+
+
+
+PARTE 7 — ROTEAMENTO, COMUNICAÇÃO E FLUXO DE DADOS NAS TOPOLOGIAS
+
+
+33. Fundamentos de Roteamento em Topologias — [P]
+
+ 33.1 Conceitos Básicos — [P]
+
+  33.1.1 Conceito de Roteamento — [P]
+	  Definição
+	  Escolha do caminho entre origem e destino
+	  Papel na comunicação
+
+  33.1.2 Componentes do Roteamento — [P]
+	  Tabelas de roteamento
+	  Algoritmos de decisão
+	  Nós intermediários
+
+
+ 33.2 Objetivos do Roteamento — [P]
+
+  33.2.1 Metas Principais — [P]
+	  Minimizar latência
+	  Evitar congestionamento
+	  Balancear carga
+
+
+
+34. Algoritmos de Roteamento — [P]
+
+ 34.1 Classificação dos Algoritmos — [P]
+
+  34.1.1 Roteamento Determinístico — [P]
+	  Definição
+	  Caminho único e fixo
+	  Exemplos de aplicação
+
+  34.1.2 Roteamento Adaptativo — [P]
+	  Definição
+	  Escolha dinâmica do caminho
+	  Resposta a congestionamento
+
+
+ 34.2 Estratégias de Roteamento — [P]
+
+  34.2.1 Roteamento por Origem — [P]
+	  Definição
+	  Decisão definida no nó de origem
+
+  34.2.2 Roteamento Distribuído — [P]
+	  Definição
+	  Decisão em cada nó intermediário
+
+
+
+35. Técnicas de Comutação (Switching Techniques) — [P]
+
+ 35.1 Comutação de Circuitos — [P]
+
+  35.1.1 Conceito de Comutação de Circuitos — [P]
+	  Definição
+	  Estabelecimento prévio do caminho
+	  Reserva de recursos
+
+
+ 35.2 Comutação de Pacotes — [P]
+
+  35.2.1 Store-and-Forward — [P]
+	  Definição
+	  Armazenamento completo antes do envio
+
+  35.2.2 Wormhole e Cut-Through — [P]
+	  Definição
+	  Encaminhamento parcial
+	  Redução de latência
+
+
+
+36. Controle de Fluxo em Redes de Interconexão — [I]
+
+ 36.1 Fundamentos — [I]
+
+  36.1.1 Conceito de Controle de Fluxo — [I]
+	  Definição
+	  Regulação da taxa de transmissão
+	  Prevenção de perda de dados
+
+
+ 36.2 Mecanismos de Controle — [I]
+
+  36.2.1 Controle Baseado em Créditos — [I]
+	  Definição
+	  Uso de créditos para liberar transmissão
+
+  36.2.2 Controle por Handshaking — [I]
+	  Definição
+	  Sinalização entre transmissor e receptor
+
+
+
+37. Mecanismos de Arbitragem — [I]
+
+ 37.1 Fundamentos — [I]
+
+  37.1.1 Conceito de Arbitragem — [I]
+	  Definição
+	  Resolução de disputas por recursos compartilhados
+	  Papel do árbitro
+
+
+ 37.2 Estratégias de Arbitragem — [I]
+
+  37.2.1 Arbitragem Estática — [I]
+	  Prioridades fixas
+	  Round-robin
+
+  37.2.2 Arbitragem Dinâmica — [I]
+	  Prioridades variáveis
+	  Arbitragem baseada em carga
+
+
+
+PARTE 8 — DESEMPENHO, LATÊNCIA, LARGURA DE BANDA, CONTENÇÃO E ESCALABILIDADE
+
+
+38. Latência nas Topologias de Conexão — [P]
+
+ 38.1 Componentes da Latência — [P]
+
+  38.1.1 Latência de Propagação — [P]
+	  Definição
+	  Relação com a distância física
+
+  38.1.2 Latência de Processamento — [P]
+	  Definição
+	  Tempo de decisão em cada nó
+
+
+ 38.2 Fatores que Influenciam a Latência — [P]
+
+  38.2.1 Número de Saltos — [P]
+	  Relação entre hops e latência total
+
+  38.2.2 Congestionamento — [P]
+	  Impacto do tráfego na latência
+
+
+
+39. Largura de Banda e Throughput — [P]
+
+ 39.1 Conceitos Fundamentais — [P]
+
+  39.1.1 Largura de Banda — [P]
+	  Definição
+	  Capacidade máxima de transmissão
+
+  39.1.2 Throughput — [P]
+	  Definição
+	  Taxa efetiva de transferência
+
+
+ 39.2 Fatores que Afetam o Throughput — [P]
+
+  39.2.1 Contenção de Recursos — [P]
+	  Impacto da disputa por enlaces
+
+  39.2.2 Largura de Bisseção — [P]
+	  Relação entre bisseção e throughput global
+
+
+
+40. Contenção e Congestionamento — [I]
+
+ 40.1 Fundamentos — [I]
+
+  40.1.1 Conceito de Contenção — [I]
+	  Definição
+	  Disputa por recursos compartilhados
+
+  40.1.2 Conceito de Congestionamento — [I]
+	  Definição
+	  Acúmulo de tráfego na rede
+
+
+ 40.2 Estratégias de Mitigação — [I]
+
+  40.2.1 Balanceamento de Carga — [I]
+	  Distribuição uniforme do tráfego
+
+  40.2.2 Controle de Admissão — [I]
+	  Limitação da entrada de tráfego
+
+
+
+41. Escalabilidade das Topologias — [I]
+
+ 41.1 Fundamentos — [I]
+
+  41.1.1 Conceito de Escalabilidade — [I]
+	  Definição
+	  Capacidade de crescimento sem degradação
+
+
+ 41.2 Fatores de Escalabilidade — [I]
+
+  41.2.1 Crescimento do Grau do Nó — [I]
+	  Impacto no custo de expansão
+
+  41.2.2 Crescimento do Diâmetro — [I]
+	  Impacto na latência conforme o sistema cresce
+
+
+
+PARTE 9 — CONFIABILIDADE, REDUNDÂNCIA E TOLERÂNCIA A FALHAS
+
+
+42. Confiabilidade em Topologias de Conexão — [I]
+
+ 42.1 Fundamentos — [I]
+
+  42.1.1 Conceito de Confiabilidade — [I]
+	  Definição
+	  Capacidade de operação contínua
+
+
+ 42.2 Fatores que Afetam a Confiabilidade — [I]
+
+  42.2.1 Pontos Únicos de Falha — [I]
+	  Identificação de pontos críticos
+	  Impacto na disponibilidade
+
+
+
+43. Redundância e Caminhos Alternativos — [I]
+
+ 43.1 Fundamentos — [I]
+
+  43.1.1 Conceito de Redundância — [I]
+	  Definição
+	  Duplicação de caminhos e componentes
+
+
+ 43.2 Aplicações da Redundância — [I]
+
+  43.2.1 Caminhos Alternativos — [I]
+	  Uso em caso de falha
+	  Continuidade da comunicação
+
+
+
+44. Tolerância a Falhas em Redes de Interconexão — [I]
+
+ 44.1 Fundamentos — [I]
+
+  44.1.1 Conceito de Tolerância a Falhas — [I]
+	  Definição
+	  Continuidade de operação diante de falhas
+
+
+ 44.2 Mecanismos de Tolerância — [I]
+
+  44.2.1 Roteamento Alternativo — [I]
+	  Desvio de caminhos com falha
+
+  44.2.2 Isolamento de Falhas — [I]
+	  Contenção do impacto de falhas locais
+
+
+
+PARTE 10 — TOPOLOGIAS EM MULTIPROCESSADORES, MULTICORE, REDES E SISTEMAS COMPUTACIONAIS
+
+
+45. Topologias em Sistemas Multiprocessados — [I]
+
+ 45.1 Fundamentos — [I]
+
+  45.1.1 Necessidade de Interconexão em Multiprocessadores — [I]
+	  Comunicação entre processadores
+	  Compartilhamento de memória
+
+
+ 45.2 Topologias Comuns — [I]
+
+  45.2.1 Uso de Malhas e Torus — [I]
+	  Aplicação em sistemas de grande escala
+
+  45.2.2 Uso de Redes Multiestágio — [I]
+	  Aplicação em sistemas de médio porte
+
+
+
+46. Topologias em Processadores Multicore e Many-core — [I]
+
+ 46.1 Fundamentos — [I]
+
+  46.1.1 Interconexão entre Núcleos — [I]
+	  Comunicação intra-chip
+	  Compartilhamento de cache
+
+
+ 46.2 Topologias Aplicadas — [I]
+
+  46.2.1 Uso de NoC em Multicore — [I]
+	  Vantagens em relação ao barramento
+	  Escalabilidade em muitos núcleos
+
+
+
+47. Topologias em Clusters e Supercomputadores — [V]
+
+ 47.1 Fundamentos — [V]
+
+  47.1.1 Interconexão em Clusters — [V]
+	  Comunicação entre nós do cluster
+	  Requisitos de desempenho
+
+
+ 47.2 Topologias Utilizadas — [V]
+
+  47.2.1 Fat-Tree e Torus em Supercomputadores — [V]
+	  Aplicações de alto desempenho
+
+
+
+48. Topologias em Sistemas Distribuídos e Data Centers — [V]
+
+ 48.1 Fundamentos — [V]
+
+  48.1.1 Interconexão em Data Centers — [V]
+	  Comunicação entre servidores
+	  Requisitos de escalabilidade
+
+
+ 48.2 Topologias Utilizadas — [V]
+
+  48.2.1 Redes Clos em Data Centers — [V]
+	  Aplicação em ambientes de nuvem
+
+
+
+PARTE 11 — COMPARAÇÃO, SELEÇÃO, PROJETO, EVOLUÇÃO E APLICAÇÕES DAS TOPOLOGIAS DE CONEXÃO
+
+
+49. Comparação entre Topologias de Conexão — [I]
+
+ 49.1 Critérios de Comparação — [I]
+
+  49.1.1 Comparação Estrutural — [I]
+	  Grau do nó
+	  Diâmetro
+	  Número de enlaces
+
+  49.1.2 Comparação de Desempenho — [I]
+	  Latência
+	  Largura de banda
+	  Escalabilidade
+
+
+ 49.2 Trade-offs entre Topologias — [I]
+
+  49.2.1 Custo × Desempenho — [I]
+	  Relação entre investimento e ganho de desempenho
+
+
+
+50. Critérios de Seleção e Projeto de Topologias — [I]
+
+ 50.1 Fatores de Seleção — [I]
+
+  50.1.1 Requisitos da Aplicação — [I]
+	  Escala do sistema
+	  Padrão de comunicação
+
+  50.1.2 Restrições de Projeto — [I]
+	  Custo
+	  Consumo de energia
+	  Espaço físico
+
+
+ 50.2 Processo de Projeto — [I]
+
+  50.2.1 Etapas de Projeto — [I]
+	  Definição de requisitos
+	  Escolha da topologia
+	  Validação de desempenho
+
+
+
+51. Tendências e Evolução das Topologias de Conexão — [V]
+
+ 51.1 Novas Direções — [V]
+
+  51.1.1 Topologias Reconfiguráveis — [V]
+	  Adaptação dinâmica à carga
+
+  51.1.2 Interconexões Ópticas — [V]
+	  Uso de luz para comunicação de alta velocidade
+
+
+ 51.2 Tecnologias Emergentes — [V]
+
+  51.2.1 Redes de Interconexão para Computação Heterogênea — [V]
+	  Integração de aceleradores
+	  Novos padrões de comunicação
+
+
+
+PARTE 12 — REVISÃO GERAL E CONSOLIDAÇÃO
+
+
+52. Resumo Geral das Topologias de Conexão — [I]
+
+ 52.1 Revisão dos Conceitos Fundamentais — [I]
+
+  52.1.1 Fundamentos Essenciais — [I]
+	  Definição de topologia de conexão
+	  Objetivos das topologias
+	  Elementos estruturais
+
+  52.1.2 Classificações Estudadas — [I]
+	  Topologias diretas e indiretas
+	  Topologias estáticas e dinâmicas
+
+
+ 52.2 Revisão das Topologias Estudadas — [I]
+
+  52.2.1 Topologias Básicas — [I]
+	  Barramento
+	  Anel
+	  Estrela
+	  Malha completa
+	  Malha
+	  Árvore
+
+  52.2.2 Topologias Avançadas — [I]
+	  Hipercubo
+	  Torus
+	  Fat-Tree
+	  Redes Clos
+
+
+ 52.3 Revisão de Métricas e Desempenho — [I]
+
+  52.3.1 Métricas Estruturais e de Desempenho — [I]
+	  Grau do nó
+	  Diâmetro
+	  Largura de bisseção
+	  Latência
+	  Throughput
+
+
+
+53. Conclusão do Estudo das Topologias de Conexão — [V]
+
+ 53.1 Síntese Final — [V]
+
+  53.1.1 O Papel das Topologias de Conexão — [V]
+	  Elemento central da comunicação entre componentes
+	  Base para sistemas escaláveis e confiáveis
+
+  53.1.2 Importância para Arquitetura e Organização de Computadores — [V]
+	  Compreensão de sistemas multiprocessados
+	  Base para estudos avançados
+
+
+ 53.2 Competências Desenvolvidas — [V]
+
+  53.2.1 Conhecimentos Adquiridos — [V]
+	  Estrutura das topologias
+	  Classificações
+	  Métricas
+	  Roteamento
+
+  53.2.2 Preparação para Estudos Posteriores — [V]
+	  Arquiteturas paralelas
+	  Redes em chip
+	  Sistemas distribuídos
+	  Coerência de cache
+
+
+ 53.3 Encerramento — [V]
+
+  53.3.1 Visão Geral Final — [V]
+	  Integração dos conceitos
+	  Importância das topologias
+	  Evolução tecnológica
+	  Continuidade dos estudos
