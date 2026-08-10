@@ -63,6 +63,19 @@ PARTE 1 — FUNDAMENTOS DA COERÊNCIA DE CACHE
 	  Granularidade de controle
 	  Endereçamento de blocos
 
+  2.1.3 Granularidade da Coerência — [V]
+	  Coerência operando sobre linhas de cache
+	  Tamanho da unidade de coerência
+	  Relação entre linha de cache e compartilhamento
+	  Impacto da granularidade no tráfego de coerência
+	  Relação entre granularidade e falso compartilhamento
+
+  2.1.4 Identificação de uma Linha de Cache — [V]
+	  Endereço do bloco
+	  Identificação da linha
+	  Estado associado à linha
+	  Informações de controle utilizadas pela coerência
+
 
  2.2 Cache em Sistemas com Múltiplos Núcleos — [V]
 
@@ -125,12 +138,10 @@ PARTE 1 — FUNDAMENTOS DA COERÊNCIA DE CACHE
 
 
  4.2 Localidade e Padrões de Acesso — [V]
-
-  4.2.1 Localidade em Sistemas Multicore — [V]
-	  Localidade temporal
-	  Localidade espacial
-	  Influência nos padrões de compartilhamento
-	  Relação com a coerência de cache
+	Localidade temporal
+	Localidade espacial
+	Influência nos padrões de compartilhamento
+	Relação com a coerência de cache
 
 
 
@@ -156,14 +167,18 @@ PARTE 1 — FUNDAMENTOS DA COERÊNCIA DE CACHE
 	  Consistência da ordem observada
 	  Prevenção de conflitos
 
+  5.1.4 Coerência por Localização de Endereço — [P]
+	  Existência de uma única ordem observável de modificações para um endereço
+	  Visibilidade das escritas para os demais núcleos
+	  Relação entre coerência e localização do dado
+	  Garantia de comportamento consistente para um mesmo bloco
+
 
  5.2 Modelo Formal Simplificado — [P]
-
-  5.2.1 Definição Baseada em Estados — [P]
-	  Estado de um bloco de cache
-	  Transições de estado
-	  Regras de transição
-	  Papel na definição formal
+	Estado de um bloco de cache
+	Transições de estado
+	Regras de transição
+	Papel na definição formal
 
 
 
@@ -185,11 +200,9 @@ PARTE 1 — FUNDAMENTOS DA COERÊNCIA DE CACHE
 
 
  6.2 Importância da Distinção — [V]
-
-  6.2.1 Impactos no Projeto de Sistemas — [V]
-	  Escolhas de protocolos de coerência
-	  Escolhas de modelos de consistência
-	  Relação com desempenho e complexidade
+	Escolhas de protocolos de coerência
+	Escolhas de modelos de consistência
+	Relação com desempenho e complexidade
 
 
 
@@ -214,11 +227,10 @@ PARTE 2 — PROBLEMAS DE COERÊNCIA EM SISTEMAS MULTIPROCESSADORES
 
 
  7.2 Diferenças entre Arquiteturas — [V]
-
-  7.2.1 UMA x NUMA — [V]
-	  Acesso uniforme à memória
-	  Acesso não uniforme à memória
-	  Impacto na coerência de cache
+	UMA x NUMA
+	Acesso uniforme à memória
+	Acesso não uniforme à memória
+	Impacto na coerência de cache
 
 
 
@@ -236,6 +248,13 @@ PARTE 2 — PROBLEMAS DE COERÊNCIA EM SISTEMAS MULTIPROCESSADORES
 	  Disputas de leitura e escrita
 	  Necessidade de coordenação
 
+  8.1.3 Compartilhamento de Dados — [I]
+	  Dados compartilhados entre múltiplos núcleos
+	  Leituras concorrentes
+	  Escritas concorrentes
+	  Frequência de compartilhamento
+	  Relação entre compartilhamento e tráfego de coerência
+
 
  8.2 Fatores Agravantes — [V]
 
@@ -248,6 +267,12 @@ PARTE 2 — PROBLEMAS DE COERÊNCIA EM SISTEMAS MULTIPROCESSADORES
 	  Dados amplamente compartilhados
 	  Dados de acesso raro
 	  Relação com o desempenho da coerência
+
+  8.2.3 Padrões de Acesso aos Dados — [V]
+	  Leitura compartilhada
+	  Escrita compartilhada
+	  Alternância entre núcleos
+	  Acesso frequente ao mesmo bloco
 
 
 
@@ -264,6 +289,18 @@ PARTE 2 — PROBLEMAS DE COERÊNCIA EM SISTEMAS MULTIPROCESSADORES
 	  Leitura concorrente com escrita
 	  Risco de leitura de valor intermediário
 	  Necessidade de sincronização
+
+  9.1.3 Conflito Leitura-Leitura — [P]
+	  Leitura simultânea do mesmo bloco
+	  Compartilhamento legítimo de dados
+	  Manutenção de múltiplas cópias válidas
+	  Diferença em relação aos conflitos de escrita
+
+  9.1.4 Conflito Escrita-Leitura — [P]
+	  Escrita de um núcleo seguida de leitura por outro
+	  Necessidade de propagação ou transferência do dado
+	  Invalidação de cópias antigas
+	  Garantia de leitura do valor correto
 
 
  9.2 Exemplos Ilustrativos — [I]
@@ -289,6 +326,9 @@ PARTE 2 — PROBLEMAS DE COERÊNCIA EM SISTEMAS MULTIPROCESSADORES
 	  Acesso por núcleos diferentes
 	  Invalidações desnecessárias
 	  Diferença entre compartilhamento real e falso
+	  Compartilhamento verdadeiro (True Sharing)
+	  Falso compartilhamento (False Sharing)
+	  Diferença entre compartilhamento do dado e compartilhamento da linha
 
   10.1.2 Causas do Falso Compartilhamento — [P]
 	  Granularidade da linha de cache
@@ -307,6 +347,9 @@ PARTE 2 — PROBLEMAS DE COERÊNCIA EM SISTEMAS MULTIPROCESSADORES
 	  Alinhamento e padding de dados
 	  Reorganização de estruturas
 	  Separação de dados independentes
+	  Separação física de variáveis acessadas por diferentes núcleos
+	  Alinhamento de estruturas com linhas de cache
+	  Redução da disputa pela mesma linha de cache
 
 
 
@@ -326,11 +369,9 @@ PARTE 2 — PROBLEMAS DE COERÊNCIA EM SISTEMAS MULTIPROCESSADORES
 
 
  11.2 Impactos em Sistemas Paralelos — [V]
-
-  11.2.1 Consequências para Aplicações Multithread — [V]
-	  Condições de corrida
-	  Resultados imprevisíveis
-	  Dependência de sincronização correta
+	Condições de corrida
+	Resultados imprevisíveis
+	Dependência de sincronização correta
 
 
 
@@ -350,11 +391,10 @@ PARTE 2 — PROBLEMAS DE COERÊNCIA EM SISTEMAS MULTIPROCESSADORES
 
 
  12.2 Equilíbrio entre Coerência e Desempenho — [I]
-
-  12.2.1 Trade-offs de Projeto — [I]
-	  Granularidade de coerência
-	  Frequência de sincronização
-	  Escolha do protocolo adequado
+	Trade-offs de Projeto
+	Granularidade de coerência
+	Frequência de sincronização
+	Escolha do protocolo adequado
 
 
 
@@ -388,32 +428,45 @@ PARTE 3 — PROTOCOLOS DE COERÊNCIA DE CACHE
 	  Escrita local
 	  Requisição de outro núcleo
 
+  13.2.3 Transações de Coerência — [P]
+	  Requisições de leitura
+	  Requisições de escrita
+	  Requisições de compartilhamento
+	  Requisições de exclusividade
+	  Respostas às requisições
+	  Transferência de dados entre caches
+
+  13.2.4 Mensagens de Coerência — [P]
+	  Mensagens de leitura
+	  Mensagens de invalidação
+	  Mensagens de atualização
+	  Mensagens de aquisição de exclusividade
+	  Mensagens de resposta
+	  Mensagens de writeback
+
 
 
 14. Regras Fundamentais da Coerência — [P]
 
  14.1 Regra de Leitura após Escrita — [P]
-
-  14.1.1 Garantia de Atualização — [P]
-	  Leitura deve retornar valor mais recente
-	  Papel na correção do sistema
-	  Relação com a ordem de operações
+	Garantia de Atualização
+	Leitura deve retornar valor mais recente
+	Papel na correção do sistema
+	Relação com a ordem de operações
 
 
  14.2 Regra de Propagação de Modificações — [P]
-
-  14.2.1 Visibilidade das Alterações — [P]
-	  Notificação a outras caches
-	  Atualização ou invalidação de cópias
-	  Papel dos protocolos como MESI
+	Visibilidade das Alterações
+	Notificação a outras caches
+	Atualização ou invalidação de cópias
+	Papel dos protocolos como MESI
 
 
  14.3 Regra de Serialização — [P]
-
-  14.3.1 Ordem Consistente de Operações — [P]
-	  Sequência única observada por todos os núcleos
-	  Prevenção de conflitos simultâneos
-	  Papel na previsibilidade do sistema
+	Ordem Consistente de Operações
+	Sequência única observada por todos os núcleos
+	Prevenção de conflitos simultâneos
+	Papel na previsibilidade do sistema
 
 
 
@@ -431,6 +484,12 @@ PARTE 3 — PROTOCOLOS DE COERÊNCIA DE CACHE
 	  Uso em protocolos write-update
 	  Impacto na latência de escrita
 
+  15.1.3 Aquisição de Exclusividade — [P]
+	  Solicitação de acesso exclusivo
+	  Invalidação das demais cópias
+	  Aquisição de ownership da linha
+	  Transição para estado de escrita
+
 
  15.2 Operações de Comunicação — [P]
 
@@ -444,6 +503,26 @@ PARTE 3 — PROTOCOLOS DE COERÊNCIA DE CACHE
 	  Reação a alterações de outros núcleos
 	  Papel na coerência descentralizada
 
+  15.2.3 Resposta de Snoop — [P]
+	  Detecção de uma requisição por outra cache
+	  Resposta positiva e negativa
+	  Fornecimento do dado por outra cache
+	  Alteração do estado da linha
+
+  15.2.4 Transferência Cache-to-Cache — [P]
+	  Transferência direta entre caches
+	  Fornecimento de dados por uma cache modificada
+	  Redução do acesso à memória principal
+	  Mudança de estado das caches envolvidas
+
+  15.2.5 Transações e Mensagens de Coerência — [P]
+	  Requisições de leitura
+	  Requisições de escrita
+	  Requisições de exclusividade
+	  Requisições de invalidação
+	  Respostas às requisições
+	  Mensagens de Writeback
+
 
  15.3 Operações de Estado e Localização — [I]
 
@@ -456,6 +535,13 @@ PARTE 3 — PROTOCOLOS DE COERÊNCIA DE CACHE
 	  Movimentação de dados entre caches
 	  Criação de cópias para leitura simultânea
 	  Relação com desempenho e coerência
+
+  15.3.3 Ownership de uma Linha de Cache — [I]
+	  Conceito de proprietário da linha
+	  Aquisição de ownership
+	  Transferência de ownership
+	  Relação entre ownership e escrita
+	  Relação com o estado Owned
 
 
 
@@ -500,6 +586,12 @@ PARTE 3 — PROTOCOLOS DE COERÊNCIA DE CACHE
 	  Visibilidade das operações para todos os núcleos
 	  Base para a coerência por observação
 
+  17.1.3 Snoop Hit e Snoop Miss — [P]
+	  Detecção de uma cópia do bloco em outra cache
+	  Snoop Hit
+	  Snoop Miss
+	  Reação do controlador de cache
+
 
  17.2 Características Operacionais — [I]
 
@@ -512,6 +604,11 @@ PARTE 3 — PROTOCOLOS DE COERÊNCIA DE CACHE
 	  Sobrecarga do barramento
 	  Dificuldade de escalar para muitos núcleos
 	  Necessidade de banda de comunicação elevada
+
+  17.2.3 Limitação por Compartilhamento do Barramento — [I]
+	  Todos os controladores observando as transações
+	  Aumento do tráfego com o número de núcleos
+	  Gargalo de comunicação
 
 
 
@@ -528,6 +625,18 @@ PARTE 3 — PROTOCOLOS DE COERÊNCIA DE CACHE
 	  Consulta ao diretório antes do acesso
 	  Gerenciamento de permissões
 	  Comunicação seletiva com as caches envolvidas
+
+  18.1.3 Lista de Sharers — [P]
+	  Identificação das caches que possuem uma cópia
+	  Atualização da lista de sharers
+	  Inclusão e remoção de núcleos
+	  Uso da informação para invalidação seletiva
+
+  18.1.4 Estado de Ownership no Diretório — [P]
+	  Identificação do proprietário da linha
+	  Localização da cópia modificada
+	  Transferência de ownership
+	  Relação entre diretório e estados de coerência
 
 
  18.2 Características Operacionais — [I]
@@ -559,30 +668,26 @@ PARTE 3 — PROTOCOLOS DE COERÊNCIA DE CACHE
 
 
  19.2 Escolha do Protocolo Adequado — [V]
-
-  19.2.1 Fatores de Decisão — [V]
-	  Tamanho do sistema
-	  Padrão de compartilhamento de dados
-	  Requisitos de desempenho
+	Tamanho do sistema
+	Padrão de compartilhamento de dados
+	Requisitos de desempenho
 
 
 
 20. Write-Invalidate x Write-Update — [P]
 
  20.1 Protocolos Write-Invalidate — [P]
-
-  20.1.1 Princípio de Funcionamento — [P]
-	  Invalidação das cópias em outras caches
-	  Apenas uma cópia válida após escrita
-	  Redução do tráfego em escritas frequentes
+	Princípio de Funcionamento
+	Invalidação das cópias em outras caches
+	Apenas uma cópia válida após escrita
+	Redução do tráfego em escritas frequentes
 
 
  20.2 Protocolos Write-Update — [P]
-
-  20.2.1 Princípio de Funcionamento — [P]
-	  Propagação do novo valor a todas as cópias
-	  Manutenção de múltiplas cópias atualizadas
-	  Maior tráfego de comunicação
+	Princípio de Funcionamento
+	Propagação do novo valor a todas as cópias
+	Manutenção de múltiplas cópias atualizadas
+	Maior tráfego de comunicação
 
 
  20.3 Comparação entre as Abordagens — [I]
@@ -592,24 +697,30 @@ PARTE 3 — PROTOCOLOS DE COERÊNCIA DE CACHE
 	  Impacto no tráfego do barramento
 	  Cenários de uso mais adequados
 
+  20.3.2 Impacto conforme o Padrão de Compartilhamento — [I]
+	  Dados predominantemente lidos
+	  Dados frequentemente modificados
+	  Compartilhamento intenso
+	  Compartilhamento pouco frequente
+	  Relação entre tráfego e desempenho
 
 
-PARTE 4 — PROTOCOLOS MSI, MESI, MOSI E MOESI
+
+PARTE 4 — PROTOCOLOS MSI, MESI, MOSI, MOESI E MESIF
 
 
-21. Introdução aos Protocolos de Estados — [I]
+21.  Introdução e Conceito de Protocolo Baseado em Estados — [I]
 
- 21.1 Conceito de Protocolo Baseado em Estados — [I]
+ 21.2 Máquina de Estados Finitos — [I]
+	Estados possíveis de um bloco
+	Transições conforme eventos
+	Papel na coordenação da coerência
 
-  21.1.1 Máquina de Estados Finitos — [I]
-	  Estados possíveis de um bloco
-	  Transições conforme eventos
-	  Papel na coordenação da coerência
-
-  21.1.2 Evolução dos Protocolos de Estados — [I]
-	  Protocolos com poucos estados
-	  Adição de estados para otimização
-	  Relação entre MSI, MESI, MOSI e MOESI
+  
+ 21.1.2 Evolução dos Protocolos de Estados — [I]
+	Protocolos com poucos estados
+	Adição de estados para otimização
+	Relação entre MSI, MESI, MOSI e MOESI
 
 
 
@@ -639,6 +750,13 @@ PARTE 4 — PROTOCOLOS MSI, MESI, MOSI E MOESI
 	  Invalidação das cópias em outras caches
 	  Transição para o estado Modified
 	  Exclusividade do dado modificado
+
+  22.2.3 Eviction de Linhas no MSI — [P]
+	  Remoção de linhas em estado Invalid
+	  Remoção de linhas em estado Shared
+	  Remoção de linhas em estado Modified
+	  Writeback de uma linha Modified
+	  Atualização da memória após writeback
 
 
  22.3 Vantagens e Limitações — [I]
@@ -683,6 +801,19 @@ PARTE 4 — PROTOCOLOS MSI, MESI, MOSI E MOESI
 	  Transição para Invalid em modificação externa
 	  Coordenação entre núcleos
 
+  23.2.3 Silent Transition — [P]
+	  Transição Exclusive para Modified
+	  Escrita sem necessidade de comunicação externa
+	  Redução de tráfego de coerência
+	  Importância do estado Exclusive
+
+  23.2.4 Eviction de Linhas no MESI — [P]
+	  Eviction de Modified
+	  Eviction de Exclusive
+	  Eviction de Shared
+	  Writeback quando necessário
+	  Remoção da linha sem violar a coerência
+
 
  23.3 Vantagens e Limitações — [I]
 
@@ -721,6 +852,17 @@ PARTE 4 — PROTOCOLOS MSI, MESI, MOSI E MOESI
 	  Compartilhamento do dado modificado
 	  Coordenação com caches em estado Shared
 
+  24.2.2 Fornecimento de Dados pelo Estado Owned — [P]
+	  Cache Owned como fonte do dado atualizado
+	  Transferência do dado para outra cache
+	  Manutenção da memória principal desatualizada
+	  Continuidade do compartilhamento
+
+  24.2.3 Eviction do Estado Owned — [P]
+	  Necessidade de transferência do ownership
+	  Writeback do dado modificado
+	  Atualização do estado das demais caches
+
 
  24.3 Vantagens e Limitações — [I]
 
@@ -758,6 +900,18 @@ PARTE 4 — PROTOCOLOS MSI, MESI, MOSI E MOESI
 	  Uso do Owned para dados modificados compartilhados
 	  Coordenação geral entre os cinco estados
 
+  25.2.2 Transferência de Ownership — [P]
+	  Aquisição de ownership
+	  Transferência entre caches
+	  Estado Owned como proprietário do dado modificado
+	  Relação entre ownership e compartilhamento
+
+  25.2.3 Cache-to-Cache Transfer no MOESI — [P]
+	  Fornecimento direto do dado entre caches
+	  Intervenção da cache Modified ou Owned
+	  Redução do acesso à memória principal
+	  Alteração dos estados envolvidos
+
 
  25.3 Vantagens e Limitações — [I]
 
@@ -771,21 +925,24 @@ PARTE 4 — PROTOCOLOS MSI, MESI, MOSI E MOESI
 
 
 
-26. Protocolo MESIF — [V]
+26. Protocolo MESIF — [I]
 
- 26.1 Fundamentos do MESIF — [V]
+ 26.1 Estados do Protocolo MESIF — [I]
+	Modified
+	Exclusive
+	Shared
+	Invalid
+	Forward
 
-  26.1.1 Estados do Protocolo MESIF — [V]
-	  Modified
-	  Exclusive
-	  Shared
-	  Invalid
-	  Forward
 
-  26.1.2 Papel do Estado Forward — [V]
-	  Designação de uma única cache responsável por responder
-	  Redução de respostas duplicadas
-	  Otimização de sistemas com múltiplas cópias compartilhadas
+ 26.2 Papel do Estado Forward — [I]
+	Designação de uma única cache responsável por responder
+	Redução de respostas duplicadas
+	Otimização de sistemas com múltiplas cópias compartilhadas
+	Seleção de uma única cache para responder à requisição
+	Evitação de respostas duplicadas
+	Transferência direta de dados entre caches
+	Relação entre Forward e compartilhamento
 
 
 
@@ -804,11 +961,10 @@ PARTE 4 — PROTOCOLOS MSI, MESI, MOSI E MOESI
 
 
  27.2 Cenários de Aplicação — [V]
-
-  27.2.1 Escolha do Protocolo conforme o Sistema — [V]
-	  Sistemas simples e protocolos básicos
-	  Sistemas modernos e protocolos otimizados
-	  Relação com arquiteturas comerciais
+	Escolha do Protocolo conforme o Sistema
+	Sistemas simples e protocolos básicos
+	Sistemas modernos e protocolos otimizados
+	Relação com arquiteturas comerciais
 
 
 
@@ -820,19 +976,32 @@ PARTE 4 — PROTOCOLOS MSI, MESI, MOSI E MOESI
 	  Representação gráfica dos estados
 	  Eventos de transição
 	  Ações associadas a cada transição
+	  Estados estáveis
+	  Estados transitórios
+	  Eventos que provocam transições
+	  Ações realizadas durante uma transição
+	  Transições silenciosas
 
   28.1.2 Eventos Locais e Remotos — [P]
 	  Eventos originados pelo próprio núcleo
 	  Eventos originados por outros núcleos
 	  Diferença de tratamento entre eles
+	  Read Hit
+	  Read Miss
+	  Write Hit
+	  Write Miss
+	  Snoop Hit
+	  Snoop Miss
+	  Eviction
+	  Writeback
+	  Requisição de exclusividade
 
 
  28.2 Implementação das Máquinas de Estado — [I]
-
-  28.2.1 Lógica de Controle de Estados — [I]
-	  Codificação dos estados em hardware
-	  Verificação de transições válidas
-	  Papel na correção do protocolo
+	Lógica de Controle de Estados
+	Codificação dos estados em hardware
+	Verificação de transições válidas
+	Papel na correção do protocolo
 
 
 
@@ -847,19 +1016,27 @@ PARTE 5 — MECANISMOS DE MANUTENÇÃO DA COERÊNCIA
 	  Escuta contínua das operações de leitura e escrita
 	  Identificação de endereços relevantes
 	  Reação conforme o estado local do bloco
+	  Identificação de requisições relevantes
+	  Snoop Hit
+	  Snoop Miss
+	  Respostas de outras caches
+	  Reação conforme o estado local
 
   29.1.2 Papel dos Controladores de Cache — [P]
 	  Verificação de coincidência de endereço
 	  Execução de ações de invalidação ou atualização
 	  Sincronização com o protocolo de coerência
+	  Intervenção de cache
+	  Fornecimento de dados para outra cache
+	  Alteração do estado local
+	  Atualização das informações de coerência
 
 
  29.2 Limitações do Mecanismo — [I]
-
-  29.2.1 Escalabilidade do Barramento — [I]
-	  Aumento do tráfego com mais núcleos
-	  Necessidade de banda de comunicação
-	  Impacto no desempenho geral
+	Escalabilidade do Barramento
+	Aumento do tráfego com mais núcleos
+	Necessidade de banda de comunicação
+	Impacto no desempenho geral
 
 
 
@@ -876,14 +1053,21 @@ PARTE 5 — MECANISMOS DE MANUTENÇÃO DA COERÊNCIA
 	  Necessidade de nova busca do dado
 	  Impacto na latência de acesso
 	  Garantia de correção da coerência
+	  Geração de coherence miss
+	  Nova solicitação do bloco
+	  Reaquisição de uma cópia válida
+	  Impacto no desempenho
 
 
  30.2 Otimizações Relacionadas à Invalidação — [I]
-
-  30.2.1 Redução de Invalidações Desnecessárias — [I]
-	  Uso de estados exclusivos
-	  Diferenciação entre dados privados e compartilhados
-	  Minimização do tráfego de coerência
+	Redução de Invalidações Desnecessárias
+	Uso de estados exclusivos
+	Diferenciação entre dados privados e compartilhados
+	Minimização do tráfego de coerência
+	Uso de estados Exclusive
+	Uso de filtros de coerência
+	Identificação de sharers
+	Redução de snoops desnecessários
 
 
 
@@ -895,6 +1079,10 @@ PARTE 5 — MECANISMOS DE MANUTENÇÃO DA COERÊNCIA
 	  Envio do dado modificado às demais caches
 	  Manutenção de múltiplas cópias válidas
 	  Diferença em relação à invalidação
+	  Atualização simultânea de múltiplas cópias
+	  Custo de comunicação
+	  Latência de propagação
+	  Impacto em sistemas com muitos núcleos
 
   31.1.2 Cenários de Uso — [I]
 	  Dados com leitura frequente por vários núcleos
@@ -903,11 +1091,14 @@ PARTE 5 — MECANISMOS DE MANUTENÇÃO DA COERÊNCIA
 
 
  31.2 Comparação com Invalidação — [I]
-
-  31.2.1 Trade-offs entre Atualização e Invalidação — [I]
-	  Tráfego de comunicação
-	  Frequência de escrita e leitura
-	  Adequação conforme padrão de acesso
+	Trade-offs entre Atualização e Invalidação
+	Tráfego de comunicação
+	Frequência de escrita e leitura
+	Adequação conforme padrão de acesso
+	True Sharing
+	False Sharing
+	Padrões de leitura e escrita
+	Frequência de compartilhamento
 
 
 
@@ -919,6 +1110,10 @@ PARTE 5 — MECANISMOS DE MANUTENÇÃO DA COERÊNCIA
 	  Localização das cópias de um bloco
 	  Estado do bloco
 	  Identificação dos núcleos com cópia
+	  Lista de sharers
+	  Identificação do owner
+	  Estado de compartilhamento
+	  Estado de modificação
 
   32.1.2 Organização do Diretório — [P]
 	  Diretório centralizado
@@ -927,11 +1122,15 @@ PARTE 5 — MECANISMOS DE MANUTENÇÃO DA COERÊNCIA
 
 
  32.2 Funcionamento do Diretório — [P]
-
-  32.2.1 Consulta e Atualização do Diretório — [P]
-	  Verificação antes do acesso ao dado
-	  Atualização após modificações
-	  Coordenação das respostas às requisições
+	Consulta e Atualização do Diretório
+	Verificação antes do acesso ao dado
+	Atualização após modificações
+	Coordenação das respostas às requisições
+	Requisição de leitura compartilhada
+	Requisição de acesso exclusivo
+	Invalidação seletiva dos sharers
+	Transferência de ownership
+	Atualização após eviction
 
 
 
@@ -951,11 +1150,10 @@ PARTE 5 — MECANISMOS DE MANUTENÇÃO DA COERÊNCIA
 
 
  33.2 Aplicações em Sistemas Distribuídos — [V]
-
-  33.2.1 Uso em Sistemas de Grande Escala — [V]
-	  Clusters multiprocessados
-	  Arquiteturas NUMA
-	  Necessidade de escalabilidade
+	Uso em Sistemas de Grande Escala
+	Clusters multiprocessados
+	Arquiteturas NUMA
+	Necessidade de escalabilidade
 
 
 
@@ -967,6 +1165,10 @@ PARTE 5 — MECANISMOS DE MANUTENÇÃO DA COERÊNCIA
 	  Propagação de estados entre níveis
 	  Inclusão e exclusão de dados
 	  Coordenação vertical de coerência
+	  Propagação de invalidações entre níveis
+	  Propagação de modificações entre níveis
+	  Eviction entre níveis
+	  Writeback entre níveis
 
   34.1.2 Coerência entre L2 e L3 Compartilhada — [I]
 	  Papel da cache compartilhada como ponto de coordenação
@@ -975,11 +1177,15 @@ PARTE 5 — MECANISMOS DE MANUTENÇÃO DA COERÊNCIA
 
 
  34.2 Políticas de Inclusão — [V]
-
-  34.2.1 Cache Inclusiva x Exclusiva — [V]
-	  Duplicação de dados entre níveis
-	  Impacto na coerência e no espaço de cache
-	  Trade-offs de projeto
+	Cache Inclusiva x Exclusiva
+	Duplicação de dados entre níveis
+	Impacto na coerência e no espaço de cache
+	Trade-offs de projeto
+	Cache não inclusiva (Non-Inclusive)
+	Cache inclusiva
+	Cache exclusiva
+	Duplicação de linhas entre níveis
+	Impacto na manutenção da coerência
 
 
 
@@ -988,49 +1194,45 @@ PARTE 6 — DESEMPENHO, CONSISTÊNCIA E OTIMIZAÇÕES
 
 35. Modelos de Consistência de Memória — [I]
 
- 35.1 Conceito de Consistência de Memória — [I]
+ 35.1. Definição — [I]
+	Ordem de visibilidade das operações de memória
+	Relação com múltiplos endereços
+	Diferença em relação à coerência de cache
 
-  35.1.1 Definição — [I]
-	  Ordem de visibilidade das operações de memória
-	  Relação com múltiplos endereços
-	  Diferença em relação à coerência de cache
 
-  35.1.2 Papel dos Modelos de Consistência — [I]
-	  Definição de garantias para o programador
-	  Base para sincronização correta
-	  Relação com protocolos de coerência
+ 35.1. Papel dos Modelos de Consistência — [I]
+	Definição de garantias para o programador
+	Base para sincronização correta
+	Relação com protocolos de coerência
 
 
 
 36. Consistência Sequencial — [I]
 
- 36.1 Fundamentos da Consistência Sequencial — [I]
+  36.1 Definição — [I]
+	Ordem total das operações de todos os núcleos
+	Preservação da ordem do programa
+	Modelo mais intuitivo de consistência
 
-  36.1.1 Definição — [I]
-	  Ordem total das operações de todos os núcleos
-	  Preservação da ordem do programa
-	  Modelo mais intuitivo de consistência
 
-  36.1.2 Custos da Consistência Sequencial — [I]
-	  Restrições à reordenação de operações
-	  Impacto no desempenho
-	  Necessidade de sincronização rigorosa
+  36.2 Custos da Consistência Sequencial — [I]
+	Restrições à reordenação de operações
+	Impacto no desempenho
+	Necessidade de sincronização rigorosa
 
 
 
 37. Modelos de Consistência Relaxada — [V]
 
- 37.1 Conceito de Relaxamento — [V]
+  37.1 Flexibilização da Ordem de Operações — [V]
+	Permissão de reordenações controladas
+	Ganho de desempenho
+	Necessidade de instruções de sincronização (barreiras)
 
-  37.1.1 Flexibilização da Ordem de Operações — [V]
-	  Permissão de reordenações controladas
-	  Ganho de desempenho
-	  Necessidade de instruções de sincronização (barreiras)
-
-  37.1.2 Exemplos de Modelos Relaxados — [V]
-	  Consistência de liberação
-	  Consistência fraca
-	  Uso em arquiteturas modernas
+  37.2 Exemplos de Modelos Relaxados — [V]
+	Consistência de liberação
+	Consistência fraca
+	Uso em arquiteturas modernas
 
 
 
@@ -1048,13 +1250,25 @@ PARTE 6 — DESEMPENHO, CONSISTÊNCIA E OTIMIZAÇÕES
 	  Impacto em operações críticas
 	  Relação com a granularidade dos dados
 
+  38.1.3 Coherence Misses — [I]
+	  Miss causado por invalidação
+	  Requisição de uma linha invalidada
+	  Impacto da coerência no tempo de acesso
+	  Relação entre compartilhamento e coherence misses
+
+  38.1.4 Energia da Coerência — [I]
+	  Energia consumida pela comunicação
+	  Custo energético de snooping
+	  Custo energético de invalidações
+	  Custo energético de diretórios
+	  Relação entre escalabilidade e consumo
+
 
  38.2 Métricas de Avaliação — [V]
-
-  38.2.1 Indicadores de Desempenho — [V]
-	  Taxa de invalidações
-	  Taxa de acertos e faltas de cache
-	  Overhead de comunicação
+	Indicadores de Desempenho
+	Taxa de invalidações
+	Taxa de acertos e faltas de cache
+	Overhead de comunicação
 
 
 
@@ -1080,6 +1294,14 @@ PARTE 6 — DESEMPENHO, CONSISTÊNCIA E OTIMIZAÇÕES
 	  Uso de estruturas como filtros de Bloom
 	  Diminuição do tráfego de monitoramento
 
+  39.2.2 Coherence Filtering — [I]
+	  Redução de snoops desnecessários
+	  Identificação de possíveis sharers
+	  Snoop filters
+	  Directory filters
+	  Bloom filters
+	  Falsos positivos
+
 
 
 40. Redução de Tráfego de Coerência — [I]
@@ -1096,13 +1318,24 @@ PARTE 6 — DESEMPENHO, CONSISTÊNCIA E OTIMIZAÇÕES
 	  Redução de comunicação global
 	  Melhoria da escalabilidade
 
+  40.1.3 Redução de Snoop Desnecessário — [I]
+	  Filtros de snooping
+	  Filtros de diretório
+	  Identificação prévia de sharers
+	  Redução de broadcasts
+
+  40.1.4 Otimização por Padrão de Compartilhamento — [I]
+	  Identificação de dados compartilhados
+	  Identificação de dados privados
+	  Tratamento de padrões de acesso frequentes
+	  Redução de comunicação desnecessária
+
 
  40.2 Relação com o Projeto do Sistema — [V]
-
-  40.2.1 Trade-offs de Projeto — [V]
-	  Complexidade x eficiência
-	  Escalabilidade x custo de hardware
-	  Escolhas conforme o número de núcleos
+	Trade-offs de Projeto
+	Complexidade x eficiência
+	Escalabilidade x custo de hardware
+	Escolhas conforme o número de núcleos
 
 
 
@@ -1111,97 +1344,116 @@ PARTE 7 — IMPLEMENTAÇÃO E ORGANIZAÇÃO EM SISTEMAS MULTICORE
 
 41. Coerência de Cache em Processadores Multicore — [I]
 
- 41.1 Organização Típica — [I]
+ 41.1 Caches Privadas e Compartilhadas — [I]
+	Organização L1/L2 privadas por núcleo
+	Cache L3 compartilhada
+	Papel da cache compartilhada na coerência
 
-  41.1.1 Caches Privadas e Compartilhadas — [I]
-	  Organização L1/L2 privadas por núcleo
-	  Cache L3 compartilhada
-	  Papel da cache compartilhada na coerência
 
-  41.1.2 Interconexão entre Núcleos — [I]
-	  Barramento compartilhado
-	  Redes internas (interconnect on-chip)
-	  Relação com o protocolo de coerência utilizado
+ 41.2 Interconexão entre Núcleos — [I]
+	Barramento compartilhado
+	Redes internas (interconnect on-chip)
+	Relação com o protocolo de coerência utilizado
 
 
 
 42. Escalabilidade dos Protocolos de Coerência — [I]
 
- 42.1 Desafios de Escala — [I]
+ 42.1 Crescimento do Número de Núcleos — [I]
+	Aumento do tráfego de coerência
+	Limitações dos protocolos de snooping
+	Necessidade de estruturas de diretório
 
-  42.1.1 Crescimento do Número de Núcleos — [I]
-	  Aumento do tráfego de coerência
-	  Limitações dos protocolos de snooping
-	  Necessidade de estruturas de diretório
-
-  42.1.2 Soluções para Escalabilidade — [I]
-	  Diretórios distribuídos
-	  Hierarquias de coerência
-	  Redução de comunicação global
+  
+ 42.2 Soluções para Escalabilidade — [I]
+	Diretórios distribuídos
+	Hierarquias de coerência
+	Redução de comunicação global
+	Coherence filtering
+	Redução de broadcasts
+	Particionamento das estruturas de coerência
 
 
 
 43. Coerência em Sistemas NUMA — [V]
 
- 43.1 Fundamentos de NUMA — [V]
+ 43.1 Acesso Não Uniforme à Memória — [V]
+	Memória local e remota
+	Diferença de latência de acesso
+	Impacto na coerência entre nós
 
-  43.1.1 Acesso Não Uniforme à Memória — [V]
-	  Memória local e remota
-	  Diferença de latência de acesso
-	  Impacto na coerência entre nós
-
-  43.1.2 Coerência entre Nós NUMA — [V]
-	  Protocolos de diretório distribuído
-	  Comunicação entre nós
-	  Relação com o desempenho do sistema
+  
+ 43.2 Coerência entre Nós NUMA — [V]
+	Protocolos de diretório distribuído
+	Comunicação entre nós
+	Relação com o desempenho do sistema
 
 
 
 44. Coerência de Cache em GPUs e Aceleradores — [V]
 
- 44.1 Particularidades de GPUs — [V]
+ 44.1 Modelo de Execução Paralela Massiva — [V]
+	Grande número de unidades de execução
+	Padrões de acesso à memória diferentes de CPUs
+	Necessidade de abordagens específicas de coerência
 
-  44.1.1 Modelo de Execução Paralela Massiva — [V]
-	  Grande número de unidades de execução
-	  Padrões de acesso à memória diferentes de CPUs
-	  Necessidade de abordagens específicas de coerência
 
-  44.1.2 Abordagens de Coerência em Aceleradores — [V]
-	  Coerência simplificada ou parcial
-	  Coerência entre CPU e GPU (sistemas heterogêneos)
-	  Relação com desempenho e complexidade
+ 44.2 Abordagens de Coerência em Aceleradores — [V]
+	Coerência simplificada ou parcial
+	Coerência entre CPU e GPU (sistemas heterogêneos)
+	Relação com desempenho e complexidade
 
 
 
 45. Ferramentas e Técnicas de Verificação de Coerência — [V]
 
- 45.1 Verificação e Validação — [V]
+ 45.1 Simulação de Protocolos — [V]
+	Modelagem do comportamento das caches
+	Testes de cenários de concorrência
+	Identificação de falhas de coerência
+	Rastreamento de transições de estado
+	Simulação de múltiplos núcleos
+	Simulação de requisições concorrentes
+	Análise de mensagens de coerência
 
-  45.1.1 Simulação de Protocolos — [V]
-	  Modelagem do comportamento das caches
-	  Testes de cenários de concorrência
-	  Identificação de falhas de coerência
-
-  45.1.2 Verificação Formal — [V]
-	  Modelos matemáticos de verificação
-	  Prova de propriedades de coerência
-	  Importância para o projeto de hardware confiável
+  
+ 45.2 Verificação Formal — [V]
+	Modelos matemáticos de verificação
+	Prova de propriedades de coerência
+	Importância para o projeto de hardware confiável
+	Verificação de invariantes de coerência
+	Verificação das transições de estado
+	Detecção de estados inválidos
+	Verificação da propriedade de coerência
 
 
 
 46. Tendências e Evolução dos Protocolos de Coerência — [V]
 
- 46.1 Direções Atuais — [V]
+ 46.1 Coerência Adaptativa — [V]
+	Ajuste dinâmico do comportamento do protocolo
+	Resposta a padrões de acesso variáveis
+	Melhoria da eficiência energética
 
-  46.1.1 Coerência Adaptativa — [V]
-	  Ajuste dinâmico do comportamento do protocolo
-	  Resposta a padrões de acesso variáveis
-	  Melhoria da eficiência energética
 
-  46.1.2 Coerência em Sistemas Heterogêneos — [V]
-	  Integração entre diferentes tipos de processadores
-	  Desafios de coerência entre domínios distintos
-	  Relevância para arquiteturas futuras
+ 46.2 Coerência em Sistemas Heterogêneos — [V]
+	Integração entre diferentes tipos de processadores
+	Desafios de coerência entre domínios distintos
+	Relevância para arquiteturas futuras
+
+  
+ 46.3 Coerência Baseada em Tokens — [V]
+	Conceito de Token Coherence
+	Tokens como mecanismo de controle de acesso
+	Diferença em relação à coerência baseada em estados
+	Aplicação em sistemas multicore
+
+  
+ 46.4 Protocolos Híbridos de Coerência — [V]
+	Combinação de diferentes mecanismos
+	Uso combinado de snooping e diretórios
+	Adaptação conforme o comportamento do sistema
+	Busca por escalabilidade e eficiência
 
 
 
@@ -1225,11 +1477,10 @@ PARTE 8 — REVISÃO GERAL E CONCLUSÃO
 
 
  47.2 Relações entre os Conceitos — [I]
-
-  47.2.1 Coerência e Desempenho — [I]
-	  Relação entre correção e eficiência
-	  Trade-offs de projeto já discutidos
-	  Papel das otimizações estudadas
+	Coerência e Desempenho
+	Relação entre correção e eficiência
+	Trade-offs de projeto já discutidos
+	Papel das otimizações estudadas
 
 
 
@@ -1251,10 +1502,9 @@ PARTE 8 — REVISÃO GERAL E CONCLUSÃO
 
 
  48.2 Papel da Coerência na Arquitetura de Computadores — [I]
-
-  48.2.1 Importância Geral — [I]
-	  Base para sistemas multicore confiáveis
-	  Suporte à computação paralela eficiente
+	Importância Geral
+	Base para sistemas multicore confiáveis
+	Suporte à computação paralela eficiente
 
 
 
@@ -1279,11 +1529,21 @@ PARTE 8 — REVISÃO GERAL E CONCLUSÃO
 	  Invalidação e atualização
 	  Diretórios de coerência
 	  Coerência multinível
+	  Transações de coerência
+	  Transferência cache-to-cache
+	  Ownership
+	  Intervenção
+	  Eviction e writeback
 
   49.2.2 Otimizações e Desempenho — [I]
 	  Redução de tráfego de coerência
 	  Modelos de consistência
 	  Escalabilidade dos protocolos
+	  Coherence misses
+	  Coherence filtering
+	  True Sharing x False Sharing
+	  Custo energético da coerência
+	  Padrões de tráfego de coerência
 
 
 
@@ -1303,9 +1563,6 @@ PARTE 8 — REVISÃO GERAL E CONCLUSÃO
 
 
  50.2 Encerramento — [V]
-
-  50.2.1 Visão Geral Final — [V]
-	  Integração dos conceitos estudados
-	  Importância da coerência de cache
-	  Continuidade dos estudos em arquitetura de computadores
-
+	Integração dos conceitos estudados
+	Importância da coerência de cache
+	Continuidade dos estudos em arquitetura de computadores
