@@ -291,6 +291,20 @@ PARTE 2 — ESTRUTURA E FUNCIONAMENTO DOS MODOS DE ENDEREÇAMENTO
 	  Pilha
 
 
+ 9.2.3 Outros Modos de Endereçamento — [I]
+
+  9.2.3.1 Endereçamento Implícito — [I]
+	  Operando implícito na instrução
+	  Registrador implícito
+	  Operando determinado pelo opcode
+	  Exemplos de uso
+
+    9.2.3.2 Endereçamento Absoluto — [I]
+	  Endereço absoluto
+	  Relação com o endereçamento direto
+	  Diferenças de nomenclatura entre arquiteturas
+
+
 
 10. Modos de Endereçamento e Ciclo de Busca e Execução — [I]
 
@@ -794,6 +808,28 @@ PARTE 5 — ENDEREÇAMENTO POR DESLOCAMENTO E SUAS VARIAÇÕES
 	  Aplicação conforme o contexto
 
 
+ 28.3 Combinação de Base, Índice, Escala e Deslocamento — [P]
+
+  28.3.1 Componentes do Endereço Efetivo — [P]
+	  Registrador base
+ 	  Registrador índice
+	  Fator de escala
+  	  Deslocamento
+	  Formação do endereço efetivo
+
+  28.3.2 Cálculo do Endereço — [P]
+	  Base + índice
+	  Base + índice × escala
+	  Base + índice × escala + deslocamento
+	  Relação entre escala e tamanho do elemento
+
+    28.3.3 Aplicações — [I]
+	  Arrays
+	  Estruturas
+	  Matrizes
+	  Acesso a elementos de diferentes tamanhos
+
+
 
 29. Endereçamento por Deslocamento — Vantagens, Desvantagens e Aplicações — [I]
 
@@ -1154,6 +1190,20 @@ PARTE 7 — CÁLCULO, APLICAÇÃO E ESCOLHA DO MODO DE ENDEREÇAMENTO
   42.2.2 Desempenho Esperado — [I]
 	  Requisitos de tempo real
 	  Minimização de acessos à memória
+
+
+ 42.3 Restrições de Uso dos Modos — [I]
+
+   42.3.1 Compatibilidade entre Modo e Instrução — [I]
+	  Modos permitidos por cada categoria de instrução
+	  Restrições de operandos
+ 	  Restrições de destino
+
+    42.3.2 Restrições entre Tipos de Operandos — [I]
+	  Registrador
+	  Memória
+	  Imediato
+	  Operando implícito
 
 
 
