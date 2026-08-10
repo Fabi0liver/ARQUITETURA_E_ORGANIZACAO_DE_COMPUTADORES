@@ -1,0 +1,1240 @@
+                                      ARQUITETURAS DE MEMÓRIA
+
+
+A classificação abaixo indica a profundidade recomendada para cada grande tópico da lista.
+
+[P] Profundidade — estudar mecanismos, estruturas, funcionamento interno e relações entre componentes.
+[I] Intermediário — compreender bem o funcionamento e as relações principais, sem precisar dominar todos os
+   detalhes de implementação.
+[V] Visão geral — saber o que é, para que serve e como se relaciona com as Arquiteturas de Memória.
+
+
+
+PARTE 1 — FUNDAMENTOS, CONCEITOS E EVOLUÇÃO DAS ARQUITETURAS DE MEMÓRIA
+
+
+1. Introdução às Arquiteturas de Memória — [I]
+
+ 1.1 Conceitos Fundamentais — [I]
+
+  1.1.1 Conceito de Arquitetura de Memória — [I]
+	  Definição de arquitetura de memória
+	  Papel da memória em sistemas multiprocessados
+	  Organização do acesso aos dados
+	  Relação com o desempenho do sistema
+
+  1.1.2 Objetivos das Arquiteturas de Memória — [I]
+	  Compartilhamento de dados entre processadores
+	  Escalabilidade do sistema
+	  Eficiência no acesso à memória
+	  Suporte à computação paralela
+
+
+ 1.2 Importância no Contexto da Arquitetura de Computadores — [I]
+
+  1.2.1 Papel na Computação Paralela e Distribuída — [I]
+	  Base para múltiplos processadores
+	  Coordenação do acesso aos dados
+	  Suporte a cargas de trabalho paralelas
+	  Influência sobre o modelo de programação
+
+  1.2.2 Relação com Processadores, Memória e Interconexão — [I]
+	  Processadores como consumidores de memória
+	  Memória como recurso compartilhado ou distribuído
+	  Redes de interconexão como suporte à comunicação
+	  Integração dos três elementos
+
+
+
+2. Evolução Histórica das Arquiteturas de Memória — [V]
+
+ 2.1 Origens dos Sistemas Multiprocessados — [V]
+
+  2.1.1 Primeiros Sistemas com Múltiplos Processadores — [V]
+	  Sistemas com memória centralizada
+	  Primeiras formas de compartilhamento
+	  Limitações iniciais de escalabilidade
+	  Barramentos únicos
+
+  2.1.2 Evolução para Sistemas de Grande Escala — [V]
+	  Aumento do número de processadores
+	  Necessidade de novas organizações
+	  Surgimento de arquiteturas distribuídas
+	  Evolução das redes de interconexão
+
+
+ 2.2 Marcos na Evolução das Arquiteturas de Memória — [V]
+
+  2.2.1 Consolidação da Memória Compartilhada — [V]
+	  Popularização de sistemas UMA
+	  Surgimento de sistemas NUMA
+	  Adoção em servidores e mainframes
+
+  2.2.2 Consolidação da Memória Distribuída — [V]
+	  Surgimento de clusters
+	  Adoção em supercomputadores
+	  Popularização da passagem de mensagens
+
+
+
+3. Classificação das Arquiteturas de Memória (Taxonomia de Flynn e Extensões) — [P]
+
+ 3.1 Classificação segundo o Fluxo de Instruções e Dados — [P]
+
+  3.1.1 Taxonomia de Flynn — [P]
+	  SISD
+	  SIMD
+	  MISD
+	  MIMD
+	  Relação com arquiteturas de memória
+
+  3.1.2 Extensões da Taxonomia de Flynn — [I]
+	  SPMD
+	  Arquiteturas híbridas
+	  Limitações da taxonomia clássica
+
+
+ 3.2 Classificação segundo a Organização da Memória — [P]
+
+  3.2.1 Critérios de Classificação — [P]
+	  Localização física da memória
+	  Espaço de endereçamento
+	  Forma de acesso aos dados
+	  Mecanismo de comunicação
+
+  3.2.2 Categorias Principais — [P]
+	  Memória compartilhada
+	  Memória distribuída
+	  Memória compartilhada distribuída
+	  Arquiteturas híbridas
+
+
+
+4. Modelos de Organização de Memória em Sistemas Multiprocessados — [P]
+
+ 4.1 Modelo de Espaço de Endereçamento — [P]
+
+  4.1.1 Espaço de Endereçamento Único — [P]
+	  Visão global da memória
+	  Endereçamento uniforme
+	  Simplicidade de programação
+
+  4.1.2 Espaço de Endereçamento Múltiplo — [P]
+	  Memórias locais independentes
+	  Endereçamento privado por nó
+	  Necessidade de comunicação explícita
+
+
+ 4.2 Modelo de Acesso aos Dados — [P]
+
+  4.2.1 Acesso Direto — [P]
+	  Leitura e escrita imediatas
+	  Simplicidade de implementação
+	  Dependência da topologia
+
+  4.2.2 Acesso Indireto — [P]
+	  Comunicação via mensagens
+	  Intermediação de software ou hardware
+	  Latência adicional
+
+
+
+5. Terminologia e Fundamentos Conceituais — [I]
+
+ 5.1 Conceitos Básicos — [I]
+
+  5.1.1 Processador, Nó e Módulo de Memória — [I]
+	  Definição de processador
+	  Definição de nó
+	  Definição de módulo de memória
+	  Relação entre os elementos
+
+  5.1.2 Latência, Largura de Banda e Throughput — [I]
+	  Conceito de latência de acesso
+	  Conceito de largura de banda
+	  Conceito de throughput
+	  Impacto no desempenho
+
+
+ 5.2 Terminologia de Comunicação e Sincronização — [I]
+
+  5.2.1 Comunicação, Coerência e Consistência — [I]
+	  Diferença entre comunicação e sincronização
+	  Conceito de coerência de cache
+	  Conceito de consistência de memória
+
+  5.2.2 Escalabilidade e Localidade — [I]
+	  Conceito de escalabilidade
+	  Conceito de localidade de dados
+	  Relação entre os dois conceitos
+
+
+
+PARTE 2 — ESTRUTURA E FUNCIONAMENTO DAS ARQUITETURAS COM MEMÓRIA COMPARTILHADA
+
+
+6. Fundamentos da Memória Compartilhada (Shared Memory) — [P]
+
+ 6.1 Conceitos Fundamentais — [P]
+
+  6.1.1 Definição de Memória Compartilhada — [P]
+	  Espaço de endereçamento único
+	  Acesso comum entre processadores
+	  Visibilidade global dos dados
+
+  6.1.2 Funcionamento Geral — [P]
+	  Leitura e escrita compartilhadas
+	  Necessidade de sincronização
+	  Coordenação entre processadores
+
+
+ 6.2 Organização Estrutural — [P]
+
+  6.2.1 Componentes da Memória Compartilhada — [P]
+	  Processadores
+	  Memória centralizada ou distribuída fisicamente
+	  Barramento ou rede de interconexão
+	  Controladores de acesso
+
+  6.2.2 Formas de Implementação — [P]
+	  Implementação via barramento único
+	  Implementação via rede de interconexão
+	  Implementação híbrida
+
+
+
+7. Arquitetura UMA (Uniform Memory Access) — [P]
+
+ 7.1 Conceitos Fundamentais — [P]
+
+  7.1.1 Definição de UMA — [P]
+	  Tempo de acesso uniforme
+	  Memória fisicamente centralizada
+	  Simetria entre processadores
+
+  7.1.2 Funcionamento da Arquitetura UMA — [P]
+	  Acesso via barramento comum
+	  Compartilhamento simétrico
+	  Igualdade de latência
+
+
+ 7.2 Organização e Características — [P]
+
+  7.2.1 Organização Física — [P]
+	  Processadores simétricos (SMP)
+	  Barramento compartilhado
+	  Memória única
+
+  7.2.2 Vantagens e Limitações — [I]
+	  Simplicidade de programação
+	  Contenção no barramento
+	  Limitação de escalabilidade
+
+
+
+8. Arquitetura NUMA (Non-Uniform Memory Access) — [P]
+
+ 8.1 Conceitos Fundamentais — [P]
+
+  8.1.1 Definição de NUMA — [P]
+	  Tempo de acesso não uniforme
+	  Memória fisicamente distribuída
+	  Espaço de endereçamento único
+
+  8.1.2 Funcionamento da Arquitetura NUMA — [P]
+	  Acesso local mais rápido
+	  Acesso remoto mais lento
+	  Organização em nós
+
+
+ 8.2 Organização e Variações — [P]
+
+  8.2.1 Organização Física — [P]
+	  Nós com processador e memória local
+	  Rede de interconexão entre nós
+	  Controladores de acesso remoto
+
+  8.2.2 Variações de NUMA — [I]
+	  cc-NUMA (Cache-Coherent NUMA)
+	  NUMA sem coerência de cache
+	  Comparação entre variações
+
+
+
+9. Arquitetura COMA (Cache-Only Memory Architecture) — [I]
+
+ 9.1 Conceitos Fundamentais — [I]
+
+  9.1.1 Definição de COMA — [I]
+	  Memória tratada como cache
+	  Ausência de localização fixa dos dados
+	  Migração dinâmica de dados
+
+  9.1.2 Funcionamento da Arquitetura COMA — [I]
+	  Movimentação dos dados conforme uso
+	  Redução de acessos remotos frequentes
+	  Complexidade de gerenciamento
+
+
+ 9.2 Comparação com Outras Arquiteturas — [I]
+
+  9.2.1 COMA em relação a UMA e NUMA — [I]
+	  Diferença de localização dos dados
+	  Vantagens de localidade dinâmica
+	  Custos de implementação
+
+
+
+10. Vantagens, Limitações e Aplicações da Memória Compartilhada — [I]
+
+ 10.1 Vantagens e Limitações — [I]
+
+  10.1.1 Vantagens — [I]
+	  Facilidade de programação
+	  Comunicação implícita
+	  Compartilhamento direto de dados
+
+  10.1.2 Limitações — [I]
+	  Escalabilidade limitada
+	  Contenção de acesso
+	  Complexidade da coerência de cache
+
+
+ 10.2 Aplicações Típicas — [V]
+
+  10.2.1 Cenários de Uso — [V]
+	  Servidores multiprocessados
+	  Estações de trabalho científicas
+	  Sistemas de médio porte
+
+
+
+PARTE 3 — ESTRUTURA E FUNCIONAMENTO DAS ARQUITETURAS COM MEMÓRIA DISTRIBUÍDA
+
+
+11. Fundamentos da Memória Distribuída (Distributed Memory) — [P]
+
+ 11.1 Conceitos Fundamentais — [P]
+
+  11.1.1 Definição de Memória Distribuída — [P]
+	  Memórias locais independentes
+	  Espaços de endereçamento separados
+	  Ausência de visão global direta
+
+  11.1.2 Funcionamento Geral — [P]
+	  Acesso exclusivo à memória local
+	  Comunicação explícita entre nós
+	  Necessidade de troca de mensagens
+
+
+ 11.2 Organização Estrutural — [P]
+
+  11.2.1 Componentes da Memória Distribuída — [P]
+	  Nós de processamento
+	  Memória local por nó
+	  Rede de interconexão
+	  Interfaces de comunicação
+
+  11.2.2 Formas de Implementação — [I]
+	  Clusters de computadores
+	  Sistemas distribuídos em larga escala
+	  Arquiteturas baseadas em rede
+
+
+
+12. Arquitetura NORMA (No Remote Memory Access) — [I]
+
+ 12.1 Conceitos Fundamentais — [I]
+
+  12.1.1 Definição de NORMA — [I]
+	  Ausência de acesso remoto direto
+	  Comunicação exclusiva por mensagens
+	  Independência total das memórias
+
+  12.1.2 Funcionamento da Arquitetura NORMA — [I]
+	  Processamento local independente
+	  Troca de dados via rede
+	  Sincronização por mensagens
+
+
+ 12.2 Características e Aplicações — [I]
+
+  12.2.1 Vantagens e Limitações — [I]
+	  Alta escalabilidade
+	  Complexidade de programação
+	  Overhead de comunicação
+
+
+
+13. Organização de Clusters e Sistemas Distribuídos — [I]
+
+ 13.1 Conceitos de Cluster — [I]
+
+  13.1.1 Definição de Cluster — [I]
+	  Conjunto de nós interligados
+	  Cooperação entre computadores independentes
+	  Objetivo de processamento conjunto
+
+  13.1.2 Organização Interna — [I]
+	  Nó mestre e nós de trabalho
+	  Distribuição de tarefas
+	  Comunicação via rede
+
+
+ 13.2 Tipos de Sistemas Distribuídos — [V]
+
+  13.2.1 Classificações — [V]
+	  Clusters de alto desempenho
+	  Grades computacionais (grid computing)
+	  Sistemas em nuvem
+
+
+
+14. Passagem de Mensagens em Sistemas de Memória Distribuída — [P]
+
+ 14.1 Conceitos Fundamentais — [P]
+
+  14.1.1 Definição de Passagem de Mensagens — [P]
+	  Comunicação explícita entre processos
+	  Envio e recebimento de dados
+	  Sincronização por troca de mensagens
+
+  14.1.2 Modelos de Comunicação — [P]
+	  Comunicação síncrona
+	  Comunicação assíncrona
+	  Comunicação ponto a ponto
+	  Comunicação coletiva
+
+
+ 14.2 Padrões e Interfaces — [I]
+
+  14.2.1 Padrões de Comunicação — [I]
+	  Modelo cliente-servidor
+	  Modelo par a par
+	  Padrões de troca estruturada de mensagens
+
+
+
+15. Vantagens, Limitações e Aplicações da Memória Distribuída — [I]
+
+ 15.1 Vantagens e Limitações — [I]
+
+  15.1.1 Vantagens — [I]
+	  Alta escalabilidade
+	  Independência entre nós
+	  Tolerância a falhas
+
+  15.1.2 Limitações — [I]
+	  Maior complexidade de programação
+	  Overhead de comunicação
+	  Necessidade de particionamento explícito de dados
+
+
+ 15.2 Aplicações Típicas — [V]
+
+  15.2.1 Cenários de Uso — [V]
+	  Supercomputadores
+	  Processamento distribuído em larga escala
+	  Aplicações científicas de alto desempenho
+
+
+
+PARTE 4 — ESTRUTURA E FUNCIONAMENTO DAS ARQUITETURAS COM MEMÓRIA COMPARTILHADA DISTRIBUÍDA
+
+
+16. Fundamentos da Memória Compartilhada Distribuída (DSM) — [P]
+
+ 16.1 Conceitos Fundamentais — [P]
+
+  16.1.1 Definição de DSM (Distributed Shared Memory) — [P]
+	  Memória fisicamente distribuída
+	  Espaço de endereçamento lógico único
+	  Abstração de compartilhamento global
+
+  16.1.2 Funcionamento Geral — [P]
+	  Tradução de endereços globais
+	  Movimentação de dados entre nós
+	  Coordenação por software ou hardware
+
+
+ 16.2 Motivações e Objetivos — [I]
+
+  16.2.1 Combinação de Vantagens — [I]
+	  Facilidade de programação da memória compartilhada
+	  Escalabilidade da memória distribuída
+	  Equilíbrio entre os dois modelos
+
+
+
+17. Implementação de Sistemas DSM — [I]
+
+ 17.1 Abordagens de Implementação — [I]
+
+  17.1.1 Implementação por Hardware — [I]
+	  Controladores dedicados
+	  Diretórios de coerência distribuídos
+	  Suporte direto do processador
+
+  17.1.2 Implementação por Software — [I]
+	  Bibliotecas de compartilhamento
+	  Middleware de memória distribuída
+	  Gerenciamento via sistema operacional
+
+
+ 17.2 Granularidade e Coerência — [P]
+
+  17.2.1 Granularidade dos Dados Compartilhados — [P]
+	  Granularidade fina
+	  Granularidade grossa
+	  Impacto no desempenho
+
+  17.2.2 Manutenção da Coerência em DSM — [P]
+	  Protocolos adaptados à distribuição
+	  Replicação controlada de dados
+	  Invalidação e atualização remota
+
+
+
+18. Modelos Híbridos de Memória — [I]
+
+ 18.1 Conceitos de Arquiteturas Híbridas — [I]
+
+  18.1.1 Combinação de Modelos — [I]
+	  Memória compartilhada dentro do nó
+	  Memória distribuída entre nós
+	  Organização em múltiplos níveis
+
+  18.1.2 Exemplos de Organização Híbrida — [V]
+	  Clusters de multiprocessadores
+	  Sistemas NUMA interligados por rede
+	  Arquiteturas em grade de nós SMP
+
+
+
+19. Comparação entre DSM e Arquiteturas Puras — [V]
+
+ 19.1 Comparação Estrutural — [V]
+
+  19.1.1 DSM em relação à Memória Compartilhada Pura — [V]
+	  Diferença na localização física
+	  Diferença na complexidade de coerência
+	  Diferença de escalabilidade
+
+  19.1.2 DSM em relação à Memória Distribuída Pura — [V]
+	  Diferença na visibilidade dos dados
+	  Diferença na facilidade de programação
+	  Diferença de desempenho
+
+
+
+PARTE 5 — PROCESSADORES, NÓS, ORGANIZAÇÃO E INTERCONEXÃO DA MEMÓRIA
+
+
+20. Organização dos Nós de Processamento — [I]
+
+ 20.1 Estrutura de um Nó — [I]
+
+  20.1.1 Componentes de um Nó — [I]
+	  Processador ou processadores
+	  Memória local
+	  Interface de rede
+	  Controlador de memória
+
+  20.1.2 Organização Interna do Nó — [I]
+	  Comunicação entre componentes internos
+	  Hierarquia de memória local
+	  Integração com a rede de interconexão
+
+
+ 20.2 Tipos de Organização de Nós — [V]
+
+  20.2.1 Nós Homogêneos e Heterogêneos — [V]
+	  Nós idênticos
+	  Nós com capacidades distintas
+	  Impacto no balanceamento de carga
+
+
+
+21. Redes de Interconexão em Arquiteturas de Memória — [P]
+
+ 21.1 Conceitos Fundamentais — [P]
+
+  21.1.1 Papel da Rede de Interconexão — [P]
+	  Comunicação entre processadores e memória
+	  Suporte ao tráfego de dados
+	  Influência sobre latência e desempenho
+
+  21.1.2 Características das Redes — [P]
+	  Largura de banda
+	  Latência de comunicação
+	  Escalabilidade da rede
+
+
+ 21.2 Classificação das Redes — [I]
+
+  21.2.1 Redes Estáticas e Dinâmicas — [I]
+	  Conexões fixas entre nós
+	  Conexões configuráveis por chaveamento
+	  Comparação entre abordagens
+
+
+
+22. Topologias de Interconexão — [P]
+
+ 22.1 Topologias Estáticas — [P]
+
+  22.1.1 Topologias Básicas — [P]
+	  Barramento
+	  Anel
+	  Malha (mesh)
+	  Árvore
+
+  22.1.2 Topologias Avançadas — [P]
+	  Hipercubo
+	  Torus
+	  Redes k-ários n-cubo
+
+
+ 22.2 Topologias Dinâmicas — [I]
+
+  22.2.1 Redes Baseadas em Chaveamento — [I]
+	  Redes crossbar
+	  Redes multiestágio
+	  Redes ômega
+
+
+
+23. Controladores de Memória e Diretórios — [P]
+
+ 23.1 Controladores de Memória — [P]
+
+  23.1.1 Papel do Controlador de Memória — [P]
+	  Gerenciamento do acesso à memória
+	  Tradução de endereços
+	  Arbitragem de requisições
+
+  23.1.2 Organização dos Controladores — [I]
+	  Controlador centralizado
+	  Controladores distribuídos por nó
+	  Controladores hierárquicos
+
+
+ 23.2 Diretórios de Coerência — [P]
+
+  23.2.1 Papel do Diretório — [P]
+	  Rastreamento de cópias em cache
+	  Suporte às operações de coerência
+	  Redução de tráfego de broadcast
+
+  23.2.2 Organização dos Diretórios — [P]
+	  Diretório centralizado
+	  Diretório distribuído
+	  Diretório hierárquico
+
+
+
+24. Hierarquia e Módulos de Memória em Sistemas Multiprocessados — [I]
+
+ 24.1 Organização em Módulos — [I]
+
+  24.1.1 Módulos de Memória Local — [I]
+	  Memória associada a cada nó
+	  Independência de acesso
+	  Papel na latência local
+
+  24.1.2 Módulos de Memória Compartilhada — [I]
+	  Memória acessível globalmente
+	  Necessidade de arbitragem
+	  Papel na coerência
+
+
+ 24.2 Relação com a Hierarquia de Memória — [I]
+
+  24.2.1 Integração com Caches Locais — [I]
+	  Caches por processador
+	  Caches compartilhados por nó
+	  Relação com a memória principal distribuída
+
+
+
+PARTE 6 — ACESSO, COMUNICAÇÃO, SINCRONIZAÇÃO, COERÊNCIA E CONSISTÊNCIA DA MEMÓRIA
+
+
+25. Mecanismos de Acesso à Memória — [P]
+
+ 25.1 Formas de Acesso — [P]
+
+  25.1.1 Acesso Local — [P]
+	  Baixa latência
+	  Acesso direto ao módulo local
+	  Prioridade de uso
+
+  25.1.2 Acesso Remoto — [P]
+	  Maior latência
+	  Necessidade de comunicação via rede
+	  Dependência da topologia
+
+
+ 25.2 Técnicas de Otimização de Acesso — [I]
+
+  25.2.1 Redução de Acessos Remotos — [I]
+	  Migração de dados
+	  Replicação de dados
+	  Afinidade entre processo e memória
+
+
+
+26. Comunicação entre Processadores — [I]
+
+ 26.1 Formas de Comunicação — [I]
+
+  26.1.1 Comunicação Implícita — [I]
+	  Compartilhamento direto de variáveis
+	  Sincronização por memória
+	  Simplicidade de uso
+
+  26.1.2 Comunicação Explícita — [I]
+	  Troca de mensagens
+	  Envio e recebimento coordenados
+	  Controle explícito pelo programador
+
+
+ 26.2 Impacto da Comunicação no Desempenho — [I]
+
+  26.2.1 Fatores que Influenciam a Comunicação — [I]
+	  Distância entre nós
+	  Congestionamento da rede
+	  Frequência das trocas de dados
+
+
+
+27. Sincronização em Sistemas Multiprocessados — [P]
+
+ 27.1 Conceitos Fundamentais — [P]
+
+  27.1.1 Necessidade de Sincronização — [P]
+	  Acesso concorrente a dados compartilhados
+	  Prevenção de condições de corrida
+	  Coordenação da execução paralela
+
+  27.1.2 Mecanismos de Sincronização — [P]
+	  Locks e semáforos
+	  Barreiras de sincronização
+	  Operações atômicas
+
+
+ 27.2 Sincronização em Diferentes Arquiteturas — [I]
+
+  27.2.1 Sincronização em Memória Compartilhada — [I]
+	  Variáveis de sincronização compartilhadas
+	  Exclusão mútua direta
+
+  27.2.2 Sincronização em Memória Distribuída — [I]
+	  Sincronização via mensagens
+	  Protocolos de coordenação distribuída
+
+
+
+28. Coerência de Cache — [P]
+
+ 28.1 Conceitos Fundamentais — [P]
+
+  28.1.1 Definição de Coerência de Cache — [P]
+	  Consistência entre múltiplas cópias
+	  Visão unificada dos dados
+	  Necessidade em sistemas multiprocessados
+
+  28.1.2 Problema da Coerência — [P]
+	  Múltiplas cópias desatualizadas
+	  Escritas concorrentes
+	  Necessidade de invalidação ou atualização
+
+
+ 28.2 Abordagens de Manutenção da Coerência — [P]
+
+  28.2.1 Baseadas em Snooping — [P]
+	  Monitoramento do barramento
+	  Broadcast de invalidação
+	  Limitações de escalabilidade
+
+  28.2.2 Baseadas em Diretório — [P]
+	  Rastreamento centralizado ou distribuído
+	  Comunicação direcionada
+	  Maior escalabilidade
+
+
+
+29. Protocolos de Coerência de Cache — [P]
+
+ 29.1 Protocolos Clássicos — [P]
+
+  29.1.1 Protocolo MSI — [P]
+	  Estados Modified, Shared, Invalid
+	  Transições de estado
+	  Funcionamento básico
+
+  29.1.2 Protocolo MESI — [P]
+	  Estado Exclusive adicional
+	  Redução de tráfego de escrita
+	  Uso amplo em processadores modernos
+
+
+ 29.2 Protocolos Estendidos — [I]
+
+  29.2.1 Protocolo MOESI — [I]
+	  Estado Owned adicional
+	  Compartilhamento de dados modificados
+	  Redução de escritas em memória
+
+  29.2.2 Outros Protocolos — [V]
+	  Protocolo Firefly
+	  Protocolo Dragon
+	  Variações específicas de fabricantes
+
+
+
+30. Modelos de Consistência de Memória — [P]
+
+ 30.1 Conceitos Fundamentais — [P]
+
+  30.1.1 Definição de Consistência de Memória — [P]
+	  Ordem de visibilidade das operações
+	  Garantias sobre leituras e escritas
+	  Relação com a coerência de cache
+
+  30.1.2 Necessidade de Modelos de Consistência — [P]
+	  Comportamento previsível para o programador
+	  Restrições sobre reordenação
+	  Equilíbrio entre desempenho e simplicidade
+
+
+ 30.2 Principais Modelos — [P]
+
+  30.2.1 Consistência Sequencial — [P]
+	  Ordem total das operações
+	  Simplicidade conceitual
+	  Impacto no desempenho
+
+  30.2.2 Modelos Relaxados de Consistência — [P]
+	  Consistência causal
+	  Consistência de liberação (release consistency)
+	  Consistência fraca (weak consistency)
+
+
+
+PARTE 7 — MODELOS DE PROGRAMAÇÃO, LOCALIDADE E ORGANIZAÇÃO DO ACESSO À MEMÓRIA
+
+
+31. Modelos de Programação Paralela e Memória — [I]
+
+ 31.1 Modelos Baseados em Memória Compartilhada — [I]
+
+  31.1.1 Características do Modelo — [I]
+	  Compartilhamento direto de variáveis
+	  Uso de threads
+	  Sincronização explícita
+
+
+ 31.2 Modelos Baseados em Memória Distribuída — [I]
+
+  31.2.1 Características do Modelo — [I]
+	  Troca explícita de mensagens
+	  Uso de processos independentes
+	  Particionamento de dados
+
+
+
+32. Localidade de Dados em Arquiteturas de Memória — [P]
+
+ 32.1 Conceitos Fundamentais — [P]
+
+  32.1.1 Definição de Localidade — [P]
+	  Localidade temporal
+	  Localidade espacial
+	  Importância para o desempenho
+
+  32.1.2 Localidade em Sistemas com Memória Distribuída — [P]
+	  Afinidade entre processo e memória local
+	  Redução de acessos remotos
+	  Impacto no tempo de execução
+
+
+ 32.2 Técnicas para Melhorar a Localidade — [I]
+
+  32.2.1 Estratégias de Organização de Dados — [I]
+	  Distribuição orientada à localidade
+	  Reorganização de estruturas de dados
+	  Migração dinâmica de dados
+
+
+
+33. Particionamento e Distribuição de Dados — [I]
+
+ 33.1 Conceitos Fundamentais — [I]
+
+  33.1.1 Particionamento de Dados — [I]
+	  Divisão de estruturas de dados
+	  Distribuição entre nós ou processadores
+	  Critérios de particionamento
+
+  33.1.2 Estratégias de Distribuição — [I]
+	  Distribuição por blocos
+	  Distribuição cíclica
+	  Distribuição híbrida
+
+
+
+34. Padrões de Acesso à Memória — [I]
+
+ 34.1 Conceitos Fundamentais — [I]
+
+  34.1.1 Tipos de Padrões — [I]
+	  Acesso sequencial
+	  Acesso aleatório
+	  Acesso com reuso de dados
+
+
+ 34.2 Impacto dos Padrões no Desempenho — [I]
+
+  34.2.1 Relação com Localidade e Coerência — [I]
+	  Influência sobre acertos de cache
+	  Influência sobre tráfego de coerência
+	  Otimização de algoritmos paralelos
+
+
+
+PARTE 8 — DESEMPENHO, ESCALABILIDADE E BALANCEAMENTO DE CARGA
+
+
+35. Desempenho em Arquiteturas de Memória — [P]
+
+ 35.1 Métricas de Desempenho — [P]
+
+  35.1.1 Métricas Fundamentais — [P]
+	  Latência de acesso
+	  Largura de banda
+	  Tempo de resposta
+	  Throughput do sistema
+
+
+ 35.2 Fatores que Influenciam o Desempenho — [P]
+
+  35.2.1 Fatores Estruturais — [P]
+	  Topologia da rede de interconexão
+	  Distância entre nós
+	  Contenção de acesso
+
+  35.2.2 Fatores Operacionais — [I]
+	  Padrão de acesso aos dados
+	  Frequência de comunicação
+	  Overhead de coerência e sincronização
+
+
+
+36. Escalabilidade das Arquiteturas de Memória — [P]
+
+ 36.1 Conceitos Fundamentais — [P]
+
+  36.1.1 Definição de Escalabilidade — [P]
+	  Capacidade de crescimento do sistema
+	  Manutenção do desempenho com o aumento de nós
+	  Limitações estruturais
+
+  36.1.2 Fatores que Limitam a Escalabilidade — [P]
+	  Contenção de barramento
+	  Overhead de coerência
+	  Latência de comunicação crescente
+
+
+ 36.2 Escalabilidade por Tipo de Arquitetura — [I]
+
+  36.2.1 Escalabilidade em Memória Compartilhada — [I]
+	  Limitação pelo barramento comum
+	  Melhoria com organização NUMA
+
+  36.2.2 Escalabilidade em Memória Distribuída — [I]
+	  Maior potencial de crescimento
+	  Dependência da rede de interconexão
+
+
+
+37. Balanceamento de Carga e Memória — [I]
+
+ 37.1 Conceitos Fundamentais — [I]
+
+  37.1.1 Definição de Balanceamento de Carga — [I]
+	  Distribuição equilibrada de tarefas
+	  Relação com a distribuição de dados
+	  Objetivo de eficiência global
+
+  37.1.2 Estratégias de Balanceamento — [I]
+	  Balanceamento estático
+	  Balanceamento dinâmico
+	  Balanceamento orientado à localidade
+
+
+
+38. Gargalos e Otimizações de Desempenho — [I]
+
+ 38.1 Identificação de Gargalos — [I]
+
+  38.1.1 Principais Gargalos — [I]
+	  Contenção de memória
+	  Congestionamento de rede
+	  Overhead de sincronização
+
+
+ 38.2 Técnicas de Otimização — [I]
+
+  38.2.1 Estratégias Gerais — [I]
+	  Redução de acessos remotos
+	  Aumento da localidade
+	  Otimização de protocolos de coerência
+
+
+
+PARTE 9 — IMPLEMENTAÇÃO, INTEGRAÇÃO E ARQUITETURAS AVANÇADAS
+
+
+39. Implementação Física das Arquiteturas de Memória — [I]
+
+ 39.1 Aspectos de Implementação — [I]
+
+  39.1.1 Implementação em Hardware — [I]
+	  Controladores dedicados
+	  Circuitos de interconexão
+	  Suporte físico à coerência
+
+  39.1.2 Implementação em Software — [I]
+	  Camadas de abstração
+	  Bibliotecas de comunicação
+	  Suporte do sistema operacional
+
+
+
+40. Integração com Processadores Multicore e Manycore — [I]
+
+ 40.1 Memória em Processadores Multicore — [I]
+
+  40.1.1 Organização da Memória Compartilhada entre Núcleos — [I]
+	  Cache compartilhada entre núcleos
+	  Cache privada por núcleo
+	  Coerência interna ao chip
+
+
+ 40.2 Memória em Processadores Manycore — [I]
+
+  40.2.1 Escalabilidade dentro do Chip — [I]
+	  Redes internas de interconexão
+	  Organização distribuída dentro do processador
+	  Desafios de coerência em larga escala
+
+
+
+41. Arquiteturas de Memória em GPUs e Aceleradores — [V]
+
+ 41.1 Organização da Memória em GPUs — [V]
+
+  41.1.1 Características Gerais — [V]
+	  Memória compartilhada entre unidades de execução
+	  Hierarquia especializada de memória
+	  Alta largura de banda
+
+
+ 41.2 Relação com Arquiteturas Heterogêneas — [V]
+
+  41.2.1 Integração CPU-GPU — [V]
+	  Memória unificada
+	  Transferência de dados entre dispositivos
+	  Desafios de coerência heterogênea
+
+
+
+42. Memórias Não Voláteis e Novas Tecnologias — [V]
+
+ 42.1 Tecnologias Emergentes — [V]
+
+  42.1.1 Memórias Não Voláteis — [V]
+	  Persistência de dados
+	  Impacto em arquiteturas distribuídas
+	  Novos desafios de consistência
+
+
+ 42.2 Tendências Tecnológicas — [V]
+
+  42.2.1 Novas Abordagens — [V]
+	  Memória empilhada (stacked memory)
+	  Interconexões de alta velocidade
+	  Integração próxima ao processador
+
+
+
+43. Arquiteturas de Memória em Sistemas Heterogêneos — [V]
+
+ 43.1 Conceitos Fundamentais — [V]
+
+  43.1.1 Sistemas Heterogêneos — [V]
+	  Combinação de diferentes tipos de processadores
+	  Memórias com características distintas
+	  Desafios de organização
+
+
+ 43.2 Organização da Memória Heterogênea — [V]
+
+  43.2.1 Estratégias de Integração — [V]
+	  Memória compartilhada heterogênea
+	  Coordenação entre dispositivos distintos
+	  Balanceamento entre desempenho e complexidade
+
+
+
+PARTE 10 — COMPARAÇÃO, APLICAÇÕES E EVOLUÇÃO DAS ARQUITETURAS
+
+
+44. Comparação entre Arquiteturas de Memória — [I]
+
+ 44.1 Comparação Estrutural — [I]
+
+  44.1.1 Memória Compartilhada × Memória Distribuída — [I]
+	  Diferença de organização física
+	  Diferença de facilidade de programação
+	  Diferença de escalabilidade
+
+  44.1.2 Arquiteturas Híbridas em Comparação — [I]
+	  Equilíbrio entre modelos
+	  Cenários de uso mais adequados
+
+
+
+45. Aplicações Práticas das Arquiteturas de Memória — [V]
+
+ 45.1 Aplicações por Tipo de Arquitetura — [V]
+
+  45.1.1 Aplicações em Memória Compartilhada — [V]
+	  Servidores de médio porte
+	  Aplicações científicas locais
+	  Processamento simétrico
+
+  45.1.2 Aplicações em Memória Distribuída — [V]
+	  Processamento em larga escala
+	  Aplicações de big data
+	  Simulações científicas distribuídas
+
+
+
+46. Arquiteturas de Memória em Supercomputadores — [V]
+
+ 46.1 Organização em Supercomputadores — [V]
+
+  46.1.1 Características Gerais — [V]
+	  Combinação de múltiplas arquiteturas
+	  Alta escalabilidade
+	  Redes de interconexão especializadas
+
+
+ 46.2 Exemplos de Organização — [V]
+
+  46.2.1 Modelos Utilizados — [V]
+	  Clusters de nós NUMA
+	  Redes de interconexão de alto desempenho
+	  Sistemas híbridos em larga escala
+
+
+
+47. Tendências Futuras das Arquiteturas de Memória — [V]
+
+ 47.1 Direções de Evolução — [V]
+
+  47.1.1 Novas Abordagens Arquiteturais — [V]
+	  Arquiteturas centradas em dados
+	  Maior integração entre memória e processamento
+	  Redução da distância entre processador e memória
+
+
+ 47.2 Desafios Futuros — [V]
+
+  47.2.1 Principais Desafios — [V]
+	  Escalabilidade contínua
+	  Eficiência energética
+	  Complexidade de coerência em larga escala
+
+
+
+PARTE 11 — REVISÃO GERAL E CONSOLIDAÇÃO
+
+
+48. Integração dos Conceitos de Arquiteturas de Memória — [I]
+
+ 48.1 Visão Integrada — [I]
+
+  48.1.1 Integração dos Fundamentos — [I]
+	  Conceitos fundamentais
+	  Classificação das arquiteturas
+	  Organização estrutural
+
+  48.1.2 Integração dos Mecanismos — [I]
+	  Acesso, comunicação e sincronização
+	  Coerência e consistência
+	  Desempenho e escalabilidade
+
+
+ 48.2 Relações entre os Temas — [I]
+
+  48.2.1 Relação entre Organização e Desempenho — [I]
+	  Influência da topologia
+	  Influência da coerência
+	  Influência da localidade
+
+
+
+49. Resumo Geral das Arquiteturas de Memória — [I]
+
+ 49.1 Revisão dos Conceitos Fundamentais — [I]
+
+  49.1.1 Fundamentos Essenciais — [I]
+	  Definição de arquitetura de memória
+	  Classificações principais
+	  Terminologia fundamental
+
+  49.1.2 Tipos de Arquiteturas Estudadas — [I]
+	  Memória compartilhada
+	  Memória distribuída
+	  Memória compartilhada distribuída
+
+
+ 49.2 Revisão dos Mecanismos — [I]
+
+  49.2.1 Mecanismos Essenciais — [I]
+	  Coerência de cache
+	  Consistência de memória
+	  Sincronização e comunicação
+
+
+
+50. Conclusão do Estudo das Arquiteturas de Memória — [V]
+
+ 50.1 Síntese Final — [V]
+
+  50.1.1 O Papel das Arquiteturas de Memória — [V]
+	  Base para sistemas multiprocessados
+	  Fundamento para computação paralela e distribuída
+	  Elemento central da organização de computadores
+
+  50.1.2 Importância para a Arquitetura e Organização de Computadores — [V]
+	  Compreensão de sistemas multiprocessados
+	  Base para estudos de coerência e consistência
+	  Preparação para tópicos avançados
+
+
+ 50.2 Competências Desenvolvidas — [V]
+
+  50.2.1 Conhecimentos Adquiridos — [V]
+	  Classificação das arquiteturas de memória
+	  Organização estrutural
+	  Mecanismos de coerência e consistência
+	  Fatores de desempenho e escalabilidade
+
+  50.2.2 Preparação para Estudos Posteriores — [V]
+	  Hierarquia de memória e caches
+	  Processadores multicore e manycore
+	  Sistemas paralelos e distribuídos avançados
