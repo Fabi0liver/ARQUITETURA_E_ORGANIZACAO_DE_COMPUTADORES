@@ -921,266 +921,306 @@ PARTE 4 — PAGINAÇÃO SOB DEMANDA, FALTAS DE PÁGINA E GERENCIAMENTO DE PÁGIN
 
 
 
-22. Gerenciamento do Estado das Páginas — [P]
+22. Swapping e Backing Store — [P]
 
- 22.1 Bits de Controle — [P]
+  22.1 Fundamentos do Swapping — [P]
 
-  22.1.1 Bit de Presença — [P]
+   22.1.1 Conceito de Swapping — [P]
+       Definição
+       Página na memória física
+       Página no armazenamento
+       Transferência entre memória e armazenamento
+
+   22.1.2 Backing Store — [P]
+       Conceito
+       Função
+       Área de armazenamento
+       Relação com páginas não residentes
+
+  22.2 Operações de Swapping — [P]
+
+   22.2.1 Swap-Out — [P]
+       Seleção da página
+       Remoção da memória física
+       Escrita no armazenamento
+       Atualização do mapeamento
+
+   22.2.2 Swap-In — [P]
+       Localização da página
+       Leitura do armazenamento
+       Alocação de quadro
+       Atualização da tabela
+       Retomada do acesso
+
+  22.3 Swapping e Desempenho — [I]
+
+   22.3.1 Custos do Swapping — [I]
+       Latência
+       Transferência de dados
+       Acesso ao armazenamento
+       Impacto no desempenho
+
+   22.3.2 Swapping × Page Fault — [I]
+       Relação entre os mecanismos
+       Carregamento de páginas
+       Escrita de páginas modificadas
+       Custo da transferência
+
+
+
+23. Gerenciamento do Estado das Páginas — [P]
+
+ 23.1 Bits de Controle — [P]
+
+  23.1.1 Bit de Presença — [P]
 	  Página residente
 	  Página não residente
 	  Detecção de ausência
 
-  22.1.2 Bit de Referência — [P]
+  23.1.2 Bit de Referência — [P]
 	  Acesso recente
 	  Detecção de uso
 	  Apoio à substituição
 
-  22.1.3 Bit de Modificação — [P]
+  23.1.3 Bit de Modificação — [P]
 	  Página alterada
 	  Página limpa
 	  Necessidade de escrita
 
 
 
-23. Ciclo de Vida da Página — [P]
+24. Ciclo de Vida da Página — [P]
 
- 23.1 Estados e Transições — [P]
-
-  23.1.1 Estados da Página — [P]
-	  Livre
-	  Alocada
-	  Residente
-	  Modificada
-	  Evictada
-
-  23.1.2 Transições entre Estados — [P]
-	  Carregamento
-	  Acesso
-	  Modificação
-	  Substituição
-	  Escrita de volta
+ 24.1 Estados da Página — [P]
+	Livre
+	Alocada
+	Residente
+	Modificada
+	Evictada
 
 
+ 24.2 Transições entre Estados — [P]
+	Carregamento
+	Acesso
+	Modificação
+	Substituição
+	Escrita de volta
 
-24. Falhas de Tradução: Panorama Geral — [I]
 
- 24.1 Tipos de Falhas na Tradução de Endereços — [I]
 
-  24.1.1 TLB Miss — [I]
+25. Falhas de Tradução: Panorama Geral — [I]
+
+ 25.1 Tipos de Falhas na Tradução de Endereços — [I]
+
+  25.1.1 TLB Miss — [I]
 	  Causa
 	  Ausência de tradução na TLB
 	  Necessidade de page walk
 	  Impacto na latência
 
-  24.1.2 Page Fault e Protection Fault — [I]
+  25.1.2 Page Fault e Protection Fault — [I]
 	  Página ausente
 	  Violação de permissão
 	  Tratamento pelo sistema operacional
 
 
- 24.2 Relação entre as Falhas — [I]
-
-  24.2.1 Cadeia de Verificações — [I]
-	  TLB
-	  Tabela de páginas
-	  Bits de controle
-	  Exceções geradas
+ 25.2 Relação entre as Falhas — [I]
+	Cadeia de Verificações
+	TLB
+	Tabela de páginas
+	Bits de controle
+	Exceções geradas
 
 
 
 PARTE 5 — SUBSTITUIÇÃO DE PÁGINAS, ALOCAÇÃO E GERENCIAMENTO DA MEMÓRIA
 
 
-25. Alocação de Quadros — [P]
+26. Alocação de Quadros — [P]
 
- 25.1 Fundamentos — [P]
+ 26.1 Fundamentos — [P]
 
-  25.1.1 Conceito de Frame Allocation — [P]
+  26.1.1 Conceito de Frame Allocation — [P]
 	  Quadros disponíveis
 	  Distribuição
 	  Processos
 	  Memória livre
 
-  25.1.2 Objetivos da Alocação — [I]
+  26.1.2 Objetivos da Alocação — [I]
 	  Utilização eficiente
 	  Equilíbrio entre processos
 	  Redução de falhas
 	  Controle do desempenho
 
 
- 25.2 Estratégias de Alocação — [I]
+ 26.2 Estratégias de Alocação — [I]
 
-  25.2.1 Alocação Fixa — [I]
+  26.2.1 Alocação Fixa — [I]
 	  Número fixo de quadros
 	  Simplicidade
 	  Limitações
 
-  25.2.2 Alocação Dinâmica — [I]
+  26.2.2 Alocação Dinâmica — [I]
 	  Ajuste conforme demanda
 	  Redistribuição
 	  Controle de recursos
 
 
- 25.3 Alocação Global e Local — [I]
+ 26.3 Alocação Global e Local — [I]
 
-  25.3.1 Alocação Global — [I]
+  26.3.1 Alocação Global — [I]
 	  Compartilhamento de quadros
 	  Competição entre processos
 	  Flexibilidade
 
-  25.3.2 Alocação Local — [I]
+  26.3.2 Alocação Local — [I]
 	  Conjunto próprio de quadros
 	  Isolamento de recursos
 	  Previsibilidade
 
 
 
-26. Substituição de Páginas: Fundamentos — [P]
+27. Substituição de Páginas: Fundamentos — [P]
 
- 26.1 Necessidade de Substituição — [P]
+ 27.1 Memória Física Esgotada — [P]
+	Memória física cheia
+	Falta de quadros livres
+	Seleção de vítima
+	Liberação de quadro
 
-  26.1.1 Memória Física Esgotada — [P]
-	  Memória física cheia
-	  Falta de quadros livres
-	  Seleção de vítima
-	  Liberação de quadro
-
-  26.1.2 Página Vítima — [P]
-	  Conceito
-	  Critérios de seleção
-	  Página modificada
-	  Página limpa
-
+ 
+ 7.1.2 Página Vítima — [P]
+	Conceito
+	Critérios de seleção
+	Página modificada
+	Página limpa
 
 
-27. Algoritmos de Substituição de Páginas — [P]
 
- 27.1 Algoritmos Clássicos — [P]
+28 Algoritmos de Substituição de Páginas — [P]
 
-  27.1.1 FIFO — [P]
+ 28.1 Algoritmos Clássicos — [P]
+
+  28.1.1 FIFO — [P]
 	  Funcionamento
 	  Estrutura
 	  Vantagens
 	  Limitações
 	  Anomalia de Belady
 
-  27.1.2 Algoritmo Ótimo — [P]
+  28.1.2 Algoritmo Ótimo — [P]
 	  Princípio
 	  Referência futura
 	  Funcionamento conceitual
 	  Limitações práticas
 
 
- 27.2 Algoritmos Baseados em Localidade — [P]
+ 28.2 Algoritmos Baseados em Localidade — [P]
 
-  27.2.1 LRU — [P]
+  28.2.1 LRU — [P]
 	  Localidade temporal
 	  Histórico de acessos
 	  Funcionamento
 	  Custos
 
-  27.2.2 Clock e Segunda Chance — [P]
+  28.2.2 Clock e Segunda Chance — [P]
 	  Bit de referência
 	  Ponteiro circular
 	  Segunda chance
 	  Aproximação do LRU
 
 
- 27.3 Aproximações e Variantes — [I]
-
-  27.3.1 Outras Aproximações — [I]
-	  NRU
-	  Aging
-	  Working-set baseado em referência
-	  Políticas aproximadas
+ 28.3 Aproximações e Variantes — [I]
+	NRU
+	Aging
+	Working-set baseado em referência
+	Políticas aproximadas
 
 
 
-28. Avaliação dos Algoritmos de Substituição — [P]
+29. Avaliação dos Algoritmos de Substituição — [P]
 
- 28.1 Critérios de Avaliação — [P]
+ 29.1 Taxa de Falhas — [P]
+	Page fault rate
+	Número de referências
+	Comparação de algoritmos
 
-  28.1.1 Taxa de Falhas — [P]
-	  Page fault rate
-	  Número de referências
-	  Comparação de algoritmos
-
-  28.1.2 Trade-offs — [I]
-	  Precisão
-	  Custo
-	  Implementabilidade
-	  Desempenho
-
+  
+ 29.1.2 Trade-offs — [I]
+	 Precisão
+	Custo
+	Implementabilidade
+	Desempenho
 
 
-29. Localidade de Referência e Working Set — [P]
 
- 29.1 Localidade de Referência — [P]
+30. Localidade de Referência e Working Set — [P]
 
-  29.1.1 Localidade Temporal — [P]
+ 30.1 Localidade de Referência — [P]
+
+  30.1.1 Localidade Temporal — [P]
 	  Reutilização de dados
 	  Reutilização de instruções
 	  Referências recentes
 
-  29.1.2 Localidade Espacial — [P]
+  30.1.2 Localidade Espacial — [P]
 	  Proximidade dos endereços
 	  Páginas adjacentes
 	  Padrões de acesso
 
 
- 29.2 Working Set — [P]
+ 30.2 Working Set — [P]
 
-  29.2.1 Conceito de Working Set — [P]
+  30.2.1 Conceito de Working Set — [P]
 	  Conjunto de páginas ativas
 	  Janela de referência
 	  Demanda de memória
 
-  29.2.2 Working Set e Alocação — [P]
+  30.2.2 Working Set e Alocação — [P]
 	  Número de quadros
 	  Comportamento do processo
 	  Prevenção de falta excessiva
 
 
 
-30. Thrashing — [P]
+31. Thrashing — [P]
 
- 30.1 Conceito e Causas — [P]
+ 31.1 Conceito e Causas — [P]
 
-  30.1.1 Conceito de Thrashing — [P]
+  31.1.1 Conceito de Thrashing — [P]
 	  Excesso de page faults
 	  Baixo aproveitamento da CPU
 	  Paginação excessiva
 
-  30.1.2 Causas e Consequências — [P]
+  31.1.2 Causas e Consequências — [P]
 	  Poucos quadros
 	  Muitos processos
 	  Working set insuficiente
 	  Degradação do desempenho
 
 
- 30.2 Controle do Thrashing — [I]
-
-  30.2.1 Estratégias de Controle — [I]
-	  Redução do grau de multiprogramação
-	  Controle do working set
-	  Page-fault frequency
-	  Ajuste da alocação
+ 31.2 Controle do Thrashing — [I]
+	Estratégias de Controle
+	Redução do grau de multiprogramação
+	Controle do working set
+	Page-fault frequency
+	Ajuste da alocação
 
 
 
 PARTE 6 — PROTEÇÃO, COMPARTILHAMENTO E ISOLAMENTO DE PROCESSOS
 
 
-31. Proteção de Memória Virtual — [P]
+32. Proteção de Memória Virtual — [P]
 
- 31.1 Fundamentos de Proteção — [P]
+ 32.1 Fundamentos de Proteção — [P]
 
-  31.1.1 Isolamento de Processos — [P]
+  32.1.1 Isolamento de Processos — [P]
 	  Espaços virtuais independentes
 	  Separação de endereços
 	  Acesso controlado
 
-  31.1.2 Controle de Permissões — [P]
+  32.1.2 Controle de Permissões — [P]
 	  Leitura
 	  Escrita
 	  Execução
@@ -1188,16 +1228,16 @@ PARTE 6 — PROTEÇÃO, COMPARTILHAMENTO E ISOLAMENTO DE PROCESSOS
 	  Supervisor
 
 
- 31.2 Proteção por Página — [P]
+ 32.2 Proteção por Página — [P]
 
-  31.2.1 Bits de Proteção — [P]
+  32.2.1 Bits de Proteção — [P]
 	  Read
 	  Write
 	  Execute
 	  User
 	  Supervisor
 
-  31.2.2 Violações de Proteção — [P]
+  32.2.2 Violações de Proteção — [P]
 	  Acesso proibido
 	  Escrita em página somente leitura
 	  Execução proibida
@@ -1205,50 +1245,48 @@ PARTE 6 — PROTEÇÃO, COMPARTILHAMENTO E ISOLAMENTO DE PROCESSOS
 
 
 
-32. Mecanismos Avançados de Proteção — [I]
+33. Mecanismos Avançados de Proteção — [I]
 
- 32.1 Proteção contra Execução — [I]
+ 33.1 Proteção contra Execução — [I]
+	NX/XD
+	No Execute
+	Execute Disable
+	Proteção contra execução
 
-  32.1.1 NX/XD — [I]
-	  No Execute
-	  Execute Disable
-	  Proteção contra execução
 
-
- 32.2 Domínios de Execução — [I]
-
-  32.2.1 Proteções por Domínio de Execução — [I]
-	  Modo usuário
-	  Modo supervisor
-	  Privilégios
-	  Transição de privilégio
+ 33.2 Domínios de Execução — [I]
+	Proteções por Domínio de Execução
+	Modo usuário
+	Modo supervisor
+	Privilégios
+	Transição de privilégio
 
 
 
-33. Compartilhamento de Memória Virtual — [P]
+34. Compartilhamento de Memória Virtual — [P]
 
- 33.1 Compartilhamento de Páginas — [P]
+ 34.1 Compartilhamento de Páginas — [P]
 
-  33.1.1 Páginas Compartilhadas — [P]
+  34.1.1 Páginas Compartilhadas — [P]
 	  Múltiplos processos
 	  Mesmo quadro físico
 	  Mapeamentos distintos
 	  Compartilhamento controlado
 
-  33.1.2 Bibliotecas Compartilhadas — [I]
+  34.1.2 Bibliotecas Compartilhadas — [I]
 	  Código compartilhado
 	  Dados compartilhados
 	  Redução do uso de memória
 
 
- 33.2 Memória Compartilhada — [I]
+ 34.2 Memória Compartilhada — [I]
 
-  33.2.1 Regiões Compartilhadas — [I]
+  34.2.1 Regiões Compartilhadas — [I]
 	  Mapeamentos comuns
 	  Comunicação entre processos
 	  Permissões
 
-  33.2.2 Benefícios e Riscos — [I]
+  34.2.2 Benefícios e Riscos — [I]
 	  Eficiência
 	  Comunicação
 	  Controle de acesso
@@ -1256,85 +1294,83 @@ PARTE 6 — PROTEÇÃO, COMPARTILHAMENTO E ISOLAMENTO DE PROCESSOS
 
 
 
-34. Copy-on-Write — [P]
+35. Copy-on-Write — [P]
 
- 34.1 Fundamentos do Copy-on-Write — [P]
-
-  34.1.1 Conceito de Copy-on-Write — [P]
-	  Compartilhamento inicial
-	  Cópia sob escrita
-	  Página somente leitura
-	  Criação da cópia
+ 34.1.1 Conceito de Copy-on-Write — [P]
+	Compartilhamento inicial
+	Cópia sob escrita
+	Página somente leitura
+	Criação da cópia
 
   34.1.2 Funcionamento — [P]
-	  Detecção da escrita
-	  Page fault
-	  Alocação de novo quadro
-	  Cópia dos dados
-	  Atualização do mapeamento
+	Detecção da escrita
+	Page fault
+	Alocação de novo quadro
+	Cópia dos dados
+	Atualização do mapeamento
 
 
 
-35. Memória Virtual e Mapeamento de Arquivos — [I]
+36. Memória Virtual e Mapeamento de Arquivos — [I]
 
- 35.1 Arquivos Mapeados em Memória — [I]
+ 36.1 Arquivos Mapeados em Memória — [I]
 
-  35.1.1 Conceito de Memory-Mapped Files — [I]
+  36.1.1 Conceito de Memory-Mapped Files — [I]
 	  Arquivo como região virtual
 	  Mapeamento
 	  Acesso por endereços
 	  Integração com paginação
 
-  35.1.2 Paginação de Arquivos — [P]
+  36.1.2 Paginação de Arquivos — [P]
 	  Página associada ao arquivo
 	  Page fault
 	  Carregamento
 	  Escrita de volta
 
 
- 35.2 Aplicações — [I]
+ 36.2 Aplicações — [I]
 
-  35.2.1 Compartilhamento de Arquivos — [I]
+  36.2.1 Compartilhamento de Arquivos — [I]
 	  Regiões compartilhadas
 	  Bibliotecas
 	  Dados persistentes
 
-  35.2.2 Eficiência de Acesso — [I]
+  36.2.2 Eficiência de Acesso — [I]
 	  Lazy loading
 	  Cache de páginas
 	  Redução de cópias
 
 
 
-36. Segurança e Memória Virtual — [I]
+37. Segurança e Memória Virtual — [I]
 
- 36.1 Isolamento e Proteção — [I]
+ 37.1 Isolamento e Proteção — [I]
 
-  36.1.1 Isolamento entre Processos — [I]
+  37.1.1 Isolamento entre Processos — [I]
 	  Espaços virtuais independentes
 	  Permissões
 	  Privilégios
 	  Falhas de acesso
 
-  36.1.2 Proteção do Espaço do Kernel — [I]
+  37.1.2 Proteção do Espaço do Kernel — [I]
 	  Espaço supervisor
 	  Espaço usuário
 	  Separação de privilégios
 
 
- 36.2 Mecanismos de Segurança — [I]
+ 37.2 Mecanismos de Segurança — [I]
 
-  36.2.1 NX e Proteção contra Execução — [I]
+  37.2.1 NX e Proteção contra Execução — [I]
 	  Páginas executáveis
 	  Páginas não executáveis
 	  Controle de execução
 
-  36.2.2 Isolamento de Mapeamentos — [I]
+  37.2.2 Isolamento de Mapeamentos — [I]
 	  Permissões
 	  Compartilhamento controlado
 	  Restrições de acesso
 
-  36.2.3 Guard Pages — [I]
+  37.2.3 Guard Pages — [I]
 	  Conceito
 	  Região de proteção
 	  Detecção de acesso
@@ -1342,59 +1378,58 @@ PARTE 6 — PROTEÇÃO, COMPARTILHAMENTO E ISOLAMENTO DE PROCESSOS
 	  Geração de falha
 
 
- 36.3 Aspectos Avançados de Segurança — [V]
-
-  36.3.1 Memória Virtual e Ataques — [V]
-	  Isolamento
-	  Side channels
-	  Vazamento de informação
-	  Implicações de segurança
+ 37.3 Aspectos Avançados de Segurança — [V]
+	Memória Virtual e Ataques — [V]
+	Isolamento
+	Side channels
+	Vazamento de informação
+	Implicações de segurança
 
 
 
 PARTE 7 — DESEMPENHO, VIRTUALIZAÇÃO, OTIMIZAÇÕES E ARQUITETURAS MODERNAS
 
 
-37. Desempenho da Memória Virtual — [P]
+38. Desempenho da Memória Virtual — [P]
 
- 37.1 Custos Fundamentais — [P]
+ 38.1 Custos Fundamentais — [P]
 
-  37.1.1 Custo da Tradução — [P]
+  38.1.1 Custo da Tradução — [P]
 	  Latência da MMU
 	  Acessos adicionais
 	  Page walk
 	  TLB miss
 
-  37.1.2 Custo do Page Fault — [P]
+  38.1.2 Custo do Page Fault — [P]
 	  Interrupção da execução
 	  Acesso ao armazenamento
 	  Carregamento
 	  Retomada
 
 
- 37.2 Métricas de Desempenho — [P]
+ 38.2 Métricas de Desempenho — [P]
 
-  37.2.1 Taxa de Acerto da TLB — [P]
+  38.2.1 Taxa de Acerto da TLB — [P]
 	  TLB hit rate
 	  TLB miss rate
 	  Influência na latência
 
-  37.2.2 Page Fault Rate — [P]
+  38.2.2 Page Fault Rate — [P]
 	  Taxa de falhas
 	  Frequência de acessos
 	  Impacto no tempo médio
 
 
- 37.3 Tempo Efetivo de Acesso — [P]
+ 38.3 Tempo Efetivo de Acesso — [P]
 
-  37.3.1 Effective Access Time — [P]
+  38.3.1 Effective Access Time — [P]
 	  Tempo da TLB
 	  Tempo da memória
 	  Page walk
 	  Page fault
 	  Cálculo do tempo efetivo
 
-  37.3.2 Fatores de Desempenho — [P]
+  38.3.2 Fatores de Desempenho — [P]
 	  Tamanho da TLB
 	  Tamanho das páginas
 	  Localidade
@@ -1403,46 +1438,46 @@ PARTE 7 — DESEMPENHO, VIRTUALIZAÇÃO, OTIMIZAÇÕES E ARQUITETURAS MODERNAS
 
 
 
-38. Interação entre Memória Virtual e Cache — [P]
+39. Interação entre Memória Virtual e Cache — [P]
 
- 38.1 Tradução e Cache — [P]
+ 39.1 Tradução e Cache — [P]
 
-  38.1.1 Cache Fisicamente Indexada — [P]
+  39.1.1 Cache Fisicamente Indexada — [P]
 	  Endereço físico
 	  Tradução antes da cache
 	  TLB
 	  Caminho de acesso
 
-  38.1.2 Cache Virtualmente Indexada — [I]
+  39.1.2 Cache Virtualmente Indexada — [I]
 	  Endereço virtual
 	  Indexação
 	  Problemas de aliasing
 	  Sincronização
 
 
- 38.2 TLB × Cache — [P]
+ 39.2 TLB × Cache — [P]
 
-  38.2.1 Acesso Sequencial — [P]
+  39.2.1 Acesso Sequencial — [P]
 	  TLB
 	  Tradução
 	  Cache
 	  Memória
 
-  38.2.2 Acesso Paralelo — [P]
+  39.2.2 Acesso Paralelo — [P]
 	  Índice virtual
 	  Consulta TLB
 	  Consulta cache
 	  Redução de latência
 
 
- 38.3 Problemas de Integração — [I]
+ 39.3 Problemas de Integração — [I]
 
-  38.3.1 Synonyms e Aliases — [I]
+  39.3.1 Synonyms e Aliases — [I]
 	  Múltiplos endereços virtuais
 	  Mesmo endereço físico
 	  Coerência dos dados
 
-  38.3.2 Homonyms — [I]
+  39.3.2 Homonyms — [I]
 	  Mesmo endereço virtual
 	  Diferentes espaços físicos
 	  Troca de contexto
@@ -1450,22 +1485,22 @@ PARTE 7 — DESEMPENHO, VIRTUALIZAÇÃO, OTIMIZAÇÕES E ARQUITETURAS MODERNAS
 
 
 
-39. Otimizações da Memória Virtual — [I]
+40. Otimizações da Memória Virtual — [I]
 
- 39.1 Otimização da Tradução — [P]
+ 40.1 Otimização da Tradução — [P]
 
-  39.1.1 Redução de TLB Misses — [I]
+  40.1.1 Redução de TLB Misses — [I]
 	  TLB maior
 	  Melhor localidade
 	  Páginas maiores
 	  Estruturas hierárquicas
 
-  39.1.2 Redução do Page Walk — [P]
+  40.1.2 Redução do Page Walk — [P]
 	  Cache de tabelas
 	  TLB multinível
 	  Estruturas de tradução
 
-  39.1.3 TLB Reach — [I]
+  40.1.3 TLB Reach — [I]
 	  Conceito
 	  Cobertura da TLB
 	  Capacidade da TLB
@@ -1474,74 +1509,74 @@ PARTE 7 — DESEMPENHO, VIRTUALIZAÇÃO, OTIMIZAÇÕES E ARQUITETURAS MODERNAS
 	  Relação com Huge Pages
 
 
- 39.2 Otimização do Espaço de Endereçamento — [I]
+ 10.2 Otimização do Espaço de Endereçamento — [I]
 
-  39.2.1 Grandes Páginas — [I]
+  40.2.1 Grandes Páginas — [I]
 	  Redução de entradas
 	  Maior cobertura da TLB
 	  Redução do page walk
 
-  39.2.2 Mapeamentos Eficientes — [I]
+  40.2.2 Mapeamentos Eficientes — [I]
 	  Regiões contíguas
 	  Compartilhamento
 	  Redução de estruturas
 
 
- 39.3 Compromissos de Projeto — [I]
+ 40.3 Compromissos de Projeto — [I]
 
-  39.3.1 Desempenho × Memória — [I]
+  40.3.1 Desempenho × Memória — [I]
 	  Tamanho das tabelas
 	  Tamanho da TLB
 	  Consumo de memória
 
-  39.3.2 Flexibilidade × Complexidade — [I]
+  40.3.2 Flexibilidade × Complexidade — [I]
 	  Mais níveis
 	  Mais mecanismos
 	  Maior complexidade de hardware
 
 
 
-40. Virtualização de Memória — [P]
+41. Virtualização de Memória — [P]
 
- 40.1 Fundamentos — [I]
+ 41.1 Fundamentos — [I]
 
-  40.1.1 Memória Virtualizada — [I]
+  41.1.1 Memória Virtualizada — [I]
 	  Máquina virtual
 	  Memória convidada
 	  Memória do hospedeiro
 	  Tradução adicional
 
-  40.1.2 Problema das Duas Traduções — [P]
+  41.1.2 Problema das Duas Traduções — [P]
 	  Endereço virtual do convidado
 	  Endereço físico do convidado
 	  Endereço físico do hospedeiro
 	  Tradução composta
 
 
- 40.2 Técnicas de Virtualização — [P]
+ 41.2 Técnicas de Virtualização — [P]
 
-  40.2.1 Shadow Page Tables — [P]
+  41.2.1 Shadow Page Tables — [P]
 	  Tabelas sombra
 	  Mapeamento
 	  Sincronização
 	  Sobrecarga
 
-  40.2.2 Extended/Nested Page Tables — [P]
+  41.2.2 Extended/Nested Page Tables — [P]
 	  EPT
 	  NPT
 	  Segunda camada de tradução
 	  Hardware-assisted virtualization
 
 
- 40.3 Desempenho da Virtualização — [P]
+ 41.3 Desempenho da Virtualização — [P]
 
-  40.3.1 TLB e Virtualização — [P]
+  41.3.1 TLB e Virtualização — [P]
 	  Entradas de tradução
 	  Contextos
 	  Flushes
 	  Identificadores
 
-  40.3.2 Page Walk Virtualizado — [P]
+  41.3.2 Page Walk Virtualizado — [P]
 	  Múltiplas tabelas
 	  Múltiplas traduções
 	  Latência
@@ -1549,53 +1584,53 @@ PARTE 7 — DESEMPENHO, VIRTUALIZAÇÃO, OTIMIZAÇÕES E ARQUITETURAS MODERNAS
 
 
 
-41. Memória Virtual em Arquiteturas Modernas — [I]
+42. Memória Virtual em Arquiteturas Modernas — [I]
 
- 41.1 Características Arquiteturais — [I]
+ 42.1 Características Arquiteturais — [I]
 
-  41.1.1 Espaços de Endereçamento Amplos — [I]
+  42.1.1 Espaços de Endereçamento Amplos — [I]
 	  Endereços de 64 bits
 	  Espaços virtuais extensos
 	  Espaços físicos
 	  Limitações práticas
 
-  41.1.2 Paginação Multinível Moderna — [I]
+  42.1.2 Paginação Multinível Moderna — [I]
 	  Muitos níveis
 	  Grandes páginas
 	  Tabelas hierárquicas
 	  TLBs multinível
 
 
- 41.2 Exemplos de Arquiteturas — [V]
+ 42.2 Exemplos de Arquiteturas — [V]
 
-  41.2.1 x86/x86-64 — [V]
+  42.2.1 x86/x86-64 — [V]
 	  Paginação
 	  TLB
 	  Page tables
 	  Grandes páginas
 
-  41.2.2 ARM — [V]
+  42.2.2 ARM — [V]
 	  MMU
 	  Tradução
 	  Tabelas de páginas
 	  TLB
 
-  41.2.3 RISC-V — [V]
+  42.2.3 RISC-V — [V]
 	  Espaços virtuais
 	  Paginação
 	  Tabelas multinível
 	  Tradução
 
 
- 41.3 Evolução dos Mecanismos — [V]
+ 42.3 Evolução dos Mecanismos — [V]
 
-  41.3.1 Tendências — [V]
+  42.3.1 Tendências — [V]
 	  Espaços maiores
 	  Traduções mais eficientes
 	  Virtualização
 	  Segurança
 
-  41.3.2 Desafios Modernos — [I]
+  42.3.2 Desafios Modernos — [I]
 	  Latência
 	  Consumo de memória
 	  Complexidade
@@ -1603,30 +1638,30 @@ PARTE 7 — DESEMPENHO, VIRTUALIZAÇÃO, OTIMIZAÇÕES E ARQUITETURAS MODERNAS
 
 
 
-42. Memória Virtual e I/O — [I]
+43. Memória Virtual e I/O — [I]
 
- 42.1 Endereços Virtuais e Dispositivos — [I]
+ 43.1 Endereços Virtuais e Dispositivos — [I]
 
-  42.1.1 Acesso à Memória por Dispositivos — [I]
+  43.1.1 Acesso à Memória por Dispositivos — [I]
 	  Endereços físicos
 	  Endereços virtuais
 	  DMA
 	  Mapeamento
 
-  42.1.2 Problemas de Tradução para I/O — [I]
+  43.1.2 Problemas de Tradução para I/O — [I]
 	  Acesso de dispositivos
 	  Isolamento
 	  Tradução para I/O
 
 
- 42.2 IOMMU — [V]
+ 43.2 IOMMU — [V]
 
-  42.2.1 Conceito de IOMMU — [V]
+  43.2.1 Conceito de IOMMU — [V]
 	  Tradução de endereços para dispositivos
 	  Isolamento de DMA
 	  Proteção
 
-  42.2.2 Relação com a Memória Virtual — [V]
+  43.2.2 Relação com a Memória Virtual — [V]
 	  Tradução de endereços
 	  Proteção
 	  Virtualização
@@ -1637,11 +1672,11 @@ PARTE 7 — DESEMPENHO, VIRTUALIZAÇÃO, OTIMIZAÇÕES E ARQUITETURAS MODERNAS
 PARTE 8 — IMPLEMENTAÇÃO, INTEGRAÇÃO, REVISÃO GERAL E CONSOLIDAÇÃO DA MEMÓRIA VIRTUAL
 
 
-43. Projeto Conceitual de um Sistema de Memória Virtual — [P]
+44. Projeto Conceitual de um Sistema de Memória Virtual — [P]
 
- 43.1 Elementos Fundamentais — [P]
+ 44.1 Elementos Fundamentais — [P]
 
-  43.1.1 Componentes — [P]
+  44.1.1 Componentes — [P]
 	  CPU
 	  MMU
 	  TLB
@@ -1649,7 +1684,7 @@ PARTE 8 — IMPLEMENTAÇÃO, INTEGRAÇÃO, REVISÃO GERAL E CONSOLIDAÇÃO DA ME
 	  Memória física
 	  Armazenamento
 
-  43.1.2 Parâmetros — [P]
+  44.1.2 Parâmetros — [P]
 	  Tamanho do endereço virtual
 	  Tamanho do endereço físico
 	  Tamanho da página
@@ -1657,15 +1692,15 @@ PARTE 8 — IMPLEMENTAÇÃO, INTEGRAÇÃO, REVISÃO GERAL E CONSOLIDAÇÃO DA ME
 	  Tamanho da TLB
 
 
- 43.2 Funcionamento Projetado — [P]
+ 44.2 Funcionamento Projetado — [P]
 
-  43.2.1 Tradução — [P]
+  44.2.1 Tradução — [P]
 	  Divisão do endereço
 	  Consulta à TLB
 	  Page walk
 	  Formação do endereço físico
 
-  43.2.2 Falha de Página — [P]
+  44.2.2 Falha de Página — [P]
 	  Detecção
 	  Tratamento
 	  Alocação
@@ -1673,25 +1708,25 @@ PARTE 8 — IMPLEMENTAÇÃO, INTEGRAÇÃO, REVISÃO GERAL E CONSOLIDAÇÃO DA ME
 	  Retomada
 
 
- 43.3 Avaliação do Projeto — [I]
+ 44.3 Avaliação do Projeto — [I]
 
-  43.3.1 Desempenho — [I]
+  44.3.1 Desempenho — [I]
 	  Latência
 	  Taxa de TLB hit
 	  Page fault rate
 
-  43.3.2 Eficiência — [I]
+  44.3.2 Eficiência — [I]
 	  Espaço das tabelas
 	  Uso de memória
 	  Complexidade
 
 
 
-44. Estudo Integrado de Casos de Acesso à Memória — [P]
+45. Estudo Integrado de Casos de Acesso à Memória — [P]
 
- 44.1 Acesso Simples — [P]
+ 45.1 Acesso Simples — [P]
 
-  44.1.1 Página Presente e TLB Hit — [P]
+  45.1.1 Página Presente e TLB Hit — [P]
 	  Endereço virtual
 	  TLB
 	  Quadro
@@ -1699,9 +1734,9 @@ PARTE 8 — IMPLEMENTAÇÃO, INTEGRAÇÃO, REVISÃO GERAL E CONSOLIDAÇÃO DA ME
 	  Acesso
 
 
- 44.2 Acesso com TLB Miss — [P]
+ 45.2 Acesso com TLB Miss — [P]
 
-  44.2.1 Page Walk Completo — [P]
+  45.2.1 Page Walk Completo — [P]
 	  TLB miss
 	  Níveis da tabela
 	  PTE
@@ -1709,46 +1744,44 @@ PARTE 8 — IMPLEMENTAÇÃO, INTEGRAÇÃO, REVISÃO GERAL E CONSOLIDAÇÃO DA ME
 	  Acesso
 
 
- 44.3 Acesso com Page Fault — [P]
+ 45.3 Acesso com Page Fault — [P]
+	Caminho Completo da Falha
+	Página ausente
+	Exceção
+	Escolha do quadro
+	Carregamento
+	Atualização
+	Retomada
 
-  44.3.1 Caminho Completo da Falha — [P]
-	  Página ausente
-	  Exceção
-	  Escolha do quadro
-	  Carregamento
-	  Atualização
-	  Retomada
 
-
- 44.4 Acesso com Violação — [P]
-
-  44.4.1 Falha de Proteção — [P]
-	  Permissão
-	  Tentativa de acesso
-	  Exceção
-	  Tratamento
+ 45.4 Acesso com Violação — [P]
+	Falha de Proteção
+	Permissão
+	Tentativa de acesso
+	Exceção
+	Tratamento
 
 
 
-45. Integração do Funcionamento da Memória Virtual — [P]
+46. Integração do Funcionamento da Memória Virtual — [P]
 
  45.1 Fluxo Completo de um Acesso — [P]
 
-  45.1.1 Acesso com TLB Hit — [P]
+  46.1.1 Acesso com TLB Hit — [P]
 	  CPU gera endereço virtual
 	  Consulta da TLB
 	  Obtenção do quadro
 	  Formação do endereço físico
 	  Acesso à memória
 
-  45.1.2 Acesso com TLB Miss — [P]
+  46.1.2 Acesso com TLB Miss — [P]
 	  Consulta da TLB
 	  Page walk
 	  Consulta das tabelas
 	  Atualização da TLB
 	  Acesso à memória
 
-  45.1.3 Acesso com Page Fault — [P]
+  46.1.3 Acesso com Page Fault — [P]
 	  Detecção da página ausente
 	  Exceção
 	  Tratamento
@@ -1757,21 +1790,21 @@ PARTE 8 — IMPLEMENTAÇÃO, INTEGRAÇÃO, REVISÃO GERAL E CONSOLIDAÇÃO DA ME
 	  Retomada
 
 
- 45.2 Fluxo Integrado dos Componentes — [P]
+ 46.2 Fluxo Integrado dos Componentes — [P]
 
-  45.2.1 CPU, MMU e TLB — [P]
+  46.2.1 CPU, MMU e TLB — [P]
 	  Geração do endereço
 	  Tradução
 	  Cache de tradução
 	  Controle
 
-  45.2.2 MMU, Tabelas e Memória — [P]
+  46.2.2 MMU, Tabelas e Memória — [P]
 	  Page walk
 	  PTE
 	  Endereço físico
 	  Acesso
 
-  45.2.3 Memória Principal e Armazenamento — [P]
+  46.2.3 Memória Principal e Armazenamento — [P]
 	  Página residente
 	  Página não residente
 	  Carregamento
@@ -1781,42 +1814,42 @@ PARTE 8 — IMPLEMENTAÇÃO, INTEGRAÇÃO, REVISÃO GERAL E CONSOLIDAÇÃO DA ME
 
 46. Integração dos Mecanismos de Gerenciamento — [I]
 
- 46.1 Ciclo de Vida de uma Página — [P]
+ 47.1 Ciclo de Vida de uma Página — [P]
 
-  46.1.1 Criação e Mapeamento — [P]
+  47.1.1 Criação e Mapeamento — [P]
 	  Espaço virtual
 	  Página virtual
 	  PTE
 	  Quadro físico
 
-  46.1.2 Uso e Modificação — [P]
+  47.1.2 Uso e Modificação — [P]
 	  Referência
 	  Acesso
 	  Modificação
 	  Bits de estado
 
-  46.1.3 Substituição e Retorno — [P]
+  47.1.3 Substituição e Retorno — [P]
 	  Seleção da vítima
 	  Escrita
 	  Remoção
 	  Novo carregamento
 
 
- 46.2 Relações entre os Mecanismos — [I]
+ 47.2 Relações entre os Mecanismos — [I]
 
-  46.2.1 Paginação × TLB — [I]
+  47.2.1 Paginação × TLB — [I]
 	  Tradução
 	  Cache de tradução
 	  Miss
 	  Atualização
 
-  46.2.2 TLB × Page Fault — [I]
+  47.2.2 TLB × Page Fault — [I]
 	  TLB miss
 	  Consulta à tabela
 	  Página ausente
 	  Exceção
 
-  46.2.3 Paginação × Substituição — [I]
+  47.2.3 Paginação × Substituição — [I]
 	  Quadros
 	  Páginas residentes
 	  Vítimas
@@ -1824,42 +1857,42 @@ PARTE 8 — IMPLEMENTAÇÃO, INTEGRAÇÃO, REVISÃO GERAL E CONSOLIDAÇÃO DA ME
 
 
 
-47. Relações da Memória Virtual com Outros Conceitos da Arquitetura — [I]
+48. Relações da Memória Virtual com Outros Conceitos da Arquitetura — [I]
 
- 47.1 Relações Fundamentais — [I]
+ 48.1 Relações Fundamentais — [I]
 
-  47.1.1 Memória Virtual × Hierarquia de Memória — [I]
+  48.1.1 Memória Virtual × Hierarquia de Memória — [I]
 	  Localidade
 	  Cache
 	  Memória principal
 	  Armazenamento
 
-  47.1.2 Memória Virtual × Processadores — [I]
+  48.1.2 Memória Virtual × Processadores — [I]
 	  MMU
 	  TLB
 	  Exceções
 	  Modos de execução
 
-  47.1.3 Memória Virtual × Sistema Operacional — [I]
+  48.1.3 Memória Virtual × Sistema Operacional — [I]
 	  Gerenciamento
 	  Tabelas
 	  Page faults
 	  Processos
 
 
- 47.2 Relações Complementares — [I]
+ 48.2 Relações Complementares — [I]
 
-  47.2.1 Memória Virtual × Proteção — [I]
+  48.2.1 Memória Virtual × Proteção — [I]
 	  Isolamento
 	  Permissões
 	  Privilégios
 
-  47.2.2 Memória Virtual × Virtualização — [I]
+  48.2.2 Memória Virtual × Virtualização — [I]
 	  Tradução adicional
 	  Máquinas virtuais
 	  EPT/NPT
 
-  47.2.3 Memória Virtual × Desempenho — [I]
+  48.2.3 Memória Virtual × Desempenho — [I]
 	  TLB
 	  Page faults
 	  Latência
@@ -1867,48 +1900,48 @@ PARTE 8 — IMPLEMENTAÇÃO, INTEGRAÇÃO, REVISÃO GERAL E CONSOLIDAÇÃO DA ME
 
 
 
-48. Análise Comparativa dos Principais Mecanismos — [I]
+49. Análise Comparativa dos Principais Mecanismos — [I]
 
- 48.1 Paginação e Segmentação — [I]
+ 49.1 Paginação e Segmentação — [I]
 
-  48.1.1 Características Comparadas — [I]
+  49.1.1 Características Comparadas — [I]
 	  Unidade de gerenciamento
 	  Organização
 	  Tradução
 	  Proteção
 
-  48.1.2 Vantagens e Limitações — [I]
+  49.1.2 Vantagens e Limitações — [I]
 	  Fragmentação
 	  Flexibilidade
 	  Complexidade
 	  Aplicações
 
 
- 48.2 Algoritmos de Substituição — [I]
+ 49.2 Algoritmos de Substituição — [I]
 
-  48.2.1 Comparação entre Algoritmos — [I]
+  49.2.1 Comparação entre Algoritmos — [I]
 	  FIFO
 	  Ótimo
 	  LRU
 	  Clock
 	  Segunda chance
 
-  48.2.2 Critérios de Avaliação — [I]
+  49.2.2 Critérios de Avaliação — [I]
 	  Page fault rate
 	  Custo de implementação
 	  Precisão
 	  Desempenho
 
 
- 48.3 Estruturas de Tradução — [I]
+ 49.3 Estruturas de Tradução — [I]
 
-  48.3.1 Tabela Simples × Multinível — [I]
+  49.3.1 Tabela Simples × Multinível — [I]
 	  Espaço ocupado
 	  Complexidade
 	  Page walk
 	  Escalabilidade
 
-  48.3.2 TLB Simples × Hierárquica — [I]
+  49.3.2 TLB Simples × Hierárquica — [I]
 	  Capacidade
 	  Latência
 	  Taxa de acerto
@@ -1916,18 +1949,18 @@ PARTE 8 — IMPLEMENTAÇÃO, INTEGRAÇÃO, REVISÃO GERAL E CONSOLIDAÇÃO DA ME
 
 
 
-49. Revisão Geral e Consolidação dos Conceitos da Memória Virtual — [I]
+50. Revisão Geral e Consolidação dos Conceitos da Memória Virtual — [I]
 
- 49.1 Revisão dos Fundamentos — [I]
+ 50.1 Revisão dos Fundamentos — [I]
 
-  49.1.1 Conceitos Essenciais — [I]
+  50.1.1 Conceitos Essenciais — [I]
 	  Memória virtual
 	  Espaço virtual
 	  Espaço físico
 	  Tradução de endereços
 	  MMU
 
-  49.1.2 Paginação e Estruturas — [I]
+  50.1.2 Paginação e Estruturas — [I]
 	  Página
 	  Quadro
 	  Deslocamento
@@ -1936,46 +1969,46 @@ PARTE 8 — IMPLEMENTAÇÃO, INTEGRAÇÃO, REVISÃO GERAL E CONSOLIDAÇÃO DA ME
 	  TLB
 
 
- 49.2 Revisão dos Mecanismos de Tradução e Falhas — [I]
+50.2 Revisão dos Mecanismos de Tradução e Falhas — [I]
 
-  49.2.1 Processo de Tradução — [I]
+  50.2.1 Processo de Tradução — [I]
 	  Endereço virtual
 	  TLB
 	  Page table
 	  Page walk
 	  Endereço físico
 
-  49.2.2 Falhas de Tradução — [I]
+  50.2.2 Falhas de Tradução — [I]
 	  TLB miss
 	  Page fault
 	  Protection fault
 
 
- 49.3 Revisão do Gerenciamento e Desempenho — [I]
+ 50.3 Revisão do Gerenciamento e Desempenho — [I]
 
-  49.3.1 Gerenciamento de Páginas — [I]
+  50.3.1 Gerenciamento de Páginas — [I]
 	  Alocação
 	  Substituição
 	  Estados
 	  Working set
 
-  49.3.2 Gargalos de Desempenho — [P]
+  50.3.2 Gargalos de Desempenho — [P]
 	  TLB miss
 	  Page fault
 	  Thrashing
 	  Latência
 
 
- 49.4 Revisão dos Mecanismos Avançados — [I]
+ 50.4 Revisão dos Mecanismos Avançados — [I]
 
-  49.4.1 Proteção e Compartilhamento — [I]
+  50.4.1 Proteção e Compartilhamento — [I]
 	  Isolamento
 	  Permissões
 	  Privilégios
 	  Copy-on-Write
 	  Memória compartilhada
 
-  49.4.2 Otimizações e Virtualização — [I]
+  50.4.2 Otimizações e Virtualização — [I]
 	  TLBs multinível
 	  Grandes páginas
 	  Cache de traduções
@@ -1983,36 +2016,35 @@ PARTE 8 — IMPLEMENTAÇÃO, INTEGRAÇÃO, REVISÃO GERAL E CONSOLIDAÇÃO DA ME
 	  EPT/NPT
 
 
- 49.5 Trade-offs de Projeto — [I]
-
-  49.5.1 Compromissos Fundamentais — [I]
-	  Páginas pequenas × grandes
-	  Tabelas simples × multinível
-	  Proteção × flexibilidade
-
+ 50.5 Trade-offs de Projeto — [I]
+	Compromissos Fundamentais
+	Páginas pequenas × grandes
+	Tabelas simples × multinível
+	Proteção × flexibilidade
 
 
-50. Conclusão do Estudo da Memória Virtual — [V]
 
- 50.1 Síntese Final — [V]
+51. Conclusão do Estudo da Memória Virtual — [V]
 
-  50.1.1 O Papel da Memória Virtual — [V]
+ 51.1 Síntese Final — [V]
+
+  51.1.1 O Papel da Memória Virtual — [V]
 	  Abstração do espaço de memória
 	  Tradução de endereços
 	  Gerenciamento da memória
 	  Proteção
 	  Compartilhamento
 
-  50.1.2 Importância para Arquitetura e Organização de Computadores — [V]
+  51.1.2 Importância para Arquitetura e Organização de Computadores — [V]
 	  Compreensão da hierarquia de memória
 	  Entendimento da MMU
 	  Entendimento da tradução de endereços
 	  Base para sistemas computacionais modernos
 
 
- 50.2 Competências Desenvolvidas — [V]
+ 51.2 Competências Desenvolvidas — [V]
 
-  50.2.1 Conhecimentos Adquiridos — [V]
+  51.2.1 Conhecimentos Adquiridos — [V]
 	  Espaços de endereçamento
 	  Paginação
 	  Tabelas de páginas
@@ -2025,7 +2057,7 @@ PARTE 8 — IMPLEMENTAÇÃO, INTEGRAÇÃO, REVISÃO GERAL E CONSOLIDAÇÃO DA ME
 	  Desempenho
 	  Virtualização
 
-  50.2.2 Preparação para Estudos Posteriores — [V]
+  51.2.2 Preparação para Estudos Posteriores — [V]
 	  Hierarquia de memória
 	  Cache
 	  Sistemas operacionais
@@ -2035,14 +2067,12 @@ PARTE 8 — IMPLEMENTAÇÃO, INTEGRAÇÃO, REVISÃO GERAL E CONSOLIDAÇÃO DA ME
 	  Gerenciamento de memória
 
 
- 50.3 Encerramento — [V]
-
-  50.3.1 Visão Geral Final — [V]
-	  Integração dos conceitos
-	  Relação entre hardware e software
-	  Tradução de endereços
-	  Gerenciamento de páginas
-	  Proteção e isolamento
-	  Desempenho
-	  Evolução tecnológica
-	  Continuidade dos estudos
+ 51.3 Encerramento — [V]
+	Integração dos conceitos
+	Relação entre hardware e software
+	Tradução de endereços
+	Gerenciamento de páginas
+	Proteção e isolamento
+	Desempenho
+	Evolução tecnológica
+	Continuidade dos estudos
