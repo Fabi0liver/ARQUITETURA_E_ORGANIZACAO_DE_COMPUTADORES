@@ -950,6 +950,15 @@ PARTE 9 — INSTRUÇÕES ARITMÉTICAS, LÓGICAS E DE DADOS
 	  XOR
 	  NOT
 
+  37.1.2 Operações de Manipulação de Bits — [P]
+	  Teste de bits
+	  Definição de bits
+	  Limpeza de bits
+	  Inversão de bits
+	  Máscaras de bits
+	  Extração de campos de bits
+	  Inserção de campos de bits
+
 
  37.2 Instruções de Deslocamento e Rotação — [P]
 
@@ -965,29 +974,41 @@ PARTE 9 — INSTRUÇÕES ARITMÉTICAS, LÓGICAS E DE DADOS
 
 
 
+
 38. Instruções de Comparação — [I]
 
  38.1 Comparação de Valores — [I]
-
-  38.1.1 Instruções de Comparação — [I]
-	  Comparação entre registradores
-	  Comparação com valor imediato
-	  Atualização de flags de comparação
+	Comparação entre registradores
+	Comparação com valor imediato
+	Comparação aritmética
+	Comparação com e sem sinal
+	Comparação por igualdade
+	Comparação por ordem
+	Relação entre comparação e flags
+	Comparação utilizada por desvios condicionais
+	Atualização de flags de comparação
 
 
 
 39. Instruções de Manipulação de Dados — [I]
 
  39.1 Movimentação e Conversão de Dados — [I]
+	Instruções de Movimentação
+	Cópia entre registradores
+	Extensão de sinal
+	Truncamento de valores
 
-  39.1.1 Instruções de Movimentação — [I]
-	  Cópia entre registradores
-	  Extensão de sinal
-	  Truncamento de valores
 
-  39.1.2 Instruções de Conversão de Tipo — [I]
-	  Conversão entre inteiros
-	  Conversão entre inteiro e ponto flutuante
+  39.2 Instruções de Conversão de Tipo — [I]
+	Conversão entre inteiros
+	Conversão entre inteiro e ponto flutuante
+	Inteiros com e sem sinal
+	Extensão de sinal
+	Extensão por zero
+	Truncamento
+	Conversão inteiro → ponto flutuante
+	Conversão ponto flutuante → inteiro
+	Conversão entre diferentes larguras
 
 
 
