@@ -617,6 +617,14 @@ PARTE 4 — TOPOLOGIAS HIERÁRQUICAS, ESTRUTURADAS, DIRETAS E INDIRETAS
   21.1.2 Estrutura Multiestágio — [P]
 	  Organização em estágios de switches
 	  Caminhos entre estágios
+	  Redes Butterfly
+	  Redes Banyan
+	  Redes Omega
+	  Redes Shuffle-Exchange
+	  Redes Benes
+	  Redes bloqueantes
+	  Redes não bloqueantes
+	  Redes rearranjavelmente não bloqueantes
 
 
  21.2 Características — [P]
@@ -794,13 +802,17 @@ PARTE 6 — MÉTRICAS, PROPRIEDADES E CARACTERÍSTICAS DAS TOPOLOGIAS
   28.1.2 Impacto do Grau — [P]
 	  Relação com a escalabilidade
 	  Relação com a complexidade dos nós
+	  Grau máximo e grau mínimo
+	  Relação entre grau máximo e grau mínimo
 
 
  28.2 Número de Enlaces — [P]
-
-  28.2.1 Contagem de Enlaces — [P]
-	  Total de enlaces na topologia
-	  Relação com o custo de cabeamento
+	Contagem de Enlaces	
+	Total de enlaces na topologia
+	Relação com o custo de cabeamento
+	Custo de enlaces por nó
+	Custo total de enlaces
+	Relação entre número de nós e número de enlaces
 
 
 
@@ -812,6 +824,8 @@ PARTE 6 — MÉTRICAS, PROPRIEDADES E CARACTERÍSTICAS DAS TOPOLOGIAS
 	  Definição
 	  Corte da rede ao meio
 	  Relação com a capacidade de comunicação
+	  Largura de banda de bisseção
+	  Diferença entre largura de bisseção e largura de banda de bisseção
 
   29.1.2 Importância da Largura de Bisseção — [P]
 	  Indicador de desempenho global
@@ -819,10 +833,11 @@ PARTE 6 — MÉTRICAS, PROPRIEDADES E CARACTERÍSTICAS DAS TOPOLOGIAS
 
 
  29.2 Custo e Eficiência — [P]
-
-  29.2.1 Relação Custo-Desempenho — [P]
-	  Número de enlaces versus desempenho
-	  Trade-offs de projeto
+	Relação Custo-Desempenho
+	Número de enlaces versus desempenho
+	Trade-offs de projeto
+	Eficiência topológica
+	Relação entre custo estrutural e capacidade de comunicação
 
 
 
@@ -840,10 +855,9 @@ PARTE 6 — MÉTRICAS, PROPRIEDADES E CARACTERÍSTICAS DAS TOPOLOGIAS
 
 
  30.2 Modularidade e Escalabilidade Estrutural — [I]
-
-  30.2.1 Modularidade — [I]
-	  Facilidade de expansão em blocos
-	  Reutilização de estrutura
+	Modularidade
+	Facilidade de expansão em blocos
+	Reutilização de estrutura
 
 
 
@@ -881,13 +895,17 @@ PARTE 6 — MÉTRICAS, PROPRIEDADES E CARACTERÍSTICAS DAS TOPOLOGIAS
   32.1.2 Distância Média — [P]
 	  Definição
 	  Relação com a latência típica
+	  Distância média entre pares de nós
+	  Relação entre distância média e latência típica
 
 
  32.2 Caminhos entre Nós — [P]
-
-  32.2.1 Número de Saltos (Hops) — [P]
-	  Definição
-	  Relação com o atraso de comunicação
+	Definição
+	Número de Saltos (Hops)
+	Relação com o atraso de comunicação
+	Caminho mínimo
+	Número de caminhos mínimos
+	Relação entre número de hops e custo de comunicação
 
 
 
