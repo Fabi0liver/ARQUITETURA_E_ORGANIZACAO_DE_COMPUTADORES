@@ -218,9 +218,6 @@ PARTE 2 — ESTRUTURA E COMPONENTES DE UMA INSTRUÇÃO
 	  Operandos em memória
 	  Operandos explícitos
 	  Operandos implícitos
-	  Operandos em registradores
-	  Operandos imediatos
-	  Operandos em memória
 	  Operandos implícitos no PC
 	  Operandos implícitos em registradores especiais
 
