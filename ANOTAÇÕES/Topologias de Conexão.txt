@@ -961,25 +961,58 @@ PARTE 7 — ROTEAMENTO, COMUNICAÇÃO E FLUXO DE DADOS NAS TOPOLOGIAS
 	  Definição
 	  Decisão em cada nó intermediário
 
+   
+ 34.3 Algoritmos de Roteamento — [P]
+
+  34.3.1 Roteamento por Caminho Mínimo — [P]
+	  Definição
+	  Seleção do menor caminho
+	  Relação com o número de hops
+
+  34.3.2 Dimension-Order Routing — [P]
+	  Conceito
+	  Roteamento XY
+	  Aplicação em Mesh
+	  Vantagens e limitações
+
+  34.3.3 Roteamento Adaptativo — [P]
+	  Roteamento adaptativo mínimo
+	  Roteamento adaptativo não mínimo
+	  Seleção de caminhos conforme o congestionamento
+
+  34.3.4 Roteamento Tolerante a Falhas — [P]
+	  Desvio de enlaces ou nós com falha
+	  Seleção de caminhos alternativos
+	  Relação com tolerância a falhas
+
 
 
 35. Técnicas de Comutação (Switching Techniques) — [P]
 
  35.1 Comutação de Circuitos — [P]
-
-  35.1.1 Conceito de Comutação de Circuitos — [P]
-	  Definição
-	  Estabelecimento prévio do caminho
-	  Reserva de recursos
+	Conceito de Comutação de Circuitos — [P]
+	Estabelecimento prévio do caminho
+	Reserva de recursos
+	Virtual Cut-Through
 
 
  35.2 Comutação de Pacotes — [P]
 
-  35.2.1 Store-and-Forward — [P]
+  35.2.1 Estrutura das Unidades de Comunicação — [P]
+	  Mensagem
+	  Pacote
+	  Flit (Flow Control Unit)
+	  Cabeçalho
+	  Payload
+	  Fragmentação de mensagens
+	  Fragmentação em flits
+	  Relação entre mensagem, pacote e flit
+
+  35.2.2 Store-and-Forward — [P]
 	  Definição
 	  Armazenamento completo antes do envio
 
-  35.2.2 Wormhole e Cut-Through — [P]
+  35.2.3 Wormhole e Cut-Through — [P]
 	  Definição
 	  Encaminhamento parcial
 	  Redução de latência
@@ -1005,6 +1038,24 @@ PARTE 7 — ROTEAMENTO, COMUNICAÇÃO E FLUXO DE DADOS NAS TOPOLOGIAS
   36.2.2 Controle por Handshaking — [I]
 	  Definição
 	  Sinalização entre transmissor e receptor
+
+   
+ 36.3 Canais Virtuais — [P]
+
+  36.3.1 Funcionamento dos Canais Virtuais — [P]
+	  Conceito de canal virtual
+	  Compartilhamento de um canal físico
+	  Buffers associados aos canais virtuais
+	  Multiplexação de canais virtuais
+
+  36.3.2 Canais Virtuais e Desempenho — [P]
+	  Redução de contenção
+	  Compartilhamento de recursos
+	  Impacto sobre latência e throughput
+
+  36.3.3 Canais Virtuais e Deadlock — [P]
+	  Dependência entre canais
+	  Uso de canais virtuais para evitar deadlock
 
 
 
