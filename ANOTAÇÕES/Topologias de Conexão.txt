@@ -659,10 +659,9 @@ PARTE 5 — TOPOLOGIAS ESTÁTICAS, DINÂMICAS E MECANISMOS DE INTERCONEXÃO
 
 
  22.2 Características — [I]
-
-  22.2.1 Vantagens e Limitações — [I]
-	  Simplicidade de controle
-	  Falta de flexibilidade
+	Vantagens e Limitações
+	Simplicidade de controle
+	Falta de flexibilidade
 
 
 
@@ -682,10 +681,9 @@ PARTE 5 — TOPOLOGIAS ESTÁTICAS, DINÂMICAS E MECANISMOS DE INTERCONEXÃO
 
 
  23.2 Características — [I]
-
-  23.2.1 Vantagens e Limitações — [I]
-	  Maior flexibilidade
-	  Maior complexidade de controle
+	Vantagens e Limitações
+	Maior flexibilidade
+	Maior complexidade de controle
 
 
 
@@ -704,10 +702,9 @@ PARTE 5 — TOPOLOGIAS ESTÁTICAS, DINÂMICAS E MECANISMOS DE INTERCONEXÃO
 
 
  24.2 Funcionamento — [I]
-
-  24.2.1 Estabelecimento de Caminhos — [I]
-	  Configuração do caminho
-	  Liberação do caminho
+	Estabelecimento de Caminhos
+	Configuração do caminho
+	Liberação do caminho
 
 
 
@@ -725,11 +722,10 @@ PARTE 5 — TOPOLOGIAS ESTÁTICAS, DINÂMICAS E MECANISMOS DE INTERCONEXÃO
 
 
  25.2 Critérios de Escolha — [I]
-
-  25.2.1 Fatores Determinantes — [I]
-	  Número de nós
-	  Exigência de desempenho
-	  Custo do sistema
+	Fatores Determinantes
+	Número de nós
+	Exigência de desempenho
+	Custo do sistema
 
 
 
@@ -784,6 +780,39 @@ PARTE 5 — TOPOLOGIAS ESTÁTICAS, DINÂMICAS E MECANISMOS DE INTERCONEXÃO
 	  Consumo de energia
 	  Área ocupada no chip
 	  Complexidade de projeto
+
+
+ 27.3 Arquitetura Interna de uma NoC — [P]
+
+  27.3.1 Componentes do Roteador NoC — [P]
+	  Portas de entrada e saída
+	  Buffers
+	  Crossbar interno
+	  Unidade de roteamento
+	  Unidade de arbitragem
+
+  27.3.2 Comunicação em uma NoC — [P]
+	  Pacotes e flits
+	  Canais virtuais
+	  Roteamento
+	  Controle de fluxo
+	  Arbitragem
+
+  
+ 27.4 Topologias de NoC — [P]
+
+  27.4.1 Topologias Comuns — [P]
+	  Mesh
+	  Torus
+	  Ring
+	  Tree
+	  Fat-Tree
+
+  27.4.2 Variações de Topologias de NoC — [P]
+	  Mesh 2D
+	  Mesh 3D
+	  Topologias hierárquicas
+	  Topologias customizadas
 
 
 
@@ -876,10 +905,9 @@ PARTE 6 — MÉTRICAS, PROPRIEDADES E CARACTERÍSTICAS DAS TOPOLOGIAS
 
 
  31.2 Caminhos Alternativos — [P]
-
-  31.2.1 Redundância de Caminhos — [P]
-	  Múltiplos caminhos entre nós
-	  Benefícios para a confiabilidade
+	Redundância de Caminhos
+	Múltiplos caminhos entre nós
+	Benefícios para a confiabilidade
 
 
 
@@ -928,11 +956,10 @@ PARTE 7 — ROTEAMENTO, COMUNICAÇÃO E FLUXO DE DADOS NAS TOPOLOGIAS
 
 
  33.2 Objetivos do Roteamento — [P]
-
-  33.2.1 Metas Principais — [P]
-	  Minimizar latência
-	  Evitar congestionamento
-	  Balancear carga
+	Metas Principais
+	Minimizar latência
+	Evitar congestionamento
+	Balancear carga
 
 
 
@@ -1193,19 +1220,16 @@ PARTE 8 — DESEMPENHO, LATÊNCIA, LARGURA DE BANDA, CONTENÇÃO E ESCALABILIDAD
 41. Escalabilidade das Topologias — [I]
 
  41.1 Fundamentos — [I]
-
-  41.1.1 Conceito de Escalabilidade — [I]
-	  Definição
-	  Capacidade de crescimento sem degradação
+	Conceito de Escalabilidade
+	Definição
+	Capacidade de crescimento sem degradação
 
 
  41.2 Fatores de Escalabilidade — [I]
-
-  41.2.1 Crescimento do Grau do Nó — [I]
-	  Impacto no custo de expansão
-
-  41.2.2 Crescimento do Diâmetro — [I]
-	  Impacto na latência conforme o sistema cresce
+	Crescimento do Grau do Nó
+	Impacto no custo de expansão
+	Crescimento do Diâmetro 
+	Impacto na latência conforme o sistema cresce
 
 
 
@@ -1222,27 +1246,23 @@ PARTE 9 — CONFIABILIDADE, REDUNDÂNCIA E TOLERÂNCIA A FALHAS
 
 
  42.2 Fatores que Afetam a Confiabilidade — [I]
-
-  42.2.1 Pontos Únicos de Falha — [I]
-	  Identificação de pontos críticos
-	  Impacto na disponibilidade
+	Pontos Únicos de Falha
+	Identificação de pontos críticos
+	Impacto na disponibilidade
 
 
 
 43. Redundância e Caminhos Alternativos — [I]
 
  43.1 Fundamentos — [I]
-
-  43.1.1 Conceito de Redundância — [I]
-	  Definição
-	  Duplicação de caminhos e componentes
+	Conceito de Redundância
+	Duplicação de caminhos e componentes
 
 
  43.2 Aplicações da Redundância — [I]
-
-  43.2.1 Caminhos Alternativos — [I]
-	  Uso em caso de falha
-	  Continuidade da comunicação
+	Caminhos Alternativos
+	Uso em caso de falha
+	Continuidade da comunicação
 
 
 
@@ -1286,68 +1306,59 @@ PARTE 10 — TOPOLOGIAS EM MULTIPROCESSADORES, MULTICORE, REDES E SISTEMAS COMPU
 45. Topologias em Sistemas Multiprocessados — [I]
 
  45.1 Fundamentos — [I]
-
-  45.1.1 Necessidade de Interconexão em Multiprocessadores — [I]
-	  Comunicação entre processadores
-	  Compartilhamento de memória
+	Necessidade de Interconexão em Multiprocessadores
+	Comunicação entre processadores
+	Compartilhamento de memória
 
 
  45.2 Topologias Comuns — [I]
-
-  45.2.1 Uso de Malhas e Torus — [I]
-	  Aplicação em sistemas de grande escala
-
-  45.2.2 Uso de Redes Multiestágio — [I]
-	  Aplicação em sistemas de médio porte
+	Uso de Malhas e Torus
+	Aplicação em sistemas de grande escala
+	Uso de Redes Multiestágio
+	Aplicação em sistemas de médio porte
 
 
 
 46. Topologias em Processadores Multicore e Many-core — [I]
 
  46.1 Fundamentos — [I]
-
-  46.1.1 Interconexão entre Núcleos — [I]
-	  Comunicação intra-chip
-	  Compartilhamento de cache
+	Interconexão entre Núcleos
+	Comunicação intra-chip
+	Compartilhamento de cache
 
 
  46.2 Topologias Aplicadas — [I]
-
-  46.2.1 Uso de NoC em Multicore — [I]
-	  Vantagens em relação ao barramento
-	  Escalabilidade em muitos núcleos
+	Uso de NoC em Multicore
+	Vantagens em relação ao barramento
+	Escalabilidade em muitos núcleos
 
 
 
 47. Topologias em Clusters e Supercomputadores — [V]
 
  47.1 Fundamentos — [V]
-
-  47.1.1 Interconexão em Clusters — [V]
-	  Comunicação entre nós do cluster
-	  Requisitos de desempenho
+	Interconexão em Clusters
+	Comunicação entre nós do cluster
+	Requisitos de desempenho
 
 
  47.2 Topologias Utilizadas — [V]
-
-  47.2.1 Fat-Tree e Torus em Supercomputadores — [V]
-	  Aplicações de alto desempenho
+	Fat-Tree e Torus em Supercomputadores
+	Aplicações de alto desempenho
 
 
 
 48. Topologias em Sistemas Distribuídos e Data Centers — [V]
 
  48.1 Fundamentos — [V]
-
-  48.1.1 Interconexão em Data Centers — [V]
+	Interconexão em Data Centers
 	  Comunicação entre servidores
 	  Requisitos de escalabilidade
 
 
  48.2 Topologias Utilizadas — [V]
-
-  48.2.1 Redes Clos em Data Centers — [V]
-	  Aplicação em ambientes de nuvem
+	Redes Clos em Data Centers
+	Aplicação em ambientes de nuvem
 
 
 
@@ -1404,30 +1415,25 @@ PARTE 11 — COMPARAÇÃO, SELEÇÃO, PROJETO, EVOLUÇÃO E APLICAÇÕES DAS TOP
 
 
  50.2 Processo de Projeto — [I]
-
-  50.2.1 Etapas de Projeto — [I]
-	  Definição de requisitos
-	  Escolha da topologia
-	  Validação de desempenho
+	Etapas de Projeto
+	Definição de requisitos
+	Escolha da topologia
+	Validação de desempenho
 
 
 
 51. Tendências e Evolução das Topologias de Conexão — [V]
 
  51.1 Novas Direções — [V]
-
-  51.1.1 Topologias Reconfiguráveis — [V]
-	  Adaptação dinâmica à carga
-
-  51.1.2 Interconexões Ópticas — [V]
-	  Uso de luz para comunicação de alta velocidade
+	Topologias Reconfiguráveis
+	Adaptação dinâmica à carga
+	Interconexões Ópticas
+	Uso de luz para comunicação de alta velocidade
 
 
  51.2 Tecnologias Emergentes — [V]
-
-  51.2.1 Redes de Interconexão para Computação Heterogênea — [V]
-	  Integração de aceleradores
-	  Novos padrões de comunicação
+	Redes de Interconexão para Computação Heterogênea
+	Novos padrões de comunicação
 
 
 
@@ -1466,13 +1472,12 @@ PARTE 12 — REVISÃO GERAL E CONSOLIDAÇÃO
 
 
  52.3 Revisão de Métricas e Desempenho — [I]
-
-  52.3.1 Métricas Estruturais e de Desempenho — [I]
-	  Grau do nó
-	  Diâmetro
-	  Largura de bisseção
-	  Latência
-	  Throughput
+	Métricas Estruturais e de Desempenho
+	Grau do nó
+	Diâmetro
+	Largura de bisseção
+	Latência
+	Throughput
 
 
 
@@ -1505,9 +1510,7 @@ PARTE 12 — REVISÃO GERAL E CONSOLIDAÇÃO
 
 
  53.3 Encerramento — [V]
-
-  53.3.1 Visão Geral Final — [V]
-	  Integração dos conceitos
-	  Importância das topologias
-	  Evolução tecnológica
-	  Continuidade dos estudos
+	Integração dos conceitos
+	Importância das topologias
+	Evolução tecnológica
+	Continuidade dos estudos
