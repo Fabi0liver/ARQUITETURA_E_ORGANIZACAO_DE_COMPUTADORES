@@ -762,6 +762,13 @@ PARTE 6 — ACESSO, COMUNICAÇÃO, SINCRONIZAÇÃO, COERÊNCIA E CONSISTÊNCIA D
 	  Comunicação direcionada
 	  Maior escalabilidade
 
+  28.2.3 Mecanismos de Coerência de Cache — [P]
+	  Invalidação
+	  Atualização
+	  Write-invalidate
+	  Write-update
+	  Compartilhamento e replicação de linhas de cache
+
 
 
 29. Protocolos de Coerência de Cache — [P]
@@ -790,6 +797,23 @@ PARTE 6 — ACESSO, COMUNICAÇÃO, SINCRONIZAÇÃO, COERÊNCIA E CONSISTÊNCIA D
 	  Protocolo Firefly
 	  Protocolo Dragon
 	  Variações específicas de fabricantes
+
+
+ 29.3 Protocolos de Coerência Baseados em Diretório — [P]
+
+  29.3.1 Funcionamento
+	  Requisições ao diretório
+	  Estados das linhas
+	  Localização dos compartilhadores
+	  Invalidação seletiva
+	  Atualização seletiva
+
+  29.3.2 Operações
+	  Read miss
+	  Write miss
+	  Read-for-ownership
+	  Invalidação
+	  Resposta do proprietário
 
 
 
