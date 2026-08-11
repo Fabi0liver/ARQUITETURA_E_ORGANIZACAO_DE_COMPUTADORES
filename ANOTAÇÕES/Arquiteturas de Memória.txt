@@ -260,6 +260,20 @@ PARTE 2 — ESTRUTURA E FUNCIONAMENTO DAS ARQUITETURAS COM MEMÓRIA COMPARTILHAD
 	  Comparação entre variações
 
 
+ 8.3 Localidade e Afinidade em NUMA — [P]
+
+  8.3.1 Acesso Local e Remoto
+	  Diferença de latência
+	  Diferença de largura de banda
+	  Impacto no desempenho
+
+  8.3.2 Afinidade de Memória
+	  Afinidade entre processador e memória
+	  Alocação local
+	  Migração de processos
+	  Migração de páginas
+
+
 
 9. Arquitetura COMA (Cache-Only Memory Architecture) — [I]
 
@@ -571,11 +585,25 @@ PARTE 5 — PROCESSADORES, NÓS, ORGANIZAÇÃO E INTERCONEXÃO DA MEMÓRIA
 
 
  21.2 Classificação das Redes — [I]
+	Redes Estáticas e Dinâmicas
+	Conexões fixas entre nós
+	Conexões configuráveis por chaveamento
+	Comparação entre abordagens
 
-  21.2.1 Redes Estáticas e Dinâmicas — [I]
-	  Conexões fixas entre nós
-	  Conexões configuráveis por chaveamento
-	  Comparação entre abordagens
+
+ 21.3 Métricas de Redes de Interconexão — [P]
+
+  21.3.1 Métricas Topológicas
+	  Grau
+	  Diâmetro
+	  Distância média
+	  Bisseção da rede
+
+  21.3.2 Propriedades de Comunicação
+	  Capacidade de comunicação
+	  Largura de banda agregada
+	  Latência de comunicação
+	  Escalabilidade
 
 
 
@@ -649,11 +677,27 @@ PARTE 5 — PROCESSADORES, NÓS, ORGANIZAÇÃO E INTERCONEXÃO DA MEMÓRIA
 
 
  24.2 Relação com a Hierarquia de Memória — [I]
+	Integração com Caches Locais
+	Caches por processador
+	Caches compartilhados por nó
+	Relação com a memória principal distribuída
 
-  24.2.1 Integração com Caches Locais — [I]
-	  Caches por processador
-	  Caches compartilhados por nó
-	  Relação com a memória principal distribuída
+
+ 24.3 Interleaving de Memória — [P]
+
+  24.3.1 Conceito e Funcionamento
+	  Distribuição de endereços entre módulos
+	  Acesso paralelo aos módulos
+	  Redução de conflitos
+
+  24.3.2 Tipos de Interleaving
+	  Interleaving de baixa ordem
+	  Interleaving de alta ordem
+
+  24.3.3 Impacto no Desempenho
+	  Largura de banda
+	  Paralelismo de acesso
+	  Conflitos entre requisições
 
 
 
@@ -681,6 +725,19 @@ PARTE 6 — ACESSO, COMUNICAÇÃO, SINCRONIZAÇÃO, COERÊNCIA E CONSISTÊNCIA D
 	  Migração de dados
 	  Replicação de dados
 	  Afinidade entre processo e memória
+
+  25.2.2 Políticas de Posicionamento de Dados — [I]
+	  Posicionamento local
+	  Interleaving
+	  Distribuição entre módulos
+	  Replicação
+	  Migração
+
+  25.2.3 Políticas de Migração de Dados — [I]
+	  Migração estática
+	  Migração dinâmica
+	  Critérios de migração
+	  Custo da migração
 
 
 
