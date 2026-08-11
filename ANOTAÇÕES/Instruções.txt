@@ -216,6 +216,13 @@ PARTE 2 — ESTRUTURA E COMPONENTES DE UMA INSTRUÇÃO
 	  Operandos em registradores
 	  Operandos imediatos
 	  Operandos em memória
+	  Operandos explícitos
+	  Operandos implícitos
+	  Operandos em registradores
+	  Operandos imediatos
+	  Operandos em memória
+	  Operandos implícitos no PC
+	  Operandos implícitos em registradores especiais
 
   6.2.2 Número de Operandos — [P]
 	  Instruções de zero endereços
@@ -299,6 +306,14 @@ PARTE 3 — CLASSIFICAÇÃO DAS INSTRUÇÕES
 	  Formato da instrução
 	  Número de operandos
 	  Modo de endereçamento
+
+  9.1.3 Classificação por Localização dos Operandos — [I]
+	  Registrador–registrador
+	  Registrador–memória
+	  Memória–registrador
+	  Imediato–registrador
+	  Imediato–memória
+	  Instruções sem acesso à memória
 
 
  9.2 Importância da Classificação — [I]
@@ -389,11 +404,10 @@ PARTE 3 — CLASSIFICAÇÃO DAS INSTRUÇÕES
 
 
  12.2 Escolhas de Projeto — [I]
-
-  12.2.1 Compromissos de Formato — [I]
-	  Simplicidade × densidade
-	  Desempenho × flexibilidade
-	  Escolhas de arquitetura
+	Compromissos de Formato
+	Simplicidade × densidade
+	Desempenho × flexibilidade
+	Escolhas de arquitetura
 
 
 
@@ -475,11 +489,10 @@ PARTE 4 — FORMATOS E CODIFICAÇÃO DE INSTRUÇÕES
 
 
  15.2 Características Operacionais — [I]
-
-  15.2.1 Vantagens do Formato R — [I]
-	  Simplicidade de decodificação
-	  Execução rápida
-	  Uniformidade estrutural
+	Vantagens do Formato R
+	Simplicidade de decodificação
+	Execução rápida
+	Uniformidade estrutural
 
 
 
@@ -500,11 +513,10 @@ PARTE 4 — FORMATOS E CODIFICAÇÃO DE INSTRUÇÕES
 
 
  16.2 Características Operacionais — [I]
-
-  16.2.1 Vantagens do Formato I — [I]
-	  Uso de constantes diretamente na instrução
-	  Redução de acessos à memória
-	  Flexibilidade operacional
+	Vantagens do Formato I
+	Uso de constantes diretamente na instrução
+	Redução de acessos à memória
+	Flexibilidade operacional
 
 
 
@@ -524,11 +536,10 @@ PARTE 4 — FORMATOS E CODIFICAÇÃO DE INSTRUÇÕES
 
 
  17.2 Características Operacionais — [I]
-
-  17.2.1 Vantagens do Formato J — [I]
-	  Simplicidade para saltos
-	  Maior alcance de endereçamento
-	  Facilidade de decodificação
+	Vantagens do Formato J
+	Simplicidade para saltos
+	Maior alcance de endereçamento
+	Facilidade de decodificação
 
 
 
@@ -548,10 +559,9 @@ PARTE 4 — FORMATOS E CODIFICAÇÃO DE INSTRUÇÕES
 
 
  18.2 Comparação com Formatos Fixos — [I]
-
-  18.2.1 Compromissos de Projeto — [I]
-	  Densidade × complexidade
-	  Desempenho × flexibilidade
+	Compromissos de Projeto
+	Densidade × complexidade
+	Desempenho × flexibilidade
 
 
 
@@ -574,87 +584,78 @@ PARTE 5 — MODOS DE ENDEREÇAMENTO
 
 
  19.2 Classificação Geral dos Modos — [I]
-
-  19.2.1 Modos Simples e Compostos — [I]
-	  Modos diretos
-	  Modos indiretos
-	  Combinações de modos
+	Modos Simples e Compostos
+	Modos diretos
+	Modos indiretos
+	Combinações de modos
 
 
 
 20. Endereçamento Imediato e Direto — [P]
 
  20.1 Endereçamento Imediato — [P]
-
-  20.1.1 Características do Modo Imediato — [P]
-	  Valor contido na própria instrução
-	  Ausência de acesso à memória
-	  Uso em constantes
+	Características do Modo Imediato
+	Valor contido na própria instrução
+	Ausência de acesso à memória
+	Uso em constantes
 
 
  20.2 Endereçamento Direto — [P]
-
-  20.2.1 Características do Modo Direto — [P]
-	  Endereço explícito na instrução
-	  Acesso direto à memória
-	  Simplicidade do cálculo
+	Características do Modo Direto	
+	Endereço explícito na instrução
+	Acesso direto à memória
+	Simplicidade do cálculo
 
 
 
 21. Endereçamento Indireto e por Registrador — [P]
 
  21.1 Endereçamento por Registrador — [P]
-
-  21.1.1 Características do Modo Registrador — [P]
-	  Operando armazenado em registrador
-	  Acesso rápido
-	  Ausência de acesso à memória
+	Características do Modo Registrador
+	Operando armazenado em registrador
+	Acesso rápido
+	Ausência de acesso à memória
 
 
  21.2 Endereçamento Indireto — [P]
-
-  21.2.1 Características do Modo Indireto — [P]
-	  Endereço contido em registrador ou memória
-	  Uso de ponteiros
-	  Duplo acesso à memória
+	Características do Modo Indireto	
+	Endereço contido em registrador ou memória
+	Uso de ponteiros
+	Duplo acesso à memória
 
 
 
 22. Endereçamento Indexado e Baseado — [P]
 
  22.1 Endereçamento Indexado — [P]
-
-  22.1.1 Características do Modo Indexado — [P]
-	  Uso de registrador índice
-	  Acesso a vetores
-	  Cálculo de deslocamento
+	Características do Modo Indexado	
+	Uso de registrador índice
+	Acesso a vetores
+	Cálculo de deslocamento
 
 
  22.2 Endereçamento Baseado — [P]
-
-  22.2.1 Características do Modo Baseado — [P]
-	  Uso de registrador base
-	  Acesso a estruturas de dados
-	  Deslocamento relativo à base
+	Características do Modo Baseado	
+	Uso de registrador base
+	Acesso a estruturas de dados
+	Deslocamento relativo à base
 
 
 
 23. Modos de Endereçamento Avançados e Relativos — [I]
 
  23.1 Endereçamento Relativo — [I]
-
-  23.1.1 Endereçamento Relativo ao PC — [I]
-	  Cálculo relativo ao contador de programa
-	  Uso em instruções de desvio
-	  Independência de posição do código
+	Endereçamento Relativo ao PC	
+	Cálculo relativo ao contador de programa
+	Uso em instruções de desvio
+	Independência de posição do código
 
 
  23.2 Modos Avançados — [V]
-
-  23.2.1 Modos Combinados e Especiais — [V]
-	  Endereçamento base mais índice
-	  Modos autoincremento e autodecremento
-	  Modos específicos de arquitetura
+	Modos Combinados e Especiais
+	Endereçamento base mais índice
+	Modos autoincremento e autodecremento
+	Modos específicos de arquitetura
 
 
 
@@ -678,11 +679,10 @@ PARTE 6 — CONJUNTO DE INSTRUÇÕES (ISA)
 
 
  24.2 Papel da ISA no Projeto de Processadores — [I]
-
-  24.2.1 Influência na Microarquitetura — [I]
-	  Restrições impostas pela ISA
-	  Liberdade de implementação
-	  Relação entre ISA e desempenho
+	Influência na Microarquitetura
+	Restrições impostas pela ISA
+	Liberdade de implementação
+	Relação entre ISA e desempenho
 
 
 
@@ -702,11 +702,10 @@ PARTE 6 — CONJUNTO DE INSTRUÇÕES (ISA)
 
 
  25.2 Exemplos e Aplicações — [V]
-
-  25.2.1 Arquiteturas RISC Conhecidas — [V]
-	  Exemplos de famílias RISC
-	  Uso em dispositivos embarcados
-	  Uso em processadores modernos
+	Arquiteturas RISC Conhecidas
+	Exemplos de famílias RISC
+	Uso em dispositivos embarcados
+	Uso em processadores modernos
 
 
 
@@ -726,11 +725,10 @@ PARTE 6 — CONJUNTO DE INSTRUÇÕES (ISA)
 
 
  26.2 Exemplos e Aplicações — [V]
-
-  26.2.1 Arquiteturas CISC Conhecidas — [V]
-	  Exemplos de famílias CISC
-	  Uso em computadores pessoais
-	  Evolução histórica
+	Arquiteturas CISC Conhecidas
+	Exemplos de famílias CISC
+	Uso em computadores pessoais
+	Evolução histórica
 
 
 
@@ -750,11 +748,10 @@ PARTE 6 — CONJUNTO DE INSTRUÇÕES (ISA)
 
 
  27.2 Convergência Moderna — [V]
-
-  27.2.1 Arquiteturas Híbridas — [V]
-	  Tradução para micro-operações
-	  Elementos RISC em processadores CISC
-	  Tendências atuais de projeto
+	Arquiteturas Híbridas
+	Tradução para micro-operações
+	Elementos RISC em processadores CISC
+	Tendências atuais de projeto
 
 
 
@@ -778,62 +775,57 @@ PARTE 7 — CICLO DE VIDA E EXECUÇÃO DAS INSTRUÇÕES
 
 
  28.2 Relação com a Microarquitetura — [I]
-
-  28.2.1 Implementação do Ciclo — [I]
-	  Ciclo único
-	  Múltiplos ciclos
-	  Pipeline de instruções
+	Implementação do Ciclo
+	Ciclo único
+	Múltiplos ciclos
+	Pipeline de instruções
 
 
 
 29. Busca de Instruções (Fetch) — [P]
 
- 29.1 Processo de Busca — [P]
+ 29.1 Papel do Contador de Programa — [P]
+	Endereço da próxima instrução
+	Incremento do PC
+	Atualização após desvios
 
-  29.1.1 Papel do Contador de Programa — [P]
-	  Endereço da próxima instrução
-	  Incremento do PC
-	  Atualização após desvios
 
-  29.1.2 Acesso à Memória de Instruções — [P]
-	  Leitura da instrução
-	  Armazenamento no registrador de instrução
-	  Latência da busca
+ 29.2 Acesso à Memória de Instruções — [P]
+	Leitura da instrução
+	Armazenamento no registrador de instrução
+	Latência da busca
 
 
 
 30. Decodificação de Instruções (Decode) — [P]
 
- 30.1 Processo de Decodificação — [P]
+ 30.1 Interpretação dos Campos — [P]
+	Identificação do opcode
+	Identificação dos operandos
+	Identificação do modo de endereçamento
 
-  30.1.1 Interpretação dos Campos — [P]
-	  Identificação do opcode
-	  Identificação dos operandos
-	  Identificação do modo de endereçamento
 
-  30.1.2 Geração de Sinais de Controle — [P]
-	  Ativação de unidades funcionais
-	  Configuração do datapath
-	  Preparação da execução
+  30.2 Geração de Sinais de Controle — [P]
+	Ativação de unidades funcionais
+	Configuração do datapath
+	Preparação da execução
 
 
 
 31. Execução e Escrita do Resultado (Execute/Writeback) — [P]
 
  31.1 Execução da Operação — [P]
-
-  31.1.1 Processamento pela ULA ou Unidade Funcional — [P]
-	  Cálculo do resultado
-	  Acesso à memória quando necessário
-	  Atualização de flags
+	Processamento pela ULA ou Unidade Funcional
+	Cálculo do resultado
+	Acesso à memória quando necessário
+	Atualização de flags
 
 
  31.2 Escrita do Resultado — [P]
-
-  31.2.1 Armazenamento do Resultado — [P]
-	  Escrita em registrador
-	  Escrita em memória
-	  Finalização do ciclo da instrução
+	Armazenamento do Resultado
+	Escrita em registrador
+	Escrita em memória
+	Finalização do ciclo da instrução
 
 
 
@@ -865,28 +857,26 @@ PARTE 8 — INSTRUÇÕES DE CONTROLE DE FLUXO
 
 33. Instruções de Desvio Condicional — [P]
 
- 33.1 Características dos Desvios Condicionais — [P]
+ 33.1 Avaliação de Condições — [P]
+	Uso de flags de estado
+	Comparação de valores
+	Decisão de desvio
 
-  33.1.1 Avaliação de Condições — [P]
-	  Uso de flags de estado
-	  Comparação de valores
-	  Decisão de desvio
 
-  33.1.2 Cálculo do Endereço de Desvio — [P]
-	  Endereçamento relativo ao PC
-	  Deslocamento (offset)
-	  Alcance do desvio
+ 33.2 Cálculo do Endereço de Desvio — [P]
+	Endereçamento relativo ao PC
+	Deslocamento (offset)
+	Alcance do desvio
 
 
 
 34. Instruções de Desvio Incondicional e Chamadas de Sub-rotina — [P]
 
  34.1 Desvios Incondicionais — [P]
-
-  34.1.1 Características do Salto Incondicional — [P]
-	  Alteração direta do PC
-	  Ausência de condição
-	  Uso em laços e estruturas de controle
+	Características do Salto Incondicional 
+	Alteração direta do PC
+	Ausência de condição
+	Uso em laços e estruturas de controle
 
 
  34.2 Chamadas e Retornos de Sub-rotina — [P]
@@ -905,19 +895,17 @@ PARTE 8 — INSTRUÇÕES DE CONTROLE DE FLUXO
 35. Interrupções e Exceções Relacionadas às Instruções — [I]
 
  35.1 Conceito de Interrupção — [I]
-
-  35.1.1 Interrupções durante a Execução — [I]
-	  Suspensão temporária do fluxo
-	  Atendimento a eventos externos
-	  Retorno ao programa interrompido
+	Interrupções durante a Execução
+	Suspensão temporária do fluxo
+	Atendimento a eventos externos
+	Retorno ao programa interrompido
 
 
  35.2 Exceções Geradas por Instruções — [I]
-
-  35.2.1 Instruções Inválidas e Erros de Execução — [I]
-	  Opcode inválido
-	  Overflow aritmético
-	  Violação de acesso
+	Instruções Inválidas e Erros de Execução
+	Opcode inválido
+	Overflow aritmético
+	Violação de acesso
 
 
 
@@ -926,17 +914,16 @@ PARTE 9 — INSTRUÇÕES ARITMÉTICAS, LÓGICAS E DE DADOS
 
 36. Instruções Aritméticas — [P]
 
- 36.1 Operações Aritméticas Básicas — [P]
+ 36.1 Adição e Subtração — [P]
+	Instruções de soma
+	Instruções de subtração
+	Tratamento de carry e overflow
 
-  36.1.1 Adição e Subtração — [P]
-	  Instruções de soma
-	  Instruções de subtração
-	  Tratamento de carry e overflow
 
-  36.1.2 Multiplicação e Divisão — [P]
-	  Instruções de multiplicação
-	  Instruções de divisão
-	  Tratamento de resto e resultado
+ 36.2 Multiplicação e Divisão — [P]
+	Instruções de multiplicação
+	Instruções de divisão
+	Tratamento de resto e resultado
 
 
 
@@ -1018,46 +1005,50 @@ PARTE 10 — INSTRUÇÕES DE ACESSO À MEMÓRIA E TRANSFERÊNCIA
 40. Instruções de Carga e Armazenamento (Load/Store) — [P]
 
  40.1 Instruções de Carga (Load) — [P]
-
-  40.1.1 Características das Instruções Load — [P]
-	  Leitura de dado da memória
-	  Armazenamento em registrador
-	  Cálculo do endereço efetivo
+	Características das Instruções Load
+	Leitura de dado da memória
+	Armazenamento em registrador
+	Cálculo do endereço efetivo
+	Load de byte
+	Load de halfword
+	Load de word
+	Load de doubleword
+	Extensão de sinal
+	Extensão por zero
 
 
  40.2 Instruções de Armazenamento (Store) — [P]
-
-  40.2.1 Características das Instruções Store — [P]
-	  Escrita de dado na memória
-	  Origem do dado em registrador
-	  Cálculo do endereço efetivo
+	Características das Instruções Store
+	Escrita de dado na memória
+	Origem do dado em registrador
+	Cálculo do endereço efetivo
+	Store de diferentes larguras
+	Escrita parcial de uma palavra
 
 
 
 41. Instruções de Movimentação de Dados entre Registradores — [I]
 
  41.1 Transferência entre Registradores — [I]
-
-  41.1.1 Instruções de Cópia — [I]
-	  Movimentação direta
-	  Preservação do valor original
-	  Uso em reorganização de dados
+	Instruções de Cópia
+	Movimentação direta
+	Preservação do valor original
+	Uso em reorganização de dados
 
 
 
 42. Instruções de Pilha (Push/Pop) — [I]
 
- 42.1 Operações de Pilha — [I]
+ 42.1 Instrução Push — [I]
+	Armazenamento no topo da pilha
+	Atualização do ponteiro de pilha
+	Uso em chamadas de sub-rotina
 
-  42.1.1 Instrução Push — [I]
-	  Armazenamento no topo da pilha
-	  Atualização do ponteiro de pilha
-	  Uso em chamadas de sub-rotina
 
-  42.1.2 Instrução Pop — [I]
-	  Remoção do topo da pilha
-	  Atualização do ponteiro de pilha
-	  Recuperação de valores salvos
+ 42.2 Instrução Pop — [I]
+	Remoção do topo da pilha
+	Atualização do ponteiro de pilha
+	Recuperação de valores salvos
 
 
 
@@ -1078,6 +1069,10 @@ PARTE 11 — INSTRUÇÕES ESPECIAIS, PRIVILEGIADAS E DESEMPENHO
 	Transição para o sistema operacional
 	Instruções de interrupção de software
 	Controle de exceções
+	Barreira de memória
+	Ordenação de operações de memória
+	Barreira de instruções
+	Finalidade das instruções de sincronização
 
 
  43.3 Instruções Atômicas — [I]
@@ -1093,74 +1088,67 @@ PARTE 11 — INSTRUÇÕES ESPECIAIS, PRIVILEGIADAS E DESEMPENHO
 
 44. Instruções de Entrada e Saída — [I]
 
- 44.1 Comunicação com Dispositivos — [I]
+ 44.1 Instruções de E/S Dedicadas — [I]
+	Instruções específicas de entrada e saída
+	Endereçamento de dispositivos
+	Uso em arquiteturas com E/S isolada
 
-  44.1.1 Instruções de E/S Dedicadas — [I]
-	  Instruções específicas de entrada e saída
-	  Endereçamento de dispositivos
-	  Uso em arquiteturas com E/S isolada
 
-  44.1.2 E/S Mapeada em Memória — [I]
-	  Uso das instruções de memória para E/S
-	  Endereços reservados a dispositivos
-	  Simplicidade do conjunto de instruções
+ 44.2 E/S Mapeada em Memória — [I]
+	Uso das instruções de memória para E/S
+	Endereços reservados a dispositivos
+	Simplicidade do conjunto de instruções
 
 
 
 45. Instruções Especializadas (SIMD, Vetoriais, Multimídia) — [V]
 
  45.1 Instruções SIMD — [V]
-
-  45.1.1 Execução Paralela de Dados — [V]
-	  Múltiplos dados por instrução
-	  Aplicações em multimídia
-	  Aceleração de processamento paralelo
+	Execução Paralela de Dados
+	Múltiplos dados por instrução
+	Aplicações em multimídia
+	Aceleração de processamento paralelo
 
 
  45.2 Instruções Vetoriais — [V]
-
-  45.2.1 Operações sobre Vetores — [V]
-	  Processamento de grandes conjuntos de dados
-	  Uso em computação científica
-	  Aumento de desempenho
+	Operações sobre Vetores
+	Processamento de grandes conjuntos de dados
+	Uso em computação científica
+	Aumento de desempenho
 
 
 
 46. Desempenho e Eficiência das Instruções — [I]
 
  46.1 Métricas Relacionadas às Instruções — [I]
-
-  46.1.1 Contagem de Instruções e Ciclos — [I]
-	  Número de instruções por programa
-	  Ciclos por instrução (CPI)
-	  Relação com o tempo de execução
+	Contagem de Instruções e Ciclos
+	Número de instruções por programa
+	Ciclos por instrução (CPI)
+	Relação com o tempo de execução
 
 
  46.2 Fatores que Influenciam o Desempenho — [I]
-
-  46.2.1 Complexidade e Frequência de Uso — [I]
-	  Instruções frequentes
-	  Instruções complexas
-	  Impacto no pipeline
+	Complexidade e Frequência de Uso
+	Instruções frequentes
+	Instruções complexas
+	Impacto no pipeline
 
 
 
 47. Otimização e Evolução dos Conjuntos de Instruções — [V]
 
  47.1 Otimização de Instruções — [V]
-
-  47.1.1 Extensões de Conjuntos de Instruções — [V]
-	  Novas instruções especializadas
-	  Extensões para desempenho
-	  Compatibilidade retroativa
+	Extensões de Conjuntos de Instruções
+	Novas instruções especializadas
+	Extensões para desempenho
+	Compatibilidade retroativa
 
 
  47.2 Tendências de Evolução — [V]
-
-  47.2.1 Direções Futuras — [V]
-	  Especialização de instruções
-	  Integração com aceleradores
-	  Novas arquiteturas de conjunto de instruções
+	Direções Futuras
+	Especialização de instruções
+	Integração com aceleradores
+	Novas arquiteturas de conjunto de instruções
 
 
 
@@ -1183,11 +1171,10 @@ PARTE 12 — REVISÃO GERAL E CONCLUSÃO
 
 
  48.2 Visão Sistêmica das Instruções — [I]
-
-  48.2.1 Instruções como Elo entre Software e Hardware — [I]
-	  Tradução de linguagens de alto nível
-	  Execução pelo hardware
-	  Papel central na computação
+	Instruções como Elo entre Software e Hardware
+	Tradução de linguagens de alto nível
+	Execução pelo hardware
+	Papel central na computação
 
 
 
@@ -1207,11 +1194,10 @@ PARTE 12 — REVISÃO GERAL E CONCLUSÃO
 
 
  49.2 Revisão das Categorias de Instruções — [I]
-
-  49.2.1 Categorias Funcionais Estudadas — [I]
-	  Instruções aritméticas e lógicas
-	  Instruções de transferência de dados
-	  Instruções de controle e sistema
+	Categorias Funcionais Estudadas
+	Instruções aritméticas e lógicas
+	Instruções de transferência de dados
+	Instruções de controle e sistema
 
 
 
@@ -1231,8 +1217,7 @@ PARTE 12 — REVISÃO GERAL E CONCLUSÃO
 
 
  50.2 Encerramento — [V]
-
-  50.2.1 Visão Geral Final — [V]
-	  Integração dos conceitos estudados
-	  Importância das instruções na computação
-	  Continuidade dos estudos em arquitetura de computadores
+	Visão Geral Final
+	Integração dos conceitos estudados
+	Importância das instruções na computação
+	Continuidade dos estudos em arquitetura de computadores
