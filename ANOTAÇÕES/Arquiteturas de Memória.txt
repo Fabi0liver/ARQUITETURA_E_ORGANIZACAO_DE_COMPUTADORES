@@ -291,11 +291,10 @@ PARTE 2 — ESTRUTURA E FUNCIONAMENTO DAS ARQUITETURAS COM MEMÓRIA COMPARTILHAD
 
 
  9.2 Comparação com Outras Arquiteturas — [I]
-
-  9.2.1 COMA em relação a UMA e NUMA — [I]
-	  Diferença de localização dos dados
-	  Vantagens de localidade dinâmica
-	  Custos de implementação
+	COMA em relação a UMA e NUMA
+	Diferença de localização dos dados
+	Vantagens de localidade dinâmica
+	Custos de implementação
 
 
 
@@ -315,11 +314,10 @@ PARTE 2 — ESTRUTURA E FUNCIONAMENTO DAS ARQUITETURAS COM MEMÓRIA COMPARTILHAD
 
 
  10.2 Aplicações Típicas — [V]
-
-  10.2.1 Cenários de Uso — [V]
-	  Servidores multiprocessados
-	  Estações de trabalho científicas
-	  Sistemas de médio porte
+	Cenários de Uso
+	Servidores multiprocessados
+	Estações de trabalho científicas
+	Sistemas de médio porte
 
 
 
@@ -372,11 +370,10 @@ PARTE 3 — ESTRUTURA E FUNCIONAMENTO DAS ARQUITETURAS COM MEMÓRIA DISTRIBUÍDA
 
 
  12.2 Características e Aplicações — [I]
-
-  12.2.1 Vantagens e Limitações — [I]
-	  Alta escalabilidade
-	  Complexidade de programação
-	  Overhead de comunicação
+	Vantagens e Limitações	
+	Alta escalabilidade
+	Complexidade de programação
+	Overhead de comunicação
 
 
 
@@ -396,11 +393,9 @@ PARTE 3 — ESTRUTURA E FUNCIONAMENTO DAS ARQUITETURAS COM MEMÓRIA DISTRIBUÍDA
 
 
  13.2 Tipos de Sistemas Distribuídos — [V]
-
-  13.2.1 Classificações — [V]
-	  Clusters de alto desempenho
-	  Grades computacionais (grid computing)
-	  Sistemas em nuvem
+	Clusters de alto desempenho
+	Grades computacionais (grid computing)
+	Sistemas em nuvem
 
 
 
@@ -421,11 +416,9 @@ PARTE 3 — ESTRUTURA E FUNCIONAMENTO DAS ARQUITETURAS COM MEMÓRIA DISTRIBUÍDA
 
 
  14.2 Padrões e Interfaces — [I]
-
-  14.2.1 Padrões de Comunicação — [I]
-	  Modelo cliente-servidor
-	  Modelo par a par
-	  Padrões de troca estruturada de mensagens
+	Modelo cliente-servidor
+	Modelo par a par
+	Padrões de troca estruturada de mensagens
 
 
 
@@ -445,11 +438,9 @@ PARTE 3 — ESTRUTURA E FUNCIONAMENTO DAS ARQUITETURAS COM MEMÓRIA DISTRIBUÍDA
 
 
  15.2 Aplicações Típicas — [V]
-
-  15.2.1 Cenários de Uso — [V]
-	  Supercomputadores
-	  Processamento distribuído em larga escala
-	  Aplicações científicas de alto desempenho
+	Supercomputadores
+	Processamento distribuído em larga escala
+	Aplicações científicas de alto desempenho
 
 
 
@@ -472,11 +463,9 @@ PARTE 4 — ESTRUTURA E FUNCIONAMENTO DAS ARQUITETURAS COM MEMÓRIA COMPARTILHAD
 
 
  16.2 Motivações e Objetivos — [I]
-
-  16.2.1 Combinação de Vantagens — [I]
-	  Facilidade de programação da memória compartilhada
-	  Escalabilidade da memória distribuída
-	  Equilíbrio entre os dois modelos
+	Facilidade de programação da memória compartilhada
+	Escalabilidade da memória distribuída
+	Equilíbrio entre os dois modelos
 
 
 
@@ -511,33 +500,31 @@ PARTE 4 — ESTRUTURA E FUNCIONAMENTO DAS ARQUITETURAS COM MEMÓRIA COMPARTILHAD
 
 18. Modelos Híbridos de Memória — [I]
 
- 18.1 Conceitos de Arquiteturas Híbridas — [I]
+ 18.1 Combinação de Modelos — [I]
+	Memória compartilhada dentro do nó
+	Memória distribuída entre nós
+	Organização em múltiplos níveis
 
-  18.1.1 Combinação de Modelos — [I]
-	  Memória compartilhada dentro do nó
-	  Memória distribuída entre nós
-	  Organização em múltiplos níveis
-
-  18.1.2 Exemplos de Organização Híbrida — [V]
-	  Clusters de multiprocessadores
-	  Sistemas NUMA interligados por rede
-	  Arquiteturas em grade de nós SMP
+  
+ 18.2 Exemplos de Organização Híbrida — [V]
+	Clusters de multiprocessadores
+	Sistemas NUMA interligados por rede
+	Arquiteturas em grade de nós SMP
 
 
 
 19. Comparação entre DSM e Arquiteturas Puras — [V]
 
- 19.1 Comparação Estrutural — [V]
+ 19.1 DSM em relação à Memória Compartilhada Pura — [V]
+	Diferença na localização física
+	Diferença na complexidade de coerência
+	Diferença de escalabilidade
 
-  19.1.1 DSM em relação à Memória Compartilhada Pura — [V]
-	  Diferença na localização física
-	  Diferença na complexidade de coerência
-	  Diferença de escalabilidade
 
-  19.1.2 DSM em relação à Memória Distribuída Pura — [V]
-	  Diferença na visibilidade dos dados
-	  Diferença na facilidade de programação
-	  Diferença de desempenho
+ 19.2 DSM em relação à Memória Distribuída Pura — [V]
+	Diferença na visibilidade dos dados
+	Diferença na facilidade de programação
+	Diferença de desempenho
 
 
 
@@ -561,11 +548,9 @@ PARTE 5 — PROCESSADORES, NÓS, ORGANIZAÇÃO E INTERCONEXÃO DA MEMÓRIA
 
 
  20.2 Tipos de Organização de Nós — [V]
-
-  20.2.1 Nós Homogêneos e Heterogêneos — [V]
-	  Nós idênticos
-	  Nós com capacidades distintas
-	  Impacto no balanceamento de carga
+	Nós idênticos
+	Nós com capacidades distintas
+	Impacto no balanceamento de carga
 
 
 
@@ -624,11 +609,10 @@ PARTE 5 — PROCESSADORES, NÓS, ORGANIZAÇÃO E INTERCONEXÃO DA MEMÓRIA
 
 
  22.2 Topologias Dinâmicas — [I]
-
-  22.2.1 Redes Baseadas em Chaveamento — [I]
-	  Redes crossbar
-	  Redes multiestágio
-	  Redes ômega
+	Redes Baseadas em Chaveamento
+	Redes crossbar
+	Redes multiestágio
+	Redes ômega
 
 
 
@@ -646,6 +630,15 @@ PARTE 5 — PROCESSADORES, NÓS, ORGANIZAÇÃO E INTERCONEXÃO DA MEMÓRIA
 	  Controladores distribuídos por nó
 	  Controladores hierárquicos
 
+  23.1.3 Arbitragem de Acesso à Memória — [P]
+	  Necessidade de arbitragem
+	  Arbitragem centralizada
+	  Arbitragem distribuída
+	  Prioridade fixa
+	  Prioridade dinâmica
+	  Fairness
+	  Starvation
+
 
  23.2 Diretórios de Coerência — [P]
 
@@ -658,6 +651,7 @@ PARTE 5 — PROCESSADORES, NÓS, ORGANIZAÇÃO E INTERCONEXÃO DA MEMÓRIA
 	  Diretório centralizado
 	  Diretório distribuído
 	  Diretório hierárquico
+
 
 
 
@@ -757,11 +751,10 @@ PARTE 6 — ACESSO, COMUNICAÇÃO, SINCRONIZAÇÃO, COERÊNCIA E CONSISTÊNCIA D
 
 
  26.2 Impacto da Comunicação no Desempenho — [I]
-
-  26.2.1 Fatores que Influenciam a Comunicação — [I]
-	  Distância entre nós
-	  Congestionamento da rede
-	  Frequência das trocas de dados
+	Fatores que Influenciam a Comunicação 
+	Distância entre nós
+	Congestionamento da rede
+	Frequência das trocas de dados
 
 
 
@@ -917,11 +910,10 @@ PARTE 7 — MODELOS DE PROGRAMAÇÃO, LOCALIDADE E ORGANIZAÇÃO DO ACESSO À ME
 
 
  31.2 Modelos Baseados em Memória Distribuída — [I]
-
-  31.2.1 Características do Modelo — [I]
-	  Troca explícita de mensagens
-	  Uso de processos independentes
-	  Particionamento de dados
+	Características do Modelo
+	Troca explícita de mensagens
+	Uso de processos independentes
+	Particionamento de dados
 
 
 
@@ -941,46 +933,40 @@ PARTE 7 — MODELOS DE PROGRAMAÇÃO, LOCALIDADE E ORGANIZAÇÃO DO ACESSO À ME
 
 
  32.2 Técnicas para Melhorar a Localidade — [I]
-
-  32.2.1 Estratégias de Organização de Dados — [I]
-	  Distribuição orientada à localidade
-	  Reorganização de estruturas de dados
-	  Migração dinâmica de dados
+	Estratégias de Organização de Dados
+	Distribuição orientada à localidade
+	Reorganização de estruturas de dados
+	Migração dinâmica de dados
 
 
 
 33. Particionamento e Distribuição de Dados — [I]
 
- 33.1 Conceitos Fundamentais — [I]
+ 33.1 Particionamento de Dados — [I]
+	Divisão de estruturas de dados
+	Distribuição entre nós ou processadores
+	Critérios de particionamento
 
-  33.1.1 Particionamento de Dados — [I]
-	  Divisão de estruturas de dados
-	  Distribuição entre nós ou processadores
-	  Critérios de particionamento
 
-  33.1.2 Estratégias de Distribuição — [I]
-	  Distribuição por blocos
-	  Distribuição cíclica
-	  Distribuição híbrida
+  33.2 Estratégias de Distribuição — [I]
+	Distribuição por blocos
+	Distribuição cíclica
+	Distribuição híbrida
 
 
 
 34. Padrões de Acesso à Memória — [I]
 
- 34.1 Conceitos Fundamentais — [I]
-
-  34.1.1 Tipos de Padrões — [I]
-	  Acesso sequencial
-	  Acesso aleatório
-	  Acesso com reuso de dados
+ 34.1 Tipos de Padrões — [I]
+	Acesso sequencial
+	Acesso aleatório
+	Acesso com reuso de dados
 
 
- 34.2 Impacto dos Padrões no Desempenho — [I]
-
-  34.2.1 Relação com Localidade e Coerência — [I]
-	  Influência sobre acertos de cache
-	  Influência sobre tráfego de coerência
-	  Otimização de algoritmos paralelos
+ 34.2 Relação com Localidade e Coerência — [I]
+	Influência sobre acertos de cache
+	Influência sobre tráfego de coerência
+	Otimização de algoritmos paralelos
 
 
 
@@ -990,12 +976,10 @@ PARTE 8 — DESEMPENHO, ESCALABILIDADE E BALANCEAMENTO DE CARGA
 35. Desempenho em Arquiteturas de Memória — [P]
 
  35.1 Métricas de Desempenho — [P]
-
-  35.1.1 Métricas Fundamentais — [P]
-	  Latência de acesso
-	  Largura de banda
-	  Tempo de resposta
-	  Throughput do sistema
+	Latência de acesso
+	Largura de banda
+	Tempo de resposta
+	Throughput do sistema
 
 
  35.2 Fatores que Influenciam o Desempenho — [P]
@@ -1041,36 +1025,31 @@ PARTE 8 — DESEMPENHO, ESCALABILIDADE E BALANCEAMENTO DE CARGA
 
 37. Balanceamento de Carga e Memória — [I]
 
- 37.1 Conceitos Fundamentais — [I]
+ 37.1 Definição de Balanceamento de Carga — [I]
+	Distribuição equilibrada de tarefas
+	Relação com a distribuição de dados
+	Objetivo de eficiência global
 
-  37.1.1 Definição de Balanceamento de Carga — [I]
-	  Distribuição equilibrada de tarefas
-	  Relação com a distribuição de dados
-	  Objetivo de eficiência global
 
-  37.1.2 Estratégias de Balanceamento — [I]
-	  Balanceamento estático
-	  Balanceamento dinâmico
-	  Balanceamento orientado à localidade
+ 37.2 Estratégias de Balanceamento — [I]
+	Balanceamento estático
+	Balanceamento dinâmico
+	Balanceamento orientado à localidade
 
 
 
 38. Gargalos e Otimizações de Desempenho — [I]
 
  38.1 Identificação de Gargalos — [I]
-
-  38.1.1 Principais Gargalos — [I]
-	  Contenção de memória
-	  Congestionamento de rede
-	  Overhead de sincronização
+	Contenção de memória
+	Congestionamento de rede
+	Overhead de sincronização
 
 
  38.2 Técnicas de Otimização — [I]
-
-  38.2.1 Estratégias Gerais — [I]
-	  Redução de acessos remotos
-	  Aumento da localidade
-	  Otimização de protocolos de coerência
+	Redução de acessos remotos
+	Aumento da localidade
+	Otimização de protocolos de coerência
 
 
 
@@ -1079,93 +1058,82 @@ PARTE 9 — IMPLEMENTAÇÃO, INTEGRAÇÃO E ARQUITETURAS AVANÇADAS
 
 39. Implementação Física das Arquiteturas de Memória — [I]
 
- 39.1 Aspectos de Implementação — [I]
+ 39.1 Implementação em Hardware — [I]
+	Controladores dedicados
+	Circuitos de interconexão
+	Suporte físico à coerência
 
-  39.1.1 Implementação em Hardware — [I]
-	  Controladores dedicados
-	  Circuitos de interconexão
-	  Suporte físico à coerência
 
-  39.1.2 Implementação em Software — [I]
-	  Camadas de abstração
-	  Bibliotecas de comunicação
-	  Suporte do sistema operacional
+ 39.1.2 Implementação em Software — [I]
+	Camadas de abstração
+	Bibliotecas de comunicação
+	Suporte do sistema operacional
 
 
 
 40. Integração com Processadores Multicore e Manycore — [I]
 
  40.1 Memória em Processadores Multicore — [I]
-
-  40.1.1 Organização da Memória Compartilhada entre Núcleos — [I]
-	  Cache compartilhada entre núcleos
-	  Cache privada por núcleo
-	  Coerência interna ao chip
+	Organização da Memória Compartilhada entre Núcleos
+	Cache compartilhada entre núcleos
+	Cache privada por núcleo
+	Coerência interna ao chip
 
 
  40.2 Memória em Processadores Manycore — [I]
-
-  40.2.1 Escalabilidade dentro do Chip — [I]
-	  Redes internas de interconexão
-	  Organização distribuída dentro do processador
-	  Desafios de coerência em larga escala
+	Escalabilidade dentro do Chip 
+	Redes internas de interconexão
+	Organização distribuída dentro do processador
+	Desafios de coerência em larga escala
 
 
 
 41. Arquiteturas de Memória em GPUs e Aceleradores — [V]
 
  41.1 Organização da Memória em GPUs — [V]
-
-  41.1.1 Características Gerais — [V]
-	  Memória compartilhada entre unidades de execução
-	  Hierarquia especializada de memória
-	  Alta largura de banda
+	Características Gerais 
+	Memória compartilhada entre unidades de execução
+	Hierarquia especializada de memória
+	Alta largura de banda
 
 
  41.2 Relação com Arquiteturas Heterogêneas — [V]
-
-  41.2.1 Integração CPU-GPU — [V]
-	  Memória unificada
-	  Transferência de dados entre dispositivos
-	  Desafios de coerência heterogênea
+	Integração CPU-GPU
+	Memória unificada
+	Transferência de dados entre dispositivos
+	Desafios de coerência heterogênea
 
 
 
 42. Memórias Não Voláteis e Novas Tecnologias — [V]
 
  42.1 Tecnologias Emergentes — [V]
-
-  42.1.1 Memórias Não Voláteis — [V]
-	  Persistência de dados
-	  Impacto em arquiteturas distribuídas
-	  Novos desafios de consistência
+	Memórias Não Voláteis
+	Persistência de dados
+	Impacto em arquiteturas distribuídas
+	Novos desafios de consistência
 
 
  42.2 Tendências Tecnológicas — [V]
-
-  42.2.1 Novas Abordagens — [V]
-	  Memória empilhada (stacked memory)
-	  Interconexões de alta velocidade
-	  Integração próxima ao processador
+	Memória empilhada (stacked memory)
+	Interconexões de alta velocidade
+	Integração próxima ao processador
 
 
 
 43. Arquiteturas de Memória em Sistemas Heterogêneos — [V]
 
- 43.1 Conceitos Fundamentais — [V]
-
-  43.1.1 Sistemas Heterogêneos — [V]
-	  Combinação de diferentes tipos de processadores
-	  Memórias com características distintas
-	  Desafios de organização
+ 43.1 Sistemas Heterogêneos — [V]
+	Combinação de diferentes tipos de processadores
+	Memórias com características distintas
+	Desafios de organização
 
 
  43.2 Organização da Memória Heterogênea — [V]
-
-  43.2.1 Estratégias de Integração — [V]
-	  Memória compartilhada heterogênea
-	  Coordenação entre dispositivos distintos
-	  Balanceamento entre desempenho e complexidade
+	Estratégias de Integração
+	Memória compartilhada heterogênea
+	Coordenação entre dispositivos distintos
+	Balanceamento entre desempenho e complexidade
 
 
 
@@ -1174,70 +1142,62 @@ PARTE 10 — COMPARAÇÃO, APLICAÇÕES E EVOLUÇÃO DAS ARQUITETURAS
 
 44. Comparação entre Arquiteturas de Memória — [I]
 
- 44.1 Comparação Estrutural — [I]
+ 44.1 Memória Compartilhada × Memória Distribuída — [I]
+	Diferença de organização física
+	Diferença de facilidade de programação
+	Diferença de escalabilidade
 
-  44.1.1 Memória Compartilhada × Memória Distribuída — [I]
-	  Diferença de organização física
-	  Diferença de facilidade de programação
-	  Diferença de escalabilidade
-
-  44.1.2 Arquiteturas Híbridas em Comparação — [I]
-	  Equilíbrio entre modelos
-	  Cenários de uso mais adequados
+ 
+ 44.2 Arquiteturas Híbridas em Comparação — [I]
+	Equilíbrio entre modelos
+	Cenários de uso mais adequados
 
 
 
 45. Aplicações Práticas das Arquiteturas de Memória — [V]
 
- 45.1 Aplicações por Tipo de Arquitetura — [V]
+ 45.1 Aplicações em Memória Compartilhada — [V]
+	Servidores de médio porte
+	Aplicações científicas locais
+	Processamento simétrico
 
-  45.1.1 Aplicações em Memória Compartilhada — [V]
-	  Servidores de médio porte
-	  Aplicações científicas locais
-	  Processamento simétrico
-
-  45.1.2 Aplicações em Memória Distribuída — [V]
-	  Processamento em larga escala
-	  Aplicações de big data
-	  Simulações científicas distribuídas
+  
+  45.2 Aplicações em Memória Distribuída — [V]
+	Processamento em larga escala
+	Aplicações de big data
+	Simulações científicas distribuídas
 
 
 
 46. Arquiteturas de Memória em Supercomputadores — [V]
 
  46.1 Organização em Supercomputadores — [V]
-
-  46.1.1 Características Gerais — [V]
-	  Combinação de múltiplas arquiteturas
-	  Alta escalabilidade
-	  Redes de interconexão especializadas
+	Características Gerais
+	Combinação de múltiplas arquiteturas
+	Alta escalabilidade
+	Redes de interconexão especializadas
 
 
  46.2 Exemplos de Organização — [V]
-
-  46.2.1 Modelos Utilizados — [V]
-	  Clusters de nós NUMA
-	  Redes de interconexão de alto desempenho
-	  Sistemas híbridos em larga escala
+	Modelos Utilizados 
+	Clusters de nós NUMA
+	Redes de interconexão de alto desempenho
+	Sistemas híbridos em larga escala
 
 
 
 47. Tendências Futuras das Arquiteturas de Memória — [V]
 
  47.1 Direções de Evolução — [V]
-
-  47.1.1 Novas Abordagens Arquiteturais — [V]
-	  Arquiteturas centradas em dados
-	  Maior integração entre memória e processamento
-	  Redução da distância entre processador e memória
+	Arquiteturas centradas em dados
+	Maior integração entre memória e processamento
+	Redução da distância entre processador e memória
 
 
  47.2 Desafios Futuros — [V]
-
-  47.2.1 Principais Desafios — [V]
-	  Escalabilidade contínua
-	  Eficiência energética
-	  Complexidade de coerência em larga escala
+	Escalabilidade contínua
+	Eficiência energética
+	Complexidade de coerência em larga escala
 
 
 
@@ -1260,11 +1220,10 @@ PARTE 11 — REVISÃO GERAL E CONSOLIDAÇÃO
 
 
  48.2 Relações entre os Temas — [I]
-
-  48.2.1 Relação entre Organização e Desempenho — [I]
-	  Influência da topologia
-	  Influência da coerência
-	  Influência da localidade
+	Relação entre Organização e Desempenho
+	Influência da topologia
+	Influência da coerência
+	Influência da localidade
 
 
 
@@ -1284,11 +1243,10 @@ PARTE 11 — REVISÃO GERAL E CONSOLIDAÇÃO
 
 
  49.2 Revisão dos Mecanismos — [I]
-
-  49.2.1 Mecanismos Essenciais — [I]
-	  Coerência de cache
-	  Consistência de memória
-	  Sincronização e comunicação
+	Mecanismos Essenciais 
+	Coerência de cache
+	Consistência de memória
+	Sincronização e comunicação
 
 
 
