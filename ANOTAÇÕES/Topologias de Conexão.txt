@@ -1058,6 +1058,24 @@ PARTE 7 — ROTEAMENTO, COMUNICAÇÃO E FLUXO DE DADOS NAS TOPOLOGIAS
 	  Uso de canais virtuais para evitar deadlock
 
 
+ 36.4 Problemas de Progressão da Comunicação — [P]
+
+  36.4.1 Deadlock — [P]
+	  Conceito
+	  Condições para ocorrência
+	  Dependência cíclica
+	  Deadlock em redes de interconexão
+
+  36.4.2 Livelock — [P]
+	  Conceito
+	  Diferença entre livelock e deadlock
+
+  36.4.3 Starvation — [P]
+	  Conceito
+	  Causas
+	  Diferença entre starvation e deadlock
+
+
 
 37. Mecanismos de Arbitragem — [I]
 
@@ -1144,12 +1162,31 @@ PARTE 8 — DESEMPENHO, LATÊNCIA, LARGURA DE BANDA, CONTENÇÃO E ESCALABILIDAD
 
 
  40.2 Estratégias de Mitigação — [I]
+	Balanceamento de Carga
+	Distribuição uniforme do tráfego
+	Controle de Admissão
+	Limitação da entrada de tráfego
 
-  40.2.1 Balanceamento de Carga — [I]
-	  Distribuição uniforme do tráfego
 
-  40.2.2 Controle de Admissão — [I]
-	  Limitação da entrada de tráfego
+ 40.3 Padrões de Tráfego — [P]
+
+  40.3.1 Tipos de Tráfego — [P]
+	  Tráfego uniforme
+	  Tráfego aleatório
+	  Tráfego local
+	  Tráfego global
+	  Tráfego hotspot
+
+  40.3.2 Padrões de Comunicação — [P]
+	  Comunicação entre vizinhos
+	  Comunicação transposta
+	  Comunicação de pior caso
+	  Comunicação de melhor caso
+
+  40.3.3 Impacto do Tráfego — [P]
+	  Relação entre padrão de tráfego e congestionamento
+	  Relação entre padrão de tráfego e latência
+	  Relação entre padrão de tráfego e throughput
 
 
 
@@ -1212,10 +1249,9 @@ PARTE 9 — CONFIABILIDADE, REDUNDÂNCIA E TOLERÂNCIA A FALHAS
 44. Tolerância a Falhas em Redes de Interconexão — [I]
 
  44.1 Fundamentos — [I]
-
-  44.1.1 Conceito de Tolerância a Falhas — [I]
-	  Definição
-	  Continuidade de operação diante de falhas
+	Definição
+	Conceito de Tolerância a Falhas
+	Continuidade de operação diante de falhas
 
 
  44.2 Mecanismos de Tolerância — [I]
@@ -1225,6 +1261,22 @@ PARTE 9 — CONFIABILIDADE, REDUNDÂNCIA E TOLERÂNCIA A FALHAS
 
   44.2.2 Isolamento de Falhas — [I]
 	  Contenção do impacto de falhas locais
+
+
+ 44.3 Modelos de Falha — [I]
+
+  44.3.1 Tipos de Falha — [I]
+	  Falha de nó
+	  Falha de enlace
+	  Falha de switch ou roteador
+	  Falha simples
+	  Falhas múltiplas
+
+  44.3.2 Comportamento das Falhas — [I]
+	  Falhas permanentes
+	  Falhas transitórias
+	  Particionamento da rede
+	  Impacto das falhas sobre a conectividade
 
 
 
@@ -1318,9 +1370,22 @@ PARTE 11 — COMPARAÇÃO, SELEÇÃO, PROJETO, EVOLUÇÃO E APLICAÇÕES DAS TOP
 
 
  49.2 Trade-offs entre Topologias — [I]
+	Custo × Desempenho
+	Relação entre investimento e ganho de desempenho
 
-  49.2.1 Custo × Desempenho — [I]
-	  Relação entre investimento e ganho de desempenho
+   
+ 49.3 Comparação Quantitativa — [P]
+
+  49.3.1 Crescimento das Características — [P]
+	  Grau em função do número de nós
+	  Número de enlaces em função do número de nós
+	  Diâmetro em função do número de nós
+	  Largura de bisseção em função do número de nós
+
+  49.3.2 Comparação de Escalabilidade — [P]
+	  Crescimento do custo
+	  Crescimento da latência
+	  Crescimento da capacidade de comunicação
 
 
 
