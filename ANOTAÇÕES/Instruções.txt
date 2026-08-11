@@ -95,6 +95,13 @@ PARTE 1 — FUNDAMENTOS E CONCEITOS DE INSTRUÇÕES
 	  Destino do resultado
 	  Tipos de operandos
 
+  3.1.3 Instrução, Operação e Micro-operação — [P]
+	  Instrução de máquina
+	  Operação realizada
+	  Micro-operação
+	  Diferença entre instrução e micro-operação
+	  Relação entre instrução e sequência de micro-operações
+
 
  3.2 Natureza e Propriedades das Instruções — [P]
 
@@ -108,6 +115,21 @@ PARTE 1 — FUNDAMENTOS E CONCEITOS DE INSTRUÇÕES
 	  Efeito sobre registradores
 	  Efeito sobre memória
 	  Efeito sobre flags de estado
+	  Estado inicial e estado final do processador
+	  Efeitos explícitos da instrução
+	  Efeitos implícitos da instrução
+	  Pré-condições e pós-condições
+	  Alterações no estado arquitetural
+	  Efeitos colaterais
+
+  3.2.3 Estado Arquitetural e Instruções — [P]
+	  Estado visível ao programador
+	  Estado modificado por uma instrução
+	  Registradores modificados
+	  Memória modificada
+	  PC e fluxo de execução
+	  Flags modificadas
+	  Estado antes e depois da instrução
 
 
 
@@ -820,17 +842,24 @@ PARTE 8 — INSTRUÇÕES DE CONTROLE DE FLUXO
 
 32. Fundamentos do Controle de Fluxo — [P]
 
- 32.1 Conceito de Controle de Fluxo — [P]
+ 32.1 Alteração da Sequência de Execução — [P]
+	Desvio do fluxo sequencial
+	Modificação do contador de programa
+	Necessidade de decisões no programa
 
-  32.1.1 Alteração da Sequência de Execução — [P]
-	  Desvio do fluxo sequencial
-	  Modificação do contador de programa
-	  Necessidade de decisões no programa
-
-  32.1.2 Tipos de Alteração de Fluxo — [P]
-	  Desvios condicionais
-	  Desvios incondicionais
-	  Chamadas e retornos de sub-rotina
+ 
+ 32.2 Tipos de Alteração de Fluxo — [P]
+	Desvios condicionais
+	Desvios incondicionais
+	Chamadas e retornos de sub-rotina
+	Saltos diretos
+	Saltos indiretos
+	Desvios condicionais
+	Desvios incondicionais
+	Chamadas de procedimento
+	Retornos
+	Saltos indiretos por registrador
+	Saltos por endereço calculado
 
 
 
