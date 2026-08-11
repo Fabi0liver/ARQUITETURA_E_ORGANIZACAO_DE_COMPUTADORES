@@ -1067,19 +1067,27 @@ PARTE 11 — INSTRUÇÕES ESPECIAIS, PRIVILEGIADAS E DESEMPENHO
 43. Instruções Privilegiadas e de Sistema — [I]
 
  43.1 Instruções Privilegiadas — [I]
-
-  43.1.1 Características e Finalidade — [I]
-	  Execução restrita ao modo privilegiado
-	  Controle de recursos do sistema
-	  Proteção do hardware
+	Características e Finalidade
+	Execução restrita ao modo privilegiado
+	Controle de recursos do sistema
+	Proteção do hardware
 
 
  43.2 Instruções de Sistema — [I]
+	Chamadas de Sistema
+	Transição para o sistema operacional
+	Instruções de interrupção de software
+	Controle de exceções
 
-  43.2.1 Chamadas de Sistema — [I]
-	  Transição para o sistema operacional
-	  Instruções de interrupção de software
-	  Controle de exceções
+
+ 43.3 Instruções Atômicas — [I]
+	Conceito de operação atômica
+	Leitura-modificação-escrita
+	Instruções de troca
+	Compare-and-swap
+	Load-linked / store-conditional
+	Uso em sincronização
+	Relação com execução concorrente
 
 
 
