@@ -30,6 +30,13 @@ PARTE 1 — FUNDAMENTOS E CLASSIFICAÇÃO DOS FORMATOS DE INSTRUÇÃO
 	  Papel do montador (assembler)
 	  Facilidade de leitura humana
 
+  1.1.3 Formato, Codificação e Sintaxe da Instrução — [I]
+	  Diferença entre formato de instrução e codificação
+	  Diferença entre representação binária e representação textual
+	  Relação entre formato da instrução e sintaxe Assembly
+	  Correspondência entre campos binários e elementos da instrução
+	  Exemplo de uma instrução em Assembly e sua representação em código de máquina
+
 
  1.2 Importância do Formato de Instrução na Arquitetura — [I]
 
@@ -109,6 +116,15 @@ PARTE 1 — FUNDAMENTOS E CLASSIFICAÇÃO DOS FORMATOS DE INSTRUÇÃO
 	  Bits de extensão de opcode
 	  Bits reservados
 	  Flags de controle
+
+  3.2.3 Campos de Função e Subopcode — [P]
+	  Campo de função (function field)
+	  Subopcode
+	  Divisão do opcode em opcode principal e função
+	  Identificação hierárquica da operação
+	  Uso de campos adicionais para ampliar o número de operações
+	  Relação entre opcode principal e subopcode
+	  Impacto na decodificação
 
 
 
@@ -236,6 +252,23 @@ PARTE 2 — ESTRUTURA E ORGANIZAÇÃO DOS FORMATOS DE INSTRUÇÃO
 	  Menor flexibilidade
 
 
+ 7.3 Operandos Explícitos e Implícitos — [P]
+
+  7.3.1 Operandos Explícitos — [P]
+	  Identificação explícita dos operandos
+	  Campos específicos para os operandos
+	  Relação entre quantidade de operandos e tamanho da instrução
+	  Vantagens e limitações dos operandos explícitos
+
+  7.3.2 Operandos Implícitos — [P]
+	  Operandos determinados pelo próprio formato
+	  Acumulador como operando implícito
+	  Topo da pilha como operando implícito
+	  Registradores implicitamente determinados
+	  Redução da quantidade de campos necessários
+	  Impacto na flexibilidade do formato
+
+
 
 8. Modos de Endereçamento e sua Relação com o Formato — [I]
 
@@ -292,6 +325,23 @@ PARTE 2 — ESTRUTURA E ORGANIZAÇÃO DOS FORMATOS DE INSTRUÇÃO
 	  Instruções com formatos irregulares
 	  Necessidade de decodificação especial
 	  Impacto na complexidade do processador
+
+
+ 9.3 Espaço e Distribuição dos Campos — [P]
+
+  9.3.1 Espaço Disponível para Codificação — [P]
+	  Quantidade total de bits disponíveis
+	  Distribuição dos bits entre os campos
+	  Limitações impostas pelo tamanho da instrução
+	  Conflito entre opcode e campos de operandos
+	  Necessidade de priorização dos campos
+
+  9.3.2 Bits Não Utilizados e Reservados — [P]
+	  Bits não utilizados
+	  Bits reservados
+	  Finalidade dos bits reservados
+	  Possibilidade de utilização futura
+	  Impacto sobre a evolução do formato
 
 
 
