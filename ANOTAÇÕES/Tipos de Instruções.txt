@@ -603,6 +603,11 @@ PARTE 4 — INSTRUÇÕES LÓGICAS E MANIPULAÇÃO DE BITS
 	  Verificação de paridade
 	  Extração de campos de bits
 	  Modificação seletiva de bits
+	  Extração de campos de bits
+	  Inserção de campos de bits
+	  Limpeza de campos de bits
+	  Modificação seletiva de campos
+	  Manipulação de bits individuais
 
 
  18.2 Testes de Bits — [I]
@@ -611,6 +616,15 @@ PARTE 4 — INSTRUÇÕES LÓGICAS E MANIPULAÇÃO DE BITS
 	  Teste de bit ligado ou desligado
 	  Uso em condições de controle
 	  Exemplos de uso
+
+  18.2.2 Operações de Contagem e Busca de Bits — [I]
+	  Contagem de bits ativos
+	  Contagem de bits zero
+	  Busca do primeiro bit ativo
+	  Busca do último bit ativo
+	  Identificação da posição de um bit
+	  Population Count
+	  Bit Scan
 
 
 
@@ -626,6 +640,14 @@ PARTE 4 — INSTRUÇÕES LÓGICAS E MANIPULAÇÃO DE BITS
   19.1.2 Combinação de Instruções Lógicas — [I]
 	  Uso conjunto de operações lógicas
 	  Construção de expressões condicionais complexas
+
+  19.1.3 Seleção Condicional sem Desvio — [I]
+	  Conceito de seleção condicional
+	  Conditional Move
+	  Seleção baseada em condição
+	  Comparação seguida de seleção
+	  Seleção condicional × desvio condicional
+	  Redução de desvios em determinadas situações
 
 
 
@@ -674,6 +696,11 @@ PARTE 5 — INSTRUÇÕES DE DESLOCAMENTO E ROTAÇÃO
 	  Preservação do bit de sinal
 	  Exemplos de uso
 
+  21.2.3 Deslocamento com Controle de Bits — [I]
+	  Deslocamento por quantidade variável
+	  Deslocamento utilizando valor armazenado em registrador
+	  Relação entre deslocamento e manipulação de campos de bits
+
 
 
 22. Instruções de Rotação de Bits — [I]
@@ -692,11 +719,15 @@ PARTE 5 — INSTRUÇÕES DE DESLOCAMENTO E ROTAÇÃO
 
 
  22.2 Aplicações da Rotação — [I]
-
-  22.2.1 Uso em Criptografia e Compressão — [I]
-	  Manipulação de posições de bits
-	  Relevância em algoritmos criptográficos
-	  Uso em compactação de dados
+	Uso em Criptografia e Compressão
+	Manipulação de posições de bits
+	Relevância em algoritmos criptográficos
+	Uso em compactação de dados
+	Rotação utilizada na manipulação de palavras
+	Rotação combinada com operações lógicas
+	Rotação em algoritmos criptográficos
+	Rotação com quantidade variável
+	Rotação incluindo bits de estado
 
 
 
