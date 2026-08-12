@@ -373,6 +373,21 @@ PARTE 2 — ESTRUTURA E ORGANIZAÇÃO DOS FORMATOS DE INSTRUÇÃO
 	  Manutenção da compatibilidade
 
 
+ 10.3 Múltiplos Formatos para uma Mesma Operação — [I]
+
+  10.3.1 Formatos Alternativos — [I]
+	  Uma operação representada por diferentes formatos
+	  Variação conforme os tipos de operandos
+	  Variação conforme o modo de endereçamento
+	  Diferentes formas de codificar a mesma operação
+
+  10.3.2 Escolha do Formato — [I]
+	  Seleção conforme os operandos disponíveis
+	  Influência do tamanho da instrução
+	  Influência do espaço de codificação
+	  Impacto na decodificação
+
+
 
 PARTE 3 — FORMATOS DE INSTRUÇÃO QUANTO AO NÚMERO DE ENDEREÇOS
 
@@ -403,6 +418,20 @@ PARTE 3 — FORMATOS DE INSTRUÇÃO QUANTO AO NÚMERO DE ENDEREÇOS
 	  Densidade de código
 	  Número de instruções necessárias
 	  Facilidade de geração pelo compilador
+
+
+ 11.3 Operandos Explícitos e Implícitos na Classificação — [P]
+
+  11.3.1 Relação com o Número de Endereços — [P]
+	  Endereços explícitos
+	  Operandos implícitos
+	  Diferença entre endereço explicitamente codificado e operando implícito
+	  Influência dos operandos implícitos na classificação
+
+  11.3.2 Impacto no Tamanho da Instrução — [P]
+	  Redução de campos explícitos
+	  Economia de bits
+	  Relação entre compactação e flexibilidade
 
 
 
@@ -669,6 +698,21 @@ PARTE 4 — FORMATOS DE INSTRUÇÃO DE ACUMULADOR, PILHA E LOAD-STORE
 	  Limitações do acumulador e da pilha em paralelismo
 
 
+ 20.3 Comparação quanto à Explicitação dos Operandos — [I]
+
+  20.3.1 Operandos Explícitos e Implícitos — [I]
+	  Acumulador como operando implícito
+	  Pilha como mecanismo de operandos implícitos
+	  Load-store e explicitação dos operandos
+	  Relação entre operandos implícitos e tamanho da instrução
+
+  20.3.2 Flexibilidade versus Compactação — [I]
+	  Redução de bits
+	  Redução da flexibilidade
+	  Aumento da quantidade de instruções necessárias
+	  Trade-off entre simplicidade e expressividade
+
+
 
 PARTE 5 — FORMATOS DE INSTRUÇÃO REGISTRADOR-REGISTRADOR, REGISTRADOR-MEMÓRIA E MEMÓRIA-MEMÓRIA
 
@@ -785,6 +829,14 @@ PARTE 5 — FORMATOS DE INSTRUÇÃO REGISTRADOR-REGISTRADOR, REGISTRADOR-MEMÓRI
 	  Prioridade de densidade de código
 
 
+ 24.3 Comparação quanto à Explicitação dos Operandos — [I]
+	Operandos explícitos em registradores
+	Operandos explícitos em memória
+	Operandos implícitos
+	Relação entre localização e campos da instrução
+	Impacto na quantidade de bits necessária
+
+
 
 PARTE 6 — FORMATOS DE INSTRUÇÃO IMEDIATO, DESLOCAMENTO E OUTRAS FORMAS DE CODIFICAÇÃO
 
@@ -817,6 +869,14 @@ PARTE 6 — FORMATOS DE INSTRUÇÃO IMEDIATO, DESLOCAMENTO E OUTRAS FORMAS DE CO
 	  Uso restrito a valores pequenos
 
 
+ 25.3 Representação e Extensão do Valor Imediato — [P]
+	Faixa de valores representáveis
+	Valores com e sem sinal
+	Extensão de sinal
+	Extensão com zeros
+	Relação entre tamanho do campo imediato e valor representável
+
+
 
 26. Formato de Instrução com Deslocamento (Offset) — [P]
 
@@ -844,6 +904,14 @@ PARTE 6 — FORMATOS DE INSTRUÇÃO IMEDIATO, DESLOCAMENTO E OUTRAS FORMAS DE CO
 	  Dependência de registradores base
 	  Etapas adicionais no cálculo do endereço
 	  Complexidade no gerenciamento
+
+
+ 26.3 Codificação do Deslocamento — [P]
+	Tamanho do campo de deslocamento
+	Deslocamento com sinal
+	Faixa de endereços alcançável
+	Relação entre quantidade de bits e alcance
+	Deslocamento em bytes versus unidades de instrução
 
 
 
@@ -897,6 +965,12 @@ PARTE 6 — FORMATOS DE INSTRUÇÃO IMEDIATO, DESLOCAMENTO E OUTRAS FORMAS DE CO
 	  Endereço absoluto
 	  Deslocamento relativo ao contador de programa
 	  Endereço indireto por registrador
+	  Deslocamento relativo ao PC
+	  Deslocamento relativo à próxima instrução
+	  Tamanho do campo de deslocamento
+	  Faixa de alcance do destino
+	  Relação entre bits disponíveis e alcance do desvio
+	  Codificação de destinos próximos e distantes
 
   28.2.2 Impacto no Desempenho — [P]
 	  Relação com a previsão de desvio
@@ -933,6 +1007,14 @@ PARTE 6 — FORMATOS DE INSTRUÇÃO IMEDIATO, DESLOCAMENTO E OUTRAS FORMAS DE CO
 	  Restrições de uso
 
 
+ 29.3 Campos de Controle e Modificação da Instrução — [I]
+	  Campos que modificam a interpretação da operação
+	  Campos de condição
+	  Campos de seleção de variante da operação
+	  Campos de controle do comportamento da instrução
+	  Uso de campos adicionais para ampliar a codificação
+
+
 
 PARTE 7 — FORMATOS DE INSTRUÇÃO DE COMPRIMENTO FIXO E COMPRIMENTO VARIÁVEL
 
@@ -963,6 +1045,21 @@ PARTE 7 — FORMATOS DE INSTRUÇÃO DE COMPRIMENTO FIXO E COMPRIMENTO VARIÁVEL
 	  Quantidade de instruções suportadas
 	  Quantidade de registradores endereçáveis
 	  Modos de endereçamento disponíveis
+
+
+ 30.3 Alinhamento das Instruções — [P]
+
+  30.3.1 Alinhamento da Instrução na Memória — [P]
+	  Limites de alinhamento
+	  Instruções alinhadas e desalinhadas
+	  Relação entre comprimento da instrução e alinhamento
+	  Instruções atravessando limites de palavra
+
+  30.3.2 Impacto do Alinhamento — [P]
+	  Facilidade de busca da instrução
+	  Necessidade de acessos adicionais
+	  Impacto sobre a decodificação
+	  Relação entre alinhamento e desempenho
 
 
 
@@ -1023,6 +1120,21 @@ PARTE 7 — FORMATOS DE INSTRUÇÃO DE COMPRIMENTO FIXO E COMPRIMENTO VARIÁVEL
 	  Maior custo de hardware de controle
 
 
+ 32.3 Prefixos de Instrução — [P]
+
+  32.3.1 Conceito e Função dos Prefixos — [P]
+	  Conceito de prefixo
+	  Prefixos opcionais e obrigatórios
+	  Modificação do comportamento da instrução
+	  Extensão das capacidades do formato
+
+  32.3.2 Impacto dos Prefixos no Comprimento — [P]
+	  Aumento do tamanho da instrução
+	  Combinação de múltiplos prefixos
+	  Alteração da estrutura da instrução
+	  Impacto na identificação dos limites da instrução
+
+
 
 33. Formatos Híbridos de Comprimento — [I]
 
@@ -1049,6 +1161,14 @@ PARTE 7 — FORMATOS DE INSTRUÇÃO DE COMPRIMENTO FIXO E COMPRIMENTO VARIÁVEL
   33.2.2 Exemplos de Uso — [I]
 	  Conjuntos de instruções compactas em processadores embarcados
 	  Extensões de arquiteturas RISC modernas
+
+
+ 33.3 Formatos Compactos e Extensões de Formato — [I]
+	Formatos reduzidos
+	Instruções compactas
+	Relação entre formato completo e formato compacto
+	Redução da quantidade de bits
+	Trade-off entre densidade e quantidade de formatos
 
 
 
@@ -1108,6 +1228,22 @@ PARTE 8 — CODIFICAÇÃO, EXTENSÃO E EXPANSÃO DOS FORMATOS DE INSTRUÇÃO
 	  Opcodes mais longos para instruções raras
 
 
+ 35.3 Espaço de Codificação das Instruções — [P]
+
+  35.3.1 Organização do Espaço de Codificação — [P]
+	  Quantidade total de combinações possíveis
+	  Distribuição das combinações entre as instruções
+	  Espaço utilizado e disponível
+	  Reserva de espaço para extensões
+
+  35.3.2 Códigos Reservados e Não Utilizados — [P]
+	  Códigos reservados
+	  Códigos não utilizados
+	  Finalidade dos códigos reservados
+	  Utilização futura do espaço de codificação
+	  Compatibilidade com extensões futuras
+
+
 
 36. Técnicas de Expansão de Opcode (Opcode Expansion) — [P]
 
@@ -1136,6 +1272,15 @@ PARTE 8 — CODIFICAÇÃO, EXTENSÃO E EXPANSÃO DOS FORMATOS DE INSTRUÇÃO
 	  Maior complexidade de decodificação
 
 
+ 36.3 Codificações Inválidas e Não Definidas — [P]
+	Codificações inválidas
+	Codificações não definidas
+	Diferença entre código reservado e código inválido
+	Tratamento de instruções não reconhecidas
+	Importância para evolução da arquitetura
+	Compatibilidade com extensões futuras
+
+
 
 37. Codificação de Operandos e Registradores — [P]
 
@@ -1162,6 +1307,21 @@ PARTE 8 — CODIFICAÇÃO, EXTENSÃO E EXPANSÃO DOS FORMATOS DE INSTRUÇÃO
 	  Deslocamentos relativos
 	  Deslocamentos absolutos
 	  Relação com o cálculo do endereço efetivo
+
+
+ 37.3 Campos de Tamanho de Operando e Endereço — [P]
+
+  37.3.1 Especificação do Tamanho do Operando — [P]
+	  Indicação da largura do operando
+	  Operandos de diferentes tamanhos
+	  Campos que selecionam o tamanho da operação
+	  Relação entre tamanho do operando e formato
+
+  37.3.2 Especificação do Tamanho do Endereço — [P]
+	  Diferentes tamanhos de endereço
+	  Extensão de endereço
+	  Campos de controle do tamanho do endereço
+	  Impacto no formato da instrução
 
 
 
@@ -1217,6 +1377,15 @@ PARTE 8 — CODIFICAÇÃO, EXTENSÃO E EXPANSÃO DOS FORMATOS DE INSTRUÇÃO
   39.2.2 Decodificação em Formatos de Comprimento Variável — [I]
 	  Processo sequencial e mais lento
 	  Necessidade de identificar os limites da instrução
+
+
+ 39.3 Identificação dos Limites da Instrução — [I]
+	Determinação do início da instrução
+	Determinação do fim da instrução
+	Formatos de comprimento fixo
+	Formatos de comprimento variável
+	Prefixos e extensões
+	Ambiguidade na identificação dos limites
 
 
 
@@ -1276,6 +1445,20 @@ PARTE 9 — COMPARAÇÃO, CARACTERÍSTICAS, LIMITAÇÕES E EVOLUÇÃO DOS FORMAT
 	  Restrições impostas ao compilador
 
 
+ 41.3 Ortogonalidade dos Formatos de Instrução — [I]
+
+  41.3.1 Conceito de Ortogonalidade — [I]
+	  Independência entre operação e forma de especificação dos operandos
+	  Possibilidade de combinar diferentes operações e operandos
+	  Flexibilidade proporcionada pela ortogonalidade
+
+  41.3.2 Vantagens e Limitações — [I]
+	  Flexibilidade de programação
+	  Maior quantidade de combinações possíveis
+	  Impacto no espaço de codificação
+	  Impacto na complexidade dos formatos
+
+
 
 42. Limitações de Projeto dos Formatos de Instrução — [I]
 
@@ -1328,6 +1511,14 @@ PARTE 9 — COMPARAÇÃO, CARACTERÍSTICAS, LIMITAÇÕES E EVOLUÇÃO DOS FORMAT
 	  Redução de casos especiais
 
 
+ 43.3 Trade-off entre Flexibilidade e Espaço de Codificação — [I]
+	Mais combinações versus espaço limitado
+	Campos mais gerais versus campos especializados
+	Flexibilidade dos formatos
+	Consumo do espaço de codificação
+	Impacto sobre futuras extensões
+
+
 
 44. Estudos de Caso em Arquiteturas Reais (x86, ARM, MIPS, RISC-V) — [I]
 
@@ -1352,6 +1543,22 @@ PARTE 9 — COMPARAÇÃO, CARACTERÍSTICAS, LIMITAÇÕES E EVOLUÇÃO DOS FORMAT
   44.2.2 Formato de Instrução ARM e RISC-V — [I]
 	  Predominância de comprimento fixo
 	  Extensões de comprimento variável em modos compactos
+
+
+ 44.3 Leitura e Interpretação de Formatos Reais — [I]
+
+  44.3.1 Identificação dos Campos — [I]
+	  Identificação do opcode
+	  Identificação dos campos de registradores
+	  Identificação de imediatos
+	  Identificação de deslocamentos
+	  Identificação de campos auxiliares
+
+  44.3.2 Reconstrução da Instrução — [I]
+	  Separação dos bits em campos
+	  Identificação do significado de cada campo
+	  Reconstrução da instrução a partir da codificação
+	  Interpretação da instrução codificada
 
 
 
@@ -1430,6 +1637,21 @@ PARTE 10 — REVISÃO GERAL E CONSOLIDAÇÃO DOS FORMATOS DE INSTRUÇÃO
 
   47.2.2 Relação entre Comprimento e Codificação — [I]
 	  Influência do comprimento na estratégia de codificação adotada
+
+
+ 47.3 Relação entre os Critérios de Classificação — [I]
+
+  47.3.1 Classificação Simultânea de uma Instrução — [I]
+	  Classificação pelo número de endereços
+	  Classificação pela localização dos operandos
+	  Classificação pelo comprimento
+	  Classificação pela forma de codificação
+	  Combinação dos diferentes critérios
+
+  47.3.2 Interpretação Integrada do Formato — [I]
+	  Identificação simultânea dos campos
+	  Relação entre estrutura e codificação
+	  Relação entre formato e representação binária
 
 
 
