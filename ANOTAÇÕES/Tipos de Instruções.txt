@@ -1103,13 +1103,22 @@ PARTE 9 — INSTRUÇÕES DE CONTROLE DO SISTEMA E INSTRUÇÕES ESPECIAIS
 	  Coordenação entre tarefas
 	  Controle de acesso a recursos compartilhados
 
+  40.1.2 Instruções Atômicas — [I]
+	  Conceito de operação atômica
+	  Execução indivisível de operações
+	  Test-and-Set
+	  Exchange / Swap
+	  Compare-and-Swap (CAS)
+	  Fetch-and-Add
+	  Load-Linked / Store-Conditional
+	  Aplicação das instruções atômicas na sincronização
+
 
  40.2 Controle de Processos — [V]
-
-  40.2.1 Instruções de Suporte ao Sistema Operacional — [V]
-	  Troca de contexto
-	  Gerenciamento de processos
-	  Relação com o escalonador
+	Instruções de Suporte ao Sistema Operacional
+	Troca de contexto
+	Gerenciamento de processos
+	Relação com o escalonador
 
 
 
@@ -1119,11 +1128,10 @@ PARTE 10 — CLASSIFICAÇÃO, CARACTERÍSTICAS E APLICAÇÕES DOS TIPOS DE INSTR
 41. Classificação das Instruções por Número de Operandos — [I]
 
  41.1 Revisão dos Formatos de Instrução — [I]
-
-  41.1.1 Instruções de Três, Dois, Um e Zero Endereços — [I]
-	  Revisão comparativa
-	  Impacto na codificação
-	  Impacto no desempenho
+	Instruções de Três, Dois, Um e Zero Endereços — [I]
+	Revisão comparativa
+	Impacto na codificação
+	Impacto no desempenho
 
 
 
@@ -1156,49 +1164,70 @@ PARTE 10 — CLASSIFICAÇÃO, CARACTERÍSTICAS E APLICAÇÕES DOS TIPOS DE INSTR
 
 43. Características Gerais dos Tipos de Instrução — [I]
 
- 43.1 Propriedades Comuns — [I]
+ 43.1 Características Estruturais — [I]
+	Opcode
+	Operandos
+	Modos de endereçamento
+	Tipo de dado manipulado
+	Largura dos operandos
+	Número de operandos
+	Forma de acesso aos dados
+	Atomicidade da operação
 
-  43.1.1 Características Estruturais — [I]
-	  Opcode
-	  Operandos
-	  Modos de endereçamento
-
-  43.1.2 Características Funcionais — [I]
-	  Finalidade específica de cada tipo
-	  Papel no ciclo de instrução
-	  Relação entre os tipos
+  
+ 43.2 Características Funcionais — [I]
+	Finalidade específica de cada tipo
+	Papel no ciclo de instrução
+	Relação entre os tipos
+	Operações escalares
+	Operações vetoriais
+	Operações especializadas
+	Operações condicionais
+	Operações atômicas
 
 
 
 44. Relação entre Tipos de Instrução e Desempenho — [I]
 
- 44.1 Impacto no Desempenho do Processador — [I]
+ 44.1 Complexidade das Instruções — [I]
+	Tempo de execução
+	Número de ciclos necessários
+	Uso de recursos do processador
+	Instruções escalares × vetoriais
+	Processamento de múltiplos elementos por instrução
+	Impacto das instruções SIMD no desempenho
+	Custo e benefício de instruções especializadas
 
-  44.1.1 Complexidade das Instruções — [I]
-	  Tempo de execução
-	  Número de ciclos necessários
-	  Uso de recursos do processador
 
-  44.1.2 Escolha do Conjunto de Instruções — [I]
-	  Influência sobre compiladores
-	  Influência sobre o projeto de hardware
-	  Relação com eficiência do sistema
+ 44.2 Escolha do Conjunto de Instruções — [I]
+	Influência sobre compiladores
+	Influência sobre o projeto de hardware
+	Relação com eficiência do sistema
 
 
 
 45. Aplicações Práticas dos Tipos de Instrução — [V]
 
- 45.1 Uso em Diferentes Contextos — [V]
+ 45.1 Aplicações em Software — [V]
+	Programação de sistemas
+	Desenvolvimento de aplicações
+	Otimização de código
+	Uso de instruções SIMD
+	Processamento vetorial
+	Manipulação avançada de bits
+	Instruções criptográficas
+	Operações atômicas
+	Otimização por instruções especializadas
 
-  45.1.1 Aplicações em Software — [V]
-	  Programação de sistemas
-	  Desenvolvimento de aplicações
-	  Otimização de código
 
-  45.1.2 Aplicações em Projeto de Hardware — [V]
-	  Projeto de processadores
-	  Definição de conjuntos de instruções
-	  Relação com a organização do computador
+  45.2 Aplicações em Projeto de Hardware — [V]
+	Projeto de processadores
+	Definição de conjuntos de instruções
+	Relação com a organização do computador
+	Suporte a instruções vetoriais
+	Suporte a instruções especializadas
+	Suporte a operações atômicas
+	Extensões do conjunto de instruções
 
 
 
@@ -1207,19 +1236,21 @@ PARTE 11 — INTEGRAÇÃO DOS CONCEITOS, RESUMO GERAL E CONCLUSÃO
 
 46. Integração entre os Tipos de Instrução — [I]
 
- 46.1 Visão Integrada dos Tipos de Instrução — [I]
-
-  46.1.1 Cooperação entre os Tipos — [I]
-	  Uso combinado em programas
-	  Interdependência funcional
-	  Exemplo de fluxo completo de execução
+ 46.1 Cooperação entre os Tipos — [I]
+	Uso combinado em programas
+	Interdependência funcional
+	Exemplo de fluxo completo de execução
+	Combinação de instruções escalares e vetoriais
+	Combinação de instruções aritméticas e lógicas
+	Combinação de comparação e seleção
+	Combinação de operações de bits
+	Combinação de instruções atômicas com operações de controle
 
 
  46.2 Papel Conjunto no Funcionamento do Processador — [I]
-
-  46.2.1 Instruções como Sistema Integrado — [I]
-	  Complementaridade entre tipos
-	  Construção de operações complexas a partir de instruções simples
+	Instruções como Sistema Integrado 
+	Complementaridade entre tipos
+	Construção de operações complexas a partir de instruções simples
 
 
 
@@ -1238,6 +1269,9 @@ PARTE 11 — INTEGRAÇÃO DOS CONCEITOS, RESUMO GERAL E CONCLUSÃO
   47.1.3 Relação com a ISA — [I]
 	  Instruções como elementos definidos pela ISA
 	  Papel da ISA na padronização
+	  Extensões do conjunto de instruções
+	  Instruções opcionais e obrigatórias
+	  Instruções específicas de determinada ISA
 
 
  47.2 Relações Complementares — [I]
@@ -1254,43 +1288,49 @@ PARTE 11 — INTEGRAÇÃO DOS CONCEITOS, RESUMO GERAL E CONCLUSÃO
 
 48. Resumo Geral dos Tipos de Instrução — [I]
 
- 48.1 Revisão dos Conceitos Fundamentais — [I]
-
-  48.1.1 Fundamentos Essenciais — [I]
-	  Definição de instrução
-	  Ciclo de instrução
-	  Formato e modos de endereçamento
+ 48.1 Fundamentos Essenciais — [I]
+	Definição de instrução
+	Ciclo de instrução
+	Formato e modos de endereçamento
 
 
  48.2 Revisão dos Tipos Estudados — [I]
-
-  48.2.1 Tipos de Instrução — [I]
-	  Transferência de dados
-	  Aritméticas
-	  Lógicas
-	  Deslocamento e rotação
-	  Controle de fluxo
-	  Entrada e saída
-	  Conversão
-	  Controle do sistema
+	Transferência de dados
+	Aritméticas
+	Lógicas
+	Deslocamento e rotação
+	Controle de fluxo
+	Entrada e saída
+	Conversão
+	Controle do sistema
+	Comparação e seleção
+	Manipulação avançada de bits
+	Instruções atômicas
+	Instruções vetoriais e SIMD
+	Instruções predicadas
+	Instruções criptográficas
+	Instruções de sincronização e barreira
 
 
 
 49. Revisão Comparativa dos Tipos de Instrução — [I]
 
  49.1 Comparação entre os Tipos — [I]
-
-  49.1.1 Semelhanças e Diferenças — [I]
-	  Finalidade de cada tipo
-	  Elementos envolvidos
-	  Impacto no desempenho
+	Semelhanças e Diferenças
+	Finalidade de cada tipo
+	Elementos envolvidos
+	Impacto no desempenho
+	Instruções escalares × vetoriais
+	Instruções normais × atômicas
+	Instruções condicionais × desvios
+	Instruções gerais × especializadas
+	Instruções tradicionais × extensões modernas
 
 
  49.2 Consolidação do Conhecimento — [I]
-
-  49.2.1 Síntese Geral — [I]
-	  Papel de cada tipo no sistema computacional
-	  Integração entre os tipos estudados
+	Síntese Geral
+	Papel de cada tipo no sistema computacional
+	Integração entre os tipos estudados
 
 
 
