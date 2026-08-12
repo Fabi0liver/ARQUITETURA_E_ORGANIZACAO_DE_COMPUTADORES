@@ -304,11 +304,19 @@ PARTE 2 — INSTRUÇÕES DE TRANSFERÊNCIA E MOVIMENTAÇÃO DE DADOS
 	  Conceito
 	  Leitura da memória
 	  Armazenamento em registrador
+	  Diferentes formas de instruções Load
+	  Load com deslocamento
+	  Load com extensão de sinal
+	  Load com extensão por zero
+	  Load de diferentes tamanhos de dados
 
   8.2.2 Armazenamento de Dados (Store) — [P]
 	  Conceito
 	  Escrita na memória
 	  Origem no registrador
+	  Diferentes formas de instruções Store
+	  Store com deslocamento
+	  Store de diferentes tamanhos de dados
 
 
  8.3 Transferências Diretas e Indiretas — [P]
@@ -321,6 +329,13 @@ PARTE 2 — INSTRUÇÕES DE TRANSFERÊNCIA E MOVIMENTAÇÃO DE DADOS
 	  Uso de ponteiros e referências
 	  Flexibilidade de acesso
 	  Exemplos de uso
+
+  8.3.3 Instruções de Carga e Armazenamento com Endereçamento Avançado — [P]
+	  Load/Store com deslocamento
+	  Load/Store indexado
+	  Load/Store com atualização de endereço
+	  Load/Store múltiplo
+	  Relação entre Load/Store e modos de endereçamento
 
 
 
@@ -449,6 +464,16 @@ PARTE 3 — INSTRUÇÕES ARITMÉTICAS
 	  Exemplos de uso
 	  Diferenças em relação a inteiros
 
+  13.2.2 Operações Especiais em Ponto Flutuante — [I]
+	  Comparação de números em ponto flutuante
+	  Arredondamento
+	  Conversão entre diferentes precisões
+	  Tratamento de valores especiais
+	  NaN
+	  Infinito
+	  Zero positivo e zero negativo
+	  Exceções de ponto flutuante
+
 
 
 14. Instruções de Incremento, Decremento e Comparação — [I]
@@ -521,6 +546,9 @@ PARTE 4 — INSTRUÇÕES LÓGICAS E MANIPULAÇÃO DE BITS
 	  Operações bit a bit
 	  Preservação dos dados originais
 	  Geração de novo resultado
+	  Manipulação individual de bits
+	  Manipulação de grupos de bits
+	  Operações sobre campos de bits
 
 
 
