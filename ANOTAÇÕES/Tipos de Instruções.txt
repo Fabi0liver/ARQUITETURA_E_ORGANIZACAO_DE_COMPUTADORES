@@ -218,11 +218,10 @@ PARTE 1 — FUNDAMENTOS DOS TIPOS DE INSTRUÇÕES
 
 
  5.3 Modos de Endereçamento e Instruções de Pilha — [P]
-
-  5.3.1 Endereçamento Implícito — [P]
-	  Conceito
-	  Uso em instruções de pilha
-	  Exemplos de uso
+	Endereçamento Implícito
+	Conceito
+	Uso em instruções de pilha
+	Exemplos de uso
 
 
 
@@ -246,11 +245,10 @@ PARTE 1 — FUNDAMENTOS DOS TIPOS DE INSTRUÇÕES
 
 
  6.2 Visão Geral dos Tipos Estudados — [I]
-
-  6.2.1 Panorama dos Tipos de Instrução — [I]
-	  Visão introdutória de cada tipo
-	  Relação entre os tipos
-	  Papel de cada tipo no funcionamento do processador
+	Panorama dos Tipos de Instrução
+	Visão introdutória de cada tipo
+	Relação entre os tipos
+	Papel de cada tipo no funcionamento do processador
 
 
 
@@ -291,11 +289,10 @@ PARTE 2 — INSTRUÇÕES DE TRANSFERÊNCIA E MOVIMENTAÇÃO DE DADOS
 8. Transferência entre Registradores e Memória — [P]
 
  8.1 Movimentação de Dados entre Registradores — [P]
-
-  8.1.1 Transferência Registrador-Registrador — [P]
-	  Conceito
-	  Rapidez da operação
-	  Exemplos de uso (MOV)
+	Transferência Registrador-Registrador
+	Conceito
+	Rapidez da operação
+	Exemplos de uso (MOV)
 
 
  8.2 Movimentação entre Registradores e Memória — [P]
@@ -341,17 +338,16 @@ PARTE 2 — INSTRUÇÕES DE TRANSFERÊNCIA E MOVIMENTAÇÃO DE DADOS
 
 9. Transferência entre Processador e Dispositivos Externos — [I]
 
- 9.1 Comunicação com Dispositivos Externos — [I]
+ 9.1 Transferência entre Processador e Periféricos — [I]
+	Conceito
+	Papel na comunicação com hardware externo
+	Relação com instruções de E/S
 
-  9.1.1 Transferência entre Processador e Periféricos — [I]
-	  Conceito
-	  Papel na comunicação com hardware externo
-	  Relação com instruções de E/S
 
-  9.1.2 Consistência dos Dados na Transferência — [I]
-	  Preservação do conteúdo original
-	  Fidelidade da informação transferida
-	  Identificação correta de origem e destino
+ 9.2 Consistência dos Dados na Transferência — [I]
+	Preservação do conteúdo original
+	Fidelidade da informação transferida
+	Identificação correta de origem e destino
 
 
 
@@ -434,11 +430,10 @@ PARTE 3 — INSTRUÇÕES ARITMÉTICAS
 
 
  12.2 Representação de Inteiros nas Operações — [P]
-
-  12.2.1 Inteiros com Sinal e sem Sinal — [P]
-	  Diferenças de representação
-	  Impacto nas operações aritméticas
-	  Instruções específicas para cada caso
+	Inteiros com Sinal e sem Sinal
+	Diferenças de representação
+	Impacto nas operações aritméticas
+	Instruções específicas para cada caso
 
 
 
@@ -492,12 +487,10 @@ PARTE 3 — INSTRUÇÕES ARITMÉTICAS
 
 
  14.2 Instruções de Comparação Aritmética — [I]
-
-  14.2.1 Instrução CMP — [I]
-	  Conceito
-	  Subtração sem armazenamento do resultado
-	  Atualização de flags
-	  Uso em desvios condicionais
+	Instrução CMP
+	Subtração sem armazenamento do resultado
+	Atualização de flags
+	Uso em desvios condicionais
 
 
 
@@ -522,11 +515,10 @@ PARTE 3 — INSTRUÇÕES ARITMÉTICAS
 
 
  15.2 Consequências para o Processamento — [I]
-
-  15.2.1 Tratamento de Overflow — [I]
-	  Detecção
-	  Consequências para o resultado
-	  Relação com precisão dos dados
+	Tratamento de Overflow
+	Detecção
+	Consequências para o resultado
+	Relação com precisão dos dados
 
 
 
@@ -535,20 +527,19 @@ PARTE 4 — INSTRUÇÕES LÓGICAS E MANIPULAÇÃO DE BITS
 
 16. Fundamentos das Instruções Lógicas — [P]
 
- 16.1 Conceito e Finalidade — [P]
+ 16.1 Definição de Instrução Lógica — [P]
+	Conceito
+	Operações sobre bits
+	Papel na tomada de decisões
 
-  16.1.1 Definição de Instrução Lógica — [P]
-	  Conceito
-	  Operações sobre bits
-	  Papel na tomada de decisões
 
-  16.1.2 Características Gerais — [P]
-	  Operações bit a bit
-	  Preservação dos dados originais
-	  Geração de novo resultado
-	  Manipulação individual de bits
-	  Manipulação de grupos de bits
-	  Operações sobre campos de bits
+ 16.2 Características Gerais — [P]
+	Operações bit a bit
+	Preservação dos dados originais
+	Geração de novo resultado
+	Manipulação individual de bits
+	Manipulação de grupos de bits
+	Operações sobre campos de bits
 
 
 
@@ -630,24 +621,24 @@ PARTE 4 — INSTRUÇÕES LÓGICAS E MANIPULAÇÃO DE BITS
 
 19. Instruções Lógicas em Estruturas de Decisão — [I]
 
- 19.1 Relação entre Lógica e Controle — [I]
+ 19.1 Uso em Condicionais e Loops — [I]
+	Comparação de valores
+	Determinação de caminhos de execução
+	Relação com instruções de desvio
 
-  19.1.1 Uso em Condicionais e Loops — [I]
-	  Comparação de valores
-	  Determinação de caminhos de execução
-	  Relação com instruções de desvio
 
-  19.1.2 Combinação de Instruções Lógicas — [I]
-	  Uso conjunto de operações lógicas
-	  Construção de expressões condicionais complexas
+ 19.2 Combinação de Instruções Lógicas — [I]
+	Uso conjunto de operações lógicas
+	Construção de expressões condicionais complexas
 
-  19.1.3 Seleção Condicional sem Desvio — [I]
-	  Conceito de seleção condicional
-	  Conditional Move
-	  Seleção baseada em condição
-	  Comparação seguida de seleção
-	  Seleção condicional × desvio condicional
-	  Redução de desvios em determinadas situações
+  
+ 19.3 Seleção Condicional sem Desvio — [I]
+	Conceito de seleção condicional
+	Conditional Move
+	Seleção baseada em condição
+	Comparação seguida de seleção
+	Seleção condicional × desvio condicional
+	Redução de desvios em determinadas situações
 
 
 
@@ -656,17 +647,16 @@ PARTE 5 — INSTRUÇÕES DE DESLOCAMENTO E ROTAÇÃO
 
 20. Fundamentos do Deslocamento de Bits — [P]
 
- 20.1 Conceito e Finalidade — [P]
+ 20.1 Definição de Deslocamento — [P]
+	Conceito
+	Movimentação de bits para esquerda ou direita
+	Preenchimento de espaços vazios
 
-  20.1.1 Definição de Deslocamento — [P]
-	  Conceito
-	  Movimentação de bits para esquerda ou direita
-	  Preenchimento de espaços vazios
 
-  20.1.2 Aplicações do Deslocamento — [P]
-	  Multiplicação e divisão por potências de dois
-	  Reorganização de dados
-	  Otimização de operações
+ 20.2 Aplicações do Deslocamento — [P]
+	Multiplicação e divisão por potências de dois
+	Reorganização de dados
+	Otimização de operações
 
 
 
@@ -736,36 +726,33 @@ PARTE 6 — INSTRUÇÕES DE CONTROLE DE FLUXO E DESVIO
 
 23. Fundamentos do Controle de Fluxo — [P]
 
- 23.1 Conceito e Finalidade — [P]
+ 23.1 Definição de Instrução de Controle de Fluxo — [P]
+	Conceito
+	Alteração da sequência de execução
+	Papel na dinâmica dos programas
 
-  23.1.1 Definição de Instrução de Controle de Fluxo — [P]
-	  Conceito
-	  Alteração da sequência de execução
-	  Papel na dinâmica dos programas
 
-  23.1.2 Elementos do Controle de Fluxo — [P]
-	  Condição avaliada
-	  Endereço de destino
-	  Tipo de controle realizado
+ 23.2 Elementos do Controle de Fluxo — [P]
+	Condição avaliada
+	Endereço de destino
+	Tipo de controle realizado
 
 
 
 24. Desvios Incondicionais — [I]
 
  24.1 Conceito de Desvio Incondicional — [I]
-
-  24.1.1 Instrução JMP — [I]
-	  Conceito
-	  Direcionamento para endereço predefinido
-	  Exemplos de uso
+	Instrução JMP
+	Conceito
+	Direcionamento para endereço predefinido
+	Exemplos de uso
 
 
  24.2 Aplicações dos Desvios Incondicionais — [I]
-
-  24.2.1 Uso em Estruturas de Programa — [I]
-	  Saltos para sub-rotinas
-	  Alteração direta do fluxo
-	  Exemplos práticos
+	Uso em Estruturas de Programa
+	Saltos para sub-rotinas
+	Alteração direta do fluxo
+	Exemplos práticos
 
 
 
@@ -802,17 +789,16 @@ PARTE 6 — INSTRUÇÕES DE CONTROLE DE FLUXO E DESVIO
 
 26. Loops e Estruturas Repetitivas — [I]
 
- 26.1 Fundamentos dos Loops — [I]
+ 26.1 Estrutura de Repetição
+	Conceito de loop
+	Condição de parada
+	Contadores de repetição
 
-  26.1.1 Estrutura de Repetição — [I]
-	  Conceito de loop
-	  Condição de parada
-	  Contadores de repetição
-
-  26.1.2 Instruções de Suporte a Loops — [I]
-	  Instrução LOOP
-	  Decremento automático de contador
-	  Exemplos de uso
+  
+ 26.2 Instruções de Suporte a Loops — [I]
+	Instrução LOOP
+	Decremento automático de contador
+	Exemplos de uso
 
 
 
@@ -843,11 +829,10 @@ PARTE 6 — INSTRUÇÕES DE CONTROLE DE FLUXO E DESVIO
 28. Instruções de Comparação para Controle de Fluxo — [I]
 
  28.1 Papel da Comparação no Controle de Fluxo — [I]
-
-  28.1.1 Instrução CMP no Controle de Fluxo — [I]
-	  Relação entre comparação e flags
-	  Uso para decisões de desvio
-	  Exemplos de uso combinado
+	Instrução CMP no Controle de Fluxo
+	Relação entre comparação e flags
+	Uso para decisões de desvio
+	Exemplos de uso combinado
 
 
 
@@ -856,75 +841,66 @@ PARTE 7 — INSTRUÇÕES DE ENTRADA E SAÍDA
 
 29. Fundamentos das Instruções de Entrada e Saída — [I]
 
- 29.1 Conceito e Finalidade — [I]
+ 29.1 Definição de Instrução de Entrada e Saída — [I]
+	Conceito
+	Comunicação com dispositivos periféricos
+	Papel na interação com o ambiente externo
 
-  29.1.1 Definição de Instrução de Entrada e Saída — [I]
-	  Conceito
-	  Comunicação com dispositivos periféricos
-	  Papel na interação com o ambiente externo
-
-  29.1.2 Elementos da Comunicação de E/S — [I]
-	  Processador
-	  Dispositivo periférico
-	  Barramento de comunicação
+  
+ 29.2 Elementos da Comunicação de E/S — [I]
+	Processador
+	Dispositivo periférico
+	Barramento de comunicação
 
 
 
 30. Entrada e Saída Mapeada em Portas — [I]
 
- 30.1 Conceito de E/S Mapeada em Portas — [I]
+ 30.1 Endereços Dedicados a Dispositivos — [I]
+	Conceito
+	Espaço de endereçamento próprio
+	Diferença em relação à memória principal
 
-  30.1.1 Endereços Dedicados a Dispositivos — [I]
-	  Conceito
-	  Espaço de endereçamento próprio
-	  Diferença em relação à memória principal
 
-  30.1.2 Instruções IN e OUT — [I]
-	  Instrução IN
-	  Instrução OUT
-	  Exemplos de uso
+ 30.2 Instruções IN e OUT — [I]
+	Instrução IN
+	Instrução OUT
+	Exemplos de uso
 
 
 
 31. Entrada e Saída Mapeada em Memória — [I]
 
- 31.1 Conceito de E/S Mapeada em Memória — [I]
+ 31.1 Compartilhamento do Espaço de Endereçamento — [I]
+	Conceito
+	Dispositivos tratados como posições de memória
+	Vantagens e desvantagens
 
-  31.1.1 Compartilhamento do Espaço de Endereçamento — [I]
-	  Conceito
-	  Dispositivos tratados como posições de memória
-	  Vantagens e desvantagens
-
-  31.1.2 Comparação entre os Modos de E/S — [I]
-	  E/S mapeada em portas × E/S mapeada em memória
-	  Critérios de escolha conforme a arquitetura
+  
+ 31.2 Comparação entre os Modos de E/S — [I]
+	E/S mapeada em portas × E/S mapeada em memória
+	Critérios de escolha conforme a arquitetura
 
 
 
 32. Interrupções, DMA e Métodos de Comunicação — [I]
 
  32.1 Interrupções na Entrada e Saída — [I]
-
-  32.1.1 Conceito de Interrupção de E/S — [I]
-	  Conceito
-	  Resposta a eventos externos
-	  Retomada da execução normal
+	Conceito de Interrupção de E/S
+	Resposta a eventos externos
+	Retomada da execução normal
 
 
  32.2 Acesso Direto à Memória (DMA) — [I]
-
-  32.2.1 Conceito de DMA — [I]
-	  Conceito
-	  Transferência sem intervenção contínua do processador
-	  Ganho de eficiência
+	Conceito de DMA
+	Transferência sem intervenção contínua do processador
+	Ganho de eficiência
 
 
  32.3 Entrada e Saída Programada — [I]
-
-  32.3.1 Conceito de E/S Programada — [I]
-	  Conceito
-	  Controle direto pelo processador
-	  Comparação com interrupções e DMA
+	Conceito de E/S Programada
+	Controle direto pelo processador
+	Comparação com interrupções e DMA
 
 
 
@@ -949,7 +925,7 @@ PARTE 8 — INSTRUÇÕES DE CONVERSÃO DE DADOS
 	Dado de saída
 
 
- 33.1.3 Extensão e Truncamento de Dados — [I]
+ 33.3 Extensão e Truncamento de Dados — [I]
 	Extensão com sinal
 	Extensão com zero
 	Truncamento
@@ -1138,27 +1114,24 @@ PARTE 10 — CLASSIFICAÇÃO, CARACTERÍSTICAS E APLICAÇÕES DOS TIPOS DE INSTR
 42. Classificação por Complexidade (RISC × CISC) — [I]
 
  42.1 Arquiteturas RISC — [I]
-
-  42.1.1 Características das Instruções RISC — [I]
-	  Conjunto reduzido de instruções
-	  Instruções simples e uniformes
-	  Execução rápida
+	Características das Instruções RISC
+	Conjunto reduzido de instruções
+	Instruções simples e uniformes
+	Execução rápida
 
 
  42.2 Arquiteturas CISC — [I]
-
-  42.2.1 Características das Instruções CISC — [I]
-	  Conjunto amplo de instruções
-	  Instruções complexas
-	  Maior flexibilidade
+	Características das Instruções CISC
+	Conjunto amplo de instruções
+	Instruções complexas
+	Maior flexibilidade
 
 
  42.3 Comparação entre RISC e CISC — [I]
-
-  42.3.1 Vantagens e Desvantagens — [I]
-	  Desempenho
-	  Complexidade de hardware
-	  Facilidade de compilação
+	Vantagens e Desvantagens
+	Desempenho
+	Complexidade de hardware
+	Facilidade de compilação
 
 
 
