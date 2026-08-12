@@ -790,6 +790,14 @@ PARTE 6 — INSTRUÇÕES DE CONTROLE DE FLUXO E DESVIO
 	  Uso conjunto de CMP e desvios
 	  Construção de estruturas condicionais
 
+  25.2.2 Execução Condicional e Predicação — [I]
+	  Conceito de execução condicional
+	  Predicação de instruções
+	  Instruções predicadas
+	  Execução condicional sem alteração do fluxo
+	  Predicação × desvio condicional
+	  Vantagens e limitações da predicação
+
 
 
 26. Loops e Estruturas Repetitivas — [I]
@@ -816,18 +824,19 @@ PARTE 6 — INSTRUÇÕES DE CONTROLE DE FLUXO E DESVIO
 	  Conceito
 	  Armazenamento do endereço de retorno
 	  Uso da pilha
+	  Diferentes formas de armazenamento do endereço de retorno
 
   27.1.2 Retorno de Sub-rotina (RET) — [P]
 	  Conceito
 	  Recuperação do endereço de retorno
 	  Continuidade do fluxo original
+	  Não precisa aprofundar mecanismos de pilha, pois isso pertence a outro assunto.
 
 
  27.2 Organização do Fluxo com Sub-rotinas — [P]
-
-  27.2.1 Reutilização de Código — [P]
-	  Blocos de código reutilizáveis
-	  Organização modular do programa
+	Reutilização de Código 
+	Blocos de código reutilizáveis
+	Organização modular do programa
 
 
 
@@ -924,33 +933,50 @@ PARTE 8 — INSTRUÇÕES DE CONVERSÃO DE DADOS
 
 33. Fundamentos das Instruções de Conversão — [I]
 
- 33.1 Conceito e Finalidade — [I]
+ 33.1 Definição de Instrução de Conversão — [I]
+	Conceito
+	Transformação de formatos de dados
+	Preservação do valor lógico
+	Conversão de largura de dados
+	Extensão de dados
+	Truncamento de dados
+	Preservação ou alteração do valor numérico
 
-  33.1.1 Definição de Instrução de Conversão — [I]
-	  Conceito
-	  Transformação de formatos de dados
-	  Preservação do valor lógico
 
-  33.1.2 Elementos da Conversão — [I]
-	  Dado de entrada
-	  Operação de conversão
-	  Dado de saída
+ 33.2 Elementos da Conversão — [I]
+	Dado de entrada
+	Operação de conversão
+	Dado de saída
+
+
+ 33.1.3 Extensão e Truncamento de Dados — [I]
+	Extensão com sinal
+	Extensão com zero
+	Truncamento
+	Widening
+	Narrowing
+	Conversão entre diferentes larguras de dados
 
 
 
 34. Conversão entre Tipos Numéricos — [I]
 
- 34.1 Conversão entre Inteiros e Ponto Flutuante — [I]
+ 34.1 Conversão de Inteiro para Ponto Flutuante — [I]
+	Conceito
+	Exemplos de uso
+	Aplicações em cálculos
+	Conversão com diferentes precisões
+	Arredondamento durante a conversão
 
-  34.1.1 Conversão de Inteiro para Ponto Flutuante — [I]
-	  Conceito
-	  Exemplos de uso
-	  Aplicações em cálculos
 
-  34.1.2 Conversão de Ponto Flutuante para Inteiro — [I]
-	  Conceito
-	  Instrução CVT
-	  Exemplos de uso
+ 34.2 Conversão de Ponto Flutuante para Inteiro — [I]
+	Conceito
+	Instrução CVT
+	Exemplos de uso
+	Truncamento
+	Arredondamento
+	Conversão com perda de precisão
+	Tratamento de valores fora do intervalo representável
 
 
 
@@ -984,65 +1010,88 @@ PARTE 9 — INSTRUÇÕES DE CONTROLE DO SISTEMA E INSTRUÇÕES ESPECIAIS
 
 36. Fundamentos das Instruções de Controle do Sistema — [I]
 
- 36.1 Conceito e Finalidade — [I]
+ 36.1 Definição de Instrução de Controle do Sistema — [I]
+	Conceito
+	Coordenação do funcionamento do sistema
+	Papel na organização da execução
+	Controle do estado de execução
+	Instruções de sincronização
+	Instruções de barreira
+	Instruções de serialização
+	Instruções de espera
 
-  36.1.1 Definição de Instrução de Controle do Sistema — [I]
-	  Conceito
-	  Coordenação do funcionamento do sistema
-	  Papel na organização da execução
 
-  36.1.2 Funções Gerais — [I]
-	  Controle do fluxo de execução
-	  Gerenciamento de interrupções
-	  Execução condicional
+ 36.2 Funções Gerais — [I]
+	Controle do fluxo de execução
+	Gerenciamento de interrupções
+	Execução condicional
+
+
+ 36.3 Instruções de Controle e Sincronização do Sistema — [I]
+	Instruções de barreira
+	Instruções de fence
+	Instruções de serialização
+	Instruções de espera
+	Finalidade dessas instruções
 
 
 
 37. Interrupções e Exceções do Sistema — [I]
 
- 37.1 Conceito de Interrupção do Sistema — [I]
+ 37.1 Instrução INT — [I]
+	Conceito
+	Sinalização de eventos de hardware
+	Exemplos de uso
+	Instruções de geração explícita de interrupção
+	Interrupções de software
+	Relação entre instruções e tratamento de exceções
 
-  37.1.1 Instrução INT — [I]
-	  Conceito
-	  Sinalização de eventos de hardware
-	  Exemplos de uso
 
-  37.1.2 Tratamento de Interrupções — [I]
-	  Pausa da execução normal
-	  Execução de rotina de tratamento
-	  Retomada da execução
+ 37.2 Tratamento de Interrupções — [I]
+	Pausa da execução normal
+	Execução de rotina de tratamento
+	Retomada da execução
 
 
 
 38. Instruções Privilegiadas e Modos de Operação — [V]
 
- 38.1 Conceito de Instrução Privilegiada — [V]
+ 38.1 Modos de Execução — [V]
+	Modo usuário
+	Modo privilegiado (kernel)
+	Restrições de acesso
 
-  38.1.1 Modos de Execução — [V]
-	  Modo usuário
-	  Modo privilegiado (kernel)
-	  Restrições de acesso
-
-  38.1.2 Aplicações das Instruções Privilegiadas — [V]
-	  Controle de recursos do sistema
-	  Gerenciamento de segurança
-	  Relação com o sistema operacional
+  
+ 38.2 Aplicações das Instruções Privilegiadas — [V]
+	Controle de recursos do sistema
+	Gerenciamento de segurança
+	Relação com o sistema operacional
+	Leitura de informações de controle
+	Escrita de informações de controle
+	Controle de recursos protegidos
+	Instruções disponíveis somente em determinados níveis de privilégio
 
 
 
 39. Instruções Especiais — [V]
 
- 39.1 Instruções de Controle Simples — [V]
+ 39.1 Instrução NOP — [V]
+	Conceito
+	Ausência de operação
+	Uso para temporização e alinhamento
 
-  39.1.1 Instrução NOP — [V]
-	  Conceito
-	  Ausência de operação
-	  Uso para temporização e alinhamento
 
-  39.1.2 Instrução HALT — [V]
-	  Conceito
-	  Interrupção da execução
-	  Uso em encerramento de processos
+ 39.2 Instrução HALT — [V]
+	Conceito
+	Interrupção da execução
+	Uso em encerramento de processos
+
+
+ 39.3 Instruções de Espera e Controle de Execução — [V]
+	Instruções de espera
+	Instruções de pausa
+	Instruções de suspensão da execução
+	Finalidade das instruções de espera
 
 
 
