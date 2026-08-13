@@ -69,11 +69,10 @@ PARTE 1 — FUNDAMENTOS DO CICLO DE CONTROLE
 
 
  2.2 Importância da Evolução do Ciclo de Controle — [V]
-
-  2.2.1 Impactos na Computação Moderna — [V]
-	  Aumento do desempenho
-	  Maior flexibilidade de projeto
-	  Base para arquiteturas modernas
+	Impactos na Computação Moderna
+	Aumento do desempenho
+	Maior flexibilidade de projeto
+	Base para arquiteturas modernas
 
 
 
@@ -339,23 +338,22 @@ PARTE 3 — ETAPAS E FASES DO CICLO DE CONTROLE
 
 10. Visão Geral das Etapas do Ciclo de Controle — [P]
 
- 10.1 Conceito de Etapas do Ciclo — [P]
+ 10.1 Definição de Etapa — [P]
+	Conceito de fase operacional
+	Delimitação temporal
+	Função dentro do ciclo
 
-  10.1.1 Definição de Etapa — [P]
-	  Conceito de fase operacional
-	  Delimitação temporal
-	  Função dentro do ciclo
 
-  10.1.2 Sequência Geral das Etapas — [P]
-	  Busca
-	  Decodificação
-	  Execução
-	  Acesso à memória
-	  Escrita do resultado
-	  Estados de controle correspondentes às etapas
-	  Micro-operações de cada etapa
-	  Sinais de controle de cada etapa
-	  Condições de transição entre etapas
+ 10.2 Sequência Geral das Etapas — [P]
+	Busca
+	Decodificação
+	Execução
+	Acesso à memória
+	Escrita do resultado
+	Estados de controle correspondentes às etapas
+	Micro-operações de cada etapa
+	Sinais de controle de cada etapa
+	Condições de transição entre etapas
 
 
  10.2 Papel Funcional das Etapas — [P]
@@ -627,23 +625,21 @@ PARTE 4 — FUNCIONAMENTO E SEQUENCIAMENTO DO CICLO DE CONTROLE
 19. Contadores e Sequenciadores no Ciclo de Controle — [P]
 
  19.1 Conceito de Contadores de Controle — [P]
-
-  19.1.1 Função dos Contadores — [P]
-	  Indicação da etapa atual
-	  Progressão sequencial
-	  Reinício ao final do ciclo
-	  Contagem das fases de controle
-	  Decodificação do estado
-	  Reinicialização por condição
-	  Transição para estados especiais
+	Função dos Contadores
+	Indicação da etapa atual
+	Progressão sequencial
+	Reinício ao final do ciclo
+	Contagem das fases de controle
+	Decodificação do estado
+	Reinicialização por condição
+	Transição para estados especiais
 
 
  19.2 Sequenciadores no Controle Microprogramado — [P]
-
-  19.2.1 Papel do Sequenciador — [P]
-	  Determinação do endereço da próxima microinstrução
-	  Controle do fluxo microprogramado
-	  Tratamento de desvios na microprogramação
+	Papel do Sequenciador
+	Determinação do endereço da próxima microinstrução
+	Controle do fluxo microprogramado
+	Tratamento de desvios na microprogramação
 
 
 
@@ -893,6 +889,12 @@ PARTE 6 — GERAÇÃO E DISTRIBUIÇÃO DOS SINAIS DE CONTROLE
   28.1.1 Conexões entre Controle e Datapath — [I]
 	  Linhas de controle
 	  Pontos de ativação nos componentes
+	  Linhas individuais de controle
+	  Sinais compartilhados
+	  Distribuição para registradores
+	  Distribuição para multiplexadores
+	  Distribuição para a ULA
+	  Distribuição para unidades de memória
 
   28.1.2 Alcance dos Sinais — [I]
 	  Componentes atingidos
@@ -921,13 +923,17 @@ PARTE 6 — GERAÇÃO E DISTRIBUIÇÃO DOS SINAIS DE CONTROLE
   29.1.2 Fatores que Afetam a Propagação — [I]
 	  Distância física
 	  Complexidade da lógica geradora
+	  Fan-out
+	  Carga elétrica
+	  Número de componentes acionados
+	  Atraso de portas lógicas
+	  Atraso de interconexões
 
 
  29.2 Impactos do Atraso — [I]
-
-  29.2.1 Consequências para o Ciclo de Controle — [I]
-	  Limitação da frequência de operação
-	  Necessidade de margens de tempo
+	Consequências para o Ciclo de Controle
+	Limitação da frequência de operação
+	Necessidade de margens de tempo
 
 
 
@@ -956,6 +962,10 @@ PARTE 7 — TEMPORIZAÇÃO E SINCRONIZAÇÃO DO CICLO DE CONTROLE
   30.2.2 Períodos e Ciclos — [P]
 	  Duração do ciclo de clock
 	  Relação com as etapas do ciclo de controle
+	  Tempo de propagação
+	  Tempo de estabelecimento (setup time)
+	  Tempo de retenção (hold time)
+	  Margem de temporização
 
 
 
@@ -966,18 +976,25 @@ PARTE 7 — TEMPORIZAÇÃO E SINCRONIZAÇÃO DO CICLO DE CONTROLE
   31.1.1 Sincronização das Operações — [P]
 	  Marcação do início e fim das etapas
 	  Coordenação entre componentes
+	  Borda de subida
+	  Borda de descida
+	  Disparo por borda
+	  Captura de estado
+	  Atualização de estado
 
   31.1.2 Frequência do Clock — [P]
 	  Relação com o desempenho
 	  Limitações impostas pelo hardware
 
 
- 31.2 Sincronização entre Componentes — [P]
-
-  31.2.1 Elementos Sincronizados pelo Clock — [P]
-	  Registradores
-	  Unidade de Controle
-	  Componentes do Datapath
+ 31.2 Elementos Sincronizados pelo Clock — [P]
+	Registradores
+	Unidade de Controle
+	Componentes do Datapath
+	Registradores de estado
+	Registradores de controle
+	Registradores intermediários
+	Elementos de armazenamento do controle
 
 
 
@@ -994,12 +1011,15 @@ PARTE 7 — TEMPORIZAÇÃO E SINCRONIZAÇÃO DO CICLO DE CONTROLE
 	  Vantagens e limitações
 
 
- 32.2 Determinação da Duração do Ciclo — [P]
-
-  32.2.1 Fatores que Influenciam a Duração — [P]
-	  Etapa mais lenta
-	  Atrasos de propagação
-	  Complexidade das operações
+ 32.2 Fatores que Influenciam a Duração — [P]
+	Etapa mais lenta
+	Atrasos de propagação
+	Complexidade das operações
+	Setup time
+	Hold time
+	Tempo de propagação do registrador
+	Margem de temporização
+	Condições para captura correta
 
 
 
@@ -1017,10 +1037,9 @@ PARTE 7 — TEMPORIZAÇÃO E SINCRONIZAÇÃO DO CICLO DE CONTROLE
 
 
  33.2 Mecanismos de Garantia de Sincronismo — [I]
-
-  33.2.1 Uso de Registradores de Borda — [I]
-	  Captura de dados em bordas do clock
-	  Estabilidade dos sinais
+	Uso de Registradores de Borda
+	Captura de dados em bordas do clock
+	Estabilidade dos sinais
 
 
 
@@ -1034,6 +1053,10 @@ PARTE 8 — MICRO-OPERAÇÕES E AÇÕES DE CONTROLE
   34.1.1 Conceito de Micro-operação — [P]
 	  Operação elementar do processador
 	  Menor unidade de execução controlada
+	  Micro-operação como ação elementar de controle
+	  Micro-operações simultâneas
+	  Micro-operações sequenciais
+	  Micro-operações condicionais
 
   34.1.2 Papel das Micro-operações — [P]
 	  Composição das instruções
@@ -1044,6 +1067,12 @@ PARTE 8 — MICRO-OPERAÇÕES E AÇÕES DE CONTROLE
 
   34.2.1 Micro-operações de Registrador — [P]
 	  Transferência entre registradores
+	  Transferência
+	  Carregamento
+	  Incremento
+	  Decremento
+	  Deslocamento
+	  Limpeza/zeragem
 
   34.2.2 Micro-operações de Memória — [P]
 	  Leitura e escrita na memória
@@ -1064,49 +1093,74 @@ PARTE 8 — MICRO-OPERAÇÕES E AÇÕES DE CONTROLE
   35.1.2 Relação com as Etapas do Ciclo — [P]
 	  Micro-operações por etapa
 	  Encadeamento das ações
+	  Micro-operações por estado
+	  Sinais de controle por micro-operação
+	  Execução simultânea de micro-operações
+	  Dependências entre micro-operações
 
 
  35.2 Controle da Sequência — [P]
-
-  35.2.1 Papel da Unidade de Controle — [P]
-	  Determinação da ordem
-	  Ativação temporal correta
+	Papel da Unidade de Controle
+	Determinação da ordem
+	Ativação temporal correta
 
 
 
 36. Micro-operações por Etapa do Ciclo — [P]
 
  36.1 Micro-operações da Busca — [P]
-
-  36.1.1 Ações Realizadas na Busca — [P]
-	  Transferência do contador de programa para o endereço
-	  Leitura da instrução
-	  Incremento do contador de programa
+	Ações Realizadas na Busca
+	Transferência do contador de programa para o endereço
+	Leitura da instrução
+	Incremento do contador de programa
+	Representação em RTL
+	Sequência temporal das micro-operações
+	Sinais de controle correspondentes
 
 
  36.2 Micro-operações da Execução — [P]
+	Ações Realizadas na Execução
+	Transferência de operandos para a ULA
+	Realização da operação
+	Armazenamento do resultado temporário
+	Representação em RTL
+	Micro-operações condicionais
+	Sinais de controle correspondentes
+	Transição para o próximo estado
 
-  36.2.1 Ações Realizadas na Execução — [P]
-	  Transferência de operandos para a ULA
-	  Realização da operação
-	  Armazenamento do resultado temporário
+
+ 36.3 Micro-operações das Demais Etapas — [P]
+
+  36.3.1 Acesso à Memória — [P]
+	  Leitura controlada
+	  Escrita controlada
+	  Transferência entre registradores
+	  Uso do MDR
+
+  36.3.2 Write-back — [P]
+	  Seleção do resultado
+	  Seleção do destino
+	  Escrita controlada
 
 
 
 37. Relação entre Micro-operações e Sinais de Controle — [P]
 
  37.1 Correspondência Direta — [P]
-
-  37.1.1 Sinal como Ativador de Micro-operação — [P]
-	  Cada sinal habilita uma ação específica
-	  Combinação de sinais para operações complexas
+	Sinal como Ativador de Micro-operação
+	Cada sinal habilita uma ação específica
+	Combinação de sinais para operações complexas
+	Relação um-para-um
+	Um sinal controlando múltiplas ações
+	Múltiplos sinais para uma micro-operação
+	Combinação simultânea de sinais
+	Combinações inválidas
 
 
  37.2 Organização da Correspondência — [P]
-
-  37.2.1 Tabelas de Sinais e Micro-operações — [P]
-	  Mapeamento entre sinais e ações
-	  Uso no projeto do controle
+	Tabelas de Sinais e Micro-operações
+	Mapeamento entre sinais e ações
+	Uso no projeto do controle
 
 
 
@@ -1127,11 +1181,14 @@ PARTE 9 — IMPLEMENTAÇÃO DO CICLO DE CONTROLE
 
 
  38.2 Estrutura do Controle Cablado — [P]
-
-  38.2.1 Componentes Envolvidos — [P]
-	  Portas lógicas
-	  Máquina de estados finitos
-	  Decodificadores
+	Portas lógicas
+	Máquina de estados finitos
+	Decodificadores
+	Registrador de estado
+	Lógica de próximo estado
+	Lógica de saída
+	Matriz de controle
+	Circuitos de decodificação
 
 
  38.3 Vantagens e Limitações — [P]
@@ -1143,6 +1200,10 @@ PARTE 9 — IMPLEMENTAÇÃO DO CICLO DE CONTROLE
   38.3.2 Limitações — [P]
 	  Dificuldade de modificação
 	  Complexidade crescente com o número de instruções
+	  Dificuldade de alteração da lógica
+	  Crescimento da complexidade da lógica
+	  Maior dificuldade de verificação
+	  Aumento da lógica de controle com conjuntos complexos
 
 
 
@@ -1160,11 +1221,14 @@ PARTE 9 — IMPLEMENTAÇÃO DO CICLO DE CONTROLE
 
 
  39.2 Estrutura do Controle Microprogramado — [P]
-
-  39.2.1 Componentes Envolvidos — [P]
-	  Memória de controle
-	  Registrador de microinstrução
-	  Sequenciador de microprograma
+	Memória de controle
+	Registrador de microinstrução
+	Sequenciador de microprograma
+	Registrador de endereço de microinstrução
+	Lógica de seleção do próximo endereço
+	Decodificador de microinstruções
+	Registrador de microinstrução
+	Circuitos de sequenciamento
 
 
  39.3 Vantagens e Limitações — [P]
@@ -1172,6 +1236,9 @@ PARTE 9 — IMPLEMENTAÇÃO DO CICLO DE CONTROLE
   39.3.1 Vantagens — [P]
 	  Facilidade de projeto e alteração
 	  Suporte a conjuntos complexos de instruções
+	  Possibilidade de reutilização de micro-rotinas
+	  Facilidade de implementação de sequências complexas
+	  Facilidade de atualização do microprograma
 
   39.3.2 Limitações — [P]
 	  Menor velocidade em relação ao controle cablado
@@ -1186,6 +1253,10 @@ PARTE 9 — IMPLEMENTAÇÃO DO CICLO DE CONTROLE
   40.1.1 Desempenho — [I]
 	  Velocidade de geração dos sinais
 	  Complexidade da lógica
+	  Latência da lógica de controle
+	  Latência de acesso à memória de controle
+	  Tempo de geração dos sinais
+	  Impacto no período mínimo de clock
 
   40.1.2 Flexibilidade — [I]
 	  Facilidade de modificação
@@ -1193,11 +1264,10 @@ PARTE 9 — IMPLEMENTAÇÃO DO CICLO DE CONTROLE
 
 
  40.2 Escolha entre as Abordagens — [I]
-
-  40.2.1 Fatores de Decisão — [I]
-	  Complexidade do conjunto de instruções
-	  Requisitos de desempenho
-	  Restrições de projeto
+	Fatores de Decisão
+	Complexidade do conjunto de instruções
+	Requisitos de desempenho
+	Restrições de projeto
 
 
 
@@ -1212,6 +1282,10 @@ PARTE 9 — IMPLEMENTAÇÃO DO CICLO DE CONTROLE
   41.1.2 Organização da Memória de Controle — [P]
 	  Endereçamento das microinstruções
 	  Estrutura de armazenamento
+	  Endereço inicial do microprograma
+	  Mapeamento opcode → endereço
+	  Organização das micro-rotinas
+	  Acesso sequencial às microinstruções
 
 
  41.2 Microinstruções — [P]
@@ -1219,10 +1293,40 @@ PARTE 9 — IMPLEMENTAÇÃO DO CICLO DE CONTROLE
   41.2.1 Conceito de Microinstrução — [P]
 	  Representação de uma micro-operação
 	  Composição por campos de controle
+	  Microinstrução como palavra de controle
+	  Campos de controle
+	  Campos de condição
+	  Campos de sequenciamento
+	  Micro-operações representadas pela microinstrução
 
   41.2.2 Formato das Microinstruções — [P]
 	  Campos de sinais de controle
 	  Campo de endereço da próxima microinstrução
+	  Microinstrução horizontal
+	  Microinstrução vertical
+	  Microinstrução híbrida
+	  Campos de condição
+	  Campos de sequenciamento
+	  Campo de seleção do próximo endereço
+	  Paralelismo entre micro-operações
+	  Impacto do formato sobre o tamanho da palavra de controle
+
+
+ 41.3 Sequenciamento de Microinstruções — [P]
+
+  41.3.1 Determinação da Próxima Microinstrução — [P]
+	  Incremento do endereço
+	  Desvio condicional
+	  Desvio incondicional
+	  Seleção por condição
+	  Seleção por opcode
+
+  41.3.2 Execução de uma Microinstrução — [P]
+	  Leitura da memória de controle
+	  Carregamento da microinstrução
+	  Geração dos sinais
+	  Execução das micro-operações
+	  Determinação da próxima microinstrução
 
 
 
@@ -1247,6 +1351,8 @@ PARTE 10 — MÉTODOS E TÉCNICAS DE CONTROLE DO CICLO DE CONTROLE
   42.2.1 Vantagens — [I]
 	  Simplicidade do projeto
 	  Controle mais direto
+	  Simplicidade da lógica de controle
+	  Previsibilidade da sequência de controle
 
   42.2.2 Limitações — [I]
 	  Baixa eficiência de tempo
@@ -1272,6 +1378,9 @@ PARTE 10 — MÉTODOS E TÉCNICAS DE CONTROLE DO CICLO DE CONTROLE
   43.2.1 Vantagens — [I]
 	  Melhor aproveitamento do tempo de ciclo
 	  Reutilização de componentes
+	  Reutilização de estados
+	  Reutilização de unidades funcionais sob controle
+	  Sequenciamento específico para cada operação
 
   43.2.2 Limitações — [I]
 	  Maior complexidade do controle
@@ -1303,6 +1412,11 @@ PARTE 10 — MÉTODOS E TÉCNICAS DE CONTROLE DO CICLO DE CONTROLE
 	  Adiantamento de dados (forwarding)
 	  Bolhas de pipeline (stalls)
 	  Previsão de desvio
+	  Detecção de condições de controle
+	  Stall controlado
+	  Flush controlado
+	  Redirecionamento do fluxo de controle
+	  Atualização do estado de controle após desvio
 
 
 
@@ -1316,6 +1430,10 @@ PARTE 11 — VARIAÇÕES, OTIMIZAÇÕES E EVOLUÇÃO DO CICLO DE CONTROLE
   45.1.1 Redução do Número de Ciclos — [I]
 	  Simplificação das etapas
 	  Combinação de operações
+	  Redução de estados de controle
+	  Combinação de micro-operações
+	  Execução simultânea de micro-operações compatíveis
+	  Eliminação de estados redundantes
 
   45.1.2 Otimização da Geração de Sinais — [I]
 	  Redução da complexidade lógica
@@ -1323,10 +1441,9 @@ PARTE 11 — VARIAÇÕES, OTIMIZAÇÕES E EVOLUÇÃO DO CICLO DE CONTROLE
 
 
  45.2 Impactos das Otimizações — [I]
-
-  45.2.1 Ganhos de Desempenho — [I]
-	  Redução do tempo de execução
-	  Aumento da frequência de operação
+	Ganhos de Desempenho
+	Redução do tempo de execução
+	Aumento da frequência de operação
 
 
 
@@ -1348,10 +1465,18 @@ PARTE 11 — VARIAÇÕES, OTIMIZAÇÕES E EVOLUÇÃO DO CICLO DE CONTROLE
   46.2.1 Alteração do Fluxo Normal — [I]
 	  Suspensão do ciclo corrente
 	  Desvio para tratamento
+	  Entrada em estado de exceção
+	  Salvamento do estado de controle
+	  Redirecionamento da sequência
+	  Estado de tratamento
+	  Retorno à sequência normal
 
   46.2.2 Retorno ao Ciclo Normal — [I]
 	  Restauração do estado
 	  Continuidade da execução
+	  Restauração do estado
+	  Retorno ao estado apropriado
+	  Retomada da sequência de controle
 
 
 
@@ -1369,10 +1494,9 @@ PARTE 11 — VARIAÇÕES, OTIMIZAÇÕES E EVOLUÇÃO DO CICLO DE CONTROLE
 
 
  47.2 Perspectivas Futuras — [V]
-
-  47.2.1 Novas Abordagens de Controle — [V]
-	  Controle adaptativo
-	  Maior integração com previsão de desempenho
+	Novas Abordagens de Controle
+	Controle adaptativo
+	Maior integração com previsão de desempenho
 
 
 
@@ -1386,10 +1510,17 @@ PARTE 12 — ANÁLISE, INTEGRAÇÃO E CONSOLIDAÇÃO DO CICLO DE CONTROLE
   48.1.1 Relação com o Caminho de Dados — [I]
 	  Cooperação funcional
 	  Direcionamento das operações
+	  Sinais de controle → ações no Datapath
+	  Resultados do Datapath → condições de controle
+	  Realimentação do Datapath para a Unidade de Controle
+	  Dependência entre controle e execução
 
   48.1.2 Relação com a ISA — [I]
 	  Implementação das instruções definidas pela ISA
 	  Suporte à execução do conjunto de instruções
+	  Decodificação das instruções da ISA
+	  Mapeamento de instruções para sequências de controle
+	  Implementação de cada operação por estados e micro-operações
 
 
  48.2 Relações Complementares — [I]
@@ -1409,6 +1540,10 @@ PARTE 12 — ANÁLISE, INTEGRAÇÃO E CONSOLIDAÇÃO DO CICLO DE CONTROLE
   49.1.1 Impacto da Duração do Ciclo — [I]
 	  Relação com a frequência de operação
 	  Influência sobre o tempo de execução
+	  Atraso da lógica de controle
+	  Atraso de propagação
+	  Tempo de estabilização dos sinais
+	  Limitação do período mínimo de clock
 
   49.1.2 Impacto da Complexidade do Controle — [I]
 	  Relação com o tempo de geração dos sinais
@@ -1416,11 +1551,9 @@ PARTE 12 — ANÁLISE, INTEGRAÇÃO E CONSOLIDAÇÃO DO CICLO DE CONTROLE
 
 
  49.2 Otimização do Desempenho via Controle — [I]
-
-  49.2.1 Estratégias de Melhoria — [I]
-	  Redução de ciclos
-	  Paralelismo e pipeline
-	  Simplificação da lógica de controle
+	Redução de ciclos
+	Paralelismo e pipeline
+	Simplificação da lógica de controle
 
 
 
@@ -1435,6 +1568,10 @@ PARTE 13 — RESUMO GERAL E CONCLUSÃO
 	  Definição do Ciclo de Controle
 	  Objetivos e importância
 	  Relação com o ciclo de instrução
+	  Estados de controle
+	  Micro-operações
+	  Sinais de controle
+	  Sequenciamento
 
   50.1.2 Etapas do Ciclo — [I]
 	  Busca
@@ -1449,6 +1586,10 @@ PARTE 13 — RESUMO GERAL E CONCLUSÃO
   50.2.1 Sinais de Controle — [I]
 	  Geração e distribuição
 	  Codificação e temporização
+	  Codificação horizontal
+	  Codificação vertical
+	  Combinação de sinais
+	  Relação sinal → micro-operação
 
   50.2.2 Sincronização — [I]
 	  Papel do clock
@@ -1456,11 +1597,14 @@ PARTE 13 — RESUMO GERAL E CONCLUSÃO
 
 
  50.3 Revisão das Implementações — [I]
-
-  50.3.1 Abordagens Estudadas — [I]
-	  Controle cablado
-	  Controle microprogramado
-	  Monociclo, multiciclo e pipeline
+	Controle cablado
+	Controle microprogramado
+	Monociclo, multiciclo e pipeline
+	Máquinas de estados de controle
+	Sequenciamento microprogramado
+	RTL e micro-operações
+	Monociclo e multiciclo
+	Controle cablado e microprogramado
 
 
 
