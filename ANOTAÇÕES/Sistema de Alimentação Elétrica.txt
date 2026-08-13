@@ -155,12 +155,11 @@ PARTE 1 — FUNDAMENTOS DA ALIMENTAÇÃO ELÉTRICA EM COMPUTADORES
 
 
  4.3 Importância da Evolução para a Computação Atual — [V]
-
-  4.3.1 Impactos na Computação Moderna — [V]
-	  Maior eficiência energética
-	  Suporte a processadores de alto desempenho
-	  Base para dispositivos móveis
-	  Redução de dissipação térmica
+	Impactos na Computação Moderna
+	Maior eficiência energética
+	Suporte a processadores de alto desempenho
+	Base para dispositivos móveis
+	Redução de dissipação térmica
 
 
 
@@ -1105,6 +1104,12 @@ PARTE 7 — PROTEÇÃO ELÉTRICA, QUALIDADE DA ENERGIA E CONFIABILIDADE
   32.2.2 Redundância e Tolerância a Falhas — [I]
 	  Fontes redundantes
 	  Continuidade de operação
+	  Compartilhamento de carga entre fontes
+	  Failover
+	  Hot-swap
+	  Isolamento entre fontes redundantes
+	  ORing de alimentação
+	  Continuidade de operação após falha de uma fonte
 
 
 
@@ -1119,6 +1124,10 @@ PARTE 8 — ALIMENTAÇÃO ELÉTRICA DOS COMPONENTES E INTERFACES DE ALIMENTAÇÃ
 	  Baixa tensão e alta corrente
 	  Variação rápida de demanda
 	  Sensibilidade a ruído
+	  Transitórios rápidos de corrente
+	  Corrente de pico
+	  Variação dinâmica da demanda de energia
+	  Requisitos de resposta transitória do sistema de alimentação
 
   33.1.2 Conector de Alimentação do Processador — [P]
 	  Conectores dedicados
@@ -1130,6 +1139,9 @@ PARTE 8 — ALIMENTAÇÃO ELÉTRICA DOS COMPONENTES E INTERFACES DE ALIMENTAÇÃ
   33.2.1 VRM do Processador — [P]
 	  Posicionamento próximo ao soquete
 	  Fases dedicadas
+	  Resposta transitória do VRM
+	  Compartilhamento de corrente entre fases
+	  Controle da tensão sob variação de carga
 
   33.2.2 Especificação de Tensão pelo Processador — [P]
 	  Identificação de tensão (VID)
@@ -1148,6 +1160,9 @@ PARTE 8 — ALIMENTAÇÃO ELÉTRICA DOS COMPONENTES E INTERFACES DE ALIMENTAÇÃ
   34.1.2 Estabilidade Exigida pela Memória — [I]
 	  Sensibilidade a variações
 	  Importância para integridade dos dados
+	  Ripple máximo admissível
+	  Transitórios de corrente
+	  Resposta da alimentação às mudanças de atividade da memória
 
 
  34.2 Distribuição de Energia para Memória — [I]
@@ -1259,10 +1274,19 @@ PARTE 9 — GERENCIAMENTO DE ENERGIA, LIMITES DE PROJETO E ESTADOS DE CONSUMO
   38.2.1 Controladores de Gerenciamento de Energia — [P]
 	  Circuitos dedicados ao controle
 	  Comunicação com o processador
+	  Controle de estados de energia
+	  Controle de sequenciamento de energia
+	  Supervisão de limites de potência
+	  Coordenação entre reguladores e cargas
 
   38.2.2 Sensores de Energia — [P]
 	  Monitoramento de tensão
 	  Monitoramento de corrente e temperatura
+	  Sensores de potência
+	  Monitoramento de Power Good
+	  Telemetria de tensão e corrente
+	  Detecção de eventos transitórios
+	  Monitoramento de limites elétricos e térmicos
 
 
 
@@ -1284,6 +1308,10 @@ PARTE 9 — GERENCIAMENTO DE ENERGIA, LIMITES DE PROJETO E ESTADOS DE CONSUMO
   39.2.1 Mecanismos de Transição — [P]
 	  Critérios de mudança de estado
 	  Tempo de resposta
+	  Sequenciamento durante transições
+	  Rampas de tensão
+	  Soft-start e soft-stop
+	  Controle das tensões durante ativação e desativação
 
   39.2.2 Impacto das Transições na Alimentação — [P]
 	  Variações de demanda de energia
@@ -1323,6 +1351,10 @@ PARTE 9 — GERENCIAMENTO DE ENERGIA, LIMITES DE PROJETO E ESTADOS DE CONSUMO
   41.1.1 Limites de Corrente e Potência — [I]
 	  Capacidade máxima dos reguladores
 	  Limites de fornecimento da fonte
+	  Corrente de pico
+	  Corrente transitória
+	  Capacidade de fornecimento sustentado
+	  Margem para transientes de carga
 
   41.1.2 Margens de Segurança Elétrica — [I]
 	  Folga de projeto
@@ -1351,6 +1383,11 @@ PARTE 10 — DIMENSIONAMENTO, PROJETO, INTEGRAÇÃO E TECNOLOGIAS MODERNAS DE AL
   42.1.1 Levantamento de Consumo dos Componentes — [I]
 	  Soma do consumo individual
 	  Margem para picos de consumo
+	  Consumo em repouso
+	  Consumo em carga
+	  Consumo durante transientes
+	  Corrente de pico
+	  Margem para expansão e variação de carga
 
   42.1.2 Dimensionamento da Fonte de Alimentação — [I]
 	  Escolha da potência adequada
@@ -1376,10 +1413,19 @@ PARTE 10 — DIMENSIONAMENTO, PROJETO, INTEGRAÇÃO E TECNOLOGIAS MODERNAS DE AL
   43.1.1 Layout da Rede de Distribuição de Energia — [I]
 	  Posicionamento de planos de energia
 	  Redução de caminhos longos
+	  Controle da indutância parasita
+	  Controle da resistência parasita
+	  Posicionamento dos capacitores de desacoplamento
+	  Redução das áreas de loop de corrente
+	  Controle da impedância da PDN
 
   43.1.2 Posicionamento de Componentes de Potência — [I]
 	  Proximidade entre VRM e carga
 	  Minimização de indutância parasita
+	  Posicionamento de capacitores de desacoplamento
+	  Minimização de caminhos de corrente
+	  Redução de indutâncias parasitas
+	  Separação de áreas de potência e sinais sensíveis
 
 
  43.2 Validação do Projeto Elétrico — [I]
@@ -1412,6 +1458,10 @@ PARTE 10 — DIMENSIONAMENTO, PROJETO, INTEGRAÇÃO E TECNOLOGIAS MODERNAS DE AL
   44.2.1 Integração com o Firmware e BIOS/UEFI — [I]
 	  Configuração de parâmetros de energia
 	  Monitoramento via firmware
+	  Configuração de limites de potência
+	  Monitoramento de tensão e temperatura
+	  Controle de estados de energia
+	  Configuração de parâmetros de alimentação
 
   44.2.2 Integração com o Sistema Operacional — [I]
 	  Políticas de gerenciamento de energia
@@ -1595,8 +1645,7 @@ PARTE 12 — RESUMO GERAL E CONCLUSÃO
 
 
  50.3 Encerramento — [V]
-
-  50.3.1 Visão Geral Final — [V]
-	  Integração dos conceitos estudados
-	  Importância do sistema de alimentação elétrica
-	  Continuidade dos estudos em Arquitetura de Computadores
+	Visão Geral Final
+	Integração dos conceitos estudados
+	Importância do sistema de alimentação elétrica
+	Continuidade dos estudos em Arquitetura de Computadores
