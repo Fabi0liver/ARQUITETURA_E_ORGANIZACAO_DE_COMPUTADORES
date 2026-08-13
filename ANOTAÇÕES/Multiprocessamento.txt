@@ -285,6 +285,10 @@ PARTE 2 — ESTRUTURA E FUNCIONAMENTO DO MULTIPROCESSAMENTO
 	  Conceito de interrupção
 	  Papel na troca de contexto
 	  Tipos de interrupção
+	  Inter-Processor Interrupt (IPI)
+	  Comunicação entre processadores por interrupções
+	  Solicitação de processamento entre núcleos
+	  Coordenação entre processadores
 
   9.2.2 Chamadas de Sistema (System Calls) — [I]
 	  Conceito de chamada de sistema
@@ -554,6 +558,14 @@ PARTE 3 — MULTIPROCESSADORES E ORGANIZAÇÃO DE SISTEMAS MULTIPROCESSADOS
 	  Redução da contenção de memória
 	  Uso eficiente em sistemas com muitos núcleos
 
+  18.2.3 Organização e Localidade em NUMA — [P]
+	  Localidade de memória
+	  Acesso à memória local × remota
+	  Afinidade entre processador e memória
+	  Alocação de memória próxima ao processador
+	  Impacto da latência de acesso remoto
+	  NUMA-aware
+
 
 
 PARTE 4 — ARQUITETURAS MULTICORE E PROCESSAMENTO MULTINÚCLEO
@@ -624,6 +636,9 @@ PARTE 4 — ARQUITETURAS MULTICORE E PROCESSAMENTO MULTINÚCLEO
 	  Malha (Mesh)
 	  Torus
 	  Interconexões hierárquicas
+	  Network-on-Chip (NoC)
+	  Roteamento entre nós
+	  Comunicação baseada em pacotes
 
   20.3.2 Características da Interconexão — [P]
 	  Largura de banda
@@ -1262,6 +1277,20 @@ PARTE 7 — MEMÓRIA E COMPARTILHAMENTO EM SISTEMAS MULTIPROCESSADOS
   40.2.2 Modelos Relaxados de Consistência — [P]
 	  Permissão de reordenações
 	  Maior desempenho com regras mais flexíveis
+	  Total Store Order (TSO)
+	  Release Consistency
+	  Acquire/Release
+	  Reordenação de leituras e escritas
+
+  40.2.3 Barreiras e Fences de Memória — [P]
+	  Conceito de barreira de memória
+	  Memory fence
+	  Read barrier
+	  Write barrier
+	  Read-Write barrier
+	  Ordenação das operações de memória
+	  Relação entre fences e consistência de memória
+	  Relação entre operações atômicas e fences
 
 
 
@@ -1317,16 +1346,6 @@ PARTE 8 — PARALELISMO, DESEMPENHO, ESCALABILIDADE E BALANCEAMENTO DE CARGA
   42.2.2 Aplicações — [I]
 	  Sistemas com múltiplas funcionalidades
 	  Pipelines de processamento
-
-  40.2.3 Barreiras e Fences de Memória — [P]
-	  Conceito de barreira de memória
-	  Memory fence
-	  Read barrier
-	  Write barrier
-	  Read-Write barrier
-	  Ordenação das operações de memória
-	  Relação entre fences e consistência de memória
-	  Relação entre operações atômicas e fences
 
 
 
