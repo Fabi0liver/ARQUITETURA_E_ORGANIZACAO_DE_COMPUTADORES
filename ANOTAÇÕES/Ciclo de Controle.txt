@@ -22,6 +22,9 @@ PARTE 1 — FUNDAMENTOS DO CICLO DE CONTROLE
 	  Papel do controle na execução das instruções
 	  Diferença entre controle e processamento de dados
 	  Relação com a Unidade de Controle
+	  Relação entre estado atual, sinais de controle e próxima ação
+	  Relação entre micro-operações e ciclo de controle
+	  Relação entre estados de controle e execução das operações
 	  Importância na Organização de Computadores
 
   1.1.2 Objetivos do Ciclo de Controle — [I]
@@ -38,6 +41,9 @@ PARTE 1 — FUNDAMENTOS DO CICLO DE CONTROLE
 	  Interpretação das instruções
 	  Ativação seletiva dos componentes
 	  Coordenação temporal das operações
+	  Tomada de decisões de controle
+	  Dependência do controle em relação às condições e sinais de status
+	  Realimentação de informações para decisão do próximo estado
 
   1.2.2 Arquitetura × Organização × Ciclo de Controle — [I]
 	  O que pertence à Arquitetura
@@ -92,11 +98,20 @@ PARTE 1 — FUNDAMENTOS DO CICLO DE CONTROLE
 	  Instrução corrente
 	  Estado da máquina
 	  Sinais de status
+	  Opcode e campos da instrução
+	  Flags de condição
+	  Sinais de condição
+	  Sinais de exceção e eventos de controle
+	  Sinal de reset
 
   3.2.2 Elementos de Saída do Controle — [I]
 	  Sinais de controle
 	  Ativação dos componentes
 	  Comandos operacionais
+	  Sinais de seleção
+	  Sinais de habilitação
+	  Sinais de leitura e escrita
+	  Sinais de seleção do próximo estado
 
 
 
@@ -123,6 +138,9 @@ PARTE 1 — FUNDAMENTOS DO CICLO DE CONTROLE
 	  Execução
 	  Acesso à memória
 	  Escrita do resultado
+	  Estados de controle associados às etapas
+	  Micro-operações associadas a cada etapa
+	  Sinais de controle associados a cada etapa
 
   4.2.2 Integração entre os Dois Ciclos — [I]
 	  Dependência mútua
@@ -143,12 +161,20 @@ PARTE 2 — ESTRUTURA E ORGANIZAÇÃO DO CICLO DE CONTROLE
 	  Registrador de instrução
 	  Contador de programa
 	  Sinais de controle
+	  Registrador de estado
+	  Lógica de próximo estado
+	  Lógica de saída
+	  Unidade geradora de sinais de controle
 
   5.1.2 Fluxo de Operação do Controle — [I]
 	  Recebimento da instrução
 	  Interpretação
 	  Geração dos sinais
 	  Ativação do Datapath
+	  Determinação do estado atual
+	  Determinação do próximo estado
+	  Geração das ações de controle
+	  Retorno das condições do processador ao controle
 
 
  5.2 Organização Interna da Unidade de Controle — [I]
@@ -157,6 +183,11 @@ PARTE 2 — ESTRUTURA E ORGANIZAÇÃO DO CICLO DE CONTROLE
 	  Decodificador de instruções
 	  Sequenciador
 	  Lógica de geração de sinais
+	  Registrador de estado
+	  Lógica de próximo estado
+	  Lógica de saída
+	  Elementos de temporização
+	  Lógica de condições
 
   5.2.2 Organização Lógica do Controle — [I]
 	  Fluxo lógico de decisão
@@ -191,6 +222,13 @@ PARTE 2 — ESTRUTURA E ORGANIZAÇÃO DO CICLO DE CONTROLE
 	  Determinação da próxima etapa
 	  Ativação dos sinais adequados
 	  Encerramento do ciclo
+	  Seleção do próximo estado
+	  Transições sequenciais
+	  Transições condicionais
+	  Transições por opcode
+	  Transições por sinais de status
+	  Estados de espera
+	  Estados de exceção
 
 
 
@@ -220,6 +258,12 @@ PARTE 2 — ESTRUTURA E ORGANIZAÇÃO DO CICLO DE CONTROLE
 	  Determinação do próximo estado
 	  Controle da ordem das etapas
 	  Base para controle cablado e microprogramado
+	  Seleção entre próximo estado sequencial e condicional
+	  Desvios condicionais
+	  Desvios incondicionais
+	  Seleção do endereço do próximo estado
+	  Controle de estados de espera
+	  Controle de estados de exceção
 
 
 
@@ -236,6 +280,10 @@ PARTE 2 — ESTRUTURA E ORGANIZAÇÃO DO CICLO DE CONTROLE
 	  Indicadores de condição
 	  Uso em decisões de controle
 	  Influência sobre desvios condicionais
+	  Flags como entradas da lógica de controle
+	  Condições derivadas das flags
+	  Uso das flags na determinação do próximo estado
+	  Realimentação das condições para a Unidade de Controle
 
 
  8.2 Registradores Auxiliares de Controle — [P]
@@ -247,6 +295,9 @@ PARTE 2 — ESTRUTURA E ORGANIZAÇÃO DO CICLO DE CONTROLE
   8.2.2 Registrador de Dados de Memória (MDR) — [P]
 	  Papel na transferência de dados
 	  Relação com as etapas do ciclo
+	  Uso do MDR em operações controladas por micro-operações
+	  Transferência entre MDR e outros registradores
+	  Sinais de controle associados ao MDR
 
 
 
@@ -263,6 +314,11 @@ PARTE 2 — ESTRUTURA E ORGANIZAÇÃO DO CICLO DE CONTROLE
 	  Sinais de status
 	  Condições para decisões
 	  Realimentação do controle
+	  Flags de condição
+	  Sinais de término de operação
+	  Sinais de condição da ULA
+	  Sinais de espera
+	  Realimentação para a lógica de próximo estado
 
 
  9.2 Separação de Responsabilidades — [I]
@@ -296,14 +352,21 @@ PARTE 3 — ETAPAS E FASES DO CICLO DE CONTROLE
 	  Execução
 	  Acesso à memória
 	  Escrita do resultado
+	  Estados de controle correspondentes às etapas
+	  Micro-operações de cada etapa
+	  Sinais de controle de cada etapa
+	  Condições de transição entre etapas
 
 
- 10.2 Importância de Cada Etapa — [P]
-
-  10.2.1 Papel Funcional das Etapas — [P]
-	  Contribuição para a execução da instrução
-	  Dependência entre etapas
-	  Necessidade de sincronização
+ 10.2 Papel Funcional das Etapas — [P]
+	Contribuição para a execução da instrução
+	Dependência entre etapas
+	Necessidade de sincronização
+	Estado de controle associado
+	Micro-operações realizadas
+	Sinais necessários
+	Condições para avanço
+	Condições para repetição ou espera
 
 
 
@@ -322,13 +385,15 @@ PARTE 3 — ETAPAS E FASES DO CICLO DE CONTROLE
 	  Atualização do contador de programa
 
 
- 11.2 Sequência de Operações na Busca — [P]
-
-  11.2.1 Passos da Etapa de Busca — [P]
-	  Envio do endereço da instrução
-	  Leitura da memória
-	  Carregamento no registrador de instrução
-	  Incremento do contador de programa
+ 11.2 Passos da Etapa de Busca — [P]
+	Envio do endereço da instrução
+	Leitura da memória
+	Carregamento no registrador de instrução
+	Incremento do contador de programa
+ 	Micro-operações RTL da busca
+	Estados de controle da busca
+	Sequência temporal dos sinais
+	Condições de término da busca
 
 
 
@@ -347,13 +412,16 @@ PARTE 3 — ETAPAS E FASES DO CICLO DE CONTROLE
 	  Preparação do caminho de dados
 
 
- 12.2 Sequência de Operações na Decodificação — [P]
-
-  12.2.1 Passos da Etapa de Decodificação — [P]
-	  Leitura do registrador de instrução
-	  Identificação do formato da instrução
-	  Extração dos campos da instrução
-	  Geração dos sinais de controle correspondentes
+ 12.2 Passos da Etapa de Decodificação — [P]
+	Leitura do registrador de instrução
+	Identificação do formato da instrução
+	Extração dos campos da instrução
+	Geração dos sinais de controle correspondentes
+	Extração do opcode
+	Determinação da sequência de controle correspondente
+	Seleção do próximo estado
+	Micro-operações de preparação da execução
+	Sinais de controle associados
 
 
 
@@ -372,13 +440,16 @@ PARTE 3 — ETAPAS E FASES DO CICLO DE CONTROLE
 	  Direcionamento do resultado
 
 
- 13.2 Sequência de Operações na Execução — [P]
-
-  13.2.1 Passos da Etapa de Execução — [P]
-	  Envio dos operandos à ULA
-	  Execução da operação
-	  Geração do resultado
-	  Atualização dos indicadores de estado
+ 13.2 Passos da Etapa de Execução — [P]
+	Envio dos operandos à ULA
+	Execução da operação
+	Geração do resultado
+	Atualização dos indicadores de estado
+	Micro-operações RTL da execução
+	Estados específicos da operação
+	Sinais de seleção da ULA
+	Sinais de habilitação dos registradores
+	Condições para determinação do próximo estado
 
 
 
@@ -397,12 +468,15 @@ PARTE 3 — ETAPAS E FASES DO CICLO DE CONTROLE
 	  Seleção do endereço de memória
 
 
- 14.2 Sequência de Operações no Acesso à Memória — [P]
-
-  14.2.1 Passos da Etapa de Acesso à Memória — [P]
-	  Envio do endereço à memória
-	  Leitura ou escrita do dado
-	  Armazenamento temporário do valor lido
+ 14.2 Passos da Etapa de Acesso à Memória — [P]
+	Envio do endereço à memória
+	Leitura ou escrita do dado
+	Armazenamento temporário do valor lido
+	Estados de controle para leitura
+	Estados de controle para escrita
+	Estados de espera
+	Micro-operações RTL de acesso
+	Condições de término da operação de memória
 
 
 
@@ -421,12 +495,16 @@ PARTE 3 — ETAPAS E FASES DO CICLO DE CONTROLE
 	  Seleção da origem do dado a escrever
 
 
- 15.2 Sequência de Operações no Write-back — [P]
-
-  15.2.1 Passos da Etapa de Write-back — [P]
-	  Seleção do valor a ser gravado
-	  Escrita no banco de registradores
-	  Encerramento do ciclo da instrução
+ 15.2 Passos da Etapa de Write-back — [P]
+	Seleção do valor a ser gravado
+	Escrita no banco de registradores
+	Encerramento do ciclo da instrução
+	Micro-operações RTL do write-back
+	Estado de controle de escrita
+	Seleção da origem do resultado
+	Seleção do destino
+	Sinal de habilitação de escrita
+	Transição para o estado de busca
 
 
 
@@ -446,14 +524,26 @@ PARTE 4 — FUNCIONAMENTO E SEQUENCIAMENTO DO CICLO DE CONTROLE
 	  Contadores de estado
 	  Lógica de próximo estado
 	  Uso de microprogramação
+	  Registrador de estado
+	  Lógica de próximo estado
+	  Tabela de transição
+	  Codificação dos estados
+	  Seleção do próximo estado
+	  Sequenciamento condicional
+	  Sequenciamento incondicional
 
 
- 16.2 Controle da Ordem das Operações — [P]
-
-  16.2.1 Determinação do Próximo Estado — [P]
-	  Uso do estado atual
-	  Uso de condições e sinais de status
-	  Transição para o próximo estado
+ 16.2 Determinação do Próximo Estado — [P]
+	Uso do estado atual
+	Uso de condições e sinais de status
+	Transição para o próximo estado
+	Tabela de estados
+	Tabela de transição
+	Equações de próximo estado
+	Influência do opcode
+	Influência das flags
+	Influência dos sinais de condição
+	Influência de eventos de controle
 
 
 
@@ -470,6 +560,11 @@ PARTE 4 — FUNCIONAMENTO E SEQUENCIAMENTO DO CICLO DE CONTROLE
 	  Diagramas de estados
 	  Tabelas de transição
 	  Representação microprogramada
+	  Tabela de estados
+	  Tabela de saída
+	  Equações de transição
+	  Codificação dos estados
+	  Representação RTL do fluxo de controle	
 
 
  17.2 Tipos de Fluxo — [P]
@@ -498,6 +593,11 @@ PARTE 4 — FUNCIONAMENTO E SEQUENCIAMENTO DO CICLO DE CONTROLE
 	  Representação das etapas como estados
 	  Transições conforme sinais e condições
 	  Modelagem do controle
+	  Projeto da FSM de controle
+	  Definição dos estados
+	  Definição das transições
+	  Definição das saídas
+	  Associação entre estados e sinais de controle
 
 
  18.2 Componentes da Máquina de Estados de Controle — [P]
@@ -505,10 +605,22 @@ PARTE 4 — FUNCIONAMENTO E SEQUENCIAMENTO DO CICLO DE CONTROLE
   18.2.1 Estado Atual — [P]
 	  Registrador de estado
 	  Indicação da etapa corrente
+	  Codificação do estado
+	  Armazenamento do estado
+	  Atualização do estado pelo clock
+	  Estado inicial
+	  Estado de reset
+	  Estados inválidos
 
   18.2.2 Lógica de Próximo Estado — [P]
 	  Determinação da transição
 	  Uso de entradas e condições
+	  Equações de próximo estado
+	  Tabela de transição
+	  Seleção condicional
+	  Seleção sequencial
+	  Tratamento de estados inválidos
+	  Recuperação para estado seguro
 
 
 
@@ -520,6 +632,10 @@ PARTE 4 — FUNCIONAMENTO E SEQUENCIAMENTO DO CICLO DE CONTROLE
 	  Indicação da etapa atual
 	  Progressão sequencial
 	  Reinício ao final do ciclo
+	  Contagem das fases de controle
+	  Decodificação do estado
+	  Reinicialização por condição
+	  Transição para estados especiais
 
 
  19.2 Sequenciadores no Controle Microprogramado — [P]
@@ -544,12 +660,15 @@ PARTE 4 — FUNCIONAMENTO E SEQUENCIAMENTO DO CICLO DE CONTROLE
 	  Ausência de interrupções pendentes
 
 
- 20.2 Encerramento do Ciclo — [I]
-
-  20.2.1 Situações de Encerramento — [I]
-	  Parada do processador
-	  Tratamento de exceções
-	  Instruções especiais de controle
+ 20.2 Situações de Encerramento — [I]
+	Parada do processador
+	Tratamento de exceções
+	Instruções especiais de controle
+	Estado de parada
+	Estado de espera
+	Estado de reset
+	Estado de tratamento de exceção
+	Retorno ao estado inicial
 
 
 
@@ -564,6 +683,10 @@ PARTE 5 — SINAIS E SINAIS DE CONTROLE NO CICLO DE CONTROLE
 	  Definição de sinal de controle
 	  Papel na ativação dos componentes
 	  Natureza binária dos sinais
+	  Sinais de controle como comandos de micro-operações
+	  Sinais de controle combinados
+	  Sinais mutuamente exclusivos
+	  Combinações válidas e inválidas
 
   21.1.2 Finalidade dos Sinais de Controle — [P]
 	  Habilitação de operações
@@ -591,11 +714,18 @@ PARTE 5 — SINAIS E SINAIS DE CONTROLE NO CICLO DE CONTROLE
 	  Habilitação de leitura
 	  Habilitação de escrita
 	  Habilitação de registradores
+	  Habilitação de carregamento
+	  Habilitação de incremento
+	  Habilitação de atualização de estado
 
   22.1.2 Sinais de Seleção — [P]
 	  Seleção de operação da ULA
 	  Seleção de registradores
 	  Seleção de origem de dados
+	  Seleção do destino
+	  Seleção da operação
+	  Seleção do próximo estado
+	  Seleção condicional
 
 
  22.2 Classificação por Destino — [P]
@@ -615,17 +745,20 @@ PARTE 5 — SINAIS E SINAIS DE CONTROLE NO CICLO DE CONTROLE
   23.1.1 Ativação de Registradores — [P]
 	  Sinais de escrita em registradores
 	  Sinais de leitura de registradores
+	  Sinais de carregamento de registradores
+	  Sinais de incremento
+	  Sinais de atualização
+	  Condições de escrita
+	  Controle de exclusividade das operações
 
   23.1.2 Ativação de Multiplexadores — [P]
 	  Seleção de entradas
 	  Direcionamento de dados
+	  
 
-
- 23.2 Ativação da ULA — [P]
-
-  23.2.1 Sinais de Operação da ULA — [P]
-	  Seleção da operação aritmética ou lógica
-	  Controle dos operandos de entrada
+ 23.2 Sinais de Operação da ULA — [P]
+	Seleção da operação aritmética ou lógica
+	Controle dos operandos de entrada
 
 
 
@@ -640,6 +773,11 @@ PARTE 5 — SINAIS E SINAIS DE CONTROLE NO CICLO DE CONTROLE
   24.1.2 Palavra de Controle — [P]
 	  Conjunto de sinais em uma palavra
 	  Uso no controle microprogramado
+	  Organização dos campos da palavra de controle
+	  Campos de operação
+	  Campos de seleção
+	  Campos de sequenciamento
+	  Campos de condição
 
 
  24.2 Organização da Codificação — [P]
@@ -667,11 +805,14 @@ PARTE 5 — SINAIS E SINAIS DE CONTROLE NO CICLO DE CONTROLE
 	  Desativação ao final da etapa
 
 
- 25.2 Consequências de Erros de Temporização — [I]
-
-  25.2.1 Riscos de Sinais Mal Temporizados — [I]
-	  Corrupção de dados
-	  Execução incorreta das instruções
+ 25.2 Riscos de Sinais Mal Temporizados — [I]
+	Corrupção de dados
+	Execução incorreta das instruções
+	Sobreposição indevida de sinais
+	Conflitos entre operações
+	Captura incorreta de dados
+	Ativação simultânea de operações incompatíveis
+	Violação das condições de sincronização
 
 
 
@@ -685,10 +826,18 @@ PARTE 6 — GERAÇÃO E DISTRIBUIÇÃO DOS SINAIS DE CONTROLE
   26.1.1 Geração a partir da Instrução — [P]
 	  Uso do opcode
 	  Uso dos campos da instrução
+	  Opcode como entrada da lógica de controle
+	  Campos da instrução como condições de controle
+	  Mapeamento da instrução para estados
+	  Mapeamento da instrução para sinais
 
   26.1.2 Geração a partir do Estado — [P]
 	  Uso do estado atual do ciclo
 	  Uso de sinais de condição
+	  Estado atual + condições
+	  Lógica de próximo estado
+	  Lógica de saída
+	  Geração de sinais específicos por estado
 
 
  26.2 Métodos de Geração — [P]
@@ -696,6 +845,14 @@ PARTE 6 — GERAÇÃO E DISTRIBUIÇÃO DOS SINAIS DE CONTROLE
   26.2.1 Geração por Lógica Combinacional — [P]
 	  Uso de portas lógicas
 	  Relação direta entrada-saída
+	  Tabela de controle
+	  Equações lógicas dos sinais
+	  Minimização das funções lógicas
+	  Uso de decodificadores
+	  Uso de portas lógicas
+	  Uso de PLA/PAL
+	  Implementação da lógica de próximo estado
+	  Implementação da lógica de saída
 
   26.2.2 Geração por Microprograma — [P]
 	  Uso de memória de controle
@@ -717,11 +874,15 @@ PARTE 6 — GERAÇÃO E DISTRIBUIÇÃO DOS SINAIS DE CONTROLE
 	  Direcionamento para o Datapath
 
 
- 27.2 Organização Interna — [P]
-
-  27.2.1 Lógica de Decisão — [P]
-	  Determinação dos sinais a ativar
-	  Base para controle cablado ou microprogramado
+ 27.2 Lógica de Decisão — [P]
+	Determinação dos sinais a ativar
+	Base para controle cablado ou microprogramado
+	Tabela verdade dos sinais de controle
+	Equações de controle
+	Condições de ativação
+	Condições de exclusão
+	Minimização da lógica
+	Validação das combinações de sinais
 
 
 
