@@ -861,28 +861,14 @@ PARTE 8 — TÉCNICAS DE EXECUÇÃO E OTIMIZAÇÃO MICROARQUITETURAL
 
 38. Execução Superescalar — [I]
 
- 38.1 Fundamentos da Execução Superescalar — [I]
-
-  38.1.1 Conceito e Funcionamento — [I]
-	  Execução de múltiplas instruções por ciclo
-	  Múltiplas unidades funcionais
-
-  38.1.2 Desafios da Execução Superescalar — [I]
-	  Detecção de dependências
-	  Escalonamento das instruções
+ 38.1 Conceito e Funcionamento — [I]
+	Execução de múltiplas instruções por ciclo
+	Múltiplas unidades funcionais
 
 
-
-39. Execução Fora de Ordem (Out-of-Order) — [I]
-
- 39.1 Conceito e Funcionamento — [I]
-	Reordenação da execução das instruções
-	Manutenção da ordem lógica dos resultados
-
-
- 39.2 Mecanismos de Suporte — [I]
-	  Renomeação de registradores
-	  Buffer de reordenação
+ 38.2 Desafios da Execução Superescalar — [I]
+	Detecção de dependências
+	Escalonamento das instruções
 
 
  38.3 Organização da Execução Superescalar — [P]
@@ -895,15 +881,93 @@ PARTE 8 — TÉCNICAS DE EXECUÇÃO E OTIMIZAÇÃO MICROARQUITETURAL
 
 
 
-40. Previsão de Desvios (Branch Prediction) — [I]
+39. Execução Fora de Ordem (Out-of-Order) — [I]
 
- 40.1 Fundamentos da Previsão de Desvios — [I]
+ 39.1 Conceito e Funcionamento — [I]
+	Reordenação da execução das instruções
+	Manutenção da ordem lógica dos resultados
 
-  40.1.1 Necessidade da Previsão — [I]
+
+ 39.2 Mecanismos de Suporte — [I]
+	Renomeação de registradores
+	Buffer de reordenação
+	Estações de reserva
+	Filas de instruções
+	Escalonamento dinâmico
+	Despacho de instruções
+	Emissão de instruções
+	Seleção de instruções prontas
+	Execução especulativa
+	Commit das instruções
+	Retirement das instruções
+
+
+ 39.3 Renomeação de Registradores — [P]
+	Conceito de renomeação
+	Registradores arquiteturais e físicos
+	Mapeamento entre registradores
+	Eliminação de dependências WAR
+	Eliminação de dependências WAW
+	Tabela de renomeação
+	Liberação de registradores físicos
+
+
+ 39.4 Escalonamento e Emissão de Instruções — [P]
+	Conceito de escalonamento dinâmico
+	Identificação de instruções prontas
+	Filas de instruções
+	Seleção de instruções
+	Emissão para unidades funcionais
+	Dependências e disponibilidade dos operandos
+	Execução fora de ordem das instruções
+
+
+
+40. Execução Especulativa — [P]
+
+ 40.1 Fundamentos da Execução Especulativa — [P]
+
+  40.1.1 Conceito e Finalidade — [P]
+	  Conceito de execução especulativa
+	  Execução antes da confirmação do fluxo
+	  Relação com previsão de desvios
+	  Relação com execução fora de ordem
+	  Objetivos de desempenho
+
+  40.1.2 Controle da Execução Especulativa — [P]
+	  Resultados especulativos
+	  Confirmação da execução
+	  Descarte de resultados
+	  Recuperação após especulação incorreta
+	  Preservação do estado arquitetural
+
+
+ 40.2 Recuperação e Finalização da Execução — [P]
+
+  40.2.1 Recuperação após Especulação Incorreta — [P]
+	  Detecção de especulação incorreta
+	  Descarte das instruções especulativas
+	  Limpeza das estruturas internas
+	  Reinício do fluxo correto de execução
+
+  40.2.2 Commit e Retirement — [P]
+	  Conceito de commit
+	  Conceito de retirement
+	  Atualização do estado arquitetural
+	  Finalização em ordem das instruções
+	  Relação com o buffer de reordenação
+
+
+
+41. Previsão de Desvios (Branch Prediction) — [I]
+
+ 41.1 Fundamentos da Previsão de Desvios — [I]
+
+  41.1.1 Necessidade da Previsão — [I]
 	  Impacto dos desvios no pipeline
 	  Redução de penalidades
 
-  40.1.2 Técnicas Gerais de Previsão — [I]
+  41.1.2 Técnicas Gerais de Previsão — [I]
 	  Previsão estática
 	  Previsão dinâmica
 
@@ -912,57 +976,57 @@ PARTE 8 — TÉCNICAS DE EXECUÇÃO E OTIMIZAÇÃO MICROARQUITETURAL
 PARTE 9 — DESEMPENHO, AVALIAÇÃO E EVOLUÇÃO DA MICROARQUITETURA
 
 
-41. Métricas de Desempenho da Microarquitetura — [I]
+42. Métricas de Desempenho da Microarquitetura — [I]
 
- 41.1 Métricas Fundamentais — [I]
+ 42.1 Métricas Fundamentais — [I]
 
-  41.1.1 Frequência de Clock e CPI — [I]
+  42.1.1 Frequência de Clock e CPI — [I]
 	  Ciclos por instrução
 	  Relação com a frequência de operação
 
-  41.1.2 Throughput e Latência — [I]
+  42.1.2 Throughput e Latência — [I]
 	  Taxa de instruções executadas
 	  Tempo de execução de uma instrução
 
 
 
-42. Fatores que Influenciam o Desempenho — [I]
+43. Fatores que Influenciam o Desempenho — [I]
 
  42.1 Fatores Internos da Microarquitetura — [I]
 
-  42.1.1 Profundidade do Pipeline — [I]
+  43.1.1 Profundidade do Pipeline — [I]
 	  Relação com a frequência de clock
 	  Impacto em hazards
 
-  42.1.2 Paralelismo Interno — [I]
+  43.1.2 Paralelismo Interno — [I]
 	  Número de unidades funcionais
 	  Capacidade de execução simultânea
 
 
 
-43. Consumo de Energia e Eficiência Microarquitetural — [V]
+44. Consumo de Energia e Eficiência Microarquitetural — [V]
 
- 43.1 Consumo de Energia na Microarquitetura — [V]
+ 44.1 Consumo de Energia na Microarquitetura — [V]
 
-  43.1.1 Fontes de Consumo — [V]
+  44.1.1 Fontes de Consumo — [V]
 	  Chaveamento dos circuitos
 	  Corrente de fuga
 
-  43.1.2 Técnicas de Eficiência Energética — [V]
+  44.1.2 Técnicas de Eficiência Energética — [V]
 	  Desligamento de unidades ociosas
 	  Ajuste dinâmico de frequência e tensão
 
 
 
-44. Evolução das Microarquiteturas Modernas — [V]
+45. Evolução das Microarquiteturas Modernas — [V]
 
- 44.1 Tendências Atuais — [V]
+ 45.1 Tendências Atuais — [V]
 
-  44.1.1 Microarquiteturas Multinúcleo — [V]
+  45.1.1 Microarquiteturas Multinúcleo — [V]
 	  Múltiplos núcleos de execução
 	  Compartilhamento de recursos internos
 
-  44.1.2 Microarquiteturas Heterogêneas — [V]
+  45.1.2 Microarquiteturas Heterogêneas — [V]
 	  Núcleos com propósitos diferentes
 	  Aceleradores especializados
 
@@ -971,60 +1035,60 @@ PARTE 9 — DESEMPENHO, AVALIAÇÃO E EVOLUÇÃO DA MICROARQUITETURA
 PARTE 10 — PROJETO, IMPLEMENTAÇÃO E INTEGRAÇÃO DA MICROARQUITETURA
 
 
-45. Metodologia de Projeto de Microarquitetura — [I]
+46. Metodologia de Projeto de Microarquitetura — [I]
 
- 45.1 Etapas do Projeto Microarquitetural — [I]
+ 46.1 Etapas do Projeto Microarquitetural — [I]
 
-  45.1.1 Definição de Requisitos — [I]
+  46.1.1 Definição de Requisitos — [I]
 	  Requisitos de desempenho
 	  Requisitos de custo e consumo
 
-  45.1.2 Especificação da Estrutura Interna — [I]
+  46.1.2 Especificação da Estrutura Interna — [I]
 	  Definição do datapath
 	  Definição do controle
 
 
 
-46. Trade-offs de Projeto Microarquitetural — [I]
+47. Trade-offs de Projeto Microarquitetural — [I]
 
- 46.1 Compromissos de Projeto — [I]
+ 47.1 Compromissos de Projeto — [I]
 
-  46.1.1 Desempenho × Complexidade — [I]
+  47.1.1 Desempenho × Complexidade — [I]
 	  Benefícios do aumento de desempenho
 	  Custos da complexidade adicional
 
-  46.1.2 Flexibilidade × Eficiência — [I]
+  47.1.2 Flexibilidade × Eficiência — [I]
 	  Controle flexível versus controle otimizado
 	  Impacto nas decisões de projeto
 
 
 
-47. Verificação e Validação da Microarquitetura — [V]
+48. Verificação e Validação da Microarquitetura — [V]
 
- 47.1 Processos de Verificação — [V]
+ 48.1 Processos de Verificação — [V]
 
-  47.1.1 Simulação da Microarquitetura — [V]
+  48.1.1 Simulação da Microarquitetura — [V]
 	  Testes funcionais
 	  Verificação do comportamento esperado
 
-  47.1.2 Validação de Desempenho — [V]
+  48.1.2 Validação de Desempenho — [V]
 	  Comparação com métricas de projeto
 	  Identificação de gargalos
 
 
 
-48. Integração da Microarquitetura com a ISA e o Sistema — [I]
+49. Integração da Microarquitetura com a ISA e o Sistema — [I]
 
- 48.1 Integração com a ISA — [I]
+ 49.1 Integração com a ISA — [I]
 
-  48.1.1 Compatibilidade com o Conjunto de Instruções — [I]
+  49.1.1 Compatibilidade com o Conjunto de Instruções — [I]
 	  Correspondência entre instruções e implementação
 	  Suporte completo à ISA definida
 
 
- 48.2 Integração com o Restante do Sistema — [I]
+ 49.2 Integração com o Restante do Sistema — [I]
 
-  48.2.1 Relação com Memória e Barramentos Externos — [I]
+  49.2.1 Relação com Memória e Barramentos Externos — [I]
 	  Comunicação com a hierarquia de memória
 	  Interface com dispositivos externos
 
@@ -1033,51 +1097,51 @@ PARTE 10 — PROJETO, IMPLEMENTAÇÃO E INTEGRAÇÃO DA MICROARQUITETURA
 PARTE 11 — RESUMO GERAL, CONSOLIDAÇÃO E CONCLUSÃO da MICROARQUITETURA
 
 
-49. Resumo Geral da Microarquitetura — [I]
+50. Resumo Geral da Microarquitetura — [I]
 
- 49.1 Revisão dos Conceitos Fundamentais — [I]
+ 50.1 Revisão dos Conceitos Fundamentais — [I]
 
-  49.1.1 Fundamentos Essenciais — [I]
+  50.1.1 Fundamentos Essenciais — [I]
 	  Definição de microarquitetura
 	  Relação com ISA e organização
 	  Papel na execução das instruções
 
-  49.1.2 Estrutura e Componentes — [I]
+  50.1.2 Estrutura e Componentes — [I]
 	  Caminho de dados
 	  Unidade de controle
 	  Registradores e interconexões
 
 
- 49.2 Revisão das Técnicas Estudadas — [I]
+ 50.2 Revisão das Técnicas Estudadas — [I]
 
-  49.2.1 Controle e Sequenciamento — [I]
+  50.2.1 Controle e Sequenciamento — [I]
 	  Controle cabeado e microprogramado
 	  Ciclo de instrução
 	  Microinstruções e microprograma
 
-  49.2.2 Execução e Desempenho — [I]
+  50.2.2 Execução e Desempenho — [I]
 	  Pipeline
 	  Execução superescalar e fora de ordem
 	  Previsão de desvios
 
 
 
-50. Conclusão do Estudo da Microarquitetura — [V]
+51. Conclusão do Estudo da Microarquitetura — [V]
 
- 50.1 Síntese Final — [V]
+ 51.1 Síntese Final — [V]
 
-  50.1.1 O Papel da Microarquitetura — [V]
+  51.1.1 O Papel da Microarquitetura — [V]
 	  Elemento central da implementação do processador
 	  Base para o desempenho e a eficiência do sistema
 
-  50.1.2 Importância para a Arquitetura e Organização de Computadores — [V]
+  51.1.2 Importância para a Arquitetura e Organização de Computadores — [V]
 	  Compreensão da execução interna das instruções
 	  Base para o estudo de pipeline, memória e desempenho
 
 
- 50.2 Preparação para Estudos Posteriores — [V]
+ 51.2 Preparação para Estudos Posteriores — [V]
 
-  50.2.1 Continuidade dos Estudos — [V]
+  51.2.1 Continuidade dos Estudos — [V]
 	  Caminho de Dados (Datapath) em profundidade
 	  Unidade de Controle em profundidade
 	  Pipeline e Paralelismo em Nível de Instrução
