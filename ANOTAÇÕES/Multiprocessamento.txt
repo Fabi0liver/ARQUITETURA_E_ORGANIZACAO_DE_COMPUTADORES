@@ -883,6 +883,14 @@ PARTE 5 — THREADS, MULTITHREAD E PROCESSAMENTO SIMULTÂNEO
 	  Redistribuição de threads
 	  Prevenção de sobrecarga em um núcleo
 
+  29.2.3 Migração de Threads — [P]
+	  Migração entre núcleos
+	  Motivações para migração
+	  Custos da migração
+	  Impacto sobre caches
+	  Migração × afinidade
+	  Balanceamento × localidade
+
 
 
 PARTE 6 — COMUNICAÇÃO, SINCRONIZAÇÃO E COORDENAÇÃO ENTRE PROCESSADORES
@@ -943,6 +951,21 @@ PARTE 6 — COMUNICAÇÃO, SINCRONIZAÇÃO E COORDENAÇÃO ENTRE PROCESSADORES
 	  Espera coletiva
 
 
+ 31.3 Sincronização em Hardware — [P]
+
+  31.3.1 Primitivas de Sincronização — [P]
+	  Operações atômicas
+	  Locks
+	  Spinlocks
+	  Mutexes
+	  Barreiras
+
+  31.3.2 Sincronização por Hardware × Software — [P]
+	  Responsabilidade do hardware
+	  Responsabilidade do sistema operacional
+	  Cooperação entre hardware e software
+
+
 
 32. Semáforos e Mutexes — [P]
 
@@ -968,6 +991,20 @@ PARTE 6 — COMUNICAÇÃO, SINCRONIZAÇÃO E COORDENAÇÃO ENTRE PROCESSADORES
   32.2.2 Mutex × Semáforo — [P]
 	  Diferenças conceituais
 	  Casos de uso apropriados
+
+
+ 32.3 Spinlocks — [P]
+
+  32.3.1 Conceito de Spinlock — [P]
+	  Espera ocupada (busy waiting)
+	  Funcionamento
+	  Diferença entre spinlock e mutex
+
+  32.3.2 Aplicação em Sistemas Multiprocessados — [P]
+	  Uso em seções críticas curtas
+	  Vantagens
+	  Desvantagens
+	  Impacto sobre consumo de CPU
 
 
 
@@ -1165,10 +1202,33 @@ PARTE 7 — MEMÓRIA E COMPARTILHAMENTO EM SISTEMAS MULTIPROCESSADOS
   39.2.1 Protocolos Baseados em Snooping — [P]
 	  Monitoramento do barramento
 	  Invalidação ou atualização de cópias
+	  Protocolo MSI
+	  Protocolo MESI
+	  Protocolo MOESI
+	  Estados das linhas de cache
+	  Transições entre estados
+	  Operações de leitura e escrita
+	  Invalidação × atualização
 
   39.2.2 Protocolos Baseados em Diretório — [P]
 	  Registro centralizado do estado das cópias
 	  Uso em sistemas de larga escala
+
+
+ 39.3 Problemas de Desempenho Relacionados à Coerência — [P]
+
+  39.3.1 False Sharing
+	  Conceito
+	  Como ocorre
+	  Relação com linhas de cache
+	  Invalidações desnecessárias
+	  Impacto no desempenho
+	  Diferença entre true sharing e false sharing
+
+  39.3.2 Contenção de Cache
+	  Disputa por linhas de cache
+	  Tráfego de coerência
+	  Impacto em sistemas multicore
 
 
 
