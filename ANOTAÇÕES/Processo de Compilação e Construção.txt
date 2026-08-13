@@ -506,6 +506,14 @@ PARTE 3 — PRÉ-PROCESSAMENTO E COMPILAÇÃO
 	  Uso eficiente dos registradores disponíveis
 	  Estratégias de alocação
 
+  16.1.3 Dependências entre Instruções — [I]
+	  Dependências de dados
+	  Dependências de controle
+	  Dependências verdadeiras
+	  Anti-dependências
+	  Dependências de saída
+	  Impacto na geração e otimização do código
+
 
  16.2 Produção da Saída do Compilador — [P]
 
@@ -517,7 +525,14 @@ PARTE 3 — PRÉ-PROCESSAMENTO E COMPILAÇÃO
 	  Compiladores que geram código objeto diretamente
 	  Vantagens e limitações
 
+  16.2.3 Portabilidade e Retargeting do Compilador — [I]
+	  Compilador direcionado a múltiplas arquiteturas
+	  Backend específico da arquitetura
+	  Separação entre front-end e backend
+	  Geração para diferentes ISAs
+	  Cross-compilation e retargeting
 
+ 
 
 PARTE 4 — LINGUAGEM ASSEMBLY E PROCESSO DE MONTAGEM
 
