@@ -136,12 +136,11 @@ PARTE 1 — FUNDAMENTOS DA MICROARQUITETURA
 
 
  4.2 Interpretação da ISA pela Microarquitetura — [P]
-
-  4.2.1 Tradução das Instruções em Operações Internas — [P]
-	  Decomposição das instruções
-	  Geração de sinais de controle
-	  Execução de microoperações
-	  Produção do resultado final
+	Tradução das Instruções em Operações Internas
+	Decomposição das instruções
+	Geração de sinais de controle
+	Execução de microoperações
+	Produção do resultado final
 
 
 
@@ -200,11 +199,10 @@ PARTE 2 — ESTRUTURA E ORGANIZAÇÃO DA MICROARQUITETURA
 
 
  6.2 Organização Funcional dos Componentes — [P]
-
-  6.2.1 Cooperação entre Componentes — [P]
-	  Fluxo de dados entre unidades
-	  Coordenação temporal
-	  Dependência entre controle e datapath
+	Cooperação entre Componentes
+	Fluxo de dados entre unidades
+	Coordenação temporal
+	Dependência entre controle e datapath
 
 
 
@@ -224,11 +222,10 @@ PARTE 2 — ESTRUTURA E ORGANIZAÇÃO DA MICROARQUITETURA
 
 
  7.2 Função dos Registradores no Processamento — [P]
-
-  7.2.1 Armazenamento Temporário de Dados — [P]
-	  Retenção de operandos
-	  Retenção de resultados intermediários
-	  Suporte à execução das instruções
+	Armazenamento Temporário de Dados
+	Retenção de operandos
+	Retenção de resultados intermediários
+	Suporte à execução das instruções
 
 
 
@@ -248,11 +245,10 @@ PARTE 2 — ESTRUTURA E ORGANIZAÇÃO DA MICROARQUITETURA
 
 
  8.2 Organização das Interconexões — [I]
-
-  8.2.1 Compartilhamento × Dedicação — [I]
-	  Barramento único compartilhado
-	  Múltiplos caminhos dedicados
-	  Impacto no desempenho e na complexidade
+	Compartilhamento × Dedicação
+	Barramento único compartilhado
+	Múltiplos caminhos dedicados
+	Impacto no desempenho e na complexidade
 
 
 
@@ -272,11 +268,10 @@ PARTE 2 — ESTRUTURA E ORGANIZAÇÃO DA MICROARQUITETURA
 
 
  9.2 Buffers Internos — [I]
-
-  9.2.1 Função dos Buffers — [I]
-	  Armazenamento temporário entre estágios
-	  Suporte ao pipeline
-	  Redução de conflitos de acesso
+	Função dos Buffers
+	Armazenamento temporário entre estágios
+	Suporte ao pipeline
+	Redução de conflitos de acesso
 
 
 
@@ -298,11 +293,10 @@ PARTE 2 — ESTRUTURA E ORGANIZAÇÃO DA MICROARQUITETURA
 
 
  10.2 Integração entre os Níveis — [I]
-
-  10.2.1 Cooperação Estrutural — [I]
-	  Dependência mútua entre camadas
-	  Consistência da execução
-	  Coerência do funcionamento interno
+	Cooperação Estrutural
+	Dependência mútua entre camadas
+	Consistência da execução
+	Coerência do funcionamento interno
 
 
 
@@ -325,11 +319,10 @@ PARTE 3 — CAMINHO DE DADOS E UNIDADES FUNCIONAIS
 
 
  11.2 Relação do Datapath com o Controle — [I]
-
-  11.2.1 Dependência dos Sinais de Controle — [I]
-	  Ativação dos componentes do datapath
-	  Coordenação das transferências
-	  Separação funcional entre datapath e controle
+	Dependência dos Sinais de Controle
+	Ativação dos componentes do datapath
+	Coordenação das transferências
+	Separação funcional entre datapath e controle
 
 
 
@@ -378,11 +371,10 @@ PARTE 3 — CAMINHO DE DADOS E UNIDADES FUNCIONAIS
 
 
  13.2 Organização das Unidades Funcionais — [I]
-
-  13.2.1 Unidades Funcionais Múltiplas — [I]
-	  Execução paralela de operações
-	  Distribuição de tarefas
-	  Relação com execução superescalar
+	Unidades Funcionais Múltiplas
+	Execução paralela de operações
+	Distribuição de tarefas
+	Relação com execução superescalar
 
 
 
@@ -401,27 +393,25 @@ PARTE 3 — CAMINHO DE DADOS E UNIDADES FUNCIONAIS
 
 
  14.2 Elementos de Fluxo de Controle — [I]
-
-  14.2.1 Registradores de Fluxo — [I]
-	  Registrador contador de programa
-	  Atualização do fluxo de execução
-	  Suporte a desvios
+	Registradores de Fluxo
+	Registrador contador de programa
+	Atualização do fluxo de execução
+	Suporte a desvios
 
 
 
 15. Integração entre Caminho de Dados e Unidade de Controle — [P]
 
- 15.1 Coordenação Funcional — [P]
+ 15.1 Fluxo de Sinais entre Controle e Datapath — [P]
+	Sinais de habilitação
+	Sinais de seleção
+	Retorno de status ao controle
 
-  15.1.1 Fluxo de Sinais entre Controle e Datapath — [P]
-	  Sinais de habilitação
-	  Sinais de seleção
-	  Retorno de status ao controle
 
-  15.1.2 Sincronização Temporal — [P]
-	  Alinhamento com o ciclo de clock
-	  Ordem das transferências
-	  Consistência da execução
+ 15.2 Sincronização Temporal — [P]
+	Alinhamento com o ciclo de clock
+	Ordem das transferências
+	Consistência da execução
 
 
 
@@ -551,11 +541,10 @@ PARTE 4 — UNIDADE DE CONTROLE E GERAÇÃO DE SINAIS DE CONTROLE
 
 
  20.2 Critérios de Escolha entre as Abordagens — [I]
-
-  20.2.1 Contextos de Uso — [I]
-	  Processadores de alto desempenho
-	  Processadores com ISA complexa
-	  Abordagens híbridas
+	Contextos de Uso 
+	Processadores de alto desempenho
+	Processadores com ISA complexa
+	Abordagens híbridas
 
 
 
@@ -580,49 +569,47 @@ PARTE 5 — CICLO DE INSTRUÇÃO E SEQUENCIAMENTO
 
 
  21.2 Variações do Ciclo de Instrução — [I]
-
-  21.2.1 Ciclos Simplificados e Estendidos — [I]
-	  Ciclos com menos etapas
-	  Ciclos com etapas adicionais
-	  Adequação à complexidade da ISA
+	Ciclos Simplificados e Estendidos
+	Ciclos com menos etapas
+	Ciclos com etapas adicionais
+	Adequação à complexidade da ISA
 
 
 
 22. Busca da Instrução (Fetch) — [P]
 
  22.1 Processo de Busca — [P]
+	Papel do Contador de Programa 
+	Fornecimento do endereço da instrução
+	Atualização após a busca
 
-  22.1.1 Papel do Contador de Programa — [P]
-	  Fornecimento do endereço da instrução
-	  Atualização após a busca
 
-  22.1.2 Leitura da Instrução na Memória — [P]
-	  Acesso à memória de instruções
-	  Carregamento no registrador de instrução
+ 22.1.2 Leitura da Instrução na Memória — [P]
+	Acesso à memória de instruções
+	Carregamento no registrador de instrução
 
 
 
 23. Decodificação da Instrução (Decode) — [P]
 
  23.1 Processo de Decodificação — [P]
+	Interpretação do Código de Operação
+	Identificação da instrução
+	Determinação dos operandos
 
-  23.1.1 Interpretação do Código de Operação — [P]
-	  Identificação da instrução
-	  Determinação dos operandos
 
-  23.1.2 Geração dos Sinais de Controle Iniciais — [P]
-	  Ativação da unidade de controle
-	  Preparação do datapath para execução
+ 23.2 Geração dos Sinais de Controle Iniciais — [P]
+	Ativação da unidade de controle
+	Preparação do datapath para execução
 
 
 
 24. Execução, Memória e Escrita do Resultado — [P]
 
  24.1 Etapa de Execução — [P]
-
-  24.1.1 Processamento na ULA — [P]
-	  Realização da operação especificada
-	  Geração do resultado
+	Processamento na ULA 
+	Realização da operação especificada
+	Geração do resultado
 
 
  24.2 Acesso à Memória e Escrita do Resultado — [P]
@@ -665,16 +652,15 @@ PARTE 6 — MICROINSTRUÇÕES, MICROCÓDIGO E CONTROLE MICROPROGRAMADO
 
 26. Conceito de Microinstrução — [P]
 
- 26.1 Fundamentos da Microinstrução — [P]
+ 26.1 Definição de Microinstrução — [P]
+	Instrução de baixo nível interna
+	Representação de microoperações
+	Relação com a instrução de máquina
 
-  26.1.1 Definição de Microinstrução — [P]
-	  Instrução de baixo nível interna
-	  Representação de microoperações
-	  Relação com a instrução de máquina
 
-  26.1.2 Papel da Microinstrução na Execução — [P]
-	  Controle direto dos sinais do datapath
-	  Sequência de microinstruções por instrução
+ 26.2 Papel da Microinstrução na Execução — [P]
+	Controle direto dos sinais do datapath
+	Sequência de microinstruções por instrução
 
 
 
@@ -692,53 +678,49 @@ PARTE 6 — MICROINSTRUÇÕES, MICROCÓDIGO E CONTROLE MICROPROGRAMADO
 
 
  27.2 Execução do Microprograma — [P]
-
-  27.2.1 Sequenciamento das Microinstruções — [P]
-	  Endereço da próxima microinstrução
-	  Saltos condicionais dentro do microprograma
+ 	Sequenciamento das Microinstruções
+	Endereço da próxima microinstrução
+	Saltos condicionais dentro do microprograma
 
 
 
 28. Formato das Microinstruções — [I]
 
- 28.1 Organização dos Campos — [I]
+ 28.1 Microinstruções Horizontais — [I]
+ 	Um bit por sinal de controle
+	Maior paralelismo de controle
+	Maior largura de memória
 
-  28.1.1 Microinstruções Horizontais — [I]
-	  Um bit por sinal de controle
-	  Maior paralelismo de controle
-	  Maior largura de memória
-
-  28.1.2 Microinstruções Verticais — [I]
-	  Campos codificados
-	  Necessidade de decodificação adicional
-	  Menor largura de memória
+ 
+ 28.2 Microinstruções Verticais — [I]
+	Campos codificados
+	Necessidade de decodificação adicional
+	Menor largura de memória
 
 
 
 29. Técnicas de Microprogramação — [I]
 
- 29.1 Organização do Controle Microprogramado — [I]
+ 29.1 Microprogramação Direta — [I]
+	Correspondência simples entre instrução e microrrotina
 
-  29.1.1 Microprogramação Direta — [I]
-	  Correspondência simples entre instrução e microrrotina
 
-  29.1.2 Microprogramação com Sub-rotinas — [I]
-	  Reaproveitamento de microrrotinas comuns
-	  Redução do tamanho da memória de controle
+ 29.2 Microprogramação com Sub-rotinas — [I]
+	Reaproveitamento de microrrotinas comuns
+	Redução do tamanho da memória de controle
 
 
 
 30. Vantagens e Limitações do Controle Microprogramado — [I]
 
- 30.1 Avaliação da Abordagem Microprogramada — [I]
+ 30.1 Vantagens Gerais — [I]
+	Facilidade de implementação de ISAs complexas
+	Flexibilidade para correções e atualizações
 
-  30.1.1 Vantagens Gerais — [I]
-	  Facilidade de implementação de ISAs complexas
-	  Flexibilidade para correções e atualizações
 
-  30.1.2 Limitações Gerais — [I]
-	  Impacto no desempenho
-	  Overhead de acesso à memória de controle
+ 30.2 Limitações Gerais — [I]
+	Impacto no desempenho
+	Overhead de acesso à memória de controle
 
 
 
@@ -747,72 +729,67 @@ PARTE 7 — IMPLEMENTAÇÃO E ORGANIZAÇÃO INTERNA DO PROCESSADOR
 
 31. Datapath Monociclo — [I]
 
- 31.1 Fundamentos do Datapath Monociclo — [I]
+ 31.1 Conceito e Funcionamento — [I]
+	Execução completa em um único ciclo de clock
+	Duração do ciclo definida pela instrução mais lenta
 
-  31.1.1 Conceito e Funcionamento — [I]
-	  Execução completa em um único ciclo de clock
-	  Duração do ciclo definida pela instrução mais lenta
 
-  31.1.2 Vantagens e Limitações — [I]
-	  Simplicidade de controle
-	  Baixo desempenho em ISAs heterogêneas
+ 31.2 Vantagens e Limitações — [I]
+	Simplicidade de controle
+	Baixo desempenho em ISAs heterogêneas
 
 
 
 32. Datapath Multiciclo — [I]
 
- 32.1 Fundamentos do Datapath Multiciclo — [I]
+ 32.1 Conceito e Funcionamento — [I]
+	Execução distribuída em múltiplos ciclos
+	Reaproveitamento de unidades funcionais
 
-  32.1.1 Conceito e Funcionamento — [I]
-	  Execução distribuída em múltiplos ciclos
-	  Reaproveitamento de unidades funcionais
 
-  32.1.2 Vantagens e Limitações — [I]
-	  Maior eficiência de recursos
-	  Maior complexidade do controle
+ 32.2 Vantagens e Limitações — [I]
+	Maior eficiência de recursos
+	Maior complexidade do controle
 
 
 
 33. Organização Interna de Processadores CISC — [I]
 
- 33.1 Características da Microarquitetura CISC — [I]
+ 33.1 Instruções Complexas — [I]
+	Grande variedade de instruções
+	Modos de endereçamento diversos
 
-  33.1.1 Instruções Complexas — [I]
-	  Grande variedade de instruções
-	  Modos de endereçamento diversos
-
-  33.1.2 Controle Predominantemente Microprogramado — [I]
-	  Facilidade de implementação de instruções complexas
-	  Impacto na complexidade do controle
+  
+ 33.2 Controle Predominantemente Microprogramado — [I]
+	Facilidade de implementação de instruções complexas
+	Impacto na complexidade do controle
 
 
 
 34. Organização Interna de Processadores RISC — [I]
 
- 34.1 Características da Microarquitetura RISC — [I]
+ 34.1 Instruções Simples e Uniformes — [I]
+	Conjunto reduzido de instruções
+	Execução mais previsível
 
-  34.1.1 Instruções Simples e Uniformes — [I]
-	  Conjunto reduzido de instruções
-	  Execução mais previsível
 
-  34.1.2 Controle Predominantemente Cabeado — [I]
-	  Alto desempenho
-	  Facilidade de pipeline
+ 34.2 Controle Predominantemente Cabeado — [I]
+	Alto desempenho
+	Facilidade de pipeline
 
 
 
 35. Microarquitetura RISC × CISC — [I]
 
- 35.1 Comparação entre as Abordagens — [I]
+ 35.1 Critérios de Comparação — [I]
+	Complexidade das instruções
+	Tipo de controle predominante
+	Facilidade de otimização microarquitetural
 
-  35.1.1 Critérios de Comparação — [I]
-	  Complexidade das instruções
-	  Tipo de controle predominante
-	  Facilidade de otimização microarquitetural
 
-  35.1.2 Convergência entre RISC e CISC — [V]
-	  Processadores CISC com núcleo RISC interno
-	  Tradução de instruções complexas em microoperações
+ 35.2 Convergência entre RISC e CISC — [V]
+	Processadores CISC com núcleo RISC interno
+	Tradução de instruções complexas em microoperações
 
 
 
@@ -821,16 +798,15 @@ PARTE 8 — TÉCNICAS DE EXECUÇÃO E OTIMIZAÇÃO MICROARQUITETURAL
 
 36. Pipeline na Microarquitetura — [P]
 
- 36.1 Fundamentos do Pipeline — [P]
+ 36.1 Conceito de Execução em Pipeline — [P]
+	Divisão da execução em estágios
+	Sobreposição da execução de instruções
+	Aumento do throughput
 
-  36.1.1 Conceito de Execução em Pipeline — [P]
-	  Divisão da execução em estágios
-	  Sobreposição da execução de instruções
-	  Aumento do throughput
 
-  36.1.2 Estágios Clássicos do Pipeline — [P]
-	  Busca, decodificação, execução, memória e escrita
-	  Registradores entre estágios
+ 36.2 Estágios Clássicos do Pipeline — [P]
+	Busca, decodificação, execução, memória e escrita
+	Registradores entre estágios
 
 
 
@@ -961,15 +937,23 @@ PARTE 8 — TÉCNICAS DE EXECUÇÃO E OTIMIZAÇÃO MICROARQUITETURAL
 
 41. Previsão de Desvios (Branch Prediction) — [I]
 
- 41.1 Fundamentos da Previsão de Desvios — [I]
+ 41.1 Necessidade da Previsão — [I]
+	Impacto dos desvios no pipeline
+	Redução de penalidades
 
-  41.1.1 Necessidade da Previsão — [I]
-	  Impacto dos desvios no pipeline
-	  Redução de penalidades
+  
+ 41.2 Técnicas Gerais de Previsão — [I]
+	Previsão estática
+	Previsão dinâmica
 
-  41.1.2 Técnicas Gerais de Previsão — [I]
-	  Previsão estática
-	  Previsão dinâmica
+
+ 40.3 Mecanismos de Predição e Recuperação — [I]
+	Histórico de desvios
+	Estruturas de armazenamento do histórico
+	Atualização das informações de previsão
+	Detecção de erro de previsão
+	Penalidade de erro de previsão
+	Recuperação do pipeline após erro de previsão
 
 
 
@@ -978,57 +962,57 @@ PARTE 9 — DESEMPENHO, AVALIAÇÃO E EVOLUÇÃO DA MICROARQUITETURA
 
 42. Métricas de Desempenho da Microarquitetura — [I]
 
- 42.1 Métricas Fundamentais — [I]
+ 42.1 Frequência de Clock e CPI — [I]
+	Ciclos por instrução
+	Relação com a frequência de operação
 
-  42.1.1 Frequência de Clock e CPI — [I]
-	  Ciclos por instrução
-	  Relação com a frequência de operação
 
-  42.1.2 Throughput e Latência — [I]
-	  Taxa de instruções executadas
-	  Tempo de execução de uma instrução
+ 42.2 Throughput e Latência — [I]
+	Taxa de instruções executadas
+	Tempo de execução de uma instrução
 
 
 
 43. Fatores que Influenciam o Desempenho — [I]
 
- 42.1 Fatores Internos da Microarquitetura — [I]
+ 42.1 Profundidade do Pipeline — [I]
+	Relação com a frequência de clock
+	Impacto em hazards
 
-  43.1.1 Profundidade do Pipeline — [I]
-	  Relação com a frequência de clock
-	  Impacto em hazards
 
-  43.1.2 Paralelismo Interno — [I]
-	  Número de unidades funcionais
-	  Capacidade de execução simultânea
+ 43.2 Paralelismo Interno — [I]
+	Número de unidades funcionais
+	Capacidade de execução simultânea
+	Largura de emissão
+	Número de instruções emitidas por ciclo
+	Número de unidades funcionais
+	Grau de paralelismo explorado
+	Limitações do paralelismo de instruções
 
 
 
 44. Consumo de Energia e Eficiência Microarquitetural — [V]
 
- 44.1 Consumo de Energia na Microarquitetura — [V]
+ 44.1 Fontes de Consumo — [V]
+	Chaveamento dos circuitos
+	Corrente de fuga
 
-  44.1.1 Fontes de Consumo — [V]
-	  Chaveamento dos circuitos
-	  Corrente de fuga
-
-  44.1.2 Técnicas de Eficiência Energética — [V]
-	  Desligamento de unidades ociosas
-	  Ajuste dinâmico de frequência e tensão
+ 44.2 Técnicas de Eficiência Energética — [V]
+	Desligamento de unidades ociosas
+	Ajuste dinâmico de frequência e tensão
 
 
 
 45. Evolução das Microarquiteturas Modernas — [V]
 
- 45.1 Tendências Atuais — [V]
+ 45.1 Microarquiteturas Multinúcleo — [V]
+	Múltiplos núcleos de execução
+	Compartilhamento de recursos internos
 
-  45.1.1 Microarquiteturas Multinúcleo — [V]
-	  Múltiplos núcleos de execução
-	  Compartilhamento de recursos internos
-
-  45.1.2 Microarquiteturas Heterogêneas — [V]
-	  Núcleos com propósitos diferentes
-	  Aceleradores especializados
+  
+ 45.2 Microarquiteturas Heterogêneas — [V]
+	Núcleos com propósitos diferentes
+	Aceleradores especializados
 
 
 
@@ -1037,60 +1021,64 @@ PARTE 10 — PROJETO, IMPLEMENTAÇÃO E INTEGRAÇÃO DA MICROARQUITETURA
 
 46. Metodologia de Projeto de Microarquitetura — [I]
 
- 46.1 Etapas do Projeto Microarquitetural — [I]
+ 46.1 Definição de Requisitos — [I]
+	Requisitos de desempenho
+	Requisitos de custo e consumo
 
-  46.1.1 Definição de Requisitos — [I]
-	  Requisitos de desempenho
-	  Requisitos de custo e consumo
-
-  46.1.2 Especificação da Estrutura Interna — [I]
-	  Definição do datapath
-	  Definição do controle
+  
+ 46.2 Especificação da Estrutura Interna — [I]
+	Definição do datapath
+	Definição do controle
 
 
 
 47. Trade-offs de Projeto Microarquitetural — [I]
 
- 47.1 Compromissos de Projeto — [I]
+ 47.1 Desempenho × Complexidade — [I]
+	Benefícios do aumento de desempenho
+	Custos da complexidade adicional
 
-  47.1.1 Desempenho × Complexidade — [I]
-	  Benefícios do aumento de desempenho
-	  Custos da complexidade adicional
 
-  47.1.2 Flexibilidade × Eficiência — [I]
-	  Controle flexível versus controle otimizado
-	  Impacto nas decisões de projeto
+ 47.2 Flexibilidade × Eficiência — [I]
+	Controle flexível versus controle otimizado
+	Impacto nas decisões de projeto
 
 
 
 48. Verificação e Validação da Microarquitetura — [V]
 
- 48.1 Processos de Verificação — [V]
+ 48.1 Simulação da Microarquitetura — [V]
+	Testes funcionais
+	Verificação do comportamento esperado
+	Simulação funcional
+	Simulação ciclo a ciclo
+	Rastreamento das operações internas
+	Verificação das transições de estado
+	Verificação dos sinais de controle
 
-  48.1.1 Simulação da Microarquitetura — [V]
-	  Testes funcionais
-	  Verificação do comportamento esperado
 
-  48.1.2 Validação de Desempenho — [V]
-	  Comparação com métricas de projeto
-	  Identificação de gargalos
+ 48.2 Validação de Desempenho — [V]
+	Comparação com métricas de projeto
+	Identificação de gargalos
+	Medição de CPI
+	Análise de throughput
+	Identificação de gargalos microarquiteturais
+	Comparação entre diferentes configurações
 
 
 
 49. Integração da Microarquitetura com a ISA e o Sistema — [I]
 
  49.1 Integração com a ISA — [I]
-
-  49.1.1 Compatibilidade com o Conjunto de Instruções — [I]
-	  Correspondência entre instruções e implementação
-	  Suporte completo à ISA definida
+	Compatibilidade com o Conjunto de Instruções
+	Correspondência entre instruções e implementação
+	Suporte completo à ISA definida
 
 
  49.2 Integração com o Restante do Sistema — [I]
-
-  49.2.1 Relação com Memória e Barramentos Externos — [I]
-	  Comunicação com a hierarquia de memória
-	  Interface com dispositivos externos
+	Relação com Memória e Barramentos Externos
+	Comunicação com a hierarquia de memória
+	Interface com dispositivos externos
 
 
 
@@ -1140,9 +1128,7 @@ PARTE 11 — RESUMO GERAL, CONSOLIDAÇÃO E CONCLUSÃO da MICROARQUITETURA
 
 
  51.2 Preparação para Estudos Posteriores — [V]
-
-  51.2.1 Continuidade dos Estudos — [V]
-	  Caminho de Dados (Datapath) em profundidade
-	  Unidade de Controle em profundidade
-	  Pipeline e Paralelismo em Nível de Instrução
-	  Hierarquia de Memória
+	Caminho de Dados (Datapath) em profundidade
+	Unidade de Controle em profundidade
+	Pipeline e Paralelismo em Nível de Instrução
+	Hierarquia de Memória
