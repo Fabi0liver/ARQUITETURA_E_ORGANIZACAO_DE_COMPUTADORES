@@ -140,6 +140,12 @@ PARTE 1 — FUNDAMENTOS, PADRÕES E MODOS DE TRANSFERÊNCIA DE DADOS DE E/S
 	  Transferência por caractere
 	  Transferência por bloco
 	  Fluxo contínuo de dados
+	  Transferência caractere a caractere
+	  Transferência por palavra
+	  Transferência por bloco
+	  Transferência em fluxo contínuo
+	  Diferenças de comportamento entre essas formas
+	  Relação entre tamanho da transferência e eficiência
 
 
 
@@ -826,6 +832,14 @@ PARTE 5 — E/S POR POLLING, SINCRONIZAÇÃO E BUFFERIZAÇÃO
 	  Intervalo entre solicitações
 	  Margem de segurança temporal
 
+  22.2.3 Transferência Síncrona e Assíncrona — [I]
+	  Transferência síncrona
+	  Transferência assíncrona
+	  Uso de relógio compartilhado
+	  Transferência baseada em sinais de controle
+	  Relação com dispositivos de velocidades diferentes
+	  Vantagens e limitações de cada abordagem
+
 
 
 23. Buffers e Bufferização na Transferência de E/S — [P]
@@ -1492,6 +1506,14 @@ PARTE 10 — DESEMPENHO, OTIMIZAÇÃO E EFICIÊNCIA DA TRANSFERÊNCIA DE DADOS D
   46.1.2 Latência de E/S — [I]
 	  Tempo entre solicitação e início da transferência
 	  Impacto sobre a percepção de desempenho
+
+  46.1.3 Taxa de Transferência e Largura de Banda — [I]
+	  Taxa de transferência
+	  Largura de banda do caminho de E/S
+	  Largura de banda teórica
+	  Largura de banda efetiva
+	  Diferença entre largura de banda e throughput
+	  Relação entre tamanho dos blocos e eficiência
 
 
  46.2 Outras Métricas Relevantes — [I]
