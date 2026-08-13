@@ -886,6 +886,8 @@ PARTE 8 — TÉCNICAS DE EXECUÇÃO E OTIMIZAÇÃO MICROARQUITETURAL
 	Eliminação de dependências WAW
 	Tabela de renomeação
 	Liberação de registradores físicos
+	Mapeamento e atualização do estado de renomeação
+	Tratamento de dependências durante a renomeação
 
 
  39.4 Escalonamento e Emissão de Instruções — [P]
@@ -947,7 +949,7 @@ PARTE 8 — TÉCNICAS DE EXECUÇÃO E OTIMIZAÇÃO MICROARQUITETURAL
 	Previsão dinâmica
 
 
- 40.3 Mecanismos de Predição e Recuperação — [I]
+ 41.3 Mecanismos de Predição e Recuperação — [I]
 	Histórico de desvios
 	Estruturas de armazenamento do histórico
 	Atualização das informações de previsão
@@ -975,7 +977,7 @@ PARTE 9 — DESEMPENHO, AVALIAÇÃO E EVOLUÇÃO DA MICROARQUITETURA
 
 43. Fatores que Influenciam o Desempenho — [I]
 
- 42.1 Profundidade do Pipeline — [I]
+ 43.1 Profundidade do Pipeline — [I]
 	Relação com a frequência de clock
 	Impacto em hazards
 
@@ -985,7 +987,6 @@ PARTE 9 — DESEMPENHO, AVALIAÇÃO E EVOLUÇÃO DA MICROARQUITETURA
 	Capacidade de execução simultânea
 	Largura de emissão
 	Número de instruções emitidas por ciclo
-	Número de unidades funcionais
 	Grau de paralelismo explorado
 	Limitações do paralelismo de instruções
 
