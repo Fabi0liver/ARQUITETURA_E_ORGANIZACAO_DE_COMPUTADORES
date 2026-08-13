@@ -1155,6 +1155,13 @@ PARTE 7 — MEMÓRIA E COMPARTILHAMENTO EM SISTEMAS MULTIPROCESSADOS
 	  Necessidade de sincronização
 	  Prevenção de leituras desatualizadas
 
+  37.2.3 Largura de Banda da Memória — [P]
+	  Largura de banda de memória
+	  Compartilhamento da largura de banda
+	  Saturação do sistema de memória
+	  Relação entre número de processadores e largura de banda
+	  Gargalo de memória em sistemas multiprocessados
+
 
 
 38. Troca de Mensagens (Message Passing) — [P]
@@ -1373,6 +1380,22 @@ PARTE 8 — PARALELISMO, DESEMPENHO, ESCALABILIDADE E BALANCEAMENTO DE CARGA
 	  Aproveitamento real dos recursos
 
 
+ 44.3 Overhead do Multiprocessamento — [I]
+
+  44.3.1 Fontes de Overhead — [I]
+	  Comunicação
+	  Sincronização
+	  Criação e gerenciamento de threads
+	  Escalonamento
+	  Migração de threads
+	  Contenção de recursos
+
+  44.3.2 Impacto no Desempenho — [I]
+	  Redução do speedup
+	  Redução da eficiência
+	  Relação entre granularidade e overhead
+
+
 
 45. Lei de Amdahl e Lei de Gustafson — [P]
 
@@ -1396,6 +1419,19 @@ PARTE 8 — PARALELISMO, DESEMPENHO, ESCALABILIDADE E BALANCEAMENTO DE CARGA
   45.2.2 Comparação entre as Leis — [P]
 	  Foco em desempenho fixo × foco em escalabilidade
 	  Aplicações práticas de cada abordagem
+
+
+ 45.3 Tipos de Escalabilidade — [P]
+
+  45.3.1 Escalabilidade Forte — [P]
+	  Tamanho fixo do problema
+	  Aumento do número de processadores
+	  Redução do tempo de execução
+
+  45.3.2 Escalabilidade Fraca— [P]
+	  Aumento do tamanho do problema
+	  Aumento proporcional dos recursos
+	  Manutenção do tempo de execução
 
 
 
