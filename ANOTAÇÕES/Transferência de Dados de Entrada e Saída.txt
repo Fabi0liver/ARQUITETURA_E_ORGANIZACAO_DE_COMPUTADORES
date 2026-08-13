@@ -452,13 +452,20 @@ PARTE 3 — GERENCIAMENTO, COMANDOS E CONTROLE DE E/S
 	  Urgência da operação
 	  Impacto no desempenho geral
 
+  11.2.3 Concorrência entre Operações de E/S — [I]
+	  Múltiplas solicitações simultâneas
+	  Operações concorrentes
+	  Compartilhamento de recursos
+	  Conflitos entre transferências
+	  Priorização
+	  Impacto sobre desempenho
+
 
  11.3 Camada de Software na Gestão de E/S — [V]
-
-  11.3.1 Papel do Sistema Operacional — [V]
-	  Abstração dos dispositivos
-	  Escalonamento de solicitações
-	  Interface uniforme para aplicações
+	Papel do Sistema Operacional
+	Abstração dos dispositivos
+	Escalonamento de solicitações
+	Interface uniforme para aplicações
 
 
 
@@ -1150,6 +1157,15 @@ PARTE 7 — DMA (DIRECT MEMORY ACCESS), MODOS DE TRANSFERÊNCIA E ARBITRAGEM
 	  Atualização de registrador de status
 
 
+ 32.4 Descritores de DMA — [I]
+	Conceito de descritor
+	Endereço de origem/destino
+	Quantidade de dados
+	Controle da transferência
+	Encadeamento de descritores
+	Listas de descritores
+
+
 
 33. Ciclo de Operação do DMA — [P]
 
@@ -1177,6 +1193,15 @@ PARTE 7 — DMA (DIRECT MEMORY ACCESS), MODOS DE TRANSFERÊNCIA E ARBITRAGEM
   33.2.2 Continuidade da Execução da CPU — [I]
 	  Retomada normal das instruções
 	  Tratamento de eventual interrupção de conclusão
+
+
+ 33.3 Scatter-Gather DMA — [I]
+	Conceito de scatter-gather
+	Transferência utilizando múltiplas regiões de memória
+	Listas de descritores
+	Encadeamento de descritores
+	Redução da necessidade de intervenção da CPU
+	Aplicação em transferências de grandes volumes de dados
 
 
 
@@ -1551,6 +1576,14 @@ PARTE 10 — DESEMPENHO, OTIMIZAÇÃO E EFICIÊNCIA DA TRANSFERÊNCIA DE DADOS D
 	  Tempo de execução da rotina
 	  Influência sobre a capacidade de resposta do sistema
 
+  47.2.3 Overhead da Transferência de E/S — [I]
+	  Custo de inicialização da operação
+	  Custo de configuração do controlador
+	  Custo de interrupções
+	  Custo de gerenciamento de buffers
+	  Custo de transferência de pequenos blocos
+	  Relação entre overhead e tamanho da transferência
+
 
 
 48. Técnicas de Otimização da Transferência de Dados de E/S — [I]
@@ -1629,6 +1662,20 @@ PARTE 11 — EVOLUÇÃO, REVISÃO GERAL E CONSOLIDAÇÃO DA TRANSFERÊNCIA DE DA
   50.2.2 Acesso Direto à Memória — [I]
 	  Transferência autônoma
 	  Modos de operação do DMA
+
+ 50.2.3 Comparação Global dos Mecanismos — [I]
+	  Polling
+	  Interrupção
+	  DMA
+	  Canais de E/S
+	  Grau de intervenção da CPU
+	  Overhead
+	  Vazão
+	  Latência
+	  Complexidade
+	  Volume de dados
+	  Tipo de dispositivo
+	  Cenários de utilização
 
 
  50.3 Revisão dos Temas Avançados — [I]
