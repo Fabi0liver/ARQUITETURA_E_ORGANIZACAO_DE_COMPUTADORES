@@ -615,6 +615,30 @@ PARTE 4 — ARQUITETURAS MULTICORE E PROCESSAMENTO MULTINÚCLEO
 	  Desafios de coerência
 
 
+ 20.3 Redes e Mecanismos de Interconexão — [P]
+
+  20.3.1 Tipos de Interconexão — [P]
+	  Barramento compartilhado
+	  Crossbar
+	  Anel (Ring)
+	  Malha (Mesh)
+	  Torus
+	  Interconexões hierárquicas
+
+  20.3.2 Características da Interconexão — [P]
+	  Largura de banda
+	  Latência
+	  Contenção
+	  Escalabilidade
+	  Custo de implementação
+
+  20.3.3 Arbitragem e Acesso aos Recursos — [P]
+	  Arbitragem de barramento
+	  Prioridade
+	  Acesso concorrente
+	  Contenção por recursos compartilhados
+
+
 
 21. Comparação entre Multiprocessamento e Multicore — [I]
 
@@ -1023,7 +1047,17 @@ PARTE 6 — COMUNICAÇÃO, SINCRONIZAÇÃO E COORDENAÇÃO ENTRE PROCESSADORES
 	  Instruções atômicas
 	  Algoritmos de exclusão mútua
 
-  35.2.2 Impactos no Desempenho — [P]
+  35.2.2 Instruções Atômicas de Hardware — [P]
+	  Conceito de operação atômica
+	  Leitura-modificação-escrita (Read-Modify-Write)
+	  Test-and-Set
+	  Compare-and-Swap (CAS)
+	  Swap/Exchange
+	  Fetch-and-Add
+	  Load-Linked / Store-Conditional (LL/SC)
+	  Uso dessas instruções na implementação de locks
+
+  35.2.3 Impactos no Desempenho — [P]
 	  Overhead de sincronização
 	  Contenção entre threads
 
@@ -1216,6 +1250,16 @@ PARTE 8 — PARALELISMO, DESEMPENHO, ESCALABILIDADE E BALANCEAMENTO DE CARGA
   42.2.2 Aplicações — [I]
 	  Sistemas com múltiplas funcionalidades
 	  Pipelines de processamento
+
+  40.2.3 Barreiras e Fences de Memória — [P]
+	  Conceito de barreira de memória
+	  Memory fence
+	  Read barrier
+	  Write barrier
+	  Read-Write barrier
+	  Ordenação das operações de memória
+	  Relação entre fences e consistência de memória
+	  Relação entre operações atômicas e fences
 
 
 
