@@ -252,11 +252,23 @@ PARTE 2 — ESTRUTURA E FUNCIONAMENTO DO SISTEMA DE ALIMENTAÇÃO
   7.2.1 Sincronização da Entrega de Energia — [I]
 	  Sequenciamento de tensões (power sequencing)
 	  Estabilidade durante a inicialização
+	  Ordem de ativação das tensões de alimentação
+	  Ordem de desligamento das tensões
+	  Sinais de Power Good
+	  Supervisão das condições de alimentação antes da liberação do sistema
+	  Coordenação entre alimentação, reset e inicialização
+	  Falhas de sequenciamento de energia
 
   7.2.2 Monitoramento do Fluxo — [I]
 	  Sensores de tensão e corrente
 	  Circuitos de monitoramento
 	  Resposta a variações
+	  Circuitos supervisores de tensão
+	  Monitoramento de potência
+	  Detecção de condições anormais de alimentação
+	  Monitoramento de Power Good
+	  Limites de tensão, corrente e temperatura
+	  Resposta automática a falhas de alimentação
 
 
 
@@ -314,12 +326,23 @@ PARTE 3 — FONTES DE ALIMENTAÇÃO E CONVERSÃO DE ENERGIA
 	  Retificação
 	  Conversão e regulação
 	  Filtro de saída
+	  Estágio de controle e realimentação
+	  Estágio de correção e estabilização
+	  Circuito de partida da fonte
+	  Circuito de soft-start
+	  Controle da corrente de partida (inrush current)
 
   9.2.2 Componentes Internos — [P]
 	  Transformador
 	  Capacitores de filtro
 	  Circuitos de controle
 	  Dissipadores de calor
+	  Controlador PWM
+	  Circuito de realimentação (feedback)
+	  Amplificador de erro
+	  Circuito de referência de tensão
+	  Circuitos de supervisão
+	  Componentes responsáveis pelo controle de partida
 
 
 
@@ -394,6 +417,12 @@ PARTE 3 — FONTES DE ALIMENTAÇÃO E CONVERSÃO DE ENERGIA
 	  Comutação de energia
 	  Armazenamento em indutores
 	  Controle por ciclo de trabalho (duty cycle)
+	  Controle em malha fechada
+	  Realimentação de tensão
+	  Controle em modo de tensão
+	  Controle em modo de corrente
+	  Regulação por ciclo de trabalho
+	  Condução contínua e descontínua
 
 
  12.2 Tipos de Conversores DC-DC — [P]
@@ -401,6 +430,10 @@ PARTE 3 — FONTES DE ALIMENTAÇÃO E CONVERSÃO DE ENERGIA
   12.2.1 Conversor Buck (Abaixador) — [P]
 	  Princípio de funcionamento
 	  Uso na alimentação de processadores
+	  Buck síncrono
+	  Buck não síncrono
+	  Retificação síncrona
+	  Diferenças de eficiência entre as configurações
 
   12.2.2 Conversor Boost (Elevador) — [P]
 	  Princípio de funcionamento
@@ -431,10 +464,16 @@ PARTE 3 — FONTES DE ALIMENTAÇÃO E CONVERSÃO DE ENERGIA
   13.2.1 Topologia Flyback — [I]
 	  Princípio de funcionamento
 	  Aplicação em fontes de baixa potência
+	  Controle do ciclo de chaveamento
+	  Limitações de potência
+	  Aplicações típicas
 
   13.2.2 Topologia Forward e Meia Ponte — [I]
 	  Princípio de funcionamento
 	  Aplicação em fontes de maior potência
+	  Comparação entre Forward e Meia Ponte
+	  Aplicações conforme a faixa de potência
+	  Eficiência e perdas de conversão
 
 
 
