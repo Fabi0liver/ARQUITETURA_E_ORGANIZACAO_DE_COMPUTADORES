@@ -329,6 +329,13 @@ PARTE 2 — ESTRUTURA E FUNCIONAMENTO DO PROCESSO DE COMPILAÇÃO E CONSTRUÇÃO
 	  Multi-pass
 	  Vantagens e limitações
 
+  10.2.3 Passadas do Compilador — [I]
+	  Conceito de passagem
+	  Uma passagem × múltiplas passagens
+	  Relação entre passadas e fases do compilador
+	  Compartilhamento de informações entre passadas
+	  Vantagens e custos das múltiplas passadas
+
 
 
 PARTE 3 — PRÉ-PROCESSAMENTO E COMPILAÇÃO
@@ -456,6 +463,15 @@ PARTE 3 — PRÉ-PROCESSAMENTO E COMPILAÇÃO
 	  Código de três endereços
 	  Representações em grafo
 
+  15.1.3 Principais Representações Intermediárias — [I]
+	  AST
+	  Árvore de sintaxe abstrata
+	  Código de três endereços
+	  Quadruplas
+	  Triplas
+	  SSA (Static Single Assignment)
+	  Relação entre representação e otimização
+
 
  15.2 Otimizações sobre o Código Intermediário — [V]
 
@@ -466,6 +482,15 @@ PARTE 3 — PRÉ-PROCESSAMENTO E COMPILAÇÃO
   15.2.2 Otimizações Globais — [V]
 	  Análise de fluxo de dados
 	  Eliminação de redundâncias entre blocos
+
+  15.2.3 Análise de Fluxo de Controle e Fluxo de Dados — [I]
+	  Grafos de fluxo de controle (CFG)
+	  Blocos básicos
+	  Relações de precedência entre blocos
+	  Fluxo de dados entre blocos
+	  Definições e usos de variáveis
+	  Análises de entrada e saída dos blocos
+	  Uso dessas análises nas otimizações
 
 
 
