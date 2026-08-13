@@ -613,11 +613,24 @@ PARTE 4 — TENSÕES, CORRENTES, LINHAS DE ALIMENTAÇÃO E DISTRIBUIÇÃO DE ENE
 	  Conceito de Power Delivery Network
 	  Importância da baixa impedância
 	  Estabilidade sob variação de carga
+	  Resistência parasita (ESR)
+	  Indutância parasita (ESL)
+	  Impedância dependente da frequência
+	  Indutância das trilhas e vias
+	  Resistência dos caminhos de alimentação
+	  Efeitos parasitas em altas frequências
 
   18.2.2 Desacoplamento de Energia — [P]
 	  Capacitores de desacoplamento
 	  Redução de ruído
 	  Resposta a transitórios de carga
+	  Desacoplamento local
+	  Capacitores de desacoplamento próximos à carga
+	  Capacitores de bulk
+	  Combinação de diferentes valores de capacitância
+	  Faixas de frequência de atuação dos capacitores
+	  Posicionamento físico dos capacitores
+	  Influência da ESR e ESL no desacoplamento
 
 
 
@@ -649,6 +662,13 @@ PARTE 5 — REGULAÇÃO, ESTABILIZAÇÃO E MÓDULOS REGULADORES DE TENSÃO (VRM)
 	  Resposta a variações rápidas de carga
 	  Tempo de estabilização
 	  Overshoot e undershoot
+	  Transitório de carga (load transient)
+	  Variação abrupta de carga
+	  Resposta a degraus de carga
+	  Corrente de slew rate
+	  Tempo de recuperação
+	  Margem de estabilidade
+	  Comportamento da tensão durante mudanças rápidas de demanda
 
 
 
@@ -678,6 +698,13 @@ PARTE 5 — REGULAÇÃO, ESTABILIZAÇÃO E MÓDULOS REGULADORES DE TENSÃO (VRM)
 	  Controlador PWM
 	  Retroalimentação (feedback)
 	  Ajuste dinâmico de tensão (VID)
+	  Malha de controle do VRM
+	  Referência de tensão
+	  Amplificador de erro
+	  Compensação da malha de controle
+	  Estabilidade da malha de realimentação
+	  Controle em modo de tensão
+	  Controle em modo de corrente
 
 
  20.3 Qualidade do VRM — [P]
@@ -732,6 +759,11 @@ PARTE 5 — REGULAÇÃO, ESTABILIZAÇÃO E MÓDULOS REGULADORES DE TENSÃO (VRM)
   22.1.2 Controle por Modulação — [P]
 	  Modulação por largura de pulso (PWM)
 	  Modulação por frequência (PFM)
+	  Controle em malha fechada
+	  Realimentação da tensão de saída
+	  Controle em modo de tensão
+	  Controle em modo de corrente
+	  Compensação da malha de controle
 
 
  22.2 Topologias de Reguladores Chaveados — [P]
@@ -753,10 +785,21 @@ PARTE 5 — REGULAÇÃO, ESTABILIZAÇÃO E MÓDULOS REGULADORES DE TENSÃO (VRM)
   23.1.1 Técnicas de Estabilização — [I]
 	  Realimentação (feedback loop)
 	  Compensação de variações de carga
+	  Controle em malha fechada
+	  Referência de tensão
+	  Amplificador de erro
+	  Compensação de frequência
+	  Estabilidade da malha de controle
 
   23.1.2 Resposta a Transitórios de Carga — [I]
 	  Variações súbitas de consumo
 	  Importância da resposta rápida
+	  Load transient
+	  Degrau de carga
+	  Overshoot e undershoot durante transitórios
+	  Tempo de recuperação
+	  Corrente de slew rate
+	  Resposta dinâmica do regulador
 
 
  23.2 Filtragem de Ruído — [I]
@@ -841,6 +884,13 @@ PARTE 6 — POTÊNCIA, CONSUMO, EFICIÊNCIA ENERGÉTICA E DISSIPAÇÃO TÉRMICA
 	  Qualidade dos componentes
 	  Carga de operação
 	  Topologia utilizada
+	  Perdas de condução
+	  Perdas de comutação
+	  Perdas nos MOSFETs
+	  Perdas nos diodos
+	  Perdas nos indutores
+	  Perdas nos capacitores
+	  Perdas associadas à frequência de chaveamento
 
 
  26.2 Padrões de Eficiência — [I]
@@ -854,6 +904,10 @@ PARTE 6 — POTÊNCIA, CONSUMO, EFICIÊNCIA ENERGÉTICA E DISSIPAÇÃO TÉRMICA
 	  Eficiência em carga parcial
 	  Eficiência em carga máxima
 	  Curva de eficiência
+	  Eficiência em carga muito baixa
+	  Eficiência em carga intermediária
+	  Eficiência em carga elevada
+	  Comportamento da eficiência durante variações de carga
 
 
 
@@ -865,6 +919,11 @@ PARTE 6 — POTÊNCIA, CONSUMO, EFICIÊNCIA ENERGÉTICA E DISSIPAÇÃO TÉRMICA
 	  Perdas resistivas
 	  Perdas de comutação
 	  Calor gerado por VRMs
+	  Perdas de condução
+	  Perdas de comutação
+	  Perdas magnéticas
+	  Perdas em resistências parasitas
+	  Relação entre perdas elétricas e temperatura
 
   27.1.2 Impacto Térmico no Sistema — [I]
 	  Elevação de temperatura
@@ -929,10 +988,17 @@ PARTE 7 — PROTEÇÃO ELÉTRICA, QUALIDADE DA ENERGIA E CONFIABILIDADE
   29.2.1 Proteção contra Curto-Circuito — [P]
 	  Detecção de curto
 	  Corte imediato da alimentação
+	  Detecção de sobrecorrente
+	  Limitação de corrente
+	  Proteção contra corrente de partida excessiva
 
   29.2.2 Proteção contra Subtensão — [P]
 	  Detecção de queda de tensão
 	  Prevenção de instabilidade
+	  Detecção de tensão fora da faixa
+	  Supervisão da tensão mínima
+	  Desligamento controlado
+	  Proteção durante a inicialização
 
 
 
@@ -943,11 +1009,20 @@ PARTE 7 — PROTEÇÃO ELÉTRICA, QUALIDADE DA ENERGIA E CONFIABILIDADE
   30.1.1 Estabilidade da Tensão — [I]
 	  Variações aceitáveis
 	  Impacto de instabilidades
+	  Surtos de tensão
+	  Quedas momentâneas de tensão
+	  Interrupções de alimentação
+	  Variações rápidas de tensão
+	  Transitórios elétricos
 
   30.1.2 Ondulação (Ripple) — [I]
 	  Conceito de ripple
 	  Causas do ripple
 	  Impacto nos componentes
+	  Ripple de baixa frequência
+	  Ripple de alta frequência
+	  Relação entre ripple e frequência de chaveamento
+	  Efeitos do ripple sobre circuitos digitais
 
 
  30.2 Fatores que Afetam a Qualidade — [I]
@@ -955,6 +1030,11 @@ PARTE 7 — PROTEÇÃO ELÉTRICA, QUALIDADE DA ENERGIA E CONFIABILIDADE
   30.2.1 Qualidade da Rede Elétrica de Entrada — [I]
 	  Variações da rede
 	  Quedas de energia
+	  Surtos elétricos
+	  Afundamentos de tensão
+	  Interrupções
+	  Variações de frequência
+	  Distúrbios da rede elétrica
 
   30.2.2 Qualidade dos Componentes Internos — [I]
 	  Qualidade de capacitores
@@ -969,10 +1049,19 @@ PARTE 7 — PROTEÇÃO ELÉTRICA, QUALIDADE DA ENERGIA E CONFIABILIDADE
   31.1.1 Ruído de Comutação — [I]
 	  Origem nos circuitos chaveados
 	  Impacto em sinais digitais
+	  Ruído conduzido
+	  Ruído irradiado
+	  Transientes de chaveamento
+	  Ruído de alta frequência
 
   31.1.2 Interferência Eletromagnética (EMI) — [I]
 	  Conceito de EMI
 	  Fontes de interferência
+	  EMI conduzida
+	  EMI irradiada
+	  Emissões eletromagnéticas
+	  Suscetibilidade eletromagnética
+	  Compatibilidade eletromagnética (EMC)
 
 
  31.2 Controle de Ruído e Interferência — [I]
@@ -980,10 +1069,17 @@ PARTE 7 — PROTEÇÃO ELÉTRICA, QUALIDADE DA ENERGIA E CONFIABILIDADE
   31.2.1 Técnicas de Blindagem — [I]
 	  Blindagem de componentes
 	  Isolamento de circuitos sensíveis
+	  Aterramento para controle de interferências
+	  Redução de caminhos de acoplamento
+	  Separação entre circuitos ruidosos e sensíveis
 
   31.2.2 Filtragem de EMI — [I]
 	  Filtros de linha
 	  Redução de emissões
+	  Filtros de modo comum
+	  Filtros de modo diferencial
+	  Filtros LC
+	  Redução de EMI conduzida
 
 
 
