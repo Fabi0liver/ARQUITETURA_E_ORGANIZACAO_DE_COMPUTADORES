@@ -90,11 +90,10 @@ PARTE 1 — FUNDAMENTOS, PADRÕES E MODOS DE TRANSFERÊNCIA DE DADOS DE E/S
 
 
  2.3 Importância da Evolução para a Computação Atual — [V]
-
-  2.3.1 Impactos nos Sistemas Modernos — [V]
-	  Aumento da eficiência
-	  Suporte a múltiplos dispositivos simultâneos
-	  Base para arquiteturas de E/S atuais
+	Impactos nos Sistemas Modernos
+	Aumento da eficiência
+	Suporte a múltiplos dispositivos simultâneos
+	Base para arquiteturas de E/S atuais
 
 
 
@@ -185,11 +184,10 @@ PARTE 1 — FUNDAMENTOS, PADRÕES E MODOS DE TRANSFERÊNCIA DE DADOS DE E/S
 
 
  4.3 Relação entre os Modos de Transferência — [I]
-
-  4.3.1 Complementaridade dos Modos — [I]
-	  Uso combinado de interrupção e DMA
-	  Uso de polling em situações específicas
-	  Escolha conforme o cenário de uso
+	Complementaridade dos Modos
+	Uso combinado de interrupção e DMA
+	Uso de polling em situações específicas
+	Escolha conforme o cenário de uso
 
 
 
@@ -926,10 +924,9 @@ PARTE 5 — E/S POR POLLING, SINCRONIZAÇÃO E BUFFERIZAÇÃO
 
 
  25.2 Motivação para Mecanismos Alternativos — [I]
-
-  25.2.1 Necessidade de Liberar o Processador — [I]
-	  Base conceitual para a E/S por interrupção
-	  Base conceitual para o DMA
+	Necessidade de Liberar o Processador
+	Base conceitual para a E/S por interrupção
+	Base conceitual para o DMA
 
 
 
@@ -1285,11 +1282,10 @@ PARTE 7 — DMA (DIRECT MEMORY ACCESS), MODOS DE TRANSFERÊNCIA E ARBITRAGEM
 
 
  36.2 Escolha do Mecanismo Adequado — [I]
-
-  36.2.1 Fatores de Decisão — [I]
-	  Velocidade do dispositivo
-	  Volume de dados
-	  Requisitos de desempenho do sistema
+	Fatores de Decisão
+	Velocidade do dispositivo
+	Volume de dados
+	Requisitos de desempenho do sistema
 
 
 
@@ -1363,10 +1359,9 @@ PARTE 8 — CANAIS, CONTROLADORES E MECANISMOS DE TRANSFERÊNCIA DE E/S
 
 
  39.2 Vantagens da Especialização — [V]
-
-  39.2.1 Ganhos de Desempenho — [V]
-	  Otimização para o tipo de tráfego de dados
-	  Redução da carga sobre controladores genéricos
+	Ganhos de Desempenho
+	Otimização para o tipo de tráfego de dados
+	Redução da carga sobre controladores genéricos
 
 
 
@@ -1385,10 +1380,9 @@ PARTE 8 — CANAIS, CONTROLADORES E MECANISMOS DE TRANSFERÊNCIA DE E/S
 
 
  40.2 Papel das Interfaces na Transferência de E/S — [V]
-
-  40.2.1 Uniformidade de Acesso — [V]
-	  Independência do fabricante do dispositivo
-	  Simplificação do desenvolvimento de controladores
+	Uniformidade de Acesso 
+	Independência do fabricante do dispositivo
+	Simplificação do desenvolvimento de controladores
 
 
 
@@ -1406,10 +1400,9 @@ PARTE 8 — CANAIS, CONTROLADORES E MECANISMOS DE TRANSFERÊNCIA DE E/S
 
 
  41.2 Cooperação entre Múltiplos Controladores — [V]
-
-  41.2.1 Coexistência de Controladores — [V]
-	  Compartilhamento do barramento
-	  Coordenação de acessos simultâneos
+	Coexistência de Controladores
+	Compartilhamento do barramento
+	Coordenação de acessos simultâneos
 
 
 
@@ -1510,10 +1503,9 @@ PARTE 9 — INTERAÇÃO ENTRE CACHE E DMA, COERÊNCIA E SINCRONIZAÇÃO
 
 
  45.2 Boas Práticas de Projeto — [V]
-
-  45.2.1 Isolamento de Buffers de E/S — [V]
-	  Separação de áreas de memória dedicadas
-	  Redução de conflitos de coerência
+	Isolamento de Buffers de E/S
+	Separação de áreas de memória dedicadas
+	Redução de conflitos de coerência
 
 
 
@@ -1719,8 +1711,7 @@ PARTE 11 — EVOLUÇÃO, REVISÃO GERAL E CONSOLIDAÇÃO DA TRANSFERÊNCIA DE DA
 
 
  51.3 Encerramento — [V]
-
-  51.3.1 Visão Geral Final — [V]
-	  Integração dos conceitos estudados
-	  Importância da Transferência de Dados de E/S
-	  Continuidade para os demais tópicos de Arquitetura e Organização de Computadores
+	Visão Geral Final
+	Integração dos conceitos estudados
+	Importância da Transferência de Dados de E/S
+	Continuidade para os demais tópicos de Arquitetura e Organização de Computadores
