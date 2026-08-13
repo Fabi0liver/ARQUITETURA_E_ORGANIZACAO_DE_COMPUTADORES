@@ -639,17 +639,24 @@ PARTE 5 — CICLO DE INSTRUÇÃO E SEQUENCIAMENTO
 
 25. Sequenciamento de Estados na Microarquitetura — [P]
 
- 25.1 Fundamentos do Sequenciamento — [P]
+ 25.1  Máquina de Estados na Microarquitetura — [P]
+	Definição dos estados de execução
+	Transições entre estados
+	Relação com o ciclo de instrução
 
-  25.1.1 Máquina de Estados na Microarquitetura — [P]
-	  Definição dos estados de execução
-	  Transições entre estados
-	  Relação com o ciclo de instrução
 
-  25.1.2 Sequenciamento Monociclo × Multiciclo — [P]
-	  Execução em um único ciclo
-	  Execução distribuída em vários ciclos
-	  Impacto no desempenho e na complexidade
+ 25.2 Sequenciamento Monociclo × Multiciclo — [P]
+	Execução em um único ciclo
+	Execução distribuída em vários ciclos
+	Impacto no desempenho e na complexidade
+
+  
+ 25.3 Sequenciamento e Controle das Etapas de Execução — [P]
+	Transição entre etapas da execução
+	Geração dos sinais de controle por etapa
+	Dependência entre estados
+	Sincronização das transições com o clock
+	Sequenciamento de microoperações
 
 
 
@@ -829,20 +836,26 @@ PARTE 8 — TÉCNICAS DE EXECUÇÃO E OTIMIZAÇÃO MICROARQUITETURAL
 
 37. Hazards e Técnicas de Resolução — [P]
 
- 37.1 Tipos de Hazards — [P]
+ 37.1 Hazards Estruturais — [P]
+	Conflito de uso de recursos
+	Duplicação de unidades como solução
 
-  37.1.1 Hazards Estruturais — [P]
-	  Conflito de uso de recursos
-	  Duplicação de unidades como solução
 
-  37.1.2 Hazards de Dados — [P]
-	  Dependências entre instruções
-	  Encaminhamento de dados (forwarding)
-	  Bolhas de pipeline (stalls)
+ 37.2 Hazards de Dados — [P]
+	Dependências entre instruções
+	Encaminhamento de dados (forwarding)
+	Bolhas de pipeline (stalls)
+	Dependências verdadeiras e falsas
+	Dependência RAW (Read After Write)
+	Dependência WAR (Write After Read)
+	Dependência WAW (Write After Write)
+	Detecção de dependências entre instruções
+	Técnicas de eliminação de dependências falsas
 
-  37.1.3 Hazards de Controle — [P]
-	  Desvios condicionais
-	  Impacto na busca de instruções
+
+ 37.3 Hazards de Controle — [P]
+	Desvios condicionais
+	Impacto na busca de instruções
 
 
 
@@ -862,15 +875,23 @@ PARTE 8 — TÉCNICAS DE EXECUÇÃO E OTIMIZAÇÃO MICROARQUITETURAL
 
 39. Execução Fora de Ordem (Out-of-Order) — [I]
 
- 39.1 Fundamentos da Execução Fora de Ordem — [I]
+ 39.1 Conceito e Funcionamento — [I]
+	Reordenação da execução das instruções
+	Manutenção da ordem lógica dos resultados
 
-  39.1.1 Conceito e Funcionamento — [I]
-	  Reordenação da execução das instruções
-	  Manutenção da ordem lógica dos resultados
 
-  39.1.2 Mecanismos de Suporte — [I]
+ 39.2 Mecanismos de Suporte — [I]
 	  Renomeação de registradores
 	  Buffer de reordenação
+
+
+ 38.3 Organização da Execução Superescalar — [P]
+	Busca de múltiplas instruções
+	Decodificação de múltiplas instruções
+	Despacho de instruções
+	Emissão de instruções
+	Seleção de instruções para execução
+	Distribuição das instruções entre unidades funcionais
 
 
 
