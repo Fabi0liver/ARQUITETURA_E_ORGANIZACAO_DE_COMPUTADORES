@@ -307,6 +307,18 @@ PARTE 2 — ESTRUTURA E ORGANIZAÇÃO INTERNA DA UNIDADE DE CONTROLE
 	  Estados de decodificação
 	  Estados de execução
 	  Transições condicionais
+	  Codificação dos estados
+	  Codificação binária dos estados
+	  Codificação one-hot dos estados
+	  Seleção da representação dos estados
+
+  9.2.3 Estrutura da Máquina de Estados da Unidade de Controle — [P]
+	  Registrador de estado
+	  Lógica de próximo estado
+	  Lógica de saída
+	  Estado atual
+	  Próximo estado
+	  Geração dos sinais de controle a partir dos estados
 
 
 
@@ -429,6 +441,10 @@ PARTE 3 — CICLO DE INSTRUÇÃO E GERAÇÃO DE SINAIS DE CONTROLE
 	  Lógica combinacional
 	  Memória de controle (microprogramação)
 	  Estado atual da máquina de estados
+	  Sinais derivados do opcode
+	  Sinais derivados do estado atual
+	  Sinais derivados das condições/flags
+	  Sinais derivados da combinação de opcode, estado e condições
 
 
  13.2 Tipos de Sinais de Controle — [P]
@@ -442,6 +458,21 @@ PARTE 3 — CICLO DE INSTRUÇÃO E GERAÇÃO DE SINAIS DE CONTROLE
 	  Sinais de leitura e escrita de memória
 	  Sinais de controle de barramento
 	  Sinais de habilitação de dispositivos
+
+
+ 13.3 Classificação dos Sinais de Controle — [P]
+
+  13.3.1 Sinais Combinacionais — [P]
+	  Sinais gerados diretamente pela lógica combinacional
+	  Dependência do opcode
+	  Dependência do estado
+	  Dependência dos sinais de condição
+
+  13.3.2 Sinais Sequenciais — [P]
+	  Sinais associados ao estado armazenado
+	  Sinais registrados
+	  Atualização sincronizada
+	  Relação com o clock
 
 
 
@@ -490,6 +521,16 @@ PARTE 3 — CICLO DE INSTRUÇÃO E GERAÇÃO DE SINAIS DE CONTROLE
 	  Suspensão do fluxo normal
 	  Salvamento do estado do processador
 	  Retomada da execução
+	  Condições que provocam alteração do fluxo de controle
+	  Detecção da condição pela Unidade de Controle
+	  Seleção do próximo estado de controle
+	  Retorno ao fluxo normal
+
+  15.2.3 Controle Condicional — [P]
+	  Decisão baseada em flags
+	  Decisão baseada em sinais de condição
+	  Seleção entre diferentes sequências de controle
+	  Continuação ou alteração do fluxo de execução
 
 
 
