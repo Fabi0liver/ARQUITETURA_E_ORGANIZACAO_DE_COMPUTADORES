@@ -1,5 +1,5 @@
-                                SISTEMAS OPERACIONAIS
-                    (Arquitetura e Organização de Computadores)
+                                           SISTEMAS OPERACIONAIS
+                                 (Arquitetura e Organização de Computadores)
 
 
 A classificação abaixo indica a profundidade recomendada para cada grande tópico da lista.
@@ -131,6 +131,13 @@ PARTE 1 — FUNDAMENTOS DOS SISTEMAS OPERACIONAIS
 	  Facilidades oferecidas aos programas
 	  Padronização do acesso aos recursos
 
+  4.1.3 Sistema Operacional como Máquina de Estados — [I]
+	  Estados internos do sistema operacional
+	  Eventos que provocam mudanças de estado
+	  Transições entre estados
+	  Relação entre estado do hardware e estado do SO
+	  Interrupções, exceções e chamadas de sistema como eventos de transição
+
 
  4.2 Visão do SO como Gerenciador de Recursos — [I]
 
@@ -211,6 +218,10 @@ PARTE 2 — ESTRUTURA E ORGANIZAÇÃO DOS SISTEMAS OPERACIONAIS
 	  Suporte do processador aos níveis de privilégio
 	  Registradores de controle relacionados
 	  Verificação de permissões em tempo de execução
+	  Níveis de privilégio de execução
+	  Acesso a recursos privilegiados
+	  Tentativas de execução de instruções privilegiadas em modo usuário
+	  Falha de privilégio e tratamento pelo SO
 
 
 
