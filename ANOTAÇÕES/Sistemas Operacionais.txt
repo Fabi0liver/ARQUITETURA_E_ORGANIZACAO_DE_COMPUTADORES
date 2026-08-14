@@ -517,11 +517,10 @@ PARTE 3 — PROCESSOS, THREADS E GERENCIAMENTO DE EXECUÇÃO
 
 
  15.2 Impactos na Organização do Sistema — [V]
-
-  15.2.1 Relação com o Hardware — [V]
-	  Suporte de múltiplos núcleos
-	  Necessidade de mecanismos de sincronização
-	  Influência no projeto do escalonador
+	Relação com o Hardware
+	Suporte de múltiplos núcleos
+	Necessidade de mecanismos de sincronização
+	Influência no projeto do escalonador
 
 
 
@@ -646,11 +645,10 @@ PARTE 4 — GERENCIAMENTO DE MEMÓRIA E MEMÓRIA VIRTUAL
 
 
  19.2 Segmentação Combinada com Paginação — [I]
-
-  19.2.1 Segmentação Paginada — [I]
-	  Combinação das duas técnicas
-	  Vantagens de flexibilidade e proteção
-	  Exemplos de uso em arquiteturas reais
+	Segmentação Paginada
+	Combinação das duas técnicas
+	Vantagens de flexibilidade e proteção
+	Exemplos de uso em arquiteturas reais
 
 
 
@@ -720,17 +718,16 @@ PARTE 4 — GERENCIAMENTO DE MEMÓRIA E MEMÓRIA VIRTUAL
 
 22. Thrashing e Modelo de Conjunto de Trabalho — [I]
 
- 22.1 Conceito de Thrashing — [I]
+ 22.1 Causas do Thrashing — [I]
+	Excesso de faltas de página
+	Alto grau de multiprogramação
+	Queda de desempenho do sistema
 
-  22.1.1 Causas do Thrashing — [I]
-	  Excesso de faltas de página
-	  Alto grau de multiprogramação
-	  Queda de desempenho do sistema
-
-  22.1.2 Estratégias de Controle — [I]
-	  Modelo de conjunto de trabalho (working set)
-	  Controle do grau de multiprogramação
-	  Frequência de faltas de página
+  
+ 22.2 Estratégias de Controle — [I]
+	Modelo de conjunto de trabalho (working set)
+	Controle do grau de multiprogramação
+	Frequência de faltas de página
 
 
 
@@ -844,28 +841,25 @@ PARTE 5 — GERENCIAMENTO DE ARQUIVOS E SISTEMAS DE ARQUIVOS
 	  Ferramentas de reparo
 
 
- 26.2 Tendências em Sistemas de Arquivos — [V]
-
-  26.2.1 Recursos Avançados — [V]
-	  Cópia sobre escrita (copy-on-write)
-	  Compressão e deduplicação
-	  Sistemas de arquivos distribuídos
+ 26.2 Recursos Avançados — [V]
+	Cópia sobre escrita (copy-on-write)
+	Compressão e deduplicação
+	Sistemas de arquivos distribuídos
 
 
 
 27. Proteção e Controle de Acesso a Arquivos — [I]
 
- 27.1 Mecanismos de Proteção — [I]
+ 27.1 Permissões de Acesso — [I]
+	Permissões de leitura, escrita e execução
+	Proprietário, grupo e outros
+	Listas de controle de acesso (ACL)
 
-  27.1.1 Permissões de Acesso — [I]
-	  Permissões de leitura, escrita e execução
-	  Proprietário, grupo e outros
-	  Listas de controle de acesso (ACL)
-
-  27.1.2 Compartilhamento Seguro de Arquivos — [I]
-	  Compartilhamento entre usuários
-	  Controle de concorrência em arquivos
-	  Bloqueio de arquivos (file locking)
+  
+ 27.2 Compartilhamento Seguro de Arquivos — [I]
+	Compartilhamento entre usuários
+	Controle de concorrência em arquivos
+	Bloqueio de arquivos (file locking)
 
 
 
@@ -874,17 +868,16 @@ PARTE 6 — GERENCIAMENTO DE ENTRADA E SAÍDA
 
 28. Fundamentos de Entrada e Saída — [I]
 
- 28.1 Subsistema de E/S do Sistema Operacional — [I]
+ 28.1 Objetivos do Subsistema de E/S — [I]
+	Padronização do acesso a dispositivos
+	Abstração da diversidade de hardware
+	Eficiência nas operações de E/S
 
-  28.1.1 Objetivos do Subsistema de E/S — [I]
-	  Padronização do acesso a dispositivos
-	  Abstração da diversidade de hardware
-	  Eficiência nas operações de E/S
-
-  28.1.2 Componentes do Subsistema de E/S — [I]
-	  Controladores de dispositivo
-	  Drivers de dispositivo
-	  Interface uniforme para chamadas de E/S
+  
+ 28.2 Componentes do Subsistema de E/S — [I]
+	Controladores de dispositivo
+	Drivers de dispositivo
+	Interface uniforme para chamadas de E/S
 
 
 
@@ -958,17 +951,16 @@ PARTE 7 — GERENCIAMENTO DE DISPOSITIVOS E DRIVERS
 
 31. Gerenciamento de Dispositivos — [I]
 
- 31.1 Organização do Gerenciamento de Dispositivos — [I]
+ 31.1 Classificação dos Dispositivos — [I]
+	Dispositivos de bloco
+	Dispositivos de caractere
+	Dispositivos de rede
 
-  31.1.1 Classificação dos Dispositivos — [I]
-	  Dispositivos de bloco
-	  Dispositivos de caractere
-	  Dispositivos de rede
-
-  31.1.2 Tabela de Dispositivos e Controle — [V]
-	  Estruturas de controle de dispositivos
-	  Estado atual de cada dispositivo
-	  Fila de requisições por dispositivo
+  
+ 31.2 Tabela de Dispositivos e Controle — [V]
+	Estruturas de controle de dispositivos
+	Estado atual de cada dispositivo
+	Fila de requisições por dispositivo
 
 
 
