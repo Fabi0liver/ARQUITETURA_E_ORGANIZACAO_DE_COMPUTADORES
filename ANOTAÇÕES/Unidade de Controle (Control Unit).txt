@@ -550,6 +550,11 @@ PARTE 4 — UNIDADE DE CONTROLE COMBINACIONAL E CONTROLE MICROPROGRAMADO
 	  Portas lógicas
 	  Máquina de estados finitos
 	  Decodificador de opcode
+	  Lógica de próximo estado
+	  Lógica de geração de saída
+	  Registrador de estado
+	  Circuitos de decodificação
+	  Circuitos de geração dos sinais de controle
 
 
  16.2 Características do Controle Cabeada — [P]
@@ -579,14 +584,21 @@ PARTE 4 — UNIDADE DE CONTROLE COMBINACIONAL E CONTROLE MICROPROGRAMADO
 	  Tabelas verdade dos sinais de controle
 	  Simplificação lógica
 	  Implementação com portas lógicas
+	  Derivação das equações dos sinais de controle
+	  Simplificação das funções de controle
+	  Minimização da lógica
+	  Implementação das funções simplificadas
 
 
- 17.2 Ferramentas de Projeto — [P]
-
-  17.2.1 Representações Formais — [P]
-	  Diagrama de estados
-	  Tabela de estados
-	  Equações booleanas dos sinais
+ 17.2 Representações Formais — [P]
+	Diagrama de estados
+	Tabela de estados
+	Equações booleanas dos sinais
+	Tabela de transição de estados
+	Tabela de saída
+	Tabela de sinais de controle
+	Equações do próximo estado
+	Equações dos sinais de controle
 
 
 
@@ -923,7 +935,16 @@ PARTE 6 — SINAIS DE CONTROLE, TEMPORIZAÇÃO E SINCRONIZAÇÃO
 	  Tempo de estabilização dos sinais
 	  Influência do atraso da Unidade de Controle no ciclo de clock
 
-  28.2.2 Caminho Crítico da Unidade de Controle — [P]
+  28.2.2 Controle Síncrono e Assíncrono — [I]
+	  Conceito de controle síncrono
+	  Controle baseado em clock
+	  Conceito de controle assíncrono
+	  Controle baseado em eventos
+	  Diferenças entre controle síncrono e assíncrono
+	  Vantagens e limitações
+	  Aplicação na Unidade de Controle
+
+  28.2.3 Caminho Crítico da Unidade de Controle — [P]
 	  Identificação do caminho crítico
 	  Lógica de geração de sinais
 	  Atrasos acumulados
@@ -966,14 +987,19 @@ PARTE 6 — SINAIS DE CONTROLE, TEMPORIZAÇÃO E SINCRONIZAÇÃO
 	  Máquina de Moore
 	  Máquina de Mealy
 	  Diferenças e aplicações
+	  Influência do tipo de FSM na geração dos sinais de controle
+	  Vantagens e limitações de Moore para controle
+	  Vantagens e limitações de Mealy para controle
 
 
- 30.2 Implementação da FSM na Unidade de Controle — [P]
-
-  30.2.1 Representação em Hardware — [P]
-	  Registrador de estado
-	  Lógica de próximo estado
-	  Lógica de saída
+ 30.2 Representação em Hardware — [P]
+	Registrador de estado
+	Lógica de próximo estado
+	Lógica de saída
+	Codificação dos estados
+	Codificação binária
+	Codificação one-hot
+	Decodificação do estado
 
 
 
@@ -1041,10 +1067,13 @@ PARTE 7 — DECODIFICAÇÃO DE INSTRUÇÕES E CONTROLE DAS OPERAÇÕES
 
 
  33.2 Controle das Flags de Estado — [I]
-
-  33.2.1 Atualização das Flags — [I]
-	  Zero, carry, overflow e sinal
-	  Sinais de controle da atualização
+	Atualização das Flags
+	Zero, carry, overflow e sinal
+	Sinais de controle da atualização
+	Uso das flags como entradas da Unidade de Controle
+	Avaliação das flags
+	Geração de condições de controle
+	Seleção de caminhos condicionais a partir das flags
 
 
 
@@ -1178,20 +1207,23 @@ PARTE 9 — ORGANIZAÇÕES AVANÇADAS, PIPELINE E CONTROLE DE FLUXO
 
 
  40.2 Propagação dos Sinais de Controle no Pipeline — [P]
-
-  40.2.1 Registradores de Pipeline — [P]
-	  Armazenamento dos sinais entre estágios
-	  Sincronização entre estágios
+	Registradores de Pipeline
+	Armazenamento dos sinais entre estágios
+	Sincronização entre estágios
+	Armazenamento dos sinais de controle entre estágios
+	Propagação dos sinais junto com a instrução
+	Associação entre sinais de controle e estágio correspondente
+	Desativação de sinais de controle quando necessário
+	Inserção de sinais de controle em bolhas
 
 
 
 41. Hazards de Controle e Tratamento — [P]
 
  41.1 Conceito de Hazard de Controle — [P]
-
-  41.1.1 Origem dos Hazards de Controle — [P]
-	  Instruções de desvio no pipeline
-	  Incerteza sobre o próximo endereço
+	Origem dos Hazards de Controle
+	Instruções de desvio no pipeline
+	Incerteza sobre o próximo endereço
 
 
  41.2 Técnicas de Tratamento — [P]
@@ -1199,20 +1231,26 @@ PARTE 9 — ORGANIZAÇÕES AVANÇADAS, PIPELINE E CONTROLE DE FLUXO
   41.2.1 Bolhas de Pipeline (Stall) — [P]
 	  Inserção de ciclos de espera
 	  Impacto no desempenho
+	  Inserção de bolhas por decisão da Unidade de Controle
+	  Anulação de sinais de controle
+	  Transformação de uma instrução em operação inativa
+	  Propagação da bolha pelos estágios
 
   41.2.2 Predição de Desvio — [P]
 	  Antecipação do resultado do desvio
 	  Correção em caso de erro de predição
+	  Decisão de redirecionamento do fluxo
+	  Controle da atualização do PC
+	  Anulação de instruções incorretamente especuladas
 
 
 
 42. Controle Especulativo e Previsão de Desvios — [I]
 
  42.1 Fundamentos da Execução Especulativa — [I]
-
-  42.1.1 Conceito de Especulação — [I]
-	  Execução antecipada de instruções
-	  Necessidade de mecanismos de controle adicionais
+	Conceito de Especulação
+	Execução antecipada de instruções
+	Necessidade de mecanismos de controle adicionais
 
 
  42.2 Mecanismos de Previsão de Desvios — [I]
@@ -1224,6 +1262,11 @@ PARTE 9 — ORGANIZAÇÕES AVANÇADAS, PIPELINE E CONTROLE DE FLUXO
   42.2.2 Tratamento de Predição Incorreta — [I]
 	  Descarte de instruções especulativas
 	  Restauração do estado correto
+	  Detecção da predição incorreta
+	  Redirecionamento do fluxo de controle
+	  Anulação das instruções especulativas
+	  Restauração do estado arquitetural correto
+	  Controle da retomada da execução
 
 
 
