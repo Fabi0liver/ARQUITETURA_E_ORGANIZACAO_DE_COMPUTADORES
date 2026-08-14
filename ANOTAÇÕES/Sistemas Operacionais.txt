@@ -1195,33 +1195,44 @@ PARTE 10 — GERENCIAMENTO DE RECURSOS E DESEMPENHO
 
 40. Gerenciamento de Recursos do Sistema — [I]
 
- 40.1 Visão Geral do Gerenciamento de Recursos — [I]
+ 40.1 Tipos de Recursos Gerenciados — [I]
+	Recursos de processamento
+	Recursos de memória
+	Recursos de E/S e armazenamento
 
-  40.1.1 Tipos de Recursos Gerenciados — [I]
-	  Recursos de processamento
-	  Recursos de memória
-	  Recursos de E/S e armazenamento
-
-  40.1.2 Políticas de Alocação de Recursos — [I]
-	  Justiça na distribuição de recursos
-	  Prioridades de alocação
-	  Prevenção de inanição (starvation)
+  
+ 40.2 Políticas de Alocação de Recursos — [I]
+	Justiça na distribuição de recursos
+	Prioridades de alocação
+	Prevenção de inanição (starvation)
+	Compartilhamento de recursos
+	Exclusão mútua de recursos não compartilháveis
+	Preempção de recursos
+	Inanição (starvation)
+	Inversão de prioridade
+	Herança de prioridade
 
 
 
 41. Desempenho e Métricas do Sistema Operacional — [I]
 
- 41.1 Métricas de Avaliação — [I]
+ 41.1 Indicadores de Desempenho — [I]
+	Utilização da CPU
+	Vazão do sistema
+	Tempo de resposta e turnaround
 
-  41.1.1 Indicadores de Desempenho — [I]
-	  Utilização da CPU
-	  Vazão do sistema
-	  Tempo de resposta e turnaround
-
-  41.1.2 Fatores que Influenciam o Desempenho — [I]
-	  Overhead de troca de contexto
-	  Política de escalonamento adotada
-	  Eficiência da gerência de memória
+  
+ 41.2 Fatores que Influenciam o Desempenho — [I]
+	Overhead de troca de contexto
+	Política de escalonamento adotada
+	Eficiência da gerência de memória
+	Overhead de system calls
+	Overhead de interrupções
+	Overhead de troca de contexto
+	Overhead de sincronização
+	Overhead de tradução de endereços
+	Overhead de page faults
+	Overhead de operações de E/S
 
 
 
@@ -1241,14 +1252,19 @@ PARTE 11 — VIRTUALIZAÇÃO, SISTEMAS OPERACIONAIS DISTRIBUÍDOS E TÉCNICAS AV
 	  Hipervisor tipo 1 (nativo)
 	  Hipervisor tipo 2 (hospedado)
 	  Papel do hipervisor na virtualização
+	  Virtualização de CPU
+	  Virtualização de memória
+	  Virtualização de dispositivos de E/S
+	  Interceptação de operações privilegiadas
+	  Suporte de hardware à virtualização
+	  Overhead da virtualização
 
 
  42.2 Contêineres e Virtualização Leve — [V]
-
-  42.2.1 Conceito de Contêiner — [V]
-	  Virtualização em nível de sistema operacional
-	  Compartilhamento do núcleo do hospedeiro
-	  Diferenças entre contêineres e máquinas virtuais
+	Conceito de Contêiner
+	Virtualização em nível de sistema operacional
+	Compartilhamento do núcleo do hospedeiro
+	Diferenças entre contêineres e máquinas virtuais
 
 
 
