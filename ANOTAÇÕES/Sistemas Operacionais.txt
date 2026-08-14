@@ -240,6 +240,13 @@ PARTE 2 — ESTRUTURA E ORGANIZAÇÃO DOS SISTEMAS OPERACIONAIS
 	  Mudança para modo kernel
 	  Execução da rotina do SO
 	  Retorno ao modo usuário
+	  Identificação da chamada de sistema
+	  Número da system call
+	  Passagem de argumentos para o kernel
+	  Validação dos parâmetros recebidos
+	  Tabela de chamadas de sistema
+	  Retorno de valores e códigos de erro
+	  Interface binária entre aplicação e sistema operacional (ABI)
 
 
  7.2 Categorias de Chamadas de Sistema — [I]
@@ -273,6 +280,11 @@ PARTE 2 — ESTRUTURA E ORGANIZAÇÃO DOS SISTEMAS OPERACIONAIS
 	  Vetor de interrupções
 	  Salvamento e restauração de contexto
 	  Retorno à execução interrompida
+	  Salvamento automático do estado pelo hardware
+	  Identificação da fonte da interrupção
+	  Despacho para a rotina de tratamento correspondente
+	  Finalização do tratamento da interrupção
+	  Retorno ao contexto interrompido
 
 
  8.2 Exceções e Interrupções de Software — [P]
