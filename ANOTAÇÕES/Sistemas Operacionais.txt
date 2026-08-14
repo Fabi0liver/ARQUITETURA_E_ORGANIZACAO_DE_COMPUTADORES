@@ -1009,46 +1009,61 @@ PARTE 8 — PROTEÇÃO, SEGURANÇA E ISOLAMENTO
 	  Conceito de domínio de proteção
 	  Direitos de acesso associados a um domínio
 	  Matriz de acesso
+	  Listas de controle de acesso (ACL)
+	  Listas de capacidades (Capability Lists)
+	  Comparação entre ACL e capacidades
+	  Transferência de direitos de acesso
+	  Princípio do menor privilégio
 
 
  33.2 Mecanismos de Proteção de Hardware — [I]
-
-  33.2.1 Suporte do Hardware à Proteção — [I]
-	  Registradores base e limite
-	  Proteção por modo de execução
-	  Verificação de endereços de memória
+	Suporte do Hardware à Proteção
+	Registradores base e limite
+	Proteção por modo de execução
+	Verificação de endereços de memória
 
 
 
 34. Segurança em Sistemas Operacionais — [I]
 
- 34.1 Ameaças e Vulnerabilidades — [I]
+ 34.1 Tipos de Ameaças — [I]
+	Malware e código malicioso
+	Ataques de negação de serviço
+	Exploração de vulnerabilidades do sistema
 
-  34.1.1 Tipos de Ameaças — [I]
-	  Malware e código malicioso
-	  Ataques de negação de serviço
-	  Exploração de vulnerabilidades do sistema
+  
+ 34.2 Princípios de Segurança — [I]
+	Princípio do menor privilégio
+	Defesa em profundidade
+	Auditoria e monitoramento
 
-  34.1.2 Princípios de Segurança — [I]
-	  Princípio do menor privilégio
-	  Defesa em profundidade
-	  Auditoria e monitoramento
+
+ 34.3 Proteção × Segurança — [I]
+	Diferença entre proteção e segurança
+	Proteção de recursos internos
+	Segurança contra ameaças externas
+	Segurança do espaço de kernel
+	Segurança do espaço de usuário
 
 
 
 35. Autenticação e Controle de Acesso — [I]
 
- 35.1 Mecanismos de Autenticação — [I]
+ 35.1 Métodos de Autenticação de Usuários — [I]
+	Senhas
+	Autenticação biométrica
+	Autenticação em múltiplos fatores
 
-  35.1.1 Métodos de Autenticação de Usuários — [I]
-	  Senhas
-	  Autenticação biométrica
-	  Autenticação em múltiplos fatores
-
-  35.1.2 Controle de Acesso a Recursos — [I]
-	  Listas de controle de acesso
-	  Controle de acesso baseado em papéis
-	  Auditoria de acessos
+  
+ 35.2 Controle de Acesso a Recursos — [I]
+	Listas de controle de acesso
+	Controle de acesso baseado em papéis
+	Auditoria de acessos
+	Modelos de controle de acesso
+	Controle de acesso discricionário (DAC)
+	Controle de acesso obrigatório (MAC)
+	Controle de acesso baseado em papéis (RBAC)
+	Controle de acesso baseado em atributos (ABAC)
 
 
 
@@ -1057,17 +1072,16 @@ PARTE 9 — CONCORRÊNCIA, SINCRONIZAÇÃO E COMUNICAÇÃO ENTRE PROCESSOS
 
 36. Fundamentos de Concorrência — [P]
 
- 36.1 Conceito de Concorrência — [P]
+ 36.1 Execução Concorrente — [P]
+	Processos e threads concorrentes
+	Compartilhamento de recursos comuns
+	Necessidade de coordenação
 
-  36.1.1 Execução Concorrente — [P]
-	  Processos e threads concorrentes
-	  Compartilhamento de recursos comuns
-	  Necessidade de coordenação
-
-  36.1.2 Problemas da Concorrência — [P]
-	  Condição de corrida (race condition)
-	  Região crítica
-	  Necessidade de exclusão mútua
+  
+ 36.2 Problemas da Concorrência — [P]
+	Condição de corrida (race condition)
+	Região crítica
+	Necessidade de exclusão mútua
 
 
 
@@ -1079,6 +1093,11 @@ PARTE 9 — CONCORRÊNCIA, SINCRONIZAÇÃO E COMUNICAÇÃO ENTRE PROCESSOS
 	  Requisitos de uma solução correta
 	  Exclusão mútua por software
 	  Instruções atômicas de hardware (test-and-set)
+	  Mutex
+	  Spinlock
+	  Operações atômicas
+	  Seção crítica protegida por bloqueio
+	  Bloqueios com espera ativa e espera bloqueante
 
   37.1.2 Semáforos — [P]
 	  Conceito de semáforo
@@ -1092,6 +1111,10 @@ PARTE 9 — CONCORRÊNCIA, SINCRONIZAÇÃO E COMUNICAÇÃO ENTRE PROCESSOS
 	  Conceito de monitor
 	  Variáveis de condição
 	  Comparação com semáforos
+	  Espera em variável de condição
+	  Sinalização de uma condição
+	  Diferença entre sinalização e desbloqueio
+	  Relação entre monitor e exclusão mútua
 
   37.2.2 Problemas Clássicos de Sincronização — [I]
 	  Produtor-consumidor
@@ -1122,6 +1145,10 @@ PARTE 9 — CONCORRÊNCIA, SINCRONIZAÇÃO E COMUNICAÇÃO ENTRE PROCESSOS
 	  Prevenção de deadlock
 	  Evitação por meio de alocação segura
 	  Algoritmo do banqueiro
+	  Estado seguro e estado inseguro
+	  Recurso disponível, alocado e solicitado
+	  Detecção de possibilidade de deadlock
+	  Aplicação do algoritmo do banqueiro
 
   38.2.2 Detecção e Recuperação — [I]
 	  Detecção de deadlock
@@ -1138,19 +1165,28 @@ PARTE 9 — CONCORRÊNCIA, SINCRONIZAÇÃO E COMUNICAÇÃO ENTRE PROCESSOS
 	  Conceito de memória compartilhada
 	  Acesso concorrente à área compartilhada
 	  Necessidade de sincronização
+	  Mapeamento de regiões compartilhadas
+	  Compartilhamento de páginas entre processos
+	  Proteção da memória compartilhada
+	  Sincronização do acesso à memória compartilhada
+	  Copy-on-write e compartilhamento de páginas
 
   39.1.2 Troca de Mensagens — [I]
 	  Comunicação direta e indireta
 	  Comunicação síncrona e assíncrona
 	  Filas de mensagens
+	  Bufferização de mensagens
+	  Filas de mensagens
+	  Tamanho das mensagens
+	  Bloqueio e não bloqueio
+	  Sincronização entre remetente e receptor
 
 
  39.2 Outros Mecanismos de IPC — [V]
-
-  39.2.1 Pipes e Sinais — [V]
-	  Pipes nomeados e não nomeados
-	  Sinais entre processos
-	  Sockets para comunicação local
+	Pipes e Sinais
+	Pipes nomeados e não nomeados
+	Sinais entre processos
+	Sockets para comunicação local
 
 
 
