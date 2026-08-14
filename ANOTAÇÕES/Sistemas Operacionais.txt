@@ -788,11 +788,16 @@ PARTE 5 — GERENCIAMENTO DE ARQUIVOS E SISTEMAS DE ARQUIVOS
 
 
  24.2 Metadados e Estruturas de Controle — [I]
+	Estruturas de Controle no Disco
+	Bloco de controle de volume
+	Blocos de controle de diretório e arquivo
+	Tabela de arquivos abertos
+	Inodes
+	Estruturas de controle de diretórios
+	Estruturas de controle mantidas em memória
+	Tabelas de arquivos abertos por processo
+	Tabelas globais de arquivos abertos
 
-  24.2.1 Estruturas de Controle no Disco — [I]
-	  Bloco de controle de volume
-	  Blocos de controle de diretório e arquivo
-	  Tabela de arquivos abertos
 
 
 
@@ -809,6 +814,10 @@ PARTE 5 — GERENCIAMENTO DE ARQUIVOS E SISTEMAS DE ARQUIVOS
 	  Uso de blocos de índice
 	  Índices multiníveis
 	  Flexibilidade de acesso
+	  Índice de blocos de dados
+	  Índices de um, dois e múltiplos níveis
+	  Relação entre metadados e localização dos blocos
+	  Limitações de acesso decorrentes da estrutura de indexação
 
 
  25.2 Gerenciamento de Espaço Livre — [I]
@@ -818,12 +827,7 @@ PARTE 5 — GERENCIAMENTO DE ARQUIVOS E SISTEMAS DE ARQUIVOS
 	Contagem e agrupamento de blocos livres
 	Superbloco e informações do volume
 	Estruturas de metadados dos arquivos
-	Inodes
-	Estruturas de controle de diretórios
-	Estruturas de controle mantidas em memória
-	Tabelas de arquivos abertos por processo
-	Tabelas globais de arquivos abertos
-
+	
 
 
 26. Sistemas de Arquivos Modernos — [I]
@@ -912,20 +916,40 @@ PARTE 6 — GERENCIAMENTO DE ENTRADA E SAÍDA
 	  Uso em dispositivos de alta velocidade
 
 
+ 29.3 Escalonamento de Entrada e Saída — [I]
+
+  29.3.1 Organização das Requisições de E/S — [I]
+	  Filas de requisições de E/S
+	  Ordenação das requisições
+	  Priorização de requisições
+	  Concorrência entre requisições
+	  Objetivos do escalonamento de E/S
+
+  29.3.2 Otimização do Acesso a Dispositivos — [I]
+	  Redução da latência
+	  Redução do tempo de espera
+	  Aproveitamento da largura de banda do dispositivo
+	  Balanceamento entre desempenho e justiça
+
+
 
 30. Buffering, Spooling e Caching de E/S — [I]
 
- 30.1 Técnicas de Otimização de E/S — [I]
+ 30.1 Buffering — [I]
+	Uso de áreas temporárias de armazenamento
+	Redução de descompassos de velocidade
+	Buffer simples e buffer duplo
+	Buffer simples
+	Buffer duplo
+	Buffer circular
+	Buffering síncrono e assíncrono
+	Relação entre buffering e DMA
 
-  30.1.1 Buffering — [I]
-	  Uso de áreas temporárias de armazenamento
-	  Redução de descompassos de velocidade
-	  Buffer simples e buffer duplo
 
-  30.1.2 Spooling e Caching — [I]
-	  Spooling para dispositivos compartilhados
-	  Cache de dados de E/S
-	  Melhoria de desempenho percebido
+ 30.2 Spooling e Caching — [I]
+	Spooling para dispositivos compartilhados
+	Cache de dados de E/S
+	Melhoria de desempenho percebido
 
 
 
@@ -950,17 +974,22 @@ PARTE 7 — GERENCIAMENTO DE DISPOSITIVOS E DRIVERS
 
 32. Drivers de Dispositivo — [I]
 
- 32.1 Conceito e Função dos Drivers — [I]
+ 32.1 Papel do Driver de Dispositivo — [I]
+	Interface entre SO e hardware específico
+	Tradução de comandos genéricos em comandos do dispositivo
+	Independência do núcleo em relação ao hardware
 
-  32.1.1 Papel do Driver de Dispositivo — [I]
-	  Interface entre SO e hardware específico
-	  Tradução de comandos genéricos em comandos do dispositivo
-	  Independência do núcleo em relação ao hardware
 
-  32.1.2 Integração dos Drivers ao Núcleo — [I]
-	  Drivers como módulos do núcleo
-	  Carregamento dinâmico de drivers
-	  Padronização de interfaces de driver
+ 32.2 Integração dos Drivers ao Núcleo — [I]
+	Drivers como módulos do núcleo
+	Carregamento dinâmico de drivers
+	Padronização de interfaces de driver
+	Interface entre driver e subsistema de E/S
+	Comunicação entre driver e controlador de dispositivo
+	Acesso aos registradores do dispositivo
+	Tratamento de interrupções pelo driver
+	Operações síncronas e assíncronas
+	Fila de requisições mantida pelo driver
 
 
 
