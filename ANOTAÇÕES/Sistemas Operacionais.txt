@@ -604,6 +604,12 @@ PARTE 4 — GERENCIAMENTO DE MEMÓRIA E MEMÓRIA VIRTUAL
 	  Estrutura da tabela de páginas
 	  Tradução de endereço virtual em físico
 	  Bits de controle (presença, modificação, referência)
+	  Bits de proteção
+	  Permissões de leitura, escrita e execução
+	  Páginas somente leitura
+	  Páginas compartilhadas
+	  Página privada e página compartilhada
+	  Copy-on-write (COW)
 
 
  18.2 Otimizações na Paginação — [P]
@@ -611,7 +617,12 @@ PARTE 4 — GERENCIAMENTO DE MEMÓRIA E MEMÓRIA VIRTUAL
   18.2.1 Translation Lookaside Buffer (TLB) — [P]
 	  Cache de tradução de endereços
 	  Redução da latência de acesso
+	  TLB hit
+	  TLB miss
+	  Atualização da TLB
+	  Invalidação de entradas da TLB
 	  Falta na TLB (TLB miss)
+	  Impacto da TLB no desempenho da tradução de endereços
 
   18.2.2 Paginação em Múltiplos Níveis — [I]
 	  Tabelas de páginas hierárquicas
@@ -656,6 +667,12 @@ PARTE 4 — GERENCIAMENTO DE MEMÓRIA E MEMÓRIA VIRTUAL
 	  Carregamento de páginas quando necessário
 	  Falta de página (page fault)
 	  Tratamento da falta de página pelo SO
+	  Detecção de page fault
+	  Identificação da página necessária
+	  Localização da página no armazenamento secundário
+	  Carregamento da página para um frame
+	  Atualização da tabela de páginas
+	  Reinício da instrução interrompida
 
 
  20.2 Vantagens e Desafios da Memória Virtual — [I]
@@ -728,6 +745,11 @@ PARTE 5 — GERENCIAMENTO DE ARQUIVOS E SISTEMAS DE ARQUIVOS
 	  Definição de arquivo
 	  Atributos de um arquivo (nome, tamanho, tipo, datas)
 	  Operações sobre arquivos (criar, ler, escrever, excluir)
+	  Metadados de arquivos
+	  Identificador interno do arquivo
+	  Permissões e proprietário
+	  Informações de localização dos dados
+	  Tamanho lógico e espaço físico ocupado
 
   23.1.2 Métodos de Acesso — [I]
 	  Acesso sequencial
@@ -790,11 +812,17 @@ PARTE 5 — GERENCIAMENTO DE ARQUIVOS E SISTEMAS DE ARQUIVOS
 
 
  25.2 Gerenciamento de Espaço Livre — [I]
-
-  25.2.1 Técnicas de Controle de Espaço Livre — [I]
-	  Mapa de bits (bitmap)
-	  Lista encadeada de blocos livres
-	  Contagem e agrupamento de blocos livres
+	Técnicas de Controle de Espaço Livre — [I]
+	Mapa de bits (bitmap)
+	Lista encadeada de blocos livres
+	Contagem e agrupamento de blocos livres
+	Superbloco e informações do volume
+	Estruturas de metadados dos arquivos
+	Inodes
+	Estruturas de controle de diretórios
+	Estruturas de controle mantidas em memória
+	Tabelas de arquivos abertos por processo
+	Tabelas globais de arquivos abertos
 
 
 
