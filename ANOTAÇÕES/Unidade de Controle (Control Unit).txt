@@ -690,6 +690,14 @@ PARTE 5 — MICROINSTRUÇÕES, MICROPROGRAMAÇÃO E SEQUENCIAMENTO
 	  Ativação de sinais específicos
 	  Composição do microprograma
 
+  21.1.3 Microoperações — [P]
+	  Conceito de microoperação
+	  Microoperações de transferência entre registradores
+	  Microoperações aritméticas
+	  Microoperações lógicas
+	  Microoperações de deslocamento
+	  Relação entre microoperações e sinais de controle
+
 
  21.2 Relação entre Instrução e Microinstrução — [P]
 
@@ -697,6 +705,21 @@ PARTE 5 — MICROINSTRUÇÕES, MICROPROGRAMAÇÃO E SEQUENCIAMENTO
 	  Sequência de microinstruções associada
 	  Execução passo a passo
 	  Finalização e retorno à busca
+
+  21.2.2 Sequência de Microoperações — [P]
+	  Organização das microoperações
+	  Sequenciamento das microoperações
+	  Microoperações executadas em sequência
+	  Microoperações executadas simultaneamente
+	  Relação entre microoperações e microinstruções
+
+  21.2.3 Linguagem de Transferência entre Registradores (RTL) — [P]
+	  Conceito de RTL
+	  Representação de transferências entre registradores
+	  Representação de microoperações
+	  Representação das operações de controle
+	  Uso da RTL para descrever o ciclo de instrução
+	  Relação entre RTL, microoperações e microinstruções
 
 
 
@@ -708,6 +731,10 @@ PARTE 5 — MICROINSTRUÇÕES, MICROPROGRAMAÇÃO E SEQUENCIAMENTO
 	  Sinais para o Datapath
 	  Sinais para memória e barramento
 	  Codificação dos sinais
+	  Representação das microoperações pelos campos de controle
+	  Controle simultâneo de múltiplos componentes
+	  Compatibilidade entre sinais de controle
+	  Conflitos entre sinais de controle
 
   22.1.2 Campo de Endereçamento — [P]
 	  Endereço da próxima microinstrução
@@ -721,11 +748,17 @@ PARTE 5 — MICROINSTRUÇÕES, MICROPROGRAMAÇÃO E SEQUENCIAMENTO
 	  Um bit por sinal de controle
 	  Maior paralelismo de sinais
 	  Maior largura da microinstrução
+	  Paralelismo entre microoperações
+	  Execução simultânea de sinais de controle
+	  Relação entre largura da microinstrução e paralelismo
 
   22.2.2 Microprogramação Vertical — [P]
 	  Codificação compacta dos sinais
 	  Necessidade de decodificação adicional
 	  Menor largura da microinstrução
+	  Limitação do paralelismo
+	  Necessidade de decodificação dos campos
+	  Relação entre compactação e complexidade de decodificação
 
 
 
@@ -766,6 +799,12 @@ PARTE 5 — MICROINSTRUÇÕES, MICROPROGRAMAÇÃO E SEQUENCIAMENTO
 	  Sequenciamento incremental
 	  Sequenciamento por salto explícito
 	  Sequenciamento condicional
+	  Seleção da fonte do próximo endereço
+	  Próximo endereço sequencial
+	  Endereço fornecido pela microinstrução
+	  Endereço derivado do opcode
+	  Endereço condicionado por flags
+	  Multiplexação das fontes do próximo endereço
 
 
  24.2 Desvios no Microprograma — [P]
@@ -779,6 +818,25 @@ PARTE 5 — MICROINSTRUÇÕES, MICROPROGRAMAÇÃO E SEQUENCIAMENTO
 	  Tabela de mapeamento
 	  Início do microprograma correspondente
 	  Relação com a decodificação
+
+  24.2.3 Seleção do Próximo Endereço — [P]
+	  Lógica de seleção do próximo endereço
+	  Fontes possíveis do endereço
+	  Condições para seleção
+	  Relação entre sequenciador e memória de controle
+
+
+ 24.3 Subrotinas de Microprogramação — [P]
+
+  24.3.1 Chamada de Subrotina — [P]
+	  Conceito de subrotina de microprogramação
+	  Endereço de entrada
+	  Armazenamento do endereço de retorno
+
+  24.3.2 Retorno de Subrotina — [P]
+	  Recuperação do endereço de retorno
+	  Continuação do microprograma
+	  Compartilhamento de sequências de microinstruções
 
 
 
@@ -850,10 +908,9 @@ PARTE 6 — SINAIS DE CONTROLE, TEMPORIZAÇÃO E SINCRONIZAÇÃO
 28. Temporização e Clock — [I]
 
  28.1 Papel do Clock na Unidade de Controle — [I]
-
-  28.1.1 Sincronização das Operações — [I]
-	  Definição dos instantes de ativação dos sinais
-	  Relação com a frequência de operação
+	Sincronização das Operações
+	Definição dos instantes de ativação dos sinais
+	Relação com a frequência de operação
 
 
  28.2 Períodos e Ciclos de Clock — [I]
@@ -861,23 +918,39 @@ PARTE 6 — SINAIS DE CONTROLE, TEMPORIZAÇÃO E SINCRONIZAÇÃO
   28.2.1 Duração do Ciclo de Clock — [I]
 	  Relação com o atraso do caminho crítico
 	  Impacto no desempenho do processador
+	  Atraso de propagação da lógica de controle
+	  Tempo de propagação dos sinais de controle
+	  Tempo de estabilização dos sinais
+	  Influência do atraso da Unidade de Controle no ciclo de clock
+
+  28.2.2 Caminho Crítico da Unidade de Controle — [P]
+	  Identificação do caminho crítico
+	  Lógica de geração de sinais
+	  Atrasos acumulados
+	  Relação entre caminho crítico e frequência máxima
 
 
 
 29. Sincronização entre Unidade de Controle e Datapath — [I]
 
- 29.1 Coordenação Temporal — [I]
+ 29.1 Alinhamento dos Sinais de Controle — [I]
+	Momento correto de ativação
+	Consistência com o estado do Datapath
+	Dependência temporal entre sinais
+	Duração dos sinais de controle
+	Ordem de ativação dos sinais
+	Sinais mutuamente exclusivos
+	Sobreposição de sinais de controle
+	Janela válida dos sinais
 
-  29.1.1 Alinhamento dos Sinais de Controle — [I]
-	  Momento correto de ativação
-	  Consistência com o estado do Datapath
 
-
- 29.2 Consistência dos Dados Durante a Sincronização — [I]
-
-  29.2.1 Garantia de Integridade — [I]
-	  Evitar leituras ou escritas incorretas
-	  Respeito às dependências entre sinais
+ 29.2 Garantia de Integridade — [I]
+	Evitar leituras ou escritas incorretas
+	Respeito às dependências entre sinais
+	Dependências entre operações de controle
+	Prevenção de operações simultâneas incompatíveis
+	Atrasos de propagação
+	Estabilidade dos dados antes da operação de escrita
 
 
 
