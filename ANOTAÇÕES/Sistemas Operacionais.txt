@@ -314,6 +314,10 @@ PARTE 3 — PROCESSOS, THREADS E GERENCIAMENTO DE EXECUÇÃO
 	  Diferença entre processo e programa
 	  Espaço de endereçamento do processo
 	  Recursos associados ao processo
+	  Identidade e recursos associados ao processo
+	  Espaço de endereçamento do processo
+	  Recursos herdados e recursos próprios
+	  Isolamento entre espaços de endereçamento
 
   9.1.2 Componentes de um Processo — [P]
 	  Código (texto)
@@ -414,6 +418,9 @@ PARTE 3 — PROCESSOS, THREADS E GERENCIAMENTO DE EXECUÇÃO
 	  Threads em nível de usuário
 	  Threads em nível de núcleo
 	  Modelos híbridos (muitos-para-muitos)
+	  Mapeamento entre threads de usuário e threads de kernel
+	  Impacto dos modelos de threads no escalonamento
+	  Bloqueio de uma thread e comportamento das demais threads do processo
 
 
  12.2 Multithreading e Aplicações Concorrentes — [I]
@@ -458,6 +465,11 @@ PARTE 3 — PROCESSOS, THREADS E GERENCIAMENTO DE EXECUÇÃO
 	  Interrupção do processo em execução
 	  Uso do temporizador (timer)
 	  Maior responsividade do sistema
+	  Temporizador do sistema (system timer)
+	  Interrupções periódicas do temporizador
+	  Tick do sistema
+	  Expiração do quantum
+	  Preempção provocada pelo temporizador
 
 
 
@@ -525,20 +537,28 @@ PARTE 4 — GERENCIAMENTO DE MEMÓRIA E MEMÓRIA VIRTUAL
 	  Proteção entre processos
 	  Realocação de endereços
 	  Compartilhamento de memória quando necessário
+	  Alocação dinâmica de memória
+	  Liberação de memória
+	  Gerenciamento do heap
+	  Relação entre heap e espaço de endereçamento do processo
+	  Fragmentação decorrente da alocação dinâmica
 
   16.1.2 Endereçamento Lógico e Físico — [P]
 	  Espaço de endereços lógico (virtual)
 	  Espaço de endereços físico
 	  Tradução de endereços
 	  Papel da Unidade de Gerência de Memória (MMU)
+	  Espaço de endereçamento virtual
+	  Mapeamento entre endereços virtuais e físicos
+	  Permissões associadas às regiões de memória
+	  Isolamento dos espaços de endereçamento dos processos
 
 
  16.2 Hierarquia de Memória e o Sistema Operacional — [I]
-
-  16.2.1 Relação com a Hierarquia de Memória — [I]
-	  Registradores, cache, memória principal e disco
-	  Papel do SO na gestão dessa hierarquia
-	  Diferença entre gerência de memória e cache de hardware
+	Relação com a Hierarquia de Memória
+	Registradores, cache, memória principal e disco
+	Papel do SO na gestão dessa hierarquia
+	Diferença entre gerência de memória e cache de hardware
 
 
 
