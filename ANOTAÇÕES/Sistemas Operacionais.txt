@@ -1270,36 +1270,33 @@ PARTE 11 — VIRTUALIZAÇÃO, SISTEMAS OPERACIONAIS DISTRIBUÍDOS E TÉCNICAS AV
 
 43. Sistemas Operacionais Distribuídos — [V]
 
- 43.1 Fundamentos de Sistemas Distribuídos — [V]
+ 43.1 Características Gerais — [V]
+	Conjunto de computadores interligados
+	Transparência para o usuário
+	Compartilhamento de recursos pela rede
 
-  43.1.1 Características Gerais — [V]
-	  Conjunto de computadores interligados
-	  Transparência para o usuário
-	  Compartilhamento de recursos pela rede
 
-  43.1.2 Desafios dos Sistemas Distribuídos — [V]
-	  Comunicação entre nós
-	  Sincronização de relógios
-	  Tolerância a falhas
+ 43.2 Desafios dos Sistemas Distribuídos — [V]
+	Comunicação entre nós
+	Sincronização de relógios
+	Tolerância a falhas
 
 
 
 44. Sistemas Operacionais em Tempo Real e Embarcados — [I]
 
  44.1 Sistemas de Tempo Real — [I]
-
-  44.1.1 Características de Tempo Real — [I]
-	  Restrições temporais rígidas e flexíveis
-	  Previsibilidade de resposta
-	  Escalonamento com prazos (deadlines)
+	Características de Tempo Real
+	Restrições temporais rígidas e flexíveis
+	Previsibilidade de resposta
+	Escalonamento com prazos (deadlines)
 
 
  44.2 Sistemas Embarcados — [V]
-
-  44.2.1 Características de Sistemas Embarcados — [V]
-	  Recursos limitados de hardware
-	  Especialização para uma tarefa
-	  Uso em dispositivos dedicados
+	Características de Sistemas Embarcados
+	Recursos limitados de hardware
+	Especialização para uma tarefa
+	Uso em dispositivos dedicados
 
 
 
@@ -1308,46 +1305,58 @@ PARTE 12 — ESTRUTURA INTERNA, IMPLEMENTAÇÃO E EVOLUÇÃO DOS SISTEMAS OPERAC
 
 45. Kernel — Implementação e Componentes Internos — [I]
 
- 45.1 Componentes do Núcleo — [I]
+ 45.1 Módulos Fundamentais do Kernel — [I]
+	Gerenciador de processos
+	Gerenciador de memória
+	Sistema de arquivos e subsistema de E/S
+	Espaço de kernel e espaço de usuário
+	Estruturas de dados internas do kernel
+	Interfaces internas entre subsistemas
+	Gerenciamento de chamadas de sistema
+	Gerenciamento de interrupções e exceções
+	Coordenação entre subsistemas do kernel
 
-  45.1.1 Módulos Fundamentais do Kernel — [I]
-	  Gerenciador de processos
-	  Gerenciador de memória
-	  Sistema de arquivos e subsistema de E/S
-
-  45.1.2 Módulos Carregáveis do Núcleo — [V]
-	  Extensão dinâmica de funcionalidades
-	  Carregamento e descarregamento de módulos
+  
+ 45.2 Módulos Carregáveis do Núcleo — [V]
+	Extensão dinâmica de funcionalidades
+	Carregamento e descarregamento de módulos
+	Carregamento dinâmico de módulos
+	Descarregamento de módulos
+	Dependências entre módulos
+	Vantagens e riscos da modularização do kernel
 
 
 
 46. Boot e Inicialização do Sistema — [V]
 
- 46.1 Processo de Inicialização — [V]
+ 46.1 Etapas do Boot — [V]
+	Firmware de inicialização (BIOS/UEFI)
+	Carregador de boot (bootloader)
+	Carregamento do núcleo na memória
+	Inicialização básica do hardware
+	Localização do dispositivo de inicialização
+	Carregamento do bootloader
+	Carregamento e preparação do kernel
+	Transferência do controle para o kernel
 
-  46.1.1 Etapas do Boot — [V]
-	  Firmware de inicialização (BIOS/UEFI)
-	  Carregador de boot (bootloader)
-	  Carregamento do núcleo na memória
 
-  46.1.2 Inicialização de Serviços do Sistema — [V]
-	  Inicialização de processos essenciais
-	  Preparação do ambiente para o usuário
+ 46.2 Inicialização de Serviços do Sistema — [V]
+	Inicialização de processos essenciais
+	Preparação do ambiente para o usuário
 
 
 
 47. Principais Famílias de Sistemas Operacionais — [V]
 
- 47.1 Panorama das Famílias de SO — [V]
+ 47.1 Sistemas de Propósito Geral — [V]
+	Família Unix/Linux
+	Família Windows
+	Características gerais de cada família
 
-  47.1.1 Sistemas de Propósito Geral — [V]
-	  Família Unix/Linux
-	  Família Windows
-	  Características gerais de cada família
-
-  47.1.2 Sistemas Móveis e Especializados — [V]
-	  Sistemas operacionais móveis
-	  Sistemas operacionais especializados
+  
+ 47.2 Sistemas Móveis e Especializados — [V]
+	Sistemas operacionais móveis
+	Sistemas operacionais especializados
 
 
 
@@ -1356,32 +1365,46 @@ PARTE 13 — INTEGRAÇÃO, APLICAÇÕES E CONSOLIDAÇÃO DOS SISTEMAS OPERACIONA
 
 48. Integração do Sistema Operacional com o Hardware — [I]
 
- 48.1 Dependência entre SO e Arquitetura — [I]
+ 48.1 Suporte da Arquitetura ao Sistema Operacional — [I]
+	Instruções privilegiadas do processador
+	Suporte a múltiplos modos de execução
+	Suporte a memória virtual pelo hardware (MMU)
+	Temporizador de hardware
+	Interrupções e exceções
+	Mecanismos de proteção
+	MMU e tradução de endereços
+	Instruções atômicas para sincronização
+	Suporte de hardware à virtualização
 
-  48.1.1 Suporte da Arquitetura ao Sistema Operacional — [I]
-	  Instruções privilegiadas do processador
-	  Suporte a múltiplos modos de execução
-	  Suporte a memória virtual pelo hardware (MMU)
-
-  48.1.2 Adaptação do SO à Arquitetura Subjacente — [I]
-	  Portabilidade do sistema operacional
-	  Camada de abstração de hardware (HAL)
+  
+ 48.2 Adaptação do SO à Arquitetura Subjacente — [I]
+	Portabilidade do sistema operacional
+	Camada de abstração de hardware (HAL)
 
 
 
 49. Relação do Sistema Operacional com Outros Componentes da Arquitetura — [I]
 
- 49.1 Interações com Processador, Memória e E/S — [I]
+ 49.1 Relação com o Processador e o Datapath — [I]
+	Uso das instruções da ISA pelo SO
+	Dependência da execução das instruções
+	Suporte do processador ao escalonamento
+	Interação com modos de execução
+	Uso de registradores de controle
+	Tratamento de interrupções e exceções
+	Uso do temporizador
+	Salvamento e restauração do estado de execução
 
-  49.1.1 Relação com o Processador e o Datapath — [I]
-	  Uso das instruções da ISA pelo SO
-	  Dependência da execução das instruções
-	  Suporte do processador ao escalonamento
-
-  49.1.2 Relação com Memória e Barramentos — [I]
-	  Uso da hierarquia de memória
-	  Comunicação via barramentos do sistema
-	  Coordenação com controladores de E/S
+  
+ 49.2 Relação com Memória e Barramentos — [I]
+	Uso da hierarquia de memória
+	Comunicação via barramentos do sistema
+	Coordenação com controladores de E/S
+	Tradução de endereços pelo sistema de memória
+	Acesso à memória por dispositivos
+	Relação entre DMA e memória
+	Coerência dos dados durante operações de E/S
+	Comunicação entre CPU, memória e controladores de dispositivos
 
 
 
