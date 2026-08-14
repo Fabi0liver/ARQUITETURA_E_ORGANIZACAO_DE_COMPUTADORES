@@ -91,11 +91,10 @@ PARTE 1 — FUNDAMENTOS DA UNIDADE DE CONTROLE (CONTROL UNIT)
 
 
  2.3 Importância da Evolução para a Computação Moderna — [V]
-
-  2.3.1 Impactos na Computação Atual — [V]
-	  Evolução do desempenho dos processadores
-	  Redução da complexidade de projeto
-	  Base para arquiteturas modernas
+	Impactos na Computação Atual — [V]
+	Evolução do desempenho dos processadores
+	Redução da complexidade de projeto
+	 Base para arquiteturas modernas
 
 
 
@@ -492,22 +491,20 @@ PARTE 3 — CICLO DE INSTRUÇÃO E GERAÇÃO DE SINAIS DE CONTROLE
 
 
  14.2 Temporização dos Sinais de Controle — [I]
-
-  14.2.1 Ativação Temporal dos Sinais — [I]
-	  Momento correto de ativação
-	  Duração dos sinais
-	  Sincronismo com o Datapath
+	Ativação Temporal dos Sinais
+	Momento correto de ativação
+	Duração dos sinais
+	Sincronismo com o Datapath
 
 
 
 15. Fluxo de Controle Durante a Execução — [I]
 
  15.1 Sequenciamento Normal — [I]
-
-  15.1.1 Fluxo Padrão do Ciclo — [I]
-	  Sequência busca-decodificação-execução
-	  Retorno ao início do ciclo
-	  Continuidade da execução do programa
+	Fluxo Padrão do Ciclo
+	Sequência busca-decodificação-execução
+	Retorno ao início do ciclo
+	Continuidade da execução do programa
 
 
  15.2 Alterações no Fluxo de Controle — [I]
@@ -790,11 +787,10 @@ PARTE 5 — MICROINSTRUÇÕES, MICROPROGRAMAÇÃO E SEQUENCIAMENTO
 
 
  23.2 Operação da Memória de Controle — [P]
-
-  23.2.1 Leitura das Microinstruções — [P]
-	  Busca da microinstrução atual
-	  Envio ao registrador de microinstrução
-	  Determinação do próximo endereço
+	Leitura das Microinstruções
+	Busca da microinstrução atual
+	Envio ao registrador de microinstrução
+	Determinação do próximo endereço
 
 
 
@@ -854,20 +850,17 @@ PARTE 5 — MICROINSTRUÇÕES, MICROPROGRAMAÇÃO E SEQUENCIAMENTO
 
 25. Técnicas de Microprogramação (Horizontal e Vertical) — [I]
 
- 25.1 Comparação entre as Técnicas — [I]
-
-  25.1.1 Critérios de Comparação — [I]
-	  Largura da microinstrução
-	  Velocidade de execução
-	  Complexidade da lógica de decodificação
+ 25.1 Critérios de Comparação — [I]
+	Largura da microinstrução
+	Velocidade de execução
+	Complexidade da lógica de decodificação
 
 
  25.2 Abordagens Híbridas — [I]
-
-  25.2.1 Microprogramação Parcialmente Codificada — [I]
-	  Combinação de campos codificados e diretos
-	  Equilíbrio entre desempenho e compactação
-	  Uso em projetos reais
+	Microprogramação Parcialmente Codificada
+	Combinação de campos codificados e diretos
+	Equilíbrio entre desempenho e compactação
+	Uso em projetos reais
 
 
 
@@ -877,11 +870,10 @@ PARTE 6 — SINAIS DE CONTROLE, TEMPORIZAÇÃO E SINCRONIZAÇÃO
 26. Sinais de Controle do Datapath — [P]
 
  26.1 Sinais para a ULA — [P]
-
-  26.1.1 Seleção de Operação — [P]
-	  Código de operação da ULA
-	  Seleção entre soma, subtração e lógicas
-	  Ativação da operação correta
+	Seleção de Operação
+	Código de operação da ULA
+	Seleção entre soma, subtração e lógicas
+	Ativação da operação correta
 
 
  26.2 Sinais para Registradores e Multiplexadores — [P]
@@ -910,10 +902,9 @@ PARTE 6 — SINAIS DE CONTROLE, TEMPORIZAÇÃO E SINCRONIZAÇÃO
 
 
  27.2 Sinais de Controle de Barramento — [P]
-
-  27.2.1 Habilitação de Dispositivos no Barramento — [P]
-	  Controle de acesso ao barramento
-	  Evitar conflitos de utilização
+	Habilitação de Dispositivos no Barramento
+	Controle de acesso ao barramento
+	Evitar conflitos de utilização
 
 
 
@@ -1035,10 +1026,9 @@ PARTE 7 — DECODIFICAÇÃO DE INSTRUÇÕES E CONTROLE DAS OPERAÇÕES
 32. Controle de Modos de Endereçamento — [I]
 
  32.1 Conceito de Modo de Endereçamento — [I]
-
-  32.1.1 Definição e Finalidade — [I]
-	  Forma de especificar o operando
-	  Relação com o controle de acesso a dados
+	Definição e Finalidade
+	Forma de especificar o operando
+	Relação com o controle de acesso a dados
 
 
  32.2 Controle dos Diferentes Modos — [I]
@@ -1080,10 +1070,9 @@ PARTE 7 — DECODIFICAÇÃO DE INSTRUÇÕES E CONTROLE DAS OPERAÇÕES
 34. Controle de Desvios e Saltos — [I]
 
  34.1 Controle de Desvios Incondicionais — [I]
-
-  34.1.1 Alteração do Contador de Programa — [I]
-	  Carga direta do novo endereço
-	  Sinais de controle envolvidos
+	Alteração do Contador de Programa
+	Carga direta do novo endereço
+	Sinais de controle envolvidos
 
 
  34.2 Controle de Desvios Condicionais — [I]
@@ -1104,69 +1093,61 @@ PARTE 8 — UNIDADE DE CONTROLE E SUA INTEGRAÇÃO COM O DATAPATH
 35. Interface entre Unidade de Controle e Datapath — [I]
 
  35.1 Conceito de Interface de Controle — [I]
-
-  35.1.1 Sinais de Entrada e Saída — [I]
-	  Sinais recebidos do Datapath
-	  Sinais enviados ao Datapath
+	Sinais de Entrada e Saída — [I]
+	Sinais recebidos do Datapath
+	Sinais enviados ao Datapath
 
 
  35.2 Organização da Interface — [I]
-
-  35.2.1 Pontos de Conexão — [I]
-	  Registradores
-	  Multiplexadores
-	  Unidade Lógica e Aritmética
+	Pontos de Conexão
+	Registradores
+	Multiplexadores
+	Unidade Lógica e Aritmética
 
 
 
 36. Controle de Escrita e Leitura de Registradores — [I]
 
  36.1 Controle de Leitura — [I]
-
-  36.1.1 Seleção dos Registradores Fonte — [I]
-	  Sinais de seleção
-	  Disponibilização dos operandos
+	Seleção dos Registradores Fonte
+	Sinais de seleção
+	Disponibilização dos operandos
 
 
  36.2 Controle de Escrita — [I]
-
-  36.2.1 Seleção do Registrador Destino — [I]
-	  Sinais de habilitação de escrita
-	  Sincronização com o resultado da operação
+	Seleção do Registrador Destino
+	Sinais de habilitação de escrita
+	Sincronização com o resultado da operação
 
 
 
 37. Controle de Acesso à Memória — [I]
 
  37.1 Controle de Leitura de Memória — [I]
-
-  37.1.1 Sinais Envolvidos — [I]
-	  Habilitação de leitura
-	  Endereço fornecido pelo Datapath
+	Sinais Envolvidos
+	Habilitação de leitura
+	Endereço fornecido pelo Datapath
 
 
  37.2 Controle de Escrita em Memória — [I]
-
-  37.2.1 Sinais Envolvidos — [I]
-	  Habilitação de escrita
-	  Dado a ser armazenado
+	Sinais Envolvidos
+	Habilitação de escrita
+	Dado a ser armazenado
 
 
 
 38. Coordenação de Barramentos Internos — [I]
 
  38.1 Controle de Compartilhamento do Barramento — [I]
-
-  38.1.1 Evitar Conflitos de Acesso — [I]
-	  Habilitação seletiva dos dispositivos
-	  Sincronização temporal
+	Evitar Conflitos de Acesso
+	Habilitação seletiva dos dispositivos
+	Sincronização temporal
 
 
  38.2 Coordenação entre Múltiplos Barramentos — [I]
-
-  38.2.1 Organização em Arquiteturas com Vários Barramentos — [I]
-	  Controle independente por barramento
-	  Coordenação das transferências simultâneas
+	Organização em Arquiteturas com Vários Barramentos
+	Controle independente por barramento
+	Coordenação das transferências simultâneas
 
 
 
@@ -1176,18 +1157,16 @@ PARTE 9 — ORGANIZAÇÕES AVANÇADAS, PIPELINE E CONTROLE DE FLUXO
 39. Unidade de Controle em Processadores Multiciclo — [I]
 
  39.1 Organização do Controle Multiciclo — [I]
-
-  39.1.1 Divisão da Execução em Múltiplos Ciclos — [I]
-	  Uma etapa por ciclo de clock
-	  Reutilização de componentes do Datapath
+	Divisão da Execução em Múltiplos Ciclos
+	Uma etapa por ciclo de clock
+	Reutilização de componentes do Datapath
 
 
  39.2 Máquina de Estados do Controle Multiciclo — [I]
-
-  39.2.1 Estados por Etapa da Instrução — [I]
-	  Estado de busca
-	  Estado de decodificação
-	  Estados de execução variáveis por instrução
+	Estados por Etapa da Instrução
+	Estado de busca
+	Estado de decodificação
+	Estados de execução variáveis por instrução
 
 
 
@@ -1273,17 +1252,15 @@ PARTE 9 — ORGANIZAÇÕES AVANÇADAS, PIPELINE E CONTROLE DE FLUXO
 43. Unidade de Controle em Processadores Superescalares — [V]
 
  43.1 Fundamentos do Controle Superescalar — [V]
-
-  43.1.1 Múltiplas Instruções por Ciclo — [V]
-	  Necessidade de controle mais complexo
-	  Coordenação de múltiplas unidades funcionais
+	Múltiplas Instruções por Ciclo
+	Necessidade de controle mais complexo
+	Coordenação de múltiplas unidades funcionais
 
 
  43.2 Desafios do Controle Superescalar — [V]
-
-  43.2.1 Dependências entre Instruções — [V]
-	  Controle de dependências de dados
-	  Escalonamento das instruções
+	Dependências entre Instruções
+	Controle de dependências de dados
+	Escalonamento das instruções
 
 
 
@@ -1304,20 +1281,18 @@ PARTE 10 — IMPLEMENTAÇÃO, DESEMPENHO, EVOLUÇÃO E ARQUITETURAS MODERNAS
 
 
  44.2 Considerações de Projeto Físico — [V]
-
-  44.2.1 Área e Consumo de Energia — [V]
-	  Impacto da complexidade do controle
-	  Trade-offs de projeto físico
+	Área e Consumo de Energia
+	Impacto da complexidade do controle
+	Trade-offs de projeto físico
 
 
 
 45. Desempenho e Complexidade da Unidade de Controle — [I]
 
  45.1 Fatores que Afetam o Desempenho — [I]
-
-  45.1.1 Número de Ciclos por Instrução — [I]
-	  Relação com a organização do controle
-	  Impacto no tempo de execução
+	Número de Ciclos por Instrução
+	Relação com a organização do controle
+	Impacto no tempo de execução
 
 
  45.2 Complexidade do Projeto de Controle — [I]
@@ -1333,34 +1308,30 @@ PARTE 10 — IMPLEMENTAÇÃO, DESEMPENHO, EVOLUÇÃO E ARQUITETURAS MODERNAS
 46. Unidade de Controle em Arquiteturas RISC × CISC — [I]
 
  46.1 Controle em Arquiteturas RISC — [I]
-
-  46.1.1 Características do Controle RISC — [I]
-	  Predominância do controle cabeado
-	  Instruções simples e uniformes
+	Características do Controle RISC
+	Predominância do controle cabeado
+	Instruções simples e uniformes
 
 
  46.2 Controle em Arquiteturas CISC — [I]
-
-  46.2.1 Características do Controle CISC — [I]
-	  Predominância do controle microprogramado
-	  Instruções complexas e variadas
+	Características do Controle CISC — [I]
+	Predominância do controle microprogramado
+	Instruções complexas e variadas
 
 
 
 47. Tendências Modernas e Evolução da Unidade de Controle — [V]
 
  47.1 Novas Abordagens de Controle — [V]
-
-  47.1.1 Controle Híbrido — [V]
-	  Combinação de técnicas cabeadas e microprogramadas
-	  Aplicação em processadores modernos
+	Controle Híbrido
+	Combinação de técnicas cabeadas e microprogramadas
+	Aplicação em processadores modernos
 
 
  47.2 Perspectivas Futuras — [V]
-
-  47.2.1 Evolução Contínua do Controle — [V]
-	  Adaptação a novas arquiteturas
-	  Suporte a paralelismo crescente
+	Evolução Contínua do Controle
+	Adaptação a novas arquiteturas
+	Suporte a paralelismo crescente
 
 
 
@@ -1382,45 +1353,40 @@ PARTE 11 — RESUMO GERAL E CONSOLIDAÇÃO DA UNIDADE DE CONTROLE
 
 
  48.2 Relações entre os Conceitos Estudados — [I]
-
-  48.2.1 Controle Cabeado e Microprogramado — [I]
-	  Relação entre as abordagens
-	  Aplicação conforme o contexto
+	Controle Cabeado e Microprogramado
+	Relação entre as abordagens
+	Aplicação conforme o contexto
 
 
 
 49. Resumo Geral da Unidade de Controle — [I]
 
  49.1 Revisão dos Conceitos Fundamentais — [I]
-
-  49.1.1 Fundamentos Essenciais — [I]
-	  Definição da Unidade de Controle
-	  Papel na execução das instruções
-	  Organização interna
+	Fundamentos Essenciais
+	Definição da Unidade de Controle
+	Papel na execução das instruções
+	Organização interna
 
 
  49.2 Revisão das Técnicas de Controle — [I]
-
-  49.2.1 Organizações Estudadas — [I]
-	  Controle cabeado
-	  Controle microprogramado
-	  Controle em pipeline
-	  Controle superescalar
+	Organizações Estudadas
+	Controle cabeado
+	Controle microprogramado
+	Controle em pipeline
+	Controle superescalar
 
 
 
 50. Conclusão do Estudo da Unidade de Controle — [V]
 
  50.1 Síntese Final — [V]
-
-  50.1.1 O Papel da Unidade de Controle — [V]
-	  Elemento central da coordenação do processador
-	  Base da execução correta das instruções
+	O Papel da Unidade de Controle
+	Elemento central da coordenação do processador
+	Base da execução correta das instruções
 
 
  50.2 Preparação para Estudos Posteriores — [V]
-
-  50.2.1 Conhecimentos Adquiridos — [V]
-	  Estrutura da Unidade de Controle
-	  Geração e temporização dos sinais
-	  Integração com o Datapath
+	Conhecimentos Adquiridos
+	Estrutura da Unidade de Controle
+	Geração e temporização dos sinais
+	Integração com o Datapath
