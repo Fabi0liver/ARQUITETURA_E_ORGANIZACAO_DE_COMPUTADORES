@@ -90,13 +90,11 @@ PARTE 1 — FUNDAMENTOS DA UNIDADE LÓGICA E ARITMÉTICA (ULA / ALU)
 	  Maior desempenho
 
 
- 2.3 Importância da Evolução da ULA — [V]
-
-  2.3.1 Impactos na Computação Moderna — [V]
-	  Evolução do desempenho
-	  Eficiência energética
-	  Escalabilidade
-	  Base para arquiteturas modernas
+ 2.3 Impactos na Computação Moderna — [V]
+	Evolução do desempenho
+	Eficiência energética
+	Escalabilidade
+	Base para arquiteturas modernas
 
 
 
@@ -132,13 +130,11 @@ PARTE 1 — FUNDAMENTOS DA UNIDADE LÓGICA E ARITMÉTICA (ULA / ALU)
 	  Máscaras de bits
 
 
- 3.3 Relação com a Álgebra Booleana — [I]
-
-  3.3.1 Fundamentos Booleanos Aplicados à ULA — [I]
-	  Operadores lógicos básicos
-	  Tabelas-verdade
-	  Funções booleanas
-	  Base para circuitos combinacionais
+ 3.3 Fundamentos Booleanos Aplicados à ULA — [I]
+	Operadores lógicos básicos
+	Tabelas-verdade
+	Funções booleanas
+	Base para circuitos combinacionais
 
 
 
@@ -174,13 +170,11 @@ PARTE 1 — FUNDAMENTOS DA UNIDADE LÓGICA E ARITMÉTICA (ULA / ALU)
 	  Integração com outros componentes
 
 
- 4.3 Organização Lógica da ULA — [I]
-
-  4.3.1 Estrutura Lógica Interna — [I]
-	  Organização funcional
-	  Fluxo lógico
-	  Dependências operacionais
-	  Modularidade
+ 4.3 Estrutura Lógica Interna — [I]
+	Organização funcional
+	Fluxo lógico
+	Dependências operacionais
+	Modularidade
 
 
 
@@ -216,13 +210,11 @@ PARTE 1 — FUNDAMENTOS DA UNIDADE LÓGICA E ARITMÉTICA (ULA / ALU)
 	  Independência funcional
 
 
- 5.3 Modelo Geral de Funcionamento — [I]
-
-  5.3.1 Ciclo Geral das Operações — [I]
-	  Entrada dos operandos
-	  Seleção da operação
-	  Processamento
-	  Geração do resultado e das flags
+ 5.3 Ciclo Geral das Operações — [I]
+	Entrada dos operandos
+	Seleção da operação
+	Processamento
+	Geração do resultado e das flags
 
 
 
@@ -469,13 +461,11 @@ PARTE 3 — OPERAÇÕES ARITMÉTICAS E LÓGICAS
 	  Casos especiais
 
 
- 11.3 Incremento e Decremento — [I]
-
-  11.3.1 Operações de Incremento e Decremento — [I]
-	  Soma de 1
-	  Subtração de 1
-	  Uso em contadores
-	  Uso no cálculo de endereços
+ 11.3 Operações de Incremento e Decremento — [I]
+	Soma de 1
+	Subtração de 1
+	Uso em contadores
+	Uso no cálculo de endereços
 
 
 
@@ -673,12 +663,10 @@ PARTE 4 — MANIPULAÇÃO DE BITS, OPERAÇÕES DE COMPARAÇÃO E TESTES
 	  Rotação à direita com carry
 
 
- 18.2 Aplicações da Rotação — [V]
-
-  18.2.1 Usos Típicos — [V]
-	  Criptografia simples e checksums (visão geral)
-	  Manipulação circular de bits
-	  Testes de bits específicos
+ 18.2 Usos Típicos — [V]
+	Criptografia simples e checksums (visão geral)
+	Manipulação circular de bits
+	Testes de bits específicos
 
 
 
@@ -746,12 +734,10 @@ PARTE 4 — MANIPULAÇÃO DE BITS, OPERAÇÕES DE COMPARAÇÃO E TESTES
 	  Combinação com máscaras
 
 
- 21.2 Testes de Condições Compostas — [I]
-
-  21.2.1 Combinação de Flags — [I]
-	  Combinação de múltiplas flags
-	  Avaliação de condições compostas
-	  Uso em decisões de fluxo de controle
+ 21.2 Combinação de Flags — [I]
+	Combinação de múltiplas flags
+	Avaliação de condições compostas
+	Uso em decisões de fluxo de controle
 
 
 
@@ -773,12 +759,10 @@ PARTE 5 — IMPLEMENTAÇÃO INTERNA E CIRCUITOS DA ULA
 	  Limitações do meio somador
 
 
- 22.2 Papel do Meio Somador na ULA — [I]
-
-  22.2.1 Uso como Bloco Básico — [I]
-	  Base para o somador completo
-	  Simplicidade estrutural
-	  Aplicação em circuitos simples
+ 22.2 Uso como Bloco Básico — [I]
+	Base para o somador completo
+	Simplicidade estrutural
+	Aplicação em circuitos simples
 
 
 
@@ -797,12 +781,10 @@ PARTE 5 — IMPLEMENTAÇÃO INTERNA E CIRCUITOS DA ULA
 	  Portas lógicas envolvidas
 
 
- 23.2 Papel do Somador Completo na ULA — [P]
-
-  23.2.1 Bloco Básico da Aritmética — [P]
-	  Unidade fundamental de soma
-	  Base para somadores de múltiplos bits
-	  Reaproveitamento para subtração
+ 23.2 Bloco Básico da Aritmética — [P]
+	Unidade fundamental de soma
+	Base para somadores de múltiplos bits
+	Reaproveitamento para subtração
 
 
 
@@ -822,30 +804,27 @@ PARTE 5 — IMPLEMENTAÇÃO INTERNA E CIRCUITOS DA ULA
 
 
  24.2 Limitações do Ripple Carry — [I]
-
-  24.2.1 Atraso de Propagação — [I]
-	  Tempo de propagação do carry
-	  Impacto no desempenho
-	  Motivação para somadores mais rápidos
+	Atraso de Propagação
+	Tempo de propagação do carry
+	Impacto no desempenho
+	Motivação para somadores mais rápidos
 
 
 
 25. Somadores de Alto Desempenho (visão geral) — [I]
 
  25.1 Carry Lookahead (visão geral) — [I]
-
-  25.1.1 Conceito de Antecipação de Carry — [I]
-	  Cálculo antecipado do carry
-	  Redução do atraso de propagação
-	  Maior complexidade do circuito
+	Conceito de Antecipação de Carry
+	Cálculo antecipado do carry
+	Redução do atraso de propagação
+	Maior complexidade do circuito
 
 
  25.2 Outras Técnicas de Aceleração (visão geral) — [V]
-
-  25.2.1 Somadores Carry-Select e Carry-Save — [V]
-	  Ideia geral do carry-select
-	  Ideia geral do carry-save
-	  Compromisso entre velocidade e custo
+	Somadores Carry-Select e Carry-Save
+	Ideia geral do carry-select
+	Ideia geral do carry-save
+	Compromisso entre velocidade e custo
 
 
 
@@ -865,11 +844,10 @@ PARTE 5 — IMPLEMENTAÇÃO INTERNA E CIRCUITOS DA ULA
 
 
  26.2 Circuito Somador/Subtrator Combinado — [P]
-
-  26.2.1 Estrutura do Circuito Combinado — [P]
-	  Uso de portas XOR de controle
-	  Seleção entre soma e subtração
-	  Economia de hardware
+	Estrutura do Circuito Combinado — [P]
+	Uso de portas XOR de controle
+	Seleção entre soma e subtração
+	Economia de hardware
 
 
 
