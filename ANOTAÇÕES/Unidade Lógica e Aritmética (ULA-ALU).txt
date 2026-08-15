@@ -866,11 +866,9 @@ PARTE 5 — IMPLEMENTAÇÃO INTERNA E CIRCUITOS DA ULA
 
 
  27.2 Multiplexação das Operações Lógicas — [I]
-
-  27.2.1 Seleção da Operação Lógica — [I]
-	  Uso de multiplexador para escolher a função
-	  Papel do código de operação
-	  Integração com as demais unidades da ULA
+	Uso de multiplexador para escolher a função
+	Papel do código de operação
+	Integração com as demais unidades da ULA
 
 
 
@@ -889,11 +887,10 @@ PARTE 5 — IMPLEMENTAÇÃO INTERNA E CIRCUITOS DA ULA
 
 
  28.2 Deslocador Barrel (visão geral) — [I]
-
-  28.2.1 Conceito do Barrel Shifter — [I]
-	  Deslocamento de múltiplas posições em um único ciclo
-	  Estrutura em camadas de multiplexadores
-	  Vantagem de desempenho
+	Conceito do Barrel Shifter — [I]
+	Deslocamento de múltiplas posições em um único ciclo
+	Estrutura em camadas de multiplexadores
+	Vantagem de desempenho
 
 
 
@@ -914,29 +911,25 @@ PARTE 6 — ENTRADAS, SAÍDAS, CAMINHOS DE DADOS E CONEXÃO COM REGISTRADORES
 	  Caminho até as entradas da ULA
 
 
- 29.2 Escrita do Resultado — [P]
-
-  29.2.1 Seleção do Registrador de Destino — [P]
-	  Porta de escrita do banco de registradores
-	  Sinal de habilitação de escrita
-	  Sincronização da escrita
+ 29.2 Seleção do Registrador de Destino — [P]
+	Porta de escrita do banco de registradores
+	Sinal de habilitação de escrita
+	Sincronização da escrita
 
 
 
 30. Conexão da ULA com Barramentos Internos — [I]
 
  30.1 Transporte dos Operandos — [I]
-
-  30.1.1 Uso de Barramentos Internos — [I]
-	  Barramento de entrada de dados
-	  Compartilhamento do barramento entre componentes
+	Uso de Barramentos Internos
+	Barramento de entrada de dados
+	Compartilhamento do barramento entre componentes
 
 
  30.2 Transporte do Resultado — [I]
-
-  30.2.1 Caminho do Resultado até o Barramento — [I]
-	  Barramento de saída de dados
-	  Encaminhamento a registradores ou memória
+	Caminho do Resultado até o Barramento
+	Barramento de saída de dados
+	Encaminhamento a registradores ou memória
 
 
 
@@ -954,10 +947,9 @@ PARTE 6 — ENTRADAS, SAÍDAS, CAMINHOS DE DADOS E CONEXÃO COM REGISTRADORES
 
 
  31.2 Importância da Multiplexação de Entrada — [I]
-
-  31.2.1 Flexibilidade Operacional — [I]
-	  Suporte a diferentes formatos de instrução
-	  Redução da complexidade do Datapath
+	Flexibilidade Operacional
+	Suporte a diferentes formatos de instrução
+	Redução da complexidade do Datapath
 
 
 
@@ -975,10 +967,9 @@ PARTE 6 — ENTRADAS, SAÍDAS, CAMINHOS DE DADOS E CONEXÃO COM REGISTRADORES
 
 
  32.2 Preparação dos Operandos — [I]
-
-  32.2.1 Ajustes Antes da Entrada na ULA — [I]
-	  Extensão de sinal
-	  Alinhamento de bits
+	Ajustes Antes da Entrada na ULA
+	Extensão de sinal
+	Alinhamento de bits
 
 
 
@@ -996,10 +987,9 @@ PARTE 6 — ENTRADAS, SAÍDAS, CAMINHOS DE DADOS E CONEXÃO COM REGISTRADORES
 
 
  33.2 Multiplexação da Saída — [I]
-
-  33.2.1 Seleção do Caminho de Saída — [I]
-	  Multiplexador de destino
-	  Papel do sinal de controle
+	Seleção do Caminho de Saída
+	Multiplexador de destino
+	Papel do sinal de controle
 
 
 
@@ -1035,11 +1025,10 @@ PARTE 7 — CONTROLE DA ULA, FLAGS E REGISTRADORES DE STATUS
 35. Sinais de Controle da ULA — [P]
 
  35.1 Origem dos Sinais de Controle — [P]
-
-  35.1.1 Geração pela Unidade de Controle — [P]
-	  Decodificação da instrução
-	  Geração do sinal de operação da ULA
-	  Sincronização com o ciclo de clock
+	Geração pela Unidade de Controle
+	Decodificação da instrução
+	Geração do sinal de operação da ULA
+	Sincronização com o ciclo de clock
 
 
  35.2 Sinais Auxiliares de Controle — [I]
@@ -1071,41 +1060,36 @@ PARTE 7 — CONTROLE DA ULA, FLAGS E REGISTRADORES DE STATUS
 
 
  36.2 Relação com Outras Estruturas — [I]
-
-  36.2.1 Relação com a Unidade de Controle — [I]
-	  Consulta das flags para decisões de desvio
-	  Integração com o registrador de status geral do processador
+	Relação com a Unidade de Controle
+	Consulta das flags para decisões de desvio
+	Integração com o registrador de status geral do processador
 
 
 
 37. Geração e Atualização das Flags — [P]
 
  37.1 Geração da Flag de Zero — [P]
-
-  37.1.1 Condição de Ativação — [P]
-	  Resultado igual a zero
-	  Circuito de detecção (porta NOR de múltiplas entradas)
+	Condição de Ativação
+	Resultado igual a zero
+	Circuito de detecção (porta NOR de múltiplas entradas)
 
 
  37.2 Geração da Flag de Carry — [P]
-
-  37.2.1 Condição de Ativação — [P]
-	  Carry de saída do somador
-	  Diferença entre adição e subtração
+	Condição de Ativação
+	Carry de saída do somador
+	Diferença entre adição e subtração
 
 
  37.3 Geração da Flag de Overflow — [P]
-
-  37.3.1 Condição de Ativação — [P]
-	  Comparação entre carry de entrada e saída do bit mais significativo
-	  Relevância apenas para números com sinal
+	Condição de Ativação
+	Comparação entre carry de entrada e saída do bit mais significativo
+	Relevância apenas para números com sinal
 
 
  37.4 Geração da Flag de Sinal — [P]
-
-  37.4.1 Condição de Ativação — [P]
-	  Bit mais significativo do resultado
-	  Indicação de resultado negativo
+	Condição de Ativação
+	Bit mais significativo do resultado
+	Indicação de resultado negativo
 
 
 
@@ -1123,10 +1107,9 @@ PARTE 7 — CONTROLE DA ULA, FLAGS E REGISTRADORES DE STATUS
 
 
  38.2 Persistência das Flags entre Instruções — [I]
-
-  38.2.1 Comportamento das Flags — [I]
-	  Instruções que alteram as flags
-	  Instruções que preservam as flags
+	Comportamento das Flags
+	Instruções que alteram as flags
+	Instruções que preservam as flags
 
 
 
@@ -1148,27 +1131,24 @@ PARTE 8 — INTEGRAÇÃO DA ULA COM DATAPATH E UNIDADE DE CONTROLE
 
 
  39.2 Relação com Outros Componentes do Datapath — [I]
-
-  39.2.1 Interação com Banco de Registradores e Memória — [I]
-	  Fornecimento de operandos
-	  Recebimento do resultado
+	Interação com Banco de Registradores e Memória
+	Fornecimento de operandos
+	Recebimento do resultado
 
 
 
 40. Relação entre ULA e Unidade de Controle — [I]
 
  40.1 Dependência da ULA em Relação ao Controle — [I]
-
-  40.1.1 Recebimento de Sinais de Controle — [I]
-	  Seleção da operação
-	  Sincronização temporal
+	Recebimento de Sinais de Controle
+	Seleção da operação
+	Sincronização temporal
 
 
  40.2 Retorno de Informações da ULA ao Controle — [I]
-
-  40.2.1 Uso das Flags pela Unidade de Controle — [I]
-	  Tomada de decisão em desvios condicionais
-	  Influência no próximo estado do controle
+	Uso das Flags pela Unidade de Controle
+	Tomada de decisão em desvios condicionais
+	Influência no próximo estado do controle
 
 
 
@@ -1186,34 +1166,30 @@ PARTE 8 — INTEGRAÇÃO DA ULA COM DATAPATH E UNIDADE DE CONTROLE
 
 
  41.2 Importância da ULA no Ciclo Completo — [I]
-
-  41.2.1 Centralidade da ULA — [I]
-	  Participação em praticamente todas as instruções
-	  Papel crítico no desempenho do ciclo
+	Centralidade da ULA
+	Participação em praticamente todas as instruções
+	Papel crítico no desempenho do ciclo
 
 
 
 42. ULA em Diferentes Organizações de Datapath (visão geral) — [V]
 
  42.1 ULA em Datapath Monociclo — [V]
-
-  42.1.1 Características — [V]
-	  Uso único da ULA por instrução
-	  Simplicidade da integração
+	Características
+	Uso único da ULA por instrução
+	Simplicidade da integração
 
 
  42.2 ULA em Datapath Multiciclo — [V]
-
-  42.2.1 Características — [V]
-	  Reutilização da ULA em múltiplos ciclos
-	  Maior eficiência de hardware
+	Características
+	Reutilização da ULA em múltiplos ciclos
+	Maior eficiência de hardware
 
 
  42.3 ULA em Datapath Pipeline (visão geral) — [V]
-
-  42.3.1 Características — [V]
-	  Uso da ULA em estágio específico do pipeline
-	  Necessidade de sincronização entre estágios
+	Características
+	Uso da ULA em estágio específico do pipeline
+	Necessidade de sincronização entre estágios
 
 
 
@@ -1222,25 +1198,23 @@ PARTE 9 — VARIAÇÕES, ORGANIZAÇÕES AVANÇADAS E EVOLUÇÃO DAS ULAs
 
 43. ULAs Especializadas e Unidades Auxiliares (visão geral) — [V]
 
- 43.1 Unidades Especializadas — [V]
+ 43.1 Unidade de Ponto Flutuante (FPU) — [V]
+	Separação da ULA inteira
+	Operações específicas de ponto flutuante
 
-  43.1.1 Unidade de Ponto Flutuante (FPU) — [V]
-	  Separação da ULA inteira
-	  Operações específicas de ponto flutuante
-
-  43.1.2 Unidades Vetoriais e SIMD (visão geral) — [V]
-	  Processamento de múltiplos dados simultaneamente
-	  Aplicações em multimídia e processamento gráfico
+  
+ 43.2 Unidades Vetoriais e SIMD (visão geral) — [V]
+	Processamento de múltiplos dados simultaneamente
+	Aplicações em multimídia e processamento gráfico
 
 
 
 44. Múltiplas ULAs e Paralelismo (visão geral) — [V]
 
  44.1 Uso de Múltiplas ULAs — [V]
-
-  44.1.1 Processadores Superescalares (visão geral) — [V]
-	  Execução paralela de operações aritméticas
-	  Aumento do throughput
+	Processadores Superescalares (visão geral)
+	Execução paralela de operações aritméticas
+	Aumento do throughput
 
 
  44.2 Benefícios e Limitações — [V]
@@ -1258,17 +1232,15 @@ PARTE 9 — VARIAÇÕES, ORGANIZAÇÕES AVANÇADAS E EVOLUÇÃO DAS ULAs
 45. ULA em Processadores RISC × CISC (visão geral) — [V]
 
  45.1 Características em Arquiteturas RISC — [V]
-
-  45.1.1 Conjunto Reduzido de Operações — [V]
-	  Simplicidade das operações suportadas
-	  Foco em desempenho e regularidade
+	Conjunto Reduzido de Operações
+	Simplicidade das operações suportadas
+	Foco em desempenho e regularidade
 
 
  45.2 Características em Arquiteturas CISC — [V]
-
-  45.2.1 Conjunto Amplo de Operações — [V]
-	  Maior variedade de operações suportadas
-	  Maior complexidade interna
+	Conjunto Amplo de Operações
+	Maior variedade de operações suportadas
+	Maior complexidade interna
 
 
 
@@ -1285,11 +1257,9 @@ PARTE 9 — VARIAÇÕES, ORGANIZAÇÕES AVANÇADAS E EVOLUÇÃO DAS ULAs
 	  Uso em processadores heterogêneos
 
 
- 46.2 Perspectivas Futuras — [V]
-
-  46.2.1 Evolução Contínua — [V]
-	  Tendências da microarquitetura
-	  Novos desafios de projeto
+ 46.2 Evolução Contínua — [V]
+	Tendências da microarquitetura
+	Novos desafios de projeto
 
 
 
@@ -1326,98 +1296,78 @@ PARTE 10 — DESEMPENHO, INTEGRAÇÃO, RESUMO GERAL E CONCLUSÃO
 48. Impacto da ULA no Desempenho Geral do Processador — [I]
 
  48.1 Contribuição para o Desempenho Global — [I]
-
-  48.1.1 Papel Crítico no Caminho de Execução — [I]
-	  Frequência de uso pela maioria das instruções
-	  Influência direta no tempo de ciclo
+	Papel Crítico no Caminho de Execução
+	Frequência de uso pela maioria das instruções
+	Influência direta no tempo de ciclo
 
 
  48.2 Relação com Outros Componentes — [I]
-
-  48.2.1 Equilíbrio entre Componentes — [I]
-	  Relação com a velocidade da memória
-	  Relação com a eficiência do controle
-
-
-
-49. Aplicações Práticas da ULA — [V]
-
- 49.1 Uso em Diferentes Contextos — [V]
-
-  49.1.1 Processadores de Propósito Geral — [V]
-	  Execução de instruções aritméticas e lógicas do dia a dia
-
-  49.1.2 Sistemas Embarcados e Microcontroladores — [V]
-	  ULAs simplificadas
-	  Foco em eficiência energética
+	Equilíbrio entre Componentes
+	Relação com a velocidade da memória
+	Relação com a eficiência do controle
 
 
 
-50. Resumo Geral da Unidade Lógica e Aritmética — [I]
+49. Resumo Geral da Unidade Lógica e Aritmética — [I]
 
- 50.1 Revisão dos Conceitos Fundamentais — [I]
+ 49.1 Revisão dos Conceitos Fundamentais — [I]
 
-  50.1.1 Fundamentos Essenciais — [I]
+  49.1.1 Fundamentos Essenciais — [I]
 	  Definição da ULA
 	  Objetivos e importância
 	  Organização geral
 
-  50.1.2 Componentes Fundamentais — [I]
+  49.1.2 Componentes Fundamentais — [I]
 	  Circuitos aritméticos
 	  Circuitos lógicos
 	  Registrador de flags
 
 
- 50.2 Revisão das Operações — [I]
-
-  50.2.1 Operações Estudadas — [I]
-	  Operações aritméticas
-	  Operações lógicas
-	  Deslocamento e rotação
-	  Comparação e testes
+ 49.2 Operações Estudadas — [I]
+	Operações aritméticas
+	Operações lógicas
+	Deslocamento e rotação
+	Comparação e testes
 
 
- 50.3 Revisão da Integração — [I]
-
-  50.3.1 Integração com o Datapath e o Controle — [I]
-	  Conexão com registradores
-	  Relação com a unidade de controle
-	  Papel no ciclo de execução
+ 49.3 Revisão da Integração — [I]
+	Integração com o Datapath e o Controle
+	Conexão com registradores
+	Relação com a unidade de controle
+	Papel no ciclo de execução
 
 
 
-51. Conclusão do Estudo da ULA — [V]
+50. Conclusão do Estudo da ULA — [V]
 
- 51.1 Síntese Final — [V]
+ 50.1 Síntese Final — [V]
 
-  51.1.1 O Papel da ULA — [V]
+  50.1.1 O Papel da ULA — [V]
 	  Núcleo do processamento de dados
 	  Base da execução aritmética e lógica
 	  Importância central na CPU
 
-  51.1.2 Importância para Arquitetura e Organização de Computadores — [V]
+  50.1.2 Importância para Arquitetura e Organização de Computadores — [V]
 	  Compreensão dos processadores
 	  Base para estudos avançados (Datapath, Pipeline, ISA)
 
 
- 51.2 Competências Desenvolvidas — [V]
+ 50.2 Competências Desenvolvidas — [V]
 
-  51.2.1 Conhecimentos Adquiridos — [V]
+  50.2.1 Conhecimentos Adquiridos — [V]
 	  Estrutura e organização da ULA
 	  Operações suportadas
 	  Circuitos internos
 	  Integração com outros componentes
 
-  51.2.2 Preparação para Estudos Posteriores — [V]
+  50.2.2 Preparação para Estudos Posteriores — [V]
 	  Unidade de Controle
 	  Caminho de Dados (Datapath)
 	  Pipeline
 	  Processadores Modernos
 
 
- 51.3 Encerramento — [V]
-
-  51.3.1 Visão Geral Final — [V]
-	  Integração dos conceitos
-	  Importância da ULA
-	  Continuidade dos estudos
+ 50.3 Visão Geral Final — [V]
+	Integração dos conceitos
+	Importância da ULA
+	Continuidade dos estudos
