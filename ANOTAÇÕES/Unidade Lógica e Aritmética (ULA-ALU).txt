@@ -245,6 +245,14 @@ PARTE 2 — ESTRUTURA E ORGANIZAÇÃO INTERNA DA ULA
 	  Papel da Unidade de Controle
 	  Codificação do sinal
 
+  6.1.3 Carry de Entrada (Carry-in) — [P]
+	  Conceito de carry-in
+	  Origem do carry-in
+	  Uso em operações aritméticas
+	  Relação com o somador completo
+	  Uso em operações de soma e subtração
+	  Propagação através da ULA
+
 
  6.2 Saídas da ULA — [P]
 
@@ -259,6 +267,13 @@ PARTE 2 — ESTRUTURA E ORGANIZAÇÃO INTERNA DA ULA
 	  Flag de overflow
 	  Flag de sinal (negativo)
 	  Geração dos sinais
+
+  6.2.3 Carry de Saída (Carry-out) — [P]
+	  Conceito de carry-out
+	  Geração pelo bit mais significativo
+	  Relação com overflow
+	  Uso na geração da flag de carry
+	  Diferença entre carry-out e overflow
 
 
  6.3 Interfaces com Outros Componentes — [P]
@@ -284,6 +299,11 @@ PARTE 2 — ESTRUTURA E ORGANIZAÇÃO INTERNA DA ULA
 	  Unidade lógica
 	  Unidade de deslocamento
 	  Multiplexadores internos
+	  Estrutura da unidade aritmética
+	  Seleção entre operações aritméticas
+	  Compartilhamento do somador para diferentes operações
+	  Geração de operações a partir de soma, complemento e carry-in
+	  Relação entre unidade aritmética e unidade lógica
 
   7.1.2 Organização das Unidades — [P]
 	  Distribuição funcional
@@ -304,13 +324,19 @@ PARTE 2 — ESTRUTURA E ORGANIZAÇÃO INTERNA DA ULA
 	  Direcionamento aos circuitos internos
 	  Organização dos caminhos internos
 
+  7.2.3 Seleção entre Operações Aritméticas e Lógicas — [P]
+	  Seleção da unidade aritmética ou lógica
+	  Seleção do resultado produzido
+	  Sinais de seleção
+	  Combinação de operações em uma única ULA
+	  Caminho dos dados entre os blocos funcionais
+	  Exemplo de organização interna de uma ULA
 
- 7.3 Modularidade Interna — [I]
 
-  7.3.1 Blocos Funcionais Independentes — [I]
-	  Modularidade estrutural
-	  Reutilização de circuitos
-	  Facilidade de expansão
+ 7.3 Blocos Funcionais Independentes — [I]
+	Modularidade estrutural
+	Reutilização de circuitos
+	Facilidade de expansão
 
 
 
@@ -336,6 +362,11 @@ PARTE 2 — ESTRUTURA E ORGANIZAÇÃO INTERNA DA ULA
 	  Processamento bit a bit
 	  Agrupamento em blocos
 	  Propagação entre blocos
+	  Construção de uma ULA de N bits a partir de células de 1 bit
+	  Encadeamento das células
+	  Propagação do carry entre células
+	  Sinais de controle compartilhados
+	  Geração do resultado bit a bit
 
   8.2.2 ULAs Bit-Slice (visão geral) — [V]
 	  Conceito de organização bit-slice
