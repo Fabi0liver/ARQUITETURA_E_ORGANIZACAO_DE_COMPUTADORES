@@ -350,7 +350,16 @@ PARTE 2 — ESTRUTURA E ORGANIZAÇÃO INTERNA DA ULA
 
  8.2 Organização em Blocos de Bits — [I]
 
-  8.2.1 Segmentação por Bits — [I]
+  8.2.1 ULA de 1 bit como célula básica de construção
+	  Estrutura de uma célula de ULA de 1 bit
+	  Entradas e saídas da célula
+	  Operações realizadas por uma célula de 1 bit
+	  Sinais de controle da célula
+	  Carry-in e Carry-out da célula
+	  Encadeamento de células de 1 bit
+	  Construção de uma ULA de N bits a partir das células
+
+  8.2.2 Segmentação por Bits — [I]
 	  Processamento bit a bit
 	  Agrupamento em blocos
 	  Propagação entre blocos
@@ -360,7 +369,7 @@ PARTE 2 — ESTRUTURA E ORGANIZAÇÃO INTERNA DA ULA
 	  Sinais de controle compartilhados
 	  Geração do resultado bit a bit
 
-  8.2.2 ULAs Bit-Slice (visão geral) — [V]
+  8.2.3 ULAs Bit-Slice (visão geral) — [V]
 	  Conceito de organização bit-slice
 	  Combinação de módulos menores
 	  Escalabilidade da largura
