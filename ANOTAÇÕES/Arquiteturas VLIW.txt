@@ -1,0 +1,1728 @@
+                                      ARQUITETURAS VLIW (VERY LONG INSTRUCTION WORD)
+
+
+A classificação abaixo indica a profundidade recomendada para cada grande tópico da lista.
+
+[P] Profundidade — estudar mecanismos, estruturas, funcionamento interno e relações entre componentes.
+[I] Intermediário — compreender bem o funcionamento e as relações principais, sem precisar dominar todos os
+   detalhes de implementação.
+[V] Visão geral — saber o que é, para que serve e como se relaciona com as Arquiteturas VLIW.
+
+
+
+PARTE 1 — FUNDAMENTOS E PRINCÍPIOS DAS ARQUITETURAS VLIW (VERY LONG INSTRUCTION WORD)
+
+
+1. Introdução às Arquiteturas VLIW — [I]
+
+ 1.1 Conceito de Arquitetura VLIW — [I]
+
+  1.1.1 Definição de VLIW — [I]
+	  Definição de VLIW
+	  Origem do termo
+	  Instrução como pacote de operações
+	  Papel do compilador na formação da instrução
+	  Diferença em relação a instruções escalares
+
+  1.1.2 Ideia Central do VLIW — [I]
+	  Paralelismo explícito
+	  Execução simultânea de múltiplas operações
+	  Uma instrução, múltiplas operações
+	  Simplificação do hardware de despacho
+
+
+ 1.2 Terminologia Básica do VLIW — [I]
+
+  1.2.1 Termos Fundamentais — [I]
+	  Bundle
+	  Slot de instrução
+	  Operação
+	  Unidade funcional
+	  Palavra de instrução longa
+
+  1.2.2 Convenções de Nomenclatura — [V]
+	  VLIW
+	  EPIC
+	  Instrução composta
+	  Feixe de instruções
+	  Pacote de operações
+
+
+
+2. Contexto Histórico e Evolução do VLIW — [V]
+
+ 2.1 Origens do VLIW — [V]
+
+  2.1.1 Trabalhos Pioneiros — [V]
+	  Pesquisas de Josh Fisher
+	  Microcódigo horizontal
+	  Projeto ELI (Enormously Longword Instructions)
+	  Trace scheduling original
+
+  2.1.2 Primeiros Processadores VLIW — [V]
+	  Multiflow Trace
+	  Cydrome Cydra 5
+	  Processadores acadêmicos experimentais
+
+
+ 2.2 Evolução Comercial do VLIW — [V]
+
+  2.2.1 Popularização em DSPs — [V]
+	  Família TI TMS320C6x
+	  Processadores de sinais digitais
+	  Adoção em aplicações embarcadas
+
+  2.2.2 VLIW em Processadores de Propósito Geral — [V]
+	  Itanium (IA-64)
+	  Tentativas de VLIW genérico
+	  Dificuldades de adoção comercial
+
+
+ 2.3 Impacto do VLIW no Estudo de ILP — [V]
+	Alternativa ao superescalar dinâmico
+	Influência sobre arquiteturas EPIC
+	Legado para compiladores otimizadores
+
+
+
+3. Motivação e Objetivos do VLIW — [I]
+
+ 3.1 Problemas que o VLIW Busca Resolver — [I]
+
+  3.1.1 Limitações do Hardware Superescalar — [I]
+	  Complexidade da lógica de despacho dinâmico
+	  Custo da detecção de dependências em hardware
+	  Consumo de área e energia
+
+  3.1.2 Necessidade de Paralelismo Eficiente — [I]
+	  Exploração de paralelismo em nível de instrução
+	  Redução da complexidade de controle
+	  Simplificação do hardware de execução
+
+
+ 3.2 Objetivos de Projeto do VLIW — [I]
+
+  3.2.1 Simplicidade do Hardware — [I]
+	  Remoção da lógica de escalonamento dinâmico
+	  Redução de transistores dedicados ao controle
+	  Foco em unidades de execução
+
+  3.2.2 Transferência de Complexidade ao Compilador — [I]
+	  Escalonamento estático de instruções
+	  Análise de dependências em tempo de compilação
+	  Otimização de código antecipada
+
+
+
+4. Princípios Fundamentais do VLIW — [P]
+
+ 4.1 Paralelismo Explícito — [P]
+
+  4.1.1 Conceito de Paralelismo Explícito — [P]
+	  Definição de paralelismo explícito
+	  Codificação direta do paralelismo na instrução
+	  Ausência de detecção dinâmica
+	  Papel do compilador na definição do paralelismo
+
+  4.1.2 Contraste com Paralelismo Implícito — [P]
+	  Paralelismo implícito no superescalar
+	  Diferença na origem da decisão de paralelismo
+	  Consequências para o hardware de execução
+
+
+ 4.2 Escalonamento Estático como Princípio Central — [P]
+
+  4.2.1 Definição de Escalonamento Estático — [P]
+	  Escalonamento realizado em tempo de compilação
+	  Ordem fixa de execução
+	  Ausência de reordenação em tempo de execução
+
+  4.2.2 Consequências do Escalonamento Estático — [P]
+	  Previsibilidade de execução
+	  Dependência da qualidade do compilador
+	  Impacto direto no desempenho final
+
+
+ 4.3 Divisão de Responsabilidades — [P]
+	Hardware responsável pela execução
+	Compilador responsável pela organização
+	Exposição do modelo de máquina ao compilador
+	Confiança do hardware nas decisões do compilador
+
+
+
+5. VLIW no Contexto da Arquitetura de Computadores — [I]
+
+ 5.1 Classificação das Arquiteturas Paralelas — [I]
+
+  5.1.1 Taxonomia de Flynn e o VLIW — [I]
+	  SISD
+	  SIMD
+	  MIMD
+	  Posicionamento do VLIW na taxonomia
+
+  5.1.2 VLIW entre os Modelos de Exploração de ILP — [I]
+	  Processadores escalares
+	  Processadores superescalares
+	  Processadores VLIW
+	  Processadores EPIC
+
+
+ 5.2 Relação do VLIW com Outros Conceitos da Arquitetura — [I]
+
+  5.2.1 Relação com a ISA — [I]
+	  VLIW como estilo de ISA
+	  Exposição da microarquitetura na ISA
+	  Impacto na compatibilidade binária
+
+  5.2.2 Relação com o Pipeline e o Datapath — [I]
+	  Organização de múltiplas unidades funcionais
+	  Fluxo de dados paralelo
+	  Necessidade de datapath expandido
+
+
+
+PARTE 2 — ESTRUTURA E ORGANIZAÇÃO DAS ARQUITETURAS VLIW
+
+
+6. Organização Geral de um Processador VLIW — [P]
+
+ 6.1 Componentes Principais — [P]
+
+  6.1.1 Unidade de Busca e Decodificação — [P]
+	  Busca de bundles de instrução
+	  Decodificação paralela das operações
+	  Distribuição das operações aos slots
+
+  6.1.2 Unidades de Execução Paralelas — [P]
+	  Múltiplas unidades funcionais
+	  Execução simultânea das operações
+	  Independência operacional entre slots
+
+
+ 6.2 Fluxo de Execução em um Processador VLIW — [P]
+
+  6.2.1 Etapas do Fluxo de Execução — [P]
+	  Busca do bundle
+	  Decodificação das operações
+	  Leitura dos operandos
+	  Execução paralela
+	  Escrita dos resultados
+
+  6.2.2 Sincronização entre Slots — [P]
+	  Execução em lockstep
+	  Alinhamento temporal das operações
+	  Dependência de latências fixas conhecidas
+
+
+
+7. Modelo de Execução VLIW — [P]
+
+ 7.1 Execução em Lockstep — [P]
+
+  7.1.1 Conceito de Lockstep — [P]
+	  Avanço simultâneo de todas as operações
+	  Ausência de reordenação dinâmica
+	  Implicações para paralisações (stalls)
+
+  7.1.2 Tratamento de Stalls no Modelo VLIW — [P]
+	  Paralisação de todo o bundle
+	  Impacto de uma operação lenta sobre as demais
+	  Ausência de execução fora de ordem
+
+
+ 7.2 Modelo de Latências Fixas e Conhecidas — [P]
+
+  7.2.1 Latências Determinísticas — [P]
+	  Latência conhecida em tempo de compilação
+	  Papel do compilador na previsão de latências
+	  Problemas causados por latências variáveis
+
+  7.2.2 Impacto das Latências no Escalonamento — [P]
+	  Preenchimento de slots de atraso
+	  Inserção de operações independentes
+	  Uso de NOPs quando necessário
+
+
+
+8. Arquitetura de Múltiplos Slots de Execução — [P]
+
+ 8.1 Conceito de Slot de Execução — [P]
+
+  8.1.1 Definição de Slot — [P]
+	  Posição fixa dentro do bundle
+	  Associação a uma unidade funcional específica
+	  Papel na codificação da instrução
+
+  8.1.2 Tipos de Slots — [P]
+	  Slots de operações inteiras
+	  Slots de ponto flutuante
+	  Slots de memória
+	  Slots de desvio
+
+
+ 8.2 Organização dos Slots no Bundle — [P]
+
+  8.2.1 Número Fixo de Slots — [P]
+	  Definição em tempo de projeto do processador
+	  Relação com o número de unidades funcionais
+	  Impacto na largura total da instrução
+
+  8.2.2 Restrições de Uso dos Slots — [P]
+	  Slots dedicados a operações específicas
+	  Slots de uso geral
+	  Limitações de combinação entre operações
+
+
+
+9. Bundles de Instruções — [P]
+
+ 9.1 Conceito de Bundle — [P]
+
+  9.1.1 Definição de Bundle — [P]
+	  Agrupamento de operações em uma instrução
+	  Unidade básica de busca e execução
+	  Correspondência com um ciclo de emissão
+
+  9.1.2 Composição do Bundle — [P]
+	  Operações válidas presentes no bundle
+	  Campos de controle associados
+	  Marcação de paralelismo, quando aplicável
+	  Representação estrutural de um bundle VLIW
+	  Organização dos campos correspondentes aos slots
+	  Relação entre bundle, operações e ciclo de execução
+	  Bundle completamente preenchido e parcialmente preenchido
+	  Operações válidas e slots não utilizados
+	  NOPs no preenchimento de bundles
+
+
+ 9.2 Ciclo de Vida do Bundle — [P]
+
+  9.2.1 Formação do Bundle no Compilador — [P]
+	  Agrupamento das operações já escalonadas
+	  Respeito às restrições de slots disponíveis
+	  Preenchimento com NOPs quando necessário
+
+  9.2.2 Processamento do Bundle no Hardware — [P]
+	  Busca do bundle completo
+	  Distribuição das operações às unidades funcionais
+	  Execução simultânea das operações
+
+
+
+10. Organização do Pipeline VLIW — [I]
+
+ 10.1 Estrutura Básica do Pipeline — [I]
+
+  10.1.1 Estágios Típicos do Pipeline — [I]
+	  Busca
+	  Decodificação
+	  Leitura de registradores
+	  Execução
+	  Escrita de resultados
+
+  10.1.2 Paralelismo entre Estágios do Pipeline — [I]
+	  Sobreposição de instruções em execução
+	  Múltiplos bundles em voo simultaneamente
+	  Relação com o throughput do processador
+
+
+ 10.2 Particularidades do Pipeline em VLIW — [I]
+
+  10.2.1 Pipeline Replicado por Slot — [I]
+	  Réplica de estágios por unidade funcional
+	  Independência parcial dos caminhos de execução
+	  Convergência na etapa de escrita de resultados
+
+  10.2.2 Impacto de Hazards no Pipeline VLIW — [I]
+	  Necessidade de resolução estática de hazards
+	  Ausência de stalls dinâmicos complexos
+	  Papel do compilador na prevenção de conflitos
+
+
+
+PARTE 3 — FORMATO DAS INSTRUÇÕES, SLOTS E EMPACOTAMENTO DE OPERAÇÕES
+
+
+11. Formato da Instrução VLIW — [P]
+
+ 11.1 Estrutura Geral da Instrução Longa — [P]
+
+  11.1.1 Largura da Instrução — [P]
+	  Instrução de tamanho fixo e grande
+	  Relação com o número de slots disponíveis
+	  Impacto na densidade de código
+
+  11.1.2 Organização dos Campos da Instrução — [P]
+	  Campos por operação individual
+	  Campos de opcode associados a cada slot
+	  Campos de operandos por slot
+
+
+ 11.2 Variações de Formato entre Arquiteturas VLIW — [I]
+
+  11.2.1 Formatos de Largura Fixa — [I]
+	  Simplicidade da decodificação
+	  Desperdício potencial de espaço de codificação
+	  Impacto direto no tamanho do binário
+
+  11.2.2 Formatos Comprimidos — [I]
+	  Técnicas de compressão do bundle
+	  Redução do desperdício causado por NOPs
+	  Trade-off entre densidade e simplicidade
+
+
+
+12. Codificação das Operações — [P]
+
+ 12.1 Codificação por Slot — [P]
+
+  12.1.1 Opcode Associado ao Slot — [P]
+	  Conjunto de operações permitidas por slot
+	  Redução da complexidade de decodificação
+	  Restrições impostas pelo hardware
+
+  12.1.2 Especificação de Operandos — [P]
+	  Campos de registradores fonte
+	  Campo de registrador destino
+	  Campos de valores imediatos
+
+
+ 12.2 Decodificação Paralela — [P]
+	Decodificação simultânea de todos os slots
+	Ausência de dependência sequencial na decodificação
+	Simplificação do hardware de front-end
+
+
+
+13. Slots de Instrução — [P]
+
+ 13.1 Alocação de Operações aos Slots — [P]
+
+  13.1.1 Regras de Alocação — [P]
+	  Correspondência entre operação e slot compatível
+	  Restrições de tipo de operação por slot
+	  Papel do compilador na alocação
+
+  13.1.2 Slots Vazios — [P]
+	  Ocorrência de slots não utilizados
+	  Necessidade de preenchimento obrigatório
+	  Impacto na densidade de código
+
+
+ 13.2 Restrições Arquiteturais dos Slots — [I]
+
+  13.2.1 Restrições de Recursos — [I]
+	  Número limitado de unidades funcionais
+	  Conflito potencial por recurso compartilhado
+	  Regras de exclusividade entre operações
+	  Restrições de emissão de operações
+	  Combinações válidas de operações
+	  Combinações inválidas de operações
+	  Compatibilidade entre operações e slots
+	  Restrições simultâneas entre unidades funcionais
+	  Regras arquiteturais de utilização dos slots
+
+  13.2.2 Restrições de Codificação — [I]
+	  Limitação do espaço de opcode disponível
+	  Combinações proibidas de operações
+	  Impacto direto sobre o compilador
+
+
+
+14. Empacotamento de Operações (Packing) — [P]
+
+ 14.1 Conceito de Empacotamento — [P]
+
+  14.1.1 Definição de Packing — [P]
+	  Agrupamento de operações independentes
+	  Objetivo de maximizar a ocupação dos slots
+	  Papel central do compilador nesse processo
+
+  14.1.2 Critérios para o Empacotamento — [P]
+	  Independência entre os dados envolvidos
+	  Disponibilidade da unidade funcional necessária
+	  Respeito às latências das operações
+
+
+ 14.2 Técnicas de Empacotamento — [P]
+
+  14.2.1 Empacotamento Guloso (Greedy) — [P]
+	  Preenchimento sequencial dos slots
+	  Simplicidade do algoritmo utilizado
+	  Limitações na qualidade do resultado
+
+  14.2.2 Empacotamento Orientado por Escalonamento — [P]
+	  Integração com o escalonador de instruções
+	  Consideração de dependências globais do código
+	  Melhoria na utilização dos slots
+
+
+
+15. NOPs e Preenchimento de Slots — [I]
+
+ 15.1 Necessidade de NOPs — [I]
+
+  15.1.1 Origem dos Slots Vazios — [I]
+	  Falta de operações independentes suficientes
+	  Restrições impostas por dependências
+	  Limitações do compilador em encontrar paralelismo
+
+  15.1.2 Papel do NOP no Bundle — [I]
+	  Preenchimento obrigatório de slot vazio
+	  Manutenção do formato fixo da instrução
+	  Impacto no desperdício de espaço
+
+
+ 15.2 Impacto dos NOPs no Sistema — [I]
+
+  15.2.1 Impacto na Densidade de Código — [I]
+	  Aumento do tamanho do binário gerado
+	  Maior consumo de memória de instruções
+	  Maior tráfego na busca de instruções
+
+  15.2.2 Estratégias de Redução de NOPs — [I]
+	  Compressão de bundles
+	  Técnicas de escalonamento mais agressivas
+	  Reorganização do código pelo compilador
+
+
+
+PARTE 4 — PARALELISMO EM NÍVEL DE INSTRUÇÃO (ILP) E EXECUÇÃO VLIW
+
+
+16. Conceito de Paralelismo em Nível de Instrução (ILP) — [P]
+
+ 16.1 Definição de ILP — [P]
+
+  16.1.1 O que é ILP — [P]
+	  Execução simultânea de múltiplas instruções
+	  Independência entre operações do programa
+	  Relação direta com o desempenho
+
+  16.1.2 Fontes de ILP no Código — [P]
+	  Independência de dados entre operações
+	  Independência de controle entre trechos
+	  Estrutura geral do programa
+
+
+ 16.2 Medição e Limites Teóricos do ILP — [I]
+
+  16.2.1 Grau de Paralelismo Disponível — [I]
+	  ILP médio observado por programa
+	  Variação entre tipos de aplicação
+	  Fatores que limitam o paralelismo
+
+  16.2.2 Limites Impostos por Dependências — [I]
+	  Dependências verdadeiras de dados
+	  Dependências de recursos limitados
+	  Impacto sobre o ILP efetivamente explorável
+
+
+
+17. Extração de ILP em Arquiteturas VLIW — [P]
+
+ 17.1 Papel do Compilador na Extração de ILP — [P]
+
+  17.1.1 Análise Estática de Dependências — [P]
+	  Construção do grafo de dependências
+	  Identificação de operações independentes
+	  Base para o escalonamento estático
+	  Identificação do caminho crítico
+	  Limites do ILP impostos pelas dependências
+	  Dependências entre iterações de laços
+	  Limites do paralelismo disponível
+
+  17.1.2 Técnicas de Reorganização de Código — [P]
+	  Reordenação de instruções no programa
+	  Renomeação de registradores em tempo de compilação
+	  Eliminação de dependências falsas
+
+
+ 17.2 Estratégias para Ampliar o ILP Disponível — [P]
+
+  17.2.1 Desenrolamento de Laços (Loop Unrolling) — [P]
+	  Replicação do corpo do laço
+	  Aumento do paralelismo entre iterações
+	  Trade-off com o tamanho do código
+	  Limite de expansão do loop unrolling
+	  Impacto sobre o tamanho do código
+	  Impacto sobre a pressão de registradores
+	  Relação entre grau de desenrolamento e ILP disponível
+
+  17.2.2 Software Pipelining Aplicado ao ILP — [P]
+	  Sobreposição da execução de iterações
+	  Extração de paralelismo entre iterações
+	  Aumento da ocupação dos slots
+
+
+
+18. Execução Paralela Explícita — [P]
+
+ 18.1 Execução Simultânea de Operações — [P]
+
+  18.1.1 Despacho Paralelo — [P]
+	  Envio simultâneo das operações do bundle
+	  Ausência de fila de despacho dinâmica
+	  Simplicidade do hardware de despacho
+
+  18.1.2 Execução Independente por Unidade Funcional — [P]
+	  Execução isolada em cada slot
+	  Ausência de arbitragem dinâmica de recursos
+	  Convergência apenas na escrita dos resultados
+
+
+ 18.2 Consequências da Execução Explícita — [I]
+
+  18.2.1 Previsibilidade da Execução — [I]
+	  Comportamento determinístico do processador
+	  Facilidade de análise de desempenho
+	  Ausência de variações dinâmicas de escalonamento
+
+  18.2.2 Dependência da Qualidade do Código Gerado — [I]
+	  Resultado diretamente ligado ao compilador
+	  Impacto de más decisões de escalonamento
+	  Sensibilidade à qualidade das ferramentas
+
+
+
+19. VLIW × Superescalar — [P]
+
+ 19.1 Diferenças Fundamentais — [P]
+
+  19.1.1 Origem da Decisão de Paralelismo — [P]
+	  Paralelismo definido em compilação no VLIW
+	  Paralelismo definido em execução no superescalar
+	  Impacto direto na complexidade do hardware
+
+  19.1.2 Complexidade do Hardware — [P]
+	  Ausência de lógica de despacho dinâmico no VLIW
+	  Presença de janela de instruções no superescalar
+	  Comparação de área e consumo energético
+
+
+ 19.2 Vantagens e Desvantagens Comparativas — [I]
+
+  19.2.1 Vantagens do VLIW — [I]
+	  Hardware de controle mais simples
+	  Maior previsibilidade de execução
+	  Menor consumo energético relativo
+
+  19.2.2 Vantagens do Superescalar — [I]
+	  Adaptação dinâmica ao comportamento do código
+	  Maior flexibilidade de compatibilidade binária
+	  Tolerância a informações desconhecidas em compilação
+
+
+
+20. Limites do Paralelismo Explorável — [I]
+
+ 20.1 Fatores que Limitam o ILP — [I]
+
+  20.1.1 Dependências de Dados — [I]
+	  Dependências verdadeiras (RAW)
+	  Impacto direto sobre o escalonamento
+	  Limitação estrutural ao paralelismo
+
+  20.1.2 Dependências de Controle — [I]
+	  Presença de desvios condicionais
+	  Incerteza sobre o caminho de execução
+	  Impacto na formação dos bundles
+
+
+ 20.2 Consequências Práticas dos Limites de ILP — [I]
+	Subutilização dos Slots
+	Ocorrência de bundles parcialmente preenchidos
+	Relação direta com a natureza do código
+	Impacto sobre o desempenho real obtido
+
+
+
+PARTE 5 — UNIDADES FUNCIONAIS, DATAPATH, REGISTRADORES E ACESSO A DADOS
+
+
+21. Unidades Funcionais em Processadores VLIW — [P]
+
+ 21.1 Tipos de Unidades Funcionais — [P]
+
+  21.1.1 Unidades Aritméticas e Lógicas — [P]
+	  Operações inteiras
+	  Operações lógicas
+	  Associação a slots específicos do bundle
+
+  21.1.2 Unidades de Ponto Flutuante e Memória — [P]
+	  Operações de ponto flutuante
+	  Unidades de load/store
+	  Unidades dedicadas a desvios
+
+
+ 21.2 Organização e Replicação das Unidades — [P]
+
+  21.2.1 Replicação de Unidades Funcionais — [P]
+	  Múltiplas unidades do mesmo tipo
+	  Aumento do paralelismo disponível
+	  Custo adicional em área e energia
+
+  21.2.2 Especialização das Unidades — [P]
+	  Unidades dedicadas a operações específicas
+	  Trade-off entre flexibilidade e eficiência
+	  Impacto direto na alocação de slots
+
+
+
+22. Datapath de um Processador VLIW — [I]
+
+ 22.1 Estrutura do Datapath Paralelo — [I]
+
+  22.1.1 Múltiplos Caminhos de Dados — [I]
+	  Caminhos paralelos por unidade funcional
+	  Independência parcial entre os fluxos
+	  Convergência no banco de registradores
+
+  22.1.2 Interconexões entre Unidades — [I]
+	  Barramentos internos do datapath
+	  Redes de encaminhamento entre unidades
+	  Complexidade de interconexão com muitos slots
+
+
+ 22.2 Particularidades do Datapath VLIW — [I]
+
+  22.2.1 Datapath Largo — [I]
+	  Necessidade de múltiplas portas de leitura e escrita
+	  Relação direta com o número de slots
+	  Impacto na complexidade do banco de registradores
+
+  22.2.2 Forwarding em Arquiteturas VLIW — [I]
+	  Encaminhamento de dados entre unidades
+	  Complexidade crescente com o número de slots
+	  Alternativas ao forwarding totalmente dinâmico
+
+
+
+23. Banco de Registradores em Arquiteturas VLIW — [P]
+
+ 23.1 Requisitos do Banco de Registradores — [P]
+
+  23.1.1 Múltiplas Portas de Acesso — [P]
+	  Necessidade de várias portas de leitura
+	  Necessidade de várias portas de escrita
+	  Relação com o número de unidades funcionais
+
+  23.1.2 Impacto no Custo de Hardware — [P]
+	  Crescimento da área com o número de portas
+	  Aumento da latência de acesso
+	  Trade-off entre paralelismo e custo
+
+
+ 23.2 Organização do Banco de Registradores — [I]
+
+  23.2.1 Banco Centralizado — [I]
+	  Registradores compartilhados por todas as unidades
+	  Simplicidade conceitual da organização
+	  Escalabilidade limitada com o crescimento de slots
+
+  23.2.2 Banco Distribuído — [I]
+	  Registradores associados a grupos de unidades
+	  Redução da complexidade de portas de acesso
+	  Necessidade de comunicação entre bancos
+
+
+
+24. Arquivos de Registradores Particionados — [I]
+
+ 24.1 Conceito de Particionamento — [I]
+
+  24.1.1 Motivação para o Particionamento — [I]
+	  Redução do número de portas por banco
+	  Melhoria na escalabilidade do hardware
+	  Limitação da complexidade de interconexão
+
+  24.1.2 Organização dos Clusters — [I]
+	  Grupos de unidades funcionais e registradores
+	  Comunicação necessária entre clusters
+	  Papel do compilador na alocação por cluster
+
+
+ 24.2 Impacto no Compilador — [I]
+
+  24.2.1 Escalonamento Ciente de Clusters — [I]
+	  Atribuição de operações a clusters específicos
+	  Minimização da comunicação entre clusters
+	  Complexidade adicional no escalonamento
+
+  24.2.2 Custos de Comunicação entre Clusters — [I]
+	  Latência extra para transferência de dados
+	  Impacto direto no desempenho final
+	  Necessidade de operações de cópia
+
+
+ 24.3 Registradores Rotativos — [I]
+
+  24.3.1 Conceito de Registradores Rotativos
+	  Organização do arquivo de registradores rotativos
+	  Rotação automática dos registradores
+	  Relação com execução de loops
+	  Relação com software pipelining
+
+  24.3.2 Utilização em Arquiteturas VLIW
+	  Suporte ao escalonamento de loops
+	  Redução de cópias explícitas entre registradores
+	  Associação entre registradores e diferentes iterações
+	  Redução de conflitos durante a execução sobreposta
+
+
+
+25. Acesso à Memória em Arquiteturas VLIW — [I]
+
+ 25.1 Operações de Load e Store — [I]
+
+  25.1.1 Slots Dedicados à Memória — [I]
+	  Unidades de acesso à memória
+	  Restrições no número de acessos simultâneos
+	  Papel específico dentro do bundle
+
+  25.1.2 Latência de Acesso à Memória — [I]
+	  Latência fixa assumida pelo compilador
+	  Problemas causados por latências variáveis
+	  Impacto de faltas de cache (cache miss)
+
+
+ 25.2 Escalonamento de Acessos à Memória — [I]
+
+  25.2.1 Escalonamento Estático de Load/Store — [I]
+	  Antecipação de operações de load
+	  Ordenação cuidadosa de operações de store
+	  Preservação da semântica original do programa
+
+  25.2.2 Desafios com Latências Imprevisíveis — [I]
+	  Ocorrência de cache miss não previsto
+	  Impacto sobre o escalonamento estático
+	  Necessidade de mecanismos de tolerância (stall global)
+
+
+ 25.3 Dependências entre Operações de Memória — [I]
+
+  25.3.1 Dependências Load/Store — [I]
+	  Dependências entre loads
+	  Dependências entre stores
+	  Dependências entre loads e stores
+	  Ordem necessária entre acessos à memória
+
+  25.3.2 Análise de Dependências de Memória — [I]
+	  Determinação da independência entre acessos
+	  Identificação de possíveis conflitos
+	  Impacto da análise de dependências no escalonamento
+	  Limitações da análise estática
+
+  25.3.3 Alias de Memória — [I]
+	  Conceito de alias
+	  Possibilidade de diferentes referências apontarem para a mesma posição
+	  Impacto do alias no paralelismo
+	  Escalonamento conservador diante de dependências desconhecidas
+
+
+
+PARTE 6 — ESCALONAMENTO ESTÁTICO, COMPILADOR E GERAÇÃO DE CÓDIGO VLIW
+
+
+26. Escalonamento Estático de Instruções — [P]
+
+ 26.1 Conceito de Escalonamento Estático — [P]
+
+  26.1.1 Definição e Objetivo — [P]
+	  Ordenação das operações em tempo de compilação
+	  Maximização da ocupação dos slots disponíveis
+	  Respeito às dependências e latências
+
+  26.1.2 Etapas do Escalonamento Estático — [P]
+	  Construção do grafo de dependências
+	  Ordenação das operações por prioridade
+	  Alocação das operações aos slots e ciclos
+
+
+ 26.2 Restrições Consideradas no Escalonamento — [P]
+
+  26.2.1 Restrições de Dependência — [P]
+	  Dependências de dados entre operações
+	  Dependências de recursos compartilhados
+	  Dependências de controle do programa
+
+  26.2.2 Restrições Estruturais do Hardware — [P]
+	  Número de unidades funcionais disponíveis
+	  Número de slots por bundle
+	  Latências fixas conhecidas das operações
+
+
+ 26.3 Exemplo de Escalonamento VLIW — [P]
+
+  26.3.1 Código Inicial — [P]
+	  Sequência original de operações
+	  Identificação das dependências
+	  Identificação dos recursos necessários
+
+  26.3.2 Construção do Escalonamento — [P]
+	  Identificação das operações prontas
+	  Seleção das operações
+	  Distribuição das operações pelos slots
+	  Inserção de NOPs quando necessária
+
+  26.3.3 Resultado do Escalonamento — [P]
+	  Formação dos bundles
+	  Ocupação dos slots
+	  Número de ciclos necessários
+	  Dependências preservadas
+	  Comparação entre código original e código escalonado
+
+
+
+27. Papel do Compilador nas Arquiteturas VLIW — [P]
+
+ 27.1 Compilador como Responsável pelo Paralelismo — [P]
+
+  27.1.1 Transferência de Responsabilidade do Hardware — [P]
+	  Ausência de escalonamento dinâmico no hardware
+	  Compilador como único responsável pela ordem de execução
+	  Impacto direto na qualidade final do código
+
+  27.1.2 Etapas do Compilador Relevantes ao VLIW — [P]
+	  Análise de dependências do programa
+	  Escalonamento das instruções
+	  Alocação de registradores
+	  Empacotamento das operações em bundles
+
+
+ 27.2 Otimizações Específicas para VLIW — [P]
+
+  27.2.1 Otimizações de Escalonamento — [P]
+	  Reordenação agressiva do código
+	  Escalonamento global versus escalonamento local
+	  Consideração de múltiplos blocos básicos
+
+  27.2.2 Alocação de Registradores Ciente do Paralelismo — [P]
+	  Minimização de conflitos entre operações paralelas
+	  Consideração de clusters de registradores
+	  Redução de operações de cópia desnecessárias
+
+
+
+28. Escalonamento de Lista (List Scheduling) — [P]
+
+ 28.1 Fundamentos do List Scheduling — [P]
+
+  28.1.1 Algoritmo Básico — [P]
+	  Manutenção de uma lista de operações prontas
+	  Seleção das operações por prioridade
+	  Atualização da lista após cada ciclo
+
+  28.1.2 Critérios de Priorização — [P]
+	  Posição no caminho crítico
+	  Número de operações sucessoras
+	  Latência da operação considerada
+
+
+ 28.2 Aplicação do List Scheduling em VLIW — [P]
+
+  28.2.1 Adaptação para Múltiplos Slots — [P]
+	  Seleção simultânea de várias operações por ciclo
+	  Respeito às restrições de cada slot
+	  Preenchimento otimizado do bundle
+
+  28.2.2 Limitações do List Scheduling — [I]
+	  Escopo limitado a um único bloco básico
+	  Dificuldade em capturar paralelismo entre blocos
+	  Necessidade de técnicas complementares
+
+
+
+29. Software Pipelining — [P]
+
+ 29.1 Conceito de Software Pipelining — [P]
+
+  29.1.1 Definição e Objetivo — [P]
+	  Sobreposição da execução de iterações de um laço
+	  Aumento da taxa de emissão de operações
+	  Analogia com o pipelining em hardware
+
+  29.1.2 Estrutura do Código em Pipeline — [P]
+	  Fase de prólogo
+	  Fase de kernel (estado estacionário)
+	  Fase de epílogo
+
+
+ 29.2 Técnicas Associadas ao Software Pipelining — [P]
+
+  29.2.1 Modulo Scheduling — [P]
+	  Cálculo do Initiation Interval (II)
+	  Escalonamento cíclico das operações
+	  Respeito aos recursos disponíveis por período
+
+  29.2.2 Benefícios e Custos do Software Pipelining — [I]
+	  Maior ocupação dos slots de execução
+	  Aumento do tamanho do código gerado
+	  Complexidade adicional no processo de compilação
+
+
+
+30. Trace Scheduling — [P]
+
+ 30.1 Conceito de Trace Scheduling — [P]
+
+  30.1.1 Definição de Trace — [P]
+	  Sequência mais provável de execução
+	  Seleção baseada em previsão de desvios
+	  Unidade de escalonamento além do bloco básico
+
+  30.1.2 Objetivo do Trace Scheduling — [P]
+	  Escalonamento além das fronteiras de blocos básicos
+	  Ampliação do paralelismo explorável
+	  Priorização do caminho mais frequente
+
+
+ 30.2 Código de Compensação — [I]
+
+  30.2.1 Necessidade de Compensação — [I]
+	  Correção de efeitos da reordenação entre traces
+	  Preservação da semântica do programa original
+	  Inserção de código adicional necessário
+
+  30.2.2 Custos do Trace Scheduling — [I]
+	  Aumento do tamanho do código gerado
+	  Complexidade na geração do código de compensação
+	  Dependência da qualidade da previsão de desvios
+
+
+
+31. Predicação e Execução Especulativa Estática — [P]
+
+ 31.1 Predicação de Instruções — [P]
+
+  31.1.1 Conceito de Predicação — [P]
+	  Execução condicional sem uso de desvio
+	  Uso de registradores de predicado
+	  Eliminação de desvios de curta distância
+
+  31.1.2 Benefícios da Predicação para o VLIW — [P]
+	  Redução de penalidades associadas a desvios
+	  Aumento do paralelismo entre caminhos alternativos
+	  Simplificação do processo de escalonamento
+
+
+ 31.2 Especulação Estática — [P]
+
+  31.2.1 Execução Especulativa de Loads — [P]
+	  Antecipação de operações de acesso à memória
+	  Necessidade de mecanismos de verificação
+	  Recuperação em caso de exceção especulativa
+
+  31.2.2 Riscos e Cuidados da Especulação Estática — [I]
+	  Ocorrência de exceções especulativas
+	  Necessidade de suporte arquitetural específico
+	  Impacto sobre a correção do programa
+
+
+
+PARTE 7 — DEPENDÊNCIAS, HAZARDS, SINCRONIZAÇÃO E LIMITAÇÕES DO VLIW
+
+
+32. Dependências de Dados em Código VLIW — [P]
+
+ 32.1 Tipos de Dependências — [P]
+
+  32.1.1 Dependências Verdadeiras (RAW) — [P]
+	  Definição da dependência verdadeira
+	  Impacto direto sobre o escalonamento
+	  Necessidade de ordenação obrigatória
+
+  32.1.2 Dependências Falsas (WAR e WAW) — [P]
+	  Definição das dependências falsas
+	  Origem na reutilização de registradores
+	  Eliminação por meio de renomeação estática
+
+
+ 32.2 Tratamento de Dependências pelo Compilador — [P]
+
+  32.2.1 Construção do Grafo de Dependências — [P]
+	  Representação das operações e suas relações
+	  Base fundamental para o escalonamento
+	  Identificação do caminho crítico do programa
+
+  32.2.2 Renomeação Estática de Registradores — [P]
+	  Eliminação de dependências falsas
+	  Aumento do paralelismo disponível
+	  Impacto direto na alocação de registradores
+
+
+
+33. Hazards Estruturais e de Controle no VLIW — [P]
+
+ 33.1 Hazards Estruturais — [P]
+
+  33.1.1 Conflito por Unidades Funcionais — [P]
+	  Disputa por um recurso limitado
+	  Necessidade de escalonamento consciente de recursos
+	  Prevenção estática realizada pelo compilador
+
+  33.1.2 Conflito por Portas de Registradores — [P]
+	  Limitação do número de acessos simultâneos
+	  Impacto direto no empacotamento de operações
+	  Restrições adicionais impostas ao compilador
+
+
+ 33.2 Hazards de Controle — [I]
+
+  33.2.1 Desvios e Paralelismo — [I]
+	  Interrupção do fluxo sequencial de execução
+	  Impacto direto na formação dos bundles
+	  Uso de predicação como forma de mitigação
+
+  33.2.2 Previsão de Desvios em Tempo de Compilação — [I]
+	  Heurísticas estáticas de previsão
+	  Uso de informações de profiling
+	  Influência direta na escolha de traces
+
+
+
+34. Sincronização entre Operações Paralelas — [I]
+
+ 34.1 Necessidade de Sincronização Implícita — [I]
+
+  34.1.1 Sincronização por Escalonamento — [I]
+	  Ordem de execução garantida pelo compilador
+	  Ausência de mecanismos dinâmicos de espera
+	  Confiança nas latências previstas em compilação
+
+  34.1.2 Problemas de Sincronização com Latências Variáveis — [I]
+	  Ocorrência de eventos imprevisíveis (cache miss)
+	  Quebra da suposição de latência fixa
+	  Necessidade de mecanismos de recuperação
+
+
+ 34.2 Mecanismos de Tolerância a Atrasos — [I]
+
+  34.2.1 Stall Global do Processador — [I]
+	  Paralisação simultânea de todas as unidades
+	  Impacto direto sobre o desempenho
+	  Simplicidade em relação a soluções dinâmicas
+
+  34.2.2 Uso de Buffers e Filas Limitadas — [I]
+	  Absorção de pequenas variações de latência
+	  Complexidade adicional de hardware envolvida
+	  Trade-off com a filosofia original do VLIW
+
+
+
+35. Desafios de Compatibilidade Binária — [I]
+
+ 35.1 Acoplamento entre Compilador e Hardware — [I]
+
+  35.1.1 Exposição da Microarquitetura na ISA — [I]
+	  Número de slots visível diretamente ao compilador
+	  Latências expostas na interface arquitetural
+	  Dependência direta do código gerado
+
+  35.1.2 Impacto em Novas Gerações de Hardware — [I]
+	  Necessidade de recompilação do software
+	  Perda de desempenho em binários antigos
+	  Incompatibilidade entre diferentes implementações
+
+
+ 35.2 Estratégias para Mitigar a Incompatibilidade — [V]
+
+  35.2.1 Recompilação e Otimização Contínua — [V]
+	  Recompilação voltada a novas microarquiteturas
+	  Uso de compiladores continuamente atualizados
+	  Limitações práticas dessa abordagem
+
+  35.2.2 Abstrações Parciais da Microarquitetura — [V]
+	  Tentativas de reduzir o acoplamento existente
+	  Introdução de modelos intermediários de execução
+	  Relação direta com arquiteturas EPIC
+
+
+
+36. Limitações Fundamentais das Arquiteturas VLIW — [P]
+
+ 36.1 Limitações Relacionadas ao Código — [P]
+
+  36.1.1 Dependência da Qualidade do Compilador — [P]
+	  Resultado diretamente ligado às otimizações aplicadas
+	  Dificuldade de gerar código próximo do ótimo
+	  Impacto de más decisões de escalonamento
+
+  36.1.2 Crescimento do Tamanho do Código — [P]
+	  Inserção de NOPs no código final
+	  Geração de código de compensação
+	  Efeito do desenrolamento de laços
+
+
+ 36.2 Limitações Relacionadas ao Hardware e ao Ambiente de Execução — [I]
+
+  36.2.1 Sensibilidade a Eventos Dinâmicos — [I]
+	  Ocorrência de faltas de cache (cache miss)
+	  Latências variáveis de acesso à memória
+	  Dificuldade de adaptação em tempo de execução
+
+  36.2.2 Dificuldade em Aplicações com Paralelismo Irregular — [I]
+	  Código com alta frequência de desvios
+	  Baixa disponibilidade de ILP explorável
+	  Subutilização recorrente dos slots
+
+
+
+PARTE 8 — MEMÓRIA, CONTROLE E GERENCIAMENTO DA EXECUÇÃO VLIW
+
+
+37. Hierarquia de Memória em Sistemas VLIW — [I]
+
+ 37.1 Papel da Memória Cache — [I]
+
+  37.1.1 Cache de Instruções — [I]
+	  Armazenamento dos bundles de instrução
+	  Impacto do tamanho do código nos acessos à cache
+	  Relação direta com a densidade de código
+
+  37.1.2 Cache de Dados — [I]
+	  Suporte às operações de load e store
+	  Impacto de latências variáveis de acesso
+	  Relação com o escalonamento estático realizado
+
+
+ 37.2 Impacto da Hierarquia de Memória no Desempenho VLIW — [I]
+
+  37.2.1 Cache Miss e Escalonamento Estático — [I]
+	  Quebra da previsibilidade de latência assumida
+	  Necessidade de stall global do processador
+	  Impacto direto sobre a filosofia do VLIW
+
+  37.2.2 Técnicas de Mitigação — [V]
+	  Prefetching estático de dados
+	  Escalonamento conservador de operações de load
+	  Uso de hints fornecidos pelo compilador
+
+
+
+38. Unidade de Controle em Processadores VLIW — [I]
+
+ 38.1 Simplicidade da Unidade de Controle — [I]
+
+  38.1.1 Ausência de Lógica de Escalonamento Dinâmico — [I]
+	  Redução da complexidade do controle
+	  Foco na distribuição direta das operações
+	  Comparação direta com o modelo superescalar
+
+  38.1.2 Geração de Sinais de Controle por Slot — [I]
+	  Controle paralelo e independente por unidade
+	  Simplicidade da etapa de decodificação
+	  Relação direta com o formato da instrução
+
+
+ 38.2 Coordenação entre Unidade de Controle e Datapath — [I]
+
+  38.2.1 Distribuição das Operações aos Slots — [I]
+	  Encaminhamento direto após a decodificação
+	  Ausência de arbitragem dinâmica de recursos
+	  Papel do bundle já previamente organizado
+
+
+
+39. Tratamento de Exceções e Interrupções — [I]
+
+ 39.1 Exceções em um Contexto Paralelo — [I]
+
+  39.1.1 Múltiplas Operações Simultâneas e Exceções — [I]
+	  Possibilidade de exceção em mais de uma unidade
+	  Necessidade de priorização entre exceções
+	  Complexidade na identificação da origem
+
+  39.1.2 Exceções Especulativas — [I]
+	  Origem em operações antecipadas pelo compilador
+	  Necessidade de supressão quando não confirmadas
+	  Suporte arquitetural específico exigido
+
+
+ 39.2 Precisão de Exceções em VLIW — [I]
+
+  39.2.1 Desafio da Exceção Precisa — [I]
+	  Dificuldade de manter estado preciso com execução paralela
+	  Necessidade de mecanismos de recuperação
+	  Impacto direto no projeto do processador
+
+  39.2.2 Estratégias de Tratamento — [V]
+	  Marcação explícita de operações especulativas
+	  Mecanismos de rollback de estado
+	  Suporte do compilador na geração de código seguro
+
+
+
+40. Gerenciamento de Recursos e Latências — [I]
+
+ 40.1 Gerenciamento Estático de Recursos — [I]
+
+  40.1.1 Reserva de Recursos pelo Compilador — [I]
+	  Alocação antecipada das unidades funcionais
+	  Prevenção de conflitos estruturais
+	  Uso de tabelas de reserva de recursos
+
+  40.1.2 Gerenciamento de Latências Fixas — [I]
+	  Modelagem das latências dentro do compilador
+	  Inserção dos atrasos necessários no código
+	  Garantia da correção do escalonamento gerado
+
+
+ 40.2 Desafios do Gerenciamento em Tempo de Execução — [I]
+
+  40.2.1 Eventos Não Previstos — [I]
+	  Ocorrência de latências variáveis de memória
+	  Necessidade de mecanismos mínimos de tolerância
+	  Impacto direto sobre o modelo estático assumido
+
+  40.2.2 Trade-offs entre Simplicidade e Robustez — [I]
+	  Manutenção da simplicidade original do hardware
+	  Necessidade de mecanismos mínimos de tolerância
+	  Equilíbrio necessário no projeto arquitetural
+
+
+
+PARTE 9 — DESEMPENHO, EFICIÊNCIA, UTILIZAÇÃO E ESCALABILIDADE
+
+
+41. Desempenho em Arquiteturas VLIW — [I]
+
+ 41.1 Fatores que Determinam o Desempenho — [I]
+
+  41.1.1 Qualidade do Escalonamento — [I]
+	  Grau de ocupação dos slots disponíveis
+	  Redução efetiva do número de NOPs
+	  Exploração eficaz do ILP disponível
+
+  41.1.2 Características da Aplicação — [I]
+	  Disponibilidade de paralelismo no código-fonte
+	  Presença de laços regulares e previsíveis
+	  Frequência de desvios condicionais
+
+
+ 41.2 Métricas de Avaliação de Desempenho — [I]
+
+  41.2.1 Taxa de Ocupação dos Slots — [I]
+	  Proporção de slots efetivamente utilizados
+	  Relação direta com a eficiência do compilador
+	  Comparação entre diferentes programas
+
+  41.2.2 IPC (Instruções por Ciclo) em VLIW — [I]
+	  Medição do paralelismo efetivo obtido
+	  Comparação com arquiteturas puramente escalares
+	  Limitações inerentes a essa métrica
+
+
+
+42. Eficiência e Utilização dos Slots — [I]
+
+ 42.1 Fatores que Afetam a Utilização — [I]
+
+  42.1.1 Disponibilidade de Paralelismo no Código — [I]
+	  Dependência direta do tipo de aplicação
+	  Impacto de código com muitos desvios
+	  Relação com técnicas de desenrolamento de laços
+
+  42.1.2 Qualidade das Técnicas de Compilação — [I]
+	  Eficácia do algoritmo de escalonamento utilizado
+	  Uso adequado de software pipelining
+	  Qualidade da alocação de registradores
+
+
+ 42.2 Estratégias para Aumentar a Utilização — [V]
+
+  42.2.1 Técnicas de Compilador — [V]
+	  Escalonamento global de instruções
+	  Uso extensivo de predicação
+	  Aplicação agressiva de software pipelining
+
+  42.2.2 Ajustes Arquiteturais — [V]
+	  Definição de um número adequado de slots
+	  Balanceamento entre diferentes unidades funcionais
+	  Adaptação ao domínio de aplicação alvo
+
+
+
+43. Densidade de Código e Uso de Memória — [I]
+
+ 43.1 Impacto do Formato VLIW na Densidade — [I]
+
+  43.1.1 Crescimento do Código pelos NOPs — [I]
+	  Espaço desperdiçado por slots vazios
+	  Impacto direto no tamanho dos binários
+	  Relação com a largura da instrução
+
+  43.1.2 Impacto do Desenrolamento e da Compensação — [I]
+	  Aumento de código causado pelo loop unrolling
+	  Código adicional gerado pelo trace scheduling
+	  Trade-off entre desempenho e tamanho de código
+
+
+ 43.2 Consequências para o Sistema de Memória — [I]
+
+  43.2.1 Maior Pressão sobre a Cache de Instruções — [I]
+	  Aumento das faltas na cache de instrução
+	  Necessidade de caches de maior capacidade
+	  Impacto direto no consumo energético
+
+  43.2.2 Técnicas de Compressão de Bundles — [V]
+	  Uso de formatos comprimidos de instrução
+	  Redução do impacto causado pelos NOPs
+	  Trade-off com a simplicidade de decodificação
+
+
+
+44. Escalabilidade das Arquiteturas VLIW — [I]
+
+ 44.1 Escalabilidade do Número de Slots — [I]
+
+  44.1.1 Aumento do Paralelismo com Mais Slots — [I]
+	  Potencial teórico de maior desempenho
+	  Necessidade de maior ILP disponível no código
+	  Diminuição dos retornos com o aumento de slots
+
+  44.1.2 Impacto no Hardware ao Escalar Slots — [I]
+	  Crescimento do banco de registradores necessário
+	  Aumento da complexidade de interconexão
+	  Necessidade de particionamento em clusters
+
+
+ 44.2 Limites Práticos da Escalabilidade — [I]
+
+  44.2.1 Limitação pelo ILP Disponível — [I]
+	  Saturação do paralelismo explorável no código
+	  Subutilização de slots adicionais
+	  Retorno decrescente de desempenho obtido
+
+  44.2.2 Limitação pela Complexidade do Compilador — [I]
+	  Aumento do custo do processo de compilação
+	  Maior dificuldade de escalonamento eficiente
+	  Complexidade adicional imposta pelos clusters
+
+
+
+PARTE 10 — VARIAÇÕES, EVOLUÇÃO E ARQUITETURAS RELACIONADAS AO VLIW
+
+
+45. EPIC (Explicitly Parallel Instruction Computing) — [I]
+
+ 45.1 Conceito de EPIC — [I]
+
+  45.1.1 Relação entre EPIC e VLIW — [I]
+	  Evolução direta das ideias originais do VLIW
+	  Manutenção do paralelismo explícito
+	  Diferenças relacionadas à flexibilidade
+
+  45.1.2 Inovações Trazidas pelo EPIC — [I]
+	  Uso extensivo de predicação
+	  Especulação de dados e controle com suporte arquitetural
+	  Grupos de instruções com marcação de paralelismo
+
+
+ 45.2 Diferenças entre EPIC e VLIW Clássico — [I]
+
+  45.2.1 Flexibilidade de Formato — [I]
+	  Independência parcial entre paralelismo e slots fixos
+	  Uso de bits de template na instrução
+	  Maior flexibilidade no agrupamento de operações
+
+  45.2.2 Mecanismos de Tolerância a Latências — [I]
+	  Suporte à especulação de acessos à memória
+	  Recuperação de exceções especulativas
+	  Maior robustez frente a eventos dinâmicos
+
+
+
+46. Arquitetura Itanium (IA-64) — [V]
+
+ 46.1 Visão Geral do Itanium — [V]
+
+  46.1.1 Contexto de Criação — [V]
+	  Parceria entre fabricantes de processadores
+	  Objetivo de suceder arquiteturas RISC e CISC tradicionais
+	  Base nos princípios da filosofia EPIC
+
+  46.1.2 Características Principais — [V]
+	  Organização em bundles de instruções
+	  Templates de agrupamento de operações
+	  Uso de registradores de predicado
+
+
+ 46.2 Legado e Lições do Itanium — [V]
+
+  46.2.1 Desafios Enfrentados — [V]
+	  Dificuldade de geração de código eficiente
+	  Baixa adoção comercial da arquitetura
+	  Complexidade elevada do compilador
+
+  46.2.2 Contribuições para a Arquitetura de Computadores — [V]
+	  Influência em pesquisas sobre exploração de ILP
+	  Lições sobre o acoplamento entre hardware e compilador
+	  Impacto no estudo de arquiteturas EPIC
+
+
+
+47. VLIW em DSPs e Processadores Embarcados — [V]
+
+ 47.1 Adequação do VLIW a DSPs — [V]
+
+  47.1.1 Características do Processamento de Sinais — [V]
+	  Código altamente regular e repetitivo
+	  Laços de execução previsíveis
+	  Baixa frequência de desvios condicionais
+
+  47.1.2 Vantagens do VLIW em Aplicações Embarcadas — [V]
+	  Hardware simples e eficiente energeticamente
+	  Baixo consumo em relação ao desempenho obtido
+	  Alta previsibilidade de tempo de execução
+
+
+ 47.2 Exemplos de Uso em Sistemas Embarcados — [V]
+
+  47.2.1 Processadores VLIW Comerciais para DSP — [V]
+	  Famílias de processadores de sinais baseados em VLIW
+	  Aplicações voltadas a telecomunicações
+	  Aplicações em processamento multimídia
+
+  47.2.2 Ferramentas de Compilação para VLIW Embarcado — [V]
+	  Compiladores especializados no domínio
+	  Escalonamento dedicado a aplicações específicas
+	  Otimizações voltadas a laços regulares
+
+
+
+48. Arquiteturas TTA e Relacionadas — [V]
+
+ 48.1 Transport Triggered Architectures (TTA) — [V]
+
+  48.1.1 Conceito de TTA — [V]
+	  Programação direta dos barramentos de transporte
+	  Operações disparadas pelo movimento de dados
+	  Relação conceitual próxima ao modelo VLIW
+
+  48.1.2 Diferenças entre TTA e VLIW Clássico — [V]
+	  Nível de exposição do datapath ao software
+	  Maior flexibilidade de configuração do hardware
+	  Complexidade adicional imposta ao compilador
+
+
+ 48.2 Outras Arquiteturas Relacionadas ao Paralelismo Explícito — [V]
+
+  48.2.1 Arquiteturas de Fluxo de Dados Estático — [V]
+	  Relação com a exposição explícita de paralelismo
+	  Diferenças em relação ao modelo de execução VLIW
+
+  48.2.2 Aceleradores com Paralelismo Explícito — [V]
+	  Uso de princípios VLIW em aceleradores especializados
+	  Aplicações voltadas a domínios específicos
+	  Influência contínua do modelo VLIW
+
+
+
+PARTE 11 — DIFERENÇAS, IMPLEMENTAÇÃO E APLICAÇÕES DAS ARQUITETURAS VLIW
+
+
+49. VLIW × CISC × RISC — [I]
+
+ 49.1 Comparação Conceitual — [I]
+
+  49.1.1 VLIW × CISC — [I]
+	  Diferença na complexidade das instruções individuais
+	  Nível de exposição do paralelismo ao software
+	  Papel distinto do compilador em cada modelo
+
+  49.1.2 VLIW × RISC — [I]
+	  Simplicidade das operações individuais em ambos
+	  Diferença no agrupamento das operações em instrução
+	  Ortogonalidade entre os dois conceitos
+
+
+ 49.2 Posicionamento do VLIW entre os Estilos de ISA — [I]
+
+  49.2.1 Complementaridade dos Conceitos — [I]
+	  VLIW como forma de agrupar operações simples
+	  Possibilidade de operações RISC-like dentro dos slots
+	  Independência em relação ao estilo de codificação individual
+
+  49.2.2 Critérios de Escolha entre Estilos — [V]
+	  Natureza da aplicação alvo
+	  Requisitos de desempenho e eficiência energética
+	  Disponibilidade de ferramentas de compilação adequadas
+
+
+
+50. Implementação de Processadores VLIW — [I]
+
+ 50.1 Considerações de Projeto — [I]
+
+  50.1.1 Definição do Número de Slots — [I]
+	  Balanceamento entre paralelismo e complexidade
+	  Análise do domínio de aplicação alvo
+	  Impacto direto no formato da instrução
+
+  50.1.2 Escolha das Unidades Funcionais — [I]
+	  Tipos de operações a serem suportadas
+	  Grau de especialização das unidades
+	  Relação com o conjunto de aplicações alvo
+
+
+ 50.2 Ferramentas de Suporte à Implementação — [V]
+
+  50.2.1 Compiladores para VLIW — [V]
+	  Backends de compilação especializados
+	  Escalonadores dedicados ao modelo VLIW
+	  Integração com técnicas avançadas de otimização
+
+  50.2.2 Simuladores e Ambientes de Avaliação — [V]
+	  Simulação de desempenho do processador
+	  Validação da qualidade do escalonamento
+	  Análise da taxa de utilização dos slots
+
+
+
+51. Aplicações das Arquiteturas VLIW — [V]
+
+ 51.1 Domínios de Aplicação Favoráveis — [V]
+
+  51.1.1 Processamento de Sinais Digitais — [V]
+	  Implementação de filtros digitais
+	  Codecs de áudio e vídeo
+	  Processamento de imagens
+
+  51.1.2 Processamento Multimídia e Gráfico — [V]
+	  Aplicações gráficas embarcadas
+	  Processamento de vídeo em tempo real
+	  Aceleração de tarefas regulares e repetitivas
+
+
+ 51.2 Domínios Menos Favoráveis ao VLIW — [V]
+
+  51.2.1 Aplicações de Propósito Geral — [V]
+	  Presença de código irregular
+	  Alta frequência de desvios condicionais
+	  Baixa previsibilidade de paralelismo disponível
+
+  51.2.2 Cargas de Trabalho com Comportamento Dinâmico — [V]
+	  Forte dependência de dados de entrada variáveis
+	  Dificuldade de escalonamento estático eficaz
+
+
+
+52. Vantagens e Desvantagens do VLIW — [I]
+
+ 52.1 Principais Vantagens — [I]
+
+  52.1.1 Simplicidade do Hardware — [I]
+	  Menor complexidade da lógica de controle
+	  Redução de área e consumo energético
+	  Facilidade relativa de projeto do processador
+
+  52.1.2 Previsibilidade de Execução — [I]
+	  Comportamento determinístico do processador
+	  Facilidade de análise formal de desempenho
+	  Adequação a sistemas de tempo real
+
+
+ 52.2 Principais Desvantagens — [I]
+
+  52.2.1 Dependência do Compilador — [I]
+	  Qualidade do código diretamente ligada ao desempenho
+	  Dificuldade em gerar escalonamentos próximos do ótimo
+	  Complexidade elevada da ferramenta de compilação
+
+  52.2.2 Problemas de Compatibilidade e Densidade de Código — [I]
+	  Necessidade de recompilação entre gerações de hardware
+	  Crescimento do tamanho do binário gerado
+	  Sensibilidade a eventos dinâmicos imprevisíveis
+
+
+
+PARTE 12 — RESUMO GERAL E CONCLUSÃO
+
+
+53. Integração dos Conceitos de VLIW — [I]
+
+ 53.1 Visão Integrada da Arquitetura VLIW — [I]
+
+  53.1.1 Integração entre Hardware e Compilador — [I]
+	  Papel do hardware simplificado
+	  Papel do compilador na organização do paralelismo
+	  Contrato estabelecido entre os dois lados
+
+  53.1.2 Integração dos Componentes Estruturais — [I]
+	  Bundles, slots e unidades funcionais
+	  Fluxo de execução paralelo do processador
+	  Relação entre formato de instrução e datapath
+
+
+ 53.2 Relações entre os Conceitos Estudados — [I]
+
+  53.2.1 Do Formato de Instrução ao Desempenho — [I]
+	  Relação entre codificação e ocupação dos slots
+	  Impacto do escalonamento no desempenho final
+	  Consequência direta das limitações estruturais
+
+  53.2.2 Das Limitações às Evoluções (EPIC) — [I]
+	  Motivação para o surgimento do EPIC
+	  Continuidade dos princípios originais do VLIW
+	  Direções gerais de evolução arquitetural
+
+
+
+54. Resumo Geral das Arquiteturas VLIW — [I]
+
+ 54.1 Revisão dos Fundamentos — [I]
+
+  54.1.1 Conceitos Essenciais — [I]
+	  Paralelismo explícito
+	  Escalonamento estático
+	  Bundles e slots de execução
+
+  54.1.2 Organização e Estrutura — [I]
+	  Unidades funcionais
+	  Datapath paralelo
+	  Banco de registradores
+
+
+ 54.2 Revisão dos Aspectos Críticos — [I]
+
+  54.2.1 Papel do Compilador — [I]
+	  Escalonamento de lista
+	  Software pipelining
+	  Trace scheduling
+
+  54.2.2 Limitações e Evoluções — [I]
+	  Dependência do compilador
+	  Problemas de compatibilidade binária
+	  Evolução em direção ao EPIC
+
+
+
+55. Conclusão do Estudo sobre VLIW — [V]
+
+ 55.1 Síntese Final — [V]
+
+  55.1.1 O Papel do VLIW na Arquitetura de Computadores — [V]
+	  Alternativa ao modelo superescalar dinâmico
+	  Contribuição para o estudo do paralelismo em nível de instrução
+	  Base conceitual para arquiteturas EPIC
+
+  55.1.2 Importância para a Compreensão de Arquitetura e Organização de Computadores — [V]
+	  Compreensão do paralelismo explícito
+	  Entendimento do papel central do compilador
+	  Base para estudos avançados de processadores
+
+
+ 55.2 Preparação para Estudos Posteriores — [V]
+
+  55.2.1 Conhecimentos Adquiridos — [V]
+	  Estrutura das arquiteturas VLIW
+	  Escalonamento estático de instruções
+	  Relação entre hardware e compilador
+
+  55.2.2 Temas Relacionados para Aprofundamento — [V]
+	  Arquiteturas EPIC
+	  Superescalar dinâmico
+	  Compiladores otimizadores
+	  Processadores para domínio específico
