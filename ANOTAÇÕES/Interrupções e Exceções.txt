@@ -68,12 +68,11 @@ PARTE 1 — FUNDAMENTOS DAS INTERRUPÇÕES E EXCEÇÕES
 
 
  2.2 Importância da Evolução — [V]
-
-  2.2.1 Impactos na Computação Moderna — [V]
-	  Eficiência no uso do processador
-	  Base para sistemas multitarefa
-	  Suporte a sistemas operacionais modernos
-	  Evolução da arquitetura de E/S
+	Impactos na Computação Moderna
+	Eficiência no uso do processador
+	Base para sistemas multitarefa
+	Suporte a sistemas operacionais modernos
+	Evolução da arquitetura de E/S
 
 
 
@@ -274,12 +273,11 @@ PARTE 2 — CONCEITOS, CARACTERÍSTICAS E DIFERENÇAS ENTRE INTERRUPÇÕES E EXC
 
 
  8.2 Classificação Unificada — [I]
-
-  8.2.1 Visão Geral de Classificação — [I]
-	  Classificação quanto à origem
-	  Classificação quanto ao sincronismo
-	  Classificação quanto à possibilidade de recuperação
-	  Classificação quanto à prioridade
+	Visão Geral de Classificação
+	Classificação quanto à origem
+	Classificação quanto ao sincronismo
+	Classificação quanto à possibilidade de recuperação
+	Classificação quanto à prioridade
 
 
 
@@ -305,12 +303,11 @@ PARTE 3 — INTERRUPÇÕES: ORIGEM, CLASSIFICAÇÃO E TIPOS
 
 
  9.2 Caminho do Sinal de Interrupção — [P]
-
-  9.2.1 Da Origem até o Processador — [P]
-	  Linha de requisição de interrupção
-	  Controlador de interrupção
-	  Chegada do sinal ao processador
-	  Verificação pelo processador
+	Da Origem até o Processador
+	Linha de requisição de interrupção
+	Controlador de interrupção
+	Chegada do sinal ao processador
+	Verificação pelo processador
 
 
 
@@ -405,11 +402,10 @@ PARTE 3 — INTERRUPÇÕES: ORIGEM, CLASSIFICAÇÃO E TIPOS
 13. Tipos Especiais de Interrupções — [I]
 
  13.1 Interrupções entre Processadores — [I]
-
-  13.1.1 Interprocessor Interrupts (IPI) — [I]
-	  Comunicação entre núcleos ou processadores
-	  Sincronização de tarefas
-	  Uso em sistemas multiprocessados
+	Interprocessor Interrupts (IPI)
+	Comunicação entre núcleos ou processadores
+	Sincronização de tarefas
+	Uso em sistemas multiprocessados
 
 
  13.2 Outras Interrupções Especiais — [I]
@@ -447,11 +443,10 @@ PARTE 4 — EXCEÇÕES: ORIGEM, CLASSIFICAÇÃO E TIPOS
 
 
  14.2 Caminho de Geração da Exceção — [P]
-
-  14.2.1 Detecção Interna pelo Processador — [P]
-	  Verificação durante a decodificação
-	  Verificação durante a execução
-	  Sinalização interna do evento
+	Detecção Interna pelo Processador
+	Verificação durante a decodificação
+	Verificação durante a execução
+	Sinalização interna do evento
 
 
 
@@ -509,12 +504,10 @@ PARTE 4 — EXCEÇÕES: ORIGEM, CLASSIFICAÇÃO E TIPOS
 	  Divisão por zero
 
 
- 16.2 Tratamento de Faults — [P]
-
-  16.2.1 Fluxo de Tratamento — [P]
-	  Suspensão da instrução corrente
-	  Execução da rotina de tratamento
-	  Retorno para reexecução
+ 16.2 Fluxo de Tratamento — [P]
+	Suspensão da instrução corrente
+	Execução da rotina de tratamento
+	Retorno para reexecução
 
 
 
@@ -533,12 +526,10 @@ PARTE 4 — EXCEÇÕES: ORIGEM, CLASSIFICAÇÃO E TIPOS
 	  Instrução de interrupção de software
 
 
- 17.2 Tratamento de Traps — [P]
-
-  17.2.1 Fluxo de Tratamento — [P]
-	  Conclusão da instrução geradora
-	  Transferência para a rotina de tratamento
-	  Continuação na instrução seguinte
+ 17.2 Fluxo de Tratamento — [P]
+	Conclusão da instrução geradora
+	Transferência para a rotina de tratamento
+	Continuação na instrução seguinte
 
 
 
@@ -557,12 +548,10 @@ PARTE 4 — EXCEÇÕES: ORIGEM, CLASSIFICAÇÃO E TIPOS
 	  Falhas duplas (double fault)
 
 
- 18.2 Consequências dos Aborts — [I]
-
-  18.2.1 Tratamento pelo Sistema — [I]
-	  Encerramento do processo ou do sistema
-	  Registro do erro para diagnóstico
-	  Reinicialização quando necessário
+ 18.2 Tratamento pelo Sistema — [I]
+	Encerramento do processo ou do sistema
+	Registro do erro para diagnóstico
+	Reinicialização quando necessário
 
 
 
@@ -573,19 +562,17 @@ PARTE 5 — MECANISMOS DE DETECÇÃO, SINALIZAÇÃO E GERAÇÃO DE INTERRUPÇÕE
 19. Detecção de Eventos de Interrupção e Exceção — [P]
 
  19.1 Detecção de Interrupções — [P]
-
-  19.1.1 Verificação ao Final do Ciclo de Instrução — [P]
-	  Momento de verificação
-	  Consulta às linhas de requisição
-	  Consulta ao controlador de interrupções
+	Verificação ao Final do Ciclo de Instrução
+	Momento de verificação
+	Consulta às linhas de requisição
+	Consulta ao controlador de interrupções
 
 
  19.2 Detecção de Exceções — [P]
-
-  19.2.1 Verificação Durante a Execução da Instrução — [P]
-	  Verificação durante a busca
-	  Verificação durante a decodificação
-	  Verificação durante a execução
+	Verificação Durante a Execução da Instrução
+	Verificação durante a busca
+	Verificação durante a decodificação
+	Verificação durante a execução
 
 
 
@@ -630,19 +617,16 @@ PARTE 5 — MECANISMOS DE DETECÇÃO, SINALIZAÇÃO E GERAÇÃO DE INTERRUPÇÕE
 21. Geração de Exceções pelo Processador — [P]
 
  21.1 Mecanismo Interno de Geração — [P]
+	Sinalização Interna da Condição
+	Ativação de sinal interno de exceção
+	Identificação do tipo de exceção
+	Registro da causa da exceção
 
-  21.1.1 Sinalização Interna da Condição — [P]
-	  Ativação de sinal interno de exceção
-	  Identificação do tipo de exceção
-	  Registro da causa da exceção
 
-
- 21.2 Relação com o Ciclo de Instrução — [P]
-
-  21.2.1 Momento da Geração — [P]
-	  Geração durante a busca
-	  Geração durante a decodificação
-	  Geração durante a execução ou escrita
+ 21.2 Momento da Geração — [P]
+	Geração durante a busca
+	Geração durante a decodificação
+	Geração durante a execução ou escrita
 
 
 
@@ -698,12 +682,10 @@ PARTE 6 — REQUISIÇÃO, RECONHECIMENTO, PRIORIDADE E ARBITRAGEM DE INTERRUPÇ�
 	  Início do atendimento
 
 
- 23.2 Consequências do Reconhecimento — [P]
-
-  23.2.1 Início da Transferência de Controle — [P]
-	  Suspensão da execução corrente
-	  Preparação para o tratamento
-	  Encaminhamento à rotina correspondente
+ 23.2 Início da Transferência de Controle — [P]
+	Suspensão da execução corrente
+	Preparação para o tratamento
+	Encaminhamento à rotina correspondente
 
 
 
@@ -722,23 +704,20 @@ PARTE 6 — REQUISIÇÃO, RECONHECIMENTO, PRIORIDADE E ARBITRAGEM DE INTERRUPÇ�
 	  Hierarquia de níveis
 
 
- 24.2 Critérios de Definição de Prioridade — [P]
-
-  24.2.1 Fatores Considerados — [P]
-	  Criticidade do evento
-	  Tempo de resposta exigido
-	  Política definida pelo sistema
+ 24.2 Fatores Considerados — [P]
+	Criticidade do evento
+	Tempo de resposta exigido
+	Política definida pelo sistema
 
 
 
 25. Arbitragem entre Múltiplas Interrupções — [P]
 
  25.1 Conceito de Arbitragem — [P]
-
-  25.1.1 Necessidade de Arbitragem — [P]
-	  Concorrência entre requisições
-	  Definição de ordem de atendimento
-	  Evitar conflitos de acesso
+	Necessidade de Arbitragem
+	Concorrência entre requisições
+	Definição de ordem de atendimento
+	Evitar conflitos de acesso
 
 
  25.2 Métodos de Arbitragem — [P]
@@ -813,11 +792,10 @@ PARTE 7 — MASCARAMENTO, HABILITAÇÃO, DESABILITAÇÃO E CONTROLE DE INTERRUP�
 
 
  27.2 Efeitos do Mascaramento — [P]
-
-  27.2.1 Consequências Operacionais — [P]
-	  Retenção da interrupção pendente
-	  Atendimento posterior ao desmascaramento
-	  Risco de perda em casos específicos
+	Consequências Operacionais
+	Retenção da interrupção pendente
+	Atendimento posterior ao desmascaramento
+	Risco de perda em casos específicos
 
 
 
@@ -836,31 +814,27 @@ PARTE 7 — MASCARAMENTO, HABILITAÇÃO, DESABILITAÇÃO E CONTROLE DE INTERRUP�
 	  Efeito imediato sobre o processador
 
 
- 28.2 Boas Práticas de Uso — [P]
-
-  28.2.1 Cuidados no Uso do Mecanismo — [P]
-	  Minimização do tempo desabilitado
-	  Prevenção de perda de eventos
-	  Reabilitação apropriada
+ 28.2 Cuidados no Uso do Mecanismo — [P]
+	Minimização do tempo desabilitado
+	Prevenção de perda de eventos
+	Reabilitação apropriada
 
 
 
 29. Interrupções Não Mascaráveis (NMI) — [I]
 
  29.1 Conceito de NMI — [I]
-
-  29.1.1 Definição de Interrupção Não Mascarável — [I]
-	  Impossibilidade de bloqueio pelo sistema
-	  Prioridade máxima de atendimento
-	  Uso restrito a eventos críticos
+	Definição de Interrupção Não Mascarável
+	Impossibilidade de bloqueio pelo sistema
+	Prioridade máxima de atendimento
+	Uso restrito a eventos críticos
 
 
  29.2 Aplicações da NMI — [I]
-
-  29.2.1 Situações de Uso — [I]
-	  Falhas graves de hardware
-	  Watchdog timers
-	  Eventos de segurança crítica
+	Situações de Uso
+	Falhas graves de hardware
+	Watchdog timers
+	Eventos de segurança crítica
 
 
 
@@ -937,20 +911,16 @@ PARTE 8 — CONTEXTO, ESTADO DO PROCESSADOR E TRANSFERÊNCIA PARA A ROTINA DE TR
 
 32. Mudança de Modo de Execução — [P]
 
- 32.1 Modos de Operação do Processador — [P]
-
-  32.1.1 Modo Usuário e Modo Supervisor — [P]
+ 32.1 Modo Usuário e Modo Supervisor
 	  Privilégios do modo usuário
 	  Privilégios do modo supervisor (kernel)
 	  Necessidade de separação de modos
 
 
- 32.2 Transição entre Modos — [P]
-
-  32.2.1 Processo de Mudança de Modo — [P]
-	  Elevação de privilégio no tratamento
-	  Retorno ao modo original
-	  Proteção do sistema durante a transição
+ 32.2 Processo de Mudança de Modo — [P]
+	Elevação de privilégio no tratamento
+	Retorno ao modo original
+	Proteção do sistema durante a transição
 
 
 
@@ -998,11 +968,10 @@ PARTE 9 — VETORES, TABELAS DE VETORES E ROTINAS DE TRATAMENTO DE INTERRUPÇÕE
 
 
  34.2 Determinação do Vetor — [P]
-
-  34.2.1 Métodos de Determinação — [P]
-	  Vetor fixo por tipo de evento
-	  Vetor fornecido pelo dispositivo
-	  Cálculo baseado na fonte
+	Métodos de Determinação
+	Vetor fixo por tipo de evento
+	Vetor fornecido pelo dispositivo
+	Cálculo baseado na fonte
 
 
 
@@ -1022,11 +991,10 @@ PARTE 9 — VETORES, TABELAS DE VETORES E ROTINAS DE TRATAMENTO DE INTERRUPÇÕE
 
 
  35.2 Acesso à Tabela de Vetores — [P]
-
-  35.2.1 Processo de Consulta — [P]
-	  Indexação pela identificação do evento
-	  Leitura da entrada correspondente
-	  Encaminhamento à rotina indicada
+	Processo de Consulta
+	Indexação pela identificação do evento
+	Leitura da entrada correspondente
+	Encaminhamento à rotina indicada
 
 
 
@@ -1071,7 +1039,7 @@ PARTE 9 — VETORES, TABELAS DE VETORES E ROTINAS DE TRATAMENTO DE INTERRUPÇÕE
 	Rapidez na identificação
 
   
- 37.1.2 Identificação por Consulta ao Dispositivo — [I]
+ 37.2 Identificação por Consulta ao Dispositivo — [I]
 	Verificação sequencial das fontes
 	Uso em sistemas mais simples
 	Menor eficiência relativa
