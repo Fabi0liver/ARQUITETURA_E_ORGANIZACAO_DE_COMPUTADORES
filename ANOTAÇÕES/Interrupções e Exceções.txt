@@ -877,19 +877,29 @@ PARTE 8 — CONTEXTO, ESTADO DO PROCESSADOR E TRANSFERÊNCIA PARA A ROTINA DE TR
 	  Registrador de status
 	  Registradores de propósito geral
 	  Ponteiro de pilha
+      	  Estado arquitetural do processador
+      	  Informações necessárias para retomada da execução
+      	  Estado de privilégio
+      	  Estado de controle da interrupção
 
   30.1.2 Importância da Preservação do Estado — [P]
 	  Garantia de retomada correta
 	  Consistência da execução
 	  Transparência para o programa interrompido
 
+  30.1.3 Estado Arquitetural e Estado Microarquitetural — [P]
+	  Diferença entre estado arquitetural e microarquitetural
+	  Informações visíveis ao programa
+	  Informações internas não pertencentes ao estado arquitetural
+	  Preservação do estado arquitetural
+	  Descarte do estado microarquitetural durante o tratamento
+	  Relação com exceções precisas
 
- 30.2 Estado Durante o Tratamento — [P]
 
-  30.2.1 Alterações Temporárias no Estado — [P]
-	  Mudança do contador de programa
-	  Atualização do registrador de status
-	  Ativação de novo modo de execução
+ 30.2 Alterações Temporárias no Estado — [P]
+	Mudança do contador de programa
+	Atualização do registrador de status
+	Ativação de novo modo de execução
 
 
 
@@ -902,6 +912,11 @@ PARTE 8 — CONTEXTO, ESTADO DO PROCESSADOR E TRANSFERÊNCIA PARA A ROTINA DE TR
 	  Registrador de status
 	  Registradores relevantes
 	  Endereço de retorno
+	  Informações necessárias para reconstrução do estado arquitetural
+	  Código ou causa do evento
+	  Informações adicionais específicas da exceção
+	  Estado de privilégio
+	  Estado de controle das interrupções
 
   31.1.2 Onde o Contexto é Salvo — [P]
 	  Pilha do sistema
@@ -909,12 +924,14 @@ PARTE 8 — CONTEXTO, ESTADO DO PROCESSADOR E TRANSFERÊNCIA PARA A ROTINA DE TR
 	  Estruturas de controle do sistema operacional
 
 
- 31.2 Restauração de Contexto — [P]
-
-  31.2.1 Processo de Restauração — [P]
-	  Recuperação dos valores salvos
-	  Restauração do contador de programa
-	  Retorno ao modo de execução original
+ 31.2 Processo de Restauração — [P]
+	Recuperação dos valores salvos
+	Restauração do contador de programa
+	Retorno ao modo de execução original
+	Restauração do estado arquitetural
+	Verificação da consistência do contexto
+	Restauração do nível de privilégio
+	Restauração do estado de interrupções
 
 
 
@@ -940,19 +957,24 @@ PARTE 8 — CONTEXTO, ESTADO DO PROCESSADOR E TRANSFERÊNCIA PARA A ROTINA DE TR
 33. Transferência de Controle para a Rotina de Tratamento — [P]
 
  33.1 Mecanismo de Transferência — [P]
+	Redirecionamento do Fluxo de Execução
+	Atualização do contador de programa
+	Desvio para o endereço da rotina
+	Preparação do ambiente de tratamento
+	Determinação do ponto arquitetural de entrada no tratamento
+	Salvamento do endereço de retorno
+	Salvamento da informação necessária para retomada
+	Transferência atômica de controle
 
-  33.1.1 Redirecionamento do Fluxo de Execução — [P]
-	  Atualização do contador de programa
-	  Desvio para o endereço da rotina
-	  Preparação do ambiente de tratamento
 
-
- 33.2 Preparação para o Tratamento — [P]
-
-  33.2.1 Ações Realizadas na Transferência — [P]
-	  Identificação da fonte do evento
-	  Localização do endereço de tratamento
-	  Início da execução da rotina
+ 33.2 Ações Realizadas na Transferência — [P]
+	Identificação da fonte do evento
+	Localização do endereço de tratamento
+	Início da execução da rotina
+	Determinação da causa do evento
+	Determinação do nível de privilégio necessário
+	Alteração do estado de interrupções
+	Preparação do contexto para o handler
 
 
 
@@ -1022,30 +1044,37 @@ PARTE 9 — VETORES, TABELAS DE VETORES E ROTINAS DE TRATAMENTO DE INTERRUPÇÕE
 	  Execução das ações necessárias
 	  Restauração do contexto
 	  Retorno à execução interrompida
+	  Entrada de baixo nível no handler
+	  Salvamento adicional de registradores
+	  Identificação da fonte ou causa
+	  Atendimento imediato do evento
+	  Processamento posterior do evento
+	  Preparação para retorno
 
 
  36.2 Tipos de Rotinas de Tratamento — [P]
-
-  36.2.1 Rotinas Específicas e Genéricas — [P]
-	  Rotinas dedicadas por dispositivo
-	  Rotinas genéricas de despacho
-	  Organização em camadas de tratamento
+	Rotinas dedicadas por dispositivo
+	Rotinas genéricas de despacho
+	Organização em camadas de tratamento
+	Despacho de interrupções
+	Encadeamento de rotinas de tratamento
+	Handler de baixo nível e handler específico
+	Separação entre tratamento imediato e processamento posterior
 
 
 
 37. Identificação da Rotina de Tratamento — [I]
 
- 37.1 Métodos de Identificação — [I]
+ 37.1 Identificação por Vetor — [I]
+	Uso do número do vetor
+	Consulta direta à tabela
+	Rapidez na identificação
 
-  37.1.1 Identificação por Vetor — [I]
-	  Uso do número do vetor
-	  Consulta direta à tabela
-	  Rapidez na identificação
-
-  37.1.2 Identificação por Consulta ao Dispositivo — [I]
-	  Verificação sequencial das fontes
-	  Uso em sistemas mais simples
-	  Menor eficiência relativa
+  
+ 37.1.2 Identificação por Consulta ao Dispositivo — [I]
+	Verificação sequencial das fontes
+	Uso em sistemas mais simples
+	Menor eficiência relativa
 
 
 
@@ -1061,57 +1090,67 @@ PARTE 10 — TRATAMENTO, RETORNO, RECUPERAÇÃO E CONTINUAÇÃO DA EXECUÇÃO
 	  Requisição do evento
 	  Verificação pelo processador
 	  Reconhecimento e aceitação
+	  Verificação de interrupções mascaradas
+	  Verificação de interrupções pendentes
+	  Seleção da interrupção de maior prioridade
+	  Determinação da possibilidade de atendimento
 
   38.1.2 Do Reconhecimento à Execução da Rotina — [P]
 	  Salvamento de contexto
 	  Transferência de controle
 	  Execução da rotina de tratamento
+	  Determinação do vetor
+	  Salvamento do estado arquitetural
+	  Alteração do modo de execução
+	  Preparação do contexto
+	  Transferência para o endereço do handler
 
 
  38.2 Finalização do Ciclo — [P]
-
-  38.2.1 Encerramento do Tratamento — [P]
-	  Restauração do contexto
-	  Retorno ao ponto de interrupção
-	  Continuidade da execução
+	Encerramento do Tratamento
+	Restauração do contexto
+	Retorno ao ponto de interrupção
+	Continuidade da execução
 
 
 
 39. Retorno da Rotina de Tratamento — [P]
 
  39.1 Instrução de Retorno — [P]
+	Finalidade da Instrução de Retorno — [P]
+	Restauração do contador de programa
+	Restauração do registrador de status
+	Retorno ao modo de execução original
+	Restauração do estado arquitetural
+	Restauração do nível de privilégio
+	Restauração do estado das interrupções
+	Restauração do ponto correto de execução
 
-  39.1.1 Finalidade da Instrução de Retorno — [P]
-	  Restauração do contador de programa
-	  Restauração do registrador de status
-	  Retorno ao modo de execução original
 
-
- 39.2 Particularidades do Retorno — [P]
-
-  39.2.1 Diferenças entre Retorno de Interrupção e de Exceção — [P]
-	  Retorno para a instrução seguinte
-	  Retorno para reexecução da instrução
-	  Casos especiais de retorno
+ 39.2 Diferenças entre Retorno de Interrupção e de Exceção — [P]
+	Retorno para a instrução seguinte
+	Retorno para reexecução da instrução
+	Casos especiais de retorno
+	Retorno para reexecução da instrução causadora
+	Retorno para a instrução seguinte
+	Dependência do tipo de evento
+	Dependência da precisão da exceção
 
 
 
 40. Recuperação e Continuação da Execução — [P]
 
  40.1 Recuperação do Estado do Programa — [P]
+	Verificação da Integridade do Estado
+	Consistência dos registradores
+	Consistência da memória
+	Validação antes da continuação
 
-  40.1.1 Verificação da Integridade do Estado — [P]
-	  Consistência dos registradores
-	  Consistência da memória
-	  Validação antes da continuação
 
-
- 40.2 Continuação da Execução — [P]
-
-  40.2.1 Retomada do Fluxo Original — [P]
-	  Prosseguimento normal do programa
-	  Transparência para o programa interrompido
-	  Ausência de efeitos colaterais perceptíveis
+ 40.2 Retomada do Fluxo Original — [P]
+	Prosseguimento normal do programa
+	Transparência para o programa interrompido
+	Ausência de efeitos colaterais perceptíveis
 
 
 
