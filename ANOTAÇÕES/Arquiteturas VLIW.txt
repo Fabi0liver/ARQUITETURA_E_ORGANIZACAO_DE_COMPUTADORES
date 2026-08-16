@@ -918,6 +918,10 @@ PARTE 6 — ESCALONAMENTO ESTÁTICO, COMPILADOR E GERAÇÃO DE CÓDIGO VLIW
 	  Posição no caminho crítico
 	  Número de operações sucessoras
 	  Latência da operação considerada
+	  Priorização pelo caminho crítico
+	  Comprimento do caminho crítico
+	  Operações críticas e não críticas
+	  Impacto da prioridade no resultado do escalonamento
 
 
  28.2 Aplicação do List Scheduling em VLIW — [P]
@@ -931,6 +935,25 @@ PARTE 6 — ESCALONAMENTO ESTÁTICO, COMPILADOR E GERAÇÃO DE CÓDIGO VLIW
 	  Escopo limitado a um único bloco básico
 	  Dificuldade em capturar paralelismo entre blocos
 	  Necessidade de técnicas complementares
+	  Limite mínimo de ciclos imposto pelas dependências
+	  Limite mínimo de ciclos imposto pelos recursos
+	  Diferença entre escalonamento ótimo e heurístico
+	  Conflito entre restrições de dependências e recursos
+
+
+ 28.3 Escalonamento Limitado por Recursos — [P]
+
+  28.3.1 Restrições de Recursos — [P]
+	  Número de unidades funcionais
+	  Número de slots disponíveis
+	  Capacidade de emissão por ciclo
+	  Recursos compartilhados
+
+  28.3.2 Conflito entre Dependências e Recursos — [I]
+	  Operação pronta sem recurso disponível
+	  Recurso disponível sem operação pronta
+	  Impacto no preenchimento dos bundles
+	  Subutilização dos recursos
 
 
 
@@ -955,11 +978,38 @@ PARTE 6 — ESCALONAMENTO ESTÁTICO, COMPILADOR E GERAÇÃO DE CÓDIGO VLIW
 	  Cálculo do Initiation Interval (II)
 	  Escalonamento cíclico das operações
 	  Respeito aos recursos disponíveis por período
+	  Resource-constrained Initiation Interval (ResMII)
+	  Recurrence-constrained Initiation Interval (RecMII)
+	  Limite do Initiation Interval imposto pelos recursos
+	  Limite do Initiation Interval imposto pelas dependências entre iterações
+	  Relação entre ResMII e RecMII
+	  Initiation Interval mínimo teórico
 
   29.2.2 Benefícios e Custos do Software Pipelining — [I]
 	  Maior ocupação dos slots de execução
 	  Aumento do tamanho do código gerado
 	  Complexidade adicional no processo de compilação
+
+
+ 29.3 Exemplo de Software Pipelining — [I]
+
+  29.3.1 Loop Original — [I]
+	  Estrutura do loop
+	  Operações realizadas
+	  Dependências entre operações
+
+  29.3.2 Construção do Pipeline — [I]
+	  Sobreposição de iterações
+	  Determinação do Initiation Interval
+	  Distribuição das operações pelos ciclos
+	  Formação do kernel
+
+  29.3.3 Estrutura da Execução — [I]
+	  Prólogo
+	  Kernel
+	  Epílogo
+	  Ocupação dos slots
+	  Comparação com o loop original
 
 
 
@@ -1000,11 +1050,19 @@ PARTE 6 — ESCALONAMENTO ESTÁTICO, COMPILADOR E GERAÇÃO DE CÓDIGO VLIW
 	  Execução condicional sem uso de desvio
 	  Uso de registradores de predicado
 	  Eliminação de desvios de curta distância
+	  Formação e avaliação das condições predicadas
+	  Registradores de predicado
+	  Ativação condicional de operações
+	  Operações predicadas e não predicadas
 
   31.1.2 Benefícios da Predicação para o VLIW — [P]
 	  Redução de penalidades associadas a desvios
 	  Aumento do paralelismo entre caminhos alternativos
 	  Simplificação do processo de escalonamento
+	  Redução de desvios de curta distância
+	  Trade-off entre predicação e execução de operações desnecessárias
+	  Impacto da predicação na ocupação dos slots
+	  Impacto da predicação no tamanho do código
 
 
  31.2 Especulação Estática — [P]
@@ -1013,6 +1071,10 @@ PARTE 6 — ESCALONAMENTO ESTÁTICO, COMPILADOR E GERAÇÃO DE CÓDIGO VLIW
 	  Antecipação de operações de acesso à memória
 	  Necessidade de mecanismos de verificação
 	  Recuperação em caso de exceção especulativa
+	  Especulação de dependências de memória
+	  Verificação posterior da validade da especulação
+	  Conflitos entre loads especulativos e stores
+	  Recuperação após especulação incorreta
 
   31.2.2 Riscos e Cuidados da Especulação Estática — [I]
 	  Ocorrência de exceções especulativas
@@ -1045,6 +1107,11 @@ PARTE 7 — DEPENDÊNCIAS, HAZARDS, SINCRONIZAÇÃO E LIMITAÇÕES DO VLIW
 	  Representação das operações e suas relações
 	  Base fundamental para o escalonamento
 	  Identificação do caminho crítico do programa
+	  Identificação do caminho crítico
+	  Comprimento do caminho crítico
+	  Dependências intra-iteração
+	  Dependências entre iterações
+	  Impacto das dependências sobre o número mínimo de ciclos
 
   32.2.2 Renomeação Estática de Registradores — [P]
 	  Eliminação de dependências falsas
@@ -1119,6 +1186,10 @@ PARTE 7 — DEPENDÊNCIAS, HAZARDS, SINCRONIZAÇÃO E LIMITAÇÕES DO VLIW
 	  Número de slots visível diretamente ao compilador
 	  Latências expostas na interface arquitetural
 	  Dependência direta do código gerado
+	  Exposição das latências das unidades funcionais
+	  Exposição das restrições de emissão
+	  Dependência do número e tipo de slots
+	  Dependência das características de agrupamento das operações
 
   35.1.2 Impacto em Novas Gerações de Hardware — [I]
 	  Necessidade de recompilação do software
@@ -1198,6 +1269,11 @@ PARTE 8 — MEMÓRIA, CONTROLE E GERENCIAMENTO DA EXECUÇÃO VLIW
 	  Prefetching estático de dados
 	  Escalonamento conservador de operações de load
 	  Uso de hints fornecidos pelo compilador
+	  Antecipação de loads pelo compilador
+	  Escalonamento de operações em função da latência esperada
+	  Software prefetching
+	  Organização das operações para ocultação estática de latência
+	  Limitações do ocultamento estático diante de latências variáveis
 
 
 
@@ -1217,11 +1293,10 @@ PARTE 8 — MEMÓRIA, CONTROLE E GERENCIAMENTO DA EXECUÇÃO VLIW
 
 
  38.2 Coordenação entre Unidade de Controle e Datapath — [I]
-
-  38.2.1 Distribuição das Operações aos Slots — [I]
-	  Encaminhamento direto após a decodificação
-	  Ausência de arbitragem dinâmica de recursos
-	  Papel do bundle já previamente organizado
+	Distribuição das Operações aos Slots
+	Encaminhamento direto após a decodificação
+	Ausência de arbitragem dinâmica de recursos
+	Papel do bundle já previamente organizado
 
 
 
@@ -1246,6 +1321,10 @@ PARTE 8 — MEMÓRIA, CONTROLE E GERENCIAMENTO DA EXECUÇÃO VLIW
 	  Dificuldade de manter estado preciso com execução paralela
 	  Necessidade de mecanismos de recuperação
 	  Impacto direto no projeto do processador
+	  Estado arquitetural no momento da exceção
+	  Relação entre operações simultâneas e estado preciso
+	  Efeitos de operações já iniciadas no mesmo bundle
+	  Recuperação para um estado arquitetural consistente
 
   39.2.2 Estratégias de Tratamento — [V]
 	  Marcação explícita de operações especulativas
@@ -1312,6 +1391,21 @@ PARTE 9 — DESEMPENHO, EFICIÊNCIA, UTILIZAÇÃO E ESCALABILIDADE
 	  Medição do paralelismo efetivo obtido
 	  Comparação com arquiteturas puramente escalares
 	  Limitações inerentes a essa métrica
+	  Eficiência de emissão
+	  Taxa de utilização dos slots
+	  Relação entre slots disponíveis e operações efetivamente emitidas
+	  CPI efetivo
+	  Throughput de operações
+	  Speedup em relação à execução sequencial
+	  Ganho ideal versus ganho real
+
+  
+ 41.3 Eficiência e Desempenho — [I]
+	Relação entre desempenho e largura do bundle
+	Impacto dos slots vazios
+	Impacto das dependências no desempenho
+	Impacto das latências de memória no desempenho
+	Impacto da qualidade do escalonamento no desempenho
 
 
 
@@ -1381,6 +1475,10 @@ PARTE 9 — DESEMPENHO, EFICIÊNCIA, UTILIZAÇÃO E ESCALABILIDADE
 	  Potencial teórico de maior desempenho
 	  Necessidade de maior ILP disponível no código
 	  Diminuição dos retornos com o aumento de slots
+	  Relação entre largura do VLIW e ILP disponível
+	  Limite de ILP explorável pelo código
+	  Subutilização de slots adicionais
+	  Diminuição da eficiência com o aumento da largura
 
   44.1.2 Impacto no Hardware ao Escalar Slots — [I]
 	  Crescimento do banco de registradores necessário
@@ -1394,6 +1492,10 @@ PARTE 9 — DESEMPENHO, EFICIÊNCIA, UTILIZAÇÃO E ESCALABILIDADE
 	  Saturação do paralelismo explorável no código
 	  Subutilização de slots adicionais
 	  Retorno decrescente de desempenho obtido
+	  Limite de paralelismo imposto pelas dependências
+	  Limite de paralelismo imposto pelos recursos
+	  Relação entre largura do processador e paralelismo real
+	  Ponto de saturação do ILP
 
   44.2.2 Limitação pela Complexidade do Compilador — [I]
 	  Aumento do custo do processo de compilação
@@ -1617,6 +1719,9 @@ PARTE 11 — DIFERENÇAS, IMPLEMENTAÇÃO E APLICAÇÕES DAS ARQUITETURAS VLIW
 	  Menor complexidade da lógica de controle
 	  Redução de área e consumo energético
 	  Facilidade relativa de projeto do processador
+	  Redução da lógica de escalonamento dinâmico
+	  Redução de estruturas necessárias para decisão dinâmica
+	  Transferência de complexidade do hardware para o software
 
   52.1.2 Previsibilidade de Execução — [I]
 	  Comportamento determinístico do processador
@@ -1635,6 +1740,10 @@ PARTE 11 — DIFERENÇAS, IMPLEMENTAÇÃO E APLICAÇÕES DAS ARQUITETURAS VLIW
 	  Necessidade de recompilação entre gerações de hardware
 	  Crescimento do tamanho do binário gerado
 	  Sensibilidade a eventos dinâmicos imprevisíveis
+	  Impacto dos slots não utilizados na densidade do código
+	  Impacto de NOPs na eficiência do código
+	  Crescimento do código devido ao paralelismo explícito
+	  Dependência da configuração das unidades funcionais
 
 
 
