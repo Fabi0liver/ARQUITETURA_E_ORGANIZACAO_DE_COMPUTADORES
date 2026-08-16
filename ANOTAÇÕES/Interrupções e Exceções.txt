@@ -1,0 +1,1364 @@
+                              INTERRUPÇÕES E EXCEÇÕES
+
+
+A classificação abaixo indica a profundidade recomendada para cada grande tópico da lista.
+
+[P] Profundidade — estudar mecanismos, estruturas, funcionamento interno e relações entre componentes.
+[I] Intermediário — compreender bem o funcionamento e as relações principais, sem precisar dominar todos os
+   detalhes de implementação.
+[V] Visão geral — saber o que é, para que serve e como se relaciona com Interrupções e Exceções.
+
+
+
+PARTE 1 — FUNDAMENTOS DAS INTERRUPÇÕES E EXCEÇÕES
+
+
+1. Introdução às Interrupções e Exceções — [I]
+
+ 1.1 Conceitos Fundamentais — [I]
+
+  1.1.1 Conceito Geral de Interrupção e Exceção — [I]
+	  Definição geral do mecanismo
+	  Desvio do fluxo normal de execução
+	  Evento assíncrono e evento síncrono
+	  Resposta do processador a eventos
+	  Importância na Organização de Computadores
+
+  1.1.2 Objetivos das Interrupções e Exceções — [I]
+	  Tratamento de eventos externos
+	  Tratamento de erros internos
+	  Comunicação entre hardware e software
+	  Suporte a sistemas operacionais
+	  Controle da execução de programas
+
+
+ 1.2 Interrupções e Exceções na Arquitetura de Computadores — [I]
+
+  1.2.1 Papel no Sistema Computacional — [I]
+	  Resposta a dispositivos de E/S
+	  Resposta a erros de execução
+	  Suporte à multiprogramação
+	  Comunicação processador-periférico
+	  Organização funcional do tratamento
+
+  1.2.2 Relação com Hardware e Software — [I]
+	  Sinalização em hardware
+	  Tratamento em software
+	  Cooperação entre camadas
+	  Papel do sistema operacional
+	  Papel do processador
+
+
+
+2. Evolução Histórica das Interrupções e Exceções — [V]
+
+ 2.1 Origem das Interrupções e Exceções — [V]
+
+  2.1.1 Primeiros Mecanismos de Desvio de Fluxo — [V]
+	  Sistemas sem mecanismo de interrupção
+	  Polling como alternativa inicial
+	  Primeiras interrupções de hardware
+	  Motivação para a criação do mecanismo
+
+  2.1.2 Evolução dos Mecanismos — [V]
+	  Aumento do número de fontes de interrupção
+	  Surgimento dos controladores dedicados
+	  Evolução das exceções de software
+	  Padronização dos vetores de interrupção
+
+
+ 2.2 Importância da Evolução — [V]
+
+  2.2.1 Impactos na Computação Moderna — [V]
+	  Eficiência no uso do processador
+	  Base para sistemas multitarefa
+	  Suporte a sistemas operacionais modernos
+	  Evolução da arquitetura de E/S
+
+
+
+3. Papel das Interrupções e Exceções na Arquitetura de Computadores — [I]
+
+ 3.1 Função Sistêmica — [I]
+
+  3.1.1 Papel no Ciclo de Execução — [I]
+	  Interrupção do ciclo de busca e execução
+	  Desvio temporário de fluxo
+	  Retorno ao ponto de execução
+	  Preservação do estado do programa
+
+  3.1.2 Papel na Comunicação com Periféricos — [I]
+	  Sinalização de eventos de E/S
+	  Redução do desperdício de ciclos de processador
+	  Substituição do polling
+	  Eficiência na comunicação processador-periférico
+
+
+ 3.2 Papel no Suporte a Sistemas Operacionais — [I]
+
+  3.2.1 Base para Multiprogramação — [I]
+	  Troca de contexto entre processos
+	  Escalonamento de tarefas
+	  Chamadas de sistema
+	  Gerência de recursos compartilhados
+
+  3.2.2 Base para Tratamento de Erros — [I]
+	  Detecção de erros de execução
+	  Proteção do sistema
+	  Recuperação de falhas
+	  Encerramento controlado de processos
+
+
+
+4. Terminologia e Conceitos Correlatos — [I]
+
+ 4.1 Termos Fundamentais — [I]
+
+  4.1.1 Terminologia Básica — [I]
+	  Interrupção (Interrupt)
+	  Exceção (Exception)
+	  Trap
+	  Fault
+	  Abort
+	  Handler (rotina de tratamento)
+
+  4.1.2 Conceitos Relacionados — [I]
+	  Vetor de interrupção
+	  Prioridade de atendimento
+	  Mascaramento
+	  Contexto de execução
+	  Modo de operação do processador
+
+
+ 4.2 Conceitos de Apoio — [I]
+
+  4.2.1 Conceitos de Hardware Envolvidos — [I]
+	  Registrador de status
+	  Contador de programa (PC)
+	  Pilha (Stack)
+	  Linhas de requisição de interrupção
+
+  4.2.2 Conceitos de Software Envolvidos — [I]
+	  Sistema operacional
+	  Chamadas de sistema
+	  Drivers de dispositivo
+	  Escalonador de processos
+
+
+
+
+PARTE 2 — CONCEITOS, CARACTERÍSTICAS E DIFERENÇAS ENTRE INTERRUPÇÕES E EXCEÇÕES
+
+
+5. Conceito de Interrupção — [P]
+
+ 5.1 Definição e Natureza — [P]
+
+  5.1.1 Definição de Interrupção — [P]
+	  Evento assíncrono externo ou interno
+	  Independência do programa em execução
+	  Sinal enviado ao processador
+	  Interrupção do fluxo sequencial
+
+  5.1.2 Natureza Assíncrona da Interrupção — [P]
+	  Ocorrência a qualquer momento
+	  Independência do ciclo de instrução
+	  Imprevisibilidade temporal
+	  Necessidade de sincronização com o processador
+
+
+ 5.2 Características da Interrupção — [P]
+
+  5.2.1 Propriedades Gerais — [P]
+	  Origem externa predominante
+	  Relação com dispositivos de E/S
+	  Possibilidade de mascaramento
+	  Retomada da execução original
+
+  5.2.2 Finalidade da Interrupção — [P]
+	  Atendimento a eventos externos
+	  Sinalização de conclusão de operação
+	  Comunicação processador-periférico
+	  Redução da espera ativa
+
+
+
+6. Conceito de Exceção — [P]
+
+ 6.1 Definição e Natureza — [P]
+
+  6.1.1 Definição de Exceção — [P]
+	  Evento síncrono gerado pela execução
+	  Relação direta com a instrução corrente
+	  Resposta a condições anômalas ou especiais
+	  Interrupção do fluxo pela própria execução
+
+  6.1.2 Natureza Síncrona da Exceção — [P]
+	  Ocorrência vinculada à instrução
+	  Previsibilidade quanto à origem
+	  Repetibilidade sob as mesmas condições
+	  Dependência do fluxo do programa
+
+
+ 6.2 Características da Exceção — [P]
+
+  6.2.1 Propriedades Gerais — [P]
+	  Origem interna ao processador
+	  Relação com erros e condições especiais
+	  Impossibilidade de mascaramento em muitos casos
+	  Necessidade de tratamento imediato
+
+  6.2.2 Finalidade da Exceção — [P]
+	  Detecção de erros de execução
+	  Suporte a chamadas de sistema
+	  Depuração e controle de execução
+	  Proteção do sistema
+
+
+
+7. Diferenças Fundamentais entre Interrupções e Exceções — [P]
+
+ 7.1 Critérios de Distinção — [P]
+
+  7.1.1 Origem do Evento — [P]
+	  Origem externa nas interrupções
+	  Origem interna nas exceções
+	  Relação com o hardware periférico
+	  Relação com a instrução em execução
+
+  7.1.2 Sincronismo do Evento — [P]
+	  Assincronismo das interrupções
+	  Sincronismo das exceções
+	  Relação com o ciclo de instrução
+	  Previsibilidade da ocorrência
+	  Relação entre sincronismo e ponto arquitetural de ocorrência
+	  Determinação do ponto exato de ocorrência do evento
+	  Diferença entre evento síncrono e evento assíncrono
+	  Consequências do sincronismo para o salvamento do estado
+
+
+ 7.2 Comparação de Comportamentos — [P]
+
+  7.2.1 Momento de Tratamento — [P]
+	  Tratamento entre instruções nas interrupções
+	  Tratamento durante a instrução nas exceções
+	  Ponto de retorno da execução
+	  Reexecução da instrução em certas exceções
+      	  Precisão do ponto de interrupção
+      	  Estado arquitetural no momento do tratamento
+      	  Relação entre instrução causadora e ponto de retorno
+
+  7.2.2 Possibilidade de Mascaramento — [P]
+	  Interrupções mascaráveis
+	  Interrupções não mascaráveis
+	  Exceções não mascaráveis por natureza
+	  Consequências do mascaramento
+
+
+
+8. Características Gerais dos Eventos de Desvio de Fluxo — [I]
+
+ 8.1 Elementos Comuns — [I]
+
+  8.1.1 Semelhanças entre Interrupções e Exceções — [I]
+	  Desvio do fluxo normal de execução
+	  Necessidade de salvamento de contexto
+	  Uso de rotina de tratamento
+	  Retorno à execução normal
+
+  8.1.2 Uso de Mecanismos Compartilhados — [I]
+	  Vetores de desvio
+	  Registradores de estado
+	  Pilha para salvamento de contexto
+	  Mudança de modo de execução
+
+
+ 8.2 Classificação Unificada — [I]
+
+  8.2.1 Visão Geral de Classificação — [I]
+	  Classificação quanto à origem
+	  Classificação quanto ao sincronismo
+	  Classificação quanto à possibilidade de recuperação
+	  Classificação quanto à prioridade
+
+
+
+
+PARTE 3 — INTERRUPÇÕES: ORIGEM, CLASSIFICAÇÃO E TIPOS
+
+
+9. Origem das Interrupções — [P]
+
+ 9.1 Fontes de Interrupção — [P]
+
+  9.1.1 Interrupções Originadas em Dispositivos de E/S — [P]
+	  Teclado e periféricos de entrada
+	  Dispositivos de armazenamento
+	  Interfaces de rede
+	  Temporizadores (timers)
+
+  9.1.2 Interrupções Originadas no Processador ou Sistema — [P]
+	  Interrupções geradas por software
+	  Interrupções entre processadores
+	  Interrupções de temporização interna
+	  Sinais de controle do sistema
+
+
+ 9.2 Caminho do Sinal de Interrupção — [P]
+
+  9.2.1 Da Origem até o Processador — [P]
+	  Linha de requisição de interrupção
+	  Controlador de interrupção
+	  Chegada do sinal ao processador
+	  Verificação pelo processador
+
+
+
+10. Classificação das Interrupções Quanto à Origem — [P]
+
+ 10.1 Interrupções Internas e Externas — [P]
+
+  10.1.1 Interrupções Externas — [P]
+	  Origem em dispositivos periféricos
+	  Independência do programa em execução
+	  Exemplos de eventos externos
+
+  10.1.2 Interrupções Internas — [P]
+	  Origem em componentes internos do sistema
+	  Temporizadores internos
+	  Sinalizações do próprio processador
+
+
+ 10.2 Interrupções Mascaráveis e Não Mascaráveis — [P]
+
+  10.2.1 Interrupções Mascaráveis — [P]
+	  Possibilidade de bloqueio temporário
+	  Controle pelo sistema operacional
+	  Uso de bit de habilitação
+
+  10.2.2 Interrupções Não Mascaráveis — [P]
+	  Impossibilidade de bloqueio
+	  Eventos críticos do sistema
+	  Exemplos de uso em falhas graves
+
+
+
+11. Interrupções de Hardware — [P]
+
+ 11.1 Fundamentos das Interrupções de Hardware — [P]
+
+  11.1.1 Conceito de Interrupção de Hardware — [P]
+	  Sinal elétrico de requisição
+	  Origem em dispositivo físico
+	  Comunicação direta com o processador
+
+  11.1.2 Tipos de Interrupções de Hardware — [P]
+	  Interrupções de E/S
+	  Interrupções de temporizador
+	  Interrupções entre processadores (IPI)
+	  Interrupções de barramento
+
+
+ 11.2 Funcionamento das Interrupções de Hardware — [P]
+
+  11.2.1 Requisição e Sinalização — [P]
+	  Ativação da linha de interrupção
+	  Envio do sinal ao controlador
+	  Encaminhamento ao processador
+
+  11.2.2 Papel do Controlador de Interrupções — [P]
+	  Centralização das requisições
+	  Priorização das interrupções
+	  Encaminhamento organizado ao processador
+
+
+
+12. Interrupções de Software — [P]
+
+ 12.1 Fundamentos das Interrupções de Software — [P]
+
+  12.1.1 Conceito de Interrupção de Software — [P]
+	  Geração por instrução específica
+	  Uso para chamadas de sistema
+	  Diferença em relação às interrupções de hardware
+
+  12.1.2 Finalidade das Interrupções de Software — [P]
+	  Solicitação de serviços do sistema operacional
+	  Depuração de programas
+	  Transição controlada de modo de execução
+
+
+ 12.2 Funcionamento das Interrupções de Software — [P]
+
+  12.2.1 Instruções Geradoras de Interrupção — [P]
+	  Instrução de chamada de sistema (syscall)
+	  Instrução de interrupção explícita (INT)
+	  Efeito da execução da instrução
+
+  12.2.2 Relação com Exceções — [P]
+	  Semelhança operacional com exceções
+	  Natureza síncrona da interrupção de software
+	  Distinção conceitual mantida pela literatura
+
+
+
+13. Tipos Especiais de Interrupções — [I]
+
+ 13.1 Interrupções entre Processadores — [I]
+
+  13.1.1 Interprocessor Interrupts (IPI) — [I]
+	  Comunicação entre núcleos ou processadores
+	  Sincronização de tarefas
+	  Uso em sistemas multiprocessados
+
+
+ 13.2 Outras Interrupções Especiais — [I]
+
+  13.2.1 Interrupções por Temporizador — [I]
+	  Geração periódica de sinais
+	  Uso no escalonamento de processos
+	  Base do relógio do sistema
+
+  13.2.2 Interrupções Espúrias — [I]
+	  Definição de interrupção espúria
+	  Causas de ocorrência
+	  Tratamento pelo sistema
+
+
+
+
+PARTE 4 — EXCEÇÕES: ORIGEM, CLASSIFICAÇÃO E TIPOS
+
+
+14. Origem das Exceções — [P]
+
+ 14.1 Fontes de Exceção — [P]
+
+  14.1.1 Exceções Originadas na Execução de Instruções — [P]
+	  Operações aritméticas inválidas
+	  Instruções inválidas ou não implementadas
+	  Violações de acesso à memória
+	  Erros de operando
+
+  14.1.2 Exceções Originadas no Sistema — [P]
+	  Chamadas de sistema explícitas
+	  Eventos de depuração
+	  Falhas de memória virtual
+
+
+ 14.2 Caminho de Geração da Exceção — [P]
+
+  14.2.1 Detecção Interna pelo Processador — [P]
+	  Verificação durante a decodificação
+	  Verificação durante a execução
+	  Sinalização interna do evento
+
+
+
+15. Classificação das Exceções Quanto ao Momento — [P]
+
+ 15.1 Exceções Precisas e Imprecisas — [P]
+
+  15.1.1 Exceções Precisas — [P]
+	  Estado bem definido no momento da exceção
+	  Facilidade de recuperação
+	  Importância em pipelines
+	  Estado arquitetural preciso
+	  Ponto arquitetural da exceção
+	  Instruções anteriores já efetivadas
+	  Instruções posteriores ainda não efetivadas
+	  Consistência do estado arquitetural
+	  Condições necessárias para recuperação precisa
+
+  15.1.2 Exceções Imprecisas — [P]
+	  Estado impreciso no momento da exceção
+	  Dificuldade de recuperação
+	  Ocorrência em pipelines complexos
+
+
+ 15.2 Exceções Quanto ao Retorno da Execução — [P]
+
+  15.2.1 Exceções com Reexecução da Instrução — [P]
+	  Correção da condição causadora
+	  Repetição da instrução original
+	  Exemplos típicos
+
+  15.2.2 Exceções com Continuação após a Instrução — [P]
+	  Instrução considerada concluída
+	  Continuação na instrução seguinte
+	  Exemplos típicos
+	  Estado arquitetural parcialmente definido
+	  Dificuldade de determinar a instrução causadora
+	  Instruções em diferentes estágios de execução
+	  Limitações para recuperação do estado
+
+
+
+16. Faults (Falhas) — [P]
+
+ 16.1 Conceito de Fault — [P]
+
+  16.1.1 Definição de Fault — [P]
+	  Condição detectada antes da conclusão da instrução
+	  Possibilidade de correção
+	  Reexecução da instrução após tratamento
+
+  16.1.2 Exemplos Comuns de Fault — [P]
+	  Falta de página (page fault)
+	  Violação de proteção de memória
+	  Divisão por zero
+
+
+ 16.2 Tratamento de Faults — [P]
+
+  16.2.1 Fluxo de Tratamento — [P]
+	  Suspensão da instrução corrente
+	  Execução da rotina de tratamento
+	  Retorno para reexecução
+
+
+
+17. Traps (Armadilhas) — [P]
+
+ 17.1 Conceito de Trap — [P]
+
+  17.1.1 Definição de Trap — [P]
+	  Evento intencional gerado por instrução
+	  Uso para chamadas de sistema
+	  Uso em depuração
+
+  17.1.2 Exemplos Comuns de Trap — [P]
+	  Chamada de sistema (syscall/trap)
+	  Breakpoint de depuração
+	  Instrução de interrupção de software
+
+
+ 17.2 Tratamento de Traps — [P]
+
+  17.2.1 Fluxo de Tratamento — [P]
+	  Conclusão da instrução geradora
+	  Transferência para a rotina de tratamento
+	  Continuação na instrução seguinte
+
+
+
+18. Aborts e Erros Fatais — [I]
+
+ 18.1 Conceito de Abort — [I]
+
+  18.1.1 Definição de Abort — [I]
+	  Erro grave e não recuperável
+	  Impossibilidade de continuar a execução
+	  Necessidade de intervenção do sistema
+
+  18.1.2 Exemplos Comuns de Abort — [I]
+	  Erro de hardware grave
+	  Corrupção de dados internos
+	  Falhas duplas (double fault)
+
+
+ 18.2 Consequências dos Aborts — [I]
+
+  18.2.1 Tratamento pelo Sistema — [I]
+	  Encerramento do processo ou do sistema
+	  Registro do erro para diagnóstico
+	  Reinicialização quando necessário
+
+
+
+
+PARTE 5 — MECANISMOS DE DETECÇÃO, SINALIZAÇÃO E GERAÇÃO DE INTERRUPÇÕES E EXCEÇÕES
+
+
+19. Detecção de Eventos de Interrupção e Exceção — [P]
+
+ 19.1 Detecção de Interrupções — [P]
+
+  19.1.1 Verificação ao Final do Ciclo de Instrução — [P]
+	  Momento de verificação
+	  Consulta às linhas de requisição
+	  Consulta ao controlador de interrupções
+
+
+ 19.2 Detecção de Exceções — [P]
+
+  19.2.1 Verificação Durante a Execução da Instrução — [P]
+	  Verificação durante a busca
+	  Verificação durante a decodificação
+	  Verificação durante a execução
+
+
+
+20. Sinalização e Requisição de Interrupção (IRQ) — [P]
+
+ 20.1 Linhas de Requisição de Interrupção — [P]
+
+  20.1.1 Conceito de IRQ — [P]
+	  Linha física de sinalização
+	  Identificação da fonte da interrupção
+	  Associação a um número de IRQ
+
+  20.1.2 Organização das Linhas de IRQ — [P]
+	  Múltiplas linhas dedicadas
+	  Linha compartilhada com identificação
+	  Uso de barramentos de interrupção
+	  Interrupções sensíveis a nível (level-triggered)
+	  Interrupções sensíveis a borda (edge-triggered)
+	  Diferenças entre disparo por nível e por borda
+	  Vantagens e limitações de cada mecanismo
+	  Comportamento do sinal durante o atendimento
+	  Relação entre tipo de disparo e interrupções compartilhadas
+	  Interrupções compartilhadas
+	  Identificação da fonte em linhas compartilhadas
+	  Consulta aos dispositivos para identificação da origem
+	  Limitações e desafios das IRQs compartilhadas
+
+
+ 20.2 Papel do Controlador na Requisição — [P]
+	Recebimento das requisições
+	Organização por prioridade
+	Encaminhamento ao processador
+	Estado pendente da interrupção
+	Registro de interrupções pendentes
+	Manutenção da requisição até o atendimento
+	Múltiplas interrupções pendentes
+	Seleção da interrupção pendente de maior prioridade
+	Atendimento posterior de interrupções mascaradas
+
+
+
+21. Geração de Exceções pelo Processador — [P]
+
+ 21.1 Mecanismo Interno de Geração — [P]
+
+  21.1.1 Sinalização Interna da Condição — [P]
+	  Ativação de sinal interno de exceção
+	  Identificação do tipo de exceção
+	  Registro da causa da exceção
+
+
+ 21.2 Relação com o Ciclo de Instrução — [P]
+
+  21.2.1 Momento da Geração — [P]
+	  Geração durante a busca
+	  Geração durante a decodificação
+	  Geração durante a execução ou escrita
+
+
+
+22. Registradores e Sinais Envolvidos — [I]
+
+ 22.1 Registradores de Controle — [I]
+
+  22.1.1 Registrador de Status — [I]
+	  Indicação de interrupções pendentes
+	  Indicação do estado de habilitação
+	  Flags relacionadas a exceções
+
+  22.1.2 Registrador de Causa — [I]
+	  Identificação da causa da interrupção ou exceção
+	  Uso pela rotina de tratamento
+	  Suporte à decisão de tratamento
+	  Código da causa da exceção
+	  Código da interrupção
+	  Identificação da instrução causadora
+	  Endereço associado ao evento
+	  Informações adicionais de diagnóstico
+	  Informações específicas da causa da exceção
+
+
+ 22.2 Sinais Envolvidos no Processo — [I]
+	Sinal de requisição
+	Sinal de reconhecimento
+	Sinal de habilitação/desabilitação
+	Sinal de interrupção pendente
+	Sinal de reconhecimento de interrupção
+	Sinal de exceção interna
+	Sinais de entrada e saída do controlador
+	Sinais de controle da transferência para o handler
+
+
+
+
+PARTE 6 — REQUISIÇÃO, RECONHECIMENTO, PRIORIDADE E ARBITRAGEM DE INTERRUPÇÕES
+
+
+23. Reconhecimento de Interrupções pelo Processador — [P]
+
+ 23.1 Processo de Reconhecimento — [P]
+
+  23.1.1 Verificação ao Final da Instrução — [P]
+	  Consulta ao estado de interrupções pendentes
+	  Verificação do bit de habilitação
+	  Decisão de atendimento
+
+  23.1.2 Envio do Sinal de Reconhecimento — [P]
+	  Confirmação ao controlador
+	  Identificação da interrupção aceita
+	  Início do atendimento
+
+
+ 23.2 Consequências do Reconhecimento — [P]
+
+  23.2.1 Início da Transferência de Controle — [P]
+	  Suspensão da execução corrente
+	  Preparação para o tratamento
+	  Encaminhamento à rotina correspondente
+
+
+
+24. Prioridade de Interrupções — [P]
+
+ 24.1 Conceito de Prioridade — [P]
+
+  24.1.1 Necessidade de Priorização — [P]
+	  Múltiplas requisições simultâneas
+	  Diferença de criticidade entre eventos
+	  Ordenação do atendimento
+
+  24.1.2 Níveis de Prioridade — [P]
+	  Prioridade fixa
+	  Prioridade programável
+	  Hierarquia de níveis
+
+
+ 24.2 Critérios de Definição de Prioridade — [P]
+
+  24.2.1 Fatores Considerados — [P]
+	  Criticidade do evento
+	  Tempo de resposta exigido
+	  Política definida pelo sistema
+
+
+
+25. Arbitragem entre Múltiplas Interrupções — [P]
+
+ 25.1 Conceito de Arbitragem — [P]
+
+  25.1.1 Necessidade de Arbitragem — [P]
+	  Concorrência entre requisições
+	  Definição de ordem de atendimento
+	  Evitar conflitos de acesso
+
+
+ 25.2 Métodos de Arbitragem — [P]
+
+  25.2.1 Arbitragem por Hardware — [P]
+	  Circuitos dedicados de prioridade
+	  Arbitragem em cadeia (daisy chain)
+	  Arbitragem centralizada
+
+  25.2.2 Arbitragem por Software — [P]
+	  Verificação sequencial por rotina
+	  Consulta a registradores de status
+	  Flexibilidade de reconfiguração
+
+
+
+26. Controladores de Interrupção — [P]
+
+ 26.1 Fundamentos dos Controladores de Interrupção — [P]
+
+  26.1.1 Conceito e Finalidade — [P]
+	  Centralização das requisições
+	  Gerenciamento de prioridades
+	  Interface entre dispositivos e processador
+
+  26.1.2 Organização Interna — [P]
+	  Registro de requisições pendentes
+	  Registro de máscara
+	  Lógica de priorização
+	  Registro de interrupções pendentes
+	  Registro de interrupções em serviço
+	  Registro de máscara
+	  Lógica de detecção de novas requisições
+	  Lógica de seleção da interrupção de maior prioridade
+
+
+ 26.2 Exemplos de Controladores — [P]
+
+  26.2.1 Controladores Programáveis — [P]
+	  Configuração de prioridades
+	  Configuração de máscaras
+	  Suporte a múltiplas fontes
+
+  26.2.2 Controladores Avançados — [P]
+	  Suporte a múltiplos processadores
+	  Distribuição de interrupções
+	  Escalabilidade do controlador
+	  Distribuição de interrupções entre processadores
+	  Afinidade de interrupções
+	  Redirecionamento de interrupções
+	  Balanceamento da carga de interrupções
+
+
+
+
+PARTE 7 — MASCARAMENTO, HABILITAÇÃO, DESABILITAÇÃO E CONTROLE DE INTERRUPÇÕES
+
+
+27. Mascaramento de Interrupções — [P]
+
+ 27.1 Conceito de Mascaramento — [P]
+
+  27.1.1 Definição e Finalidade — [P]
+	  Bloqueio temporário de atendimento
+	  Proteção de seções críticas
+	  Controle pelo sistema
+
+  27.1.2 Mecanismos de Mascaramento — [P]
+	  Bit de máscara individual
+	  Máscara global
+	  Máscara por nível de prioridade
+
+
+ 27.2 Efeitos do Mascaramento — [P]
+
+  27.2.1 Consequências Operacionais — [P]
+	  Retenção da interrupção pendente
+	  Atendimento posterior ao desmascaramento
+	  Risco de perda em casos específicos
+
+
+
+28. Habilitação e Desabilitação de Interrupções — [P]
+
+ 28.1 Controle de Habilitação — [P]
+
+  28.1.1 Bit de Habilitação Global — [P]
+	  Ativação e desativação geral
+	  Uso em seções críticas do sistema
+	  Proteção de operações atômicas
+
+  28.1.2 Instruções de Controle — [P]
+	  Instrução de habilitação
+	  Instrução de desabilitação
+	  Efeito imediato sobre o processador
+
+
+ 28.2 Boas Práticas de Uso — [P]
+
+  28.2.1 Cuidados no Uso do Mecanismo — [P]
+	  Minimização do tempo desabilitado
+	  Prevenção de perda de eventos
+	  Reabilitação apropriada
+
+
+
+29. Interrupções Não Mascaráveis (NMI) — [I]
+
+ 29.1 Conceito de NMI — [I]
+
+  29.1.1 Definição de Interrupção Não Mascarável — [I]
+	  Impossibilidade de bloqueio pelo sistema
+	  Prioridade máxima de atendimento
+	  Uso restrito a eventos críticos
+
+
+ 29.2 Aplicações da NMI — [I]
+
+  29.2.1 Situações de Uso — [I]
+	  Falhas graves de hardware
+	  Watchdog timers
+	  Eventos de segurança crítica
+
+
+
+
+PARTE 8 — CONTEXTO, ESTADO DO PROCESSADOR E TRANSFERÊNCIA PARA A ROTINA DE TRATAMENTO
+
+
+30. Estado do Processador Durante Interrupções e Exceções — [P]
+
+ 30.1 Componentes do Estado — [P]
+
+  30.1.1 Elementos que Compõem o Estado — [P]
+	  Contador de programa
+	  Registrador de status
+	  Registradores de propósito geral
+	  Ponteiro de pilha
+
+  30.1.2 Importância da Preservação do Estado — [P]
+	  Garantia de retomada correta
+	  Consistência da execução
+	  Transparência para o programa interrompido
+
+
+ 30.2 Estado Durante o Tratamento — [P]
+
+  30.2.1 Alterações Temporárias no Estado — [P]
+	  Mudança do contador de programa
+	  Atualização do registrador de status
+	  Ativação de novo modo de execução
+
+
+
+31. Salvamento e Restauração de Contexto — [P]
+
+ 31.1 Salvamento de Contexto — [P]
+
+  31.1.1 O Que é Salvo — [P]
+	  Contador de programa
+	  Registrador de status
+	  Registradores relevantes
+	  Endereço de retorno
+
+  31.1.2 Onde o Contexto é Salvo — [P]
+	  Pilha do sistema
+	  Registradores dedicados
+	  Estruturas de controle do sistema operacional
+
+
+ 31.2 Restauração de Contexto — [P]
+
+  31.2.1 Processo de Restauração — [P]
+	  Recuperação dos valores salvos
+	  Restauração do contador de programa
+	  Retorno ao modo de execução original
+
+
+
+32. Mudança de Modo de Execução — [P]
+
+ 32.1 Modos de Operação do Processador — [P]
+
+  32.1.1 Modo Usuário e Modo Supervisor — [P]
+	  Privilégios do modo usuário
+	  Privilégios do modo supervisor (kernel)
+	  Necessidade de separação de modos
+
+
+ 32.2 Transição entre Modos — [P]
+
+  32.2.1 Processo de Mudança de Modo — [P]
+	  Elevação de privilégio no tratamento
+	  Retorno ao modo original
+	  Proteção do sistema durante a transição
+
+
+
+33. Transferência de Controle para a Rotina de Tratamento — [P]
+
+ 33.1 Mecanismo de Transferência — [P]
+
+  33.1.1 Redirecionamento do Fluxo de Execução — [P]
+	  Atualização do contador de programa
+	  Desvio para o endereço da rotina
+	  Preparação do ambiente de tratamento
+
+
+ 33.2 Preparação para o Tratamento — [P]
+
+  33.2.1 Ações Realizadas na Transferência — [P]
+	  Identificação da fonte do evento
+	  Localização do endereço de tratamento
+	  Início da execução da rotina
+
+
+
+
+PARTE 9 — VETORES, TABELAS DE VETORES E ROTINAS DE TRATAMENTO DE INTERRUPÇÕES E EXCEÇÕES
+
+
+34. Vetores de Interrupção e Exceção — [P]
+
+ 34.1 Conceito de Vetor — [P]
+
+  34.1.1 Definição de Vetor de Interrupção — [P]
+	  Endereço da rotina de tratamento
+	  Associação a um evento específico
+	  Papel na transferência de controle
+
+  34.1.2 Organização dos Vetores — [P]
+	  Numeração dos vetores
+	  Correspondência entre evento e vetor
+	  Reserva de vetores do sistema
+
+
+ 34.2 Determinação do Vetor — [P]
+
+  34.2.1 Métodos de Determinação — [P]
+	  Vetor fixo por tipo de evento
+	  Vetor fornecido pelo dispositivo
+	  Cálculo baseado na fonte
+
+
+
+35. Tabelas de Vetores de Interrupção — [P]
+
+ 35.1 Estrutura da Tabela de Vetores — [P]
+
+  35.1.1 Organização da Tabela — [P]
+	  Posição de cada vetor
+	  Endereço base da tabela
+	  Tamanho e limites da tabela
+
+  35.1.2 Conteúdo das Entradas — [P]
+	  Endereço da rotina de tratamento
+	  Atributos de segmento ou privilégio
+	  Informações adicionais de controle
+
+
+ 35.2 Acesso à Tabela de Vetores — [P]
+
+  35.2.1 Processo de Consulta — [P]
+	  Indexação pela identificação do evento
+	  Leitura da entrada correspondente
+	  Encaminhamento à rotina indicada
+
+
+
+36. Rotinas de Tratamento (Handlers) — [P]
+
+ 36.1 Conceito de Rotina de Tratamento — [P]
+
+  36.1.1 Definição e Finalidade — [P]
+	  Código responsável pelo tratamento do evento
+	  Execução em modo privilegiado
+	  Especialização por tipo de evento
+
+  36.1.2 Estrutura Geral de uma Rotina — [P]
+	  Identificação da causa
+	  Execução das ações necessárias
+	  Restauração do contexto
+	  Retorno à execução interrompida
+
+
+ 36.2 Tipos de Rotinas de Tratamento — [P]
+
+  36.2.1 Rotinas Específicas e Genéricas — [P]
+	  Rotinas dedicadas por dispositivo
+	  Rotinas genéricas de despacho
+	  Organização em camadas de tratamento
+
+
+
+37. Identificação da Rotina de Tratamento — [I]
+
+ 37.1 Métodos de Identificação — [I]
+
+  37.1.1 Identificação por Vetor — [I]
+	  Uso do número do vetor
+	  Consulta direta à tabela
+	  Rapidez na identificação
+
+  37.1.2 Identificação por Consulta ao Dispositivo — [I]
+	  Verificação sequencial das fontes
+	  Uso em sistemas mais simples
+	  Menor eficiência relativa
+
+
+
+
+PARTE 10 — TRATAMENTO, RETORNO, RECUPERAÇÃO E CONTINUAÇÃO DA EXECUÇÃO
+
+
+38. Ciclo Completo de Tratamento de Interrupção — [P]
+
+ 38.1 Etapas do Ciclo — [P]
+
+  38.1.1 Da Requisição ao Reconhecimento — [P]
+	  Requisição do evento
+	  Verificação pelo processador
+	  Reconhecimento e aceitação
+
+  38.1.2 Do Reconhecimento à Execução da Rotina — [P]
+	  Salvamento de contexto
+	  Transferência de controle
+	  Execução da rotina de tratamento
+
+
+ 38.2 Finalização do Ciclo — [P]
+
+  38.2.1 Encerramento do Tratamento — [P]
+	  Restauração do contexto
+	  Retorno ao ponto de interrupção
+	  Continuidade da execução
+
+
+
+39. Retorno da Rotina de Tratamento — [P]
+
+ 39.1 Instrução de Retorno — [P]
+
+  39.1.1 Finalidade da Instrução de Retorno — [P]
+	  Restauração do contador de programa
+	  Restauração do registrador de status
+	  Retorno ao modo de execução original
+
+
+ 39.2 Particularidades do Retorno — [P]
+
+  39.2.1 Diferenças entre Retorno de Interrupção e de Exceção — [P]
+	  Retorno para a instrução seguinte
+	  Retorno para reexecução da instrução
+	  Casos especiais de retorno
+
+
+
+40. Recuperação e Continuação da Execução — [P]
+
+ 40.1 Recuperação do Estado do Programa — [P]
+
+  40.1.1 Verificação da Integridade do Estado — [P]
+	  Consistência dos registradores
+	  Consistência da memória
+	  Validação antes da continuação
+
+
+ 40.2 Continuação da Execução — [P]
+
+  40.2.1 Retomada do Fluxo Original — [P]
+	  Prosseguimento normal do programa
+	  Transparência para o programa interrompido
+	  Ausência de efeitos colaterais perceptíveis
+
+
+
+
+PARTE 11 — INTERRUPÇÕES E EXCEÇÕES EM DIFERENTES ORGANIZAÇÕES E ARQUITETURAS DE PROCESSADORES
+
+
+41. Interrupções e Exceções em Arquiteturas CISC — [I]
+
+ 41.1 Características Gerais — [I]
+
+  41.1.1 Tratamento em Arquiteturas CISC — [I]
+	  Instruções complexas e de múltiplos ciclos
+	  Maior dificuldade de precisão
+	  Mecanismos de microcódigo no tratamento
+
+
+
+42. Interrupções e Exceções em Arquiteturas RISC — [I]
+
+ 42.1 Características Gerais — [I]
+
+  42.1.1 Tratamento em Arquiteturas RISC — [I]
+	  Instruções simples e uniformes
+	  Maior facilidade de precisão
+	  Tratamento simplificado por hardware
+
+
+
+43. Interrupções e Exceções em Sistemas com Pipeline — [P]
+
+ 43.1 Desafios em Sistemas com Pipeline — [P]
+
+  43.1.1 Impacto do Pipeline no Tratamento — [P]
+	  Múltiplas instruções em estágios diferentes
+	  Dificuldade de definir o ponto exato de interrupção
+	  Necessidade de precisão da exceção
+
+  43.1.2 Exceções Precisas em Pipelines — [P]
+	  Técnicas para garantir precisão
+	  Conclusão ordenada das instruções
+	  Tratamento de instruções em andamento
+
+
+ 43.2 Estratégias de Tratamento em Pipeline — [P]
+
+  43.2.1 Mecanismos Utilizados — [P]
+	  Descarte de instruções subsequentes
+	  Conclusão ordenada (in-order commit)
+	  Sinalização de exceção por estágio
+
+
+
+44. Interrupções e Exceções em Sistemas Multiprocessados — [I]
+
+ 44.1 Particularidades em Multiprocessamento — [I]
+
+  44.1.1 Interrupções entre Processadores — [I]
+	  Comunicação e sincronização entre núcleos
+	  Distribuição de interrupções
+	  Coordenação do tratamento
+
+  44.1.2 Desafios de Coerência — [I]
+	  Consistência do estado entre processadores
+	  Sincronização de tratamento
+	  Complexidade adicional do controlador
+
+
+
+
+PARTE 12 — DESEMPENHO, LATÊNCIA, PRIORIDADES, INTERRUPÇÕES ANINHADAS E OTIMIZAÇÃO DO TRATAMENTO
+
+
+45. Latência de Interrupção — [P]
+
+ 45.1 Conceito de Latência — [P]
+
+  45.1.1 Definição de Latência de Interrupção — [P]
+	  Tempo entre requisição e atendimento
+	  Fatores que influenciam a latência
+	  Importância em sistemas de tempo real
+
+
+ 45.2 Fatores que Afetam a Latência — [P]
+
+  45.2.1 Elementos Influentes — [P]
+	  Tempo de conclusão da instrução corrente
+	  Tempo de salvamento de contexto
+	  Sobrecarga do controlador de interrupções
+
+
+
+46. Interrupções Aninhadas — [P]
+
+ 46.1 Conceito de Aninhamento — [P]
+
+  46.1.1 Definição de Interrupção Aninhada — [P]
+	  Ocorrência de nova interrupção durante o tratamento
+	  Necessidade de priorização adicional
+	  Empilhamento de contextos
+
+
+ 46.2 Controle do Aninhamento — [P]
+
+  46.2.1 Mecanismos de Controle — [P]
+	  Reabilitação seletiva de interrupções
+	  Limitação de níveis de aninhamento
+	  Uso de pilha para múltiplos contextos
+
+
+
+47. Otimização do Tratamento de Interrupções — [I]
+
+ 47.1 Estratégias de Otimização — [I]
+
+  47.1.1 Redução da Sobrecarga — [I]
+	  Minimização do tempo de tratamento
+	  Uso de rotinas rápidas para atendimento inicial
+	  Postergação de processamento não urgente
+
+  47.1.2 Técnicas Modernas de Otimização — [I]
+	  Coalescência de interrupções
+	  Uso de polling híbrido
+	  Balanceamento entre processadores
+
+
+
+
+PARTE 13 — EVOLUÇÃO, VARIAÇÕES E MECANISMOS AVANÇADOS DE INTERRUPÇÕES E EXCEÇÕES
+
+
+48. Interrupções por Vetorização Avançada (APIC e Similares) — [I]
+
+ 48.1 Controladores Avançados de Interrupção — [I]
+
+  48.1.1 Características Gerais — [I]
+	  Suporte a múltiplos processadores
+	  Distribuição programável de interrupções
+	  Maior flexibilidade de configuração
+
+
+
+49. Mensagens de Interrupção (MSI/MSI-X) — [I]
+
+ 49.1 Conceito de Interrupção por Mensagem — [I]
+
+  49.1.1 Diferença em Relação às Linhas Físicas — [I]
+	  Sinalização via escrita em memória
+	  Redução de linhas físicas dedicadas
+	  Maior escalabilidade de dispositivos
+
+
+
+50. Interrupções em Sistemas Operacionais Modernos — [I]
+
+ 50.1 Tratamento pelo Sistema Operacional — [I]
+
+  50.1.1 Camadas de Tratamento — [I]
+	  Rotina de tratamento em nível de hardware
+	  Processamento posterior em nível de software
+	  Escalonamento de tarefas adiadas
+
+  50.1.2 Integração com o Escalonador — [I]
+	  Uso de interrupções no controle de tempo
+	  Chamadas de sistema via exceção
+	  Suporte à multitarefa
+
+
+
+51. Tendências e Mecanismos Avançados — [V]
+
+ 51.1 Direções Atuais — [V]
+
+  51.1.1 Evolução dos Mecanismos — [V]
+	  Maior granularidade de controle
+	  Virtualização de interrupções
+	  Eficiência energética no tratamento
+
+
+
+
+PARTE 14 — RESUMO GERAL E CONCLUSÃO
+
+
+52. Integração dos Conceitos de Interrupções e Exceções — [I]
+
+ 52.1 Visão Integrada — [I]
+
+  52.1.1 Integração dos Fundamentos — [I]
+	  Conceitos fundamentais
+	  Origem e classificação
+	  Mecanismos de tratamento
+	  Funcionamento integrado
+
+  52.1.2 Relações com Outros Conceitos da Arquitetura — [I]
+	  Relação com o ciclo de instrução
+	  Relação com a memória virtual
+	  Relação com sistemas operacionais
+	  Relação com pipelines
+
+
+
+53. Resumo Geral do Estudo — [I]
+
+ 53.1 Revisão dos Conceitos Fundamentais — [I]
+
+  53.1.1 Fundamentos Essenciais — [I]
+	  Definição de interrupção e exceção
+	  Diferenças fundamentais
+	  Classificações principais
+
+  53.1.2 Mecanismos Estudados — [I]
+	  Detecção e sinalização
+	  Prioridade e arbitragem
+	  Vetores e rotinas de tratamento
+	  Retorno e recuperação
+
+
+ 53.2 Revisão das Aplicações — [I]
+
+  53.2.1 Contextos de Aplicação — [I]
+	  Arquiteturas CISC e RISC
+	  Sistemas com pipeline
+	  Sistemas multiprocessados
+
+
+
+54. Conclusão do Estudo das Interrupções e Exceções — [V]
+
+ 54.1 Síntese Final — [V]
+
+  54.1.1 O Papel das Interrupções e Exceções — [V]
+	  Elemento essencial da arquitetura de computadores
+	  Base da comunicação processador-periférico
+	  Base do tratamento de erros e chamadas de sistema
+
+  54.1.2 Importância para Estudos Avançados — [V]
+	  Base para Sistemas Operacionais
+	  Base para Memória Virtual
+	  Base para Pipeline e Processadores Modernos
+
+
+ 54.2 Encerramento — [V]
+
+  54.2.1 Visão Geral Final — [V]
+	  Integração dos conceitos
+	  Importância das interrupções e exceções
+	  Continuidade dos estudos em Arquitetura e Organização de Computadores
+
+
