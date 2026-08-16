@@ -1160,23 +1160,19 @@ PARTE 11 — INTERRUPÇÕES E EXCEÇÕES EM DIFERENTES ORGANIZAÇÕES E ARQUITET
 
 41. Interrupções e Exceções em Arquiteturas CISC — [I]
 
- 41.1 Características Gerais — [I]
-
-  41.1.1 Tratamento em Arquiteturas CISC — [I]
-	  Instruções complexas e de múltiplos ciclos
-	  Maior dificuldade de precisão
-	  Mecanismos de microcódigo no tratamento
+ 41.1 Tratamento em Arquiteturas CISC — [I]
+	Instruções complexas e de múltiplos ciclos
+	Maior dificuldade de precisão
+	Mecanismos de microcódigo no tratamento
 
 
 
 42. Interrupções e Exceções em Arquiteturas RISC — [I]
 
- 42.1 Características Gerais — [I]
-
-  42.1.1 Tratamento em Arquiteturas RISC — [I]
-	  Instruções simples e uniformes
-	  Maior facilidade de precisão
-	  Tratamento simplificado por hardware
+ 42.1 Tratamento em Arquiteturas RISC — [I]
+	Instruções simples e uniformes
+	Maior facilidade de precisão
+	Tratamento simplificado por hardware
 
 
 
@@ -1201,22 +1197,36 @@ PARTE 11 — INTERRUPÇÕES E EXCEÇÕES EM DIFERENTES ORGANIZAÇÕES E ARQUITET
 	  Descarte de instruções subsequentes
 	  Conclusão ordenada (in-order commit)
 	  Sinalização de exceção por estágio
+	  Preservação da ordem arquitetural
+	  Identificação do ponto preciso da exceção
+	  Descarte de resultados de instruções posteriores
+	  Tratamento de instruções parcialmente executadas
+	  Reconstrução do estado arquitetural
+
+  43.2.2 Exceções em Execução Fora de Ordem — [P]
+	  Execução fora de ordem e geração de exceções
+	  Instruções executadas especulativamente
+	  Exceções em instruções especulativas
+	  Preservação da ordem arquitetural
+	  Commit ou retirement das instruções
+	  Geração da exceção no ponto arquitetural apropriado
+	  Descarte de resultados especulativos
+	  Garantia de exceções precisas
 
 
 
 44. Interrupções e Exceções em Sistemas Multiprocessados — [I]
 
- 44.1 Particularidades em Multiprocessamento — [I]
+ 44.1 Interrupções entre Processadores — [I]
+	Comunicação e sincronização entre núcleos
+	Distribuição de interrupções
+	Coordenação do tratamento
 
-  44.1.1 Interrupções entre Processadores — [I]
-	  Comunicação e sincronização entre núcleos
-	  Distribuição de interrupções
-	  Coordenação do tratamento
 
-  44.1.2 Desafios de Coerência — [I]
-	  Consistência do estado entre processadores
-	  Sincronização de tratamento
-	  Complexidade adicional do controlador
+ 44.2 Desafios de Coerência — [I]
+	Consistência do estado entre processadores
+	Sincronização de tratamento
+	Complexidade adicional do controlador
 
 
 
@@ -1226,55 +1236,76 @@ PARTE 12 — DESEMPENHO, LATÊNCIA, PRIORIDADES, INTERRUPÇÕES ANINHADAS E OTIM
 
 45. Latência de Interrupção — [P]
 
- 45.1 Conceito de Latência — [P]
+ 45.1 Definição de Latência de Interrupção — [P]
+	Tempo entre requisição e atendimento
+	Fatores que influenciam a latência
+	Importância em sistemas de tempo real
+	Latência de reconhecimento
+	Latência de entrada no handler
+	Tempo de preparação do contexto
+	Tempo de execução da rotina de tratamento
+	Tempo total de atendimento
+	Latência máxima e latência mínima
+	Latência média
+	Jitter de interrupção
 
-  45.1.1 Definição de Latência de Interrupção — [P]
-	  Tempo entre requisição e atendimento
-	  Fatores que influenciam a latência
-	  Importância em sistemas de tempo real
 
-
- 45.2 Fatores que Afetam a Latência — [P]
-
-  45.2.1 Elementos Influentes — [P]
-	  Tempo de conclusão da instrução corrente
-	  Tempo de salvamento de contexto
-	  Sobrecarga do controlador de interrupções
+ 45.2 Elementos Influentes — [P]
+	Tempo de conclusão da instrução corrente
+	Tempo de salvamento de contexto
+	Sobrecarga do controlador de interrupções
+	Interrupções de maior prioridade
+	Interrupções desabilitadas ou mascaradas
+	Interrupções aninhadas
+	Estado do pipeline
+	Tempo de determinação do vetor
+	Tempo de salvamento do contexto
+	Sobrecarga do controlador
 
 
 
 46. Interrupções Aninhadas — [P]
 
  46.1 Conceito de Aninhamento — [P]
+	Definição de Interrupção Aninhada — [P]
+	Ocorrência de nova interrupção durante o tratamento
+	Necessidade de priorização adicional
+	Empilhamento de contextos
 
-  46.1.1 Definição de Interrupção Aninhada — [P]
-	  Ocorrência de nova interrupção durante o tratamento
-	  Necessidade de priorização adicional
-	  Empilhamento de contextos
 
-
- 46.2 Controle do Aninhamento — [P]
-
-  46.2.1 Mecanismos de Controle — [P]
-	  Reabilitação seletiva de interrupções
-	  Limitação de níveis de aninhamento
-	  Uso de pilha para múltiplos contextos
+ 46.2 Mecanismos de Controle — [P]
+	Reabilitação seletiva de interrupções
+	Limitação de níveis de aninhamento
+	Uso de pilha para múltiplos contextos
+	Prioridade entre interrupções aninhadas
+	Interrupções de maior prioridade durante o tratamento
+	Bloqueio de interrupções de menor prioridade
+	Salvamento de múltiplos contextos
+	Retorno em ordem dos contextos empilhados
+	Limite de profundidade do aninhamento
 
 
 
 47. Otimização do Tratamento de Interrupções — [I]
 
- 47.1 Estratégias de Otimização — [I]
+ 47.1 Redução da Sobrecarga — [I]
+	Minimização do tempo de tratamento
+	Uso de rotinas rápidas para atendimento inicial
+	Postergação de processamento não urgente
+      	Redução do tempo de entrada no handler
+      	Redução do tempo de salvamento de contexto
+      	Minimização do trabalho no caminho crítico
+      	Separação entre atendimento urgente e processamento posterior
 
-  47.1.1 Redução da Sobrecarga — [I]
-	  Minimização do tempo de tratamento
-	  Uso de rotinas rápidas para atendimento inicial
-	  Postergação de processamento não urgente
 
-  47.1.2 Técnicas Modernas de Otimização — [I]
-	  Coalescência de interrupções
-	  Uso de polling híbrido
-	  Balanceamento entre processadores
+ 47.2 Técnicas Modernas de Otimização — [I]
+	Coalescência de interrupções
+	Uso de polling híbrido
+	Balanceamento entre processadores
+	Afinidade de interrupções
+	Distribuição de interrupções entre núcleos
+	Redução de interrupções por agregação de eventos
+	Balanceamento de carga de interrupções
 
 
 
@@ -1285,50 +1316,72 @@ PARTE 13 — EVOLUÇÃO, VARIAÇÕES E MECANISMOS AVANÇADOS DE INTERRUPÇÕES E
 48. Interrupções por Vetorização Avançada (APIC e Similares) — [I]
 
  48.1 Controladores Avançados de Interrupção — [I]
-
-  48.1.1 Características Gerais — [I]
-	  Suporte a múltiplos processadores
-	  Distribuição programável de interrupções
-	  Maior flexibilidade de configuração
+	Características Gerais
+	Suporte a múltiplos processadores
+	Distribuição programável de interrupções
+	Maior flexibilidade de configuração
+	Registro de interrupções pendentes
+	Registro de interrupções em serviço
+	Distribuição por afinidade de processador
+	Redirecionamento de interrupções
+	Balanceamento de interrupções entre núcleos
+	Controle de prioridade
 
 
 
 49. Mensagens de Interrupção (MSI/MSI-X) — [I]
 
  49.1 Conceito de Interrupção por Mensagem — [I]
-
-  49.1.1 Diferença em Relação às Linhas Físicas — [I]
-	  Sinalização via escrita em memória
-	  Redução de linhas físicas dedicadas
-	  Maior escalabilidade de dispositivos
+	Diferença em Relação às Linhas Físicas
+	Sinalização via escrita em memória
+	Redução de linhas físicas dedicadas
+	Maior escalabilidade de dispositivos
+	Geração da interrupção por escrita em endereço de memória
+	Identificação da interrupção pela mensagem
+	Múltiplos vetores de interrupção
+	Distribuição de vetores entre processadores
+	Vantagens em relação às IRQs físicas
+	Relação com dispositivos PCIe
 
 
 
 50. Interrupções em Sistemas Operacionais Modernos — [I]
 
- 50.1 Tratamento pelo Sistema Operacional — [I]
+ 50.1 Camadas de Tratamento — [I]
+	Rotina de tratamento em nível de hardware
+	Processamento posterior em nível de software
+	Escalonamento de tarefas adiadas
+	Tratamento imediato da interrupção
+	Processamento posterior
+	Redução do tempo de permanência no handler
+	Separação entre trabalho urgente e trabalho adiável
 
-  50.1.1 Camadas de Tratamento — [I]
-	  Rotina de tratamento em nível de hardware
-	  Processamento posterior em nível de software
-	  Escalonamento de tarefas adiadas
 
-  50.1.2 Integração com o Escalonador — [I]
-	  Uso de interrupções no controle de tempo
-	  Chamadas de sistema via exceção
-	  Suporte à multitarefa
+ 50.2 Integração com o Escalonador — [I]
+	Uso de interrupções no controle de tempo
+	Chamadas de sistema via exceção
+	Suporte à multitarefa
+	Interrupções como mecanismo de preempção
+	Interrupções de temporização
+	Solicitação de reavaliação do escalonamento
+	Transferência de controle após o atendimento
 
 
 
 51. Tendências e Mecanismos Avançados — [V]
 
- 51.1 Direções Atuais — [V]
-
-  51.1.1 Evolução dos Mecanismos — [V]
-	  Maior granularidade de controle
-	  Virtualização de interrupções
-	  Eficiência energética no tratamento
-
+ 51.1 Evolução dos Mecanismos — [V]
+	Maior granularidade de controle
+	Virtualização de interrupções
+	Eficiência energética no tratamento
+	Virtualização de interrupções
+	Interrupções para máquinas virtuais
+	Interceptação e redirecionamento de interrupções
+	Controladores de interrupção virtualizados
+	Entrega de interrupções ao sistema convidado
+	Relação entre interrupções físicas e virtuais
+	Redução da sobrecarga de virtualização
+	Otimização da entrega de interrupções
 
 
 
@@ -1337,19 +1390,23 @@ PARTE 14 — RESUMO GERAL E CONCLUSÃO
 
 52. Integração dos Conceitos de Interrupções e Exceções — [I]
 
- 52.1 Visão Integrada — [I]
+ 52.1 Integração dos Fundamentos — [I]
+	Conceitos fundamentais
+	Origem e classificação
+	Mecanismos de tratamento
+	Funcionamento integrado
+	Relação entre evento, detecção e tratamento
+	Relação entre requisição, reconhecimento e atendimento
+	Relação entre contexto, vetor e handler
+	Relação entre tratamento e retorno
+	Relação entre precisão e recuperação
 
-  52.1.1 Integração dos Fundamentos — [I]
-	  Conceitos fundamentais
-	  Origem e classificação
-	  Mecanismos de tratamento
-	  Funcionamento integrado
-
-  52.1.2 Relações com Outros Conceitos da Arquitetura — [I]
-	  Relação com o ciclo de instrução
-	  Relação com a memória virtual
-	  Relação com sistemas operacionais
-	  Relação com pipelines
+  
+ 52.2 Relações com Outros Conceitos da Arquitetura — [I]
+	Relação com o ciclo de instrução
+	Relação com a memória virtual
+	Relação com sistemas operacionais
+	Relação com pipelines
 
 
 
@@ -1370,11 +1427,10 @@ PARTE 14 — RESUMO GERAL E CONCLUSÃO
 
 
  53.2 Revisão das Aplicações — [I]
-
-  53.2.1 Contextos de Aplicação — [I]
-	  Arquiteturas CISC e RISC
-	  Sistemas com pipeline
-	  Sistemas multiprocessados
+	Contextos de Aplicação
+	Arquiteturas CISC e RISC
+	Sistemas com pipeline
+	Sistemas multiprocessados
 
 
 
@@ -1393,11 +1449,7 @@ PARTE 14 — RESUMO GERAL E CONCLUSÃO
 	  Base para Pipeline e Processadores Modernos
 
 
- 54.2 Encerramento — [V]
-
-  54.2.1 Visão Geral Final — [V]
-	  Integração dos conceitos
-	  Importância das interrupções e exceções
-	  Continuidade dos estudos em Arquitetura e Organização de Computadores
-
-
+ 54.2 Visão Geral Final — [V]
+	Integração dos conceitos
+	Importância das interrupções e exceções
+	Continuidade dos estudos em Arquitetura e Organização de Computadores
