@@ -37,6 +37,7 @@ PARTE 1 — FUNDAMENTOS DA ARQUITETURA DE COMPUTADORES
       Compatibilidade entre hardware e software
 
 
+
  1.2 Objetivos do Estudo — [I]
 
   1.2.1 Formação da Base Conceitual — [I]
