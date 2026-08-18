@@ -1,7 +1,6 @@
                                       ARQUITETURAS VLIW (VERY LONG INSTRUCTION WORD)
 
 
-
 A classificação abaixo indica a profundidade recomendada para cada grande tópico da lista.
 
 [P] Profundidade — estudar mecanismos, estruturas, funcionamento interno e relações entre componentes.
