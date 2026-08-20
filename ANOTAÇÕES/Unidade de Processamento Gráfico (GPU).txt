@@ -1,0 +1,1418 @@
+                                      UNIDADE DE PROCESSAMENTO GRÁFICO (GPU)
+
+
+A classificação abaixo indica a profundidade recomendada para cada grande tópico da lista.
+
+[P] Profundidade — estudar mecanismos, estruturas, funcionamento interno e relações entre componentes.
+[I] Intermediário — compreender bem o funcionamento e as relações principais, sem precisar dominar todos os
+   detalhes de implementação.
+[V] Visão geral — saber o que é, para que serve e como se relaciona com a Unidade de Processamento Gráfico (GPU).
+
+
+
+PARTE 1 — FUNDAMENTOS DA UNIDADE DE PROCESSAMENTO GRÁFICO (GPU)
+
+
+1. Introdução à Unidade de Processamento Gráfico (GPU) — [I]
+
+ 1.1 Conceito de GPU — [I]
+
+  1.1.1 Definição de GPU — [I]
+	  Definição de Unidade de Processamento Gráfico
+	  Papel da GPU no sistema computacional
+	  Diferença entre processamento gráfico e processamento geral
+	  Importância da GPU na Arquitetura e Organização de Computadores
+
+  1.1.2 Finalidade da GPU — [I]
+	  Renderização de imagens
+	  Processamento paralelo de dados
+	  Aceleração de cálculos massivos
+	  Suporte a aplicações gráficas e não gráficas
+
+
+ 1.2 A GPU no Sistema Computacional — [I]
+
+  1.2.1 Papel da GPU como Coprocessador — [I]
+	  Relação com a CPU
+	  Delegação de tarefas paralelizáveis
+	  Cooperação entre CPU e GPU
+
+  1.2.2 Localização da GPU na Arquitetura — [I]
+	  GPU como dispositivo periférico
+	  GPU integrada ao chip
+	  GPU discreta conectada por barramento
+
+
+
+2. Evolução Histórica das GPUs — [V]
+
+ 2.1 Origem das GPUs — [V]
+
+  2.1.1 Primeiros Aceleradores Gráficos — [V]
+	  Placas gráficas de função fixa
+	  Aceleração 2D
+	  Primeiros controladores de vídeo
+
+  2.1.2 Surgimento do Processamento 3D — [V]
+	  Aceleração de gráficos tridimensionais
+	  Introdução de pipelines fixos de renderização
+
+
+ 2.2 Evolução para GPUs Programáveis — [V]
+
+  2.2.1 Transição do Pipeline Fixo ao Programável — [V]
+	  Introdução de shaders
+	  Flexibilidade de processamento
+	  Substituição de unidades de função fixa
+
+  2.2.2 Surgimento do GPGPU — [V]
+	  Uso da GPU para computação de propósito geral
+	  Expansão além da renderização gráfica
+
+
+ 2.3 GPUs Modernas — [V]
+
+  2.3.1 Arquiteturas Unificadas — [V]
+	  Unificação de unidades de processamento
+	  Convergência entre gráficos e computação geral
+
+  2.3.2 Tendências Recentes — [V]
+	  Aceleração de inteligência artificial
+	  Especialização de núcleos
+	  Crescimento da capacidade paralela
+
+
+
+3. GPU na Arquitetura e Organização de Computadores — [I]
+
+ 3.1 Relação entre GPU, Arquitetura e Organização — [I]
+
+  3.1.1 O que Pertence à Arquitetura — [I]
+	  Conjunto de instruções da GPU
+	  Modelo de execução visível ao programador
+
+  3.1.2 O que Pertence à Organização — [I]
+	  Implementação física dos componentes
+	  Estrutura interna dos núcleos
+	  Organização da hierarquia de memória
+
+
+ 3.2 Posição da GPU no Sistema — [I]
+
+  3.2.1 GPU como Unidade de Processamento Paralelo — [I]
+	  Complemento à CPU
+	  Execução de cargas massivamente paralelas
+
+  3.2.2 Integração com o Restante do Sistema — [I]
+	  Comunicação com a memória principal
+	  Comunicação com a CPU
+	  Papel dentro do sistema computacional completo
+
+
+
+4. Conceitos Fundamentais de Processamento Gráfico — [I]
+
+ 4.1 Elementos Básicos da Computação Gráfica — [I]
+
+  4.1.1 Vértices, Primitivas e Pixels — [I]
+	  Conceito de vértice
+	  Conceito de primitiva gráfica
+	  Conceito de pixel/fragmento
+
+  4.1.2 Renderização — [I]
+	  Conceito de renderização
+	  Transformação de dados em imagem
+	  Papel da GPU na renderização
+
+
+ 4.2 Processamento Massivamente Paralelo — [I]
+
+  4.2.1 Conceito de Paralelismo Massivo — [I]
+	  Execução simultânea de milhares de operações
+	  Independência entre elementos processados
+
+  4.2.2 Aplicabilidade a Dados Regulares — [I]
+	  Dados organizados em grande volume
+	  Operações repetitivas sobre conjuntos de dados
+
+
+
+5. Diferenças entre CPU e GPU — [P]
+
+ 5.1 Filosofias de Projeto — [P]
+
+  5.1.1 CPU Orientada à Latência — [P]
+	  Poucos núcleos complexos
+	  Otimização para execução sequencial
+	  Grande controle e previsão de desvios
+
+  5.1.2 GPU Orientada à Vazão (Throughput) — [P]
+	  Muitos núcleos simples
+	  Otimização para execução paralela
+	  Priorização da quantidade de trabalho concluído
+
+
+ 5.2 Comparação Estrutural — [P]
+
+  5.2.1 Organização dos Núcleos — [P]
+	  Núcleos complexos versus núcleos simples
+	  Controle individual versus controle compartilhado
+
+  5.2.2 Organização da Memória — [P]
+	  Grandes caches na CPU
+	  Memória de alta largura de banda na GPU
+
+
+ 5.3 Complementaridade entre CPU e GPU — [P]
+
+  5.3.1 Uso Conjunto — [P]
+	  Tarefas sequenciais na CPU
+	  Tarefas paralelas na GPU
+	  Cooperação heterogênea
+
+
+
+PARTE 2 — ESTRUTURA E ORGANIZAÇÃO INTERNA DA GPU
+
+
+6. Organização Geral da GPU — [P]
+
+ 6.1 Visão Geral da Organização Interna — [P]
+
+  6.1.1 Blocos Funcionais Principais — [P]
+	  Unidades de processamento
+	  Unidades de controle
+	  Hierarquia de memória
+	  Unidades de interconexão
+
+  6.1.2 Organização Hierárquica da GPU — [P]
+	  Organização em clusters de processamento
+	  Agrupamento de núcleos
+	  Distribuição dos recursos
+
+
+ 6.2 Modelo Estrutural da GPU — [P]
+
+  6.2.1 Estrutura Escalável — [P]
+	  Replicação de unidades de processamento
+	  Crescimento modular da capacidade
+
+  6.2.2 Estrutura Hierárquica de Controle — [P]
+	  Controle global do dispositivo
+	  Controle local por cluster
+
+
+
+7. Componentes Principais da GPU — [P]
+
+ 7.1 Unidades de Processamento — [P]
+
+  7.1.1 Clusters de Processamento Gráfico — [P]
+	  Agrupamento de multiprocessadores
+	  Organização em unidades maiores
+
+  7.1.2 Multiprocessadores de Streaming — [P]
+	  Unidade central de execução paralela
+	  Agrupamento de núcleos de execução
+
+
+ 7.2 Unidades de Suporte — [P]
+
+  7.2.1 Unidades de Escalonamento — [P]
+	  Distribuição do trabalho entre multiprocessadores
+	  Balanceamento de carga
+
+  7.2.2 Unidades de Interface — [P]
+	  Interface com a memória
+	  Interface com o barramento do sistema
+
+
+
+8. Multiprocessadores de Streaming (SM) — [P]
+
+ 8.1 Conceito e Estrutura — [P]
+
+  8.1.1 Definição de Multiprocessador de Streaming — [P]
+	  Unidade fundamental de execução da GPU
+	  Agrupamento de núcleos de processamento
+	  Recursos compartilhados internos
+
+  8.1.2 Componentes Internos do SM — [P]
+	  Núcleos de execução
+	  Unidades de função especial
+	  Registradores
+	  Memória compartilhada
+	  Unidade de escalonamento de warps
+
+
+ 8.2 Funcionamento do Multiprocessador — [P]
+
+  8.2.1 Execução de Múltiplos Threads — [P]
+	  Execução concorrente de grupos de threads
+	  Compartilhamento de recursos internos
+
+  8.2.2 Comunicação Interna do SM — [P]
+	  Compartilhamento de dados entre núcleos
+	  Sincronização local
+
+
+
+9. Unidades de Controle da GPU — [I]
+
+ 9.1 Controle Global — [I]
+
+  9.1.1 Unidade de Controle Principal — [I]
+	  Coordenação geral do dispositivo
+	  Distribuição de trabalho para os clusters
+
+  9.1.2 Gerenciamento de Filas de Trabalho — [I]
+	  Recebimento de comandos
+	  Organização das tarefas pendentes
+
+
+ 9.2 Controle Local — [I]
+
+  9.2.1 Controle dentro do Multiprocessador — [I]
+	  Escalonamento local dos warps
+	  Coordenação da execução dos núcleos
+
+  9.2.2 Sincronização entre Unidades — [I]
+	  Sincronização de threads
+	  Coordenação de barreiras de execução
+
+
+
+10. Escalonamento e Despacho de Trabalho — [P]
+
+ 10.1 Conceito de Escalonamento na GPU — [P]
+
+  10.1.1 Finalidade do Escalonamento — [P]
+	  Distribuição eficiente das tarefas
+	  Maximização da utilização dos recursos
+
+  10.1.2 Unidades Responsáveis pelo Escalonamento — [P]
+	  Escalonador global
+	  Escalonador de warps
+
+
+ 10.2 Despacho de Blocos e Threads — [P]
+
+  10.2.1 Distribuição de Blocos de Threads — [P]
+	  Atribuição de blocos aos multiprocessadores
+	  Balanceamento entre unidades
+
+  10.2.2 Despacho de Warps para Execução — [P]
+	  Seleção de warps prontos
+	  Alternância entre warps para ocultar latência
+
+
+
+PARTE 3 — UNIDADES DE EXECUÇÃO, NÚCLEOS E PROCESSAMENTO PARALELO
+
+
+11. Núcleos de Processamento (Shader Cores) — [P]
+
+ 11.1 Conceito de Núcleo de Processamento — [P]
+
+  11.1.1 Definição — [P]
+	  Unidade básica de execução aritmética
+	  Execução de instruções escalares
+
+  11.1.2 Papel dentro do Multiprocessador — [P]
+	  Execução das operações dos threads
+	  Cooperação com outros núcleos
+
+
+ 11.2 Organização dos Núcleos — [P]
+
+  11.2.1 Agrupamento de Núcleos — [P]
+	  Organização em grupos de execução
+	  Compartilhamento de unidades de busca e decodificação
+
+  11.2.2 Núcleos Especializados — [P]
+	  Núcleos de precisão simples
+	  Núcleos de precisão dupla
+	  Núcleos de operações inteiras
+
+
+
+12. Unidades Aritméticas e Lógicas Gráficas (ALUs) — [I]
+
+ 12.1 Fundamentos das ALUs Gráficas — [I]
+
+  12.1.1 Operações Suportadas — [I]
+	  Operações aritméticas básicas
+	  Operações lógicas
+	  Operações de ponto flutuante
+
+  12.1.2 Organização das ALUs — [I]
+	  Múltiplas ALUs por núcleo de processamento
+	  Execução paralela de operações
+
+
+ 12.2 Precisão Numérica — [I]
+
+  12.2.1 Precisão Simples e Dupla — [I]
+	  Diferença entre precisões
+	  Uso conforme a aplicação
+
+  12.2.2 Suporte a Formatos Reduzidos — [I]
+	  Formatos de menor precisão
+	  Uso em aplicações de inteligência artificial
+
+
+
+13. Unidades de Função Especial (SFU) — [I]
+
+ 13.1 Conceito e Finalidade — [I]
+
+  13.1.1 Definição de Unidade de Função Especial — [I]
+	  Execução de funções transcendentais
+	  Aceleração de cálculos complexos
+
+  13.1.2 Operações Suportadas — [I]
+	  Funções trigonométricas
+	  Raiz quadrada e exponenciais
+	  Interpolações
+
+
+ 13.2 Papel no Pipeline de Execução — [I]
+
+  13.2.1 Uso em Computação Gráfica — [I]
+	  Cálculos de iluminação
+	  Cálculos geométricos
+
+  13.2.2 Uso em Computação Geral — [I]
+	  Aceleração de funções matemáticas específicas
+
+
+
+14. Unidades de Textura — [I]
+
+ 14.1 Conceito de Unidade de Textura — [I]
+
+  14.1.1 Definição — [I]
+	  Unidade dedicada ao acesso e filtragem de texturas
+	  Aceleração de operações gráficas específicas
+
+  14.1.2 Funções da Unidade de Textura — [I]
+	  Busca de dados de textura
+	  Filtragem e interpolação
+	  Mapeamento de coordenadas
+
+
+ 14.2 Integração com o Pipeline Gráfico — [I]
+
+  14.2.1 Relação com o Processamento de Fragmentos — [I]
+	  Fornecimento de dados para sombreamento
+	  Suporte à renderização de superfícies
+
+
+
+15. Organização dos Threads em Warps/Wavefronts — [P]
+
+ 15.1 Conceito de Warp/Wavefront — [P]
+
+  15.1.1 Definição — [P]
+	  Grupo de threads executados simultaneamente
+	  Unidade básica de escalonamento na GPU
+
+  15.1.2 Tamanho e Organização — [P]
+	  Quantidade fixa de threads por grupo
+	  Execução em lockstep
+
+
+ 15.2 Organização em Blocos e Grades — [P]
+
+  15.2.1 Blocos de Threads — [P]
+	  Agrupamento de warps
+	  Compartilhamento de memória local
+
+  15.2.2 Grades de Blocos — [P]
+	  Organização de múltiplos blocos
+	  Distribuição entre multiprocessadores
+
+
+
+PARTE 4 — ARQUITETURA DE MEMÓRIA E HIERARQUIA DE MEMÓRIA DA GPU
+
+
+16. Hierarquia de Memória da GPU — [P]
+
+ 16.1 Visão Geral da Hierarquia — [P]
+
+  16.1.1 Níveis de Memória — [P]
+	  Registradores
+	  Memória compartilhada
+	  Cache
+	  Memória global
+
+  16.1.2 Objetivos da Hierarquia — [P]
+	  Redução da latência de acesso
+	  Aumento da largura de banda efetiva
+	  Suporte ao paralelismo massivo
+
+
+ 16.2 Diferenças em Relação à Hierarquia da CPU — [P]
+
+  16.2.1 Prioridade à Vazão — [P]
+	  Foco em throughput em vez de latência
+	  Grande quantidade de threads ativas simultaneamente
+
+  16.2.2 Organização Voltada ao Paralelismo — [P]
+	  Memória compartilhada entre threads
+	  Acesso coalescido à memória
+
+
+
+17. Registradores e Memória Local — [P]
+
+ 17.1 Registradores da GPU — [P]
+
+  17.1.1 Conceito e Finalidade — [P]
+	  Armazenamento de variáveis por thread
+	  Acesso de altíssima velocidade
+
+  17.1.2 Organização dos Registradores — [P]
+	  Banco de registradores por multiprocessador
+	  Divisão entre threads ativas
+
+
+ 17.2 Memória Local — [P]
+
+  17.2.1 Conceito de Memória Local — [P]
+	  Espaço privado por thread
+	  Uso quando os registradores são insuficientes
+
+  17.2.2 Características de Desempenho — [P]
+	  Maior latência que os registradores
+	  Implementação sobre a memória global
+
+
+
+18. Memória Compartilhada (Shared Memory) — [P]
+
+ 18.1 Conceito de Memória Compartilhada — [P]
+
+  18.1.1 Definição — [P]
+	  Memória de baixa latência dentro do multiprocessador
+	  Compartilhada entre threads de um mesmo bloco
+
+  18.1.2 Finalidade — [P]
+	  Cooperação entre threads
+	  Reutilização de dados
+	  Redução de acessos à memória global
+
+
+ 18.2 Organização e Uso — [P]
+
+  18.2.1 Organização em Bancos de Memória — [P]
+	  Divisão em bancos para acesso paralelo
+	  Conflitos de banco
+
+  18.2.2 Estratégias de Utilização — [P]
+	  Armazenamento temporário de dados frequentes
+	  Sincronização entre threads do bloco
+
+
+
+19. Cache da GPU (L1/L2) — [P]
+
+ 19.1 Estrutura da Cache — [P]
+
+  19.1.1 Cache de Nível 1 — [P]
+	  Localização próxima aos núcleos de execução
+	  Baixa latência de acesso
+
+  19.1.2 Cache de Nível 2 — [P]
+	  Compartilhada entre multiprocessadores
+	  Maior capacidade e maior latência
+
+
+ 19.2 Papel da Cache no Desempenho — [P]
+
+  19.2.1 Redução de Acessos à Memória Global — [P]
+	  Reutilização de dados recentes
+	  Diminuição da latência efetiva
+
+  19.2.2 Coerência e Organização — [P]
+	  Políticas de substituição
+	  Organização voltada ao paralelismo massivo
+
+
+
+20. Memória Global e Memória de Vídeo (VRAM) — [P]
+
+ 20.1 Conceito de Memória Global — [P]
+
+  20.1.1 Definição — [P]
+	  Memória principal da GPU
+	  Acessível por todos os multiprocessadores
+
+  20.1.2 Características de Acesso — [P]
+	  Alta largura de banda
+	  Maior latência em relação às memórias internas
+
+
+ 20.2 Memória de Vídeo (VRAM) — [P]
+
+  20.2.1 Tecnologias de Memória Utilizadas — [P]
+	  Memórias de alta largura de banda
+	  Organização voltada ao acesso paralelo massivo
+
+  20.2.2 Papel da VRAM no Sistema Gráfico — [P]
+	  Armazenamento de dados de renderização
+	  Armazenamento de dados de aplicações GPGPU
+
+
+
+PARTE 5 — FLUXO DE DADOS, INSTRUÇÕES E EXECUÇÃO NA GPU
+
+
+21. Fluxo de Dados no Pipeline Gráfico — [I]
+
+ 21.1 Conceito de Fluxo de Dados na GPU — [I]
+
+  21.1.1 Entrada e Saída de Dados — [I]
+	  Entrada de dados geométricos
+	  Saída de imagens renderizadas
+
+  21.1.2 Estágios do Fluxo — [I]
+	  Processamento de vértices
+	  Rasterização
+	  Processamento de fragmentos
+
+
+ 21.2 Organização do Fluxo entre Unidades — [I]
+
+  21.2.1 Comunicação entre Estágios — [I]
+	  Transferência de dados intermediários
+	  Sincronização entre etapas
+
+
+
+22. Conjunto de Instruções da GPU (GPU ISA) — [I]
+
+ 22.1 Conceito de ISA na GPU — [I]
+
+  22.1.1 Definição — [I]
+	  Conjunto de instruções executáveis pela GPU
+	  Interface entre software e hardware gráfico
+
+  22.1.2 Características da ISA de GPU — [I]
+	  Instruções voltadas à execução paralela
+	  Suporte a operações vetoriais e escalares
+
+
+ 22.2 Tipos de Instruções — [I]
+
+  22.2.1 Instruções Aritméticas e Lógicas — [I]
+	  Operações sobre dados numéricos
+
+  22.2.2 Instruções de Controle de Fluxo — [I]
+	  Desvios condicionais
+	  Sincronização entre threads
+
+  22.2.3 Instruções de Acesso à Memória — [I]
+	  Leitura e escrita em diferentes níveis de memória
+
+
+
+23. Execução de Instruções na GPU — [P]
+
+ 23.1 Ciclo de Execução — [P]
+
+  23.1.1 Busca e Decodificação — [P]
+	  Busca de instruções para o warp
+	  Decodificação das operações
+
+  23.1.2 Execução e Escrita de Resultados — [P]
+	  Execução paralela nos núcleos
+	  Escrita dos resultados nos registradores
+
+
+ 23.2 Execução em Lockstep — [P]
+
+  23.2.1 Conceito de Execução em Lockstep — [P]
+	  Execução simultânea da mesma instrução
+	  Sincronização implícita entre threads do warp
+
+  23.2.2 Implicações da Execução em Lockstep — [P]
+	  Necessidade de uniformidade de fluxo
+	  Impacto de desvios de fluxo
+
+
+
+24. Controle de Divergência de Fluxo — [P]
+
+ 24.1 Conceito de Divergência — [P]
+
+  24.1.1 Definição de Divergência de Fluxo — [P]
+	  Threads de um mesmo warp seguindo caminhos diferentes
+	  Origem em desvios condicionais
+
+  24.1.2 Impacto no Desempenho — [P]
+	  Serialização parcial da execução
+	  Redução da eficiência do warp
+
+
+ 24.2 Mecanismos de Tratamento — [P]
+
+  24.2.1 Máscaras de Execução — [P]
+	  Ativação seletiva de threads
+	  Desativação temporária de threads divergentes
+
+  24.2.2 Reconvergência de Fluxo — [P]
+	  Retorno ao caminho comum
+	  Restabelecimento da execução uniforme
+
+
+
+PARTE 6 — MODELOS DE PARALELISMO E ORGANIZAÇÃO DO PROCESSAMENTO
+
+
+25. Paralelismo de Dados na GPU — [P]
+
+ 25.1 Conceito de Paralelismo de Dados — [P]
+
+  25.1.1 Definição — [P]
+	  Aplicação da mesma operação sobre múltiplos dados
+	  Base do modelo de execução da GPU
+
+  25.1.2 Aplicabilidade — [P]
+	  Processamento de grandes volumes de dados regulares
+	  Adequação a operações independentes
+
+
+ 25.2 Organização do Paralelismo de Dados — [P]
+
+  25.2.1 Distribuição dos Dados entre Threads — [P]
+	  Mapeamento de dados para threads
+	  Independência entre elementos processados
+
+
+
+26. Paralelismo de Threads e Organização em Grades — [P]
+
+ 26.1 Organização Hierárquica de Threads — [P]
+
+  26.1.1 Threads — [P]
+	  Unidade individual de execução
+
+  26.1.2 Blocos de Threads — [P]
+	  Agrupamento cooperativo de threads
+	  Compartilhamento de memória local
+
+  26.1.3 Grades (Grids) — [P]
+	  Conjunto de blocos
+	  Organização de toda a carga de trabalho
+
+
+ 26.2 Mapeamento para o Hardware — [P]
+
+  26.2.1 Distribuição de Blocos entre Multiprocessadores — [P]
+	  Atribuição dinâmica de blocos
+	  Balanceamento de carga entre unidades
+
+
+
+27. Escalonamento de Warps/Wavefronts — [P]
+
+ 27.1 Conceito de Escalonamento de Warps — [P]
+
+  27.1.1 Finalidade — [P]
+	  Seleção de warps prontos para execução
+	  Maximização da utilização dos núcleos
+
+  27.1.2 Estados dos Warps — [P]
+	  Warps prontos
+	  Warps em espera
+
+
+ 27.2 Políticas de Escalonamento — [P]
+
+  27.2.1 Alternância entre Warps — [P]
+	  Troca de contexto sem custo elevado
+	  Ocultação de períodos de espera
+
+  27.2.2 Critérios de Priorização — [P]
+	  Justiça entre warps
+	  Priorização por prontidão
+
+
+
+28. Ocultação de Latência (Latency Hiding) — [P]
+
+ 28.1 Conceito de Ocultação de Latência — [P]
+
+  28.1.1 Definição — [P]
+	  Uso do paralelismo para mascarar tempos de espera
+	  Substituição de warps bloqueados por warps prontos
+
+  28.1.2 Importância na GPU — [P]
+	  Alta latência de acesso à memória global
+	  Necessidade de manter os núcleos ocupados
+
+
+ 28.2 Mecanismos de Ocultação — [P]
+
+  28.2.1 Multiplicidade de Warps Residentes — [P]
+	  Grande número de warps por multiprocessador
+	  Troca rápida entre warps
+
+  28.2.2 Relação com a Ocupação da GPU — [P]
+	  Ocupação como métrica de paralelismo disponível
+	  Impacto da ocupação na ocultação de latência
+
+
+
+PARTE 7 — ARQUITETURAS SIMD, SIMT E MODELOS DE EXECUÇÃO DA GPU
+
+
+29. Modelo SIMD Aplicado à GPU — [P]
+
+ 29.1 Conceito de SIMD — [P]
+
+  29.1.1 Definição — [P]
+	  Uma instrução aplicada a múltiplos dados
+	  Execução sincronizada sobre vetores de dados
+
+  29.1.2 Aplicação na GPU — [P]
+	  Base para execução das unidades de processamento
+	  Relação com a organização dos núcleos
+
+
+ 29.2 Vantagens e Limitações — [P]
+
+  29.2.1 Vantagens — [P]
+	  Alta eficiência em dados regulares
+	  Simplicidade de controle
+
+  29.2.2 Limitações — [P]
+	  Dificuldade com fluxos de controle irregulares
+
+
+
+30. Modelo SIMT (Single Instruction, Multiple Threads) — [P]
+
+ 30.1 Conceito de SIMT — [P]
+
+  30.1.1 Definição — [P]
+	  Execução da mesma instrução por múltiplos threads independentes
+	  Combinação de características do SIMD com flexibilidade de threads
+
+  30.1.2 Diferença entre SIMD e SIMT — [P]
+	  Threads com contexto próprio no SIMT
+	  Maior flexibilidade de controle individual
+
+
+ 30.2 Implementação do Modelo SIMT — [P]
+
+  30.2.1 Organização dos Threads em Warps — [P]
+	  Execução conjunta como unidade lógica SIMD
+
+  30.2.2 Tratamento de Divergência — [P]
+	  Uso de máscaras de execução
+	  Reconvergência após divergência
+
+
+
+31. Comparação entre SIMD, SIMT e MIMD — [I]
+
+ 31.1 Modelos de Execução Paralela — [I]
+
+  31.1.1 Características do SIMD — [I]
+	  Execução síncrona sobre dados vetoriais
+
+  31.1.2 Características do SIMT — [I]
+	  Execução paralela com flexibilidade por thread
+
+  31.1.3 Características do MIMD — [I]
+	  Múltiplas instruções sobre múltiplos dados
+	  Independência total entre unidades
+
+
+ 31.2 Adequação de Cada Modelo — [I]
+
+  31.2.1 Cenários de Uso — [I]
+	  Dados regulares e paralelismo massivo
+	  Tarefas heterogêneas e independentes
+
+
+
+32. Predicação e Máscaras de Execução — [I]
+
+ 32.1 Conceito de Predicação — [I]
+
+  32.1.1 Definição — [I]
+	  Execução condicional sem desvio explícito
+	  Uso de condições para ativar ou desativar operações
+
+  32.1.2 Finalidade na GPU — [I]
+	  Redução do impacto da divergência de fluxo
+
+
+ 32.2 Máscaras de Execução — [I]
+
+  32.2.1 Conceito de Máscara — [I]
+	  Indicação de threads ativas em uma instrução
+
+  32.2.2 Aplicação nas Unidades de Execução — [I]
+	  Desativação seletiva de threads
+	  Preservação da execução em lockstep
+
+
+
+PARTE 8 — COMPUTAÇÃO GRÁFICA E PIPELINE DE PROCESSAMENTO DA GPU
+
+
+33. Pipeline Gráfico Clássico — [I]
+
+ 33.1 Conceito de Pipeline Gráfico — [I]
+
+  33.1.1 Definição — [I]
+	  Sequência de estágios de processamento gráfico
+	  Transformação de dados geométricos em imagem
+
+  33.1.2 Estágios Principais — [I]
+	  Processamento de vértices
+	  Rasterização
+	  Processamento de fragmentos
+	  Saída para o framebuffer
+
+
+ 33.2 Organização do Pipeline — [I]
+
+  33.2.1 Pipeline de Função Fixa — [I]
+	  Estágios não programáveis
+	  Operações predefinidas
+
+  33.2.2 Pipeline Programável — [I]
+	  Substituição de estágios fixos por shaders
+	  Maior flexibilidade de processamento
+
+
+
+34. Processamento de Vértices — [I]
+
+ 34.1 Conceito de Processamento de Vértices — [I]
+
+  34.1.1 Função do Estágio de Vértices — [I]
+	  Transformação geométrica
+	  Cálculo de posição final dos vértices
+
+  34.1.2 Operações Realizadas — [I]
+	  Transformações espaciais
+	  Aplicação de projeções
+
+
+ 34.2 Vertex Shaders — [I]
+
+  34.2.1 Conceito de Vertex Shader — [I]
+	  Programa executado por vértice
+	  Personalização do processamento geométrico
+
+
+
+35. Rasterização — [I]
+
+ 35.1 Conceito de Rasterização — [I]
+
+  35.1.1 Definição — [I]
+	  Conversão de primitivas geométricas em fragmentos
+	  Determinação dos pixels cobertos pela geometria
+
+  35.1.2 Papel no Pipeline — [I]
+	  Ponte entre geometria e processamento de pixels
+
+
+ 35.2 Determinação de Fragmentos — [I]
+
+  35.2.1 Interpolação de Atributos — [I]
+	  Cálculo de valores intermediários entre vértices
+
+  35.2.2 Teste de Cobertura — [I]
+	  Verificação dos pixels pertencentes à primitiva
+
+
+
+36. Processamento de Fragmentos/Pixels — [I]
+
+ 36.1 Conceito de Processamento de Fragmentos — [I]
+
+  36.1.1 Função do Estágio de Fragmentos — [I]
+	  Cálculo da cor final de cada pixel
+	  Aplicação de efeitos visuais
+
+  36.1.2 Operações Realizadas — [I]
+	  Cálculo de iluminação
+	  Aplicação de texturas
+
+
+ 36.2 Fragment Shaders (Pixel Shaders) — [I]
+
+  36.2.1 Conceito de Fragment Shader — [I]
+	  Programa executado por fragmento
+	  Personalização da aparência final da imagem
+
+
+
+37. Pipeline Gráfico Programável (Shaders) — [I]
+
+ 37.1 Conceito de Programabilidade — [I]
+
+  37.1.1 Substituição de Estágios Fixos — [I]
+	  Uso de programas customizados
+	  Maior controle sobre o processamento gráfico
+
+  37.1.2 Tipos de Shaders — [I]
+	  Vertex shaders
+	  Fragment shaders
+	  Geometry shaders
+	  Compute shaders
+
+
+ 37.2 Linguagens e Modelos de Shader — [I]
+
+  37.2.1 Modelos de Programação Gráfica — [I]
+	  Estrutura geral dos programas de shader
+	  Execução paralela dos shaders na GPU
+
+
+
+PARTE 9 — COMPUTAÇÃO GERAL EM GPU (GPGPU) E ACELERAÇÃO DE APLICAÇÕES
+
+
+38. Conceito de GPGPU — [I]
+
+ 38.1 Definição de GPGPU — [I]
+
+  38.1.1 Computação de Propósito Geral em GPU — [I]
+	  Uso da GPU além da renderização gráfica
+	  Aproveitamento do paralelismo massivo
+
+  38.1.2 Motivações para o GPGPU — [I]
+	  Alto poder computacional paralelo
+	  Eficiência em cargas de trabalho paralelizáveis
+
+
+ 38.2 Diferenças entre Uso Gráfico e Uso Geral — [I]
+
+  38.2.1 Adaptação do Hardware Gráfico — [I]
+	  Reaproveitamento das unidades de execução
+	  Generalização das unidades de processamento
+
+
+
+39. Modelos de Programação para GPU — [I]
+
+ 39.1 Conceito de Modelo de Programação Paralela — [I]
+
+  39.1.1 Abstrações de Threads e Kernels — [I]
+	  Funções executadas em paralelo pela GPU
+	  Organização em grades e blocos
+
+  39.1.2 Ambientes de Desenvolvimento — [I]
+	  Plataformas proprietárias
+	  Padrões abertos
+
+
+ 39.2 Estrutura de um Programa para GPU — [I]
+
+  39.2.1 Kernels de Execução — [I]
+	  Código executado por cada thread
+
+  39.2.2 Gerenciamento de Memória entre Host e Dispositivo — [I]
+	  Transferência de dados entre CPU e GPU
+	  Alocação de memória na GPU
+
+
+
+40. Aceleração de Aplicações Científicas e de Engenharia — [I]
+
+ 40.1 Cargas de Trabalho Paralelizáveis — [I]
+
+  40.1.1 Simulações Numéricas — [I]
+	  Cálculos massivos independentes
+
+  40.1.2 Processamento de Grandes Volumes de Dados — [I]
+	  Operações sobre matrizes e vetores extensos
+
+
+ 40.2 Benefícios do Uso da GPU — [I]
+
+  40.2.1 Ganhos de Desempenho — [I]
+	  Redução do tempo de processamento
+
+  40.2.2 Escalabilidade Computacional — [I]
+	  Aumento da capacidade com mais unidades paralelas
+
+
+
+41. GPU Aplicada a Inteligência Artificial — [V]
+
+ 41.1 Papel da GPU em Aprendizado de Máquina — [V]
+
+  41.1.1 Treinamento de Modelos — [V]
+	  Cálculos matriciais massivos
+	  Paralelismo em operações de aprendizado
+
+  41.1.2 Inferência de Modelos — [V]
+	  Execução rápida de modelos treinados
+
+
+ 41.2 Núcleos Especializados para IA — [V]
+
+  41.2.1 Unidades Dedicadas a Operações Matriciais — [V]
+	  Aceleração de multiplicações de matrizes
+	  Suporte a formatos numéricos reduzidos
+
+
+
+PARTE 10 — COMUNICAÇÃO, INTERCONEXÃO E INTEGRAÇÃO DA GPU COM O SISTEMA
+
+
+42. Interconexão entre CPU e GPU — [I]
+
+ 42.1 Conceito de Interconexão — [I]
+
+  42.1.1 Necessidade de Comunicação — [I]
+	  Troca de dados e comandos entre CPU e GPU
+	  Coordenação de tarefas heterogêneas
+
+  42.1.2 Modelos de Comunicação — [I]
+	  Comunicação síncrona
+	  Comunicação assíncrona
+
+
+ 42.2 Organização da Comunicação — [I]
+
+  42.2.1 Envio de Comandos à GPU — [I]
+	  Filas de comandos
+	  Sincronização de execução
+
+  42.2.2 Retorno de Resultados à CPU — [I]
+	  Transferência de dados processados
+
+
+
+43. Barramentos e Interfaces de Conexão — [I]
+
+ 43.1 Interfaces Físicas de Conexão — [I]
+
+  43.1.1 Barramento de Expansão — [I]
+	  Conexão entre GPU discreta e sistema
+	  Largura de banda disponível
+
+  43.1.2 Interconexões de Alta Velocidade — [I]
+	  Conexões dedicadas entre GPUs
+	  Comunicação direta de alta largura de banda
+
+
+ 43.2 Impacto da Interconexão no Desempenho — [I]
+
+  43.2.1 Latência de Comunicação — [I]
+	  Tempo de transferência de dados
+
+  43.2.2 Largura de Banda Disponível — [I]
+	  Limitação na taxa de transferência de dados
+
+
+
+44. GPU Integrada versus GPU Discreta — [I]
+
+ 44.1 GPU Integrada — [I]
+
+  44.1.1 Conceito — [I]
+	  GPU incorporada ao mesmo chip da CPU
+	  Compartilhamento de memória com o sistema
+
+  44.1.2 Características — [I]
+	  Menor consumo energético
+	  Capacidade de processamento limitada
+
+
+ 44.2 GPU Discreta — [I]
+
+  44.2.1 Conceito — [I]
+	  GPU como componente separado e dedicado
+	  Memória própria de alta largura de banda
+
+  44.2.2 Características — [I]
+	  Maior capacidade de processamento
+	  Maior consumo energético
+
+
+
+45. Gerenciamento de Memória entre CPU e GPU — [I]
+
+ 45.1 Modelos de Gerenciamento — [I]
+
+  45.1.1 Memórias Separadas — [I]
+	  Espaços de memória distintos
+	  Necessidade de cópia explícita de dados
+
+  45.1.2 Memória Unificada — [I]
+	  Espaço de endereçamento compartilhado
+	  Simplificação do acesso a dados
+
+
+ 45.2 Transferência de Dados — [I]
+
+  45.2.1 Cópia entre Host e Dispositivo — [I]
+	  Movimentação de dados entre CPU e GPU
+
+  45.2.2 Impacto no Desempenho — [I]
+	  Custo das transferências
+	  Estratégias de minimização de cópias
+
+
+
+PARTE 11 — DESEMPENHO, ESCALABILIDADE, EFICIÊNCIA E LIMITAÇÕES DAS GPUs
+
+
+46. Métricas de Desempenho da GPU — [I]
+
+ 46.1 Indicadores de Capacidade — [I]
+
+  46.1.1 Taxa de Processamento (Throughput) — [I]
+	  Quantidade de operações executadas por unidade de tempo
+
+  46.1.2 Largura de Banda de Memória — [I]
+	  Capacidade de transferência de dados
+
+
+ 46.2 Indicadores de Utilização — [I]
+
+  46.2.1 Ocupação da GPU — [I]
+	  Proporção de recursos ativos em uso
+
+  46.2.2 Eficiência de Execução — [I]
+	  Aproveitamento efetivo do paralelismo disponível
+
+
+
+47. Fatores que Limitam o Desempenho — [I]
+
+ 47.1 Limitações Internas — [I]
+
+  47.1.1 Divergência de Fluxo — [I]
+	  Redução da eficiência dos warps
+
+  47.1.2 Conflitos de Acesso à Memória — [I]
+	  Acessos não coalescidos
+	  Conflitos em memória compartilhada
+
+
+ 47.2 Limitações Externas — [I]
+
+  47.2.1 Largura de Banda de Comunicação — [I]
+	  Limitação na troca de dados com a CPU
+
+  47.2.2 Disponibilidade de Paralelismo na Aplicação — [I]
+	  Dependências entre dados
+	  Trechos sequenciais inevitáveis
+
+
+
+48. Eficiência Energética e Térmica — [V]
+
+ 48.1 Consumo Energético da GPU — [V]
+
+  48.1.1 Fatores que Influenciam o Consumo — [V]
+	  Quantidade de unidades ativas
+	  Frequência de operação
+
+  48.1.2 Estratégias de Redução de Consumo — [V]
+	  Desativação de unidades ociosas
+	  Ajuste dinâmico de frequência
+
+
+ 48.2 Gerenciamento Térmico — [V]
+
+  48.2.1 Dissipação de Calor — [V]
+	  Necessidade de resfriamento adequado
+
+  48.2.2 Relação entre Desempenho e Temperatura — [V]
+	  Limitação de desempenho por aquecimento excessivo
+
+
+
+PARTE 12 — EVOLUÇÃO, VARIAÇÕES, ARQUITETURAS MODERNAS E APLICAÇÕES DAS GPUs
+
+
+49. Gerações e Evolução das Arquiteturas de GPU — [V]
+
+ 49.1 Evolução da Complexidade — [V]
+
+  49.1.1 Aumento do Número de Núcleos — [V]
+	  Crescimento da capacidade paralela
+
+  49.1.2 Evolução das Unidades de Memória — [V]
+	  Aumento da largura de banda disponível
+
+
+ 49.2 Marcos da Evolução — [V]
+
+  49.2.1 Transição para Arquiteturas Unificadas — [V]
+	  Convergência das unidades de processamento
+
+  49.2.2 Incorporação de Unidades Especializadas — [V]
+	  Adição de núcleos dedicados a tarefas específicas
+
+
+
+50. Arquiteturas Modernas de GPU — [V]
+
+ 50.1 Características Gerais — [V]
+
+  50.1.1 Organização Escalável — [V]
+	  Multiplicação de multiprocessadores
+
+  50.1.2 Diversidade de Unidades de Execução — [V]
+	  Núcleos de propósito geral
+	  Núcleos especializados
+
+
+ 50.2 Integração de Novas Tecnologias — [V]
+
+  50.2.1 Memórias de Alto Desempenho — [V]
+	  Tecnologias de memória de alta largura de banda
+
+  50.2.2 Interconexões Avançadas — [V]
+	  Comunicação de alta velocidade entre componentes
+
+
+
+51. GPUs Especializadas (Ray Tracing e Tensor Cores) — [V]
+
+ 51.1 Unidades de Traçado de Raios — [V]
+
+  51.1.1 Conceito de Ray Tracing — [V]
+	  Simulação do comportamento da luz
+	  Cálculo de iluminação realista
+
+  51.1.2 Aceleração por Hardware Dedicado — [V]
+	  Unidades especializadas para cálculos de interseção
+
+
+ 51.2 Núcleos Tensoriais — [V]
+
+  51.2.1 Conceito de Núcleo Tensorial — [V]
+	  Unidades dedicadas a operações matriciais
+	  Aceleração de cargas de inteligência artificial
+
+
+
+52. Aplicações Modernas das GPUs — [V]
+
+ 52.1 Aplicações Gráficas — [V]
+
+  52.1.1 Jogos e Simulações Visuais — [V]
+	  Renderização em tempo real
+
+  52.1.2 Produção Audiovisual — [V]
+	  Renderização de alta qualidade
+
+
+ 52.2 Aplicações Não Gráficas — [V]
+
+  52.2.1 Inteligência Artificial e Aprendizado de Máquina — [V]
+	  Treinamento e inferência de modelos
+
+  52.2.2 Computação Científica e Análise de Dados — [V]
+	  Simulações e processamento massivo de dados
+
+
+
+PARTE 13 — RESUMO GERAL E CONCLUSÃO DA ARQUITETURA DE GPU
+
+
+53. Integração dos Conceitos da GPU — [I]
+
+ 53.1 Visão Integrada da Arquitetura da GPU — [I]
+
+  53.1.1 Integração entre Estrutura e Execução — [I]
+	  Relação entre organização interna e modelo de execução
+	  Cooperação entre unidades de processamento e memória
+
+  53.1.2 Integração entre Hardware e Modelo de Programação — [I]
+	  Relação entre arquitetura física e abstrações de software
+
+
+ 53.2 Relações da GPU com Outros Conceitos da Arquitetura — [I]
+
+  53.2.1 Relação com a CPU — [I]
+	  Processamento heterogêneo
+
+  53.2.2 Relação com a Hierarquia de Memória do Sistema — [I]
+	  Comunicação entre memórias distintas
+
+  53.2.3 Relação com Barramentos e Interconexões — [I]
+	  Transporte de dados entre componentes
+
+
+
+54. Resumo Geral da Arquitetura de GPU — [I]
+
+ 54.1 Revisão dos Conceitos Fundamentais — [I]
+
+  54.1.1 Fundamentos e Organização — [I]
+	  Definição e papel da GPU
+	  Estrutura interna e componentes principais
+
+  54.1.2 Execução e Paralelismo — [I]
+	  Modelos SIMD e SIMT
+	  Organização de threads, warps e blocos
+
+
+ 54.2 Revisão da Hierarquia de Memória — [I]
+
+  54.2.1 Níveis de Memória Estudados — [I]
+	  Registradores, memória compartilhada, cache e memória global
+
+
+ 54.3 Revisão das Aplicações e Integração — [I]
+
+  54.3.1 Uso Gráfico e Uso Geral — [I]
+	  Pipeline gráfico e GPGPU
+
+  54.3.2 Integração com o Sistema — [I]
+	  Comunicação entre CPU e GPU
+
+
+
+55. Conclusão do Estudo da GPU — [V]
+
+ 55.1 Síntese Final — [V]
+
+  55.1.1 O Papel da GPU na Arquitetura de Computadores — [V]
+	  Unidade essencial de processamento paralelo
+	  Complemento fundamental à CPU
+
+  55.1.2 Importância do Estudo da GPU — [V]
+	  Base para compreensão de sistemas heterogêneos
+	  Relevância para computação gráfica e computação geral
+
+
+ 55.2 Competências Desenvolvidas — [V]
+
+  55.2.1 Conhecimentos Adquiridos — [V]
+	  Estrutura da GPU
+	  Modelos de paralelismo
+	  Hierarquia de memória
+	  Pipeline gráfico e GPGPU
+
+  55.2.2 Preparação para Estudos Posteriores — [V]
+	  Arquiteturas paralelas avançadas
+	  Programação paralela
+	  Sistemas heterogêneos
+	  Aceleradores de inteligência artificial
+
+
+ 55.3 Encerramento — [V]
+
+  55.3.1 Visão Geral Final — [V]
+	  Integração dos conceitos estudados
+	  Importância da GPU na computação moderna
+	  Continuidade dos estudos em arquitetura de computadores
