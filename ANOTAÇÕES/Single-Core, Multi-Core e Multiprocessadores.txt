@@ -1,0 +1,1249 @@
+                                      SINGLE-CORE, MULTI-CORE E MULTIPROCESSADORES
+
+
+A classificação abaixo indica a profundidade recomendada para cada grande tópico da lista.
+
+[P] Profundidade — estudar mecanismos, estruturas, funcionamento interno e relações entre componentes.
+[I] Intermediário — compreender bem o funcionamento e as relações principais, sem precisar dominar todos os
+   detalhes de implementação.
+[V] Visão geral — saber o que é, para que serve e como se relaciona com Single-Core, Multi-Core e Multiprocessadores.
+
+
+
+PARTE 1 — FUNDAMENTOS DE SINGLE-CORE, MULTI-CORE E MULTIPROCESSADORES
+
+
+1. Introdução a Single-Core, Multi-Core e Multiprocessadores — [I]
+
+ 1.1 Conceitos Iniciais — [I]
+
+  1.1.1 Definição de Núcleo, Processador e Sistema Multiprocessado — [I]
+	  Conceito de núcleo (core)
+	  Conceito de processador
+	  Conceito de sistema multiprocessado
+	  Diferença entre núcleo e processador físico
+	  Importância da distinção para a Arquitetura de Computadores
+
+  1.1.2 Panorama Geral do Tema — [I]
+	  Single-core como organização de um único núcleo
+	  Multi-core como organização de múltiplos núcleos em um chip
+	  Multiprocessadores como sistemas com múltiplos processadores
+	  Relação entre os três modelos
+
+
+ 1.2 Importância do Tema na Arquitetura de Computadores — [I]
+
+  1.2.1 Papel Estrutural — [I]
+	  Base para entendimento de processadores modernos
+	  Relação com desempenho computacional
+	  Relação com eficiência energética
+	  Pré-requisito para estudos avançados de paralelismo
+
+  1.2.2 Relação com Outros Tópicos da Disciplina — [I]
+	  Relação com o Caminho de Dados
+	  Relação com a Unidade de Controle
+	  Relação com Memória e Cache
+	  Relação com Pipeline e ILP
+
+
+
+2. Evolução Histórica dos Processadores — [V]
+
+ 2.1 Do Processador Único ao Paralelismo em Chip — [V]
+
+  2.1.1 Era dos Processadores Single-Core — [V]
+	  Predominância do aumento de clock
+	  Escalonamento de frequência como estratégia de desempenho
+	  Limites térmicos e de consumo energético
+
+  2.1.2 Surgimento dos Processadores Multi-Core — [V]
+	  Estagnação do aumento de frequência ("muro de frequência")
+	  Migração do desempenho por clock para desempenho por paralelismo
+	  Primeiras arquiteturas comerciais multi-core
+
+
+ 2.2 Consolidação dos Sistemas Multiprocessados — [V]
+
+  2.2.1 Multiprocessamento em Servidores e Mainframes — [V]
+	  Sistemas multiprocessados anteriores ao multi-core popular
+	  Uso em ambientes científicos e corporativos
+	  Evolução para clusters e data centers
+
+  2.2.2 Convergência Atual — [V]
+	  Chips multi-core combinados em sistemas multiprocessados
+	  Escalabilidade hierárquica (núcleo → chip → nó → cluster)
+	  Tendências contemporâneas de paralelismo massivo
+
+
+
+3. Conceitos Fundamentais de Núcleo (Core) e Processador — [P]
+
+ 3.1 O que Caracteriza um Núcleo de Processamento — [P]
+
+  3.1.1 Componentes Mínimos de um Núcleo — [P]
+	  Unidade de Controle própria
+	  Caminho de Dados (Datapath) próprio
+	  Registradores próprios
+	  Capacidade de buscar, decodificar e executar instruções de forma independente
+
+  3.1.2 Núcleo como Unidade de Execução Independente — [P]
+	  Independência do fluxo de instruções
+	  Contexto de execução próprio
+	  Capacidade de executar threads distintas
+
+
+ 3.2 Processador como Encapsulamento de Núcleos — [P]
+
+  3.2.1 Processador Físico (Socket/Chip) — [P]
+	  Conceito de chip ou pastilha
+	  Relação entre chip e núcleos internos
+	  Componentes compartilhados no chip
+
+  3.2.2 Processador Lógico — [P]
+	  Núcleos físicos versus núcleos lógicos
+	  Relação com multithreading em nível de hardware
+	  Visão do sistema operacional sobre processadores lógicos
+
+
+
+4. Motivação para o Paralelismo em Hardware — [I]
+
+ 4.1 Limites do Desempenho Sequencial — [I]
+
+  4.1.1 Barreiras Físicas — [I]
+	  Limite de aumento de frequência de clock
+	  Aumento da dissipação de calor
+	  Limitações de consumo energético
+
+  4.1.2 Barreiras Arquiteturais — [I]
+	  Limitação do paralelismo em nível de instrução (ILP)
+	  Complexidade crescente de processadores superescalares
+	  Retorno decrescente de otimizações puramente sequenciais
+
+
+ 4.2 Benefícios do Paralelismo em Hardware — [I]
+
+  4.2.1 Ganhos de Desempenho — [I]
+	  Execução simultânea de tarefas
+	  Melhor aproveitamento de transistores disponíveis
+	  Maior taxa de execução de instruções em conjunto
+
+  4.2.2 Benefícios de Eficiência — [I]
+	  Menor consumo por unidade de desempenho
+	  Melhor escalabilidade térmica
+	  Aproveitamento de cargas de trabalho paralelas
+
+
+
+5. Classificações Fundamentais de Sistemas de Processamento (Taxonomia de Flynn) — [P]
+
+ 5.1 A Taxonomia de Flynn — [P]
+
+  5.1.1 Critérios de Classificação — [P]
+	  Fluxo de instruções (único ou múltiplo)
+	  Fluxo de dados (único ou múltiplo)
+	  Combinação dos dois critérios
+
+  5.1.2 Categorias da Taxonomia — [P]
+	  SISD — Single Instruction, Single Data
+	  SIMD — Single Instruction, Multiple Data
+	  MISD — Multiple Instruction, Single Data
+	  MIMD — Multiple Instruction, Multiple Data
+
+
+ 5.2 Relação da Taxonomia com Single-Core, Multi-Core e Multiprocessadores — [P]
+
+  5.2.1 Enquadramento do Single-Core — [P]
+	  Single-core como organização predominantemente SISD
+	  Exceções com unidades SIMD internas
+
+  5.2.2 Enquadramento do Multi-Core e dos Multiprocessadores — [P]
+	  Multi-core e multiprocessadores como organizações MIMD
+	  Execução de múltiplos fluxos de instruções sobre múltiplos dados
+	  Relação com paralelismo de tarefas e de dados
+
+
+
+PARTE 2 — ARQUITETURA E ORGANIZAÇÃO DE PROCESSADORES SINGLE-CORE
+
+
+6. Conceito e Características do Processador Single-Core — [P]
+
+ 6.1 Definição e Identidade — [P]
+
+  6.1.1 Conceito de Processador Single-Core — [P]
+	  Processador com um único núcleo de execução
+	  Um único fluxo de instruções ativo por vez
+	  Relação com a arquitetura Von Neumann clássica
+
+  6.1.2 Características Estruturais — [P]
+	  Unidade de Controle única
+	  Caminho de Dados único
+	  Conjunto único de registradores de propósito geral
+	  Hierarquia de memória dedicada a um fluxo de execução
+
+
+ 6.2 Modelo de Execução do Single-Core — [P]
+
+  6.2.1 Execução de um Único Fluxo — [P]
+	  Busca sequencial de instruções
+	  Decodificação e execução em ordem lógica
+	  Ausência nativa de paralelismo entre núcleos
+
+  6.2.2 Contexto de Execução — [P]
+	  Um único contexto ativo por vez em nível de hardware
+	  Troca de contexto realizada pelo sistema operacional
+	  Simulação de multitarefa por intercalação temporal
+
+
+
+7. Organização Interna de um Processador Single-Core — [P]
+
+ 7.1 Componentes Internos Essenciais — [P]
+
+  7.1.1 Unidade de Controle e Caminho de Dados — [P]
+	  Papel da Unidade de Controle na coordenação
+	  Papel do Caminho de Dados na execução
+	  Interação entre controle e datapath
+
+  7.1.2 Banco de Registradores e ULA — [P]
+	  Função do banco de registradores
+	  Função da Unidade Lógica e Aritmética
+	  Fluxo de operandos entre registradores e ULA
+
+
+ 7.2 Hierarquia de Memória em um Single-Core — [P]
+
+  7.2.1 Níveis de Cache Dedicados — [P]
+	  Cache L1 próxima ao núcleo
+	  Cache L2 dedicada ou compartilhada com o sistema
+	  Relação entre cache e desempenho sequencial
+
+  7.2.2 Acesso à Memória Principal — [P]
+	  Caminho único de acesso à memória
+	  Ausência de disputa entre núcleos
+	  Simplicidade do controle de acesso
+
+
+
+8. Execução Sequencial de Instruções no Single-Core — [P]
+
+ 8.1 Ciclo de Busca, Decodificação e Execução — [P]
+
+  8.1.1 Etapas do Ciclo de Instrução — [P]
+	  Busca da instrução (fetch)
+	  Decodificação (decode)
+	  Execução (execute)
+	  Escrita do resultado (write-back)
+
+  8.1.2 Ordem de Execução — [P]
+	  Execução em ordem do programa
+	  Dependência estrita do fluxo sequencial
+	  Impacto de desvios (branches) no fluxo
+
+
+ 8.2 Pipeline em um Único Núcleo — [I]
+
+  8.2.1 Conceito de Pipeline Aplicado ao Single-Core — [I]
+	  Sobreposição de estágios de execução
+	  Aumento do throughput sem multiplicar núcleos
+	  Limitações impostas por hazards
+
+
+
+9. Técnicas de Aceleração dentro de um Único Núcleo — [I]
+
+ 9.1 Paralelismo em Nível de Instrução Interno — [I]
+
+  9.1.1 Execução Superescalar — [I]
+	  Despacho de múltiplas instruções por ciclo
+	  Múltiplas unidades funcionais em um mesmo núcleo
+	  Limitações de dependência entre instruções
+
+  9.1.2 Execução Fora de Ordem e Especulativa — [I]
+	  Reordenação dinâmica de instruções
+	  Previsão de desvios
+	  Execução especulativa de instruções futuras
+
+
+ 9.2 Multithreading em Nível de Hardware em um Núcleo — [I]
+
+  9.2.1 Simultaneous Multithreading (SMT) — [I]
+	  Execução intercalada de múltiplas threads em um núcleo físico
+	  Aproveitamento de unidades funcionais ociosas
+	  Relação com núcleos lógicos visíveis ao sistema operacional
+
+
+
+10. Limitações do Processador Single-Core — [P]
+
+ 10.1 Limitações de Desempenho — [P]
+
+  10.1.1 Teto de Frequência e Consumo — [P]
+	  Limite prático de aumento de clock
+	  Aumento não linear de consumo de energia
+	  Restrições térmicas de operação
+
+  10.1.2 Limitação do Paralelismo Interno — [P]
+	  Saturação do ILP disponível em programas reais
+	  Dependências de dados e de controle
+	  Retorno decrescente de mais unidades funcionais
+
+
+ 10.2 Consequências para a Arquitetura de Computadores — [I]
+
+  10.2.1 Justificativa para o Multi-Core — [I]
+	  Necessidade de paralelismo em nível de núcleo
+	  Melhor relação desempenho/consumo com múltiplos núcleos
+	  Transição histórica para arquiteturas multi-core
+
+
+
+PARTE 3 — ARQUITETURA E ORGANIZAÇÃO DE PROCESSADORES MULTI-CORE
+
+
+11. Conceito e Características do Processador Multi-Core — [P]
+
+ 11.1 Definição e Identidade — [P]
+
+  11.1.1 Conceito de Processador Multi-Core — [P]
+	  Múltiplos núcleos de execução em um único chip
+	  Cada núcleo com Unidade de Controle e Datapath próprios
+	  Capacidade de executar múltiplos fluxos de instruções simultaneamente
+
+  11.1.2 Motivações para a Organização Multi-Core — [P]
+	  Superação dos limites do single-core
+	  Melhor relação desempenho por watt
+	  Aproveitamento de paralelismo em nível de thread
+
+
+ 11.2 Componentes de um Chip Multi-Core — [P]
+
+  11.2.1 Núcleos e Recursos Privados — [P]
+	  Registradores privados por núcleo
+	  Cache L1 privada por núcleo
+	  Unidade de Controle e Datapath independentes
+
+  11.2.2 Recursos Compartilhados no Chip — [P]
+	  Cache de último nível compartilhada (LLC)
+	  Controlador de memória compartilhado
+	  Interconexão interna compartilhada
+
+
+
+12. Organização Interna de um Processador Multi-Core — [P]
+
+ 12.1 Arranjo Físico dos Núcleos — [P]
+
+  12.1.1 Disposição dos Núcleos no Chip — [P]
+	  Organização em grade (grid)
+	  Organização em anel
+	  Organização hierárquica em clusters de núcleos
+
+  12.1.2 Integração de Componentes Auxiliares — [P]
+	  Controladores de E/S integrados
+	  Unidades gráficas integradas (quando aplicável)
+	  Controladores de energia e frequência por núcleo
+
+
+ 12.2 Fluxo de Dados entre Núcleos — [I]
+
+  12.2.1 Comunicação Interna do Chip — [I]
+	  Caminhos de comunicação núcleo-a-núcleo
+	  Comunicação via cache compartilhada
+	  Comunicação via interconexão dedicada
+
+
+
+13. Tipos de Organização Multi-Core (Homogênea e Heterogênea) — [P]
+
+ 13.1 Multi-Core Homogêneo — [P]
+
+  13.1.1 Características — [P]
+	  Núcleos idênticos em arquitetura e desempenho
+	  Simetria de capacidade de processamento
+	  Simplicidade de escalonamento de tarefas
+
+  13.1.2 Vantagens e Limitações — [P]
+	  Previsibilidade de desempenho
+	  Menor flexibilidade para cargas heterogêneas
+	  Uso eficiente em cargas uniformes
+
+
+ 13.2 Multi-Core Heterogêneo — [P]
+
+  13.2.1 Características — [P]
+	  Núcleos com microarquiteturas diferentes no mesmo chip
+	  Combinação de núcleos de alto desempenho e alta eficiência
+	  Exemplo conceitual: arquiteturas big.LITTLE
+
+  13.2.2 Vantagens e Desafios — [P]
+	  Melhor eficiência energética geral
+	  Complexidade adicional de escalonamento
+	  Necessidade de decisão dinâmica de alocação de tarefas
+
+
+
+14. Núcleos e Compartilhamento de Componentes no Chip — [P]
+
+ 14.1 Recursos Compartilháveis — [P]
+
+  14.1.1 Compartilhamento de Cache — [P]
+	  Cache de último nível compartilhada entre núcleos
+	  Impacto no desempenho coletivo
+	  Disputa por espaço de cache (cache contention)
+
+  14.1.2 Compartilhamento de Barramento e Memória — [P]
+	  Barramento interno compartilhado
+	  Controlador de memória único para múltiplos núcleos
+	  Gargalos de largura de banda
+
+
+ 14.2 Isolamento de Recursos Privados — [I]
+
+  14.2.1 Importância dos Recursos Privados — [I]
+	  Redução de contenda entre núcleos
+	  Proteção do estado individual de execução
+	  Equilíbrio entre recursos privados e compartilhados
+
+
+
+15. Escalonamento e Distribuição de Tarefas entre Núcleos — [I]
+
+ 15.1 Papel do Escalonador em Sistemas Multi-Core — [I]
+
+  15.1.1 Distribuição de Threads e Processos — [I]
+	  Alocação de tarefas aos núcleos disponíveis
+	  Migração de tarefas entre núcleos
+	  Afinidade de núcleo (core affinity)
+
+  15.1.2 Balanceamento de Carga entre Núcleos — [I]
+	  Distribuição equilibrada de trabalho
+	  Prevenção de núcleos ociosos ou sobrecarregados
+	  Impacto no desempenho global do chip
+
+
+ 15.2 Escalonamento em Ambientes Heterogêneos — [V]
+
+  15.2.1 Decisões de Alocação — [V]
+	  Escolha entre núcleos de desempenho e de eficiência
+	  Critérios de consumo energético
+	  Adaptação dinâmica à carga de trabalho
+
+
+
+16. Limitações e Desafios do Multi-Core — [I]
+
+ 16.1 Desafios Estruturais — [I]
+
+  16.1.1 Escalabilidade Limitada — [I]
+	  Saturação da largura de banda de memória
+	  Aumento da complexidade de interconexão
+	  Retorno decrescente ao adicionar núcleos
+
+  16.1.2 Complexidade de Coordenação — [I]
+	  Necessidade de coerência de cache
+	  Necessidade de sincronização entre núcleos
+	  Overhead de comunicação interna
+
+
+ 16.2 Desafios de Software — [V]
+
+  16.2.1 Dependência de Paralelização do Software — [V]
+	  Necessidade de programas capazes de explorar múltiplos núcleos
+	  Limitação imposta por código sequencial (Lei de Amdahl)
+	  Complexidade de programação concorrente
+
+
+
+PARTE 4 — ARQUITETURA E ORGANIZAÇÃO DE SISTEMAS MULTIPROCESSADORES
+
+
+17. Conceito e Características de Sistemas Multiprocessados — [P]
+
+ 17.1 Definição e Identidade — [P]
+
+  17.1.1 Conceito de Sistema Multiprocessado — [P]
+	  Sistema com múltiplos processadores físicos distintos
+	  Diferença em relação a múltiplos núcleos em um único chip
+	  Cooperação entre processadores para execução conjunta
+
+  17.1.2 Contexto de Uso — [P]
+	  Servidores e estações de trabalho de alto desempenho
+	  Sistemas científicos e de processamento massivo
+	  Ampliação de capacidade além de um único chip
+
+
+ 17.2 Componentes de um Sistema Multiprocessado — [P]
+
+  17.2.1 Processadores Físicos Independentes — [P]
+	  Cada processador com seus próprios núcleos
+	  Cada processador com sua própria hierarquia de cache
+	  Conexão entre processadores via interconexão dedicada
+
+  17.2.2 Recursos de Sistema Compartilhados ou Distribuídos — [P]
+	  Memória principal compartilhada ou distribuída
+	  Dispositivos de entrada e saída compartilhados
+	  Barramento ou rede de interconexão entre processadores
+
+
+
+18. Classificação dos Sistemas Multiprocessadores — [P]
+
+ 18.1 Critérios de Classificação — [P]
+
+  18.1.1 Quanto ao Acesso à Memória — [P]
+	  Sistemas de memória compartilhada
+	  Sistemas de memória distribuída
+	  Sistemas híbridos
+
+  18.1.2 Quanto à Homogeneidade dos Processadores — [P]
+	  Multiprocessamento simétrico
+	  Multiprocessamento assimétrico
+
+
+ 18.2 Visão Geral das Categorias — [I]
+
+  18.2.1 Panorama Comparativo — [I]
+	  Diferenças de complexidade entre categorias
+	  Diferenças de custo e escalabilidade
+	  Aplicações típicas de cada categoria
+
+
+
+19. Multiprocessamento Simétrico (SMP) — [P]
+
+ 19.1 Fundamentos do SMP — [P]
+
+  19.1.1 Conceito de SMP — [P]
+	  Processadores idênticos com acesso igualitário à memória
+	  Um único sistema operacional controlando todos os processadores
+	  Distribuição simétrica de tarefas
+
+  19.1.2 Características Estruturais do SMP — [P]
+	  Memória compartilhada com tempo de acesso uniforme (UMA)
+	  Interconexão comum entre processadores e memória
+	  Coerência de cache entre processadores
+
+
+ 19.2 Vantagens e Limitações do SMP — [I]
+
+  19.2.1 Vantagens — [I]
+	  Simplicidade de programação em memória compartilhada
+	  Balanceamento de carga simplificado
+
+  19.2.2 Limitações — [I]
+	  Escalabilidade limitada pelo barramento compartilhado
+	  Contenda de acesso à memória com muitos processadores
+
+
+
+20. Multiprocessamento Assimétrico (AMP) — [I]
+
+ 20.1 Fundamentos do AMP — [I]
+
+  20.1.1 Conceito de AMP — [I]
+	  Processadores com funções diferenciadas
+	  Atribuição específica de tarefas por processador
+	  Ausência de simetria de controle do sistema operacional
+
+  20.1.2 Casos de Uso Característicos — [V]
+	  Sistemas embarcados com processadores dedicados
+	  Processadores especializados para funções específicas
+
+
+ 20.2 Comparação entre AMP e SMP — [V]
+
+  20.2.1 Diferenças Principais — [V]
+	  Controle centralizado versus distribuído
+	  Flexibilidade versus especialização
+
+
+
+21. Sistemas com Memória Compartilhada e Distribuída — [P]
+
+ 21.1 Sistemas de Memória Compartilhada — [P]
+
+  21.1.1 Acesso Uniforme à Memória (UMA) — [P]
+	  Tempo de acesso igual para todos os processadores
+	  Simplicidade conceitual de programação
+	  Limitação de escalabilidade física
+
+  21.1.2 Acesso Não Uniforme à Memória (NUMA) — [P]
+	  Tempo de acesso variável conforme a localidade
+	  Memória local por processador ou grupo de processadores
+	  Importância da localidade de dados no desempenho
+
+
+ 21.2 Sistemas de Memória Distribuída — [I]
+
+  21.2.1 Conceito e Funcionamento — [I]
+	  Cada processador com memória própria e exclusiva
+	  Comunicação via troca explícita de mensagens
+	  Ausência de espaço de endereçamento global único
+
+
+
+22. Clusters e Sistemas Multiprocessados de Larga Escala — [I]
+
+ 22.1 Conceito de Cluster — [I]
+
+  22.1.1 Cluster como Conjunto de Nós — [I]
+	  Múltiplos sistemas completos interligados por rede
+	  Cada nó com seus próprios processadores e memória
+	  Cooperação via rede de interconexão
+
+  22.1.2 Escalabilidade em Larga Escala — [V]
+	  Crescimento por adição de nós
+	  Aplicação em processamento distribuído massivo
+
+
+ 22.2 Relação com Data Centers e Computação em Nuvem — [V]
+
+  22.2.1 Uso Moderno de Clusters — [V]
+	  Infraestrutura de data centers
+	  Sistemas de processamento distribuído em nuvem
+
+
+
+PARTE 5 — COMPARAÇÃO ENTRE SINGLE-CORE, MULTI-CORE E MULTIPROCESSADORES
+
+
+23. Diferenças Estruturais entre Single-Core, Multi-Core e Multiprocessadores — [P]
+
+ 23.1 Comparação de Organização Física — [P]
+
+  23.1.1 Nível de Integração — [P]
+	  Single-core: um único núcleo em um chip
+	  Multi-core: múltiplos núcleos em um único chip
+	  Multiprocessadores: múltiplos chips ou processadores físicos
+
+  23.1.2 Compartilhamento de Recursos — [P]
+	  Ausência de compartilhamento no single-core
+	  Compartilhamento intenso de cache e barramento no multi-core
+	  Compartilhamento mais distribuído ou ausência dele nos multiprocessadores
+
+
+ 23.2 Comparação de Modelo de Execução — [I]
+
+  23.2.1 Fluxos de Execução — [I]
+	  Um único fluxo no single-core
+	  Múltiplos fluxos dentro de um chip no multi-core
+	  Múltiplos fluxos distribuídos entre processadores nos multiprocessadores
+
+
+
+24. Comparação de Desempenho e Aplicabilidade — [I]
+
+ 24.1 Desempenho em Diferentes Cargas de Trabalho — [I]
+
+  24.1.1 Cargas Sequenciais — [I]
+	  Vantagem relativa do single-core em tarefas puramente sequenciais
+	  Ausência de ganho automático com mais núcleos
+
+  24.1.2 Cargas Paralelizáveis — [I]
+	  Vantagem do multi-core e dos multiprocessadores
+	  Dependência da fração paralelizável do programa
+
+
+ 24.2 Aplicabilidade por Contexto de Uso — [V]
+
+  24.2.1 Contextos Típicos — [V]
+	  Dispositivos simples e sistemas embarcados básicos
+	  Computadores pessoais e estações de trabalho
+	  Servidores e sistemas de processamento massivo
+
+
+
+25. Critérios de Escolha entre Arquiteturas — [I]
+
+ 25.1 Fatores Técnicos de Decisão — [I]
+
+  25.1.1 Natureza da Carga de Trabalho — [I]
+	  Grau de paralelismo disponível na aplicação
+	  Necessidade de baixa latência versus alto throughput
+
+  25.1.2 Restrições Físicas e de Custo — [V]
+	  Limitações de consumo energético
+	  Custo de fabricação e infraestrutura
+	  Espaço físico disponível
+
+
+
+PARTE 6 — COMUNICAÇÃO E INTERCONEXÃO ENTRE NÚCLEOS E PROCESSADORES
+
+
+26. Fundamentos da Comunicação entre Núcleos e Processadores — [P]
+
+ 26.1 Necessidade de Comunicação — [P]
+
+  26.1.1 Motivos para a Comunicação Interna — [P]
+	  Troca de dados entre unidades de execução
+	  Coordenação de tarefas cooperativas
+	  Manutenção da coerência de estado compartilhado
+
+  26.1.2 Níveis de Comunicação — [P]
+	  Comunicação dentro do chip (núcleo a núcleo)
+	  Comunicação entre chips (processador a processador)
+	  Comunicação entre nós (em clusters)
+
+
+ 26.2 Requisitos de uma Boa Comunicação Interna — [I]
+
+  26.2.1 Critérios de Qualidade — [I]
+	  Baixa latência de comunicação
+	  Alta largura de banda
+	  Escalabilidade conforme o número de núcleos
+
+
+
+27. Barramentos e Interconexões Internas — [P]
+
+ 27.1 Barramento Compartilhado — [P]
+
+  27.1.1 Funcionamento do Barramento — [P]
+	  Canal único compartilhado entre múltiplos núcleos
+	  Arbitração de acesso ao barramento
+	  Simplicidade estrutural
+
+  27.1.2 Limitações do Barramento Compartilhado — [P]
+	  Saturação com o aumento de núcleos
+	  Gargalo único de comunicação
+	  Escalabilidade restrita
+
+
+ 27.2 Interconexões Ponto a Ponto — [I]
+
+  27.2.1 Conceito — [I]
+	  Ligações diretas entre pares de núcleos ou processadores
+	  Redução de disputa por um único canal
+	  Maior complexidade de roteamento
+
+
+
+28. Redes em Chip (Network-on-Chip — NoC) — [P]
+
+ 28.1 Conceito de NoC — [P]
+
+  28.1.1 Motivação para Redes em Chip — [P]
+	  Substituição do barramento único por uma rede interna
+	  Escalabilidade para grande número de núcleos
+	  Comunicação paralela entre múltiplos pares de núcleos
+
+  28.1.2 Componentes de uma NoC — [P]
+	  Roteadores internos
+	  Enlaces de comunicação entre roteadores
+	  Interfaces de rede em cada núcleo
+
+
+ 28.2 Topologias de NoC — [I]
+
+  28.2.1 Topologias Comuns — [I]
+	  Topologia em malha (mesh)
+	  Topologia em anel
+	  Topologia em árvore
+
+  28.2.2 Critérios de Escolha da Topologia — [V]
+	  Relação entre latência e número de saltos
+	  Custo de implementação física
+	  Escalabilidade da topologia
+
+
+ 28.3 Roteamento em NoC — [I]
+
+  28.3.1 Estratégias de Roteamento — [I]
+	  Roteamento estático (determinístico)
+	  Roteamento adaptativo
+	  Prevenção de congestionamento
+
+
+
+29. Interconexões entre Processadores (Sistemas Multiprocessados) — [I]
+
+ 29.1 Interconexão Direta entre Processadores — [I]
+
+  29.1.1 Enlaces Ponto a Ponto entre Processadores — [I]
+	  Ligações dedicadas entre processadores físicos
+	  Redução de latência em comparação a barramentos compartilhados
+
+
+ 29.2 Redes de Interconexão em Clusters — [V]
+
+  29.2.1 Redes Externas de Comunicação — [V]
+	  Redes de alta velocidade entre nós
+	  Importância da latência de rede no desempenho distribuído
+
+
+
+30. Protocolos de Comunicação e Sinalização — [I]
+
+ 30.1 Protocolos Internos ao Chip — [I]
+
+  30.1.1 Sinalização de Controle entre Núcleos — [I]
+	  Sinais de coordenação entre núcleos
+	  Protocolos de arbitragem de acesso a recursos
+
+
+ 30.2 Protocolos entre Processadores — [V]
+
+  30.2.1 Troca de Mensagens entre Processadores — [V]
+	  Formatos de mensagens de coordenação
+	  Confiabilidade na entrega de mensagens
+
+
+
+PARTE 7 — COMPARTILHAMENTO DE RECURSOS E ORGANIZAÇÃO DA MEMÓRIA
+
+
+31. Organização da Memória em Sistemas Multi-Core e Multiprocessados — [P]
+
+ 31.1 Visão Geral da Organização de Memória — [P]
+
+  31.1.1 Memória Privada versus Compartilhada — [P]
+	  Memória privada por núcleo ou processador
+	  Memória compartilhada entre múltiplas unidades
+	  Combinações híbridas de organização
+
+  31.1.2 Impacto da Organização na Programação — [I]
+	  Facilidade de comunicação via memória compartilhada
+	  Necessidade de troca explícita de mensagens em memória distribuída
+
+
+
+32. Hierarquia de Cache em Multi-Core — [P]
+
+ 32.1 Níveis de Cache em Chips Multi-Core — [P]
+
+  32.1.1 Cache Privada por Núcleo — [P]
+	  Cache L1 privada de instruções e dados
+	  Cache L2 privada ou parcialmente compartilhada
+
+  32.1.2 Cache Compartilhada de Último Nível — [P]
+	  Função da cache L3 (ou último nível) compartilhada
+	  Benefícios do compartilhamento entre núcleos
+	  Disputa por capacidade de cache compartilhada
+
+
+ 32.2 Políticas de Uso da Cache Compartilhada — [I]
+
+  32.2.1 Estratégias de Alocação — [I]
+	  Partição de cache entre núcleos
+	  Alocação dinâmica conforme a carga
+
+
+
+33. Coerência de Cache — [P]
+
+ 33.1 Fundamentos da Coerência — [P]
+
+  33.1.1 O Problema da Coerência de Cache — [P]
+	  Múltiplas cópias de um mesmo dado em caches distintas
+	  Risco de inconsistência entre cópias
+	  Necessidade de manter uma visão coerente da memória
+
+  33.1.2 Requisitos de um Protocolo de Coerência — [P]
+	  Garantia de visão consistente entre núcleos
+	  Propagação de alterações de dados
+	  Invalidação ou atualização de cópias desatualizadas
+
+
+ 33.2 Protocolos de Coerência de Cache — [P]
+
+  33.2.1 Protocolos Baseados em Invalidação — [P]
+	  Conceito de invalidação de cópias
+	  Protocolo MESI e suas variações
+	  Estados básicos de uma linha de cache
+
+  33.2.2 Protocolos Baseados em Atualização — [I]
+	  Conceito de propagação de atualização
+	  Comparação com protocolos de invalidação
+
+
+ 33.3 Mecanismos de Implementação da Coerência — [I]
+
+  33.3.1 Snooping (Espionagem de Barramento) — [I]
+	  Monitoramento do barramento por todos os caches
+	  Adequação a sistemas com poucos núcleos
+
+  33.3.2 Diretórios de Coerência — [I]
+	  Registro centralizado ou distribuído do estado das linhas
+	  Escalabilidade superior ao snooping em sistemas grandes
+
+
+
+34. Consistência de Memória — [P]
+
+ 34.1 Conceito de Consistência de Memória — [P]
+
+  34.1.1 Diferença entre Coerência e Consistência — [P]
+	  Coerência trata de uma única posição de memória
+	  Consistência trata da ordem entre múltiplas posições
+	  Importância para programação concorrente correta
+
+
+ 34.2 Modelos de Consistência — [I]
+
+  34.2.1 Consistência Sequencial — [I]
+	  Ordem global única de operações de memória
+	  Simplicidade conceitual para o programador
+
+  34.2.2 Modelos Relaxados de Consistência — [I]
+	  Flexibilização da ordem para ganho de desempenho
+	  Necessidade de barreiras de memória explícitas
+
+
+
+35. Compartilhamento de Recursos entre Núcleos — [I]
+
+ 35.1 Recursos Frequentemente Compartilhados — [I]
+
+  35.1.1 Compartilhamento de Largura de Banda de Memória — [I]
+	  Disputa por acesso à memória principal
+	  Impacto no desempenho individual dos núcleos
+
+  35.1.2 Compartilhamento de Unidades de E/S — [V]
+	  Controladores de entrada e saída compartilhados
+	  Arbitragem de acesso a dispositivos externos
+
+
+
+PARTE 8 — PARALELISMO, CONCORRÊNCIA E EXECUÇÃO DE TAREFAS
+
+
+36. Fundamentos de Paralelismo e Concorrência — [P]
+
+ 36.1 Conceitos Básicos — [P]
+
+  36.1.1 Diferença entre Paralelismo e Concorrência — [P]
+	  Paralelismo como execução simultânea real
+	  Concorrência como estruturação de tarefas independentes
+	  Relação entre concorrência lógica e paralelismo físico
+
+  36.1.2 Níveis de Paralelismo em Hardware — [P]
+	  Paralelismo em nível de instrução (ILP)
+	  Paralelismo em nível de thread (TLP)
+	  Paralelismo em nível de dados (DLP)
+
+
+
+37. Paralelismo em Nível de Instrução (ILP) — [I]
+
+ 37.1 Conceito de ILP — [I]
+
+  37.1.1 Exploração de ILP dentro de um Núcleo — [I]
+	  Execução simultânea de instruções independentes
+	  Limitações impostas por dependências de dados
+
+  37.1.2 Relação do ILP com Multi-Core — [I]
+	  ILP como paralelismo interno a um único núcleo
+	  Complementaridade entre ILP e paralelismo entre núcleos
+
+
+
+38. Paralelismo em Nível de Thread (TLP) — [P]
+
+ 38.1 Conceito de TLP — [P]
+
+  38.1.1 Threads como Unidades de Paralelismo — [P]
+	  Definição de thread de execução
+	  Múltiplas threads executando em núcleos distintos
+	  Relação entre TLP e arquiteturas multi-core
+
+  38.1.2 Exploração de TLP em Hardware — [P]
+	  Distribuição de threads entre núcleos físicos
+	  Uso de SMT para TLP dentro de um núcleo
+
+
+ 38.2 TLP em Sistemas Multiprocessados — [I]
+
+  38.2.1 Distribuição de Threads entre Processadores — [I]
+	  Alocação de threads a processadores distintos
+	  Impacto da localidade de memória no desempenho
+
+
+
+39. Paralelismo em Nível de Dados (DLP) — [I]
+
+ 39.1 Conceito de DLP — [I]
+
+  39.1.1 Execução Paralela sobre Conjuntos de Dados — [I]
+	  Aplicação da mesma operação sobre múltiplos dados
+	  Relação com a classificação SIMD
+
+  39.1.2 Relação do DLP com Multi-Core e Multiprocessadores — [V]
+	  Combinação de DLP interno ao núcleo com TLP entre núcleos
+	  Uso em cargas de processamento vetorial e gráfico
+
+
+
+40. Modelos de Execução Paralela — [I]
+
+ 40.1 Modelos Conceituais de Execução — [I]
+
+  40.1.1 Modelo de Memória Compartilhada — [I]
+	  Comunicação via leitura e escrita em memória comum
+	  Adequação a sistemas multi-core e SMP
+
+  40.1.2 Modelo de Passagem de Mensagens — [I]
+	  Comunicação explícita entre unidades de processamento
+	  Adequação a sistemas de memória distribuída e clusters
+
+
+ 40.2 Decomposição de Tarefas para Execução Paralela — [V]
+
+  40.2.1 Estratégias de Decomposição — [V]
+	  Decomposição funcional de tarefas
+	  Decomposição de dados entre unidades de execução
+
+
+
+PARTE 9 — SINCRONIZAÇÃO, COORDENAÇÃO E DISTRIBUIÇÃO DE CARGA
+
+
+41. Fundamentos de Sincronização entre Núcleos e Processadores — [P]
+
+ 41.1 Necessidade de Sincronização — [P]
+
+  41.1.1 Motivos para Sincronizar Execuções Paralelas — [P]
+	  Coordenação do acesso a recursos compartilhados
+	  Garantia de ordem correta entre operações dependentes
+	  Prevenção de resultados inconsistentes
+
+  41.1.2 Riscos da Ausência de Sincronização — [P]
+	  Condições de corrida (race conditions)
+	  Resultados não determinísticos
+	  Corrupção de dados compartilhados
+
+
+
+42. Mecanismos de Sincronização — [P]
+
+ 42.1 Mecanismos Básicos de Exclusão Mútua — [P]
+
+  42.1.1 Locks e Semáforos — [P]
+	  Conceito de exclusão mútua
+	  Funcionamento básico de locks
+	  Funcionamento básico de semáforos
+
+  42.1.2 Suporte de Hardware à Sincronização — [P]
+	  Instruções atômicas de hardware
+	  Operações de compara-e-troca (compare-and-swap)
+	  Importância da atomicidade em nível de hardware
+
+
+ 42.2 Mecanismos de Coordenação Coletiva — [I]
+
+  42.2.1 Barreiras de Sincronização — [I]
+	  Conceito de barreira entre threads ou processos
+	  Uso para alinhar fases de execução paralela
+
+
+
+43. Escalonamento e Balanceamento de Carga — [P]
+
+ 43.1 Escalonamento em Sistemas Paralelos — [P]
+
+  43.1.1 Objetivos do Escalonamento — [P]
+	  Distribuição eficiente de tarefas entre unidades de execução
+	  Redução do tempo total de execução
+	  Maximização do uso dos recursos disponíveis
+
+  43.1.2 Estratégias de Escalonamento — [I]
+	  Escalonamento estático
+	  Escalonamento dinâmico
+
+
+ 43.2 Balanceamento de Carga entre Núcleos e Processadores — [I]
+
+  43.2.1 Técnicas de Balanceamento — [I]
+	  Redistribuição dinâmica de tarefas
+	  Monitoramento de carga por unidade de execução
+	  Prevenção de desequilíbrio entre núcleos
+
+
+
+44. Problemas de Concorrência — [I]
+
+ 44.1 Problemas Clássicos de Sistemas Paralelos — [I]
+
+  44.1.1 Deadlock — [I]
+	  Conceito de impasse entre tarefas
+	  Condições que favorecem sua ocorrência
+
+  44.1.2 Starvation e Contenda — [V]
+	  Conceito de inanição (starvation) de tarefas
+	  Disputa excessiva por recursos compartilhados
+
+
+
+PARTE 10 — DESEMPENHO, ESCALABILIDADE E EFICIÊNCIA
+
+
+45. Métricas de Desempenho em Sistemas Paralelos — [P]
+
+ 45.1 Métricas Fundamentais — [P]
+
+  45.1.1 Speedup (Aceleração) — [P]
+	  Conceito de speedup em relação à execução sequencial
+	  Speedup ideal versus speedup real
+
+  45.1.2 Eficiência e Throughput — [P]
+	  Conceito de eficiência de utilização dos núcleos
+	  Conceito de throughput (vazão) do sistema
+
+
+
+46. Lei de Amdahl e Lei de Gustafson — [P]
+
+ 46.1 Lei de Amdahl — [P]
+
+  46.1.1 Fundamentos da Lei de Amdahl — [P]
+	  Limitação do speedup pela fração sequencial do programa
+	  Impacto do número de núcleos no ganho possível
+	  Implicações para o projeto de sistemas multi-core
+
+
+ 46.2 Lei de Gustafson — [I]
+
+  46.2.1 Fundamentos da Lei de Gustafson — [I]
+	  Perspectiva de escalonamento do problema com o hardware
+	  Comparação com a visão da Lei de Amdahl
+
+
+
+47. Escalabilidade de Sistemas Multi-Core e Multiprocessados — [I]
+
+ 47.1 Conceito de Escalabilidade — [I]
+
+  47.1.1 Escalabilidade Forte e Fraca — [I]
+	  Escalabilidade com problema de tamanho fixo
+	  Escalabilidade com problema crescente proporcionalmente aos recursos
+
+  47.1.2 Fatores que Limitam a Escalabilidade — [I]
+	  Overhead de comunicação e sincronização
+	  Saturação de largura de banda de memória
+	  Fração sequencial inerente ao problema
+
+
+
+48. Eficiência Energética e Térmica — [I]
+
+ 48.1 Consumo de Energia em Sistemas Paralelos — [I]
+
+  48.1.1 Relação entre Núcleos e Consumo — [I]
+	  Consumo por núcleo ativo
+	  Vantagem energética de múltiplos núcleos em frequências menores
+
+  48.1.2 Gerenciamento Térmico — [V]
+	  Controle dinâmico de frequência e tensão
+	  Desativação seletiva de núcleos ociosos
+
+
+
+PARTE 11 — EVOLUÇÃO, ORGANIZAÇÕES AVANÇADAS E APLICAÇÕES
+
+
+49. Arquiteturas Heterogêneas e Aceleradores — [V]
+
+ 49.1 Combinação de Núcleos e Aceleradores — [V]
+
+  49.1.1 Conceito de Acelerador de Hardware — [V]
+	  Unidades especializadas para tarefas específicas
+	  Cooperação entre núcleos de propósito geral e aceleradores
+
+  49.1.2 Exemplos Conceituais de Aceleradores — [V]
+	  Unidades de processamento gráfico (GPU)
+	  Aceleradores dedicados a inteligência artificial
+
+
+
+50. Many-Core e Processadores Massivamente Paralelos — [V]
+
+ 50.1 Conceito de Many-Core — [V]
+
+  50.1.1 Diferença entre Multi-Core e Many-Core — [V]
+	  Número elevado de núcleos simples em vez de poucos núcleos complexos
+	  Foco em throughput agregado em vez de desempenho individual
+
+  50.1.2 Aplicações Típicas de Many-Core — [V]
+	  Processamento gráfico massivo
+	  Cargas de trabalho altamente paralelizáveis
+
+
+
+51. Multiprocessadores em Nuvem e Data Centers — [V]
+
+ 51.1 Escala de Processamento em Nuvem — [V]
+
+  51.1.1 Infraestrutura de Multiprocessamento em Nuvem — [V]
+	  Conjuntos massivos de servidores multiprocessados
+	  Virtualização de recursos de processamento
+
+
+
+52. Tendências Futuras em Processadores Paralelos — [V]
+
+ 52.1 Direções de Evolução — [V]
+
+  52.1.1 Novas Abordagens Arquiteturais — [V]
+	  Crescimento de arquiteturas heterogêneas
+	  Integração cada vez maior de aceleradores especializados
+	  Continuidade da busca por eficiência energética
+
+
+
+PARTE 12 — RESUMO GERAL E COMPARAÇÃO FINAL
+
+
+53. Integração dos Conceitos de Single-Core, Multi-Core e Multiprocessadores — [I]
+
+ 53.1 Visão Integrada do Tema — [I]
+
+  53.1.1 Relação entre os Níveis de Paralelismo — [I]
+	  Do núcleo único ao paralelismo massivo
+	  Continuidade conceitual entre núcleo, chip e sistema
+
+  53.1.2 Integração com Outros Tópicos da Arquitetura — [I]
+	  Relação com memória e cache
+	  Relação com interconexão e comunicação
+	  Relação com desempenho e eficiência
+
+
+
+54. Resumo Geral do Estudo — [I]
+
+ 54.1 Revisão dos Conceitos Fundamentais — [I]
+
+  54.1.1 Fundamentos Essenciais — [I]
+	  Definições de single-core, multi-core e multiprocessadores
+	  Motivações para o paralelismo em hardware
+	  Taxonomia de Flynn
+
+  54.1.2 Componentes e Organização — [I]
+	  Organização interna de cada arquitetura
+	  Comunicação e interconexão
+	  Memória, cache e coerência
+
+
+ 54.2 Revisão de Desempenho e Escalabilidade — [I]
+
+  54.2.1 Principais Métricas e Leis — [I]
+	  Speedup e eficiência
+	  Lei de Amdahl e Lei de Gustafson
+	  Escalabilidade e eficiência energética
+
+
+
+55. Conclusão do Estudo — [V]
+
+ 55.1 Síntese Final — [V]
+
+  55.1.1 Papel do Tema na Arquitetura de Computadores — [V]
+	  Base para compreensão de processadores modernos
+	  Importância para o estudo de desempenho e paralelismo
+
+  55.1.2 Preparação para Estudos Posteriores — [V]
+	  Pipeline e ILP
+	  Hierarquia de memória e cache
+	  Programação paralela e concorrente
+	  Arquiteturas heterogêneas e aceleradores
