@@ -1,0 +1,1512 @@
+                                          BENCHMARKS
+
+
+A classificação abaixo indica a profundidade recomendada para cada grande tópico da lista.
+
+[P] Profundidade — estudar mecanismos, estruturas, funcionamento interno e relações entre componentes.
+[I] Intermediário — compreender bem o funcionamento e as relações principais, sem precisar dominar todos os
+   detalhes de implementação.
+[V] Visão geral — saber o que é, para que serve e como se relaciona com o estudo de Benchmarks.
+
+
+
+PARTE 1 — FUNDAMENTOS DOS BENCHMARKS
+
+
+1. Introdução aos Benchmarks — [I]
+
+ 1.1 Contextualização Geral — [I]
+
+  1.1.1 O Problema da Avaliação de Desempenho — [I]
+	  Necessidade de comparar sistemas
+	  Dificuldade de avaliação direta
+	  Papel do Benchmark como instrumento
+	  Avaliação objetiva de hardware e software
+
+  1.1.2 Situação do Benchmark na Arquitetura de Computadores — [I]
+	  Relação com desempenho de processadores
+	  Relação com memória e cache
+	  Relação com sistemas completos
+	  Uso em pesquisa e na indústria
+
+
+ 1.2 Papel Introdutório dos Benchmarks — [I]
+
+  1.2.1 Função Prática dos Benchmarks — [I]
+	  Medição de desempenho real
+	  Apoio à tomada de decisão
+	  Base para engenharia de sistemas
+	  Base para pesquisa acadêmica
+
+  1.2.2 Benchmark como Ferramenta Científica — [I]
+	  Padronização de testes
+	  Repetibilidade de experimentos
+	  Comparabilidade entre estudos
+
+
+
+2. Conceito e Definição de Benchmark — [P]
+
+ 2.1 Definição Formal — [P]
+
+  2.1.1 O que é um Benchmark — [P]
+	  Programa ou conjunto de programas de teste
+	  Carga de trabalho padronizada
+	  Instrumento de medição comparável
+	  Procedimento reprodutível de avaliação
+
+  2.1.2 Distinção entre Benchmark, Teste e Medição — [P]
+	  Benchmark como padrão de comparação
+	  Teste como verificação funcional
+	  Medição como coleta de dados brutos
+	  Relação entre os três conceitos
+
+
+ 2.2 Elementos Constituintes de um Benchmark — [P]
+
+  2.2.1 Componentes Básicos — [P]
+	  Carga de trabalho (workload)
+	  Ambiente de execução
+	  Procedimento de medição
+	  Métrica de resultado
+
+  2.2.2 Relação entre os Componentes — [P]
+	  Dependência entre carga e métrica
+	  Influência do ambiente no resultado
+	  Necessidade de padronização conjunta
+
+
+
+3. Papel dos Benchmarks na Arquitetura e Organização de Computadores — [I]
+
+ 3.1 Benchmarks e Avaliação de Arquitetura — [I]
+
+  3.1.1 Uso na Comparação de Arquiteturas — [I]
+	  Comparação entre ISAs
+	  Comparação entre microarquiteturas
+	  Avaliação de decisões de projeto
+
+  3.1.2 Uso na Comparação de Organização — [I]
+	  Comparação entre implementações
+	  Avaliação de hierarquia de memória
+	  Avaliação de caminho de dados e controle
+
+
+ 3.2 Benchmarks como Elo entre Teoria e Prática — [I]
+
+  3.2.1 Validação de Conceitos Teóricos — [I]
+	  Confirmação empírica de modelos
+	  Verificação de previsões de desempenho
+
+  3.2.2 Orientação de Decisões de Projeto — [I]
+	  Apoio ao projeto de processadores
+	  Apoio ao projeto de sistemas de memória
+	  Apoio à escolha de compiladores
+
+
+
+4. Evolução Histórica dos Benchmarks — [V]
+
+ 4.1 Origens do Benchmarking em Computação — [V]
+
+  4.1.1 Primeiros Métodos de Avaliação — [V]
+	  Contagem simples de instruções
+	  Medições rudimentares de tempo
+	  Ausência de padronização inicial
+
+  4.1.2 Motivações Iniciais — [V]
+	  Necessidade de comparar mainframes
+	  Competição entre fabricantes
+	  Demanda por métricas confiáveis
+
+
+ 4.2 Evolução até os Benchmarks Modernos — [V]
+
+  4.2.1 Surgimento das Primeiras Suítes — [V]
+	  Padronização acadêmica
+	  Criação de consórcios
+	  Consolidação de metodologias
+
+  4.2.2 Consolidação Atual — [V]
+	  Diversificação de domínios
+	  Benchmarks especializados
+	  Importância contínua na indústria
+
+
+
+PARTE 2 — OBJETIVOS, CARACTERÍSTICAS E PRINCÍPIOS DOS BENCHMARKS
+
+
+5. Objetivos dos Benchmarks — [P]
+
+ 5.1 Objetivos Técnicos — [P]
+
+  5.1.1 Medir Desempenho — [P]
+	  Quantificação objetiva
+	  Identificação de gargalos
+	  Comparação entre configurações
+
+  5.1.2 Apoiar o Projeto de Sistemas — [P]
+	  Orientação de decisões arquiteturais
+	  Validação de otimizações
+	  Previsão de comportamento
+
+
+ 5.2 Objetivos Científicos e Comerciais — [I]
+
+  5.2.1 Objetivos Científicos — [I]
+	  Reprodutibilidade de resultados
+	  Comparabilidade entre pesquisas
+	  Avanço do conhecimento em arquitetura
+
+  5.2.2 Objetivos Comerciais — [I]
+	  Marketing de produtos
+	  Certificação de desempenho
+	  Diferenciação competitiva
+
+
+
+6. Características de um Bom Benchmark — [P]
+
+ 6.1 Propriedades Desejáveis — [P]
+
+  6.1.1 Representatividade — [P]
+	  Semelhança com cargas reais
+	  Cobertura de comportamentos típicos
+	  Relevância para o domínio de uso
+
+  6.1.2 Portabilidade — [P]
+	  Execução em múltiplas plataformas
+	  Independência de hardware específico
+	  Facilidade de adaptação
+
+
+ 6.2 Propriedades Técnicas Adicionais — [P]
+
+  6.2.1 Escalabilidade do Benchmark — [P]
+	  Adaptação a diferentes tamanhos de sistema
+	  Ajuste de carga de trabalho
+
+  6.2.2 Simplicidade e Clareza — [P]
+	  Facilidade de execução
+	  Facilidade de interpretação dos resultados
+	  Baixa complexidade de configuração
+
+
+
+7. Princípios Fundamentais de Benchmarking — [I]
+
+ 7.1 Princípios Metodológicos — [I]
+
+  7.1.1 Justiça e Neutralidade — [I]
+	  Ausência de favorecimento de arquitetura específica
+	  Tratamento equânime entre sistemas testados
+
+  7.1.2 Transparência — [I]
+	  Divulgação da metodologia
+	  Divulgação do ambiente de teste
+	  Divulgação das condições de execução
+
+
+ 7.2 Princípios de Confiabilidade — [I]
+
+  7.2.1 Consistência dos Resultados — [I]
+	  Repetibilidade em execuções sucessivas
+	  Baixa variabilidade estatística
+
+  7.2.2 Verificabilidade — [I]
+	  Possibilidade de auditoria
+	  Possibilidade de replicação independente
+
+
+
+PARTE 3 — TIPOS E CLASSIFICAÇÕES DE BENCHMARKS
+
+
+8. Classificação Geral dos Benchmarks — [P]
+
+ 8.1 Critérios de Classificação — [P]
+
+  8.1.1 Classificação por Escopo — [P]
+	  Benchmarks de componente
+	  Benchmarks de sistema
+	  Benchmarks de aplicação
+
+  8.1.2 Classificação por Origem da Carga — [P]
+	  Cargas reais
+	  Cargas sintéticas
+	  Cargas derivadas (kernels)
+
+
+ 8.2 Visão Geral das Categorias Principais — [P]
+
+  8.2.1 Categorias por Objetivo de Uso — [P]
+	  Benchmarks acadêmicos
+	  Benchmarks industriais
+	  Benchmarks de certificação
+
+  8.2.2 Categorias por Domínio de Aplicação — [P]
+	  Benchmarks de propósito geral
+	  Benchmarks de domínio específico
+
+
+
+9. Benchmarks de Microarquitetura vs. Aplicação — [I]
+
+ 9.1 Benchmarks de Microarquitetura — [I]
+
+  9.1.1 Foco em Componentes Internos — [I]
+	  Avaliação de unidades funcionais
+	  Avaliação de pipeline
+	  Avaliação de hierarquia de memória
+
+  9.1.2 Objetivo dos Benchmarks de Microarquitetura — [I]
+	  Isolamento de comportamentos específicos
+	  Diagnóstico de gargalos internos
+
+
+ 9.2 Benchmarks de Aplicação — [I]
+
+  9.2.1 Foco no Comportamento Global do Sistema — [I]
+	  Execução de programas completos
+	  Avaliação do desempenho fim a fim
+
+  9.2.2 Objetivo dos Benchmarks de Aplicação — [I]
+	  Representar uso real do sistema
+	  Avaliar experiência do usuário final
+
+
+
+10. Benchmarks Reais, Sintéticos e Kernels — [P]
+
+ 10.1 Benchmarks Reais — [P]
+
+  10.1.1 Definição e Características — [P]
+	  Programas de aplicações reais
+	  Alta representatividade
+	  Maior complexidade de execução
+
+  10.1.2 Vantagens e Desvantagens — [P]
+	  Vantagem de realismo
+	  Desvantagem de portabilidade limitada
+	  Dificuldade de controle experimental
+
+
+ 10.2 Benchmarks Sintéticos e Kernels — [P]
+
+  10.2.1 Benchmarks Sintéticos — [P]
+	  Programas artificiais de teste
+	  Foco em características específicas
+	  Facilidade de controle e repetição
+
+  10.2.2 Kernels de Benchmark — [P]
+	  Trechos essenciais de programas reais
+	  Representação de padrões computacionais críticos
+	  Uso em avaliação isolada de desempenho
+
+
+
+11. Outras Classificações de Benchmarks — [I]
+
+ 11.1 Classificação por Tipo de Carga de Trabalho — [I]
+
+  11.1.1 Benchmarks de Uso Intensivo de CPU — [I]
+	  Cargas com predominância de cálculo
+	  Baixa dependência de entrada e saída
+
+  11.1.2 Benchmarks de Uso Intensivo de Memória e E/S — [I]
+	  Cargas com predominância de acesso a dados
+	  Avaliação de largura de banda e latência
+
+
+ 11.2 Classificação por Ambiente de Execução — [I]
+
+  11.2.1 Benchmarks Locais e Isolados — [I]
+	  Execução em máquina única
+	  Ambiente controlado
+
+  11.2.2 Benchmarks Distribuídos e de Rede — [I]
+	  Execução em múltiplos nós
+	  Avaliação de comunicação e coordenação
+
+
+
+PARTE 4 — PROGRAMAS, CARGAS DE TRABALHO E SUÍTES DE BENCHMARKS
+
+
+12. Conceito de Carga de Trabalho (Workload) — [P]
+
+ 12.1 Definição e Papel da Carga de Trabalho — [P]
+
+  12.1.1 O que é uma Carga de Trabalho — [P]
+	  Conjunto de tarefas executadas
+	  Padrão de uso de recursos
+	  Base de entrada para o benchmark
+
+  12.1.2 Importância para o Resultado do Benchmark — [P]
+	  Influência direta na métrica obtida
+	  Determinação do comportamento avaliado
+
+
+ 12.2 Tipos de Carga de Trabalho — [P]
+
+  12.2.1 Cargas Determinísticas e Não Determinísticas — [P]
+	  Comportamento previsível
+	  Variação entre execuções
+
+  12.2.2 Cargas Estáticas e Dinâmicas — [P]
+	  Entrada fixa predefinida
+	  Entrada variável ao longo da execução
+
+
+
+13. Programas de Benchmark — [I]
+
+ 13.1 Estrutura de um Programa de Benchmark — [I]
+
+  13.1.1 Componentes do Programa — [I]
+	  Rotina de inicialização
+	  Núcleo de processamento
+	  Rotina de medição de tempo
+
+  13.1.2 Requisitos de Implementação — [I]
+	  Portabilidade de código
+	  Fidelidade ao comportamento pretendido
+
+
+ 13.2 Exemplos de Programas Utilizados — [I]
+
+  13.2.1 Programas de Uso Comum em Estudo — [I]
+	  Programas de ordenação e busca
+	  Programas de álgebra linear
+	  Programas de compressão de dados
+
+  13.2.2 Programas Representativos de Aplicações Reais — [I]
+	  Compiladores como carga de teste
+	  Processamento de imagens e vídeo
+	  Simulações científicas
+
+
+
+14. Suítes de Benchmark — [P]
+
+ 14.1 Conceito de Suíte — [P]
+
+  14.1.1 Definição de Suíte de Benchmark — [P]
+	  Conjunto organizado de programas
+	  Cobertura ampliada de comportamentos
+	  Padronização conjunta de execução
+
+  14.1.2 Vantagens do Uso de Suítes — [P]
+	  Redução de viés de um único programa
+	  Maior confiabilidade estatística
+	  Comparabilidade ampla entre sistemas
+
+
+ 14.2 Organização Interna das Suítes — [P]
+
+  14.2.1 Categorização dos Programas na Suíte — [P]
+	  Agrupamento por tipo de carga
+	  Agrupamento por domínio de aplicação
+
+  14.2.2 Critérios de Seleção dos Programas — [P]
+	  Diversidade de comportamento
+	  Relevância para o domínio avaliado
+	  Estabilidade e manutenção contínua
+
+
+
+15. Representatividade das Cargas de Trabalho — [I]
+
+ 15.1 Fatores de Representatividade — [I]
+
+  15.1.1 Fidelidade ao Uso Real — [I]
+	  Semelhança com aplicações do mundo real
+	  Cobertura de padrões de acesso típicos
+
+  15.1.2 Diversidade de Comportamentos — [I]
+	  Variedade de padrões computacionais
+	  Cobertura de diferentes domínios
+
+
+ 15.2 Riscos de Baixa Representatividade — [I]
+
+  15.2.1 Resultados Enganosos — [I]
+	  Otimização direcionada apenas ao benchmark
+	  Distorção da avaliação real de desempenho
+
+  15.2.2 Consequências para o Projeto de Sistemas — [I]
+	  Decisões arquiteturais equivocadas
+	  Investimento mal direcionado
+
+
+
+16. Benchmarks de Domínio Específico — [I]
+
+ 16.1 Conceito de Benchmark Especializado — [I]
+
+  16.1.1 Definição — [I]
+	  Foco em um domínio de aplicação particular
+	  Cargas de trabalho especializadas
+
+  16.1.2 Motivação para Especialização — [I]
+	  Insuficiência de benchmarks genéricos
+	  Necessidade de precisão setorial
+
+
+ 16.2 Exemplos de Domínios Especializados — [I]
+
+  16.2.1 Domínios Representativos — [I]
+	  Inteligência artificial e aprendizado de máquina
+	  Bancos de dados e transações
+	  Computação gráfica
+	  Sistemas embarcados
+
+  16.2.2 Relevância desses Domínios para a Arquitetura — [I]
+	  Influência sobre decisões de projeto especializado
+	  Direcionamento de aceleradores dedicados
+
+
+
+PARTE 5 — MÉTRICAS E INDICADORES DE DESEMPENHO
+
+
+17. Fundamentos das Métricas de Desempenho — [P]
+
+ 17.1 Conceito de Métrica — [P]
+
+  17.1.1 Definição de Métrica de Desempenho — [P]
+	  Grandeza quantificável de desempenho
+	  Unidade de medida associada
+	  Relação com o objetivo da avaliação
+
+  17.1.2 Requisitos de uma Boa Métrica — [P]
+	  Clareza de significado
+	  Consistência de medição
+	  Relevância para o comportamento avaliado
+
+
+ 17.2 Classificação das Métricas — [P]
+
+  17.2.1 Métricas Diretas e Derivadas — [P]
+	  Grandezas medidas diretamente
+	  Grandezas calculadas a partir de outras
+
+  17.2.2 Métricas Absolutas e Relativas — [P]
+	  Valores absolutos de desempenho
+	  Razões e comparações relativas
+
+
+
+18. Métricas de Tempo de Execução — [P]
+
+ 18.1 Tempo de Execução como Métrica Central — [P]
+
+  18.1.1 Tempo de CPU — [P]
+	  Tempo de usuário
+	  Tempo de sistema
+	  Exclusão de tempos de espera externos
+
+  18.1.2 Tempo de Parede (Wall-Clock Time) — [P]
+	  Tempo total decorrido
+	  Inclusão de esperas e interferências externas
+
+
+ 18.2 Relação entre Tempo e Ciclos de Clock — [P]
+
+  18.2.1 Ciclos por Instrução (CPI) — [P]
+	  Definição de CPI
+	  Relação com frequência de clock
+	  Relação com número de instruções
+
+  18.2.2 Fórmula Fundamental do Desempenho — [P]
+	  Tempo = Instruções × CPI × Período de clock
+	  Interação entre os três fatores
+
+
+
+19. Métricas de Vazão e Taxa de Processamento — [P]
+
+ 19.1 Vazão (Throughput) — [P]
+
+  19.1.1 Conceito de Vazão — [P]
+	  Quantidade de trabalho por unidade de tempo
+	  Diferença entre vazão e latência
+
+  19.1.2 Métricas de Taxa de Instruções — [P]
+	  MIPS — Milhões de Instruções por Segundo
+	  Limitações da métrica MIPS
+
+
+ 19.2 Métricas de Operações de Ponto Flutuante — [I]
+
+  19.2.1 FLOPS — [I]
+	  Definição de FLOPS
+	  Uso em avaliação científica e HPC
+	  Limitações e contexto de aplicabilidade
+
+  19.2.2 Variações da Métrica FLOPS — [I]
+	  MFLOPS, GFLOPS, TFLOPS
+	  Escalonamento conforme o sistema avaliado
+
+
+
+20. Métricas de Eficiência Energética e Custo — [I]
+
+ 20.1 Eficiência Energética — [I]
+
+  20.1.1 Consumo de Energia como Métrica — [I]
+	  Watts consumidos durante a execução
+	  Energia total por tarefa executada
+
+  20.1.2 Desempenho por Watt — [I]
+	  Relação entre desempenho e consumo
+	  Importância em sistemas móveis e data centers
+
+
+ 20.2 Métricas de Custo — [I]
+
+  20.2.1 Custo por Desempenho — [I]
+	  Relação entre investimento e resultado obtido
+	  Uso em decisões comerciais
+
+  20.2.2 Custo Total de Propriedade (TCO) — [I]
+	  Consideração de custos operacionais
+	  Relevância para infraestrutura em larga escala
+
+
+
+21. Médias e Agregação de Métricas — [P]
+
+ 21.1 Necessidade de Agregação — [P]
+
+  21.1.1 Combinação de Múltiplos Resultados — [P]
+	  Resumo de desempenho em várias cargas
+	  Necessidade de um valor representativo único
+
+  21.1.2 Riscos da Agregação Inadequada — [P]
+	  Distorção do significado real
+	  Perda de informação relevante
+
+
+ 21.2 Tipos de Médias Utilizadas — [P]
+
+  21.2.1 Média Aritmética — [P]
+	  Definição e uso
+	  Limitações quando aplicada a razões
+
+  21.2.2 Média Harmônica e Média Geométrica — [P]
+	  Adequação da média harmônica a taxas
+	  Adequação da média geométrica a razões normalizadas
+	  Critérios de escolha entre as médias
+
+
+
+PARTE 6 — METODOLOGIAS E PROCEDIMENTOS DE EXECUÇÃO DOS BENCHMARKS
+
+
+22. Metodologia de Benchmarking — [P]
+
+ 22.1 Fundamentos Metodológicos — [P]
+
+  22.1.1 Definição de Metodologia de Benchmarking — [P]
+	  Conjunto de procedimentos padronizados
+	  Sequência lógica de etapas de avaliação
+	  Base para resultados comparáveis
+
+  22.1.2 Etapas Gerais do Processo — [P]
+	  Definição do objetivo da avaliação
+	  Seleção da carga de trabalho
+	  Execução controlada
+	  Análise dos resultados
+
+
+ 22.2 Abordagens Metodológicas — [P]
+
+  22.2.1 Abordagem Comparativa — [P]
+	  Avaliação entre múltiplos sistemas
+	  Uso de linha de base (baseline)
+
+  22.2.2 Abordagem Analítica e Experimental — [P]
+	  Uso de modelos teóricos combinados a testes
+	  Validação empírica de previsões
+
+
+
+23. Planejamento e Preparação do Ambiente de Teste — [I]
+
+ 23.1 Planejamento do Experimento — [I]
+
+  23.1.1 Definição de Objetivos e Escopo — [I]
+	  Delimitação do que será avaliado
+	  Escolha das métricas relevantes
+
+  23.1.2 Seleção de Sistemas e Configurações — [I]
+	  Definição do hardware avaliado
+	  Definição do software envolvido
+
+
+ 23.2 Preparação do Ambiente — [I]
+
+  23.2.1 Configuração do Sistema — [I]
+	  Padronização do sistema operacional
+	  Controle de versões de software
+	  Isolamento de processos concorrentes
+
+  23.2.2 Estabilização do Ambiente — [I]
+	  Controle de temperatura e energia
+	  Redução de ruído experimental
+
+
+
+24. Execução Controlada dos Benchmarks — [P]
+
+ 24.1 Princípios da Execução Controlada — [P]
+
+  24.1.1 Controle de Variáveis — [P]
+	  Isolamento da variável de interesse
+	  Manutenção de condições constantes
+
+  24.1.2 Minimização de Interferências — [P]
+	  Redução de processos em segundo plano
+	  Controle de acesso a rede e disco
+
+
+ 24.2 Procedimentos Durante a Execução — [P]
+
+  24.2.1 Aquecimento do Sistema (Warm-up) — [P]
+	  Estabilização de caches e estruturas
+	  Eliminação de efeitos de partida fria
+
+  24.2.2 Monitoramento em Tempo de Execução — [P]
+	  Verificação de anomalias
+	  Registro de eventos relevantes
+
+
+
+25. Repetição, Amostragem e Controle Estatístico — [I]
+
+ 25.1 Repetição de Execuções — [I]
+
+  25.1.1 Necessidade de Múltiplas Execuções — [I]
+	  Redução do efeito de variações aleatórias
+	  Obtenção de resultados mais confiáveis
+
+  25.1.2 Definição do Número de Repetições — [I]
+	  Critérios estatísticos de suficiência
+	  Relação entre repetições e confiabilidade
+
+
+ 25.2 Amostragem e Controle de Variabilidade — [I]
+
+  25.2.1 Técnicas de Amostragem — [I]
+	  Amostragem aleatória de execuções
+	  Amostragem sistemática de medições
+
+  25.2.2 Controle de Variabilidade Estatística — [I]
+	  Identificação de outliers
+	  Tratamento de ruído experimental
+
+
+
+PARTE 7 — COLETA, MEDIÇÃO E ANÁLISE DOS RESULTADOS
+
+
+26. Instrumentação e Ferramentas de Medição — [I]
+
+ 26.1 Instrumentação de Software — [I]
+
+  26.1.1 Contadores de Desempenho (Performance Counters) — [I]
+	  Contadores de hardware embutidos
+	  Coleta de eventos de microarquitetura
+
+  26.1.2 Ferramentas de Profiling — [I]
+	  Identificação de trechos críticos de código
+	  Análise de tempo por função ou módulo
+
+
+ 26.2 Instrumentação de Hardware — [I]
+
+  26.2.1 Medidores Externos — [I]
+	  Medição direta de consumo elétrico
+	  Instrumentos de medição de tempo físico
+
+  26.2.2 Sondas e Analisadores — [I]
+	  Captura de sinais e barramentos
+	  Análise de tráfego de memória
+
+
+
+27. Coleta de Dados de Desempenho — [I]
+
+ 27.1 Processo de Coleta — [I]
+
+  27.1.1 Registro Sistemático dos Dados — [I]
+	  Padronização do formato de coleta
+	  Registro de metadados do experimento
+
+  27.1.2 Sincronização entre Ferramentas — [I]
+	  Alinhamento temporal das medições
+	  Consistência entre múltiplas fontes
+
+
+ 27.2 Qualidade dos Dados Coletados — [I]
+
+  27.2.1 Integridade dos Dados — [I]
+	  Verificação de completude
+	  Detecção de falhas de coleta
+
+  27.2.2 Armazenamento e Organização — [I]
+	  Estruturação para análise posterior
+	  Preservação para auditoria
+
+
+
+28. Análise Estatística dos Resultados — [P]
+
+ 28.1 Estatística Descritiva Aplicada — [P]
+
+  28.1.1 Medidas de Tendência Central — [P]
+	  Média
+	  Mediana
+	  Moda
+
+  28.1.2 Medidas de Dispersão — [P]
+	  Desvio padrão
+	  Variância
+	  Intervalo de confiança
+
+
+ 28.2 Testes e Inferência Estatística — [P]
+
+  28.2.1 Significância Estatística — [P]
+	  Comparação entre médias
+	  Verificação de diferenças relevantes
+
+  28.2.2 Detecção e Tratamento de Outliers — [P]
+	  Identificação de valores anômalos
+	  Critérios de exclusão justificada
+
+
+
+29. Visualização e Apresentação dos Resultados — [V]
+
+ 29.1 Formas de Apresentação — [V]
+
+  29.1.1 Representações Gráficas — [V]
+	  Gráficos de barras comparativos
+	  Gráficos de dispersão e tendência
+
+  29.1.2 Tabelas de Resultados — [V]
+	  Organização tabular de métricas
+	  Comparação lado a lado de sistemas
+
+
+ 29.2 Comunicação Clara dos Resultados — [V]
+
+  29.2.1 Boas Práticas de Apresentação — [V]
+	  Clareza na escolha de escalas
+	  Evitar distorções visuais
+
+  29.2.2 Relatórios de Benchmark — [V]
+	  Estrutura de um relatório técnico
+	  Documentação da metodologia utilizada
+
+
+
+PARTE 8 — COMPARAÇÃO DE DESEMPENHO E INTERPRETAÇÃO DOS RESULTADOS
+
+
+30. Comparação entre Sistemas — [P]
+
+ 30.1 Fundamentos da Comparação — [P]
+
+  30.1.1 Definição de Sistema de Referência (Baseline) — [P]
+	  Papel do sistema base na comparação
+	  Critérios de escolha do baseline
+
+  30.1.2 Comparação Direta entre Sistemas — [P]
+	  Uso de métricas equivalentes
+	  Necessidade de mesmas condições de teste
+
+
+ 30.2 Normalização de Resultados — [P]
+
+  30.2.1 Conceito de Normalização — [P]
+	  Ajuste de resultados a uma referência comum
+	  Eliminação de diferenças de escala
+
+  30.2.2 Técnicas de Normalização — [P]
+	  Normalização em relação ao baseline
+	  Normalização por unidade de recurso
+
+
+
+31. Speedup, Aceleração e Ganhos Relativos — [P]
+
+ 31.1 Conceito de Speedup — [P]
+
+  31.1.1 Definição de Speedup — [P]
+	  Razão entre tempos de execução
+	  Interpretação de ganhos de desempenho
+
+  31.1.2 Speedup em Diferentes Contextos — [P]
+	  Speedup entre gerações de hardware
+	  Speedup entre versões de software
+
+
+ 31.2 Leis Relacionadas ao Ganho de Desempenho — [P]
+
+  31.2.1 Lei de Amdahl — [P]
+	  Limite teórico de aceleração
+	  Influência da fração não paralelizável
+
+  31.2.2 Lei de Gustafson — [P]
+	  Escalonamento do problema com os recursos
+	  Contraste com a Lei de Amdahl
+
+
+
+32. Interpretação Crítica dos Resultados — [I]
+
+ 32.1 Cuidados na Interpretação — [I]
+
+  32.1.1 Evitar Conclusões Precipitadas — [I]
+	  Consideração do contexto experimental
+	  Verificação da representatividade da carga
+
+  32.1.2 Contextualização dos Resultados — [I]
+	  Relação com o objetivo original da avaliação
+	  Comparação apenas entre cenários equivalentes
+
+
+ 32.2 Limitações Interpretativas — [I]
+
+  32.2.1 Resultados Isolados versus Conjunto de Evidências — [I]
+	  Risco de generalização indevida
+	  Necessidade de múltiplas fontes de avaliação
+
+  32.2.2 Diferença entre Significância Estatística e Prática — [I]
+	  Relevância real da diferença observada
+	  Impacto no uso prático do sistema
+
+
+
+PARTE 9 — FATORES QUE INFLUENCIAM OS RESULTADOS DOS BENCHMARKS
+
+
+33. Fatores de Hardware — [I]
+
+ 33.1 Influência dos Componentes de Processamento — [I]
+
+  33.1.1 Frequência de Clock e Núcleos — [I]
+	  Impacto direto no tempo de execução
+	  Influência do número de núcleos disponíveis
+
+  33.1.2 Hierarquia de Memória e Cache — [I]
+	  Impacto de acertos e faltas de cache
+	  Influência da latência de memória
+
+
+ 33.2 Outros Componentes de Hardware — [I]
+
+  33.2.1 Dispositivos de Armazenamento — [I]
+	  Impacto de discos e unidades de estado sólido
+	  Influência da largura de banda de E/S
+
+  33.2.2 Infraestrutura de Rede — [I]
+	  Impacto em benchmarks distribuídos
+	  Influência da latência de comunicação
+
+
+
+34. Fatores de Software e Compilador — [I]
+
+ 34.1 Influência do Compilador — [I]
+
+  34.1.1 Otimizações de Compilação — [I]
+	  Impacto de níveis de otimização
+	  Diferenças entre compiladores
+
+  34.1.2 Geração de Código — [I]
+	  Qualidade do código de máquina gerado
+	  Uso de instruções especializadas
+
+
+ 34.2 Influência do Sistema de Software — [I]
+
+  34.2.1 Bibliotecas e Dependências — [I]
+	  Impacto de versões de bibliotecas
+	  Influência de implementações otimizadas
+
+  34.2.2 Ajustes de Configuração de Software — [I]
+	  Parâmetros de execução
+	  Configurações de tempo de execução (runtime)
+
+
+
+35. Fatores Ambientais e de Sistema Operacional — [I]
+
+ 35.1 Influência do Sistema Operacional — [I]
+
+  35.1.1 Escalonamento de Processos — [I]
+	  Política de escalonamento adotada
+	  Impacto da concorrência entre processos
+
+  35.1.2 Gerenciamento de Memória do Sistema — [I]
+	  Política de paginação
+	  Impacto de swapping no desempenho
+
+
+ 35.2 Influência do Ambiente Físico — [I]
+
+  35.2.1 Temperatura e Regulação de Frequência — [I]
+	  Efeito do throttling térmico
+	  Variação de desempenho por aquecimento
+
+  35.2.2 Fornecimento de Energia — [I]
+	  Estabilidade da alimentação elétrica
+	  Políticas de economia de energia
+
+
+
+36. Viés e Distorções nos Resultados — [P]
+
+ 36.1 Fontes de Viés — [P]
+
+  36.1.1 Viés de Seleção de Carga — [P]
+	  Escolha tendenciosa de programas de teste
+	  Favorecimento de uma arquitetura específica
+
+  36.1.2 Viés de Configuração — [P]
+	  Ajustes específicos para favorecer um sistema
+	  Comparações em condições desiguais
+
+
+ 36.2 Distorções Comuns — [P]
+
+  36.2.1 Overfitting ao Benchmark — [P]
+	  Otimização exclusiva para o teste
+	  Perda de representatividade real
+
+  36.2.2 Manipulação de Resultados — [P]
+	  Apresentação seletiva de dados favoráveis
+	  Omissão de condições desfavoráveis
+
+
+
+PARTE 10 — BENCHMARKS SINTÉTICOS, DE APLICAÇÃO E DE SISTEMA
+
+
+37. Benchmarks Sintéticos — [I]
+
+ 37.1 Características dos Benchmarks Sintéticos — [I]
+
+  37.1.1 Construção Artificial da Carga — [I]
+	  Programas criados especificamente para teste
+	  Controle total sobre o comportamento avaliado
+
+  37.1.2 Finalidade dos Benchmarks Sintéticos — [I]
+	  Isolamento de características específicas
+	  Avaliação controlada de componentes
+
+
+ 37.2 Vantagens e Limitações — [I]
+
+  37.2.1 Vantagens — [I]
+	  Facilidade de repetição
+	  Portabilidade elevada
+
+  37.2.2 Limitações — [I]
+	  Baixa representatividade de uso real
+	  Risco de manipulação direcionada
+
+
+
+38. Benchmarks de Aplicação Real — [I]
+
+ 38.1 Características dos Benchmarks de Aplicação — [I]
+
+  38.1.1 Uso de Programas Reais — [I]
+	  Aplicações amplamente utilizadas
+	  Comportamento próximo ao uso cotidiano
+
+  38.1.2 Finalidade dos Benchmarks de Aplicação — [I]
+	  Avaliação de desempenho percebido pelo usuário
+	  Representação de cenários práticos
+
+
+ 38.2 Vantagens e Limitações — [I]
+
+  38.2.1 Vantagens — [I]
+	  Alta representatividade
+	  Relevância prática direta
+
+  38.2.2 Limitações — [I]
+	  Maior complexidade de configuração
+	  Menor controle experimental
+
+
+
+39. Benchmarks de Sistema Completo — [I]
+
+ 39.1 Conceito de Benchmark de Sistema — [I]
+
+  39.1.1 Avaliação Integrada — [I]
+	  Consideração de todos os subsistemas
+	  Avaliação de hardware, software e sistema operacional em conjunto
+
+  39.1.2 Objetivo do Benchmark de Sistema — [I]
+	  Medir desempenho global
+	  Refletir uso real em produção
+
+
+ 39.2 Aplicações dos Benchmarks de Sistema — [I]
+
+  39.2.1 Avaliação de Servidores — [I]
+	  Desempenho sob carga de produção
+	  Avaliação de capacidade de resposta
+
+  39.2.2 Avaliação de Estações de Trabalho — [I]
+	  Desempenho em tarefas do usuário final
+	  Avaliação de responsividade do sistema
+
+
+
+PARTE 11 — BENCHMARKS PARALELOS, MULTICORE E SISTEMAS DE ALTO DESEMPENHO
+
+
+40. Benchmarks para Sistemas Paralelos e Multicore — [I]
+
+ 40.1 Fundamentos dos Benchmarks Paralelos — [I]
+
+  40.1.1 Necessidade de Benchmarks Específicos — [I]
+	  Diferença em relação a benchmarks sequenciais
+	  Avaliação de coordenação entre núcleos
+
+  40.1.2 Cargas de Trabalho Paralelas — [I]
+	  Divisão de tarefas entre threads
+	  Avaliação de balanceamento de carga
+
+
+ 40.2 Aspectos Avaliados em Sistemas Multicore — [I]
+
+  40.2.1 Comunicação entre Núcleos — [I]
+	  Avaliação de sincronização
+	  Impacto da coerência de cache
+
+  40.2.2 Contenção de Recursos Compartilhados — [I]
+	  Disputa por memória compartilhada
+	  Disputa por barramentos e caches compartilhados
+
+
+
+41. Benchmarks para Computação de Alto Desempenho (HPC) — [I]
+
+ 41.1 Características do Ambiente HPC — [I]
+
+  41.1.1 Escala dos Sistemas Avaliados — [I]
+	  Clusters e supercomputadores
+	  Grande número de nós de processamento
+
+  41.1.2 Cargas de Trabalho Científicas — [I]
+	  Simulações numéricas intensivas
+	  Processamento de grandes volumes de dados
+
+
+ 41.2 Métricas Específicas de HPC — [I]
+
+  41.2.1 Desempenho em Ponto Flutuante — [I]
+	  Uso extensivo de métricas FLOPS
+	  Avaliação de operações matriciais
+
+  41.2.2 Eficiência de Comunicação entre Nós — [I]
+	  Latência de interconexão
+	  Largura de banda entre nós
+
+
+
+42. Escalabilidade em Benchmarks Paralelos — [I]
+
+ 42.1 Conceito de Escalabilidade — [I]
+
+  42.1.1 Escalabilidade Forte — [I]
+	  Problema de tamanho fixo
+	  Aumento de recursos com carga constante
+
+  42.1.2 Escalabilidade Fraca — [I]
+	  Crescimento proporcional do problema
+	  Aumento de recursos com carga proporcional
+
+
+ 42.2 Avaliação da Escalabilidade — [I]
+
+  42.2.1 Curvas de Escalabilidade — [I]
+	  Análise gráfica do ganho com mais recursos
+	  Identificação de limites de escalonamento
+
+  42.2.2 Fatores que Limitam a Escalabilidade — [I]
+	  Sobrecarga de comunicação
+	  Frações sequenciais do problema
+
+
+
+PARTE 12 — LIMITAÇÕES, VALIDADE, REPRODUTIBILIDADE E BOAS PRÁTICAS
+
+
+43. Limitações dos Benchmarks — [P]
+
+ 43.1 Limitações Estruturais — [P]
+
+  43.1.1 Impossibilidade de Representar Todo Uso Real — [P]
+	  Diversidade infinita de cargas reais
+	  Recorte necessariamente limitado
+
+  43.1.2 Obsolescência dos Benchmarks — [P]
+	  Desatualização frente a novas aplicações
+	  Necessidade de revisão periódica
+
+
+ 43.2 Limitações Metodológicas — [P]
+
+  43.2.1 Dificuldade de Isolamento de Variáveis — [P]
+	  Interação entre múltiplos fatores
+	  Dificuldade de atribuir causa única
+
+  43.2.2 Limitações do Ambiente Controlado — [P]
+	  Diferença entre laboratório e produção
+	  Simplificações necessárias ao experimento
+
+
+
+44. Validade e Confiabilidade dos Resultados — [P]
+
+ 44.1 Validade Interna e Externa — [P]
+
+  44.1.1 Validade Interna — [P]
+	  Correção do procedimento experimental
+	  Ausência de erros metodológicos
+
+  44.1.2 Validade Externa — [P]
+	  Capacidade de generalização dos resultados
+	  Aplicabilidade a outros contextos
+
+
+ 44.2 Confiabilidade das Medições — [P]
+
+  44.2.1 Estabilidade dos Resultados — [P]
+	  Consistência entre execuções repetidas
+	  Baixa sensibilidade a ruído
+
+  44.2.2 Fontes de Erro na Medição — [P]
+	  Erros sistemáticos
+	  Erros aleatórios
+
+
+
+45. Reprodutibilidade dos Experimentos — [P]
+
+ 45.1 Conceito de Reprodutibilidade — [P]
+
+  45.1.1 Definição — [P]
+	  Capacidade de repetir o experimento com mesmos resultados
+	  Diferença entre reprodutibilidade e repetibilidade
+
+  45.1.2 Importância da Reprodutibilidade — [P]
+	  Credibilidade científica
+	  Confiança da comunidade técnica
+
+
+ 45.2 Condições para Reprodutibilidade — [P]
+
+  45.2.1 Documentação Completa do Experimento — [P]
+	  Registro do hardware utilizado
+	  Registro do software e versões
+	  Registro da configuração do ambiente
+
+  45.2.2 Disponibilização de Artefatos — [P]
+	  Compartilhamento de código-fonte
+	  Compartilhamento de dados e scripts
+
+
+
+46. Boas Práticas de Benchmarking — [I]
+
+ 46.1 Boas Práticas Metodológicas — [I]
+
+  46.1.1 Planejamento Cuidadoso — [I]
+	  Definição clara de objetivos
+	  Escolha criteriosa da carga de trabalho
+
+  46.1.2 Documentação Rigorosa — [I]
+	  Registro detalhado de todas as etapas
+	  Transparência sobre limitações encontradas
+
+
+ 46.2 Boas Práticas Éticas e de Comunicação — [I]
+
+  46.2.1 Honestidade na Divulgação dos Resultados — [I]
+	  Apresentação completa dos dados
+	  Evitar seleção tendenciosa de resultados
+
+  46.2.2 Revisão por Pares — [I]
+	  Validação por terceiros independentes
+	  Fortalecimento da confiabilidade dos resultados
+
+
+
+PARTE 13 — EVOLUÇÃO DOS BENCHMARKS E PRINCIPAIS SUÍTES DE REFERÊNCIA
+
+
+47. Organizações e Consórcios de Benchmarking — [V]
+
+ 47.1 Papel das Organizações Padronizadoras — [V]
+
+  47.1.1 Função dos Consórcios — [V]
+	  Definição de padrões comuns
+	  Manutenção contínua das suítes
+
+  47.1.2 Benefícios da Padronização Institucional — [V]
+	  Credibilidade das medições
+	  Comparabilidade entre fabricantes
+
+
+ 47.2 Participação da Indústria e Academia — [V]
+
+  47.2.1 Colaboração entre Setores — [V]
+	  Contribuição de fabricantes de hardware
+	  Contribuição de instituições de pesquisa
+
+  47.2.2 Governança dos Padrões — [V]
+	  Processo de revisão das suítes
+	  Atualização periódica dos benchmarks
+
+
+
+48. Suíte SPEC — [I]
+
+ 48.1 Visão Geral da Suíte SPEC — [I]
+
+  48.1.1 Origem e Propósito — [I]
+	  Consórcio Standard Performance Evaluation Corporation
+	  Foco em desempenho de CPU e sistemas
+
+  48.1.2 Organização da Suíte — [I]
+	  Subconjuntos de inteiros e ponto flutuante
+	  Variações voltadas a diferentes cargas
+
+
+ 48.2 Uso e Relevância da Suíte SPEC — [I]
+
+  48.2.1 Aplicação na Indústria — [I]
+	  Comparação de processadores comerciais
+	  Referência em publicações técnicas
+
+  48.2.2 Aplicação Acadêmica — [I]
+	  Uso em pesquisas de arquitetura
+	  Uso em avaliação de novas propostas
+
+
+
+49. Suíte TPC — [V]
+
+ 49.1 Visão Geral da Suíte TPC — [V]
+
+  49.1.1 Origem e Propósito — [V]
+	  Consórcio Transaction Processing Performance Council
+	  Foco em desempenho de bancos de dados e transações
+
+  49.1.2 Tipos de Benchmarks TPC — [V]
+	  Benchmarks de processamento transacional
+	  Benchmarks de suporte à decisão
+
+
+ 49.2 Relevância da Suíte TPC — [V]
+
+  49.2.1 Aplicação em Sistemas Empresariais — [V]
+	  Avaliação de servidores de banco de dados
+	  Avaliação de sistemas de grande escala
+
+  49.2.2 Importância Comercial — [V]
+	  Comparação entre fornecedores de sistemas
+	  Base para decisões de aquisição
+
+
+
+50. Outras Suítes e Benchmarks de Referência — [V]
+
+ 50.1 Benchmarks de Domínio Específico Consolidados — [V]
+
+  50.1.1 Benchmarks de Inteligência Artificial — [V]
+	  Avaliação de treinamento e inferência
+	  Foco em cargas de aprendizado de máquina
+
+  50.1.2 Benchmarks de Sistemas Embarcados e Móveis — [V]
+	  Avaliação de eficiência energética
+	  Foco em dispositivos de baixo consumo
+
+
+ 50.2 Benchmarks Históricos e Complementares — [V]
+
+  50.2.1 Benchmarks Clássicos de Referência — [V]
+	  Programas historicamente utilizados como padrão
+	  Papel na consolidação da disciplina
+
+  50.2.2 Benchmarks de Supercomputação — [V]
+	  Listas de classificação de sistemas de alto desempenho
+	  Avaliação periódica de máquinas de grande escala
+
+
+
+PARTE 14 — APLICAÇÃO DOS BENCHMARKS NA AVALIAÇÃO DE ARQUITETURAS
+
+
+51. Uso de Benchmarks no Projeto de Processadores — [I]
+
+ 51.1 Benchmarks no Ciclo de Projeto — [I]
+
+  51.1.1 Uso em Fase de Simulação — [I]
+	  Avaliação de propostas antes da fabricação
+	  Uso de simuladores de microarquitetura
+
+  51.1.2 Uso em Fase de Validação Física — [I]
+	  Avaliação de protótipos reais
+	  Comparação com previsões de simulação
+
+
+ 51.2 Orientação de Decisões de Projeto — [I]
+
+  51.2.1 Escolha de Organização do Pipeline — [I]
+	  Avaliação de diferentes profundidades de pipeline
+	  Impacto no desempenho medido
+
+  51.2.2 Escolha de Recursos de Execução — [I]
+	  Dimensionamento de unidades funcionais
+	  Avaliação de técnicas de execução especulativa
+
+
+
+52. Uso de Benchmarks na Avaliação de Memória e Cache — [I]
+
+ 52.1 Avaliação da Hierarquia de Memória — [I]
+
+  52.1.1 Benchmarks para Cache — [I]
+	  Avaliação de taxa de acerto e falta
+	  Avaliação de diferentes políticas de substituição
+
+  52.1.2 Benchmarks para Memória Principal — [I]
+	  Avaliação de latência e largura de banda
+	  Avaliação de padrões de acesso à memória
+
+
+ 52.2 Impacto no Projeto de Sistemas de Memória — [I]
+
+  52.2.1 Dimensionamento de Caches — [I]
+	  Uso de benchmarks para definir tamanho ideal
+	  Avaliação de custo-benefício da capacidade
+
+  52.2.2 Avaliação de Técnicas de Prefetching — [I]
+	  Medição de ganhos com antecipação de dados
+	  Avaliação de impacto na largura de banda
+
+
+
+53. Benchmarks na Indústria e no Meio Acadêmico — [V]
+
+ 53.1 Uso na Indústria — [V]
+
+  53.1.1 Avaliação Comercial de Produtos — [V]
+	  Comparação entre concorrentes
+	  Apoio a decisões de lançamento
+
+  53.1.2 Certificação e Publicação de Resultados — [V]
+	  Submissão a organizações de benchmarking
+	  Publicação oficial de resultados
+
+
+ 53.2 Uso no Meio Acadêmico — [V]
+
+  53.2.1 Pesquisa em Arquitetura de Computadores — [V]
+	  Validação de novas técnicas propostas
+	  Comparação com trabalhos anteriores
+
+  53.2.2 Ensino de Arquitetura e Organização — [V]
+	  Uso didático de benchmarks simplificados
+	  Apoio à compreensão prática dos conceitos
+
+
+
+PARTE 15 — RESUMO GERAL E CONCLUSÃO DOS BENCHMARKS
+
+
+54. Resumo Geral dos Benchmarks — [I]
+
+ 54.1 Revisão dos Conceitos Fundamentais — [I]
+
+  54.1.1 Fundamentos Essenciais — [I]
+	  Definição de benchmark
+	  Objetivos e características principais
+	  Papel na arquitetura e organização de computadores
+
+  54.1.2 Tipos e Classificações — [I]
+	  Benchmarks reais, sintéticos e kernels
+	  Benchmarks de aplicação e de sistema
+
+
+ 54.2 Revisão das Métricas e Metodologias — [I]
+
+  54.2.1 Métricas Fundamentais — [I]
+	  Tempo de execução e CPI
+	  Vazão, FLOPS e eficiência energética
+
+  54.2.2 Metodologia e Análise — [I]
+	  Execução controlada e repetição
+	  Análise estatística e interpretação dos resultados
+
+
+ 54.3 Revisão das Aplicações e Suítes — [I]
+
+  54.3.1 Suítes de Referência — [I]
+	  SPEC, TPC e outras suítes consolidadas
+	  Papel dos consórcios de padronização
+
+  54.3.2 Aplicações Práticas — [I]
+	  Uso no projeto de processadores e memória
+	  Uso na indústria e na academia
+
+
+
+55. Conclusão do Estudo dos Benchmarks — [V]
+
+ 55.1 Síntese Final — [V]
+
+  55.1.1 O Papel Central dos Benchmarks — [V]
+	  Instrumento indispensável de avaliação
+	  Base objetiva para comparação de sistemas
+
+  55.1.2 Importância para Arquitetura e Organização de Computadores — [V]
+	  Apoio a decisões de projeto fundamentadas
+	  Base para estudos avançados de desempenho
+
+
+ 55.2 Competências Desenvolvidas — [V]
+
+  55.2.1 Conhecimentos Adquiridos — [V]
+	  Compreensão de tipos e métricas de benchmark
+	  Compreensão da metodologia de avaliação
+	  Capacidade de interpretação crítica de resultados
+
+  55.2.2 Preparação para Estudos Posteriores — [V]
+	  Processadores e Pipeline
+	  Hierarquia de Memória e Cache
+	  Organização Paralela e Multicore
+	  Avaliação de Desempenho Avançada
+
+
+ 55.3 Encerramento — [V]
+
+  55.3.1 Visão Geral Final — [V]
+	  Integração dos conceitos estudados
+	  Importância contínua dos benchmarks
+	  Evolução constante frente a novas arquiteturas
+	  Continuidade dos estudos em desempenho
