@@ -1,0 +1,1591 @@
+                                        MULTIPROCESSAMENTO
+
+
+A classificação abaixo indica a profundidade recomendada para cada grande tópico da lista.
+
+[P] Profundidade — estudar mecanismos, estruturas, funcionamento interno e relações entre componentes.
+[I] Intermediário — compreender bem o funcionamento e as relações principais, sem precisar dominar todos os
+   detalhes de implementação.
+[V] Visão geral — saber o que é, para que serve e como se relaciona com o Multiprocessamento.
+
+
+
+PARTE 1 — FUNDAMENTOS DO MULTIPROCESSAMENTO
+
+
+1. Introdução ao Multiprocessamento — [I]
+
+ 1.1 Conceitos Fundamentais — [I]
+
+  1.1.1 Conceito de Multiprocessamento — [I]
+	  Definição de multiprocessamento
+	  Execução simultânea de processos
+	  Diferença entre monoprocessamento e multiprocessamento
+	  Papel do sistema operacional
+	  Importância na computação moderna
+
+  1.1.2 Objetivos do Multiprocessamento — [I]
+	  Aumento de desempenho
+	  Melhor utilização dos recursos
+	  Execução simultânea de tarefas
+	  Redução do tempo de resposta
+	  Suporte a aplicações complexas
+
+
+ 1.2 O Multiprocessamento na Arquitetura de Computadores — [I]
+
+  1.2.1 Papel do Multiprocessamento no Sistema Computacional — [I]
+	  Coordenação entre processadores
+	  Distribuição da carga de trabalho
+	  Comunicação entre unidades de processamento
+	  Gerenciamento de recursos compartilhados
+	  Organização funcional do sistema
+
+  1.2.2 Multiprocessamento × Multitarefa × Multithreading — [I]
+	  Distinção conceitual
+	  Relação entre os conceitos
+	  Nível de aplicação de cada conceito
+	  Exemplos comparativos
+
+
+
+2. Evolução Histórica do Multiprocessamento — [V]
+
+ 2.1 Origem do Multiprocessamento — [V]
+
+  2.1.1 Primeiros Sistemas com Múltiplos Processadores — [V]
+	  Sistemas mainframe antigos
+	  Processamento em lote (batch)
+	  Motivações iniciais
+	  Limitações tecnológicas da época
+
+  2.1.2 Evolução dos Sistemas Operacionais Multitarefa — [V]
+	  Surgimento da multiprogramação
+	  Compartilhamento de tempo (time-sharing)
+	  Evolução do escalonamento
+
+
+ 2.2 Evolução das Arquiteturas Multiprocessadas — [V]
+
+  2.2.1 Sistemas Multiprocessados Clássicos — [V]
+	  Mainframes com múltiplos processadores
+	  Supercomputadores paralelos
+	  Primeiras organizações SMP
+
+  2.2.2 Multiprocessamento Moderno — [V]
+	  Popularização dos processadores multicore
+	  Multiprocessamento em computadores pessoais
+	  Multiprocessamento em dispositivos móveis
+
+
+
+3. Processos e Programas — [I]
+
+ 3.1 Conceito de Processo — [I]
+
+  3.1.1 Programa × Processo — [I]
+	  Definição de programa
+	  Definição de processo
+	  Programa em disco × processo em memória
+	  Recursos associados ao processo
+
+  3.1.2 Estrutura de um Processo — [I]
+	  Bloco de Controle de Processo (PCB)
+	  Espaço de endereçamento
+	  Contexto de execução
+	  Estado do processo
+
+
+ 3.2 Gerenciamento de Processos — [I]
+
+  3.2.1 Criação e Término de Processos — [I]
+	  Criação de processos
+	  Hierarquia de processos
+	  Finalização de processos
+	  Liberação de recursos
+
+  3.2.2 Contexto e Troca de Contexto — [I]
+	  Conceito de contexto de execução
+	  Troca de contexto (context switch)
+	  Custo da troca de contexto
+	  Preservação do estado do processo
+
+
+
+4. Multitarefa e Multiprocessamento — [I]
+
+ 4.1 Conceito de Multitarefa — [I]
+
+  4.1.1 Multitarefa Cooperativa — [I]
+	  Conceito de multitarefa cooperativa
+	  Funcionamento
+	  Limitações
+
+  4.1.2 Multitarefa Preemptiva — [I]
+	  Conceito de multitarefa preemptiva
+	  Funcionamento
+	  Vantagens sobre a multitarefa cooperativa
+
+
+ 4.2 Relação entre Multitarefa e Multiprocessamento — [I]
+
+  4.2.1 Multitarefa em Sistemas Monoprocessados — [I]
+	  Compartilhamento de tempo em um único processador
+	  Ilusão de simultaneidade
+	  Escalonamento como base da multitarefa
+
+  4.2.2 Multitarefa em Sistemas Multiprocessados — [I]
+	  Execução simultânea real
+	  Distribuição de tarefas entre processadores
+	  Combinação de multitarefa e multiprocessamento
+
+
+
+5. Diferença entre Processos e Threads — [I]
+
+ 5.1 Fundamentos das Threads — [I]
+
+  5.1.1 Conceito de Thread — [I]
+	  Definição de thread
+	  Thread como unidade de execução
+	  Relação entre processo e thread
+	  Compartilhamento de recursos
+
+  5.1.2 Processos × Threads — [I]
+	  Isolamento dos processos
+	  Compartilhamento de memória entre threads
+	  Custo de criação e troca de contexto
+	  Comunicação entre processos × entre threads
+
+
+ 5.2 Implicações da Diferença — [I]
+
+  5.2.1 Vantagens das Threads — [I]
+	  Comunicação mais rápida
+	  Menor custo de criação
+	  Compartilhamento eficiente de recursos
+
+  5.2.2 Riscos das Threads — [I]
+	  Condições de corrida
+	  Necessidade de sincronização
+	  Menor isolamento e segurança
+
+
+
+6. Objetivos e Motivações do Multiprocessamento — [I]
+
+ 6.1 Motivações Técnicas — [I]
+
+  6.1.1 Aumento de Desempenho — [I]
+	  Execução simultânea de tarefas
+	  Redução do tempo total de processamento
+	  Aproveitamento do hardware disponível
+
+  6.1.2 Limitações do Processamento Único — [I]
+	  Limites físicos de clock
+	  Dissipação de calor
+	  Consumo de energia
+
+
+ 6.2 Motivações Práticas — [I]
+
+  6.2.1 Demandas de Aplicações Modernas — [I]
+	  Servidores web
+	  Processamento de dados em larga escala
+	  Inteligência artificial e aprendizado de máquina
+
+  6.2.2 Benefícios para o Usuário — [I]
+	  Maior responsividade
+	  Execução simultânea de aplicações
+	  Melhor experiência de uso
+
+
+
+PARTE 2 — ESTRUTURA E FUNCIONAMENTO DO MULTIPROCESSAMENTO
+
+
+7. Funcionamento Geral do Multiprocessamento — [I]
+
+ 7.1 Divisão do Trabalho — [I]
+
+  7.1.1 Distribuição da Carga entre Processadores — [I]
+	  Divisão de tarefas
+	  Atribuição a diferentes processadores
+	  Execução simultânea das partes
+	  Gerenciamento pelo sistema operacional
+
+  7.1.2 Cooperação entre Processadores — [I]
+	  Execução coordenada
+	  Compartilhamento de resultados
+	  Sincronização das etapas
+
+
+ 7.2 Papel do Sistema Operacional — [I]
+
+  7.2.1 Gerenciamento de Recursos — [I]
+	  Alocação de processadores
+	  Alocação de memória
+	  Controle de acesso aos dispositivos
+
+  7.2.2 Coordenação das Atividades — [I]
+	  Escalonamento das tarefas
+	  Prevenção de conflitos
+	  Garantia de execução eficiente
+
+
+
+8. Divisão e Distribuição de Tarefas — [I]
+
+ 8.1 Técnicas de Distribuição — [I]
+
+  8.1.1 Distribuição em Processos — [I]
+	  Processos independentes
+	  Distribuição direta entre processadores
+	  Isolamento das tarefas
+
+  8.1.2 Distribuição em Threads — [I]
+	  Subdivisão de processos em threads
+	  Atribuição de threads a núcleos
+	  Execução paralela das subtarefas
+
+
+ 8.2 Granularidade da Distribuição — [I]
+
+  8.2.1 Granularidade Grossa — [I]
+	  Tarefas maiores e independentes
+	  Menor necessidade de comunicação
+	  Menor overhead de sincronização
+
+  8.2.2 Granularidade Fina — [I]
+	  Tarefas menores e interdependentes
+	  Maior necessidade de comunicação
+	  Maior potencial de paralelismo
+
+
+
+9. Controle de Processos pelo Sistema Operacional — [I]
+
+ 9.1 Estruturas de Controle — [I]
+
+  9.1.1 Bloco de Controle de Processo (PCB) — [I]
+	  Identificação do processo
+	  Estado do processo
+	  Contexto de execução
+	  Informações de escalonamento
+
+  9.1.2 Tabelas de Processos — [I]
+	  Organização das informações
+	  Localização dos processos na memória
+	  Controle centralizado pelo sistema operacional
+
+
+ 9.2 Mecanismos de Controle — [I]
+
+  9.2.1 Interrupções — [I]
+	  Conceito de interrupção
+	  Papel na troca de contexto
+	  Tipos de interrupção
+	  Inter-Processor Interrupt (IPI)
+	  Comunicação entre processadores por interrupções
+	  Solicitação de processamento entre núcleos
+	  Coordenação entre processadores
+
+  9.2.2 Chamadas de Sistema (System Calls) — [I]
+	  Conceito de chamada de sistema
+	  Interação entre processos e sistema operacional
+	  Relação com o controle de processos
+
+
+
+10. Estados e Ciclo de Vida dos Processos — [I]
+
+ 10.1 Estados dos Processos — [I]
+
+  10.1.1 Principais Estados — [I]
+	  Novo
+	  Pronto
+	  Executando
+	  Bloqueado (Espera)
+	  Terminado
+
+  10.1.2 Transições de Estado — [I]
+	  Admissão
+	  Escalonamento
+	  Interrupção
+	  Espera por evento
+	  Conclusão
+
+
+ 10.2 Ciclo de Vida do Processo — [I]
+
+  10.2.1 Criação até Finalização — [I]
+	  Criação do processo
+	  Execução das instruções
+	  Espera por recursos
+	  Finalização e liberação de recursos
+
+  10.2.2 Diagrama de Estados — [I]
+	  Representação das transições
+	  Relação entre estados e escalonamento
+
+
+
+11. Escalonamento de Processos — [P]
+
+ 11.1 Fundamentos do Escalonamento — [P]
+
+  11.1.1 Conceito de Escalonamento — [P]
+	  Definição de escalonamento
+	  Objetivo do escalonador
+	  Papel na multitarefa e no multiprocessamento
+
+  11.1.2 Critérios de Escalonamento — [P]
+	  Utilização do processador
+	  Vazão (throughput)
+	  Tempo de resposta
+	  Tempo de espera
+	  Justiça (fairness)
+
+
+ 11.2 Algoritmos de Escalonamento — [P]
+
+  11.2.1 Algoritmos Clássicos — [P]
+	  FCFS (First-Come, First-Served)
+	  SJF (Shortest Job First)
+	  Round Robin
+	  Escalonamento por prioridades
+
+  11.2.2 Escalonamento em Sistemas Multiprocessados — [P]
+	  Escalonamento por afinidade de processador
+	  Balanceamento entre múltiplos processadores
+	  Filas de execução compartilhadas × filas por processador
+
+
+
+PARTE 3 — MULTIPROCESSADORES E ORGANIZAÇÃO DE SISTEMAS MULTIPROCESSADOS
+
+
+12. Conceito de Multiprocessadores — [I]
+
+ 12.1 Fundamentos — [I]
+
+  12.1.1 Definição de Multiprocessador — [I]
+	  Sistema com múltiplos processadores
+	  Compartilhamento de recursos do sistema
+	  Execução simultânea de instruções
+
+  12.1.2 Finalidade dos Multiprocessadores — [I]
+	  Aumento de desempenho
+	  Maior confiabilidade
+	  Processamento de grandes cargas de trabalho
+
+
+ 12.2 Multiprocessadores × Sistemas Distribuídos — [I]
+
+  12.2.1 Características dos Multiprocessadores — [I]
+	  Compartilhamento de memória e recursos
+	  Proximidade física entre processadores
+
+  12.2.2 Diferenças em Relação a Sistemas Distribuídos — [I]
+	  Independência dos nós
+	  Comunicação via rede
+	  Escopo de compartilhamento de recursos
+
+
+
+13. Classificação de Flynn — [P]
+
+ 13.1 Fundamentos da Taxonomia — [P]
+
+  13.1.1 Critérios de Classificação — [P]
+	  Fluxo de instruções
+	  Fluxo de dados
+	  Combinação dos fluxos
+
+  13.1.2 Categorias da Taxonomia de Flynn — [P]
+	  SISD
+	  SIMD
+	  MISD
+	  MIMD
+
+
+ 13.2 Aplicação da Taxonomia ao Multiprocessamento — [P]
+
+  13.2.1 MIMD e Multiprocessamento — [P]
+	  Relação entre MIMD e sistemas multiprocessados
+	  Execução independente de instruções
+	  Processamento de dados distintos
+
+  13.2.2 SIMD em Sistemas Paralelos — [P]
+	  Execução da mesma instrução sobre múltiplos dados
+	  Aplicações típicas
+	  Relação com processamento vetorial
+
+
+
+14. Sistemas Fortemente Acoplados (Tightly Coupled) — [I]
+
+ 14.1 Características — [I]
+
+  14.1.1 Compartilhamento de Memória — [I]
+	  Memória comum a todos os processadores
+	  Comunicação direta via memória
+	  Alta velocidade de comunicação
+
+  14.1.2 Organização Física — [I]
+	  Proximidade dos processadores
+	  Barramento ou interconexão comum
+	  Controle centralizado
+
+
+ 14.2 Vantagens e Desafios — [I]
+
+  14.2.1 Vantagens — [I]
+	  Comunicação rápida
+	  Compartilhamento eficiente de dados
+
+  14.2.2 Desafios — [I]
+	  Contenção de memória
+	  Necessidade de coerência de cache
+	  Escalabilidade limitada
+
+
+
+15. Sistemas Fracamente Acoplados (Loosely Coupled) — [I]
+
+ 15.1 Características — [I]
+
+  15.1.1 Memória Distribuída — [I]
+	  Memória local a cada processador
+	  Comunicação via troca de mensagens
+	  Independência entre unidades
+
+  15.1.2 Organização Física — [I]
+	  Processadores fisicamente distintos
+	  Interconexão via rede
+	  Menor contenção de recursos
+
+
+ 15.2 Vantagens e Desafios — [I]
+
+  15.2.1 Vantagens — [I]
+	  Maior escalabilidade
+	  Independência entre processadores
+
+  15.2.2 Desafios — [I]
+	  Maior latência de comunicação
+	  Complexidade na troca de mensagens
+
+
+
+16. Organização SMP (Symmetric Multiprocessing) — [P]
+
+ 16.1 Fundamentos do SMP — [P]
+
+  16.1.1 Conceito de SMP — [P]
+	  Processadores idênticos
+	  Acesso igualitário à memória
+	  Compartilhamento do sistema operacional
+
+  16.1.2 Organização Estrutural — [P]
+	  Memória compartilhada única
+	  Barramento comum
+	  Controle simétrico
+
+
+ 16.2 Funcionamento do SMP — [P]
+
+  16.2.1 Distribuição de Tarefas — [P]
+	  Qualquer processador executa qualquer tarefa
+	  Balanceamento natural de carga
+
+  16.2.2 Desafios do SMP — [P]
+	  Contenção no barramento
+	  Coerência de cache
+	  Escalabilidade limitada com muitos núcleos
+
+
+
+17. Organização Assimétrica (AMP) — [I]
+
+ 17.1 Fundamentos do AMP — [I]
+
+  17.1.1 Conceito de AMP — [I]
+	  Processadores com funções distintas
+	  Especialização de tarefas
+	  Controle não uniforme
+
+  17.1.2 Diferenças em Relação ao SMP — [I]
+	  Atribuição fixa de tarefas
+	  Ausência de simetria funcional
+
+
+ 17.2 Aplicações do AMP — [I]
+
+  17.2.1 Cenários de Uso — [I]
+	  Sistemas embarcados
+	  Processadores dedicados a funções específicas
+
+  17.2.2 Vantagens e Limitações — [I]
+	  Simplicidade de projeto
+	  Menor flexibilidade
+
+
+
+18. Sistemas NUMA e UMA — [P]
+
+ 18.1 UMA (Uniform Memory Access) — [P]
+
+  18.1.1 Conceito de UMA — [P]
+	  Acesso uniforme à memória
+	  Mesmo tempo de acesso para todos os processadores
+	  Relação com sistemas SMP
+
+  18.1.2 Limitações do UMA — [P]
+	  Contenção de memória
+	  Escalabilidade restrita
+
+
+ 18.2 NUMA (Non-Uniform Memory Access) — [P]
+
+  18.2.1 Conceito de NUMA — [P]
+	  Memória distribuída fisicamente
+	  Tempos de acesso variáveis
+	  Acesso local × acesso remoto
+
+  18.2.2 Vantagens do NUMA — [P]
+	  Melhor escalabilidade
+	  Redução da contenção de memória
+	  Uso eficiente em sistemas com muitos núcleos
+
+  18.2.3 Organização e Localidade em NUMA — [P]
+	  Localidade de memória
+	  Acesso à memória local × remota
+	  Afinidade entre processador e memória
+	  Alocação de memória próxima ao processador
+	  Impacto da latência de acesso remoto
+	  NUMA-aware
+
+
+
+PARTE 4 — ARQUITETURAS MULTICORE E PROCESSAMENTO MULTINÚCLEO
+
+
+19. Conceito de Processadores Multicore — [I]
+
+ 19.1 Fundamentos — [I]
+
+  19.1.1 Definição de Processador Multicore — [I]
+	  Múltiplos núcleos em um único chip
+	  Execução independente por núcleo
+	  Compartilhamento de recursos do chip
+
+  19.1.2 Motivações para o Multicore — [I]
+	  Limites de desempenho do núcleo único
+	  Eficiência energética
+	  Demanda por processamento paralelo
+
+
+ 19.2 Multicore × Multiprocessador — [I]
+
+  19.2.1 Semelhanças — [I]
+	  Execução simultânea de tarefas
+	  Compartilhamento de recursos do sistema
+
+  19.2.2 Diferenças — [I]
+	  Localização física dos núcleos
+	  Nível de integração
+	  Escala do compartilhamento de recursos
+
+
+
+20. Organização Interna de um Processador Multicore — [P]
+
+ 20.1 Estrutura dos Núcleos — [P]
+
+  20.1.1 Núcleos Independentes — [P]
+	  Unidades de execução próprias
+	  Registradores individuais
+	  Cache privada por núcleo
+
+  20.1.2 Recursos Compartilhados — [P]
+	  Cache compartilhada
+	  Controlador de memória
+	  Interconexão interna (barramento ou malha)
+
+
+ 20.2 Comunicação entre Núcleos — [P]
+
+  20.2.1 Interconexão Interna — [P]
+	  Barramento comum
+	  Malha de interconexão (mesh)
+	  Impacto no desempenho
+
+  20.2.2 Compartilhamento de Cache — [P]
+	  Cache de último nível compartilhada
+	  Benefícios do compartilhamento
+	  Desafios de coerência
+
+
+ 20.3 Redes e Mecanismos de Interconexão — [P]
+
+  20.3.1 Tipos de Interconexão — [P]
+	  Barramento compartilhado
+	  Crossbar
+	  Anel (Ring)
+	  Malha (Mesh)
+	  Torus
+	  Interconexões hierárquicas
+	  Network-on-Chip (NoC)
+	  Roteamento entre nós
+	  Comunicação baseada em pacotes
+
+  20.3.2 Características da Interconexão — [P]
+	  Largura de banda
+	  Latência
+	  Contenção
+	  Escalabilidade
+	  Custo de implementação
+
+  20.3.3 Arbitragem e Acesso aos Recursos — [P]
+	  Arbitragem de barramento
+	  Prioridade
+	  Acesso concorrente
+	  Contenção por recursos compartilhados
+
+
+
+21. Comparação entre Multiprocessamento e Multicore — [I]
+
+ 21.1 Aspectos Comparativos — [I]
+
+  21.1.1 Nível de Integração — [I]
+	  Multiprocessador com chips separados
+	  Multicore com núcleos no mesmo chip
+
+  21.1.2 Desempenho e Eficiência — [I]
+	  Latência de comunicação
+	  Consumo de energia
+	  Custo de fabricação
+
+
+ 21.2 Convivência dos Conceitos — [I]
+
+  21.2.1 Sistemas Multiprocessados com Chips Multicore — [I]
+	  Combinação das duas abordagens
+	  Escalabilidade em sistemas modernos
+
+  21.2.2 Aplicações Práticas — [I]
+	  Servidores
+	  Computadores pessoais
+	  Dispositivos móveis
+
+
+
+22. Hyper-Threading e SMT — [P]
+
+ 22.1 Fundamentos do SMT — [P]
+
+  22.1.1 Conceito de SMT (Simultaneous Multithreading) — [P]
+	  Execução de múltiplas threads por núcleo
+	  Compartilhamento das unidades funcionais
+	  Aumento do aproveitamento do núcleo
+
+  22.1.2 Hyper-Threading — [P]
+	  Implementação comercial de SMT
+	  Threads lógicas por núcleo físico
+	  Benefícios de desempenho
+
+
+ 22.2 Impactos e Limitações — [P]
+
+  22.2.1 Ganhos de Desempenho — [P]
+	  Melhor utilização das unidades de execução
+	  Redução de tempo ocioso
+
+  22.2.2 Limitações do SMT — [P]
+	  Contenção de recursos internos
+	  Ganho de desempenho não linear
+	  Impacto na cache
+
+
+
+23. Escalabilidade dos Processadores Multicore — [I]
+
+ 23.1 Fatores de Escalabilidade — [I]
+
+  23.1.1 Número de Núcleos — [I]
+	  Aumento da capacidade de processamento
+	  Limites físicos e térmicos
+
+  23.1.2 Organização da Interconexão — [I]
+	  Impacto da topologia de interconexão
+	  Escalabilidade da comunicação entre núcleos
+
+
+ 23.2 Desafios da Escalabilidade — [I]
+
+  23.2.1 Contenção de Recursos — [I]
+	  Disputa por cache compartilhada
+	  Disputa por controlador de memória
+
+  23.2.2 Eficiência do Paralelismo — [I]
+	  Limites impostos pela Lei de Amdahl
+	  Necessidade de aplicações paralelizáveis
+
+
+
+PARTE 5 — THREADS, MULTITHREAD E PROCESSAMENTO SIMULTÂNEO
+
+
+24. Conceito de Threads — [I]
+
+ 24.1 Fundamentos — [I]
+
+  24.1.1 Definição de Thread — [I]
+	  Unidade básica de execução
+	  Fluxo de controle dentro de um processo
+	  Compartilhamento do espaço de endereçamento
+
+  24.1.2 Estrutura de uma Thread — [I]
+	  Contador de programa próprio
+	  Pilha própria
+	  Registradores próprios
+	  Recursos compartilhados com o processo
+
+
+ 24.2 Papel das Threads no Multiprocessamento — [I]
+
+  24.2.1 Execução Paralela de Threads — [I]
+	  Distribuição entre núcleos
+	  Execução simultânea real
+
+  24.2.2 Benefícios para Aplicações — [I]
+	  Responsividade
+	  Aproveitamento de múltiplos núcleos
+
+
+
+25. Modelos de Threads — [P]
+
+ 25.1 Threads em Nível de Usuário — [P]
+
+  25.1.1 Características — [P]
+	  Gerenciadas por bibliotecas de usuário
+	  Independência do núcleo do sistema operacional
+	  Baixo custo de criação e troca
+
+  25.1.2 Limitações — [P]
+	  Bloqueio de todas as threads por uma operação
+	  Impossibilidade de uso real de múltiplos núcleos
+
+
+ 25.2 Threads em Nível de Núcleo — [P]
+
+  25.2.1 Características — [P]
+	  Gerenciadas pelo sistema operacional
+	  Reconhecidas pelo escalonador
+	  Uso efetivo de múltiplos processadores
+
+  25.2.2 Modelos de Mapeamento — [P]
+	  Modelo um-para-um
+	  Modelo muitos-para-um
+	  Modelo muitos-para-muitos
+
+
+
+26. Multithreading — [I]
+
+ 26.1 Conceito — [I]
+
+  26.1.1 Definição de Multithreading — [I]
+	  Múltiplas threads em um mesmo processo
+	  Execução concorrente ou paralela
+	  Compartilhamento de recursos do processo
+
+  26.1.2 Objetivos do Multithreading — [I]
+	  Melhor uso do processador
+	  Maior responsividade
+	  Divisão de tarefas em subunidades
+
+
+ 26.2 Aplicações do Multithreading — [I]
+
+  26.2.1 Interfaces Gráficas — [I]
+	  Execução em segundo plano
+	  Manutenção da responsividade
+
+  26.2.2 Processamento de Dados — [I]
+	  Divisão de grandes tarefas
+	  Processamento paralelo de dados
+
+
+
+27. Vantagens e Desvantagens do Multithread — [I]
+
+ 27.1 Vantagens — [I]
+
+  27.1.1 Desempenho e Eficiência — [I]
+	  Melhor utilização de núcleos
+	  Redução do tempo de execução
+	  Melhor aproveitamento de recursos ociosos
+
+  27.1.2 Experiência do Usuário — [I]
+	  Maior interatividade
+	  Continuidade de operações em segundo plano
+
+
+ 27.2 Desvantagens — [I]
+
+  27.2.1 Complexidade de Desenvolvimento — [I]
+	  Necessidade de sincronização
+	  Maior dificuldade de depuração
+
+  27.2.2 Riscos Técnicos — [I]
+	  Condições de corrida
+	  Deadlocks
+	  Sobrecarga de gerenciamento de threads
+
+
+
+28. Concorrência × Paralelismo — [P]
+
+ 28.1 Conceito de Concorrência — [P]
+
+  28.1.1 Definição — [P]
+	  Execução intercalada de tarefas
+	  Progresso simultâneo aparente
+	  Ocorrência em sistemas monoprocessados
+
+  28.1.2 Características — [P]
+	  Alternância entre tarefas
+	  Compartilhamento de um único processador
+
+
+ 28.2 Conceito de Paralelismo — [P]
+
+  28.2.1 Definição — [P]
+	  Execução simultânea real
+	  Necessidade de múltiplos processadores ou núcleos
+
+  28.2.2 Relação entre Concorrência e Paralelismo — [P]
+	  Concorrência como conceito lógico
+	  Paralelismo como execução física simultânea
+	  Possibilidade de concorrência sem paralelismo
+
+
+
+29. Escalonamento de Threads — [P]
+
+ 29.1 Fundamentos — [P]
+
+  29.1.1 Escalonamento em Nível de Núcleo — [P]
+	  Escalonador do sistema operacional
+	  Atribuição de threads a núcleos
+
+  29.1.2 Escalonamento em Nível de Usuário — [P]
+	  Gerenciamento pela biblioteca de threads
+	  Independência do escalonador do sistema
+
+
+ 29.2 Estratégias de Escalonamento — [P]
+
+  29.2.1 Afinidade de Processador — [P]
+	  Manutenção da thread no mesmo núcleo
+	  Aproveitamento da cache local
+
+  29.2.2 Balanceamento entre Núcleos — [P]
+	  Redistribuição de threads
+	  Prevenção de sobrecarga em um núcleo
+
+  29.2.3 Migração de Threads — [P]
+	  Migração entre núcleos
+	  Motivações para migração
+	  Custos da migração
+	  Impacto sobre caches
+	  Migração × afinidade
+	  Balanceamento × localidade
+
+
+
+PARTE 6 — COMUNICAÇÃO, SINCRONIZAÇÃO E COORDENAÇÃO ENTRE PROCESSADORES
+
+
+30. Comunicação entre Processos (IPC) — [P]
+
+ 30.1 Fundamentos da IPC — [P]
+
+  30.1.1 Conceito de IPC — [P]
+	  Necessidade de troca de informações
+	  Cooperação entre processos
+	  Papel do sistema operacional
+
+  30.1.2 Formas de Comunicação — [P]
+	  Memória compartilhada
+	  Troca de mensagens
+	  Pipes e filas
+
+
+ 30.2 Mecanismos de IPC — [P]
+
+  30.2.1 Memória Compartilhada — [P]
+	  Área comum de memória
+	  Acesso direto pelos processos
+	  Necessidade de sincronização
+
+  30.2.2 Troca de Mensagens — [P]
+	  Envio e recebimento de mensagens
+	  Comunicação indireta entre processos
+	  Uso em sistemas fracamente acoplados
+
+
+
+31. Mecanismos de Sincronização — [P]
+
+ 31.1 Fundamentos da Sincronização — [P]
+
+  31.1.1 Necessidade de Sincronização — [P]
+	  Acesso concorrente a recursos
+	  Prevenção de inconsistências
+	  Coordenação entre processos e threads
+
+  31.1.2 Objetivos da Sincronização — [P]
+	  Exclusão mútua
+	  Ordenação de operações
+	  Comunicação segura
+
+
+ 31.2 Mecanismos Básicos — [P]
+
+  31.2.1 Variáveis de Condição — [P]
+	  Espera por eventos
+	  Sinalização entre threads
+
+  31.2.2 Barreiras de Sincronização — [P]
+	  Sincronização de múltiplas threads em um ponto
+	  Espera coletiva
+
+
+ 31.3 Sincronização em Hardware — [P]
+
+  31.3.1 Primitivas de Sincronização — [P]
+	  Operações atômicas
+	  Locks
+	  Spinlocks
+	  Mutexes
+	  Barreiras
+
+  31.3.2 Sincronização por Hardware × Software — [P]
+	  Responsabilidade do hardware
+	  Responsabilidade do sistema operacional
+	  Cooperação entre hardware e software
+
+
+
+32. Semáforos e Mutexes — [P]
+
+ 32.1 Semáforos — [P]
+
+  32.1.1 Conceito de Semáforo — [P]
+	  Contador de controle de acesso
+	  Operações de incremento e decremento
+	  Controle de recursos compartilhados
+
+  32.1.2 Tipos de Semáforos — [P]
+	  Semáforo binário
+	  Semáforo contador
+
+
+ 32.2 Mutexes (Exclusão Mútua) — [P]
+
+  32.2.1 Conceito de Mutex — [P]
+	  Bloqueio de acesso exclusivo
+	  Proteção de seções críticas
+	  Travamento e destravamento
+
+  32.2.2 Mutex × Semáforo — [P]
+	  Diferenças conceituais
+	  Casos de uso apropriados
+
+
+ 32.3 Spinlocks — [P]
+
+  32.3.1 Conceito de Spinlock — [P]
+	  Espera ocupada (busy waiting)
+	  Funcionamento
+	  Diferença entre spinlock e mutex
+
+  32.3.2 Aplicação em Sistemas Multiprocessados — [P]
+	  Uso em seções críticas curtas
+	  Vantagens
+	  Desvantagens
+	  Impacto sobre consumo de CPU
+
+
+
+33. Condições de Corrida (Race Conditions) — [P]
+
+ 33.1 Fundamentos — [P]
+
+  33.1.1 Conceito de Condição de Corrida — [P]
+	  Acesso simultâneo a recurso compartilhado
+	  Resultado dependente da ordem de execução
+	  Comportamento imprevisível
+
+  33.1.2 Causas Comuns — [P]
+	  Ausência de sincronização
+	  Acesso concorrente sem controle
+
+
+ 33.2 Prevenção de Condições de Corrida — [P]
+
+  33.2.1 Uso de Exclusão Mútua — [P]
+	  Proteção de seções críticas
+	  Uso de mutexes e semáforos
+
+  33.2.2 Boas Práticas de Projeto — [P]
+	  Minimização de dados compartilhados
+	  Uso de estruturas seguras para concorrência
+
+
+
+34. Deadlocks e Starvation — [P]
+
+ 34.1 Deadlocks — [P]
+
+  34.1.1 Conceito de Deadlock — [P]
+	  Impasse entre processos ou threads
+	  Espera circular por recursos
+	  Bloqueio permanente
+
+  34.1.2 Condições para Ocorrência — [P]
+	  Exclusão mútua
+	  Posse e espera
+	  Não preempção
+	  Espera circular
+
+
+ 34.2 Starvation — [P]
+
+  34.2.1 Conceito de Starvation — [P]
+	  Processo impedido de progredir indefinidamente
+	  Priorização inadequada
+
+  34.2.2 Prevenção de Deadlocks e Starvation — [P]
+	  Estratégias de prevenção
+	  Detecção e recuperação
+	  Políticas de escalonamento justas
+
+
+
+35. Seções Críticas e Exclusão Mútua — [P]
+
+ 35.1 Seções Críticas — [P]
+
+  35.1.1 Conceito de Seção Crítica — [P]
+	  Trecho de código que acessa recurso compartilhado
+	  Necessidade de acesso exclusivo
+
+  35.1.2 Requisitos para Solução do Problema — [P]
+	  Exclusão mútua
+	  Progresso
+	  Espera limitada
+
+
+ 35.2 Exclusão Mútua — [P]
+
+  35.2.1 Técnicas de Implementação — [P]
+	  Travas (locks)
+	  Instruções atômicas
+	  Algoritmos de exclusão mútua
+
+  35.2.2 Instruções Atômicas de Hardware — [P]
+	  Conceito de operação atômica
+	  Leitura-modificação-escrita (Read-Modify-Write)
+	  Test-and-Set
+	  Compare-and-Swap (CAS)
+	  Swap/Exchange
+	  Fetch-and-Add
+	  Load-Linked / Store-Conditional (LL/SC)
+	  Uso dessas instruções na implementação de locks
+
+  35.2.3 Impactos no Desempenho — [P]
+	  Overhead de sincronização
+	  Contenção entre threads
+
+
+
+PARTE 7 — MEMÓRIA E COMPARTILHAMENTO EM SISTEMAS MULTIPROCESSADOS
+
+
+36. Organização de Memória em Sistemas Multiprocessados — [I]
+
+ 36.1 Modelos de Organização — [I]
+
+  36.1.1 Memória Compartilhada — [I]
+	  Espaço de memória único
+	  Acesso por todos os processadores
+	  Comunicação direta
+
+  36.1.2 Memória Distribuída — [I]
+	  Memória local por processador
+	  Comunicação via troca de mensagens
+	  Independência entre unidades
+
+
+ 36.2 Escolha do Modelo de Memória — [I]
+
+  36.2.1 Fatores de Decisão — [I]
+	  Escala do sistema
+	  Necessidade de desempenho
+	  Complexidade de programação
+
+  36.2.2 Sistemas Híbridos — [I]
+	  Combinação de memória compartilhada e distribuída
+	  Uso em clusters modernos
+
+
+
+37. Memória Compartilhada — [P]
+
+ 37.1 Fundamentos — [P]
+
+  37.1.1 Conceito de Memória Compartilhada — [P]
+	  Área comum acessível por múltiplos processadores
+	  Comunicação implícita entre processos
+	  Necessidade de controle de acesso
+
+  37.1.2 Organização Física — [P]
+	  Barramento comum
+	  Controlador de memória compartilhado
+
+
+ 37.2 Desafios da Memória Compartilhada — [P]
+
+  37.2.1 Contenção de Acesso — [P]
+	  Disputa pelo barramento de memória
+	  Impacto no desempenho
+
+  37.2.2 Consistência dos Dados — [P]
+	  Necessidade de sincronização
+	  Prevenção de leituras desatualizadas
+
+  37.2.3 Largura de Banda da Memória — [P]
+	  Largura de banda de memória
+	  Compartilhamento da largura de banda
+	  Saturação do sistema de memória
+	  Relação entre número de processadores e largura de banda
+	  Gargalo de memória em sistemas multiprocessados
+
+
+
+38. Troca de Mensagens (Message Passing) — [P]
+
+ 38.1 Fundamentos — [P]
+
+  38.1.1 Conceito de Troca de Mensagens — [P]
+	  Comunicação via envio e recebimento
+	  Ausência de memória compartilhada
+	  Isolamento entre processos
+
+  38.1.2 Formas de Comunicação — [P]
+	  Comunicação síncrona
+	  Comunicação assíncrona
+
+
+ 38.2 Aplicação em Sistemas Multiprocessados — [P]
+
+  38.2.1 Uso em Sistemas Fracamente Acoplados — [P]
+	  Comunicação entre processadores distintos
+	  Redução da contenção de memória
+
+  38.2.2 Vantagens e Limitações — [P]
+	  Maior escalabilidade
+	  Maior latência de comunicação
+
+
+
+39. Coerência de Cache em Multiprocessadores — [P]
+
+ 39.1 Fundamentos — [P]
+
+  39.1.1 Conceito de Coerência de Cache — [P]
+	  Necessidade de visões consistentes da memória
+	  Problema das cópias múltiplas de dados
+	  Impacto em sistemas com cache privada
+
+  39.1.2 Problema da Coerência — [P]
+	  Atualizações não propagadas
+	  Leitura de dados desatualizados
+
+
+ 39.2 Protocolos de Coerência — [P]
+
+  39.2.1 Protocolos Baseados em Snooping — [P]
+	  Monitoramento do barramento
+	  Invalidação ou atualização de cópias
+	  Protocolo MSI
+	  Protocolo MESI
+	  Protocolo MOESI
+	  Estados das linhas de cache
+	  Transições entre estados
+	  Operações de leitura e escrita
+	  Invalidação × atualização
+
+  39.2.2 Protocolos Baseados em Diretório — [P]
+	  Registro centralizado do estado das cópias
+	  Uso em sistemas de larga escala
+
+
+ 39.3 Problemas de Desempenho Relacionados à Coerência — [P]
+
+  39.3.1 False Sharing
+	  Conceito
+	  Como ocorre
+	  Relação com linhas de cache
+	  Invalidações desnecessárias
+	  Impacto no desempenho
+	  Diferença entre true sharing e false sharing
+
+  39.3.2 Contenção de Cache
+	  Disputa por linhas de cache
+	  Tráfego de coerência
+	  Impacto em sistemas multicore
+
+
+
+40. Consistência de Memória — [P]
+
+ 40.1 Fundamentos — [P]
+
+  40.1.1 Conceito de Consistência de Memória — [P]
+	  Ordem de visibilidade das operações de memória
+	  Relação com múltiplas threads e processadores
+	  Diferença entre coerência e consistência
+
+  40.1.2 Importância da Consistência — [P]
+	  Previsibilidade do comportamento do programa
+	  Corretude em sistemas concorrentes
+
+
+ 40.2 Modelos de Consistência — [P]
+
+  40.2.1 Consistência Sequencial — [P]
+	  Ordem única e global das operações
+	  Maior rigor e previsibilidade
+
+  40.2.2 Modelos Relaxados de Consistência — [P]
+	  Permissão de reordenações
+	  Maior desempenho com regras mais flexíveis
+	  Total Store Order (TSO)
+	  Release Consistency
+	  Acquire/Release
+	  Reordenação de leituras e escritas
+
+  40.2.3 Barreiras e Fences de Memória — [P]
+	  Conceito de barreira de memória
+	  Memory fence
+	  Read barrier
+	  Write barrier
+	  Read-Write barrier
+	  Ordenação das operações de memória
+	  Relação entre fences e consistência de memória
+	  Relação entre operações atômicas e fences
+
+
+
+PARTE 8 — PARALELISMO, DESEMPENHO, ESCALABILIDADE E BALANCEAMENTO DE CARGA
+
+
+41. Fundamentos do Paralelismo — [I]
+
+ 41.1 Conceito de Paralelismo — [I]
+
+  41.1.1 Definição — [I]
+	  Execução simultânea de múltiplas tarefas
+	  Divisão do trabalho em partes independentes
+	  Necessidade de múltiplos processadores
+
+  41.1.2 Objetivos do Paralelismo — [I]
+	  Redução do tempo de execução
+	  Aumento da vazão
+	  Melhor aproveitamento do hardware
+
+
+ 41.2 Condições para o Paralelismo — [I]
+
+  41.2.1 Independência das Tarefas — [I]
+	  Ausência de dependências entre subtarefas
+	  Possibilidade de execução simultânea
+
+  41.2.2 Dependências de Dados — [I]
+	  Limitação ao paralelismo
+	  Necessidade de sincronização entre tarefas dependentes
+
+
+
+42. Tipos de Paralelismo — [I]
+
+ 42.1 Paralelismo de Dados — [I]
+
+  42.1.1 Conceito — [I]
+	  Mesma operação sobre múltiplos dados
+	  Divisão dos dados entre processadores
+
+  42.1.2 Aplicações — [I]
+	  Processamento de vetores e matrizes
+	  Processamento de imagens
+
+
+ 42.2 Paralelismo de Tarefas — [I]
+
+  42.2.1 Conceito — [I]
+	  Tarefas distintas executadas simultaneamente
+	  Distribuição de funções entre processadores
+
+  42.2.2 Aplicações — [I]
+	  Sistemas com múltiplas funcionalidades
+	  Pipelines de processamento
+
+
+
+43. Balanceamento de Carga — [P]
+
+ 43.1 Fundamentos — [P]
+
+  43.1.1 Conceito de Balanceamento de Carga — [P]
+	  Distribuição equilibrada de tarefas
+	  Prevenção de sobrecarga em processadores
+	  Aproveitamento uniforme dos recursos
+
+  43.1.2 Objetivos — [P]
+	  Maximização do desempenho
+	  Redução do tempo ocioso
+
+
+ 43.2 Técnicas de Balanceamento — [P]
+
+  43.2.1 Balanceamento Estático — [P]
+	  Distribuição definida antecipadamente
+	  Menor overhead de gerenciamento
+
+  43.2.2 Balanceamento Dinâmico — [P]
+	  Redistribuição durante a execução
+	  Monitoramento contínuo da carga
+
+
+
+44. Métricas de Desempenho em Sistemas Multiprocessados — [I]
+
+ 44.1 Métricas Fundamentais — [I]
+
+  44.1.1 Tempo de Execução — [I]
+	  Tempo total de processamento
+	  Comparação entre execução sequencial e paralela
+
+  44.1.2 Vazão (Throughput) — [I]
+	  Quantidade de tarefas concluídas por unidade de tempo
+	  Relação com o número de processadores
+
+
+ 44.2 Eficiência do Sistema — [I]
+
+  44.2.1 Speedup — [I]
+	  Ganho de desempenho com múltiplos processadores
+	  Relação entre tempo sequencial e paralelo
+
+  44.2.2 Eficiência Paralela — [I]
+	  Relação entre speedup e número de processadores
+	  Aproveitamento real dos recursos
+
+
+ 44.3 Overhead do Multiprocessamento — [I]
+
+  44.3.1 Fontes de Overhead — [I]
+	  Comunicação
+	  Sincronização
+	  Criação e gerenciamento de threads
+	  Escalonamento
+	  Migração de threads
+	  Contenção de recursos
+
+  44.3.2 Impacto no Desempenho — [I]
+	  Redução do speedup
+	  Redução da eficiência
+	  Relação entre granularidade e overhead
+
+
+
+45. Lei de Amdahl e Lei de Gustafson — [P]
+
+ 45.1 Lei de Amdahl — [P]
+
+  45.1.1 Conceito — [P]
+	  Limite do speedup imposto pela fração sequencial
+	  Impacto de partes não paralelizáveis
+
+  45.1.2 Implicações — [P]
+	  Limitação do ganho com aumento de processadores
+	  Importância da fração paralelizável
+
+
+ 45.2 Lei de Gustafson — [P]
+
+  45.2.1 Conceito — [P]
+	  Escalabilidade com aumento do tamanho do problema
+	  Perspectiva alternativa à Lei de Amdahl
+
+  45.2.2 Comparação entre as Leis — [P]
+	  Foco em desempenho fixo × foco em escalabilidade
+	  Aplicações práticas de cada abordagem
+
+
+ 45.3 Tipos de Escalabilidade — [P]
+
+  45.3.1 Escalabilidade Forte — [P]
+	  Tamanho fixo do problema
+	  Aumento do número de processadores
+	  Redução do tempo de execução
+
+  45.3.2 Escalabilidade Fraca— [P]
+	  Aumento do tamanho do problema
+	  Aumento proporcional dos recursos
+	  Manutenção do tempo de execução
+
+
+
+PARTE 9 — TOLERÂNCIA A FALHAS, CONFIABILIDADE E SISTEMAS MULTIPROCESSADOS AVANÇADOS
+
+
+46. Tolerância a Falhas em Multiprocessamento — [I]
+
+ 46.1 Fundamentos — [I]
+
+  46.1.1 Conceito de Tolerância a Falhas — [I]
+	  Capacidade de continuar operando após falhas
+	  Importância em sistemas críticos
+	  Redundância como estratégia central
+
+  46.1.2 Tipos de Falhas — [I]
+	  Falhas de hardware
+	  Falhas de software
+	  Falhas de comunicação
+
+
+ 46.2 Estratégias de Tolerância a Falhas — [I]
+
+  46.2.1 Redundância de Processadores — [I]
+	  Substituição de processadores falhos
+	  Continuidade da operação
+
+  46.2.2 Redistribuição de Carga — [I]
+	  Realocação de tarefas de processadores falhos
+	  Manutenção da disponibilidade do sistema
+
+
+
+47. Confiabilidade e Redundância — [I]
+
+ 47.1 Conceito de Confiabilidade — [I]
+
+  47.1.1 Definição — [I]
+	  Capacidade do sistema de operar corretamente
+	  Continuidade do funcionamento
+
+  47.1.2 Fatores que Afetam a Confiabilidade — [I]
+	  Complexidade do sistema
+	  Número de componentes
+
+
+ 47.2 Técnicas de Redundância — [I]
+
+  47.2.1 Redundância de Hardware — [I]
+	  Processadores duplicados
+	  Componentes de backup
+
+  47.2.2 Redundância de Dados — [I]
+	  Replicação de informações
+	  Recuperação em caso de falha
+
+
+
+48. Sistemas Multiprocessados em Larga Escala (Clusters e Data Centers) — [V]
+
+ 48.1 Clusters de Computadores — [V]
+
+  48.1.1 Conceito de Cluster — [V]
+	  Conjunto de computadores interligados
+	  Trabalho conjunto como um único sistema
+	  Comunicação via rede
+
+  48.1.2 Aplicações de Clusters — [V]
+	  Processamento de grandes volumes de dados
+	  Computação de alto desempenho
+
+
+ 48.2 Data Centers — [V]
+
+  48.2.1 Organização de Data Centers — [V]
+	  Grande quantidade de servidores multiprocessados
+	  Gerenciamento centralizado de recursos
+
+  48.2.2 Importância na Computação Moderna — [V]
+	  Suporte a serviços em nuvem
+	  Escalabilidade para grandes demandas
+
+
+
+PARTE 10 — EVOLUÇÃO, REVISÃO GERAL E CONSOLIDAÇÃO DO MULTIPROCESSAMENTO
+
+
+49. Tendências e Evolução Futura do Multiprocessamento — [V]
+
+ 49.1 Novas Direções — [V]
+
+  49.1.1 Arquiteturas Heterogêneas — [V]
+	  Combinação de diferentes tipos de processadores
+	  Especialização de unidades de processamento
+
+  49.1.2 Aceleradores Especializados — [V]
+	  Uso de GPUs e outros aceleradores
+	  Processamento paralelo massivo
+
+
+ 49.2 Perspectivas Futuras — [V]
+
+  49.2.1 Escalabilidade Contínua — [V]
+	  Aumento do número de núcleos
+	  Novos modelos de interconexão
+
+  49.2.2 Desafios Futuros — [V]
+	  Eficiência energética
+	  Complexidade de programação paralela
+
+
+
+50. Resumo Geral e Conclusão do Multiprocessamento — [I]
+
+ 50.1 Revisão dos Conceitos Fundamentais — [I]
+
+  50.1.1 Fundamentos Essenciais — [I]
+	  Conceito de multiprocessamento
+	  Processos e threads
+	  Multiprocessadores e suas organizações
+
+  50.1.2 Mecanismos Centrais — [I]
+	  Escalonamento
+	  Sincronização e comunicação
+	  Coerência e consistência de memória
+
+
+ 50.2 Síntese e Encerramento — [I]
+
+  50.2.1 Importância do Multiprocessamento — [I]
+	  Base para sistemas de alto desempenho
+	  Fundamento para arquiteturas modernas
+	  Relevância para o estudo avançado de arquitetura de computadores
+
+  50.2.2 Preparação para Estudos Posteriores — [I]
+	  Sistemas operacionais avançados
+	  Arquiteturas paralelas
+	  Computação distribuída e em nuvem
