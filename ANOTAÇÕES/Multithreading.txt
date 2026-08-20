@@ -1,0 +1,1345 @@
+                                      MULTITHREADING
+
+
+A classificação abaixo indica a profundidade recomendada para cada grande tópico da lista.
+
+[P] Profundidade — estudar mecanismos, estruturas, funcionamento interno e relações entre componentes.
+[I] Intermediário — compreender bem o funcionamento e as relações principais, sem precisar dominar todos os
+   detalhes de implementação.
+[V] Visão geral — saber o que é, para que serve e como se relaciona com o Multithreading.
+
+
+
+PARTE 1 — FUNDAMENTOS DO MULTITHREADING
+
+
+1. Introdução ao Multithreading — [I]
+
+ 1.1 Conceitos Fundamentais — [I]
+
+  1.1.1 Conceito de Multithreading — [I]
+	  Definição de multithreading
+	  Conceito de thread
+	  Execução concorrente de instruções
+	  Papel do multithreading na microarquitetura
+	  Importância na Arquitetura e Organização de Computadores
+
+  1.1.2 Objetivos do Multithreading — [I]
+	  Aumento da utilização do processador
+	  Redução do tempo ocioso (stalls)
+	  Melhoria do throughput
+	  Exploração do paralelismo de threads
+
+  1.1.3 Importância do Multithreading — [I]
+	  Tolerância a latências
+	  Aproveitamento de recursos ociosos
+	  Base para processadores modernos
+	  Relação com desempenho e eficiência
+
+
+ 1.2 O Multithreading na Arquitetura de Computadores — [I]
+
+  1.2.1 Papel do Multithreading no Sistema Computacional — [I]
+	  Execução de múltiplos fluxos de instruções
+	  Compartilhamento de unidades funcionais
+	  Organização interna do processador
+	  Relação com o pipeline
+
+  1.2.2 Arquitetura × Organização × Microarquitetura × Multithreading — [I]
+	  O que pertence à Arquitetura
+	  O que pertence à Organização
+	  O que pertence à Microarquitetura
+	  Localização do multithreading
+	  Relação entre os conceitos
+
+  1.2.3 Multithreading como Técnica Organizacional — [I]
+	  Técnica de organização do processador
+	  Distinção em relação ao paralelismo de dados
+	  Diferença em relação ao multiprocessamento
+	  Abstração funcional
+
+
+
+2. Evolução Histórica do Multithreading — [V]
+
+ 2.1 Origem do Multithreading — [V]
+
+  2.1.1 Primeiras Motivações — [V]
+	  Latência de acesso à memória
+	  Ociosidade do processador
+	  Necessidade de melhor aproveitamento do hardware
+
+  2.1.2 Primeiras Implementações — [V]
+	  Sistemas de tempo compartilhado
+	  Processadores com múltiplos contextos
+	  Primeiras arquiteturas multithreaded
+
+
+ 2.2 Evolução das Técnicas — [V]
+
+  2.2.1 Do Multithreading Simples ao SMT — [V]
+	  Multithreading intercalado
+	  Multithreading simultâneo
+	  Evolução das arquiteturas superescalares
+
+  2.2.2 Multithreading em Processadores Comerciais — [V]
+	  Adoção pela indústria
+	  Popularização com o Hyper-Threading
+	  Multithreading em processadores multicore
+
+
+ 2.3 Importância da Evolução do Multithreading — [V]
+
+  2.3.1 Impactos na Computação Moderna — [V]
+	  Melhoria de desempenho
+	  Eficiência energética
+	  Base para arquiteturas paralelas atuais
+
+
+
+3. Conceitos Fundamentais de Paralelismo e Threads — [P]
+
+ 3.1 Fundamentos do Paralelismo — [P]
+
+  3.1.1 Conceito de Paralelismo — [P]
+	  Execução simultânea de tarefas
+	  Diferença entre concorrência e paralelismo
+	  Paralelismo em nível de hardware e de software
+
+  3.1.2 Tipos de Paralelismo — [P]
+	  Paralelismo em nível de instrução (ILP)
+	  Paralelismo em nível de thread (TLP)
+	  Paralelismo em nível de dados (DLP)
+
+
+ 3.2 Conceito de Thread — [P]
+
+  3.2.1 Definição de Thread — [P]
+	  Fluxo de execução independente
+	  Contexto próprio de execução
+	  Compartilhamento de recursos do processo
+
+  3.2.2 Thread versus Processo — [P]
+	  Diferenças estruturais
+	  Compartilhamento de memória
+	  Independência de execução
+	  Custo de criação e de troca
+
+
+ 3.3 Thread como Unidade de Execução — [P]
+
+  3.3.1 Características de uma Thread — [P]
+	  Contador de programa próprio
+	  Conjunto de registradores próprio
+	  Pilha de execução própria
+	  Estado de execução
+
+
+
+4. Motivação e Objetivos do Multithreading — [I]
+
+ 4.1 Problemas Resolvidos pelo Multithreading — [I]
+
+  4.1.1 Latências e Stalls — [I]
+	  Latência de acesso à memória
+	  Stalls de pipeline
+	  Dependências de dados
+	  Desvios de controle
+
+  4.1.2 Subutilização de Recursos — [I]
+	  Unidades funcionais ociosas
+	  Baixa utilização do processador
+	  Ineficiência em cargas de trabalho variadas
+
+
+ 4.2 Benefícios Esperados — [I]
+
+  4.2.1 Ganhos de Desempenho — [I]
+	  Aumento do throughput
+	  Melhor aproveitamento do hardware
+	  Redução do tempo ocioso
+
+  4.2.2 Ganhos de Eficiência — [I]
+	  Melhor relação desempenho/custo
+	  Melhor eficiência energética
+	  Escalabilidade da execução
+
+
+
+PARTE 2 — THREADS, PROCESSOS E NÍVEIS DE MULTITHREADING
+
+
+5. Processos versus Threads — [P]
+
+ 5.1 O Conceito de Processo — [P]
+
+  5.1.1 Estrutura de um Processo — [P]
+	  Espaço de endereçamento próprio
+	  Recursos alocados pelo sistema operacional
+	  Contexto de execução completo
+
+  5.1.2 Processo como Contêiner de Threads — [P]
+	  Threads dentro de um processo
+	  Compartilhamento de memória entre threads
+	  Recursos comuns do processo
+
+
+ 5.2 Diferenças entre Processos e Threads — [P]
+
+  5.2.1 Isolamento e Compartilhamento — [P]
+	  Isolamento entre processos
+	  Compartilhamento entre threads do mesmo processo
+	  Implicações de segurança e consistência
+
+  5.2.2 Custo de Criação e Gerenciamento — [P]
+	  Custo de criação de processo
+	  Custo de criação de thread
+	  Custo de troca de contexto
+
+
+ 5.3 Vantagens do Uso de Threads — [P]
+
+  5.3.1 Eficiência da Comunicação — [P]
+	  Comunicação via memória compartilhada
+	  Menor overhead de comunicação
+	  Facilidade de sincronização
+
+
+
+6. Estrutura Interna de uma Thread — [P]
+
+ 6.1 Componentes de uma Thread — [P]
+
+  6.1.1 Contexto de Execução — [P]
+	  Contador de programa
+	  Registradores de propósito geral
+	  Registrador de status
+	  Ponteiro de pilha
+
+  6.1.2 Estado da Thread — [P]
+	  Estado pronta
+	  Estado em execução
+	  Estado bloqueada
+	  Estado finalizada
+
+
+ 6.2 Recursos Compartilhados e Privados — [P]
+
+  6.2.1 Recursos Privados da Thread — [P]
+	  Registradores
+	  Pilha própria
+	  Contador de programa
+
+  6.2.2 Recursos Compartilhados entre Threads — [P]
+	  Memória do processo
+	  Arquivos abertos
+	  Variáveis globais
+
+
+
+7. Níveis de Paralelismo (ILP, TLP, DLP) — [I]
+
+ 7.1 Paralelismo em Nível de Instrução (ILP) — [I]
+
+  7.1.1 Conceito de ILP — [I]
+	  Execução simultânea de instruções independentes
+	  Técnicas de exploração de ILP
+	  Limitações do ILP
+
+
+ 7.2 Paralelismo em Nível de Thread (TLP) — [I]
+
+  7.2.1 Conceito de TLP — [I]
+	  Execução simultânea de múltiplas threads
+	  Relação com o multithreading
+	  Complementaridade com o ILP
+
+
+ 7.3 Paralelismo em Nível de Dados (DLP) — [I]
+
+  7.3.1 Conceito de DLP — [I]
+	  Execução da mesma operação sobre múltiplos dados
+	  Relação com arquiteturas vetoriais e SIMD
+	  Diferença em relação ao TLP
+
+
+
+8. Granularidade do Paralelismo de Threads — [I]
+
+ 8.1 Conceito de Granularidade — [I]
+
+  8.1.1 Definição de Granularidade — [I]
+	  Tamanho das unidades de execução paralela
+	  Frequência de troca entre threads
+	  Relação com o desempenho
+
+
+ 8.2 Tipos de Granularidade — [I]
+
+  8.2.1 Granularidade Grossa — [I]
+	  Troca pouco frequente de threads
+	  Menor overhead de troca
+	  Menor tolerância a stalls curtos
+
+  8.2.2 Granularidade Fina — [I]
+	  Troca frequente de threads
+	  Maior tolerância a latências
+	  Maior complexidade de hardware
+
+
+
+PARTE 3 — MODELOS DE MULTITHREADING
+
+
+9. Modelos Conceituais de Multithreading — [P]
+
+ 9.1 Fundamentos dos Modelos — [P]
+
+  9.1.1 Critérios de Classificação — [P]
+	  Momento de troca de threads
+	  Nível de compartilhamento de recursos
+	  Grau de execução simultânea
+
+
+ 9.2 Classificação Geral dos Modelos — [P]
+
+  9.2.1 Multithreading Intercalado — [P]
+	  Execução alternada de threads
+	  Troca em ciclos de clock
+	  Uma thread ativa por ciclo
+
+  9.2.2 Multithreading Simultâneo — [P]
+	  Execução concorrente de múltiplas threads
+	  Compartilhamento de recursos no mesmo ciclo
+	  Maior aproveitamento do hardware superescalar
+
+
+
+10. Multithreading em Nível de Hardware vs Software — [I]
+
+ 10.1 Multithreading de Hardware — [I]
+
+  10.1.1 Características do Multithreading de Hardware — [I]
+	  Suporte direto do processador
+	  Múltiplos contextos de hardware
+	  Troca gerenciada pelo hardware
+
+
+ 10.2 Multithreading de Software — [I]
+
+  10.2.1 Características do Multithreading de Software — [I]
+	  Gerenciamento pelo sistema operacional
+	  Escalonamento por software
+	  Dependência do suporte de hardware subjacente
+
+
+ 10.3 Relação entre os Dois Níveis — [I]
+
+  10.3.1 Cooperação entre Hardware e Software — [I]
+	  Threads de software mapeadas em threads de hardware
+	  Escalonamento cooperativo
+	  Impacto no desempenho geral
+
+
+
+11. Modelos de Mapeamento de Threads — [I]
+
+ 11.1 Modelo Many-to-One — [I]
+
+  11.1.1 Características — [I]
+	  Múltiplas threads de usuário para um núcleo de kernel
+	  Gerenciamento no espaço do usuário
+	  Limitações de paralelismo real
+
+
+ 11.2 Modelo One-to-One — [I]
+
+  11.2.1 Características — [I]
+	  Uma thread de usuário para um núcleo de kernel
+	  Maior paralelismo real
+	  Maior custo de criação
+
+
+ 11.3 Modelo Many-to-Many — [I]
+
+  11.3.1 Características — [I]
+	  Múltiplas threads de usuário mapeadas em múltiplos núcleos de kernel
+	  Flexibilidade de escalonamento
+	  Equilíbrio entre custo e paralelismo
+
+
+
+12. Modelos de Execução de Threads no Processador — [P]
+
+ 12.1 Execução com Troca de Contexto — [P]
+
+  12.1.1 Multithreading por Troca de Contexto — [P]
+	  Troca de thread em eventos específicos
+	  Preservação do estado da thread
+	  Custo da troca de contexto
+
+
+ 12.2 Execução com Múltiplos Contextos Simultâneos — [P]
+
+  12.2.1 Duplicação de Contextos de Hardware — [P]
+	  Múltiplos conjuntos de registradores
+	  Compartilhamento das unidades funcionais
+	  Ilusão de múltiplos processadores lógicos
+
+
+
+13. Comparação entre Modelos de Multithreading — [I]
+
+ 13.1 Critérios de Comparação — [I]
+
+  13.1.1 Desempenho e Complexidade — [I]
+	  Ganho de desempenho
+	  Complexidade de implementação
+	  Custo de hardware
+
+
+ 13.2 Vantagens e Desvantagens — [I]
+
+  13.2.1 Comparação Geral — [I]
+	  Multithreading intercalado versus simultâneo
+	  Multithreading de hardware versus de software
+	  Aplicabilidade conforme a carga de trabalho
+
+
+
+PARTE 4 — THREADS DE HARDWARE E THREADS DE SOFTWARE
+
+
+14. Threads de Hardware — [P]
+
+ 14.1 Conceito de Thread de Hardware — [P]
+
+  14.1.1 Definição — [P]
+	  Contexto de execução implementado em hardware
+	  Registradores dedicados
+	  Suporte direto do processador
+
+
+ 14.2 Organização das Threads de Hardware — [P]
+
+  14.2.1 Contextos de Hardware — [P]
+	  Múltiplos bancos de registradores
+	  Múltiplos contadores de programa
+	  Estruturas de controle replicadas
+
+  14.2.2 Limite de Threads de Hardware — [P]
+	  Número fixo de contextos
+	  Relação com a complexidade do processador
+	  Impacto na área do chip
+
+
+
+15. Threads de Software — [I]
+
+ 15.1 Conceito de Thread de Software — [I]
+
+  15.1.1 Definição — [I]
+	  Unidade de execução gerenciada pelo sistema operacional
+	  Independência da implementação de hardware
+	  Escalonamento por software
+
+
+ 15.2 Gerenciamento de Threads de Software — [I]
+
+  15.2.1 Papel do Sistema Operacional — [I]
+	  Criação e destruição de threads
+	  Escalonamento entre núcleos e threads de hardware
+	  Sincronização entre threads
+
+
+
+16. Contexto de Execução e Estado da Thread — [P]
+
+ 16.1 Componentes do Contexto — [P]
+
+  16.1.1 Registradores de Contexto — [P]
+	  Registradores de propósito geral
+	  Contador de programa
+	  Registrador de status
+	  Ponteiro de pilha
+
+
+ 16.2 Estados de uma Thread — [P]
+
+  16.2.1 Ciclo de Estados — [P]
+	  Pronta
+	  Em execução
+	  Bloqueada
+	  Finalizada
+
+
+
+17. Troca de Contexto entre Threads — [P]
+
+ 17.1 Fundamentos da Troca de Contexto — [P]
+
+  17.1.1 Conceito de Troca de Contexto — [P]
+	  Salvamento do estado da thread atual
+	  Carregamento do estado da nova thread
+	  Custo temporal da troca
+
+
+ 17.2 Técnicas de Troca de Contexto — [P]
+
+  17.2.1 Troca em Hardware — [P]
+	  Contextos duplicados
+	  Troca sem intervenção do sistema operacional
+	  Baixa latência de troca
+
+  17.2.2 Troca em Software — [P]
+	  Intervenção do sistema operacional
+	  Maior custo de troca
+	  Uso de estruturas de controle de processos
+
+
+
+PARTE 5 — ORGANIZAÇÃO E ARQUITETURA DE PROCESSADORES MULTITHREADED
+
+
+18. Arquitetura Geral de Processadores Multithreaded — [P]
+
+ 18.1 Organização Estrutural — [P]
+
+  18.1.1 Componentes Principais — [P]
+	  Múltiplos contextos de registradores
+	  Unidades funcionais compartilhadas
+	  Unidade de busca e decodificação
+	  Lógica de escalonamento de threads
+
+
+ 18.2 Fluxo de Execução Multithreaded — [P]
+
+  18.2.1 Organização do Fluxo — [P]
+	  Busca de instruções de múltiplas threads
+	  Seleção da thread a executar
+	  Execução nas unidades funcionais
+	  Escrita dos resultados
+
+
+
+19. Unidades Funcionais Compartilhadas — [P]
+
+ 19.1 Conceito de Compartilhamento — [P]
+
+  19.1.1 Recursos Compartilhados — [P]
+	  Unidades aritméticas e lógicas
+	  Unidade de ponto flutuante
+	  Unidade de acesso à memória
+
+
+ 19.2 Gerenciamento do Compartilhamento — [P]
+
+  19.2.1 Arbitragem de Recursos — [P]
+	  Critérios de prioridade
+	  Conflitos de acesso
+	  Políticas de arbitragem
+
+
+
+20. Registradores e Banco de Registradores Multithreaded — [P]
+
+ 20.1 Organização dos Registradores — [P]
+
+  20.1.1 Bancos de Registradores por Thread — [P]
+	  Conjuntos independentes de registradores
+	  Isolamento entre threads
+	  Acesso rápido ao contexto
+
+
+ 20.2 Impacto na Área e na Complexidade — [P]
+
+  20.2.1 Custos de Implementação — [P]
+	  Aumento da área do chip
+	  Complexidade do banco de registradores
+	  Relação entre número de threads e custo
+
+
+
+21. Pipeline em Processadores Multithreaded — [P]
+
+ 21.1 Organização do Pipeline Multithreaded — [P]
+
+  21.1.1 Estágios do Pipeline — [P]
+	  Busca de instruções por thread
+	  Decodificação
+	  Execução
+	  Escrita de resultados
+
+
+ 21.2 Preenchimento de Bolhas com Múltiplas Threads — [P]
+
+  21.2.1 Redução de Stalls — [P]
+	  Substituição de instruções em stall
+	  Aproveitamento de ciclos ociosos
+	  Melhoria da utilização do pipeline
+
+
+
+22. Unidade de Busca e Despacho em Ambiente Multithreaded — [I]
+
+ 22.1 Busca de Instruções Multithreaded — [I]
+
+  22.1.1 Seleção da Thread para Busca — [I]
+	  Políticas de seleção
+	  Balanceamento entre threads
+	  Prioridade dinâmica
+
+
+ 22.2 Despacho de Instruções — [I]
+
+  22.2.1 Organização do Despacho — [I]
+	  Envio para unidades funcionais
+	  Controle de dependências
+	  Ordem de despacho por thread
+
+
+
+PARTE 6 — MULTITHREADING INTERCALADO E MULTITHREADING SIMULTÂNEO (SMT)
+
+
+23. Multithreading em Grão Grosso (Coarse-Grained) — [P]
+
+ 23.1 Fundamentos — [P]
+
+  23.1.1 Conceito — [P]
+	  Troca de thread apenas em eventos de longa latência
+	  Execução contínua de uma thread até o stall
+	  Baixa frequência de troca
+
+
+ 23.2 Funcionamento — [P]
+
+  23.2.1 Mecanismo de Troca — [P]
+	  Detecção de eventos de stall
+	  Troca para thread pronta
+	  Retomada da thread original
+
+
+ 23.3 Vantagens e Limitações — [P]
+
+  23.3.1 Análise — [P]
+	  Baixo overhead de troca
+	  Baixa tolerância a stalls curtos
+	  Simplicidade de implementação
+
+
+
+24. Multithreading em Grão Fino (Fine-Grained) — [P]
+
+ 24.1 Fundamentos — [P]
+
+  24.1.1 Conceito — [P]
+	  Troca de thread a cada ciclo de clock
+	  Execução alternada entre threads prontas
+	  Alta frequência de troca
+
+
+ 24.2 Funcionamento — [P]
+
+  24.2.1 Mecanismo de Escalonamento por Ciclo — [P]
+	  Seleção da thread a cada ciclo
+	  Eliminação de bolhas de pipeline
+	  Política round-robin ou baseada em prioridade
+
+
+ 24.3 Vantagens e Limitações — [P]
+
+  24.3.1 Análise — [P]
+	  Alta tolerância a latências
+	  Menor desempenho de thread isolada
+	  Maior complexidade de escalonamento
+
+
+
+25. Multithreading Simultâneo (SMT) — [P]
+
+ 25.1 Fundamentos do SMT — [P]
+
+  25.1.1 Conceito de SMT — [P]
+	  Execução simultânea de instruções de múltiplas threads
+	  Compartilhamento de unidades funcionais no mesmo ciclo
+	  Combinação com processadores superescalares
+
+
+ 25.2 Funcionamento do SMT — [P]
+
+  25.2.1 Escalonamento Dinâmico de Instruções — [P]
+	  Seleção de instruções de diferentes threads
+	  Preenchimento de slots de emissão
+	  Máxima utilização das unidades funcionais
+
+
+ 25.3 Vantagens e Desafios do SMT — [P]
+
+  25.3.1 Análise — [P]
+	  Alto aproveitamento do hardware superescalar
+	  Complexidade de escalonamento
+	  Contenção por recursos compartilhados
+
+
+
+26. Comparação entre Técnicas de Multithreading — [I]
+
+ 26.1 Critérios de Comparação — [I]
+
+  26.1.1 Desempenho e Complexidade — [I]
+	  Grão grosso versus grão fino
+	  Grão fino versus SMT
+	  Aplicabilidade conforme a carga de trabalho
+
+
+ 26.2 Síntese Comparativa — [I]
+
+  26.2.1 Resumo das Diferenças — [I]
+	  Frequência de troca de thread
+	  Nível de compartilhamento de recursos
+	  Complexidade de hardware
+
+
+
+27. SMT em Processadores Comerciais — [I]
+
+ 27.1 Exemplos de Implementação — [I]
+
+  27.1.1 Casos Conhecidos — [I]
+	  Hyper-Threading da Intel
+	  SMT em processadores da IBM
+	  SMT em processadores modernos de propósito geral
+
+
+ 27.2 Impactos Práticos — [I]
+
+  27.2.1 Resultados Observados — [I]
+	  Ganhos de desempenho em cargas variadas
+	  Impacto em aplicações sensíveis à latência
+	  Considerações de segurança
+
+
+
+PARTE 7 — MULTITHREADING EM PROCESSADORES MULTICORE E MULTIPROCESSADORES
+
+
+28. Multithreading em Processadores Multicore — [I]
+
+ 28.1 Combinação de Multithreading e Multicore — [I]
+
+  28.1.1 Organização Geral — [I]
+	  Múltiplos núcleos com suporte a multithreading
+	  Threads de hardware por núcleo
+	  Escalonamento hierárquico
+
+
+ 28.2 Benefícios da Combinação — [I]
+
+  28.2.1 Ganhos Obtidos — [I]
+	  Paralelismo em múltiplos níveis
+	  Maior throughput agregado
+	  Melhor utilização dos núcleos
+
+
+
+29. Multithreading versus Multiprocessamento — [I]
+
+ 29.1 Diferenças Conceituais — [I]
+
+  29.1.1 Comparação Fundamental — [I]
+	  Multithreading em um único núcleo
+	  Multiprocessamento com múltiplos núcleos físicos
+	  Compartilhamento versus duplicação de recursos
+
+
+ 29.2 Complementaridade — [I]
+
+  29.2.1 Uso Conjunto — [I]
+	  Multithreading dentro de cada núcleo
+	  Multiprocessamento entre núcleos
+	  Escalonamento combinado
+
+
+
+30. Multithreading em Sistemas Multiprocessados — [I]
+
+ 30.1 Organização Geral — [I]
+
+  30.1.1 Threads em Múltiplos Processadores — [I]
+	  Distribuição de threads entre processadores
+	  Comunicação entre processadores
+	  Coerência de dados compartilhados
+
+
+ 30.2 Desafios em Sistemas Multiprocessados — [I]
+
+  30.2.1 Questões Relevantes — [I]
+	  Escalabilidade
+	  Balanceamento de carga
+	  Overhead de comunicação
+
+
+
+31. Hyper-Threading (Estudo de Caso) — [V]
+
+ 31.1 Conceito de Hyper-Threading — [V]
+
+  31.1.1 Características Gerais — [V]
+	  Tecnologia de SMT da Intel
+	  Dois contextos lógicos por núcleo físico
+	  Compartilhamento de recursos de execução
+
+
+ 31.2 Funcionamento e Impacto — [V]
+
+  31.2.1 Aspectos Práticos — [V]
+	  Ganhos de desempenho em cargas paralelas
+	  Limitações em cargas sequenciais
+	  Relevância histórica na popularização do SMT
+
+
+
+PARTE 8 — COMPARTILHAMENTO DE RECURSOS, COMUNICAÇÃO E SINCRONIZAÇÃO ENTRE THREADS
+
+
+32. Compartilhamento de Recursos entre Threads — [P]
+
+ 32.1 Recursos Compartilhados no Processador — [P]
+
+  32.1.1 Tipos de Recursos — [P]
+	  Unidades funcionais
+	  Cache
+	  Barramentos internos
+	  Buffers de instrução
+
+
+ 32.2 Impactos do Compartilhamento — [P]
+
+  32.2.1 Contenção de Recursos — [P]
+	  Disputa por unidades funcionais
+	  Disputa por espaço de cache
+	  Efeitos sobre o desempenho individual das threads
+
+
+
+33. Cache em Ambientes Multithreaded — [I]
+
+ 33.1 Compartilhamento de Cache — [I]
+
+  33.1.1 Cache Compartilhada entre Threads — [I]
+	  Uso simultâneo da mesma cache
+	  Poluição de cache
+	  Efeitos sobre a taxa de acerto
+
+
+ 33.2 Estratégias de Gerenciamento — [I]
+
+  33.2.1 Políticas de Alocação — [I]
+	  Particionamento de cache
+	  Políticas de substituição sensíveis a threads
+	  Isolamento parcial entre threads
+
+
+
+34. Comunicação entre Threads — [I]
+
+ 34.1 Fundamentos da Comunicação — [I]
+
+  34.1.1 Comunicação via Memória Compartilhada — [I]
+	  Leitura e escrita em variáveis comuns
+	  Necessidade de coordenação
+	  Riscos de inconsistência
+
+
+ 34.2 Mecanismos de Comunicação — [I]
+
+  34.2.1 Estruturas de Comunicação — [I]
+	  Variáveis compartilhadas
+	  Filas de mensagens
+	  Sinalizações entre threads
+
+
+
+35. Sincronização entre Threads — [P]
+
+ 35.1 Necessidade de Sincronização — [P]
+
+  35.1.1 Motivos da Sincronização — [P]
+	  Acesso concorrente a dados compartilhados
+	  Coordenação de execução
+	  Prevenção de inconsistências
+
+
+ 35.2 Mecanismos de Sincronização — [P]
+
+  35.2.1 Primitivas Básicas — [P]
+	  Locks (travas)
+	  Semáforos
+	  Barreiras de sincronização
+	  Variáveis de condição
+
+
+ 35.3 Suporte de Hardware à Sincronização — [P]
+
+  35.3.1 Instruções Atômicas — [P]
+	  Test-and-set
+	  Compare-and-swap
+	  Fetch-and-add
+
+
+
+36. Condições de Corrida e Consistência de Dados — [P]
+
+ 36.1 Condições de Corrida — [P]
+
+  36.1.1 Conceito — [P]
+	  Acesso concorrente não controlado
+	  Resultados dependentes da ordem de execução
+	  Riscos para a correção do programa
+
+
+ 36.2 Modelos de Consistência — [P]
+
+  36.2.1 Consistência de Memória — [P]
+	  Ordem de visibilidade das operações
+	  Modelos de consistência sequencial e relaxada
+	  Impacto no projeto de processadores multithreaded
+
+
+
+PARTE 9 — ESCALONAMENTO, GERENCIAMENTO E EXECUÇÃO DE THREADS
+
+
+37. Escalonamento de Threads — [P]
+
+ 37.1 Fundamentos do Escalonamento — [P]
+
+  37.1.1 Conceito de Escalonamento — [P]
+	  Seleção da thread a ser executada
+	  Critérios de decisão
+	  Impacto no desempenho geral
+
+
+ 37.2 Níveis de Escalonamento — [P]
+
+  37.2.1 Escalonamento em Hardware — [P]
+	  Seleção por ciclo de clock
+	  Baixa latência de decisão
+	  Políticas simples e rápidas
+
+  37.2.2 Escalonamento em Software — [P]
+	  Decisão pelo sistema operacional
+	  Consideração de prioridades de processo
+	  Maior flexibilidade de política
+
+
+
+38. Políticas de Escalonamento em Hardware — [I]
+
+ 38.1 Políticas Comuns — [I]
+
+  38.1.1 Round-Robin — [I]
+	  Alternância cíclica entre threads
+	  Simplicidade de implementação
+	  Distribuição igualitária de ciclos
+
+  38.1.2 Escalonamento Baseado em Prioridade — [I]
+	  Priorização de threads específicas
+	  Critérios de prioridade dinâmica
+	  Risco de inanição (starvation)
+
+
+ 38.2 Escalonamento Sensível a Desempenho — [I]
+
+  38.2.1 Políticas Adaptativas — [I]
+	  Priorização de threads com menos stalls
+	  Balanceamento dinâmico de recursos
+	  Otimização do throughput agregado
+
+
+
+39. Gerenciamento de Threads pelo Sistema Operacional — [I]
+
+ 39.1 Papel do Sistema Operacional — [I]
+
+  39.1.1 Funções de Gerenciamento — [I]
+	  Criação e destruição de threads
+	  Alocação de recursos
+	  Escalonamento entre núcleos e contextos
+
+
+ 39.2 Estruturas de Controle — [I]
+
+  39.2.1 Bloco de Controle de Thread — [I]
+	  Armazenamento do estado da thread
+	  Identificação da thread
+	  Informações de escalonamento
+
+
+
+40. Criação, Término e Ciclo de Vida das Threads — [I]
+
+ 40.1 Ciclo de Vida de uma Thread — [I]
+
+  40.1.1 Estágios do Ciclo de Vida — [I]
+	  Criação
+	  Execução
+	  Bloqueio e espera
+	  Término
+
+
+ 40.2 Operações sobre Threads — [I]
+
+  40.2.1 Operações Fundamentais — [I]
+	  Criação de thread
+	  Finalização de thread
+	  Suspensão e retomada
+	  Espera por término (join)
+
+
+
+PARTE 10 — PARALELISMO, DESEMPENHO, EFICIÊNCIA E LIMITAÇÕES
+
+
+41. Métricas de Desempenho em Multithreading — [I]
+
+ 41.1 Métricas Fundamentais — [I]
+
+  41.1.1 Throughput — [I]
+	  Número de instruções executadas por ciclo
+	  Impacto do número de threads
+	  Relação com a utilização do hardware
+
+  41.1.2 Latência por Thread — [I]
+	  Tempo de execução de uma thread isolada
+	  Impacto da concorrência por recursos
+	  Compromisso entre throughput e latência
+
+
+ 41.2 Utilização de Recursos — [I]
+
+  41.2.1 Taxa de Ocupação das Unidades Funcionais — [I]
+	  Medição da ociosidade
+	  Impacto do multithreading na ocupação
+	  Comparação entre técnicas
+
+
+
+42. Ganhos de Desempenho e Throughput — [I]
+
+ 42.1 Fatores que Influenciam o Ganho — [I]
+
+  42.1.1 Características da Carga de Trabalho — [I]
+	  Grau de paralelismo disponível
+	  Frequência de eventos de stall
+	  Dependências entre instruções
+
+
+ 42.2 Limites Teóricos de Ganho — [I]
+
+  42.2.1 Escalabilidade do Desempenho — [I]
+	  Relação entre número de threads e desempenho
+	  Retornos decrescentes
+	  Impacto da contenção de recursos
+
+
+
+43. Overhead e Custos do Multithreading — [I]
+
+ 43.1 Fontes de Overhead — [I]
+
+  43.1.1 Custos de Troca e Gerenciamento — [I]
+	  Custo de troca de contexto
+	  Custo de sincronização
+	  Custo de comunicação entre threads
+
+
+ 43.2 Custos de Hardware — [I]
+
+  43.2.1 Complexidade Adicional — [I]
+	  Área adicional para contextos replicados
+	  Complexidade da lógica de escalonamento
+	  Consumo de energia adicional
+
+
+
+44. Limitações e Desafios do Multithreading — [I]
+
+ 44.1 Limitações Técnicas — [I]
+
+  44.1.1 Contenção de Recursos — [I]
+	  Disputa por unidades funcionais
+	  Disputa por espaço de cache
+	  Efeitos sobre threads individuais
+
+
+ 44.2 Desafios de Projeto — [I]
+
+  44.2.1 Complexidade de Implementação — [I]
+	  Escalonamento eficiente
+	  Garantia de justiça entre threads
+	  Segurança e isolamento entre threads
+
+
+
+PARTE 11 — IMPLEMENTAÇÃO, TÉCNICAS AVANÇADAS E EVOLUÇÃO DO MULTITHREADING
+
+
+45. Técnicas Avançadas de Multithreading — [V]
+
+ 45.1 Técnicas Emergentes — [V]
+
+  45.1.1 Multithreading Adaptativo — [V]
+	  Ajuste dinâmico do número de threads ativas
+	  Adaptação à carga de trabalho
+	  Otimização dinâmica de recursos
+
+
+ 45.2 Multithreading com Prioridades Dinâmicas — [V]
+
+  45.2.1 Escalonamento Inteligente — [V]
+	  Prioridades ajustadas em tempo de execução
+	  Consideração de métricas de desempenho
+	  Balanceamento entre justiça e throughput
+
+
+
+46. Multithreading Especulativo — [V]
+
+ 46.1 Conceito — [V]
+
+  46.1.1 Fundamentos — [V]
+	  Execução antecipada de threads especulativas
+	  Uso de threads auxiliares
+	  Descarte de resultados incorretos
+
+
+ 46.2 Aplicações — [V]
+
+  46.2.1 Casos de Uso — [V]
+	  Paralelização automática de código sequencial
+	  Aceleração de laços e recursões
+	  Exploração de paralelismo implícito
+
+
+
+47. Multithreading em Arquiteturas Heterogêneas — [V]
+
+ 47.1 Conceito de Heterogeneidade — [V]
+
+  47.1.1 Núcleos Heterogêneos — [V]
+	  Combinação de núcleos de diferentes capacidades
+	  Alocação de threads conforme característica do núcleo
+	  Otimização de desempenho e energia
+
+
+ 47.2 Multithreading em Aceleradores — [V]
+
+  47.2.1 Uso em GPUs e Aceleradores — [V]
+	  Execução massiva de threads simples
+	  Diferenças em relação ao multithreading em CPUs
+	  Relação com o paralelismo de dados
+
+
+
+48. Tendências Futuras do Multithreading — [V]
+
+ 48.1 Novas Direções — [V]
+
+  48.1.1 Multithreading em Arquiteturas Futuras — [V]
+	  Maior número de contextos de hardware
+	  Escalonamento cada vez mais inteligente
+	  Integração com aprendizado de máquina para escalonamento
+
+
+ 48.2 Desafios Futuros — [V]
+
+  48.2.1 Questões em Aberto — [V]
+	  Segurança em ambientes multithreaded
+	  Escalabilidade para muitos núcleos
+	  Eficiência energética crescente
+
+
+
+PARTE 12 — APLICAÇÕES, EXEMPLOS E ORGANIZAÇÕES REAIS DE MULTITHREADING
+
+
+49. Aplicações Práticas do Multithreading — [V]
+
+ 49.1 Aplicações em Software — [V]
+
+  49.1.1 Uso em Sistemas Operacionais — [V]
+	  Execução concorrente de processos
+	  Serviços em segundo plano
+	  Atendimento simultâneo de requisições
+
+
+ 49.2 Aplicações em Servidores e Serviços — [V]
+
+  49.2.1 Uso em Ambientes de Alto Desempenho — [V]
+	  Servidores web
+	  Bancos de dados
+	  Processamento de grandes volumes de dados
+
+
+
+50. Exemplos de Processadores com Multithreading — [V]
+
+ 50.1 Processadores de Propósito Geral — [V]
+
+  50.1.1 Exemplos Comerciais — [V]
+	  Processadores Intel com Hyper-Threading
+	  Processadores IBM POWER com SMT
+	  Processadores com múltiplas threads por núcleo
+
+
+ 50.2 Processadores Especializados — [V]
+
+  50.2.1 Exemplos em Servidores — [V]
+	  Processadores SPARC com múltiplas threads
+	  Processadores voltados a alto throughput
+
+
+
+51. Multithreading em Sistemas Embarcados e GPUs — [V]
+
+ 51.1 Multithreading em Sistemas Embarcados — [V]
+
+  51.1.1 Características — [V]
+	  Uso limitado de recursos
+	  Simplicidade das implementações
+	  Foco em eficiência energética
+
+
+ 51.2 Multithreading em GPUs — [V]
+
+  51.2.1 Características — [V]
+	  Milhares de threads simultâneas
+	  Execução em massa de threads simples
+	  Relação com arquiteturas SIMT
+
+
+
+PARTE 13 — COMPARAÇÃO ENTRE MULTITHREADING E OUTRAS FORMAS DE PARALELISMO
+
+
+52. Multithreading versus Paralelismo em Nível de Instrução — [I]
+
+ 52.1 Diferenças Conceituais — [I]
+
+  52.1.1 Comparação Fundamental — [I]
+	  Paralelismo dentro de uma única thread (ILP)
+	  Paralelismo entre threads (TLP)
+	  Técnicas de exploração distintas
+
+
+ 52.2 Complementaridade — [I]
+
+  52.2.1 Uso Conjunto — [I]
+	  Processadores superescalares com multithreading
+	  Combinação de ILP e TLP
+	  Maximização da utilização do hardware
+
+
+
+53. Multithreading versus Paralelismo de Dados e Multicore — [I]
+
+ 53.1 Multithreading versus Paralelismo de Dados — [I]
+
+  53.1.1 Comparação — [I]
+	  Execução de threads distintas versus operação única sobre múltiplos dados
+	  Aplicabilidade conforme o tipo de carga de trabalho
+	  Diferenças de granularidade
+
+
+ 53.2 Multithreading versus Multicore — [I]
+
+  53.2.1 Comparação — [I]
+	  Compartilhamento de recursos versus duplicação física
+	  Escalabilidade
+	  Uso combinado em processadores modernos
+
+
+
+PARTE 14 — RESUMO GERAL E CONCLUSÃO DO MULTITHREADING
+
+
+54. Resumo Geral do Multithreading — [I]
+
+ 54.1 Revisão dos Conceitos Fundamentais — [I]
+
+  54.1.1 Fundamentos Essenciais — [I]
+	  Definição de multithreading
+	  Threads e processos
+	  Objetivos e motivações
+
+  54.1.2 Modelos e Técnicas — [I]
+	  Multithreading intercalado
+	  Multithreading simultâneo (SMT)
+	  Multithreading em hardware e em software
+
+
+ 54.2 Revisão da Organização e Arquitetura — [I]
+
+  54.2.1 Organização de Processadores Multithreaded — [I]
+	  Contextos de hardware
+	  Unidades funcionais compartilhadas
+	  Pipeline multithreaded
+
+  54.2.2 Escalonamento e Sincronização — [I]
+	  Políticas de escalonamento
+	  Mecanismos de sincronização
+	  Consistência de dados
+
+
+ 54.3 Revisão de Desempenho e Aplicações — [I]
+
+  54.3.1 Desempenho e Limitações — [I]
+	  Métricas de desempenho
+	  Overhead e contenção de recursos
+	  Limitações técnicas
+
+  54.3.2 Aplicações e Evolução — [I]
+	  Exemplos de processadores
+	  Tendências futuras
+	  Relação com outras formas de paralelismo
+
+
+
+55. Conclusão do Estudo do Multithreading — [V]
+
+ 55.1 Síntese Final — [V]
+
+  55.1.1 O Papel do Multithreading — [V]
+	  Técnica essencial de organização de processadores
+	  Base para tolerância a latências
+	  Complemento fundamental ao ILP e ao multicore
+
+  55.1.2 Importância para Arquitetura e Organização de Computadores — [V]
+	  Compreensão da execução concorrente
+	  Base para o estudo de processadores modernos
+	  Fundamento para tópicos avançados
+
+
+ 55.2 Competências Desenvolvidas — [V]
+
+  55.2.1 Conhecimentos Adquiridos — [V]
+	  Conceitos de threads e processos
+	  Modelos de multithreading
+	  Organização de processadores multithreaded
+	  Escalonamento e sincronização
+
+  55.2.2 Preparação para Estudos Posteriores — [V]
+	  Processadores superescalares
+	  Arquiteturas multicore e multiprocessadas
+	  Memória e coerência de cache
+	  Arquiteturas paralelas avançadas
+
+
+ 55.3 Encerramento — [V]
+
+  55.3.1 Visão Geral Final — [V]
+	  Integração dos conceitos estudados
+	  Importância do multithreading na computação moderna
+	  Continuidade dos estudos em Arquitetura e Organização de Computadores
