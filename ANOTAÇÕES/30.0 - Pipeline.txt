@@ -1,0 +1,1092 @@
+                                          PIPELINE
+
+
+A classificação abaixo indica a profundidade recomendada para cada grande tópico da lista.
+
+[P] Profundidade — estudar mecanismos, estruturas, funcionamento interno e relações entre componentes.
+[I] Intermediário — compreender bem o funcionamento e as relações principais, sem precisar dominar todos os
+   detalhes de implementação.
+[V] Visão geral — saber o que é, para que serve e como se relaciona com o Pipeline.
+
+
+
+PARTE 1 — FUNDAMENTOS DO PIPELINE
+
+
+1. Introdução ao Pipeline — [I]
+
+ 1.1 Conceitos Fundamentais — [I]
+
+  1.1.1 Conceito de Pipeline — [I]
+	  Definição de Pipeline
+	  Ideia de sobreposição de etapas
+	  Analogia com linha de montagem
+	  Processamento simultâneo de diferentes instruções
+	  Divisão do trabalho em estágios menores
+	  Importância na Organização de Computadores
+
+  1.1.2 Objetivos do Pipeline — [I]
+	  Aumento do desempenho do processador
+	  Melhor aproveitamento dos recursos
+	  Redução do tempo total de execução
+	  Aumento da taxa de instruções concluídas
+
+  1.1.3 Importância do Pipeline — [I]
+	  Base do paralelismo em processadores modernos
+	  Influência sobre o desempenho
+	  Papel na execução das instruções
+	  Relevância para o estudo de arquiteturas avançadas
+
+
+ 1.2 O Pipeline na Arquitetura de Computadores — [I]
+
+  1.2.1 Papel do Pipeline no Sistema Computacional — [I]
+	  Execução simultânea de partes de instruções
+	  Aproveitamento contínuo dos recursos
+	  Organização do fluxo de execução
+
+  1.2.2 Pipeline como Forma de Paralelismo em Nível de Instrução — [I]
+	  Conceito de ILP (Instruction-Level Parallelism)
+	  Sobreposição temporal das instruções
+	  Diferença entre paralelismo temporal e espacial
+
+  1.2.3 Relação entre Pipeline, Datapath e Unidade de Controle — [I]
+	  Papel do Datapath na execução física
+	  Papel da Unidade de Controle na coordenação
+	  Integração dos três elementos
+
+
+
+2. Evolução Histórica do Pipeline — [V]
+
+ 2.1 Origem da Técnica de Pipeline — [V]
+
+  2.1.1 Primeiros Processadores e Execução Sequencial — [V]
+	  Execução instrução por instrução
+	  Baixo aproveitamento dos recursos
+	  Limitações de desempenho
+
+  2.1.2 Surgimento do Conceito de Pipeline — [V]
+	  Inspiração em linhas de montagem industriais
+	  Primeiras implementações em processadores
+	  Motivação por maior desempenho
+
+
+ 2.2 Evolução dos Pipelines — [V]
+
+  2.2.1 Pipelines Clássicos — [V]
+	  Poucos estágios
+	  Estrutura simples
+	  Baixa complexidade de controle
+
+  2.2.2 Pipelines Modernos — [V]
+	  Maior número de estágios
+	  Técnicas avançadas de otimização
+	  Integração com superescalaridade e multicore
+
+
+
+3. Execução Sequencial × Execução em Pipeline — [I]
+
+ 3.1 Execução sem Pipeline — [I]
+
+  3.1.1 Características da Execução Sequencial — [I]
+	  Uma instrução por vez
+	  Etapas realizadas em sequência total
+	  Ciclo de clock dedicado a uma única instrução
+
+  3.1.2 Limitações da Execução Sequencial — [I]
+	  Subutilização dos componentes do processador
+	  Baixo throughput
+	  Maior tempo total de execução
+
+
+ 3.2 Execução com Pipeline — [I]
+
+  3.2.1 Sobreposição das Etapas — [I]
+	  Execução simultânea de diferentes estágios
+	  Instruções em estágios distintos ao mesmo tempo
+	  Fluxo contínuo de execução
+
+  3.2.2 Ganhos de Desempenho — [I]
+	  Aumento do throughput
+	  Redução do tempo médio por instrução
+	  Melhor aproveitamento do hardware
+
+
+ 3.3 Comparação entre os Modelos — [I]
+
+  3.3.1 Diagrama de Tempo (Sem Pipeline × Com Pipeline) — [I]
+	  Representação por ciclos de clock
+	  Visualização da sobreposição
+	  Análise comparativa de desempenho
+
+
+ 3.4 Preenchimento e Esvaziamento do Pipeline — [I]
+
+  3.4.1 Preenchimento do Pipeline (Pipeline Fill) — [I]
+	  Entrada gradual das instruções nos estágios
+	  Ciclos iniciais de preenchimento
+	  Tempo necessário para atingir o funcionamento completo
+
+  3.4.2 Funcionamento em Regime — [I]
+	  Pipeline completamente ocupado
+	  Sobreposição contínua das instruções
+	  Relação com o throughput
+
+  3.4.3 Esvaziamento do Pipeline (Pipeline Drain) — [I]
+	  Saída gradual das instruções
+	  Ciclos finais de execução
+	  Impacto sobre o desempenho de sequências curtas
+
+
+
+4. Paralelismo em Nível de Instrução (ILP) — [I]
+
+ 4.1 Conceitos de ILP — [I]
+
+  4.1.1 Definição de Paralelismo em Nível de Instrução — [I]
+	  Execução simultânea de partes de instruções
+	  Independência entre operações
+	  Relação com o desempenho do processador
+
+  4.1.2 Formas de Explorar o ILP — [I]
+	  Pipeline
+	  Superescalaridade
+	  Execução fora de ordem
+
+
+ 4.2 Pipeline como Técnica de ILP — [I]
+
+  4.2.1 Sobreposição de Instruções — [I]
+	  Múltiplas instruções em estágios diferentes
+	  Aumento da taxa de conclusão
+
+  4.2.2 Limites do ILP no Pipeline — [I]
+	  Dependências entre instruções
+	  Desvios de fluxo de controle
+	  Limitações estruturais
+
+
+
+5. Princípios de Projeto do Pipeline — [I]
+
+ 5.1 Objetivos de Projeto — [I]
+
+  5.1.1 Aumento do Throughput — [I]
+	  Maximização de instruções concluídas por ciclo
+	  Redução de tempos ociosos
+
+  5.1.2 Equilíbrio entre Estágios — [I]
+	  Divisão proporcional do trabalho
+	  Evitar estágios desbalanceados
+
+
+ 5.2 Critérios de Organização — [I]
+
+  5.2.1 Divisão do Trabalho em Estágios — [I]
+	  Critérios funcionais de separação
+	  Independência entre estágios
+
+  5.2.2 Sincronização entre Estágios — [I]
+	  Uso de registradores intermediários
+	  Coordenação temporal
+
+
+ 5.3 Compromissos de Projeto (Trade-offs) — [I]
+
+  5.3.1 Número de Estágios × Complexidade — [I]
+	  Benefícios de mais estágios
+	  Custos de controle adicional
+
+  5.3.2 Desempenho × Hazards — [I]
+	  Aumento do paralelismo
+	  Aumento do risco de conflitos
+
+
+
+PARTE 2 — ESTRUTURA E ESTÁGIOS DO PIPELINE
+
+
+6. Estágios Clássicos do Pipeline — [P]
+
+ 6.1 Visão Geral dos Estágios — [P]
+
+  6.1.1 Modelo de Cinco Estágios — [P]
+	  Fetch
+	  Decode
+	  Execute (Operand Fetch/Execute)
+	  Memory Access
+	  Write Back
+
+  6.1.2 Fluxo entre os Estágios — [P]
+	  Passagem de dados entre estágios
+	  Ordem de execução
+	  Dependência sequencial da estrutura
+
+
+ 6.2 Fetch (Busca da Instrução) — [P]
+
+  6.2.1 Função do Estágio de Fetch — [P]
+	  Localização da instrução na memória
+	  Carregamento da instrução
+
+  6.2.2 Papel do Contador de Programa (PC) — [P]
+	  Indicação do endereço da próxima instrução
+	  Atualização do PC a cada ciclo
+
+
+ 6.3 Decode (Decodificação) — [P]
+
+  6.3.1 Interpretação da Instrução — [P]
+	  Identificação da operação a ser realizada
+	  Tradução do opcode
+
+  6.3.2 Identificação de Operandos e Recursos — [P]
+	  Registradores envolvidos
+	  Unidades de execução necessárias
+
+
+ 6.4 Operand Fetch / Execute — [P]
+
+  6.4.1 Busca de Operandos — [P]
+	  Leitura dos registradores
+	  Obtenção dos valores necessários
+
+  6.4.2 Execução na ULA — [P]
+	  Operações aritméticas e lógicas
+	  Produção do resultado bruto
+
+
+ 6.5 Memory Access (Acesso à Memória) — [P]
+
+  6.5.1 Leitura e Escrita na Memória — [P]
+	  Instruções de load
+	  Instruções de store
+
+  6.5.2 Instruções que Utilizam este Estágio — [P]
+	  Acesso condicional à memória
+	  Instruções que não requerem este estágio
+
+
+ 6.6 Write Back (Escrita do Resultado) — [P]
+
+  6.6.1 Gravação do Resultado — [P]
+	  Escrita no banco de registradores
+	  Disponibilização para instruções futuras
+
+  6.6.2 Finalização da Instrução — [P]
+	  Conclusão do ciclo de vida da instrução
+	  Preparação para novas execuções
+
+
+
+7. Registradores de Pipeline (Latches Intermediários) — [P]
+
+ 7.1 Função dos Registradores de Pipeline — [P]
+
+  7.1.1 Armazenamento entre Estágios — [P]
+	  Retenção temporária de dados e sinais
+	  Isolamento entre estágios
+
+  7.1.2 Preservação do Estado — [P]
+	  Manutenção da consistência da instrução
+	  Propagação de sinais de controle
+
+
+ 7.2 Organização dos Registradores — [P]
+
+  7.2.1 Registradores IF/ID, ID/EX, EX/MEM, MEM/WB — [P]
+	  Função de cada registrador intermediário
+	  Dados transportados entre estágios
+	  Papel na sincronização do pipeline
+
+
+
+8. Organização e Balanceamento dos Estágios — [I]
+
+ 8.1 Divisão do Trabalho — [I]
+
+  8.1.1 Critérios de Divisão — [I]
+	  Funcionalidade de cada etapa
+	  Independência operacional
+
+  8.1.2 Equilíbrio de Carga entre Estágios — [I]
+	  Distribuição uniforme do trabalho
+	  Evitar gargalos internos
+
+
+ 8.2 Duração do Ciclo de Clock — [I]
+
+  8.2.1 Relação entre Estágio Mais Lento e Clock — [I]
+	  Limitação pelo estágio crítico
+	  Impacto na frequência do processador
+
+
+
+9. Profundidade do Pipeline (Pipeline Depth) — [I]
+
+ 9.1 Pipelines Rasos (Poucos Estágios) — [I]
+
+  9.1.1 Características — [I]
+	  Menor número de divisões
+	  Menor complexidade de controle
+
+  9.1.2 Aplicações — [I]
+	  Sistemas embarcados
+	  Processadores de baixo consumo
+
+
+ 9.2 Pipelines Profundos (Muitos Estágios) — [I]
+
+  9.2.1 Características — [I]
+	  Maior fragmentação das etapas
+	  Maior potencial de frequência de clock
+
+  9.2.2 Aplicações — [I]
+	  Processadores de alto desempenho
+	  Servidores e desktops modernos
+
+
+ 9.3 Trade-offs da Profundidade — [I]
+
+  9.3.1 Desempenho × Penalidades — [I]
+	  Ganho potencial de throughput
+	  Aumento do custo de hazards e desvios
+
+
+
+10. Controle do Pipeline — [P]
+
+ 10.1 Unidade de Controle Pipelined — [P]
+
+  10.1.1 Geração de Sinais de Controle por Estágio — [P]
+	  Sinais específicos para cada estágio
+	  Adaptação da unidade de controle tradicional
+
+  10.1.2 Propagação dos Sinais de Controle — [P]
+	  Transporte junto aos registradores de pipeline
+	  Sincronização com o fluxo de dados
+
+
+ 10.2 Sincronização e Coordenação — [P]
+
+  10.2.1 Coordenação entre Estágios — [P]
+	  Temporização única de clock
+	  Consistência da execução paralela
+
+
+
+PARTE 3 — DEPENDÊNCIAS E CONFLITOS (HAZARDS)
+
+
+11. Introdução aos Hazards do Pipeline — [P]
+
+ 11.1 Conceito de Hazard — [P]
+
+  11.1.1 Definição — [P]
+	  Interrupção ou atraso no fluxo do pipeline
+	  Interdependência entre instruções
+
+  11.1.2 Causas Gerais — [P]
+	  Dependências de dados
+	  Decisões de controle
+	  Limitações de recursos
+
+
+ 11.2 Classificação dos Hazards — [P]
+
+  11.2.1 Hazards Estruturais, de Dados e de Controle — [P]
+	  Critério de classificação
+	  Visão geral de cada categoria
+
+
+
+12. Hazards Estruturais (Structural Hazards) — [P]
+
+ 12.1 Conceito e Causas — [P]
+
+  12.1.1 Conflito de Recursos Compartilhados — [P]
+	  Disputa pelo mesmo componente de hardware
+	  Acesso simultâneo indevido
+
+  12.1.2 Exemplos de Recursos Limitados — [P]
+	  Unidade de memória
+	  Unidade aritmética
+	  Barramento de dados
+
+
+ 12.2 Consequências e Soluções — [P]
+
+  12.2.1 Impacto no Fluxo do Pipeline — [P]
+	  Atraso na execução das instruções
+	  Formação de fila de espera pelo recurso
+
+  12.2.2 Duplicação de Recursos — [P]
+	  Unidades de execução adicionais
+	  Mecanismos de gerenciamento de acesso
+
+
+
+13. Hazards de Dados (Data Hazards) — [P]
+
+ 13.1 Conceito Geral — [P]
+
+  13.1.1 Dependência entre Instruções — [P]
+	  Leitura ou escrita antecipada
+	  Necessidade de dados ainda não gerados
+
+  13.1.2 Impacto na Execução — [P]
+	  Atraso na conclusão das instruções
+	  Redução da eficiência do pipeline
+
+
+ 13.2 Tipos de Data Hazards — [P]
+
+  13.2.1 RAW (Read After Write) — [P]
+	  Leitura de dado ainda não escrito
+	  Tipo mais comum de conflito de dados
+
+  13.2.2 WAR (Write After Read) — [P]
+	  Escrita antes da leitura anterior
+	  Ocorrência em pipelines complexos
+
+  13.2.3 WAW (Write After Write) — [P]
+	  Duas escritas no mesmo destino
+	  Necessidade de ordem garantida
+
+
+
+14. Hazards de Controle (Control Hazards) — [P]
+
+ 14.1 Conceito Geral — [P]
+
+  14.1.1 Instruções de Desvio (Branch) — [P]
+	  Alteração da sequência normal de execução
+	  Incerteza sobre a próxima instrução
+
+  14.1.2 Incerteza do Fluxo de Controle — [P]
+	  Espera pela avaliação da condição
+	  Impacto sobre o carregamento de instruções
+
+
+ 14.2 Consequências dos Control Hazards — [P]
+
+  14.2.1 Descarte de Instruções (Flush) — [P]
+	  Invalidação de instruções carregadas incorretamente
+	  Reinício do fluxo correto
+
+  14.2.2 Perda de Ciclos de Clock — [P]
+	  Desperdício de recursos do processador
+	  Impacto no desempenho geral
+
+
+
+15. Impacto dos Hazards no Desempenho do Pipeline — [I]
+
+ 15.1 Penalidades de Desempenho — [I]
+
+  15.1.1 Ciclos Perdidos — [I]
+	  Tempo ocioso causado pelos hazards
+	  Diferença entre desempenho ideal e real
+
+  15.1.2 Redução do CPI Ideal — [I]
+	  Aumento do número médio de ciclos por instrução
+	  Necessidade de técnicas de mitigação
+
+  15.1.3 Penalidade do Pipeline (Pipeline Penalty) — [I]
+	  Custo dos ciclos perdidos
+	  Número de ciclos adicionais causados por hazards
+	  Relação entre penalidade e desempenho
+
+
+
+PARTE 4 — TÉCNICAS DE RESOLUÇÃO E OTIMIZAÇÃO DE HAZARDS
+
+
+16. Stalling (Bolhas no Pipeline) — [P]
+
+ 16.1 Conceito de Stall — [P]
+
+  16.1.1 Pausa Temporária do Pipeline — [P]
+	  Interrupção controlada da execução
+	  Espera por dados ou recursos
+
+  16.1.2 Inserção de Bolhas (NOPs) — [P]
+	  Ciclos sem operação útil
+	  Preenchimento do pipeline até liberação
+
+
+ 16.2 Consequências do Stalling — [P]
+
+  16.2.1 Tempo Ocioso — [P]
+	  Redução do throughput
+	  Custo direto no desempenho
+
+  16.2.2 Relação com Outras Técnicas — [P]
+	  Combinação com forwarding
+	  Minimização do número de stalls
+
+
+ 16.3 Intertravamento do Pipeline (Pipeline Interlock) — [P]
+
+  16.3.1 Detecção de Condições de Hazard — [P]
+	  Identificação automática de dependências
+	  Verificação da disponibilidade dos dados
+	  Detecção de situações que exigem espera
+
+  16.3.2 Bloqueio Controlado dos Estágios — [P]
+	  Impedimento temporário do avanço das instruções
+	  Geração automática de stalls
+	  Preservação da consistência da execução
+
+  16.3.3 Relação entre Interlock, Stall e Forwarding — [P]
+	  Interlock como mecanismo de controle
+	  Stall como consequência do bloqueio
+	  Forwarding como mecanismo complementar
+
+
+
+17. Forwarding (Bypassing) — [P]
+
+ 17.1 Conceito de Forwarding — [P]
+
+  17.1.1 Redirecionamento de Dados entre Estágios — [P]
+	  Encaminhamento direto do resultado
+	  Eliminação da espera pela escrita formal
+
+  17.1.2 Caminhos de Forwarding — [P]
+	  Conexões entre estágios de execução e estágios anteriores
+	  Lógica de seleção do dado correto
+
+
+ 17.2 Limitações do Forwarding — [P]
+
+  17.2.1 Casos Não Resolvidos por Forwarding — [P]
+	  Dependências que exigem stall mesmo com forwarding
+	  Situações de load-use hazard
+
+
+
+18. Renomeação de Registradores (Register Renaming) — [I]
+
+ 18.1 Conceito — [I]
+
+  18.1.1 Eliminação de Falsas Dependências (WAR/WAW) — [I]
+	  Separação entre nomes lógicos e físicos
+	  Remoção de dependências artificiais
+
+  18.1.2 Registradores Físicos × Registradores Lógicos — [I]
+	  Mapeamento dinâmico
+	  Ampliação do paralelismo disponível
+
+
+
+19. Predição de Desvios (Branch Prediction) — [P]
+
+ 19.1 Conceito e Objetivo — [P]
+
+  19.1.1 Antecipação do Caminho de Execução — [P]
+	  Estimativa do resultado do desvio
+	  Início da execução antes da confirmação
+
+  19.1.2 Ganhos de Desempenho — [P]
+	  Redução de ciclos perdidos
+	  Manutenção do fluxo do pipeline
+
+
+ 19.2 Técnicas de Predição — [P]
+
+  19.2.1 Predição Estática — [P]
+	  Regras fixas de decisão
+	  Baseada em heurísticas simples
+
+  19.2.2 Predição Dinâmica — [P]
+	  Baseada em histórico de execução
+	  Adaptação ao comportamento do programa
+
+  19.2.3 Tabelas de Histórico de Desvios — [P]
+	  Registro de desvios anteriores
+	  Uso do histórico para prever novos desvios
+
+
+ 19.3 Consequências da Predição Incorreta — [P]
+
+  19.3.1 Flush do Pipeline — [P]
+	  Descarte das instruções especulativas
+	  Reinício a partir do caminho correto
+
+
+
+20. Buffer de Alvo de Desvio (Branch Target Buffer) — [I]
+
+ 20.1 Conceito e Função — [I]
+
+  20.1.1 Armazenamento de Endereços de Desvio — [I]
+	  Cache de endereços-alvo previstos
+	  Aceleração da busca após o desvio
+
+
+
+21. Execução Especulativa — [P]
+
+ 21.1 Conceito — [P]
+
+  21.1.1 Execução Antecipada de Instruções — [P]
+	  Execução baseada em previsão
+	  Aplicação principal em desvios condicionais
+
+  21.1.2 Confirmação ou Descarte (Flush) — [P]
+	  Validação do caminho especulado
+	  Descarte em caso de previsão incorreta
+
+
+ 21.2 Riscos e Benefícios — [P]
+
+  21.2.1 Ganhos de Desempenho — [P]
+	  Aproveitamento antecipado de recursos ociosos
+
+  21.2.2 Custos de Recuperação — [P]
+	  Perda de trabalho em caso de erro
+	  Necessidade de mecanismos de reversão
+
+
+ 21.3 Exceções e Recuperação do Pipeline — [I]
+
+  21.3.1 Exceções durante a Execução — [I]
+	  Detecção de exceções em diferentes estágios
+	  Interrupção do fluxo normal
+	  Preservação do estado arquitetural
+
+  21.3.2 Flush e Recuperação — [I]
+	  Descarte das instruções afetadas
+	  Retorno ao estado correto
+	  Reinício do fluxo de execução
+
+
+
+22. Delayed Branch (Retardo de Desvio) — [I]
+
+ 22.1 Conceito — [I]
+
+  22.1.1 Slot de Atraso de Desvio — [I]
+	  Execução de instrução independente após o desvio
+	  Aproveitamento do ciclo que seria perdido
+
+
+
+23. Escalonamento de Instruções (Instruction Scheduling) — [I]
+
+ 23.1 Escalonamento Estático — [I]
+
+  23.1.1 Reordenação pelo Compilador — [I]
+	  Reorganização do código em tempo de compilação
+	  Redução de dependências no fluxo do pipeline
+
+
+ 23.2 Escalonamento Dinâmico — [I]
+
+  23.2.1 Reordenação em Tempo de Execução — [I]
+	  Decisão feita pelo hardware
+	  Adaptação às condições reais de execução
+
+
+
+PARTE 5 — TIPOS E ARQUITETURAS DE PIPELINE
+
+
+24. Pipeline Escalar — [I]
+
+ 24.1 Conceito e Funcionamento — [I]
+
+  24.1.1 Uma Instrução por Estágio — [I]
+	  Processamento individual por ciclo
+	  Ausência de paralelismo entre instruções
+	  Sobreposição temporal de múltiplas instruções
+	  Emissão de uma instrução por ciclo
+
+  24.1.2 Simplicidade e Limitações — [I]
+	  Baixo custo de hardware
+	  Eficiência limitada em cargas de trabalho intensas
+
+
+
+25. Pipeline Superescalar — [P]
+
+ 25.1 Conceito e Funcionamento — [P]
+
+  25.1.1 Múltiplas Instruções por Ciclo — [P]
+	  Emissão simultânea de instruções
+	  Múltiplos caminhos de execução
+
+  25.1.2 Múltiplas Unidades de Execução — [P]
+	  Unidades paralelas dedicadas
+	  Distribuição das instruções entre unidades
+
+
+ 25.2 Vantagens e Desafios — [P]
+
+  25.2.1 Aumento do Throughput — [P]
+	  Maior número de instruções concluídas por ciclo
+
+  25.2.2 Complexidade de Controle — [P]
+	  Necessidade de detecção de dependências
+	  Maior custo de projeto e verificação
+
+
+
+26. Pipeline VLIW (Very Long Instruction Word) — [I]
+
+ 26.1 Conceito e Funcionamento — [I]
+
+  26.1.1 Agrupamento de Instruções — [I]
+	  Empacotamento de várias operações em uma palavra
+	  Execução simultânea das operações agrupadas
+
+  26.1.2 Papel do Compilador — [I]
+	  Organização estática das instruções
+	  Redução da complexidade do hardware de controle
+
+
+ 26.2 Aplicações e Limitações — [I]
+
+  26.2.1 Uso em Arquiteturas Especializadas — [I]
+	  Processadores gráficos
+	  Sistemas embarcados de alto desempenho
+	  DSPs
+	  Processadores especializados
+	  Arquiteturas de propósito específico
+
+
+
+27. Pipeline Dinâmico e Execução Fora de Ordem (Out-of-Order) — [P]
+
+ 27.1 Conceito — [P]
+
+  27.1.1 Reordenação em Tempo de Execução — [P]
+	  Execução baseada em disponibilidade de dados
+	  Independência da ordem original do programa
+
+  27.1.2 Escalonamento Dinâmico — [P]
+	  Decisão do hardware sobre a próxima instrução
+	  Aproveitamento de instruções prontas
+
+
+ 27.2 Mecanismos de Suporte — [P]
+
+  27.2.1 Janela de Instruções — [P]
+	  Conjunto de instruções candidatas à execução
+
+  27.2.2 Buffers de Reordenação (ROB) — [P]
+	  Manutenção da ordem correta de conclusão
+	  Garantia de consistência do estado do processador
+
+
+
+28. Scoreboarding — [V]
+
+ 28.1 Conceito — [V]
+
+  28.1.1 Controle Centralizado de Dependências — [V]
+	  Rastreamento do estado das instruções
+	  Liberação da execução conforme disponibilidade
+
+
+
+29. Algoritmo de Tomasulo — [V]
+
+ 29.1 Conceito — [V]
+
+  29.1.1 Estações de Reserva — [V]
+	  Armazenamento temporário de instruções e operandos
+
+  29.1.2 Renomeação Implícita de Registradores — [V]
+	  Eliminação de dependências falsas
+	  Base para técnicas modernas de execução dinâmica
+
+
+
+PARTE 6 — DESEMPENHO E MÉTRICAS DO PIPELINE
+
+
+30. Métricas Fundamentais de Desempenho — [P]
+
+ 30.1 Utilização do Pipeline — [P]
+
+  30.1.1 Conceito e Fórmula — [P]
+	  Ciclos ativos em relação ao total de ciclos
+	  Indicador de aproveitamento do pipeline
+
+
+ 30.2 Throughput — [P]
+
+  30.2.1 Conceito e Fórmula — [P]
+	  Instruções processadas por unidade de tempo
+	  Relação com a eficiência geral
+
+
+
+31. Latência, CPI e IPC — [P]
+
+ 31.1 Latência — [P]
+
+  31.1.1 Conceito e Fórmula — [P]
+	  Tempo total para concluir uma instrução
+	  Relação com a capacidade de resposta do sistema
+
+  31.1.2 Latência × Throughput — [P]
+	  Diferença entre tempo de conclusão de uma instrução e taxa de conclusão
+	  Pipeline aumentando o throughput sem necessariamente reduzir a latência individual
+	  Relação entre latência, sobreposição e desempenho
+
+
+ 31.2 CPI (Ciclos por Instrução) — [P]
+
+  31.2.1 Conceito e Fórmula — [P]
+	  Média de ciclos necessários por instrução
+	  Indicador de eficiência temporal
+
+
+ 31.3 IPC (Instruções por Ciclo) — [P]
+
+  31.3.1 Conceito e Fórmula — [P]
+	  Média de instruções concluídas por ciclo
+	  Relação inversa com o CPI
+
+
+
+32. Stall Cycles e Eficiência do Pipeline — [I]
+
+ 32.1 Ciclos de Interrupção — [I]
+
+  32.1.1 Conceito e Fórmula — [I]
+	  Proporção de ciclos perdidos por bloqueios
+	  Relação com hazards e dependências
+
+
+ 32.2 Relação entre Stalls e Eficiência — [I]
+
+  32.2.1 Impacto no Desempenho Geral — [I]
+	  Redução do throughput efetivo
+	  Necessidade de técnicas de otimização
+
+
+
+33. Speedup Teórico do Pipeline — [I]
+
+ 33.1 Speedup Ideal — [I]
+
+  33.1.1 Relação com o Número de Estágios — [I]
+	  Ganho teórico proporcional à profundidade
+	  Condição de pipeline sem interrupções
+
+
+ 33.2 Limitações ao Speedup Ideal — [I]
+
+  33.2.1 Impacto dos Hazards e Stalls — [I]
+	  Redução do ganho teórico na prática
+	  Diferença entre desempenho ideal e real
+
+
+ 33.3 Speedup Real do Pipeline — [I]
+
+  33.3.1 Diferença entre Speedup Ideal e Real — [I]
+	  Condições do modelo ideal
+	  Perdas presentes em implementações reais
+	  Influência dos stalls e hazards
+
+  33.3.2 Fatores que Reduzem o Speedup — [I]
+	  Hazards
+	  Desbalanceamento dos estágios
+	  Penalidades de desvios
+	  Overhead dos registradores de pipeline
+
+
+
+34. Fatores que Limitam o Desempenho do Pipeline — [I]
+
+ 34.1 Limitações Estruturais — [I]
+
+  34.1.1 Recursos Compartilhados — [I]
+	  Restrições de hardware disponível
+
+
+ 34.2 Limitações de Dependência — [I]
+
+  34.2.1 Dependências de Dados e Controle — [I]
+	  Interrupções causadas por hazards
+	  Necessidade de mecanismos de mitigação
+
+
+
+PARTE 7 — PIPELINE EM ARQUITETURAS MODERNAS
+
+
+35. Pipeline em Arquiteturas RISC e CISC — [I]
+
+ 35.1 Pipeline em Arquiteturas RISC — [I]
+
+  35.1.1 Simplicidade das Instruções — [I]
+	  Facilidade de segmentação em estágios
+	  Ciclos mais regulares
+
+
+ 35.2 Pipeline em Arquiteturas CISC — [I]
+
+  35.2.1 Desafios de Instruções Complexas — [I]
+	  Instruções com múltiplos ciclos internos
+	  Maior complexidade de controle
+
+
+
+36. Pipelines Profundos (Deep Pipelining) — [V]
+
+ 36.1 Conceito e Motivação — [V]
+
+  36.1.1 Aumento da Frequência de Clock — [V]
+	  Estágios menores e mais rápidos
+	  Maior número de instruções em andamento
+
+
+ 36.2 Desafios dos Pipelines Profundos — [V]
+
+  36.2.1 Aumento das Penalidades de Hazards — [V]
+	  Maior custo de flush em desvios
+	  Maior sensibilidade a dependências
+
+
+
+37. Multithreading e Pipeline — [V]
+
+ 37.1 Conceito de SMT (Simultaneous Multithreading) — [V]
+
+  37.1.1 Compartilhamento do Pipeline entre Threads — [V]
+	  Aproveitamento de ciclos ociosos
+	  Execução intercalada de múltiplos fluxos
+
+
+
+38. Pipeline em Processadores Multicore — [V]
+
+ 38.1 Pipeline por Núcleo — [V]
+
+  38.1.1 Múltiplos Pipelines Independentes — [V]
+	  Execução paralela entre núcleos
+	  Escalabilidade do processamento
+	  Pipeline presente em cada núcleo
+	  Paralelismo entre múltiplos núcleos
+	  Possibilidade de pipelines independentes por núcleo
+
+
+
+39. Tendências e Técnicas Modernas de Pipeline — [V]
+
+ 39.1 Novas Abordagens — [V]
+
+  39.1.1 Pipelines Adaptativos — [V]
+	  Ajuste dinâmico da organização interna
+
+  39.1.2 Técnicas de Baixo Consumo — [V]
+	  Redução de energia em estágios ociosos
+	  Equilíbrio entre desempenho e eficiência energética
+
+
+
+PARTE 8 — INTEGRAÇÃO DOS CONCEITOS, RESUMO GERAL E CONCLUSÃO
+
+
+40. Relação do Pipeline com Outros Conceitos da Arquitetura — [I]
+
+ 40.1 Relações Fundamentais — [I]
+
+  40.1.1 Relação com o Datapath — [I]
+	  Execução física das operações do pipeline
+	  Suporte estrutural às instruções
+
+  40.1.2 Relação com a Unidade de Controle — [I]
+	  Coordenação dos sinais entre estágios
+	  Cooperação funcional
+
+  40.1.3 Relação com a ISA — [I]
+	  Influência do conjunto de instruções na organização dos estágios
+
+
+ 40.2 Relações Complementares — [I]
+
+  40.2.1 Relação com a Hierarquia de Memória — [I]
+	  Impacto do acesso à memória no fluxo do pipeline
+
+  40.2.2 Relação com Processadores Superescalares e Multicore — [I]
+	  Base para técnicas mais avançadas de paralelismo
+
+
+
+41. Resumo Geral do Pipeline — [I]
+
+ 41.1 Revisão dos Conceitos Fundamentais — [I]
+
+  41.1.1 Definição, Objetivos e Estágios — [I]
+	  Conceito de pipeline
+	  Estágios clássicos
+	  Registradores de pipeline
+
+
+ 41.2 Revisão dos Hazards e Técnicas de Resolução — [I]
+
+  41.2.1 Hazards — [I]
+	  Estruturais, de dados e de controle
+
+  41.2.2 Técnicas de Otimização — [I]
+	  Forwarding, stalling, predição de desvios, execução especulativa
+
+
+ 41.3 Revisão dos Tipos de Pipeline — [I]
+
+  41.3.1 Organizações Estudadas — [I]
+	  Escalar
+	  Superescalar
+	  VLIW
+	  Dinâmico (Out-of-Order)
+
+
+ 41.4 Revisão das Métricas de Desempenho — [I]
+
+  41.4.1 Indicadores Estudados — [I]
+	  Throughput, latência, CPI, IPC e stall cycles
+
+
+
+42. Conclusão do Estudo do Pipeline — [V]
+
+ 42.1 Síntese Final — [V]
+
+  42.1.1 O Papel do Pipeline — [V]
+	  Elemento central do paralelismo em nível de instrução
+	  Base do desempenho dos processadores modernos
+
+  42.1.2 Importância para Arquitetura e Organização de Computadores — [V]
+	  Compreensão da execução paralela das instruções
+	  Base para estudos avançados de paralelismo
+
+
+ 42.2 Competências Desenvolvidas — [V]
+
+  42.2.1 Conhecimentos Adquiridos — [V]
+	  Estágios e estrutura do pipeline
+	  Hazards e técnicas de resolução
+	  Tipos de pipeline
+	  Métricas de desempenho
+
+  42.2.2 Preparação para Estudos Posteriores — [V]
+	  Processadores Superescalares
+	  Execução Fora de Ordem Avançada
+	  Multithreading e Multicore
+	  Hierarquia de Memória
+
+
+ 42.3 Encerramento — [V]
+
+  42.3.1 Visão Geral Final — [V]
+	  Integração dos conceitos do pipeline
+	  Importância para o paralelismo em Arquitetura e Organização de Computadores
+	  Continuidade dos estudos em técnicas de desempenho
