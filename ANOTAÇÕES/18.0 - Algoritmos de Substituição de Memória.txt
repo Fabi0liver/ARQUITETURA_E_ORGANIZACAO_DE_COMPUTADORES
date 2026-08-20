@@ -1,0 +1,1406 @@
+                                      ALGORITMOS DE SUBSTITUIÇÃO DE MEMÓRIA
+
+
+A classificação abaixo indica a profundidade recomendada para cada grande tópico da lista.
+
+[P] Profundidade — estudar mecanismos, estruturas, funcionamento interno e relações entre componentes.
+[I] Intermediário — compreender bem o funcionamento e as relações principais, sem precisar dominar todos os
+   detalhes de implementação.
+[V] Visão geral — saber o que é, para que serve e como se relaciona com os Algoritmos de Substituição de Memória.
+
+
+
+PARTE 1 — FUNDAMENTOS DOS ALGORITMOS DE SUBSTITUIÇÃO DE MEMÓRIA
+
+
+1. Introdução aos Algoritmos de Substituição de Memória — [I]
+
+ 1.1 Conceitos Fundamentais — [I]
+
+  1.1.1 Definição de Algoritmo de Substituição — [I]
+	  Conceito de substituição de dados
+	  Necessidade de liberar espaço na memória
+	  Papel na hierarquia de memória
+	  Relação com cache e memória virtual
+	  Importância na Organização de Computadores
+
+  1.1.2 Objetivos dos Algoritmos de Substituição — [I]
+	  Maximizar a taxa de acerto
+	  Minimizar a taxa de falta
+	  Reduzir o tempo médio de acesso
+	  Otimizar o uso do espaço limitado
+	  Manter os dados mais relevantes disponíveis
+
+
+ 1.2 Importância no Estudo da Arquitetura de Computadores — [I]
+
+  1.2.1 Papel na Eficiência do Sistema — [I]
+	  Influência sobre o desempenho geral
+	  Redução do tempo de acesso à memória principal
+	  Impacto na velocidade de execução dos programas
+	  Relação com o custo de acesso
+
+  1.2.2 Relação com Outros Componentes da Arquitetura — [I]
+	  Relação com a memória cache
+	  Relação com a memória virtual
+	  Relação com o sistema operacional
+	  Relação com o desempenho do processador
+
+
+
+2. Contexto: Hierarquia de Memória e Necessidade de Substituição — [P]
+
+ 2.1 A Hierarquia de Memória — [P]
+
+  2.1.1 Níveis da Hierarquia de Memória — [P]
+	  Registradores
+	  Memória cache
+	  Memória principal
+	  Memória secundária
+	  Diferenças de velocidade e capacidade
+
+  2.1.2 Princípio da Localidade — [P]
+	  Localidade temporal
+	  Localidade espacial
+	  Relação da localidade com a substituição
+	  Influência nos padrões de acesso
+
+
+ 2.2 Capacidade Limitada e Necessidade de Substituição — [P]
+
+  2.2.1 Espaço Finito na Memória Cache — [P]
+	  Limitação física da capacidade
+	  Necessidade de descarte de dados
+	  Consequência da ausência de espaço livre
+
+  2.2.2 Espaço Finito na Memória Principal — [P]
+	  Limitação de páginas residentes
+	  Necessidade de substituição de páginas
+	  Relação com a memória virtual
+
+
+ 2.3 Sequência de Referências à Memória — [P]
+
+  2.3.1 Conceito de Sequência de Referências — [P]
+	  Definição de reference string
+	  Representação da sequência de acessos
+	  Referências repetidas a blocos ou páginas
+	  Relação entre sequência de referências e comportamento do algoritmo
+
+  2.3.2 Padrões de Referência — [P]
+	  Padrões sequenciais
+	  Padrões repetitivos
+	  Padrões aleatórios
+	  Influência dos padrões sobre a escolha da vítima
+
+
+
+3. Conceitos de Acerto (Hit) e Falta (Miss) — [P]
+
+ 3.1 Definições Fundamentais — [P]
+
+  3.1.1 Acerto de Cache (Hit) — [P]
+	  Definição de acerto
+	  Consequência de um acerto
+	  Impacto no desempenho
+
+  3.1.2 Falta de Cache (Miss) — [P]
+	  Definição de falta
+	  Tipos de falta (compulsória, capacidade, conflito)
+	  Consequência de uma falta
+	  Necessidade de substituição após a falta
+
+
+ 3.2 Relação entre Falta e Substituição — [P]
+
+  3.2.1 Quando a Substituição é Acionada — [P]
+	  Cache cheio no momento da falta
+	  Escolha da vítima
+	  Carregamento do novo dado
+
+  3.2.2 Consequências de uma Substituição Malfeita — [P]
+	  Aumento da taxa de falta
+	  Degradação de desempenho
+	  Repetição de falhas (thrashing)
+
+
+
+4. Por que os Algoritmos de Substituição são Necessários — [I]
+
+ 4.1 Justificativa Técnica — [I]
+
+  4.1.1 Limitação de Capacidade — [I]
+	  Espaço reduzido em relação à memória principal
+	  Necessidade de decisão constante
+	  Impossibilidade de armazenar tudo
+
+  4.1.2 Consequências da Ausência de um Algoritmo — [I]
+	  Indefinição na escolha de dados
+	  Comprometimento do desempenho
+	  Ineficiência do sistema
+
+
+ 4.2 Benefícios de uma Política Bem Definida — [I]
+
+  4.2.1 Otimização do Uso da Memória — [I]
+	  Preservação de dados relevantes
+	  Redução de acessos à memória mais lenta
+	  Melhoria da capacidade de resposta
+
+  4.2.2 Adequação a Diferentes Cenários — [I]
+	  Sistemas de alta demanda
+	  Sistemas embarcados
+	  Servidores e bancos de dados
+
+
+
+5. Localidade de Referência e seu Impacto na Substituição — [P]
+
+ 5.1 Localidade Temporal — [P]
+
+  5.1.1 Conceito de Localidade Temporal — [P]
+	  Reutilização de dados recentemente acessados
+	  Base para algoritmos como o LRU
+	  Relação com o comportamento dos programas
+
+  5.1.2 Exploração da Localidade Temporal — [P]
+	  Priorização de dados recentes
+	  Redução de faltas em laços e iterações
+
+
+ 5.2 Localidade Espacial — [P]
+
+  5.2.1 Conceito de Localidade Espacial — [P]
+	  Acesso a dados próximos na memória
+	  Relação com blocos e linhas de cache
+	  Influência no pré-carregamento de dados
+
+  5.2.2 Exploração da Localidade Espacial — [P]
+	  Carregamento de blocos contíguos
+	  Relação com o tamanho da linha de cache
+
+
+
+6. Classificação Geral dos Algoritmos de Substituição — [I]
+
+ 6.1 Critérios de Classificação — [I]
+
+  6.1.1 Classificação por Critério de Escolha — [I]
+	  Baseados em recência
+	  Baseados em frequência
+	  Baseados em ordem de chegada
+	  Baseados em aleatoriedade
+
+  6.1.2 Classificação por Complexidade — [I]
+	  Algoritmos simples
+	  Algoritmos intermediários
+	  Algoritmos complexos e adaptativos
+
+
+ 6.2 Visão Geral das Categorias — [I]
+
+  6.2.1 Algoritmos Determinísticos — [I]
+	  Comportamento previsível
+	  Regras fixas de decisão
+
+  6.2.2 Algoritmos Estocásticos — [I]
+	  Componente de aleatoriedade
+	  Uso em cenários específicos
+
+
+
+PARTE 2 — PRINCIPAIS ALGORITMOS DE SUBSTITUIÇÃO
+
+
+7. Algoritmo Ótimo (Belady / OPT) — [P]
+
+ 7.1 Fundamentos do Algoritmo Ótimo — [P]
+
+  7.1.1 Conceito do Algoritmo Ótimo — [P]
+	  Definição do algoritmo de Belady
+	  Escolha do dado usado mais distante no futuro
+	  Caráter teórico do algoritmo
+
+  7.1.2 Funcionamento do Algoritmo Ótimo — [P]
+	  Necessidade de conhecimento futuro dos acessos
+	  Seleção da vítima ideal
+	  Minimização teórica de faltas
+
+
+ 7.2 Aplicações e Limitações — [P]
+
+  7.2.1 Uso como Referência Teórica — [P]
+	  Padrão de comparação para outros algoritmos
+	  Medição da eficiência máxima possível
+
+  7.2.2 Impossibilidade de Implementação Prática — [P]
+	  Necessidade de previsão do futuro
+	  Inviabilidade em sistemas reais
+
+
+ 7.3 Optimalidade do Algoritmo Ótimo — [P]
+
+  7.3.1 Fundamento da Optimalidade — [P]
+	  Escolha da vítima com próximo uso mais distante
+	  Relação entre previsão futura e minimização de faltas
+	  Comparação com políticas não ótimas
+
+  7.3.2 Limite Teórico de Faltas — [P]
+	  Menor número possível de faltas para uma sequência de referências
+	  OPT como limite inferior para comparação
+	  Distância entre uma política prática e o comportamento ótimo
+
+
+
+8. Algoritmo FIFO (First In, First Out) — [P]
+
+ 8.1 Fundamentos do FIFO — [P]
+
+  8.1.1 Conceito do FIFO — [P]
+	  Definição de "primeiro a entrar, primeiro a sair"
+	  Estrutura de fila para os dados
+	  Simplicidade da lógica
+
+  8.1.2 Funcionamento do FIFO — [P]
+	  Inserção dos dados na fila
+	  Remoção do dado mais antigo
+	  Independência da frequência de acesso
+
+
+ 8.2 Vantagens, Desvantagens e Aplicações — [P]
+
+  8.2.1 Vantagens do FIFO — [P]
+	  Facilidade de implementação
+	  Baixo custo computacional
+	  Adequação a padrões de acesso estáveis
+
+  8.2.2 Desvantagens e Casos de Uso — [P]
+	  Possível remoção de dados frequentemente usados
+	  Ineficiência em padrões imprevisíveis
+	  Uso em sistemas simples e embarcados
+
+
+
+9. Algoritmo LRU (Least Recently Used) — [P]
+
+ 9.1 Fundamentos do LRU — [P]
+
+  9.1.1 Conceito do LRU — [P]
+	  Definição de "menos recentemente usado"
+	  Base na localidade temporal
+	  Priorização de dados recentes
+
+  9.1.2 Funcionamento do LRU — [P]
+	  Marcação do dado mais recentemente acessado
+	  Lista ordenada por recência
+	  Remoção do dado menos recentemente usado
+
+
+ 9.2 Vantagens, Desvantagens e Aplicações — [P]
+
+  9.2.1 Vantagens do LRU — [P]
+	  Eficiência em padrões de acesso recentes
+	  Redução da taxa de falta
+
+  9.2.2 Desvantagens e Casos de Uso — [P]
+	  Complexidade de implementação
+	  Custo computacional de atualização
+	  Uso em sistemas operacionais e cache de disco
+
+
+
+10. Algoritmo LFU (Least Frequently Used) — [P]
+
+ 10.1 Fundamentos do LFU — [P]
+
+  10.1.1 Conceito do LFU — [P]
+	  Definição de "menos frequentemente usado"
+	  Base na frequência de acesso
+	  Contraste com o critério de recência
+
+  10.1.2 Funcionamento do LFU — [P]
+	  Contadores de acesso por bloco
+	  Escolha do bloco com menor contador
+	  Manutenção dos dados mais utilizados
+
+
+ 10.2 Vantagens, Desvantagens e Aplicações — [P]
+
+  10.2.1 Vantagens do LFU — [P]
+	  Eficiência em padrões de acesso constantes
+	  Preservação de dados de alta frequência
+
+  10.2.2 Desvantagens e Casos de Uso — [P]
+	  Custo de manutenção dos contadores
+	  Ineficiência em padrões dinâmicos
+	  Uso em servidores de arquivos e sistemas de recomendação
+
+
+
+11. Algoritmo MRU (Most Recently Used) — [I]
+
+ 11.1 Fundamentos do MRU — [I]
+
+  11.1.1 Conceito do MRU — [I]
+	  Definição de "mais recentemente usado"
+	  Lógica oposta ao LRU
+	  Cenários de utilidade
+
+  11.1.2 Funcionamento do MRU — [I]
+	  Registro dos dados acessados
+	  Remoção do dado mais recentemente usado
+	  Justificativa para padrões específicos
+
+
+ 11.2 Vantagens, Desvantagens e Aplicações — [I]
+
+  11.2.1 Vantagens do MRU — [I]
+	  Simplicidade de implementação
+	  Utilidade em acessos não repetitivos
+
+  11.2.2 Desvantagens e Casos de Uso — [I]
+	  Risco de remoção de dados úteis
+	  Uso em caches temporários e navegação
+
+
+
+12. Algoritmo Aleatório (Random) — [I]
+
+ 12.1 Fundamentos do Algoritmo Aleatório — [I]
+
+  12.1.1 Conceito do Algoritmo Aleatório — [I]
+	  Escolha aleatória da vítima
+	  Ausência de critério de recência ou frequência
+	  Simplicidade extrema
+
+  12.1.2 Funcionamento do Algoritmo Aleatório — [I]
+	  Seleção sem análise de histórico
+	  Rapidez na decisão
+
+
+ 12.2 Vantagens, Desvantagens e Aplicações — [I]
+
+  12.2.1 Vantagens do Algoritmo Aleatório — [I]
+	  Facilidade de implementação
+	  Baixo custo computacional
+
+  12.2.2 Desvantagens e Casos de Uso — [I]
+	  Baixa eficiência relativa
+	  Uso em sistemas de baixo requisito de desempenho
+
+
+
+13. Algoritmo Segunda Chance (Second Chance / Clock) — [P]
+
+ 13.1 Fundamentos do Algoritmo Segunda Chance — [P]
+
+  13.1.1 Conceito do Algoritmo Segunda Chance — [P]
+	  Evolução do FIFO
+	  Uso de bit de referência
+	  Concessão de uma segunda oportunidade
+
+  13.1.2 Funcionamento do Algoritmo Clock — [P]
+	  Estrutura circular dos dados
+	  Verificação do bit de referência
+	  Avanço do ponteiro circular
+
+
+ 13.2 Vantagens, Desvantagens e Aplicações — [P]
+
+  13.2.1 Vantagens do Algoritmo Segunda Chance — [P]
+	  Baixo custo comparado ao LRU
+	  Boa aproximação do comportamento LRU
+
+  13.2.2 Desvantagens e Casos de Uso — [P]
+	  Menor precisão que o LRU puro
+	  Uso em sistemas operacionais para substituição de páginas
+
+
+
+14. Algoritmo NRU (Not Recently Used) — [I]
+
+ 14.1 Fundamentos do NRU — [I]
+
+  14.1.1 Conceito do NRU — [I]
+	  Classificação por bits de referência e modificação
+	  Categorias de páginas
+	  Aproximação simplificada do LRU
+
+  14.1.2 Funcionamento do NRU — [I]
+	  Formação de classes de páginas
+	  Escolha da vítima pela classe mais baixa
+
+
+ 14.2 Vantagens, Desvantagens e Aplicações — [I]
+
+  14.2.1 Vantagens do NRU — [I]
+	  Baixo custo de implementação
+	  Boa aproximação prática
+
+  14.2.2 Desvantagens e Casos de Uso — [I]
+	  Precisão limitada
+	  Uso em sistemas operacionais tradicionais
+
+
+
+15. Algoritmo NFU (Not Frequently Used) — [I]
+
+ 15.1 Fundamentos do NFU — [I]
+
+  15.1.1 Conceito do NFU — [I]
+	  Aproximação por software do LFU
+	  Uso de contadores atualizados periodicamente
+
+  15.1.2 Funcionamento do NFU — [I]
+	  Incremento periódico dos contadores
+	  Escolha do menor contador acumulado
+
+
+ 15.2 Vantagens, Desvantagens e Aplicações — [I]
+
+  15.2.1 Vantagens do NFU — [I]
+	  Menor custo que o LFU exato
+
+  15.2.2 Desvantagens e Casos de Uso — [I]
+	  Falta de decaimento do histórico antigo
+	  Uso combinado com variações de decaimento (aging)
+
+
+
+16. Algoritmo LIFO (Last In, First Out) — [V]
+
+ 16.1 Fundamentos do LIFO — [V]
+
+  16.1.1 Conceito do LIFO — [V]
+	  Definição de "último a entrar, primeiro a sair"
+	  Estrutura de pilha
+
+  16.1.2 Aplicabilidade em Substituição de Memória — [V]
+	  Cenários pouco comuns de uso
+	  Limitações como política geral
+
+
+
+PARTE 3 — FUNCIONAMENTO, ESTRUTURAS E CRITÉRIOS DE ESCOLHA
+
+
+17. Estruturas de Dados para Implementação de Substituição — [P]
+
+ 17.1 Estruturas Baseadas em Listas — [P]
+
+  17.1.1 Listas Encadeadas — [P]
+	  Uso em algoritmos baseados em recência
+	  Reordenação a cada acesso
+	  Custo de manipulação
+
+  17.1.2 Filas — [P]
+	  Uso em algoritmos baseados em ordem de chegada
+	  Inserção e remoção nas extremidades
+
+
+ 17.2 Estruturas Baseadas em Contadores e Bits — [P]
+
+  17.2.1 Contadores de Frequência — [P]
+	  Uso em algoritmos baseados em frequência
+	  Necessidade de atualização constante
+
+  17.2.2 Bits de Referência — [P]
+	  Indicação de acesso recente
+	  Uso em algoritmos aproximados
+
+
+
+18. Bits de Referência e Bit de Modificação (Dirty Bit) — [P]
+
+ 18.1 Bit de Referência — [P]
+
+  18.1.1 Função do Bit de Referência — [P]
+	  Indicação de acesso ao bloco
+	  Uso em algoritmos como Clock e NRU
+	  Reinicialização periódica
+
+  18.1.2 Manutenção do Bit de Referência — [P]
+	  Atualização a cada acesso
+	  Verificação durante a substituição
+
+
+ 18.2 Bit de Modificação (Dirty Bit) — [P]
+
+  18.2.1 Função do Bit de Modificação — [P]
+	  Indicação de alteração dos dados
+	  Necessidade de escrita de volta (write-back)
+	  Impacto no custo da substituição
+
+  18.2.2 Relação com a Escolha da Vítima — [P]
+	  Preferência por blocos não modificados
+	  Redução do custo de substituição
+
+
+
+19. Critérios de Escolha da Vítima — [P]
+
+ 19.1 Critério de Recência — [P]
+
+  19.1.1 Uso da Recência como Base de Decisão — [P]
+	  Priorização de dados usados recentemente
+	  Algoritmos representativos (LRU)
+
+  19.1.2 Limitações do Critério de Recência — [P]
+	  Ignora frequência de uso
+	  Sensibilidade a varreduras sequenciais
+
+
+ 19.2 Critério de Frequência — [P]
+
+  19.2.1 Uso da Frequência como Base de Decisão — [P]
+	  Priorização de dados usados com frequência
+	  Algoritmos representativos (LFU)
+
+  19.2.2 Limitações do Critério de Frequência — [P]
+	  Ignora mudanças recentes de padrão
+	  Custo de manutenção de contadores
+
+
+ 19.3 Critério de Ordem de Chegada — [P]
+
+  19.3.1 Uso da Ordem de Chegada como Base de Decisão — [P]
+	  Priorização por tempo de permanência
+	  Algoritmos representativos (FIFO)
+
+  19.3.2 Limitações do Critério de Ordem de Chegada — [P]
+	  Ignora relevância do dado
+	  Possível remoção de dados úteis
+
+
+
+20. Políticas Determinísticas x Políticas Estocásticas — [I]
+
+ 20.1 Políticas Determinísticas — [I]
+
+  20.1.1 Características das Políticas Determinísticas — [I]
+	  Regras fixas e previsíveis
+	  Dependência do histórico de acessos
+
+  20.1.2 Exemplos de Políticas Determinísticas — [I]
+	  LRU, LFU, FIFO
+	  Comportamento reprodutível
+
+
+ 20.2 Políticas Estocásticas — [I]
+
+  20.2.1 Características das Políticas Estocásticas — [I]
+	  Componente de aleatoriedade
+	  Menor previsibilidade
+
+  20.2.2 Exemplos de Políticas Estocásticas — [I]
+	  Algoritmo Aleatório
+	  Uso em cenários de baixo custo
+
+
+
+21. Escopo de Aplicação: Substituição Local x Global — [P]
+
+ 21.1 Substituição Local — [P]
+
+  21.1.1 Conceito de Substituição Local — [P]
+	  Escolha da vítima dentro do mesmo processo ou conjunto
+	  Isolamento entre processos
+
+  21.1.2 Vantagens e Limitações da Substituição Local — [P]
+	  Previsibilidade por processo
+	  Possível desperdício de espaço global
+
+
+ 21.2 Substituição Global — [P]
+
+  21.2.1 Conceito de Substituição Global — [P]
+	  Escolha da vítima entre todos os processos
+	  Compartilhamento do espaço total
+
+  21.2.2 Vantagens e Limitações da Substituição Global — [P]
+	  Melhor aproveitamento do espaço disponível
+	  Risco de impacto entre processos
+
+
+
+22. Granularidade da Substituição — [I]
+
+ 22.1 Substituição por Linha de Cache — [I]
+
+  22.1.1 Conceito de Linha de Cache — [I]
+	  Unidade básica de substituição em cache
+	  Relação com o tamanho do bloco
+
+  22.1.2 Impacto da Granularidade na Cache — [I]
+	  Influência na taxa de acerto
+	  Relação com a localidade espacial
+
+
+ 22.2 Substituição por Página de Memória — [I]
+
+  22.2.1 Conceito de Página de Memória — [I]
+	  Unidade básica de substituição em memória virtual
+	  Relação com o tamanho da página
+
+  22.2.2 Impacto da Granularidade na Memória Virtual — [I]
+	  Influência na taxa de faltas de página
+	  Relação com a fragmentação interna
+
+
+
+23. Processo de Decisão na Escolha da Vítima — [P]
+
+ 23.1 Etapas do Processo de Substituição — [P]
+
+  23.1.1 Detecção da Necessidade de Substituição — [P]
+	  Ocorrência de falta com cache cheio
+	  Verificação de espaço disponível
+
+  23.1.2 Seleção e Remoção da Vítima — [P]
+	  Aplicação do critério do algoritmo
+	  Remoção ou escrita de volta do dado antigo
+	  Carregamento do novo dado
+
+
+ 23.2 Fatores que Influenciam a Decisão — [P]
+
+  23.2.1 Estado dos Blocos Candidatos — [P]
+	  Bit de referência
+	  Bit de modificação
+
+  23.2.2 Contexto do Sistema — [P]
+	  Padrão de acesso observado
+	  Requisitos de desempenho do sistema
+
+
+ 23.3 Estados e Transições Durante a Substituição — [P]
+
+  23.3.1 Estado dos Dados Antes da Substituição — [P]
+	  Dados residentes
+	  Dados candidatos à substituição
+	  Metadados associados à vítima
+	  Estado de referência e modificação
+
+  23.3.2 Estado Após a Substituição — [P]
+	  Remoção da vítima
+	  Atualização dos metadados
+	  Inserção do novo bloco ou página
+	  Atualização da estrutura utilizada pelo algoritmo
+
+
+
+PARTE 4 — DESEMPENHO, TAXA DE ACERTO E CUSTO DE SUBSTITUIÇÃO
+
+
+24. Taxa de Acerto (Hit Rate) e Taxa de Falta (Miss Rate) — [P]
+
+ 24.1 Taxa de Acerto — [P]
+
+  24.1.1 Definição de Taxa de Acerto — [P]
+	  Proporção de acessos bem-sucedidos
+	  Relação com a eficiência do algoritmo
+
+  24.1.2 Fatores que Influenciam a Taxa de Acerto — [P]
+	  Tamanho da memória cache
+	  Padrão de acesso aos dados
+	  Algoritmo de substituição utilizado
+
+
+ 24.2 Taxa de Falta — [P]
+
+  24.2.1 Definição de Taxa de Falta — [P]
+	  Proporção de acessos malsucedidos
+	  Relação inversa com a taxa de acerto
+
+  24.2.2 Tipos de Falta — [P]
+	  Falta compulsória
+	  Falta de capacidade
+	  Falta de conflito
+
+
+
+25. Anomalia de Belady — [P]
+
+ 25.1 Conceito da Anomalia de Belady — [P]
+
+  25.1.1 Definição da Anomalia — [P]
+	  Aumento da taxa de falta com aumento da capacidade
+	  Contraexemplo à intuição comum
+
+  25.1.2 Algoritmos Afetados pela Anomalia — [P]
+	  Ocorrência no FIFO
+	  Ausência da anomalia em algoritmos com propriedade de inclusão (stack algorithms)
+
+
+ 25.2 Implicações da Anomalia de Belady — [P]
+
+  25.2.1 Impacto no Projeto de Sistemas — [P]
+	  Cuidados ao dimensionar a memória
+	  Necessidade de algoritmos bem comportados
+
+  25.2.2 Algoritmos Imunes à Anomalia — [P]
+	  Propriedade de empilhamento (stack property)
+	  Exemplo do LRU
+
+  
+ 25.3 Propriedade de Inclusão (Stack Property) — [P]
+
+  25.3.1 Conceito de Propriedade de Inclusão — [P]
+	  Relação entre conjuntos de memória de diferentes capacidades
+	  Inclusão do conjunto de referências mantidas
+	  Comportamento de algoritmos com propriedade de empilhamento
+
+  25.3.2 Relação com a Anomalia de Belady — [P]
+	  Por que a propriedade impede a anomalia
+	  Algoritmos que possuem a propriedade
+	  LRU como exemplo de algoritmo com propriedade de empilhamento
+	  Algoritmos que não possuem a propriedade
+
+
+
+26. Custo Computacional dos Algoritmos de Substituição — [P]
+
+ 26.1 Custo de Tempo — [P]
+
+  26.1.1 Complexidade das Operações de Escolha — [P]
+	  Tempo para localizar a vítima
+	  Relação com a estrutura de dados utilizada
+
+  26.1.2 Custo de Atualização das Estruturas — [P]
+	  Atualização de listas e contadores a cada acesso
+	  Impacto no tempo de execução
+
+  26.1.3 Complexidade de Seleção da Vítima — [P]
+	  Custo de encontrar a vítima
+	  Custo de atualizar o estado após cada acesso
+	  Comparação da complexidade entre diferentes políticas
+	  Impacto da associatividade e do número de candidatos
+
+
+ 26.2 Custo de Espaço — [P]
+
+  26.2.1 Armazenamento de Metadados — [P]
+	  Bits de referência e modificação
+	  Contadores de frequência
+	  Ponteiros de listas encadeadas
+
+  26.2.2 Relação entre Custo e Complexidade do Algoritmo — [P]
+	  Algoritmos simples com baixo custo
+	  Algoritmos complexos com maior custo
+
+
+
+27. Impacto da Substituição no Desempenho do Sistema — [I]
+
+ 27.1 Relação entre Substituição e Tempo de Acesso — [I]
+
+  27.1.1 Tempo Médio de Acesso à Memória — [I]
+	  Influência da taxa de acerto
+	  Fórmula geral de tempo médio
+
+  27.1.2 Penalidade de Falta — [I]
+	  Custo adicional de acesso à memória mais lenta
+	  Impacto cumulativo no desempenho
+
+
+ 27.2 Impacto em Diferentes Cargas de Trabalho — [I]
+
+  27.2.1 Cargas de Trabalho Previsíveis — [I]
+	  Boa adaptação de algoritmos simples
+
+  27.2.2 Cargas de Trabalho Imprevisíveis — [I]
+	  Necessidade de algoritmos mais sofisticados
+
+
+
+28. Overhead de Manutenção de Metadados — [I]
+
+ 28.1 Fontes de Overhead — [I]
+
+  28.1.1 Atualização de Estruturas a Cada Acesso — [I]
+	  Reordenação de listas
+	  Incremento de contadores
+
+  28.1.2 Armazenamento Adicional — [I]
+	  Espaço extra para metadados
+	  Relação com o tamanho da memória gerenciada
+
+
+ 28.2 Estratégias de Redução do Overhead — [I]
+
+  28.2.1 Aproximações de Baixo Custo — [I]
+	  Uso de bits em vez de contadores completos
+	  Algoritmos como Clock e NRU
+
+  28.2.2 Atualizações Periódicas em vez de Contínuas — [I]
+	  Redução da frequência de atualização
+	  Equilíbrio entre precisão e custo
+
+
+
+29. Thrashing e Sobrecarga de Substituição — [P]
+
+ 29.1 Conceito de Thrashing — [P]
+
+  29.1.1 Definição de Thrashing — [P]
+	  Substituições excessivas e improdutivas
+	  Queda acentuada de desempenho
+
+  29.1.2 Causas do Thrashing — [P]
+	  Memória insuficiente para o conjunto de trabalho
+	  Excesso de processos concorrentes
+
+
+ 29.2 Prevenção e Mitigação do Thrashing — [P]
+
+  29.2.1 Estratégias de Prevenção — [P]
+	  Controle do grau de multiprogramação
+	  Dimensionamento adequado da memória
+
+  29.2.2 Relação com o Algoritmo de Substituição — [P]
+	  Escolha de algoritmos mais adaptativos
+	  Monitoramento do conjunto de trabalho
+
+
+
+30. Métricas de Avaliação de Algoritmos de Substituição — [I]
+
+ 30.1 Métricas Quantitativas — [I]
+
+  30.1.1 Taxa de Acerto e Taxa de Falta — [I]
+	  Medição direta da eficiência
+	  Comparação entre algoritmos
+
+  30.1.2 Tempo Médio de Acesso — [I]
+	  Combinação de custos de acerto e falta
+	  Indicador de desempenho global
+
+
+ 30.2 Métricas Qualitativas — [I]
+
+  30.2.1 Complexidade de Implementação — [I]
+	  Facilidade de manutenção do código
+	  Requisitos de hardware ou software
+
+  30.2.2 Adaptabilidade a Padrões de Acesso — [I]
+	  Capacidade de resposta a mudanças
+	  Robustez em cenários diversos
+
+  30.2.3 Overhead de Decisão — [I]
+	  Custo da coleta de informações sobre os acessos
+	  Custo da manutenção do histórico
+	  Relação entre precisão da política e overhead
+
+
+
+PARTE 5 — ALGORITMOS AVANÇADOS E TÉCNICAS DE OTIMIZAÇÃO
+
+
+31. ARC (Adaptive Replacement Cache) — [P]
+
+ 31.1 Fundamentos do ARC — [P]
+
+  31.1.1 Conceito do ARC — [P]
+	  Combinação de critérios de recência e frequência
+	  Adaptação dinâmica à carga de acesso
+
+  31.1.2 Estrutura do ARC — [P]
+	  Lista de dados recentes
+	  Lista de dados frequentes
+	  Ajuste dinâmico entre as listas
+
+
+ 31.2 Vantagens, Desvantagens e Aplicações — [P]
+
+  31.2.1 Vantagens do ARC — [P]
+	  Adaptação a padrões de acesso variáveis
+	  Redução de faltas em cenários dinâmicos
+
+  31.2.2 Desvantagens e Casos de Uso — [P]
+	  Maior complexidade de implementação
+	  Uso em sistemas de armazenamento de alto desempenho
+
+
+
+32. LRU-K e Variações do LRU — [I]
+
+ 32.1 Fundamentos do LRU-K — [I]
+
+  32.1.1 Conceito do LRU-K — [I]
+	  Consideração dos últimos K acessos
+	  Maior precisão na estimativa de relevância
+
+  32.1.2 Funcionamento do LRU-K — [I]
+	  Histórico de múltiplos acessos por bloco
+	  Escolha baseada no K-ésimo acesso mais recente
+
+
+ 32.2 Outras Variações do LRU — [I]
+
+  32.2.1 LRU Aproximado — [I]
+	  Uso de bits de referência
+	  Redução do custo do LRU exato
+
+  32.2.2 LRU com Envelhecimento (Aging) — [I]
+	  Decaimento gradual da relevância
+	  Combinação de recência e histórico
+
+
+
+33. Algoritmo Clock-Pro e Variações do Clock — [I]
+
+ 33.1 Fundamentos do Clock-Pro — [I]
+
+  33.1.1 Conceito do Clock-Pro — [I]
+	  Evolução do algoritmo Clock
+	  Diferenciação entre dados quentes e frios
+
+  33.1.2 Funcionamento do Clock-Pro — [I]
+	  Múltiplos ponteiros circulares
+	  Classificação dinâmica dos blocos
+
+
+ 33.2 Outras Variações do Clock — [I]
+
+  33.2.1 Clock com Múltiplos Bits — [I]
+	  Maior granularidade de recência
+
+  33.2.2 GCLOCK (Generalized Clock) — [I]
+	  Uso de contadores de referência
+	  Aproximação de políticas baseadas em frequência
+
+
+
+34. Algoritmo 2Q (Two Queue) — [I]
+
+ 34.1 Fundamentos do 2Q — [I]
+
+  34.1.1 Conceito do 2Q — [I]
+	  Uso de duas filas separadas
+	  Distinção entre acessos únicos e recorrentes
+
+  34.1.2 Funcionamento do 2Q — [I]
+	  Fila de entrada para novos dados
+	  Fila principal para dados reacessados
+
+
+ 34.2 Vantagens e Aplicações — [I]
+
+  34.2.1 Vantagens do 2Q — [I]
+	  Baixo custo comparado ao LRU-K
+	  Boa proteção contra varreduras sequenciais
+
+  34.2.2 Casos de Uso — [I]
+	  Sistemas de banco de dados
+	  Cache de armazenamento
+
+
+
+35. Algoritmos Baseados em Predição e Aprendizado — [V]
+
+ 35.1 Conceito de Substituição Preditiva — [V]
+
+  35.1.1 Uso de Padrões Históricos — [V]
+	  Previsão de acessos futuros
+	  Análise de sequências de acesso
+
+  35.1.2 Uso de Técnicas de Aprendizado de Máquina — [V]
+	  Modelos preditivos aplicados à substituição
+	  Adaptação contínua ao comportamento do sistema
+
+
+ 35.2 Potenciais e Desafios — [V]
+
+  35.2.1 Potenciais Ganhos de Desempenho — [V]
+	  Maior precisão na escolha da vítima
+
+  35.2.2 Desafios de Implementação — [V]
+	  Custo computacional do modelo preditivo
+	  Complexidade de integração ao hardware
+
+
+
+36. Políticas Híbridas de Substituição — [I]
+
+ 36.1 Conceito de Políticas Híbridas — [I]
+
+  36.1.1 Combinação de Múltiplos Critérios — [I]
+	  União de recência e frequência
+	  Ponderação entre diferentes fatores
+
+  36.1.2 Exemplos de Políticas Híbridas — [I]
+	  ARC como exemplo híbrido
+	  LRFU (Least Recently/Frequently Used)
+
+
+ 36.2 Vantagens e Limitações — [I]
+
+  36.2.1 Vantagens das Políticas Híbridas — [I]
+	  Maior flexibilidade e adaptação
+
+  36.2.2 Limitações das Políticas Híbridas — [I]
+	  Maior complexidade de ajuste de parâmetros
+
+
+
+37. Substituição em Caches Multinível — [I]
+
+ 37.1 Conceito de Cache Multinível — [I]
+
+  37.1.1 Níveis de Cache (L1, L2, L3) — [I]
+	  Diferenças de capacidade e velocidade
+	  Relação entre os níveis
+
+  37.1.2 Substituição Coordenada entre Níveis — [I]
+	  Políticas de inclusão e exclusão
+	  Coerência entre os níveis
+
+
+ 37.2 Estratégias Específicas para Multinível — [I]
+
+  37.2.1 Substituição Independente por Nível — [I]
+	  Algoritmos distintos em cada nível
+
+  37.2.2 Substituição Cooperativa entre Níveis — [I]
+	  Comunicação de informações entre níveis
+	  Otimização conjunta do desempenho
+
+
+
+38. Substituição Sensível a Custo (Cost-Aware Replacement) — [V]
+
+ 38.1 Conceito de Substituição Sensível a Custo — [V]
+
+  38.1.1 Consideração do Custo de Recarregamento — [V]
+	  Diferença de custo entre dados
+	  Priorização de dados caros de recuperar
+
+  38.1.2 Aplicações do Conceito — [V]
+	  Sistemas de armazenamento heterogêneos
+	  Cache em ambientes com latências variáveis
+
+
+ 38.2 Relação com Outros Algoritmos — [V]
+
+  38.2.1 Combinação com Critérios Tradicionais — [V]
+	  Integração com recência e frequência
+
+  38.2.2 Desafios de Implementação — [V]
+	  Necessidade de estimar custos com precisão
+
+
+
+PARTE 6 — SUBSTITUIÇÃO EM CACHE, MEMÓRIA VIRTUAL E SISTEMAS OPERACIONAIS
+
+
+39. Substituição em Memória Cache (Hardware) — [P]
+
+ 39.1 Particularidades da Substituição em Cache — [P]
+
+  39.1.1 Substituição por Conjunto Associativo — [P]
+	  Relação com o mapeamento associativo por conjuntos
+	  Escolha da vítima dentro do conjunto
+
+  39.1.2 Implementação em Hardware — [P]
+	  Circuitos dedicados para decisão
+	  Restrições de velocidade e custo
+
+
+ 39.2 Algoritmos Comuns em Cache — [P]
+
+  39.2.1 Uso do LRU Aproximado em Hardware — [P]
+	  Simplificações para viabilidade em silício
+
+  39.2.2 Uso do Algoritmo Aleatório em Cache — [P]
+	  Simplicidade e baixo custo de circuito
+
+
+
+40. Substituição em Memória Virtual (Páginas) — [P]
+
+ 40.1 Particularidades da Substituição de Páginas — [P]
+
+  40.1.1 Relação com a Tabela de Páginas — [P]
+	  Uso de bits de referência e modificação
+	  Consulta durante a falta de página
+
+  40.1.2 Custo Elevado da Falta de Página — [P]
+	  Acesso ao disco ou armazenamento secundário
+	  Impacto significativo no desempenho
+
+
+ 40.2 Algoritmos Comuns em Memória Virtual — [P]
+
+  40.2.1 Uso do Algoritmo Segunda Chance — [P]
+	  Aplicação típica em sistemas operacionais
+
+  40.2.2 Uso do Algoritmo NRU — [P]
+	  Simplicidade adequada ao contexto de páginas
+
+
+
+41. Algoritmos de Substituição em Sistemas Operacionais — [I]
+
+ 41.1 Papel do Sistema Operacional na Substituição — [I]
+
+  41.1.1 Gerenciamento da Memória Virtual — [I]
+	  Responsabilidade pela escolha de páginas
+	  Integração com o hardware de memória
+
+  41.1.2 Políticas Adotadas por Sistemas Reais — [I]
+	  Variações do Clock em sistemas modernos
+	  Ajustes específicos por sistema operacional
+
+
+ 41.2 Interação com Outros Mecanismos — [I]
+
+  41.2.1 Relação com o Escalonador de Processos — [I]
+	  Prioridade de memória por processo
+
+  41.2.2 Relação com o Sistema de Arquivos — [I]
+	  Cache de páginas de arquivos
+	  Substituição de buffers de E/S
+
+
+
+42. Working Set e Conjunto de Trabalho — [P]
+
+ 42.1 Conceito de Working Set — [P]
+
+  42.1.1 Definição de Conjunto de Trabalho — [P]
+	  Conjunto de páginas ativamente usadas
+	  Relação com um intervalo de tempo
+
+  42.1.2 Importância do Working Set — [P]
+	  Base para prevenção de thrashing
+	  Relação com o dimensionamento de memória
+
+
+ 42.2 Modelos Baseados em Working Set — [P]
+
+  42.2.1 Modelo de Working Set (WSClock) — [P]
+	  Combinação do conceito de working set com o algoritmo Clock
+
+  42.2.2 Controle do Grau de Multiprogramação — [P]
+	  Ajuste conforme o tamanho do working set
+	  Prevenção de sobrecarga de memória
+
+
+
+43. Substituição em Sistemas com Múltiplos Núcleos — [I]
+
+ 43.1 Desafios da Substituição em Multiprocessamento — [I]
+
+  43.1.1 Compartilhamento de Cache entre Núcleos — [I]
+	  Cache compartilhada x cache privada
+	  Concorrência na escolha da vítima
+
+  43.1.2 Coerência e Substituição — [I]
+	  Relação com protocolos de coerência de cache
+	  Impacto de invalidações na substituição
+
+
+ 43.2 Estratégias para Ambientes Multinúcleo — [I]
+
+  43.2.1 Particionamento de Cache — [I]
+	  Alocação dedicada por núcleo ou processo
+
+  43.2.2 Substituição Consciente de Contenção — [I]
+	  Consideração da disputa por recursos compartilhados
+
+
+
+44. Substituição em Ambientes Distribuídos e Nuvem — [V]
+
+ 44.1 Substituição em Sistemas Distribuídos — [V]
+
+  44.1.1 Cache Distribuído — [V]
+	  Coordenação entre múltiplos nós
+	  Desafios de consistência
+
+  44.1.2 Políticas Adaptadas ao Contexto Distribuído — [V]
+	  Substituição com base em latência de rede
+	  Réplicas e balanceamento de carga
+
+
+ 44.2 Substituição em Ambientes de Computação em Nuvem — [V]
+
+  44.2.1 Cache em Infraestruturas Virtualizadas — [V]
+	  Compartilhamento de recursos entre máquinas virtuais
+
+  44.2.2 Desafios de Escalabilidade — [V]
+	  Grande volume de dados e usuários
+	  Necessidade de algoritmos eficientes em larga escala
+
+
+
+PARTE 7 — IMPLEMENTAÇÃO, COMPARAÇÃO E ANÁLISE PRÁTICA
+
+
+45. Implementação em Hardware x Software — [I]
+
+ 45.1 Implementação em Hardware — [I]
+
+  45.1.1 Características da Implementação em Hardware — [I]
+	  Velocidade elevada de decisão
+	  Restrições de complexidade do circuito
+
+  45.1.2 Algoritmos Adequados ao Hardware — [I]
+	  Aleatório e LRU aproximado
+	  Simplicidade como requisito
+
+
+ 45.2 Implementação em Software — [I]
+
+  45.2.1 Características da Implementação em Software — [I]
+	  Maior flexibilidade de algoritmos
+	  Custo computacional adicional
+
+  45.2.2 Algoritmos Adequados ao Software — [I]
+	  LRU exato, LFU, ARC
+	  Uso comum em sistemas operacionais
+
+
+
+46. Comparação entre os Principais Algoritmos — [P]
+
+ 46.1 Comparação de Critérios — [P]
+
+  46.1.1 Comparação entre FIFO, LRU e LFU — [P]
+	  Diferenças nos critérios de escolha
+	  Diferenças de desempenho típico
+
+  46.1.2 Comparação entre Algoritmos Aproximados e Exatos — [P]
+	  Segunda Chance x LRU
+	  NRU x NFU
+
+
+ 46.2 Comparação de Custo e Complexidade — [P]
+
+  46.2.1 Custo Computacional Relativo — [P]
+	  Ordenação dos algoritmos por complexidade
+
+  46.2.2 Trade-offs entre Precisão e Custo — [P]
+	  Relação entre qualidade da decisão e overhead
+	  Escolha conforme o contexto de aplicação
+
+
+
+47. Escolha do Algoritmo Ideal por Cenário de Uso — [I]
+
+ 47.1 Fatores de Decisão — [I]
+
+  47.1.1 Padrões de Acesso à Memória — [I]
+	  Acessos previsíveis x imprevisíveis
+	  Influência na escolha do algoritmo
+
+  47.1.2 Recursos de Hardware Disponíveis — [I]
+	  Restrições de memória e processamento
+	  Impacto na viabilidade de algoritmos complexos
+
+
+ 47.2 Cenários Típicos de Aplicação — [I]
+
+  47.2.1 Sistemas Embarcados e de Baixo Custo — [I]
+	  Preferência por algoritmos simples
+
+  47.2.2 Servidores e Sistemas de Alto Desempenho — [I]
+	  Preferência por algoritmos adaptativos
+
+
+
+48. Simulação e Análise de Desempenho — [I]
+
+ 48.1 Métodos de Simulação — [I]
+
+  48.1.1 Simulação Baseada em Traços de Acesso — [I]
+	  Uso de sequências reais de acesso
+	  Reprodução de cenários controlados
+
+  48.1.2 Ferramentas de Simulação — [I]
+	  Simuladores de cache e memória
+	  Avaliação comparativa de algoritmos
+
+
+ 48.2 Análise dos Resultados — [I]
+
+  48.2.1 Interpretação das Métricas Obtidas — [I]
+	  Taxa de acerto e falta observadas
+	  Comparação entre algoritmos testados
+
+  48.2.2 Aplicação dos Resultados no Projeto de Sistemas — [I]
+	  Escolha fundamentada do algoritmo
+	  Ajuste de parâmetros de memória
+
+
+
+PARTE 8 — REVISÃO GERAL E CONCLUSÃO
+
+
+49. Resumo Geral dos Algoritmos de Substituição de Memória — [I]
+
+ 49.1 Revisão dos Conceitos Fundamentais — [I]
+
+  49.1.1 Fundamentos Essenciais — [I]
+	  Definição e objetivo dos algoritmos de substituição
+	  Hierarquia de memória e localidade de referência
+	  Conceitos de acerto e falta
+
+  49.1.2 Critérios e Estruturas — [I]
+	  Critérios de recência, frequência e ordem de chegada
+	  Estruturas de dados e bits de controle
+
+
+ 49.2 Revisão dos Algoritmos Estudados — [I]
+
+  49.2.1 Algoritmos Clássicos — [I]
+	  Ótimo, FIFO, LRU, LFU, MRU, Aleatório
+
+  49.2.2 Algoritmos Aproximados e Avançados — [I]
+	  Segunda Chance, NRU, NFU
+	  ARC, LRU-K, Clock-Pro, 2Q
+
+
+ 49.3 Revisão de Desempenho e Aplicações — [I]
+
+  49.3.1 Métricas e Custos — [I]
+	  Taxa de acerto, taxa de falta, overhead
+	  Anomalia de Belady
+
+  49.3.2 Contextos de Aplicação — [I]
+	  Cache, memória virtual, sistemas distribuídos
+	  Escolha do algoritmo por cenário
+
+
+
+50. Conclusão do Estudo sobre Algoritmos de Substituição de Memória — [V]
+
+ 50.1 Síntese Final — [V]
+
+  50.1.1 O Papel dos Algoritmos de Substituição — [V]
+	  Elemento essencial da hierarquia de memória
+	  Base para o desempenho eficiente do sistema
+
+  50.1.2 Importância para a Arquitetura e Organização de Computadores — [V]
+	  Compreensão do comportamento da memória
+	  Base para estudos avançados de cache e memória virtual
+
+
+ 50.2 Competências Desenvolvidas — [V]
+
+  50.2.1 Conhecimentos Adquiridos — [V]
+	  Funcionamento dos principais algoritmos
+	  Critérios de escolha e métricas de avaliação
+	  Aplicações práticas em cache e memória virtual
+
+  50.2.2 Preparação para Estudos Posteriores — [V]
+	  Mapeamento de memória
+	  Memória cache avançada
+	  Memória virtual e paginação
+	  Gerência de memória em sistemas operacionais
+
+
+ 50.3 Encerramento — [V]
+	Integração dos conceitos estudados
+	Importância dos algoritmos de substituição
+	Continuidade dos estudos em Arquitetura de Computadores
