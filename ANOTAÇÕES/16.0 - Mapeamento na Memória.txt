@@ -1,0 +1,1514 @@
+                                      MAPEAMENTO NA MEMÓRIA
+
+
+A classificação abaixo indica a profundidade recomendada para cada grande tópico da lista.
+
+[P] Profundidade — estudar mecanismos, estruturas, funcionamento interno e relações entre componentes.
+[I] Intermediário — compreender bem o funcionamento e as relações principais, sem precisar dominar todos os
+   detalhes de implementação.
+[V] Visão geral — saber o que é, para que serve e como se relaciona com o Mapeamento na Memória.
+
+
+
+PARTE 1 — FUNDAMENTOS DO MAPEAMENTO NA MEMÓRIA
+
+
+1. Introdução ao Mapeamento na Memória — [I]
+
+ 1.1 Conceitos Fundamentais — [I]
+
+  1.1.1 Conceito de Mapeamento na Memória — [I]
+	  Definição de mapeamento de memória
+	  Função do mapeamento no sistema computacional
+	  Relação entre memória principal e memória cache
+	  Papel do mapeamento na Organização de Computadores
+
+  1.1.2 Objetivos do Mapeamento na Memória — [I]
+	  Localizar dados rapidamente
+	  Reduzir o tempo de acesso à memória
+	  Organizar blocos de dados na cache
+	  Minimizar conflitos de armazenamento
+
+
+ 1.2 O Mapeamento na Arquitetura de Computadores — [I]
+
+  1.2.1 Papel do Mapeamento no Sistema Computacional — [I]
+	  Comunicação entre processador e memória
+	  Organização do fluxo de dados
+	  Suporte à hierarquia de memória
+	  Otimização do desempenho de acesso
+
+  1.2.2 Arquitetura × Organização × Mapeamento na Memória — [I]
+	  O que pertence à Arquitetura
+	  O que pertence à Organização
+	  Localização do mapeamento na hierarquia de memória
+	  Relação entre os conceitos
+
+
+
+2. Motivação e Necessidade do Mapeamento na Memória — [I]
+
+ 2.1 O Problema da Diferença de Velocidade — [I]
+
+  2.1.1 Disparidade entre Processador e Memória — [I]
+	  Velocidade do processador
+	  Velocidade da memória principal
+	  Gap de desempenho (memory wall)
+	  Necessidade de memórias intermediárias
+
+  2.1.2 Limitação de Capacidade da Cache — [I]
+	  Capacidade reduzida da cache
+	  Custo elevado da tecnologia SRAM
+	  Necessidade de organização eficiente
+
+
+ 2.2 Papel do Mapeamento na Solução do Problema — [I]
+
+  2.2.1 Organização dos Blocos de Dados — [I]
+	  Definição de posições de armazenamento
+	  Regras de alocação dos blocos
+	  Redução do tempo de busca
+
+  2.2.2 Benefícios do Mapeamento Eficiente — [I]
+	  Melhoria do desempenho geral
+	  Redução da latência de acesso
+	  Uso racional do espaço da cache
+
+
+
+3. Hierarquia de Memória e o Papel do Mapeamento — [P]
+
+ 3.1 Estrutura da Hierarquia de Memória — [P]
+
+  3.1.1 Níveis da Hierarquia — [P]
+	  Registradores
+	  Memória cache (L1, L2, L3)
+	  Memória principal (RAM)
+	  Memória secundária
+
+  3.1.2 Características de Cada Nível — [P]
+	  Velocidade de acesso
+	  Capacidade de armazenamento
+	  Custo por bit
+	  Proximidade do processador
+
+
+ 3.2 O Mapeamento entre Níveis — [P]
+
+  3.2.1 Mapeamento entre Cache e Memória Principal — [P]
+	  Transferência de blocos
+	  Correspondência de endereços
+	  Papel na hierarquia de memória
+
+  3.2.2 Mapeamento entre Memória Principal e Memória Secundária — [I]
+	  Conceito de memória virtual
+	  Paginação (visão introdutória)
+	  Relação com o mapeamento de cache
+
+
+
+4. Localidade de Referência e Mapeamento — [P]
+
+ 4.1 Fundamentos da Localidade de Referência — [P]
+
+  4.1.1 Localidade Temporal — [P]
+	  Reutilização de dados recentes
+	  Impacto no desempenho da cache
+	  Relação com o mapeamento
+
+  4.1.2 Localidade Espacial — [P]
+	  Acesso a dados vizinhos
+	  Papel dos blocos de memória
+	  Impacto no tamanho do bloco
+
+
+ 4.2 Influência da Localidade nas Técnicas de Mapeamento — [P]
+
+  4.2.1 Localidade e Organização em Blocos — [P]
+	  Aproveitamento da localidade espacial
+	  Redução de acessos à memória principal
+
+  4.2.2 Localidade e Políticas de Substituição — [P]
+	  Relação com o algoritmo LRU
+	  Preservação de dados recentemente usados
+
+
+
+5. Evolução Histórica do Mapeamento na Memória — [V]
+
+ 5.1 Origens das Técnicas de Mapeamento — [V]
+
+  5.1.1 Primeiros Sistemas de Memória Cache — [V]
+	  Surgimento da memória cache
+	  Necessidade inicial de organização
+	  Técnicas rudimentares de mapeamento
+
+  5.1.2 Evolução dos Métodos de Mapeamento — [V]
+	  Do mapeamento direto ao associativo
+	  Surgimento do mapeamento por conjunto
+	  Aumento da complexidade dos sistemas
+
+
+ 5.2 Mapeamento em Arquiteturas Modernas — [V]
+
+  5.2.1 Caches Multinível — [V]
+	  Evolução para L1, L2 e L3
+	  Diferentes estratégias de mapeamento por nível
+
+  5.2.2 Tendências Atuais — [V]
+	  Mapeamento adaptativo
+	  Arquiteturas heterogêneas
+	  Novos desafios de desempenho
+
+
+
+6. Terminologia Fundamental do Mapeamento na Memória — [I]
+
+ 6.1 Termos Relacionados ao Endereçamento — [I]
+
+  6.1.1 Tag, Index e Offset — [I]
+	  Definição resumida de cada componente
+	  Papel na decomposição do endereço
+	  Relação entre endereço de memória, número do bloco e campos Tag/Index/Offset
+	  Identificação de qual parte do endereço é utilizada para localizar o bloco e qual parte identifica o dado 
+         dentro do bloco
+
+  6.1.2 Bit Valid e Bit Dirty — [I]
+	  Conceito de validade dos dados
+	  Conceito de modificação dos dados
+
+
+ 6.2 Termos Relacionados à Organização — [I]
+
+  6.2.1 Palavra, Linha, Bloco e Conjunto — [I]
+	  Definição resumida de cada unidade
+	  Relação hierárquica entre elas
+	  Diferença entre bloco de memória e linha de cache
+	  Relação entre bloco da memória principal e linha da cache
+	  Relação entre linha e conjunto
+	  Relação entre palavra, bloco e linha
+
+  6.2.2 Hit, Miss e Taxa de Acerto — [I]
+	  Conceito de acerto de cache
+	  Conceito de falha de cache
+	  Métricas de desempenho relacionadas
+
+
+
+
+PARTE 2 — ESTRUTURA E ORGANIZAÇÃO DA MEMÓRIA
+
+
+7. Organização da Memória Principal — [I]
+
+ 7.1 Estrutura da Memória Principal — [I]
+
+  7.1.1 Endereçamento da Memória Principal — [I]
+	  Espaço de endereçamento
+	  Endereços físicos
+	  Organização byte-endereçável
+	  Endereço de byte × endereço de palavra
+	  Unidade de endereçamento
+	  Relação entre endereço, byte e palavra
+
+  7.1.2 Divisão em Blocos — [P]
+	  Conceito de bloco de memória principal
+	  Relação com linhas de cache
+	  Tamanho do bloco e granularidade
+	  Número do bloco
+	  Identificação de um bloco a partir do endereço
+	  Relação entre endereço de memória e número do bloco
+	  Relação entre número do bloco e offset
+	  Divisão lógica da memória em blocos de tamanho fixo
+
+
+ 7.2 Papel da Memória Principal no Mapeamento — [I]
+
+  7.2.1 Memória Principal como Origem dos Dados — [I]
+	  Fonte dos blocos mapeados
+	  Relação com a memória cache
+
+  7.2.2 Organização Lógica dos Endereços — [I]
+	  Segmentação do endereço
+	  Correspondência com a cache
+
+
+
+8. Organização da Memória Cache — [P]
+
+ 8.1 Estrutura Interna da Cache — [P]
+
+  8.1.1 Componentes Estruturais — [P]
+	  Linhas de cache
+	  Campos de controle (Tag, Valid, Dirty)
+	  Área de dados
+	  Relação entre linha, tag e dados
+	  Organização dos bits de controle associados à linha
+	  Estrutura lógica de uma entrada de cache
+
+  8.1.2 Capacidade e Organização — [P]
+	  Tamanho total da cache
+	  Número de linhas
+	  Relação entre capacidade e associatividade
+	  Relação entre capacidade da cache, tamanho do bloco e número de linhas
+	  Relação entre número de linhas, número de conjuntos e associatividade
+	  Capacidade de dados × capacidade total da cache (visão introdutória)
+
+
+ 8.2 Níveis de Cache e Mapeamento — [I]
+
+  8.2.1 Cache L1 — [I]
+	  Características gerais
+	  Estratégia de mapeamento típica
+
+  8.2.2 Cache L2 e L3 — [I]
+	  Características gerais
+	  Diferenças de mapeamento em relação à L1
+
+
+
+9. Palavras (Words) na Organização da Memória — [P]
+
+ 9.1 Conceito de Palavra — [P]
+
+  9.1.1 Definição e Tamanho da Palavra — [P]
+	  Menor unidade manipulada pela CPU
+	  Tamanhos comuns (8, 16, 32, 64 bits)
+	  Relação com a arquitetura do processador
+	  Palavra × byte
+	  Palavra × endereço
+	  Palavra × bloco
+	  Palavra × linha de cache
+	  Tamanho da palavra em bytes
+
+  9.1.2 Palavra dentro da Linha de Cache — [P]
+	  Número de palavras por linha
+	  Papel do offset na seleção da palavra
+	  Número de palavras por bloco/linha
+	  Relação entre tamanho da palavra e tamanho do bloco
+	  Word offset
+	  Byte offset
+
+
+ 9.2 Impacto da Palavra no Mapeamento — [I]
+
+  9.2.1 Granularidade de Acesso — [I]
+	  Precisão no acesso aos dados
+	  Redução de dados irrelevantes carregados
+	  Acesso por byte
+	  Acesso por palavra
+	  Relação entre granularidade do acesso e offset
+
+  9.2.2 Relação com o Barramento de Dados — [V]
+	  Largura do barramento
+	  Transferência de palavras
+
+
+
+10. Linhas de Cache — [P]
+
+ 10.1 Estrutura das Linhas de Cache — [P]
+
+  10.1.1 Definição de Linha de Cache — [P]
+	  Menor unidade manipulada pela cache
+	  Tamanho típico (32, 64, 128 bytes)
+	  Composição da linha (dados e controle)
+	  Linha como posição de armazenamento de um bloco
+	  Relação entre linha e bloco
+	  Relação entre linha e conjunto
+	  Capacidade de dados armazenada por linha
+
+  10.1.2 Funcionamento das Linhas — [P]
+	  Verificação de disponibilidade
+	  Ocorrência de cache miss
+	  Substituição de linhas
+	  Localização da linha a partir do endereço
+	  Verificação de Tag + Valid
+	  Identificação do bloco armazenado na linha
+	  Relação entre linha selecionada e tipo de mapeamento
+
+
+ 10.2 Linhas e Localidade de Dados — [I]
+
+  10.2.1 Acesso a Dados Esparsos — [I]
+	  Vantagens do uso de linhas
+	  Limitações em acessos não previsíveis
+
+  10.2.2 Tecnologia SRAM nas Linhas de Cache — [V]
+	  Baixa latência de acesso
+	  Custo elevado por bit
+	  Impacto no tamanho total da cache
+
+
+
+11. Blocos de Memória — [P]
+
+ 11.1 Estrutura dos Blocos — [P]
+
+  11.1.1 Definição de Bloco de Memória — [P]
+	  Agrupamento de linhas
+	  Transferência contínua de dados
+	  Relação com a memória principal
+	  Número do bloco
+	  Endereço inicial do bloco
+	  Endereço final do bloco
+	  Relação entre bloco e endereço de memória
+	  Relação entre bloco e linha de cache
+	  Relação entre bloco e offset
+
+  11.1.2 Tamanho do Bloco — [P]
+	  Impacto no aproveitamento da localidade espacial
+	  Relação entre tamanho do bloco e taxa de miss
+	  Tamanho do bloco em bytes
+	  Número de palavras por bloco
+	  Relação entre tamanho do bloco e número de bits do offset
+	  Byte offset × word offset
+
+
+ 11.2 Vantagens e Desafios dos Blocos — [I]
+
+  11.2.1 Aproveitamento da Localidade Espacial — [P]
+	  Antecipação de acessos futuros
+	  Redução de acessos à memória principal
+
+  11.2.2 Desperdício de Espaço — [I]
+	  Fragmentação interna do bloco
+	  Uso parcial do bloco carregado
+
+
+
+12. Conjuntos (Sets) na Memória Cache — [P]
+
+ 12.1 Conceito de Conjunto — [P]
+
+  12.1.1 Definição de Conjunto — [P]
+	  Agrupamento de linhas de cache
+	  Relação com o grau de associatividade
+	  Papel no mapeamento associativo por conjunto
+	  Relação entre conjunto e linhas
+	  Número de linhas por conjunto = número de vias
+	  Relação entre conjunto e associatividade
+
+  12.1.2 Cálculo do Número de Conjuntos — [P]
+	  Relação entre linhas totais e vias
+	  Exemplo de cálculo prático
+
+
+ 12.2 Organização dos Conjuntos — [I]
+
+  12.2.1 Distribuição dos Blocos nos Conjuntos — [P]
+	  Mapeamento do bloco a um conjunto específico
+	  Escolha da linha dentro do conjunto
+	  Número do bloco → conjunto
+	  Relação entre número do bloco e índice do conjunto
+	  Blocos diferentes podendo pertencer ao mesmo conjunto
+	  Conflito entre blocos dentro de um conjunto
+
+
+  12.2.2 Relação entre Conjuntos e Desempenho — [I]
+	  Redução de conflitos de mapeamento
+	  Equilíbrio entre flexibilidade e complexidade
+
+
+
+
+PARTE 3 — ENDEREÇAMENTO E MECANISMOS DE MAPEAMENTO
+
+
+13. Estrutura do Endereço de Memória — [P]
+
+ 13.1 Decomposição do Endereço — [P]
+
+  13.1.1 Campos do Endereço — [P]
+	  Tag, Index e Offset
+	  Ordem dos bits no endereço
+	  Relação com a organização da cache
+	  Endereço como identificador de um byte/palavra
+	  Relação entre endereço e número do bloco
+	  Relação entre número do bloco e Tag/Index
+	  Offset como posição dentro do bloco
+
+  13.1.2 Determinação do Tamanho dos Campos — [P]
+	  Cálculo do número de bits do offset
+	  Cálculo do número de bits do index
+	  Cálculo do número de bits da tag
+	  Cálculo dos bits de byte offset
+	  Cálculo dos bits de word offset
+	  Relação entre tamanho da palavra e número de palavras por bloco
+	  Relação entre tamanho do bloco e número de bits de offset
+	  Relação entre número de conjuntos e bits de index
+	  Relação entre espaço de endereçamento e bits de tag
+
+
+ 13.2 Exemplos de Decomposição — [P]
+
+  13.2.1 Exemplo em Mapeamento Direto — [P]
+	  Endereço de memória de exemplo
+	  Separação dos campos Tag, Index e Offset
+	  Determinação do número do bloco
+	  Determinação do offset
+	  Determinação da linha
+	  Determinação da tag
+	  Reconstrução do endereço a partir dos campos
+
+  13.2.2 Exemplo em Mapeamento Associativo por Conjunto — [P]
+	  Ajuste do campo Index para os conjuntos
+	  Ausência de Index no mapeamento totalmente associativo
+	  Determinação do número do bloco
+	  Determinação do conjunto
+	  Determinação da tag
+	  Identificação da via dentro do conjunto após comparação
+
+
+
+14. Componente Tag — [P]
+
+ 14.1 Fundamentos da Tag — [P]
+
+  14.1.1 Definição e Finalidade — [P]
+	  Identificador exclusivo do bloco
+	  Bits de alta ordem do endereço
+	  Comparação com a tag armazenada
+	  Tag como identificador do bloco de memória
+	  Relação entre Tag e número do bloco
+	  Tag não identifica isoladamente um byte/palavra
+	  Relação entre Tag e Index
+
+  14.1.2 Funcionamento da Verificação da Tag — [P]
+	  Comparação na busca de dados
+	  Resultado de hit ou miss
+
+
+ 14.2 Papel da Tag no Mapeamento — [P]
+
+  14.2.1 Tag no Mapeamento Direto — [P]
+	  Tamanho da tag
+	  Relação com o número de linhas
+	  Relação entre Tag, número do bloco e linha
+	  Identificação completa de um bloco na cache
+
+  14.2.2 Tag no Mapeamento Associativo — [P]
+	  Comparação simultânea de múltiplas tags
+	  Impacto no hardware necessário
+	  Comparação da Tag com as entradas candidatas
+	  Relação entre comparação da Tag e ocorrência de hit
+
+
+
+15. Componente Index — [P]
+
+ 15.1 Fundamentos do Index — [P]
+
+  15.1.1 Definição e Finalidade — [P]
+	  Localização da linha ou conjunto
+	  Bits de ordem intermediária ou baixa
+	  Papel de "localizador rápido"
+	  Index como seletor de linha ou conjunto
+	  Relação entre Index e número de linhas/conjuntos
+	  Index não identifica sozinho o bloco
+
+  15.1.2 Cálculo do Index — [P]
+	  Relação com o número de linhas
+	  Relação com o número de conjuntos
+	  Cálculo do index a partir do número do bloco
+	  Relação entre operação módulo e bits do endereço quando o número de linhas/conjuntos é potência de 2
+
+
+ 15.2 Index nos Diferentes Tipos de Mapeamento — [P]
+
+  15.2.1 Index no Mapeamento Direto — [P]
+	  Seleção direta da linha
+
+  15.2.2 Index no Mapeamento Associativo por Conjunto — [P]
+	  Seleção do conjunto
+	  Ausência de index no mapeamento totalmente associativo
+
+
+
+16. Componente Offset — [P]
+
+ 16.1 Fundamentos do Offset — [P]
+
+  16.1.1 Definição e Finalidade — [P]
+	  Localização do dado dentro da linha ou bloco
+	  Bits de menor ordem
+	  Papel de "localizador interno"
+	  Offset de byte
+	  Offset de palavra
+	  Relação entre offset e endereço do bloco
+	  Offset não participa da identificação do bloco
+
+  16.1.2 Cálculo do Offset — [P]
+	  Relação com o tamanho do bloco
+	  Número de palavras por linha
+	  Número de bits para byte offset
+	  Número de bits para word offset
+	  Cálculo a partir do tamanho da palavra
+	  Cálculo a partir do número de palavras por bloco
+	  Relação entre tamanho do bloco e quantidade total de bits de offset
+
+
+ 16.2 Offset e Acesso a Dados — [I]
+
+  16.2.1 Offset em Estruturas de Dados Contínuas — [I]
+	  Acesso a arrays
+	  Eficiência em acessos sequenciais
+
+  16.2.2 Offset e a Palavra Selecionada — [I]
+	  Seleção da palavra exata
+	  Relação com a largura do barramento
+	  Seleção do byte dentro da palavra
+	  Seleção da palavra dentro da linha
+	  Combinação de byte offset + word offset
+
+
+
+17. Bit Valid — [P]
+
+ 17.1 Fundamentos do Bit Valid — [P]
+
+  17.1.1 Definição e Finalidade — [P]
+	  Indicador de validade dos dados
+	  Estado inicial do sistema
+	  Verificação antes do uso dos dados
+
+  17.1.2 Funcionamento do Bit Valid — [P]
+	  Ativação após carregamento do bloco
+	  Consequência do bit valid igual a zero
+
+
+ 17.2 Papel do Bit Valid no Sistema — [I]
+
+  17.2.1 Inicialização da Cache — [I]
+	  Estado inválido inicial
+	  Preparação para novos dados
+
+  17.2.2 Relação com Cache Miss — [I]
+	  Verificação antes da comparação de tag
+	  Prevenção de uso de dados inválidos
+
+
+
+18. Cálculo e Decomposição de Endereços — [P]
+
+ 18.1 Métodos de Cálculo — [P]
+
+  18.1.1 Cálculo do Número de Linhas — [P]
+	  Relação com o tamanho total da cache
+	  Relação com o tamanho da linha
+	  Relação entre capacidade, tamanho do bloco e número de linhas
+	  Distinção entre capacidade de dados e tamanho da entrada de cache
+
+  18.1.2 Cálculo do Número de Conjuntos — [P]
+	  Relação com o grau de associatividade
+	  Fórmula geral de cálculo
+	  Relação entre linhas, conjuntos e vias
+	  Casos de associatividade 1-way, 2-way, 4-way etc.
+
+
+ 18.2 Exercícios de Decomposição — [I]
+
+  18.2.1 Exemplo Numérico Completo — [I]
+	  Definição dos parâmetros do sistema
+	  Separação passo a passo do endereço
+
+  18.2.2 Erros Comuns na Decomposição — [I]
+	  Confusão entre index e offset
+	  Cálculo incorreto do tamanho da tag
+
+
+
+19. Bit Dirty e Coerência de Dados na Linha — [I]
+
+ 19.1 Fundamentos do Bit Dirty — [I]
+
+  19.1.1 Definição e Finalidade — [I]
+	  Indicador de modificação dos dados
+	  Diferença entre bit valid e bit dirty
+
+  19.1.2 Funcionamento do Bit Dirty — [I]
+	  Ativação após escrita na linha
+	  Relação com a escrita de volta na memória principal
+
+
+ 19.2 Coerência de Dados na Linha de Cache — [I]
+
+  19.2.1 Consistência entre Cache e Memória Principal — [I]
+	  Necessidade de sincronização
+	  Papel do bit dirty na sincronização
+
+  19.2.2 Impacto na Substituição de Linhas — [I]
+	  Escrita obrigatória antes da substituição
+	  Relação com as políticas de escrita
+
+
+
+
+PARTE 4 — MAPEAMENTO DE MEMÓRIA CACHE
+
+
+20. Visão Geral dos Tipos de Mapeamento — [I]
+
+ 20.1 Classificação dos Métodos de Mapeamento — [I]
+
+  20.1.1 Mapeamento Direto — [I]
+	  Conceito resumido
+	  Principal característica
+
+  20.1.2 Mapeamento Totalmente Associativo — [I]
+	  Conceito resumido
+	  Principal característica
+
+  20.1.3 Mapeamento Associativo por Conjunto — [I]
+	  Conceito resumido
+	  Principal característica
+
+
+ 20.2 Critérios de Comparação entre os Métodos — [I]
+
+  20.2.1 Critérios de Desempenho — [I]
+	  Taxa de acerto
+	  Latência de acesso
+
+  20.2.2 Critérios de Custo e Complexidade — [I]
+	  Hardware necessário
+	  Complexidade de implementação
+
+
+
+21. Mapeamento Direto — [P]
+
+ 21.1 Fundamentos do Mapeamento Direto — [P]
+
+  21.1.1 Conceito e Funcionamento — [P]
+	  Associação fixa entre bloco e linha
+	  Fórmula de cálculo da linha (endereço mod número de linhas)
+	  Exemplo numérico simples
+	  Relação entre número do bloco e linha
+	  Blocos diferentes compartilhando a mesma linha
+	  Consequência da associação fixa
+	  Relação entre index e linha
+
+  21.1.2 Características do Mapeamento Direto — [P]
+	  Simplicidade de implementação
+	  Velocidade de acesso
+	  Custo reduzido de hardware
+
+
+ 21.2 Vantagens e Limitações — [P]
+
+  21.2.1 Vantagens do Mapeamento Direto — [P]
+	  Simplicidade de projeto
+	  Velocidade no cálculo do index
+	  Custo reduzido
+
+  21.2.2 Limitações do Mapeamento Direto — [P]
+	  Conflitos de mapeamento
+	  Desempenho reduzido em acessos alternados
+	  Conflitos entre blocos com o mesmo index
+	  Efeito desses conflitos sobre a taxa de miss
+	  Relação entre padrão de acesso e conflitos
+
+
+
+22. Endereçamento no Mapeamento Direto — [P]
+
+ 22.1 Estrutura do Endereço — [P]
+
+  22.1.1 Divisão em Tag, Index e Offset — [P]
+	  Papel de cada campo no mapeamento direto
+	  Exemplo prático de decomposição
+
+  22.1.2 Verificação da Linha — [P]
+	  Comparação da tag armazenada
+	  Verificação do bit valid
+
+
+ 22.2 Exemplo Numérico Completo — [P]
+
+  22.2.1 Definição dos Parâmetros — [P]
+	  Tamanho da cache
+	  Tamanho do bloco
+
+  22.2.2 Aplicação do Cálculo — [P]
+	  Determinação da linha de destino
+	  Determinação da tag correspondente
+
+
+
+23. Mapeamento Totalmente Associativo — [P]
+
+ 23.1 Fundamentos do Mapeamento Associativo — [P]
+
+  23.1.1 Conceito e Funcionamento — [P]
+	  Ausência de posição fixa para o bloco
+	  Armazenamento em qualquer linha disponível
+	  Necessidade de comparação de todas as tags
+	  Relação entre número do bloco e qualquer linha disponível
+	  Ausência de posição determinada pelo index
+	  Necessidade de pesquisar as linhas candidatas
+
+  23.1.2 Características do Mapeamento Associativo — [P]
+	  Flexibilidade máxima de alocação
+	  Complexidade de hardware
+	  Comparação paralela das Tags
+	  Custo associado à comparação simultânea
+	  Necessidade de política de substituição quando todas as linhas estão ocupadas
+
+
+ 23.2 Vantagens e Limitações — [P]
+
+  23.2.1 Vantagens do Mapeamento Associativo — [P]
+	  Eliminação de conflitos de mapeamento
+	  Melhor aproveitamento do espaço da cache
+
+  23.2.2 Limitações do Mapeamento Associativo — [P]
+	  Alto custo de hardware
+	  Maior latência na busca por comparadores
+
+
+
+24. Endereçamento no Mapeamento Totalmente Associativo — [P]
+
+ 24.1 Estrutura do Endereço — [P]
+
+  24.1.1 Divisão em Tag e Offset — [P]
+	  Ausência do campo Index
+	  Papel exclusivo da Tag na identificação
+
+  24.1.2 Comparação Simultânea de Tags — [P]
+	  Uso de comparadores paralelos
+	  Impacto no hardware necessário
+
+
+ 24.2 Exemplo Numérico Completo — [I]
+
+  24.2.1 Definição dos Parâmetros — [I]
+	  Tamanho da cache
+	  Tamanho do bloco
+
+  24.2.2 Aplicação do Cálculo — [I]
+	  Determinação da tag
+	  Busca simultânea em todas as linhas
+
+
+
+25. Mapeamento Associativo por Conjunto — [P]
+
+ 25.1 Fundamentos do Mapeamento Associativo por Conjunto — [P]
+
+  25.1.1 Conceito e Funcionamento — [P]
+	  Combinação de mapeamento direto e associativo
+	  Divisão da cache em conjuntos
+	  Armazenamento em qualquer linha do conjunto
+	  Número do bloco → conjunto
+	  Index → conjunto
+	  Tag → identificação do bloco dentro do conjunto
+	  Linha/via → posição possível dentro do conjunto
+
+  25.1.2 Grau de Associatividade — [P]
+	  Definição de vias (N-way)
+	  Exemplos de associatividade (2, 4, 8 vias)
+	  1-way = mapeamento direto
+	  N-way = N linhas por conjunto
+	  Fully associative como caso extremo
+	  Relação entre associatividade e número de conjuntos
+
+
+ 25.2 Vantagens e Limitações — [P]
+
+  25.2.1 Vantagens do Mapeamento Associativo por Conjunto — [P]
+	  Redução significativa de conflitos
+	  Equilíbrio entre desempenho e custo
+
+  25.2.2 Limitações do Mapeamento Associativo por Conjunto — [P]
+	  Custo moderado de hardware
+	  Necessidade de política de substituição
+
+
+
+26. Endereçamento no Mapeamento Associativo por Conjunto — [P]
+
+ 26.1 Estrutura do Endereço — [P]
+
+  26.1.1 Divisão em Tag, Index e Offset — [P]
+	  Papel do Index na seleção do conjunto
+	  Papel da Tag na seleção da linha dentro do conjunto
+
+  26.1.2 Comparação dentro do Conjunto — [P]
+	  Comparação simultânea das tags do conjunto
+	  Determinação de hit ou miss
+
+
+ 26.2 Exemplo Numérico Completo — [P]
+
+  26.2.1 Definição dos Parâmetros — [P]
+	  Número de linhas e vias
+	  Cálculo do número de conjuntos
+
+  26.2.2 Aplicação do Cálculo — [P]
+	  Determinação do conjunto de destino
+	  Determinação da tag correspondente
+
+
+
+27. Graus de Associatividade — [I]
+
+ 27.1 Espectro da Associatividade — [I]
+
+  27.1.1 De Direto a Totalmente Associativo — [I]
+	  Mapeamento direto como caso de 1 via
+	  Mapeamento totalmente associativo como caso extremo
+	  Associatividade como espectro contínuo
+	  1-way, 2-way, 4-way, 8-way...
+	  Relação entre número de vias e número de conjuntos
+
+  27.1.2 Associatividade Intermediária — [I]
+	  2 vias, 4 vias, 8 vias, 16 vias
+	  Escolha do grau adequado ao sistema
+
+
+ 27.2 Impacto da Associatividade — [I]
+
+  27.2.1 Impacto no Desempenho — [I]
+	  Redução da taxa de miss por conflito
+	  Retornos decrescentes com o aumento das vias
+	  Redução de miss de conflito
+	  Aumento do número de comparações
+	  Trade-off entre flexibilidade de posicionamento e custo de busca
+
+  27.2.2 Impacto no Custo — [I]
+	  Aumento do número de comparadores
+	  Aumento do consumo de energia
+
+
+
+28. Comparação entre os Tipos de Mapeamento — [I]
+
+ 28.1 Comparação de Desempenho — [I]
+
+  28.1.1 Taxa de Acerto entre os Métodos — [I]
+	  Mapeamento direto
+	  Mapeamento totalmente associativo
+	  Mapeamento associativo por conjunto
+	  Relação entre taxa de acerto e conflitos
+	  Influência da associatividade
+	  Por que o mapeamento totalmente associativo tende a reduzir conflitos
+	  Por que o mapeamento direto pode apresentar mais conflitos
+
+  28.1.2 Latência entre os Métodos — [I]
+	  Velocidade de acesso
+	  Complexidade de comparação
+
+
+ 28.2 Comparação de Custo e Aplicabilidade — [I]
+
+  28.2.1 Custo de Hardware — [I]
+	  Complexidade dos comparadores
+	  Necessidade de circuitos adicionais
+
+  28.2.2 Critérios de Escolha do Mapeamento — [I]
+	  Padrão de acesso do sistema
+	  Orçamento e restrições de projeto
+	  Capacidade da cache
+	  Tamanho do bloco
+	  Grau de associatividade
+	  Padrão de acesso
+	  Custo de hardware
+	  Latência desejada
+
+
+
+
+PARTE 5 — DESEMPENHO, CONFLITOS E MECANISMOS DE CONTROLE
+
+
+29. Cache Hit e Cache Miss — [P]
+
+ 29.1 Conceito de Hit — [P]
+
+  29.1.1 Definição de Cache Hit — [P]
+	  Dado encontrado na cache
+	  Verificação de tag e bit valid
+
+  29.1.2 Impacto do Hit no Desempenho — [P]
+	  Redução da latência de acesso
+	  Aumento da eficiência do sistema
+
+
+ 29.2 Conceito de Miss — [P]
+
+  29.2.1 Definição de Cache Miss — [P]
+	  Dado não encontrado na cache
+	  Necessidade de busca em nível superior
+
+  29.2.2 Consequências do Miss — [P]
+	  Penalidade de tempo
+	  Carregamento do bloco na cache
+
+
+
+30. Tipos de Miss (Compulsório, Capacidade, Conflito) — [P]
+
+ 30.1 Classificação dos Misses — [P]
+
+  30.1.1 Miss Compulsório — [P]
+	  Primeiro acesso ao bloco
+	  Também chamado de "cold miss"
+
+  30.1.2 Miss de Capacidade — [P]
+	  Cache incapaz de armazenar todos os blocos necessários
+	  Relação com o tamanho da cache
+
+
+ 30.2 Miss de Conflito e Estratégias de Redução — [P]
+
+  30.2.1 Miss de Conflito — [P]
+	  Múltiplos blocos disputando a mesma linha ou conjunto
+	  Relação direta com o tipo de mapeamento
+
+  30.2.2 Estratégias de Redução dos Misses — [I]
+	  Aumento da associatividade
+	  Aumento do tamanho da cache
+	  Ajuste do tamanho do bloco
+
+
+
+31. Conflitos de Mapeamento — [P]
+
+ 31.1 Origem dos Conflitos — [P]
+
+  31.1.1 Conflitos no Mapeamento Direto — [P]
+	  Múltiplos blocos mapeados para a mesma linha
+	  Substituições constantes
+	  Blocos com diferentes números de bloco e mesmo índice
+	  Relação matemática entre esses blocos
+	  Exemplo de blocos alternados causando substituições repetitivas
+
+  31.1.2 Conflitos no Mapeamento Associativo por Conjunto — [P]
+	  Conflitos limitados ao conjunto
+	  Influência do grau de associatividade
+	  Conflito quando o número de blocos concorrentes supera o número de vias
+	  Relação entre número de vias e capacidade de absorver conflitos
+
+
+ 31.2 Consequências dos Conflitos — [I]
+
+  31.2.1 Impacto no Desempenho — [I]
+	  Aumento da taxa de miss
+	  Redução da eficiência do sistema
+
+  31.2.2 Situações Críticas de Conflito — [I]
+	  Acessos alternados entre blocos concorrentes (thrashing)
+	  Padrões de acesso desfavoráveis
+
+
+
+32. Políticas de Substituição de Blocos — [P]
+
+ 32.1 Necessidade das Políticas de Substituição — [P]
+
+  32.1.1 Quando a Substituição Ocorre — [P]
+	  Conjunto ou linha completamente ocupados
+	  Necessidade de liberar espaço
+	  Substituição em mapeamento totalmente associativo
+	  Substituição em mapeamento associativo por conjunto
+	  Ausência de escolha de substituição no mapeamento direto
+
+  32.1.2 Objetivo das Políticas de Substituição — [P]
+	  Minimizar a taxa de miss futura
+	  Preservar dados relevantes
+
+
+ 32.2 Critérios de Escolha da Política — [I]
+
+  32.2.1 Complexidade de Implementação — [I]
+	  Custo do hardware necessário
+	  Overhead de controle
+
+  32.2.2 Eficácia da Política — [I]
+	  Aproximação do comportamento ideal
+	  Adequação ao padrão de acesso
+
+
+
+33. Algoritmo LRU (Least Recently Used) — [P]
+
+ 33.1 Fundamentos do LRU — [P]
+
+  33.1.1 Conceito do LRU — [P]
+	  Substituição do bloco menos recentemente utilizado
+	  Base na localidade temporal
+
+  33.1.2 Funcionamento do LRU — [P]
+	  Rastreamento da ordem de uso
+	  Atualização a cada acesso
+
+
+ 33.2 Implementação e Limitações — [I]
+
+  33.2.1 Implementação do LRU — [I]
+	  Contadores de uso
+	  Estruturas de pilha ou lista
+
+  33.2.2 Limitações do LRU — [I]
+	  Custo de hardware em alta associatividade
+	  Aproximações do LRU (Pseudo-LRU)
+
+
+
+34. Outras Políticas de Substituição (FIFO, Random, LFU) — [I]
+
+ 34.1 Política FIFO — [I]
+
+  34.1.1 Conceito do FIFO — [I]
+	  Substituição do bloco mais antigo
+	  Ordem de chegada dos blocos
+
+  34.1.2 Vantagens e Limitações do FIFO — [I]
+	  Simplicidade de implementação
+	  Ignora a frequência de uso
+
+
+ 34.2 Políticas Random e LFU — [I]
+
+  34.2.1 Política Random — [I]
+	  Substituição aleatória de blocos
+	  Simplicidade e baixo custo
+
+  34.2.2 Política LFU (Least Frequently Used) — [V]
+	  Substituição do bloco menos frequentemente usado
+	  Complexidade de rastreamento
+
+
+
+35. Taxa de Acerto e Taxa de Falha (Hit Rate / Miss Rate) — [P]
+
+ 35.1 Definição das Métricas — [P]
+
+  35.1.1 Taxa de Acerto (Hit Rate) — [P]
+	  Proporção de acessos bem-sucedidos
+	  Fórmula de cálculo
+
+  35.1.2 Taxa de Falha (Miss Rate) — [P]
+	  Proporção de acessos malsucedidos
+	  Relação complementar com o hit rate
+
+
+ 35.2 Fatores que Influenciam as Taxas — [I]
+
+  35.2.1 Influência do Tipo de Mapeamento — [I]
+	  Impacto da associatividade
+	  Impacto do tamanho da cache
+	  Miss compulsório × mapeamento
+	  Miss de capacidade × mapeamento
+	  Miss de conflito × mapeamento
+	  Relação entre associatividade e miss de conflito
+
+  35.2.2 Tempo Médio de Acesso à Memória (AMAT) — [P]
+	  Fórmula do AMAT
+	  Relação entre hit time, miss rate e miss penalty
+
+
+
+
+PARTE 6 — TÉCNICAS AVANÇADAS E OTIMIZAÇÕES DE MAPEAMENTO
+
+
+36. Políticas de Escrita (Write-Through e Write-Back) — [P]
+
+ 36.1 Write-Through — [P]
+
+  36.1.1 Conceito do Write-Through — [P]
+	  Escrita simultânea na cache e na memória principal
+	  Garantia de consistência imediata
+
+  36.1.2 Vantagens e Limitações do Write-Through — [P]
+	  Simplicidade e consistência
+	  Maior tráfego de escrita
+
+
+ 36.2 Write-Back — [P]
+
+  36.2.1 Conceito do Write-Back — [P]
+	  Escrita apenas na cache
+	  Atualização posterior da memória principal
+
+  36.2.2 Papel do Bit Dirty no Write-Back — [P]
+	  Marcação de linhas modificadas
+	  Escrita na substituição da linha
+
+
+
+37. Write Allocate e No-Write Allocate — [I]
+
+ 37.1 Write Allocate — [I]
+
+  37.1.1 Conceito do Write Allocate — [I]
+	  Carregamento do bloco em caso de miss de escrita
+	  Combinação comum com write-back
+
+  37.1.2 Vantagens do Write Allocate — [I]
+	  Aproveitamento de escritas futuras no mesmo bloco
+
+
+ 37.2 No-Write Allocate — [I]
+
+  37.2.1 Conceito do No-Write Allocate — [I]
+	  Escrita direta na memória principal sem carregar o bloco
+	  Combinação comum com write-through
+
+  37.2.2 Vantagens do No-Write Allocate — [I]
+	  Redução de carregamentos desnecessários
+
+
+
+38. Mapeamento em Caches Multinível — [I]
+
+ 38.1 Organização dos Níveis de Cache — [I]
+
+  38.1.1 Cache L1, L2 e L3 — [I]
+	  Diferenças de tamanho e velocidade
+	  Proximidade em relação ao processador
+
+  38.1.2 Inclusão e Exclusão entre Níveis — [V]
+	  Cache inclusiva
+	  Cache exclusiva
+
+
+ 38.2 Estratégias de Mapeamento por Nível — [I]
+
+  38.2.1 Mapeamento Típico em L1 — [I]
+	  Associatividade reduzida para maior velocidade
+
+  38.2.2 Mapeamento Típico em L2 e L3 — [I]
+	  Maior associatividade
+	  Maior capacidade e maior latência
+
+
+
+39. Mapeamento e Localidade Espacial e Temporal — [P]
+
+ 39.1 Aproveitamento da Localidade Espacial — [P]
+
+  39.1.1 Relação com o Tamanho do Bloco — [P]
+	  Blocos maiores e localidade espacial
+	  Limites do aproveitamento
+
+  39.1.2 Impacto em Estruturas de Dados — [I]
+	  Arrays e matrizes
+	  Percursos sequenciais de memória
+
+
+ 39.2 Aproveitamento da Localidade Temporal — [P]
+
+  39.2.1 Relação com as Políticas de Substituição — [P]
+	  Preservação de dados reutilizados
+	  Papel do algoritmo LRU
+
+  39.2.2 Impacto em Laços e Repetições — [I]
+	  Reuso de variáveis em loops
+	  Benefício para o desempenho da cache
+
+
+
+40. Prefetching e Mapeamento — [I]
+
+ 40.1 Conceito de Prefetching — [I]
+
+  40.1.1 Definição e Objetivo — [I]
+	  Antecipação de blocos futuros
+	  Redução de misses compulsórios
+
+  40.1.2 Tipos de Prefetching — [V]
+	  Prefetching por hardware
+	  Prefetching por software
+
+
+ 40.2 Relação entre Prefetching e Mapeamento — [I]
+
+  40.2.1 Impacto no Mapeamento de Blocos — [I]
+	  Necessidade de posições disponíveis
+	  Interação com políticas de substituição
+
+  40.2.2 Riscos do Prefetching — [V]
+	  Poluição da cache
+	  Substituições desnecessárias
+
+
+
+41. Impacto do Tamanho do Bloco no Mapeamento — [I]
+
+ 41.1 Blocos Maiores — [I]
+
+  41.1.1 Vantagens de Blocos Maiores — [I]
+	  Melhor aproveitamento da localidade espacial
+	  Redução de misses compulsórios
+	  Maior número de palavras por bloco
+	  Maior quantidade de bits de offset
+	  Relação com localidade espacial
+
+  41.1.2 Desvantagens de Blocos Maiores — [I]
+	  Aumento da penalidade de miss
+	  Maior desperdício de espaço
+	  Menor número de linhas para uma capacidade fixa
+	  Possível aumento de conflitos
+	  Aumento da quantidade de dados transferidos em cada miss
+
+
+ 41.2 Blocos Menores — [I]
+
+  41.2.1 Vantagens de Blocos Menores — [I]
+	  Menor desperdício de espaço
+	  Menor penalidade por miss
+
+  41.2.2 Desvantagens de Blocos Menores — [I]
+	  Menor aproveitamento da localidade espacial
+	  Maior número de misses compulsórios
+
+
+
+42. Impacto da Associatividade no Desempenho — [I]
+
+ 42.1 Aumento da Associatividade — [I]
+
+  42.1.1 Benefícios do Aumento — [I]
+	  Redução dos conflitos de mapeamento
+	  Melhoria da taxa de acerto
+	  Maior quantidade de blocos que podem coexistir no mesmo conjunto
+	  Redução de conflitos
+	  Maior flexibilidade de posicionamento
+
+  42.1.2 Custos do Aumento — [I]
+	  Maior complexidade de hardware
+	  Maior tempo de comparação
+	  Mais comparações de Tag por acesso
+	  Maior complexidade do hardware
+	  Maior consumo de energia
+
+
+ 42.2 Equilíbrio entre Associatividade e Desempenho — [I]
+
+  42.2.1 Lei dos Retornos Decrescentes — [I]
+	  Ganhos marginais decrescentes
+	  Ponto de equilíbrio prático
+
+  42.2.2 Escolha da Associatividade Ideal — [V]
+	  Perfil da aplicação
+	  Restrições de projeto
+
+
+
+
+PARTE 7 — PROJETO, IMPLEMENTAÇÃO E INTEGRAÇÃO COM O SISTEMA
+
+
+43. Projeto de Sistemas de Mapeamento de Cache — [I]
+
+ 43.1 Etapas do Projeto — [I]
+
+  43.1.1 Definição dos Parâmetros da Cache — [I]
+	  Tamanho da cache
+	  Tamanho do bloco
+	  Grau de associatividade
+
+  43.1.2 Escolha da Política de Substituição e Escrita — [I]
+	  Critérios de seleção
+	  Adequação ao uso do sistema
+
+
+ 43.2 Ferramentas e Métodos de Avaliação — [V]
+
+  43.2.1 Simulação de Cache — [V]
+	  Avaliação de diferentes configurações
+	  Análise de taxas de hit e miss
+
+  43.2.2 Métricas de Avaliação — [I]
+	  AMAT
+	  Taxa de acerto e taxa de falha
+
+
+
+44. Trade-offs de Projeto no Mapeamento — [I]
+
+ 44.1 Simplicidade × Flexibilidade — [I]
+
+  44.1.1 Trade-off entre Mapeamento Direto e Associativo — [I]
+	  Vantagens de cada abordagem
+	  Situações de uso recomendadas
+
+  44.1.2 Papel do Mapeamento Associativo por Conjunto — [I]
+	  Solução intermediária
+	  Equilíbrio entre custo e desempenho
+
+
+ 44.2 Custo × Desempenho — [I]
+
+  44.2.1 Impacto no Consumo de Energia — [V]
+	  Relação entre associatividade e energia
+	  Restrições em dispositivos móveis
+
+  44.2.2 Impacto no Custo de Fabricação — [V]
+	  Área de silício ocupada
+	  Complexidade dos circuitos comparadores
+
+
+
+45. Mapeamento em Arquiteturas Multiprocessadas — [V]
+
+ 45.1 Cache em Sistemas Multiprocessados — [V]
+
+  45.1.1 Cache Privada por Núcleo — [V]
+	  Mapeamento independente por núcleo
+	  Necessidade de coerência entre caches
+
+  45.1.2 Cache Compartilhada — [V]
+	  Mapeamento compartilhado entre núcleos
+	  Desafios de contenção de acesso
+
+
+ 45.2 Desafios do Mapeamento em Multiprocessadores — [V]
+
+  45.2.1 Contenção de Acesso — [V]
+	  Disputa por conjuntos compartilhados
+
+  45.2.2 Impacto no Desempenho Paralelo — [V]
+	  Escalabilidade do sistema
+	  Necessidade de políticas adaptativas
+
+
+
+46. Coerência de Cache e Mapeamento — [V]
+
+ 46.1 Fundamentos da Coerência de Cache — [V]
+
+  46.1.1 Necessidade da Coerência — [V]
+	  Múltiplas cópias de um mesmo bloco
+	  Consistência entre caches
+
+  46.1.2 Relação com o Mapeamento — [V]
+	  Influência da organização das linhas
+	  Rastreamento de blocos compartilhados
+
+
+ 46.2 Protocolos de Coerência (Visão Introdutória) — [V]
+
+  46.2.1 Protocolo MESI — [V]
+	  Estados básicos do protocolo
+	  Relação com o bit dirty
+
+  46.2.2 Papel do Mapeamento nos Protocolos — [V]
+	  Localização eficiente dos blocos
+	  Suporte à verificação de estados
+
+
+
+47. Mapeamento na Memória Virtual (Visão Introdutória) — [V]
+
+ 47.1 Conceitos Introdutórios de Memória Virtual — [V]
+
+  47.1.1 Espaço de Endereçamento Virtual — [V]
+	  Diferença entre endereço físico e virtual
+	  Papel da memória virtual no sistema
+
+  47.1.2 Paginação e Mapeamento — [V]
+	  Conceito de página
+	  Tradução de endereços
+
+
+ 47.2 Relação entre Mapeamento de Cache e Memória Virtual — [V]
+
+  47.2.1 Cache Indexada Fisicamente vs. Virtualmente — [V]
+	  Diferenças conceituais
+	  Impacto no desempenho
+
+  47.2.2 TLB e sua Relação com o Mapeamento — [V]
+	  Papel da Translation Lookaside Buffer
+	  Aceleração da tradução de endereços
+
+
+
+
+PARTE 8 — REVISÃO GERAL, COMPARAÇÕES E CONCLUSÃO
+
+
+48. Comparação Geral entre Técnicas de Mapeamento — [I]
+
+ 48.1 Síntese Comparativa — [I]
+
+  48.1.1 Mapeamento Direto × Associativo × Associativo por Conjunto — [I]
+	  Desempenho
+	  Custo
+	  Complexidade
+
+  48.1.2 Critérios para Escolha do Mapeamento Ideal — [I]
+	  Padrão de acesso do sistema
+	  Orçamento e restrições de hardware
+
+
+ 48.2 Aplicações Práticas — [V]
+
+  48.2.1 Uso em Processadores Modernos — [V]
+	  Combinações típicas por nível de cache
+
+  48.2.2 Uso em Sistemas Embarcados — [V]
+	  Restrições de custo e energia
+	  Escolhas simplificadas de mapeamento
+
+
+
+49. Resumo Geral do Mapeamento na Memória — [I]
+
+ 49.1 Revisão dos Conceitos Fundamentais — [I]
+
+  49.1.1 Fundamentos Essenciais — [I]
+	  Definição do mapeamento
+	  Objetivos e importância
+
+  49.1.2 Componentes de Endereçamento — [I]
+	  Tag, Index e Offset
+	  Bit Valid e Bit Dirty
+
+
+ 49.2 Revisão dos Tipos de Mapeamento — [I]
+
+  49.2.1 Organizações Estudadas — [I]
+	  Mapeamento direto
+	  Mapeamento totalmente associativo
+	  Mapeamento associativo por conjunto
+
+  49.2.2 Revisão de Desempenho e Controle — [I]
+	  Hit, miss e taxas de acerto/falha
+	  Políticas de substituição e escrita
+
+
+
+50. Conclusão do Estudo do Mapeamento na Memória — [V]
+
+ 50.1 Síntese Final — [V]
+
+  50.1.1 O Papel do Mapeamento na Memória — [V]
+	  Elemento central da organização da cache
+	  Base para o desempenho do sistema
+
+  50.1.2 Importância para Arquitetura e Organização de Computadores — [V]
+	  Compreensão da hierarquia de memória
+	  Base para estudos avançados
+
+
+ 50.2 Competências Desenvolvidas — [V]
+
+  50.2.1 Conhecimentos Adquiridos — [V]
+	  Estrutura do mapeamento
+	  Componentes de endereçamento
+	  Tipos de mapeamento
+	  Desempenho e controle
+
+  50.2.2 Preparação para Estudos Posteriores — [V]
+	  Memória Cache (aprofundamento)
+	  Memória Virtual
+	  Hierarquia de Memória
+	  Coerência de Cache
+	  Processadores Modernos
+
+
