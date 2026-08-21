@@ -1,0 +1,1287 @@
+                                      TAXONOMIA DE FLYNN
+
+
+A classificação abaixo indica a profundidade recomendada para cada grande tópico da lista.
+
+[P] Profundidade — estudar mecanismos, estruturas, funcionamento interno e relações entre componentes.
+[I] Intermediário — compreender bem o funcionamento e as relações principais, sem precisar dominar todos os
+   detalhes de implementação.
+[V] Visão geral — saber o que é, para que serve e como se relaciona com a Taxonomia de Flynn.
+
+
+
+PARTE 1 — FUNDAMENTOS DA TAXONOMIA DE FLYNN
+
+
+1. Introdução à Taxonomia de Flynn — [I]
+
+ 1.1 Conceitos Fundamentais — [I]
+
+  1.1.1 Conceito de Taxonomia de Flynn — [I]
+	  Definição da Taxonomia de Flynn
+	  Objetivo da classificação
+	  Autor e origem do modelo (Michael J. Flynn, 1966)
+	  Papel na Arquitetura de Computadores
+	  Classificação de arquiteturas por fluxo de instruções e dados
+
+  1.1.2 Objetivos da Taxonomia — [I]
+	  Classificar arquiteturas de computadores
+	  Diferenciar níveis de paralelismo
+	  Fornecer base conceitual para comparação de arquiteturas
+	  Orientar o projeto de sistemas paralelos
+
+  1.1.3 Importância da Taxonomia de Flynn — [I]
+	  Base para entendimento de arquiteturas paralelas
+	  Referência histórica na Arquitetura de Computadores
+	  Ponto de partida para classificações modernas
+	  Relação com o desenvolvimento do processamento paralelo
+
+
+ 1.2 A Taxonomia de Flynn na Arquitetura de Computadores — [I]
+
+  1.2.1 Papel da Taxonomia no Estudo de Arquiteturas — [I]
+	  Classificação estrutural das máquinas
+	  Relação com organização e microarquitetura
+	  Base conceitual para paralelismo
+	  Ponto de referência para novas arquiteturas
+
+  1.2.2 Taxonomia de Flynn × Paralelismo × Organização de Computadores — [I]
+	  O que pertence à classificação de Flynn
+	  O que pertence ao paralelismo em geral
+	  O que pertence à organização de computadores
+	  Relação entre os conceitos
+
+  1.2.3 Taxonomia de Flynn como Modelo Classificatório — [I]
+	  Critérios de classificação
+	  Abrangência do modelo
+	  Simplicidade conceitual
+	  Aplicabilidade histórica e moderna
+
+
+
+2. Contexto Histórico e Motivação — [V]
+
+ 2.1 Origem da Classificação — [V]
+
+  2.1.1 Contexto Histórico do Surgimento — [V]
+	  Década de 1960
+	  Necessidade de classificar arquiteturas emergentes
+	  Michael J. Flynn e sua proposta original
+	  Publicação do modelo em 1966
+
+  2.1.2 Motivações para a Criação da Taxonomia — [V]
+	  Diversidade crescente de arquiteturas
+	  Necessidade de padronização conceitual
+	  Comparação entre máquinas sequenciais e paralelas
+
+
+ 2.2 Evolução do Uso da Taxonomia — [V]
+
+  2.2.1 Adoção Acadêmica e Industrial — [V]
+	  Uso em cursos de Arquitetura de Computadores
+	  Referência em publicações científicas
+	  Aplicação na indústria de processadores
+
+  2.2.2 Permanência do Modelo ao Longo do Tempo — [V]
+	  Simplicidade que garantiu longevidade
+	  Adaptação a novas arquiteturas
+	  Uso contínuo até a atualidade
+
+
+ 2.3 Importância Histórica da Taxonomia — [V]
+	Impactos no Estudo da Computação Paralela
+	Base para outras classificações
+	Influência no projeto de arquiteturas
+	Papel didático consolidado
+
+
+
+3. Fundamentos de Fluxo de Instruções e Fluxo de Dados — [P]
+
+ 3.1 Conceito de Fluxo — [P]
+
+  3.1.1 Fluxo de Instruções (Instruction Stream) — [P]
+	  Definição de fluxo de instruções
+	  Sequência de instruções executadas
+	  Relação com a Unidade de Controle
+	  Único ou múltiplo fluxo
+	  Fluxo lógico de instruções
+	  Quantidade de instruções executadas por ciclo
+	  Fluxo de instruções versus unidades físicas de execução
+	  O número de unidades de execução não determina isoladamente a classe de Flynn
+
+  3.1.2 Fluxo de Dados (Data Stream) — [P]
+	  Definição de fluxo de dados
+	  Sequência de dados manipulados
+	  Relação com o Datapath
+	  Único ou múltiplo fluxo
+	  Fluxo lógico de dados
+	  Quantidade de operandos processados simultaneamente
+	  Fluxo de dados versus unidades físicas de processamento
+	  Quantidade de unidades de processamento não determina isoladamente a classe de Flynn
+
+
+ 3.2 Combinação dos Fluxos — [P]
+
+  3.2.1 Relação entre Fluxo de Instruções e Fluxo de Dados — [P]
+	  Independência dos dois fluxos
+	  Combinações possíveis
+	  Base para as quatro classes de Flynn
+
+  3.2.2 Representação Conceitual dos Fluxos — [P]
+	  Diagrama de fluxo de instruções e dados
+	  Unidades de processamento envolvidas
+	  Relação com múltiplos processadores
+
+
+ 3.3 Papel dos Fluxos na Definição das Classes — [I]
+	Critério único e suficiente
+	Base lógica da taxonomia
+	Simplicidade do critério
+
+
+
+4. Conceitos Fundamentais de Paralelismo Relacionados à Taxonomia — [I]
+
+ 4.1 Paralelismo em Arquitetura de Computadores — [I]
+
+  4.1.1 Conceito de Paralelismo — [I]
+	  Execução simultânea de operações
+	  Paralelismo de instrução, dados e tarefas
+	  Relação com desempenho
+
+  4.1.2 Tipos de Paralelismo Relacionados a Flynn — [I]
+	  Paralelismo de dados
+	  Paralelismo de instruções
+	  Paralelismo de tarefas (nível de processo)
+
+
+ 4.2 Granularidade do Paralelismo — [I]
+
+  4.2.1 Paralelismo de Grão Fino — [I]
+	  Nível de instrução
+	  Execução simultânea de operações elementares
+
+  4.2.2 Paralelismo de Grão Grosso — [I]
+	  Nível de processo ou tarefa
+	  Execução simultânea de programas completos
+
+
+ 4.3 Paralelismo em SISD, SIMD, MISD e MIMD — [I]
+	Ausência de paralelismo (SISD)
+	Paralelismo de dados (SIMD)
+	Paralelismo de instrução (MISD)
+	Paralelismo geral (MIMD)
+
+
+
+PARTE 2 — ESTRUTURA E ORGANIZAÇÃO DA TAXONOMIA DE FLYNN
+
+
+5. Critérios de Classificação da Taxonomia — [P]
+
+ 5.1 Definição dos Critérios — [P]
+
+  5.1.1 Número de Fluxos de Instruções — [P]
+	  Fluxo único de instruções
+	  Múltiplos fluxos de instruções
+	  Relação com a Unidade de Controle
+
+  5.1.2 Número de Fluxos de Dados — [P]
+	  Fluxo único de dados
+	  Múltiplos fluxos de dados
+	  Relação com o Datapath e memória
+
+  5.1.3 Nível de Abstração da Classificação — [P]
+	  Classificação baseada em fluxos lógicos
+	  Distinção entre modelo arquitetural e implementação física
+	  Independência entre número de unidades físicas e classe de Flynn
+	  Abstração utilizada para classificar arquiteturas
+
+
+ 5.2 Combinação dos Critérios — [P]
+
+  5.2.1 Matriz de Classificação — [P]
+	  Combinação instrução única / dado único
+	  Combinação instrução única / dado múltiplo
+	  Combinação instrução múltipla / dado único
+	  Combinação instrução múltipla / dado múltiplo
+
+  5.2.2 Formação das Quatro Classes — [P]
+	  SISD
+	  SIMD
+	  MISD
+	  MIMD
+
+
+ 5.3 Vantagens do Critério Adotado — [I]
+	Facilidade de aplicação
+	Abrangência de arquiteturas
+	Clareza conceitual
+
+
+
+6. Estrutura Geral do Modelo de Flynn — [I]
+
+ 6.1 Organização da Taxonomia — [I]
+
+  6.1.1 Estrutura em Quatro Classes — [I]
+	  Organização matricial
+	  Delimitação clara entre classes
+	  Relação entre as classes
+
+  6.1.2 Representação Esquemática — [I]
+	  Diagrama de fluxos de instrução e dados
+	  Unidades de controle e processamento
+	  Fluxo de memória associado
+
+
+ 6.2 Elementos Estruturais Comuns às Classes — [I]
+
+  6.2.1 Unidade de Controle — [I]
+	  Papel na geração do fluxo de instruções
+	  Relação com cada classe
+
+  6.2.2 Unidade de Processamento — [I]
+	  Papel na execução dos dados
+	  Relação com cada classe
+
+  6.2.3 Memória Associada — [I]
+	  Armazenamento de instruções
+	  Armazenamento de dados
+
+
+ 6.3 Interação entre Componentes — [I]
+	Geração das instruções
+	Processamento dos dados
+	Produção dos resultados
+
+
+
+7. Fluxo de Instruções (Instruction Stream) — [P]
+
+ 7.1 Conceito Aprofundado — [P]
+
+  7.1.1 Definição Formal — [P]
+	  Sequência ordenada de instruções
+	  Origem no programa armazenado
+	  Relação com o contador de programa
+	  Fluxo lógico de instruções
+	  Múltiplas instruções executadas simultaneamente em uma implementação
+	  Diferença entre fluxo de instruções e paralelismo interno
+	  Relação com arquiteturas superescalares e pipeline
+
+  7.1.2 Papel da Unidade de Controle no Fluxo — [P]
+	  Busca de instruções
+	  Decodificação
+	  Geração de sinais de controle
+
+
+ 7.2 Fluxo Único de Instruções — [P]
+	Execução sequencial
+	Uma única Unidade de Controle
+	Relação com SISD e SIMD
+
+
+ 7.3 Fluxo Múltiplo de Instruções — [P]
+	Múltiplas Unidades de Controle
+	Execução simultânea de instruções distintas
+	Relação com MISD e MIMD
+
+
+
+8. Fluxo de Dados (Data Stream) — [P]
+
+ 8.1 Conceito Aprofundado — [P]
+
+  8.1.1 Definição Formal — [P]
+	  Sequência de dados processados
+	  Origem na memória ou registradores
+	  Relação com o Datapath
+
+  8.1.2 Papel do Datapath no Fluxo de Dados — [P]
+	  Movimentação dos operandos
+	  Processamento dos dados
+	  Produção dos resultados
+
+
+ 8.2 Fluxo Único de Dados — [P]
+	Características do Fluxo Único
+	Um único conjunto de dados processado por vez
+	Relação com SISD e MISD
+
+
+ 8.3 Fluxo Múltiplo de Dados — [P]
+	Características do Fluxo Múltiplo
+	Múltiplos conjuntos de dados processados simultaneamente
+	Relação com SIMD e MIMD
+
+
+
+PARTE 3 — CLASSIFICAÇÃO SISD (SINGLE INSTRUCTION, SINGLE DATA)
+
+
+9. Conceito e Definição de SISD — [P]
+
+ 9.1 Fundamentos do SISD — [P]
+
+  9.1.1 Definição de SISD — [P]
+	  Single Instruction, Single Data
+	  Fluxo único de instruções
+	  Fluxo único de dados
+	  Modelo de Von Neumann clássico
+
+  9.1.2 Origem e Contexto do SISD — [P]
+	  Arquiteturas sequenciais tradicionais
+	  Base dos primeiros computadores
+
+
+ 9.2 Características Gerais — [P]
+
+  9.2.1 Execução Sequencial — [P]
+	  Uma instrução por vez
+	  Um dado por vez
+	  Ausência de paralelismo explícito
+
+  9.2.2 Componentes Envolvidos — [P]
+	  Unidade de Controle única
+	  Unidade de Processamento única
+	  Memória única
+
+
+
+10. Organização e Funcionamento do SISD — [I]
+
+ 10.1 Estrutura Interna — [I]
+
+  10.1.1 Organização do Processador SISD — [I]
+	  Busca de instrução
+	  Decodificação
+	  Execução
+	  Armazenamento do resultado
+
+  10.1.2 Fluxo de Execução — [I]
+	  Ciclo de busca-decodificação-execução
+	  Sequência determinística
+
+
+ 10.2 Relação com Pipeline e Superescalar — [I]
+
+  10.2.1 SISD com Pipeline — [I]
+	  Aumento de desempenho sem alterar o modelo SISD
+	  Sobreposição de etapas
+
+  10.2.2 SISD Superescalar — [I]
+	  Múltiplas unidades funcionais
+	  Ainda classificado como SISD quanto ao fluxo lógico
+
+
+
+11. Características e Componentes do SISD — [I]
+
+ 11.1 Características Estruturais — [I]
+
+  11.1.1 Determinismo de Execução — [I]
+	  Ordem previsível das instruções
+	  Dependência sequencial
+
+  11.1.2 Limitações de Desempenho — [I]
+	  Ausência de paralelismo de dados
+	  Gargalo de Von Neumann
+
+
+ 11.2 Componentes Típicos — [I]
+
+  11.2.1 Unidade de Controle no SISD — [I]
+	  Geração de um único fluxo de instruções
+
+  11.2.2 Unidade de Processamento no SISD — [I]
+	  Processamento de um único fluxo de dados
+
+
+
+12. Exemplos e Aplicações do SISD — [V]
+
+ 12.1 Exemplos de Arquiteturas SISD — [V]
+	Processadores Escalares Tradicionais
+	Processadores de uso geral single-core
+	Microcontroladores simples
+
+
+ 12.2 Aplicações Típicas — [V]
+	Uso em Sistemas Simples
+	Aplicações sequenciais
+	Sistemas embarcados básicos
+	Processamento de tarefas únicas
+
+
+
+PARTE 4 — CLASSIFICAÇÃO SIMD (SINGLE INSTRUCTION, MULTIPLE DATA)
+
+
+13. Conceito e Definição de SIMD — [P]
+
+ 13.1 Fundamentos do SIMD — [P]
+
+  13.1.1 Definição de SIMD — [P]
+	  Single Instruction, Multiple Data
+	  Fluxo único de instruções
+	  Múltiplos fluxos de dados
+
+  13.1.2 Princípio de Funcionamento — [P]
+	  Mesma instrução aplicada a vários dados
+	  Execução simultânea sobre conjuntos de dados
+
+
+ 13.2 Motivação para o Modelo SIMD — [I]
+	Necessidade de Paralelismo de Dados
+	Processamento de grandes volumes de dados
+	Operações repetitivas sobre vetores e matrizes
+
+
+
+14. Organização e Funcionamento do SIMD — [P]
+
+ 14.1 Estrutura Interna — [P]
+
+  14.1.1 Unidade de Controle Única — [P]
+	  Geração de uma única sequência de instruções
+	  Distribuição da instrução às unidades de processamento
+
+  14.1.2 Múltiplas Unidades de Processamento — [P]
+	  Execução paralela da mesma operação
+	  Processamento simultâneo de diferentes dados
+
+
+ 14.2 Fluxo de Execução no SIMD — [P]
+
+  14.2.1 Sincronização das Unidades — [P]
+	  Execução em lockstep
+	  Dependência de sincronismo
+
+  14.2.2 Distribuição de Dados — [P]
+	  Organização em vetores
+	  Acesso simultâneo à memória
+
+  14.2.3 Predicação e Máscaras no SIMD — [I]
+	  Predicação de operações
+	  Máscaras de execução
+	  Elementos ativos e inativos
+	  Execução condicional de elementos
+	  Impacto das máscaras no paralelismo de dados
+
+
+
+15. Arquiteturas Vetoriais no SIMD — [I]
+
+ 15.1 Conceito de Processador Vetorial — [I]
+
+  15.1.1 Definição de Arquitetura Vetorial — [I]
+	  Operações sobre vetores completos
+	  Registradores vetoriais
+	  SIMD como modelo de execução
+	  Processamento vetorial como organização arquitetural
+	  Relação entre SIMD e arquiteturas vetoriais
+	  Diferenças conceituais entre os modelos
+
+  15.1.2 Funcionamento das Instruções Vetoriais — [I]
+	  Uma instrução, múltiplos elementos
+	  Pipeline vetorial
+	  Número de elementos processados por operação
+	  Largura dos registradores vetoriais
+	  Relação entre largura vetorial e paralelismo
+	  Impacto da largura sobre o processamento de dados
+
+
+ 15.2 Características das Arquiteturas Vetoriais — [I]
+	Vantagens do Processamento Vetorial
+	Alto throughput em dados regulares
+	Eficiência em cálculos científicos
+
+
+
+16. Processadores Array (Array Processors) — [I]
+
+ 16.1 Conceito de Processador Array — [I]
+
+  16.1.1 Definição e Organização — [I]
+	  Múltiplos elementos de processamento idênticos
+	  Controle centralizado
+
+  16.1.2 Funcionamento — [I]
+	  Distribuição de dados entre os elementos
+	  Execução simultânea da mesma instrução
+
+
+ 16.2 Aplicações dos Processadores Array — [V]
+	Contextos de Uso
+	Processamento de imagens
+	Simulações científicas
+
+
+
+17. Unidades SIMD Modernas (Extensões Vetoriais) — [I]
+
+ 17.1 Extensões SIMD em Processadores Atuais — [I]
+
+  17.1.1 Conceito de Extensão SIMD — [I]
+	  Instruções especiais para paralelismo de dados
+	  Registradores vetoriais dedicados
+	  Tamanho dos registradores SIMD
+	  Quantidade de elementos processados por instrução
+	  Relação entre largura do registrador e paralelismo de dados
+	  Evolução das larguras vetoriais
+
+  17.1.2 Exemplos de Extensões — [V]
+	  Extensões vetoriais de propósito geral
+	  Uso em multimídia e processamento de sinais
+
+
+ 17.2 Benefícios das Extensões SIMD — [I]
+	Aceleração de operações repetitivas
+	Eficiência energética relativa
+
+
+
+18. GPUs e Modelo SIMT — [I]
+
+ 18.1 Relação entre SIMD e GPUs — [I]
+
+  18.1.1 Conceito de SIMT (Single Instruction, Multiple Threads) — [I]
+	  Variação do modelo SIMD
+	  Execução paralela em threads
+	  Semelhanças entre SIMD e SIMT
+	  Diferenças entre elementos vetoriais e threads
+	  Execução baseada em threads
+	  Agrupamento de threads para execução
+	  Relação entre SIMT e fluxos de instruções e dados
+
+  18.1.2 Organização das GPUs — [I]
+	  Múltiplos núcleos simples
+	  Execução massivamente paralela
+
+
+ 18.2 Flexibilidade do Modelo SIMT — [I]
+	Threads com controle de fluxo próprio
+	Maior tolerância à divergência de execução
+	Divergência entre threads
+	Caminhos condicionais distintos
+	Reconvergência das threads
+	Impacto da divergência no paralelismo
+
+
+
+19. Exemplos e Aplicações do SIMD — [V]
+
+ 19.1 Exemplos de Arquiteturas SIMD — [V]
+
+  19.1.1 Processadores Vetoriais Clássicos — [V]
+	  Supercomputadores vetoriais
+
+  19.1.2 Processadores Modernos com SIMD — [V]
+	  Extensões vetoriais em CPUs
+	  GPUs de uso geral
+
+
+ 19.2 Áreas de Aplicação — [V]
+	Processamento gráfico
+	Processamento de sinais
+	Computação científica
+	Inteligência artificial
+
+
+
+PARTE 5 — CLASSIFICAÇÃO MISD (MULTIPLE INSTRUCTION, SINGLE DATA)
+
+
+20. Conceito e Definição de MISD — [I]
+
+ 20.1 Fundamentos do MISD — [I]
+	Definição de MISD
+	Multiple Instruction, Single Data
+	Múltiplos fluxos de instruções
+	Fluxo único de dados
+
+  
+ 20.2 Princípio de Funcionamento — [I]
+	Mesmo dado processado por múltiplas instruções
+	Diferentes operações sobre o mesmo fluxo de dados
+	Diferentes interpretações do conceito de MISD
+	Distinção entre definição teórica e implementação prática
+	Dificuldade de identificar arquiteturas MISD reais
+	Limites da interpretação de múltiplas instruções sobre um único fluxo de dados
+
+
+
+21. Organização e Funcionamento do MISD — [V]
+
+ 21.1 Múltiplas Unidades de Controle — [V]
+	Geração de instruções distintas
+	Processamento sequencial do mesmo dado
+
+  
+ 21.2 Unidade Única de Dados — [V]
+	Compartilhamento do fluxo de dados
+	Encadeamento de operações
+
+
+
+22. Exemplos, Raridade e Aplicações do MISD — [V]
+
+ 22.1 Motivos da Baixa Adoção Prática — [V]
+	Dificuldade de aplicação prática
+	Poucos casos de uso reais
+	Ausência de consenso sobre exemplos reais
+	Ambiguidade na classificação de determinadas arquiteturas
+	Diferença entre exemplos conceituais e implementações reais
+	Limitações da definição original
+
+
+ 22.2 Exemplos Conceituais — [V]
+
+  22.2.1 Sistemas Tolerantes a Falhas — [V]
+	  Execução redundante para verificação
+	  Sistemas críticos de segurança
+
+  22.2.2 Pipelines Especializados — [V]
+	  Encadeamento de processadores especializados
+
+
+
+PARTE 6 — CLASSIFICAÇÃO MIMD (MULTIPLE INSTRUCTION, MULTIPLE DATA)
+
+
+23. Conceito e Definição de MIMD — [P]
+
+ 23.1 Fundamentos do MIMD — [P]
+
+  23.1.1 Definição de MIMD — [P]
+	  Multiple Instruction, Multiple Data
+	  Múltiplos fluxos de instruções
+	  Múltiplos fluxos de dados
+
+  23.1.2 Princípio de Funcionamento — [P]
+	  Processadores independentes
+	  Execução simultânea de tarefas distintas
+
+
+ 23.2 Abrangência do Modelo MIMD — [I]
+	Diversidade de Arquiteturas MIMD
+	Ampla gama de sistemas paralelos
+	Modelo mais geral da taxonomia
+
+
+
+24. Organização e Funcionamento do MIMD — [P]
+
+ 24.1 Estrutura Interna — [P]
+
+  24.1.1 Múltiplas Unidades de Controle — [P]
+	  Cada processador com controle próprio
+	  Independência de execução
+
+  24.1.2 Múltiplas Unidades de Processamento — [P]
+	  Processadores independentes
+	  Execução assíncrona
+	  Processadores homogêneos
+	  Processadores heterogêneos
+	  Diferentes capacidades de processamento
+	  Relação com arquiteturas MIMD modernas
+
+
+ 24.2 Comunicação entre Processadores — [P]
+
+  24.2.1 Necessidade de Comunicação — [P]
+	  Coordenação entre tarefas
+	  Compartilhamento de resultados
+	  Independência dos fluxos de instruções
+	  Coordenação entre processadores
+	  Sincronização entre tarefas
+	  Dependências entre fluxos
+	  Necessidade de comunicação para cooperação
+
+  24.2.2 Mecanismos de Comunicação — [I]
+	  Memória compartilhada
+	  Troca de mensagens
+
+
+
+25. MIMD de Memória Compartilhada (Multiprocessadores) — [I]
+
+ 25.1 Conceito de Memória Compartilhada — [I]
+
+  25.1.1 Definição e Organização — [I]
+	  Espaço de endereçamento comum
+	  Acesso de todos os processadores à mesma memória
+
+  25.1.2 Vantagens e Desafios — [I]
+	  Facilidade de comunicação
+	  Problemas de concorrência e coerência
+
+
+ 25.2 Coerência de Cache em Sistemas MIMD — [I]
+	Necessidade de Coerência
+	Consistência dos dados entre processadores
+	Protocolos de coerência
+
+
+
+26. MIMD de Memória Distribuída (Multicomputadores) — [I]
+
+ 26.1 Conceito de Memória Distribuída — [I]
+
+  26.1.1 Definição e Organização — [I]
+	  Memória local por processador
+	  Ausência de espaço de endereçamento comum
+
+  26.1.2 Comunicação por Troca de Mensagens — [I]
+	  Envio e recebimento de mensagens
+	  Coordenação entre nós
+
+
+ 26.2 Vantagens e Desafios — [I]
+
+  26.2.1 Escalabilidade — [I]
+	  Facilidade de expansão do sistema
+
+  26.2.2 Complexidade de Programação — [I]
+	  Necessidade de comunicação explícita
+
+
+
+27. Arquiteturas SMP, NUMA e Clusters — [I]
+
+ 27.1 Multiprocessamento Simétrico (SMP) — [I]
+	Conceito de SMP
+	Processadores idênticos com acesso igual à memória
+	Compartilhamento total de recursos
+
+
+ 27.2 Acesso Não Uniforme à Memória (NUMA) — [I]
+	Conceito de NUMA 
+	Tempos de acesso variáveis à memória
+	Organização em nós de memória local
+
+
+ 27.3 Clusters de Computadores — [V]
+	Conceito de Cluster
+	Conjunto de computadores interligados
+	Cooperação para tarefas comuns
+
+
+
+28. Multithreading e Multicores como MIMD — [I]
+
+ 28.1 Multithreading — [I]
+	Conceito de Multithreading
+	Execução de múltiplas linhas de execução
+	Relação com o modelo MIMD
+
+
+ 28.2 Processadores Multicore — [I]
+
+  28.2.1 Conceito de Multicore — [I]
+	  Múltiplos núcleos em um único chip
+	  Execução independente por núcleo
+
+  28.2.2 Relação com a Taxonomia de Flynn — [I]
+	  Classificação como MIMD
+	  Compartilhamento parcial de recursos
+
+
+
+29. Exemplos e Aplicações do MIMD — [V]
+
+ 29.1 Exemplos de Arquiteturas MIMD — [V]
+
+  29.1.1 Supercomputadores Paralelos — [V]
+	  Sistemas de alto desempenho
+
+  29.1.2 Servidores Multiprocessados — [V]
+	  Sistemas corporativos e data centers
+
+
+ 29.2 Áreas de Aplicação — [V]
+	Processamento distribuído
+	Simulações complexas
+	Servidores de grande escala
+
+
+
+30. Subclassificações e Variações do MIMD (SPMD, MPMD) — [I]
+
+ 30.1 Modelo SPMD — [I]
+	Conceito de SPMD (Single Program, Multiple Data)
+	Mesmo programa executado em múltiplos processadores
+	Dados diferentes por processador
+
+
+ 30.2 Modelo MPMD — [I]
+	Conceito de MPMD (Multiple Program, Multiple Data)
+	Programas diferentes executados simultaneamente
+	Cooperação entre tarefas distintas
+
+
+ 30.3 SPMD e MPMD como Subclasses do MIMD — [I]
+	Refinamento da classe MIMD
+	Aplicação prática em programação paralela
+	Taxonomia de Flynn como classificação arquitetural
+	SPMD e MPMD como modelos de execução/programação
+	Relação entre SPMD/MPMD e arquiteturas MIMD
+	SPMD e MPMD não pertencem às quatro classes originais de Flynn
+
+
+
+PARTE 7 — ORGANIZAÇÃO E CARACTERÍSTICAS DAS CLASSES DE FLYNN
+
+
+31. Comparação Estrutural entre as Quatro Classes — [P]
+
+ 31.1 Comparação de Fluxos — [P]
+
+  31.1.1 Fluxo de Instruções entre as Classes — [P]
+	  Único (SISD, SIMD)
+	  Múltiplo (MISD, MIMD)
+
+  31.1.2 Fluxo de Dados entre as Classes — [P]
+	  Único (SISD, MISD)
+	  Múltiplo (SIMD, MIMD)
+
+
+ 31.2 Quadro Comparativo Geral — [P]
+	Síntese das Combinações
+	Relação entre instrução e dado em cada classe
+	Diferenças estruturais fundamentais
+
+
+
+32. Fluxo de Controle nas Classes de Flynn — [I]
+
+ 32.1 Papel da Unidade de Controle — [I]
+
+  32.1.1 Controle Único — [I]
+	  Presente em SISD e SIMD
+
+  32.1.2 Controle Múltiplo — [I]
+	  Presente em MISD e MIMD
+
+
+ 32.2 Relação entre Controle e Paralelismo — [I]
+	Impacto do Número de Controles
+	Grau de independência de execução
+	Complexidade de coordenação
+
+
+
+33. Relação entre Hardware e Classificação de Flynn — [I]
+
+ 33.1 Componentes de Hardware por Classe — [I]
+
+  33.1.1 Unidades de Processamento — [I]
+	  Quantidade por classe
+	  Grau de independência
+
+  33.1.2 Organização de Memória — [I]
+	  Memória única ou distribuída
+	  Relação com o fluxo de dados
+
+
+ 33.2 Influência da Taxonomia no Projeto de Hardware — [I]
+	Decisões Arquiteturais
+	Escolha do modelo conforme aplicação
+	rade-offs de complexidade e desempenho
+
+
+
+34. Papel do Paralelismo em Cada Classe — [I]
+
+ 34.1 Grau de Paralelismo — [I]
+
+  34.1.1 Ausência de Paralelismo — [I]
+	  SISD
+
+  34.1.2 Paralelismo de Dados — [I]
+	  SIMD
+
+  34.1.3 Paralelismo de Instrução — [I]
+	  MISD
+
+  34.1.4 Paralelismo Geral — [I]
+	  MIMD
+
+
+ 34.2 Implicações para o Desempenho — [I]
+	Relação entre Classe e Desempenho
+	Adequação a diferentes tipos de carga de trabalho
+
+
+
+PARTE 8 — EXECUÇÃO, FLUXO DE INSTRUÇÕES E FLUXO DE DADOS NA TAXONOMIA
+
+
+35. Modelo de Execução Sequencial versus Paralela — [I]
+
+ 35.1 Execução Sequencial — [I]
+	Características da Execução Sequencial
+	Uma operação por vez
+	Determinismo total
+
+
+ 35.2 Execução Paralela — [I]
+	Características da Execução Paralela
+	Múltiplas operações simultâneas
+	Necessidade de sincronização
+
+
+ 35.3 Comparação entre os Modelos — [I]
+	Vantagens e Desvantagens
+	Desempenho versus complexidade
+	Aplicabilidade conforme o problema
+
+
+
+36. Relação entre Fluxo de Instruções e Unidade de Controle — [I]
+
+ 36.1 Geração do Fluxo de Instruções — [I]
+	Papel da Unidade de Controle
+	Busca e decodificação
+	Geração de sinais de controle
+
+
+ 36.2 Impacto do Número de Fluxos — [I]
+	Fluxo Único versus Múltiplo
+	Simplicidade versus paralelismo de controle
+
+
+
+37. Relação entre Fluxo de Dados e Processamento Paralelo — [I]
+
+ 37.1 Fluxo de Dados e Paralelismo — [I]
+	Múltiplos Fluxos de Dados
+	  Processamento simultâneo de conjuntos de dados
+	  Relação com SIMD e MIMD
+
+
+ 37.2 Fluxo Único de Dados — [I]
+	Processamento Sequencial de Dados
+	Relação com SISD e MISD
+
+
+
+PARTE 9 — VARIAÇÕES, EXTENSÕES E MODELOS HÍBRIDOS DA TAXONOMIA DE FLYNN
+
+
+38. Extensões Propostas à Taxonomia de Flynn — [V]
+
+ 38.1 Necessidade de Extensões — [V]
+	Limitações do Modelo Original
+	Simplificação excessiva de arquiteturas modernas
+	Dificuldade em classificar sistemas híbridos
+
+
+ 38.2 Propostas de Extensão — [V]
+	Subdivisões Adicionais
+	Refinamentos da classe MIMD
+	Novas categorias propostas por autores posteriores
+
+
+
+39. Modelo SPMD e MPMD (Aprofundamento) — [I]
+
+ 39.1 SPMD em Programação Paralela — [I]
+	Aplicação Prática do SPMD 
+	Uso em bibliotecas de paralelismo
+	Distribuição de dados entre processos
+
+
+ 39.2 MPMD em Sistemas Distribuídos — [I]
+	Aplicação Prática do MPMD 
+	Cooperação entre programas distintos
+	Uso em sistemas heterogêneos
+
+
+
+40. Arquiteturas Híbridas (SIMD + MIMD) — [I]
+
+ 40.1 Conceito de Arquitetura Híbrida — [I]
+	Combinação de Modelos
+	Unidades SIMD dentro de sistemas MIMD
+	Processadores multicore com extensões vetoriais
+	Classificação de componentes individuais
+	Classificação do sistema como um todo
+	Possibilidade de diferentes modelos coexistirem em uma arquitetura
+	Limitações de atribuir uma única classe a sistemas híbridos
+
+
+ 40.2 Exemplos de Arquiteturas Híbridas — [V]
+	Sistemas Modernos
+	CPUs multicore com unidades SIMD
+	GPUs integradas a sistemas MIMD
+
+
+
+41. Críticas e Limitações Conceituais do Modelo Original — [I]
+
+ 41.1 Limitações da Taxonomia — [I]
+	Simplicidade Excessiva
+	Dificuldade em representar arquiteturas complexas
+	Ausência de critérios sobre memória e comunicação
+	Múltiplos níveis de paralelismo
+	Diferentes mecanismos de execução em um mesmo sistema
+	Dificuldade de classificação única
+	Sobreposição entre modelos arquiteturais
+
+
+ 41.2 Propostas Alternativas — [V]
+	Outras Classificações
+	Classificações baseadas em memória
+	Classificações baseadas em granularidade
+
+
+
+PARTE 10 — TAXONOMIA DE FLYNN EM ARQUITETURAS PARALELAS E SISTEMAS MULTIPROCESSADORES
+
+
+42. Relação com Sistemas Multiprocessados — [I]
+
+ 42.1 Multiprocessadores e a Classe MIMD — [I]
+	Classificação de Multiprocessadores
+	Organização de memória compartilhada
+
+
+ 42.2 Papel da Taxonomia na Análise de Multiprocessadores — [I]
+	Uso Prático da Classificação 
+	Identificação do grau de paralelismo
+	Comparação entre sistemas
+
+
+
+43. Relação com Processamento Paralelo e Distribuído — [I]
+
+ 43.1 Processamento Paralelo — [I]
+	Classificação segundo Flynn
+	Enquadramento predominante em SIMD e MIMD
+
+
+ 43.2 Processamento Distribuído — [I]
+	Classificação segundo Flynn
+	Enquadramento na classe MIMD de memória distribuída
+
+
+
+44. Relação com Supercomputadores e Clusters — [V]
+
+ 44.1 Supercomputadores — [V]
+	Classificação de Supercomputadores
+	Predominância de arquiteturas MIMD
+	Uso combinado com SIMD em componentes vetoriais
+
+
+ 44.2 Clusters de Computadores — [V]
+	Classificação de Clusters
+	Enquadramento como MIMD de memória distribuída
+
+
+
+45. Relação com Arquiteturas Modernas (Multicore, GPU, Aceleradores) — [I]
+
+ 45.1 Processadores Multicore — [I]
+	Classificação Moderna
+	Enquadramento como MIMD
+
+
+ 45.2 GPUs e Aceleradores — [I]
+	Classificação Moderna
+	Enquadramento predominante como SIMD/SIMT
+	Uso combinado com CPUs MIMD
+
+
+
+PARTE 11 — COMPARAÇÃO, DESEMPENHO E LIMITAÇÕES DA TAXONOMIA DE FLYNN
+
+
+46. Comparação de Desempenho entre as Classes — [I]
+
+ 46.1 Desempenho Teórico das Classes — [I]
+
+  46.1.1 SISD versus SIMD — [I]
+	  Ganho de desempenho em dados regulares
+
+  46.1.2 MIMD versus as Demais Classes — [I]
+	  Flexibilidade e escalabilidade superiores
+
+
+ 46.2 Fatores que Influenciam o Desempenho — [I]
+	Natureza da Carga de Trabalho
+	Regularidade dos dados
+	Grau de dependência entre tarefas
+	Influência da natureza da aplicação
+	Grau de paralelismo disponível
+	Dependências entre operações
+	Eficiência da implementação arquitetural
+	Relação entre classificação e potencial de paralelismo
+
+
+
+47. Vantagens e Desvantagens de Cada Classificação — [I]
+
+ 47.1 SISD — [I]
+	Vantagens e Desvantagens
+	Simplicidade versus baixo desempenho
+
+
+ 47.2 SIMD — [I]
+	Vantagens e Desvantagens
+	Alto desempenho em dados regulares versus baixa flexibilidade
+
+
+ 47.3 MISD — [I]
+	Vantagens e Desvantagens
+	Tolerância a falhas versus rara aplicabilidade
+
+
+ 47.4 MIMD — [I]
+	Vantagens e Desvantagens
+	Alta flexibilidade versus maior complexidade
+
+
+
+48. Limitações da Taxonomia como Modelo Classificatório — [I]
+
+ 48.1 Limitações Conceituais — [I]
+
+  48.1.1 Ausência de Critérios sobre Memória — [I]
+	  Não diferencia memória compartilhada de distribuída
+
+  48.1.2 Ausência de Critérios sobre Comunicação — [I]
+	  Não trata explicitamente a comunicação entre processadores
+
+
+ 48.2 Dificuldades de Classificação de Sistemas Modernos — [I]
+	Arquiteturas Híbridas e Heterogêneas
+	Dificuldade de enquadramento único
+
+
+
+PARTE 12 — EVOLUÇÃO, APLICAÇÕES E INTERPRETAÇÃO DA TAXONOMIA DE FLYNN
+
+
+49. Evolução Histórica das Classificações Pós-Flynn — [V]
+
+ 49.1 Extensões Baseadas em Memória — [V]
+	Classificação por memória compartilhada e distribuída
+
+  
+ 49.2 Outras Propostas Acadêmicas — [V]
+	Refinamentos posteriores à taxonomia original
+
+
+
+50. Aplicações Práticas da Taxonomia na Indústria — [V]
+
+ 50.1 Uso no Projeto de Processadores — [V]
+	Aplicação em CPUs e GPUs 
+	Orientação de decisões de projeto
+
+
+ 50.2 Uso na Documentação e Ensino — [V]
+	Aplicação Didática
+	Base para cursos de arquitetura de computadores
+
+
+
+51. Interpretação Moderna da Taxonomia de Flynn — [V]
+
+ 51.1 Aplicação a Multicore e GPUs — [V]
+	Adaptação do modelo original
+
+  
+ 51.2 Aplicação a Sistemas Heterogêneos — [V]
+	Combinação de múltiplas classes em um único sistema
+
+
+
+PARTE 13 — RESUMO GERAL E CONCLUSÃO DA TAXONOMIA DE FLYNN
+
+
+52. Integração dos Conceitos da Taxonomia de Flynn — [I]
+
+ 52.1 Visão Integrada da Taxonomia — [I]
+
+  52.1.1 Integração dos Fundamentos — [I]
+	  Critérios de classificação
+	  Quatro classes fundamentais
+	  Relação entre fluxo de instruções e dados
+
+  52.1.2 Integração das Classes — [I]
+	  Relação entre SISD, SIMD, MISD e MIMD
+	  Aplicação conforme o contexto arquitetural
+
+
+ 52.2 Relações com Outros Conceitos da Arquitetura — [I]
+
+  52.2.1 Relação com Paralelismo — [I]
+	  Base conceitual para graus de paralelismo
+
+  52.2.2 Relação com Multiprocessadores e Multicomputadores — [I]
+	  Classificação de sistemas paralelos reais
+
+  52.2.3 Relação com GPUs e Aceleradores — [I]
+	  Classificação de arquiteturas modernas
+
+
+
+53. Resumo Geral da Taxonomia de Flynn — [I]
+
+ 53.1 Revisão dos Conceitos Fundamentais — [I]
+	Fundamentos Essenciais
+	Definição da taxonomia
+	Critérios de classificação
+	Origem histórica
+
+
+ 53.2 Síntese das Classes — [I]
+	SISD
+	SIMD
+	MISD
+	MIMD
+
+
+ 53.3 Revisão das Aplicações e Limitações — [I]
+	Aplicações práticas
+	Limitações do modelo
+	Relevância histórica e atual
+
+
+
+54. Conclusão do Estudo da Taxonomia de Flynn — [V]
+
+ 54.1 Síntese Final — [V]
+
+  54.1.1 O Papel da Taxonomia de Flynn — [V]
+	  Modelo fundamental de classificação de arquiteturas
+	  Base para o entendimento do paralelismo
+
+  54.1.2 Importância para Arquitetura e Organização de Computadores — [V]
+	  Compreensão das arquiteturas paralelas
+	  Base para estudos avançados de processamento paralelo
+
+
+ 54.2 Competências Desenvolvidas — [V]
+
+  54.2.1 Conhecimentos Adquiridos — [V]
+	  Classificação das arquiteturas
+	  Características de cada classe
+	  Relação com arquiteturas modernas
+
+  54.2.2 Preparação para Estudos Posteriores — [V]
+	  Processamento Paralelo
+	  Multiprocessadores e Multicomputadores
+	  Arquiteturas GPU e Aceleradores
+	  Sistemas Distribuídos
+
+
+ 54.3 Visão Geral Final — [V]
+	Integração dos conceitos
+	Importância da Taxonomia de Flynn
+	Continuidade dos estudos em Arquitetura de Computadores
