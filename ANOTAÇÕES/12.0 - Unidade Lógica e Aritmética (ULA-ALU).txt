@@ -1,0 +1,1382 @@
+                                UNIDADE LÓGICA E ARITMÉTICA (ULA / ALU)
+
+
+A classificação abaixo indica a profundidade recomendada para cada grande tópico da lista.
+
+[P] Profundidade — estudar mecanismos, estruturas, funcionamento interno e relações entre componentes.
+[I] Intermediário — compreender bem o funcionamento e as relações principais, sem precisar dominar todos os
+   detalhes de implementação.
+[V] Visão geral — saber o que é, para que serve e como se relaciona com a Unidade Lógica e Aritmética.
+
+
+
+PARTE 1 — FUNDAMENTOS DA UNIDADE LÓGICA E ARITMÉTICA (ULA / ALU)
+
+
+1. Introdução à Unidade Lógica e Aritmética (ULA/ALU) — [I]
+
+ 1.1 Conceitos Fundamentais — [I]
+
+  1.1.1 Conceito de ULA/ALU — [I]
+	  Definição de ULA/ALU
+	  Papel da ULA na CPU
+	  Execução de operações aritméticas
+	  Execução de operações lógicas
+	  Importância na arquitetura de computadores
+
+  1.1.2 Objetivos da ULA — [I]
+	  Processamento de dados numéricos
+	  Execução de operações lógicas
+	  Suporte às instruções da CPU
+	  Geração de resultados e flags
+	  Base para operações mais complexas
+
+
+ 1.2 A ULA na Arquitetura de Computadores — [I]
+
+  1.2.1 Papel da ULA no Sistema Computacional — [I]
+	  Execução de cálculos
+	  Processamento de operações lógicas
+	  Comunicação com registradores
+	  Integração com o Datapath
+	  Organização funcional
+
+  1.2.2 ULA × CPU × Datapath × Unidade de Controle — [I]
+	  O que pertence à ULA
+	  O que pertence ao Datapath
+	  O que pertence à Unidade de Controle
+	  Localização da ULA na CPU
+	  Relação entre os conceitos
+	  Exemplos comparativos
+
+  1.2.3 ULA como Unidade Funcional — [I]
+	  Organização interna
+	  Entradas e saídas
+	  Interligação com outros componentes
+	  Execução coordenada
+	  Abstração funcional
+
+
+
+2. Evolução Histórica da ULA — [V]
+
+ 2.1 Origem das Unidades Aritméticas — [V]
+
+  2.1.1 Primeiras Implementações — [V]
+	  Primeiros circuitos aritméticos
+	  ULAs elementares
+	  Somadores simples
+	  Organização inicial das operações
+
+  2.1.2 Evolução da Organização Interna — [V]
+	  Crescimento da complexidade
+	  Aumento das operações suportadas
+	  Evolução dos circuitos internos
+	  Melhorias na eficiência
+
+
+ 2.2 Evolução das ULAs Modernas — [V]
+
+  2.2.1 ULAs Clássicas — [V]
+	  Estruturas simples
+	  Operações básicas
+	  Organização tradicional
+	  Limitações
+
+  2.2.2 ULAs Modernas — [V]
+	  Maior número de operações suportadas
+	  Melhor aproveitamento dos recursos
+	  Evolução estrutural
+	  Maior desempenho
+
+
+ 2.3 Impactos na Computação Moderna — [V]
+	Evolução do desempenho
+	Eficiência energética
+	Escalabilidade
+	Base para arquiteturas modernas
+
+
+
+3. Fundamentos das Operações Realizadas pela ULA — [I]
+
+ 3.1 Conceitos de Operações — [I]
+
+  3.1.1 Tipos Gerais de Operações — [I]
+	  Operações aritméticas
+	  Operações lógicas
+	  Operações de deslocamento
+	  Operações de comparação
+
+  3.1.2 Operandos e Resultados — [I]
+	  Origem dos operandos
+	  Formato dos operandos
+	  Geração dos resultados
+	  Armazenamento temporário
+
+
+ 3.2 Representação dos Dados na ULA — [I]
+
+  3.2.1 Representação Numérica — [I]
+	  Números inteiros
+	  Representação em complemento de dois
+	  Representação em ponto flutuante (visão geral)
+	  Relação com a largura de bits
+
+  3.2.2 Representação Lógica — [I]
+	  Valores booleanos
+	  Bits individuais
+	  Palavras de bits
+	  Máscaras de bits
+
+
+ 3.3 Fundamentos Booleanos Aplicados à ULA — [I]
+	Operadores lógicos básicos
+	Tabelas-verdade
+	Funções booleanas
+	Base para circuitos combinacionais
+
+
+
+4. Organização Geral da ULA — [I]
+
+ 4.1 Estrutura Funcional — [I]
+
+  4.1.1 Organização dos Componentes — [I]
+	  Componentes principais
+	  Interconexões internas
+	  Fluxo entre unidades
+	  Organização estrutural
+
+  4.1.2 Organização das Operações — [I]
+	  Seleção da operação
+	  Processamento interno
+	  Geração do resultado
+	  Geração das flags
+
+
+ 4.2 Comunicação Interna e Externa — [I]
+
+  4.2.1 Comunicação com Registradores — [I]
+	  Entrada dos operandos
+	  Saída dos resultados
+	  Sincronização
+	  Integração com o banco de registradores
+
+  4.2.2 Comunicação com o Datapath — [I]
+	  Conectividade
+	  Caminhos internos
+	  Organização lógica
+	  Integração com outros componentes
+
+
+ 4.3 Estrutura Lógica Interna — [I]
+	Organização funcional
+	Fluxo lógico
+	Dependências operacionais
+	Modularidade
+
+
+
+5. Relação da ULA com a Execução das Instruções — [I]
+
+ 5.1 Participação na Execução — [I]
+
+  5.1.1 Papel Durante a Execução — [I]
+	  Recepção dos operandos
+	  Processamento dos dados
+	  Produção dos resultados
+	  Geração de indicadores de status
+
+  5.1.2 Fluxo Operacional Geral — [I]
+	  Sequência de execução
+	  Seleção da operação pela unidade de controle
+	  Atualização do estado
+	  Finalização da operação
+
+
+ 5.2 Relação com o Controle — [I]
+
+  5.2.1 Coordenação das Operações — [I]
+	  Dependência dos sinais de controle
+	  Seleção da função aritmética/lógica
+	  Ativação dos circuitos internos
+	  Organização temporal
+
+  5.2.2 Separação entre Controle e ULA — [I]
+	  Função da ULA
+	  Função da Unidade de Controle
+	  Cooperação entre ambos
+	  Independência funcional
+
+
+ 5.3 Ciclo Geral das Operações — [I]
+	Entrada dos operandos
+	Seleção da operação
+	Processamento
+	Geração do resultado e das flags
+
+
+
+PARTE 2 — ESTRUTURA E ORGANIZAÇÃO INTERNA DA ULA
+
+
+6. Entradas e Saídas da ULA — [P]
+
+ 6.1 Entradas da ULA — [P]
+
+  6.1.1 Operandos de Entrada — [P]
+	  Operando A
+	  Operando B
+	  Origem dos operandos
+	  Largura de bits dos operandos
+
+  6.1.2 Sinal de Seleção de Operação — [P]
+	  Código de operação interno
+	  Seleção da função
+	  Papel da Unidade de Controle
+	  Codificação do sinal
+
+  6.1.3 Carry de Entrada (Carry-in) — [P]
+	  Conceito de carry-in
+	  Origem do carry-in
+	  Uso em operações aritméticas
+	  Relação com o somador completo
+	  Uso em operações de soma e subtração
+	  Propagação através da ULA
+
+
+ 6.2 Saídas da ULA — [P]
+
+  6.2.1 Resultado da Operação — [P]
+	  Formato do resultado
+	  Largura do resultado
+	  Destino do resultado
+
+  6.2.2 Sinais de Status (Flags) — [P]
+	  Flag de zero
+	  Flag de carry
+	  Flag de overflow
+	  Flag de sinal (negativo)
+	  Geração dos sinais
+
+  6.2.3 Carry de Saída (Carry-out) — [P]
+	  Conceito de carry-out
+	  Geração pelo bit mais significativo
+	  Relação com overflow
+	  Uso na geração da flag de carry
+	  Diferença entre carry-out e overflow
+
+
+ 6.3 Interfaces com Outros Componentes — [P]
+
+  6.3.1 Interface com Registradores — [P]
+	  Leitura dos operandos
+	  Escrita do resultado
+	  Sincronização
+
+  6.3.2 Interface com Barramentos Internos — [P]
+	  Transporte dos operandos
+	  Transporte do resultado
+	  Organização das conexões
+
+
+
+7. Estrutura Interna da ULA — [P]
+
+ 7.1 Componentes Internos — [P]
+
+  7.1.1 Unidades Funcionais Internas — [P]
+	  Unidade aritmética
+	  Unidade lógica
+	  Unidade de deslocamento
+	  Multiplexadores internos
+	  Estrutura da unidade aritmética
+	  Seleção entre operações aritméticas
+	  Compartilhamento do somador para diferentes operações
+	  Geração de operações a partir de soma, complemento e carry-in
+	  Relação entre unidade aritmética e unidade lógica
+
+  7.1.2 Organização das Unidades — [P]
+	  Distribuição funcional
+	  Interligação entre unidades
+	  Compartilhamento de recursos
+	  Fluxo interno
+
+
+ 7.2 Multiplexação da Operação — [P]
+
+  7.2.1 Seleção do Resultado Final — [P]
+	  Multiplexador de saída
+	  Seleção pela operação
+	  Papel do código de operação
+
+  7.2.2 Roteamento Interno dos Dados — [P]
+	  Distribuição dos operandos
+	  Direcionamento aos circuitos internos
+	  Organização dos caminhos internos
+
+  7.2.3 Seleção entre Operações Aritméticas e Lógicas — [P]
+	  Seleção da unidade aritmética ou lógica
+	  Seleção do resultado produzido
+	  Sinais de seleção
+	  Combinação de operações em uma única ULA
+	  Caminho dos dados entre os blocos funcionais
+	  Exemplo de organização interna de uma ULA
+
+
+ 7.3 Blocos Funcionais Independentes — [I]
+	Modularidade estrutural
+	Reutilização de circuitos
+	Facilidade de expansão
+
+
+
+8. Largura de Bits e Organização por Palavra — [I]
+
+ 8.1 Conceito de Largura de Bits — [I]
+
+  8.1.1 Largura da ULA — [I]
+	  ULA de 8 bits
+	  ULA de 16 bits
+	  ULA de 32 bits
+	  ULA de 64 bits
+
+  8.1.2 Relação com a Arquitetura — [I]
+	  Largura da palavra do processador
+	  Impacto no desempenho
+	  Impacto na precisão numérica
+
+
+ 8.2 Organização em Blocos de Bits — [I]
+
+  8.2.1 ULA de 1 bit como célula básica de construção
+	  Estrutura de uma célula de ULA de 1 bit
+	  Entradas e saídas da célula
+	  Operações realizadas por uma célula de 1 bit
+	  Sinais de controle da célula
+	  Carry-in e Carry-out da célula
+	  Encadeamento de células de 1 bit
+	  Construção de uma ULA de N bits a partir das células
+
+  8.2.2 Segmentação por Bits — [I]
+	  Processamento bit a bit
+	  Agrupamento em blocos
+	  Propagação entre blocos
+	  Construção de uma ULA de N bits a partir de células de 1 bit
+	  Encadeamento das células
+	  Propagação do carry entre células
+	  Sinais de controle compartilhados
+	  Geração do resultado bit a bit
+
+  8.2.3 ULAs Bit-Slice (visão geral) — [V]
+	  Conceito de organização bit-slice
+	  Combinação de módulos menores
+	  Escalabilidade da largura
+
+
+
+9. Portas Lógicas e Blocos Combinacionais na ULA — [P]
+
+ 9.1 Portas Lógicas Fundamentais Aplicadas — [P]
+
+  9.1.1 Portas Básicas Utilizadas — [P]
+	  Porta AND
+	  Porta OR
+	  Porta NOT
+	  Porta XOR
+	  Portas NAND e NOR
+
+  9.1.2 Combinação das Portas — [P]
+	  Construção de funções lógicas
+	  Composição de circuitos
+	  Simplificação lógica
+
+
+ 9.2 Circuitos Combinacionais Base — [P]
+
+  9.2.1 Multiplexadores — [P]
+	  Função do multiplexador
+	  Seleção de operação
+	  Uso na ULA
+
+  9.2.2 Decodificadores — [P]
+	  Função do decodificador
+	  Decodificação do código de operação
+	  Geração de sinais de controle internos
+
+
+
+10. Registradores Internos e Temporários da ULA — [I]
+
+ 10.1 Registradores de Apoio — [I]
+
+  10.1.1 Registradores Temporários — [I]
+	  Armazenamento intermediário
+	  Retenção de operandos
+	  Retenção de resultados parciais
+
+  10.1.2 Registrador de Acumulador (contexto histórico e atual) — [I]
+	  Papel do acumulador
+	  Uso em arquiteturas simples
+	  Relação com a ULA
+
+
+ 10.2 Registrador de Flags/Status — [P]
+
+  10.2.1 Estrutura do Registrador de Status — [P]
+	  Bits de flags
+	  Organização do registrador
+	  Atualização pelas operações da ULA
+
+  10.2.2 Relação com o Fluxo de Execução — [P]
+	  Uso pelas instruções de desvio condicional
+	  Persistência entre operações
+	  Importância para o controle do programa
+
+
+
+PARTE 3 — OPERAÇÕES ARITMÉTICAS E LÓGICAS
+
+
+11. Operações Aritméticas Fundamentais — [P]
+
+ 11.1 Adição — [P]
+
+  11.1.1 Conceito de Adição Binária — [P]
+	  Soma bit a bit
+	  Propagação de carry
+	  Resultado e geração de overflow
+	  Relação com o somador binário
+
+  11.1.2 Adição com Sinal e sem Sinal — [P]
+	  Números sem sinal
+	  Números em complemento de dois
+	  Diferença no tratamento do overflow
+	  Diferença no tratamento do carry
+
+
+ 11.2 Subtração — [P]
+
+  11.2.1 Conceito de Subtração Binária — [P]
+	  Subtração via complemento de dois
+	  Uso do somador para subtrair
+	  Geração do borrow
+	  Reaproveitamento do circuito somador
+
+  11.2.2 Subtração com Sinal e sem Sinal — [P]
+	  Diferença de tratamento
+	  Detecção de overflow
+	  Casos especiais
+
+
+ 11.3 Operações de Incremento e Decremento — [I]
+	Soma de 1
+	Subtração de 1
+	Uso em contadores
+	Uso no cálculo de endereços
+
+
+
+12. Multiplicação na ULA — [I]
+
+ 12.1 Fundamentos da Multiplicação Binária — [I]
+
+  12.1.1 Conceito de Multiplicação — [I]
+	  Multiplicação por somas sucessivas
+	  Multiplicação por deslocamento e soma
+	  Geração de produtos parciais
+	  Acúmulo do resultado
+
+  12.1.2 Multiplicação com Sinal — [I]
+	  Números em complemento de dois
+	  Ajustes necessários no sinal
+	  Overflow na multiplicação
+
+
+ 12.2 Métodos de Multiplicação (visão geral) — [V]
+
+  12.2.1 Multiplicação Sequencial — [V]
+	  Deslocamento e soma sucessiva
+	  Uso de registrador acumulador
+	  Menor custo em hardware
+
+  12.2.2 Multiplicação Combinacional — [V]
+	  Arranjos de somadores
+	  Maior velocidade de execução
+	  Maior custo em hardware
+
+
+
+13. Divisão na ULA — [I]
+
+ 13.1 Fundamentos da Divisão Binária — [I]
+
+  13.1.1 Conceito de Divisão — [I]
+	  Divisão por subtrações sucessivas
+	  Quociente e resto
+	  Relação com a multiplicação
+
+  13.1.2 Divisão com Sinal — [I]
+	  Tratamento de sinais dos operandos
+	  Ajuste do quociente
+	  Ajuste do resto
+
+
+ 13.2 Métodos de Divisão (visão geral) — [V]
+
+  13.2.1 Divisão Restauradora — [V]
+	  Processo iterativo de subtração
+	  Restauração do resto quando negativo
+	  Simplicidade conceitual
+
+  13.2.2 Divisão Não Restauradora — [V]
+	  Diferença em relação ao método restaurador
+	  Eliminação da etapa de restauração
+	  Vantagem em desempenho
+
+
+
+14. Operações Lógicas Bit a Bit — [P]
+
+ 14.1 Operações Lógicas Fundamentais — [P]
+
+  14.1.1 AND, OR e XOR — [P]
+	  Função da operação AND
+	  Função da operação OR
+	  Função da operação XOR
+	  Aplicações típicas de cada operação
+
+  14.1.2 NOT e Operações Complementares — [P]
+	  Função da operação NOT
+	  Complemento bit a bit
+	  Uso na formação de máscaras
+
+
+ 14.2 Aplicações das Operações Lógicas — [I]
+
+  14.2.1 Uso em Máscaras de Bits — [I]
+	  Isolamento de bits específicos
+	  Limpeza de bits (clear)
+	  Ativação de bits (set)
+
+  14.2.2 Uso em Composição de Valores — [I]
+	  Combinação de campos de bits
+	  Extração de subconjuntos de bits
+	  Construção de registradores de configuração
+
+
+
+15. Overflow, Carry e Tratamento de Exceções Aritméticas — [P]
+
+ 15.1 Conceito de Overflow — [P]
+
+  15.1.1 Overflow em Operações com Sinal — [P]
+	  Definição de overflow
+	  Condições de ocorrência
+	  Detecção pelo circuito da ULA
+
+  15.1.2 Overflow em Operações sem Sinal — [P]
+	  Diferença em relação ao overflow com sinal
+	  Papel do bit de carry
+	  Detecção do carry de saída
+
+
+ 15.2 Tratamento de Exceções Aritméticas — [I]
+
+  15.2.1 Divisão por Zero — [I]
+	  Detecção da condição
+	  Geração de exceção ou sinalização
+	  Tratamento pela arquitetura
+
+  15.2.2 Reação do Sistema a Overflow — [I]
+	  Sinalização via flags
+	  Possível geração de interrupção
+	  Papel do software no tratamento
+
+
+
+16. Aritmética em Ponto Flutuante — Relação com a ULA (visão geral) — [V]
+
+ 16.1 Fundamentos do Ponto Flutuante — [V]
+
+  16.1.1 Representação em Ponto Flutuante — [V]
+	  Formato geral (sinal, expoente, mantissa)
+	  Padrão IEEE 754 (visão geral)
+	  Diferença em relação à representação inteira
+
+  16.1.2 Necessidade de Unidade Especializada (FPU) — [V]
+	  Separação entre ULA inteira e unidade de ponto flutuante
+	  Motivos da separação
+	  Cooperação entre as unidades
+
+
+ 16.2 Operações Básicas em Ponto Flutuante — [V]
+
+  16.2.1 Adição e Subtração — [V]
+	  Alinhamento de expoentes
+	  Ajuste da mantissa
+	  Arredondamento do resultado
+
+  16.2.2 Multiplicação e Divisão — [V]
+	  Multiplicação das mantissas
+	  Soma ou subtração dos expoentes
+	  Normalização do resultado
+
+
+
+PARTE 4 — MANIPULAÇÃO DE BITS, OPERAÇÕES DE COMPARAÇÃO E TESTES
+
+
+17. Operações de Deslocamento (Shift) — [P]
+
+ 17.1 Fundamentos do Deslocamento — [P]
+
+  17.1.1 Deslocamento Lógico — [P]
+	  Deslocamento à esquerda
+	  Deslocamento à direita
+	  Preenchimento com zeros
+
+  17.1.2 Deslocamento Aritmético — [P]
+	  Preservação do bit de sinal
+	  Deslocamento à direita aritmético
+	  Relação com divisão por potências de dois
+
+
+ 17.2 Aplicações do Deslocamento — [I]
+
+  17.2.1 Multiplicação e Divisão por Potências de Dois — [I]
+	  Deslocamento à esquerda como multiplicação
+	  Deslocamento à direita como divisão
+	  Limitações e casos especiais
+
+  17.2.2 Manipulação de Campos de Bits — [I]
+	  Isolamento de campos via deslocamento
+	  Reposicionamento de bits
+	  Combinação com operações lógicas
+
+
+
+18. Operações de Rotação (Rotate) — [I]
+
+ 18.1 Fundamentos da Rotação — [I]
+
+  18.1.1 Rotação sem Carry — [I]
+	  Rotação à esquerda
+	  Rotação à direita
+	  Reinserção circular dos bits
+
+  18.1.2 Rotação com Carry — [I]
+	  Inclusão do bit de carry na rotação
+	  Rotação à esquerda com carry
+	  Rotação à direita com carry
+
+
+ 18.2 Usos Típicos — [V]
+	Criptografia simples e checksums (visão geral)
+	Manipulação circular de bits
+	Testes de bits específicos
+
+
+
+19. Manipulação e Máscaras de Bits — [I]
+
+ 19.1 Ativação, Limpeza e Inversão de Bits — [I]
+
+  19.1.1 Set, Clear e Toggle — [I]
+	  Ativação de bits específicos (set)
+	  Limpeza de bits específicos (clear)
+	  Inversão de bits específicos (toggle)
+
+  19.1.2 Construção de Máscaras — [I]
+	  Máscaras fixas
+	  Máscaras geradas dinamicamente
+	  Combinação de máscaras com operações lógicas
+
+
+ 19.2 Extração e Inserção de Campos de Bits — [I]
+
+  19.2.1 Extração de Campos — [I]
+	  Isolamento de subconjuntos de bits
+	  Uso combinado de deslocamento e máscara
+
+  19.2.2 Inserção de Campos — [I]
+	  Substituição de subconjuntos de bits
+	  Preservação dos demais bits
+
+
+
+20. Operações de Comparação — [P]
+
+ 20.1 Fundamentos da Comparação — [P]
+
+  20.1.1 Comparação por Subtração — [P]
+	  Uso do subtrator para comparar
+	  Análise do resultado da subtração
+	  Análise das flags geradas
+
+  20.1.2 Tipos de Comparação — [P]
+	  Igualdade
+	  Maior que e menor que
+	  Comparação com sinal e sem sinal
+	  Comparação de igualdade
+	  Comparação de desigualdade
+	  Implementação da igualdade por XOR/XNOR
+	  Comparação baseada em subtração
+	  Relação entre resultado e flags
+
+
+ 20.2 Uso das Flags nas Comparações — [I]
+	Flag de zero na igualdade
+	Flags de sinal e overflow na comparação com sinal
+	Flag de carry na comparação sem sinal
+
+
+
+21. Testes de Bits e Condições — [I]
+
+ 21.1 Testes de Bits Individuais — [I]
+
+  21.1.1 Verificação de Bits Específicos — [I]
+	  Teste de bit ativo
+	  Teste de bit inativo
+	  Combinação com máscaras
+
+
+ 21.2 Combinação de Flags — [I]
+	Combinação de múltiplas flags
+	Avaliação de condições compostas
+	Uso em decisões de fluxo de controle
+
+
+
+PARTE 5 — IMPLEMENTAÇÃO INTERNA E CIRCUITOS DA ULA
+
+
+22. Meio Somador (Half Adder) — [P]
+
+ 22.1 Fundamentos do Meio Somador — [P]
+
+  22.1.1 Estrutura do Meio Somador — [P]
+	  Entradas do meio somador
+	  Saída soma
+	  Saída carry
+
+  22.1.2 Funcionamento Lógico — [P]
+	  Tabela-verdade do meio somador
+	  Portas lógicas utilizadas (XOR e AND)
+	  Limitações do meio somador
+
+
+ 22.2 Uso como Bloco Básico — [I]
+	Base para o somador completo
+	Simplicidade estrutural
+	Aplicação em circuitos simples
+
+
+
+23. Somador Completo (Full Adder) — [P]
+
+ 23.1 Fundamentos do Somador Completo — [P]
+
+  23.1.1 Estrutura do Somador Completo — [P]
+	  Entradas (dois bits e carry de entrada)
+	  Saída soma
+	  Saída carry de saída
+
+  23.1.2 Funcionamento Lógico — [P]
+	  Tabela-verdade do somador completo
+	  Construção a partir de meios somadores
+	  Portas lógicas envolvidas
+
+
+ 23.2 Bloco Básico da Aritmética — [P]
+	Unidade fundamental de soma
+	Base para somadores de múltiplos bits
+	Reaproveitamento para subtração
+
+
+
+24. Somadores de Múltiplos Bits (Ripple Carry) — [P]
+
+ 24.1 Estrutura do Somador Ripple Carry — [P]
+
+  24.1.1 Encadeamento de Somadores Completos — [P]
+	  Propagação do carry entre estágios
+	  Organização em cadeia
+	  Largura de bits do somador
+
+  24.1.2 Funcionamento — [P]
+	  Processamento bit a bit
+	  Geração do carry final
+	  Geração da flag de overflow
+
+
+ 24.2 Limitações do Ripple Carry — [I]
+	Atraso de Propagação
+	Tempo de propagação do carry
+	Impacto no desempenho
+	Motivação para somadores mais rápidos
+
+
+
+25. Somadores de Alto Desempenho (visão geral) — [I]
+
+ 25.1 Carry Lookahead (visão geral) — [I]
+	Conceito de Antecipação de Carry
+	Cálculo antecipado do carry
+	Redução do atraso de propagação
+	Maior complexidade do circuito
+
+
+ 25.2 Outras Técnicas de Aceleração (visão geral) — [V]
+	Somadores Carry-Select e Carry-Save
+	Ideia geral do carry-select
+	Ideia geral do carry-save
+	Compromisso entre velocidade e custo
+
+
+
+26. Circuitos de Subtração — [P]
+
+ 26.1 Subtração via Complemento de Dois — [P]
+
+  26.1.1 Reutilização do Somador — [P]
+	  Inversão do subtraendo
+	  Adição do bit de carry inicial
+	  Reaproveitamento do circuito somador
+
+  26.1.2 Geração do Borrow — [P]
+	  Relação entre carry e borrow
+	  Detecção de subtração negativa
+	  Papel na flag de carry
+
+
+ 26.2 Circuito Somador/Subtrator Combinado — [P]
+	Estrutura do Circuito Combinado — [P]
+	Uso de portas XOR de controle
+	Seleção entre soma e subtração
+	Economia de hardware
+
+
+
+27. Circuitos das Operações Lógicas — [P]
+
+ 27.1 Implementação das Operações Lógicas — [P]
+
+  27.1.1 Circuitos AND, OR e XOR — [P]
+	  Arranjo de portas para cada bit
+	  Operação em paralelo sobre todos os bits
+	  Saída lógica correspondente
+
+  27.1.2 Circuito NOT/Complemento — [P]
+	  Inversão bit a bit
+	  Uso combinado com outras operações
+
+
+ 27.2 Multiplexação das Operações Lógicas — [I]
+	Uso de multiplexador para escolher a função
+	Papel do código de operação
+	Integração com as demais unidades da ULA
+
+
+
+28. Circuitos de Deslocamento (Shifters) — [P]
+
+ 28.1 Estrutura dos Circuitos de Deslocamento — [P]
+
+  28.1.1 Deslocador Lógico — [P]
+	  Deslocamento à esquerda e à direita
+	  Preenchimento com zeros
+	  Estrutura em multiplexadores
+
+  28.1.2 Deslocador Aritmético — [P]
+	  Preservação do bit de sinal
+	  Diferença estrutural em relação ao lógico
+
+
+ 28.2 Deslocador Barrel (visão geral) — [I]
+	Conceito do Barrel Shifter — [I]
+	Deslocamento de múltiplas posições em um único ciclo
+	Estrutura em camadas de multiplexadores
+	Vantagem de desempenho
+
+
+
+PARTE 6 — ENTRADAS, SAÍDAS, CAMINHOS DE DADOS E CONEXÃO COM REGISTRADORES
+
+
+29. Conexão da ULA com o Banco de Registradores — [P]
+
+ 29.1 Leitura dos Operandos — [P]
+
+  29.1.1 Seleção dos Registradores de Origem — [P]
+	  Portas de leitura do banco de registradores
+	  Seleção do primeiro operando
+	  Seleção do segundo operando
+
+  29.1.2 Disponibilização dos Operandos à ULA — [P]
+	  Sincronização da leitura
+	  Caminho até as entradas da ULA
+
+
+ 29.2 Seleção do Registrador de Destino — [P]
+	Porta de escrita do banco de registradores
+	Sinal de habilitação de escrita
+	Sincronização da escrita
+
+
+
+30. Conexão da ULA com Barramentos Internos — [I]
+
+ 30.1 Transporte dos Operandos — [I]
+	Uso de Barramentos Internos
+	Barramento de entrada de dados
+	Compartilhamento do barramento entre componentes
+
+
+ 30.2 Transporte do Resultado — [I]
+	Caminho do Resultado até o Barramento
+	Barramento de saída de dados
+	Encaminhamento a registradores ou memória
+
+
+
+31. Multiplexadores de Entrada da ULA — [P]
+
+ 31.1 Seleção das Fontes dos Operandos — [P]
+
+  31.1.1 Multiplexação do Primeiro Operando — [P]
+	  Fontes possíveis (registrador, constante, PC)
+	  Sinal de seleção
+
+  31.1.2 Multiplexação do Segundo Operando — [P]
+	  Fontes possíveis (registrador, valor imediato)
+	  Papel na flexibilidade do Datapath
+
+
+ 31.2 Importância da Multiplexação de Entrada — [I]
+	Flexibilidade Operacional
+	Suporte a diferentes formatos de instrução
+	Redução da complexidade do Datapath
+
+
+
+32. Caminho dos Operandos até a ULA — [I]
+
+ 32.1 Origem dos Operandos — [I]
+
+  32.1.1 Operandos Provenientes de Registradores — [I]
+	  Leitura direta do banco de registradores
+	  Sincronização com o ciclo de execução
+
+  32.1.2 Operandos Imediatos — [I]
+	  Extração do valor imediato da instrução
+	  Extensão de sinal do valor imediato
+
+
+ 32.2 Preparação dos Operandos — [I]
+	Ajustes Antes da Entrada na ULA
+	Extensão de sinal
+	Alinhamento de bits
+
+
+
+33. Caminho do Resultado até o Destino — [I]
+
+ 33.1 Destinos Possíveis do Resultado — [I]
+
+  33.1.1 Escrita em Registrador — [I]
+	  Encaminhamento ao banco de registradores
+	  Sincronização da escrita
+
+  33.1.2 Encaminhamento à Memória ou ao PC — [I]
+	  Uso do resultado como endereço
+	  Uso do resultado para atualização do PC
+
+
+ 33.2 Multiplexação da Saída — [I]
+	Seleção do Caminho de Saída
+	Multiplexador de destino
+	Papel do sinal de controle
+
+
+
+PARTE 7 — CONTROLE DA ULA, FLAGS E REGISTRADORES DE STATUS
+
+
+34. Código de Operação e Seleção da Função — [P]
+
+ 34.1 Código de Operação Interno da ULA — [P]
+
+  34.1.1 Conceito do Código de Operação — [P]
+	  Codificação binária da função desejada
+	  Relação com o opcode da instrução
+	  Geração pelo decodificador de instrução
+
+  34.1.2 Decodificação do Código de Operação — [P]
+	  Decodificador interno da ULA
+	  Ativação da unidade funcional correspondente
+	  Seleção via multiplexador de saída
+
+
+ 34.2 Conjunto de Operações Suportadas — [I]
+
+  34.2.1 Operações Aritméticas Suportadas — [I]
+	  Soma, subtração, incremento, decremento
+
+  34.2.2 Operações Lógicas e de Deslocamento Suportadas — [I]
+	  AND, OR, XOR, NOT
+	  Deslocamentos e rotações
+
+
+
+35. Sinais de Controle da ULA — [P]
+
+ 35.1 Origem dos Sinais de Controle — [P]
+	Geração pela Unidade de Controle
+	Decodificação da instrução
+	Geração do sinal de operação da ULA
+	Sincronização com o ciclo de clock
+
+
+ 35.2 Sinais Auxiliares de Controle — [I]
+
+  35.2.1 Habilitação de Escrita — [I]
+	  Controle da escrita em registradores
+	  Controle da escrita em memória
+
+  35.2.2 Sinais de Seleção de Multiplexadores — [I]
+	  Seleção de operandos
+	  Seleção do destino do resultado
+
+
+
+36. Registrador de Flags/Status Detalhado — [P]
+
+ 36.1 Estrutura do Registrador de Status — [P]
+
+  36.1.1 Organização dos Bits de Flag — [P]
+	  Flag de zero (Z)
+	  Flag de carry (C)
+	  Flag de overflow (V)
+	  Flag de sinal (N/S)
+
+  36.1.2 Persistência e Atualização — [P]
+	  Atualização condicionada à operação executada
+	  Persistência entre instruções
+	  Papel na arquitetura do processador
+
+
+ 36.2 Relação com Outras Estruturas — [I]
+	Relação com a Unidade de Controle
+	Consulta das flags para decisões de desvio
+	Integração com o registrador de status geral do processador
+
+
+
+37. Geração e Atualização das Flags — [P]
+
+ 37.1 Geração da Flag de Zero — [P]
+	Condição de Ativação
+	Resultado igual a zero
+	Circuito de detecção (porta NOR de múltiplas entradas)
+
+
+ 37.2 Geração da Flag de Carry — [P]
+	Condição de Ativação
+	Carry de saída do somador
+	Diferença entre adição e subtração
+
+
+ 37.3 Geração da Flag de Overflow — [P]
+	Condição de Ativação
+	Comparação entre carry de entrada e saída do bit mais significativo
+	Relevância apenas para números com sinal
+
+
+ 37.4 Geração da Flag de Sinal — [P]
+	Condição de Ativação
+	Bit mais significativo do resultado
+	Indicação de resultado negativo
+
+
+
+38. Uso das Flags pelo Fluxo de Controle do Programa — [I]
+
+ 38.1 Instruções de Desvio Condicional — [I]
+
+  38.1.1 Consulta às Flags — [I]
+	  Desvio se igual (uso da flag zero)
+	  Desvio se maior/menor (uso combinado de flags)
+
+  38.1.2 Importância para a Lógica de Programas — [I]
+	  Implementação de estruturas condicionais
+	  Implementação de laços de repetição
+
+
+ 38.2 Persistência das Flags entre Instruções — [I]
+	Comportamento das Flags
+	Instruções que alteram as flags
+	Instruções que preservam as flags
+
+
+
+PARTE 8 — INTEGRAÇÃO DA ULA COM DATAPATH E UNIDADE DE CONTROLE
+
+
+39. Papel da ULA no Datapath — [I]
+
+ 39.1 Posição da ULA no Datapath — [I]
+
+  39.1.1 Localização Funcional — [I]
+	  Unidade central de processamento de dados
+	  Ponto de convergência dos operandos
+
+  39.1.2 Fluxo de Dados através da ULA — [I]
+	  Entrada dos operandos
+	  Processamento
+	  Saída do resultado
+
+
+ 39.2 Relação com Outros Componentes do Datapath — [I]
+	Interação com Banco de Registradores e Memória
+	Fornecimento de operandos
+	Recebimento do resultado
+
+
+
+40. Relação entre ULA e Unidade de Controle — [I]
+
+ 40.1 Dependência da ULA em Relação ao Controle — [I]
+	Recebimento de Sinais de Controle
+	Seleção da operação
+	Sincronização temporal
+
+
+ 40.2 Retorno de Informações da ULA ao Controle — [I]
+	Uso das Flags pela Unidade de Controle
+	Tomada de decisão em desvios condicionais
+	Influência no próximo estado do controle
+
+
+
+41. ULA no Ciclo de Busca-Decodificação-Execução — [I]
+
+ 41.1 Participação da ULA em Cada Fase — [I]
+
+  41.1.1 Uso na Fase de Execução — [I]
+	  Processamento dos operandos da instrução
+	  Geração do resultado da operação
+
+  41.1.2 Uso Auxiliar em Outras Fases — [I]
+	  Cálculo de endereços (ex.: incremento do PC)
+	  Cálculo de endereços efetivos de memória
+
+
+ 41.2 Importância da ULA no Ciclo Completo — [I]
+	Centralidade da ULA
+	Participação em praticamente todas as instruções
+	Papel crítico no desempenho do ciclo
+
+
+
+42. ULA em Diferentes Organizações de Datapath (visão geral) — [V]
+
+ 42.1 ULA em Datapath Monociclo — [V]
+	Características
+	Uso único da ULA por instrução
+	Simplicidade da integração
+
+
+ 42.2 ULA em Datapath Multiciclo — [V]
+	Características
+	Reutilização da ULA em múltiplos ciclos
+	Maior eficiência de hardware
+
+
+ 42.3 ULA em Datapath Pipeline (visão geral) — [V]
+	Características
+	Uso da ULA em estágio específico do pipeline
+	Necessidade de sincronização entre estágios
+
+
+
+PARTE 9 — VARIAÇÕES, ORGANIZAÇÕES AVANÇADAS E EVOLUÇÃO DAS ULAs
+
+
+43. ULAs Especializadas e Unidades Auxiliares (visão geral) — [V]
+
+ 43.1 Unidade de Ponto Flutuante (FPU) — [V]
+	Separação da ULA inteira
+	Operações específicas de ponto flutuante
+
+  
+ 43.2 Unidades Vetoriais e SIMD (visão geral) — [V]
+	Processamento de múltiplos dados simultaneamente
+	Aplicações em multimídia e processamento gráfico
+
+
+
+44. Múltiplas ULAs e Paralelismo (visão geral) — [V]
+
+ 44.1 Uso de Múltiplas ULAs — [V]
+	Processadores Superescalares (visão geral)
+	Execução paralela de operações aritméticas
+	Aumento do throughput
+
+
+ 44.2 Benefícios e Limitações — [V]
+
+  44.2.1 Vantagens do Paralelismo — [V]
+	  Maior desempenho
+	  Melhor utilização dos recursos
+
+  44.2.2 Limitações — [V]
+	  Complexidade de coordenação
+	  Maior custo de hardware
+
+
+
+45. ULA em Processadores RISC × CISC (visão geral) — [V]
+
+ 45.1 Características em Arquiteturas RISC — [V]
+	Conjunto Reduzido de Operações
+	Simplicidade das operações suportadas
+	Foco em desempenho e regularidade
+
+
+ 45.2 Características em Arquiteturas CISC — [V]
+	Conjunto Amplo de Operações
+	Maior variedade de operações suportadas
+	Maior complexidade interna
+
+
+
+46. Tendências e Evolução das ULAs Modernas — [V]
+
+ 46.1 Novas Direções — [V]
+
+  46.1.1 ULAs Mais Eficientes — [V]
+	  Otimização energética
+	  Maior integração com outras unidades
+
+  46.1.2 ULAs Especializadas por Aplicação — [V]
+	  Aceleração de operações específicas
+	  Uso em processadores heterogêneos
+
+
+ 46.2 Evolução Contínua — [V]
+	Tendências da microarquitetura
+	Novos desafios de projeto
+
+
+
+PARTE 10 — DESEMPENHO, INTEGRAÇÃO, RESUMO GERAL E CONCLUSÃO
+
+
+47. Desempenho da ULA — [I]
+
+ 47.1 Fatores que Influenciam o Desempenho — [I]
+
+  47.1.1 Atraso de Propagação — [I]
+	  Tempo de propagação dos sinais
+	  Impacto da profundidade dos circuitos
+
+  47.1.2 Largura de Bits e Complexidade — [I]
+	  Relação entre largura e desempenho
+	  Compromisso entre custo e velocidade
+
+  47.1.3 Latência e Throughput — [I]
+	  Latência de uma operação
+	  Throughput de operações
+	  Diferença entre latência e throughput
+	  Operações de diferentes complexidades
+	  Impacto no desempenho da ULA
+
+
+ 47.2 Técnicas de Otimização — [I]
+	Otimização dos Circuitos Internos
+	Uso de somadores mais rápidos
+	Redução do caminho crítico
+
+
+
+48. Impacto da ULA no Desempenho Geral do Processador — [I]
+
+ 48.1 Contribuição para o Desempenho Global — [I]
+	Papel Crítico no Caminho de Execução
+	Frequência de uso pela maioria das instruções
+	Influência direta no tempo de ciclo
+
+
+ 48.2 Relação com Outros Componentes — [I]
+	Equilíbrio entre Componentes
+	Relação com a velocidade da memória
+	Relação com a eficiência do controle
+
+
+
+49. Resumo Geral da Unidade Lógica e Aritmética — [I]
+
+ 49.1 Revisão dos Conceitos Fundamentais — [I]
+
+  49.1.1 Fundamentos Essenciais — [I]
+	  Definição da ULA
+	  Objetivos e importância
+	  Organização geral
+
+  49.1.2 Componentes Fundamentais — [I]
+	  Circuitos aritméticos
+	  Circuitos lógicos
+	  Registrador de flags
+
+
+ 49.2 Operações Estudadas — [I]
+	Operações aritméticas
+	Operações lógicas
+	Deslocamento e rotação
+	Comparação e testes
+
+
+ 49.3 Revisão da Integração — [I]
+	Integração com o Datapath e o Controle
+	Conexão com registradores
+	Relação com a unidade de controle
+	Papel no ciclo de execução
+
+
+
+50. Conclusão do Estudo da ULA — [V]
+
+ 50.1 Síntese Final — [V]
+
+  50.1.1 O Papel da ULA — [V]
+	  Núcleo do processamento de dados
+	  Base da execução aritmética e lógica
+	  Importância central na CPU
+
+  50.1.2 Importância para Arquitetura e Organização de Computadores — [V]
+	  Compreensão dos processadores
+	  Base para estudos avançados (Datapath, Pipeline, ISA)
+
+
+ 50.2 Competências Desenvolvidas — [V]
+
+  50.2.1 Conhecimentos Adquiridos — [V]
+	  Estrutura e organização da ULA
+	  Operações suportadas
+	  Circuitos internos
+	  Integração com outros componentes
+
+  50.2.2 Preparação para Estudos Posteriores — [V]
+	  Unidade de Controle
+	  Caminho de Dados (Datapath)
+	  Pipeline
+	  Processadores Modernos
+
+
+ 50.3 Visão Geral Final — [V]
+	Integração dos conceitos
+	Importância da ULA
+	Continuidade dos estudos
