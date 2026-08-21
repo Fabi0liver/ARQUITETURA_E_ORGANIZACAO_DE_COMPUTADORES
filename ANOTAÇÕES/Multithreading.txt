@@ -525,77 +525,96 @@ PARTE 5 — ORGANIZAÇÃO E ARQUITETURA DE PROCESSADORES MULTITHREADED
 19. Unidades Funcionais Compartilhadas — [P]
 
  19.1 Conceito de Compartilhamento — [P]
+	Recursos Compartilhados
+	Unidades aritméticas e lógicas
+	Unidade de ponto flutuante
+	Unidade de acesso à memória
+	Portas de execução
+	Filas de instruções
+	Buffers de instruções
+	Unidades de load/store
+	Recursos de emissão
+	Recursos do front-end
+	Recursos do back-end
 
-  19.1.1 Recursos Compartilhados — [P]
-	  Unidades aritméticas e lógicas
-	  Unidade de ponto flutuante
-	  Unidade de acesso à memória
 
-
- 19.2 Gerenciamento do Compartilhamento — [P]
-
-  19.2.1 Arbitragem de Recursos — [P]
-	  Critérios de prioridade
-	  Conflitos de acesso
-	  Políticas de arbitragem
+ 19.2 Arbitragem de Recursos — [P]
+	Critérios de prioridade
+	Conflitos de acesso
+	Políticas de arbitragem
+	Alocação de recursos entre threads
+	Compartilhamento estático e dinâmico de recursos
+	Distribuição de unidades funcionais entre threads
+	Políticas de alocação de recursos
+	Fairness (justiça na distribuição)
+	Starvation (inanição)
+	Impacto da alocação no throughput
 
 
 
 20. Registradores e Banco de Registradores Multithreaded — [P]
 
- 20.1 Organização dos Registradores — [P]
+ 20.1 Bancos de Registradores por Thread — [P]
+	Conjuntos independentes de registradores
+	Isolamento entre threads
+	Acesso rápido ao contexto
+	Replicação do estado arquitetural por thread
+	Compartilhamento versus duplicação de estruturas
+	Número de contextos suportados
+	Aumento da largura e complexidade do banco de registradores
+	Impacto do número de threads no acesso aos registradores
 
-  20.1.1 Bancos de Registradores por Thread — [P]
-	  Conjuntos independentes de registradores
-	  Isolamento entre threads
-	  Acesso rápido ao contexto
 
-
- 20.2 Impacto na Área e na Complexidade — [P]
-
-  20.2.1 Custos de Implementação — [P]
-	  Aumento da área do chip
-	  Complexidade do banco de registradores
-	  Relação entre número de threads e custo
+ 20.2 Custos de Implementação — [P]
+	Aumento da área do chip
+	Complexidade do banco de registradores
+	Relação entre número de threads e custo
 
 
 
 21. Pipeline em Processadores Multithreaded — [P]
 
- 21.1 Organização do Pipeline Multithreaded — [P]
-
-  21.1.1 Estágios do Pipeline — [P]
-	  Busca de instruções por thread
-	  Decodificação
-	  Execução
-	  Escrita de resultados
+ 21.1 Estágios do Pipeline — [P]
+	Busca de instruções por thread
+	Decodificação
+	Execução
+	Escrita de resultados
 
 
- 21.2 Preenchimento de Bolhas com Múltiplas Threads — [P]
-
-  21.2.1 Redução de Stalls — [P]
-	  Substituição de instruções em stall
-	  Aproveitamento de ciclos ociosos
-	  Melhoria da utilização do pipeline
+ 21.2 Redução de Stalls — [P]
+	Substituição de instruções em stall
+	Aproveitamento de ciclos ociosos
+	Melhoria da utilização do pipeline
 
 
 
 22. Unidade de Busca e Despacho em Ambiente Multithreaded — [I]
 
  22.1 Busca de Instruções Multithreaded — [I]
-
-  22.1.1 Seleção da Thread para Busca — [I]
-	  Políticas de seleção
-	  Balanceamento entre threads
-	  Prioridade dinâmica
+	Seleção da Thread para Busca
+	Políticas de seleção
+	Balanceamento entre threads
+	Prioridade dinâmica
+	Front-end do processador multithreaded
+	Compartilhamento do front-end entre threads
+	Busca de instruções de múltiplas threads
+	Decodificação de instruções de múltiplas threads
+	Gargalos de fetch e decode
+	Impacto do front-end no throughput do SMT
 
 
  22.2 Despacho de Instruções — [I]
-
-  22.2.1 Organização do Despacho — [I]
-	  Envio para unidades funcionais
-	  Controle de dependências
-	  Ordem de despacho por thread
+	Organização do Despacho
+	Envio para unidades funcionais
+	Controle de dependências
+	Ordem de despacho por thread
+	Organização do back-end multithreaded
+	Filas de instruções compartilhadas
+	Emissão de instruções de múltiplas threads
+	Compartilhamento das unidades de execução
+	Competição por unidades funcionais
+	Controle da emissão entre threads
+	Impacto do back-end no desempenho
 
 
 
@@ -632,54 +651,56 @@ PARTE 6 — MULTITHREADING INTERCALADO E MULTITHREADING SIMULTÂNEO (SMT)
 24. Multithreading em Grão Fino (Fine-Grained) — [P]
 
  24.1 Fundamentos — [P]
-
-  24.1.1 Conceito — [P]
-	  Troca de thread a cada ciclo de clock
-	  Execução alternada entre threads prontas
-	  Alta frequência de troca
+	Troca de thread a cada ciclo de clock
+	Execução alternada entre threads prontas
+	Alta frequência de troca
 
 
- 24.2 Funcionamento — [P]
-
-  24.2.1 Mecanismo de Escalonamento por Ciclo — [P]
-	  Seleção da thread a cada ciclo
-	  Eliminação de bolhas de pipeline
-	  Política round-robin ou baseada em prioridade
+ 24.2 Mecanismo de Escalonamento por Ciclo — [P]
+	Seleção da thread a cada ciclo
+	Eliminação de bolhas de pipeline
+	Política round-robin ou baseada em prioridade
 
 
- 24.3 Vantagens e Limitações — [P]
-
-  24.3.1 Análise — [P]
-	  Alta tolerância a latências
-	  Menor desempenho de thread isolada
-	  Maior complexidade de escalonamento
+ 24.3 Análise — [P]
+	Alta tolerância a latências
+	Menor desempenho de thread isolada
+	Maior complexidade de escalonamento
+	
 
 
 
 25. Multithreading Simultâneo (SMT) — [P]
 
- 25.1 Fundamentos do SMT — [P]
-
-  25.1.1 Conceito de SMT — [P]
-	  Execução simultânea de instruções de múltiplas threads
-	  Compartilhamento de unidades funcionais no mesmo ciclo
-	  Combinação com processadores superescalares
+ 25.1 Conceito de SMT — [P]
+	Execução simultânea de instruções de múltiplas threads
+	Compartilhamento de unidades funcionais no mesmo ciclo
+	Combinação com processadores superescalares
 
 
- 25.2 Funcionamento do SMT — [P]
+ 25.2 Escalonamento Dinâmico de Instruções — [P]
+	Seleção de instruções de diferentes threads
+	Preenchimento de slots de emissão
+	Máxima utilização das unidades funcionais
+	SMT em processadores com execução fora de ordem
+	Seleção de instruções de múltiplas threads
+	Janelas de execução compartilhadas
+	Emissão de instruções de diferentes threads
+	Aproveitamento de unidades de execução ociosas
+	Interação entre TLP e execução fora de ordem
 
-  25.2.1 Escalonamento Dinâmico de Instruções — [P]
-	  Seleção de instruções de diferentes threads
-	  Preenchimento de slots de emissão
-	  Máxima utilização das unidades funcionais
 
-
- 25.3 Vantagens e Desafios do SMT — [P]
-
-  25.3.1 Análise — [P]
-	  Alto aproveitamento do hardware superescalar
-	  Complexidade de escalonamento
-	  Contenção por recursos compartilhados
+ 25.3 Análise — [P]
+	Alto aproveitamento do hardware superescalar
+	Complexidade de escalonamento
+	Contenção por recursos compartilhados
+	Contenção entre threads por recursos compartilhados
+	Competição por unidades funcionais
+	Competição por largura de emissão
+	Competição por filas e buffers
+	Competição por unidades de load/store
+	Impacto da contenção no desempenho
+	Degradação do desempenho de uma thread devido à outra
 
 
 
@@ -705,19 +726,25 @@ PARTE 6 — MULTITHREADING INTERCALADO E MULTITHREADING SIMULTÂNEO (SMT)
 27. SMT em Processadores Comerciais — [I]
 
  27.1 Exemplos de Implementação — [I]
-
-  27.1.1 Casos Conhecidos — [I]
-	  Hyper-Threading da Intel
-	  SMT em processadores da IBM
-	  SMT em processadores modernos de propósito geral
+	Hyper-Threading da Intel
+	SMT em processadores da IBM
+	SMT em processadores modernos de propósito geral
+	SMT como técnica arquitetural
+	Hyper-Threading como implementação comercial de SMT
+	Diferença entre SMT e Hyper-Threading
+	Núcleo físico e processadores lógicos
+	Recursos duplicados por thread lógica
+	Recursos compartilhados entre threads lógicas
+	Limitações do Hyper-Threading
 
 
  27.2 Impactos Práticos — [I]
-
-  27.2.1 Resultados Observados — [I]
-	  Ganhos de desempenho em cargas variadas
-	  Impacto em aplicações sensíveis à latência
-	  Considerações de segurança
+	Ganhos de desempenho em cargas variadas  
+	Impacto em aplicações sensíveis à latência
+	Considerações de segurança
+	Ganho de desempenho inferior a um segundo núcleo físico
+	Impacto da contenção de recursos
+	Dependência do ganho em relação à carga de trabalho
 
 
 
@@ -825,39 +852,44 @@ PARTE 8 — COMPARTILHAMENTO DE RECURSOS, COMUNICAÇÃO E SINCRONIZAÇÃO ENTRE 
 
 33. Cache em Ambientes Multithreaded — [I]
 
- 33.1 Compartilhamento de Cache — [I]
+ 33.1 Cache Compartilhada entre Threads — [I]
+	Uso simultâneo da mesma cache
+	Poluição de cache
+	Efeitos sobre a taxa de acerto
+	False sharing
+	Compartilhamento da mesma linha de cache por diferentes threads
+	Invalidações causadas por false sharing
+	Impacto do false sharing no desempenho
+	Diferença entre compartilhamento real e false sharing
 
-  33.1.1 Cache Compartilhada entre Threads — [I]
-	  Uso simultâneo da mesma cache
-	  Poluição de cache
-	  Efeitos sobre a taxa de acerto
 
-
- 33.2 Estratégias de Gerenciamento — [I]
-
-  33.2.1 Políticas de Alocação — [I]
-	  Particionamento de cache
-	  Políticas de substituição sensíveis a threads
-	  Isolamento parcial entre threads
+ 33.2 Políticas de Alocação — [I]
+	Particionamento de cache
+	Políticas de substituição sensíveis a threads
+	Isolamento parcial entre threads
 
 
 
 34. Comunicação entre Threads — [I]
 
  34.1 Fundamentos da Comunicação — [I]
+	Comunicação via Memória Compartilhada
+	Leitura e escrita em variáveis comuns
+	Necessidade de coordenação
+	Riscos de inconsistência
+	Dependências entre threads
+	Dependência de dados compartilhados
+	Dependência de leitura e escrita
+	Efeitos da ordem de execução
+	Impacto das dependências no paralelismo
 
-  34.1.1 Comunicação via Memória Compartilhada — [I]
-	  Leitura e escrita em variáveis comuns
-	  Necessidade de coordenação
-	  Riscos de inconsistência
 
-
- 34.2 Mecanismos de Comunicação — [I]
-
-  34.2.1 Estruturas de Comunicação — [I]
-	  Variáveis compartilhadas
-	  Filas de mensagens
-	  Sinalizações entre threads
+ 34.2 Estruturas de Comunicação — [I]
+	Variáveis compartilhadas
+	Filas de mensagens
+	Sinalizações entre threads
+	Comunicação síncrona e assíncrona entre threads
+	Coordenação baseada em dados compartilhados
 
 
 
@@ -950,12 +982,15 @@ PARTE 9 — ESCALONAMENTO, GERENCIAMENTO E EXECUÇÃO DE THREADS
 	  Risco de inanição (starvation)
 
 
- 38.2 Escalonamento Sensível a Desempenho — [I]
-
-  38.2.1 Políticas Adaptativas — [I]
-	  Priorização de threads com menos stalls
-	  Balanceamento dinâmico de recursos
-	  Otimização do throughput agregado
+ 38.2 Políticas Adaptativas — [I]
+	Priorização de threads com menos stalls
+	Balanceamento dinâmico de recursos
+	Otimização do throughput agregado
+	Escalonamento baseado em stalls
+	Escalonamento baseado na disponibilidade de recursos
+	Priorização de threads com maior potencial de utilização
+	Balanceamento entre throughput e fairness
+	Detecção de threads consumidoras de recursos
 
 
 
@@ -1010,38 +1045,45 @@ PARTE 10 — PARALELISMO, DESEMPENHO, EFICIÊNCIA E LIMITAÇÕES
 	  Número de instruções executadas por ciclo
 	  Impacto do número de threads
 	  Relação com a utilização do hardware
+	  Speedup
+	  Eficiência do paralelismo
+	  Throughput agregado entre threads
+	  Throughput por thread
 
   41.1.2 Latência por Thread — [I]
 	  Tempo de execução de uma thread isolada
 	  Impacto da concorrência por recursos
 	  Compromisso entre throughput e latência
+	  Latência sob competição de recursos
+	  Degradação da latência causada por outras threads
+	  Trade-off entre throughput e latência
 
 
- 41.2 Utilização de Recursos — [I]
-
-  41.2.1 Taxa de Ocupação das Unidades Funcionais — [I]
-	  Medição da ociosidade
-	  Impacto do multithreading na ocupação
-	  Comparação entre técnicas
+ 41.2 Taxa de Ocupação das Unidades Funcionais — [I]
+	Medição da ociosidade
+	Impacto do multithreading na ocupação
+	Comparação entre técnicas
 
 
 
 42. Ganhos de Desempenho e Throughput — [I]
 
- 42.1 Fatores que Influenciam o Ganho — [I]
-
-  42.1.1 Características da Carga de Trabalho — [I]
-	  Grau de paralelismo disponível
-	  Frequência de eventos de stall
-	  Dependências entre instruções
+ 42.1 Características da Carga de Trabalho — [I]
+	Grau de paralelismo disponível
+	Frequência de eventos de stall
+	Dependências entre instruções
 
 
- 42.2 Limites Teóricos de Ganho — [I]
-
-  42.2.1 Escalabilidade do Desempenho — [I]
-	  Relação entre número de threads e desempenho
-	  Retornos decrescentes
-	  Impacto da contenção de recursos
+ 42.2 Escalabilidade do Desempenho — [I]
+	Relação entre número de threads e desempenho
+	Retornos decrescentes
+	Impacto da contenção de recursos
+	Lei de Amdahl aplicada ao multithreading
+	Parte serial e parte paralela da execução
+	Limite teórico de aceleração
+	Relação entre número de threads e speedup
+	Retornos decrescentes com o aumento das threads
+	Impacto da contenção no speedup
 
 
 
