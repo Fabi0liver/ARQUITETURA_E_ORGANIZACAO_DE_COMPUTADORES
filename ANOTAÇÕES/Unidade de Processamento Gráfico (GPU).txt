@@ -1488,7 +1488,6 @@ PARTE 11 — DESEMPENHO, ESCALABILIDADE, EFICIÊNCIA E LIMITAÇÕES DAS GPUs
 
 
  51.2 Núcleos Tensoriais — [V]
-	Conceito de Núcleo Tensorial
 	Unidades dedicadas a operações matriciais
 	Aceleração de cargas de inteligência artificial
 	Multiplicação e acumulação matricial
