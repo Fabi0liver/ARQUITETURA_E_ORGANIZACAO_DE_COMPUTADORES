@@ -1,0 +1,2351 @@
+                                         Memória Principal (RAM) 
+
+
+A classificação abaixo indica a profundidade recomendada para cada grande tópico da lista.
+
+[P] Profundidade — estudar mecanismos, estruturas, funcionamento interno e relações entre componentes.
+[I] Intermediário — compreender bem o funcionamento e as relações principais, sem precisar dominar todos os
+   detalhes de implementação.
+[V] Visão geral — saber o que é, para que serve e como se relaciona com os registradores.
+
+
+
+PARTE 1 — FUNDAMENTOS DA MEMÓRIA PRINCIPAL
+
+
+1. Introdução à Memória Principal — [I]
+
+ 1.1 Conceitos Gerais — [I]
+
+  1.1.1 Introdução à Memória Principal — [I]
+	  Definição
+	  Objetivos
+	  Finalidade
+	  Importância
+	  Papel no sistema computacional
+	  Papel na Arquitetura de Computadores
+	  Papel na Organização de Computadores
+	  Papel durante a execução de programas
+	  Relação entre hardware e software
+	  Memória principal como espaço de trabalho do sistema
+	  Fluxo geral das informações
+	  Evolução da memória principal
+
+  1.1.2 Importância da Memória Principal — [V]
+	  Desempenho do sistema
+	  Disponibilidade dos dados
+	  Comunicação entre processador e memória
+	  Execução de programas
+	  Execução do sistema operacional
+	  Compartilhamento de dados
+	  Influência no desempenho da CPU
+	  Influência na escalabilidade do sistema
+	  Influência no consumo de energia
+	  Influência no custo do computador
+
+  1.1.3 Papel na Hierarquia de Memória — [I]
+	  Memória principal como nível intermediário
+	  Relação com os registradores
+	  Relação com a memória cache
+	  Relação com a memória secundária
+	  Fluxo geral dos dados
+	  Papel como memória de trabalho
+	  Transparência para o software
+	  Compromisso entre capacidade, velocidade e custo
+
+
+ 1.2 Arquitetura e Organização — [I]
+
+  1.2.1 Memória Principal na Arquitetura de Computadores — [I]
+	  Papel arquitetural
+	  Visão da ISA
+	  Modelo de memória observado pelo processador
+	  Espaço de endereçamento
+	  Organização do espaço de memória
+	  Interface arquitetural
+	  Independência da implementação física
+
+  1.2.2 Memória Principal na Organização de Computadores — [I]
+	  Implementação física
+	  Organização interna
+	  Organização lógica
+	  Organização dos módulos
+	  Organização dos bancos
+	  Organização dos canais
+	  Organização dos acessos
+	  Implementação do subsistema de memória
+
+  1.2.3 Organização versus Arquitetura — [V]
+	  Diferenças
+	  Complementaridade
+	  Responsabilidades de cada área
+	  Impacto na memória principal
+	  Exemplos práticos
+
+
+
+2. Fundamentos da Memória Principal — [I]
+
+ 2.1 Conceitos Fundamentais — [I]
+
+  2.1.1 Armazenamento de Informações — [V]
+	  Dados
+	  Instruções
+	  Valores temporários
+	  Variáveis
+	  Objetos
+	  Estruturas de dados
+	  Código executável
+	  Estado do programa
+	  Contexto de execução
+
+  2.1.2 Características Fundamentais — [I]
+	  Volatilidade
+	  Persistência
+	  Retenção de dados
+	  Capacidade
+	  Densidade
+	  Escalabilidade
+	  Granularidade de armazenamento
+	  Granularidade de acesso
+	  Granularidade de transferência
+
+  2.1.3 Objetivos da Memória Principal — [V]
+	  Armazenamento temporário
+	  Execução eficiente dos programas
+	  Compartilhamento entre CPU e dispositivos
+	  Disponibilidade imediata dos dados
+	  Suporte ao sistema operacional
+	  Suporte às aplicações
+	  Balanceamento entre custo e desempenho
+
+
+ 2.2 Representação da Informação — [I]
+
+  2.2.1 Unidades Fundamentais — [V]
+	  Bit
+	  Byte
+	  Palavra
+	  Palavra dupla
+	  Quad Word
+	  Linha de memória
+	  Bloco de transferência
+
+  2.2.2 Organização dos Dados — [I]
+	  Organização por bytes
+	  Organização por palavras
+	  Ordem dos bytes
+	  Alinhamento
+	  Desalinhamento
+	  Granularidade dos acessos
+
+  2.2.3 Endereçamento Básico — [I]
+	  Endereço de memória
+	  Espaço de endereçamento
+	  Endereço físico
+	  Capacidade de endereçamento
+	  Faixa de endereçamento
+	  Organização linear da memória
+
+
+
+3. Organização Geral da Memória Principal — [I]
+
+ 3.1 Organização Física — [I]
+
+  3.1.1 Estrutura Física — [I]
+	  Chips de memória
+	  Matrizes de memória
+	  Linhas
+	  Colunas
+	  Bancos
+	  Barramentos internos
+	  Organização física dos chips
+	  Organização física dos módulos
+
+  3.1.2 Organização Hierárquica Interna — [I]
+	  Células
+	  Matrizes
+	  Submatrizes
+	  Bancos
+	  Ranks (visão geral)
+	  Canais (visão geral)
+	  Hierarquia física da memória
+
+  3.1.3 Componentes Fundamentais — [I]
+	  Células de memória
+	  Decodificadores
+	  Sense Amplifiers
+	  Drivers
+	  Buffers
+	  Circuitos de leitura
+	  Circuitos de escrita
+	  Circuitos de controle
+
+
+ 3.2 Organização Lógica — [I]
+
+  3.2.1 Estrutura Lógica — [I]
+	  Espaço linear
+	  Organização dos endereços
+	  Organização das palavras
+	  Organização dos blocos
+	  Continuidade lógica
+	  Visão da CPU
+
+  3.2.2 Organização Funcional — [V]
+	  Área de código
+	  Área de dados
+	  Pilha
+	  Heap
+	  Espaço reservado ao sistema operacional
+	  Áreas compartilhadas
+	  Mapeamento lógico da memória
+
+  3.2.3 Organização dos Acessos — [I]
+	  Acesso por endereço
+	  Localização dos dados
+	  Seleção das células
+	  Fluxo de leitura
+	  Fluxo de escrita
+	  Caminho dos dados
+
+
+
+4. Comunicação da Memória Principal — [I]
+
+ 4.1 Interface com o Sistema — [I]
+
+  4.1.1 Comunicação com o Processador — [I]
+	  Solicitação de leitura
+	  Solicitação de escrita
+	  Endereçamento
+	  Transferência de dados
+	  Sincronização
+	  Controle dos acessos
+
+  4.1.2 Interface de Comunicação — [I]
+	  Barramento de dados
+	  Barramento de endereços
+	  Barramento de controle
+	  Sinais de leitura
+	  Sinais de escrita
+	  Temporização
+	  Ciclo de memória
+
+  4.1.3 Fluxo Geral de Comunicação — [I]
+	  Geração do endereço
+	  Seleção da posição de memória
+	  Localização da informação
+	  Transferência dos dados
+	  Finalização da operação
+
+
+ 4.2 Operações Fundamentais — [I]
+
+  4.2.1 Operações Básicas — [I]
+	  Leitura
+	  Escrita
+	  Atualização
+	  Armazenamento
+	  Recuperação
+	  Tempo de acesso
+	  Tempo de ciclo
+
+  4.2.2 Ciclo de Acesso — [I]
+	  Início da requisição
+	  Decodificação do endereço
+	  Seleção da célula
+	  Leitura dos dados
+	  Escrita dos dados
+	  Encerramento da operação
+
+  4.2.3 Características dos Acessos — [I]
+	  Acesso aleatório
+	  Acesso sequencial (comparação)
+	  Acessos independentes
+	  Latência
+	  Throughput
+	  Eficiência do acesso
+
+
+
+5. Características da Memória Principal — [I]
+
+ 5.1 Características Gerais — [I]
+
+  5.1.1 Características Arquiteturais — [I]
+	  Capacidade
+	  Escalabilidade
+	  Modularidade
+	  Disponibilidade
+	  Confiabilidade
+	  Flexibilidade
+	  Compatibilidade
+
+  5.1.2 Características de Desempenho — [I]
+	  Latência
+	  Tempo de acesso
+	  Tempo de ciclo
+	  Throughput
+	  Largura de banda
+	  Eficiência
+	  Utilização
+
+  5.1.3 Características Elétricas — [V]
+	  Alimentação
+	  Consumo de energia
+	  Dissipação térmica
+	  Integridade dos sinais
+	  Estabilidade
+	  Confiabilidade elétrica
+
+
+ 5.2 Classificação Geral — [I]
+
+  5.2.1 Quanto à Tecnologia — [V]
+	  SRAM
+	  DRAM
+	  SDRAM
+	  DDR SDRAM
+	  LPDDR
+	  HBM
+
+  5.2.2 Quanto à Organização — [V]
+	  Organização por chips
+	  Organização por módulos
+	  Organização por canais
+	  Organização por bancos
+
+  5.2.3 Quanto à Aplicação — [V]
+	  Computadores pessoais
+	  Servidores
+	  Workstations
+	  Sistemas embarcados
+	  Dispositivos móveis
+	  Computação de alto desempenho
+
+
+
+PARTE 2 — ESTRUTURA FÍSICA E ORGANIZAÇÃO INTERNA DA MEMÓRIA PRINCIPAL
+
+
+6. Estrutura Física da Memória Principal — [P]
+
+ 6.1 Organização Física Fundamental — [P]
+
+  6.1.1 Componentes Estruturais — [P]
+	  Células de memória
+	  Matrizes de memória
+	  Linhas (Rows)
+	  Colunas (Columns)
+	  Blocos físicos
+	  Bancos
+	  Subarrays
+	  Organização hierárquica da memória
+	  Organização física dos chips
+
+  6.1.2 Componentes de Controle — [P]
+	  Decodificadores de linha
+	  Decodificadores de coluna
+	  Circuitos de seleção
+	  Drivers de linha
+	  Drivers de coluna
+	  Buffers internos
+	  Sense Amplifiers
+	  Circuitos de controle
+	  Barramentos internos
+
+  6.1.3 Caminho dos Dados — [P]
+	  Fluxo interno dos dados
+	  Caminho da leitura
+	  Caminho da escrita
+	  Seleção da célula
+	  Transferência interna
+	  Interface interna da memória
+	  Organização do Data Path
+
+
+ 6.2 Organização Física dos Chips — [I]
+
+  6.2.1 Organização dos Circuitos Integrados — [I]
+	  Chips de memória
+	  Matrizes internas
+	  Bancos internos
+	  Subarrays
+	  Organização por capacidade
+	  Organização por largura de dados
+	  Densidade de integração
+
+  6.2.2 Organização dos Encapsulamentos — [V]
+	  Encapsulamentos tradicionais
+	  Distribuição dos pinos
+	  Interfaces elétricas
+	  Alimentação
+	  Dissipação térmica
+	  Limitações físicas
+
+  6.2.3 Escalabilidade Física — [V]
+	  Aumento da capacidade
+	  Aumento da densidade
+	  Escalabilidade dos chips
+	  Escalabilidade da fabricação
+	  Limitações tecnológicas
+	  Evolução dos processos de fabricação
+
+
+
+7. Células de Memória — [P]
+
+ 7.1 Fundamentos das Células — [P]
+
+  7.1.1 Conceitos — [P]
+	  Definição
+	  Finalidade
+	  Unidade básica de armazenamento
+	  Armazenamento de bits
+	  Organização das células
+	  Papel na memória principal
+
+  7.1.2 Características — [I]
+	  Capacidade de armazenamento
+	  Tempo de retenção
+	  Estabilidade
+	  Consumo de energia
+	  Velocidade
+	  Escalabilidade
+	  Área ocupada
+
+  7.1.3 Organização das Células — [P]
+	  Organização em linhas
+	  Organização em colunas
+	  Organização matricial
+	  Interligação elétrica
+	  Seleção individual
+	  Endereçamento interno
+
+
+ 7.2 Tecnologias de Células — [P]
+
+  7.2.1 Célula SRAM (Visão Comparativa) — [I]
+	  Estrutura 6T
+	  Armazenamento por Flip-Flops
+	  Estabilidade
+	  Velocidade
+	  Consumo
+	  Área ocupada
+	  Aplicações
+
+  7.2.2 Célula DRAM — [P]
+	  Estrutura 1T1C
+	  Transistor
+	  Capacitor
+	  Armazenamento da carga elétrica
+	  Vazamento de carga
+	  Necessidade de Refresh
+	  Densidade elevada
+	  Aplicações
+
+  7.2.3 Comparação entre SRAM e DRAM — [I]
+	  Estrutura
+	  Funcionamento
+	  Velocidade
+	  Densidade
+	  Consumo
+	  Custo
+	  Escalabilidade
+	  Aplicações na arquitetura
+
+
+8. Organização Matricial da DRAM — [P]
+
+ 8.1 Matrizes de Memória — [P]
+
+  8.1.1 Estrutura das Matrizes — [P]
+	  Organização matricial
+	  Linhas
+	  Colunas
+	  Cruzamento linha-coluna
+	  Distribuição das células
+	  Organização física
+
+  8.1.2 Seleção das Matrizes — [P]
+	  Seleção de linhas
+	  Seleção de colunas
+	  Ativação da linha
+	  Seleção da coluna
+	  Caminho interno dos dados
+	  Controle dos acessos
+
+  8.1.3 Organização Hierárquica — [P]
+	  Matrizes
+	  Submatrizes
+	  Subarrays
+	  Bancos
+	  Organização completa da DRAM
+
+
+ 8.2 Decodificação Interna — [P]
+
+  8.2.1 Decodificadores — [P]
+  	  Row Decoder
+	  Column Decoder
+	  Circuitos de seleção
+	  Distribuição dos sinais
+	  Hierarquia da decodificação
+
+  8.2.2 Endereçamento Interno — [P]
+	  Endereço de linha
+	  Endereço de coluna
+	  Multiplexação de endereços
+	  Organização do endereço
+	  Seleção física da célula
+
+  8.2.3 Eficiência da Organização — [I]
+	  Tempo de seleção
+	  Complexidade
+	  Escalabilidade
+ 	  Consumo
+	  Influência na latência
+
+
+
+9. Bancos, Subarrays e Paralelismo Interno — [P]
+
+ 9.1 Organização em Bancos — [P]
+
+  9.1.1 Bancos de Memória — [P]
+	  Definição
+	  Organização
+	  Independência
+	  Funcionamento
+	  Paralelismo
+	  Distribuição dos dados
+
+  9.1.2 Subarrays — [P]
+	  Organização
+	  Finalidade
+	  Divisão física
+	  Compartilhamento de recursos
+	  Escalabilidade
+	  Eficiência
+
+  9.1.3 Organização Hierárquica — [I]
+	  Células
+	  Matrizes
+	  Subarrays
+	  Bancos
+	  Chip completo
+
+
+ 9.2 Paralelismo Interno — [P]
+
+  9.2.1 Paralelismo de Bancos — [P]
+	  Conceito
+	  Objetivos
+	  Funcionamento
+	  Operações simultâneas
+	  Ganho de desempenho
+
+  9.2.2 Paralelismo dos Subarrays — [I]
+	  Independência parcial
+	  Compartilhamento interno
+	  Aumento da eficiência
+	  Redução da latência
+
+  9.2.3 Eficiência Arquitetural — [I]
+	  Utilização dos bancos
+	  Balanceamento
+	  Concorrência
+	  Aproveitamento da largura de banda
+	  Escalabilidade
+
+
+
+10. Row Buffer e Sense Amplifiers — [P]
+
+ 10.1 Sense Amplifiers — [P]
+
+  10.1.1 Fundamentos — [P]
+	  Definição
+	  Finalidade
+	  Funcionamento
+	  Amplificação do sinal
+	  Recuperação da carga
+	  Papel durante a leitura
+
+  10.1.2 Operação — [P]
+	  Detecção do estado lógico
+	  Amplificação
+	  Restauração da carga
+	  Estabilização dos dados
+	  Preparação para leitura
+
+  10.1.3 Características — [I]
+	  Velocidade
+	  Sensibilidade
+	  Precisão
+	  Consumo
+	  Escalabilidade
+
+
+ 10.2 Row Buffer — [P]
+
+  10.2.1 Conceitos — [P]
+	  Definição
+	  Organização
+	  Funcionamento
+	  Papel na DRAM
+	  Associação aos bancos
+
+  10.2.2 Operações — [P]
+	  Carregamento da linha
+	  Permanência da linha ativa
+	  Reutilização dos dados
+	  Fechamento da linha
+	  Relação com Precharge
+
+  10.2.3 Eficiência — [P]
+	  Row Buffer Hit
+	  Row Buffer Miss
+	  Row Buffer Conflict
+	  Localidade espacial
+	  Influência na latência
+
+
+
+11. Organização Lógica da Memória Principal — [I]
+
+ 11.1 Organização do Espaço de Memória — [I]
+
+  11.1.1 Espaço de Endereçamento — [I]
+	  Organização linear
+	  Espaço contínuo
+	  Endereçamento físico
+	  Capacidade de endereçamento
+	  Distribuição dos endereços
+
+  11.1.2 Organização dos Dados — [I]
+	  Organização por bytes
+	  Organização por palavras
+	  Blocos de memória
+	  Linhas de memória
+	  Granularidade dos acessos
+
+  11.1.3 Organização Funcional — [V]
+	  Área de código
+	  Área de dados
+	  Pilha
+	  Heap
+	  Regiões reservadas
+	  Organização lógica dos programas
+
+
+ 11.2 Mapeamento Interno — [P]
+
+  11.2.1 Tradução do Endereço — [P]
+	  Divisão do endereço
+	  Linha
+	  Coluna
+	  Banco
+	  Chip
+	  Canal (visão geral)
+
+  11.2.2 Seleção Física — [P]
+	  Seleção da linha
+	  Seleção da coluna
+	  Seleção do banco
+	  Seleção da célula
+	  Caminho completo do acesso
+
+  11.2.3 Organização do Fluxo Interno — [I]
+	  Caminho do endereço
+	  Caminho dos dados
+	  Caminho dos sinais de controle
+	  Integração dos componentes internos
+
+
+
+PARTE 3 — TECNOLOGIAS DA MEMÓRIA PRINCIPAL
+
+
+12. Tecnologias da Memória Principal — [I]
+
+ 12.1 Fundamentos das Tecnologias RAM — [I]
+
+  12.1.1 Conceitos Gerais — [I]
+	  Memória de Acesso Aleatório (RAM)
+	  Objetivos
+	  Características gerais
+	  Volatilidade
+	  Leitura e escrita
+	  Memória de trabalho
+	  Papel na arquitetura do computador
+	  Evolução das tecnologias RAM
+	  Critérios de evolução
+	  Compromissos entre desempenho, capacidade e custo
+
+  12.1.2 Classificação das Tecnologias — [V]
+	  SRAM
+	  DRAM
+	  SDRAM
+	  DDR SDRAM
+	  LPDDR
+	  GDDR
+	  HBM
+ 	  Wide I/O
+	  Comparação geral das tecnologias
+
+  12.1.3 Critérios de Comparação — [I]
+	  Estrutura física
+	  Método de armazenamento
+	  Densidade
+	  Capacidade
+	  Latência
+	  Throughput
+	  Consumo de energia
+	  Escalabilidade
+	  Complexidade
+	  Custo por bit
+	  Aplicações
+
+
+13. SRAM (Static Random Access Memory) — [I]
+
+ 13.1 Fundamentos — [I]
+
+  13.1.1 Conceitos — [I]
+	  Definição
+	  Objetivos
+	  Funcionamento geral
+	  Memória estática
+	  Ausência de Refresh
+	  Armazenamento por Flip-Flops
+
+  13.1.2 Estrutura da SRAM — [I]
+	  Célula 6T
+	  Transistores MOSFET
+	  Inversores cruzados
+	  Linhas de palavra
+	  Linhas de bit
+	  Circuitos auxiliares
+
+  13.1.3 Características — [V]
+	  Alta velocidade
+	  Baixa latência
+	  Baixa densidade
+	  Alto custo
+	  Maior consumo por área
+	  Estabilidade
+
+
+ 13.2 Papel na Memória Principal — [V]
+
+  13.2.1 Relação com a DRAM — [V]
+	  Diferenças estruturais
+	  Diferenças de funcionamento
+	  Comparação de desempenho
+	  Comparação de densidade
+	  Comparação de custo
+
+  13.2.2 Aplicações — [V]
+	  Cache
+	  Buffers
+	  Memórias embarcadas
+	  Comparação com a memória principal
+
+  13.2.3 Limitações — [V]
+	  Escalabilidade
+	  Área ocupada
+	  Custo elevado
+	  Limitações para grandes capacidades
+
+
+
+14. DRAM (Dynamic Random Access Memory) — [P]
+
+ 14.1 Fundamentos — [P]
+
+  14.1.1 Conceitos Gerais — [P]
+	  Definição
+	  Objetivos
+	  Funcionamento geral
+	  Memória dinâmica
+	  Armazenamento por carga elétrica
+	  Necessidade de Refresh
+	  Papel como memória principal
+
+  14.1.2 Estrutura da DRAM — [P]
+	  Célula 1T1C
+	  Transistor
+	  Capacitor
+	  Linhas de palavra
+	  Linhas de bit
+	  Sense Amplifiers
+	  Organização matricial
+
+  14.1.3 Características — [I]
+	  Alta densidade
+	  Baixo custo por bit
+	  Grande capacidade
+	  Volatilidade
+	  Escalabilidade
+	  Compromisso entre desempenho e custo
+
+
+ 14.2 Funcionamento Geral — [P]
+
+  14.2.1 Armazenamento — [P]
+	  Representação dos bits
+	  Carga elétrica
+	  Estado lógico
+	  Retenção dos dados
+	  Vazamento de carga
+
+  14.2.2 Operações Fundamentais — [P]
+	  Leitura
+	  Escrita
+	  Atualização
+	  Refresh
+	  Restauração dos dados
+
+  14.2.3 Características Operacionais — [P]
+	  Destrutividade da leitura
+	  Necessidade de restauração
+	  Dependência do Refresh
+	  Organização temporal
+	  Eficiência operacional
+
+
+
+15. SDRAM (Synchronous DRAM) — [I]
+
+ 15.1 Fundamentos — [I]
+
+  15.1.1 Conceitos — [I]
+	  Definição
+	  Objetivos
+	  Sincronização por clock
+	  Funcionamento síncrono
+	  Evolução da DRAM convencional
+
+  15.1.2 Organização — [I]
+	  Clock
+	  Pipeline
+  	  Bancos
+	  Registradores internos
+	  Interface síncrona
+
+  15.1.3 Benefícios — [V]
+	  Maior desempenho
+	  Maior previsibilidade
+	  Operações sincronizadas
+	  Melhor aproveitamento da largura de banda
+
+
+ 15.2 Evolução da SDRAM — [V]
+
+  15.2.1 Tecnologias Históricas — [V]
+	  SDR SDRAM
+	  Fast Page Mode (FPM)
+	  Extended Data Out (EDO)
+	  Burst EDO (BEDO)
+
+  15.2.2 Evolução Arquitetural — [V]
+	  Sincronização
+  	  Pipeline
+	  Burst
+	  Bancos independentes
+	  Melhorias de desempenho
+
+  15.2.3 Limitações — [V]
+	  Frequência
+	  Largura de banda
+	  Escalabilidade
+	  Necessidade de evolução
+
+
+
+16. DDR SDRAM — [P]
+
+ 16.1 Fundamentos — [P]
+
+  16.1.1 Conceitos Gerais — [P]
+	  Double Data Rate
+	  Objetivos
+	  Funcionamento
+	  Transferência em dupla borda
+	  Evolução da SDRAM
+	  Compatibilidade arquitetural
+
+  16.1.2 Organização Geral — [P]
+ 	  Clock
+	  Data Rate
+	  Burst
+	  Bancos
+	  Prefetch
+	  Interface externa
+
+  16.1.3 Benefícios — [I]
+	  Aumento da largura de banda
+	  Melhor aproveitamento do clock
+	  Maior eficiência
+	  Escalabilidade
+
+
+ 16.2 Evolução das Gerações DDR — [I]
+
+  16.2.1 Primeiras Gerações — [V]
+	  DDR
+	  DDR2
+	  DDR3
+  	  Evolução das frequências
+	  Evolução do Prefetch
+
+  16.2.2 Gerações Modernas — [I]
+	  DDR4
+	  DDR5
+	  Melhorias arquiteturais
+	  Aumento da largura de banda
+	  Redução do consumo
+	  Aumento do paralelismo
+
+  16.2.3 Comparação entre Gerações — [I]
+	  Frequência
+	  Taxa de transferência
+	  Tensão
+	  Prefetch
+	  Organização dos bancos
+	  Organização dos Bank Groups
+	  Capacidade
+	  Eficiência energética
+
+
+
+17. Tecnologias Especializadas de Memória Principal — [I]
+
+ 17.1 Tecnologias Voltadas para Diferentes Aplicações — [I]
+
+  17.1.1 LPDDR — [I]
+	  Low Power DDR
+	  Objetivos
+	  Baixo consumo
+	  Aplicações móveis
+	  Evolução das gerações
+
+  17.1.2 GDDR — [V]
+	  Graphics DDR
+	  Objetivos
+	  Alta largura de banda
+	  Aplicações gráficas
+	  Comparação com DDR convencional
+
+  17.1.3 HBM — [I]
+	  High Bandwidth Memory
+	  Organização empilhada
+	  TSV (Visão Geral)
+  	  Interposer (Visão Geral)
+	  Alta largura de banda
+	  Aplicações em HPC e IA
+
+
+ 17.2 Tecnologias Emergentes — [V]
+
+  17.2.1 Wide I/O — [V]
+	  Conceitos
+   	  Objetivos
+ 	  Aplicações
+
+  17.2.2 CAMM — [V]
+	  Compression Attached Memory Module
+  	  Objetivos
+	  Organização geral
+	  Aplicações
+
+  17.2.3 Tendências Futuras — [V]
+	  Evolução das DDR
+	  Evolução da LPDDR
+	  Evolução da HBM
+  	  Novas arquiteturas
+	  Aumento da capacidade
+	  Redução do consumo
+
+
+
+PARTE 4 — FUNCIONAMENTO INTERNO DA DRAM
+
+
+18. Operações Fundamentais da DRAM — [P]
+
+ 18.1 Ciclo Básico de Funcionamento — [P]
+
+  18.1.1 Visão Geral — [P]
+ 	  Organização do ciclo de acesso
+	  Sequência das operações
+	  Estado inicial da memória
+	  Fluxo interno das operações
+  	  Relação entre hardware e controlador
+	  Ciclo completo de acesso
+
+  18.1.2 Estados Operacionais — [P]
+	  Banco ocioso (Idle)
+	  Banco ativo (Active)
+	  Linha aberta
+	  Linha fechada
+	  Banco em Precharge
+	  Banco em Refresh
+	  Power Down (visão geral)
+	  Self Refresh (visão geral)
+	  Transições de estado
+
+  18.1.3 Sequência Geral — [P]
+	  Recepção da requisição
+	  Seleção do banco
+	  Ativação da linha
+	  Acesso à coluna
+	  Transferência dos dados
+	  Encerramento da operação
+	  Preparação para novo acesso
+
+
+ 18.2 Operações Fundamentais — [P]
+
+  18.2.1 Activate (ACT) — [P]
+	  Definição
+	  Objetivos
+	  Seleção da linha
+  	  Ativação da Word Line
+	  Leitura da linha completa
+	  Ativação dos Sense Amplifiers
+	  Carregamento do Row Buffer
+	  Linha ativa
+
+  18.2.2 Read (RD) — [P]
+	  Definição
+	  Objetivos
+	  Seleção da coluna
+	  Transferência para o barramento interno
+	  Transferência para a interface externa
+	  Burst Read
+	  Encerramento da leitura
+
+  18.2.3 Write (WR) — [P]
+	  Definição
+	  Objetivos
+	  Recepção dos dados
+	  Escrita no Row Buffer
+	  Atualização da linha ativa
+	  Escrita nas células
+	  Burst Write
+	  Finalização da escrita
+
+
+19. Operações Complementares da DRAM — [P]
+
+ 19.1 Precharge — [P]
+
+  19.1.1 Conceitos — [P]
+	  Definição
+ 	  Objetivos
+	  Necessidade do Precharge
+	  Estado elétrico das Bit Lines
+	  Preparação para novo acesso
+
+  19.1.2 Funcionamento — [P]
+	  Fechamento da linha ativa
+	  Desativação da Word Line
+	  Equalização das Bit Lines
+	  Liberação do banco
+  	  Retorno ao estado Idle
+
+  19.1.3 Tipos de Precharge — [I]
+	  Precharge individual
+	  Precharge All
+	  Auto Precharge
+	  Manual Precharge
+	  Critérios de utilização
+
+
+
+ 19.2 Refresh — [P]
+
+  19.2.1 Fundamentos — [P]
+	  Definição
+	  Objetivos
+	  Vazamento da carga elétrica
+ 	  Necessidade do Refresh
+	  Periodicidade
+
+  19.2.2 Funcionamento — [P]
+  	  Seleção das linhas
+	  Leitura da carga
+	  Regeneração dos dados
+	  Reescrita da linha
+	  Preservação das informações
+
+  19.2.3 Tipos de Refresh — [I]
+	  Auto Refresh
+	  Self Refresh
+	  Distributed Refresh
+	  Burst Refresh
+	  Fine Granularity Refresh (Visão Geral)
+
+
+ 19.3 Outros Comandos da DRAM — [V]
+
+  19.3.1 Comandos Fundamentais — [V]
+	  ACT
+	  PRE
+ 	  PREA
+	  RD
+	  WR
+	  REF
+
+  19.3.2 Comandos Auxiliares — [V]
+	  MRS (Mode Register Set)
+	  ZQ Calibration
+	  NOP
+ 	  DES (Device Deselect)
+
+  19.3.3 Papel dos Comandos — [V]
+	  Inicialização
+	  Configuração
+	  Operação normal
+	  Manutenção
+
+
+
+20. Funcionamento Interno do Row Buffer — [P]
+
+ 20.1 Organização — [P]
+
+  20.1.1 Estrutura — [P]
+	  Organização do Row Buffer
+	  Associação aos bancos
+	  Relação com os Sense Amplifiers
+	  Capacidade
+	  Papel durante o acesso
+
+  20.1.2 Carregamento — [P]
+	  Activate
+	  Leitura da linha completa
+  	  Amplificação dos sinais
+	  Armazenamento temporário
+	  Disponibilização da linha
+
+  20.1.3 Atualização — [P]
+	  Escrita no Row Buffer
+	  Atualização durante Write
+	  Sincronização com as células
+	  Persistência da linha ativa
+
+
+ 20.2 Estados do Row Buffer — [P]
+
+  20.2.1 Row Buffer Hit — [P]
+	  Definição
+  	  Funcionamento
+	  Reutilização da linha ativa
+	  Redução da latência
+	  Benefícios
+
+  20.2.2 Row Buffer Miss — [P]
+	  Definição
+	  Necessidade de Activate
+	  Carregamento de nova linha
+	  Impacto no desempenho
+
+  20.2.3 Row Buffer Conflict — [P]
+	  Definição
+	  Linha diferente no mesmo banco
+	  Necessidade de Precharge
+	  Novo Activate
+	  Aumento da latência
+
+
+
+21. Burst e Transferência de Dados — [I]
+
+ 21.1 Burst Access — [P]
+
+  21.1.1 Conceitos — [P]
+	  Definição
+	  Objetivos
+	  Transferência sequencial
+	  Eficiência
+	  Aproveitamento do barramento
+
+  21.1.2 Burst Read — [I]
+ 	  Funcionamento
+	  Sequência das transferências
+  	  Comprimento do Burst
+	  Encerramento
+
+  21.1.3 Burst Write — [I]
+	  Funcionamento
+	  Escrita sequencial
+	  Atualização dos dados
+	  Encerramento
+
+
+ 21.2 Comprimento do Burst — [I]
+
+  21.2.1 Burst Length — [I]
+	  BL2
+	  BL4
+	  BL8
+	  BL16 (Visão Geral)
+	  Configuração
+	  Aplicações
+
+  21.2.2 Organização das Transferências — [I]
+  	  Ordem das transferências
+  	  Sequência dos dados
+	  Incremento dos endereços
+	  Eficiência do Burst
+
+  21.2.3 Impacto Arquitetural — [I]
+	  Largura de banda
+	  Latência efetiva
+	  Eficiência do barramento
+	  Aproveitamento do controlador
+
+
+
+22. Modos de Acesso à DRAM — [P]
+
+ 22.1 Políticas de Linha — [P]
+
+  22.1.1 Open Page Policy — [P]
+	  Definição
+	  Funcionamento
+	  Linha permanece aberta
+  	  Benefícios
+	  Limitações
+	  Aplicações
+
+  22.1.2 Closed Page Policy — [P]
+	  Definição
+	  Funcionamento
+	  Fechamento imediato
+	  Benefícios
+	  Limitações
+	  Aplicações
+
+  22.1.3 Adaptive Page Policy — [I]
+	  Conceitos
+	  Funcionamento
+	  Critérios de decisão
+	  Benefícios
+
+
+ 22.2 Padrões de Acesso — [I]
+
+  22.2.1 Localidade Espacial — [I]
+	  Conceitos
+	  Funcionamento
+	  Influência sobre o Row Buffer
+	  Aproveitamento dos acessos
+
+  22.2.2 Localidade Temporal — [I]
+	  Conceitos
+	  Reutilização dos dados
+  	  Reutilização das linhas
+ 	  Impacto no desempenho
+
+  22.2.3 Aleatoriedade dos Acessos — [I]
+	  Acessos sequenciais
+	  Acessos aleatórios
+	  Mudanças frequentes de linha
+	  Impacto na eficiência
+
+
+
+23. Temporização das Operações da DRAM — [P]
+
+ 23.1 Conceitos Fundamentais — [P]
+
+  23.1.1 Clock da Memória — [I]
+	  Clock interno
+	  Clock externo
+	  Ciclos de memória
+	  Sincronização
+	  Relação com DDR
+
+  23.1.2 Latência — [P]
+	  Definição
+	  Componentes da latência
+	  Latência de Activate
+	  Latência de Read
+	  Latência de Write
+	  Latência total
+
+  23.1.3 Throughput — [I]
+	  Definição
+	  Taxa de transferência
+	  Eficiência das operações
+  	  Fatores de influência
+
+
+ 23.2 Principais Timings da DRAM — [P]
+
+  23.2.1 Timings Fundamentais — [P]
+	  CAS Latency (CL)
+	  RAS to CAS Delay (tRCD)
+	  Row Precharge Time (tRP)
+	  Active to Precharge Delay (tRAS)
+
+  23.2.2 Timings Complementares — [I]
+	  Row Cycle Time (tRC)
+	  Refresh Cycle Time (tRFC)
+	  Four Activate Window (tFAW)
+	  Row to Row Delay (tRRD)
+	  CAS Write Latency (CWL)
+
+  23.2.3 Relações entre Timings — [P]
+	  Dependências
+	  Restrições
+	  Sequenciamento
+	  Influência no desempenho
+	  Balanceamento dos parâmetros
+
+
+
+PARTE 5 — CONTROLADOR DE MEMÓRIA E ORGANIZAÇÃO DO SUBSISTEMA DE MEMÓRIA
+
+
+24. Controlador de Memória (Memory Controller) — [P]
+
+ 24.1 Fundamentos — [P]
+
+  24.1.1 Conceitos Gerais — [P]
+	  Definição
+	  Objetivos
+	  Funções
+	  Papel na Arquitetura de Computadores
+  	  Papel na Organização de Computadores
+	  Interface entre CPU e Memória Principal
+	  Evolução dos controladores
+
+  24.1.2 Organização Geral — [P]
+	  Estrutura interna
+	  Componentes principais
+	  Interface com o processador
+	  Interface com os módulos de memória
+	  Interface com os barramentos
+ 	  Organização funcional
+
+  24.1.3 Responsabilidades — [P]
+	  Recepção das requisições
+	  Tradução dos endereços físicos
+ 	  Seleção dos canais
+  	  Seleção dos ranks
+	  Seleção dos bancos
+	  Seleção das linhas e colunas
+	  Coordenação das operações DRAM
+	  Controle da temporização
+
+
+ 24.2 Funcionamento — [P]
+
+  24.2.1 Fluxo de Operação — [P]
+	  Recepção da requisição
+	  Análise do endereço
+	  Seleção do destino
+	  Verificação do estado da memória
+	  Emissão dos comandos
+	  Transferência dos dados
+	  Finalização da operação
+	  Mode Register Set (visão geral)
+
+  24.2.2 Gerenciamento das Operações — [P]
+	  Activate
+	  Read
+ 	  Write
+	  Precharge
+  	  Refresh
+	  Sequenciamento dos comandos
+	  Controle do estado dos bancos
+
+  24.2.3 Coordenação Geral — [P]
+	  Controle do clock
+	  Controle da temporização
+	  Controle dos barramentos
+	  Controle do paralelismo
+	  Controle da largura de banda
+	  Balanceamento das operações
+
+
+
+25. Organização dos Módulos de Memória — [I]
+
+ 25.1 Estrutura dos Módulos — [I]
+
+  25.1.1 Conceitos Gerais — [I]
+	  Definição
+	  Finalidade
+	  Organização física
+	  Organização lógica
+	  Relação entre chips e módulos
+
+  25.1.2 Componentes do Módulo — [V]
+	  Chips DRAM
+	  PCB
+	  Trilhas elétricas
+	  Conectores
+	  SPD
+	  PMIC (DDR5)
+	  Sensores térmicos (Visão Geral)
+
+  25.1.3 Organização Física — [V]
+	  Face simples (Single-Sided)
+	  Face dupla (Double-Sided)
+	  Distribuição dos chips
+ 	  Organização elétrica
+	  Densidade do módulo
+
+
+  25.1.4 Interface Elétrica da DDR — [V]
+	  Barramento de Endereços
+	  Barramento de Comandos
+ 	  Barramento de Dados
+	  DQS
+	  Clock
+	  Chip Select
+  	  ODT (On-Die Termination)
+
+
+ 25.1.5 Organização dos Chips — [V]
+	  x4
+	  x8
+	  x16
+	  Relação com ECC
+	  Relação com Ranks
+
+
+ 25.2 Tipos de Módulos — [V]
+
+  25.2.1 DIMM — [I]
+	  Definição
+  	  Organização
+	  Características
+	  Aplicações
+
+  25.2.2 SO-DIMM — [V]
+	  Definição
+   	  Características
+	  Aplicações
+	  Comparação com DIMM
+
+  25.2.3 CAMM (Visão Geral) — [V]
+	  Conceitos
+	  Organização
+	  Objetivos
+  	  Aplicações futuras
+
+
+
+26. Organização Hierárquica dos Módulos — [P]
+
+ 26.1 Chips, Ranks e Canais — [P]
+
+  26.1.1 Chips DRAM — [P]
+	  Organização
+	  Capacidade
+	  Largura de dados
+	  Interligação
+	  Funcionamento conjunto
+
+  26.1.2 Ranks — [P]
+  	  Definição
+	  Organização
+	  Seleção
+	  Funcionamento
+	  Rank único
+	  Dual Rank
+	  Quad Rank
+	  Benefícios
+  	  Limitações
+
+  26.1.3 Canais (Channels) — [P]
+	  Definição
+	  Organização
+	  Comunicação independente
+  	  Paralelismo
+  	  Largura de banda
+  	  Escalabilidade
+
+
+ 26.2 Configurações Multi-Channel — [I]
+
+  26.2.1 Single Channel — [V]
+	  Organização
+	  Funcionamento
+	  Limitações
+
+  26.2.2 Dual Channel — [I]
+	  Organização
+	  Funcionamento
+	  Balanceamento
+	  Ganho de largura de banda
+
+  26.2.3 Configurações Avançadas — [V]
+	  Triple Channel
+	  Quad Channel
+	  Octa Channel
+	  Aplicações
+	  Escalabilidade
+
+
+
+27. Organização Interna da DDR Moderna — [P]
+
+ 27.1 Evolução Arquitetural — [P]
+
+  27.1.1 Organização dos Bancos — [P]
+	  Bancos internos
+	  Quantidade
+	  Independência
+	  Paralelismo
+	  Distribuição das operações
+
+  27.1.2 Bank Groups — [P]
+	  Definição
+  	  Objetivos
+	  Organização
+	  Funcionamento
+  	  Benefícios
+  	  Limitações
+
+  27.1.3 Organização Hierárquica — [P]
+	  Canal
+	  Rank
+	  Chip
+	  Banco
+	  Subarray
+	  Linha
+	  Coluna
+	  Célula
+
+
+ 27.2 Paralelismo Interno — [P]
+
+  27.2.1 Paralelismo entre Canais — [P]
+ 	  Funcionamento
+	  Independência
+  	  Balanceamento
+  	  Escalabilidade
+
+  27.2.2 Paralelismo entre Ranks — [P]
+	  Alternância entre ranks
+  	  Aproveitamento do barramento
+	  Redução de esperas
+
+  27.2.3 Paralelismo entre Bancos — [P]
+	  Operações simultâneas
+	  Sobreposição de comandos
+	  Eficiência
+   	  Ganho de desempenho
+
+
+
+28. Endereçamento da Memória Principal — [P]
+
+ 28.1 Organização dos Endereços — [P]
+
+  28.1.1 Endereço Físico — [P]
+	  Definição
+	  Estrutura
+  	  Espaço físico
+  	  Organização linear
+
+  28.1.2 Divisão do Endereço — [P]
+	  Canal
+	  Rank
+	  Banco
+	  Bank Group
+  	  Linha
+	  Coluna
+  	  Byte Offset
+
+  28.1.3 Mapeamento dos Endereços — [P]
+	  Tradução interna
+	  Distribuição entre bancos
+	  Distribuição entre canais
+	  Distribuição entre ranks
+	  Critérios de organização
+
+
+ 28.2 Mapeamento Arquitetural — [P]
+
+  28.2.1 Interleaving de Endereços — [P]
+	  Definição
+	  Objetivos
+	  Funcionamento
+	  Interleaving entre canais
+	  Interleaving entre ranks
+	  Interleaving entre bancos
+	  Interleaving entre linhas
+	  Balanceamento dos acessos
+
+  28.2.2 Distribuição das Requisições — [P]
+	  Balanceamento
+  	  Paralelismo
+	  Aproveitamento dos bancos
+	  Aproveitamento dos canais
+
+  28.2.3 Eficiência do Mapeamento — [P]
+	  Localidade
+	  Distribuição uniforme
+	  Redução de conflitos
+	  Impacto no desempenho
+
+
+
+29. Escalonamento de Requisições — [I]
+
+ 29.1 Gerenciamento das Filas — [I]
+
+  29.1.1 Filas de Requisição — [I]
+	  Organização
+  	  Entrada das requisições
+	  Priorização
+	  Processamento
+
+  29.1.2 Reordenação — [I]
+	  Objetivos
+	  Critérios
+	  Benefícios
+	  Limitações
+
+  29.1.3 Dependências — [I]
+	  Conflitos
+  	  Operações concorrentes
+	  Restrições dos timings
+	  Consistência
+
+
+ 29.2 Políticas de Escalonamento — [I]
+
+  29.2.1 FCFS — [V]
+	  Conceitos
+  	  Funcionamento
+	  Benefícios
+  	  Limitações
+
+  29.2.2 FR-FCFS — [I]
+	  First Ready First Come First Serve
+	  Objetivos
+	  Funcionamento
+	  Priorização de Row Buffer Hits
+	  Benefícios
+	  Limitações
+
+  29.2.3 Otimizações Modernas — [V]
+	  Balanceamento
+	  Paralelismo
+	  Redução da latência
+	  Maximização da largura de banda
+	  Eficiência energética
+
+
+
+PARTE 6 — DESEMPENHO, CONFIABILIDADE E OTIMIZAÇÕES DA MEMÓRIA PRINCIPAL
+
+
+30. Desempenho da Memória Principal — [P]
+
+ 30.1 Fundamentos do Desempenho — [P]
+
+  30.1.1 Conceitos Gerais — [P]
+  	  Definição
+	  Objetivos
+	  Importância do desempenho
+	  Gargalos da memória
+  	  Relação entre desempenho da CPU e da memória
+	  Eficiência do subsistema de memória
+
+  30.1.2 Métricas Fundamentais — [P]
+	  Latência
+	  Throughput
+	  Largura de banda
+	  Tempo de resposta
+	  Tempo de acesso
+	  Tempo de ciclo
+	  Utilização
+	  Eficiência
+
+  30.1.3 Fatores de Influência — [P]
+	  Frequência
+	  Timings
+	  Organização da DRAM
+	  Paralelismo
+	  Controlador de memória
+	  Quantidade de canais
+	  Quantidade de ranks
+	  Padrão de acesso
+
+
+ 30.2 Avaliação do Desempenho — [P]
+
+  30.2.1 Latência — [P]
+	  Latência inicial
+	  Latência efetiva
+	  Componentes da latência
+	  Latência média
+	  Impacto dos Row Buffer Hits
+	  Impacto dos conflitos
+
+  30.2.2 Largura de Banda — [P]
+	  Banda teórica
+	  Banda efetiva
+	  Saturação
+	  Utilização
+	  Eficiência da transferência
+
+  30.2.3 Eficiência Geral — [P]
+	  Aproveitamento dos bancos
+	  Aproveitamento dos canais
+	  Aproveitamento do barramento
+	  Eficiência das operações
+	  Balanceamento do sistema
+
+
+
+31. Temporização Avançada da DRAM — [I]
+
+ 31.1 Timings da Memória — [I]
+
+  31.1.1 Timings Primários — [P]
+	  CAS Latency (CL)
+  	  RAS to CAS Delay (tRCD)
+	  Row Precharge Time (tRP)
+	  Active to Precharge Delay (tRAS)
+  	  Row Cycle Time (tRC)
+
+  31.1.2 Timings Secundários — [I]
+	  tRRD
+	  tRFC
+  	  tWR
+	  tWTR
+	  tRTP
+	  tCCD
+  	  tCWL
+
+  31.1.3 Timings Terciários — [V]
+	  Organização geral
+	  Ajustes finos
+	  Dependências
+	  Aplicações
+	  Impacto no desempenho
+
+
+ 31.2 Relações Temporais — [I]
+
+  31.2.1 Dependências — [I]
+ 	  Dependência entre comandos
+	  Restrições elétricas
+	  Restrições físicas
+	  Sequenciamento obrigatório
+
+  31.2.2 Balanceamento — [I]
+	  Frequência versus latência
+	  Timings versus estabilidade
+	  Desempenho versus consumo
+   	  Otimização geral
+
+  31.2.3 Eficiência Temporal — [I]
+	  Aproveitamento dos ciclos
+	  Redução de tempos ociosos
+	  Paralelismo temporal
+	  Coordenação dos comandos
+
+
+
+32. Integridade, Confiabilidade e Disponibilidade — [I]
+
+ 32.1 Integridade dos Dados — [I]
+
+  32.1.1 Erros em Memória — [I]
+	  Soft Errors
+	  Hard Errors
+	  Bit Flip
+	  Corrupção de dados
+	  Perda de informações
+	  Fontes dos erros
+
+  32.1.2 Causas dos Erros — [I]
+	  Radiação
+  	  Interferências elétricas
+	  Ruído eletrônico
+	  Defeitos físicos
+	  Envelhecimento
+	  Temperatura
+
+  32.1.3 Consequências — [I]
+	  Dados incorretos
+	  Travamentos
+	  Corrupção de programas
+  	  Falhas do sistema
+	  Perda de confiabilidade
+
+
+ 32.2 ECC (Error Correcting Code) — [P]
+
+  32.2.1 Fundamentos — [P]
+	  Definição
+  	  Objetivos
+	  Funcionamento geral
+	  Importância
+	  Aplicações
+
+  32.2.2 Técnicas de Correção — [P]
+	  Detecção de erros
+	  Correção de erro simples
+	  Detecção de erro duplo
+	  SEC
+  	  SECDED
+	  Síndrome de erro
+
+  32.2.3 Memórias ECC — [I]
+	  Organização
+	  Bits adicionais
+	  Funcionamento
+	  Benefícios
+	  Limitações
+	  Impacto no desempenho
+
+
+
+33. Disponibilidade e Recursos RAS — [V]
+
+ 33.1 Conceitos de RAS — [V]
+
+  33.1.1 Fundamentos — [V]
+	  Reliability
+	  Availability
+	  Serviceability
+	  Objetivos
+	  Aplicações
+
+  33.1.2 Recursos de Confiabilidade — [V]
+	  Memory Scrubbing
+	  Patrol Scrubbing
+	  Demand Scrubbing
+	  Sparing
+	  Mirroring (Visão Geral)
+
+  33.1.3 Monitoramento — [V]
+	  Registro de erros
+	  Contadores
+	  Diagnóstico
+	  Manutenção preventiva
+
+
+ 33.2 Recuperação de Falhas — [V]
+
+  33.2.1 Detecção — [V]
+	  Monitoramento contínuo
+	  Identificação dos erros
+	  Classificação
+
+  33.2.2 Correção — [V]
+	  ECC
+	  Reescrita
+	  Isolamento
+  	  Recuperação automática
+
+  33.2.3 Continuidade do Sistema — [V]
+	  Disponibilidade
+	  Tolerância a falhas
+	  Robustez
+	  Confiabilidade operacional
+
+
+
+34. Otimizações da Memória Principal — [I]
+
+ 34.1 Técnicas de Otimização — [I]
+
+  34.1.1 Paralelismo — [I]
+	  Paralelismo entre canais
+	  Paralelismo entre ranks
+	  Paralelismo entre bancos
+  	  Paralelismo interno
+	  Sobreposição de operações
+
+  34.1.2 Organização dos Acessos — [I]
+	  Maximização de Row Buffer Hits
+	  Redução de conflitos
+	  Balanceamento entre bancos
+	  Balanceamento entre canais
+  	  Sequenciamento eficiente
+
+  34.1.3 Otimizações do Controlador — [I]
+	  Reordenação de comandos
+	  Escalonamento inteligente
+  	  Controle do Refresh
+	  Otimização da largura de banda
+
+
+ 34.2 Configuração e Ajustes — [V]
+
+  34.2.1 Frequência da Memória — [V]
+	  Clock
+	  Data Rate
+	  Impacto no desempenho
+	  Limitações
+
+  34.2.2 Ajuste dos Timings — [V]
+	  Ajustes manuais
+	  Redução da latência
+	  Estabilidade
+	  Compromissos
+
+  34.2.3 Perfis de Configuração — [V]
+	  SPD
+	  XMP
+	  EXPO
+	  Configuração automática
+	  Configuração manual
+
+
+
+35. Eficiência Energética e Aspectos Térmicos — [V]
+
+ 35.1 Consumo de Energia — [V]
+
+  35.1.1 Fundamentos — [V]
+	  Consumo estático
+	  Consumo dinâmico
+  	  Eficiência energética
+	  Importância
+
+  35.1.2 Fatores de Consumo — [V]
+	  Frequência
+	  Tensão
+	  Quantidade de acessos
+	  Refresh
+	  Temperatura
+
+  35.1.3 Técnicas de Economia — [V]
+	  Power Down
+	  Self Refresh
+	  Clock Gating (Visão Geral)
+	  Modos de baixo consumo
+
+
+ 35.2 Aspectos Térmicos — [V]
+
+  35.2.1 Dissipação de Calor — [V]
+	  Fontes de aquecimento
+   	  Transferência térmica
+    	  Dissipação
+
+  35.2.2 Controle Térmico — [V]
+	  Sensores
+	  Monitoramento
+	  Limites operacionais
+	  Proteção térmica
+
+  35.2.3 Influência da Temperatura — [V]
+	  Estabilidade
+	  Desempenho
+	  Vida útil
+	  Confiabilidade
+	  Necessidade de Refresh
+
+
+
+PARTE 7 — TECNOLOGIAS MODERNAS, TENDÊNCIAS E INTEGRAÇÃO DA MEMÓRIA PRINCIPAL
+
+
+36. DDR5 em Profundidade — [I]
+
+ 36.1 Arquitetura da DDR5 — [I]
+
+  36.1.1 Evolução da DDR5 — [I]
+	  Objetivos
+	  Evolução em relação à DDR4
+	  Melhorias arquiteturais
+	  Novos desafios
+	  Aplicações
+
+  36.1.2 Organização Interna — [I]
+	  Bank Groups
+	  Bancos
+	  Burst Length
+	  Prefetch
+	  Organização dos canais internos
+	  Organização dos chips
+
+  36.1.3 Melhorias Arquiteturais — [I]
+	  Aumento da largura de banda
+	  Maior paralelismo
+	  Redução dos gargalos
+	  Melhor eficiência energética
+	  Escalabilidade
+
+
+ 36.2 Recursos da DDR5 — [V]
+
+  36.2.1 PMIC (Power Management IC) — [V]
+	  Definição
+	  Objetivos
+  	  Gerenciamento da alimentação
+	  Benefícios
+	  Limitações
+
+  36.2.2 On-Die ECC — [V]
+	  Conceitos
+	  Funcionamento
+	  Objetivos
+	  Diferenças para ECC tradicional
+	  Benefícios
+
+  36.2.3 Recursos Complementares — [V]
+	  SPD Hub
+	  On-Module PMIC
+	  Decision Feedback Equalization (DFE)
+	  Sensores térmicos
+	  Gerenciamento de energia
+	  Recursos de monitoramento
+
+
+
+37. Tecnologias de Baixo Consumo — [V]
+
+ 37.1 LPDDR — [V]
+
+  37.1.1 Fundamentos — [V]
+	  Objetivos
+	  Características
+	  Organização
+	  Aplicações móveis
+
+  37.1.2 Evolução — [V]
+	  LPDDR3
+	  LPDDR4
+	  LPDDR4X
+	  LPDDR5
+	  LPDDR5X
+
+  37.1.3 Técnicas de Economia de Energia — [V]
+	  Redução de tensão
+	  Modos de baixo consumo
+	  Self Refresh
+	  Clock Gating (Visão Geral)
+	  Eficiência energética
+
+
+
+38. Memórias de Alta Largura de Banda — [V]
+
+ 38.1 HBM (High Bandwidth Memory) — [V]
+
+  38.1.1 Conceitos — [V]
+	  Objetivos
+	  Organização empilhada
+	  Alta largura de banda
+	  Baixa distância física
+
+  38.1.2 Organização Física — [V]
+	  Empilhamento 3D
+	  TSV (Through-Silicon Via)
+	  Base Die
+	  Interposer
+	  Organização dos canais
+
+  38.1.3 Evolução — [V]
+	  HBM
+ 	  HBM2
+ 	  HBM2E
+	  HBM3
+	  HBM3E
+
+
+
+39. Novas Arquiteturas para Memória Principal — [V]
+
+ 39.1 Tecnologias Emergentes — [V]
+
+  39.1.1 CAMM — [V]
+	  Compression Attached Memory Module
+	  Organização
+  	  Objetivos
+	  Benefícios
+	  Aplicações
+
+  39.1.2 CXL Memory — [V]
+	  Conceitos
+	  Compartilhamento de memória
+	  Expansão de memória
+	  Desagregação de memória
+	  Aplicações
+
+  39.1.3 Persistent Memory (Visão Geral) — [V]
+	  Conceitos
+	  Objetivos
+	  Características
+	  Aplicações
+
+
+
+40. Escalabilidade da Memória Principal — [V]
+
+ 40.1 Expansão da Memória — [V]
+
+  40.1.1 Aumento da Capacidade — [V]
+	  Expansão por módulos
+	  Expansão por canais
+	  Limitações físicas
+	  Limitações arquiteturais
+
+  40.1.2 Escalabilidade Arquitetural — [V]
+	  Escalabilidade horizontal
+	  Escalabilidade vertical
+	  Balanceamento do subsistema
+	  Crescimento da capacidade
+
+  40.1.3 Limitações — [V]
+	  Latência
+	  Consumo
+	  Dissipação térmica
+  	  Custos
+	  Complexidade
+
+
+
+41. Integração da Memória Principal ao Sistema — [I]
+
+ 41.1 Integração Arquitetural — [I]
+
+  41.1.1 Relação com a CPU — [I]
+	  Fluxo de dados
+	  Requisições de memória
+  	  Interface com o controlador
+	  Dependência de desempenho
+
+  41.1.2 Relação com a Cache — [I]
+	  Papel da cache
+	  Fluxo CPU–Cache–RAM
+	  Transferência de blocos
+	  Coerência (Visão Geral)
+
+  41.1.3 Relação com a Memória Secundária — [V]
+	  Carregamento de programas
+	  Transferência de dados
+	  Hierarquia de memória
+	  Papel de cada nível
+
+
+
+42. Tendências Futuras da Memória Principal — [V]
+
+ 42.1 Evolução Tecnológica — [V]
+
+  42.1.1 Tendências de Hardware — [V]
+	  Maior densidade
+	  Menor consumo
+	  Maior largura de banda
+  	  Maior paralelismo
+	  Integração tridimensional
+
+  42.1.2 Tendências Arquiteturais — [V]
+	  Novas organizações internas
+	  Novos controladores
+	  Novos modelos de interconexão
+	  Compartilhamento de memória
+	  Desagregação da memória
+
+  42.1.3 Desafios Futuros — [V]
+	  Escalabilidade
+	  Consumo energético
+	  Dissipação térmica
+	  Integridade dos sinais
+	  Confiabilidade
+	  Limitações físicas da DRAM
+
+
+
+43. Integração Geral dos Conceitos da Memória Principal — [I]
+
+ 43.1 Visão Integrada — [I]
+
+  43.1.1 Organização Completa da Memória Principal — [I]
+	  Estrutura física
+	  Estrutura lógica
+	  Organização hierárquica
+	  Fluxo dos dados
+	  Funcionamento integrado
+
+  43.1.2 Fluxo Completo de uma Operação de Memória — [P]
+	  Requisição da CPU
+	  Atuação do controlador de memória
+	  Seleção do canal
+	  Seleção do rank
+	  Seleção do banco
+ 	  Activate
+	  Row Buffer
+	  Read ou Write
+	  Burst
+	  Transferência dos dados
+	  Precharge
+	  Finalização da operação
+
+  43.1.3 Síntese Geral — [I]
+	  Componentes fundamentais
+	  Tecnologias estudadas
+	  Organização da DRAM
+  	  Funcionamento interno
+	  Temporização
+	  Controlador de memória
+	  Desempenho
+	  Confiabilidade
+	  Otimizações
+	  Tecnologias modernas
+ 	  Integração de todos os conceitos
+
+
+
+PARTE 8 — REVISÃO GERAL E CONCLUSÃO
+
+
+44. Revisão Geral da Memória Principal — [I]
+
+ 44.1 Revisão dos Conceitos Fundamentais — [I]
+
+  44.1.1 Fundamentos — [I]
+	  Conceito de Memória Principal
+	  Finalidade
+	  Importância
+	  Papel na Arquitetura de Computadores
+	  Papel na Organização de Computadores
+	  Papel na Hierarquia de Memória
+	  Fluxo geral das informações
+
+  44.1.2 Organização da Memória — [I]
+	  Estrutura física
+	  Estrutura lógica
+	  Organização matricial
+	  Células
+	  Matrizes
+	  Bancos
+	  Subarrays
+	  Row Buffers
+	  Sense Amplifiers
+
+  44.1.3 Tecnologias — [I]
+	  SRAM
+	  DRAM
+	  SDRAM
+	  DDR SDRAM
+	  LPDDR
+	  HBM
+ 	  Tecnologias modernas
+
+
+
+ 44.2 Revisão do Funcionamento — [P]
+
+  44.2.1 Operações Fundamentais — [P]
+	  Activate
+	  Read
+	  Write
+	  Precharge
+	  Refresh
+	  Burst
+	  Ciclo completo de acesso
+
+  44.2.2 Organização dos Acessos — [P]
+	  Endereçamento
+  	  Seleção de canais
+  	  Seleção de ranks
+	  Seleção de bancos
+   	  Seleção de linhas
+	  Seleção de colunas
+	  Fluxo dos dados
+
+  44.2.3 Desempenho — [P]
+	  Latência
+	  Throughput
+	  Largura de banda
+	  Paralelismo
+	  Timings
+	  Row Buffer Hits
+	  Eficiência geral
+
+
+
+45. Integração Geral da Memória Principal — [I]
+
+ 45.1 Integração dos Componentes — [I]
+
+  45.1.1 Estrutura Integrada — [I]
+	  Células
+  	  Matrizes
+	  Subarrays
+	  Bancos
+  	  Chips
+	  Ranks
+  	  Canais
+	  Módulos DIMM
+	  Controlador de Memória
+
+  45.1.2 Fluxo Completo da Informação — [P]
+  	  Requisição da CPU
+	  Controlador de Memória
+	  Decodificação do endereço
+  	  Seleção do canal
+	  Seleção do rank
+	  Seleção do banco
+	  Activate
+	  Row Buffer
+	  Read ou Write
+	  Burst
+  	  Transferência
+	  Finalização da operação
+
+  45.1.3 Visão Integrada — [I]
+  	  Organização física
+	  Organização lógica
+	  Funcionamento interno
+	  Temporização
+	  Paralelismo
+	  Desempenho
+	  Confiabilidade
+  	  Escalabilidade
+	  Tecnologias modernas
+
+
+46. Conclusão — [V]
+
+ 46.1 Síntese Final — [V]
+
+  46.1.1 Conceitos Essenciais — [V]
+	  Papel da Memória Principal
+	  Organização geral
+  	  Estrutura física
+  	  Estrutura lógica
+	  Funcionamento interno
+ 	  Tecnologias utilizadas
+
+  46.1.2 Competências Esperadas — [V]
+	  Compreender a organização da DRAM
+	  Entender o funcionamento do controlador de memória
+	  Interpretar os ciclos de acesso
+	  Compreender os timings
+	  Avaliar desempenho
+	  Identificar gargalos
+	  Comparar tecnologias
+	  Relacionar arquitetura e implementação
+
+  46.1.3 Integração com Arquitetura de Computadores — [V]
+  	  Relação com a CPU
+	  Relação com a Cache
+	  Relação com o Barramento
+	  Relação com a Memória Virtual
+	  Relação com a Hierarquia de Memória
+	  Papel da Memória Principal no desempenho global do computador
+	  Importância para arquiteturas modernas
+  	  Base para o estudo dos demais componentes da Arquitetura e Organização de Computadores
