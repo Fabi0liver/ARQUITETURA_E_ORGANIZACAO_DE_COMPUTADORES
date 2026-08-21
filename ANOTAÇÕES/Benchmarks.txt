@@ -1503,9 +1503,7 @@ PARTE 15 — RESUMO GERAL E CONCLUSÃO DOS BENCHMARKS
 	  Avaliação de Desempenho Avançada
 
 
- 55.3 Encerramento — [V]
-
-  55.3.1 Visão Geral Final — [V]
+ 55.3 Visão Geral Final — [V]
 	  Integração dos conceitos estudados
 	  Importância contínua dos benchmarks
 	  Evolução constante frente a novas arquiteturas
