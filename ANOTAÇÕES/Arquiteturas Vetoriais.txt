@@ -92,13 +92,11 @@ PARTE 1 — FUNDAMENTOS DAS ARQUITETURAS VETORIAIS
 	  Influência em arquiteturas modernas
 
 
- 2.3 Importância Histórica para a Computação Atual — [V]
-
-  2.3.1 Legado das Arquiteturas Vetoriais — [V]
-	  Base conceitual para SIMD moderno
-	  Influência no projeto de GPUs
-	  Contribuição para compiladores vetorizadores
-	  Continuidade em extensões de ISA atuais
+ 2.3 Legado das Arquiteturas Vetoriais — [V]
+	Base conceitual para SIMD moderno
+	Influência no projeto de GPUs
+	Contribuição para compiladores vetorizadores
+	Continuidade em extensões de ISA atuais
 
 
 
@@ -134,13 +132,11 @@ PARTE 1 — FUNDAMENTOS DAS ARQUITETURAS VETORIAIS
 	  Impacto no desempenho
 
 
- 3.3 Características do Processamento Vetorial — [I]
-
-  3.3.1 Propriedades Fundamentais — [I]
-	  Regularidade dos dados
-	  Independência entre elementos
-	  Previsibilidade do acesso
-	  Alto grau de paralelismo de dados
+ 3.3 Propriedades Fundamentais — [I]
+	Regularidade dos dados
+	Independência entre elementos
+	Previsibilidade do acesso
+	Alto grau de paralelismo de dados
 
 
 
@@ -207,13 +203,16 @@ PARTE 1 — FUNDAMENTOS DAS ARQUITETURAS VETORIAIS
 	  Vantagens e desvantagens
 
 
- 5.3 Visão Geral do Funcionamento — [I]
-
-  5.3.1 Ciclo Geral de uma Operação Vetorial — [I]
-	  Especificação do comprimento do vetor
-	  Busca dos elementos
-	  Processamento elemento a elemento
-	  Escrita dos resultados
+ 5.3 Ciclo Geral de uma Operação Vetorial — [I]
+	Especificação do comprimento do vetor
+	Busca dos elementos
+	Processamento elemento a elemento
+	Escrita dos resultados
+	Determinação dos elementos ativos
+	Aplicação do comprimento vetorial
+	Aplicação da máscara de execução
+	Processamento dos elementos pelas lanes
+	Encaminhamento dos resultados
 
 
 
@@ -251,13 +250,11 @@ PARTE 2 — ESTRUTURA E ORGANIZAÇÃO DAS ARQUITETURAS VETORIAIS
 	  Limitações de desempenho
 
 
- 6.3 Integração com o Processador Escalar — [I]
-
-  6.3.1 Cooperação entre Unidade Escalar e Unidade Vetorial — [I]
-	  Execução de instruções escalares
-	  Execução de instruções vetoriais
-	  Comunicação entre as unidades
-	  Escalonamento conjunto
+ 6.3 Cooperação entre Unidade Escalar e Unidade Vetorial — [I]
+	Execução de instruções escalares
+	Execução de instruções vetoriais
+	Comunicação entre as unidades
+	Escalonamento conjunto
 
 
 
@@ -291,12 +288,10 @@ PARTE 2 — ESTRUTURA E ORGANIZAÇÃO DAS ARQUITETURAS VETORIAIS
 	  Extensões vetoriais modernas baseadas em registradores
 
 
- 7.3 Limitações e Considerações de Projeto — [I]
-
-  7.3.1 Restrições de Capacidade — [I]
-	  Tamanho limitado dos registradores vetoriais
-	  Necessidade de fatiamento de vetores longos
-	  Impacto no comprimento máximo do vetor
+ 7.3 Restrições de Capacidade — [I]
+	Tamanho limitado dos registradores vetoriais
+	Necessidade de fatiamento de vetores longos
+	Impacto no comprimento máximo do vetor
 
 
 
@@ -435,12 +430,10 @@ PARTE 3 — REGISTRADORES VETORIAIS E UNIDADES DE PROCESSAMENTO VETORIAL
 	  Controle de conflitos de escrita
 
 
- 11.3 Considerações de Projeto — [I]
-
-  11.3.1 Trade-offs de Capacidade — [I]
-	  Tamanho do registrador × área de hardware
-	  Número de registradores × complexidade do banco
-	  Impacto no comprimento máximo do vetor
+ 11.3 Trade-offs de Capacidade — [I]
+	Tamanho do registrador × área de hardware
+	Número de registradores × complexidade do banco
+	Impacto no comprimento máximo do vetor
 
 
 
@@ -452,6 +445,12 @@ PARTE 3 — REGISTRADORES VETORIAIS E UNIDADES DE PROCESSAMENTO VETORIAL
 	  Definição do VLR
 	  Finalidade de controlar o número de elementos ativos
 	  Relação com o comprimento máximo do vetor (MVL)
+	  Comprimento lógico do vetor
+	  Comprimento atual do vetor (VLR)
+	  Comprimento máximo do vetor (MVL)
+	  Relação entre comprimento lógico, VLR e MVL
+	  Diferença entre vetor lógico e vetor efetivamente processado
+	  Número de elementos restantes durante o processamento
 
   12.1.2 Funcionamento do VLR — [P]
 	  Definição do valor pela instrução vetorial
@@ -528,6 +527,11 @@ PARTE 3 — REGISTRADORES VETORIAIS E UNIDADES DE PROCESSAMENTO VETORIAL
 	  Aumento do paralelismo com mais lanes
 	  Impacto na área e no consumo de energia
 	  Relação com o desempenho vetorial
+	  Subutilização de lanes
+	  Saturação das unidades funcionais
+	  Balanceamento entre número de lanes e unidades funcionais
+	  Relação entre largura de execução e largura de memória
+	  Escalabilidade limitada pelo subsistema de memória
 
 
  14.3 Tipos de Unidades Funcionais — [I]
@@ -604,12 +608,10 @@ PARTE 4 — INSTRUÇÕES E OPERAÇÕES VETORIAIS
 	  Extensões modernas (RISC-V Vector, ARM SVE)
 
 
- 16.3 Relação com o Compilador — [I]
-
-  16.3.1 Geração de Código Vetorial — [I]
-	  Tradução de laços em instruções vetoriais
-	  Papel do compilador vetorizador
-	  Restrições impostas pela ISA
+ 16.3 Geração de Código Vetorial — [I]
+	Tradução de laços em instruções vetoriais
+	Papel do compilador vetorizador
+	Restrições impostas pela ISA
 
 
 
@@ -627,6 +629,14 @@ PARTE 4 — INSTRUÇÕES E OPERAÇÕES VETORIAIS
 	  Multiplicação-acumulação vetorial
 	  Operações de ponto flutuante vetorial
 	  Precisão dos resultados
+	  Conversão entre tipos de dados vetoriais
+	  Conversão inteiro ↔ ponto flutuante
+	  Extensão de largura (widening)
+	  Redução de largura (narrowing)
+	  Extensão com sinal
+	  Extensão sem sinal
+	  Saturação em conversões
+	  Arredondamento em conversões
 
 
  17.2 Instruções Lógicas — [I]
@@ -635,6 +645,13 @@ PARTE 4 — INSTRUÇÕES E OPERAÇÕES VETORIAIS
 	  AND, OR e XOR vetoriais
 	  Negação vetorial
 	  Deslocamento vetorial
+	  Operações de rearranjo de elementos
+	  Permutação de elementos
+	  Embaralhamento (shuffle)
+	  Seleção de elementos
+	  Inserção e extração de elementos
+	  Merge de elementos vetoriais
+	  Compressão e expansão de elementos
 
   17.2.2 Aplicações das Operações Lógicas — [V]
 	  Manipulação de máscaras
@@ -650,6 +667,12 @@ PARTE 4 — INSTRUÇÕES E OPERAÇÕES VETORIAIS
 	  Igualdade e desigualdade
 	  Maior e menor
 	  Geração de máscara de resultado
+	  Comparação com zero
+	  Comparação com constantes
+	  Comparações entre inteiros
+	  Comparações entre números de ponto flutuante
+	  Resultado booleano por elemento
+	  Combinação de resultados de comparação
 
   18.1.2 Uso das Comparações em Controle de Fluxo — [I]
 	  Substituição de desvios condicionais
@@ -696,6 +719,11 @@ PARTE 4 — INSTRUÇÕES E OPERAÇÕES VETORIAIS
 	  Geração dos endereços de escrita
 	  Envio sequencial dos elementos
 	  Sincronização com a memória
+	  Dependências entre operações de leitura e escrita
+	  Ordenação de operações de memória vetorial
+	  Conflitos entre operações de carga e armazenamento
+	  Sobreposição de operações de memória
+	  Impacto das dependências no throughput
 
 
 
@@ -725,6 +753,12 @@ PARTE 4 — INSTRUÇÕES E OPERAÇÕES VETORIAIS
 	  Divisão por zero mascarada
 	  Acesso a endereços inválidos mascarados
 	  Exceções em elementos inativos
+	  Exceções em elementos ativos
+	  Exceção em um elemento específico do vetor
+	  Tratamento de exceções durante a execução vetorial
+	  Estado arquitetural após uma exceção
+	  Reinício de operações vetoriais
+	  Exceções em operações de memória vetorial
 
 
 
@@ -776,11 +810,10 @@ PARTE 5 — ACESSO, MOVIMENTAÇÃO E ORGANIZAÇÃO DOS DADOS VETORIAIS
 
 
  22.2 Layout de Dados e Desempenho — [I]
-
-  22.2.1 Impacto do Layout no Acesso Vetorial — [I]
-	  Acesso contíguo eficiente
-	  Acesso disperso ineficiente
-	  Reorganização de dados para vetorização
+	Impacto do Layout no Acesso Vetorial
+	Acesso contíguo eficiente
+	Acesso disperso ineficiente
+	Reorganização de dados para vetorização
 
 
 
@@ -839,6 +872,11 @@ PARTE 5 — ACESSO, MOVIMENTAÇÃO E ORGANIZAÇÃO DOS DADOS VETORIAIS
 	  Maior complexidade de geração de endereços
 	  Menor eficiência que o acesso contíguo
 	  Impacto na largura de banda efetiva
+	  Dependências entre acessos indexados
+	  Sobreposição de acessos gather/scatter
+	  Conflitos entre acessos simultâneos
+	  Impacto da irregularidade dos endereços no throughput
+	  Relação entre gather/scatter e largura de banda efetiva
 
   24.2.2 Aplicações do Gather/Scatter — [V]
 	  Estruturas de dados esparsas
@@ -892,11 +930,10 @@ PARTE 5 — ACESSO, MOVIMENTAÇÃO E ORGANIZAÇÃO DOS DADOS VETORIAIS
 
 
  26.2 Impacto no Desempenho Vetorial — [V]
-
-  26.2.1 Acessos Alinhados × Desalinhados — [V]
-	  Eficiência de acessos alinhados
-	  Penalidades de acessos desalinhados
-	  Técnicas de correção
+	Acessos Alinhados × Desalinhados
+	Eficiência de acessos alinhados
+	Penalidades de acessos desalinhados
+	Técnicas de correção
 
 
 
@@ -930,14 +967,18 @@ PARTE 6 — EXECUÇÃO VETORIAL, PARALELISMO E PIPELINE VETORIAL
 	  Fase de preenchimento (fill)
 	  Fase de regime permanente
 	  Fase de esvaziamento (drain)
+	  Hazards de dados no pipeline vetorial
+	  Hazards estruturais
+	  Conflitos entre unidades funcionais
+	  Conflitos de acesso ao banco de registradores
+	  Dependências entre operações vetoriais
+	  Impacto dos hazards no throughput
 
 
- 27.3 Desempenho do Pipeline Vetorial — [I]
-
-  27.3.1 Throughput do Pipeline — [I]
-	  Um resultado por ciclo em regime permanente
-	  Relação com o número de estágios
-	  Relação com o comprimento do vetor
+ 27.3 Throughput do Pipeline — [I]
+	Um resultado por ciclo em regime permanente
+	Relação com o número de estágios
+	Relação com o comprimento do vetor
 
 
 
@@ -985,12 +1026,10 @@ PARTE 6 — EXECUÇÃO VETORIAL, PARALELISMO E PIPELINE VETORIAL
 	  Transformação em instruções vetoriais
 
 
- 29.2 Relação com Outras Formas de Paralelismo — [V]
-
-  29.2.1 Paralelismo de Dados × Paralelismo de Instruções (ILP) — [V]
-	  Diferenças conceituais
-	  Complementaridade entre as abordagens
-	  Uso combinado em processadores modernos
+ 29.2 Paralelismo de Dados × Paralelismo de Instruções (ILP) — [V]
+	Diferenças conceituais
+	Complementaridade entre as abordagens
+	Uso combinado em processadores modernos
 
 
 
@@ -1038,12 +1077,10 @@ PARTE 6 — EXECUÇÃO VETORIAL, PARALELISMO E PIPELINE VETORIAL
 	  Ajuste do VLR a cada iteração
 
 
- 31.2 Impacto no Desempenho — [I]
-
-  31.2.1 Overhead do Stripmining — [I]
-	  Repetição do overhead de início por bloco
-	  Impacto em vetores muito longos
-	  Relação com o comprimento máximo do vetor
+ 31.2 Overhead do Stripmining — [I]
+	Repetição do overhead de início por bloco
+	Impacto em vetores muito longos
+	Relação com o comprimento máximo do vetor
 
 
 
@@ -1200,6 +1237,11 @@ PARTE 7 — MODOS DE OPERAÇÃO E TÉCNICAS AVANÇADAS DE PROCESSAMENTO VETORIAL
 	  Suporte a diferentes larguras de dados
 	  Precisão simples e dupla
 	  Impacto no número de elementos por registrador
+	  Relação entre largura do elemento e número de elementos processados
+	  Mudança da capacidade efetiva do registrador vetorial
+	  Impacto da largura dos elementos no throughput
+	  Impacto da largura dos elementos na largura de banda
+	  Operações com diferentes larguras de elementos
 
   37.1.2 Relação com o Comprimento do Vetor — [V]
 	  Trade-off entre precisão e número de elementos
@@ -1207,12 +1249,10 @@ PARTE 7 — MODOS DE OPERAÇÃO E TÉCNICAS AVANÇADAS DE PROCESSAMENTO VETORIAL
 	  Aplicações típicas
 
 
- 37.2 Aplicações — [V]
-
-  37.2.1 Uso em Diferentes Domínios — [V]
-	  Aplicações científicas de alta precisão
-	  Aplicações gráficas de precisão reduzida
-	  Aprendizado de máquina e precisão mista
+ 37.2 Uso em Diferentes Domínios — [V]
+	Aplicações científicas de alta precisão
+	Aplicações gráficas de precisão reduzida
+	Aprendizado de máquina e precisão mista
 
 
 
@@ -1234,12 +1274,10 @@ PARTE 8 — ORGANIZAÇÃO DA MEMÓRIA E TRANSFERÊNCIA DE DADOS EM ARQUITETURAS 
 	  Estruturas otimizadas para acesso sequencial
 
 
- 38.2 Desafios da Hierarquia de Memória Vetorial — [V]
-
-  38.2.1 Necessidade de Alta Largura de Banda — [V]
-	  Demanda de dados por ciclo
-	  Sustentação do throughput do pipeline
-	  Limitações tecnológicas
+ 38.2 Necessidade de Alta Largura de Banda — [V]
+	Demanda de dados por ciclo
+	Sustentação do throughput do pipeline
+	Limitações tecnológicas
 
 
 
@@ -1256,14 +1294,17 @@ PARTE 8 — ORGANIZAÇÃO DA MEMÓRIA E TRANSFERÊNCIA DE DADOS EM ARQUITETURAS 
 	  Necessidade de alimentar múltiplas lanes
 	  Gargalo de memória (memory-bound)
 	  Equilíbrio entre computação e memória
+	  Gargalo de computação (compute-bound)
+	  Condição memory-bound × compute-bound
+	  Balanceamento entre capacidade computacional e largura de banda
+	  Subutilização das unidades funcionais por falta de dados
+	  Subutilização da largura de banda por baixa demanda computacional
 
 
- 39.2 Estratégias para Ampliar a Largura de Banda — [V]
-
-  39.2.1 Técnicas de Organização de Memória — [V]
-	  Múltiplos bancos independentes
-	  Barramentos largos
-	  Acesso paralelo a múltiplos módulos
+ 39.2 Técnicas de Organização de Memória — [V]
+	Múltiplos bancos independentes
+	Barramentos largos
+	Acesso paralelo a múltiplos módulos
 
 
 
@@ -1282,12 +1323,10 @@ PARTE 8 — ORGANIZAÇÃO DA MEMÓRIA E TRANSFERÊNCIA DE DADOS EM ARQUITETURAS 
 	  Conflitos de cache em acessos vetoriais
 
 
- 40.2 Estratégias de Uso da Cache — [V]
-
-  40.2.1 Técnicas de Otimização — [V]
-	  Pré-busca (prefetch) de dados vetoriais
-	  Organização de dados para localidade
-	  Bypass de cache para grandes transferências
+ 40.2 Técnicas de Otimização — [V]
+	Pré-busca (prefetch) de dados vetoriais
+	Organização de dados para localidade
+	Bypass de cache para grandes transferências
 
 
 
@@ -1306,12 +1345,10 @@ PARTE 8 — ORGANIZAÇÃO DA MEMÓRIA E TRANSFERÊNCIA DE DADOS EM ARQUITETURAS 
 	  Sobreposição com a execução
 
 
- 41.2 Impacto no Desempenho — [V]
-
-  41.2.1 Benefícios do Uso de Buffers — [V]
-	  Redução de esperas do pipeline
-	  Melhor aproveitamento da largura de banda
-	  Tolerância a latências variáveis
+ 41.2 Benefícios do Uso de Buffers — [V]
+	Redução de esperas do pipeline
+	Melhor aproveitamento da largura de banda
+	Tolerância a latências variáveis
 
 
 
@@ -1324,6 +1361,14 @@ PARTE 9 — DESEMPENHO, EFICIÊNCIA E LIMITAÇÕES DAS ARQUITETURAS VETORIAIS
 
   42.1.1 Métricas Básicas — [P]
 	  Tempo de execução vetorial
+	  Tempo de startup
+	  Tempo de processamento dos elementos
+	  Tempo de execução por elemento
+	  Influência do comprimento do vetor
+	  Influência do número de lanes
+	  Influência da latência das unidades funcionais
+	  Influência do throughput das unidades funcionais
+	  Throughput vetorial efetivo
 	  Throughput em elementos por ciclo
 	  Número de ciclos por instrução vetorial
 
@@ -1362,12 +1407,10 @@ PARTE 9 — DESEMPENHO, EFICIÊNCIA E LIMITAÇÕES DAS ARQUITETURAS VETORIAIS
 	  Relação com o grau de paralelismo de dados
 
 
- 43.2 Aplicações Práticas — [V]
-
-  43.2.1 Avaliação de Ganhos Vetoriais — [V]
-	  Estimativa do benefício da vetorização
-	  Identificação de gargalos escalares
-	  Priorização de otimizações
+ 43.2 Avaliação de Ganhos Vetoriais — [V]
+	Estimativa do benefício da vetorização
+	Identificação de gargalos escalares
+	Priorização de otimizações
 
 
 
@@ -1386,12 +1429,10 @@ PARTE 9 — DESEMPENHO, EFICIÊNCIA E LIMITAÇÕES DAS ARQUITETURAS VETORIAIS
 	  Overhead de código escalar residual
 
 
- 44.2 Fatores de Comportamento dos Dados — [V]
-
-  44.2.1 Regularidade e Irregularidade dos Dados — [V]
-	  Dados regulares favoráveis à vetorização
-	  Dados irregulares desfavoráveis
-	  Impacto de estruturas esparsas
+ 44.2 Regularidade e Irregularidade dos Dados — [V]
+	Dados regulares favoráveis à vetorização
+	Dados irregulares desfavoráveis
+	Impacto de estruturas esparsas
 
 
 
@@ -1410,12 +1451,10 @@ PARTE 9 — DESEMPENHO, EFICIÊNCIA E LIMITAÇÕES DAS ARQUITETURAS VETORIAIS
 	  Importância em sistemas de alto desempenho
 
 
- 45.2 Estratégias de Eficiência — [V]
-
-  45.2.1 Técnicas de Redução de Consumo — [V]
-	  Desativação de lanes ociosas
-	  Ajuste dinâmico de frequência e tensão
-	  Otimização do uso de recursos vetoriais
+ 45.2 Técnicas de Redução de Consumo — [V]
+	Desativação de lanes ociosas
+	Ajuste dinâmico de frequência e tensão
+	Otimização do uso de recursos vetoriais
 
 
 
@@ -1437,12 +1476,10 @@ PARTE 10 — IMPLEMENTAÇÃO, EVOLUÇÃO E COMPARAÇÃO DAS ARQUITETURAS VETORIA
 	  Limitações identificadas
 
 
- 46.2 Processadores Vetoriais Japoneses — [V]
-
-  46.2.1 NEC, Fujitsu e Hitachi — [V]
-	  Supercomputadores vetoriais dedicados
-	  Aplicações científicas
-	  Contribuições tecnológicas
+ 46.2 NEC, Fujitsu e Hitachi — [V]
+	Supercomputadores vetoriais dedicados
+	Aplicações científicas
+	Contribuições tecnológicas
 
 
 
@@ -1518,12 +1555,10 @@ PARTE 10 — IMPLEMENTAÇÃO, EVOLUÇÃO E COMPARAÇÃO DAS ARQUITETURAS VETORIA
 	  Aplicações em inteligência artificial
 
 
- 49.2 Perspectivas Futuras — [V]
-
-  49.2.1 Direções de Pesquisa e Desenvolvimento — [V]
-	  Maior flexibilidade de comprimento vetorial
-	  Eficiência energética aprimorada
-	  Integração com arquiteturas heterogêneas
+ 49.2 Direções de Pesquisa e Desenvolvimento — [V]
+	Maior flexibilidade de comprimento vetorial
+	Eficiência energética aprimorada
+	Integração com arquiteturas heterogêneas
 
 
 
@@ -1545,58 +1580,51 @@ PARTE 11 — APLICAÇÕES E INTEGRAÇÃO DAS ARQUITETURAS VETORIAIS
 	  Modelagem de fenômenos físicos
 
 
- 50.2 Engenharia e Ciência de Dados — [V]
-
-  50.2.1 Processamento de Grandes Volumes de Dados — [V]
-	  Análise numérica intensiva
-	  Simulações de engenharia
-	  Aplicações estatísticas de larga escala
+ 50.2 Processamento de Grandes Volumes de Dados — [V]
+	Análise numérica intensiva
+	Simulações de engenharia
+	Aplicações estatísticas de larga escala
 
 
 
 51. Aplicações em Processamento de Sinais, Gráficos e IA — [V]
 
  51.1 Processamento de Sinais — [V]
-
-  51.1.1 Processamento Digital de Sinais — [V]
-	  Filtragem vetorial
-	  Transformadas numéricas
-	  Processamento de áudio e imagem
+	Processamento Digital de Sinais
+	Filtragem vetorial
+	Transformadas numéricas
+	Processamento de áudio e imagem
 
 
  51.2 Computação Gráfica — [V]
-
-  51.2.1 Renderização e Manipulação Gráfica — [V]
-	  Operações vetoriais em pixels e vértices
-	  Transformações geométricas
-	  Processamento paralelo de imagens
+	Renderização e Manipulação Gráfica
+	Operações vetoriais em pixels e vértices
+	Transformações geométricas
+	Processamento paralelo de imagens
 
 
  51.3 Inteligência Artificial — [V]
-
-  51.3.1 Aprendizado de Máquina e Redes Neurais — [V]
-	  Operações vetoriais em matrizes de pesos
-	  Multiplicação vetorial intensiva
-	  Relação com aceleradores especializados
+	Aprendizado de Máquina e Redes Neurais
+	Operações vetoriais em matrizes de pesos
+	Multiplicação vetorial intensiva
+	Relação com aceleradores especializados
 
 
 
 52. Integração das Arquiteturas Vetoriais em Sistemas Modernos — [V]
 
  52.1 Integração com Processadores de Propósito Geral — [V]
-
-  52.1.1 Coexistência com Unidades Escalares — [V]
-	  Execução combinada de código escalar e vetorial
-	  Escalonamento conjunto de instruções
-	  Compatibilidade com o restante da arquitetura
+	Coexistência com Unidades Escalares
+	Execução combinada de código escalar e vetorial
+	Escalonamento conjunto de instruções
+	Compatibilidade com o restante da arquitetura
 
 
  52.2 Integração com Sistemas Heterogêneos — [V]
-
-  52.2.1 Cooperação com Aceleradores — [V]
-	  Uso conjunto com GPUs e aceleradores de IA
-	  Distribuição de tarefas vetoriais e paralelas
-	  Tendências de arquiteturas híbridas
+	Cooperação com Aceleradores
+	Uso conjunto com GPUs e aceleradores de IA
+	Distribuição de tarefas vetoriais e paralelas
+	Tendências de arquiteturas híbridas
 
 
 
@@ -1646,20 +1674,16 @@ PARTE 12 — RESUMO GERAL E CONCLUSÃO DAS ARQUITETURAS VETORIAIS
 	  Unidade de controle vetorial
 
 
- 54.2 Revisão das Instruções e Operações — [I]
-
-  54.2.1 Instruções Vetoriais — [I]
-	  Operações aritméticas, lógicas e de comparação
-	  Instruções de carga e armazenamento
-	  Predicação e encadeamento
+ 54.2 Instruções Vetoriais — [I]
+	Operações aritméticas, lógicas e de comparação
+	Instruções de carga e armazenamento
+	Predicação e encadeamento
 
 
- 54.3 Revisão da Execução e do Desempenho — [I]
-
-  54.3.1 Pipeline e Paralelismo — [I]
-	  Funcionamento do pipeline vetorial
-	  Convoys, chimes e stripmining
-	  Métricas e fatores limitantes de desempenho
+ 54.3 Pipeline e Paralelismo — [I]
+	Funcionamento do pipeline vetorial
+	Convoys, chimes e stripmining
+	Métricas e fatores limitantes de desempenho
 
 
  54.4 Revisão das Implementações e Aplicações — [I]
@@ -1705,9 +1729,7 @@ PARTE 12 — RESUMO GERAL E CONCLUSÃO DAS ARQUITETURAS VETORIAIS
 	  Compiladores e Vetorização Avançada
 
 
- 55.3 Encerramento — [V]
-
-  55.3.1 Visão Geral Final — [V]
-	  Integração dos conceitos estudados
-	  Importância das Arquiteturas Vetoriais
-	  Continuidade dos estudos em Arquitetura e Organização de Computadores
+ 55.3 Visão Geral Final — [V]
+	Integração dos conceitos estudados
+	Importância das Arquiteturas Vetoriais
+	Continuidade dos estudos em Arquitetura e Organização de Computadores
