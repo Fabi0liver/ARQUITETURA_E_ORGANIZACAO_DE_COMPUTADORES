@@ -1,0 +1,2107 @@
+                                              Entrada e Saída
+
+
+A classificação abaixo indica a profundidade recomendada para cada grande tópico da lista.
+
+[P] Profundidade — estudar mecanismos, estruturas, funcionamento interno e relações entre componentes.
+[I] Intermediário — compreender bem o funcionamento e as relações principais, sem precisar dominar todos os
+   detalhes de implementação.
+[V] Visão geral — saber o que é, para que serve e como se relaciona com os registradores.
+
+
+
+PARTE 1 — FUNDAMENTOS DA ENTRADA E SAÍDA
+
+
+1. Introdução à Entrada e Saída — [I]
+
+ 1.1 Visão Geral — [I]
+
+  1.1.1 Conceitos Fundamentais — [I]
+	  Conceito de Entrada e Saída (E/S)
+	  Objetivos da Entrada e Saída
+	  Papel da Entrada e Saída na Arquitetura de Computadores
+	  Papel da Entrada e Saída na Organização de Computadores
+	  Comunicação entre o computador e o ambiente externo
+	  Fluxo geral das informações
+	  Relação entre hardware e software
+	  Importância da Entrada e Saída no sistema computacional
+
+  1.1.2 Importância da Entrada e Saída — [I]
+	  Comunicação com dispositivos externos
+	  Interação entre usuário e computador
+	  Transferência de informações
+	  Compartilhamento de recursos
+	  Expansibilidade do sistema
+	  Influência no desempenho global
+	  Papel na computação moderna
+
+  1.1.3 Entrada e Saída na Arquitetura e Organização — [I]
+	  Diferença entre Arquitetura e Organização
+	  Aspectos arquiteturais da E/S
+	  Aspectos organizacionais da E/S
+	  Recursos visíveis ao programador
+	  Recursos internos da implementação
+	  Integração entre Arquitetura e Organização
+
+
+ 1.2 Objetivos do Subsistema de Entrada e Saída — [I]
+
+  1.2.1 Comunicação com Dispositivos — [I]
+	  Entrada de informações
+	  Saída de informações
+	  Comunicação bidirecional
+	  Controle dos dispositivos
+	  Compartilhamento dos recursos
+
+  1.2.2 Abstração do Hardware — [I]
+	  Independência dos dispositivos
+	  Padronização da comunicação
+	  Interface uniforme
+	  Isolamento das diferenças físicas
+	  Compatibilidade entre dispositivos
+
+  1.2.3 Eficiência da Comunicação — [I]
+	  Redução da carga da CPU
+	  Alta taxa de transferência
+	  Baixa latência
+	  Coordenação das operações
+	  Utilização eficiente dos recursos
+
+
+ 1.3 Papel da Entrada e Saída no Sistema Computacional — [P]
+
+  1.3.1 Comunicação entre Componentes — [I]
+	  Processador
+	  Memória principal
+	  Controladores
+	  Interfaces
+	  Periféricos
+
+  1.3.2 Fluxo Geral das Operações — [P]
+	  Solicitação da operação
+	  Preparação da comunicação
+	  Transferência de dados
+	  Controle da operação
+	  Finalização da transferência
+
+  1.3.3 Fluxo Geral das Informações — [I]
+	  Entrada dos dados
+	  Processamento
+	  Saída das informações
+	  Atualização do estado do dispositivo
+
+  1.3.4 Participação no Ciclo de Execução — [P]
+	  Comunicação durante a execução das instruções
+	  Operações de leitura
+	  Operações de escrita
+	  Sincronização entre CPU e dispositivos
+	  Atualização dos estados do sistema
+
+
+
+2. Fundamentos da Entrada e Saída — [I]
+
+ 2.1 Organização das Informações — [I]
+
+  2.1.1 Unidade de Transferência
+	  Bit
+	  Byte
+	  Palavra
+	  Bloco
+	  Pacote
+	  Fluxo contínuo
+
+  2.1.2 Representação das Informações — [I]
+	  Dados digitais
+	  Endereços
+	  Comandos
+	  Informações de controle
+	  Informações de estado
+	  Dados de configuração
+
+  2.1.3 Natureza das Informações — [I]
+	  Dados de entrada
+	  Dados de saída
+	  Dados bidirecionais
+	  Dados temporários
+	  Dados persistentes
+
+  2.1.4 Organização da Transferência — [I]
+	  Transferência por palavra
+	  Transferência por bloco
+	  Transferência contínua
+	  Transferência sob demanda
+
+
+ 2.2 Estrutura Geral do Subsistema de Entrada e Saída — [I]
+
+  2.2.1 Componentes Básicos — [I]
+	  Processador
+	  Memória principal
+	  Controladores de E/S
+	  Interfaces
+	  Periféricos
+	  Caminhos de comunicação
+
+  2.2.2 Organização Funcional — [I]
+	  Geração de comandos
+	  Controle das operações
+	  Transferência de dados
+	  Monitoramento da comunicação
+	  Finalização das operações
+
+  2.2.3 Organização Física — [I]
+	  Dispositivos físicos
+	  Interfaces elétricas
+	  Controladores
+	  Conectores
+	  Meios físicos de comunicação
+
+  2.2.4 Organização Lógica — [I]
+	  Endereçamento dos dispositivos
+	  Espaço de E/S
+	  Registradores de E/S
+	  Comunicação lógica
+	  Controle lógico
+
+
+ 2.3 Características Gerais da Entrada e Saída — [I]
+
+  2.3.1 Comunicação — [I]
+	  Comunicação síncrona
+	  Comunicação assíncrona
+	  Comunicação serial
+	  Comunicação paralela
+	  Comunicação ponto a ponto
+	  Comunicação compartilhada
+
+  2.3.2 Controle — [I]
+	  Controle das operações
+	  Sincronização
+	  Coordenação
+	  Sequenciamento
+	  Confirmação da operação
+
+  2.3.3 Desempenho — [I]
+	  Latência
+	  Throughput
+	  Largura de banda
+	  Tempo de resposta
+	  Eficiência
+
+  2.3.4 Restrições — [I]
+	  Velocidade dos dispositivos
+	  Diferença entre CPU e periféricos
+	  Gargalos de comunicação
+	  Limitações físicas
+	  Limitações arquiteturais
+
+
+
+3. Organização Geral da Entrada e Saída — [I]
+
+ 3.1 Organização Funcional — [I]
+
+  3.1.1 Organização por Função — [I]
+	  Dispositivos de entrada
+	  Dispositivos de saída
+	  Dispositivos de entrada e saída
+	  Controladores
+	  Interfaces
+
+  3.1.2 Organização por Participação — [P]
+	  Processador
+	  Memória
+	  Controladores
+	  Interfaces
+	  Dispositivos
+
+  3.1.3 Organização por Nível de Abstração — [I]
+	  Arquitetura
+	  Organização
+	  Hardware
+	  Firmware
+	  Software de apoio
+
+
+ 3.2 Organização Estrutural — [I]
+
+  3.2.1 Estrutura do Subsistema de E/S — [I]
+	  Dispositivos
+	  Interfaces
+	  Controladores
+	  Registradores de E/S
+	  Barramentos de comunicação
+
+  3.2.2 Estruturas de Interconexão — [I]
+	  Caminhos de dados
+	  Caminhos de controle
+	  Comunicação entre componentes
+	  Compartilhamento de recursos
+	  Coordenação das operações
+
+  3.2.3 Organização dos Recursos — [I]
+	  Agrupamento de dispositivos
+	  Compartilhamento
+	  Modularidade
+	  Escalabilidade
+	  Expansibilidade
+
+
+ 3.3 Critérios de Organização — [I]
+
+  3.3.1 Critérios de Projeto — [I]
+	  Desempenho
+	  Custo
+	  Complexidade
+	  Escalabilidade
+	  Flexibilidade
+	  Compatibilidade
+
+  3.3.2 Critérios Operacionais — [I]
+	  Tempo de resposta
+	  Eficiência
+	  Confiabilidade
+	  Disponibilidade
+	  Capacidade de expansão
+
+  3.3.3 Critérios de Classificação — [I]
+	  Função
+	  Método de comunicação
+	  Tipo de dispositivo
+	  Tipo de transferência
+	  Tipo de interface
+
+  3.3.4 Cooperação entre Componentes — [I]
+	  Processador e controladores
+	  Controladores e periféricos
+	  Controladores e memória
+	  Coordenação das operações
+	  Fluxo integrado de informações
+
+
+
+4. Classificação dos Dispositivos de Entrada e Saída — [I]
+
+ 4.1 Classificação Quanto à Função — [I]
+
+  4.1.1 Dispositivos de Entrada — [I]
+	  Captura de dados
+	  Conversão de sinais
+	  Envio de informações ao sistema
+	  Comunicação com controladores
+
+  4.1.2 Dispositivos de Saída — [I]
+	  Recepção de dados
+	  Conversão das informações
+	  Apresentação ao usuário
+	  Controle da saída
+
+  4.1.3 Dispositivos de Entrada e Saída — [I]
+	  Comunicação bidirecional
+	  Leitura
+	  Escrita
+	  Compartilhamento de informações
+
+  4.1.4 Dispositivos Especializados — [I]
+	  Armazenamento
+	  Comunicação
+	  Aquisição de dados
+	  Controle industrial
+	  Aceleradores
+
+
+ 4.2 Classificação Quanto ao Método de Comunicação — [I]
+
+  4.2.1 Comunicação Serial — [I]
+	  Transmissão sequencial
+	  Comunicação ponto a ponto
+	  Características gerais
+	  Aplicações
+
+  4.2.2 Comunicação Paralela — [I]
+	  Transmissão simultânea
+	  Múltiplas linhas
+	  Características gerais
+	  Aplicações
+
+  4.2.3 Comunicação Mista — [V]
+	  Combinação de interfaces
+	  Conversão entre protocolos
+	  Compatibilidade entre dispositivos
+
+
+ 4.3 Classificação Quanto ao Comportamento Operacional — [I]
+
+  4.3.1 Dispositivos Orientados a Fluxo — [I]
+	  Fluxo contínuo
+	  Comunicação em tempo real
+	  Sincronização
+	  Aplicações
+
+  4.3.2 Dispositivos Orientados a Blocos — [I]
+	  Transferência em blocos
+	  Endereçamento
+	  Organização dos dados
+	  Aplicações
+
+  4.3.3 Dispositivos de Evento — [I]
+	  Operação sob demanda
+	  Geração de eventos
+	  Comunicação por interrupção
+	  Resposta ao sistema
+
+  4.3.4 Classificação quanto ao Desempenho — [I]
+	  Baixa velocidade
+	  Média velocidade
+	  Alta velocidade
+	  Tempo de resposta
+	  Capacidade de transferência
+
+  4.3.5 Classificação quanto ao Método de Acesso — [I]
+	  Dispositivos de caractere (Character Devices)
+	  Dispositivos de bloco (Block Devices)
+	  Diferenças
+	  Aplicações
+
+
+
+PARTE 2 — ARQUITETURA E ORGANIZAÇÃO DO SUBSISTEMA DE ENTRADA E SAÍDA
+
+
+5. Arquitetura do Subsistema de Entrada e Saída — [P]
+
+ 5.1 Fundamentos Arquiteturais — [P]
+
+  5.1.1 Conceitos Fundamentais — [P]
+	  Arquitetura do subsistema de E/S
+	  Organização do subsistema de E/S
+	  Recursos arquiteturais
+	  Recursos internos
+	  Interface entre hardware e software
+	  Papel da ISA na Entrada e Saída
+
+  5.1.2 Objetivos Arquiteturais — [I]
+	  Abstração dos dispositivos
+	  Independência dos periféricos
+	  Escalabilidade
+	  Compatibilidade
+	  Modularidade
+	  Flexibilidade
+
+  5.1.3 Componentes Arquiteturais — [I]
+	  Processador
+	  Memória principal
+	  Subsistema de E/S
+	  Interfaces
+	  Controladores
+	  Dispositivos
+
+
+ 5.2 Organização Arquitetural — [P]
+
+  5.2.1 Organização Lógica — [P]
+	  Comunicação entre componentes
+	  Fluxo de comandos
+	  Fluxo de controle
+	  Fluxo de dados
+	  Coordenação das operações
+
+  5.2.2 Organização Física — [I]
+	  Dispositivos físicos
+	  Interfaces físicas
+	  Controladores
+	  Conectores
+	  Meios de transmissão
+
+  5.2.3 Organização Funcional — [P]
+	  Geração de comandos
+	  Controle das operações
+	  Comunicação entre dispositivos
+	  Gerenciamento das transferências
+	  Atualização dos estados
+
+
+ 5.3 Integração com o Sistema Computacional — [I]
+
+  5.3.1 Integração com a CPU — [I]
+	  Execução das operações de E/S
+	  Controle pelo processador
+	  Sincronização
+	  Coordenação das operações
+
+  5.3.2 Integração com a Memória — [I]
+	  Leitura de dados
+	  Escrita de dados
+	  Compartilhamento das informações
+	  Transferências entre memória e dispositivos
+
+  5.3.3 Integração com os Barramentos — [I]
+	  Comunicação com barramentos
+	  Barramentos internos
+	  Barramentos de E/S
+	  Compartilhamento dos recursos
+
+
+
+6. Controladores de Entrada e Saída — [P]
+
+ 6.1 Fundamentos — [P]
+
+  6.1.1 Conceitos — [P]
+	  Definição
+	  Objetivos
+	  Papel dos controladores
+	  Comunicação entre sistema e periféricos
+	  Intermediação das operações
+
+  6.1.2 Características Gerais — [I]
+	  Autonomia operacional
+	  Controle dos dispositivos
+	  Conversão de protocolos
+	  Compatibilidade
+	  Especialização funcional
+
+  6.1.3 Funções Gerais — [P]
+	  Recepção de comandos
+	  Controle do periférico
+	  Transferência de dados
+	  Comunicação com a CPU
+	  Comunicação com a memória
+
+
+ 6.2 Estrutura dos Controladores — [P]
+
+  6.2.1 Interface com o Sistema — [I]
+	  Interface com a CPU
+	  Interface com a memória
+	  Interface com barramentos
+	  Interface de controle
+
+  6.2.2 Estrutura Interna — [P]
+	  Registradores internos
+	  Buffer interno
+	  Unidade lógica de controle
+	  Circuitos de temporização
+	  Circuitos de comunicação
+
+  6.2.3 Registradores de Entrada e Saída — [P]
+	  Registrador de dados
+	  Registrador de controle
+	  Registrador de estado
+	  Registradores de configuração
+	  Registradores auxiliares
+
+
+ 6.3 Operação dos Controladores — [P]
+
+  6.3.1 Recepção de Comandos — [P]
+	  Decodificação
+	  Interpretação
+	  Inicialização da operação
+	  Configuração
+
+  6.3.2 Controle do Dispositivo — [P]
+	  Inicialização
+	  Sincronização
+	  Monitoramento
+	  Encerramento da operação
+
+  6.3.3 Comunicação com o Sistema — [I]
+	  Transferência de dados
+	  Atualização do estado
+	  Geração de eventos
+	  Notificação de conclusão
+
+  6.3.4 Controladores Inteligentes — [I]
+	  Firmware interno
+	  Microcontroladores embarcados
+	  Offloading
+	  Processamento local
+	  Autonomia do controlador
+
+
+
+7. Interfaces de Entrada e Saída — [P]
+
+ 7.1 Fundamentos — [P]
+
+  7.1.1 Conceitos — [P]
+	  Definição
+	  Objetivos
+	  Interface física
+	  Interface lógica
+	  Comunicação entre componentes
+
+  7.1.2 Organização das Interfaces — [I]
+	  Interface elétrica
+	  Interface mecânica
+	  Interface lógica
+	  Interface de protocolo
+
+  7.1.3 Funções das Interfaces — [I]
+	  Conversão de sinais
+	  Sincronização
+	  Controle da comunicação
+	  Compatibilidade
+
+
+ 7.2 Estrutura das Interfaces — [P]
+
+  7.2.1 Componentes — [P]
+	  Circuitos de interface
+	  Registradores
+	  Buffers
+	  Lógica de controle
+	  Circuitos temporizadores
+
+  7.2.2 Comunicação — [P]
+	  Envio de comandos
+	  Recepção de dados
+	  Confirmação das operações
+	  Atualização dos estados
+
+  7.2.3 Conversão de Sinais — [I]
+	  Digital para digital
+	  Analógico para digital
+	  Digital para analógico
+	  Adaptação elétrica
+
+
+ 7.3 Classificação das Interfaces — [I]
+
+  7.3.1 Quanto ao Meio de Comunicação — [I]
+	  Interfaces internas
+	  Interfaces externas
+	  Interfaces locais
+	  Interfaces remotas
+
+  7.3.2 Quanto ao Tipo de Comunicação — [I]
+	  Comunicação serial
+	  Comunicação paralela
+	  Comunicação síncrona
+	  Comunicação assíncrona
+
+  7.3.3 Quanto ao Compartilhamento — [I]
+	  Interface dedicada
+	  Interface compartilhada
+	  Comunicação ponto a ponto
+	  Comunicação multiponto
+
+
+
+8. Endereçamento de Entrada e Saída — [P]
+
+ 8.1 Fundamentos — [P]
+
+  8.1.1 Conceitos — [P]
+	  Espaço de endereçamento
+	  Identificação dos dispositivos
+	  Seleção dos dispositivos
+	  Acesso aos registradores de E/S
+
+  8.1.2 Organização do Endereçamento — [P]
+	  Endereços de dispositivos
+	  Endereços de registradores
+	  Decodificação dos endereços
+	  Seleção da interface
+
+  8.1.3 Recursos Arquiteturais — [P]
+	  Espaço de memória
+	  Espaço de E/S
+	  Endereços arquiteturais
+	  Recursos visíveis ao programador
+
+
+ 8.2 Entrada e Saída Mapeada em Memória (MMIO) — [P]
+
+  8.2.1 Conceitos — [P]
+	  Definição
+	  Espaço de endereçamento compartilhado
+	  Registradores mapeados
+	  Acesso por instruções de memória
+
+  8.2.2 Funcionamento — [P]
+	  Leitura
+	  Escrita
+	  Decodificação dos endereços
+	  Comunicação com dispositivos
+
+  8.2.3 Características — [I]
+	  Integração com a memória
+	  Simplicidade de programação
+	  Flexibilidade
+	  Limitações
+	  Impacto no desempenho
+
+
+ 8.3 Entrada e Saída Isolada (PMIO) — [P]
+
+  8.3.1 Conceitos — [P]
+	  Definição
+	  Espaço de E/S independente
+	  Portas de Entrada e Saída
+	  Instruções específicas
+
+  8.3.2 Funcionamento — [P]
+	  Seleção da porta
+	  Transferência
+	  Controle
+	  Atualização do estado
+
+  8.3.3 Características — [I]
+	  Organização independente
+	  Vantagens
+	  Limitações
+	  Aplicações
+
+
+ 8.4 Comparação entre MMIO e PMIO — [I]
+
+  8.4.1 Organização — [I]
+	  Espaço de endereçamento
+	  Modelo arquitetural
+	  Complexidade
+	  Compatibilidade
+
+  8.4.2 Desempenho — [I]
+	  Tempo de acesso
+	  Eficiência
+	  Flexibilidade
+	  Escalabilidade
+
+  8.4.3 Aplicações — [I]
+	  Arquiteturas RISC
+	  Arquiteturas CISC
+	  Sistemas embarcados
+	  Computadores pessoais
+	  Servidores
+
+
+
+PARTE 3 — MÉTODOS DE TRANSFERÊNCIA E CONTROLE DAS OPERAÇÕES DE ENTRADA E SAÍDA
+
+
+9. Operações Fundamentais de Entrada e Saída — [P]
+
+ 9.1 Fundamentos das Operações — [P]
+
+  9.1.1 Conceitos — [P]
+	  Definição de operação de E/S
+	  Objetivos das operações
+	  Comunicação entre sistema e dispositivos
+	  Fluxo das operações
+	  Coordenação das transferências
+
+  9.1.2 Tipos de Operações — [I]
+	  Operações de leitura
+	  Operações de escrita
+	  Operações bidirecionais
+	  Operações de controle
+	  Operações de configuração
+
+  9.1.3 Organização Geral — [P]
+	  Solicitação da operação
+	  Inicialização
+	  Execução
+	  Confirmação
+	  Finalização
+
+
+ 9.2 Fluxo das Operações — [P]
+
+  9.2.1 Fluxo de Entrada — [P]
+	  Solicitação de leitura
+	  Recepção dos dados
+	  Verificação
+	  Transferência para memória
+	  Confirmação da operação
+
+  9.2.2 Fluxo de Saída — [P]
+	  Solicitação de escrita
+	  Transferência dos dados
+	  Envio ao dispositivo
+	  Confirmação
+	  Encerramento
+
+  9.2.3 Fluxo Bidirecional — [I]
+	  Alternância das operações
+	  Compartilhamento do canal
+	  Coordenação
+	  Controle da comunicação
+
+
+ 9.3 Estados Operacionais — [I]
+
+  9.3.1 Estado do Dispositivo — [I]
+	  Ocioso
+	  Ocupado
+	  Pronto
+	  Erro
+	  Desabilitado
+
+  9.3.2 Estado da Operação — [I]
+	  Inicialização
+	  Espera
+	  Transferência
+	  Conclusão
+	  Cancelamento
+
+  9.3.3 Controle dos Estados — [P]
+	  Atualização do estado
+	  Monitoramento
+	  Sincronização
+	  Transições entre estados
+
+
+
+10. Entrada e Saída Programada (Polling) — [P]
+
+ 10.1 Fundamentos — [P]
+
+  10.1.1 Conceitos — [P]
+	  Definição
+	  Objetivos
+	  Controle direto pela CPU
+	  Consulta periódica do dispositivo
+	  Espera ativa (Busy Waiting)
+	  Programmed I/O (PIO)
+	  Polling
+	  Busy Waiting
+	  Diferença entre PIO e Polling
+
+  10.1.2 Funcionamento Geral — [P]
+	  Solicitação da operação
+	  Leitura do registrador de estado
+	  Verificação da disponibilidade
+	  Transferência dos dados
+	  Encerramento
+
+  10.1.3 Organização — [P]
+	  Participação da CPU
+	  Participação do controlador
+	  Comunicação com o dispositivo
+	  Atualização dos registradores
+
+
+ 10.2 Características Operacionais — [P]
+
+  10.2.1 Controle — [P]
+	  Controle centralizado
+	  Supervisão contínua
+	  Sincronização
+	  Sequenciamento
+
+  10.2.2 Utilização da CPU — [P]
+	  Espera ativa
+	  Ocupação do processador
+	  Disponibilidade para outras tarefas
+	  Sobrecarga
+
+  10.2.3 Aplicações — [I]
+	  Sistemas simples
+	  Sistemas embarcados
+	  Dispositivos lentos
+	  Sistemas dedicados
+
+
+ 10.3 Avaliação de Desempenho — [I]
+
+  10.3.1 Vantagens — [I]
+	  Simplicidade
+	  Fácil implementação
+	  Controle direto
+	  Baixo custo
+
+  10.3.2 Limitações — [I]
+	  Alto uso da CPU
+	  Baixa eficiência
+	  Espera ativa
+	  Escalabilidade limitada
+
+  10.3.3 Critérios de Utilização — [I]
+	  Velocidade do dispositivo
+	  Frequência de acesso
+	  Complexidade do sistema
+	  Requisitos da aplicação
+
+
+
+11. Entrada e Saída Controlada por Interrupções — [P]
+
+ 11.1 Fundamentos — [P]
+
+  11.1.1 Conceitos — [P]
+	  Definição
+	  Objetivos
+	  Comunicação orientada a eventos
+	  Atendimento sob demanda
+	  Redução da espera ativa
+
+  11.1.2 Funcionamento Geral — [P]
+	  Solicitação da interrupção
+	  Reconhecimento
+	  Atendimento
+	  Execução da rotina
+	  Retorno ao programa
+
+  11.1.3 Componentes Envolvidos — [P]
+	  Dispositivo
+	  Controlador
+	  CPU
+	  Controlador de interrupções
+	  Rotina de tratamento
+
+
+ 11.2 Organização das Interrupções — [P]
+
+  11.2.1 Geração das Interrupções — [P]
+	  Eventos internos
+	  Eventos externos
+	  Solicitação do dispositivo
+	  Condições de erro
+
+  11.2.2 Atendimento — [P]
+	  Reconhecimento
+	  Salvamento do contexto
+	  Execução da ISR
+	  Restauração do contexto
+	  Retorno
+
+  11.2.3 Estruturas Utilizadas — [P]
+	  Vetor de interrupções
+	  Tabela de vetores
+	  Registradores de contexto
+	  Pilha
+	  Controlador de interrupções
+
+
+ 11.3 Gerenciamento das Interrupções — [P]
+
+  11.3.1 Classificação — [I]
+	  Interrupções mascaráveis
+	  Interrupções não mascaráveis
+	  Interrupções de hardware
+	  Interrupções de software
+
+  11.3.2 Controle — [P]
+	  Prioridades
+	  Mascaramento
+	  Encadeamento
+	  Aninhamento
+	  Balanceamento
+
+  11.3.3 Evolução Arquitetural — [I]
+	  IRQ
+	  PIC
+	  APIC
+	  MSI
+	  MSI-X
+	  Comparação IRQ × MSI
+	  Comparação MSI × MSI-X
+	  Vantagens
+	  Limitações
+	  Quando utilizar
+
+
+ 11.4 Desempenho das Interrupções — [I]
+
+  11.4.1 Métricas — [I]
+	  Latência
+	  Tempo de resposta
+	  Overhead
+	  Eficiência
+
+  11.4.2 Vantagens — [I]
+	  Melhor utilização da CPU
+	  Comunicação assíncrona
+	  Resposta rápida
+	  Escalabilidade
+
+  11.4.3 Limitações — [I]
+	  Sobrecarga do tratamento
+	  Complexidade
+	  Latência
+	  Interrupções excessivas
+
+
+
+12. Acesso Direto à Memória (DMA) — [P]
+
+ 12.1 Fundamentos — [P]
+
+  12.1.1 Conceitos — [P]
+	  Definição
+	  Objetivos
+	  Transferência direta
+	  Redução da carga da CPU
+	  Comunicação entre memória e dispositivo
+
+  12.1.2 Componentes — [P]
+	  Controlador DMA
+	  CPU
+	  Memória principal
+	  Dispositivo
+	  Barramentos
+
+  12.1.3 Funcionamento Geral — [P]
+	  Configuração
+	  Solicitação
+	  Arbitragem
+	  Transferência
+	  Finalização
+
+
+ 12.2 Organização do DMA — [P]
+
+  12.2.1 Estrutura do Controlador DMA — [P]
+	  Registradores
+	  Unidade de controle
+	  Contador de transferência
+	  Registrador de endereço
+	  Registrador de controle
+
+  12.2.2 Fluxo da Transferência — [P]
+	  Configuração pela CPU
+	  Solicitação do dispositivo
+	  Reserva do barramento
+	  Transferência
+	  Liberação dos recursos
+
+  12.2.3 Comunicação com o Sistema — [P]
+	  CPU
+	  Memória
+	  Controladores
+	  Dispositivos
+	  Barramentos
+
+
+ 12.3 Modos de Operação — [P]
+
+  12.3.1 Modos Clássicos — [P]
+	  Burst Mode
+	  Cycle Stealing
+	  Transparent DMA
+	  Demand Transfer
+
+  12.3.2 Modos Avançados — [I]
+	  Scatter-Gather DMA
+	  Bus Master DMA
+	  Encadeamento de descritores
+	  Transferências múltiplas
+	  Estrutura dos descritores
+	  Listas encadeadas
+	  Buffers não contíguos
+	  Scatter Lists
+
+  12.3.3 Controle da Transferência — [P]
+	  Inicialização
+	  Monitoramento
+	  Encerramento
+	  Notificação de conclusão
+
+  12.3.4 Bus Mastering — [I]
+	  Conceito
+	  Mestre do barramento
+	  Controle independente
+	  Controle das transferências
+	  Exemplos
+
+
+ 12.4 Arbitragem do Barramento — [P]
+
+  12.4.1 Conceitos — [P]
+	  Solicitação do barramento
+	  Concessão
+	  Prioridade
+	  Compartilhamento
+
+  12.4.2 Controle de Acesso — [P]
+	  Mestre do barramento
+	  Escravo do barramento
+	  Exclusão de acesso
+	  Coordenação
+
+  12.4.3 Impacto no Sistema — [I]
+	  Concorrência
+	  Gargalos
+	  Latência
+	  Throughput
+
+
+ 12.5 Avaliação de Desempenho — [I]
+
+  12.5.1 Vantagens — [I]
+	  Alta velocidade
+	  Baixa utilização da CPU
+	  Transferências em bloco
+	  Eficiência
+
+  12.5.2 Limitações — [I]
+	  Complexidade
+	  Arbitragem
+	  Sincronização
+	  Compartilhamento dos recursos
+
+  12.5.3 Aplicações — [I]
+	  Controladores de disco
+	  Interfaces de rede
+	  Placas gráficas
+	  Dispositivos de alta velocidade
+	  Sistemas embarcados
+
+
+
+PARTE 4 — ARQUITETURAS, BARRAMENTOS, PROTOCOLOS E INTERFACES DE COMUNICAÇÃO
+
+
+13. Arquiteturas de Comunicação de Entrada e Saída — [P]
+
+ 13.1 Fundamentos Arquiteturais — [P]
+
+  13.1.1 Conceitos Fundamentais — [P]
+	  Arquitetura de comunicação
+	  Objetivos
+	  Organização da comunicação
+	  Comunicação entre componentes
+	  Fluxo das informações
+
+  13.1.2 Modelos de Comunicação — [I]
+	  Comunicação centralizada
+	  Comunicação distribuída
+	  Comunicação compartilhada
+	  Comunicação ponto a ponto
+
+  13.1.3 Componentes da Arquitetura — [I]
+	  Processador
+	  Memória
+	  Controladores
+	  Interfaces
+	  Dispositivos
+	  Caminhos de comunicação
+
+
+ 13.2 Arquiteturas Baseadas em Barramentos — [P]
+
+  13.2.1 Organização Geral — [P]
+	  Barramento compartilhado
+	  Comunicação entre dispositivos
+	  Compartilhamento dos recursos
+	  Coordenação das transferências
+
+  13.2.2 Características — [I]
+	  Simplicidade
+	  Modularidade
+	  Expansibilidade
+	  Compatibilidade
+
+  13.2.3 Limitações — [I]
+	  Gargalos
+	  Contenção
+	  Escalabilidade
+	  Compartilhamento excessivo
+
+
+ 13.3 Arquiteturas Baseadas em Interconexões Modernas — [P]
+
+  13.3.1 Comunicação Ponto a Ponto — [P]
+	  Conceitos
+	  Organização
+	  Comunicação dedicada
+	  Independência das conexões
+
+  13.3.2 Redes de Interconexão — [I]
+	  Estruturas comutadas
+	  Comunicação simultânea
+	  Escalabilidade
+	  Balanceamento
+
+  13.3.3 Evolução das Arquiteturas de E/S — [I]
+	  Barramentos paralelos
+	  Barramentos seriais
+	  Interconexões modernas
+	  Tendências arquiteturais
+
+
+
+14. Barramentos Aplicados à Entrada e Saída — [P]
+
+ 14.1 Fundamentos — [P]
+
+  14.1.1 Conceitos — [P]
+	  Barramento de Entrada e Saída
+	  Comunicação entre dispositivos
+	  Compartilhamento do barramento
+	  Coordenação das operações
+
+  14.1.2 Organização — [P]
+	  Mestre
+	  Escravo
+	  Arbitragem
+	  Ciclo de barramento
+
+  14.1.3 Funções — [I]
+	  Transporte de dados
+	  Transporte de endereços
+	  Transporte de sinais de controle
+	  Sincronização
+
+
+ 14.2 Barramentos de Dados — [P]
+
+  14.2.1 Estrutura — [P]
+	  Largura do barramento
+	  Sentido da transferência
+	  Comunicação bidirecional
+	  Capacidade de transferência
+
+  14.2.2 Funcionamento — [P]
+	  Leitura
+	  Escrita
+	  Transferência em bloco
+	  Sequenciamento
+
+  14.2.3 Desempenho — [I]
+	  Throughput
+	  Largura de banda
+	  Latência
+	  Eficiência
+
+
+ 14.3 Barramentos de Endereços — [P]
+
+  14.3.1 Organização — [P]
+	  Seleção de dispositivos
+	  Espaço de endereçamento
+	  Decodificação
+	  Identificação dos recursos
+
+  14.3.2 Funcionamento — [P]
+	  Endereçamento
+	  Seleção
+	  Comunicação lógica
+	  Controle do acesso
+
+
+ 14.4 Barramentos de Controle — [P]
+
+  14.4.1 Sinais de Controle — [I]
+	  Leitura
+	  Escrita
+	  Reset
+	  Clock
+	  Interrupções
+	  DMA
+
+  14.4.2 Coordenação das Operações — [P]
+	  Sincronização
+	  Confirmação
+	  Handshake
+	  Encerramento da transferência
+
+  14.4.3 Controle do Barramento — [P]
+	  Arbitragem
+	  Prioridade
+	  Compartilhamento
+	  Liberação do barramento
+
+  14.4.4 Protocolos de Handshake — [P]
+	  Handshake de dois sinais
+	  Handshake de quatro sinais
+	  Ready/Busy
+	  Ready/Valid
+	  Wait States
+
+
+
+15. Comunicação de Dados — [P]
+
+ 15.1 Comunicação Serial — [P]
+
+  15.1.1 Fundamentos — [P]
+	  Conceito
+	  Funcionamento
+	  Transmissão bit a bit
+	  Comunicação ponto a ponto
+
+  15.1.2 Características — [I]
+	  Simplicidade
+	  Longas distâncias
+	  Baixa interferência
+	  Menor quantidade de condutores
+
+  15.1.3 Desempenho — [I]
+	  Taxa de transmissão
+	  Latência
+	  Throughput
+	  Eficiência
+
+
+ 15.2 Comunicação Paralela — [P]
+
+  15.2.1 Fundamentos — [P]
+	  Conceito
+	  Funcionamento
+	  Transmissão simultânea
+	  Múltiplas linhas
+
+  15.2.2 Características — [I]
+	  Alta velocidade
+	  Curtas distâncias
+	  Maior complexidade física
+	  Sincronização
+
+  15.2.3 Limitações — [I]
+	  Crosstalk
+	  Atenuação
+	  Skew
+	  Escalabilidade
+
+
+ 15.3 Comunicação Síncrona — [P]
+
+  15.3.1 Organização — [P]
+	  Clock compartilhado
+	  Sincronização temporal
+	  Temporização
+	  Sequenciamento
+
+  15.3.2 Características — [I]
+	  Alta velocidade
+	  Precisão
+	  Comunicação previsível
+	  Eficiência
+
+  15.3.3 Limitações — [I]
+	  Dependência do clock
+	  Distância
+	  Complexidade
+
+
+ 15.4 Comunicação Assíncrona — [P]
+
+  15.4.1 Organização — [P]
+	  Bits de início
+	  Bits de parada
+	  Quadros
+	  Temporização independente
+
+  15.4.2 Características — [I]
+	  Flexibilidade
+	  Simplicidade
+	  Comunicação sob demanda
+	  Compatibilidade
+
+  15.4.3 Limitações — [I]
+	  Overhead
+	  Menor eficiência
+	  Menor velocidade
+
+
+ 15.5 Modos de Comunicação — [I]
+
+  15.5.1 Direção da Comunicação — [I]
+	  Simplex
+	  Half-Duplex
+	  Full-Duplex
+
+  15.5.2 Organização da Comunicação — [I]
+	  Comunicação unidirecional
+	  Comunicação bidirecional alternada
+	  Comunicação bidirecional simultânea
+
+
+
+16. Protocolos e Interfaces de Entrada e Saída — [P]
+
+ 16.1 Fundamentos — [P]
+
+  16.1.1 Protocolos de Comunicação — [P]
+	  Conceito
+	  Objetivos
+	  Padronização
+	  Compatibilidade
+	  Interoperabilidade
+
+  16.1.2 Interfaces de Comunicação — [I]
+	  Interface física
+	  Interface lógica
+	  Interface elétrica
+	  Interface de protocolo
+
+  16.1.3 Organização das Interfaces — [I]
+	  Camadas da comunicação
+	  Controle
+	  Temporização
+	  Sincronização
+
+
+ 16.2 Interfaces Internas — [I]
+
+  16.2.1 PCI Express (PCIe) — [P]
+	  Conceito
+	  Arquitetura
+	  Comunicação ponto a ponto
+	  Lanes
+	  Escalabilidade
+	  Gerações do PCIe
+	  Hot Plug
+	  Hot Swap (visão geral)
+
+  16.2.2 Interfaces Internas Especializadas — [I]
+	  NVMe sobre PCIe
+	  Comunicação com aceleradores
+	  Interfaces proprietárias
+
+
+ 16.3 Interfaces Externas — [I]
+
+  16.3.1 USB — [I]
+	  Arquitetura
+	  Enumeração
+	  Classes de dispositivos
+	  USB 2.0
+	  USB 3.x
+	  USB4
+	  USB Tipo-C
+
+  16.3.2 Thunderbolt — [I]
+	  Conceito
+	  Integração com PCI Express
+	  Alta velocidade
+	  Daisy Chain
+
+  16.3.3 FireWire (IEEE 1394) — [V]
+	  Conceito
+	  Comunicação isócrona
+	  Aplicações
+
+
+ 16.4 Interfaces de Armazenamento — [I]
+
+  16.4.1 SATA — [I]
+	  Conceito
+	  Funcionamento
+	  SATA I
+	  SATA II
+	  SATA III
+
+  16.4.2 SAS — [V]
+	  Conceito
+	  Sistemas corporativos
+	  Alta confiabilidade
+
+  16.4.3 NVMe — [P]
+	  Arquitetura
+	  Filas de comandos
+	  Paralelismo
+	  Baixa latência
+	  Submission Queue
+	  Completion Queue
+	  Queue Pair
+	  Doorbells
+	  Alta escalabilidade
+
+
+ 16.5 Interfaces para Sistemas Embarcados — [I]
+
+  16.5.1 I²C — [I]
+	  SDA
+	  SCL
+	  Mestre
+	  Escravo
+	  Endereçamento
+
+  16.5.2 SPI — [I]
+	  MOSI
+	  MISO
+	  SCK
+	  CS/SS
+	  Comunicação Full-Duplex
+
+  16.5.3 UART — [I]
+	  TX
+	  RX
+	  Comunicação assíncrona
+
+  16.5.4 RS-232 — [V]
+	  Conceito
+	  Comunicação serial
+	  Aplicações
+
+
+ 16.6 Interfaces Sem Fio — [V]
+
+  16.6.1 Bluetooth — [V]
+	  Conceito
+	  Bluetooth Classic
+	  BLE
+	  Perfis
+
+  16.6.2 Wi-Fi — [V]
+	  Comunicação em rede
+	  IEEE 802.11
+	  Aplicações
+
+  16.6.3 NFC — [V]
+	  Comunicação por aproximação
+	  Aplicações
+
+  16.6.4 Zigbee — [V]
+	  Redes Mesh
+	  Baixo consumo
+	  Automação
+
+
+
+PARTE 5 — DESEMPENHO, ARQUITETURAS MODERNAS E OTIMIZAÇÕES DA ENTRADA E SAÍDA
+
+
+17. Desempenho do Subsistema de Entrada e Saída — [I]
+
+ 17.1 Fundamentos do Desempenho — [I]
+
+  17.1.1 Conceitos Fundamentais — [I]
+	  Desempenho do subsistema de E/S
+	  Eficiência
+	  Capacidade
+	  Escalabilidade
+	  Produtividade do sistema
+	  Gargalos de E/S
+
+  17.1.2 Objetivos da Avaliação — [I]
+	  Medição do desempenho
+	  Identificação de gargalos
+	  Comparação entre arquiteturas
+	  Otimização do sistema
+
+  17.1.3 Fatores que Influenciam o Desempenho — [I]
+	  Processador
+	  Memória
+	  Barramentos
+	  Controladores
+	  Interfaces
+	  Periféricos
+	  Software de suporte
+
+
+ 17.2 Métricas de Desempenho — [I]
+
+  17.2.1 Largura de Banda — [I]
+	  Conceito
+	  Capacidade máxima
+	  Vazão teórica
+	  Limitações
+
+  17.2.2 Throughput — [I]
+	  Conceito
+	  Taxa efetiva de transferência
+	  Eficiência da comunicação
+	  Fatores de influência
+
+  17.2.3 Latência — [I]
+	  Conceito
+	  Tempo de resposta
+	  Tempo de acesso
+	  Tempo de transmissão
+	  Tempo de processamento
+	  Tempo de serviço
+	  Tempo em fila
+	  Tempo total de resposta
+	  Latência fim a fim
+
+  17.2.4 Overhead — [I]
+	  Sobrecarga de hardware
+	  Sobrecarga de software
+	  Sobrecarga dos protocolos
+	  Sobrecarga do sistema operacional
+
+  17.2.5 Utilização dos Recursos — [I]
+	  Utilização da CPU
+	  Utilização dos barramentos
+	  Utilização da memória
+	  Utilização dos controladores
+
+
+ 17.3 Avaliação de Desempenho — [I]
+
+  17.3.1 Critérios de Avaliação — [I]
+	  Velocidade
+	  Eficiência
+	  Escalabilidade
+	  Confiabilidade
+	  Disponibilidade
+
+  17.3.2 Gargalos do Subsistema de E/S — [I]
+	  Gargalos da CPU
+	  Gargalos do barramento
+	  Gargalos dos dispositivos
+	  Gargalos da memória
+	  Gargalos dos controladores
+
+  17.3.3 Balanceamento do Sistema — [I]
+	  Equilíbrio entre CPU e E/S
+	  Balanceamento da largura de banda
+	  Balanceamento de cargas
+	  Distribuição das operações
+
+
+
+18. Técnicas de Otimização da Entrada e Saída — [P]
+
+ 18.1 Bufferização — [P]
+
+  18.1.1 Fundamentos — [P]
+	  Conceito
+	  Objetivos
+	  Funcionamento
+	  Redução da diferença de velocidade
+
+  18.1.2 Tipos de Buffer — [P]
+	  Buffer simples
+	  Buffer duplo
+	  Buffer circular
+	  Buffer múltiplo
+
+  18.1.3 Estratégias — [I]
+	  Pré-carregamento
+	  Escrita adiada
+	  Reutilização
+	  Gerenciamento do buffer
+
+
+ 18.2 Filas de Entrada e Saída — [P]
+
+  18.2.1 Organização — [P]
+	  Conceito
+	  Estrutura das filas
+	  Inserção
+	  Remoção
+	  Escalonamento
+
+  18.2.2 Políticas — [I]
+	  FIFO
+	  Prioridade
+	  Round-Robin
+	  Filas múltiplas
+
+  18.2.3 Aplicações — [I]
+	  Controladores
+	  Discos
+	  SSDs
+	  Interfaces de rede
+
+
+ 18.3 Paralelismo nas Operações de E/S — [P]
+
+  18.3.1 Execução Paralela — [P]
+	  Operações simultâneas
+	  Sobreposição entre CPU e E/S
+	  Paralelismo entre dispositivos
+	  Paralelismo interno
+
+  18.3.2 Concorrência — [P]
+	  Compartilhamento de recursos
+	  Coordenação
+	  Sincronização
+	  Exclusão de acesso
+
+  18.3.3 Balanceamento — [I]
+	  Distribuição das operações
+	  Balanceamento entre dispositivos
+	  Balanceamento das transferências
+
+
+ 18.4 Técnicas Arquiteturais de Otimização — [P]
+
+  18.4.1 Transferências em Bloco — [P]
+	  Organização
+	  Eficiência
+	  Aplicações
+	  Limitações
+
+  18.4.2 Prefetch de Dados — [I]
+	  Conceito
+	  Objetivos
+	  Funcionamento
+	  Benefícios
+
+  18.4.3 Agrupamento de Operações — [I]
+	  Batch de transferências
+	  Redução do overhead
+	  Otimização da comunicação
+
+  18.4.4 Redução da Latência — [I]
+	  Técnicas arquiteturais
+	  Técnicas organizacionais
+	  Redução de esperas
+	  Melhoria do tempo de resposta
+
+
+
+19. Arquiteturas Modernas de Entrada e Saída — [P]
+
+ 19.1 Evolução Arquitetural — [I]
+
+  19.1.1 Evolução Histórica — [I]
+	  Primeiros sistemas
+	  Controladores dedicados
+	  DMA
+	  PCI
+	  PCI Express
+	  Arquiteturas modernas
+
+  19.1.2 Tendências Arquiteturais — [I]
+	  Comunicação serial
+	  Comunicação ponto a ponto
+	  Alta escalabilidade
+	  Alta largura de banda
+
+  19.1.3 Novos Requisitos — [I]
+	  Virtualização
+	  Alto desempenho
+	  Computação paralela
+	  Inteligência Artificial
+	  Computação em nuvem
+
+
+ 19.2 Barramentos Modernos — [P]
+
+  19.2.1 PCI Express Avançado — [P]
+	  Topologia
+	  Switches
+	  Root Complex
+	  Endpoints
+	  Bridges
+	  Escalabilidade
+
+  19.2.2 Comunicação de Alta Velocidade — [I]
+	  Transferências simultâneas
+	  Comunicação Full-Duplex
+	  Múltiplas lanes
+	  QoS
+
+  19.2.3 Evolução das Interconexões — [I]
+	  PCI
+	  PCI-X
+	  PCI Express
+	  CXL (visão geral)
+
+
+ 19.3 Virtualização de Entrada e Saída — [P]
+
+  19.3.1 Fundamentos — [P]
+	  Conceito
+	  Objetivos
+	  Compartilhamento de dispositivos
+	  Isolamento
+
+  19.3.2 Técnicas de Virtualização — [P]
+	  Emulação
+	  Paravirtualização
+	  Passthrough
+	  Virtualização assistida por hardware
+
+  19.3.3 Recursos Modernos — [P]
+	  IOMMU
+	  SR-IOV
+	  Virtual Functions (VF)
+	  Physical Functions (PF)
+
+  19.3.4 Benefícios — [I]
+	  Segurança
+	  Desempenho
+	  Escalabilidade
+	  Compartilhamento eficiente
+
+
+
+20. Recursos Arquiteturais Modernos da Entrada e Saída — [I]
+
+  20.1 Tecnologias Modernas
+	  IOMMU
+	  ATS
+	  PRI
+	  PASID
+	  SR-IOV
+	  MR-IOV
+
+ 20.2 Comunicação Moderna
+	  MSI
+	  MSI-X
+	  Bus Mastering
+	  DMA Coherency
+	  Cache Coherency
+
+ 20.3 Integração
+	  Virtualização
+	  Compartilhamento seguro
+	  Proteção de memória
+
+
+
+21. Comunicação entre Dispositivos e Memória — [P]
+
+ 21.1 Comunicação com a Memória Principal — [P]
+
+  21.1.1 Organização — [P]
+	  Leitura
+	  Escrita
+	  Transferência direta
+	  Compartilhamento
+
+  21.1.2 Sincronização — [P]
+	  Coordenação
+	  Controle de acesso
+	  Ordem das operações
+	  Consistência
+
+  21.1.3 Eficiência — [I]
+	  Redução de acessos
+	  Aproveitamento da largura de banda
+	  Minimização da latência
+
+
+ 21.2 Coerência e Consistência — [P]
+
+  21.2.1 Coerência envolvendo Dispositivos — [P]
+	  Conceito
+	  Atualização dos dados
+	  Compartilhamento
+	  Problemas de coerência
+	  DMA Coherent
+	  DMA Non-Coherent
+	  Cache Snooping
+	  Coherent Interconnect
+
+  21.2.2 Consistência das Operações — [P]
+	  Ordem das operações
+	  Visibilidade das escritas
+	  Sincronização
+	  Barreiras de memória (Memory Barriers)
+	  Read Ordering
+	  Write Ordering
+	  Relaxed Ordering
+	  Strong Ordering
+
+  21.2.3 Comunicação com Cache — [P]
+	  Cache e MMIO
+	  Dispositivos e cache
+	  Regiões não cacheáveis
+	  Sincronização da memória
+	  Escritas não cacheáveis
+	  Write Combining
+	  Memory Fences
+	  Cache Flush
+	  Cache Invalidate
+
+
+ 21.3 Arquiteturas Modernas de Comunicação — [P]
+
+  21.3.1 Comunicação de Alta Eficiência — [P]
+	  Zero-Copy
+	  DMA moderno
+	  Scatter-Gather
+	  Bus Mastering
+	  Offloading
+
+  21.3.2 Comunicação com Aceleradores — [I]
+	  GPUs
+	  FPGAs
+	  NICs inteligentes
+	  Coprocessadores
+	  DPU
+	  NPU
+	  TPU (visão geral)
+
+  21.3.3 Tendências Futuras — [V]
+	  SmartNICs
+	  DPUs
+	  CXL I/O
+	  NUMA e Entrada/Saída
+	  Afinidade de dispositivos
+	  Localidade de memória
+	  Latência NUMA
+	  Integração entre memória e dispositivos
+
+
+
+PARTE 6 — INTEGRAÇÃO DOS CONCEITOS, CONFIABILIDADE, SEGURANÇA E CONCLUSÃO
+
+
+22. Confiabilidade e Segurança da Entrada e Saída — [P]
+
+ 22.1 Confiabilidade das Operações de E/S — [P]
+
+  22.1.1 Fundamentos — [P]
+	  Conceito
+	  Objetivos
+	  Integridade das transferências
+	  Disponibilidade
+	  Continuidade das operações
+
+  22.1.2 Fontes de Erros — [I]
+	  Falhas de hardware
+	  Falhas de comunicação
+	  Erros de sincronização
+	  Ruídos elétricos
+	  Falhas dos dispositivos
+
+  22.1.3 Mecanismos de Detecção — [P]
+	  Verificação de integridade
+	  Códigos de detecção
+	  Time-out
+	  Monitoramento dos dispositivos
+	  Diagnóstico
+
+
+ 22.2 Tratamento de Erros — [P]
+
+  22.2.1 Identificação dos Erros — [I]
+	  Erros temporários
+	  Erros permanentes
+	  Falhas de comunicação
+	  Falhas dos controladores
+
+  22.2.2 Recuperação — [P]
+	  Repetição da operação
+	  Reinicialização do dispositivo
+	  Recuperação automática
+	  Recuperação assistida
+
+  22.2.3 Tolerância a Falhas — [I]
+	  Redundância
+	  Reconfiguração
+	  Continuidade do serviço
+	  Alta disponibilidade
+
+
+ 22.3 Segurança da Entrada e Saída — [P]
+
+  22.3.1 Controle de Acesso — [P]
+	  Permissões
+	  Privilégios
+	  Isolamento
+	  Proteção dos dispositivos
+
+  22.3.2 Proteção da Comunicação — [I]
+	  Integridade dos dados
+	  Confidencialidade
+	  Autenticação
+	  Validação das operações
+
+  22.3.3 Recursos Arquiteturais Modernos — [P]
+	  IOMMU
+	  Proteção contra DMA indevido
+	  Isolamento de dispositivos
+	  Virtualização segura
+
+
+
+23. Sistemas Operacionais e Entrada e Saída (Visão Arquitetural) — [I]
+
+ 23.1 Interface entre Hardware e Software — [I]
+
+  23.1.1 Papel do Sistema Operacional — [I]
+	  Gerenciamento da Entrada e Saída
+	  Abstração dos dispositivos
+	  Compartilhamento dos recursos
+	  Coordenação das operações
+
+  23.1.2 Drivers de Dispositivos — [I]
+	  Conceito
+	  Função
+	  Comunicação com o hardware
+	  Interface com o sistema operacional
+
+  23.1.3 Chamadas de Sistema — [V]
+	  Operações de leitura
+	  Operações de escrita
+	  Controle dos dispositivos
+	  Comunicação entre aplicações e hardware
+
+
+ 23.2 Gerenciamento das Operações — [I]
+
+  23.2.1 Escalonamento de E/S — [I]
+	  Organização das requisições
+	  Prioridades
+	  Otimização das operações
+	  Balanceamento
+
+  23.2.2 Gerenciamento dos Dispositivos — [I]
+	  Inicialização
+	  Configuração
+	  Compartilhamento
+	  Liberação
+
+  23.2.3 Comunicação com o Hardware — [I]
+	  Registradores de E/S
+	  Interrupções
+	  DMA
+	  Interfaces
+
+
+
+24. Integração Geral dos Conceitos de Entrada e Saída — [I]
+
+ 24.1 Integração Arquitetural — [I]
+
+  24.1.1 Componentes Envolvidos — [I]
+	  Processador
+	  Memória principal
+	  Controladores de E/S
+	  Interfaces
+	  Barramentos
+	  Periféricos
+
+  24.1.2 Fluxo Completo de uma Operação de E/S — [P]
+	  Solicitação da operação
+	  Decodificação
+	  Seleção do dispositivo
+	  Comunicação com o controlador
+	  Transferência de dados
+	  Atualização dos estados
+	  Finalização da operação
+
+  24.1.3 Coordenação entre os Componentes — [I]
+	  Sincronização
+	  Compartilhamento
+	  Arbitragem
+	  Comunicação integrada
+
+
+ 24.2 Integração dos Métodos de Transferência — [I]
+
+  24.2.1 Comparação Geral — [I]
+	  Entrada e Saída Programada
+	  Entrada e Saída por Interrupções
+	  DMA
+
+  24.2.2 Critérios de Escolha — [I]
+	  Complexidade
+	  Desempenho
+	  Custo
+	  Tipo de dispositivo
+	  Volume de dados
+
+  24.2.3 Cenários de Aplicação — [I]
+	  Sistemas embarcados
+	  Computadores pessoais
+	  Servidores
+	  Sistemas de alto desempenho
+	  Sistemas em tempo real
+
+
+ 24.3 Integração das Tecnologias Modernas — [I]
+
+  24.3.1 Interfaces Modernas — [I]
+	  PCI Express
+	  USB
+	  NVMe
+	  Thunderbolt
+
+  24.3.2 Recursos Arquiteturais — [P]
+	  MMIO
+	  MSI/MSI-X
+	  IOMMU
+	  SR-IOV
+	  Bus Mastering
+
+  24.3.3 Tendências da Arquitetura de E/S — [I]
+	  Comunicação de baixa latência
+	  Alta largura de banda
+	  Virtualização
+	  Computação heterogênea
+	  Dispositivos inteligentes
+
+
+
+25. Resumo Geral da Entrada e Saída na Arquitetura e Organização de Computadores — [I]
+
+ 25.1 Fundamentos Essenciais — [I]
+
+  25.1.1 Conceitos Fundamentais — [I]
+	  Objetivos da Entrada e Saída
+	  Organização do subsistema
+	  Papel dos controladores
+	  Interfaces
+	  Dispositivos
+
+ 25.2 Arquitetura e Organização — [I]
+
+  25.2.1 Estrutura Geral — [I]
+	  Comunicação CPU–Memória–E/S
+	  MMIO e PMIO
+	  Controladores
+	  Registradores de E/S
+	  Barramentos
+
+ 25.3 Métodos de Transferência — [I]
+
+  25.3.1 Comparação Geral — [I]
+	  Polling
+	  Interrupções
+	  DMA
+	  Aplicações de cada método
+
+ 25.4 Comunicação e Interfaces — [I]
+
+  25.4.1 Principais Tecnologias — [I]
+	  PCI Express
+	  USB
+	  SATA
+	  NVMe
+	  I²C
+	  SPI
+	  UART
+
+ 25.5 Desempenho e Otimizações — [I]
+
+  25.5.1 Conceitos Principais — [I]
+	  Latência
+	  Throughput
+	  Largura de banda
+	  Bufferização
+	  Filas
+	  Paralelismo
+
+ 25.6 Recursos Arquiteturais Modernos — [I]
+
+  25.6.1 Tecnologias — [I]
+	  MSI/MSI-X
+	  IOMMU
+	  SR-IOV
+	  Zero-Copy
+	  Bus Master DMA
+	  Scatter-Gather DMA
+
+
+
+26. Conclusão — [V]
+
+ 26.1 Síntese Final — [V]
+
+  26.1.1 Evolução da Entrada e Saída — [V]
+	  Evolução histórica
+	  Evolução arquitetural
+	  Tendências atuais
+	  Perspectivas futuras
+
+  26.1.2 Relação com a Arquitetura de Computadores — [V]
+	  Papel na arquitetura moderna
+	  Integração com os demais subsistemas
+	  Impacto no desempenho global
+	  Importância para a escalabilidade
+
+  26.1.3 Competências Esperadas — [V]
+	  Compreender a organização do subsistema de E/S
+	  Entender a arquitetura das interfaces
+	  Conhecer os métodos de transferência
+	  Comparar tecnologias modernas
+	  Avaliar desempenho
+	  Identificar gargalos
+	  Entender recursos arquiteturais modernos
+	  Relacionar E/S com CPU, memória e barramentos
+	  Dominar os conceitos fundamentais da Entrada e Saída na Arquitetura e Organização de Computadores
