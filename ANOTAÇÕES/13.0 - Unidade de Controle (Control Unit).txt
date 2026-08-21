@@ -1,0 +1,1392 @@
+                                      UNIDADE DE CONTROLE (CONTROL UNIT)
+
+
+A classificação abaixo indica a profundidade recomendada para cada grande tópico da lista.
+
+[P] Profundidade — estudar mecanismos, estruturas, funcionamento interno e relações entre componentes.
+[I] Intermediário — compreender bem o funcionamento e as relações principais, sem precisar dominar todos os
+   detalhes de implementação.
+[V] Visão geral — saber o que é, para que serve e como se relaciona com a Unidade de Controle.
+
+
+
+PARTE 1 — FUNDAMENTOS DA UNIDADE DE CONTROLE (CONTROL UNIT)
+
+
+1. Introdução à Unidade de Controle — [I]
+
+ 1.1 Conceitos Fundamentais — [I]
+
+  1.1.1 Conceito de Unidade de Controle — [I]
+	  Definição de Unidade de Controle
+	  Papel na coordenação do processador
+	  Geração dos sinais de controle
+	  Relação com o Datapath
+	  Importância na execução das instruções
+
+  1.1.2 Objetivos da Unidade de Controle — [I]
+	  Coordenação das operações internas
+	  Interpretação das instruções
+	  Geração de comandos de controle
+	  Sincronização das operações do processador
+	  Suporte à execução correta dos programas
+
+  1.1.3 Importância da Unidade de Controle — [I]
+	  Base do funcionamento do processador
+	  Influência sobre a execução das instruções
+	  Relação com a correção funcional do sistema
+	  Papel na organização do fluxo de execução
+	  Importância para a microarquitetura
+
+
+ 1.2 A Unidade de Controle na Arquitetura de Computadores — [I]
+
+  1.2.1 Papel da Unidade de Controle no Sistema Computacional — [I]
+	  Interpretação das instruções
+	  Comando das operações do Datapath
+	  Coordenação entre componentes internos
+	  Organização do fluxo de execução
+
+  1.2.2 Arquitetura × Organização × Microarquitetura × Unidade de Controle — [I]
+	  O que pertence à Arquitetura
+	  O que pertence à Organização
+	  O que pertence à Microarquitetura
+	  Localização da Unidade de Controle
+	  Relação entre os conceitos
+
+  1.2.3 Unidade de Controle como Estrutura Funcional — [I]
+	  Organização dos componentes de controle
+	  Fluxo de sinais de controle
+	  Interligação com o Datapath
+	  Execução coordenada das instruções
+
+
+
+2. Evolução Histórica da Unidade de Controle — [V]
+
+ 2.1 Origem da Unidade de Controle — [V]
+
+  2.1.1 Primeiras Unidades de Controle — [V]
+	  Controle centralizado nos primeiros computadores
+	  Circuitos de controle elementares
+	  Organização inicial das operações
+
+  2.1.2 Evolução da Organização de Controle — [V]
+	  Crescimento da complexidade das instruções
+	  Surgimento da microprogramação
+	  Evolução das técnicas de controle
+
+
+ 2.2 Marcos Históricos da Unidade de Controle — [V]
+
+  2.2.1 Contribuição de Maurice Wilkes — [V]
+	  Origem da microprogramação
+	  Conceito de memória de controle
+	  Impacto na organização de computadores
+
+  2.2.2 Evolução do Controle Cabeado ao Microprogramado — [V]
+	  Limitações do controle puramente cabeado
+	  Surgimento do controle microprogramado
+	  Retorno do controle cabeado em processadores RISC
+
+
+ 2.3 Importância da Evolução para a Computação Moderna — [V]
+	Impactos na Computação Atual — [V]
+	Evolução do desempenho dos processadores
+	Redução da complexidade de projeto
+	 Base para arquiteturas modernas
+
+
+
+3. Papel da Unidade de Controle na Arquitetura de Computadores — [I]
+
+ 3.1 Funções Centrais da Unidade de Controle — [I]
+
+  3.1.1 Interpretação das Instruções — [I]
+	  Leitura da instrução armazenada
+	  Identificação da operação a executar
+	  Determinação dos operandos envolvidos
+
+  3.1.2 Comando das Operações Internas — [I]
+	  Ativação dos componentes do Datapath
+	  Controle das transferências internas
+	  Coordenação da sequência de execução
+
+
+ 3.2 Relação com os Demais Componentes do Processador — [I]
+
+  3.2.1 Relação com o Datapath — [I]
+	  Separação entre controle e processamento
+	  Cooperação funcional
+	  Independência estrutural
+
+  3.2.2 Relação com a Memória e os Registradores — [I]
+	  Controle de leitura e escrita
+	  Coordenação dos acessos
+	  Sincronização das operações de memória
+
+
+
+4. Unidade de Controle × Datapath × Processador — [I]
+
+ 4.1 Distinção Conceitual entre Controle e Datapath — [I]
+
+  4.1.1 Função do Datapath — [I]
+	  Execução das operações
+	  Manipulação dos dados
+	  Armazenamento temporário
+
+  4.1.2 Função da Unidade de Controle — [I]
+	  Geração dos sinais de comando
+	  Coordenação temporal das operações
+	  Interpretação das instruções
+
+
+ 4.2 Composição do Processador — [I]
+
+  4.2.1 Unidade de Controle e Datapath como Subsistemas — [I]
+	  Cooperação entre subsistemas
+	  Fronteiras funcionais
+	  Integração no processador
+
+  4.2.2 Visão Geral da Microarquitetura — [I]
+	  Componentes principais do processador
+	  Papel de cada subsistema
+	  Organização geral da execução
+
+
+
+5. Princípios de Projeto da Unidade de Controle — [I]
+
+ 5.1 Objetivos de Projeto — [I]
+
+  5.1.1 Correção Funcional — [I]
+	  Execução correta das instruções
+	  Geração precisa dos sinais de controle
+	  Consistência da sequência de execução
+
+  5.1.2 Eficiência Operacional — [I]
+	  Redução do número de ciclos
+	  Simplicidade da lógica de controle
+	  Facilidade de manutenção do projeto
+
+
+ 5.2 Critérios e Compromissos de Projeto — [I]
+
+  5.2.1 Simplicidade × Flexibilidade — [I]
+	  Facilidade de implementação
+	  Capacidade de expansão
+	  Impacto no desempenho
+
+  5.2.2 Velocidade × Custo de Implementação — [I]
+	  Complexidade dos circuitos
+	  Área de silício necessária
+	  Trade-offs de projeto
+
+
+
+PARTE 2 — ESTRUTURA E ORGANIZAÇÃO INTERNA DA UNIDADE DE CONTROLE
+
+
+6. Componentes Internos da Unidade de Controle — [P]
+
+ 6.1 Visão Geral dos Componentes — [P]
+
+  6.1.1 Componentes Fundamentais — [P]
+	  Registrador de instrução
+	  Contador de programa
+	  Decodificador de instruções
+	  Lógica de controle
+	  Registrador de estados (flags)
+
+  6.1.2 Organização Geral dos Componentes — [P]
+	  Distribuição funcional
+	  Interdependência entre os componentes
+	  Fluxo interno de sinais
+	  Cooperação com o Datapath
+
+
+ 6.2 Classificação dos Componentes de Controle — [P]
+
+  6.2.1 Componentes de Interpretação — [P]
+	  Decodificação da instrução
+	  Identificação do opcode
+	  Reconhecimento dos operandos
+
+  6.2.2 Componentes de Geração de Sinais — [P]
+	  Produção dos sinais de controle
+	  Ativação dos componentes do Datapath
+	  Distribuição temporal dos sinais
+
+
+
+7. Registradores de Controle — [P]
+
+ 7.1 Fundamentos dos Registradores de Controle — [P]
+
+  7.1.1 Conceito e Finalidade — [P]
+	  Armazenamento de informações de controle
+	  Suporte à execução das instruções
+	  Papel na coordenação do processador
+
+  7.1.2 Tipos de Registradores de Controle — [P]
+	  Registrador de Instrução (RI)
+	  Contador de Programa (PC)
+	  Registrador de Endereço de Memória (MAR)
+	  Registrador de Dados de Memória (MDR)
+
+
+ 7.2 Operação dos Registradores de Controle — [P]
+
+  7.2.1 Atualização dos Registradores — [P]
+	  Momento de atualização
+	  Fonte dos novos valores
+	  Sincronização com o clock
+
+  7.2.2 Uso Durante o Ciclo de Instrução — [P]
+	  Participação na busca da instrução
+	  Participação na decodificação
+	  Participação na execução
+
+
+
+8. Contador de Programa e Registrador de Instrução — [P]
+
+ 8.1 Contador de Programa (PC) — [P]
+
+  8.1.1 Função do Contador de Programa — [P]
+	  Armazenamento do endereço da próxima instrução
+	  Incremento automático
+	  Alteração em desvios e saltos
+
+  8.1.2 Atualização do Contador de Programa — [P]
+	  Incremento sequencial
+	  Carga de novo endereço
+	  Papel no controle de fluxo
+
+
+ 8.2 Registrador de Instrução (RI) — [P]
+
+  8.2.1 Função do Registrador de Instrução — [P]
+	  Armazenamento temporário da instrução buscada
+	  Disponibilização para decodificação
+	  Isolamento da memória durante a execução
+
+  8.2.2 Interação com o Decodificador — [P]
+	  Fornecimento do opcode
+	  Fornecimento dos campos de operandos
+	  Disparo da decodificação
+
+
+
+9. Lógica de Controle e Máquina de Estados — [P]
+
+ 9.1 Fundamentos da Lógica de Controle — [P]
+
+  9.1.1 Conceito de Lógica de Controle — [P]
+	  Definição funcional
+	  Papel na geração dos sinais
+	  Relação com o estado do processador
+
+  9.1.2 Entradas e Saídas da Lógica de Controle — [P]
+	  Opcode da instrução
+	  Estado atual do processador
+	  Sinais de controle gerados
+
+
+ 9.2 Máquina de Estados da Unidade de Controle — [P]
+
+  9.2.1 Conceito de Estado de Controle — [P]
+	  Representação do progresso da execução
+	  Transições entre estados
+	  Relação com o ciclo de instrução
+
+  9.2.2 Diagrama de Estados — [P]
+	  Estados de busca
+	  Estados de decodificação
+	  Estados de execução
+	  Transições condicionais
+	  Codificação dos estados
+	  Codificação binária dos estados
+	  Codificação one-hot dos estados
+	  Seleção da representação dos estados
+
+  9.2.3 Estrutura da Máquina de Estados da Unidade de Controle — [P]
+	  Registrador de estado
+	  Lógica de próximo estado
+	  Lógica de saída
+	  Estado atual
+	  Próximo estado
+	  Geração dos sinais de controle a partir dos estados
+
+
+
+10. Organização Funcional da Unidade de Controle — [I]
+
+ 10.1 Estrutura Funcional Geral — [I]
+
+  10.1.1 Organização Interna — [I]
+	  Distribuição dos blocos funcionais
+	  Fluxo de informações de controle
+	  Interligação entre componentes
+
+  10.1.2 Organização das Operações de Controle — [I]
+	  Sequência de geração de sinais
+	  Coordenação temporal
+	  Dependência entre etapas
+
+
+ 10.2 Comunicação Interna da Unidade de Controle — [I]
+
+  10.2.1 Comunicação com o Datapath — [I]
+	  Envio de sinais de controle
+	  Recebimento de sinais de estado (flags)
+	  Coordenação das operações
+
+  10.2.2 Comunicação com a Memória e Periféricos — [I]
+	  Sinais de leitura e escrita
+	  Controle de barramentos
+	  Sincronização de acessos
+
+
+
+PARTE 3 — CICLO DE INSTRUÇÃO E GERAÇÃO DE SINAIS DE CONTROLE
+
+
+11. Ciclo de Instrução — [P]
+
+ 11.1 Conceito de Ciclo de Instrução — [P]
+
+  11.1.1 Definição e Finalidade — [P]
+	  Sequência de etapas da execução
+	  Papel da Unidade de Controle no ciclo
+	  Repetição contínua do ciclo
+
+  11.1.2 Componentes Envolvidos no Ciclo — [P]
+	  Contador de programa
+	  Registrador de instrução
+	  Memória e barramentos
+	  Datapath
+
+
+ 11.2 Visão Geral das Etapas do Ciclo — [P]
+
+  11.2.1 Etapas Principais — [P]
+	  Busca da instrução
+	  Decodificação
+	  Busca de operandos
+	  Execução
+	  Escrita do resultado
+
+  11.2.2 Relação entre as Etapas — [P]
+	  Sequenciamento das etapas
+	  Dependência entre etapas
+	  Papel da Unidade de Controle em cada etapa
+
+
+
+12. Fases do Ciclo de Instrução (Busca, Decodificação, Execução) — [P]
+
+ 12.1 Fase de Busca (Fetch) — [P]
+
+  12.1.1 Operações da Fase de Busca — [P]
+	  Leitura da instrução na memória
+	  Uso do contador de programa
+	  Armazenamento no registrador de instrução
+
+  12.1.2 Sinais de Controle Envolvidos — [P]
+	  Habilitação de leitura da memória
+	  Controle do incremento do PC
+	  Controle da escrita no registrador de instrução
+
+
+ 12.2 Fase de Decodificação (Decode) — [P]
+
+  12.2.1 Operações da Fase de Decodificação — [P]
+	  Identificação do opcode
+	  Identificação dos operandos
+	  Determinação da operação a executar
+
+  12.2.2 Sinais de Controle Envolvidos — [P]
+	  Ativação do decodificador
+	  Seleção dos registradores fonte
+	  Preparação dos sinais para a execução
+
+
+ 12.3 Fase de Execução (Execute) — [P]
+
+  12.3.1 Operações da Fase de Execução — [P]
+	  Execução da operação na ULA
+	  Acesso à memória, quando necessário
+	  Escrita do resultado no destino
+
+  12.3.2 Sinais de Controle Envolvidos — [P]
+	  Seleção da operação da ULA
+	  Controle de leitura e escrita de memória
+	  Controle da escrita no banco de registradores
+
+
+
+13. Geração de Sinais de Controle — [P]
+
+ 13.1 Fundamentos da Geração de Sinais — [P]
+
+  13.1.1 Conceito de Sinal de Controle — [P]
+	  Definição funcional
+	  Papel na ativação de componentes
+	  Relação com o opcode da instrução
+
+  13.1.2 Origem dos Sinais de Controle — [P]
+	  Lógica combinacional
+	  Memória de controle (microprogramação)
+	  Estado atual da máquina de estados
+	  Sinais derivados do opcode
+	  Sinais derivados do estado atual
+	  Sinais derivados das condições/flags
+	  Sinais derivados da combinação de opcode, estado e condições
+
+
+ 13.2 Tipos de Sinais de Controle — [P]
+
+  13.2.1 Sinais para o Datapath — [P]
+	  Sinais de seleção de operação
+	  Sinais de habilitação de escrita
+	  Sinais de seleção de multiplexadores
+
+  13.2.2 Sinais para Memória e Barramento — [P]
+	  Sinais de leitura e escrita de memória
+	  Sinais de controle de barramento
+	  Sinais de habilitação de dispositivos
+
+
+ 13.3 Classificação dos Sinais de Controle — [P]
+
+  13.3.1 Sinais Combinacionais — [P]
+	  Sinais gerados diretamente pela lógica combinacional
+	  Dependência do opcode
+	  Dependência do estado
+	  Dependência dos sinais de condição
+
+  13.3.2 Sinais Sequenciais — [P]
+	  Sinais associados ao estado armazenado
+	  Sinais registrados
+	  Atualização sincronizada
+	  Relação com o clock
+
+
+
+14. Temporização do Ciclo de Instrução — [I]
+
+ 14.1 Fundamentos da Temporização — [I]
+
+  14.1.1 Papel do Clock no Ciclo de Instrução — [I]
+	  Sincronização das etapas
+	  Definição da duração de cada fase
+	  Relação com a frequência de operação
+
+  14.1.2 Organização Temporal das Etapas — [I]
+	  Ciclo único (monociclo)
+	  Múltiplos ciclos (multiciclo)
+	  Impacto no desempenho
+
+
+ 14.2 Temporização dos Sinais de Controle — [I]
+	Ativação Temporal dos Sinais
+	Momento correto de ativação
+	Duração dos sinais
+	Sincronismo com o Datapath
+
+
+
+15. Fluxo de Controle Durante a Execução — [I]
+
+ 15.1 Sequenciamento Normal — [I]
+	Fluxo Padrão do Ciclo
+	Sequência busca-decodificação-execução
+	Retorno ao início do ciclo
+	Continuidade da execução do programa
+
+
+ 15.2 Alterações no Fluxo de Controle — [I]
+
+  15.2.1 Desvios e Saltos — [I]
+	  Alteração do contador de programa
+	  Sinais de controle para desvio
+	  Condições de desvio
+
+  15.2.2 Interrupções e Exceções — [I]
+	  Suspensão do fluxo normal
+	  Salvamento do estado do processador
+	  Retomada da execução
+	  Condições que provocam alteração do fluxo de controle
+	  Detecção da condição pela Unidade de Controle
+	  Seleção do próximo estado de controle
+	  Retorno ao fluxo normal
+
+  15.2.3 Controle Condicional — [P]
+	  Decisão baseada em flags
+	  Decisão baseada em sinais de condição
+	  Seleção entre diferentes sequências de controle
+	  Continuação ou alteração do fluxo de execução
+
+
+
+PARTE 4 — UNIDADE DE CONTROLE COMBINACIONAL E CONTROLE MICROPROGRAMADO
+
+
+16. Unidade de Controle Cabeada (Hardwired) — [P]
+
+ 16.1 Conceito de Controle Cabeada — [P]
+
+  16.1.1 Definição e Funcionamento — [P]
+	  Uso de lógica combinacional fixa
+	  Geração direta dos sinais de controle
+	  Ausência de memória de controle
+
+  16.1.2 Componentes do Controle Cabeada — [P]
+	  Portas lógicas
+	  Máquina de estados finitos
+	  Decodificador de opcode
+	  Lógica de próximo estado
+	  Lógica de geração de saída
+	  Registrador de estado
+	  Circuitos de decodificação
+	  Circuitos de geração dos sinais de controle
+
+
+ 16.2 Características do Controle Cabeada — [P]
+
+  16.2.1 Vantagens — [P]
+	  Alta velocidade de operação
+	  Ausência de acesso à memória de controle
+	  Eficiência para conjuntos de instruções simples
+
+  16.2.2 Limitações — [P]
+	  Dificuldade de modificação
+	  Complexidade crescente com o número de instruções
+	  Baixa flexibilidade de projeto
+
+
+
+17. Projeto de Controle Cabeado — [P]
+
+ 17.1 Metodologia de Projeto — [P]
+
+  17.1.1 Definição da Máquina de Estados — [P]
+	  Identificação dos estados necessários
+	  Definição das transições
+	  Associação de sinais a cada estado
+
+  17.1.2 Construção da Lógica Combinacional — [P]
+	  Tabelas verdade dos sinais de controle
+	  Simplificação lógica
+	  Implementação com portas lógicas
+	  Derivação das equações dos sinais de controle
+	  Simplificação das funções de controle
+	  Minimização da lógica
+	  Implementação das funções simplificadas
+
+
+ 17.2 Representações Formais — [P]
+	Diagrama de estados
+	Tabela de estados
+	Equações booleanas dos sinais
+	Tabela de transição de estados
+	Tabela de saída
+	Tabela de sinais de controle
+	Equações do próximo estado
+	Equações dos sinais de controle
+
+
+
+18. Unidade de Controle Microprogramada — [P]
+
+ 18.1 Conceito de Controle Microprogramado — [P]
+
+  18.1.1 Definição e Funcionamento — [P]
+	  Uso de memória de controle
+	  Armazenamento dos sinais em microinstruções
+	  Execução de um microprograma por instrução
+
+  18.1.2 Componentes do Controle Microprogramado — [P]
+	  Memória de controle (control store)
+	  Registrador de microinstrução
+	  Sequenciador de microinstruções
+
+
+ 18.2 Características do Controle Microprogramado — [P]
+
+  18.2.1 Vantagens — [P]
+	  Facilidade de modificação
+	  Simplicidade de projeto para instruções complexas
+	  Flexibilidade para expansão do conjunto de instruções
+
+  18.2.2 Limitações — [P]
+	  Menor velocidade em relação ao controle cabeado
+	  Necessidade de memória adicional
+	  Overhead do acesso à memória de controle
+
+
+
+19. Comparação entre Controle Cabeado e Microprogramado — [I]
+
+ 19.1 Critérios de Comparação — [I]
+
+  19.1.1 Desempenho — [I]
+	  Velocidade de geração dos sinais
+	  Número de ciclos necessários
+	  Impacto na frequência de operação
+
+  19.1.2 Flexibilidade e Manutenção — [I]
+	  Facilidade de correção de erros
+	  Facilidade de expansão do conjunto de instruções
+	  Custo de modificação do projeto
+
+
+ 19.2 Cenários de Uso — [I]
+
+  19.2.1 Quando Utilizar Controle Cabeado — [I]
+	  Conjuntos de instruções reduzidos
+	  Necessidade de alto desempenho
+	  Arquiteturas RISC
+
+  19.2.2 Quando Utilizar Controle Microprogramado — [I]
+	  Conjuntos de instruções complexos
+	  Necessidade de flexibilidade de projeto
+	  Arquiteturas CISC
+
+
+
+20. Vantagens e Limitações de Cada Abordagem — [I]
+
+ 20.1 Síntese das Vantagens — [I]
+
+  20.1.1 Controle Cabeado — [I]
+	  Rapidez na geração dos sinais
+	  Simplicidade para conjuntos reduzidos
+
+  20.1.2 Controle Microprogramado — [I]
+	  Facilidade de atualização
+	  Adaptação a conjuntos complexos
+
+
+ 20.2 Síntese das Limitações — [I]
+
+  20.2.1 Controle Cabeado — [I]
+	  Rigidez de projeto
+	  Complexidade em conjuntos extensos
+
+  20.2.2 Controle Microprogramado — [I]
+	  Menor desempenho relativo
+	  Custo adicional de memória
+
+
+
+PARTE 5 — MICROINSTRUÇÕES, MICROPROGRAMAÇÃO E SEQUENCIAMENTO
+
+
+21. Conceito de Microinstrução — [P]
+
+ 21.1 Fundamentos da Microinstrução — [P]
+
+  21.1.1 Definição de Microinstrução — [P]
+	  Unidade elementar de controle
+	  Representação de um conjunto de sinais
+	  Relação com uma microoperação
+
+  21.1.2 Papel da Microinstrução no Controle — [P]
+	  Execução de uma etapa da instrução
+	  Ativação de sinais específicos
+	  Composição do microprograma
+
+  21.1.3 Microoperações — [P]
+	  Conceito de microoperação
+	  Microoperações de transferência entre registradores
+	  Microoperações aritméticas
+	  Microoperações lógicas
+	  Microoperações de deslocamento
+	  Relação entre microoperações e sinais de controle
+
+
+ 21.2 Relação entre Instrução e Microinstrução — [P]
+
+  21.2.1 Microprograma de uma Instrução — [P]
+	  Sequência de microinstruções associada
+	  Execução passo a passo
+	  Finalização e retorno à busca
+
+  21.2.2 Sequência de Microoperações — [P]
+	  Organização das microoperações
+	  Sequenciamento das microoperações
+	  Microoperações executadas em sequência
+	  Microoperações executadas simultaneamente
+	  Relação entre microoperações e microinstruções
+
+  21.2.3 Linguagem de Transferência entre Registradores (RTL) — [P]
+	  Conceito de RTL
+	  Representação de transferências entre registradores
+	  Representação de microoperações
+	  Representação das operações de controle
+	  Uso da RTL para descrever o ciclo de instrução
+	  Relação entre RTL, microoperações e microinstruções
+
+
+
+22. Formato das Microinstruções — [P]
+
+ 22.1 Campos da Microinstrução — [P]
+
+  22.1.1 Campo de Controle — [P]
+	  Sinais para o Datapath
+	  Sinais para memória e barramento
+	  Codificação dos sinais
+	  Representação das microoperações pelos campos de controle
+	  Controle simultâneo de múltiplos componentes
+	  Compatibilidade entre sinais de controle
+	  Conflitos entre sinais de controle
+
+  22.1.2 Campo de Endereçamento — [P]
+	  Endereço da próxima microinstrução
+	  Suporte a desvios condicionais
+	  Controle de sequência
+
+
+ 22.2 Codificação das Microinstruções — [P]
+
+  22.2.1 Microprogramação Horizontal — [P]
+	  Um bit por sinal de controle
+	  Maior paralelismo de sinais
+	  Maior largura da microinstrução
+	  Paralelismo entre microoperações
+	  Execução simultânea de sinais de controle
+	  Relação entre largura da microinstrução e paralelismo
+
+  22.2.2 Microprogramação Vertical — [P]
+	  Codificação compacta dos sinais
+	  Necessidade de decodificação adicional
+	  Menor largura da microinstrução
+	  Limitação do paralelismo
+	  Necessidade de decodificação dos campos
+	  Relação entre compactação e complexidade de decodificação
+
+
+
+23. Memória de Controle (Control Store) — [P]
+
+ 23.1 Fundamentos da Memória de Controle — [P]
+
+  23.1.1 Conceito e Finalidade — [P]
+	  Armazenamento dos microprogramas
+	  Memória somente leitura (ROM) ou regravável
+	  Papel central no controle microprogramado
+
+  23.1.2 Organização da Memória de Controle — [P]
+	  Endereçamento das microinstruções
+	  Estrutura de armazenamento
+	  Acesso sequencial e por desvio
+
+
+ 23.2 Operação da Memória de Controle — [P]
+	Leitura das Microinstruções
+	Busca da microinstrução atual
+	Envio ao registrador de microinstrução
+	Determinação do próximo endereço
+
+
+
+24. Sequenciamento de Microinstruções — [P]
+
+ 24.1 Fundamentos do Sequenciamento — [P]
+
+  24.1.1 Conceito de Sequenciador — [P]
+	  Determinação da próxima microinstrução
+	  Controle do fluxo do microprograma
+	  Relação com o endereço da memória de controle
+
+  24.1.2 Técnicas de Sequenciamento — [P]
+	  Sequenciamento incremental
+	  Sequenciamento por salto explícito
+	  Sequenciamento condicional
+	  Seleção da fonte do próximo endereço
+	  Próximo endereço sequencial
+	  Endereço fornecido pela microinstrução
+	  Endereço derivado do opcode
+	  Endereço condicionado por flags
+	  Multiplexação das fontes do próximo endereço
+
+
+ 24.2 Desvios no Microprograma — [P]
+
+  24.2.1 Desvios Condicionais — [P]
+	  Uso de flags e condições
+	  Seleção entre caminhos alternativos
+	  Impacto no fluxo de controle
+
+  24.2.2 Mapeamento de Opcode para Endereço Inicial — [P]
+	  Tabela de mapeamento
+	  Início do microprograma correspondente
+	  Relação com a decodificação
+
+  24.2.3 Seleção do Próximo Endereço — [P]
+	  Lógica de seleção do próximo endereço
+	  Fontes possíveis do endereço
+	  Condições para seleção
+	  Relação entre sequenciador e memória de controle
+
+
+ 24.3 Subrotinas de Microprogramação — [P]
+
+  24.3.1 Chamada de Subrotina — [P]
+	  Conceito de subrotina de microprogramação
+	  Endereço de entrada
+	  Armazenamento do endereço de retorno
+
+  24.3.2 Retorno de Subrotina — [P]
+	  Recuperação do endereço de retorno
+	  Continuação do microprograma
+	  Compartilhamento de sequências de microinstruções
+
+
+
+25. Técnicas de Microprogramação (Horizontal e Vertical) — [I]
+
+ 25.1 Critérios de Comparação — [I]
+	Largura da microinstrução
+	Velocidade de execução
+	Complexidade da lógica de decodificação
+
+
+ 25.2 Abordagens Híbridas — [I]
+	Microprogramação Parcialmente Codificada
+	Combinação de campos codificados e diretos
+	Equilíbrio entre desempenho e compactação
+	Uso em projetos reais
+
+
+
+PARTE 6 — SINAIS DE CONTROLE, TEMPORIZAÇÃO E SINCRONIZAÇÃO
+
+
+26. Sinais de Controle do Datapath — [P]
+
+ 26.1 Sinais para a ULA — [P]
+	Seleção de Operação
+	Código de operação da ULA
+	Seleção entre soma, subtração e lógicas
+	Ativação da operação correta
+
+
+ 26.2 Sinais para Registradores e Multiplexadores — [P]
+
+  26.2.1 Controle de Escrita em Registradores — [P]
+	  Habilitação de escrita
+	  Seleção do registrador destino
+
+  26.2.2 Controle de Multiplexadores — [P]
+	  Seleção das entradas
+	  Direcionamento do fluxo de dados
+
+
+
+27. Sinais de Controle da Memória e Barramento — [P]
+
+ 27.1 Sinais de Acesso à Memória — [P]
+
+  27.1.1 Controle de Leitura — [P]
+	  Habilitação de leitura da memória
+	  Sincronização com o endereço
+
+  27.1.2 Controle de Escrita — [P]
+	  Habilitação de escrita na memória
+	  Sincronização com o dado a ser gravado
+
+
+ 27.2 Sinais de Controle de Barramento — [P]
+	Habilitação de Dispositivos no Barramento
+	Controle de acesso ao barramento
+	Evitar conflitos de utilização
+
+
+
+28. Temporização e Clock — [I]
+
+ 28.1 Papel do Clock na Unidade de Controle — [I]
+	Sincronização das Operações
+	Definição dos instantes de ativação dos sinais
+	Relação com a frequência de operação
+
+
+ 28.2 Períodos e Ciclos de Clock — [I]
+
+  28.2.1 Duração do Ciclo de Clock — [I]
+	  Relação com o atraso do caminho crítico
+	  Impacto no desempenho do processador
+	  Atraso de propagação da lógica de controle
+	  Tempo de propagação dos sinais de controle
+	  Tempo de estabilização dos sinais
+	  Influência do atraso da Unidade de Controle no ciclo de clock
+
+  28.2.2 Controle Síncrono e Assíncrono — [I]
+	  Conceito de controle síncrono
+	  Controle baseado em clock
+	  Conceito de controle assíncrono
+	  Controle baseado em eventos
+	  Diferenças entre controle síncrono e assíncrono
+	  Vantagens e limitações
+	  Aplicação na Unidade de Controle
+
+  28.2.3 Caminho Crítico da Unidade de Controle — [P]
+	  Identificação do caminho crítico
+	  Lógica de geração de sinais
+	  Atrasos acumulados
+	  Relação entre caminho crítico e frequência máxima
+
+
+
+29. Sincronização entre Unidade de Controle e Datapath — [I]
+
+ 29.1 Alinhamento dos Sinais de Controle — [I]
+	Momento correto de ativação
+	Consistência com o estado do Datapath
+	Dependência temporal entre sinais
+	Duração dos sinais de controle
+	Ordem de ativação dos sinais
+	Sinais mutuamente exclusivos
+	Sobreposição de sinais de controle
+	Janela válida dos sinais
+
+
+ 29.2 Garantia de Integridade — [I]
+	Evitar leituras ou escritas incorretas
+	Respeito às dependências entre sinais
+	Dependências entre operações de controle
+	Prevenção de operações simultâneas incompatíveis
+	Atrasos de propagação
+	Estabilidade dos dados antes da operação de escrita
+
+
+
+30. Máquinas de Estados Finitos Aplicadas ao Controle — [P]
+
+ 30.1 Fundamentos das Máquinas de Estados — [P]
+
+  30.1.1 Conceito de Máquina de Estados Finitos (FSM) — [P]
+	  Estados, transições e saídas
+	  Aplicação ao controle de processadores
+
+  30.1.2 Tipos de Máquinas de Estados — [P]
+	  Máquina de Moore
+	  Máquina de Mealy
+	  Diferenças e aplicações
+	  Influência do tipo de FSM na geração dos sinais de controle
+	  Vantagens e limitações de Moore para controle
+	  Vantagens e limitações de Mealy para controle
+
+
+ 30.2 Representação em Hardware — [P]
+	Registrador de estado
+	Lógica de próximo estado
+	Lógica de saída
+	Codificação dos estados
+	Codificação binária
+	Codificação one-hot
+	Decodificação do estado
+
+
+
+PARTE 7 — DECODIFICAÇÃO DE INSTRUÇÕES E CONTROLE DAS OPERAÇÕES
+
+
+31. Decodificação de Opcode — [P]
+
+ 31.1 Fundamentos da Decodificação — [P]
+
+  31.1.1 Conceito de Decodificação — [P]
+	  Interpretação do código de operação
+	  Determinação da operação a ser executada
+
+  31.1.2 Estrutura do Decodificador — [P]
+	  Entradas do decodificador
+	  Saídas correspondentes às operações
+	  Relação com o formato da instrução
+
+
+ 31.2 Decodificação em Diferentes Formatos de Instrução — [P]
+
+  31.2.1 Instruções de Formato Fixo — [P]
+	  Facilidade de decodificação
+	  Campos de tamanho constante
+
+  31.2.2 Instruções de Formato Variável — [P]
+	  Maior complexidade de decodificação
+	  Necessidade de múltiplas etapas
+
+
+
+32. Controle de Modos de Endereçamento — [I]
+
+ 32.1 Conceito de Modo de Endereçamento — [I]
+	Definição e Finalidade
+	Forma de especificar o operando
+	Relação com o controle de acesso a dados
+
+
+ 32.2 Controle dos Diferentes Modos — [I]
+
+  32.2.1 Endereçamento Direto e Imediato — [I]
+	  Sinais de controle envolvidos
+	  Simplicidade de execução
+
+  32.2.2 Endereçamento Indireto e Indexado — [I]
+	  Necessidade de cálculo de endereço
+	  Ciclos adicionais de controle
+
+
+
+33. Controle das Operações Aritméticas e Lógicas — [I]
+
+ 33.1 Controle das Operações da ULA — [I]
+
+  33.1.1 Seleção da Operação Aritmética — [I]
+	  Sinais para soma e subtração
+	  Controle de vai-um (carry)
+
+  33.1.2 Seleção da Operação Lógica — [I]
+	  Sinais para operações AND, OR, NOT, XOR
+	  Controle de máscaras de bits
+
+
+ 33.2 Controle das Flags de Estado — [I]
+	Atualização das Flags
+	Zero, carry, overflow e sinal
+	Sinais de controle da atualização
+	Uso das flags como entradas da Unidade de Controle
+	Avaliação das flags
+	Geração de condições de controle
+	Seleção de caminhos condicionais a partir das flags
+
+
+
+34. Controle de Desvios e Saltos — [I]
+
+ 34.1 Controle de Desvios Incondicionais — [I]
+	Alteração do Contador de Programa
+	Carga direta do novo endereço
+	Sinais de controle envolvidos
+
+
+ 34.2 Controle de Desvios Condicionais — [I]
+
+  34.2.1 Avaliação das Condições — [I]
+	  Verificação das flags de estado
+	  Seleção entre continuar ou desviar
+
+  34.2.2 Sinais de Controle do Desvio Condicional — [I]
+	  Habilitação condicional da carga do PC
+	  Coordenação com a ULA
+
+
+
+PARTE 8 — UNIDADE DE CONTROLE E SUA INTEGRAÇÃO COM O DATAPATH
+
+
+35. Interface entre Unidade de Controle e Datapath — [I]
+
+ 35.1 Conceito de Interface de Controle — [I]
+	Sinais de Entrada e Saída — [I]
+	Sinais recebidos do Datapath
+	Sinais enviados ao Datapath
+
+
+ 35.2 Organização da Interface — [I]
+	Pontos de Conexão
+	Registradores
+	Multiplexadores
+	Unidade Lógica e Aritmética
+
+
+
+36. Controle de Escrita e Leitura de Registradores — [I]
+
+ 36.1 Controle de Leitura — [I]
+	Seleção dos Registradores Fonte
+	Sinais de seleção
+	Disponibilização dos operandos
+
+
+ 36.2 Controle de Escrita — [I]
+	Seleção do Registrador Destino
+	Sinais de habilitação de escrita
+	Sincronização com o resultado da operação
+
+
+
+37. Controle de Acesso à Memória — [I]
+
+ 37.1 Controle de Leitura de Memória — [I]
+	Sinais Envolvidos
+	Habilitação de leitura
+	Endereço fornecido pelo Datapath
+
+
+ 37.2 Controle de Escrita em Memória — [I]
+	Sinais Envolvidos
+	Habilitação de escrita
+	Dado a ser armazenado
+
+
+
+38. Coordenação de Barramentos Internos — [I]
+
+ 38.1 Controle de Compartilhamento do Barramento — [I]
+	Evitar Conflitos de Acesso
+	Habilitação seletiva dos dispositivos
+	Sincronização temporal
+
+
+ 38.2 Coordenação entre Múltiplos Barramentos — [I]
+	Organização em Arquiteturas com Vários Barramentos
+	Controle independente por barramento
+	Coordenação das transferências simultâneas
+
+
+
+PARTE 9 — ORGANIZAÇÕES AVANÇADAS, PIPELINE E CONTROLE DE FLUXO
+
+
+39. Unidade de Controle em Processadores Multiciclo — [I]
+
+ 39.1 Organização do Controle Multiciclo — [I]
+	Divisão da Execução em Múltiplos Ciclos
+	Uma etapa por ciclo de clock
+	Reutilização de componentes do Datapath
+
+
+ 39.2 Máquina de Estados do Controle Multiciclo — [I]
+	Estados por Etapa da Instrução
+	Estado de busca
+	Estado de decodificação
+	Estados de execução variáveis por instrução
+
+
+
+40. Unidade de Controle em Pipeline — [P]
+
+ 40.1 Fundamentos do Controle em Pipeline — [P]
+
+  40.1.1 Conceito de Pipeline de Instruções — [P]
+	  Sobreposição da execução de instruções
+	  Divisão em estágios
+	  Papel do controle em cada estágio
+
+  40.1.2 Sinais de Controle por Estágio — [P]
+	  Sinais do estágio de busca
+	  Sinais do estágio de decodificação
+	  Sinais dos estágios de execução, memória e escrita
+
+
+ 40.2 Propagação dos Sinais de Controle no Pipeline — [P]
+	Registradores de Pipeline
+	Armazenamento dos sinais entre estágios
+	Sincronização entre estágios
+	Armazenamento dos sinais de controle entre estágios
+	Propagação dos sinais junto com a instrução
+	Associação entre sinais de controle e estágio correspondente
+	Desativação de sinais de controle quando necessário
+	Inserção de sinais de controle em bolhas
+
+
+
+41. Hazards de Controle e Tratamento — [P]
+
+ 41.1 Conceito de Hazard de Controle — [P]
+	Origem dos Hazards de Controle
+	Instruções de desvio no pipeline
+	Incerteza sobre o próximo endereço
+
+
+ 41.2 Técnicas de Tratamento — [P]
+
+  41.2.1 Bolhas de Pipeline (Stall) — [P]
+	  Inserção de ciclos de espera
+	  Impacto no desempenho
+	  Inserção de bolhas por decisão da Unidade de Controle
+	  Anulação de sinais de controle
+	  Transformação de uma instrução em operação inativa
+	  Propagação da bolha pelos estágios
+
+  41.2.2 Predição de Desvio — [P]
+	  Antecipação do resultado do desvio
+	  Correção em caso de erro de predição
+	  Decisão de redirecionamento do fluxo
+	  Controle da atualização do PC
+	  Anulação de instruções incorretamente especuladas
+
+
+
+42. Controle Especulativo e Previsão de Desvios — [I]
+
+ 42.1 Fundamentos da Execução Especulativa — [I]
+	Conceito de Especulação
+	Execução antecipada de instruções
+	Necessidade de mecanismos de controle adicionais
+
+
+ 42.2 Mecanismos de Previsão de Desvios — [I]
+
+  42.2.1 Preditores de Desvio — [I]
+	  Preditores estáticos
+	  Preditores dinâmicos
+
+  42.2.2 Tratamento de Predição Incorreta — [I]
+	  Descarte de instruções especulativas
+	  Restauração do estado correto
+	  Detecção da predição incorreta
+	  Redirecionamento do fluxo de controle
+	  Anulação das instruções especulativas
+	  Restauração do estado arquitetural correto
+	  Controle da retomada da execução
+
+
+
+43. Unidade de Controle em Processadores Superescalares — [V]
+
+ 43.1 Fundamentos do Controle Superescalar — [V]
+	Múltiplas Instruções por Ciclo
+	Necessidade de controle mais complexo
+	Coordenação de múltiplas unidades funcionais
+
+
+ 43.2 Desafios do Controle Superescalar — [V]
+	Dependências entre Instruções
+	Controle de dependências de dados
+	Escalonamento das instruções
+
+
+
+PARTE 10 — IMPLEMENTAÇÃO, DESEMPENHO, EVOLUÇÃO E ARQUITETURAS MODERNAS
+
+
+44. Implementação Física da Unidade de Controle — [V]
+
+ 44.1 Tecnologias de Implementação — [V]
+
+  44.1.1 Implementação em Lógica Discreta — [V]
+	  Uso de portas lógicas individuais
+	  Aplicação histórica
+
+  44.1.2 Implementação em Circuitos Integrados — [V]
+	  Integração em VLSI
+	  Redução de área e consumo
+
+
+ 44.2 Considerações de Projeto Físico — [V]
+	Área e Consumo de Energia
+	Impacto da complexidade do controle
+	Trade-offs de projeto físico
+
+
+
+45. Desempenho e Complexidade da Unidade de Controle — [I]
+
+ 45.1 Fatores que Afetam o Desempenho — [I]
+	Número de Ciclos por Instrução
+	Relação com a organização do controle
+	Impacto no tempo de execução
+
+
+ 45.2 Complexidade do Projeto de Controle — [I]
+
+  45.2.1 Complexidade do Controle Cabeado — [I]
+	  Crescimento com o número de instruções
+
+  45.2.2 Complexidade do Controle Microprogramado — [I]
+	  Tamanho da memória de controle
+
+
+
+46. Unidade de Controle em Arquiteturas RISC × CISC — [I]
+
+ 46.1 Controle em Arquiteturas RISC — [I]
+	Características do Controle RISC
+	Predominância do controle cabeado
+	Instruções simples e uniformes
+
+
+ 46.2 Controle em Arquiteturas CISC — [I]
+	Características do Controle CISC — [I]
+	Predominância do controle microprogramado
+	Instruções complexas e variadas
+
+
+
+47. Tendências Modernas e Evolução da Unidade de Controle — [V]
+
+ 47.1 Novas Abordagens de Controle — [V]
+	Controle Híbrido
+	Combinação de técnicas cabeadas e microprogramadas
+	Aplicação em processadores modernos
+
+
+ 47.2 Perspectivas Futuras — [V]
+	Evolução Contínua do Controle
+	Adaptação a novas arquiteturas
+	Suporte a paralelismo crescente
+
+
+
+PARTE 11 — RESUMO GERAL E CONSOLIDAÇÃO DA UNIDADE DE CONTROLE
+
+
+48. Integração dos Conceitos da Unidade de Controle — [I]
+
+ 48.1 Visão Integrada da Unidade de Controle — [I]
+
+  48.1.1 Integração dos Fundamentos — [I]
+	  Conceitos fundamentais
+	  Estrutura interna
+	  Geração de sinais de controle
+
+  48.1.2 Integração com o Datapath — [I]
+	  Cooperação funcional
+	  Coordenação das operações
+
+
+ 48.2 Relações entre os Conceitos Estudados — [I]
+	Controle Cabeado e Microprogramado
+	Relação entre as abordagens
+	Aplicação conforme o contexto
+
+
+
+49. Resumo Geral da Unidade de Controle — [I]
+
+ 49.1 Revisão dos Conceitos Fundamentais — [I]
+	Fundamentos Essenciais
+	Definição da Unidade de Controle
+	Papel na execução das instruções
+	Organização interna
+
+
+ 49.2 Revisão das Técnicas de Controle — [I]
+	Organizações Estudadas
+	Controle cabeado
+	Controle microprogramado
+	Controle em pipeline
+	Controle superescalar
+
+
+
+50. Conclusão do Estudo da Unidade de Controle — [V]
+
+ 50.1 Síntese Final — [V]
+	O Papel da Unidade de Controle
+	Elemento central da coordenação do processador
+	Base da execução correta das instruções
+
+
+ 50.2 Preparação para Estudos Posteriores — [V]
+	Conhecimentos Adquiridos
+	Estrutura da Unidade de Controle
+	Geração e temporização dos sinais
+	Integração com o Datapath
